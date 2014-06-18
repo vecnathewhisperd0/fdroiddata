@@ -61,6 +61,16 @@ Build:1.4.9c,219
         gradle nativeLibsToJar
     buildjni=no
 
+Build:1.5.0a,250
+    commit=v1.5.0a
+    subdir=TMessagesProj
+    patch=jni_includes.patch
+    gradle=yes
+    forceversion=yes
+    build=ndk-build && \
+        gradle nativeLibsToJar
+    buildjni=no
+
 Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:1.5.0
