@@ -1,4 +1,3 @@
-AntiFeatures:Tracking
 Categories:Navigation
 License:GPLv3
 Web Site:http://osmand.net
@@ -103,6 +102,7 @@ Build:1.8.2,182
     commit=76ada6c8a08afe69acb755503373ac36328ef665
     subdir=android/OsmAnd
     submodules=yes
+    patch=remove_analytics_182.diff
     output=bin/OsmAnd-release-unsigned.apk
     prebuild=sed -i 's/"OsmAnd+"/"OsmAnd~"/g' build.xml
     build=./old-ndk-build.sh && \
