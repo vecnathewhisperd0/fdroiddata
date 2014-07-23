@@ -44,12 +44,10 @@ Maintainer Notes:
 DexClassLoader used to load htc front-facing camera jar on HTC Evo devices.
 Does not break the app on other devices nor on HTC Evo devices that don't have
 the jar shipped with the device from HTC.
-
-No UCM applies since no tags are used and version bumps are for nightlies.
 .
 
 Auto Update Mode:None
-Update Check Mode:None
+Update Check Mode:RepoManifest
 Current Version:1.01.00
 Current Version Code:2336
 
