@@ -40,6 +40,26 @@ Build:1.02.00-2423,2423
     build=make SWIG=swig
     buildjni=no
 
+Build:1.02.01,2417
+    commit=2418
+    subdir=CSipSimple
+    target=android-19
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i 's/MY_USE_SILK := 1/MY_USE_SILK := 0/' jni/Application.mk && \
+        sed -i 's/ silk//' Makefile && \
+        sed -i '/silk/d' jni/Android.mk && \
+        git svn show-externals | grep -v ^# | grep -v ^$ | awk \
+        '{path=substr($1,13); \
+          rev=substr($2, 3); \
+          repo=$3; \
+          exec=sprintf("svn co %s@%s %s;\n",  repo, rev, path); \
+          system(exec);}'
+    scanignore=CSipSimple/jni/webrtc/sources/modules/video_capture/main/source/android/java/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java,CSipSimple/src/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java
+    scandelete=CSipSimple/obj,CSipSimple/libs
+    build=make
+    buildjni=no
+
 Maintainer Notes:
 DexClassLoader used to load htc front-facing camera jar on HTC Evo devices.
 Does not break the app on other devices nor on HTC Evo devices that don't have
@@ -48,6 +68,6 @@ the jar shipped with the device from HTC.
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.01.00
-Current Version Code:2336
+Current Version:1.02.01
+Current Version Code:2417
 
