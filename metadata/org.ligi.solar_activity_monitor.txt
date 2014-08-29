@@ -1,0 +1,25 @@
+Categories:Navigation
+License:GPLv3
+Web Site:https://github.com/ligi/Solar-Activity-Monitor/blob/master/README.md
+Source Code:https://github.com/ligi/Solar-Activity-Monitor
+Issue Tracker:https://github.com/ligi/Solar-Activity-Monitor/issues
+
+Auto Name:Solar Activity Monitor
+Summary:Android Widget to show Solar Activity
+Description:
+This is a Widget to display the latest 3 Hourly Planetary(estimated Ap) K Indices from http://www.swpc.noaa.gov/ftpdir/lists/geomag/AK.txt to e.g. help UAS Pilots to be aware of possible GPS-Problems. Thanks to http://mikrokopter.de for the impulse, http://www.swpc.noaa.gov for the Data and Clemens -Nebukad- Wronski for the Graphics!
+.
+
+Repo Type:git
+Repo:https://github.com/ligi/Solar-Activity-Monitor.git
+
+Build:1.0.0,100
+    commit=1.0
+    prebuild=sed -i '/android-sdk-manager/d' build.gradle
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:1.0
+Current Version Code:7
+
