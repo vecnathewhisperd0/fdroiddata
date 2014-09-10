@@ -15,6 +15,13 @@ Sometimes you just want to evaluate some Android-Code without compiling a projec
 Repo Type:git
 Repo:https://github.com/ligi/AJShA.git
 
+Build:0.10,10
+    commit=0.10
+    subdir=app
+    gradle=NoAnalyticsForFDroid
+    prebuild=sed -i '/play_services/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
 Build:0.6,6
     commit=0.6
     subdir=app
@@ -24,6 +31,6 @@ Build:0.6,6
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.6
-Current Version Code:6
+Current Version:0.10
+Current Version Code:10
 
