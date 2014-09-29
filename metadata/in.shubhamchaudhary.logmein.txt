@@ -1,8 +1,8 @@
 Categories:Internet
 License:GPLv3
 Web Site:http://shubhamchaudhary.in
-Source Code:https://github.com/shubhamchaudhary/logmein-android
-Issue Tracker:https://github.com/shubhamchaudhary/logmein-android/issues
+Source Code:https://github.com/DevelopFreedom/logmein-android
+Issue Tracker:https://github.com/DevelopFreedom/logmein-android/issues
 
 Auto Name:logmein
 Summary:Login to campus networks
@@ -11,7 +11,7 @@ Automatically login to university campus networks.
 .
 
 Repo Type:git
-Repo:https://github.com/shubhamchaudhary/logmein-android.git
+Repo:https://github.com/DevelopFreedom/logmein-android.git
 
 Build:0.4.1,7
     commit=4b716eb5c53a7f920f4bcf24a2
@@ -21,6 +21,11 @@ Build:0.5.0,8
 
 Build:0.5.1,9
     commit=0.5.1
+
+Build:0.5.2,52
+    disable=repo change
+    commit=0.5.2
+
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags

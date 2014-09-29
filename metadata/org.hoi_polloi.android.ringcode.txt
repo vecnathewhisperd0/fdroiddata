@@ -1,13 +1,13 @@
 Categories:System
 License:GPLv3+
 Web Site:
-Source Code:https://github.com/bfix/ringcode-android/
+Source Code:https://github.com/bfix/ringcode-android
 Issue Tracker:https://github.com/bfix/ringcode-android/issues
 Bitcoin:18FLvxn8Vgz5DTgVH1kT4DRJoaANpWhqvP
 
 Name:RingCode
 Auto Name:RingCode
-Summary:Notify incoming calls by Morse code asscoiated with the phone number.
+Summary:Morse code notifications of incoming calls
 Description:
 If the normal ringtones are silenced, the application will notify incoming calls
 with a Morse code associated with the calling number.
@@ -21,11 +21,13 @@ The user can specify parameters like volume and Morse speed.
 Repo Type:git
 Repo:https://github.com/bfix/ringcode-android
 
+Build:1.1c,4
+    disable=make ucm happy
+    commit=4
+
 Build:1.1,11
     commit=cea290e21969abb4fb931cf65b5f5b92576aaa47
 
-Build:1.1c,4
-    commit=4
 
 Auto Update Mode:Version %c
 Update Check Mode:Tags

@@ -9,17 +9,20 @@ Auto Name:K-9 Mail
 Summary:Full-featured email client
 Description:
 E-mail client supporting multiple accounts, POP3, IMAP and Push IMAP.
-Can do encryption if [[org.thialfihar.android.apg]] is installed.
-Settings and account configurations can be exported so that they can be imported
-easily if you are switching packages/signatures: a file manager will need to be
-already installed to achieve this.
-
-Note that there appears to be a bug in 4.802 which causes messages to not
-be displayed properly if using the Dark theme. If you have problems with
-not seeing message content, try switching to the Light theme.
+Can do encryption if [[org.thialfihar.android.apg]] and/or [[org.sufficientlysecure.keychain]]
+is installed -- depending on the version. Settings and account configurations
+can be exported so that they can be imported easily if you are switching
+packages/signatures: a file manager will need to be already installed to
+achieve this.
 
 If you would like to contribute financially to k9mail, consider donating to
 the local SPCA (Societies for the prevention of cruelty to animals).
+
+INFORMATION:
+
+5.000 requires call_log read/write permissions on builds unsing the gradle
+build system. Until this issue is resolved, we wont star this release; it
+will not prompt for auto-update.
 
 [https://github.com/k9mail/k-9/wiki/ReleaseNotes Major version notes]
 .
@@ -98,7 +101,29 @@ Build:4.804,20005
     build=$$MVN3$$ package -f HtmlCleaner/pom.xml && \
         mv HtmlCleaner/target/htmlcleaner-2.2.jar libs/
 
-Auto Update Mode:Version %v
+Build:5.000,22000
+    commit=5.000
+    gradle=yes
+    rm=libs/*
+    srclibs=Jutf7@20
+    prebuild=sed -i \
+            -e "/buildToolsVersion/apackagingOptions {\n exclude 'META-INF/LICENSE.txt'\n  exclude 'META-INF/NOTICE.txt'\n}" \
+            -e "/com.android.application/arepositories {\n  mavenCentral()\n  mavenLocal()\n}" \
+            -e "/fileTree/acompile 'net.sourceforge.htmlcleaner:htmlcleaner:2.2'" \
+            -e "/fileTree/acompile 'org.apache.james:apache-mime4j-core:0.7.2'" \
+            -e "/fileTree/acompile 'org.apache.james:apache-mime4j-dom:0.7.2'" \
+            -e "/fileTree/acompile 'com.jcraft:jzlib:1.0.7'" \
+            -e "/fileTree/acompile 'com.beetstra.jutf7:jutf7:1.0.1-SNAPSHOT'" \
+            -e "/fileTree/acompile 'commons-io:commons-io:2.0.1'" build.gradle && \
+        pushd $$Jutf7$$ && $$MVN3$$ install && popd
+
+Maintainer Notes:
+* AUM disabled: Don't use 5.0xx builds as template for 4.8-MAINT releases.
+* UCM stays at 4.8-MAINT so 5.000 doesn't get starred.
+* Update AUM and UCM once 5.000 has been tested/dogfed.
+.
+
+#Auto Update Mode:Version %v
 Update Check Mode:RepoManifest/4.8-MAINT
 Current Version:4.804
 Current Version Code:20005
