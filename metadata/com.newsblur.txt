@@ -154,7 +154,7 @@ Build:3.7.1,68
         cd .. && \
         ls | grep -v clients | xargs rm -rf
 
-Build:4.0.0.b3,72
+Build:4.0.0.b4,73
     disable=beta
 
 Maintainer Notes:
@@ -164,6 +164,6 @@ just a small part of the larger repo.
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:4.0.0.b3
-Current Version Code:72
+Current Version:4.0.0.b4
+Current Version Code:73
 
