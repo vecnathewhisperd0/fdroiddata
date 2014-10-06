@@ -1,0 +1,29 @@
+AntiFeatures:Tracking
+Categories:Multimedia,Internet
+License:GPLv3
+Web Site:https://github.com/geecko86/QuickLyric/blob/HEAD/README.md
+Source Code:https://github.com/geecko86/QuickLyric
+Issue Tracker:https://github.com/geecko86/QuickLyric/issues
+
+Auto Name:QuickLyric
+Summary:Fetch and show song lyrics
+Description:
+Automatically fetch and display the lyrics of the currently playing song.
+.
+
+Repo Type:git
+Repo:https://github.com/geecko86/QuickLyric
+
+Build:1.0,1
+    commit=29bf3043c26e8e03b2617eaa0f1962eaee02923c
+    subdir=QuickLyric
+    gradle=yes
+    rm=QuickLyric/libs/*
+    prebuild=sed -i -e '/volley/d' build.gradle && \
+        sed -i -e "/showcaseview/acompile 'com.mcxiaoke.volley:library:1.0.6'" build.gradle
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.0
+Current Version Code:2
+

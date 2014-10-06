@@ -253,7 +253,14 @@ Build:0.73,730
     update=.
 
 Build:0.74,740
+    disable=still some proguard issues
     commit=0.74
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.75,750
+    commit=0.75
     submodules=yes
     prebuild=./ant-prepare.sh
     update=.
