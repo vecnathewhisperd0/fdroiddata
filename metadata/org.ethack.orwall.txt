@@ -119,8 +119,15 @@ Build:1.0.0,30
     gradle=yes
     scandelete=external/super-commands/ExampleApp/libs,external/i2p/art,external/i2p/app,external/i2p/client/src/main/jniLibs/armeabi
 
-Auto Update Mode:None
+Build:1.0.1,31
+    commit=1.0.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+    scandelete=external/super-commands/ExampleApp/libs,external/i2p/art,external/i2p/app,external/i2p/client/src/main/jniLibs/armeabi
+
+Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.0.0
-Current Version Code:30
+Current Version:1.0.1
+Current Version Code:31
 

@@ -77,9 +77,12 @@ Build:1.7.9,95
         mv libs/android-support-v4.jar $$Support$$/libs
     buildjni=AndrozicLib
 
+Build:2.0-aplha,96
+    disable=prerelease
+
 Auto Update Mode:None
 #Device-variable
 Update Check Mode:Tags
-Current Version:1.7.9
-Current Version Code:95
+Current Version:2.0-alpha
+Current Version Code:96
 

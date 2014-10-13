@@ -40,6 +40,11 @@ Build:2.3.7,237
     gradle=noMaps,noAnalytics,forFDroid
     prebuild=sed -i -e '/play_services/d' -e '/android-sdk-manager/d' -e '/spoon/d' build.gradle
 
+Build:2.3.9,239
+    commit=2.3.9
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/play_services/d' -e '/android-sdk-manager/d' -e '/spoon/d' build.gradle
+
 Maintainer Notes:
 TODO: Build zxing-core-2.3.0-SNAPSHOT.jar from source.
 * https://github.com/zxing/zxing
@@ -49,6 +54,6 @@ TODO: Build zxing-core-2.3.0-SNAPSHOT.jar from source.
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:2.3.9
-Current Version Code:239
+Current Version:2.4.1
+Current Version Code:241
 
