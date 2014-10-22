@@ -38,12 +38,16 @@ Build:20140530,9
     commit=c071d213ae2f82597758c836d9ee16762307aa37
     init=rm -f build.xml
 
+Build:20141022,10
+    commit=4410f3cf2aa209730e305bf47264712bf4880a5e
+    init=rm -f build.xml
+
 Maintainer Notes:
 As of version QuickMSG-20140330,4 there are no longer pre-built jar files.
 .
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:20140530
-Current Version Code:9
+Current Version:20141022
+Current Version Code:10
 
