@@ -112,6 +112,11 @@ Build:0.40.4.0,400400
     gradle=yes
     srclibs=MozOsmDroid@4.3.1,SimpleKML@v1.0
 
+Build:0.99.0.0,990000
+    commit=v0.99.0.0
+    subdir=android
+    gradle=yes
+
 Auto Update Mode:None
 #Auto Update Mode:Version v%v
 Update Check Mode:Tags
