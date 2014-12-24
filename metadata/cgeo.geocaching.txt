@@ -25,7 +25,7 @@ Build:1,1
     disable=wip
     forceversion=yes
     forcevercode=yes
-    commit=market_20140918
+    commit=market_20141104
     subdir=main
     gradle=yes
     init=cp templates/keys.xml res/values/ && mkdir repackageMapsforge0.2/ && \
