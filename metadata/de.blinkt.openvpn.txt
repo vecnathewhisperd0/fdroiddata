@@ -128,7 +128,7 @@ Build:0.6.26,107
     commit=v0.6.26-production
     subdir=main
     gradle=normal
-    build=./misc/build-native.sh USE_BREAKPAD=0
+    build=PATH=$$NDK$$:$PATH ./misc/build-native.sh USE_BREAKPAD=0
     buildjni=no
     ndk=r10d
 
