@@ -57,7 +57,7 @@ Build:0.6.8,33
     rm=custom_rules.xml
     target=android-19
 
-Auto Update Mode:None
+Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:0.6.8
 Current Version Code:33
