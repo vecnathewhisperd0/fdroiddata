@@ -1,0 +1,35 @@
+Categories: Children
+License: Apache2
+
+Web Site: http://sugarizer.org
+Source Code: https://github.com/llaske/Sugarizer
+Issue Tracker: http://bugs.sugarlabs.org/
+
+
+Summary: Sugarizer is a learning platform for children
+Description:
+The Sugar Learning Platform is a leading learning platform developed for the One Laptop per Child project and used every day by nearly 3 million children around the world. 
+With Sugarizer, you could discover the Sugar Learning Platform from your Android device.
+Sugarizer include a bunch of educative activities coming from the Sugar Learning Platform.
+Sugarizer is an open source software under Apache 2 licence, source code is available on Github.
+.
+
+
+# Repo and Build fields only matter in source-built apps
+Repo Type: git
+Repo: https://github.com/llaske/sugarizer_android_build.git
+
+# One for each source build
+# Build:<version>,<version code>
+#     commit=<tag/commit/rev>
+#     [...]
+#
+
+
+Auto Update Mode:None 
+Update Check Mode: None
+Current Version: 0.6
+Current Version Code: 1
+
+
+
