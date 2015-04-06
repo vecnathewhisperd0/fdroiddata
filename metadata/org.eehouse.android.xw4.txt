@@ -65,14 +65,27 @@ Build:4.4 beta 60,52
         scripts/genvers.sh XWords4 xw4 > ant_out.txt
     buildjni=yes
 
-Build:4.4 beta 85,77
-    disable=cannot get genvers to run properly
+Build:4.4 beta 85,78
     commit=android_beta_85
     subdir=xwords4/android/XWords4
-    prebuild=../scripts/gen_gcmid.sh xw4 > src/org/eehouse/android/xw4/GCMConsts.java && \
-        cd .. && \
-        ./scripts/genvers.sh XWords4 xw4 true true
-    buildjni=yes
+    prebuild= \
+        android update project -p . -t android-14 && \
+        ../scripts/gen_gcmid.sh xw4 > src/org/eehouse/android/xw4/GCMConsts.java && \
+        ../scripts/genvers.sh xw4 XWords4 true true && \
+        rm -rf ../XWords4-dbg && \
+        true
+    buildjni=no
+
+Build:4.4 beta 95,88
+    commit=android_beta_95
+    subdir=xwords4/android/XWords4
+    prebuild= \
+        android update project -p . -t android-14 && \
+        ../scripts/gen_gcmid.sh xw4 > src/org/eehouse/android/xw4/GCMConsts.java && \
+        ../scripts/genvers.sh xw4 XWords4 true true && \
+        rm -rf ../XWords4-dbg && \
+        true
+    buildjni=no
 
 Auto Update Mode:None
 Update Check Mode:Tags
