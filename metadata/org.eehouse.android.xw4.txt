@@ -73,6 +73,7 @@ Build:4.4 beta 85,78
         ../scripts/gen_gcmid.sh xw4 > src/org/eehouse/android/xw4/GCMConsts.java && \
         ../scripts/genvers.sh xw4 XWords4 true true && \
         rm -rf ../XWords4-dbg && \
+		sed -i 's,NDK_ROOT,ANDROID_NDK,' ../scripts/ndkbuild.sh && \
         true
     buildjni=no
 
@@ -84,6 +85,7 @@ Build:4.4 beta 95,88
         ../scripts/gen_gcmid.sh xw4 > src/org/eehouse/android/xw4/GCMConsts.java && \
         ../scripts/genvers.sh xw4 XWords4 true true && \
         rm -rf ../XWords4-dbg && \
+		sed -i 's,NDK_ROOT,ANDROID_NDK,' ../scripts/ndkbuild.sh && \
         true
     buildjni=no
 
