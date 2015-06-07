@@ -21,8 +21,10 @@ Build:4.2,13
 Build:4.3,43
     commit=d0a8de63d8f25880ef5be5e471d9daaca196fd68
 
+Build:4.4,44
+    commit=1fa5c3f531cad31b72e04d4165c108cc6966cd2c
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:4.3
-Current Version Code:43
-
+Current Version:4.4
+Current Version Code:44
