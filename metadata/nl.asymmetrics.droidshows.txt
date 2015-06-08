@@ -15,16 +15,16 @@ that you have or have not seen.
 Repo Type:git
 Repo:https://github.com/ltGuillaume/DroidShows
 
-Build:4.2,13
-    commit=cd464a47be4cbcda2a50cd1bdebea586d87e671e
-
 Build:4.3,43
     commit=d0a8de63d8f25880ef5be5e471d9daaca196fd68
 
 Build:4.4,44
     commit=78fc90f13fac7bcba89fc297daeabf10ea1ddcf5
 
+Build:4.5,45
+    commit=23024491448fbc1e389c15871af8472789005bdf
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:4.4
-Current Version Code:44
+Current Version:4.5
+Current Version Code:45
