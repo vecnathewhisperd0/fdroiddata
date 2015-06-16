@@ -1,0 +1,54 @@
+# F-Droid metadata template
+#
+# See http://f-droid.org/manual for more details
+#
+# Fields that are commented out are optional
+#
+# Single-line fields start right after the colon (without whitespace).
+ 
+# Disabled: (if an app must vanish from the repo)
+# AntiFeatures: (comma-separated) (possible values hard-coded in fdroidserver)
+Categories: (comma-separated)
+License:
+
+Web Site: http://btappnder.freeiz.com
+Source Code: https://github.com/SpEcHiDe/WhatsAppTransmitter
+Issue Tracker: https://github.com/SpEcHiDe/WhatsAppTransmitter/issues
+
+# Donate: (web link)
+# FlattrID: (number)
+# Bitcoin: (bitcoin address)
+
+# Name: (to override the name of the app in the index)
+Summary: transmit using WhatsApp
+Description:
+an android application to send any type of file using
+the popular internet messaging service WhatsApp.
+this is achieved by uploading the file to a temporary server
+from where the user can download and get the file.
+.
+
+# Requires Root: Yes (f not having root breaks the app or renders it useless)
+
+# Repo and Build fields only matter in source-built apps
+Repo Type: git
+Repo: https://github.com/SpEcHiDe/WhatsAppTransmitter
+
+# One for each source build
+Build:8,8
+     commit=61500457277b1caa2ad88de129093c2c9d3995ae
+#     [...]
+#
+# For a complete list of flags, see the manual
+
+# Maintainer Notes:
+# Here go the notes to take into account for future updates, builds, etc.
+# Will be published in the wiki if present.
+# .
+
+Auto Update Mode: None
+Update Check Mode: None
+Current Version: 8
+Current Version Code: 8
+
+# No Source Since: First version to be partially or completely missing upstream
