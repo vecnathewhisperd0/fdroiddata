@@ -15,12 +15,12 @@ Status: Testing.
 Repo Type:git
 Repo:https://github.com/pires/android-obd-reader.git
 
-Build:2.0-rc1,12
-    commit=2.0-RC1
+Build:2.0-RC2,13
+    commit=2.0-RC2
     gradle=yes
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.0-rc1
-Current Version Code:12
+Current Version:2.0-RC2
+Current Version Code:13
 
