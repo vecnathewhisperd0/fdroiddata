@@ -68,20 +68,28 @@ Build:4.4 beta 60,52
 Build:4.4 beta 85,78
     commit=android_beta_85
     subdir=xwords4/android/XWords4
-    prebuild= \
-        android update project -p . -t android-14 && \
+    prebuild=android update project -p . -t android-14 && \
         ../scripts/gen_gcmid.sh xw4 > src/org/eehouse/android/xw4/GCMConsts.java && \
         ../scripts/genvers.sh xw4 XWords4 true true && \
         rm -rf ../XWords4-dbg && \
-		sed -i 's,NDK_ROOT,ANDROID_NDK,' ../scripts/ndkbuild.sh && \
+        sed -i 's,NDK_ROOT,ANDROID_NDK,' ../scripts/ndkbuild.sh && \
         true
     buildjni=no
 
 Build:4.4 beta 96,89
     commit=android_beta_96
     subdir=xwords4/android/XWords4
-    prebuild= \
-        android update project -p . -t android-14 && \
+    prebuild=android update project -p . -t android-14 && \
+        ../scripts/gen_gcmid.sh xw4 > src/org/eehouse/android/xw4/GCMConsts.java && \
+        ../scripts/genvers.sh xw4 XWords4 true true && \
+        rm -rf ../XWords4-dbg && \
+        true
+    buildjni=no
+
+Build:4.4 beta 97,90
+    commit=android_beta_97
+    subdir=xwords4/android/XWords4
+    prebuild=android update project -p . -t android-14 && \
         ../scripts/gen_gcmid.sh xw4 > src/org/eehouse/android/xw4/GCMConsts.java && \
         ../scripts/genvers.sh xw4 XWords4 true true && \
         rm -rf ../XWords4-dbg && \
@@ -90,6 +98,6 @@ Build:4.4 beta 96,89
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:4.4 beta 95
-Current Version Code:88
+Current Version:4.4 beta 97
+Current Version Code:90
 
