@@ -124,9 +124,19 @@ Build:5.30.34,48
     commit=5.30.34
     subdir=app
     gradle=yes
+    
+Build:1.10.52,66
+    commit=330f5aacd9b785f5b7271b7b807734f71324b61f
+    subdir=app
+    gradle=yes
+    
+Build:1.10.53,67
+    commit=85c78a257fe91f3b871600511d7ff949446c3fc5
+    subdir=app
+    gradle=yes
+    
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:5.30.34
-Current Version Code:48
-
+Current Version:1.10.53
+Current Version Code:67
