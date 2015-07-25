@@ -1,6 +1,5 @@
 Categories:Internet
 License:GPLv2
-Web Site:https://github.com/kost/NetworkMapper
 Source Code:https://github.com/kost/NetworkMapper
 Issue Tracker:https://github.com/kost/NetworkMapper/issues
 FlattrID:4445428
@@ -8,20 +7,22 @@ Bitcoin:1588ArbHPcb5VtpZPQgue9iPZ9LiA1eEjF
 Litecoin:LSHhNebrbzLqRYR5JzXk9NkgEiXLKhQvZW
 
 Auto Name:Network Mapper
-Summary:Network Mapper is unofficial Android frontend for well known Nmap scanner
+Summary:Network Mapper is Android frontend for Nmap
 Description:
 Frontend will help you to download and install Nmap as well as use it.
-Nmap will help you to discover hosts, protocols, open ports, services and its configuration and vulnerabilities on networks.
+Nmap will help you to discover hosts, protocols, open ports, services and 
+its configuration and vulnerabilities on networks.
 
 Frontend supports all known Android architectures: arm, mips and x86.
 
 Nmap binaries are transferred using HTTPS by default.
 
-Network Mapper is released under open source license and source is available on GitHub:
-https://github.com/kost/NetworkMapper
+Network Mapper is released under open source license and source is available 
+on GitHub:
+[https://github.com/kost/NetworkMapper]
 
 Android binary versions of Nmap are built using following port:
-https://github.com/kost/nmap-android
+[https://github.com/kost/nmap-android]
 .
 
 Repo Type:git
@@ -30,7 +31,7 @@ Repo:https://github.com/kost/NetworkMapper.git
 Build:1.7,8
     commit=6020e7aa52
     gradle=yes
-    subdir=app/
+    subdir=app
 
 Auto Update Mode:None
 Update Check Mode:Static
