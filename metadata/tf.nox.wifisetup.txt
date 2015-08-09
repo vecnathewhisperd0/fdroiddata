@@ -1,0 +1,23 @@
+AntiFeatures:
+Categories: security
+License: Apache2
+Web Site:
+Source Code: https://github.com/eqvinox/wifisetup/commits/camp2015
+Issue Tracker:
+Donate:
+
+Summary: Creates a secure Wifi connection entry for CCC Camp 2015
+Description:
+Creates a Wifi connection entry for Camp 2015, with proper
+certificate name and CA checks.
+.
+
+Repo Type: git
+Repo: https://github.com/eqvinox/wifisetup
+
+Build: 0.17,20150809
+    commit=6c3899491e8689871887ec5b513a6a69310f7b03
+    subdir=android
+
+Update Check Mode: None
+
