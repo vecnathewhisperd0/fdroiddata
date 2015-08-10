@@ -8,47 +8,38 @@
  
 # Disabled: (if an app must vanish from the repo)
 # AntiFeatures: (comma-separated) (possible values hard-coded in fdroidserver)
-Categories: (comma-separated)
-License:
+Categories:Phone & SMS
+License:Apache2
 
-Web Site: (web link)
-Source Code: (web link)
-Issue Tracker: (web link)
+Web Site:http://fairphone.mudar.ca/
+Source Code:https://github.com/mudar/Fairphone
+Issue Tracker:https://github.com/mudar/Fairphone/issues
 
 # Donate: (web link)
 # FlattrID: (number)
 # Bitcoin: (bitcoin address)
 
 # Name: (to override the name of the app in the index)
-Summary: (one sentence, no more than 30-50 chars, no trailing punctuation)
+Summary:A flight-mode timer
 Description:
-Description of what the app does, starting on a new line. It should be as
-objective as possible and wrapped at 80 chars (except links and list items).
+We become more conscious of our phones as our lives become increasingly connected. Would you like to disconnect, if only for a moment? Your phone will go silent and disconnect from the world: no e-mail, no status updates, no SMS and no phone calls. Choose how long you wish to disconnect (up to 12 hours).
 
-A blank line means a line break, i.e. the end of a paragraph.
+Originally developed by Kwame Corporation for Fairphone 1, Peace of Mind+ aims simply to bring this beautiful app to other devices, and for future Fairphone-owners patiently waiting to receive their phone!
 
-Bulleted lists can be used:
+Peace of Mind+ is an open-source project released under the Apache License version 2.0.
 
-* Item 1
-* Item 2
-
-Links can be added like this:
-[https://github.com/org/project/raw/master/res/raw/changelog.xml Changelog]
-
-Links to other apps too: [[some.other.app]]
-
-To close a multiline field, add a new line with only a dot.
+App works without root, but form Android 4.2+ root access is needed to switch to flight mode. Without root access the app will switch the phone to silent mode only.
 .
 
-# Requires Root: Yes (f not having root breaks the app or renders it useless)
+Requires Root:No
 
 # Repo and Build fields only matter in source-built apps
-Repo Type: (git, git-svn, svn, hg or bzr)
-Repo: (repo url, don't use auth
+Repo Type:git
+Repo:https://github.com/mudar/Fairphone.git
 
 # One for each source build
-Build:<version>,<version code>
-     commit=<tag/commit/rev>
+Build:1.2,12
+     commit=3c8548675f
 #     [...]
 #
 # For a complete list of flags, see the manual
@@ -58,9 +49,9 @@ Build:<version>,<version code>
 # Will be published in the wiki if present.
 # .
 
-Auto Update Mode: (see the manual)
-Update Check Mode: (see the manual)
-Current Version: (current version name)
+Auto Update Mode:None
+Update Check Mode:Static
+Current Version:1.2
 Current Version Code: (current version code, i.e. number)
 
 # No Source Since: First version to be partially or completely missing upstream
