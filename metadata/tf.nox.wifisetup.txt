@@ -15,8 +15,8 @@ certificate name and CA checks.
 Repo Type: git
 Repo: https://github.com/eqvinox/wifisetup
 
-Build: 0.17,20150809
-    commit=6c3899491e8689871887ec5b513a6a69310f7b03
+Build: 0.18,20150810
+    commit=f766dfb30373a022cd131f2e189bf4d21b55a49e
     subdir=android
 
 Update Check Mode: None
