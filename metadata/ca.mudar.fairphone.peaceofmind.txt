@@ -49,9 +49,9 @@ Build:1.2,12
 # Will be published in the wiki if present.
 # .
 
-Auto Update Mode:None
-Update Check Mode:Static
+Auto Update Mode:Version %v
+Update Check Mode:RepoManifest
 Current Version:1.2
-Current Version Code: (current version code, i.e. number)
+Current Version Code:12
 
 # No Source Since: First version to be partially or completely missing upstream
