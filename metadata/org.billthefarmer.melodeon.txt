@@ -46,8 +46,29 @@ Build:1.01,101
         rm -rf ndk-r9d/
     buildjni=no
 
+Build:1.02,102
+    commit=v1.02
+    scanignore=jni/libs
+    scandelete=libs
+    buildjni=yes
+
+Build:1.03,103
+    commit=v1.03
+    scanignore=jni/libs
+    scandelete=libs
+    buildjni=yes
+
+Maintainer Notes:
+As of version 1.02, does not require the convoluted build process used
+for previous versions. This is because the build process:
+
+* Builds for arm, mips and x86 architectures
+* Uses prebuilt shared libraries
+* Uses custom rules to remove prebuilt shared libraries after NDK build and before SDK build
+.
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.01
-Current Version Code:101
+Current Version:1.03
+Current Version Code:103
 

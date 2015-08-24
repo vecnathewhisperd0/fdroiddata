@@ -4,6 +4,7 @@ Web Site:http://www.servalproject.org
 Source Code:https://github.com/servalproject/batphone
 Issue Tracker:https://github.com/servalproject/batphone/issues
 Donate:http://www.servalproject.org/donations
+Changelog:https://github.com/servalproject/batphone/blob/development/CURRENT-RELEASE.md
 
 Auto Name:Serval Mesh
 Summary:Peer to peer communications
@@ -33,8 +34,6 @@ so the app will ask for root if you try to enable adhoc mode.
 
 The Java/XML part is distributable under the GNU GPLv3 while the serval-dna
 (distributed number architecture) project is GPLv2.
-
-[https://github.com/servalproject/batphone/blob/development/CURRENT-RELEASE.md Release notes]
 .
 
 Repo Type:git
@@ -66,6 +65,17 @@ Build:0.91,2120
     submodules=yes
     forceversion=yes
     buildjni=no
+
+Build:0.92,2301
+    disable=remove signing
+    commit=0.92
+    submodules=yes
+    forceversion=yes
+    buildjni=no
+    rm=gdbserver,jni/serval-dna/tests/testdata/serval.keyring-1
+    scandelete=jni/opus/celt/tests/
+    prebuild=sed -i 's;<enforce-version-regex;<!--enforce-version-regex;' build.xml && \
+        sed -i 's;</enforce-version-regex>;</enforce-version-regex-->;' build.xml
 
 # Releases are in master branch, beta in development; run ant version to get version info
 Auto Update Mode:None

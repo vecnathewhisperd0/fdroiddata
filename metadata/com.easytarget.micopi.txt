@@ -1,6 +1,6 @@
 Categories:Office
 License:Apache2
-Web Site:https://easytargetmixel.github.io/micopi_android/
+Web Site:https://easytargetmixel.github.io/micopi_android
 #Web Site:http://micopi.easy-target.org/ ## points to the playstore
 Source Code:https://github.com/easytargetmixel/micopi_android
 Issue Tracker:https://github.com/easytargetmixel/micopi_android/issues
@@ -46,8 +46,20 @@ Build:2.9.2,16
     commit=b7e788da1d88c0ec64727d4226f71978344ba651
     gradle=yes
 
+Build:3,18
+    commit=9c4995278b4911bba280267f04847f0114d89000
+    gradle=yes
+
+Build:3,19
+    commit=43eea1ab65f8ddc7909ee50395eab7b1a5067f77
+    gradle=yes
+
+Build:3.1,21
+    commit=fd29b6d1934da654479fe963f19bbe22ea5e36b3
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:2.9.2
-Current Version Code:16
+Current Version:3.1
+Current Version Code:21
 

@@ -2,7 +2,8 @@ Categories:System
 License:GPLv3+
 Web Site:https://f-droid.org
 Source Code:https://gitlab.com/fdroid/fdroidclient
-Issue Tracker:https://f-droid.org/issues
+Issue Tracker:https://gitlab.com/fdroid/fdroidclient/issues
+Changelog:https://gitlab.com/fdroid/fdroidclient/raw/master/CHANGELOG.md
 Donate:https://f-droid.org/about
 FlattrID:343053
 Bitcoin:15u8aAPK4jJ5N8wpWJ5gutAyyeHtKX5i18
@@ -22,8 +23,6 @@ you wish, but there are many good reasons for using a client/repository setup:
 * Find apps via categories and searchable descriptions
 * Access associated urls for donations, source code etc.
 * Stay safe by checking repo index signatures and apk hashes
-
-[http://f-droid.org/posts/category/changelog Changelog]
 .
 
 Repo Type:git
@@ -279,9 +278,171 @@ Build:0.77-test,770
     prebuild=./ant-prepare.sh
     update=.
 
-Archive Policy:8 versions
+Build:0.78,780
+    commit=0.78
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.79-test,790
+    commit=0.79-test
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.80-test,800
+    commit=0.80-test
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.81-test,810
+    commit=0.81-test
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.82,820
+    commit=0.82
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.83,830
+    commit=0.83
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.84-test,840
+    commit=0.84-test
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.85-test,850
+    commit=0.85-test
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.86-test,860
+    commit=0.86-test
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.87-test,870
+    commit=0.87-test
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.88,880
+    commit=0.88
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.89-test,890
+    commit=0.89-test
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.90-test,900
+    commit=0.90-test
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.91,910
+    commit=0.91
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.92,920
+    commit=0.92
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.93-test,930
+    commit=0.93-test
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.94-test,940
+    commit=0.94-test
+    subdir=F-Droid
+    submodules=yes
+    gradle=yes
+
+Build:0.95-alpha1,95001
+    commit=0.95-alpha1
+    subdir=F-Droid
+    submodules=yes
+    gradle=yes
+
+Build:0.95-alpha2,95002
+    commit=v0.95-alpha2
+    subdir=F-Droid
+    submodules=yes
+    gradle=yes
+
+Build:0.95,95050
+    commit=v0.95
+    subdir=F-Droid
+    submodules=yes
+    gradle=yes
+
+Build:0.95.1,95150
+    commit=v0.95.1
+    subdir=F-Droid
+    submodules=yes
+    gradle=yes
+
+Build:0.96-alpha1,96001
+    commit=v0.96-alpha1
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.96-alpha2,96002
+    commit=v0.96-alpha2
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.96-alpha3,96003
+    commit=v0.96-alpha3
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.96-alpha4,96004
+    commit=v0.96-alpha4
+    subdir=F-Droid
+    gradle=yes
+
+Archive Policy:10 versions
 Auto Update Mode:None
 Update Check Mode:Static
-Current Version:0.76
-Current Version Code:760
+Current Version:0.95.1
+Current Version Code:95150
 

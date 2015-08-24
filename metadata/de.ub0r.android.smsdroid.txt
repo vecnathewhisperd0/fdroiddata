@@ -4,6 +4,7 @@ License:GPLv3
 Web Site:https://code.google.com/p/websmsdroid
 Source Code:https://github.com/felixb/smsdroid
 Issue Tracker:https://code.google.com/p/websmsdroid/issues
+Changelog:https://github.com/felixb/smsdroid/blob/HEAD/CHANGELOG.md
 
 Auto Name:SMSdroid
 Summary:Send and receive SMS messages
@@ -55,8 +56,22 @@ Build:1.5.1,7151000
         echo "android.library.reference.2=$$ub0rlib$$" >> project.properties && \
         echo "android.library.reference.3=$$MobAdMob$$" >> project.properties
 
+Build:1.6.4,7161004
+    disable=see maintainer notes
+    commit=SMSdroid-1.6.4
+    subdir=SMSdroid
+    gradle=yes
+    srclibs=ub0rlib@299744672d0e4805db40b189e51c98c5c59e9561
+    prebuild=sed -i -e '/com.google.android.gms:play-services/d' -e '/repositories/a/*' -e '/mavenCentral/i*/' -e '/mavenCentralamavenLocal()/'  build.gradle
+
+Maintainer Notes:
+TODO:
+* Re-add admob?
+* Install ub0rlib to mavenLocal()
+.
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.5.1
-Current Version Code:7151000
+Current Version:1.6.5
+Current Version Code:9165000
 

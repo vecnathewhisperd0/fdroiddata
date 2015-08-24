@@ -1,16 +1,13 @@
 Categories:Internet
-License:MIT
-Web Site:
-Source Code:https://github.com/Nutomic/syncthing-android
-Issue Tracker:https://github.com/Nutomic/syncthing-android/issues
-Donate:https://tip4commit.com/github/Nutomic/syncthing-android
+License:MPL2
+Web Site:https://syncthing.net
+Source Code:https://github.com/syncthing/syncthing-android
+Issue Tracker:https://github.com/syncthing/syncthing-android/issues
+Donate:https://tip4commit.com/github/syncthing/syncthing-android
 
 Auto Name:Syncthing
 Summary:File synchronization
 Description:
-This is the first attempt at an Android port of syncthing. Please understand
-that this is not stable yet, and read the first start dialog carefully.
-
 Syncthing replaces proprietary sync and cloud services with something open,
 trustworthy and decentralized. Your data is your data alone and you deserve to
 choose where it is stored, if it is shared with some third party and how it's
@@ -18,7 +15,7 @@ transmitted over the Internet.
 .
 
 Repo Type:git
-Repo:https://github.com/Nutomic/syncthing-android.git
+Repo:https://github.com/syncthing/syncthing-android.git
 
 Build:0.4.8,22
     commit=80072194b94e0ca0f81e5bc3b88c8f88867e2e5c
@@ -160,8 +157,99 @@ Build:0.5.13,50
     submodules=yes
     gradle=fat
 
+Build:0.5.14,51
+    disable=failing build
+    commit=0.5.14
+    submodules=yes
+    gradle=fat
+
+Build:0.5.15,52
+    commit=0.5.15
+    submodules=yes
+    gradle=fat
+
+Build:0.5.16,53
+    commit=0.5.16
+    submodules=yes
+    gradle=fat
+
+Build:0.5.17,54
+    commit=0.5.17
+    submodules=yes
+    gradle=fat
+
+Build:0.5.18,55
+    commit=0.5.18
+    submodules=yes
+    gradle=fat
+
+Build:0.5.20,57
+    commit=0.5.20
+    submodules=yes
+    gradle=fat
+
+Build:0.5.21,58
+    commit=0.5.21
+    submodules=yes
+    gradle=fat
+
+Build:0.5.22,59
+    commit=0.5.22
+    submodules=yes
+    gradle=fat
+
+Build:0.5.24,61
+    commit=0.5.24
+    submodules=yes
+    gradle=fat
+
+Build:0.5.26,63
+    commit=0.5.26
+    submodules=yes
+    gradle=fat
+
+Build:0.5.27,64
+    commit=0.5.27
+    submodules=yes
+    gradle=fat
+
+Build:0.5.28,65
+    commit=0.5.28
+    submodules=yes
+    gradle=fat
+
+Build:0.6.0,66
+    commit=0.6.0
+    submodules=yes
+    gradle=fat
+
+Build:0.6.1,67
+    commit=0.6.1
+    submodules=yes
+    gradle=fat
+
+Build:0.6.2,68
+    commit=0.6.2
+    submodules=yes
+    gradle=fat
+
+Build:0.6.3,69
+    commit=0.6.3
+    submodules=yes
+    gradle=fat
+
+Build:0.6.4,70
+    commit=0.6.4
+    submodules=yes
+    gradle=fat
+
+Build:0.6.5,71
+    commit=0.6.5
+    submodules=yes
+    gradle=fat
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.5.13
-Current Version Code:50
+Current Version:0.6.5
+Current Version Code:71
 

@@ -9,17 +9,31 @@ Bitcoin:14vipppSvCG7VdvoYmbhKZ8DbTfv9U1QfS
 Auto Name:Kontalk
 Summary:Community-driven messaging
 Description:
-Kontalk is an instant messaging system - primarly designed for embedded
-devices, especially smartphones. It is designed to be distributed, based on
-community-driven infrastructure.
+'''Follow @kontalknet on Twitter or identi.ca to keep up to date with the latest
+changes and on service status!'''
 
-Send and receive messages for free with other Kontalk users.
-Kontalk uses your phone number to identify yourself and automatically adds
-other Kontalk users you can talk with by looking in your contact list.
-You can send any text messages and image (other media types coming soon).
-Even in server-to-client communication, your phone number is irreversibly
-encrypted, so even the server can't know your phone number: it is used only
-for sending you the verification code, then it will be discarded.
+Kontalk is a secure instant messenger, allowing you to send and receive text,
+image and voice messages (other file types coming soon) to and from other
+Kontalk users completely free of charge (*).
+
+* '''Your phone number is your ID.''' No usernames or passwords
+* '''It automatically finds other Kontalk users''' by looking at your address book, making it even easier to start chatting on Kontalk with your friends
+* '''End-to-end encryption''' ensures safe and private conversations, so that only you and the person you are talking to can read them
+* Your and all phone numbers used on the network are irreversibly encrypted
+* It supports multiple devices, making it very easy to start chatting on your phone and continue the conversation on your tablet
+* Based on open standards: XMPP and OpenPGP
+
+The network relies on community donations to keep the infrastructure running, so
+if you can, please donate on [http://kontalk.net/ kontalk.net]. Even small
+donations matter.
+
+You can find all permissions used by the app explained at
+[https://github.com/kontalk/androidclient/wiki/Android-client-permissions this page].
+
+This version has been stripped of all Google components, meaning no support for
+push notifications.
+
+(*) Carrier fees for Internet traffic may apply
 .
 
 Repo Type:git
@@ -142,15 +156,136 @@ Build:3.0-beta3,36
     gradle=basic
     prebuild=sed -i -e "/googleplayCompile/d" build.gradle
 
-Maintainer Notes:
-* make sure mavenLocal works on build server
-* replace commit with tag once released
-Auto Update Mode:Version %v
-Update Check Mode:Tags ^[0-9.]*$
-.
+Build:3.0-beta4,37
+    commit=v3.0-beta4
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
 
-Auto Update Mode:None
-Update Check Mode:Tags
-Current Version:3.0-beta3
-Current Version Code:36
+Build:3.0-beta5,38
+    commit=v3.0-beta5
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0-beta6,39
+    commit=v3.0-beta6
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0-beta7,40
+    commit=v3.0-beta7
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0-beta8,41
+    commit=v3.0-beta8
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0-beta8.1,42
+    commit=v3.0-beta8.1
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0-beta9,43
+    commit=v3.0-beta9
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0-rc1,44
+    commit=v3.0-rc1
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0-rc2,45
+    commit=v3.0-rc2
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0-rc3,48
+    commit=v3.0-rc3
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0-rc4,50
+    commit=v3.0-rc4
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0,52
+    commit=v3.0
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0.1,54
+    commit=v3.0.1
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0.2,56
+    commit=v3.0.2
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0.3,58
+    commit=v3.0.3
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.1-beta1,70
+    commit=v3.1-beta1
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags ^[0-9.]*$
+Current Version:3.0.3
+Current Version Code:58
 

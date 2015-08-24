@@ -5,7 +5,7 @@ Source Code:https://github.com/smeir/Berlin-Vegan-Guide
 Issue Tracker:https://github.com/smeir/Berlin-Vegan-Guide/issues
 
 Auto Name:Berlin Vegan
-Summary:Guide for vegan shopping in Berlin
+Summary:Guide for vegan dining and shopping in Berlin
 Description:
 Quick access to an overview of the vegan food and shopping possibilities in
 Berlin, Germany -- even while you are out and about. We have arranged all
@@ -37,17 +37,40 @@ Repo Type:git
 Repo:https://github.com/smeir/Berlin-Vegan-Guide
 
 Build:1.6,18
-    disable=builds,install,starts but not working
-    commit=14cb40f2597e0c5fec66ef0b65b7c2be51e19daf
+    commit=116c661d029f7f23cb2be4ad168dc8554dd16794
     subdir=platforms/android
-    srclibs=1:Cordova@3.2.0
+    init=echo "# Just create the file" > project.properties
+    srclibs=1:Cordova@3.2.0,YUICompressor@v2.4.8
     rm=lib/tools/ycompressor.jar,platforms/android/libs/cordova*jar,platforms/android/libs/phonegap*jar,platforms/android/local.properties,platforms/android/build.properties,platforms/android/default.properties,platforms/android/build.xml
-    prebuild=cd ../../ && \
-        ant prod.android
     target=android-19
+    build=pushd $$YUICompressor$$ && \
+        ant && \
+        popd && \
+        cp $$YUICompressor$$/build/yuicompressor-2.4.8.jar ../../lib/tools/ycompressor.jar && \
+        cd ../../ && \
+        ant prod.android
+
+Build:1.9,21
+    commit=47f0850acf58e80e7f0d8ec75251408d6bcefddb
+    subdir=platforms/android
+    init=echo "# Just create the file" > project.properties
+    srclibs=1:Cordova@3.2.0,YUICompressor@v2.4.8
+    rm=lib/tools/ycompressor.jar,platforms/android/libs/cordova*jar,platforms/android/libs/phonegap*jar,platforms/android/local.properties,platforms/android/build.properties,platforms/android/default.properties,platforms/android/build.xml
+    target=android-19
+    build=pushd $$YUICompressor$$ && \
+        ant && \
+        popd && \
+        cp $$YUICompressor$$/build/yuicompressor-2.4.8.jar ../../lib/tools/ycompressor.jar && \
+        cd ../../ && \
+        ant prod.android
+
+Maintainer Notes:
+* YUICompressor has jars.
+* Remove "init" on following versions when we fixed regression in fdroidserver.
+.
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.6
-Current Version Code:18
+Current Version:1.9
+Current Version Code:21
 

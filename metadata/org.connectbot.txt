@@ -1,8 +1,9 @@
 Categories:Internet
 License:Apache2
-Web Site:http://connectbot.org/
+Web Site:http://connectbot.org
 Source Code:https://github.com/connectbot/connectbot
 Issue Tracker:https://github.com/connectbot/connectbot/issues
+Changelog:https://github.com/connectbot/connectbot/blob/master/CHANGELOG.md
 
 Auto Name:ConnectBot
 Summary:SSH and local shell client
@@ -45,8 +46,31 @@ Build:1.8.1,371
     rm=libs/x86/libcom_google_ase_Exec.so,libs/armeabi/libcom_google_ase_Exec.so
     buildjni=yes
 
+Build:1.8.2,372
+    commit=v1.8.2
+    rm=libs/x86/libcom_google_ase_Exec.so,libs/armeabi/libcom_google_ase_Exec.so
+    buildjni=yes
+
+Build:1.8.3,373
+    commit=v1.8.3
+    rm=libs/x86/libcom_google_ase_Exec.so,libs/armeabi/libcom_google_ase_Exec.so
+    buildjni=yes
+
+Build:1.8.4,374
+    commit=v1.8.4
+    rm=libs/x86/libcom_google_ase_Exec.so,libs/armeabi/libcom_google_ase_Exec.so
+    buildjni=yes
+
+Build:1.8.5,375
+    commit=v1.8.5
+    gradle=yes
+    subdir=app
+    disable=build works, but uses personal maven repo.. connectbot-sshlib also uses a personal repo..
+    srclibs=connectbot-sshlib@2.2.0
+    prebuild=sed -i -e '/maven {/imavenLocal()\njcenter()\n' build.gradle && sed -i -e '/maven {/,+2d' build.gradle
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.8.1
-Current Version Code:371
+Current Version:1.8.5
+Current Version Code:375
 

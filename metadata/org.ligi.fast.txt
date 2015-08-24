@@ -95,8 +95,33 @@ Build:5.9,59
     subdir=android
     gradle=forFDroid,withExtras
 
+Build:6.0,60
+    commit=6.0
+    subdir=android
+    gradle=forFDroid,withExtras
+
+Build:6.1,61
+    commit=6.1
+    subdir=android
+    gradle=forFDroid,withExtras
+
+Build:6.2,62
+    commit=6.2
+    subdir=android
+    gradle=forFDroid,withExtras
+
+Build:6.3,63
+    commit=6.3
+    subdir=android
+    gradle=forFDroid,withExtras
+
+Build:6.4,64
+    commit=6.4
+    subdir=android
+    gradle=forFDroid,withExtras
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:5.9
-Current Version Code:59
+Current Version:6.4
+Current Version Code:64
 

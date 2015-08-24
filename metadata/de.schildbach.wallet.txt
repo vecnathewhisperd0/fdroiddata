@@ -1,8 +1,9 @@
 Categories:Office
 License:GPLv3
-Web Site:http://wallet.schildbach.de/
+Web Site:http://wallet.schildbach.de
 Source Code:https://github.com/schildbach/bitcoin-wallet
 Issue Tracker:https://github.com/schildbach/bitcoin-wallet/issues
+Changelog:https://raw.github.com/schildbach/bitcoin-wallet/prod/wallet/CHANGES
 Bitcoin:1HkX6X8EakdsgAysL93oKrWiXGPbFiG1xV
 
 Auto Name:Bitcoin
@@ -29,8 +30,6 @@ contained in the wallet, should the data of the app be lost.
 
 There's a separate version of this application that uses a test version of the
 Bitcoin network: [[de.schildbach.wallet_test]].
-
-[https://raw.github.com/schildbach/bitcoin-wallet/prod/wallet/CHANGES Changelog]
 .
 
 # BitcoinJWallet (author's fork) is rebased each version so old commits wont work
@@ -260,23 +259,168 @@ Build:4.16,206
     srclibs=BitcoinJWallet@v0.12.2
     build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
 
+Build:4.17,207
+    commit=407516d
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.2
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.18,208
+    commit=2ec8100f736d1cf77bf2881306b43462b834a461
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.2
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.19,209
+    commit=300448212108ecb5cdb56b10584fb2c79c4b4f21
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.2
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.21,211
+    commit=97535a8bc79e6eb4778b10ab3f9b96008c57b187
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.2
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.22,212
+    commit=c063b84ca6744eeb106c3cc87443a714580e29a4
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.3
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.23,213
+    commit=dafb4a497a53167b617eab3b7ab95358cbb89495
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.3
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.24,214
+    commit=f4c3c9935bf60f4f4cf9f21bbccd071584adbc97
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.3
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.25,215
+    commit=2aa214416e53331cbd00fc4662762fd7aa10ed4a
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.3
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.27,217
+    commit=74c784cafedfbb9a205aad1be64a9f09feab1c9f
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.3
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.28,218
+    commit=400229a0521265f2eb63729b20cc16b2ec2b661f
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.3
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.29,219
+    commit=1193bfb8cb916fa2296ede6082508ae6aa9c7747
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.3
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.30,220
+    commit=f46c2e3dee3863eb174a1b65d571f331b53b6ca1
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.3
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.31,221
+    commit=43e9bde306687ae73cb1c91e920dc3f6ab616286
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.3
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.32,222
+    commit=c2c9ab693eb078510f5beea6149bfffeb9f50395
+    subdir=wallet
+    maven=yes@..
+    srclibs=BitcoinJWallet@v0.12.3
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.33,223
+    commit=7b0f3017833d3ef917ffcfcb7227317c15d3b896
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.12.3
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.34,224
+    commit=829cb6e7cc31b389339f506719b2d6a234684499
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.12.3
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.35,225
+    commit=1d543db9f550a6210616d7aefde7dd3a8d66fd1c
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.12.3
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.36,226
+    disable=bitcoinj issue
+    commit=7a55f9fa36e411a9ba7dd959712831d739826f83
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.13.1
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.37,227
+    commit=6cab0aaff1dacf309d0174a4a87dadd83528a0bb
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.13.1
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.38,228
+    commit=76454cc0d075ebd3fd3139f9434acc89bff5b854
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.13.1
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.39,229
+    commit=41a7640b2e0fed9a7bf92cb49e2f4035121e486b
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.13.2
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
 Maintainer Notes:
 See wallet/{README,CHANGES} or git log for info about what BitcoinJ tag to use.
 Use latest commit in 'prod' branch, which is a rebase on top of the latest tag.
 
-Ensure the developer has remembered to update name/icon in prod branch (as did
-not happen with 3.23, which appears to be why it was quickly replaced with 3.24.
-(For the same reason, there is no 3.24_test)
-
 Note also that the 'prod:' commits seem to disappear, as if the developer is
 removing them and force-pushing the branch. We need to take an alternative
 approach to building this in future.
-
-Update the _test app as well.
 .
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest/prod
-Current Version:4.16
-Current Version Code:206
+Current Version:4.39
+Current Version Code:229
 

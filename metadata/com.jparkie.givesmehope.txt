@@ -5,7 +5,7 @@ Web Site:https://github.com/jparkie/GivesMeHopeAndroidClient/blob/HEAD/README.md
 Source Code:https://github.com/jparkie/GivesMeHopeAndroidClient
 Issue Tracker:https://github.com/jparkie/GivesMeHopeAndroidClient/issues
 
-Auto Name:Gives Me Hope
+Auto Name:Anthology for Gives Me Hope
 Summary:Unofficial "Gives Me Hope" client
 Description:
 Unofficial client for [http://mobile.givesmehope.com/ Gives me hope].
@@ -27,8 +27,26 @@ Build:1.0,2
     gradle=yes
     rm=app/libs/*
 
+Build:2.0.1,4
+    commit=d6515762493117451742bb598a4a18b2ffbbf455
+    subdir=app
+    gradle=yes
+    rm=app/libs/*
+
+Build:2.0.2,5
+    commit=0fd5dc34edb403ad250f5ed29e894114eb894912
+    subdir=app
+    gradle=yes
+    rm=app/libs/*
+
+Build:2.0.3,6
+    commit=88e5bf52da2d0132584488b14f576e78de9939d0
+    subdir=app
+    gradle=yes
+    rm=app/libs/*
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.0
-Current Version Code:2
+Current Version:2.0.3
+Current Version Code:6
 

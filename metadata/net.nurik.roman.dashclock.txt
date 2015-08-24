@@ -3,6 +3,7 @@ License:Apache2
 Web Site:https://code.google.com/p/dashclock
 Source Code:https://code.google.com/p/dashclock/source
 Issue Tracker:https://code.google.com/p/dashclock/issues
+Changelog:https://code.google.com/p/dashclock/wiki/Changelog
 
 Auto Name:DashClock Widget
 Summary:Extensible lock screen widget
@@ -21,9 +22,6 @@ left-most page of your lock screen and touch the "+" icon. Then, select
 "DashClock" to customize and add the widget. You can make this the primary lock
 screen widget, replacing the default clock, by first touching-and-holding it
 and then dragging it horizontally to the very rightmost position.
-
-Status: Recent versions are using the proprietary Google Play Services
-[https://code.google.com/p/dashclock/wiki/Changelog Changelog]
 .
 
 Repo Type:srclib
@@ -62,6 +60,11 @@ Build:1.6,30
     gradle=yes
     prebuild=echo "sdk.dir=$ANDROID_HOME" > ../local.properties && \
         sed -i '/^project\.archivesBaseName/d' build.gradle
+
+Maintainer Notes:
+MicroG's GmsLib can be used to strip play-services dependency
+for this one, according to https://github.com/microg/android_external_GmsLib#example-dashclock .
+.
 
 Auto Update Mode:None
 Update Check Mode:None

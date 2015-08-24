@@ -73,8 +73,127 @@ Build:4.7.5,345
     gradle=yes
     prebuild=sed -i -e 's/21.0.2/21.0.+/g' -e 's/gradle:1.0.0-rc4/gradle:0.14.0/g' -e '/2.2.1/d' build.gradle
 
+Build:4.7.5,346
+    commit=4.7.5
+    gradle=yes
+    prebuild=sed -i -e 's/21.0.2/21.0.+/g' -e 's/gradle:1.0.0-rc4/gradle:0.14.0/g' -e '/2.2.1/d' build.gradle
+
+Build:4.7.7,348
+    commit=4.7.7
+    gradle=yes
+    prebuild=sed -i -e 's/21.0.2/21.0.+/g' -e 's/gradle:1.0.0-rc4/gradle:0.14.0/g' -e '/2.2.1/d' build.gradle
+
+Build:4.7.8,350
+    disable=builds locally
+    commit=4.7.8
+    gradle=yes
+    prebuild=sed -i -e 's/21.0.2/21.0.+/g' -e 's/gradle:1.0.0-rc4/gradle:0.14.0/g' -e '/2.2.1/d' build.gradle
+
+Build:4.7.8,351
+    disable=builds locally
+    commit=4.7.8
+    gradle=yes
+    prebuild=sed -i -e 's/21.0.2/21.0.+/g' -e 's/gradle:1.0.0-rc4/gradle:0.14.0/g' -e '/2.2.1/d' build.gradle
+
+Build:4.7.9,352
+    disable=builds locally
+    commit=4.7.9
+    gradle=yes
+    prebuild=sed -i -e 's/21.0.2/21.0.+/g' -e 's/gradle:1.0.0-rc4/gradle:0.14.0/g' -e '/2.2.1/d' build.gradle
+
+Build:4.7.9,356
+    disable=builds locally
+    commit=4.7.9
+    gradle=yes
+    prebuild=sed -i -e 's/21.0.2/21.0.+/g' -e 's/gradle:1.0.0-rc4/gradle:0.14.0/g' -e '/2.2.1/d' build.gradle
+
+Build:4.7.9,357
+    commit=4.7.9
+    gradle=yes
+    prebuild=sed -i -e '/wrapper/,+2d' build.gradle
+
+Build:4.7.10,359
+    commit=4.7.10-fdroid
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.11,360
+    disable=retagged by upstream
+    commit=4.7.11-fdroid
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.11,362
+    commit=4.7.11-fdroid
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.12,363
+    commit=4.7.12-fdroid
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.12,364
+    commit=4.7.12
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.13,365
+    commit=4.7.13
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.13,366
+    commit=4.7.13
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.13,367
+    commit=4.7.13
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.13,369
+    commit=4.7.13
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.14,370
+    commit=4.7.14
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.15,371
+    commit=4.7.15
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.16,372
+    commit=4.7.16
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.17,373
+    commit=4.7.17
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.18,374
+    commit=4.7.18
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.19,375
+    commit=4.7.19
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Maintainer Notes:
+Upstream releases multiple version with changed vercode. Looks like repushing tags..
+.
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:4.7.5
-Current Version Code:345
+Current Version:4.7.19
+Current Version Code:375
 

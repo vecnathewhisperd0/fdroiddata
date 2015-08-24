@@ -58,6 +58,56 @@ Build:2.4.4,244
     prebuild=sed -i -e '/play_services/d' -e '/android-sdk-manager/d' -e '/spoon/d' build.gradle && \
         sed -i -e '/buildTypes/i/*' -e '/compileOptions/i*/' build.gradle
 
+Build:2.4.5,245
+    commit=2.4.5
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/com.stanfy.spoon:spoon-gradle-plugin/,+3d' build.gradle && \
+        sed -i -e '/play_services/d' -e '/android-sdk-manager/d' -e '/spoon/d' build.gradle && \
+        sed -i -e '/buildTypes/i/*' -e '/compileOptions/i*/' build.gradle
+
+Build:2.4.7,247
+    commit=2.4.7
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/com.stanfy.spoon:spoon-gradle-plugin/,+3d' build.gradle && \
+        sed -i -e '/play_services/d' -e '/android-sdk-manager/d' -e '/spoon/d' build.gradle && \
+        sed -i -e '/buildTypes/i/*' -e '/compileOptions/i*/' build.gradle
+
+Build:2.4.8,248
+    commit=2.4.8
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/com.stanfy.spoon:spoon-gradle-plugin/,+3d' build.gradle && \
+        sed -i -e '/play_services/d' -e '/android-sdk-manager/d' -e '/spoon/d' build.gradle && \
+        sed -i -e '/buildTypes/i/*' -e '/compileOptions/i*/' build.gradle
+
+Build:2.4.9,249
+    commit=2.4.9
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/com.stanfy.spoon:spoon-gradle-plugin/,+2d' build.gradle && \
+        sed -i -e '/play_services/d' -e '/android-sdk-manager/d' -e '/spoon/d' build.gradle
+
+Build:2.5.0,250
+    commit=2.5.0
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/com.stanfy.spoon:spoon-gradle-plugin/,+2d' build.gradle && \
+        sed -i -e '/play_services/d' -e '/android-sdk-manager/d' -e '/spoon/d' build.gradle
+
+Build:2.5.3,253
+    commit=2.5.3
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/play_services/d' -e '/android-sdk-manager/d' -e '/spoon/d' build.gradle
+
+Build:2.5.4,254
+    commit=2.5.4
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/play-services/d' -e '/android-sdk-manager/d' -e '/spoon-gradle-plugin/,+2d' build.gradle && \
+        sed -i -e '/spoon/d' build.gradle
+
+Build:2.5.5,255
+    commit=2.5.5
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/play-services/d' -e '/android-sdk-manager/d' -e '/spoon-gradle-plugin/,+2d' build.gradle && \
+        sed -i -e '/spoon/d' build.gradle
+
 Maintainer Notes:
 TODO: Build zxing-core-2.3.0-SNAPSHOT.jar from source.
 * https://github.com/zxing/zxing
@@ -67,6 +117,6 @@ TODO: Build zxing-core-2.3.0-SNAPSHOT.jar from source.
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:2.4.4
-Current Version Code:244
+Current Version:2.5.5
+Current Version Code:255
 

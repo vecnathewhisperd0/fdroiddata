@@ -3,10 +3,10 @@ License:GPLv3+
 Web Site:http://openbikesharing.org
 Source Code:https://github.com/bparmentier/OpenBikeSharing
 Issue Tracker:https://github.com/bparmentier/OpenBikeSharing/issues
+Changelog:https://github.com/bparmentier/OpenBikeSharing/releases
 Donate:http://www.brunoparmentier.be/about.html
 Bitcoin:168utA5DWMVXLFVfQDahG5abEWUSk9Wcfm
 
-Name:OpenBikeSharing
 Auto Name:OpenBikeSharing
 Summary:Display shared bikes availability in your city
 Description:
@@ -16,8 +16,6 @@ time.
 It uses the [http://api.citybik.es/v2/ CityBikes] API that provides data for
 more than 170 cities and displays those data on an OpenStreetMap layer thanks
 to the [https://github.com/osmdroid/osmdroid osmdroid] library.
-
-[https://github.com/bparmentier/OpenBikeSharing/releases Changelog]
 .
 
 Repo Type:git
@@ -70,18 +68,64 @@ Build:1.4,9
     subdir=app
     gradle=yes
 
-Build:1.0,100
-    disable=dummy
-    subdir=app
-    gradle=yes
-
 Build:1.5,10
     commit=v1.5
     subdir=app
     gradle=yes
 
+Build:1.6,11
+    commit=v1.6
+    subdir=app
+    gradle=yes
+
+Build:1.6.1,12
+    commit=v1.6.1
+    subdir=app
+    gradle=yes
+
+Build:1.7,13
+    commit=v1.7
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/buildTypes/i/*' -e '/lintOptions/i*/' build.gradle
+
+Build:1.7.1,14
+    commit=v1.7.1
+    subdir=app
+    gradle=yes
+
+Build:1.7.2,15
+    commit=v1.7.2
+    subdir=app
+    gradle=yes
+    srclibs=OSMBonusPack@v5.1
+    rm=app/libs/*.jar
+    prebuild=sed -i -e 's/v4:22.1.0/v4:22.0.0/g' -e '/osmbonuspack/d' -e '/support-v4/acompile "com.google.code.gson:gson:2.3.1"\ncompile "org.apache.commons:commons-lang3:3.4"' -e '/applicationVariants/,+3d' build.gradle && \
+        cp -fR $$OSMBonusPack$$/src/org src/main/java/ && \
+        sed -i -e '/\/\/TODO/d' src/main/java/org/osmdroid/bonuspack/clustering/GridMarkerClusterer.java
+
+Build:1.7.3,16
+    commit=v1.7.3
+    subdir=app
+    gradle=yes
+
+Build:1.7.4,17
+    commit=v1.7.4
+    subdir=app
+    gradle=yes
+
+Build:1.0,100
+    disable=dummy
+    subdir=app
+    gradle=yes
+
+Build:1.7.5,18
+    commit=v1.7.5
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.5
-Current Version Code:10
+Current Version:1.7.5
+Current Version Code:18
 

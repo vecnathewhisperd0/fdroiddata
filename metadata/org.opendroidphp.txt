@@ -1,6 +1,6 @@
 Categories:Internet,System
 License:Apache2
-Web Site:https://droidphp.github.io/
+Web Site:https://droidphp.github.io
 Source Code:https://github.com/DroidPHP/DroidPHP
 Issue Tracker:https://github.com/DroidPHP/DroidPHP/issues
 
@@ -16,7 +16,6 @@ phones and has following features:
 * MYSQL Monitor
 * Lighttpd (ssl enabled)
 * Nginx (ssl enabled)
-
 .
 
 Repo Type:git
@@ -45,6 +44,6 @@ Maintainer Notes:
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.9.0
-Current Version Code:19000
+Current Version:1.9.1
+Current Version Code:19001
 

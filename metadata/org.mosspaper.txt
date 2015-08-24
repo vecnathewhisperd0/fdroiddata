@@ -1,6 +1,6 @@
 Categories:Wallpaper
 License:Apache2
-Web Site:https://teneighty.github.io/moss/
+Web Site:https://teneighty.github.io/moss
 Source Code:https://github.com/teneighty/moss
 Issue Tracker:https://github.com/teneighty/moss/issues
 
@@ -32,7 +32,6 @@ Build:0.6,6
     submodules=yes
     subdir=moss
     gradle=yes
-    disable=ndkbuild fails
 
 Auto Update Mode:None
 Update Check Mode:Tags

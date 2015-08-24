@@ -40,8 +40,63 @@ Build:2.1,10
     gradle=yes
     prebuild=sed -i -e 's/support-v4:+/support-v4:19.0.+/g' -e 's/appcompat-v7:+/appcompat-v7:19.0.+/g' build.gradle
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:2.1
-Current Version Code:10
+Build:2.3,12
+    commit=2.3
+    subdir=reddinator
+    init=rm -f ../build.gradle
+    gradle=yes
+
+Build:2.4,13
+    commit=2504bf520ec7e6ea0eca3b9b65dbb45ff1961819
+    subdir=reddinator
+    init=rm -f ../build.gradle
+    gradle=yes
+
+Build:2.5,14
+    commit=698bf15101b66df22c2d9bd1f7febae6927b5714
+    subdir=reddinator
+    init=rm -f ../build.gradle
+    gradle=yes
+
+Build:2.5,17
+    commit=83856fb5520085249583945ff8e4976a5c67c555
+    subdir=reddinator
+    init=rm -f ../build.gradle && \
+        sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+
+Build:2.6,19
+    commit=99daf481b5ca5888f5f4a89de19f12f4ec509c65
+    subdir=reddinator
+    init=rm -f ../build.gradle && \
+        sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+
+Build:2.6,20
+    commit=932d61cf311ceacdce0d8d314f0b3cab5dd67117
+    subdir=reddinator
+    init=rm -f ../build.gradle && \
+        sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+
+Build:2.6-20150520,21
+    commit=85b05342db29fb4f8ea0ec4c4238e3b5994f2312
+    subdir=reddinator
+    init=rm -f ../build.gradle && \
+        sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+
+Build:2.6-20150531,22
+    commit=2db606702eb0732a4ebd016dd7c6365a7d0642e2
+    subdir=reddinator
+    init=rm -f ../build.gradle && \
+        sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:2.6
+Current Version Code:21
 

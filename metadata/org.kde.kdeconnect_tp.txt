@@ -93,8 +93,28 @@ Build:0.7.3.6,736
     commit=v0.7.3.6
     gradle=yes
 
+Build:0.8,800
+    commit=v0.8
+    gradle=yes
+
+Build:0.8d,804
+    commit=v0.8d
+    gradle=yes
+
+Build:0.8e,805
+    commit=v0.8e
+    gradle=yes
+
+Build:0.8g,807
+    commit=v0.8g
+    gradle=yes
+
+Build:0.8h,808
+    commit=v0.8h
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.7.3.6
-Current Version Code:736
+Current Version:0.8h
+Current Version Code:808
 

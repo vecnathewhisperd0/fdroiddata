@@ -1,3 +1,4 @@
+Disabled:Outdated, messy builds that no longer work. Conflicts with AOSP's keyboard in most cases.
 Categories:System
 License:Apache2
 Web Site:
@@ -20,7 +21,7 @@ with this version either.
 WARNING:
 
 If your ROM does com with com.android.inputmethod.latin package, you cannot
-update to this one directly. Either use FDroid as a system app or remove the
+update to this one directly. Either use F-Droid as a system app or remove the
 old package by hand and then install this one.
 
 ONLY DO THIS IF YOU KNOW WHAT YOU ARE DOING. THIS MIGHT BRICK YOUR DEVICE!

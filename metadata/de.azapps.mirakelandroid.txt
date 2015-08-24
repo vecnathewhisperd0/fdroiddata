@@ -2,11 +2,11 @@ Categories:Office
 License:GPLv3+
 Web Site:http://mirakel.azapps.de
 Source Code:https://github.com/MirakelX/mirakel-android
-Issue Tracker:https://mirakel.atlassian.net/issues/
+Issue Tracker:https://mirakel.atlassian.net/issues
+Changelog:http://mirakel.azapps.de/changelog.html
 Donate:http://mirakel.azapps.de/help_us.html#donate
 FlattrID:2188714
 
-Name:Mirakel
 Auto Name:Mirakel
 Summary:Decentralized TODO list
 Description:
@@ -24,8 +24,6 @@ You can sync your lists with your own server! Features:
 * Import your tasks from Astrid
 * Sync with Taskwarrior
 * Sync with CalDAV
-
-[http://mirakel.azapps.de/changelog.html Changelog]
 .
 
 Repo Type:git
@@ -193,6 +191,13 @@ Build:2.8.1,72
     rm=dashclock/libs/*jar,helper/libs/*jar
     scandelete=appcompat
 
+Build:2.8.2,74
+    commit=v2.8.2
+    subdir=main
+    gradle=Fdroid
+    rm=dashclock/libs/*jar,helper/libs/*jar
+    scandelete=appcompat
+
 Maintainer Notes:
 Keep 2 release versions in the archive, so don't build more than
 4 beta versions!
@@ -211,6 +216,6 @@ WARNING: Found JAR file at appcompat/libs/android-support-v4.jar
 Archive Policy:6 versions
 Auto Update Mode:Version v%v
 Update Check Mode:Tags ^v[0-9.]*$
-Current Version:2.8.1
-Current Version Code:72
+Current Version:2.8.2
+Current Version Code:74
 

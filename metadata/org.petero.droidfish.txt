@@ -3,6 +3,7 @@ License:GPLv3
 Web Site:https://code.google.com/p/cuckoochess
 Source Code:https://code.google.com/p/cuckoochess/source
 Issue Tracker:https://code.google.com/p/cuckoochess/issues
+Changelog:https://code.google.com/p/cuckoochess/source/list
 
 Auto Name:DroidFish
 Summary:Chess program
@@ -87,8 +88,24 @@ Build:1.55,63
         ant -f build_copy_exe.xml
     buildjni=no
 
+Build:1.56,64
+    commit=1196
+    subdir=DroidFish
+    prebuild=printf 'source.dir=src;../CuckooChessEngine/src' > ant.properties
+    build=$$NDK$$/ndk-build && \
+        ant -f build_copy_exe.xml
+    buildjni=no
+
+Build:1.57,65
+    commit=1202
+    subdir=DroidFish
+    prebuild=printf 'source.dir=src;../CuckooChessEngine/src' > ant.properties
+    build=$$NDK$$/ndk-build && \
+        ant -f build_copy_exe.xml
+    buildjni=no
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.55
-Current Version Code:63
+Current Version:1.57
+Current Version Code:65
 

@@ -4,6 +4,7 @@ License:GPLv2+
 Web Site:https://telegram.org
 Source Code:https://github.com/slp/Telegram-FOSS
 Issue Tracker:https://github.com/slp/Telegram-FOSS/issues
+Changelog:https://github.com/slp/Telegram-FOSS/commits/master
 
 Auto Name:Telegram
 Summary:Messaging client
@@ -139,8 +140,72 @@ Build:2.1.1,405
         gradle nativeLibsToJar
     buildjni=no
 
+Build:2.3.2,415
+    commit=v2.3.2
+    subdir=TMessagesProj
+    gradle=yes
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+    buildjni=no
+
+Build:2.4.0,423
+    commit=v2.4.0
+    subdir=TMessagesProj
+    gradle=yes
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+    buildjni=no
+
+Build:2.5.2,458
+    commit=v2.5.2
+    subdir=TMessagesProj
+    gradle=yes
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+    buildjni=no
+
+Build:2.6.0,469
+    commit=v2.6.0
+    subdir=TMessagesProj
+    gradle=yes
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+    buildjni=no
+
+Build:2.8.1,521
+    commit=v2.8.1
+    subdir=TMessagesProj
+    gradle=yes
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+    buildjni=no
+
+Build:2.9.1,542
+    commit=v2.9.1
+    subdir=TMessagesProj
+    gradle=yes
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+    buildjni=no
+
+Build:3.0.1,572
+    commit=v3.0.1
+    subdir=TMessagesProj
+    gradle=yes
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+    buildjni=no
+
+Build:3.1.2,586
+    commit=v3.1.2
+    subdir=TMessagesProj
+    gradle=yes
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+    buildjni=no
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.1.1
-Current Version Code:405
+Current Version:3.1.2
+Current Version Code:586
 

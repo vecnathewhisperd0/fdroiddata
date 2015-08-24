@@ -1,0 +1,32 @@
+Categories:Office
+License:MIT
+Web Site:https://altnico.github.io/projects/android/Asura.html
+Source Code:https://gitlab.com/asura/android
+Issue Tracker:https://gitlab.com/asura/android/issues
+Changelog:https://gitlab.com/asura/android/blob/master/CHANGELOG.md
+
+Auto Name:Asura
+Summary:Template for an app parsing a JSON file
+Description:
+The goal of Asura is to make it easy to build an individual app which
+parses a JSON file and display it in a ListView, mainly just with
+configuring a single file. To get further information, take a look
+[https://gitlab.com/asura/android/blob/master/README.md here].
+.
+
+Repo Type:git
+Repo:https://gitlab.com/asura/android.git
+
+Build:0.30,4
+    commit=0.30
+    subdir=app/app
+    gradle=yes
+
+Build:0.40,5
+    commit=0.40
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:0.40
+Current Version Code:5

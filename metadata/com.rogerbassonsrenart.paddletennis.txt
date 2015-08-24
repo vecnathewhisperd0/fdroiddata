@@ -1,0 +1,37 @@
+Categories:Games
+License:GPLv3
+Web Site:https://gitlab.com/rogertux/PaddleTennisAndroid
+Source Code:https://gitlab.com/rogertux/PaddleTennisAndroid/tree/HEAD
+Issue Tracker:https://gitlab.com/rogertux/PaddleTennisAndroid/issues
+
+Auto Name:PaddleTennis
+Summary:Pong clone
+Description:
+Pong clone, a tennis-like game.
+.
+
+Repo Type:git
+Repo:https://gitlab.com/rogertux/PaddleTennisAndroid.git
+
+Build:1.0,1
+    commit=779aeb64f2dfdde3714840c68d4e859ee5e3d41d
+    subdir=app
+    gradle=yes
+
+Build:1.1,2
+    commit=v1.1
+    subdir=app
+    gradle=yes
+
+Build:1.2,3
+    commit=0bab5cfb1e2216ae89d6660e3041dfb42eec0bb8
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:None
+#Auto Update Mode:Version v%v
+#Update Check Mode:Tags
+Update Check Mode:RepoManifest
+Current Version:1.2
+Current Version Code:3
+

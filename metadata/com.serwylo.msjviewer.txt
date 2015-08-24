@@ -6,7 +6,7 @@ Source Code:https://github.com/pserwylo/msjviewer
 Issue Tracker:https://github.com/pserwylo/msjviewer/issues
 
 Auto Name:Mobile MSJ
-Summary:Unofficial Android client for MSJ
+Summary:Unofficial client for MSJ
 Description:
 This is an unofficial app for the St John Ambulance Victoria MSJ website,
 where first aid volunteers register their interest in attending events.
@@ -33,8 +33,12 @@ Build:0.4,4
     commit=v0.4
     subdir=android
 
+Build:0.5,5
+    commit=v0.5
+    subdir=android
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.4
-Current Version Code:4
+Current Version:0.5
+Current Version Code:5
 

@@ -31,12 +31,14 @@ Available languages:
 * English
 * French
 * German
+* Hindi
 * Korean
 * Italian
 * Japanese
 * Portuguese (Brazil)
 * Romanian
 * Russian
+* Sardinian
 * Spanish
 
 Is your language missing? You can [http://ruleant.github.io/getback_gps/#translation help translating].
@@ -72,8 +74,13 @@ Build:0.4,40
     gradle=yes
     prebuild=.utility/remove-incomplete-translations
 
+Build:0.4.1,41
+    commit=v0.4.1
+    gradle=yes
+    prebuild=.utility/remove-incomplete-translations
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.4
-Current Version Code:40
+Current Version:0.4.1
+Current Version Code:41
 

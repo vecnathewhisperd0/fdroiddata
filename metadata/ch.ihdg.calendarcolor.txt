@@ -6,7 +6,7 @@ Issue Tracker:https://github.com/pascalfree/calendar-color/issues
 FlattrID:a562233c4739d5cce92e816f32fb44c1
 
 Auto Name:Calendar Color
-Summary:Simple android app to change the calendar color
+Summary:Change the calendar color
 Description:
 A simple open source app to change to color of a calendar in android 4+.
 Tested with calendars provided by baikal.
@@ -34,9 +34,13 @@ Build:0.1,1
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
-#Auto Update Mode:Version %v
+Build:0.2,2
+    commit=v0.2
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.1
-Current Version Code:1
+Current Version:0.2
+Current Version Code:2
 

@@ -1,6 +1,6 @@
 Categories:Office
 License:GPLv3
-Web Site:
+Web Site:https://github.com/ebraminio/DroidPersianCalendar/blob/HEAD/README.md
 Source Code:https://github.com/ebraminio/DroidPersianCalendar
 Issue Tracker:https://github.com/ebraminio/DroidPersianCalendar/issues
 
@@ -56,12 +56,58 @@ Build:4.04,44
     gradle=yes
     rm=extra/
 
-Maintainer Notes:
-Using tags from 4.02 onwards.
-.
+Build:4.05,45
+    commit=v4.05
+    subdir=PersianCalendar
+    gradle=yes
+    rm=extra/
 
-Auto Update Mode:None
+Build:4.06,46
+    commit=v4.06
+    subdir=PersianCalendar
+    gradle=yes
+    rm=extra/
+
+Build:4.07,47
+    commit=v4.07
+    subdir=PersianCalendar
+    gradle=yes
+    forceversion=yes
+    forcevercode=yes
+    rm=extra/
+
+Build:4.08,48
+    commit=65c8483d146a581503d3bd080a54a2ffa55d8122
+    subdir=PersianCalendar
+    gradle=yes
+    rm=extra/
+
+Build:4.09,49
+    commit=v4.09
+    subdir=PersianCalendar
+    gradle=yes
+    rm=extra/
+
+Build:4.1.0,410
+    commit=v4.1.0
+    subdir=PersianCalendar
+    gradle=yes
+    rm=extra/
+
+Build:4.1.1,411
+    commit=v4.1.1
+    subdir=PersianCalendar
+    gradle=yes
+    rm=extra/
+
+Build:4.1.2,412
+    commit=v4.1.2
+    subdir=PersianCalendar
+    gradle=yes
+    rm=extra/
+
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:4.04
-Current Version Code:44
+Current Version:4.1.2
+Current Version Code:412
 

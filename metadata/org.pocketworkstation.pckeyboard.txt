@@ -4,7 +4,6 @@ Web Site:https://code.google.com/p/hackerskeyboard
 Source Code:https://code.google.com/p/hackerskeyboard/source
 Issue Tracker:https://code.google.com/p/hackerskeyboard/issues
 
-Name:Hacker's Keyboard
 Auto Name:Hacker's Keyboard
 Summary:Four- or five-row soft-keyboard
 Description:
@@ -78,8 +77,17 @@ Build:v1.37,1037
     target=android-19
     buildjni=yes
 
-Auto Update Mode:Version %v
+Build:v1.38.2,1038002
+    commit=1.38.2
+    subdir=java
+    rm=java/libs/*.jar
+    srclibs=1:VoiceIME@5763e36eab31
+    prebuild=sed -i "s/Hg-ident/hg ident/" AutoVersion.sh && \
+        ./AutoVersion.sh
+    target=android-19
+    buildjni=yes
+
 Update Check Mode:Tags
-Current Version:v1.37
-Current Version Code:1037
+Current Version:v1.38.2
+Current Version Code:1038002
 

@@ -3,8 +3,8 @@ License:Apache2
 Web Site:
 Source Code:https://github.com/yuriykulikov/AlarmClock
 Issue Tracker:https://github.com/yuriykulikov/AlarmClock/issues
+Changelog:https://github.com/yuriykulikov/AlarmClock/commits/develop
 
-Name:Simple Alarm Clock
 Auto Name:Simple Alarm Clock
 Summary:Improved alarm clock
 Description:
@@ -14,7 +14,8 @@ as dock mode or a world clock.
 .
 
 Repo Type:git
-Repo:https://github.com/yuriykulikov/AlarmClock.git
+#Repo:https://github.com/yuriykulikov/AlarmClock.git
+Repo:https://github.com/yuriykulikov/AlarmClockAndroidStudio
 
 Build:2.4.14,2414
     commit=2.4.14
@@ -52,12 +53,25 @@ Build:2.7.07,2707
     prebuild=cp -r $$AndroidUtils$$/src/com/github src/com/ && \
         cp -r $$ACRA-Yuri$$/src/main/java/org src/
 
+Build:2.8.02,2802
+    commit=2.8.02
+    srclibs=AndroidUtils@49901275e508d0cf6a93af2ad17a86ccdc34bb43,ACRA@183dbe160ee807f006d739d1b958eb37763ab17a
+    prebuild=cp -r $$AndroidUtils$$/src/com/github src/com/ && \
+        cp -r $$ACRA$$/src/main/java/org src/
+
+Build:2.9.01,2901
+    commit=d2d5cc359410ec731195efbe8723b172299d080a
+    submodules=yes
+    gradle=yes
+    subdir=alarmClock
+    rm=alarmClock/libs/*
+
 Maintainer Notes:
-Guava jar has been verified but should be replaced.
+UCM does not work because upstream split the app into 3 repos.
 .
 
 Auto Update Mode:None
-Update Check Mode:Tags
-Current Version:2.7.07
-Current Version Code:2707
-
+#Update Check Mode:RepoManifest
+Update Check Mode:None
+Current Version:2.9.01
+Current Version Code:2901

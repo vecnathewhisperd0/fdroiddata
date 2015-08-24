@@ -65,8 +65,24 @@ Build:0.8b,26
 Build:0.8d,28
     commit=50cb153
 
+Build:0.891,29
+    commit=0e482dd
+
+Build:0.9,30
+    commit=21ae4dc
+
+Build:0.9b,31
+    commit=8307054
+    subdir=app
+    gradle=yes
+
+Build:0.91,32
+    commit=92f2f9a
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:0.8d
-Current Version Code:28
+Current Version:0.91
+Current Version Code:32
 

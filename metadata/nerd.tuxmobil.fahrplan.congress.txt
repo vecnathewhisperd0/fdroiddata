@@ -5,6 +5,7 @@ Source Code:https://github.com/tuxmobil/CampFahrplan
 Issue Tracker:https://github.com/tuxmobil/CampFahrplan/issues
 
 Auto Name:30C3 Schedule
+Name:30C3 Schedule (Congress)
 Summary:Schedule of the Chaos Communcation Events
 Description:
 CampFahrplan is a viewer for schedules of Chaos Computer Club e.V. events
@@ -54,8 +55,32 @@ Build:1.30.2,32
     init=cp gradle.properties.example gradle.properties
     gradle=ccc31c3
 
+Build:1.30.3,33
+    commit=2b91fa87cd10e28869a257ec92084e82ea1429c7
+    subdir=app
+    init=cp gradle.properties.example gradle.properties
+    gradle=ccc31c3
+
+Build:1.30.4,34
+    commit=227f6631a63817f11903ef45761f86e3e0688ccf
+    subdir=app
+    init=cp gradle.properties.example gradle.properties
+    gradle=ccc31c3
+
+Build:1.31.0,35
+    commit=36136ad023ceec36cbe64fcc7161dc2ed1e86ff2
+    subdir=app
+    init=cp gradle.properties.example gradle.properties
+    gradle=ccc31c3
+
+Build:1.31.1,36
+    commit=b99da8dbb86b48a61e259da3289a0718e5a9edc1
+    subdir=app
+    init=cp gradle.properties.example gradle.properties
+    gradle=ccc31c3
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.30.2
-Current Version Code:32
+Current Version:1.31.1
+Current Version Code:36
 

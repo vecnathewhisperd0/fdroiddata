@@ -26,8 +26,13 @@ Build:2.0,14
     subdir=app
     gradle=yes
 
+Build:2.1,16
+    commit=v2.1
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:2.0
-Current Version Code:14
+Current Version:2.1
+Current Version Code:16
 

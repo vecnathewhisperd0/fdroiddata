@@ -1,7 +1,8 @@
+Disabled:Outdated due API change, newer versions are proprietary.
 AntiFeatures:UpstreamNonFree
 Categories:Multimedia
 License:GPLv3
-Web Site:https://dentex.github.io/apps/youtubedownloader/
+Web Site:https://dentex.github.io/apps/youtubedownloader
 
 Summary:Download files from YouTube
 Description:
@@ -22,6 +23,7 @@ been removed by upstream.
 
 Repo Type:git
 Repo:https://github.com/dentex/ytdownloader.git
+#Fork (inactive?): https://github.com/joaormatos/ytdownloader
 
 Build:1.3,30
     commit=cb6a336b63

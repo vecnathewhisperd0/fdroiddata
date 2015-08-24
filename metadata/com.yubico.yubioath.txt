@@ -52,8 +52,28 @@ Build:0.1.9,20
     commit=yubioath-0.1.9
     maven=yes
 
+Build:0.1.10,21
+    commit=yubioath-0.1.10
+    maven=yes
+
+Build:0.1.11,22
+    commit=yubioath-0.1.11
+    maven=yes
+
+Build:1.0.0,23
+    commit=yubioath-1.0.0
+    maven=yes
+
+Build:1.0.1,24
+    commit=yubioath-1.0.1
+    maven=yes
+
+Build:1.0.2,25
+    commit=yubioath-1.0.2
+    maven=yes
+
 Auto Update Mode:Version yubioath-%v
 Update Check Mode:Tags
-Current Version:0.1.9
-Current Version Code:20
+Current Version:1.0.2
+Current Version Code:25
 

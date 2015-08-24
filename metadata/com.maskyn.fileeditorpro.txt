@@ -1,9 +1,9 @@
 Categories:Office
 License:GPLv3+
-Web Site:https://vmihalachi.github.io/turbo-editor/
+Web Site:https://vmihalachi.github.io/turbo-editor
 Source Code:https://github.com/vmihalachi/turbo-editor
 Issue Tracker:https://github.com/vmihalachi/turbo-editor/issues
-Donate:https://vmihalachi.github.io/turbo-editor/
+Donate:https://vmihalachi.github.io/turbo-editor
 FlattrID:2173527
 
 Auto Name:Turbo Editor
@@ -44,6 +44,35 @@ Build:1.13.2,31
     rm=app,libraries/sharedCode/libs/juniversalchardet-*.jar
     prebuild=sed -i -e '/dependencies/acompile "com.googlecode.juniversalchardet:juniversalchardet:1.0.3"' ../libraries/sharedCode/build.gradle && \
         sed -i -e 's/gradle:0.13.+/gradle:0.12.+/g' ../build.gradle
+
+Build:1.15.1,39
+    commit=3ee11e0bfb69ebcea4448882df695dee81ff33b7
+    subdir=app-pro
+    gradle=yes
+    rm=app,libraries/sharedCode/libs/juniversalchardet-*.jar
+    prebuild=sed -i -e '/dependencies/acompile "com.googlecode.juniversalchardet:juniversalchardet:1.0.3"' ../libraries/sharedCode/build.gradle
+
+Build:1.17,42
+    commit=1f3ad1ab12edf88100496607a9f91fc8fc0d84ab
+    subdir=app-pro
+    gradle=yes
+    rm=app,libraries/sharedCode/libs/juniversalchardet-*.jar
+    prebuild=sed -i -e '/dependencies/acompile "com.googlecode.juniversalchardet:juniversalchardet:1.0.3"' ../libraries/sharedCode/build.gradle
+
+Build:1.18.3,46
+    commit=68ad318388f298f6e8f9282cf28ff8ed65a2ef1f
+    subdir=app-pro
+    gradle=yes
+    rm=app,libraries/sharedCode/libs/juniversalchardet-*.jar
+    prebuild=sed -i -e '/dependencies/acompile "com.googlecode.juniversalchardet:juniversalchardet:1.0.3"' ../libraries/sharedCode/build.gradle
+
+Build:1.19,47
+    commit=a1e82b65d420860085393319ba1bcce86d56f72b
+    subdir=app-pro
+    gradle=yes
+    rm=app,libraries/sharedCode/libs/juniversalchardet-*.jar
+    prebuild=sed -i -e '/dependencies/acompile "com.googlecode.juniversalchardet:juniversalchardet:1.0.3"' ../libraries/sharedCode/build.gradle
+
 Maintainer Notes:
 * app includes crashlytics and play-services (for ads), app-pro is the source to the paid version
 .
@@ -52,6 +81,6 @@ Auto Update Mode:None
 #Auto Update Mode:Version v%v
 Update Check Mode:RepoManifest
 #Update Check Mode:Tags
-Current Version:1.13.2
-Current Version Code:35
+Current Version:1.19
+Current Version Code:47
 

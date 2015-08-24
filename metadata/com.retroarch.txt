@@ -8,7 +8,6 @@ Web Site:http://www.libretro.com
 Source Code:https://github.com/libretro/RetroArch
 Issue Tracker:https://github.com/libretro/RetroArch/issues
 
-Name:RetroArch
 Auto Name:RetroArch
 Summary:Modular multi-system emulator
 Description:
@@ -51,6 +50,7 @@ Repo:https://github.com/libretro/RetroArch.git
 
 # removed Play Services, fixed build and tackled intro dialog
 Build:1.0.0.2,37
+    disable=crash
     commit=9a66975589c5d2544bdfdae2e965b3a27e7149a5
     patch=fdroid-rarch.patch
     target=android-21
@@ -80,6 +80,7 @@ Build:1.0.0.2,37
     buildjni=no
 
 Build:1.0.0.2,38
+    disable=crash
     commit=9a66975589c5d2544bdfdae2e965b3a27e7149a5
     patch=fdroid-rarch.patch
     target=android-21
@@ -106,6 +107,7 @@ Build:1.0.0.2,38
     buildjni=no
 
 Build:1.0.0.2,39
+    disable=crash
     commit=9a66975589c5d2544bdfdae2e965b3a27e7149a5
     patch=fdroid-rarch.patch
     target=android-21

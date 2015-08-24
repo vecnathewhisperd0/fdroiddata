@@ -88,8 +88,33 @@ Build:1.16,116
     subdir=master/android/OWMapAtAndroid
     prebuild=echo 'source.dir=src;../LocDemo/src/com/vwp/libwlocate' > ant.properties
 
+Build:1.18,118
+    commit=64f797
+    subdir=master/android/OWMapAtAndroid
+    prebuild=echo 'source.dir=src;../LocDemo/src/com/vwp/libwlocate' > ant.properties
+
+Build:1.20,120
+    commit=e7bf51
+    subdir=master/android/OWMapAtAndroid
+    prebuild=echo 'source.dir=src;../LocDemo/src/com/vwp/libwlocate' > ant.properties
+
+Build:1.21,121
+    commit=c261bf
+    subdir=master/android/OWMapAtAndroid
+    prebuild=echo 'source.dir=src;../LocDemo/src/com/vwp/libwlocate' > ant.properties
+
+Build:1.22,122
+    commit=6f5246
+    subdir=master/android/OWMapAtAndroid
+    prebuild=echo 'source.dir=src;../LocDemo/src/com/vwp/libwlocate' > ant.properties
+
+Build:1.23,123
+    commit=ef8657
+    subdir=master/android/OWMapAtAndroid
+    prebuild=echo 'source.dir=src;../LocDemo/src/com/vwp/libwlocate' > ant.properties
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.16
-Current Version Code:116
+Current Version:1.23
+Current Version Code:123
 

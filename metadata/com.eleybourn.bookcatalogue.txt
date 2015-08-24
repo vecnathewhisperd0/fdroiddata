@@ -1,8 +1,10 @@
+AntiFeatures:UpstreamNonFree
 Categories:Reading
 License:GPLv3+
 Web Site:https://github.com/eleybourn/Book-Catalogue/wiki
 Source Code:https://github.com/eleybourn/Book-Catalogue
 Issue Tracker:https://github.com/eleybourn/Book-Catalogue/issues
+Changelog:https://github.com/eleybourn/Book-Catalogue/blob/HEAD/README
 
 Auto Name:Book Catalogue
 Summary:Book cataloguing tool
@@ -115,8 +117,23 @@ Build:5.0.7,151
         sed -i -e 's/GoodreadsApiKeys.GOODREADS_DEV_SECRET/"JARXkJTfyo0F8MyctYi9bUmrLISjo8vXAHsZHiuk2E"/g' -e 's/GoodreadsApiKeys.GOODREADS_DEV_KEY/"udFVpMhBnhJutfVj6abfA"/g' src/com/eleybourn/bookcatalogue/goodreads/GoodreadsManager.java
     target=android-16
 
+Build:5.1.1,168
+    disable=jars,amazon key
+    commit=v5.1.1-release
+    srclibs=ActionBarSherlock@4.2.0
+    extlibs=android/android-support-v4.jar
+    prebuild=rm -rf external_libs marketplace_info support ABS* && \
+        echo -e "target=android-16\nandroid.library.reference.1=$$ActionBarSherlock$$" > project.properties && \
+        cp libs/android-support-v4.jar $$ActionBarSherlock$$/libs/ && \
+        sed -i -e 's/GoodreadsApiKeys.GOODREADS_DEV_SECRET/"JARXkJTfyo0F8MyctYi9bUmrLISjo8vXAHsZHiuk2E"/g' -e 's/GoodreadsApiKeys.GOODREADS_DEV_KEY/"udFVpMhBnhJutfVj6abfA"/g' src/com/eleybourn/bookcatalogue/goodreads/GoodreadsManager.java
+    target=android-16
+
+Maintainer Notes:
+Now includes non-free libraries, e.g. Amazon Mobile Associates library.
+.
+
 Auto Update Mode:None
-Update Check Mode:Tags
-Current Version:5.1.0-B3
-Current Version Code:156
+Update Check Mode:None
+Current Version:5.1.1
+Current Version Code:168
 

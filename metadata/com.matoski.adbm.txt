@@ -3,6 +3,7 @@ License:Apache2
 Web Site:
 Source Code:https://github.com/ilijamt/android-adbm
 Issue Tracker:https://github.com/ilijamt/android-adbm/issues
+Changelog:https://raw.github.com/ilijamt/android-adbm/master/changelog.md
 
 Auto Name:ADB Manager
 Summary:Manage Android Debug Bridge
@@ -16,8 +17,6 @@ Description:
 * Keep screen on while the service is running
 * Wake the screen when new package is installed
 * You can toggle the ADB state by touching the image in the notification bar
-
-[https://raw.github.com/ilijamt/android-adbm/master/changelog.md Changelog]
 
 '''Requires root'''
 .
@@ -47,8 +46,16 @@ Build:1.1.2,24
     commit=1.1.2
     init=rm build.xml
 
+Build:1.2.0,25
+    commit=1.2.0
+    init=rm build.xml
+
+Build:1.2.1,26
+    commit=1.2.1
+    init=rm build.xml
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.1.2
-Current Version Code:24
+Current Version:1.2.1
+Current Version Code:26
 

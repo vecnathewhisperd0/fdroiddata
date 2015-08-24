@@ -1,6 +1,6 @@
 Categories:Office
 License:MIT
-Web Site:http://jeffreymartin.ca/writeily/
+Web Site:http://jeffreymartin.ca/writeily
 Source Code:https://github.com/jffrymrtn/writeily
 Issue Tracker:https://github.com/jffrymrtn/writeily/issues
 
@@ -31,12 +31,16 @@ Build:1.5,8
         ant release && \
         popd
 
+Build:1.6,9
+    disable=as per 1.5
+    commit=v1.6
+
 Maintainer Notes:
 * Tagging is not reliable.
 .
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Tags
 Current Version:1.6
 Current Version Code:9
 

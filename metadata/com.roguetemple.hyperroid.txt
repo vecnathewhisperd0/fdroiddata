@@ -5,7 +5,7 @@ Source Code:https://bitbucket.org/dalb8/hyperrogue-iii-for-android
 Issue Tracker:
 Donate:http://www.roguetemple.com/z/hyper.php
 
-Auto Name:HyperRogue III
+Auto Name:HyperRogue
 Summary:Top-down rogue-like adventure
 Description:
 You are a lone outsider in a strange, non-Euclidean world.
@@ -27,8 +27,32 @@ Build:3.7,370
     commit=2
     buildjni=yes
 
+Build:4.4,440
+    commit=367a1e5a7cf10acb7a9a650a96ad8980d5146653
+    target=android-7
+    buildjni=yes
+
+Build:4.4a,441
+    commit=367a1e5a7cf10acb7a9a650a96ad8980d5146653
+    patch=patch-4.4a.patch
+    target=android-7
+    buildjni=yes
+
+Build:5.5a,551
+    commit=35b39e1
+    subdir=app
+    gradle=yes
+    rm=app/src/main/jni/hyper
+
+Build:6.6,660
+    disable=Upstream issue with JNI files
+    commit=e9585c9
+    subdir=app
+    gradle=yes
+    rm=app/src/main/jni/hyper
+
 Auto Update Mode:None
-Update Check Mode:None
-Current Version:3.7
-Current Version Code:370
+Update Check Mode:RepoManifest
+Current Version:6.6
+Current Version Code:660
 

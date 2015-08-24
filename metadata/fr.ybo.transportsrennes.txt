@@ -213,12 +213,117 @@ Build:3.7.2,372
     prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
         rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
 
+Build:3.7.3,373
+    commit=TR_noGoogleMap_3.7.3
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.7.4,374
+    commit=TR_noGoogleMap_3.7.4
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.7.5,375
+    commit=TR_noGoogleMap_3.7.5
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.7.6,376
+    commit=TR_noGoogleMap_3.7.6
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.7.7,377
+    commit=TR_noGoogleMap_3.7.7
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.7.9,379
+    commit=TR_noGoogleMap_3.7.9
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.8.1,381
+    commit=TR_noGoogleMap_3.8.1
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.8.2,382
+    commit=TR_noGoogleMap_3.8.2
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.8.3,383
+    commit=TR_noGoogleMap_3.8.3
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.8.4,384
+    commit=TR_noGoogleMap_3.8.4
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.8.5,385
+    commit=TR_noGoogleMap_3.8.5
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.8.6,386
+    commit=TR_noGoogleMap_3.8.6
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.8.7,387
+    commit=TR_noGoogleMap_3.8.7
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.8.8,388
+    commit=TR_noGoogleMap_3.8.8
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
+Build:3.8.9,389
+    commit=TR_noGoogleMap_3.8.9
+    subdir=TransportsRennes
+    gradle=yes
+    prebuild=sed -i '8s/true/false/g' res/xml/preferences.xml && \
+        rm ../TransportsBordeaux/libs/GoogleAdMob*.jar
+
 Maintainer Notes:
 Replace jar files! (see fr.ybo.transportsbordeaux)
 .
 
 Auto Update Mode:None
 Update Check Mode:Tags ^TR_noGoogleMap
-Current Version:3.7.2
-Current Version Code:372
+Current Version:3.8.9
+Current Version Code:389
 

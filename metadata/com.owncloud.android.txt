@@ -3,6 +3,7 @@ License:GPLv3
 Web Site:https://owncloud.org
 Source Code:https://github.com/owncloud/android
 Issue Tracker:https://github.com/owncloud/android/issues
+Changelog:https://github.com/owncloud/android/blob/HEAD/CHANGELOG.md
 Donate:https://www.bountysource.com/teams/owncloud
 
 Auto Name:ownCloud
@@ -152,8 +153,58 @@ Build:1.6.2,10600200
     submodules=yes
     prebuild=cp third_party/android-support-library/android-support-v4.jar actionbarsherlock/library/libs/android-support-v4.jar
 
-Auto Update Mode:Version oc-android-%v
-Update Check Mode:Tags
-Current Version:1.6.2
-Current Version Code:10600200
+Build:1.7.0,10700000
+    commit=oc-android-1.7.0
+    submodules=yes
+    srclibs=1:ActionBarSherlock@4.4.0,3:TouchImageView@v1.2.0,DiskLruCache@disklrucache-2.0.2
+    rm=libs
+    extlibs=android/android-support-v4.jar
+    prebuild=cp -fR $$DiskLruCache$$/src/main/java/com src/ && \
+        cp libs/android-support-v4.jar $$ActionBarSherlock$$/libs/ && \
+        cp libs/android-support-v4.jar $$TouchImageView$$/libs/ && \
+        pushd $$TouchImageView$$ && \
+        android update lib-project -p ./ && \
+        echo "android.library=true" >> project.properties
+
+Build:1.7.1,10700100
+    commit=oc-android-1.7.1_oem
+    submodules=yes
+    srclibs=1:ActionBarSherlock@4.4.0,3:TouchImageView@v1.2.0,DiskLruCache@disklrucache-2.0.2
+    rm=libs
+    extlibs=android/android-support-v4.jar
+    prebuild=cp -fR $$DiskLruCache$$/src/main/java/com src/ && \
+        cp libs/android-support-v4.jar $$ActionBarSherlock$$/libs/ && \
+        cp libs/android-support-v4.jar $$TouchImageView$$/libs/ && \
+        pushd $$TouchImageView$$ && \
+        android update lib-project -p ./ && \
+        echo "android.library=true" >> project.properties
+
+Build:1.7.2,10700200
+    commit=oc-android-1.7.2
+    submodules=yes
+    srclibs=2:Support/v7/appcompat@android-4.4.4_r2.0.1,3:TouchImageView@v1.2.0,DiskLruCache@disklrucache-2.0.2
+    rm=libs
+    extlibs=android/android-support-v4.jar
+    prebuild=cp libs/android-support-v4.jar $$Support$$/libs/ && \
+        cp -fR $$DiskLruCache$$/src/main/java/com src/ && \
+        mv libs/android-support-v4.jar $$TouchImageView$$/libs/ && \
+        pushd $$TouchImageView$$ && \
+        android update lib-project -p ./ && \
+        echo "android.library=true" >> project.properties
+
+Maintainer Notes:
+Switch to the gradle flavor once all deps are pulled from central.
+
+owncloud-android-library should be cleaned up from .jar files like
+in fr.unix_experience.owncloud_sms.txt
+
+Re-enable AUM when upstream tags follow a predictable scheme again.
+.
+
+Auto Update Mode:None
+#Auto Update Mode:Version oc-android-%v
+#Update Check Mode:Tags ^oc-android-[0-9.]*$
+Update Check Mode:Tags ^oc-android-[0-9.]*
+Current Version:1.7.2
+Current Version Code:10700200
 

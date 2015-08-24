@@ -20,7 +20,38 @@ Build:0.11,8
     subdir=myTTR
     gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:0.11
-Current Version Code:8
+Build:1.0,9
+    commit=7c0971249d37d32bc10bcd7be52b8e7408330bbe
+    subdir=myTTR
+    gradle=yes
+
+Build:1.0.1,10
+    commit=v1.0.1
+    subdir=myTTR
+    gradle=yes
+
+Build:1.0.2,11
+    commit=v1.0.2
+    subdir=myTTR
+    gradle=yes
+
+Build:1.5.0,12
+    commit=v1.5.0
+    subdir=myTTR
+    gradle=yes
+
+Build:1.6.0,15
+    commit=1.6.0
+    subdir=myTTR
+    gradle=yes
+
+Build:2.0.0,20
+    commit=v2.0.0
+    subdir=myTTR
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:2.0.0
+Current Version Code:20
+

@@ -3,6 +3,7 @@ License:Apache2
 Web Site:
 Source Code:https://github.com/plusonelabs/calendar-widget
 Issue Tracker:https://github.com/plusonelabs/calendar-widget/issues
+Changelog:https://github.com/plusonelabs/calendar-widget/releases
 
 Auto Name:Calendar Widget
 Summary:Home-screen agenda
@@ -57,8 +58,18 @@ Build:1.8.5,25
     subdir=app/calendar-widget
     gradle=yes
 
+Build:1.8.6,26
+    commit=v1.8.6
+    subdir=app/calendar-widget
+    gradle=yes
+
+Build:1.9.0,27
+    commit=v1.9
+    subdir=app/calendar-widget
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.8.5
-Current Version Code:25
+Current Version:1.9.0
+Current Version Code:27
 

@@ -80,8 +80,77 @@ Build:1.4.6,146
     gradle=yes
     prebuild=touch key.properties
 
+Build:1.4.7,147
+    commit=f9e3567413d8c13314e0b7edb34812933d954572
+    gradle=yes
+    prebuild=touch key.properties
+
+Build:1.4.8,148
+    commit=ec79f619f1a014a4ef807b7333a6757f2065a33d
+    gradle=yes
+    prebuild=touch key.properties
+
+Build:1.4.9,149
+    commit=05315cf5ef20055c14f07c368d05823437746a91
+    gradle=yes
+    prebuild=touch key.properties
+
+Build:1.5,152
+    commit=c474cb8d7f826d03c9d95cd9bc0bf316ceafa5a5
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.5.3,153
+    commit=7fbad104c66e8b94a82a3f5b69db07308578ffd5
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.5.5,155
+    commit=018883c3e87e9d105e61e40326582fc2dc25e5cf
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.5.7,157
+    commit=cee6268b2432f93f56c3c404b8893a99c05d064f
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.5.8,158
+    commit=0916dd794dd3a400ab220f2150c8e72c6a435e15
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.5.9,159
+    commit=085c6b6138933ba5d3c2ebf7088f035cd864dde0
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.6,160
+    commit=4926d7e8423e1a8c8fec97c311665fa6e19f37ca
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.6.1,161
+    commit=c56ad35ec2bd3c86554e540e10c8f82e0664ffcb
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.6.2,162
+    commit=14065b034e0ad3bfa91d147aad8c164926c551b2
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.4.6
-Current Version Code:146
+Current Version:1.6.2
+Current Version Code:162
 

@@ -41,8 +41,25 @@ Build:1.13,13
     commit=v1.13
     gradle=yes
 
+Build:1.14,14
+    commit=v1.14
+    gradle=yes
+
+Build:1.15,15
+    commit=v1.15
+    gradle=yes
+
+Build:1.16,16
+    disable=gradle setup issues
+    commit=v1.16
+    gradle=yes
+
+Build:1.17,17
+    commit=v1.17
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.13
-Current Version Code:13
+Current Version:1.17
+Current Version Code:17
 
