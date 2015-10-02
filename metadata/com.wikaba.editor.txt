@@ -1,0 +1,35 @@
+Categories:System
+License:GPLv3
+Web Site:http://jecelyin.com
+Source Code:https://github.com/afwang/920-Text-Editor
+Issue Tracker:https://github.com/afwang/920-Text-Editor/issues
+Donate:http://www.jecelyin.com/donate.html
+
+#if the app is going to be at the top of the list then get rid of the ugly title
+Name:919 Editor
+Auto Name:919 Text Editor
+Summary:Text editor
+Description:
+View and edit code (even as root). Multi-tab, syntax-highlighting and more.
+
+The upstream project (920 Text Editor) is now using resources from AOSP so it's
+unlikely it will be updated. This fork builds off the last commit available from
+F-Droid. This fork will consist of bug and crash fixes.
+
+Currently, the only fix so far is a fix for a crash occurring on large screen
+devices.
+.
+
+Repo Type:git
+#Repo:https://920-text-editor.googlecode.com/svn/trunk/ ; old repo
+Repo:https://github.com/afwang/920-Text-Editor.git
+
+Build:15.10.02,36
+    commit=cc9e227312dc03bcbcf1a9560b1a0783dc6e2e05
+    buildjni=yes
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:15.10.02
+Current Version Code:36
+
