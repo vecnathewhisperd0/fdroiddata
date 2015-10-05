@@ -1,0 +1,226 @@
+AntiFeatures:Tracking
+Categories:Navigation
+License:GPLv3
+Web Site:http://osmand.net
+Source Code:https://github.com/osmandapp/Osmand
+Issue Tracker:https://github.com/osmandapp/Osmand/issues
+Changelog:http://osmand.net/help/changes.html
+Donate:https://code.google.com/p/osmand/#Please_support_the_project
+
+Name:OsmAnd~
+Summary:Offline/online maps and navigation
+Description:
+Osmand~'s features can be extended by enabling the plugins via the settings,
+which include online maps from many sources, tracking, OpenStreetMap (OSM)
+editing and accessibility enhancements.
+
+Map data of both vector and raster types can be stored on the phone memory card
+for offline usage, and navigation by default uses offline methods. Map data
+packages for many territories can be downloaded from within the app and there is
+a desktop program available on the website as well for creating your own.
+
+Anti-Features: Tracking - It will send your device and application specs to an
+Analytics server upon downloading the list of maps you can download.
+.
+
+Repo Type:git
+Repo:https://github.com/mvdan/OsmAnd-submodules
+
+#Repo:https://github.com/osmandapp/Osmand
+# Old builds with the old repo
+#Build:0.6.5,34
+#    commit=v0.6.5
+#    subdir=OsmAnd
+#    encoding=utf-8
+#    prebuild=mkdir assets && \
+#        mkdir raw
+#
+#Build:0.6.6,36
+#    commit=v0.6.6_2
+#    subdir=OsmAnd
+#    encoding=utf-8
+#    prebuild=mkdir raw
+#
+#Build:0.6.7,37
+#    commit=v0.6.7
+#    subdir=OsmAnd
+#    encoding=utf-8
+#    patch=code37.patch
+#    prebuild=mkdir raw
+#
+#Build:0.6.8,39
+#    commit=v0.6.8
+#    subdir=OsmAnd
+#    encoding=utf-8
+#    prebuild=mkdir raw
+#
+#Build:0.6.8',41
+#    disable=No corresponding source for whatever this is
+#    commit=unknown - see disabled
+#
+#Build:0.6.9,42
+#    commit=v0.6.9
+#    subdir=OsmAnd
+#    encoding=utf-8
+#    prebuild=mkdir raw
+#
+#Build:0.6.9',43
+#    disable=No corresponding source for whatever this is
+#    commit=unknown - see disabled
+#
+#Build:0.8.1,65
+#    commit=d62472532d8
+#    subdir=OsmAnd
+#    target=android-8
+#    init=rm -f build.xml
+#    encoding=utf-8
+#    forceversion=yes
+#    prebuild=cd ../DataExtractionOSM && \
+#        ant compile build && \
+#        cd ../OsmAnd/ && \
+#        cp ../DataExtractionOSM/build/OsmAndMapCreator.jar libs/ && \
+#        zip -d libs/OsmAndMapCreator.jar net/osmand/LogUtil.class && \
+#        cp -r ../DataExtractionOSM/build/lib/ libs/
+#    buildjni=no
+#
+#Build:0.8.2,71
+#    commit=50a4733475cd
+#    subdir=OsmAnd
+#    submodules=yes
+#    target=android-8
+#    init=rm -f build.xml
+#    encoding=utf-8
+#    forceversion=yes
+#    forcevercode=yes
+#    prebuild=cd ../DataExtractionOSM && \
+#        ant compile build && \
+#        cd ../OsmAnd/ && \
+#        sed -i 's/app_version">[^<]*/app_version">0.8.2-fdroid/' res/values/no_translate.xml && \
+#        cp ../DataExtractionOSM/build/OsmAndMapCreator.jar libs/ && \
+#        zip -d libs/OsmAndMapCreator.jar net/osmand/LogUtil.class && \
+#        cp -r ../DataExtractionOSM/build/lib/ libs/
+#    buildjni=yes
+Build:1.8.2,182
+    commit=76ada6c8a08afe69acb755503373ac36328ef665
+    subdir=android/OsmAnd
+    submodules=yes
+    output=bin/OsmAnd-release-unsigned.apk
+    prebuild=sed -i 's/"OsmAnd+"/"OsmAnd~"/g' build.xml
+    build=./old-ndk-build.sh && \
+        ant -Dsdk.dir="$ANDROID_SDK" -Dndk.dir="$ANDROID_NDK" -DBLACKBERRY_BUILD=false -DBUILD_SUFFIX= -DAPK_NUMBER_VERSION=182 "-DFEATURES=+play_market +gps_status -parking_plugin -blackberry -amazon -route_nav" -DCLEAN_CPP=false -DPACKAGE_TO_BUILT=net.osmand.plus -DAPK_VERSION=1.8.2 -Dnet.osmand.plus= -Dbuild.version=1.8.2 -Dbuild.version.code=182 -Dnativeoff=false "-DversionFeatures=+play_market +gps_status -parking_plugin -blackberry -amazon -route_nav" clean release
+    buildjni=no
+
+Build:1.8.3,183
+    commit=1.8.3
+    subdir=android/OsmAnd
+    submodules=yes
+    output=bin/OsmAnd-release-unsigned.apk
+    build=../../build
+    buildjni=no
+
+Build:1.9.4,196
+    commit=1.9.4
+    subdir=android/OsmAnd
+    submodules=yes
+    output=bin/OsmAnd-release-unsigned.apk
+    build=../../build
+    buildjni=no
+
+Build:1.9.5,197
+    commit=1.9.5
+    subdir=android/OsmAnd
+    submodules=yes
+    output=bin/OsmAnd-release-unsigned.apk
+    build=../../build
+    buildjni=no
+
+Build:2.0.2,201
+    disable=builds and works, disable for further restructuring
+    commit=2.0.2
+    subdir=android/OsmAnd
+    submodules=yes
+    gradle=fullLegacyFat
+    forceversion=yes
+    build=../../build
+    buildjni=no
+
+Build:2.0.3,205
+    disable=builds with slow rendering
+    commit=2.0.3
+    subdir=android/OsmAnd
+    submodules=yes
+    gradle=full,legacy,fat
+    prebuild=sed -i -e '/qt.*Compile/d' build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_VERSION\")/\"2.0.3\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_NUMBER_VERSION\")/\"205\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_FEATURES\")/\"-play_market +gps_status -parking_plugin -blackberry -amazon -route_nav\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"TARGET_APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e '/sourceSets/icompileOptions {\nsourceCompatibility = JavaVersion.VERSION_1_7\ntargetCompatibility = JavaVersion.VERSION_1_7\n}\n' ../eclipse-compile/appcompat/build.gradle build.gradle
+    buildjni=no
+
+Build:2.0.4,206
+    disable=builds with slow rendering
+    commit=2.0.4
+    subdir=android/OsmAnd
+    submodules=yes
+    gradle=full,legacy,fat
+    prebuild=sed -i -e '/qt.*Compile/d' build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_VERSION\")/\"2.0.4\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_NUMBER_VERSION\")/\"206\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_FEATURES\")/\"-play_market +gps_status -parking_plugin -blackberry -amazon -route_nav\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"TARGET_APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e '/sourceSets/icompileOptions {\nsourceCompatibility = JavaVersion.VERSION_1_7\ntargetCompatibility = JavaVersion.VERSION_1_7\n}\n' ../eclipse-compile/appcompat/build.gradle build.gradle
+    buildjni=no
+
+Build:2.0.4,207
+    commit=6c290d170b00119df2771b1509221b46212947e9
+    subdir=android/OsmAnd
+    submodules=yes
+    gradle=full,legacy,fat
+    prebuild=sed -i -e '/qt.*Compile/d' build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_VERSION\")/\"2.0.4\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_NUMBER_VERSION\")/\"207\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_FEATURES\")/\"-play_market +gps_status -parking_plugin -blackberry -amazon -route_nav\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"TARGET_APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e '/sourceSets/icompileOptions {\nsourceCompatibility = JavaVersion.VERSION_1_7\ntargetCompatibility = JavaVersion.VERSION_1_7\n}\n' ../eclipse-compile/appcompat/build.gradle build.gradle && \
+        sed -i -e '1 iAPP_PLATFORM := android-14' jni/Application.mk
+    buildjni=no
+
+Build:2.1.1,212
+    commit=2.1.1
+    subdir=android/OsmAnd
+    submodules=yes
+    gradle=full,legacy,fat
+    prebuild=sed -i -e '/qt.*Compile/d' build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_VERSION\")/\"$$VERSION$$\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_NUMBER_VERSION\")/\"$$VERCODE$$\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_FEATURES\")/\"-play_market +gps_status -parking_plugin -blackberry -amazon -route_nav\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"TARGET_APP_NAME\")/\"OsmAnd~\"/g" build.gradle
+    buildjni=no
+
+Maintainer Notes:
+No UCMs apply because git never contains actual releases, only pre-releses.
+
+The build instructions have been moved to a script in the root of the repo,
+'build'. This way it can be updated along with the submodules.
+
+= 2.0.0+ =
+Upstream now uses gradle. We do some preparations in ../../build but try to
+keep the main build within the recipe via `gradle=`.
+
+Update CV only after sucessfully built and tested.
+
+= TODO =
+* On next release test with `sed -i -e '/com.android.vending.BILLING/d' AndroidManifest.xml`
+* On next release maybe remove Tracking due to https://github.com/osmandapp/Osmand/commit/513024eac7ceca812ddc94056fc0ac0d5d2772ec
+.
+
+Auto Update Mode:None
+Update Check Mode:None
+Current Version:2.1.1
+Current Version Code:212
+

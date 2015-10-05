@@ -1,0 +1,26 @@
+Categories:Theming
+License:Apache2
+Web Site:https://code.google.com/p/android-sky
+Source Code:https://code.google.com/p/android-sky/source
+Issue Tracker:
+
+Auto Name:Forecast widgets
+Summary:Weather Widget
+Description:
+A weather forecast widget - USA only.
+.
+
+Repo Type:git-svn
+Repo:https://android-sky.googlecode.com/svn/trunk
+
+Build:1.0,1
+    commit=2
+    subdir=Sky
+    prebuild=rm -rf Sky/
+
+Auto Update Mode:None
+#No revisions since 06/2009
+Update Check Mode:Static
+Current Version:1.0
+Current Version Code:1
+

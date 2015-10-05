@@ -1,0 +1,68 @@
+Categories:System
+License:Apache2
+Web Site:
+Source Code:https://github.com/SimonMarquis/Android-PreferencesManager
+Issue Tracker:https://github.com/SimonMarquis/Android-PreferencesManager/issues
+
+Auto Name:Preferences Manager
+Summary:Edit app preferences
+Description:
+Applications store their preferences in databases and if you have root this app
+will allow you to edit those.
+.
+
+Requires Root:yes
+
+Repo Type:git
+Repo:https://github.com/SimonMarquis/Android-PreferencesManager.git
+
+Build:1.4,15
+    commit=b3d8533ace17
+    subdir=PreferencesManager
+    patch=fonts_15.patch
+    srclibs=1:Support-v7@android-4.3_r2.1,2:RootFW@2_0.3.2,3:StickyListHeaders-tots@62be7e8a7e547
+    rm=PreferencesManager/assets,Resources,PreferencesManager/libs/rootfw.jar
+    prebuild=mv libs/android-support-v4.jar $$Support-v7$$/libs/
+    target=android-18
+
+Build:1.5,16
+    commit=v1.5
+    subdir=PreferencesManager
+    srclibs=1:Support-v7@android-4.3_r2.1,2:RootFW@2_0.3.2,3:StickyListHeaders-tots@62be7e8a7e547
+    rm=Resources,PreferencesManager/libs/rootfw.jar
+    prebuild=mv libs/android-support-v4.jar $$Support-v7$$/libs/
+
+Build:1.7.1,18
+    commit=v1.7
+    subdir=PreferencesManager
+    init=sed -e '/rootfw/ d' -i build.gradle
+    gradle=yes
+    srclibs=RootFW@2_0.3.2
+    rm=Resources,PreferencesManager/libs/rootfw.jar
+    prebuild=cp -a $$RootFW$$/src/* src/main/java/
+
+Build:1.8.0,19
+    commit=v1.8
+    subdir=PreferencesManager
+    init=sed -e '/rootfw/ d' -i build.gradle
+    gradle=yes
+    srclibs=RootFW@2_0.3.2
+    rm=Resources,PreferencesManager/libs/rootfw.jar
+    prebuild=cp -a $$RootFW$$/src/* src/main/java/
+
+Build:1.8.1,20
+    commit=v1.8.1
+    subdir=PreferencesManager
+    init=sed -e '/rootfw/ d' -i build.gradle
+    gradle=yes
+    srclibs=RootFW@2_0.3.2
+    rm=Resources,PreferencesManager/libs/rootfw.jar
+    prebuild=cp -a $$RootFW$$/src/* src/main/java/
+
+Maintainer Notes:
+Arbitrary setting of version name and code, so no UCM applies.
+.
+
+Auto Update Mode:None
+Update Check Mode:None
+

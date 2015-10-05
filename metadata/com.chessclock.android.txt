@@ -1,0 +1,26 @@
+Categories:Games
+License:GPLv3
+Web Site:https://code.google.com/p/simplechessclock
+Source Code:https://code.google.com/p/simplechessclock/source
+Issue Tracker:
+
+Auto Name:Simple Chess Clock
+Summary:Two touchable chess timers
+Description:
+Simple Chess Clock does what it says! It is designed for touchscreen Android
+devices, and provides a simple, clear interface and easy interaction.
+.
+
+Repo Type:hg
+Repo:https://code.google.com/p/simplechessclock
+
+Build:1.2.0,8
+    commit=379155447bff
+    subdir=simplechessclock
+    target=android-8
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.2.0
+Current Version Code:8
+

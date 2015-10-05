@@ -1,0 +1,23 @@
+Disabled:Non-free dependency
+AntiFeatures:UpstreamNonFree
+Categories:Navigation
+License:NewBSD
+Web Site:https://code.google.com/p/geohashdroid
+Source Code:https://code.google.com/p/geohashdroid/source
+Issue Tracker:
+
+Auto Name:Geohash Droid
+Summary:Geohashing app
+Description:
+Geohash Droid can auto-detect your graticule, calculate the day's meetup point,
+and follow you as you travel towards it.
+.
+
+Repo Type:git
+Repo:https://code.google.com/p/geohashdroid
+
+Auto Update Mode:None
+Update Check Mode:Static
+Current Version:0.7.18
+Current Version Code:703
+

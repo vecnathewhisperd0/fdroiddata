@@ -1,0 +1,34 @@
+Categories:Connectivity
+License:Apache2
+Web Site:
+Source Code:https://github.com/nadam/nfc-reader
+Issue Tracker:https://github.com/nadam/nfc-reader/issues
+
+Auto Name:NFC Reader
+Summary:Read NFC tag info
+Description:
+Simple app for reading and displaying various tags (NDEF, RFID, FeliCa, ISO
+14443, etc) using NFC (Near Field Communication). The app also supports basic
+NDEF Push (Android Beam) for people who don't have any tag to read but happen to
+have two NFC enabled phones.
+.
+
+Repo Type:git
+Repo:https://github.com/nadam/nfc-reader.git
+
+Build:0.10,10
+    commit=a3e9b61c87
+    prebuild=rm -rf market
+
+Build:0.12,12
+    commit=5e6388571
+
+Build:0.13,13
+    commit=ac621cc0283
+
+Auto Update Mode:None
+# Also on Play
+Update Check Mode:RepoManifest
+Current Version:0.13
+Current Version Code:13
+

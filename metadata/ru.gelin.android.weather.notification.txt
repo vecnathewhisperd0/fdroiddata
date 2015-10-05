@@ -1,0 +1,70 @@
+Categories:Internet
+License:GPLv2
+Web Site:https://code.google.com/p/weather-notification-android
+Source Code:https://code.google.com/p/weather-notification-android/source
+Issue Tracker:
+
+Auto Name:Weather notification
+Summary:Weather info in notification bar
+Description:
+Simple application which displays the air temperature and other weather
+conditions in the notification bar. The air temperature is always visible like a
+system clock.
+
+Install the skins for a different look - see
+[[ru.gelin.android.weather.notification.skin.blacktext]] and
+[[ru.gelin.android.weather.notification.skin.whitetext]].
+
+This app uses the [http://openweathermap.org/ openweathermap] API.
+.
+
+Repo Type:srclib
+Repo:WeatherNotification
+
+Build:0.2-beta2,23
+    commit=253d9dc3022a
+    target=android-4
+
+Build:0.3-beta1,26
+    commit=5c5bafecb2cc
+    update=.,libs/libpreference,libs/libweather,libs/libweatherskin
+    target=android-15
+
+Build:0.3-beta3,28
+    commit=6391db2d5149
+    update=.,libs/libpreference,libs/libweather,libs/libweatherskin
+    target=android-15
+
+Build:0.3-beta4,29
+    commit=150a4999604b
+    update=.,libs/libpreference,libs/libweather,libs/libweatherskin
+    target=android-15
+
+Build:0.3,30
+    commit=b4f537a97fe7
+    update=.,libs/libpreference,libs/libweather,libs/libweatherskin
+    target=android-15
+
+Build:0.3.1,32
+    commit=30d71fd307ae
+    update=.,libs/libpreference,libs/libweather,libs/libweatherskin
+    target=android-15
+
+Build:0.3.3,39
+    commit=a0c2e640e60a
+    subdir=core
+    target=android-15
+
+Build:0.3.5,43
+    commit=v.0.3.5
+    subdir=core
+
+Build:0.3.6,48
+    commit=v.0.3.6
+    subdir=core
+
+Auto Update Mode:Version v.%v
+Update Check Mode:Tags
+Current Version:0.3.6
+Current Version Code:48
+

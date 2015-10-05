@@ -1,0 +1,43 @@
+Categories:Theming
+License:GPLv3+
+Web Site:http://g2l.easwareapps.com
+Source Code:https://gitlab.com/easwareapps/g2l-gesture-launcher
+Issue Tracker:https://gitlab.com/easwareapps/g2l-gesture-launcher/issues
+Donate:http://g2l.easwareapps.com/#donate
+Bitcoin:1PNwD199whFao1rjMX82Zi5A7M5B6KB7be
+
+Auto Name:G2L
+Summary:Gesture Launcher
+Description:
+Define gestures to launch an action like an app, a phone call or playing a song.
+.
+
+Repo Type:git
+Repo:https://gitlab.com/easwareapps/g2l-gesture-launcher.git
+
+Build:1.10,5
+    commit=9b54aa2
+
+Build:1.10.1,6
+    commit=8c3ff3cbe60f6e81ed818
+
+Build:1.11.1,7
+    commit=4caf1ca8e3a6c8c9ed
+
+Build:1.11.5,10
+    commit=b0272d9e91c01c579af015d27c51c21796761b2b
+
+Build:1.11.6,11
+    commit=8df977fa18e8ac761a4c0a4da3b
+
+Build:2.0.6,17
+    disable=wip, libs
+    commit=08c6ca3bb36296797276489819731a89471b2341
+    srclibs=1:Support/v7/appcompat@android-4.4.3_r1
+    prebuild=cp libs/android-support-v4.jar $$Support$$/libs/
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:2.0
+Current Version Code:17
+

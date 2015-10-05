@@ -1,0 +1,40 @@
+Categories:Internet
+License:GPLv2
+Web Site:http://bombusmod.net.ru
+Source Code:https://code.google.com/p/bm2/source
+Issue Tracker:
+
+Auto Name:BombusMod
+Summary:Messaging client
+Description:
+Full-featured XMPP client based on a J2ME app. Website and source code docs are
+in Russian.
+.
+
+Repo Type:git-svn
+Repo:https://bm2.googlecode.com/svn/trunk
+
+Build:0.8.1304,1304
+    commit=1304
+    subdir=android
+    forceversion=yes
+    forcevercode=yes
+    extlibs=antenna/antenna-bin-1.2.1-beta.jar
+    prebuild=mv libs/antenna*.jar . && \
+        ant antenna-preprocess && \
+        sed -i 's/${bombus.raw-revision}/-/g' AndroidManifest.xml
+
+Build:0.8.1306,1306
+    disable=not a release
+    commit=unknown - see disabled
+    subdir=android
+
+# Use this setup next time
+#Build Version:0.8.1312,1312,1312,\
+#extlibs=antenna/antenna-bin-1.2.1-beta.jar,subdir=android,prebuild=\
+#mv libs/antenna*.jar .,antcommands=release-nonb
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:0.8.1306
+Current Version Code:1306
+

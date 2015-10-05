@@ -1,0 +1,65 @@
+Categories:Phone & SMS
+License:GPLv3+
+Web Site:
+Source Code:https://github.com/Nutomic/ensichat
+Issue Tracker:https://github.com/Nutomic/ensichat/issues
+Bitcoin:1DmU6QVGSKXGXJU1bqmmStPDNsNnYoMJB4
+
+Auto Name:Ensichat
+Summary:Decentralized Instant Messenger
+Description:
+Instant messanger for Android that is fully decentralized. Messages are sent
+directly between devices via Bluetooth, without any central server. A simple
+flood-based routing is used for message propagation.
+.
+
+Repo Type:git
+Repo:https://github.com/Nutomic/ensichat.git
+
+Build:0.1.0,1
+    commit=0.1.0
+    subdir=app
+    gradle=yes
+
+Build:0.1.1,2
+    commit=0.1.1
+    subdir=app
+    gradle=yes
+
+Build:0.1.2,3
+    commit=0.1.2
+    subdir=app
+    gradle=yes
+
+Build:0.1.3,4
+    commit=0.1.3
+    subdir=app
+    gradle=rel
+
+Build:0.1.4,5
+    commit=0.1.4
+    subdir=app
+    gradle=rel
+
+Build:0.1.6,7
+    disable=build issues
+    commit=0.1.6
+    subdir=app
+    gradle=rel
+
+Build:0.1.7,8
+    commit=0.1.7
+    subdir=app
+    gradle=rel
+    build=gradle assembleRelRelease || true
+
+Maintainer Notes:
+The build fails when running it once, but works the second time. The
+workaround..well.. works, but is far from being optimal.
+.
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:0.1.7
+Current Version Code:8
+

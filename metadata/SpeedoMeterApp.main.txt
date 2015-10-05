@@ -1,0 +1,23 @@
+Categories:Navigation
+License:PublicDomain
+Web Site:
+Source Code:http://sourceforge.net/projects/androidspeedo
+Issue Tracker:
+
+Auto Name:Speedo
+Summary:Simple Speedometer
+Description:
+Measures your speed with GPS
+.
+
+Repo Type:git
+Repo:git://git.code.sf.net/p/androidspeedo/code
+
+Build:1.0,1
+    commit=d30c4c0b52c51bb420
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.0
+Current Version Code:1
+

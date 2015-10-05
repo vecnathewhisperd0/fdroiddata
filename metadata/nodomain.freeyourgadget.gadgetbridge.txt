@@ -1,0 +1,157 @@
+Categories:Connectivity
+License:AGPLv3
+Web Site:https://github.com/Freeyourgadget/Gadgetbridge/blob/HEAD/README.md
+Source Code:https://github.com/Freeyourgadget/Gadgetbridge
+Issue Tracker:https://github.com/Freeyourgadget/Gadgetbridge/issues
+Changelog:https://github.com/Freeyourgadget/Gadgetbridge/blob/HEAD/CHANGELOG.md
+
+Auto Name:Gadgetbridge
+Summary:Communicate with your Pebble/Miband
+Description:
+Use your Pebble/Miband without the vendor's closed source application and
+without the need to create an account and transmit any of your data to the
+vendor's servers.
+
+Gadgetbridge is under active development, for an overview of current features
+for each suppoerted device, please refer to the the
+[https://github.com/Freeyourgadget/Gadgetbridge/blob/HEAD/README.md README].
+.
+
+Repo Type:git
+Repo:https://github.com/Freeyourgadget/Gadgetbridge.git
+
+Build:0.1.0,1
+    commit=0.1.0
+    subdir=app
+    gradle=yes
+
+Build:0.1.1,2
+    commit=0.1.1
+    subdir=app
+    gradle=yes
+
+Build:0.1.2,3
+    commit=0.1.2
+    subdir=app
+    gradle=yes
+
+Build:0.1.3,4
+    commit=0.1.3
+    subdir=app
+    gradle=yes
+
+Build:0.1.4,5
+    commit=0.1.4
+    subdir=app
+    gradle=yes
+
+Build:0.1.5,6
+    commit=0.1.5
+    subdir=app
+    gradle=yes
+
+Build:0.2.0,7
+    commit=0.2.0
+    subdir=app
+    gradle=yes
+
+Build:0.3.1,9
+    commit=0.3.1
+    subdir=app
+    gradle=yes
+
+Build:0.3.2,10
+    commit=0.3.2
+    subdir=app
+    gradle=yes
+
+Build:0.3.3,11
+    commit=0.3.3
+    subdir=app
+    gradle=yes
+
+Build:0.3.4,12
+    commit=0.3.4
+    subdir=app
+    gradle=yes
+
+Build:0.3.5,13
+    commit=0.3.5
+    subdir=app
+    gradle=yes
+
+Build:0.4.0,14
+    commit=0.4.0
+    subdir=app
+    gradle=yes
+
+Build:0.4.1,15
+    commit=0.4.1
+    subdir=app
+    gradle=yes
+
+Build:0.4.2,16
+    commit=0.4.2
+    subdir=app
+    gradle=yes
+
+Build:0.4.3,17
+    commit=0.4.3
+    subdir=app
+    gradle=yes
+
+Build:0.4.4,18
+    commit=0.4.4
+    subdir=app
+    gradle=yes
+
+Build:0.4.5,19
+    commit=0.4.5
+    subdir=app
+    gradle=yes
+
+Build:0.4.6,20
+    commit=0.4.6
+    subdir=app
+    gradle=yes
+
+Build:0.5.0,21
+    commit=0.5.0
+    subdir=app
+    gradle=yes
+
+Build:0.5.1,22
+    commit=0.5.1
+    subdir=app
+    gradle=yes
+
+Build:0.5.2,23
+    commit=0.5.2
+    subdir=app
+    gradle=yes
+
+Build:0.5.3,24
+    commit=0.5.3
+    subdir=app
+    gradle=yes
+
+Build:0.5.4,25
+    commit=0.5.4
+    subdir=app
+    gradle=yes
+
+Build:0.6.0,26
+    commit=0.6.0
+    subdir=app
+    gradle=yes
+
+Build:0.6.1,27
+    commit=0.6.1
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:0.6.1
+Current Version Code:27
+

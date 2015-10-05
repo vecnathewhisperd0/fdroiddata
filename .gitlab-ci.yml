@@ -1,33 +1,17 @@
 before_script:
   - apt-get -q update -y
-  - echo " == Installing packages required by this CI script"
-  - apt-get -q install -y wget tar
-  - echo " == Installing packages required by fdroidserver"
-  - apt-get -q install -y python
-      python-git python-imaging python-libcloud python-logilab-astng
-      python-paramiko python-pip python-pyasn1 python-pyasn1-modules
-      python-requests python-virtualenv python-yaml
-      rsync
-  - echo " == Installing packages required by the test suite"
-  - apt-get -q install -y pyflakes pylint pep8 dash bash ruby
-  - echo " == Installing packages required to build Pillow"
-  - apt-get -q install -y python-dev libjpeg-dev zlib1g-dev
-  - echo " == Installing OpenJDK 7"
-  - apt-get -q install -y openjdk-7-jdk
-  - echo " == Installing packages required by the 32-bit SDK"
-  - apt-get -q install -y lib32stdc++6 lib32z1
-  - echo " == Installing the Android SDK"
-  - wget -q -O android-sdk.tgz https://dl.google.com/android/android-sdk_r24.3.4-linux.tgz
-  - tar -x -z -f android-sdk.tgz
-  - mv android-sdk-linux android-sdk
-  - export ANDROID_HOME=$PWD/android-sdk
-  - export PATH="$ANDROID_HOME/tools:$PATH"
-  - echo " == Installing Android SDK components"
-  - echo y | android -s update sdk --no-ui -a -t platform-tools,tools,build-tools-23.0.1
-  - export PATH="$ANDROID_HOME/platform-tools:$PATH"
-  - export PATH="$ANDROID_HOME/build-tools/23.0.1:$PATH"
+  - echo " == Installing required packages"
+  - apt-get -q install -y python python-yaml
+  - echo " == Cloning fdroidserver"
+  - test -d fdroidserver && rm -rf fdroidserver
+  - git clone https://gitlab.com/fdroid/fdroidserver.git fdroidserver --depth=10
+  - export PATH="$PWD/fdroidserver:$PATH"
+  - touch config.py
 
-test:
+lint:
   script:
-    - cd tests
-    - ./complete-ci-tests
+    - fdroid lint
+
+format:
+  script:
+    - ./tools/verify-rewritemeta.sh

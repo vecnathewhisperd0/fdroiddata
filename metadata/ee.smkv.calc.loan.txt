@@ -1,0 +1,33 @@
+Categories:Money
+License:GPLv3
+Web Site:https://code.google.com/p/android-simple-loan-calculator
+Source Code:https://code.google.com/p/android-simple-loan-calculator/source
+Issue Tracker:
+Donate:http://samkov.pri.ee/simple-loan-calculator
+
+Auto Name:Simple Loan Calculator
+Summary:Calculator for payments
+Description:
+Calculate annuity, differentiated and fixed payments. Calculation:the monthly
+payment, the amount of interest paid, the total cost of credit, amortization
+schedule and a comparison of all these indices between different loans.
+.
+
+Repo Type:git-svn
+Repo:https://android-simple-loan-calculator.googlecode.com/svn/trunk
+
+Build:3.3.0,42
+    commit=120
+    target=android-15
+
+Build:4.0.2,52
+    commit=158
+    prebuild=rm libs/action*.jar libs/support*.jar
+    target=android-17
+
+Auto Update Mode:None
+# On downloads page (for now)
+Update Check Mode:RepoManifest
+Current Version:4.0.2
+Current Version Code:52
+
