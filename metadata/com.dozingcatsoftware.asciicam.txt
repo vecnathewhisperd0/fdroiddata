@@ -1,0 +1,37 @@
+Categories:Multimedia
+License:Apache2
+Web Site:http://www.dozingcatsoftware.com
+Source Code:https://github.com/dozingcat/AsciiCam
+Issue Tracker:https://github.com/dozingcat/AsciiCam/issues
+
+Auto Name:AsciiCam
+Summary:Replace pixels with text
+Description:
+AsciiCam generates images in real time from whatever your camera is pointing at,
+either in greyscale, in the primary colors or in full color. Instead of a normal
+image made of pixels, each area will have a coloured letter of the latin
+alphabet or another ASCII character.
+
+You can also create ASCII versions of pictures in your gallery, and optionally
+have ASCII versions automatically generated every time you take a picture with
+the standard camera app.
+.
+
+Repo Type:git
+Repo:https://github.com/dozingcat/AsciiCam.git
+
+Build:1.1,5
+    commit=25f4d0aaca
+    prebuild=rm -rf libs/armeabi*/ && \
+        sed -i '/^APP_PROJECT_PATH/d' jni/Application.mk
+    buildjni=yes
+
+Build:1.1.1,6
+    commit=340349e80b
+    prebuild=sed -i '/^APP_PROJECT_PATH/d' jni/Application.mk
+    buildjni=yes
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.1.1
+Current Version Code:6

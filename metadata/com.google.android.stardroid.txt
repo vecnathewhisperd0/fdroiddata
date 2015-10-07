@@ -1,0 +1,37 @@
+Categories:Navigation
+License:Apache2
+Web Site:https://code.google.com/p/stardroid
+Source Code:https://code.google.com/p/stardroid/source
+Issue Tracker:
+
+Auto Name:Sky Map
+Summary:Sky Map to explore the skies
+Description:
+Point your phone at the sky, and Sky Map will show the stars, planets,
+constellations, and more to help you identify the celestial objects in view. You
+can also browse the skies in manual mode.
+
+The app may not be able to detect your location very well if you are not using
+the non-Free Network Location service. It could be best to enter coordinates
+rather than entering a town or using GPS.
+
+The app has been built without the non-free Google Analytics library.
+.
+
+Repo Type:git-svn
+Repo:https://stardroid.googlecode.com/svn/trunk/app
+
+Build:1.6.4,1112
+    commit=3
+    prebuild=rm libs/libGoogleAnalytics.jar && \
+        rm libs/.svn/prop-base/libGoogleAnalytics.jar.svn-base && \
+        rm libs/.svn/text-base/libGoogleAnalytics.jar.svn-base
+
+Build:1.6.5,1113
+    commit=8
+    rm=libs/libGoogleAnalytics.jar,libs/.svn/prop-base/libGoogleAnalytics.jar.svn-base,libs/.svn/text-base/libGoogleAnalytics.jar.svn-base
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.6.5
+Current Version Code:1113

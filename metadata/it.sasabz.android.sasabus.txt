@@ -1,0 +1,65 @@
+Categories:Navigation
+License:GPLv3
+Web Site:http://sasabus.org
+Source Code:https://github.com/SASAbus/SASAbus
+Issue Tracker:https://github.com/SASAbus/SASAbus/issues
+
+Auto Name:SASAbus
+Summary:Bus schedule for South Tyrol
+Description:
+SASAbus is the first application to consult the bus schedule of SASA (Società
+Autobus Servizi d'Area - Städtischer Autobus Service AG) for all lines of the
+city of Bozen, Meran and Leifers (South Tyrol). Operation is very simple: choose
+the city, the bus line, the destination and the bus stop: SASAbus will show you
+the next bus stop schedule. Now with additional GPS mode.
+
+The bus data is provided by [http://open.sasabz.it Sasabz] and is released under
+the CC-2.0-SA-NC. Map data is licensed under the Open Data Commons Open Database
+Licence and copyrighted by OpenStreetMap-Mitwirkende.
+.
+
+Repo Type:git
+# Previous repo. Got disabled over missing source code for libraries
+# Repo:https://github.com/paolodongilli/SASAbus.git
+# Repo:https://github.com/markuswindegger/SASAbus.git
+Repo:https://github.com/SASAbus/SASAbus.git
+
+Build:0.2.6,17
+    disable=v0.2.6
+    commit=unknown - see disabled
+    target=android-15
+
+Build:0.2.7,18
+    disable=e46d3e02f0
+    commit=unknown - see disabled
+    target=android-15
+
+Build:0.2.8,19
+    commit=f_droid_v0.2.8.3
+
+Build:0.2.11,22
+    disable=should be published but doesn't exist in source code
+    commit=unknown - see disabled
+
+Build:0.2.12,23
+    disable=beta
+    commit=unknown - see disabled
+
+Build:0.3.01,24
+    commit=v0.3.01
+    extlibs=android/android-support-v4.jar
+
+Build:1.1.1,39
+    disable=unverified jars
+    commit=f_droid_v1.1.1_final
+    srclibs=1:ActionBarSherlock@4.4.0,2:PagerSlidingTabStrip@v1.0.1
+    prebuild=pushd $$PagerSlidingTabStrip$$ && \
+        mkdir libs && \
+        popd && \
+        cp libs/android-support-v4.jar $$PagerSlidingTabStrip$$/libs && \
+        cp libs/android-support-v4.jar $$ActionBarSherlock$$/libs
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:1.1.1
+Current Version Code:39

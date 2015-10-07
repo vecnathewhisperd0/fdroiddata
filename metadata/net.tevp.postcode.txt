@@ -1,0 +1,23 @@
+Categories:Navigation
+License:GPLv3
+Web Site:http://www.lshift.net/blog/2010/09/26/android-postcode-app
+Source Code:https://github.com/palfrey/postcode
+Issue Tracker:https://github.com/hmrocha/batterywidget/issues
+
+Auto Name:Postcode
+Summary:Get your postcode (UK only)
+Description:
+A simple way to retrieve the postcode for your current location.
+.
+
+Repo Type:git
+Repo:https://github.com/palfrey/postcode.git
+
+Build:1.1,2
+    commit=f2832
+    target=android-10
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.1
+Current Version Code:2

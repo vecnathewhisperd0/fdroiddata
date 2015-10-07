@@ -1,0 +1,29 @@
+Categories:Games
+License:Apache2
+Web Site:https://code.google.com/p/noiz2-droid
+Source Code:https://code.google.com/p/noiz2-droid/source
+Issue Tracker:
+
+Auto Name:Noiz2
+Summary:Port of the game Noiz2
+Description:
+Vector-graphics shoot-em-up from Kenta Cho. Ported to Android.
+
+Avoid the bullets and shoot the enemy.
+
+Collect the green stars to build your shield.
+
+Disable OpenGL in settings if you have graphical problems
+.
+
+Repo Type:git-svn
+Repo:https://noiz2-droid.googlecode.com/svn/trunk/noiz2
+
+Build:1.4.0,12
+    commit=15
+    target=android-3
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.4.0
+Current Version Code:12

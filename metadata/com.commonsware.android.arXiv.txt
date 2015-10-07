@@ -1,0 +1,58 @@
+Categories:Reading
+License:GPLv2
+Web Site:https://code.google.com/p/arxiv-mobile
+Source Code:https://code.google.com/p/arxiv-mobile/source
+Issue Tracker:
+
+Auto Name:arXiv mobile
+Summary:Client for arXiv.org
+Description:
+Keep up with the latest science research: physics, math, computers science.
+Browse daily science articles (Physics, Astronomy, Math...) at arXiv.org and
+search the entire arXiv collection. You can read PDFs, save them for later
+reading and share articles. A homescreen widget lets you know of any new
+articles in your favorite science categories (dozens of physics, math, computer
+science categories) or custom searches.
+.
+
+# Repo Type:bzr
+# Repo:lp:arxivdroid
+Repo Type:git-svn
+Repo:https://arxiv-mobile.googlecode.com/svn/trunk
+
+Build:2.0.4,90
+    disable=94 but doesn't compile due to apparently missing resource
+    commit=unknown - see disabled
+    target=android-11
+
+Build:2.0.6,92
+    commit=95
+    prebuild=sed -i -e "/key\.alias.*/d" -e "/key\.store.*/d" *.properties
+    target=android-11
+
+Build:2.0.10,96
+    disable=No source in repo
+    commit=unknown - see disabled
+    target=android-11
+
+Build:2.0.14,100
+    disable=No source in repo
+    commit=unknown - see disabled
+    target=android-11
+
+Build:2.0.16,102
+    disable=No source in repo
+    commit=unknown - see disabled
+    target=android-11
+
+Build:2.0.20,106
+    commit=4
+    patch=fix.patch
+
+Build:2.0.22,108
+    commit=6
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:2.0.22
+Current Version Code:108

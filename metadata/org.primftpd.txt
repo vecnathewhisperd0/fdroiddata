@@ -1,0 +1,67 @@
+Categories:System
+License:Apache2
+Web Site:
+Source Code:https://github.com/wolpi/prim-ftpd
+Issue Tracker:https://github.com/wolpi/prim-ftpd/issues
+
+Auto Name:primitive ftpd
+Summary:FTP server
+Description:
+A simple FTP and SFTP (SSH file transfer) server. Allows to exchange files with
+other machines over WiFi. No more USB cable searching. Runs without root
+privileges and is not started when device boots: Control yourself when the
+server runs. However, while it runs it prevents standby to avoid long uploads
+and downloads to abort.
+.
+
+Repo Type:git
+Repo:https://github.com/wolpi/prim-ftpd.git
+
+Build:1.0.1,2
+    commit=8394fba8b405f3bfb9bd6f5836c0a8bf07ca3158
+    subdir=primitiveFTPd
+
+Build:1.0.2,3
+    commit=prim-ftpd-1.0.2
+    subdir=primitiveFTPd
+
+Build:1.0.3,4
+    commit=prim-ftpd-1.0.3
+    subdir=primitiveFTPd
+
+Build:2.0.0,5
+    commit=prim-ftpd-2.0
+    subdir=primitiveFTPd
+
+Build:2.1,6
+    commit=prim-ftpd-2.1
+    subdir=primitiveFTPd
+
+Build:2.2,7
+    commit=prim-ftpd-2.2
+    subdir=primitiveFTPd
+
+Build:2.3,8
+    commit=prim-ftpd-2.3
+    subdir=primitiveFTPd
+
+Build:3.0,9
+    commit=prim-ftpd-3.0
+    subdir=primitiveFTPd
+
+Build:3.1,11
+    commit=prim-ftpd-3.1
+    subdir=primitiveFTPd
+
+Build:3.1.1,12
+    commit=prim-ftpd-3.1.1
+    subdir=primitiveFTPd
+
+Build:3.2,13
+    commit=prim-ftpd-3.2
+    subdir=primitiveFTPd
+
+Auto Update Mode:Version prim-ftpd-%v
+Update Check Mode:Tags
+Current Version:3.2
+Current Version Code:13

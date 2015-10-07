@@ -1,0 +1,39 @@
+Categories:Theming
+License:MIT
+Web Site:
+Source Code:https://github.com/danielgimenes/NasaPic
+Issue Tracker:https://github.com/danielgimenes/NasaPic/issues
+
+Auto Name:NasaPic
+Summary:Set astronomy wallpapers
+Description:
+Set NASA's Astronomy Picture of the Day as your wallpaper.
+.
+
+Repo Type:git
+Repo:https://github.com/danielgimenes/NasaPic
+
+Build:2.0,3
+    commit=19271f841e40f6a5f99352db562a4070acc689fd
+    subdir=app
+    gradle=yes
+
+Build:2.1,4
+    commit=0ffd93ee53c3f7549681637264f1c97ff2e951a3
+    subdir=app
+    gradle=yes
+
+Build:2.4,7
+    commit=9bb4d5adba526edc3f414725174c5e8ed29dc901
+    subdir=app
+    gradle=yes
+
+Build:2.5,8
+    commit=fb06f0839543ea07a2d0d14fc220856f61552168
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:2.5
+Current Version Code:8

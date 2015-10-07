@@ -1,0 +1,33 @@
+Categories:Security
+License:GPLv3+
+Web Site:http://shick.in/android
+Source Code:https://github.com/zagaberoo/lockpatterngenerator
+Issue Tracker:https://github.com/zagaberoo/lockpatterngenerator/issues
+Bitcoin:1JscvZEbchRUpCXYX13bJb3aF6U1yT9BwG
+
+Auto Name:Lock Pattern Generator
+Summary:Generate a random lock pattern
+Description:
+Simple program that generates a random lockscreen pattern and helps you memorize
+it before applying it.
+.
+
+Repo Type:git
+Repo:https://github.com/zagaberoo/lockpatterngenerator.git
+
+Build:2.0,6
+    commit=02d119e5f
+
+Build:2.0.1,7
+    commit=v2.0.1
+
+Build:2.1,8
+    commit=v2.1
+
+Build:2.2,9
+    commit=v2.2
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:2.2
+Current Version Code:9

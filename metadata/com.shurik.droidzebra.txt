@@ -1,0 +1,42 @@
+Categories:Games
+License:GPLv3
+Web Site:https://code.google.com/p/droidzebra
+Source Code:https://code.google.com/p/droidzebra/source
+Issue Tracker:
+Donate:http://droidzebra.appspot.com/droidzebra/donate
+
+Auto Name:DroidZebra
+Summary:Reversi game
+Description:
+DroidZebra is advanced Reversi program based on Zebra Othello Engine written by
+Gunnar Andersson. Features:
+
+* difficulty levels from beginner (practice mode) to world-class play
+* opening book with more than 500,000 positions
+* unlimited undo
+.
+
+Repo Type:git
+Repo:https://code.google.com/p/droidzebra
+
+Build:1.4,10
+    commit=1e08eec
+    subdir=project
+    buildjni=yes
+
+Build:1.4.1,12
+    commit=d2e47f982c30
+    subdir=project
+    buildjni=yes
+
+Build:1.5.1,14
+    commit=c67c7e461940
+    subdir=project
+    prebuild=echo "sdk.dir=$$SDK$$" > local.properties && \
+        echo "ndk.dir=$$NDK$$" >> local.properties
+    buildjni=yes
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.5.1
+Current Version Code:14

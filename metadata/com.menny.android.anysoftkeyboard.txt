@@ -1,0 +1,125 @@
+Categories:Writing
+License:Apache2
+Web Site:https://anysoftkeyboard.github.io
+Source Code:https://github.com/AnySoftKeyboard/AnySoftKeyboard
+Issue Tracker:https://github.com/AnySoftKeyboard/AnySoftKeyboard/issues
+Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=9989122
+
+Auto Name:AnySoftKeyboard
+Summary:Alternative keyboard
+Description:
+* Multi-language keyboard support via external packages (English as standard)
+* Completion dictionaries for multiple languages
+* Multitouch support
+* Extension keyboard (swipe your finger all the way up out of the keyboard)
+* Gesture support: swipe left or right to switch layouts; swipe up to shift; swipe down to close the keyboard
+* Theme support (comes with several skins)
+* Built-in user dictionary words editor
+* Optional 16-key English keyboard
+* Cursor movement soft-keys that can also be mapped to hardware keys
+* Supports x86 and MIPS natively
+
+There are many language packs and themes available as apks on the website. We
+will try and publish any that have source xml and attribution/licence for the
+dictionaries. For more info see the f-droid.org
+[http://f-droid.org/forums/topic/anysoftkeyboard-language-packs-layouts-plans/#post-6408
+forum topic].
+.
+
+Repo Type:git
+Repo:https://github.com/AnySoftKeyboard/AnySoftKeyboard.git
+
+Build:20120528,74
+    commit=d6c2f7448
+    srclibs=AnySoftKeyboard-API@78768bc479
+    prebuild=sed -i 's@\(android.library.reference.1=\).*@\1$$AnySoftKeyboard-API$$@' project.properties
+    buildjni=yes
+
+Build:20120814-eye-candy,76
+    disable=doesn't build
+    commit=unknown - see disabled
+    srclibs=AnySoftKeyboard-API@78768bc479
+    prebuild=sed -i 's@\(android.library.reference.1=\).*@\1$$AnySoftKeyboard-API$$@' project.properties
+    buildjni=yes
+
+Build:20130106-eye-candy,85
+    commit=a7723e1db5
+    srclibs=AnySoftKeyboard-API@b21d8907
+    prebuild=sed -i 's@\(android.library.reference.1=\).*@\1$$AnySoftKeyboard-API$$@' project.properties && \
+        rm -rf libs/armeabi*/ libs/x86/ libs/mips/ ant/ keyboard_keystore StoreStuff/ res/raw/words_1.dict && \
+        wget https://softkeyboard.googlecode.com/svn-history/r544/trunk/project/dict_creation/makedict_Linux && \
+        wget https://github.com/AnySoftKeyboard/AnySoftKeyboardTools/blob/HEAD/makedict/makedict.jar?raw=true -O makedict.jar && \
+        chmod +x makedict_Linux && \
+        ./makedict_Linux dict/words.xml
+    buildjni=yes
+
+Build:20130222-skinny-eye-candy,95
+    commit=50daad0b0a
+    srclibs=AnySoftKeyboard-API@b21d8907,AnySoftKeyboardTools@73e9a09496
+    prebuild=sed -i 's@\(android.library.reference.1=\).*@\1$$AnySoftKeyboard-API$$@' project.properties && \
+        sed -i 's@..\/AnySoftKeyboardTools@$$AnySoftKeyboardTools$$@g' build.xml && \
+        rm -rf libs/armeabi*/ libs/x86/ libs/mips/ ant/ keyboard_keystore StoreStuff/ res/raw/words_1.dict
+    buildjni=yes
+
+Build:20130501-skinny-eye-candy-post-birthday,98
+    commit=6f51b8a9d
+    srclibs=AnySoftKeyboard-API@2c864957,AnySoftKeyboardTools@73e9a09496
+    prebuild=sed -i 's@\(android.library.reference.1=\).*@\1$$AnySoftKeyboard-API$$@' project.properties && \
+        sed -i 's@..\/AnySoftKeyboardTools@$$AnySoftKeyboardTools$$@g' build.xml && \
+        rm -rf libs/armeabi*/ libs/x86/ libs/mips/ ant/ keyboard_keystore StoreStuff/ res/raw/words_1.dict
+    buildjni=yes
+
+Build:20130528,102
+    commit=72fd519
+    srclibs=AnySoftKeyboard-API@8d8a958e17,AnySoftKeyboardTools@73e9a09496
+    prebuild=sed -i 's@\(reference.1=\).*@\1$$AnySoftKeyboard-API$$@' project.properties && \
+        sed -i 's@..\/AnySoftKeyboardTools@$$AnySoftKeyboardTools$$@g' build.xml && \
+        rm -rf libs/armeabi*/ libs/x86/ libs/mips/ ant/ keyboard_keystore StoreStuff/ res/raw/words_1.dict
+    buildjni=yes
+
+Build:20130709,106
+    commit=f1ba2de
+    srclibs=AnySoftKeyboard-API@30851236d7,AnySoftKeyboardTools@73e9a09496
+    prebuild=sed -i 's@\(.1=\).*@\1$$AnySoftKeyboard-API$$@' project.properties && \
+        sed -i 's@..\/AnySoftKeyboardTools@$$AnySoftKeyboardTools$$@g' build.xml && \
+        rm -rf libs/armeabi*/ libs/x86/ libs/mips/ ant/ keyboard_keystore StoreStuff/ res/raw/words_1.dict
+    buildjni=yes
+
+Build:20130807,107
+    disable=not published
+    commit=unknown - see disabled
+
+# Note that there is a 110 version for Android 1.5, but the F-Droid client no
+# longer supports that anyway, so there seems little point in building it
+Build:20130919,111
+    commit=2a68963f
+    srclibs=AnySoftKeyboard-API@30851236d7,AnySoftKeyboardTools@73e9a09496
+    prebuild=sed -i 's@\(.1=\).*@\1$$AnySoftKeyboard-API$$@' project.properties && \
+        sed -i 's@..\/AnySoftKeyboardTools@$$AnySoftKeyboardTools$$@g' build.xml && \
+        rm -rf libs/armeabi*/ libs/x86/ libs/mips/ ant/ keyboard_keystore StoreStuff/ res/raw/words_1.dict
+    buildjni=yes
+
+Build:20131101,114
+    disable=no longer uses ant, prebuilts
+    commit=82538d456f8
+    srclibs=AnySoftKeyboard-API@08b452ff4,AnySoftKeyboardTools@73e9a09496
+    prebuild=sed -i 's@\(.1=\).*@\1$$AnySoftKeyboard-API$$@' project.properties && \
+        sed -i 's@..\/AnySoftKeyboardTools@$$AnySoftKeyboardTools$$@g' build.xml && \
+        rm -rf libs/armeabi*/ libs/x86/ libs/mips/ ant/ keyboard_keystore StoreStuff/ res/raw/words_1.dict
+    buildjni=yes
+
+Build:1.2.20140705,140
+    disable=build words dict from source, no idea what version name/code it is
+    commit=1.5-r4.1
+    gradle=yes
+    rm=res/raw/words_1.dict
+
+Maintainer Notes:
+* Remove third party repos since they're only needed for testCompile
+* "gradle clean" builds all the groovy stuff for some reason, so we have to clean up after it
+.
+
+Auto Update Mode:None
+Update Check Mode:None
+Current Version:Unknown
+Current Version Code:140

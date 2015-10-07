@@ -1,0 +1,110 @@
+Categories:Games
+License:GPLv3
+Web Site:https://code.google.com/p/cuckoochess
+Source Code:https://code.google.com/p/cuckoochess/source
+Issue Tracker:
+Changelog:https://code.google.com/p/cuckoochess/source/list
+
+Auto Name:DroidFish
+Summary:Chess program
+Description:
+Port of the CuckooChess applet/engine.
+
+If you have [[org.scid.android]] installed you can read Scid database files
+directly from the app by long-pressing the board and choosing Load game from
+Scid file.
+.
+
+Repo Type:git-svn
+Repo:https://cuckoochess.googlecode.com/svn/trunk
+
+Build:1.44,51
+    commit=963
+    subdir=DroidFish
+    prebuild=cp -r ../CuckooChessEngine/src/* src/
+    target=android-10
+    buildjni=yes
+
+Build:1.45,52
+    commit=1044
+    subdir=DroidFish
+    prebuild=cp -r ../CuckooChessEngine/src/* src/ && \
+        rm -rf obj/ assets/stockfish15.mygz && \
+        $$NDK$$/ndk-build && \
+        ant copy_stockfish -f build_copy_exe.xml
+    target=android-10
+    buildjni=no
+
+Build:1.47,54
+    commit=1080
+    subdir=DroidFish
+    prebuild=cp -r ../CuckooChessEngine/src/* src/ && \
+        rm -rf obj/ assets/stockfish15.mygz && \
+        $$NDK$$/ndk-build && \
+        ant copy_stockfish -f build_copy_exe.xml
+    target=android-10
+    buildjni=no
+
+Build:1.50,57
+    commit=1113
+    subdir=DroidFish
+    prebuild=printf 'source.dir=src;../CuckooChessEngine/src' > ant.properties && \
+        rm assets/stockfish15.mygz
+    build=$$NDK$$/ndk-build && \
+        ant -f build_copy_exe.xml
+    buildjni=no
+
+Build:1.52,59
+    commit=1124
+    subdir=DroidFish
+    prebuild=printf 'source.dir=src;../CuckooChessEngine/src' > ant.properties && \
+        rm assets/stockfish15.mygz
+    build=$$NDK$$/ndk-build && \
+        ant -f build_copy_exe.xml
+    buildjni=no
+
+Build:1.53 DD,60
+    commit=1130
+    subdir=DroidFish
+    prebuild=printf 'source.dir=src;../CuckooChessEngine/src' > ant.properties && \
+        rm assets/stockfish15.mygz
+    build=$$NDK$$/ndk-build && \
+        ant -f build_copy_exe.xml
+    buildjni=no
+
+Build:1.54,61
+    commit=1143
+    subdir=DroidFish
+    prebuild=printf 'source.dir=src;../CuckooChessEngine/src' > ant.properties
+    build=$$NDK$$/ndk-build && \
+        ant -f build_copy_exe.xml
+    buildjni=no
+
+Build:1.55,63
+    commit=1188
+    subdir=DroidFish
+    prebuild=printf 'source.dir=src;../CuckooChessEngine/src' > ant.properties
+    build=$$NDK$$/ndk-build && \
+        ant -f build_copy_exe.xml
+    buildjni=no
+
+Build:1.56,64
+    commit=1196
+    subdir=DroidFish
+    prebuild=printf 'source.dir=src;../CuckooChessEngine/src' > ant.properties
+    build=$$NDK$$/ndk-build && \
+        ant -f build_copy_exe.xml
+    buildjni=no
+
+Build:1.57,65
+    commit=1202
+    subdir=DroidFish
+    prebuild=printf 'source.dir=src;../CuckooChessEngine/src' > ant.properties
+    build=$$NDK$$/ndk-build && \
+        ant -f build_copy_exe.xml
+    buildjni=no
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.57
+Current Version Code:65

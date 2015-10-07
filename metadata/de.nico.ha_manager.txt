@@ -1,0 +1,81 @@
+Categories:Science & Education
+License:GPLv3
+Web Site:https://altnico.github.io/projects/android/HW-Manager.html
+Source Code:https://github.com/hw-manager/android
+Issue Tracker:https://github.com/hw-manager/android/issues
+Changelog:https://github.com/hw-manager/android/releases
+
+Auto Name:HW-Manager
+Summary:Manage your homework
+Description:
+Make your schoolday easier by keeping the overview over your homework. The
+project follows the "KISS" principle - Keep it simple, stupid.
+.
+
+Repo Type:git
+Repo:https://github.com/hw-manager/android
+
+Build:0.61,8
+    commit=0.61
+    subdir=HA-Manager
+
+Build:0.62,9
+    commit=0.62
+    subdir=HA-Manager
+
+Build:0.63,10
+    commit=0.63
+    subdir=HA-Manager
+
+Build:0.65,12
+    commit=0.65
+    subdir=HA-Manager
+
+Build:0.7,13
+    commit=0.7
+    subdir=HA-Manager
+
+Build:0.8,14
+    commit=0.8
+    subdir=app
+
+Build:0.81,15
+    commit=0.81
+    subdir=app
+
+Build:0.82,16
+    commit=0.82
+    subdir=app
+
+Build:0.83,17
+    commit=0.83
+    subdir=app
+
+Build:0.84,18
+    commit=0.84
+    subdir=app
+
+Build:0.91,20
+    commit=0.91
+    subdir=app
+
+# repo changed, start of new gradle world order
+Build:0.92,21
+    commit=0.92
+    subdir=app
+    gradle=yes
+
+Build:0.93,22
+    commit=0.93
+    subdir=app
+    gradle=yes
+
+Build:0.94,23
+    commit=0.94
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:0.94
+Current Version Code:23

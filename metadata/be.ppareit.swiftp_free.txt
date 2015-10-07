@@ -1,0 +1,87 @@
+Categories:Connectivity
+License:GPLv3
+Web Site:https://ppareit.github.com/swiftp
+Source Code:https://github.com/ppareit/swiftp
+Issue Tracker:https://github.com/ppareit/swiftp/issues
+Changelog:https://github.com/ppareit/swiftp/blob/HEAD/CHANGES
+Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZBVLYKWYMXQ3G
+
+Name:FTP Server
+Auto Name:FTP Server (Demo)
+Summary:Access your phone wirelessly
+Description:
+This app can serve files over the internet but the most likely usage is to
+access files from another computer without needing a cable.
+
+The name Demo in the launcher just means that it corresponds to the free version
+on Google. The app is fully featured so instead of buying the "Full" version as
+a way of contributing you can donate via the Paypal link.
+.
+
+Repo Type:git
+Repo:https://github.com/ppareit/swiftp.git
+
+Build:2.2,21
+    commit=460e2c
+    prebuild=rm -rf cloud_server promotional
+
+Build:2.4,23
+    commit=v2.4
+    prebuild=rm -rf cloud_server promotional documentation
+
+Build:2.5.1,25
+    commit=v2.5.1
+    subdir=Free
+    prebuild=rm -rf ../cloud_server ../Promotional ../Documentation && \
+        mkdir src
+    update=.,../Lib
+
+Build:2.5.2,26
+    commit=v2.5.2
+    subdir=Free
+    prebuild=rm -rf ../Promotional ../Documentation && \
+        mkdir src
+    update=.,../Lib
+
+Build:2.5.3,27
+    commit=v2.5.3
+    subdir=Free
+    prebuild=rm -rf ../Promotional ../Documentation && \
+        mkdir src
+    update=.,../Lib
+
+Build:2.5.4,28
+    commit=v2.5.4
+    subdir=Free
+    prebuild=rm -rf ../Promotional ../Documentation && \
+        mkdir src
+    update=.,../Lib
+
+Build:2.6,29
+    commit=v2.6
+    rm=promo,test,doc
+
+Build:2.9,20900
+    commit=v2.9
+    subdir=free
+    prebuild=mkdir src
+
+Build:2.10,21000
+    commit=v2.10
+    subdir=free
+    prebuild=mkdir src
+
+Build:2.10.1,21001
+    commit=v2.10.1
+    subdir=free
+    prebuild=mkdir src
+
+Build:2.10.2,21002
+    commit=v2.10.2
+    subdir=free
+    prebuild=mkdir src
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:2.10.2
+Current Version Code:21002
