@@ -927,7 +927,6 @@ Build:1.5.2,1050205
     buildjni=no
 
 Build:1.6.1,1060103
-    disable=outdated buildsystem
     commit=1.6.1
     subdir=vlc-android
     gradle=VanillaARMv6fpu
@@ -939,7 +938,6 @@ Build:1.6.1,1060103
     buildjni=no
 
 Build:1.6.1,1060104
-    disable=outdated build system
     commit=1.6.1
     subdir=vlc-android
     gradle=VanillaARMv7
@@ -952,6 +950,39 @@ Build:1.6.1,1060104
 
 Build:1.6.1,1060105
     commit=1.6.1
+    subdir=vlc-android
+    gradle=VanillaX86
+    srclibs=VLC@d568828
+    prebuild=sed -i -e '/^TARGET/aexit 0' -e 's@\-d \"gradle\/wrapper\"@1@g' ../compile.sh && \
+        ln -s vlc-android/$$VLC$$ ../vlc
+    build=cd ../ && \
+        ./compile.sh -a "x86" --release
+    buildjni=no
+
+Build:1.6.4,1060403
+    commit=1.6.4
+    subdir=vlc-android
+    gradle=VanillaARMv6fpu
+    srclibs=VLC@d568828
+    prebuild=sed -i -e '/^TARGET/aexit 0' -e 's@\-d \"gradle\/wrapper\"@1@g' ../compile.sh && \
+        ln -s vlc-android/$$VLC$$ ../vlc
+    build=cd ../ && \
+        ./compile.sh -a "armeabi" --release
+    buildjni=no
+
+Build:1.6.4,1060404
+    commit=1.6.4
+    subdir=vlc-android
+    gradle=VanillaARMv7
+    srclibs=VLC@d568828
+    prebuild=sed -i -e '/^TARGET/aexit 0' -e 's@\-d \"gradle\/wrapper\"@1@g' ../compile.sh && \
+        ln -s vlc-android/$$VLC$$ ../vlc
+    build=cd ../ && \
+        ./compile.sh -a "armeabi-v7a" --release
+    buildjni=no
+
+Build:1.6.4,1060405
+    commit=1.6.4
     subdir=vlc-android
     gradle=VanillaX86
     srclibs=VLC@d568828
@@ -1000,5 +1031,5 @@ Auto Update Mode:None
 Update Check Mode:Tags
 # Only use higher vercode ops, if we do build those arches
 Vercode Operation:%c + 5
-Current Version:1.6.2
-Current Version Code:1060205
+Current Version:1.6.4
+Current Version Code:1060405
