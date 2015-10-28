@@ -1,3 +1,4 @@
+
 Categories:Navigation
 License:MIT
 Web Site:
@@ -18,7 +19,7 @@ Build:1.0,1
     commit=v1.03
     subdir=app
 
-Auto Update Mode:Version
+Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:1.03
-Current Version Code:1
+Current Version Code:2
