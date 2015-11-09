@@ -1,0 +1,24 @@
+Categories:Navigation
+License:GPL
+Web Site:https://github.com/gjedeer/mylocation
+Source Code:https://github.com/gjedeer/mylocation/tree/master
+Issue Tracker:
+
+Auto Name:My Location
+Summary:Share your location
+Description:
+A lightweight location sharing app
+.
+
+Repo Type:git
+Repo:https://github.com/gjedeer/mylocation.git
+
+# system libraries in jni/Android/lib
+Build:1.2,7
+    commit=6dcd767ab19cf82dc9dfb805176cd5cd66cc988e
+    target=android-14
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.2
+Current Version Code:7
