@@ -12,7 +12,6 @@ A lightweight location sharing app
 Repo Type:git
 Repo:https://github.com/gjedeer/mylocation.git
 
-# system libraries in jni/Android/lib
 Build:1.2,7
     commit=6dcd767ab19cf82dc9dfb805176cd5cd66cc988e
     target=android-14
