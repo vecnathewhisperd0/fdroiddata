@@ -1,0 +1,23 @@
+AntiFeatures:Ads
+Categories:Games
+License:GPLv3
+Web Site:
+Source Code:https://github.com/TodorBalabanov/Complica4
+Issue Tracker:https://github.com/TodorBalabanov/Complica4/issues
+
+Auto Name:Complica4
+Summary:Puzzle game
+Description:
+Android modification of the original board game Complica.
+.
+
+Repo Type:git
+Repo:https://github.com/TodorBalabanov/HungarianRingsForAndroid
+
+Build:1.0,1
+    commit=46e137c7ed63886201290d3a0aa3d043232e9f85
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.0
+Current Version Code:1
