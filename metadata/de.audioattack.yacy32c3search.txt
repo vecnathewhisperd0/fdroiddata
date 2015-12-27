@@ -1,6 +1,10 @@
 Categories:Internet,Multimedia
 License:GPLv3
+<<<<<<< HEAD
 Web Site:https://github.com/yacy/yacy_search_androidclient
+=======
+Web Site:
+>>>>>>> f008d8e2aada52bb675c3ce05fe2e3f26cbbab24
 Source Code:https://github.com/yacy/yacy_search_androidclient
 Issue Tracker:https://github.com/yacy/yacy_search_androidclient/issues
 
@@ -15,7 +19,18 @@ congress.
 Repo Type:git
 Repo:https://github.com/yacy/yacy_search_androidclient.git
 
+<<<<<<< HEAD
 Auto Update Mode:Version %v
+=======
+Build:1.0,1
+    commit=1.0.0
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/android {/alintOptions {\nabortOnError false\n}\n' build.gradle
+
+# Auto Update Mode:Version %v
+Auto Update Mode:None
+>>>>>>> f008d8e2aada52bb675c3ce05fe2e3f26cbbab24
 Update Check Mode:Tags
 Current Version:1.0
 Current Version Code:1
