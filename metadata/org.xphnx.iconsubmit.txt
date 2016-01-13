@@ -19,12 +19,12 @@ Cyanogenmod Theme requests.
 Repo Type:git
 Repo:https://gitlab.com/xphnx/icon-request-tool.git
 
-Build:1.0,1
-    commit=v1.0
+Build:1.1,2
+    commit=9a5bd7dc7b04ea10388a78e3a61474e314a34f13
     subdir=app
     gradle=yes
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.0
-Current Version Code:1
+Current Version:1.1
+Current Version Code:2
