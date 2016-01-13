@@ -1,0 +1,30 @@
+Categories:Theming
+License:GPLv3
+Web Site:https://xphnx.github.io/fento-suite
+Source Code:https://gitlab.com/xphnx/icon-request-tool
+Issue Tracker:https://gitlab.com/xphnx/icon-request-tool/issues
+Changelog:https://gitlab.com/xphnx/icon-request-tool/blob/master/CHANGELOG.md
+
+Auto Name:Turtl
+Summary:Tool to request the inclusion of new icons on your icon packs
+Description:
+With this app you can share via email (or other protocols like Owncloud, NFC, 
+Bluetooth, IM...) the data for adding the icons missing in your icon pack. 
+It just collects the app title, package name, activity name and the icon file 
+of the apps your select. By default have set the email address for [https://f-droid.org/repository/browse/?fdid=org.twelf.cmtheme TwelF]/[https://f-droid.org/repository/browse/?fdid=org.tw.onze.cmtheme Onze] 
+Cyanogenmod Theme requests.
+
+.
+
+Repo Type:git
+Repo:https://gitlab.com/xphnx/icon-request-tool.git
+
+Build:1.0,1
+    commit=v1.0
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:1.0
+Current Version Code:1
