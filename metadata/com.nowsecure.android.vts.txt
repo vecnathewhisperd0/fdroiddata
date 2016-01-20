@@ -36,6 +36,9 @@ Build:v.13,13
     commit=v.13
     subdir=app
     gradle=yes
+    prebuild=rm -R app/src/main/assets/crashCheck && \
+    rm -R app/src/main/assets/stagefright && \
+    rm app/src/main/assets/Samsung_cred.zip
 
 Auto Update Mode:None
 Update Check Mode:Tags
