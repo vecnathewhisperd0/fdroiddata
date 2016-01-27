@@ -20,8 +20,8 @@ uses, for example, OAuth, will not work in this build.
 Repo Type:git
 Repo:https://github.com/wordpress-mobile/WordPress-Android.git
 
-#Old svn build, untagged in git
-#Build Version:1.3.9,31,202,prebuild=mkdir libs && mv *.jar libs && sed -i "s@checkStats(accounts.size());@// MY PRIVACY > YOUR STATS@" src/org/wordpress/android/wpAndroid.java,encoding=utf-8
+# Old svn build, untagged in git
+# Build Version:1.3.9,31,202,prebuild=mkdir libs && mv *.jar libs && sed -i "s@checkStats(accounts.size());@// MY PRIVACY > YOUR STATS@" src/org/wordpress/android/wpAndroid.java,encoding=utf-8
 Build:1.4.1,33
     commit=1.4.1
     encoding=utf-8
@@ -142,13 +142,10 @@ Build:2.7.1,103
     gradle=yes
     prebuild=sed -e '/[Mm]ixpanel/ d' -i build.gradle src/org/wordpress/android/util/WPMobileStatsUtil.java
 
-Build:4.0,181
-    disable=fabric etc
-    commit=4.0
-    gradle=yes
+Build:4.8.1,229
+    disable=third party repos, fabric/crashlytics
 
 Auto Update Mode:None
 Update Check Mode:Tags ^[0-9.]*$
-Current Version:4.5.2
-Current Version Code:209
-
+Current Version:4.9
+Current Version Code:233

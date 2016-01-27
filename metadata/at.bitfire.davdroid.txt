@@ -1,10 +1,10 @@
 Categories:Internet
 License:GPLv3
-Web Site:https://davdroid.bitfire.at
-Source Code:https://github.com/bitfireAT/davdroid
-Issue Tracker:https://forums.bitfire.at/category/4/davdroid
-Changelog:https://github.com/bitfireAT/davdroid/releases
-Donate:https://davdroid.bitfire.at/donate
+Web Site:https://davdroid.bitfire.at/
+Source Code:https://davdroid.bitfire.at/source/
+Issue Tracker:https://davdroid.bitfire.at/forums/
+Changelog:https://gitlab.com/bitfireAT/davdroid/tags
+Donate:https://davdroid.bitfire.at/donate/
 FlattrID:2100160
 Bitcoin:1KSCy7RHztKuhW9fLLaUYqdwdC2iwbejZU
 
@@ -26,7 +26,7 @@ Debian wiki].
 .
 
 Repo Type:git
-Repo:https://github.com/bitfireAT/davdroid.git
+Repo:https://gitlab.com/bitfireAT/davdroid.git
 
 Build:0.3.2-alpha,5
     commit=v0.3.2-alpha
@@ -242,13 +242,58 @@ Build:0.8.4.1,72
     subdir=app
     gradle=yes
 
-Maintainer Notes:
-Auto-update disabled because a) tags inconsistent, and b) betas are tagged
-but have the same version codes as releases.
-.
+Build:0.9.0.2,80
+    disable=build hands due to using a git@ (for a submodule?)
+    commit=v0.9.0.2
+    subdir=app
+    submodules=yes
+    gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:Tags
-Current Version:0.8.4.1
-Current Version Code:72
+Build:0.9.0.3,81
+    disable=build hands due to using a git@ (for a submodule?)
+    commit=v0.9.0.3
+    subdir=app
+    submodules=yes
+    gradle=yes
 
+Build:0.9.0.4,82
+    commit=v0.9.0.4-1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.9.1-beta1,83
+    disable=beta
+    commit=v0.9.1-beta1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.9.1,84
+    commit=v0.9.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.9.1.1,85
+    commit=v0.9.1.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.9.1.2,86
+    commit=v0.9.1.2
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.9.1.3,87
+    commit=v0.9.1.3
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags ^v[0-9.]*$
+Current Version:0.9.1.3
+Current Version Code:87

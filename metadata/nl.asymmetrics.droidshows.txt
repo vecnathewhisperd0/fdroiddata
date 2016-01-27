@@ -63,8 +63,31 @@ Build:5.6,56
 Build:5.7,57
     commit=5.7
 
+Build:5.8,58
+    commit=5.8
+
+Build:5.9,59
+    commit=5.9
+
+Build:6.0,60
+    commit=6.0
+
+Build:6.1,61
+    commit=6.1
+
+Build:6.2,62
+    commit=6.2
+
+Build:6.3,63
+    commit=6.3
+
+Build:6.4,64
+    commit=6.4
+
+Build:6.5,65
+    commit=6.5
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:5.7
-Current Version Code:57
-
+Current Version:6.5
+Current Version Code:65

@@ -3,7 +3,7 @@ License:GPLv3+
 Web Site:https://f-droid.org
 Source Code:https://gitlab.com/fdroid/fdroidclient
 Issue Tracker:https://gitlab.com/fdroid/fdroidclient/issues
-Changelog:https://gitlab.com/fdroid/fdroidclient/raw/master/CHANGELOG.md
+Changelog:https://gitlab.com/fdroid/fdroidclient/raw/HEAD/CHANGELOG.md
 Donate:https://f-droid.org/about
 FlattrID:343053
 Bitcoin:15u8aAPK4jJ5N8wpWJ5gutAyyeHtKX5i18
@@ -472,17 +472,74 @@ Build:0.97-alpha2,97002
     commit=v0.97-alpha2
     subdir=F-Droid
     gradle=yes
-    scanignore=extern/AndroidPinning/res/raw/cacerts
 
 Build:0.97-alpha3,97003
     commit=v0.97-alpha3
     subdir=F-Droid
     gradle=yes
-    scanignore=extern/AndroidPinning/res/raw/cacerts
+
+Build:0.97-alpha4,97004
+    commit=v0.97-alpha4
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.97-alpha5,97005
+    commit=v0.97-alpha5
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.97-alpha6,97006
+    commit=v0.97-alpha6
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.97-alpha7,97007
+    commit=v0.97-alpha7
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.97-alpha8,97008
+    commit=v0.97-alpha8
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.97,97050
+    commit=v0.97
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha1,98001
+    commit=v0.98-alpha1
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha2,98002
+    commit=v0.98-alpha2
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha3,98003
+    commit=v0.98-alpha3
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha4,98004
+    commit=v0.98-alpha4
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha5,98005
+    commit=v0.98-alpha5
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha6,98006
+    commit=v0.98-alpha6
+    subdir=F-Droid
+    gradle=yes
 
 Archive Policy:12 versions
 Auto Update Mode:None
 Update Check Mode:Static
-Current Version:0.96.1
-Current Version Code:96150
-
+Current Version:0.97
+Current Version Code:97050

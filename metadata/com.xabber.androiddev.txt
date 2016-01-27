@@ -364,8 +364,51 @@ Build:1.0.45,218
     submodules=yes
     gradle=dev
 
+Build:1.0.51,224
+    commit=1.0.51
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+
+Build:1.0.53,226
+    commit=1.0.53
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+
+Build:1.0.62,235
+    disable=uses gradle alpha version
+    commit=1.0.62
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+
+Build:1.0.63,236
+    commit=1.0.63
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+
+Build:1.0.72,245
+    disable=uses gradle aplha version
+    commit=1.0.72
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+
+Build:1.0.73,246
+    commit=1.0.73
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+
+Build:1.0.74,247
+    commit=1.0.74
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.0.45
-Current Version Code:218
-
+Current Version:1.0.74
+Current Version Code:247

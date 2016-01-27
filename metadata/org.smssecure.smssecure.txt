@@ -3,6 +3,7 @@ License:GPLv3
 Web Site:http://www.smssecure.org
 Source Code:https://github.com/SMSSecure/SMSSecure
 Issue Tracker:https://github.com/SMSSecure/SMSSecure/issues
+Changelog:https://github.com/SMSSecure/SMSSecure/blob/HEAD/CHANGELOG.md
 
 Auto Name:SMSSecure
 Summary:Send encrypted text messages (SMS)
@@ -211,8 +212,52 @@ Build:0.11.3,112
         ./scripts/build-witness.sh && \
         rm -rf libs/gradle-witness/build
 
+Build:0.12.0,113
+    commit=v0.12.0
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.12.1,114
+    commit=v0.12.1
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.12.3,116
+    commit=v0.12.3
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.13.0,117
+    commit=v0.13.0
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.13.1,118
+    commit=v0.13.1
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.11.3
-Current Version Code:112
-
+Current Version:0.13.1
+Current Version Code:118

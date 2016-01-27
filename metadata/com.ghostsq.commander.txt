@@ -137,6 +137,59 @@ Build:1.53,285
     target=android-21
     scanignore=src/com/ghostsq/commander/adapters/CA.java
 
+Build:1.53.1b1,286
+    commit=522
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.1,287
+    commit=523
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.2b1,288
+    commit=525
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.2b2,289
+    commit=529
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.2b3,290
+    commit=530
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.2,291
+    commit=531
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.3b1,292
+    commit=532
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.3,293
+    commit=533
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.4b2,295
+    commit=535
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
 Maintainer Notes:
 No commit messages in source repo! No tags. Apks on website can be used to
 confirm a release is real. Commit where AndroidManifest is changed usually
@@ -145,9 +198,9 @@ corresponds to version.
 The scanignore is for the dex class loading which is used for loading plugins.
 .
 
+Archive Policy:4 versions
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-#Update Check Ignore:b
-Current Version:1.53
-Current Version Code:285
-
+# Update Check Ignore:b
+Current Version:1.53.4b2
+Current Version Code:295

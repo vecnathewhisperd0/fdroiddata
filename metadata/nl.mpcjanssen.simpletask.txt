@@ -5,7 +5,7 @@ Source Code:https://github.com/mpcjanssen/simpletask-android
 Issue Tracker:https://github.com/mpcjanssen/simpletask-android/issues
 Changelog:https://github.com/mpcjanssen/simpletask-android/blob/HEAD/src/main/assets/changelog.en.md
 
-Auto Name:Simpletask donation key
+Auto Name:Simpletask
 Summary:Todo list manager
 Description:
 A simple task list manager that strives to have just enough features to do GTD
@@ -424,8 +424,63 @@ Build:6.0.8,1582
     init=rm libs/*.jar
     gradle=cloudless
 
+Build:6.1.1,3000
+    disable=bad tag
+    commit=6.1.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.2.0,3001
+    commit=6.2.0
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.1,3003
+    commit=6.3.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.2,3004
+    commit=6.3.2
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.4,3006
+    commit=6.3.4
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.5,3007
+    commit=6.3.5
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.6,3008
+    commit=6.3.6
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.1,3011
+    commit=7.0.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.2,3012
+    commit=7.0.2
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.3,3013
+    commit=7.0.3
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.4,3014
+    commit=7.0.4
+    init=rm libs/*.jar
+    gradle=cloudless
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:6.0.8
-Current Version Code:1582
-
+Current Version:7.0.4
+Current Version Code:3014

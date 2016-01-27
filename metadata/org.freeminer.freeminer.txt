@@ -1,5 +1,5 @@
 Categories:Games,Internet
-License:GPLv3,CC-BY-SA 3.0
+License:GPLv3,CC-BY-SA-3.0
 Web Site:http://freeminer.org
 Source Code:https://github.com/freeminer/freeminer
 Issue Tracker:https://github.com/freeminer/freeminer/issues
@@ -30,20 +30,20 @@ Build:0.4.12.6.13,13
     subdir=build/android
     submodules=yes
     output=bin/freeminer-release-unsigned.apk
+    scanignore=build/windows
     build=printf "%s\n%s\n%s" "ANDROID_NDK = $$NDK$$" "NDK_MODULE_PATH = $$NDK$$/toolchains" "SDKFOLDER = $$SDK$$" > path.cfg && \
         for n in 1 2 3; do make release && \
         break; done
-    buildjni=no
 
 Build:0.4.12.6.15,15
     commit=65dd040a3ef160e8967e96b2c6abf7c772859d30
     subdir=build/android
     submodules=yes
     output=bin/freeminer-release-unsigned.apk
+    scanignore=build/windows
     build=printf "%s\n%s\n%s" "ANDROID_NDK = $$NDK$$" "NDK_MODULE_PATH = $$NDK$$/toolchains" "SDKFOLDER = $$SDK$$" > path.cfg && \
         for n in 1 2 3; do make release && \
         break; done
-    buildjni=no
 
 Build:0.4.12.6.25,25
     disable=build fails
@@ -51,13 +51,46 @@ Build:0.4.12.6.25,25
     subdir=build/android
     submodules=yes
     output=bin/freeminer-release-unsigned.apk
+    scanignore=build/windows
     build=printf "%s\n%s\n%s" "ANDROID_NDK = $$NDK$$" "NDK_MODULE_PATH = $$NDK$$/toolchains" "SDKFOLDER = $$SDK$$" > path.cfg && \
         for n in 1 2 3; do make release && \
         break; done
-    buildjni=no
 
+Build:0.4.13.7.48,48
+    disable=requires freetype
+    commit=d6191aa610df21720d0f13650e51772d23df1e52
+    subdir=build/android
+    submodules=yes
+    output=bin/freeminer-release-unsigned.apk
+    scanignore=build/windows
+    build=printf "%s\n%s\n%s" "ANDROID_NDK = $$NDK$$" "NDK_MODULE_PATH = $$NDK$$/toolchains" "SDKFOLDER = $$SDK$$" > path.cfg && \
+        for n in 1 2 3; do make release && \
+        break; done
+
+Build:0.4.13.7.54,54
+    disable=missing freetype
+    commit=f0a22447f3980b8d378bf4fab92d65bde2117c95
+    subdir=build/android
+    submodules=yes
+    output=bin/freeminer-release-unsigned.apk
+    scanignore=build/windows
+    build=printf "%s\n%s\n%s" "ANDROID_NDK = $$NDK$$" "NDK_MODULE_PATH = $$NDK$$/toolchains" "SDKFOLDER = $$SDK$$" > path.cfg && \
+        for n in 1 2 3; do make -j $(nproc || sysctl -n hw.ncpu || echo 2) && \
+        break; done
+
+Build:0.4.13.7.54,55
+    disable=missing freetype
+    commit=f0a22447f3980b8d378bf4fab92d65bde2117c95
+    subdir=build/android
+    submodules=yes
+    output=bin/freeminer-release-unsigned.apk
+    scanignore=build/windows
+    build=printf "%s\n%s\n%s" "ANDROID_NDK = $$NDK$$" "NDK_MODULE_PATH = $$NDK$$/toolchains" "SDKFOLDER = $$SDK$$" > path.cfg && \
+        for n in 1 2 3; do make -j $(nproc || sysctl -n hw.ncpu || echo 2) TARGET_x86=1 && \
+        break; done
+
+Archive Policy:4 versions
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:0.4.12.6.25
-Current Version Code:25
-
+Current Version:0.4.13.7.54
+Current Version Code:55

@@ -3,7 +3,7 @@ License:Apache2
 Web Site:http://blog.nagopy.com
 Source Code:https://github.com/75py/DisableManager
 Issue Tracker:https://github.com/75py/DisableManager/issues
-Changelog:https://github.com/75py/DisableManager/commits/master
+Changelog:https://github.com/75py/DisableManager/commits/HEAD
 
 Auto Name:Disable Manager
 Summary:Assists the disabling of pre-installed apps
@@ -43,4 +43,3 @@ Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:2.0.4
 Current Version Code:20004
-

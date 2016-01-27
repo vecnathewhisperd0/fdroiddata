@@ -19,7 +19,6 @@ Currently this is a 'read-only' client. You can clone & fetch, but not commit
 and push.
 .
 
-# Many maven artifacts are uploaded by same dev and thus should be built from source
 Repo Type:git
 Repo:https://github.com/rtyley/agit.git
 
@@ -61,4 +60,3 @@ Auto Update Mode:None
 Update Check Mode:Static
 Current Version:1.39
 Current Version Code:139000000
-

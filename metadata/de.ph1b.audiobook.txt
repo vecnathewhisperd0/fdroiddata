@@ -240,9 +240,99 @@ Build:2.4.2,76
     forceversion=yes
     prebuild=sed -i -e '/applicationVariants.all/i/*' -e '/dependencies {/i*/\n\n}\n' build.gradle
 
-#Auto Update Mode:Version v%v
-Auto Update Mode:None
-Update Check Mode:Tags ^v[0-9.]+?$
-Current Version:2.4.2
-Current Version Code:76
+Build:2.4.3,83
+    commit=v2.4.3
+    subdir=audiobook
+    gradle=yes
+    forceversion=yes
+    prebuild=sed -i -e '/applicationVariants.all/i/*' -e '/dependencies {/i*/\n\n}\n' build.gradle
 
+Build:2.4.3.2,85
+    commit=v2.4.3.2
+    subdir=audiobook
+    gradle=yes
+    forceversion=yes
+    prebuild=sed -i -e '/applicationVariants.all/i/*' -e '/dependencies {/i*/\n\n}\n' build.gradle
+
+Build:2.4.4,86
+    commit=v2.4.4
+    subdir=audiobook
+    gradle=yes
+    forceversion=yes
+    prebuild=sed -i -e '/applicationVariants.all/i/*' -e '/dependencies {/i*/\n\n}\n' build.gradle
+
+Build:2.4.4.1,87
+    commit=v2.4.4.1
+    subdir=audiobook
+    gradle=yes
+    forceversion=yes
+    prebuild=sed -i -e '/applicationVariants.all/i/*' -e '/dependencies {/i*/\n\n}\n' build.gradle
+
+Build:2.4.2.2,89
+    commit=v2.4.2.2
+    subdir=audiobook
+    gradle=yes
+    forceversion=yes
+    prebuild=sed -i -e '/applicationVariants.all/i/*' -e '/material-dialogs/s/0.7.9.1/0.7.9.1@aar/g'  -e '/dependencies {/i*/\n\n}\n' build.gradle && \
+        sed -i -e '/jcenter/amaven { url "https://jitpack.io" }' ../build.gradle
+
+Build:2.5.0.3,93
+    commit=v2.5.0.3
+    subdir=audiobook
+    gradle=yes
+    forceversion=yes
+    prebuild=sed -i -e '/applicationVariants.all/,+7d' -e '/splits {/,+7d'  build.gradle
+
+Build:2.5.0.4,94
+    commit=v2.5.0.4
+    subdir=audiobook
+    gradle=yes
+    forceversion=yes
+    prebuild=sed -i -e '/applicationVariants.all/,+7d' -e '/splits {/,+7d'  build.gradle
+
+Build:2.5.0.5,95
+    commit=v2.5.0.5
+    subdir=audiobook
+    gradle=yes
+    forceversion=yes
+    prebuild=sed -i -e '/applicationVariants.all/,+8d' build.gradle
+
+Build:2.5.0.6,96
+    commit=v2.5.0.6
+    subdir=audiobook
+    gradle=yes
+    forceversion=yes
+    prebuild=sed -i -e '/applicationVariants.all/,+8d' build.gradle
+
+Build:2.5.0.7.1,98
+    commit=v2.5.0.7.1
+    subdir=audiobook
+    gradle=yes
+    forceversion=yes
+    prebuild=sed -i -e '/applicationVariants.all/,+8d' build.gradle
+
+Build:2.5.0.8,99
+    commit=v2.5.0.8
+    subdir=audiobook
+    gradle=yes
+    forceversion=yes
+    prebuild=sed -i -e '/applicationVariants.all/,+8d' build.gradle
+
+Build:2.5.0.9,100
+    disable=java7 issue
+    commit=v2.5.0.9
+    subdir=audiobook
+    gradle=yes
+    forceversion=yes
+    prebuild=sed -i -e '/applicationVariants.all/,+8d' build.gradle
+
+Build:2.5.0.10,102
+    disable=java issue
+    commit=v2.5.0.10
+    subdir=audiobook
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags ^v[0-9.]+?$
+Current Version:2.5.0.10
+Current Version Code:102

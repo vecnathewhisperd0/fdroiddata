@@ -39,8 +39,27 @@ Build:0.1.7,17
     submodules=yes
     build=ant setup
 
+Build:0.1.8,18
+    commit=v0.1.8
+    submodules=yes
+    build=ant setup
+
+Build:0.1.9,19
+    commit=v0.1.9
+    submodules=yes
+    build=ant setup
+
+Build:0.2.0,20
+    commit=v0.2.0
+    submodules=yes
+    build=ant setup
+
+Build:0.2.1,21
+    commit=v0.2.1
+    submodules=yes
+    build=ant setup
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.1.7
-Current Version Code:17
-
+Current Version:0.2.1
+Current Version Code:21

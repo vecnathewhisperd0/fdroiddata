@@ -1,5 +1,5 @@
 Categories:Theming,Time
-License:GPLv2
+License:GPLv3
 Web Site:https://github.com/caarmen/FRCAndroidWidget/blob/HEAD/README.md
 Source Code:https://github.com/caarmen/FRCAndroidWidget
 Issue Tracker:https://github.com/caarmen/FRCAndroidWidget/issues
@@ -71,16 +71,15 @@ Build:1.8.0,180
     commit=release-1.8.0
     subdir=handheld
     gradle=foss
-    prebuild=sed -i '/play-services/d' build.gradle ../wearable/build.gradle
+    scanignore=wearable/build.gradle
 
 Build:1.8.1,181
     commit=release-1.8.1
     subdir=handheld
     gradle=foss
-    prebuild=sed -i '/play-services/d' build.gradle ../wearable/build.gradle
+    scanignore=wearable/build.gradle
 
 Auto Update Mode:Version release-%v
 Update Check Mode:Tags ^release-
 Current Version:1.8.1
 Current Version Code:181
-

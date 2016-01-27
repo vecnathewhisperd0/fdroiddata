@@ -40,8 +40,7 @@ Build:3.9.0,390
         popd && \
         cp $$ApacheHttpCore$$/httpcore/target/httpcore-4.3.2.jar $$ApacheHttpClient$$/httpclient/target/httpclient-4.3.5.jar $$ApacheHttpClient$$/httpmime/target/httpmime-4.3.5.jar libs/
 
-Auto Update Mode:Version v%v
+Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:3.9.0
-Current Version Code:390
-
+Current Version:4.2.7
+Current Version Code:427

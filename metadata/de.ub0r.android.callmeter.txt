@@ -16,6 +16,8 @@ Changelogs and FAQ are on the website wiki.
 
 The non-Free Google Admob in the source code was replaced with an open-source
 library that does nothing.
+
+Newer versions of this app are non-free due to the use of play-services.
 .
 
 Repo Type:git
@@ -64,8 +66,11 @@ Build:3.10,7391002
         ant release) && \
         mv $$MobAdMob$$/bin/classes.jar libs/MobAdMob.jar
 
-Auto Update Mode:None
-Update Check Mode:Tags
-Current Version:3.10
-Current Version Code:7391002
+Maintainer Notes:
+Uses play-services now.
+.
 
+Auto Update Mode:None
+Update Check Mode:Tags ^CallMeter3G-
+Current Version:2.3.22
+Current Version Code:9232200

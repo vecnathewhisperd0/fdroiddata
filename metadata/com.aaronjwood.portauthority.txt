@@ -70,8 +70,19 @@ Build:1.5.5,16
     gradle=free
     prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
 
+Build:1.5.7,18
+    commit=v1.5.7
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.6.0,19
+    commit=v1.6.0
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.5.5
-Current Version Code:16
-
+Current Version:1.6.0
+Current Version Code:19

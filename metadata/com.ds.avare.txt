@@ -1,6 +1,6 @@
 AntiFeatures:NonFreeDep
 Categories:Navigation
-License:NetBSD/Apache2
+License:NetBSD,Apache2
 Web Site:http://apps4av.com/avare-overview
 Source Code:https://github.com/apps4av/avare
 Issue Tracker:https://github.com/apps4av/avare/issues
@@ -158,6 +158,5 @@ we will add when we find.
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:7.0.7
-Current Version Code:237
-
+Current Version:7.1.6
+Current Version Code:246

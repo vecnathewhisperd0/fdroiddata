@@ -5,9 +5,9 @@ Source Code:https://github.com/nathan-osman/chronosnap
 Issue Tracker:https://github.com/nathan-osman/chronosnap/issues
 
 Auto Name:ChronoSnap
-Summary:Take screenshots in intervals
+Summary:Take photos in intervals
 Description:
-Capture a sequence of images at regular intervals.
+Capture a sequence of photos at regular intervals.
 
 Features:
 
@@ -35,4 +35,3 @@ Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:1.0.5
 Current Version Code:6
-

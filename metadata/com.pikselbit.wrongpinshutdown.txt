@@ -1,10 +1,11 @@
+AntiFeatures:UpstreamNonFree
 Categories:Security
 License:GPLv3+
 Web Site:https://github.com/squarrel/WrongPinShutdown/blob/HEAD/README.md
 Source Code:https://github.com/squarrel/WrongPinShutdown
 Issue Tracker:https://github.com/squarrel/WrongPinShutdown/issues
 
-#Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=admin%40snslocation%2ecom&lc=US&item_name=Wrong%20Pin%20Shutdown&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
+# Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=admin%40snslocation%2ecom&lc=US&item_name=Wrong%20Pin%20Shutdown&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Auto Name:Wrong Pin Shutdown
 Summary:Shutdown after 10 unsuccessful logins
 Description:
@@ -12,6 +13,9 @@ Shut down your device after 10 unsuccessful attempts to unlock it.
 
 The method used for shutting down the phone may not work on all phones and OS
 versions. Please make sure you follow the instructions before use.
+
+Upstream ceased development or went closed source. No further updates will be
+available.
 .
 
 Requires Root:yes
@@ -30,7 +34,8 @@ Maintainer Notes:
 .
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:None
 Current Version:1.1
 Current Version Code:2
 
+No Source Since:1.1

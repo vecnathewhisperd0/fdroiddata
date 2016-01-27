@@ -20,6 +20,8 @@ more cells in order to improve this project.
 
 [[de.enaikoon.android.keypadmapper3]] can be used to gather cell information for
 OpenCellID.
+
+'''Warning:''' This app drains battery and seems no longer maintained.
 .
 
 Repo Type:git
@@ -40,4 +42,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:0.0.1.4
 Current Version Code:14
-

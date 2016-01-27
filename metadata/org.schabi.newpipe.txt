@@ -1,7 +1,7 @@
 AntiFeatures:NonFreeNet
 Categories:Multimedia,Internet
 License:GPLv3+
-Web Site:https://github.com/theScrabi/NewPipe/blob/HEAD/README.md
+Web Site:http://dasochan.nl/newpipe
 Source Code:https://github.com/theScrabi/NewPipe
 Issue Tracker:https://github.com/theScrabi/NewPipe/issues
 
@@ -36,8 +36,47 @@ Build:0.4.1,4
     subdir=app
     gradle=yes
 
+Build:0.5.0,5
+    commit=v0.5.0
+    subdir=app
+    gradle=yes
+
+Build:0.6.0,6
+    commit=v0.6.0
+    subdir=app
+    gradle=yes
+
+Build:0.6.1,7
+    commit=v0.6.1
+    subdir=app
+    gradle=yes
+
+Build:0.6.2,8
+    commit=v0.6.2
+    subdir=app
+    gradle=yes
+
+Build:0.7.0,9
+    commit=v0.7.0
+    subdir=app
+    gradle=yes
+
+Build:0.7.1,10
+    commit=v0.7.1
+    subdir=app
+    gradle=yes
+
+Build:0.7.2,11
+    commit=v0.7.2
+    subdir=app
+    gradle=yes
+
+Build:0.7.3,12
+    commit=v0.7.3
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.4.1
-Current Version Code:4
-
+Current Version:0.7.3
+Current Version Code:12

@@ -41,10 +41,15 @@ Build:1.0.1,15
     gradle=yes
 
 Build:1.1,16
-    disable=patch doesn't apply
     commit=v1.1
     subdir=app
-    patch=0001-Remove-Google-Play-Services-dependency.patch
+    patch=0001-Remove-Google-Play-Services-dependency-v1.1.patch,0002-Update-gradle-plugin-to-1.4.0-beta6-and-disable-scre-v1.1.patch
+    gradle=yes
+
+Build:1.2,17
+    disable=patches dont apply
+    commit=v1.2
+    subdir=app
     gradle=yes
 
 Maintainer Notes:
@@ -53,6 +58,5 @@ Patch is too fragile for auto updates.
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.1
-Current Version Code:16
-
+Current Version:1.4-beta1
+Current Version Code:19

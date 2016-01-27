@@ -1,15 +1,15 @@
 Categories:Games
-License:LGPLv2.1+,CC-BY-SA 3.0
+License:LGPLv2.1+,CC-BY-SA-3.0
 Web Site:http://minetest.net
 Source Code:https://github.com/minetest/minetest
-Issue Tracker:http://www.minetest.net/reporting_issues
-Donate:http://minetest.net/donate
+Issue Tracker:http://www.minetest.net/development/#reporting-issues
+Donate:http://www.minetest.net/development/#donate
 
 Name:Minetest
-Summary:Infinite-world block sandbox game
+Summary:Near infinite world block sandbox game
 Description:
-Minetest is an infinite-world block sandbox game and a game engine, inspired by
-InfiniMiner, Minecraft and the like.
+Minetest is a near infinite world block sandbox game and a game engine, inspired
+by InfiniMiner, Minecraft and the like.
 
 Features:
 
@@ -37,7 +37,6 @@ Build:0.4.12.12,12
     build=printf "%s\n%s\n%s" "ANDROID_NDK = $$NDK$$" "NDK_MODULE_PATH = $$NDK$$/toolchains" "SDKFOLDER = $$SDK$$" > path.cfg && \
         for n in 1 2 3; do make release && \
         break; done
-    buildjni=no
 
 Build:0.4.13.13,13
     commit=d44fceac7e1237b00c6431ee1bb5805b602d0dcd
@@ -49,16 +48,8 @@ Build:0.4.13.13,13
         sed -i 's/VERS_MAJOR/VERSION_MAJOR/;s/VERS_MINOR/VERSION_MINOR/;s/VERS_PATCH/VERSION_PATCH/' Makefile
     build=printf "%s\n%s\n%s" "ANDROID_NDK = $$NDK$$" "NDK_MODULE_PATH = $$NDK$$/toolchains" "SDKFOLDER = $$SDK$$" > path.cfg && \
         make release
-    buildjni=no
-
-Maintainer Notes:
-Needs a 64bit machine for building. We circumvent this right now,
-so remove the sed script when upstream fixed this or we have a
-64bit VM for the buildserver.
-.
 
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:0.4.12.12
-Current Version Code:12
-
+Current Version:0.4.13.13
+Current Version Code:13

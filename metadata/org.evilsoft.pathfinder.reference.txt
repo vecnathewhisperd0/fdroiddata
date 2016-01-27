@@ -99,8 +99,13 @@ Build:1.4.0,38
         popd && \
         cp $$CommonsIO$$/target/commons-io-2.4.jar libs/
 
-Auto Update Mode:Version %v
-Update Check Mode:Tags
-Current Version:1.4.0
-Current Version Code:38
+Build:1.5.1,39
+    disable=jars instead of pulling from maven repos
+    commit=1.5.1
+    subdir=app
+    gradle=yes
 
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:1.5.1
+Current Version Code:39

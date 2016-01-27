@@ -37,7 +37,7 @@ Credits:
 .
 
 Repo Type:git
-#Repo:https://github.com/olejon/mdapp
+# Repo:https://github.com/olejon/mdapp
 Repo:https://github.com/olejon/mdapp-fdroid
 
 Build:1.1,110
@@ -83,8 +83,27 @@ Build:1.8,180
     subdir=mdapp/app
     gradle=yes
 
+Build:1.9,190
+    commit=501bccd8b4b0985787838d71d5d12f3bd4937fce
+    subdir=mdapp/app
+    gradle=yes
+
+Build:2.0,201
+    commit=cc04fc20f1990aab0ceac014a9ffbc720619850c
+    subdir=mdapp/app
+    gradle=yes
+
+Build:2.2,222
+    commit=1c1888a3b60138cc7eb8ef53a97e23f33571726a
+    subdir=mdapp/app
+    gradle=yes
+
+Build:2.3,230
+    commit=34df19228319eab5e009d342402e553995d66d83
+    subdir=mdapp/app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.8
-Current Version Code:180
-
+Current Version:2.3
+Current Version Code:230

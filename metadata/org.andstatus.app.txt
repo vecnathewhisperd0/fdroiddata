@@ -246,12 +246,37 @@ Build:19.0,128
     subdir=app
     gradle=yes
 
+Build:19.2,130
+    disable=mistagged
+    commit=AndStatus-19.2
+    subdir=app
+    gradle=yes
+
+Build:19.4,132
+    commit=AndStatus-19.4
+    subdir=app
+    gradle=yes
+
+Build:19.5,133
+    commit=AndStatus-19.5
+    subdir=app
+    gradle=yes
+
+Build:20.5,138
+    commit=AndStatus-20.5
+    subdir=app
+    gradle=yes
+
+Build:21.0,139
+    commit=AndStatus-21.0-Users-of-message
+    subdir=app
+    gradle=yes
+
 Maintainer Notes:
 Remove the jars at https://github.com/andstatus/andstatus/tree/master/app/libs
 .
 
 Auto Update Mode:Version AndStatus-%v
 Update Check Mode:Tags
-Current Version:19.0
-Current Version Code:128
-
+Current Version:21.0
+Current Version Code:139

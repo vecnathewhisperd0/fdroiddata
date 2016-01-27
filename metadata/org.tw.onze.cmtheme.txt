@@ -74,8 +74,27 @@ Build:2.4,24
     subdir=theme
     gradle=yes
 
+Build:2.8.1,29
+    commit=v2.8.1
+    subdir=theme
+    gradle=yes
+
+Build:2.9.3,32
+    commit=v2.9.3
+    subdir=theme
+    gradle=yes
+
+Build:2.9.5,33
+    commit=v2.9.5
+    subdir=theme
+    gradle=yes
+
+Build:2.9.7,35
+    commit=v2.9.7
+    subdir=theme
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.4
-Current Version Code:24
-
+Current Version:2.9.7
+Current Version Code:35

@@ -35,8 +35,17 @@ Build:2.4,13
     subdir=morbidmeterandroid
     gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:Tags
-Current Version:2.4
-Current Version Code:13
+Build:2.5,14
+    commit=v2.5
+    subdir=morbidmeterandroid
+    gradle=yes
 
+Build:2.6,15
+    commit=v2.6
+    subdir=morbidmeterandroid
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:2.6
+Current Version Code:15

@@ -4,7 +4,7 @@ License:GPLv2+
 Web Site:https://telegram.org
 Source Code:https://github.com/slp/Telegram-FOSS
 Issue Tracker:https://github.com/slp/Telegram-FOSS/issues
-Changelog:https://github.com/slp/Telegram-FOSS/commits/master
+Changelog:https://github.com/slp/Telegram-FOSS/commits/HEAD
 Donate:https://sinrega.org/?page_id=241
 
 Auto Name:Telegram
@@ -23,6 +23,10 @@ self-updates. Push notifications through Google Cloud Messaging and the
 automatic SMS receiving features were also removed.
 
 Anti-Feature: Non-Free Network, since the servers run proprietary software.
+
+The official source code of the app contains binary blobs, so this tracks a fork
+which builds those from source. Hence, versions might become available with a
+certain lag.
 .
 
 Repo Type:git
@@ -34,7 +38,6 @@ Build:1.3.21,160
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:1.3.26,177
     commit=v1.3.26a
@@ -42,7 +45,6 @@ Build:1.3.26,177
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:1.4.9,212
     commit=v1.4.9a
@@ -51,7 +53,6 @@ Build:1.4.9,212
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:1.4.9c,219
     commit=v1.4.9c
@@ -61,7 +62,6 @@ Build:1.4.9c,219
     forceversion=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:1.5.0,250
     commit=v1.5.0a
@@ -71,7 +71,6 @@ Build:1.5.0,250
     forceversion=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:1.6.1,288
     commit=v1.6.1
@@ -81,7 +80,6 @@ Build:1.6.1,288
     forceversion=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:1.7.0,307
     commit=v1.7.0
@@ -91,7 +89,6 @@ Build:1.7.0,307
     forceversion=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:1.8.3,326
     commit=v1.8.3
@@ -99,7 +96,6 @@ Build:1.8.3,326
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:1.9.3,346
     commit=v1.9.3
@@ -107,7 +103,6 @@ Build:1.9.3,346
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:1.9.6,374
     commit=v1.9.6
@@ -115,7 +110,6 @@ Build:1.9.6,374
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:2.0.4,395
     commit=v2.0.4
@@ -123,7 +117,6 @@ Build:2.0.4,395
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:2.1.0,403
     commit=v2.1.0
@@ -131,7 +124,6 @@ Build:2.1.0,403
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:2.1.1,405
     commit=v2.1.1
@@ -139,7 +131,6 @@ Build:2.1.1,405
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:2.3.2,415
     commit=v2.3.2
@@ -147,7 +138,6 @@ Build:2.3.2,415
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:2.4.0,423
     commit=v2.4.0
@@ -155,7 +145,6 @@ Build:2.4.0,423
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:2.5.2,458
     commit=v2.5.2
@@ -163,7 +152,6 @@ Build:2.5.2,458
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:2.6.0,469
     commit=v2.6.0
@@ -171,7 +159,6 @@ Build:2.6.0,469
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:2.8.1,521
     commit=v2.8.1
@@ -179,7 +166,6 @@ Build:2.8.1,521
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:2.9.1,542
     commit=v2.9.1
@@ -187,7 +173,6 @@ Build:2.9.1,542
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:3.0.1,572
     commit=v3.0.1
@@ -195,7 +180,6 @@ Build:3.0.1,572
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:3.1.2,586
     commit=v3.1.2
@@ -203,7 +187,6 @@ Build:3.1.2,586
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:3.1.3,592
     commit=v3.1.3
@@ -211,7 +194,6 @@ Build:3.1.3,592
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
 
 Build:3.2.2,627
     commit=v3.2.2
@@ -219,10 +201,22 @@ Build:3.2.2,627
     gradle=yes
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
-    buildjni=no
+
+Build:3.2.6,654
+    commit=v3.2.6
+    subdir=TMessagesProj
+    gradle=yes
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+
+Build:3.3.1,685
+    commit=v3.3.1
+    subdir=TMessagesProj
+    gradle=yes
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.2.2
-Current Version Code:627
-
+Current Version:3.3.1
+Current Version Code:685

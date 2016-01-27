@@ -61,8 +61,27 @@ Build:3.2,13
     commit=prim-ftpd-3.2
     subdir=primitiveFTPd
 
+Build:4.0,14
+    commit=prim-ftpd-4.0
+    subdir=primitiveFTPd
+
+Build:4.1,15
+    commit=prim-ftpd-4.1
+    subdir=primitiveFTPd
+
+Build:4.2,16
+    commit=prim-ftpd-4.2
+    subdir=primitiveFTPd
+
+Build:4.3,17
+    commit=prim-ftpd-4.3
+    subdir=primitiveFTPd
+
+Build:4.4,18
+    commit=prim-ftpd-4.4
+    subdir=primitiveFTPd
+
 Auto Update Mode:Version prim-ftpd-%v
 Update Check Mode:Tags
-Current Version:3.2
-Current Version Code:13
-
+Current Version:4.4
+Current Version Code:18

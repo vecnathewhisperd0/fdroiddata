@@ -1,0 +1,25 @@
+Categories:Connectivity
+License:GPLv3+
+Web Site:
+Source Code:https://github.com/RinatKurmaev/Tether-companion
+Issue Tracker:https://github.com/RinatKurmaev/Tether-companion/issues
+
+Auto Name:Tether companion
+Summary:Show battery level and networking mode on a webserver
+Description:
+Run a web server with information about battery level and network mode, which
+are useful for tethering.
+.
+
+Repo Type:git
+Repo:https://github.com/RinatKurmaev/Tether-companion
+
+Build:0.1-alpha,1
+    commit=e84df1b0039bfc6c80f935b8428c6d98bffe4b98
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:0.1-alpha
+Current Version Code:1

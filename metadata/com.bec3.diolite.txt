@@ -1,0 +1,24 @@
+Categories:Development
+License:MIT
+Web Site:http://bec3.com
+Source Code:https://git.framasoft.org/tpape/Diolite-android
+Issue Tracker:https://git.framasoft.org/tpape/Diolite-android/issues
+
+Auto Name:DioLite
+Summary:Client for BeC3
+Description:
+A client for [https://bec3.com BeC3], an IoT connectivity solution. It aims to
+include Android devices in the IoT network.
+.
+
+Repo Type:git
+Repo:https://git.framasoft.org/tpape/Diolite-android.git
+
+Build:1.1.2,10102
+    commit=v1.1.2
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:1.1.2
+Current Version Code:10102

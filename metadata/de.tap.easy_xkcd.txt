@@ -3,6 +3,7 @@ License:Apache2
 Web Site:
 Source Code:https://github.com/T-Rex96/Easy_xkcd
 Issue Tracker:https://github.com/T-Rex96/Easy_xkcd/issues
+Changelog:https://github.com/T-Rex96/Easy_xkcd/blob/HEAD/CHANGELOG.md
 
 Auto Name:Easy xkcd
 Summary:View xkcd comics
@@ -223,8 +224,267 @@ Build:2.7.3,61
         echo 'include ":wakeful"' >> ../settings.gradle && \
         sed -i -e '/android.libraryVariants.all/,$d' ../wakeful/build.gradle
 
+Build:2.8.1,63
+    commit=release_2.8.1
+    subdir=app
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -fR $$CWACWakeful$$/wakeful ../ && \
+        sed -i -e '/maven {/,+2d' -e '/jcenter/amavenLocal()' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/acompile project(":wakeful")' build.gradle && \
+        echo 'include ":wakeful"' >> ../settings.gradle && \
+        sed -i -e '/android.libraryVariants.all/,$d' ../wakeful/build.gradle
+
+Build:2.8.2,64
+    commit=release_2.8.2
+    subdir=app
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -fR $$CWACWakeful$$/wakeful ../ && \
+        sed -i -e '/maven {/,+2d' -e '/jcenter/amavenLocal()' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/acompile project(":wakeful")' build.gradle && \
+        echo 'include ":wakeful"' >> ../settings.gradle && \
+        sed -i -e '/android.libraryVariants.all/,$d' ../wakeful/build.gradle
+
+Build:2.9,65
+    commit=release_2.9
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.0,66
+    commit=release_3.0
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.1,67
+    commit=release_3.1
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.2.1,69
+    commit=release_3.2.1
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.3,70
+    commit=release_3.3
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.3.2,72
+    commit=release_3.3.2
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.3.3,73
+    commit=release_3.3.3
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.3.4,74
+    commit=release_3.3.4
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.3.7,77
+    commit=release_3.3.7
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.3.8,78
+    commit=release_3.3.8
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.3.9,79
+    commit=release_3.3.9
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.4.1,81
+    commit=release_3.4.1
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.5.1,83
+    commit=release_3.5.1
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.5.2,84
+    commit=release_3.5.2
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.5.4,86
+    commit=release_3.5.4
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.5.5,87
+    commit=release_3.5.5
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.6,88
+    commit=release_3.6
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.6.1,89
+    commit=release_3.6.1
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.7,90
+    commit=release_3.7
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.8,91
+    commit=release_3.8
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.8.1,92
+    commit=release_3.8.1
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.8.2,93
+    commit=release_3.8.2
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.8.3,94
+    commit=release_3.8.3
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.8.4,95
+    commit=release_3.8.4
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.9,96
+    commit=release_3.9
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.9.1,97
+    commit=release_3.9.1
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.9.2,98
+    commit=release_3.9.2
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:4.0.1,100
+    commit=release_4.0.1
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:4.0.2,101
+    commit=release_4.0.2
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:4.0.4,103
+    commit=release_4.0.4
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
 Auto Update Mode:Version release_%v
 Update Check Mode:Tags ^release
-Current Version:2.7.3
-Current Version Code:61
-
+Current Version:4.0.4
+Current Version Code:103

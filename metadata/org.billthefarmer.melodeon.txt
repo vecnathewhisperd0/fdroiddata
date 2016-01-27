@@ -31,7 +31,6 @@ Build:1.0,1
         mv libs/libsonivox.so ndk-r8e/platforms/android-14/arch-arm/usr/lib/ && \
         ./ndk-r8e/ndk-build && \
         rm -rf ndk-r8e/
-    buildjni=no
 
 Build:1.01,101
     commit=v1.01
@@ -44,7 +43,6 @@ Build:1.01,101
         mv libs/libsonivox.so ndk-r9d/platforms/android-17/arch-arm/usr/lib/ && \
         ./ndk-r9d/ndk-build && \
         rm -rf ndk-r9d/
-    buildjni=no
 
 Build:1.02,102
     commit=v1.02
@@ -64,6 +62,11 @@ Build:1.04,104
     scandelete=libs
     buildjni=yes
 
+Build:1.05,105
+    commit=v1.05
+    scandelete=libs
+    buildjni=yes
+
 Maintainer Notes:
 As of version 1.02, does not require the convoluted build process used
 for previous versions. This is because the build process:
@@ -75,6 +78,5 @@ for previous versions. This is because the build process:
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.04
-Current Version Code:104
-
+Current Version:1.05
+Current Version Code:105

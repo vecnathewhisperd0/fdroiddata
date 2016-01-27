@@ -3,7 +3,7 @@ License:GPLv3
 Web Site:https://github.com/nilsbraden/ttrss-reader-fork/blob/HEAD/README.md
 Source Code:https://github.com/nilsbraden/ttrss-reader-fork
 Issue Tracker:https://github.com/nilsbraden/ttrss-reader-fork/issues
-Changelog:https://github.com/nilsbraden/ttrss-reader-fork/blob/HEAD/ttrssreader/CHANGELOG
+Changelog:https://github.com/nilsbraden/ttrss-reader-fork/wiki/Changelog
 Donate:https://github.com/nilsbraden/ttrss-reader-fork/wiki/Donations
 FlattrID:382465
 
@@ -14,8 +14,6 @@ An offline reader that works with the Tiny Tiny RSS (also known as ttrss or
 tt-rss) web-based feed reader/aggregator.
 .
 
-#Repo Type:hg
-#Repo:https://ttrss-reader-fork.googlecode.com/hg
 Repo Type:git
 Repo:https://github.com/nilsbraden/ttrss-reader-fork
 
@@ -54,8 +52,6 @@ Build:1.07,1075
     subdir=ttrss-reader
     target=android-8
 
-#This is not building - No resource identifier found for attribute 'marginRight' in package 'android'
-#Build Version:1.08,1080,1.08,subdir=ttrss-reader,target=android-8
 Build:1.21,1210
     commit=1.21
     subdir=ttrss-reader
@@ -66,7 +62,6 @@ Build:1.22,1220
     subdir=ttrss-reader
     target=android-8
 
-#The 1.23 tag is wrong...
 Build:1.23,1230
     commit=1e255c7e32ae
     subdir=ttrss-reader
@@ -311,24 +306,37 @@ Build:1.84,1841
     gradle=yes
     rm=ttrssreader/libs/*.jar
 
-Build:1.85,1850
-    disable=play-services, see https://github.com/nilsbraden/ttrss-reader-fork/issues/288
-    commit=005392f89d26dc3a27cb3b1976586145b996441e
+Build:1.86.1,1861
+    commit=70c3add8e5095942006e4ad52c0a0030a64ce3b6
     subdir=ttrssreader
-    gradle=yes
+    gradle=fdroid
     rm=ttrssreader/libs/*.jar
+    prebuild=sed -i -e '/playCompile/d' build.gradle
+
+Build:1.87.0,1870
+    commit=21ec77c1b350e7ee7b5773
+    subdir=ttrssreader
+    gradle=fdroid
+    prebuild=sed -i -e '/playCompile/d' build.gradle
+
+Build:1.88.0,1880
+    commit=3f2492b40575e16a4935a64990d8bcbf0612a416
+    subdir=ttrssreader
+    gradle=fdroid
+    prebuild=sed -i -e '/playCompile/d' build.gradle
 
 Maintainer Notes:
-Tags frequently get deleted and re-added pointing to somewhere else. Always use
-the tag to get the right commit, but specify the commit hash, not the tag, in
-the build data.
+Upstream mistags often and retags, so never use tags directly.
 
 Multiple versions of the same release (name) with different version codes and
-minor fixes in between are also common, for some reason.
+minor fixes in between are common, for some reason.
+
+Old Repo is:
+* Repo Type:hg
+* Repo:https://ttrss-reader-fork.googlecode.com/hg
 .
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.86.1
-Current Version Code:1861
-
+Current Version:1.88.0
+Current Version Code:1880

@@ -38,10 +38,8 @@ Build:2.7,13
     commit=2d2886a
     gradle=fat
     prebuild=sed -i -e 's/buildTypes.release.signingConfig/android.buildTypes.release.signingConfig/g' build.gradle
-    buildjni=no
 
 Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:2.7
 Current Version Code:13
-

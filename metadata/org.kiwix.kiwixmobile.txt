@@ -13,14 +13,14 @@ webpages for quick and easy reading.
 .
 
 Repo Type:git
-Repo:git://git.code.sf.net/p/kiwix/kiwix
+# Repo:git://git.code.sf.net/p/kiwix/kiwix
+Repo:https://github.com/kiwix/kiwix_mirror.git
 
 Build:1.96,26
-    disable=HEAD commit, wait for release
-    commit=14bfa38fffc62074016ad93b49303d13b607de9f
+    commit=android_v1.96
     subdir=android
     gradle=yes
-    rm=ios,src/sugar,android/libs/*/*.so
+    rm=ios,dvd,src/sugar,android/libs/*/*.so
     build=cd .. && \
         ./autogen.sh && \
         ./configure --disable-staticbins --disable-manager --disable-server --disable-launcher --disable-indexer --disable-installer --disable-searcher --disable-reader --disable-components --enable-android --enable-compileall && \
@@ -28,14 +28,15 @@ Build:1.96,26
         make icudt49l.dat xz icu zimlib-1.2 zimlib-1.2/build/lib/libzim.so && \
         popd && \
         cd android && \
-        NDK_PATH=$$NDK$$ ./build-android-with-native.py --toolchain --lzma --icu --zim --kiwix --strip
+        NDK_PATH=$$NDK$$ ./build-android-with-native.py --locales --toolchain --lzma --icu --zim --kiwix --strip
 
 Maintainer Notes:
 Don't run `make android-deps` as that will download the SDK and NDK.
+
+Use GitHub repo mirror as the sf one fails to clone. Also, sf is much slower.
 .
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:1.97
-Current Version Code:27
-
+Update Check Mode:Tags android_*
+Current Version:1.96
+Current Version Code:26

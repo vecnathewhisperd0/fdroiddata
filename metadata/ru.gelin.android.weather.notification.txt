@@ -1,8 +1,8 @@
 Categories:Internet
 License:GPLv2
-Web Site:https://code.google.com/p/weather-notification-android
-Source Code:https://code.google.com/p/weather-notification-android/source
-Issue Tracker:
+Web Site:https://bitbucket.org/gelin/weather-notification
+Source Code:https://bitbucket.org/gelin/weather-notification/src
+Issue Tracker:https://bitbucket.org/gelin/weather-notification/issues
 
 Auto Name:Weather notification
 Summary:Weather info in notification bar
@@ -63,8 +63,15 @@ Build:0.3.6,48
     commit=v.0.3.6
     subdir=core
 
+Build:0.3.7,50
+    commit=v.0.3.7
+    subdir=core
+
+Build:0.3.8,51
+    commit=v.0.3.8
+    subdir=core
+
 Auto Update Mode:Version v.%v
 Update Check Mode:Tags
-Current Version:0.3.6
-Current Version Code:48
-
+Current Version:0.3.8
+Current Version Code:51

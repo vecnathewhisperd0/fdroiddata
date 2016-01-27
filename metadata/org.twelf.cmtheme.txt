@@ -6,11 +6,10 @@ Issue Tracker:https://gitlab.com/xphnx/twelf_cm12_theme/issues
 Changelog:https://gitlab.com/xphnx/twelf_cm12_theme/blob/HEAD/CHANGELOG.md
 
 Auto Name:TwelF
-Summary:CM12 FLOSS Theme
+Summary:CM12/CM13 FLOSS Theme
 Description:
-TwelF is a Material Design inspired theme for Android Lollipop aiming to provide
-a consistent and minimalistic look to your device. Your ROM must include the
-CM12 Theme Engine.
+TwelF is a Material Design inspired theme aiming to provide a consistent and
+minimalistic look to your device. CM12, CM12.1 and CM13 Theme Engine supported.
 
 Features:
 
@@ -18,7 +17,7 @@ Features:
 * Wallpaper & Lockscreen
 * Alarm & Ringtone
 
-For issues, comments and icon request, please use the issue tracker.
+For issues, commenting and icon requests, please use the issue tracker.
 .
 
 Repo Type:git
@@ -97,8 +96,52 @@ Build:2.3,23
     subdir=theme
     gradle=yes
 
+Build:2.8,28
+    commit=v2.8
+    subdir=theme
+    gradle=yes
+
+Build:2.9,29
+    commit=v2.9
+    subdir=theme
+    gradle=yes
+
+Build:2.9.1,30
+    commit=v2.9.1
+    subdir=theme
+    gradle=yes
+
+Build:2.9.2,31
+    commit=v2.9.2
+    subdir=theme
+    gradle=yes
+
+Build:2.9.3,32
+    commit=v2.9.3
+    subdir=theme
+    gradle=yes
+
+Build:2.9.4,33
+    commit=v2.9.4
+    subdir=theme
+    gradle=yes
+
+Build:2.9.5,34
+    commit=v2.9.5
+    subdir=theme
+    gradle=yes
+
+Build:2.9.6,35
+    commit=v2.9.6
+    subdir=theme
+    gradle=yes
+
+Build:2.9.7,36
+    commit=v2.9.7
+    subdir=theme
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.3
-Current Version Code:23
-
+Current Version:2.9.7
+Current Version Code:36

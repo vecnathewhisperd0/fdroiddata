@@ -15,13 +15,13 @@ is the only map source and the API keys are not in the source code. If you need
 to use Google Maps install the developer's build from the website.
 
 Keep your eyes on the road, not your phone! Speed of Sound automatically adjusts
-your music player’s volume while you’re driving about with your GPS,
-lowering the volume while driving slowly or at a stoplight, and cranking it up
-on the highway.
+your music player’s volume while you’re driving about with your GPS, lowering
+the volume while driving slowly or at a stoplight, and cranking it up on the
+highway.
 
-This is a feature available in some more expensive cars and sound systems.
-We’re giving it to you for free to use on your phone. Just start up your music
-player, plug your phone into your car stereo, and open Speed of Sound.
+This is a feature available in some more expensive cars and sound systems. We’re
+giving it to you for free to use on your phone. Just start up your music player,
+plug your phone into your car stereo, and open Speed of Sound.
 .
 
 Repo Type:git
@@ -40,8 +40,12 @@ Build:0.8.2,9
     update=.,../actionbarsherlock
     target=Google Inc.:Google APIs:15
 
+Build:1.0.0,11
+    disable=play-services
+    commit=1.0.0
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:0.8.2
-Current Version Code:9
-
+Current Version:1.0.0
+Current Version Code:11

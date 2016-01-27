@@ -127,8 +127,28 @@ Build:0.3.1d,59
         echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
     target=android-19
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:0.3.1d
-Current Version Code:59
+Build:0.3.2b,67
+    commit=44880cb44e098f182725300d1dfbf47337b77d21
+    srclibs=PDClasses-shattered@7acaef7924110c4b80a2b60fc883de2a8c21e927
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
+    target=android-19
 
+Build:0.3.3,72
+    commit=75e232a429ad03c10780aa0ca4b99900549f50fa
+    srclibs=PDClasses-shattered@1c4b560b05a0e8f5ee98b1e65b6270a7d125c3a8
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
+    target=android-19
+
+Build:0.3.3b,74
+    commit=v0.3.3b
+    srclibs=PDClasses-shattered@1c4b560b05a0e8f5ee98b1e65b6270a7d125c3a8
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
+    target=android-23
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:0.3.3b
+Current Version Code:74

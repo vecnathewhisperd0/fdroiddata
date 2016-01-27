@@ -11,8 +11,8 @@ Description:
 such as uptime, CPU usage, network usage, top processes, and battery level.
 
 See the website for more themes; some of those are already packaged as Moss
-Patches — a zip file with an mpk extension containing configs, fonts etc.
-which will launch Moss when downloaded.
+Patches — a zip file with an mpk extension containing configs, fonts etc. which
+will launch Moss when downloaded.
 .
 
 Repo Type:git
@@ -37,4 +37,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:0.6
 Current Version Code:6
-

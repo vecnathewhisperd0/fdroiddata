@@ -1,0 +1,133 @@
+Categories:System,Development
+License:GPLv3
+Web Site:http://termux.com
+Source Code:https://github.com/termux/termux-app
+Issue Tracker:https://github.com/termux/termux-app/issues
+
+Auto Name:Termux
+Summary:Terminal emulator with packages
+Description:
+Termux combines powerful terminal emulation with an extensive Linux package
+collection.
+
+* Enjoy the bash and zsh shells.
+* Edit files with nano and vim.
+* Access servers over ssh.
+* Compile code with gcc and clang.
+* Use the python console as a pocket calculator.
+* Check out projects with git and subversion.
+* Run text-based games with frotz.
+
+At first start a small base system is downloaded - desired packages can then be
+installed using the apt package manager known from the Debian and Ubuntu Linux
+distributions. Access the built-in help by long-pressing anywhere on the
+terminal and selecting the Help menu option to learn more.
+
+Read help online: [http://termux.com/help]
+
+Google+ Community: [http://termux.com/community]
+.
+
+Repo Type:git
+Repo:https://github.com/termux/termux-app
+
+Build:0.16,16
+    commit=dea7c9d2ceb3060c
+    subdir=app
+    gradle=yes
+    scandelete=app/src/main/jniLibs
+    build=cd .. && \
+        ./build-jnilibs.sh
+
+Build:0.17,17
+    commit=v0.17
+    subdir=app
+    gradle=yes
+    scandelete=app/src/main/jniLibs
+    build=cd .. && \
+        ./build-jnilibs.sh
+
+Build:0.18,18
+    commit=v0.18
+    subdir=app
+    gradle=yes
+    scandelete=app/src/main/jniLibs
+    build=cd .. && \
+        ./build-jnilibs.sh
+
+Build:0.19,19
+    commit=v0.19
+    subdir=app
+    gradle=yes
+    scandelete=app/src/main/jniLibs
+    build=cd .. && \
+        ./build-jnilibs.sh
+
+Build:0.20,20
+    commit=v0.20
+    subdir=app
+    gradle=yes
+    scandelete=app/src/main/jniLibs
+    build=cd .. && \
+        ./build-jnilibs.sh
+
+Build:0.21,21
+    commit=v0.21
+    subdir=app
+    gradle=yes
+    scandelete=app/src/main/jniLibs
+    build=cd .. && \
+        ./build-jnilibs.sh
+
+Build:0.22,22
+    commit=v0.22
+    subdir=app
+    gradle=yes
+    scandelete=app/src/main/jniLibs
+    build=cd .. && \
+        ./build-jnilibs.sh
+
+Build:0.23,23
+    commit=v0.23
+    subdir=app
+    gradle=yes
+    scandelete=app/src/main/jniLibs
+    build=cd .. && \
+        ./build-jnilibs.sh
+
+Build:0.24,24
+    commit=v0.24
+    subdir=app
+    gradle=yes
+    scandelete=app/src/main/jniLibs
+    build=cd .. && \
+        ./build-jnilibs.sh
+
+Build:0.25,25
+    commit=v0.25
+    subdir=app
+    gradle=yes
+    scandelete=app/src/main/jniLibs
+    build=cd .. && \
+        ./build-jnilibs.sh
+
+Build:0.26,26
+    commit=v0.26
+    subdir=app
+    gradle=yes
+    scandelete=app/src/main/jniLibs
+    build=cd .. && \
+        ./build-jnilibs.sh
+
+Build:0.27,27
+    commit=v0.27
+    subdir=app
+    gradle=yes
+    scandelete=app/src/main/jniLibs
+    build=cd .. && \
+        ./build-jnilibs.sh
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:0.27
+Current Version Code:27

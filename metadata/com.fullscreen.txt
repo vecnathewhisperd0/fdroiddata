@@ -19,9 +19,13 @@ Build:2.1.2.5,1
     subdir=app
     gradle=yes
 
+Build:2.2,2
+    commit=0a38cddcb2f64dd04761d760355684903a18bb65
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
 Update Check Name:com.example.webview
-Current Version:2.0
-Current Version Code:1
-
+Current Version:2.2
+Current Version Code:2

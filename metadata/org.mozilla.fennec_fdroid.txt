@@ -1,7 +1,7 @@
 AntiFeatures:NonFreeAdd,Tracking
 Provides:org.mozilla.firefox
 Categories:Internet
-#mostly...
+# mostly...
 License:MPL2
 Web Site:https://wiki.mozilla.org/Mobile/Platforms/Android#System_Requirements
 Source Code:http://hg.mozilla.org
@@ -2126,31 +2126,18 @@ Build:40.0,400010
         mv obj-${fxarch}/dist/fennec-*.apk fdroid/fennec-unsigned.apk && \
         zip -d fdroid/fennec-unsigned.apk "META-INF*"
 
-#testing, requires skip-scan, doesnt build
-Build:41.0,410010
-    disable=test
-    commit=FENNEC_41_0_RELEASE
+Build:44.0,440000
+    commit=FENNEC_44_0_RELEASE
     output=fdroid/fennec-unsigned.apk
-    srclibs=MozLocales@f4abaa2ece7fb6c56cb75222c9df7355010ff661
+    srclibs=MozLocales@be553c20
     prebuild=mkdir fdroid && \
-        fxarch=i386-linux-androideabi && \
+        fxarch=`echo $$VERCODE$$ | cut -c 5 | sed -e 's/0/arm-linux-androideabi/g' -e 's/1/i386-linux-androideabi/g'` && \
         l10ndir=`readlink -f $$MozLocales$$` && \
-        sed -i -e 's|about:feedback|https://gitlab.com/fdroid/fdroiddata/issues|g' mobile/android/base/resources/xml/preferences_vendor.xml && \
-        sed -i -e 's/android:debuggable="true"//g' mobile/android/base/AndroidManifest.xml.in && \
-        sed -i -e '/MOZ_SERVICES_HEALTHREPORT/d' -e '/MOZ_DEVICES/d' -e '/MOZ_SAFE_BROWSING/d' -e '/MOZ_ANDROID_RESOURCE_CONSTRAINED/,+2d' mobile/android/confvars.sh && \
-        echo -e 'MOZ_DEVICES=\nMOZ_NATIVE_DEVICES=\nMOZ_SERVICES_HEALTHREPORT=\nMOZ_SAFE_BROWSING=\n' >> mobile/android/confvars.sh && \
-        sed -i -e '/MOZ_ANDROID_GOOGLE_PLAY_SERVICES/d' configure.in && \
-        find . -type f -name moz.build -print0 | xargs -0 sed -i -e "/FAIL_ON_WARNINGS = True/s/True/False/g" && \
-        echo "ac_add_options --with-android-ndk=\"$$NDK$$\"" > .mozconfig && \
-        echo "ac_add_options --with-android-sdk=\"$$SDK$$/platforms/android-22\"" >> .mozconfig && \
+        bash $$MozLocales$$/prebuild.sh && \
+        echo "ac_add_options --with-android-ndk=\"$$NDK$$\"" >> .mozconfig && \
+        echo "ac_add_options --with-android-sdk=\"$$SDK$$\"" >> .mozconfig && \
         echo "ac_add_options --enable-application=mobile/android" >> .mozconfig && \
         echo "ac_add_options --target=${fxarch}" >> .mozconfig && \
-        echo "ac_add_options --disable-tests" >> .mozconfig && \
-        echo "ac_add_options --disable-updater" >> .mozconfig && \
-        echo "ac_add_options --disable-eme" >> .mozconfig && \
-        echo "ac_add_options --disable-mochitest" >> .mozconfig && \
-        echo "ac_add_options --disable-crashreporter" >> .mozconfig && \
-        echo "ac_add_options --disable-debug" >> .mozconfig && \
         echo "ac_add_options --with-branding=mobile/android/branding/unofficial" >> .mozconfig && \
         echo "ac_add_options --with-l10n-base=${l10ndir}" >> .mozconfig && \
         echo "mk_add_options 'export L10NBASEDIR=${l10ndir}'" >> .mozconfig && \
@@ -2160,20 +2147,43 @@ Build:41.0,410010
         sed -i -e '/ANDROID_PACKAGE_NAME/d' -e '/MOZ_APP_DISPLAYNAME/d' configure.sh && \
         echo 'ANDROID_PACKAGE_NAME=org.mozilla.fennec_fdroid' >> configure.sh && \
         echo 'MOZ_APP_DISPLAYNAME="Fennec F-Droid"' >> configure.sh && \
+        popd
+    scanignore=mobile/android/base/javaaddons/JavaAddonManager.java,mobile/android/base/javaaddons/JavaAddonManagerV1.java
+    build=export I_PREFER_A_SUBOPTIMAL_MERCURIAL_EXPERIENCE=1 && \
+        ./mach build && \
+        fxarch=`grep "ac_add_options --target=" .mozconfig | cut -d '=' -f2` && \
+        pushd obj-${fxarch}/mobile/android/locales && \
+        for loc in $(cat ../../../../mobile/android/locales/maemo-locales); do LOCALE_MERGEDIR=$PWD/merge-$loc make merge-$loc LOCALE_MERGEDIR=$PWD/merge-$loc; make LOCALE_MERGEDIR=$PWD/merge-$loc chrome-$loc LOCALE_MERGEDIR=$PWD/merge-$loc; done && \
         popd && \
-        sed -i -e 's/size_impl(v/size_impl(const v/g' memory/mozjemalloc/jemalloc.c && \
-        rm -R mobile/android/gradle/ && \
-        sed -i -e '/gradle/d' mobile/android/moz.build && \
-        sed -i -e '/gmp-provider/d' mobile/android/app/mobile.js && \
-        echo 'pref("media.gmp-provider.enabled", false);' >> mobile/android/app/mobile.js && \
-        echo 'pref("media.gmp-manager.url.override", "data:text/plain,");' >> mobile/android/app/mobile.js && \
-        echo 'pref("media.gmp-gmpopenh264.enabled", false);' >> mobile/android/app/mobile.js && \
-        sed -i -e '/casting.enabled/d' mobile/android/app/mobile.js && \
-        echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js && \
-        sed -i -e '/datareporting.healthreport.uploadEnabled/s/true/false/g' -e '/datareporting.healthreport.service.enabled/s/true/false/g' ./services/healthreport/healthreport-prefs.js && \
-        sed -i -e '/android.not_a_preference.healthreport.uploadEnabled/,+3s/android:defaultValue="true"/android:defaultValue="false"/g' mobile/android/base/resources/xml/preferences_vendor.xml
-    scanignore=mobile/android/base/JavaAddonManager.java
-    build=./mach build && \
+        ./mach package && \
+        mv obj-${fxarch}/dist/fennec-*.apk fdroid/fennec-unsigned.apk && \
+        zip -d fdroid/fennec-unsigned.apk "META-INF*"
+
+Build:44.0,440010
+    commit=FENNEC_44_0_RELEASE
+    output=fdroid/fennec-unsigned.apk
+    srclibs=MozLocales@be553c20
+    prebuild=mkdir fdroid && \
+        fxarch=`echo $$VERCODE$$ | cut -c 5 | sed -e 's/0/arm-linux-androideabi/g' -e 's/1/i386-linux-androideabi/g'` && \
+        l10ndir=`readlink -f $$MozLocales$$` && \
+        bash $$MozLocales$$/prebuild.sh && \
+        echo "ac_add_options --with-android-ndk=\"$$NDK$$\"" >> .mozconfig && \
+        echo "ac_add_options --with-android-sdk=\"$$SDK$$\"" >> .mozconfig && \
+        echo "ac_add_options --enable-application=mobile/android" >> .mozconfig && \
+        echo "ac_add_options --target=${fxarch}" >> .mozconfig && \
+        echo "ac_add_options --with-branding=mobile/android/branding/unofficial" >> .mozconfig && \
+        echo "ac_add_options --with-l10n-base=${l10ndir}" >> .mozconfig && \
+        echo "mk_add_options 'export L10NBASEDIR=${l10ndir}'" >> .mozconfig && \
+        echo "mk_add_options 'export ANDROID_VERSION_CODE=$$VERCODE$$'" >> .mozconfig && \
+        echo "mk_add_options 'export MOZ_CHROME_MULTILOCALE=$(tr '\n' ' ' <  mobile/android/locales/maemo-locales)'" >> .mozconfig && \
+        pushd mobile/android/branding/unofficial/ && \
+        sed -i -e '/ANDROID_PACKAGE_NAME/d' -e '/MOZ_APP_DISPLAYNAME/d' configure.sh && \
+        echo 'ANDROID_PACKAGE_NAME=org.mozilla.fennec_fdroid' >> configure.sh && \
+        echo 'MOZ_APP_DISPLAYNAME="Fennec F-Droid"' >> configure.sh && \
+        popd
+    scanignore=mobile/android/base/javaaddons/JavaAddonManager.java,mobile/android/base/javaaddons/JavaAddonManagerV1.java
+    build=export I_PREFER_A_SUBOPTIMAL_MERCURIAL_EXPERIENCE=1 && \
+        ./mach build && \
         fxarch=`grep "ac_add_options --target=" .mozconfig | cut -d '=' -f2` && \
         pushd obj-${fxarch}/mobile/android/locales && \
         for loc in $(cat ../../../../mobile/android/locales/maemo-locales); do LOCALE_MERGEDIR=$PWD/merge-$loc make merge-$loc LOCALE_MERGEDIR=$PWD/merge-$loc; make LOCALE_MERGEDIR=$PWD/merge-$loc chrome-$loc LOCALE_MERGEDIR=$PWD/merge-$loc; done && \
@@ -2183,19 +2193,6 @@ Build:41.0,410010
         zip -d fdroid/fennec-unsigned.apk "META-INF*"
 
 Maintainer Notes:
-
-find . -type f -name moz.build -print0 | xargs -0 sed -i -e "\$aFAIL_ON_WARNINGS = False" && \
-
-find . -type f -name moz.build -print0 | xargs -0 sed -i -e "\$aALLOW_COMPILER_WARNINGS = True" && \
--Werror: https://hg.mozilla.org/mozilla-central/rev/c646a88160d7
-http://gregoryszorc.com/blog/2013/02/28/moz.build-files-and-the-firefox-build-system/
-
-TODO:
- * clean up
- * MOZ_CRASHREPORTER
- * MOZ_SAFE_BROWSING
- * MOZ_HEALTHREPORTER => only UI
- * https://hg.mozilla.org/mozilla-central/annotate/tip/mobile/android/config/mozconfigs/common
 
 Issues:
  * Permissions:
@@ -2224,9 +2221,8 @@ Reroute Feedback:
 * sed -i -e 's|about:feedback|https://gitlab.com/fdroid/fdroiddata/issues|g' mobile/android/base/resources/xml/preferences_vendor.xml
 .
 
-Archive Policy:4 versions
+Archive Policy:0 versions
 Auto Update Mode:None
 Update Check Mode:None
 Current Version:40.0
 Current Version Code:400010
-

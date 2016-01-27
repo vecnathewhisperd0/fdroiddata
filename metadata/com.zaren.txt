@@ -8,9 +8,9 @@ Issue Tracker:https://github.com/zaren678/Hdhomerun-signal-meter/issues
 Auto Name:Hdhomerun Signal Meter
 Summary:Signal meter for TV tuners
 Description:
-Discover, tune, and perform a channel scan on your Hdhomerun device — a sort
-of network attached TV tuner. The signal strengths and data rates will be
-displayed for the channel tuned to.
+Discover, tune, and perform a channel scan on your Hdhomerun device — a sort of
+network attached TV tuner. The signal strengths and data rates will be displayed
+for the channel tuned to.
 
 The proprietary Google Admob binary was removed before building.
 .
@@ -48,8 +48,10 @@ Build:1.24,14
         rm -rf $$MeterLib$$/libs/ && \
         $$NDK$$/ndk-build -C $$MeterLib$$
 
+Build:1.25,15
+    disable=play-services-ads
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.25
 Current Version Code:15
-

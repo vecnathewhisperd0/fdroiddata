@@ -4,7 +4,7 @@ Web Site:https://github.com/enricocid/lffl-feed-reader/blob/HEAD/README.md
 Source Code:https://github.com/enricocid/lffl-feed-reader
 Issue Tracker:https://github.com/enricocid/lffl-feed-reader/issues
 
-Auto Name:Lffl Feed Reader
+Auto Name:Iven News Reader
 Summary:Feed reader for Lffl
 Description:
 Light and modern Android feed reader.
@@ -154,10 +154,52 @@ Build:2.1,14
         cp -fR $$materialishprogress$$/library/src/main/res/values/attrs.xml res/values/ && \
         sed -i -e '/reference\.3/d' project.properties
 
-Archive Policy:0 versions
-Auto Update Mode:None
-#Auto Update Mode:Version %v
-Update Check Mode:Tags
-Current Version:3.2
-Current Version Code:21
+Build:6.0.1,32
+    commit=6.0.1
+    subdir=project/app
+    gradle=yes
 
+Build:6.1,33
+    commit=6.1
+    subdir=project/app
+    gradle=yes
+
+Build:6.2,35
+    commit=6.2
+    subdir=project/app
+    gradle=yes
+
+Build:6.5,39
+    commit=3a8383c6794f31753f06603696ef6f172cdfddcd
+    subdir=project/app
+    gradle=yes
+
+Build:6.6,41
+    commit=6.6
+    subdir=project/app
+    gradle=yes
+
+Build:6.8.3,47
+    commit=6.8.3
+    subdir=project/app
+    gradle=yes
+
+Build:7.3.1,53
+    commit=7.3.1
+    subdir=project/app
+    gradle=yes
+
+Build:7.3.2,54
+    commit=7.3.2
+    subdir=project/app
+    gradle=yes
+
+Build:7.3.3,55
+    commit=7.3.3
+    subdir=project/app
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:7.3.3
+Current Version Code:55

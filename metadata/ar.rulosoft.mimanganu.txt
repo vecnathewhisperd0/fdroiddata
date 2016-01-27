@@ -219,8 +219,67 @@ Build:1.35,35
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:1.35
-Current Version Code:35
+Build:1.36,36
+    commit=819b27ab4f2292ce8df69597b4a751d7e05b1609
+    subdir=app
+    gradle=yes
 
+Build:1.37,37
+    commit=12e5d69984e134d1718d64a7a64c76b15e7f3211
+    subdir=app
+    gradle=yes
+
+Build:1.38,38
+    commit=470aa7ff27bef12febadbc36ba50ac8bfb8c1ef7
+    subdir=app
+    gradle=yes
+
+Build:1.39,39
+    commit=e74750f460a69730965f61412914ec090fe21548
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.40,40
+    commit=8f2e49b3c1c96e26aedcdd3360f544f976a9b39f
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.41,41
+    commit=75374797094d70a1097a4bd972fef1bc42e91a80
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.42,42
+    commit=5257db2eb64ec60056e915eeef235d613dfe1c26
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.43,43
+    commit=1.43
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:1.43
+Current Version Code:43

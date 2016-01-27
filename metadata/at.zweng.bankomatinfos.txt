@@ -40,8 +40,8 @@ Build:1.2.6,12
 Build:1.2.6-END-OF-LIFE,17
     commit=eae28c3fb6952dc8e636c482060e447866b9a3b1
 
+Archive Policy:1 versions
 Auto Update Mode:None
 Update Check Mode:RepoManifest/fdroid-phase-out
 Current Version:1.2.6-END-OF-LIFE
 Current Version Code:17
-

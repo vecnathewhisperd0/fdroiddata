@@ -39,8 +39,55 @@ Build:2.1.0,111
     gradle=noAnalytics
     prebuild=sed -i -e '/withAnalyticsCompile/d' build.gradle
 
-Auto Update Mode:None
-Update Check Mode:Tags
-Current Version:2.1.0
-Current Version Code:111
+Build:2.2.0,112
+    commit=v2.2.0
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/withAnalyticsCompile/d' build.gradle
 
+Build:2.2.1,113
+    commit=v2.2.1
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/withAnalyticsCompile/d' build.gradle
+
+Build:2.2.4,116
+    commit=v2.2.4
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/withAnalyticsCompile/d' build.gradle
+
+Build:2.4.0,120
+    commit=v2.4.0
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/fabric/d' -e '/com.crashlytics.sdk.android:crashlytics/,+2d' -e '/com.google.android.gms:play-services-analytics/d' build.gradle
+
+Build:2.4.1,121
+    commit=v2.4.1
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/fabric/d' -e '/com.crashlytics.sdk.android:crashlytics/,+2d' -e '/com.google.android.gms:play-services-analytics/d' build.gradle
+
+Build:2.5.0,122
+    commit=v2.5.0
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/fabric/d' -e '/com.crashlytics.sdk.android:crashlytics/,+2d' -e '/com.google.android.gms:play-services-analytics/d' build.gradle
+
+Build:2.5.1,123
+    commit=v2.5.1
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/fabric/d' -e '/com.crashlytics.sdk.android:crashlytics/,+2d' -e '/com.google.android.gms:play-services-analytics/d' build.gradle
+
+Build:2.5.2,124
+    commit=v2.5.2
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/fabric/d' -e '/com.crashlytics.sdk.android:crashlytics/,+2d' -e '/com.google.android.gms:play-services-analytics/d' build.gradle
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:2.5.2
+Current Version Code:124

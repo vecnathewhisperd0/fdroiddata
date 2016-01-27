@@ -41,7 +41,7 @@ Build:9.0.10,160
     target=android-15
 
 Build:9.1.2,168
-    disable=!No source in repo
+    disable=No source in repo
     commit=unknown - see disabled
 
 Build:10.0.1,176
@@ -79,7 +79,6 @@ Build:10.6.2,209
         pushd src/org/liberty/android/fantastischmemo/ && \
         mv AMSecrets.java.template  AMSecrets.java && \
         popd
-    buildjni=no
 
 Build:10.6.3,211
     commit=10.6.3
@@ -91,7 +90,6 @@ Build:10.6.3,211
         pushd src/org/liberty/android/fantastischmemo/ && \
         mv AMSecrets.java.template  AMSecrets.java && \
         popd
-    buildjni=no
 
 Build:10.7,212
     commit=10.7
@@ -103,7 +101,6 @@ Build:10.7,212
         pushd src/main/java/org/liberty/android/fantastischmemo && \
         mv AMSecrets.java.template  AMSecrets.java && \
         popd
-    buildjni=no
 
 Maintainer Notes:
 * replace achartengine with sourcebuild (xlythe?)
@@ -113,6 +110,5 @@ Maintainer Notes:
 Auto Update Mode:None
 # See Issue tracker for apks
 Update Check Mode:Tags
-Current Version:10.7
-Current Version Code:212
-
+Current Version:10.8
+Current Version Code:216

@@ -1,5 +1,5 @@
 Categories:Writing
-License:GPL/MPL
+License:GPL,MPL
 Web Site:
 Source Code:https://github.com/rhornig/anysoftkeyboard-hungarian
 Issue Tracker:https://github.com/rhornig/anysoftkeyboard-hungarian/issues
@@ -13,8 +13,6 @@ Layouts and dictionaries for for the Hungarian language. See the Google Play
 description for usage tips.
 
 Dictionary is via [http://magyarispell.sourceforge.net].
-
-Licence: GNU GPL/GNU LGPL/Mozilla MPL.
 
 Install [[com.menny.android.anysoftkeyboard]] first, then select the desired
 layout from AnySoftKeyboard's Settings->Keyboards menu.
@@ -61,4 +59,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:20131020
 Current Version Code:16
-

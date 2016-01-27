@@ -13,6 +13,9 @@ transactions on-the-go and export them in the OFX format and later import the
 data into GnuCash for the desktop. You can create multiple accounts for
 transactions in GnuCash. You can't open your GnuCash (for desktop) XML files,
 however.
+
+Upstream is now using a bunch of non-free libraries, and intends to use more in
+the future. Chances are this app will not be updated any more.
 .
 
 Repo Type:git
@@ -23,7 +26,7 @@ Build:1.0,1
     subdir=GnucashMobile
     update=.,../com_actionbarsherlock
 
-#Can also use maven
+# Can also use maven
 Build:1.0.1,2
     commit=v1.0.1
     subdir=GnucashMobile
@@ -194,7 +197,6 @@ Build:1.6.1,16100
         sed -i -e "s/.*viewpagerindicator.*/project(':ViewPagerIndicator'),/" build.gradle && \
         sed -i -e "/MPAndroidChart/d" build.gradle && \
         sed -i -e '/variant.outputs.each/,/ }/ d' build.gradle
-    target=android-19
 
 Build:1.6.2,16200
     commit=v1.6.2
@@ -221,7 +223,6 @@ Build:1.6.2,16200
         sed -i -e "s/.*viewpagerindicator.*/project(':ViewPagerIndicator'),/" build.gradle && \
         sed -i -e "/MPAndroidChart/d" build.gradle && \
         sed -i -e '/variant.outputs.each/,/ }/ d' build.gradle
-    target=android-19
 
 Build:1.6.3,16300
     commit=v1.6.3
@@ -248,11 +249,17 @@ Build:1.6.3,16300
         sed -i -e "s/.*viewpagerindicator.*/project(':ViewPagerIndicator'),/" build.gradle && \
         sed -i -e "/MPAndroidChart/d" build.gradle && \
         sed -i -e '/variant.outputs.each/,/ }/ d' build.gradle
-    target=android-19
 
+Build:2.0.5,20500
+    disable=https://github.com/codinguser/gnucash-android/issues/435
+    commit=v2.0.5
+
+Maintainer Notes:
+Dynamic version code, so no UCM can be used.
+.
+
+Archive Policy:0 versions
 Auto Update Mode:None
-#Auto Update Mode:Version v%v
-Update Check Mode:Tags v[0-9.]*
-Current Version:1.6.3
-Current Version Code:16300
-
+Update Check Mode:None
+Current Version:2.0.5
+Current Version Code:20500

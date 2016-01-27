@@ -1,3 +1,4 @@
+AntiFeatures:NonFreeAssets
 Categories:Graphics
 License:NewBSD
 Web Site:
@@ -9,11 +10,11 @@ Summary:Pixel-art editor
 Description:
 The Pencil tool draws lines, and the eraser removes them. The shapes tool allows
 you to use a paint bucket, rectangle, line and circle tools. Two finger drag and
-zoom anywhere to navigate large images. There’s a full undo/redo stack, as
-well as a color picker with history, hsv, rgb, and hex!
+zoom anywhere to navigate large images. There’s a full undo/redo stack, as well
+as a color picker with history, hsv, rgb, and hex!
 
 The canvas can be resized when a new canvas is chosen. The artwork is licensed
-under CCBYSANC while the app is under a new BSD license.
+under CC-BY-SA-NC while the app is under NewBSD license.
 .
 
 Repo Type:git
@@ -31,4 +32,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.2.01
 Current Version Code:7
-

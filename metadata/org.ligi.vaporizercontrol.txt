@@ -4,7 +4,7 @@ Web Site:https://github.com/ligi/VaporizerControl/blob/HEAD/README.md
 Source Code:https://github.com/ligi/VaporizerControl
 Issue Tracker:https://github.com/ligi/VaporizerControl/issues
 
-Auto Name:Vaporizer Control Crafty
+Auto Name:Vaporizer Control
 Summary:Control vaporizers via BLE
 Description:
 Control your vaporizer ( currently only crafty ) with this app.
@@ -57,4 +57,3 @@ Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:1.8
 Current Version Code:18
-

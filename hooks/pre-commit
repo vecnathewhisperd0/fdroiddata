@@ -1,3 +1,10 @@
 #!/bin/sh
 
-./tools/verify-rewritemeta.sh
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Redirect output to stderr.
+exec 1>&2
+
+fdroid lint -f

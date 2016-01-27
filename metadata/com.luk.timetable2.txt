@@ -86,8 +86,38 @@ Build:5.1,14
     subdir=app
     gradle=yes
 
+Build:5.2,15
+    disable=problems with releasing wake locks
+    commit=v5.2
+    subdir=app
+    gradle=yes
+
+Build:5.3,16
+    commit=v5.3
+    subdir=app
+    gradle=yes
+
+Build:5.4,17
+    commit=v5.4
+    subdir=app
+    gradle=yes
+
+Build:5.5,18
+    commit=v5.5
+    subdir=app
+    gradle=yes
+
+Build:5.6,19
+    commit=v5.6
+    subdir=app
+    gradle=yes
+
+Build:5.7,20
+    commit=v5.7
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:5.1
-Current Version Code:14
-
+Current Version:5.7
+Current Version Code:20
