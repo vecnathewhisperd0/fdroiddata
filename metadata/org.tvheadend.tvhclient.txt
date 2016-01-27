@@ -1,0 +1,52 @@
+Categories:Multimedia
+License:GPLv3
+Web Site:
+Source Code:https://github.com/rsiebert/TVHClient
+Issue Tracker:https://github.com/rsiebert/TVHClient/issues
+
+Auto Name:TVHClient
+# Auto Name:TVHClient
+Summary:TVHeadend PVR client
+Description:
+This android application allows you to interact and control the TVHeadend
+server. It is based on [[org.tvheadend.tvhguide]] but contains many improvements
+and new features. It provides a clean and modern UI.
+
+Main features:
+
+* Show TV channels
+* Show current and upcoming programs
+* Full EPG (electronic program guide)
+* Schedule and manage recordings
+* Watch TV or your recordings
+* Search for programs
+* Modern and intuitive design
+* Supports multiple TVHeadend servers
+
+and [https://github.com/rsiebert/TVHClient more].
+.
+
+Repo Type:git
+Repo:https://github.com/rsiebert/TVHClient.git
+
+Build:1.8.2,61
+    commit=1.8.2
+
+Build:1.8.3,62
+    commit=1.8.3
+
+#Build:1.8.4,63
+#commit=1.8.4
+# target=android-9
+
+Build:1.8.6,65
+    commit=1.8.6
+    target=android-9
+#    srclibs=1:appcompat@v7
+#    prebuild=cp libs/android-support-v4.jar $$appcompat$$/libs/
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:1.8.6
+Current Version Code:65
+
