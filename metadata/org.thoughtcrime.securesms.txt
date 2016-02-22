@@ -1,5 +1,6 @@
 Categories:Phone & SMS
 License:GPLv3
+Web Site:
 Source Code:https://github.com/JavaJens/TextSecure/tree/feature/websocket-reborn
 Issue Tracker:https://github.com/JavaJens/TextSecure/issues
 
@@ -7,10 +8,15 @@ Name:LibreSignal (WebSocket)
 Auto Name:Signal
 Summary:Private Messenger
 Description:
-LibreSignal is a messaging app that allows you to take back your privacy while easily communicating with friends.
-Using LibreSignal, you can communicate instantly while avoiding SMS fees, create groups so that you can chat in real time with all your friends at once, and share media or attachments all with complete privacy. The server never has access to any of your communication and never stores any of your data.
+LibreSignal is a messaging app that allows you to take back your privacy while
+easily communicating with friends. Using LibreSignal, you can communicate
+instantly while avoiding SMS fees, create groups so that you can chat in real
+time with all your friends at once, and share media or attachments all with
+complete privacy. The server never has access to any of your communication and
+never stores any of your data.
 
-This is WebSocket-based fork by JavaJens which doesn't require Google Play Services to be installed (it doesn't use Google Cloud Messaging).
+This is WebSocket-based fork by JavaJens which doesn't require Google Play
+Services to be installed (it doesn't use Google Cloud Messaging).
 
 * Private. LibreSignal uses an advanced end to end encryption protocol that provides privacy for every message every time.
 * Open Source. LibreSignal is Free and Open Source, enabling anyone to verify its security by auditing the code. LibreSignal is the only private messenger that uses open source peer-reviewed cryptographic protocols to keep your messages safe.
@@ -48,4 +54,3 @@ Update Check Mode:RepoManifest/feature/websocket-reborn
 Vercode Operation:%c+10000
 Current Version:3.12.0
 Current Version Code:10185
-
