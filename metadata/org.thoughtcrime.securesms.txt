@@ -37,7 +37,7 @@ Build:3.12.0-websocket,10185
         wget https://raw.githubusercontent.com/xmikos/fdroiddata/master/scripts/rename_signal.py && \
         chmod a+x rename_signal.py && \
         ./rename_signal.py . && \
-        rm rename_signal.py &&
+        rm rename_signal.py && \
         sed -i 's/"FORCE_WEBSOCKETS", "false"/"FORCE_WEBSOCKETS", "true"/g' build.gradle && \
         sed -i '/org.whispersystems:textsecure-android:0405821/d' build.gradle && \
         sed -i '/org.whispersystems:textsecure-java:d4ee0d0/d' build.gradle
