@@ -1,7 +1,7 @@
 Categories:Theming
-License:Creative Commons 4.0 Attribution
+License:CC-BY-4.0
 Author Email:gabrielelucci.0@gmail.com
-Web Site:https://github.com/gabrielelucci/greyscale-cmte
+Web Site:https://github.com/gabrielelucci/greyscale-cmte/blob/HEAD/README.md
 Source Code:https://github.com/gabrielelucci/greyscale-cmte   
 Issue Tracker:https://github.com/gabrielelucci/greyscale-cmte/issues
 
@@ -38,12 +38,12 @@ Repo Type:git
 Repo:https://github.com/gabrielelucci/greyscale-cmte.git
 
 Build:r12,112
-    commit=r12
+    commit=r12-1
     subdir=theme
     gradle=yes
 
 Archive Policy:2 versions
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:r11
-Current Version Code:111
+Current Version:r12
+Current Version Code:112
