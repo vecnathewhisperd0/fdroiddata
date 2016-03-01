@@ -330,7 +330,7 @@ Build:2.2.1,15221
     scandelete=aFWall/src/main/res/raw/
     build=pushd .. && \
         export NDK_PROJECT_PATH=`pwd` && \
-        make -C external NDK=$$NDK$$        
+        make -C external NDK=$$NDK$$
 
 Auto Update Mode:None
 Update Check Mode:Tags ^[0-9\.vV]+$
