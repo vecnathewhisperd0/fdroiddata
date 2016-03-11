@@ -14,8 +14,15 @@ Privacy Browser protects your privacy by giving you easy control over the use of
 JavaScript, DOM storage, and cookies. Many websites use these technologies to
 track users between visits and between sites.
 
+<<<<<<< HEAD
 Privacy Browser uses Android's builtin WebView to render web pages. As such, it
 works best if you have updated to the latest version of WebView.
+=======
+Privacy Browser uses
+[https://play.google.com/store/apps/details?id=com.google.android.webview
+Android’s System WebView] to render web pages. As such, it works best if you
+have updated to the latest version of WebView.
+>>>>>>> 0f0a5390bfdf62d170c93348fd4ba82523adf1dc
 
 As a nice side benefit, when JavaScript is disabled web pages load much faster
 with less bandwidth consumption.
@@ -28,6 +35,27 @@ All forward and back history is cleared whenever the app is closed by swiping
 from the recents list, rebooting the Android device, or selecting the Clear and
 Exit option from the menu.  In addition, Clear and Exit clears all DOM storage,
 cookies, and destroys the WebView.
+<<<<<<< HEAD
+=======
+
+'''Current Features'''
+
+* Control over JavaScript, DOM storage, and cookies.
+* Clear DOM storage.
+* Clear cookies (ghosted when empty).
+* Add shortcut icons to the home screen.
+* Play full screen videos (requires JavaScript to be enabled).
+
+'''Planned features for future releases'''
+
+* [https://redmine.stoutner.com/issues/1 Upload of files to websites].
+* [https://redmine.stoutner.com/issues/2 View and manage SSL errors and certificates].
+* [https://redmine.stoutner.com/issues/3 Customize browser agent].
+* [https://redmine.stoutner.com/issues/4 Customize search engines].
+* [https://redmine.stoutner.com/issues/5 Fine grained cookie management].
+* [https://redmine.stoutner.com/issues/6 Fine grained DOM storage management].
+* [https://redmine.stoutner.com/issues/7 Automatically load JavaScript, DOM storage, and cookie settings by URL].
+>>>>>>> 0f0a5390bfdf62d170c93348fd4ba82523adf1dc
 .
 
 Repo Type:git
