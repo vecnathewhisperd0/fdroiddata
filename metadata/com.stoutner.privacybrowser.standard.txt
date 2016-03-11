@@ -55,8 +55,8 @@ Repo:git://git.stoutner.com/git/PrivacyBrowser.git
 
 Build:1.1-standard,2
     commit=v1.1
-    gradle=standard
     subdir=app
+    gradle=standard
 
 Auto Update Mode:Version +-standard v%v
 Update Check Mode:Tags
