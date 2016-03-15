@@ -1,0 +1,54 @@
+Categories:Multimedia
+License:GPL2
+Web Site:https://projects.vdr-developer.org/projects/vdr-manager/wiki
+Source Code:https://projects.vdr-developer.org/projects/vdr-manager/repository
+Issue Tracker:https://projects.vdr-developer.org/projects/vdr-manager/issues
+
+Auto Name:VDR-Manager
+# Donate:(web link)
+# FlattrID:(number)
+# Bitcoin:(bitcoin address)
+Summary:View the epg and stream live tv on you from your vdr
+Description:
+If you have a VDR at home reachable over the internet and own a mobile phone
+running Android then you possibly find this program useful. Using it you can
+view the epg and stream live tv on you device.
+
+If you do not have a vdr, ignore this app, it is useless for you.
+
+VDR-Manager has two parts:
+
+- The Android application for the user interface - A VDR plugin to communicate
+with. Standard SVDRP is not used because this leads to much more traffic.
+
+Here the some features
+
+* list the EPG filtered by time or channel
+* show EPG details
+* search EPG for some simple text
+* list, modify, delete or (de)activate timers
+* create timers from EPG events
+* remote wakeup VDR host using HTTP requests
+* live tv
+.
+
+Repo Type:git
+Repo:http://projects.vdr-developer.org/git/vdr-manager.git
+
+# At least one for new apps
+Build:12.50,12500
+    commit=39219007f025f4ade12b2883b90b9927d825f988
+    subdir=vdrmanager
+    gradle=yes
+
+# [...]
+# 
+# For a complete list of possible flags, see the manual
+# Maintainer Notes:
+# Here go the notes to take into account for future updates, builds, etc.
+# Will be published in the wiki if present.
+# .
+Auto Update Mode:Version %c
+Update Check Mode:Tags
+Current Version:12.50
+Current Version Code:12500
