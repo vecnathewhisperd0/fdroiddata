@@ -1,0 +1,23 @@
+AntiFeatures:Ads
+Categories:Games
+License:BSD
+Web Site:
+Source Code:https://github.com/dianadyulgerova10/DiceOverflow
+Issue Tracker:https://github.com/dianadyulgerova10/DiceOverflow/issues
+
+Auto Name:Dice Overflow
+Summary:Board game
+Description:
+Based on the original board game Overflow.
+.
+
+Repo Type:git
+Repo:https://github.com/dianadyulgerova10/DiceOverflow
+
+Build:1.0,1
+    commit=ff57414579654a4793e5d10056c539e58134a465
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.0
+Current Version Code:1
