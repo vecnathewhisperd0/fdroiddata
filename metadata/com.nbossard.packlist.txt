@@ -19,6 +19,12 @@ Build:0.6,7
     gradle=yes
     rm=gradle.properties
 
+Build:0.7,8
+    commit=4e1537d6f8ad73d104c81d5339b2c6cd37102560
+    subdir=app
+    gradle=yes
+    rm=gradle.properties
+    
 Build:0.7.1,9
     disable=timebased version
     commit=595be5f330f804a36a6a2236a91e1176b81b063f
