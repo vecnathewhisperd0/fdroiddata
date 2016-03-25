@@ -8,8 +8,10 @@ Bitcoin:188RxvRnSXSZZnjuDdLwNirHDfNusVPobh
 Auto Name:getCr
 Summary:Installs/Updates the open-source Chromium browser
 Description:
-Install Chromium, Install again to update Chromium.<br />
-Chromium builds '''do not''' auto-update<br />Block '''''Google Play Store''''' warning:</br>'''Settings --> Apps --> Chromium --> Notifications --> Block all'''</br>'''Works for API 19+'''<br />
+Install Chromium, Install again to update Chromium.<br /> Chromium builds '''do
+not''' auto-update<br />Block '''''Google Play Store'''''
+warning:</br>'''Settings --> Apps --> Chromium --> Notifications --> Block
+all'''</br>'''Works for API 19+'''<br />
 .
 
 Repo Type:git
