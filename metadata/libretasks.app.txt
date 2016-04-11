@@ -1,0 +1,28 @@
+Categories:System
+License:GPLv3 and Apache v2.0
+Web Site:
+Source Code:https://github.com/biotinker/LibreTasks/
+Issue Tracker:https://github.com/biotinker/LibreTasks//issues
+Changelog:https://github.com/biotinker/LibreTasks/blob/HEAD/CHANGELOG
+Bitcoin:193Xb3sySr2oEMuJC6bqAov444rSyVczW
+Litecoin:LYqzwVn2j2wGMNkXBmRF5T4pV5nFv1aDp3
+
+Summary:Trigger actions when certain events happen
+Description:
+A fork of Omnidroid, now maintained and with more features. LibreTasks will
+allow you to set up certain triggers, such as plugging in your phone or missing
+a call, and allow you to specify certain actions that are done when that trigger
+occurs, such as sending a SMS or pausing your media.
+.
+
+Repo Type:git
+Repo:https://github.com/biotinker/LibreTasks/
+
+Build:0.3.0,16
+    commit=935f1f5826a54d9f44d73170b3446cbcebd314ac
+    subdir=LibreTasks/
+
+Auto Update Mode:Version release-%v
+Update Check Mode:Tags
+Current Version:0.3.0
+Current Version Code:16
