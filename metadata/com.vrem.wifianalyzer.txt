@@ -22,7 +22,7 @@ Repo Type:git
 Repo:https://github.com/VREMSoftwareDevelopment/WifiAnalyzer.git
 
 Build:1.4.1.31,8
-    commit=v1.4.1.31
+    commit=V1.4.1.31
     subdir=app
     gradle=yes
 
