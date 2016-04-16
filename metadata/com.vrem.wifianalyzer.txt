@@ -1,4 +1,4 @@
-Categories:Tools
+Categories:System
 License:Apache2
 Web Site:https://github.com/VREMSoftwareDevelopment/WifiAnalyzer/blob/master/README.md
 Source Code:https://github.com/VREMSoftwareDevelopment/WifiAnalyzer
@@ -12,10 +12,10 @@ Support Android OS 5.1+
 Optimize your WiFi network by examining surrounding WiFi networks, measuring their signal strength as well as identifying crowded channels.
 
 Features:
-- Identify nearby Access Points
-- Graph channels signal strength
-- Graph Access Point signal strength over time
-- Analyze WiFi networks to rate channels
+* Identify nearby Access Points
+* Graph channels signal strength
+* Graph Access Point signal strength over time
+* Analyze WiFi networks to rate channels
 .
 
 Repo Type:git
