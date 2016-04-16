@@ -1,27 +1,21 @@
 Categories:Tools
 License:Apache2
-Web Site:https://github.com/VREMSoftwareDevelopment/WifiAnalyzer
+Web Site:https://github.com/VREMSoftwareDevelopment/WifiAnalyzer/blob/master/README.md
 Source Code:https://github.com/VREMSoftwareDevelopment/WifiAnalyzer
 Issue Tracker:https://github.com/VREMSoftwareDevelopment/WifiAnalyzer/issues
 
-Auto Name:WiFi Analyzer (open-source)
-Summary:Optimize your WiFi network using WiFi Analyzer (open-source
+Auto Name:WiFi Analyzer
+Summary:Optimize your WiFi network
 Description:
-WiFi Analyzer (open-source) for Android 5.1+
+Support Android OS 5.1+
 
-Optimize your WiFi network using WiFi Analyzer (open-source) by examining surrounding WiFi networks, measuring their signal strength as well as identifying crowded channels.
+Optimize your WiFi network by examining surrounding WiFi networks, measuring their signal strength as well as identifying crowded channels.
 
 Features:
 - Identify nearby Access Points
 - Graph channels signal strength
 - Graph Access Point signal strength over time
 - Analyze WiFi networks to rate channels
-
-WiFi Analyzer is under active development by volunteers.
-GitHub is the place to go for feature requests, bug reports and code contributions:
-https://github.com/VREMSoftwareDevelopment/WifiAnalyzer
-
-WiFi Analyzer is free, has no-ads and does not collect any personal information.
 .
 
 Repo Type:git
