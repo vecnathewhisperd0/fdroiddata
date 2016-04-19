@@ -1,92 +1,39 @@
 Categories:Writing
 License:Apache2
-Web Site:https://code.google.com/p/hackerskeyboard
-Source Code:https://code.google.com/p/hackerskeyboard/source
-Issue Tracker:
+Web Site:
+Source Code:https://github.com/klausw/hackerskeyboard
+Issue Tracker:https://github.com/klausw/hackerskeyboard/issues
 
 Auto Name:Hacker's Keyboard
-Summary:Four- or five-row soft-keyboard
+Summary:Hackers Keyboard
 Description:
-There are about thirty different languages covered, which can be enabled in the
-settings.
+Are you missing the key layout you're used to from your computer when using an
+Android device? This software keyboard has separate number keys, punctuation in
+the usual places, and arrow keys. It is based on the AOSP Gingerbread soft
+keyboard, so it supports multitouch for the modifier keys.
 
-For the five-row layout, the keyboard has separate number keys, punctuation in
-the usual places; tab, ctrl and arrow keys.
+This keyboard is especially useful if you use ConnectBot for SSH access. It
+provides working Tab/Ctrl/Esc keys, and the arrow keys are essential for devices
+such as the Xoom tablet or Nexus S that don't have a trackball or D-Pad.
 
-It is based on the AOSP Gingerbread soft keyboard, so it supports multitouch for
-the modifier keys.
-
-Completion dictionaries are only possible via plug-in packages, available from
-the website, though there is no template for building these from source.
-Anysoftkeyboard dictionaries don't appear to work.
-
-The permissions requested by the application are those needed by the underlying
-Gingerbread keyboard.
-
-It uses the contacts information for completion of names and email addresses,
-and audio recording for the voice input feature.
+The supported keyboard layouts include Armenian (Հայերեն), Arabic (العربية),
+British (en_GB), Bulgarian (български език), Czech (Čeština), Danish (dansk),
+Dvorak English (language "en-DV"), English (QWERTY), Finnish (Suomi), French
+(Français, AZERTY), German (Deutsch, QWERTZ), Greek (ελληνικά), Hebrew (עברית),
+Hungarian (Magyar), Italian (Italiano), Lao (ພາສາລາວ), Norwegian (Norsk bokmål),
+Persian (فارسی), Portuguese (Português), Romanian (Română), Russian (Русский),
+Russian phonetic (Русский, ru-rPH), Serbian (Српски), Slovak (Slovenčina),
+Slovenian (Slovenščina)/Bosnian/Croatian/Latin Serbian, Spanish (Español,
+Español Latinoamérica), Swedish (Svenska), Tamil (தமிழ்), Thai (ไทย), Turkish
+(Türkçe), and Ukrainian (українська мова).
 .
 
-Repo Type:hg
-Repo:https://hackerskeyboard.googlecode.com/hg
-
-Build:v1.18,1018
-    commit=8298cd8728c2
-    subdir=java
-    target=android-11
-    buildjni=yes
-
-Build:v1.20,1020
-    commit=e703fa82a4c3
-    subdir=java
-    target=android-11
-    buildjni=yes
-
-Build:v1.22,1022
-    commit=154e21230e81
-    subdir=java
-    target=android-11
-    buildjni=yes
-
-Build:v1.29,1029
-    commit=1.29
-    subdir=java
-    prebuild=./AutoVersion.sh
-    target=android-11
-    buildjni=yes
-
-Build:v1.31,1031
-    commit=065ed34b811c
-    subdir=java
-    prebuild=sed -i "s/Hg-ident/hg ident/" AutoVersion.sh && \
-        ./AutoVersion.sh
-    target=android-11
-    buildjni=yes
-
-Build:v1.33,1033
-    commit=v1.33
-    subdir=java
-    prebuild=sed -i "s/Hg-ident/hg ident/" AutoVersion.sh && \
-        ./AutoVersion.sh
-    target=android-11
-    buildjni=yes
-
-Build:v1.37,1037
-    commit=1.37
-    subdir=java
-    srclibs=1:VoiceIME@5763e36eab31
-    prebuild=sed -i "s/Hg-ident/hg ident/" AutoVersion.sh && \
-        ./AutoVersion.sh
-    target=android-19
-    buildjni=yes
+Repo Type:git
+Repo:https://github.com/klausw/hackerskeyboard.git
 
 Build:v1.38.2,1038002
     commit=1.38.2
     subdir=java
-    srclibs=1:VoiceIME@5763e36eab31
-    rm=java/libs/*.jar
-    prebuild=sed -i "s/Hg-ident/hg ident/" AutoVersion.sh && \
-        ./AutoVersion.sh
     target=android-19
     buildjni=yes
 
