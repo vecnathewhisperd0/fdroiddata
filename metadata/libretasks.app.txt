@@ -1,5 +1,5 @@
 Categories:System
-License:GPLv3,Apache2
+License:GPLv3,Apache2,LGPL
 Web Site:
 Source Code:https://github.com/biotinker/LibreTasks/
 Issue Tracker:https://github.com/biotinker/LibreTasks/issues
@@ -18,11 +18,11 @@ occurs, such as sending a SMS or pausing your media.
 Repo Type:git
 Repo:https://github.com/biotinker/LibreTasks/
 
-Build:0.3.0,16
-    commit=935f1f5826a54d9f44d73170b3446cbcebd314ac
+Build:0.4.0,17
+    commit=02e3b976b6f9c468623e35bda5c275a89bc11584
     subdir=LibreTasks
 
 Auto Update Mode:Version release-%v
 Update Check Mode:Tags
-Current Version:0.3.0
-Current Version Code:16
+Current Version:0.4.0
+Current Version Code:17
