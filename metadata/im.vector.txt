@@ -1,0 +1,31 @@
+Categories:Internet
+License:Apache2
+Web Site:https://matrix.org
+Source Code:https://github.com/vector-im/vector-android
+Issue Tracker:https://github.com/vector-im/vector-android/issues
+
+Auto Name:Vector
+Summary:Messaging client
+Description:
+Client for the Matrix messaging platform. Chat with friends, start group chats
+and share content. All of your messages and conversations are stored  on Matrix
+servers. Matrix is an open standard for interoperable, decentralised,  real-time
+communication over IP. It can be used to power Instant Messaging,  VoIP/WebRTC
+signalling, Internet of Things communication - or anywhere you need  a standard
+HTTP API for publishing and subscribing to data whilst tracking the conversation
+history. You can launch your own server that can be connected with over servers.
+.
+
+Repo Type:git
+Repo:https://github.com/vector-im/vector-android
+
+Build:0.5.0,10
+    commit=61f1f8f9e242d83495293a836a6feb6e1128af21
+    subdir=vector
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Vercode Operation:%c*10 + 3
+Current Version:0.5.0
+Current Version Code:None
