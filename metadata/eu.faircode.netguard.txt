@@ -5,11 +5,47 @@ Source Code:https://github.com/M66B/NetGuard
 Issue Tracker:https://github.com/M66B/NetGuard/issues
 
 Auto Name:NetGuard
-Summary:Block network access
+Summary:A simple way to block access to the internet per application
 Description:
-Simple way to block access to the internet - no root required. Applications can
-individually be allowed or denied access via your Wi-Fi and/or mobile
-connection.
+NetGuard provides simple and advanced ways to block access to the internet - no root required.
+
+Applications and addresses can individually be allowed or denied access to your Wi-Fi and/or mobile connection.
+
+Blocking access to the internet can help:
+
+* reduce your data usage
+* save your battery
+* increase your privacy
+
+Features:
+
+* Simple to use
+* No root required
+* 100% open source
+* No calling home
+* No tracking or analytics
+* No advertisements
+* Actively developed and supported
+* Android 4.0 and later supported
+* IPv4/IPv6 TCP/UDP supported
+* Tethering supported
+* Multiple device users supported
+* Optionally allow when screen on
+* Optionally block when roaming
+* Optionally block system applications
+* Optionally notify when an application accesses the internet
+* Optionally record network usage per application per address
+* Material design theme with light and dark theme
+
+PRO features:
+
+* Log all outgoing traffic; search and filter access attempts; export PCAP files to analyze traffic
+* Allow/block individual addresses per application
+* New application notifications; configure NetGuard directly from the notification
+* Display network speed graph in a status bar notification
+* Select from five additional themes in both light and dark version
+
+There is no other no-root firewall offering all these features.
 .
 
 Repo Type:git
