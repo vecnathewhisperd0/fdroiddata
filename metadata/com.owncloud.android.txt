@@ -220,7 +220,7 @@ repo. Verified against upstream at https://github.com/MikeOrtiz/TouchImageView.
 Can't use AUM since tag names are very inconsistent.
 .
 
-Auto Update Mode:None
+Auto Update Mode:Version %c
 Update Check Mode:Tags ^oc-android-[0-9.]*
 Current Version:2.0.0
 Current Version Code:20000000
