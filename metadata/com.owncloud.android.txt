@@ -217,7 +217,8 @@ Maintainer Notes:
 Last jar in use is touch-image-view, since apparently it's not in any maven
 repo. Verified against upstream at https://github.com/MikeOrtiz/TouchImageView.
 
-Can't use AUM since tag names are very inconsistent.
+Can't use AUM since tag names are very inconsistent (e.g. 1.8 and 1.9 but 1.9.1 and 2.0.0).
+Also we cannot use automatic updates because the tag names differ from the version names.
 .
 
 Auto Update Mode:None
