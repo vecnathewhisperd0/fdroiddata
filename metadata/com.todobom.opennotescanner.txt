@@ -94,11 +94,11 @@ Build:1.0.20,20
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
     gradle=yes
 
-Build:1.0.21,21
-    commit=1.0.21
+Build:1.0.22,22
+    commit=1.0.22
     subdir=app
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
-    gradle=yes
+    gradle=fdroid
 
 Maintainer Notes:
 Uses jitpack, so Gradle 2.11 or newer is needed.
