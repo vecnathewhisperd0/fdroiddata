@@ -13,12 +13,6 @@ Helps in planning trips and organizing packing lists.
 Repo Type:git
 Repo:https://github.com/nbossard/packlist
 
-Build:0.6,7
-    commit=e42378749705fe90f7ac1f8a37a7cfb573c0b8cf
-    subdir=app
-    gradle=yes
-    rm=gradle.properties
-
 Build:0.7.1,9
     commit=0.7.1
     subdir=app
@@ -31,8 +25,14 @@ Build:0.8,11
     subdir=app
     gradle=yes
     rm=gradle.properties
+    
+Build:0.8.1,12
+    commit=0.8.1
+    subdir=app
+    gradle=yes
+    rm=gradle.properties
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:0.8.0
-Current Version Code:11
+Current Version:0.8.1
+Current Version Code:12
