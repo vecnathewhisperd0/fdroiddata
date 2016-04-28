@@ -1,0 +1,43 @@
+Categories:Science & Education,Navigation
+License:Apache2
+Web Site:http://il.pycon.org/2016/
+Source Code:https://github.com/moshe742/pycon-israel-2016
+Issue Tracker:https://github.com/moshe742/pycon-israel-2016/issues
+
+Summary:Companion app for PyCon Israel 2016
+Description:
+A companion app for the PyCon Israel 2016 conference that will take place on May
+2-3 2016 in Tel Aviv. This app contains the full schedule of all the keynotes
+and talks given during the conference.
+
+Main features:
+
+* see the conference location on a map
+* see the full list of sessions and the synopsis of each talk
+* see the list of speakers
+* filter sessions by track or experience level
+* build your personal schedule by picking up sessions of interest
+
+The Python Conference (PyCon) is an annual convention for the discussion and
+promotion of the Python programming language. It originated in the United States
+but is also held in many other countries that have active Python developer
+communities. This is the very first PyCon in Israel.
+
+Enjoy the 2-day, 2-track event of learning, socializing, and fun, all about the
+Python programming language at PyCon Israel 2016!
+
+Our website: [http://il.pycon.org/2016/]
+
+Note: This app is based on the Open Source project [http://www.connfa.com
+Connfa], originally developed by [http://lemberg.co.uk Lemberg].
+.
+
+Repo Type:git
+Repo:https://github.com/moshe742/pycon-israel-2016
+
+Build:2.0.5,18
+    commit=4c09b0c471
+    subdir=app
+
+Auto Update Mode:None
+Update Check Mode:Tags
