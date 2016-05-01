@@ -29,7 +29,12 @@ Build:0.42,13
     subdir=app
     gradle=yes
 
+Build:0.44,14
+    commit=4ab73a49ac20e9a80694a98a8082b59fe07aa532
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:0.42
-Current Version Code:13
+Current Version:0.44
+Current Version Code:14

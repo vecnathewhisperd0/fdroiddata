@@ -1,0 +1,52 @@
+AntiFeatures:NonFreeAdd
+Categories:Reading,Internet
+License:GPLv3
+Web Site:https://github.com/ccrama/Slide/blob/HEAD/README.md
+Source Code:https://github.com/ccrama/Slide
+Issue Tracker:https://github.com/ccrama/Slide/issues
+Changelog:https://github.com/ccrama/Slide/blob/HEAD/CHANGELOG.md
+
+Name:Slide
+Summary:Companion app for reddit
+Description:
+Companion app for browsing Reddit.
+
+AntiFeature: Shows features which are only available in a paid "pro" version.
+.
+
+Repo Type:git
+Repo:https://github.com/ccrama/Slide
+
+Build:5.2.2,172
+    disable=synccit.jar
+    commit=78126065c37a0dbdd4ad733632bee0a0defafcd2
+    subdir=app
+    gradle=prod,noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' build.gradle
+
+Build:5.3,179
+    commit=a3976de76a4442a0c5b2c831c88552a926cfe51c
+    subdir=app
+    gradle=prod,noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.3.2.3,184
+    commit=5.3.2.3
+    subdir=app
+    gradle=prod,noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.3.2.5,186
+    commit=5.3.2.5
+    subdir=app
+    gradle=prod,noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:5.3.3-alpha.2
+Current Version Code:188
