@@ -166,7 +166,7 @@ Current Version:$project.version-system
 Current Version Code:42
 
 Build:0.1.43-alpha-normal,43
-    commit=v0.1.43-alpha
+    commit=v0.1.42-alpha
     subdir=AIMSICD
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.12" }' >> ../build.gradle
     gradle=normal
