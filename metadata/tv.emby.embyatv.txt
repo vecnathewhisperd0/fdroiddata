@@ -1,0 +1,40 @@
+Categories:Multimedia
+License:GPLv2
+Web Site:https://emby.media
+Source Code:https://github.com/MediaBrowser/Emby.AndroidTv
+Issue Tracker:https://github.com/MediaBrowser/Emby.AndroidTv/issues
+
+Auto Name:Emby
+Summary:Emby TV Client
+Description:
+Bringing all of your personal media together into one place has never been
+easier! Emby unites your personal videos, music, and photos and streams them to
+your devices.
+
+This app is free and will function for browsing your collection. For playback,
+you need to either unlock the app with a small in-app purchase or have an active
+Emby Premiere membership.
+
+Get the free, open source Emby Server at [http://emby.media] (required as part
+of your Emby install). You must be on Emby Server 3.0.5572.0+
+
+• Automatically converts your media on-the-fly to play on any device. •
+Organizes your media into an elegant display with artwork, rich metadata and
+related content. • Easily share your media with friends and family. • Rich
+parental control and management features allow you to easily control access for
+your entire family. • Stream your cloud-synced media (with installed cloud sync
+providers) • Watch Live TV and manage your DVR (with installed live tv provider)
+
+Energize your collection with Emby and take your media to the next level.
+.
+
+Repo Type:git
+Repo:https://github.com/MediaBrowser/Emby.AndroidTv.git
+
+Build:1.1.76g,1176
+    commit=a411a39d4df4fbf2340d0e1e85311134f1995dc3
+    subdir=MediaBrowserTv/app
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:Tags
