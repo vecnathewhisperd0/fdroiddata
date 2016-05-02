@@ -14,11 +14,15 @@ OpenStreetMap- and GoogleMaps-Links.
 Repo Type:git
 Repo:https://github.com/gjedeer/mylocation
 
+Build:1.2.2,9
+    commit=eed058878a78c12b557fe88d89cb69b0efb3108a
+    target=android-23
+
 Build:1.2.1,8
     commit=1928c284570bdee12ce3a4b7f44a7118e20a30b4
     target=android-23
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.2.1
-Current Version Code:8
+Current Version:1.2.2
+Current Version Code:9
