@@ -3,7 +3,7 @@ License:GPLv3
 Web Site:https://github.com/iSoron/uhabits/blob/HEAD/README.md
 Source Code:https://github.com/iSoron/uhabits
 Issue Tracker:https://github.com/iSoron/uhabits/issues
-Changelog:https://github.com/iSoron/uhabits/blobHEAD/CHANGELOG.md
+Changelog:https://github.com/iSoron/uhabits/blob/HEAD/CHANGELOG.md
 
 Name:Loop Habit Tracker
 Auto Name:Habits
@@ -90,16 +90,13 @@ Build:1.4.1,15
     rm=app/libs/*.jar
     prebuild=cp -fR $$ActiveAndroid$$/src/com src/main/java
 
-Build:1.5.0,16
-    commit=v1.5.0
+Build:1.5.1,17
+    commit=v1.5.1
     subdir=app
     submodules=yes
     gradle=yes
-    srclibs=ActiveAndroid@08c6335cd7324c6e72da536b0c6fffa5a798f6a2
-    rm=app/libs/*.jar
-    prebuild=cp -fR $$ActiveAndroid$$/src/com src/main/java
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.5.0
-Current Version Code:16
+Current Version:1.5.1
+Current Version Code:17
