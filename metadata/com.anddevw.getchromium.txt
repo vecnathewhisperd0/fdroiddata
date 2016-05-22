@@ -17,6 +17,12 @@ all'''</br>'''Works for API 19+'''<br />
 Repo Type:git
 Repo:https://github.com/andDevW/getChromium
 
+Build:2.0,1
+    commit=v1.0
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "1.5.0" }' >> ../build.gradle
+    gradle=yes 	
+	
 Build:1.0,1
     commit=v1.0
     subdir=app
@@ -25,5 +31,5 @@ Build:1.0,1
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.0
-Current Version Code:1
+Current Version:2.0
+Current Version Code:2
