@@ -10,25 +10,26 @@ TwelF is a Material Design inspired theme aiming to provide a consistent and min
 This theme only supports FLOSS apps icons. You can use [https://f-droid.org/repository/browse/?fdid=org.xphnx.iconsubmit Turtl] for requesting icons. As determining if the icons 
 requested are related to FLOSS apps is a tedious work, currently only F-droid hosted apps are supported.
 
-Supported launchers:
-- Trebuchet
-- Kiss
-- Nova
-- Apex
-- Holo
-- Asus
-- Adw 
-- and many more
+Suported launchers:
+
+* Trebuchet
+* Kiss
+* Nova
+* Apex
+* Holo
+* Asus
+* Adw
+* and many more
+
 .
 
 Repo Type:git
 Repo:https://gitlab.com/xphnx/ameixa.git
 
-Build:37,2.9.8-alpha
+Build:2.9.8-alpha,37
     commit=v2.9.8-alpha
     subdir=app
     gradle=yes
-
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
