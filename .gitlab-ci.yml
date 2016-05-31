@@ -8,5 +8,5 @@ before_script:
 
 lint:
   script:
-    - fdroid lint -f
     - fdroid rewritemeta
+    - fdroid lint -f
