@@ -1,14 +1,13 @@
 Categories:Theming
 License:GPLv3
-Web Site:https://gitlab.com/xphnx
 Source Code:https://gitlab.com/xphnx/ameixa
 Issue Tracker:https://gitlab.com/xphnx/ameixa/issues
 
 Auto Name:Ameixa
-Summary:Port of [https://f-droid.org/repository/browse/?fdid=org.twelf.cmtheme TwelF CMTheme] for many launchers.
+Summary:Port of TwelF CMTheme for many launchers.
 Description:
 TwelF is a Material Design inspired theme aiming to provide a consistent and minimalistic look to your device.
-This theme only supports icons for FLOSS apps. You can use [https://f-droid.org/repository/browse/?fdid=org.xphnx.iconsubmit Turtl] for requesting icons. As determining if the icons 
+This theme only supports FLOSS apps icons. You can use [https://f-droid.org/repository/browse/?fdid=org.xphnx.iconsubmit Turtl] for requesting icons. As determining if the icons 
 requested are related to FLOSS apps is a tedious work, currently only F-droid hosted apps are supported.
 
 Supported launchers:
@@ -26,7 +25,7 @@ Repo Type:git
 Repo:https://gitlab.com/xphnx/ameixa.git
 
 Build:37,2.9.8-alpha
-    commit=v2.9.8
+    commit=v2.9.8-alpha
     subdir=app
     gradle=yes
 
