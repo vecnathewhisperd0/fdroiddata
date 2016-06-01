@@ -3,11 +3,10 @@ License:GPLv3
 Source Code:https://gitlab.com/xphnx/ameixa
 Issue Tracker:https://gitlab.com/xphnx/ameixa/issues
 
-Auto Name:Ameixa
 Summary:Port of TwelF CMTheme for many launchers
 Description:
 TwelF is a Material Design inspired theme aiming to provide a consistent and minimalistic look to your device.
-This theme only supports FLOSS apps icons. You can use [https://f-droid.org/repository/browse/?fdid=org.xphnx.iconsubmit Turtl] for requesting icons. As determining if the icons requested are related to FLOSS apps is a tedious work, currently only F-droid hosted apps are supported.
+This theme only supports FLOSS apps icons.
 
 Suported launchers:
 
@@ -19,7 +18,6 @@ Suported launchers:
 * Asus
 * Adw
 * and many more
-
 .
 
 Repo Type:git
