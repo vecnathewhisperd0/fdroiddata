@@ -1,0 +1,31 @@
+Categories:Sports & Health
+License:GPLv3
+Web Site:
+Source Code:https://framagit.org/erics/nitroxCalc.git
+Issue Tracker:https://framagit.org/erics/nitroxCalc/issues
+
+Auto Name:nitroxCalc
+Summary:Nitrox Calculator for Diving
+Description:
+Compute nitrox parameters for Enriched Air Nitrox diving (this app is only in
+french for the moment but will be translated as soon as possible)
+
+nitroxCalc features:
+
+* Change Oxygen Partial preasure
+* Change Oxygen concentration
+* Then compute maximum authorized depth
+.
+
+Repo Type:git
+Repo:https://framagit.org/erics/nitroxCalc.git
+
+Build:0.4,2
+    commit=bd1d0f04f9967c60dd8dd098367f9b040559d670
+    subdir=platforms/android
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:0.4
+Current Version Code:2
