@@ -15,6 +15,8 @@ stations can be customized with a simple CSV file.
 Repo Type:git
 Repo:https://github.com/mdecorde/BAC76.git
 
+Build:0.1,1
+    commit=v0.1
 Build:0.3,3
     commit=v0.3
 
@@ -22,3 +24,6 @@ Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:0.3
 Current Version Code:3
+
+subdir=app
+gradle=yes
