@@ -21,10 +21,11 @@ Repo Type:git
 Repo:https://gitlab.com/egranell/Read4SpeechExperiments.git
 
 Build:1.02,14
-    commit=1.02
+    commit=24917a29d1794809442ff3e8280dd8323702cd7c
     subdir=app
+    gradle=2.1.2
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest/free
-Current Version:1.02
-Current Version Code:14
+Auto Update Mode:Version %v
+Update Check Mode:RepoManifest/master
+Current Version:1.03
+Current Version Code:15
