@@ -18,14 +18,8 @@ Some features, like synchronization, use non-free networ services.
 .
 
 Repo Type:git
-# Old repo - Repo:https://github.com/nicolas-raoul/Anki-Android.git
-# Some tags and refs are missing in the new repo
 Repo:https://github.com/ankidroid/Anki-Android.git
 
-# Build Version:0.4.2,12,v0.4.2
-# Build Version:0.5,18,v0.5
-# Build Version:0.5.1,19,!There is a v0.5.1 tag but the version code is not right
-# Build Version:0.6,20,f26b7662ae9db9a92d21
 Build:0.7,21
     commit=v0.7
 
@@ -198,7 +192,15 @@ Build:2.5.2,20502300
     scanignore=AnkiDroid/src/main/java/com/ichi2/libanki/hooks/ExternalHookLoader.java
 
 Build:2.5.4,20504300
+    disable=mis-tagged
     commit=v2.5.4
+    subdir=AnkiDroid
+    gradle=yes
+    rm=tools,docs
+    scanignore=AnkiDroid/src/main/java/com/ichi2/libanki/hooks/ExternalHookLoader.java
+
+Build:2.5.4,20504301
+    commit=1926fcc7d86d85cbc068234bc565b9f607b8e45f
     subdir=AnkiDroid
     gradle=yes
     rm=tools,docs
@@ -211,4 +213,4 @@ Uses DexLoader to load custom decks and plugins (?).
 Auto Update Mode:Version v%v
 Update Check Mode:Tags ^v[0-9.]*$
 Current Version:2.5.4
-Current Version Code:20504300
+Current Version Code:20504301

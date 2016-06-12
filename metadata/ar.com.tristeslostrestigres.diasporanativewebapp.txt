@@ -9,6 +9,9 @@ Donate:http://martinv.tip.me
 Auto Name:Diaspora Native WebApp
 Summary:Diaspora client
 Description:
+'''Warning:''' This app has been discontinued in favor of
+[[com.github.dfa.diaspora_android]].
+
 Client for the Diaspora social network.
 .
 
@@ -85,7 +88,27 @@ Build:1.7.3,19
     subdir=app
     gradle=yes
 
+Build:1.8,20
+    commit=v1.8
+    subdir=app
+    gradle=yes
+
+Build:1.8.1,21
+    commit=v1.8.1
+    subdir=app
+    gradle=yes
+
+Build:1.8.2,22
+    commit=v1.8.2
+    subdir=app
+    gradle=yes
+
+Build:1.8.3,23
+    commit=v1.8.3
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.7.3
-Current Version Code:19
+Current Version:1.8.3
+Current Version Code:23

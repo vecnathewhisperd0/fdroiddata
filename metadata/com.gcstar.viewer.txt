@@ -20,9 +20,13 @@ Repo:http://svn.gna.org/svn/gcstar/viewer
 Build:2.8,10
     commit=2149
 
+Build:2.10,12
+    commit=2266
+
+Build:2.11,13
+    commit=2271
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:2.8
-Current Version Code:10
-
-No Source Since:2.9
+Current Version:2.11
+Current Version Code:13

@@ -184,14 +184,37 @@ Build:6.8.3,47
     subdir=project/app
     gradle=yes
 
-Build:7.0,48
-    disable=resource issues
-    commit=7.0
+Build:7.3.1,53
+    commit=7.3.1
     subdir=project/app
     gradle=yes
 
-Auto Update Mode:None
-# Auto Update Mode:Version %v
+Build:7.3.2,54
+    commit=7.3.2
+    subdir=project/app
+    gradle=yes
+
+Build:7.3.3,55
+    commit=7.3.3
+    subdir=project/app
+    gradle=yes
+
+Build:7.3.4,56
+    commit=7.3.4
+    subdir=project/app
+    gradle=yes
+
+Build:7.3.5,57
+    commit=7.3.5
+    subdir=project/app
+    gradle=yes
+
+Build:7.3.6,58
+    commit=7.3.6
+    subdir=project/app
+    gradle=yes
+
+Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:7.0
-Current Version Code:48
+Current Version:7.3.6
+Current Version Code:58

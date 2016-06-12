@@ -30,8 +30,8 @@ OpenKeychain integrates with
 * oandbackup
 * and many more…
 
-OpenKeychain is designed to be trustworthy. It’s Free Software with no
-secrets; anyone can examine and validate every bit of it.
+OpenKeychain is designed to be trustworthy. It’s Free Software with no secrets;
+anyone can examine and validate every bit of it.
 
 Permissions:
 
@@ -226,7 +226,71 @@ Build:3.7,37000
     gradle=yes
     scanignore=extern/spongycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
 
+Build:3.8,38000
+    commit=v3.8
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+    scanignore=extern/spongycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.8.1,38100
+    commit=v3.8.1
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+    scanignore=extern/spongycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.8.2,38200
+    commit=v3.8.2
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+    scanignore=extern/spongycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.9,39000
+    commit=v3.9
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.9.2,39200
+    commit=v3.9.2
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.9.4,39400
+    commit=v3.9.4
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.9.5,39510
+    commit=v3.9.5
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:4.0,40000
+    disable=MaxHeap4G
+    commit=v4.0
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:4.0.1,40100
+    commit=v4.0.1
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.7
-Current Version Code:37000
+Current Version:4.0.1
+Current Version Code:40100

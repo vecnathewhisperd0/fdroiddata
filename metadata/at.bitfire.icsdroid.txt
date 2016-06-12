@@ -1,9 +1,10 @@
-Categories:Internet
+Categories:Time
 License:GPLv3
-Web Site:https://icsdroid.bitfire.at
-Source Code:https://gitlab.com/bitfireAT/icsdroid
-Issue Tracker:https://gitlab.com/bitfireAT/icsdroid/issues
-Donate:https://icsdroid.bitfire.at/donate
+Web Site:https://icsdroid.bitfire.at/
+Source Code:https://icsdroid.bitfire.at/source/
+Issue Tracker:https://icsdroid.bitfire.at/forums/
+Changelog:https://gitlab.com/bitfireAT/icsdroid/tags
+Donate:https://icsdroid.bitfire.at/donate/
 Bitcoin:1KSCy7RHztKuhW9fLLaUYqdwdC2iwbejZU
 
 Auto Name:ICSdroid
@@ -53,7 +54,25 @@ Build:1.1,5
     submodules=yes
     gradle=yes
 
+Build:1.2,7
+    commit=v1.2
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.2.1,8
+    commit=v1.2.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.3,9
+    commit=v1.3
+    subdir=app
+    submodules=yes
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.1
-Current Version Code:5
+Current Version:1.3
+Current Version Code:9

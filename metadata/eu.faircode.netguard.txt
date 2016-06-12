@@ -130,7 +130,283 @@ Build:0.63,2015122501
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.8" }' >> ../build.gradle
     gradle=yes
 
+Build:0.64,2015122801
+    commit=0.64
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.8" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.65,2016010301
+    commit=0.65
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.8" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.66,2016010401
+    commit=0.66
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.8" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.67,2016010501
+    commit=0.67
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.8" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.68,2016010502
+    commit=0.68
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.8" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.69,2016010701
+    commit=0.69
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.9" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.72,2016010803
+    commit=0.72
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.9" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.73,2016010901
+    commit=0.73
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.9" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.75,2016011004
+    commit=0.75
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.9" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.76,2016011801
+    commit=0.76
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.9" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.77-beta,2016012301
+    disable=wrong tag, beta
+    commit=0.77-7
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.9" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.78,2016012701
+    commit=0.78
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.9" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.79-beta,2016012801
+    disable=beta
+    commit=0.79
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.9" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.80-beta,2016013001
+    disable=beta
+    commit=0.80
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.9" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.82-beta,2016020301
+    disable=beta, build tested
+    commit=0.82
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.9" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.83,2016020401
+    commit=0.83
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.9" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.91-beta,2016022101
+    disable=beta, build tested
+    commit=0.91
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.95,2016022502
+    commit=0.95
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.97,2016022601
+    commit=0.97
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:0.98,2016022701
+    commit=0.98
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.0,2016022901
+    commit=2.0
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.2,2016030102
+    commit=2.2
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.3,2016030301
+    commit=2.3
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.4,2016030501
+    commit=2.4
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.5,2016030701
+    commit=2.5
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.6,2016031001
+    commit=2.6
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.6,2016031002
+    commit=2.6
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.7,2016031203
+    commit=2.7
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.8,2016031501
+    disable=Could not find com.android.tools.build:gradle-experimental:0.7.0-alpha2
+    commit=2.8
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.10,2016031801
+    commit=2.10
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.11,2016032001
+    commit=2.11
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.12,2016032201
+    commit=2.12
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.13,2016032801
+    commit=2.13
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.14,2016033001
+    commit=2.14
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.15,2016033101
+    commit=2.15
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.16,2016033102
+    commit=2.16
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.17,2016040801
+    commit=2.17
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.18,2016040812
+    commit=2.18
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.19,2016041501
+    commit=2.19
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.20,2016041601
+    commit=2.20
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.21,2016042701
+    commit=2.21
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.22,2016050201
+    commit=2.22
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.23,2016050601
+    commit=2.23
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.24,2016051301
+    commit=2.24
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.25,2016051401
+    commit=2.25
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]*$
-Current Version:0.63
-Current Version Code:2015122501
+Current Version:2.25
+Current Version Code:2016051401

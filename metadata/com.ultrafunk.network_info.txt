@@ -80,7 +80,22 @@ Build:1.7.5,24
     subdir=NetInfo_Widget
     gradle=yes
 
+Build:1.7.6,25
+    commit=0dbf23ba939b39be4ef81d0ab66ea7a0135386fc
+    subdir=NetInfo_Widget
+    gradle=yes
+
+Build:1.8.0,26
+    commit=29e08edc6be9ffef2bc8e37a7b2378af74799e0f
+    subdir=NetInfo_Widget
+    gradle=yes
+
+Build:1.8.1,27
+    commit=3a6ccce74e19e0bdbf50e647a7598faa34ff1b6d
+    subdir=NetInfo_Widget
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.7.5
-Current Version Code:24
+Current Version:1.8.1
+Current Version Code:27

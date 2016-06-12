@@ -1,0 +1,43 @@
+Categories:Internet
+License:GPLv3+
+Web Site:https://github.com/Diaspora-for-Android/diaspora-android/blob/HEAD/README.md
+Source Code:https://github.com/Diaspora-for-Android/diaspora-android
+Issue Tracker:https://github.com/Diaspora-for-Android/diaspora-android/issues
+Changelog:https://github.com/Diaspora-for-Android/diaspora-android/blob/HEAD/CHANGELOG.md
+
+Auto Name:Diaspora
+Summary:Client for the Diaspora social network
+Description:
+Unofficial webview based client for the community-run, distributed social
+network "Diaspora". It's currently under development and should be used with
+that in mind. Please submit any bugs you might find.
+
+Based on [[ar.com.tristeslostrestigres.diasporanativewebapp]] and
+[[de.baumann.diaspora]].
+
+[https://github.com/Diaspora-for-Android/diaspora-android/blob/HEAD/SCREENSHOTS.md
+Screenshots]
+.
+
+Repo Type:git
+Repo:https://github.com/Diaspora-for-Android/diaspora-android
+
+Build:0.1.0,1
+    commit=45cb50111a201e58ba8ba657828d6b42b442d23a
+    subdir=app
+    gradle=yes
+
+Build:0.1.1,2
+    commit=v0.1.1
+    subdir=app
+    gradle=yes
+
+Build:0.1.2,3
+    commit=v0.1.2
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:0.1.2
+Current Version Code:3

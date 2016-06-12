@@ -76,7 +76,12 @@ Build:3.8.1,41
         sed -i -e "s/0.10.+/1.0.0/" $$PreferenceFragment$$/build.gradle && \
         sed -i -e '/[Cc]rashlytics/d' build.gradle AndroidManifest.xml src/com/gh4a/Gh4Application.java
 
+Build:4.0.2,45
+    disable=third party maven repos, jars, non-free deps
+    commit=v4.0.2
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:3.8.1
-Current Version Code:41
+Current Version:4.0.2
+Current Version Code:45

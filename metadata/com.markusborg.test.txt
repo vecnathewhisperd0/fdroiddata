@@ -5,7 +5,7 @@ Source Code:https://github.com/mrksbrg/RacketGhost
 Issue Tracker:https://github.com/mrksbrg/RacketGhost/issues
 
 Auto Name:RacketGhost
-Summary:Ghosting Coach for Squash & Badminton
+Summary:Ghosting Coach for Squash, Badminton and Racketlon
 Description:
 Ghosting is an established training exercise in racket sports to practice court
 movement without a ball. Moving to the various corners of the court improves
@@ -66,7 +66,29 @@ Build:1.6.1,14
     subdir=app
     gradle=yes
 
+Build:1.7.1,15
+    commit=1d4e68ab24dee2eaa308df5776fec1053411fe68
+    subdir=app
+    gradle=yes
+
+Build:1.7.2,16
+    commit=a344059c0cb631f4a6d6aefbd4ccb42a6ad2cca3
+    subdir=app
+    gradle=yes
+
+Build:1.8.1,17
+    commit=d24e0e3c05c0e6cedfa0c1f47a4ef50859ba7c9f
+    subdir=app
+    gradle=yes
+
+Maintainer Notes:
+Wait for https://github.com/mrksbrg/RacketGhost/issues/39
+to enable AUM:
+
+Auto Update Mode:Version v.%v
+.
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.6.1
-Current Version Code:14
+Current Version:1.8.1
+Current Version Code:17

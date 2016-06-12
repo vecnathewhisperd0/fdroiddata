@@ -148,13 +148,22 @@ Build:0.18.5,27
         cp -fR $$nrz-androidlib$$/src/* src/
     target=android-22
 
-Maintainer Notes:
-$$oc-android-library$$/libs/ should be build from source. Currently
-commons-httpclient is missing: Wasn't able to build this specific
-version.
-.
+Build:0.21.0,35
+    disable=missing dep
+    commit=0.21.0
+    gradle=yes
+
+Build:0.21.1,36
+    commit=0.21.1
+    gradle=yes
+    prebuild=sed -i -e '/owncloudAndroidLibrary/d' -e '/^dependencies {/acompile "com.github.owncloud:android-library:oc-android-library-0.9.10"' build.gradle
+
+Build:0.21.2,37
+    commit=b3be3130b33e4152b792e17bbb0af3bfa21b1944
+    gradle=yes
+    prebuild=sed -i -e '/owncloudAndroidLibrary/d' -e '/^dependencies {/acompile "com.github.owncloud:android-library:39e3ddaa07b0943b034b34a84a33b4dc4c7475d0"' build.gradle
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:0.19.1
-Current Version Code:30
+Current Version:0.21.2
+Current Version Code:37

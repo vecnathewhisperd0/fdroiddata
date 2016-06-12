@@ -435,7 +435,112 @@ Build:6.2.0,3001
     init=rm libs/*.jar
     gradle=cloudless
 
+Build:6.3.1,3003
+    commit=6.3.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.2,3004
+    commit=6.3.2
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.4,3006
+    commit=6.3.4
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.5,3007
+    commit=6.3.5
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.6,3008
+    commit=6.3.6
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.1,3011
+    commit=7.0.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.2,3012
+    commit=7.0.2
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.3,3013
+    commit=7.0.3
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.4,3014
+    commit=7.0.4
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.5,3015
+    commit=7.0.5
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.6,3016
+    commit=7.0.6
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.7,3017
+    commit=7.0.7
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.9,3019
+    commit=7.0.9
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.10,3020
+    commit=7.0.10
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.12,3022
+    commit=7.0.12
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.13,3023
+    commit=7.0.13
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.14,3024
+    commit=7.0.14
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.1.0,3027
+    commit=7.1.0
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.1.1,3028
+    commit=7.1.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.2.1,3030
+    commit=7.2.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.2.2,3031
+    commit=7.2.2
+    init=rm libs/*.jar
+    gradle=cloudless
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:6.2.0
-Current Version Code:3001
+Current Version:7.2.2
+Current Version Code:3031

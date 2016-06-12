@@ -1,5 +1,7 @@
 Categories:Science & Education
 License:GPLv3
+Author Name:Nico Alt
+Author Email:nicoalt@posteo.org
 Web Site:https://altnico.github.io/projects/android/HW-Manager.html
 Source Code:https://gitlab.com/hw-manager/android
 Issue Tracker:https://gitlab.com/hw-manager/android/issues
@@ -59,7 +61,6 @@ Build:0.91,20
     commit=0.91
     subdir=app
 
-# repo changed, start of new gradle world order
 Build:0.92,21
     commit=0.92
     subdir=app
@@ -75,7 +76,15 @@ Build:0.94,23
     subdir=app
     gradle=yes
 
+Build:0.94.1,24
+    commit=0.94.1
+    gradle=yes
+
+Build:0.94.2,25
+    commit=0.94.2
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.94
-Current Version Code:23
+Current Version:0.94.2
+Current Version Code:25

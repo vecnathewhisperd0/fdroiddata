@@ -1,8 +1,9 @@
 Categories:Internet
 License:GPLv3
 Web Site:http://www.kiwix.org
-Source Code:http://sourceforge.net/projects/kiwix
-Issue Tracker:http://sourceforge.net/p/kiwix/bugs
+Source Code:https://github.com/kiwix/kiwix
+Issue Tracker:https://github.com/kiwix/kiwix/issues
+Changelog:https://github.com/kiwix/kiwix/blob/HEAD/android/CHANGELOG
 
 Auto Name:Kiwix
 Summary:Offline Wikipedia reader
@@ -13,8 +14,7 @@ webpages for quick and easy reading.
 .
 
 Repo Type:git
-# Repo:git://git.code.sf.net/p/kiwix/kiwix
-Repo:https://github.com/kiwix/kiwix_mirror.git
+Repo:https://github.com/kiwix/kiwix.git
 
 Build:1.96,26
     commit=android_v1.96
@@ -30,13 +30,41 @@ Build:1.96,26
         cd android && \
         NDK_PATH=$$NDK$$ ./build-android-with-native.py --locales --toolchain --lzma --icu --zim --kiwix --strip
 
+Build:1.97,27
+    commit=android_v1.97
+    subdir=android
+    gradle=yes
+    rm=ios,dvd,src/sugar,android/libs/*/*.so
+    scandelete=android/glassify
+    build=cd .. && \
+        ./autogen.sh && \
+        ./configure --disable-staticbins --disable-manager --disable-server --disable-launcher --disable-indexer --disable-installer --disable-searcher --disable-reader --disable-components --enable-android --enable-compileall && \
+        pushd src/dependencies && \
+        make icudt49l.dat xz icu zimlib-1.2 zimlib-1.2/build/lib/libzim.so xapian-core-1.2.3 && \
+        popd && \
+        cd android && \
+        NDK_PATH=$$NDK$$ ./build-android-with-native.py --locales --toolchain --lzma --icu --zim --xapian --kiwix --strip
+
+Build:1.99,29
+    disable=build prints out non-utf8, which crashes fdroidserver
+    commit=android_v1.99
+    subdir=android
+    gradle=yes
+    rm=ios,dvd,src/sugar,android/libs/*/*.so
+    build=cd .. && \
+        ./autogen.sh && \
+        ./configure --disable-staticbins --disable-manager --disable-server --disable-launcher --disable-indexer --disable-installer --disable-searcher --disable-reader --disable-components --enable-android --enable-compileall && \
+        pushd src/dependencies && \
+        make icudt49l.dat xz icu zimlib-1.2 zimlib-1.2/build/lib/libzim.so xapian-core-1.2.3 && \
+        popd && \
+        cd android && \
+        NDK_PATH=$$NDK$$ ./build-android-with-native.py --locales --toolchain --lzma --icu --zim --xapian --kiwix --strip
+
 Maintainer Notes:
 Don't run `make android-deps` as that will download the SDK and NDK.
-
-Use GitHub repo mirror as the sf one fails to clone. Also, sf is much slower.
 .
 
 Auto Update Mode:None
 Update Check Mode:Tags android_*
-Current Version:1.96
-Current Version Code:26
+Current Version:1.99
+Current Version Code:29

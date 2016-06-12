@@ -21,6 +21,7 @@ com.coinbase.android
 com.ctrlplusz.dashclock.yr
 com.cyanogenmod.lockclock
 com.debian.debiandroid
+com.diegocarloslima.byakugallery
 com.drodin.zxdroid
 com.droidwave.offlinecalendar
 com.eddyspace.networkmonitor
@@ -41,7 +42,9 @@ com.longevitysoft.android.appwidget.hstfeed
 com.memetro.android
 com.miz.mizuu
 com.mobilepearls.memory
+com.money.manager.ex
 com.mp3tunes.android.player
+com.nostra13.universalimageloader
 com.npi.muzeiflickr
 com.quran.labs.androidquran
 com.ratebeer.android
@@ -63,6 +66,7 @@ de.locked.cellmapper
 de.ub0r.android.adBlock
 de.zauberstuhl.sechat
 dentex.youtube.downloader
+dk.kk.ibikecph
 dk.mide.fas.cmnightlies
 es.prodevelop.gvsig.mini
 eu.veldsoft.four.row.solitaire
@@ -87,16 +91,19 @@ org.fdroid.superuser
 org.fosdem
 org.fox.ttirc
 org.fox.ttrss
+org.glucosio.android
 org.hermit.audalyzer
 org.hermit.dazzle
 org.hermit.netscramble
 org.kde.ministro.config
+org.libresignal
 org.ligi.solar_activity_monitor
 org.martus.android
 org.mrpdaemon.android.encdroid
 org.opensatnav.android
 org.piwik.mobile
 org.swiftp
+org.tvbrowser.tvbrowser
 pl.magot.vetch.ancal
 ru.orangesoftware.financisto
 ru.qrck.quitetaskmanager

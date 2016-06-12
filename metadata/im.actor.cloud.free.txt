@@ -20,7 +20,12 @@ Build:1.5.3,1001
     commit=v1.5.3
     gradle=yes
 
+Build:1.5.5,1002
+    disable=play-services
+    commit=v1.5.5
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.5.3
-Current Version Code:1001
+Current Version:1.5.5
+Current Version Code:1002

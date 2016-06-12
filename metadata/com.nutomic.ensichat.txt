@@ -3,6 +3,7 @@ License:GPLv3+
 Web Site:
 Source Code:https://github.com/Nutomic/ensichat
 Issue Tracker:https://github.com/Nutomic/ensichat/issues
+Changelog:https://github.com/Nutomic/ensichat/releases
 Bitcoin:1DmU6QVGSKXGXJU1bqmmStPDNsNnYoMJB4
 
 Auto Name:Ensichat
@@ -53,12 +54,22 @@ Build:0.1.7,8
     gradle=rel
     build=gradle assembleRelRelease || true
 
+Build:0.2.1,10
+    commit=0.2.1
+    subdir=android
+    gradle=rel
+    build=gradle assembleRelRelease || true
+
 Maintainer Notes:
 The build fails when running it once, but works the second time. The
 workaround..well.. works, but is far from being optimal.
-.
 
+UCM and AUM broken.. most likely due upstream using vars now.
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.1.7
-Current Version Code:8
+.
+
+Auto Update Mode:None
+Update Check Mode:None
+Current Version:0.2.1
+Current Version Code:10

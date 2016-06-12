@@ -1,9 +1,12 @@
 Categories:Navigation
 License:GPLv3+
+Author Name:Valerio Bozzolan
+Author Email:boz@reyboz.it
 Web Site:https://launchpad.net/bus-torino
 Source Code:https://code.launchpad.net/bus-torino
 Issue Tracker:https://bugs.launchpad.net/bus-torino
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V4KHUSUL9NLYY
+FlattrID:9ed843e6567f0ee929746c8b88e74ceb
 Bitcoin:16oHee3jeENnN6fPxFq6LpNP6SZG9rimRD
 
 Auto Name:BusTO
@@ -77,7 +80,27 @@ Build:1.7.0,14
     commit=1.7.0
     gradle=yes
 
+Build:1.7.0.3,15
+    commit=1.7.0.3
+    gradle=yes
+
+Build:1.7.0.4,16
+    commit=1.7.0.4
+    gradle=yes
+
+Build:1.7.1,17
+    commit=1.7.1
+    gradle=yes
+
+Build:1.7.2,18
+    commit=1.7.2
+    gradle=yes
+
+Build:1.8,19
+    commit=1.8
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.7.0
-Current Version Code:14
+Current Version:1.8
+Current Version Code:19

@@ -42,7 +42,22 @@ Build:2.1.1,8
     subdir=privacypolice
     gradle=yes
 
+Build:2.2,9
+    commit=51ecbc1a9078b348242c582ee25a5a9cb83d8331
+    subdir=privacypolice
+    gradle=yes
+
+Build:2.2.2,11
+    commit=b7ff1aa2e189f182796081540d9bfe228f0e10b4
+    subdir=privacypolice
+    gradle=yes
+
+Build:2.2.3,12
+    commit=c9995b3a805cb6746ce96cf829a5666ffb7bbf30
+    subdir=privacypolice
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:2.1.1
-Current Version Code:8
+Current Version:2.2.3
+Current Version Code:12

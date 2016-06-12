@@ -138,7 +138,6 @@ Build:1.37,38
         rm -rf libs/armeabi/* && \
         android update project -p ../org_donations
 
-# RootCommands srclib needs changing on fdroidserver
 Build:2.1,40
     commit=v2.1
     subdir=AdAway
@@ -155,7 +154,6 @@ Build:2.1,40
     update=.,android-libs/Donations,android-libs/ActionBarSherlock,android-libs/HtmlSpanner/htmlspanner
     buildjni=yes
 
-# RootCommands srclib needs changing on fdroidserver
 Build:2.3,42
     commit=v2.3
     subdir=AdAway
@@ -249,7 +247,14 @@ Build:3.1,55
     buildjni=yes
     preassemble=renameExecutables
 
+Build:3.1.1,56
+    commit=v3.1.1
+    subdir=AdAway
+    gradle=yes
+    buildjni=yes
+    preassemble=renameExecutables
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.1
-Current Version Code:55
+Current Version:3.1.1
+Current Version Code:56

@@ -17,17 +17,46 @@ Repo Type:git
 Repo:https://github.com/Phantast/smartnavi
 
 Build:2.0.3,24
-    disable=mapsforge.jar
-    commit=113afca0c02b0f4a327e1ba445dd3300d319319f
+    commit=2b9eaa1d6fca03caea4f0819755b48875445973f
     subdir=smartnavi
     gradle=free
     prebuild=sed -i -e '/play-services/d' build.gradle
 
-Maintainer Notes:
-https://github.com/Phantast/smartnavi/issues/2
-.
+Build:2.0.4 (free),25
+    commit=2.0.4
+    subdir=smartnavi
+    gradle=free
+    prebuild=sed -i -e '/play-services/d' build.gradle
+
+Build:2.1.2f,28
+    commit=2.1.2f
+    subdir=smartnaviapp
+    gradle=free
+    prebuild=sed -i -e '/fabric/d' build.gradle ../build.gradle  && \
+        sed -i -e '/dependencies/a/*' -e '/appcompat-v7/i*/'  build.gradle
+
+Build:2.2.1f,33
+    commit=2.2.1f
+    subdir=smartnaviapp
+    gradle=free
+    prebuild=sed -i -e '/fabric/d' build.gradle ../build.gradle  && \
+        sed -i -e '/dependencies/a/*' -e '/appcompat-v7/i*/' -e 's@http://guardian.github.com/maven/repo-releases@https://jitpack.io@g' -e '/com.gu:option/d' -e '/support-v4/acompile "com.github.guardian:Option:e933c3a31d"' build.gradle
+
+Build:2.2.2f,34
+    commit=2.2.2f
+    subdir=smartnaviapp
+    gradle=free
+    prebuild=sed -i -e '/fabric/d' build.gradle ../build.gradle  && \
+        sed -i -e '/dependencies/a/*' -e '/appcompat-v7/i*/' -e 's@http://guardian.github.com/maven/repo-releases@https://jitpack.io@g' -e '/com.gu:option/d' -e '/support-v4/acompile "com.github.guardian:Option:e933c3a31d"' build.gradle
+
+Build:2.2.4f,35
+    commit=2.2.4f
+    subdir=smartnaviapp
+    gradle=free
+    prebuild=sed -i -e '/fabric/d' build.gradle ../build.gradle  && \
+        sed -i -e '/dependencies/a/*' -e '/appcompat-v7/i*/' -e 's@http://guardian.github.com/maven/repo-releases@https://jitpack.io@g' -e '/com.gu:option/d' -e '/support-v4/acompile "com.github.guardian:Option:e933c3a31d"' build.gradle
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:2.0.3
-Current Version Code:24
+Current Version:2.2.4f
+Current Version Code:35

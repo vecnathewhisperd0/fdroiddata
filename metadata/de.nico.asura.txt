@@ -1,5 +1,7 @@
 Categories:Development
 License:MIT
+Author Name:Nico Alt
+Author Email:nicoalt@posteo.org
 Web Site:https://altnico.github.io/projects/android/Asura.html
 Source Code:https://gitlab.com/asura/android
 Issue Tracker:https://gitlab.com/asura/android/issues
@@ -35,7 +37,19 @@ Build:0.52,8
     commit=0.52
     gradle=yes
 
+Build:0.53,9
+    commit=0.53
+    gradle=yes
+
+Build:0.53.1,10
+    commit=0.53.1
+    gradle=yes
+
+Build:0.54.1,12
+    commit=0.54.1
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.52
-Current Version Code:8
+Current Version:0.54.1
+Current Version Code:12

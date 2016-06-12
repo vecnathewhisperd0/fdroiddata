@@ -368,7 +368,37 @@ Build:1.2.0.38,58
     submodules=yes
     gradle=yes
 
+Build:1.2.0.39,59
+    commit=v1.2.0.39
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.2.0.40,60
+    commit=v1.2.0.40
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.2.0.41,61
+    commit=v1.2.0.41
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.2.0.42,62
+    commit=v1.2.0.42
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.2.0.43,63
+    commit=v1.2.0.43
+    subdir=app
+    submodules=yes
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.2.0.38
-Current Version Code:58
+Current Version:1.2.0.43
+Current Version Code:63

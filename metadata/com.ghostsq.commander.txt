@@ -26,7 +26,6 @@ with system files.
 Repo Type:srclib
 Repo:GhostCommander
 
-# All commit messages are empty, so I'm just guessing the revision.
 Build:1.35,94
     commit=131
 
@@ -45,7 +44,6 @@ Build:1.40.1,163
 Build:1.40.2,164
     commit=314
 
-# DexClassLoader seems to be used for the samba/sftp plugins
 Build:1.43.3b1,210
     commit=407
     scanignore=src/com/ghostsq/commander/adapters/CA.java
@@ -155,6 +153,81 @@ Build:1.53.2b1,288
     target=android-21
     scanignore=src/com/ghostsq/commander/adapters/CA.java
 
+Build:1.53.2b2,289
+    commit=529
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.2b3,290
+    commit=530
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.2,291
+    commit=531
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.3b1,292
+    commit=532
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.3,293
+    commit=533
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.4b2,295
+    commit=535
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.4b3,296
+    commit=538
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.4,300
+    commit=544
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.5b1,301
+    commit=546
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.5b2,302
+    commit=548
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.5b3,303
+    commit=549
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.6b1,305
+    commit=550
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.6b2,306
+    commit=552
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.6,308
+    commit=554
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
 Maintainer Notes:
 No commit messages in source repo! No tags. Apks on website can be used to
 confirm a release is real. Commit where AndroidManifest is changed usually
@@ -163,8 +236,8 @@ corresponds to version.
 The scanignore is for the dex class loading which is used for loading plugins.
 .
 
+Archive Policy:4 versions
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-# Update Check Ignore:b
-Current Version:1.53.2b1
-Current Version Code:288
+Current Version:1.53.6
+Current Version Code:308

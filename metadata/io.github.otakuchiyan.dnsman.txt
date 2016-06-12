@@ -39,8 +39,35 @@ Build:0.7.2,72
     prebuild=cd .. && \
         ./depending_repos.sh
 
+Build:0.8,80
+    commit=v0.8
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        ./depending_repos.sh
+
+Build:0.8.1,81
+    commit=v0.8.1
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        ./depending_repos.sh
+
+Build:0.10,100
+    commit=v0.10
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        ./depending_repos.sh
+
+Build:0.10.1,101
+    commit=v0.10.1
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        ./depending_repos.sh
+
 Auto Update Mode:None
-# Auto Update Mode:Version v%v
-Update Check Mode:Tags
-Current Version:0.7.2
-Current Version Code:72
+Update Check Mode:Tags ^v[0-9.]+$
+Current Version:0.10.1
+Current Version Code:101

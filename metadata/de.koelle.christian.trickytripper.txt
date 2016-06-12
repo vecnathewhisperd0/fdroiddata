@@ -27,7 +27,18 @@ Build:1.5.2,15
     prebuild=sed -i -e '/fileTree/acompile "com.loopj.android:android-async-http:1.4.7@aar"' build.gradle && \
         sed -i -e '/sonatype/d' ../build.gradle
 
+Build:1.5.4,17
+    disable=build failed
+    commit=697c446fe1ba1edb5d2b12e9cff0dc31f486ecac
+    subdir=app
+    gradle=yes
+
+Build:1.5.5,18
+    commit=bfd6098207098d887f0aa1b37b075759718895e8
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.5.3
-Current Version Code:16
+Current Version:1.5.5
+Current Version Code:18

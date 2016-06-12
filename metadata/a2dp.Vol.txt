@@ -69,11 +69,13 @@ Build:2.11.12,125
     commit=b9c15ece8d446830429c8ce118c673c73c755862
     extlibs=android/android-support-v4.jar
 
-Maintainer Notes:
-No tags.
-.
+Build:2.11.13,126
+    commit=ad4167b1048365e437c8ace14a5c842ebd6a72df
+    subdir=app
+    patch=gradle.patch
+    gradle=yes
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:2.11.12
-Current Version Code:125
+Current Version:2.12.1
+Current Version Code:127

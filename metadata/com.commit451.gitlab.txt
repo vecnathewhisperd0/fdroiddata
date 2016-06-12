@@ -1,0 +1,62 @@
+Categories:Internet
+License:Apache2
+Web Site:
+Source Code:https://gitlab.com/Commit451/LabCoat
+Issue Tracker:https://gitlab.com/Commit451/LabCoat/issues
+
+Auto Name:LabCoat
+Summary:GitLab client
+Description:
+GitLab client with features including:
+
+* View commits
+* View, edit & close issues
+* Comment on issues
+* Browse & view files
+* Manage groups
+.
+
+Repo Type:git
+Repo:https://gitlab.com/Commit451/LabCoat.git
+
+Build:2.1.4,214
+    commit=2.1.4-fdroid
+    subdir=app
+    gradle=yes
+
+Build:2.2.0,220
+    commit=2.2.0-fdroid
+    subdir=app
+    gradle=yes
+
+Build:2.2.1,221
+    commit=2.2.1-fdroid
+    subdir=app
+    gradle=yes
+
+Build:2.2.2,222
+    disable=jar, third party repos
+    commit=2.2.2-fdroid
+    subdir=app
+    gradle=yes
+
+Build:2.2.4,224
+    commit=2.2.4-fdroid
+    subdir=app
+    gradle=yes
+
+Build:2.2.5,225
+    commit=2.2.5-fdroid
+    subdir=app
+    gradle=yes
+
+Build:2.2.6,226
+    disable=third party maven repo
+    commit=2.2.6-fdroid
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v-fdroid
+Update Check Mode:Tags .*-fdroid
+Current Version:2.2.6
+Current Version Code:226

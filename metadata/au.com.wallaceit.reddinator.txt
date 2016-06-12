@@ -104,7 +104,103 @@ Build:2.8,24
     forceversion=yes
     rm=build.gradle,build
 
+Build:2.91,27
+    commit=2.91
+    subdir=reddinator
+    init=sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=build.gradle,build
+
+Build:2.91,28
+    commit=2.91
+    subdir=reddinator
+    init=sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=build.gradle,build
+
+Build:2.91,29
+    commit=2.91
+    subdir=reddinator
+    init=sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=build.gradle,build
+
+Build:3.03,32
+    commit=3.03
+    subdir=reddinator
+    init=sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=build.gradle,build
+
+Build:3.03,34
+    commit=3.03
+    subdir=reddinator
+    init=sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=build.gradle,build
+
+Build:3.04,35
+    commit=3.04
+    subdir=reddinator
+    init=sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=build.gradle,build
+
+Build:3.06,36
+    commit=3.06
+    subdir=reddinator
+    init=sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=build.gradle,build
+
+Build:3.07,37
+    commit=3.07
+    subdir=reddinator
+    init=sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=build.gradle,build
+
+Build:3.10,39
+    commit=3.10
+    subdir=reddinator
+    init=sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=build.gradle,build
+
+Build:3.11,41
+    commit=3.11
+    subdir=reddinator
+    init=sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=build.gradle,build
+
+Build:3.12,43
+    commit=3.12
+    subdir=reddinator
+    init=sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=build.gradle,build
+
+Build:3.12,44
+    commit=3.12
+    subdir=reddinator
+    init=sed -i -e '/bintray/d' build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=build.gradle,build
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.8
-Current Version Code:24
+Current Version:3.12
+Current Version Code:44

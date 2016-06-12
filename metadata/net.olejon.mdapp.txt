@@ -15,16 +15,6 @@ only.
 For a list of features, please visit the [https://olejon.github.io/mdapp/
 website].
 
-Required Permissions:
-
-* In-app purchases: To be able to donate money to the developer
-* Location: To be able to find your position in relation to a pharmacy
-* Photos/Media/Files: To be able to store files with content that is presented in the app
-* Camera: To be able to scan barcodes
-* Wi-Fi connection information: To be able to determine if the device is connected to Wi-Fi
-
-Your position is not logged in any way.
-
 Disclaimer:
 
 LegeAppen is developed by a private person, and even though the content in the
@@ -37,7 +27,6 @@ Credits:
 .
 
 Repo Type:git
-# Repo:https://github.com/olejon/mdapp
 Repo:https://github.com/olejon/mdapp-fdroid
 
 Build:1.1,110
@@ -103,7 +92,28 @@ Build:2.3,230
     subdir=mdapp/app
     gradle=yes
 
+Build:2.4,240
+    commit=87c1ec818c6ed5f23e4104cf571cdfb4e4f43810
+    subdir=mdapp/app
+    gradle=yes
+
+Build:2.6,260
+    commit=656ed59b906f45004b277ed38c0f44439bbe2825
+    subdir=mdapp/app
+    gradle=yes
+
+Build:2.8,280
+    commit=8b8d5fdab15234bbd6e802d5e71f384372bb2376
+    subdir=mdapp/app
+    gradle=yes
+    prebuild=sed -i -e '/play-services/d' build.gradle
+
+Maintainer Notes:
+We use a fdroid specific git repo provided by upstream. Main repo is 
+https://github.com/olejon/mdapp
+.
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:2.3
-Current Version Code:230
+Current Version:2.8
+Current Version Code:280

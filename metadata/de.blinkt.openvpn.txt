@@ -141,13 +141,50 @@ Build:0.6.44,124
     gradle=normal
     build=./misc/build-native.sh USE_BREAKPAD=0
 
-Maintainer Notes:
-This has (as at 0.6.17) openssl 1.0.0e source code embedded in the source
-repo. It is not vulnerable to CVE-2014-0160. Earlier versions use Android's
-system OpenSSL libraries and are vulnerable if the Android version is.
-.
+Build:0.6.46,126
+    disable=no submodule mapping found in .gitmodules for path 'main/breakpad'
+    commit=v0.6.46-production
+    subdir=main
+    submodules=yes
+    gradle=normal
+    build=./misc/build-native.sh USE_BREAKPAD=0
+
+Build:0.6.47,127
+    commit=v0.6.47-production
+    subdir=main
+    submodules=yes
+    gradle=normal
+    build=./misc/build-native.sh
+
+Build:0.6.48,128
+    commit=v0.6.48-production
+    subdir=main
+    submodules=yes
+    gradle=normal
+    build=./misc/build-native.sh
+
+Build:0.6.49,129
+    commit=v0.6.49-production
+    subdir=main
+    submodules=yes
+    gradle=normal
+    build=./misc/build-native.sh
+
+Build:0.6.52,132
+    commit=v0.6.52-production
+    subdir=main
+    submodules=yes
+    gradle=normal
+    build=./misc/build-native.sh
+
+Build:0.6.54,135
+    commit=v0.6.54-production
+    subdir=main
+    submodules=yes
+    gradle=normal
+    build=./misc/build-native.sh
 
 Auto Update Mode:None
 Update Check Mode:Tags .*-production
-Current Version:0.6.44
-Current Version Code:124
+Current Version:0.6.54
+Current Version Code:135

@@ -3,6 +3,7 @@ License:MPL2
 Web Site:https://syncthing.net
 Source Code:https://github.com/syncthing/syncthing-android
 Issue Tracker:https://github.com/syncthing/syncthing-android/issues
+Changelog:https://github.com/syncthing/syncthing-android/releases
 Donate:https://tip4commit.com/github/syncthing/syncthing-android
 
 Auto Name:Syncthing
@@ -292,8 +293,92 @@ Build:0.7.5,81
     scandelete=ext/golang/go/src/debug/,ext/golang/go1.4/src/debug/
     preassemble=buildNative
 
-Archive Policy:4 versions
+Build:0.7.6,82
+    commit=0.7.6
+    submodules=yes
+    gradle=fat
+    scandelete=ext/golang/go/src/debug/,ext/golang/go1.4/src/debug/
+    preassemble=buildNative
+
+Build:0.7.7,83
+    commit=0.7.7
+    submodules=yes
+    gradle=fat
+    scandelete=ext/golang/go/src/debug/,ext/golang/go1.4/src/debug/
+    preassemble=buildNative
+
+Build:0.7.8,84
+    commit=0.7.8
+    submodules=yes
+    gradle=fat
+    scandelete=ext/golang/go/src/debug/,ext/golang/go1.4/src/debug/
+    preassemble=buildNative
+
+Build:0.7.9,85
+    commit=0.7.9
+    submodules=yes
+    gradle=fat
+    scandelete=ext/golang/go/src/debug/,ext/golang/go1.4/src/debug/
+    preassemble=buildNative
+
+Build:0.7.10,86
+    commit=0.7.10
+    submodules=yes
+    gradle=fat
+    scandelete=ext/golang/go/src/debug/,ext/golang/go1.4/src/debug/
+    preassemble=buildNative
+
+Build:0.7.11,87
+    commit=0.7.11
+    submodules=yes
+    gradle=fat
+    scandelete=ext/golang/go/src/debug/,ext/golang/go1.4/src/debug/
+    preassemble=buildNative
+
+Build:0.7.12,88
+    disable=go build failure
+    commit=0.7.12
+    submodules=yes
+    gradle=fat
+    scandelete=ext/golang/go/src/debug/,ext/golang/go1.4/src/debug/
+    preassemble=buildNative
+
+Build:0.7.15,91
+    commit=0.7.15
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.7.16,92
+    commit=0.7.16
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.7.17,93
+    commit=0.7.17
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.7.18,95
+    commit=0.7.18
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.7.19,96
+    commit=0.7.19
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]*$
-Current Version:0.7.5
-Current Version Code:81
+Current Version:0.7.19
+Current Version Code:96

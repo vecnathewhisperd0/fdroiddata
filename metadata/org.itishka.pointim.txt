@@ -42,7 +42,36 @@ Build:2.12,26
     gradle=yes
     prebuild=echo -e 'imgurId="1f48b577414e505"\nimgurSecret=""' >> ../local.properties
 
+Build:2.13,27
+    disable=lint error
+    commit=2.13
+    subdir=app
+    init=sed -i '/sonatype/d' build.gradle
+    gradle=yes
+    prebuild=echo -e 'imgurId="1f48b577414e505"\nimgurSecret=""' >> ../local.properties
+
+Build:2.14,28
+    commit=2.14
+    subdir=app
+    init=sed -i '/sonatype/d' build.gradle
+    gradle=yes
+    prebuild=echo -e 'imgurId="1f48b577414e505"\nimgurSecret=""' >> ../local.properties
+
+Build:2.15,29
+    commit=2.15
+    subdir=app
+    init=sed -i '/sonatype/d' build.gradle
+    gradle=yes
+    prebuild=echo -e 'imgurId="1f48b577414e505"\nimgurSecret=""' >> ../local.properties
+
+Build:2.16,30
+    commit=2.16
+    subdir=app
+    init=sed -i '/sonatype/d' build.gradle
+    gradle=yes
+    prebuild=echo -e 'imgurId="1f48b577414e505"\nimgurSecret=""' >> ../local.properties
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.12
-Current Version Code:26
+Current Version:2.16
+Current Version Code:30

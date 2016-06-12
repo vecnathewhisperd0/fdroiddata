@@ -12,19 +12,15 @@ template, pickup colors on the palette and draw with a little tap. The drawings
 can be saved on the device and shared by mail or using social networks.
 .
 
-# Repo Type:srclib
-# Repo:AndroidSoft
 Repo Type:git
 Repo:https://github.com/androidsoft-org/androidsoft-coloring
 
-# old repo
 Build:1.0.0,1
     commit=50
     subdir=coloring
     prebuild=rm -rf releases
     target=android-15
 
-# new repo
 Build:1.0.1,2
     commit=d33431c18f059e30bff50052458b7b10885433ea
     gradle=yes

@@ -1,8 +1,8 @@
 Categories:Games
-License:GPLv2
-Web Site:https://code.google.com/p/frozenbubbleandroid
-Source Code:https://code.google.com/p/frozenbubbleandroid/source
-Issue Tracker:
+License:GPLv2+
+Web Site:
+Source Code:https://github.com/videogameboy76/frozenbubbleandroid
+Issue Tracker:https://github.com/videogameboy76/frozenbubbleandroid/issues
 
 Auto Name:Frozen Bubble
 Summary:Bubble shooting game
@@ -11,8 +11,8 @@ A bubble shooting game. Knock the bubbles down by forming clusters of three or
 more bubbles.
 .
 
-Repo Type:git-svn
-Repo:https://frozenbubbleandroid.googlecode.com/svn
+Repo Type:git
+Repo:https://github.com/videogameboy76/frozenbubbleandroid
 
 Build:1.7,8
     commit=15
@@ -110,7 +110,46 @@ Build:3.5,38
     prebuild=sed -i '/adsOn/s/true/false/g' src/com/efortin/frozenbubble/PreferencesActivity.java src/org/jfedor/frozenbubble/FrozenBubble.java
     buildjni=yes
 
+Build:3.6,39
+    commit=eb8033969197077a4f5f08f4522b435d540c770a
+    prebuild=sed -i '/adsOn/s/true/false/g' src/com/efortin/frozenbubble/PreferencesActivity.java src/org/jfedor/frozenbubble/FrozenBubble.java
+    buildjni=yes
+
+Build:3.8,41
+    commit=e8ebd0a3bde5cff9fba0b1d43fa802e34e68ec65
+    prebuild=sed -i '/adsOn/s/true/false/g' src/com/efortin/frozenbubble/PreferencesActivity.java src/org/jfedor/frozenbubble/FrozenBubble.java
+    buildjni=yes
+
+Build:3.9,42
+    commit=331deaace7d3a6a2a16bfffa06cee99b25a0c0d5
+    prebuild=sed -i '/adsOn/s/true/false/g' src/com/efortin/frozenbubble/PreferencesActivity.java src/org/jfedor/frozenbubble/FrozenBubble.java
+    buildjni=yes
+
+Build:3.10,43
+    commit=178b2fe3d4db6f3bd54e1fbfd43ba5ee43717717
+    prebuild=sed -i '/adsOn/s/true/false/g' src/com/efortin/frozenbubble/PreferencesActivity.java src/org/jfedor/frozenbubble/FrozenBubble.java
+    buildjni=yes
+
+Build:3.11,44
+    commit=7af146c925099c92fc7b5888efffd730bc22d161
+    prebuild=sed -i '/adsOn/s/true/false/g' src/com/efortin/frozenbubble/PreferencesActivity.java src/org/jfedor/frozenbubble/FrozenBubble.java
+    buildjni=yes
+
+Build:3.12,45
+    commit=cbbfa449d66c512598e80be6afd0bce94ee43fcb
+    prebuild=sed -i '/adsOn/s/true/false/g' src/com/efortin/frozenbubble/PreferencesActivity.java src/org/jfedor/frozenbubble/FrozenBubble.java
+    buildjni=yes
+
+Build:3.13,46
+    commit=18b29082ebdaaa88b2cafdc094f7a5d4cb226139
+    prebuild=sed -i '/adsOn/s/true/false/g' src/com/efortin/frozenbubble/PreferencesActivity.java src/org/jfedor/frozenbubble/FrozenBubble.java
+    buildjni=yes
+
+Maintainer Notes:
+Old Repo for <3.5:https://frozenbubbleandroid.googlecode.com/svn
+.
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:3.5
-Current Version Code:38
+Current Version:3.13
+Current Version Code:46

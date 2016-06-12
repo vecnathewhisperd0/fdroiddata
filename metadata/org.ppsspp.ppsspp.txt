@@ -1,4 +1,3 @@
-AntiFeatures:UpstreamNonFree
 Categories:Games
 License:GPLv2+
 Web Site:http://ppsspp.org
@@ -17,8 +16,6 @@ games and turn them into .ISO or .CSO files, or simply play free homebrew games,
 which are available online.
 
 * PSP is a trademark of Sony, Inc.
-
-A proprietary analytics library has been removed from this build.
 .
 
 Repo Type:git
@@ -84,7 +81,6 @@ Build:0.9.0,90
     update=.,../native/android
     build=./ab.sh
 
-# dev forgot to bump AM.xml
 Build:0.9.1,91
     commit=v0.9.1
     subdir=android
@@ -353,13 +349,25 @@ Build:1.1.1.0,11103
         cd ../android && \
         ./ab.sh
 
-# +0: - (upstream)
-# +1: x86
-# +2: arm
-# +3: armv7 (CV)
-Archive Policy:4 versions
+Build:1.2.1.0,12100
+    disable=weird "android-arm64-build.sh: build_arm64: not found" that I (mvdan) can't reproduce on my laptop
+    commit=v1.2.1
+    subdir=android
+    submodules=yes
+    rm=dx9sdk,pspautotests
+    scanignore=android/android-ndk-profiler
+    scandelete=ffmpeg,ext/armips/Tests
+    build=cd ../ffmpeg && \
+        sed -i -e 's@^NDK.*@NDK=$$NDK$$@' -e 's/windows.*/linux-x86*/' android-build.sh android-arm64-build.sh android-x64-build.sh ax86-build.sh && \
+        sh android-build.sh && \
+        sh android-arm64-build.sh && \
+        sh android-x64-build.sh && \
+        sh ax86-build.sh && \
+        cd ../android && \
+        ./ab.sh
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Vercode Operation:%c*10 + 3
-Current Version:1.1.1.0
-Current Version Code:11103
+Vercode Operation:%c*10
+Current Version:1.2.2.0
+Current Version Code:12200

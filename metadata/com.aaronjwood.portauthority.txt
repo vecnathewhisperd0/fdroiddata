@@ -76,7 +76,62 @@ Build:1.5.7,18
     gradle=free
     prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
 
-Auto Update Mode:Version v%v
+Build:1.6.0,19
+    commit=v1.6.0
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.6.3,21
+    commit=v1.6.3
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.6.4,22
+    commit=v1.6.4
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.6.5,23
+    commit=v1.6.5
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.6.6,24
+    disable=non-free deps
+    commit=v1.6.6
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.6.11,29
+    commit=v1.6.11
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.7.0,30
+    commit=v1.7.0
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.7.1,31
+    commit=v1.7.1
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.7.2,32
+    commit=v1.7.2
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.5.7
-Current Version Code:18
+Current Version:1.7.2
+Current Version Code:32

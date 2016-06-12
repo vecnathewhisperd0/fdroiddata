@@ -22,14 +22,12 @@ slowly. The server can be stopped at any time from the screen that shows the URL
 Repo Type:git
 Repo:https://github.com/marcosdiez/shareviahttp.git
 
-# old repo
 Build:1.10,11
     commit=f6566f6ae61d
     subdir=ShareViaHttp
     prebuild=wget http://repo1.maven.org/maven2/com/googlecode/androidannotations/androidannotations/2.5.1/androidannotations-2.5.1.jar -P libs/
     target=android-15
 
-# old repo
 Build:1.11,12
     commit=ffd7026be9d0
     subdir=ShareViaHttp
@@ -45,7 +43,12 @@ Build:2.0.1,21
     subdir=ShareViaHttp/app
     gradle=yes
 
+Build:2.0.3,23
+    commit=42c87d73360d3d487818df3c201554a3fb06d25f
+    subdir=ShareViaHttp/app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:2.0.1
-Current Version Code:21
+Current Version:2.0.3
+Current Version Code:23

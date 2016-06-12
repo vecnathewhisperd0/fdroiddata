@@ -34,7 +34,14 @@ Build:1.4.1,141
         touch key.properties && \
         sed -i -e '/debug {/,+4d' build.gradle
 
+Build:1.4.3,143
+    commit=83cfaae2faf044c508e3af3cc883b4e3ff04ea2a
+    gradle=fdroid
+    prebuild=sed -i -e '/playCompile/d' build.gradle && \
+        touch key.properties && \
+        sed -i -e '/debug {/,+4d' build.gradle
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.4.1
-Current Version Code:141
+Current Version:1.4.3
+Current Version Code:143

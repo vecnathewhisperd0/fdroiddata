@@ -1,5 +1,5 @@
 Categories:Science & Education,Navigation
-License:GPLv3
+License:MIT
 Web Site:
 Source Code:https://github.com/arkon/CDFLabs
 Issue Tracker:https://github.com/arkon/CDFLabs/issues
@@ -10,6 +10,8 @@ Description:
 Allows Computer Science students at University of Toronto St George to quickly
 check how many machines are available in the various CDF computer labs in Bahen
 and on NX.
+
+Older versions are GPLv3 licensed, staring with 3.0.0 licensing switched to MIT.
 .
 
 Repo Type:git
@@ -69,7 +71,33 @@ Build:2.3.0,22
     subdir=app
     gradle=yes
 
+Build:3.0.0,23
+    commit=d7b547a9f5052d6e73cb827e6a451b716e62db8f
+    subdir=app
+    gradle=yes
+
+Build:3.0.1,24
+    commit=9f7f518
+    subdir=app
+    gradle=yes
+
+Build:3.0.3,26
+    commit=3a34dff96aeebf30331367e8d199183a48f6850a
+    subdir=app
+    gradle=yes
+
+Build:3.0.4,27
+    disable=aapt returns 2
+    commit=b79dfe351c4f3af81a44453015456592062a8317
+    subdir=app
+    gradle=yes
+
+Build:3.1.0,28
+    commit=2df2f39acc8245d27d30ef4625c5223443057c09
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:2.3.0
-Current Version Code:22
+Current Version:3.1.0
+Current Version Code:28

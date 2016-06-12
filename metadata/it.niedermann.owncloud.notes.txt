@@ -1,0 +1,84 @@
+Categories:Writing,Internet
+License:GPLv3+
+Web Site:http://www.niedermann.it
+Source Code:https://github.com/stefan-niedermann/OwnCloud-Notes
+Issue Tracker:https://github.com/stefan-niedermann/OwnCloud-Notes/issues
+Changelog:https://github.com/stefan-niedermann/OwnCloud-Notes/releases
+Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K7HVLE6J7SXXA
+
+Auto Name:ownCloud Notes
+Summary:Client for ownCloud Notes App
+Description:
+Companion app to ownCloud Notes.
+
+Features
+
+* List, create, edit, search, share and delete notes
+* Share text and links as new note into the app
+* Bulk delete
+* Render MarkDown (using Bypass)
+* English, German, Russian, Armenian, French and Serbian UI
+
+Requirements
+
+* ownCloud instance running
+* ownCloud Notes app enabled
+
+Alternatives
+
+If you dislike this app and you are looking for alternatives: Have a look at
+[[org.aykit.MyOwnNotes]].
+.
+
+Repo Type:git
+Repo:https://github.com/stefan-niedermann/OwnCloud-Notes.git
+
+Build:0.4.0,4
+    commit=v0.4.0
+    subdir=app
+    gradle=yes
+
+Build:0.5.0,5
+    commit=v0.5.0
+    subdir=app
+    gradle=yes
+
+Build:0.5.2,7
+    commit=v0.5.2
+    subdir=app
+    gradle=yes
+
+Build:0.6.0,8
+    commit=v0.6.0
+    subdir=app
+    gradle=yes
+
+Build:0.7.0,9
+    commit=v0.7.0
+    subdir=app
+    gradle=yes
+
+Build:0.7.1,10
+    commit=v0.7.1
+    subdir=app
+    gradle=yes
+
+Build:0.7.2,11
+    commit=v0.7.2
+    subdir=app
+    gradle=yes
+
+Build:0.8.0,12
+    commit=v0.8.0
+    subdir=app
+    gradle=yes
+
+Build:0.8.1,13
+    commit=v0.8.1
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:0.8.1
+Current Version Code:13

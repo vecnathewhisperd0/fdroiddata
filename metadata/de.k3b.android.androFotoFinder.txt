@@ -6,7 +6,7 @@ Issue Tracker:https://github.com/k3b/androFotoFinder/issues
 Changelog:https://github.com/k3b/androFotoFinder/wiki/History
 Donate:http://donate.openstreetmap.org/
 
-Auto Name:a Photo Manager
+Auto Name:A Photo Manager (dev)
 Summary:Find local photos by folder, date and/or location
 Description:
 Search photos in local media store for viewing and maintenance.
@@ -68,11 +68,32 @@ Build:0.4.3.151201,10
     subdir=app
     gradle=yes
 
+Build:0.4.4.160115,11
+    disable=dev version
+    commit=v0.4.4.160115
+    subdir=app
+    gradle=yes
+
+Build:0.4.4.160117,12
+    commit=v0.4.4.160117
+    subdir=app
+    gradle=yes
+
+Build:0.4.5.160221,13
+    commit=v0.4.5.160221
+    subdir=app
+    gradle=yes
+
+Build:0.4.6.160304,14
+    commit=v0.4.6.160304
+    subdir=app
+    gradle=yes
+
 Maintainer Notes:
 Please use git-branch "FDroid" for FDroid-builds.
 .
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.4.3.151201
-Current Version Code:10
+Current Version:0.4.6.160304
+Current Version Code:14

@@ -10,7 +10,7 @@ Summary:Track TV shows you have seen
 Description:
 Keep track of which episodes you've watched of your favourite TV shows. The data
 is sourced from [http://thetvdb.com TheTVDB.com], the content of which is
-licensed under CC-BY.
+licensed under CC-BY-NC.
 .
 
 Repo Type:git
@@ -62,12 +62,12 @@ Build:0.11,11
     subdir=app
     gradle=fdroid
 
-Maintainer Notes:
-Re-enable AUM and maybe add UCName after next release.
-.
+Build:0.12,12
+    commit=v0.12
+    subdir=app
+    gradle=fdroid
 
-Auto Update Mode:None
-# Auto Update Mode:Version v%v
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.11
-Current Version Code:11
+Current Version:0.12
+Current Version Code:12

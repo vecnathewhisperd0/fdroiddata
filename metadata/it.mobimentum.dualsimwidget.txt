@@ -21,7 +21,17 @@ Repo:https://github.com/mobimentum/dualsimreminder
 Build:1.0,1
     commit=3bd0b199924ce5c4ea3acacf620207414bbd0e3c
 
+Build:2.0.00,2000
+    commit=e6839e915ff0d7900515f970afdeb26ed67cb9d6
+    subdir=app
+    gradle=yes
+
+Build:2.0.04,2004
+    commit=3a254d7d989d5aa60f3430ecb54e139c88db1623
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.0
-Current Version Code:1
+Current Version:2.0.04
+Current Version Code:2004

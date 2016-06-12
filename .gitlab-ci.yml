@@ -1,10 +1,8 @@
+image: mvdan/fdroid-ci:base-20160512
+
 before_script:
-  - apt-get -q update -y
-  - echo " == Installing required packages"
-  - apt-get -q install -y python python-yaml
-  - echo " == Cloning fdroidserver"
-  - test -d fdroidserver && rm -rf fdroidserver
-  - git clone https://gitlab.com/fdroid/fdroidserver.git fdroidserver --depth=1
+  - rm -rf fdroidserver
+  - git clone --depth=1 https://gitlab.com/fdroid/fdroidserver.git
   - export PATH="$PWD/fdroidserver:$PATH"
   - touch config.py
 

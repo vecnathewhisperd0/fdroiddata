@@ -3,6 +3,7 @@ License:GPLv3
 Web Site:http://ltguillaume.github.io/DroidShows
 Source Code:https://github.com/ltGuillaume/DroidShows
 Issue Tracker:https://github.com/ltGuillaume/DroidShows/issues
+Changelog:https://github.com/ltGuillaume/DroidShows/releases
 
 Auto Name:DroidShows
 Summary:TV series browser and tracker
@@ -87,7 +88,43 @@ Build:6.4,64
 Build:6.5,65
     commit=6.5
 
+Build:6.6,66
+    commit=6.6
+
+Build:6.7,67
+    commit=6.7
+
+Build:6.8,68
+    commit=6.8
+
+Build:6.9,69
+    commit=6.9
+
+Build:6.9.2,692
+    commit=6.9.2
+
+Build:6.9.3,693
+    commit=6.9.3
+
+Build:7.0,700
+    commit=7.0
+
+Build:7.0.2,702
+    commit=7.0.2
+
+Build:7.0.3,703
+    commit=7.0.3
+
+Build:7.0.4,704
+    commit=7.0.4
+
+Build:7.0.6,706
+    commit=7.0.6
+
+Build:7.0.7,707
+    commit=7.0.7
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:6.5
-Current Version Code:65
+Current Version:7.0.7
+Current Version Code:707

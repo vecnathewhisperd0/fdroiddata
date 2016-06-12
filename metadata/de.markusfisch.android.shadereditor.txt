@@ -27,7 +27,43 @@ Build:2.0.3,16
     subdir=ShaderEditor
     gradle=yes
 
+Build:2.1.0,17
+    commit=2.1.0
+    subdir=ShaderEditor
+    gradle=yes
+
+Build:2.2.0,18
+    commit=2.2.0
+    subdir=ShaderEditor
+    gradle=yes
+
+Build:2.3.0,19
+    commit=2.3.0
+    subdir=ShaderEditor
+    gradle=yes
+
+Build:2.3.1,20
+    commit=2.3.1
+    subdir=ShaderEditor
+    gradle=yes
+
+Build:2.4.0,21
+    commit=2.4.0
+    subdir=app
+    gradle=yes
+
+Build:2.4.1,22
+    commit=2.4.1
+    subdir=app
+    gradle=yes
+    prebuild=rm src/main/java/de/markusfisch/android/shadereditor/widget/TouchThruDrawerlayout.java
+
+Maintainer Notes:
+TouchThruDrawerlayout.java can be removed since its identical to the correctly
+named TouchThruDrawerLayout.java.
+.
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.0.3
-Current Version Code:16
+Current Version:2.4.1
+Current Version Code:22

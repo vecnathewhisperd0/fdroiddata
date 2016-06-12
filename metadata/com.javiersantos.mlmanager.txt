@@ -64,8 +64,14 @@ Build:1.0.4,20
     subdir=app
     gradle=basic
 
-Auto Update Mode:Version v%v
+Build:1.0.4.1,21
+    disable=third party maven repo
+    commit=v1.0.4.1
+    subdir=app
+    gradle=basic
+
+Auto Update Mode:None
 Update Check Mode:Tags
 Update Check Name:com.javiersantos.mlmanagerpro
-Current Version:1.0.4
-Current Version Code:20
+Current Version:1.0.4.1
+Current Version Code:21

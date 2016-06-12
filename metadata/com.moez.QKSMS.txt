@@ -69,7 +69,50 @@ Build:2.4.1,121
     gradle=noAnalytics
     prebuild=sed -i -e '/fabric/d' -e '/com.crashlytics.sdk.android:crashlytics/,+2d' -e '/com.google.android.gms:play-services-analytics/d' build.gradle
 
-Auto Update Mode:None
+Build:2.5.0,122
+    commit=v2.5.0
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/fabric/d' -e '/com.crashlytics.sdk.android:crashlytics/,+2d' -e '/com.google.android.gms:play-services-analytics/d' build.gradle
+
+Build:2.5.1,123
+    commit=v2.5.1
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/fabric/d' -e '/com.crashlytics.sdk.android:crashlytics/,+2d' -e '/com.google.android.gms:play-services-analytics/d' build.gradle
+
+Build:2.5.2,124
+    commit=v2.5.2
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/fabric/d' -e '/com.crashlytics.sdk.android:crashlytics/,+2d' -e '/com.google.android.gms:play-services-analytics/d' build.gradle
+
+Build:2.5.3,125
+    commit=v2.5.3
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/fabric/d' -e '/com.crashlytics.sdk.android:crashlytics/,+2d' -e '/com.google.android.gms:play-services-analytics/d' build.gradle
+
+Build:2.5.4,126
+    commit=v2.5.4
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/fabric/d' -e '/com.crashlytics.sdk.android:crashlytics/,+2d' -e '/com.google.android.gms:play-services-analytics/d' build.gradle
+
+Build:2.6.0,128
+    disable=https://github.com/qklabs/qksms/issues/484
+    commit=v2.6.0
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/fabric/d' -e '/com.crashlytics.sdk.android:crashlytics/,+2d' -e '/com.google.android.gms:play-services-analytics/d' build.gradle
+
+Build:2.6.1,129
+    commit=v2.6.1
+    subdir=QKSMS
+    gradle=noAnalytics
+    prebuild=sed -i -e '/fabric/d' -e '/com.crashlytics.sdk.android:crashlytics/,+2d' -e '/com.google.android.gms:play-services-analytics/d' build.gradle
+
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.4.1
-Current Version Code:121
+Current Version:2.6.1
+Current Version Code:129

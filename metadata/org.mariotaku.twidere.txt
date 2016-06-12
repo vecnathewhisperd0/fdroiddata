@@ -6,8 +6,7 @@ Issue Tracker:https://github.com/TwidereProject/Twidere-Android/issues
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mariotaku.lee%40gmail%2ecom&item_name=Donate%20to%20Twidere
 Bitcoin:1FHAVAzge7cj1LfCTMfnLL49DgA3mVUCuW
 
-Name:Twidere
-Auto Name:Twidere Wear Extension
+Auto Name:Twidere
 Summary:Microblogging client
 Description:
 Features include:
@@ -39,7 +38,6 @@ donations.
 Repo Type:git
 Repo:https://github.com/TwidereProject/Twidere-Android
 
-# Repo:https://github.com/mariotaku/twidere.git
 Build:0.2.9.5,81
     disable=repo changed
     commit=0.2.9.5
@@ -105,7 +103,6 @@ Build:0.2.9.10,92
         cp $$HoloAccent$$/libs/android-support-v4.jar $$AndroidStaggeredGrid$$/libs/
     target=android-19
 
-# old repo
 Build:0.2.9.12,94
     commit=503153f4ec
     patch=HomeActivity.patch
@@ -120,7 +117,6 @@ Build:0.2.9.12,94
         cp libs/android-support-v4.jar $$ViewPagerIndicator$$/libs/
     target=android-19
 
-# new repo
 Build:0.3.0-dev-fdroid,98
     commit=49742e744692a213668a7855f75148b5f00877a0
     subdir=twidere
@@ -445,7 +441,6 @@ Build:0.3.0-dev-117,117
         sed -i -e '/versionNameSuffix String/aversionNameSuffix "-dev-$$VERCODE$$"' build.gradle && \
         sed -i -e '/versionNameSuffix String/d' build.gradle
 
-# We know trust jitpack
 Build:0.3.0-dev-125,125
     commit=0.3.0-dev150920
     subdir=twidere
@@ -461,7 +456,6 @@ Build:0.3.0-dev-125,125
         sed -i -e '/versionNameSuffix String/aversionNameSuffix "-dev-$$VERCODE$$"' build.gradle && \
         sed -i -e '/versionNameSuffix String/d' build.gradle
 
-# We know trust jitpack
 Build:0.3.0-dev-126,126
     commit=0.3.0-dev150922
     subdir=twidere
@@ -525,13 +519,197 @@ Build:0.3.0-dev-135,135
         sed -i -e '/versionNameSuffix String/d' build.gradle && \
         sed -i -e '/plugins.gradle.org/d' ../build.gradle
 
+Build:3.0.4,141
+    commit=3.0.4
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch && \
+        sed -i 's/gradleVersion = .*/gradleVersion = "2.11"/g' ../build.gradle
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.0.6,151
+    commit=3.0.6
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.0.6.1,152
+    commit=3.0.6.1
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.0.6.2,153
+    disable=objectcursor core lib not found
+    commit=3.0.6.2
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.0.6.3,154
+    disable=unknown third party repo
+    commit=3.0.6.3
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.0.6.4,155
+    disable=unknown third party repo
+    commit=3.0.6.4
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.0,157
+    commit=3.1.0
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.0.9,166
+    commit=3.1.0.9
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.0.10,167
+    commit=3.1.0.10
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.0.14,171
+    commit=3.1.0.14
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.1,172
+    commit=3.1.1
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.1.5,177
+    commit=3.1.1.5
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.1.6,178
+    commit=3.1.1.6
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.1.7,179
+    commit=3.1.1.7
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.2,180
+    commit=3.1.2
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.3,181
+    commit=3.1.3
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.3.2,183
+    commit=3.1.3.2
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.4,186
+    commit=3.1.4
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.4.2,188
+    commit=3.1.4.2
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.5,189
+    commit=3.1.5
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.5.1,190
+    commit=3.1.5.1
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.5.2,191
+    commit=3.1.5.2
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.6,193
+    commit=3.1.6
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.6.1,194
+    commit=3.1.6.1
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.6.2,195
+    commit=3.1.6.2
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.1.7,196
+    commit=3.1.7
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
 Maintainer Notes:
-* JonSerializer issues when using srclib, see: https://github.com/TwidereProject/Twidere-Android/issues/37
-* We might want to install CWAC into mavenLocal. Use this instead of copying:
-sed -i -e '/googleCompile/d' -e "/twitter-text/acompile 'com.commonsware.cwac:merge:1.0.1'\ncompile 'com.commonsware.cwac:sacklist:1.0.0'" build.gradle && \
+jitpack has TLS issues if gradle 2.10 or earlier is used.
 .
 
-Auto Update Mode:None
-Update Check Mode:Tags
-Current Version:0.3.0
-Current Version Code:135
+Auto Update Mode:Version %v
+Update Check Mode:Tags ^[v0-9.]*$
+Current Version:3.1.7
+Current Version Code:196

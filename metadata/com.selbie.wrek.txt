@@ -21,7 +21,12 @@ Build:1.09,9
     srclibs=1:UrlImageViewHelper@urlimageviewhelper-1.0.1
     rm=libs/*
 
+Build:1.12,12
+    disable=urlimageviehelper jar
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.09
-Current Version Code:9
+Current Version:1.12
+Current Version Code:12

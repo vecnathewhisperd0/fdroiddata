@@ -33,7 +33,15 @@ Build:1.6,7
 Build:1.7,8
     commit=ac7c2da4c0a5a80a1b11068f168f2878ecf44d2d
 
+Build:1.9,10
+    commit=3ebd791159cd556ab80c697aee08ef12ed75c98f
+
+Build:2.0,12
+    commit=d69a21d587ff4378997ca060a55e510cfcf9d9ff
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.7
-Current Version Code:8
+Current Version:2.0
+Current Version Code:12

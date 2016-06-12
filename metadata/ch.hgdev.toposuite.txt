@@ -77,11 +77,32 @@ Build:1.0.4,57
     commit=v1.0.4
     subdir=TopoSuite
 
-Maintainer Notes:
-Replace guava jar.
-.
+Build:1.0.5,58
+    commit=c281c26e3cc1efc39a1a63153044a626cf997159
+    subdir=app
+    gradle=yes
 
-Auto Update Mode:None
+Build:1.0.6,59
+    commit=v1.0.6
+    subdir=app
+    gradle=yes
+
+Build:1.1.0-RC,65
+    commit=v1.1.0-RC
+    subdir=app
+    gradle=yes
+
+Build:1.1.0-RC2,66
+    commit=v1.1.0-RC2
+    subdir=app
+    gradle=yes
+
+Build:1.1.0,68
+    commit=v1.1.0
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.0.4
-Current Version Code:57
+Current Version:1.1.0
+Current Version Code:68

@@ -74,7 +74,43 @@ Build:1.10,18
     subdir=app
     gradle=yes
 
+Build:1.11,19
+    commit=v1.11
+    subdir=app
+    gradle=yes
+
+Build:1.12,20
+    commit=v1.12
+    subdir=app
+    gradle=yes
+
+Build:1.12.1,21
+    commit=v1.12.1
+    subdir=app
+    gradle=yes
+
+Build:1.13,22
+    commit=v1.13
+    subdir=app
+    gradle=yes
+
+Build:1.14,23
+    commit=v1.14
+    subdir=app
+    gradle=yes
+
+Build:1.15,24
+    commit=v1.15
+    subdir=app
+    gradle=yes
+
+Build:1.16,25
+    disable=lint errors, upstream should either fix or disable
+    commit=v1.16
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.10
-Current Version Code:18
+Current Version:1.16
+Current Version Code:25

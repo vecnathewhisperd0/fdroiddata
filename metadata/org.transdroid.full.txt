@@ -9,11 +9,11 @@ Name:Transdroid
 Auto Name:ColorPickerPreference
 Summary:Manage BitTorrent clients
 Description:
-Allows you to manage your torrents. All popular clients are supported:
-µTorrent, Transmission, rTorrent, Vuze, Deluge, BitTorrent 6, qBittorrent and
-many more. You can view and manage the running torrents and individual files.
-Adding is easy via the integrated search, RSS feeds or the barcode scanner.
-Monitor progress using the home screen widget or background alarm service.
+Allows you to manage your torrents. All popular clients are supported: µTorrent,
+Transmission, rTorrent, Vuze, Deluge, BitTorrent 6, qBittorrent and many more.
+You can view and manage the running torrents and individual files. Adding is
+easy via the integrated search, RSS feeds or the barcode scanner. Monitor
+progress using the home screen widget or background alarm service.
 
 See also [[org.transdroid.search]] and [[org.transdroid.lite]].
 .
@@ -83,8 +83,23 @@ Build:2.5.5,225
     prebuild=sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' src/full/res/values/bools.xml && \
         sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' src/main/res/values/bools.xml
 
+Build:2.5.6,226
+    commit=v2.5.6
+    subdir=app
+    gradle=full
+    prebuild=sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' src/full/res/values/bools.xml && \
+        sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' src/main/res/values/bools.xml && \
+        sed -i -e '/android {/alintOptions {\nabortOnError false\n}\n' build.gradle
+
+Build:2.5.7,227
+    commit=v2.5.7
+    subdir=app
+    gradle=full
+    prebuild=sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' src/full/res/values/bools.xml && \
+        sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' src/main/res/values/bools.xml && \
+        sed -i -e '/android {/alintOptions {\nabortOnError false\n}\n' build.gradle
+
 Auto Update Mode:None
-# Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.5.5
-Current Version Code:225
+Current Version:2.5.7
+Current Version Code:227

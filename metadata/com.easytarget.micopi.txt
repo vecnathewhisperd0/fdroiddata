@@ -1,11 +1,10 @@
 Categories:Graphics
 License:Apache2
 Web Site:https://easytargetmixel.github.io/micopi_android
-# Web Site:http://micopi.easy-target.org/ ## points to the playstore
 Source Code:https://github.com/easytargetmixel/micopi_android
 Issue Tracker:https://github.com/easytargetmixel/micopi_android/issues
 
-Auto Name:Micopi
+Auto Name:Micopi Pico
 Summary:Create unique contact pictures
 Description:
 Allows you to assign an image to every person in your telephone's contact list.
@@ -63,7 +62,32 @@ Build:3.2.5,23
     subdir=app
     gradle=yes
 
+Build:3.4,24
+    commit=d90688114ec465f7afe90d26b6f36bb8a3d3c838
+    subdir=app
+    gradle=yes
+
+Build:3.4.1,25
+    commit=966283445f9856dc7faf93eee2e8f949754acca2
+    subdir=app
+    gradle=yes
+
+Build:3.4.5,26
+    commit=b585c0e6854aef631e869608f095f0fa7c4ff882
+    subdir=app
+    gradle=yes
+
+Build:3.6.1,31
+    commit=f734e16b2036889900a1d17f3a863208c31cc813
+    subdir=app
+    gradle=yes
+
+Build:3.6.11,32
+    commit=ee90566c53cc7f8d8ceb7895b8af5df194d79b8b
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:3.2.5
-Current Version Code:23
+Update Check Mode:RepoManifest/noads
+Current Version:3.6.11
+Current Version Code:32

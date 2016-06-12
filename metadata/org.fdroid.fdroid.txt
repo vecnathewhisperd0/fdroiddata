@@ -528,8 +528,103 @@ Build:0.98-alpha4,98004
     subdir=F-Droid
     gradle=yes
 
+Build:0.98-alpha5,98005
+    commit=v0.98-alpha5
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha6,98006
+    commit=v0.98-alpha6
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha7,98007
+    commit=v0.98-alpha7
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98,98050
+    commit=v0.98
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98.1,98150
+    commit=v0.98.1
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.99-alpha1,99001
+    commit=v0.99-alpha1
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.99-alpha2,99002
+    commit=v0.99-alpha2
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.99,99050
+    commit=v0.99
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.99.1,99150
+    commit=v0.99.1
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.99.2,99250
+    commit=v0.99.2
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.100-alpha1,100001
+    commit=v0.100-alpha1
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.100-alpha2,100002
+    commit=v0.100-alpha2
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.100-alpha3,100003
+    commit=v0.100-alpha3
+    subdir=app
+    gradle=yes
+
+Build:0.100-alpha4,100004
+    commit=v0.100-alpha4
+    subdir=app
+    gradle=yes
+
+Build:0.100-alpha5,100005
+    commit=v0.100-alpha5
+    subdir=app
+    gradle=yes
+
+Build:0.100-alpha6,100006
+    commit=v0.100-alpha6
+    subdir=app
+    gradle=yes
+
+Build:0.100-alpha7,100007
+    commit=v0.100-alpha7
+    subdir=app
+    gradle=yes
+
+Build:0.100-alpha8,100008
+    commit=v0.100-alpha8
+    subdir=app
+    gradle=yes
+
+Build:0.100,100050
+    commit=v0.100
+    subdir=app
+    gradle=yes
+
 Archive Policy:12 versions
 Auto Update Mode:None
 Update Check Mode:Static
-Current Version:0.97
-Current Version Code:97050
+Current Version:0.99.2
+Current Version Code:99250

@@ -23,7 +23,14 @@ Build:8.4.3,115
         sed -i -e 's/android:minSdkVersion="4"/android:minSdkVersion="8"/g' AndroidManifest.xml
     buildjni=yes
 
+Build:8.6.10,138
+    disable=play-services et al.
+    commit=none
+    subdir=app
+    gradle=yes
+    buildjni=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:8.6.5
-Current Version Code:127
+Current Version:8.6.11
+Current Version Code:139

@@ -3,6 +3,7 @@ License:Apache2
 Web Site:
 Source Code:https://github.com/T-Rex96/Easy_xkcd
 Issue Tracker:https://github.com/T-Rex96/Easy_xkcd/issues
+Changelog:https://github.com/T-Rex96/Easy_xkcd/blob/HEAD/CHANGELOG.md
 
 Auto Name:Easy xkcd
 Summary:View xkcd comics
@@ -427,7 +428,239 @@ Build:3.8.3,94
     srclibs=CWACWakeful@v1.0.5
     prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
 
-Auto Update Mode:Version release_%v
+Build:3.8.4,95
+    commit=release_3.8.4
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.9,96
+    commit=release_3.9
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.9.1,97
+    commit=release_3.9.1
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:3.9.2,98
+    commit=release_3.9.2
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:4.0.1,100
+    commit=release_4.0.1
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:4.0.2,101
+    commit=release_4.0.2
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:4.0.4,103
+    commit=release_4.0.4
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:4.0.5,104
+    commit=release_4.0.5
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:4.0.6,105
+    commit=release_4.0.6
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:4.0.7,106
+    commit=release_4.0.7
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:4.1,107
+    commit=release_4.1
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/com.nbsp/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5,MaterialFilePicker@fc275cba7b9497f8d544379ca99b68bfe4434f44
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/ && \
+        sed -i "/dependencies {/a compile project(':MaterialFilePicker:library')" build.gradle && \
+        sed -i "$ ainclude ':MaterialFilePicker:library'" ../settings.gradle && \
+        rm -rf $$MaterialFilePicker$$/app && \
+        cp -r $$MaterialFilePicker$$ ../ && \
+        sed -i -e '/apply from/d' ../MaterialFilePicker/library/build.gradle
+
+Build:4.1.1,108
+    commit=release_4.1.1
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/com.nbsp/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5,MaterialFilePicker@fc275cba7b9497f8d544379ca99b68bfe4434f44
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/ && \
+        sed -i "/dependencies {/a compile project(':MaterialFilePicker:library')" build.gradle && \
+        sed -i "$ ainclude ':MaterialFilePicker:library'" ../settings.gradle && \
+        rm -rf $$MaterialFilePicker$$/app && \
+        cp -r $$MaterialFilePicker$$ ../ && \
+        sed -i -e '/apply from/d' ../MaterialFilePicker/library/build.gradle
+
+Build:4.2,109
+    commit=release_4.2
+    subdir=app
+    init=sed -i -e '/maven {/,+2d' -e '/com.commonsware.cwac:wakeful/d' -e '/com.nbsp/d' -e '/fileTree/d' build.gradle
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5,MaterialFilePicker@fc275cba7b9497f8d544379ca99b68bfe4434f44
+    prebuild=cp -r $$CWACWakeful$$/wakeful/src/com src/main/java/ && \
+        sed -i "/dependencies {/a compile project(':MaterialFilePicker:library')" build.gradle && \
+        sed -i "$ ainclude ':MaterialFilePicker:library'" ../settings.gradle && \
+        rm -rf $$MaterialFilePicker$$/app && \
+        cp -r $$MaterialFilePicker$$ ../ && \
+        sed -i -e '/apply from/d' ../MaterialFilePicker/library/build.gradle
+
+Build:4.3.1,111
+    commit=release_4.3.1
+    subdir=app
+    init=sed -i -e '/jcenter/,+9d' -e '/mavenCentral/ajcenter()\nmaven { url "https://jitpack.io/" }\nmaven { url "https://s3.amazonaws.com/repo.commonsware.com" }\n' -e '/fileTree/d' -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+    gradle=yes
+    prebuild=sed -i -e '/DatabaseManager/d' src/main/java/de/tap/easy_xkcd/fragments/ComicBrowserFragment.java
+
+Build:5.0,112
+    commit=release_5.0
+    subdir=app
+    init=sed -i -e '/jcenter/,+9d' -e '/mavenCentral/ajcenter()\nmaven { url "https://jitpack.io/" }\nmaven { url "https://s3.amazonaws.com/repo.commonsware.com" }\n' -e '/fileTree/d' -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+    gradle=yes
+
+Build:5.0.1,113
+    commit=release_5.0.1
+    subdir=app
+    init=sed -i -e '/jcenter/,+9d' -e '/mavenCentral/ajcenter()\nmaven { url "https://jitpack.io/" }\nmaven { url "https://s3.amazonaws.com/repo.commonsware.com" }\n' -e '/fileTree/d' -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+    gradle=yes
+
+Build:5.0.2,114
+    commit=release_5.0.2
+    subdir=app
+    init=sed -i -e '/jcenter/,+9d' -e '/mavenCentral/ajcenter()\nmaven { url "https://jitpack.io/" }\nmaven { url "https://s3.amazonaws.com/repo.commonsware.com" }\n' -e '/fileTree/d' -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+    gradle=yes
+
+Build:5.0.3,115
+    commit=release_5.0.3
+    subdir=app
+    init=sed -i -e '/jcenter/,+9d' -e '/mavenCentral/ajcenter()\nmaven { url "https://jitpack.io/" }\nmaven { url "https://s3.amazonaws.com/repo.commonsware.com" }\n' -e '/fileTree/d' -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+    gradle=yes
+
+Build:5.0.4,116
+    commit=release_5.0.4
+    subdir=app
+    init=sed -i -e '/jcenter/,+9d' -e '/mavenCentral/ajcenter()\nmaven { url "https://jitpack.io/" }\nmaven { url "https://s3.amazonaws.com/repo.commonsware.com" }\n' -e '/fileTree/d' -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+    gradle=yes
+
+Build:5.0.6,118
+    disable=third party maven repos
+    commit=release_5.0.6
+    subdir=app
+    gradle=yes
+
+Build:5.1.1,121
+    commit=release_5.1.1
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Build:5.1.2,122
+    commit=release_5.1.2
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Build:5.1.3,123
+    commit=release_5.1.3
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Build:5.1.4,124
+    commit=release_5.1.4
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Build:5.1.5,125
+    commit=release_5.1.5
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Build:5.2,126
+    commit=release_5.2
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Build:5.2.1,127
+    commit=release_5.2.1
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Build:5.2.2,128
+    commit=release_5.2.2
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Build:5.3,129
+    commit=release_5.3
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Build:5.3.1,130
+    commit=release_5.3.1
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Auto Update Mode:None
 Update Check Mode:Tags ^release
-Current Version:3.8.3
-Current Version Code:94
+Current Version:5.3.1
+Current Version Code:130

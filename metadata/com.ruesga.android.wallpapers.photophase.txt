@@ -47,7 +47,32 @@ Build:1.0.12,1014
     commit=v1.0.12
     target=android-19
 
+Build:2.0.0,1015
+    disable=gradle
+    commit=v2.0.0
+    target=android-19
+
+Build:2.0.1,1016
+    disable=gradle
+    commit=v2.0.1
+    target=android-19
+
+Build:2.0.2,1018
+    commit=v2.0.2
+    subdir=app
+    gradle=yes
+
+Build:2.1.0,1019
+    commit=v2.1.0
+    subdir=app
+    gradle=yes
+
+Build:2.1.1,1020
+    commit=v2.1.1
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.0.12
-Current Version Code:1014
+Current Version:2.1.1
+Current Version Code:1020

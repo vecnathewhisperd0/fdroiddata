@@ -4,7 +4,7 @@ License:GPLv2+
 Web Site:https://telegram.org
 Source Code:https://github.com/slp/Telegram-FOSS
 Issue Tracker:https://github.com/slp/Telegram-FOSS/issues
-Changelog:https://github.com/slp/Telegram-FOSS/commits/HEAD
+Changelog:https://github.com/slp/Telegram-FOSS/blob/HEAD/Changelog.md
 Donate:https://sinrega.org/?page_id=241
 
 Auto Name:Telegram
@@ -216,7 +216,36 @@ Build:3.3.1,685
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
 
+Build:3.4.2,719
+    commit=v3.4.2
+    subdir=TMessagesProj
+    gradle=yes
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+
+Build:3.6.1,755
+    commit=v3.6.1
+    subdir=TMessagesProj
+    gradle=yes
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+
+Build:3.6.1a,756
+    commit=v3.6.1a
+    subdir=TMessagesProj
+    gradle=yes
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+
+Build:3.7.0,7673
+    commit=v3.7.0
+    subdir=TMessagesProj
+    gradle=fat
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.3.1
-Current Version Code:685
+Vercode Operation:%c*10 + 3
+Current Version:3.7.0
+Current Version Code:7673

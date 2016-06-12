@@ -11,8 +11,6 @@ Generating otp's without the need for a special hardware token. Using motp, hotp
 or totp algorithms, wih multiple profiles and time-zone support
 .
 
-# Repo Type:git-svn
-# Repo:https://motp.googlecode.com/svn/trunk
 Repo Type:git
 Repo:https://github.com/chrismiceli/motp
 
@@ -20,7 +18,12 @@ Build:1.5,20
     commit=4
     target=android-15
 
+Build:2,21
+    commit=7aae2b79126b89e8bf23f2e5ec2bf9ba2481f76f
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.5
-Current Version Code:20
+Current Version:2
+Current Version Code:21
