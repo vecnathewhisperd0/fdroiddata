@@ -5,39 +5,29 @@ Source Code:https://github.com/andDevW/getChromium
 Issue Tracker:https://github.com/andDevW/getChromium/issues
 Bitcoin:188RxvRnSXSZZnjuDdLwNirHDfNusVPobh
 
-Auto Name:getCr
+Auto Name:getChromium
 Summary:Installs/Updates the open-source Chromium browser
 Description:
-Install Chromium, Install again to update Chromium.<br /> Chromium builds '''do
-not''' auto-update<br />Block '''''Google Play Store'''''
-warning:</br>'''Settings --> Apps --> Chromium --> Notifications --> Block
-all'''</br>'''Works for API 19+'''<br />
+Chromium APK courtesy of the Chromium team. Install Chromium, Install again to update Chromium.
 .
 
 Repo Type:git
 Repo:https://github.com/andDevW/getChromium
 
-<<<<<<< HEAD
-Build:2.0,1
-    commit=v1.0
+Build:2.1,20160614
+    commit=2.1
     subdir=app
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "1.5.0" }' >> ../build.gradle
     gradle=yes 	
 	
-=======
->>>>>>> refs/remotes/origin/master
 Build:1.0,1
     commit=v1.0
     subdir=app
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "1.5.0" }' >> ../build.gradle
     gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:Tags
-<<<<<<< HEAD
-Current Version:2.0
-Current Version Code:2
-=======
-Current Version:1.0
-Current Version Code:1
->>>>>>> refs/remotes/origin/master
+Auto Update Mode:Version %v
+Update Check Mode:Tags ^[0-9.]*$
+Current Version:2.1
+Current Version Code:20160614
+
