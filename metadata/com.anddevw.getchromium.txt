@@ -8,25 +8,20 @@ Bitcoin:188RxvRnSXSZZnjuDdLwNirHDfNusVPobh
 Auto Name:getChromium
 Summary:Installs/Updates the open-source Chromium browser
 Description:
-Chromium APK courtesy of the Chromium team. Install Chromium, Install again to update Chromium.
+Chromium APK courtesy of the Chromium team. Install Chromium, Install again to
+update Chromium.
 .
 
 Repo Type:git
 Repo:https://github.com/andDevW/getChromium
 
-Build:2.1,20160614
-    commit=2.1
+Build:2.1,2
+    commit=v2.0
     subdir=app
-    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "1.5.0" }' >> ../build.gradle
-    gradle=yes 	
-
-Build:1.0,1
-    commit=v1.0
-    subdir=app
-    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "1.5.0" }' >> ../build.gradle
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.1.2" }' >> ../build.gradle
     gradle=yes
 
-Auto Update Mode:Tags
+Auto Update Mode:Version %v
+Update Check Mode:None
 Current Version:2.1
-Current Version Code:20160614
-
+Current Version Code:2
