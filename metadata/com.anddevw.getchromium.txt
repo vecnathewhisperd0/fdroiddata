@@ -19,6 +19,7 @@ Build:2.1,20160614
     subdir=app
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "1.5.0" }' >> ../build.gradle
     gradle=yes 	
+
 Build:1.0,1
     commit=v1.0
     subdir=app
@@ -26,7 +27,6 @@ Build:1.0,1
     gradle=yes
 
 Auto Update Mode:Version %v
-Update Check Mode:Tags ^[0-9.]*$
 Current Version:2.1
 Current Version Code:20160614
 
