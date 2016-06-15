@@ -26,7 +26,7 @@ Build:1.0,1
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "1.5.0" }' >> ../build.gradle
     gradle=yes
 
-Auto Update Mode:Version %v
+Auto Update Mode:Tags
 Current Version:2.1
 Current Version Code:20160614
 
