@@ -1,0 +1,29 @@
+Categories:Multimedia,Theming
+License:GPL3
+Web Site:https://github.com/beli3ver/Paper-FOSS-Theme/blob/HEAD/README.md
+Source Code:https://github.com/beli3ver/Paper-FOSS-Theme
+Issue Tracker:https://github.com/beli3ver/Paper-FOSS-Theme/issues
+
+Auto Name:Paper FOSS Theme
+Summary:Theme based on the GTK Icon Theme Paper from Sam Hewitt
+Description:
+This icons only support FOSS Apps, most of them stored in FDroid.
+
+Paper FOSS Theme is a Material Design inspired theme for Android Lollipop aiming
+to provide a consistent and minimalistic look to your device. It is based on
+several other CM12 themes. A device running the Cyanogenmod 12 ROM or any other
+rom compatible with the CM12 theme engine is needed to use the theme.
+.
+
+Repo Type:git
+Repo:https://github.com/beli3ver/Paper-FOSS-Theme
+
+Build:0.2,2
+    commit=v0.2
+    subdir=theme
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:0.2
+Current Version Code:2
