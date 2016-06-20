@@ -232,6 +232,7 @@ Build:3.0.1,53
     gradle=yes
     buildjni=yes
     preassemble=renameExecutables
+    init=sed -i "s/\(buildscript {\)/\1\n  System.properties['com.android.build.gradle.overrideVersionCheck'] = 'true'/" ../build.gradle
 
 Build:3.0.2,54
     commit=v3.0.2
@@ -239,6 +240,7 @@ Build:3.0.2,54
     gradle=yes
     buildjni=yes
     preassemble=renameExecutables
+    init=sed -i "s/\(buildscript {\)/\1\n  System.properties['com.android.build.gradle.overrideVersionCheck'] = 'true'/" ../build.gradle
 
 Build:3.1,55
     commit=v3.1
@@ -246,6 +248,7 @@ Build:3.1,55
     gradle=yes
     buildjni=yes
     preassemble=renameExecutables
+    init=sed -i "s/\(buildscript {\)/\1\n  System.properties['com.android.build.gradle.overrideVersionCheck'] = 'true'/" ../build.gradle
 
 Build:3.1.1,56
     commit=v3.1.1
@@ -253,6 +256,7 @@ Build:3.1.1,56
     gradle=yes
     buildjni=yes
     preassemble=renameExecutables
+    init=sed -i "s/\(buildscript {\)/\1\n  System.properties['com.android.build.gradle.overrideVersionCheck'] = 'true'/" ../build.gradle
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
