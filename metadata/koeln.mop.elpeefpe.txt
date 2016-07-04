@@ -1,0 +1,28 @@
+Categories:Games
+License:Unlicense
+Web Site:
+Source Code:https://github.com/m0ppers/ElpeEfpeAndroid
+Issue Tracker:https://github.com/m0ppers/ElpeEfpeAndroid/issues
+
+Auto Name:Elpe Efpe
+Summary:Manage health and focuspoints of your Splittermond characters
+Description:
+Elpe Efpe allows you to manage health (Elpe) and focuspoints (Efpe) of your
+Splittermond characters on your Android device. Splittermond is a pen and paper
+RPG system.
+
+Splittermond © Copyright 2016 by Uhrwerk Verlag, Koeln
+(http://www.splittermond.de/). Elpe Efpe is an unofficial app and in no way
+related to Uhrwerk Verlag.
+.
+
+Repo Type:git
+Repo:https://github.com/m0ppers/ElpeEfpeAndroid
+
+Build:1.0,1
+    commit=8ab84526511da16d3fb406848553039b563be725
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:Tags
