@@ -1,0 +1,32 @@
+Index: libraries/RootCommands/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- libraries/RootCommands/build.gradle	(revision 6881993ebd2c0514f595711175bd850465a27352)
++++ libraries/RootCommands/build.gradle	(revision )
+@@ -3,7 +3,7 @@
+         mavenCentral()
+     }
+     dependencies {
+-        classpath 'com.android.tools.build:gradle:1.0.0-rc2'
++        classpath 'com.android.tools.build:gradle:2.1.2'
+     }
+ }
+ 
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(revision 6881993ebd2c0514f595711175bd850465a27352)
++++ build.gradle	(revision )
+@@ -3,7 +3,7 @@
+         mavenCentral()
+     }
+     dependencies {
+-        classpath 'com.android.tools.build:gradle:0.5.+'
++        classpath 'com.android.tools.build:gradle:2.1.2'
+     }
+ }
+ 

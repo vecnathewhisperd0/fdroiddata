@@ -167,6 +167,7 @@ Build:1.1.0,38
     subdir=app
     submodules=yes
     gradle=yes
+    patch=gradle.patch
     scandelete=external/super-commands/ExampleApp/libs,external/i2p/client/src/main/jniLibs/armeabi
 
 Auto Update Mode:Version %v
