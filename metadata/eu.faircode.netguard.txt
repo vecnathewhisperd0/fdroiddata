@@ -1,9 +1,10 @@
+Antifeature:Tracking
 Categories:Security,Internet
 License:GPLv3
-Web Site:http://www.netguard.me
+Web Site:https://www.netguard.me
 Source Code:https://github.com/M66B/NetGuard
 Issue Tracker:https://github.com/M66B/NetGuard/issues
-Donate:http://www.netguard.me
+Donate:https://www.netguard.me
 Bitcoin:13vtPytVVqCwojmohAqsK61Tk4yGXSWpJK
 
 Auto Name:NetGuard
@@ -12,6 +13,12 @@ Description:
 Simple way to block access to the internet - no root required. Applications can
 individually be allowed or denied access via your Wi-Fi and/or mobile
 connection.
+
+AntiFeatures:
+
+* Tracking. On Android version 5.0 or newer, the free version of NetGuard will 
+share anonymized app usage data. This can optionally be disabled after 
+purchasing one or more of the pro feature.
 .
 
 Repo Type:git
