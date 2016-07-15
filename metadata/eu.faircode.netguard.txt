@@ -16,8 +16,7 @@ connection.
 
 AntiFeatures:
 
-* Tracking. Anonymized NetGuard usage data is shared by default. Optionally
-this can be opt-out on a per application basis.
+* Tracking. Shares anonymized NetGuard usage data with a per-app opt-out.
 .
 
 Repo Type:git
