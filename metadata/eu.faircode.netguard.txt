@@ -16,7 +16,8 @@ connection.
 
 AntiFeatures:
 
-* Tracking. The free version shares anonymized NetGuard usage data.
+* Tracking. Anonymized NetGuard usage data is shared by default. Optionally
+this can be opt-out on a per application basis.
 .
 
 Repo Type:git
