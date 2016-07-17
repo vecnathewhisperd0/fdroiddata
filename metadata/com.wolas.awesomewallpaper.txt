@@ -1,0 +1,26 @@
+Categories:Theming
+License:GPLv3
+Author Name:Andrius Jurkus
+Author Email:bwolas@gmail.com
+Web Site:
+Source Code:https://github.com/vvolas/Awesome-Live-Wallpaper
+Issue Tracker:https://github.com/vvolas/Awesome-Live-Wallpaper/issues
+
+Auto Name:AwesomeWallpaper
+Summary:Awesome Live Wallpaper
+Description:
+Silly live wallpaper which makes you smile or at least I hope so. Story is
+simple bunchie travels in candy land. Contains awesome sun, and nyan cat appears
+sometimes too.
+.
+
+Repo Type:git
+Repo:https://github.com/vvolas/Awesome-Live-Wallpaper.git
+
+Build:1.0,1
+    commit=1dabb8a1213667734f1133867cdb1f361a9de1e6
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:None
