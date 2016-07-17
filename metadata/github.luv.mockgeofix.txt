@@ -1,0 +1,33 @@
+Categories:Development
+License:Apache2
+Web Site:https://github.com/luv/mockgeofix
+Source Code:https://github.com/luv/mockgeofix/
+Issue Tracker:https://github.com/luv/mockgeofix/issues
+
+Summary:makes a real device support "geo fix" and "geo nmea" commands
+Description:
+MockGeoFix makes an android device support "geo fix" and "geo nmea" commands
+(ie. compatible with the android emulator for the purposes of mocking location).
+
+Just start the application, click "start" and telnet to the IP address of your
+android device on the specified port (default 5554) and you can mock location
+exactly the same as with the android emulator.
+
+Handy for reusing higher-level mock location tools built for the android
+emulator on real android devices!
+
+NOTE: MockGeoFix mocks a GPS provider. It might happen your GPS stops working if
+you don't stop MockGeoFix properly. Should that happen, just click "start" and
+"stop" in MockGeoFix and it will unregister the mock GPS provider.
+.
+
+Repo Type:git
+Repo:https://github.com/luv/mockgeofix
+
+Build:3.0,3
+    commit=5c11e2f1cdd31aeafb30ae72437d7206df2d79f9
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%c
+Update Check Mode:Tags
