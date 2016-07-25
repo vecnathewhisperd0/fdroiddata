@@ -71,7 +71,6 @@ Build:0.3.2,14
 Build:0.3.4,304
     commit=290464bb0fe7db1e8393541160f149d7ee04b417
     subdir=vector
-    init=echo 'android { lintOptions { checkReleaseBuilds false } }' >>build.gradle
     gradle=appfdroid
     srclibs=matrixsdk@80a629ab18d525beabeebec6ab9065b776e94455
     prebuild=cp -fR $$matrixsdk$$/matrix-sdk ../ && \
