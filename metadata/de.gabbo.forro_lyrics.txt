@@ -27,8 +27,8 @@ Repo:https://gitlab.com/GabbO2/ForroLyrics.git
 
 Build:0.8,1
     commit=0.8
-    gradle=yes
     subdir=app
+    gradle=yes
 
 Auto Update Mode:None
 Update Check Mode:Tags
