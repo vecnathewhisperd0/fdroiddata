@@ -54,13 +54,20 @@ Build:3.6 F-Droid,140
         bash fdroidPrep.sh
 
 Build:3.6 F-Droid,141
+    commit=0cbd6805cd553619d004f6920b4a3cf8aee6240d
+    subdir=app
+    gradle=fdroid
+    prebuild=cd .. && \
+        bash fdroidPrep.sh
+
+Build:3.6 F-Droid,142
     commit=fdroid-v3.6
     subdir=app
     gradle=fdroid
     prebuild=cd .. && \
         bash fdroidPrep.sh
 
-Auto Update Mode:None
+Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:3.6
-Current Version Code:141
+Current Version Code:142
