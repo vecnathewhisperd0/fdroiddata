@@ -1,0 +1,20 @@
+ Categories:Multimedia
+ License:Apache v2
+ Web Site:https://theandroidmaster.github.io/apps/pasta/
+ Source Code:https://github.com/TheAndroidMaster/Pasta-for-Spotify
+ Issue Tracker:https://github.com/TheAndroidMaster/Pasta-for-Spotify/issues
+ 
+ Summary:Pasta For Spotify
+ Description:
+Pasta for Spotify is a material design Spotify client for android that attempts to create a better user experience using the Spotify Web API. It was created to show an improvement in design over the official Spotify app, and to allow for older and slower devices to have quicker access to Spotify's services without losing (much) functionality.
+
+ Repo Type:git
+ Repo:https://github.com/TheAndroidMaster/Pasta-for-Spotify.git
+ 
+ Build:1.8,9
+     commit=1.8
+     subdir=app
+     gradle=yes
+ 
+ Auto Update Mode:None
+Update Check Mode:None
