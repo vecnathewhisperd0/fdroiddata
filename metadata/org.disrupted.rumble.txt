@@ -20,15 +20,13 @@ is either best to avoid (surveillance/censorship) or simply not available.
 Repo Type:git
 Repo:https://github.com/Marlinski/Rumble
 
-Build:1.0.1,7
-    commit=v1.0.1-7
+Build:1.0.1,14
+    commit=v1.0.1-14
     subdir=app
     gradle=yes
-    srclibs=SlidingMenu@4254feca3ece9397cd501921ee733f19ea0fdad8
-    prebuild=mkdir -p ../libs/SlidingMenu/ && \
-        cp -fR $$SlidingMenu$$ ../libs/SlidingMenu/library
+    submodules=yes
 
 Auto Update Mode:Version v%v-%c
 Update Check Mode:Tags
 Current Version:1.0.1
-Current Version Code:7
+Current Version Code:14
