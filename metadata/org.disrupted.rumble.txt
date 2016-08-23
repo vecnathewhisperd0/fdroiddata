@@ -1,9 +1,11 @@
-AntiFeatures:Tracking
+Author Name: Marlinski
+Author Email: marlinski@disruptedsystems.org
 Categories:Connectivity
 License:GPLv3
 Web Site:http://www.disruptedsystems.org
 Source Code:https://github.com/Marlinski/Rumble
 Issue Tracker:https://github.com/Marlinski/Rumble/issues
+Bitcoin: 1PXXMinxQgYUPXzZq6BixZpJTFeiCLqDqD
 
 Auto Name:Rumble
 Summary:Off-the-grid micro-blogging application for communities
@@ -37,7 +39,13 @@ Build:1.0.1,11
     gradle=yes
     rm=libs/SlidingMenu/example
 
+Build:1.0.1,14
+    commit=v1.0.1-14
+    subdir=app
+    gradle=yes
+    submodules=yes
+
 Auto Update Mode:Version v%v-%c
 Update Check Mode:Tags
 Current Version:1.0.1
-Current Version Code:11
+Current Version Code:14
