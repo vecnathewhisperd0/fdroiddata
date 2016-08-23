@@ -1,7 +1,7 @@
-Author Name:Marlinski
-Author Email:marlinski@disruptedsystems.org
 Categories:Connectivity
 License:GPLv3
+Author Name:Marlinski
+Author Email:marlinski@disruptedsystems.org
 Web Site:http://www.disruptedsystems.org
 Source Code:https://github.com/Marlinski/Rumble
 Issue Tracker:https://github.com/Marlinski/Rumble/issues
@@ -39,13 +39,13 @@ Build:1.0.1,11
     gradle=yes
     rm=libs/SlidingMenu/example
 
-Build:1.0.1,14
-    commit=v1.0.1-14
+Build:1.0.2,15
+    commit=v1.0.2-15
     subdir=app
-    gradle=yes
     submodules=yes
+    gradle=yes
 
 Auto Update Mode:Version v%v-%c
 Update Check Mode:Tags
-Current Version:1.0.1
-Current Version Code:14
+Current Version:1.0.2
+Current Version Code:15
