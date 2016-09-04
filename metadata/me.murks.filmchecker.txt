@@ -6,10 +6,10 @@ Source Code:https://github.com/zouroboros/filmchecker
 Issue Tracker:https://github.com/zouroboros/filmchecker/issues
 
 Auto Name:FilmChecker
-Summary:Simple app to check the status of film orders
+Summary:Checks the status of film orders
 Description:
-A simple app to check the status of film orders. Currently only the Rossmann and
-DM (german drugstores) are supported.
+Checks the status of film orders. Currently only the Rossmann and DM (german
+drugstores) are supported.
 .
 
 Repo Type:git
@@ -17,6 +17,7 @@ Repo:https://github.com/zouroboros/filmchecker.git
 
 Build:1.0.0,1
     commit=1.0.0
+    subdir=app
     gradle=yes
 
 Auto Update Mode:Version %v
