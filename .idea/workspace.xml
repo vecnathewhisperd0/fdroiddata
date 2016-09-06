@@ -2,273 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cea7be46-44ff-4238-a703-0f2adc586240" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/cat.mvmike.minimalcalendarwidget.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.apkupdater.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.app.missednotificationsreminder.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.farmerbb.taskbar.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.ghstudios.android.mhgendatabase.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.jtechme.jumpgo.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.launcher.silverfish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.materialos.cm.theme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.mathi_amorim.emmanuel.metrictime.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.metinkale.prayer.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.nextgis.mobile.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.simplemobiletools.applauncher.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.simplemobiletools.filemanager.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.tomer.alwayson.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.tomer.poke.notifier.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.viper.simplert.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.wmstein.tourcount.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.wmstein.transektcount.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.workingagenda.devinettes.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.workingagenda.fissure.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/com.xperia64.timidityae.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/de.baumann.hhsmoodle.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/de.baumann.pdfcreator.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/de.baumann.quitsmoking.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/de.bitsharesmunich.smartcoinswallet.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/de.gabbo.forro_lyrics.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/de.vibora.viborafeed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/dmusiolik.pijaret.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/dulleh.akhyou.fdroid.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/eu.devunit.fb_client.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/free.rm.netcfgwidget.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/io.github.hopedia.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/io.github.tjg1.nori.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/jp.gr.java_conf.kumagusu.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/me.dbarnett.acastus.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/me.murks.filmchecker.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/name.seguri.android.getforegroundactivity.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/name.seguri.android.isphoneencrypted.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/net.alaindonesia.silectric.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/net.androcom.dho.speakerproximity.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/net.daverix.urlforward.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/org.asdtm.goodweather.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/org.horaapps.leafpic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/org.icasdri.mather.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/org.michaelevans.nightmodeenabler.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/org.polaric.cyanogenmodchangelog.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/pep.android.k9.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/pl.hypeapp.endoscope.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/ru.equestriadev.mgke.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/ryey.camcov.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/ryey.flock.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/metadata/swati4star.createpdf.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srclibs/LibDialog.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srclibs/pEpEngine.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srclibs/pEpJNIAdapter.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/srclibs/yml2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitlab-ci.yml" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/a2dp.Vol.txt" afterPath="$PROJECT_DIR$/metadata/a2dp.Vol.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/ar.com.tristeslostrestigres.diasporanativewebapp.txt" afterPath="$PROJECT_DIR$/metadata/ar.com.tristeslostrestigres.diasporanativewebapp.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/ar.rulosoft.mimanganu.txt" afterPath="$PROJECT_DIR$/metadata/ar.rulosoft.mimanganu.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/at.bitfire.davdroid.txt" afterPath="$PROJECT_DIR$/metadata/at.bitfire.davdroid.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/au.com.wallaceit.reddinator.txt" afterPath="$PROJECT_DIR$/metadata/au.com.wallaceit.reddinator.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/btools.routingapp.txt" afterPath="$PROJECT_DIR$/metadata/btools.routingapp.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/ca.rmen.android.frenchcalendar.txt" afterPath="$PROJECT_DIR$/metadata/ca.rmen.android.frenchcalendar.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/ca.rmen.android.networkmonitor.txt" afterPath="$PROJECT_DIR$/metadata/ca.rmen.android.networkmonitor.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/ca.rmen.android.poetassistant.txt" afterPath="$PROJECT_DIR$/metadata/ca.rmen.android.poetassistant.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/ca.rmen.android.scrumchatter.txt" afterPath="$PROJECT_DIR$/metadata/ca.rmen.android.scrumchatter.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/ca.rmen.nounours.txt" afterPath="$PROJECT_DIR$/metadata/ca.rmen.nounours.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/ch.blinkenlights.android.vanilla.txt" afterPath="$PROJECT_DIR$/metadata/ch.blinkenlights.android.vanilla.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.aaronjwood.portauthority.txt" afterPath="$PROJECT_DIR$/metadata/com.aaronjwood.portauthority.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.adam.aslfms.txt" afterPath="$PROJECT_DIR$/metadata/com.adam.aslfms.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.adonai.manman.txt" afterPath="$PROJECT_DIR$/metadata/com.adonai.manman.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.android.music.txt" afterPath="$PROJECT_DIR$/metadata/com.android.music.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.android2.calculator3.txt" afterPath="$PROJECT_DIR$/metadata/com.android2.calculator3.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.angrydoughnuts.android.alarmclock.txt" afterPath="$PROJECT_DIR$/metadata/com.angrydoughnuts.android.alarmclock.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.asksven.betterbatterystats.txt" afterPath="$PROJECT_DIR$/metadata/com.asksven.betterbatterystats.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.commit451.gitlab.txt" afterPath="$PROJECT_DIR$/metadata/com.commit451.gitlab.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.darshancomputing.BatteryIndicator.txt" afterPath="$PROJECT_DIR$/metadata/com.darshancomputing.BatteryIndicator.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.ds.avare.txt" afterPath="$PROJECT_DIR$/metadata/com.ds.avare.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.einmalfel.podlisten.txt" afterPath="$PROJECT_DIR$/metadata/com.einmalfel.podlisten.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.eolwral.osmonitor.txt" afterPath="$PROJECT_DIR$/metadata/com.eolwral.osmonitor.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.forrestguice.suntimeswidget.txt" afterPath="$PROJECT_DIR$/metadata/com.forrestguice.suntimeswidget.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.fr3ts0n.ecu.gui.androbd.txt" afterPath="$PROJECT_DIR$/metadata/com.fr3ts0n.ecu.gui.androbd.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.gabm.fancyplaces.txt" afterPath="$PROJECT_DIR$/metadata/com.gabm.fancyplaces.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.github.dfa.diaspora_android.txt" afterPath="$PROJECT_DIR$/metadata/com.github.dfa.diaspora_android.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.github.notizklotz.derbunddownloader.txt" afterPath="$PROJECT_DIR$/metadata/com.github.notizklotz.derbunddownloader.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.github.quarck.calnotify.txt" afterPath="$PROJECT_DIR$/metadata/com.github.quarck.calnotify.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.github.sryze.wirebug.txt" afterPath="$PROJECT_DIR$/metadata/com.github.sryze.wirebug.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.google.android.diskusage.txt" afterPath="$PROJECT_DIR$/metadata/com.google.android.diskusage.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.grarak.kerneladiutor.txt" afterPath="$PROJECT_DIR$/metadata/com.grarak.kerneladiutor.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.greenaddress.greenbits_android_wallet.txt" afterPath="$PROJECT_DIR$/metadata/com.greenaddress.greenbits_android_wallet.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.gunshippenguin.openflood.txt" afterPath="$PROJECT_DIR$/metadata/com.gunshippenguin.openflood.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.horaapps.leafpic.txt" afterPath="$PROJECT_DIR$/metadata/com.horaapps.leafpic.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.ilm.sandwich.txt" afterPath="$PROJECT_DIR$/metadata/com.ilm.sandwich.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.jefftharris.passwdsafe.txt" afterPath="$PROJECT_DIR$/metadata/com.jefftharris.passwdsafe.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.jmstudios.redmoon.txt" afterPath="$PROJECT_DIR$/metadata/com.jmstudios.redmoon.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.kn.paper_foss_theme.txt" afterPath="$PROJECT_DIR$/metadata/com.kn.paper_foss_theme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.knirirr.beecount.txt" afterPath="$PROJECT_DIR$/metadata/com.knirirr.beecount.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.lgallardo.qbittorrentclientpro.txt" afterPath="$PROJECT_DIR$/metadata/com.lgallardo.qbittorrentclientpro.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.liato.bankdroid.txt" afterPath="$PROJECT_DIR$/metadata/com.liato.bankdroid.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.manuelmaly.hn.txt" afterPath="$PROJECT_DIR$/metadata/com.manuelmaly.hn.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.mareksebera.simpledilbert.txt" afterPath="$PROJECT_DIR$/metadata/com.mareksebera.simpledilbert.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.mde.potdroid.txt" afterPath="$PROJECT_DIR$/metadata/com.mde.potdroid.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.menny.android.anysoftkeyboard.txt" afterPath="$PROJECT_DIR$/metadata/com.menny.android.anysoftkeyboard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.mgaetan89.showsrage.txt" afterPath="$PROJECT_DIR$/metadata/com.mgaetan89.showsrage.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.mikifus.padland.txt" afterPath="$PROJECT_DIR$/metadata/com.mikifus.padland.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.moez.QKSMS.txt" afterPath="$PROJECT_DIR$/metadata/com.moez.QKSMS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.money.manager.ex.txt" afterPath="$PROJECT_DIR$/metadata/com.money.manager.ex.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.murrayc.galaxyzoo.app.txt" afterPath="$PROJECT_DIR$/metadata/com.murrayc.galaxyzoo.app.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.nbossard.packlist.txt" afterPath="$PROJECT_DIR$/metadata/com.nbossard.packlist.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.nextcloud.android.beta.txt" afterPath="$PROJECT_DIR$/metadata/com.nextcloud.android.beta.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.nextcloud.client.txt" afterPath="$PROJECT_DIR$/metadata/com.nextcloud.client.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.nkanaev.comics.txt" afterPath="$PROJECT_DIR$/metadata/com.nkanaev.comics.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.nucc.hackwinds.txt" afterPath="$PROJECT_DIR$/metadata/com.nucc.hackwinds.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.nutomic.ensichat.txt" afterPath="$PROJECT_DIR$/metadata/com.nutomic.ensichat.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.nutomic.syncthingandroid.txt" afterPath="$PROJECT_DIR$/metadata/com.nutomic.syncthingandroid.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.opentaxi.android.txt" afterPath="$PROJECT_DIR$/metadata/com.opentaxi.android.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.owncloud.android.txt" afterPath="$PROJECT_DIR$/metadata/com.owncloud.android.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.platypus.SAnd.txt" afterPath="$PROJECT_DIR$/metadata/com.platypus.SAnd.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.primokorn.enhancement.txt" afterPath="$PROJECT_DIR$/metadata/com.primokorn.enhancement.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.rareventure.gps2.txt" afterPath="$PROJECT_DIR$/metadata/com.rareventure.gps2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.ratebeer.android.txt" afterPath="$PROJECT_DIR$/metadata/com.ratebeer.android.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.ruesga.android.wallpapers.photophase.txt" afterPath="$PROJECT_DIR$/metadata/com.ruesga.android.wallpapers.photophase.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.samebits.beacon.locator.txt" afterPath="$PROJECT_DIR$/metadata/com.samebits.beacon.locator.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.seafile.seadroid2.txt" afterPath="$PROJECT_DIR$/metadata/com.seafile.seadroid2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.shatteredpixel.shatteredpixeldungeon.txt" afterPath="$PROJECT_DIR$/metadata/com.shatteredpixel.shatteredpixeldungeon.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.simplemobiletools.calculator.txt" afterPath="$PROJECT_DIR$/metadata/com.simplemobiletools.calculator.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.simplemobiletools.calendar.txt" afterPath="$PROJECT_DIR$/metadata/com.simplemobiletools.calendar.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.simplemobiletools.camera.txt" afterPath="$PROJECT_DIR$/metadata/com.simplemobiletools.camera.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.simplemobiletools.draw.txt" afterPath="$PROJECT_DIR$/metadata/com.simplemobiletools.draw.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.simplemobiletools.flashlight.txt" afterPath="$PROJECT_DIR$/metadata/com.simplemobiletools.flashlight.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.simplemobiletools.gallery.txt" afterPath="$PROJECT_DIR$/metadata/com.simplemobiletools.gallery.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.simplemobiletools.musicplayer.txt" afterPath="$PROJECT_DIR$/metadata/com.simplemobiletools.musicplayer.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.simplemobiletools.notes.txt" afterPath="$PROJECT_DIR$/metadata/com.simplemobiletools.notes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.stoutner.privacybrowser.standard.txt" afterPath="$PROJECT_DIR$/metadata/com.stoutner.privacybrowser.standard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.tasomaniac.openwith.floss.txt" afterPath="$PROJECT_DIR$/metadata/com.tasomaniac.openwith.floss.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.termux.api.txt" afterPath="$PROJECT_DIR$/metadata/com.termux.api.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.termux.styling.txt" afterPath="$PROJECT_DIR$/metadata/com.termux.styling.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.termux.txt" afterPath="$PROJECT_DIR$/metadata/com.termux.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.ubergeek42.WeechatAndroid.txt" afterPath="$PROJECT_DIR$/metadata/com.ubergeek42.WeechatAndroid.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.ultramegatech.ey.txt" afterPath="$PROJECT_DIR$/metadata/com.ultramegatech.ey.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.vackosar.searchbasedlauncher.txt" afterPath="$PROJECT_DIR$/metadata/com.vackosar.searchbasedlauncher.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.vlille.checker.txt" afterPath="$PROJECT_DIR$/metadata/com.vlille.checker.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.vonglasow.michael.satstat.txt" afterPath="$PROJECT_DIR$/metadata/com.vonglasow.michael.satstat.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.vrem.wifianalyzer.txt" afterPath="$PROJECT_DIR$/metadata/com.vrem.wifianalyzer.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.wolas.awesomewallpaper.txt" afterPath="$PROJECT_DIR$/metadata/com.wolas.awesomewallpaper.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.zeapo.pwdstore.txt" afterPath="$PROJECT_DIR$/metadata/com.zeapo.pwdstore.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/com.zoffcc.applications.zanavi.txt" afterPath="$PROJECT_DIR$/metadata/com.zoffcc.applications.zanavi.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/cx.ring.txt" afterPath="$PROJECT_DIR$/metadata/cx.ring.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/cz.martykan.forecastie.txt" afterPath="$PROJECT_DIR$/metadata/cz.martykan.forecastie.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.badaix.snapcast.txt" afterPath="$PROJECT_DIR$/metadata/de.badaix.snapcast.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.baumann.diaspora.txt" afterPath="$PROJECT_DIR$/metadata/de.baumann.diaspora.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.baumann.sieben.txt" afterPath="$PROJECT_DIR$/metadata/de.baumann.sieben.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.baumann.thema.txt" afterPath="$PROJECT_DIR$/metadata/de.baumann.thema.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.baumann.weather.txt" afterPath="$PROJECT_DIR$/metadata/de.baumann.weather.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.benibela.videlibri.txt" afterPath="$PROJECT_DIR$/metadata/de.benibela.videlibri.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.blau.android.txt" afterPath="$PROJECT_DIR$/metadata/de.blau.android.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.blinkt.openvpn.txt" afterPath="$PROJECT_DIR$/metadata/de.blinkt.openvpn.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.dotwee.micropinner.txt" afterPath="$PROJECT_DIR$/metadata/de.dotwee.micropinner.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.freewarepoint.whohasmystuff.txt" afterPath="$PROJECT_DIR$/metadata/de.freewarepoint.whohasmystuff.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.geeksfactory.opacclient.txt" afterPath="$PROJECT_DIR$/metadata/de.geeksfactory.opacclient.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.grobox.liberario.txt" afterPath="$PROJECT_DIR$/metadata/de.grobox.liberario.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.hfu.funfpunktnull.txt" afterPath="$PROJECT_DIR$/metadata/de.hfu.funfpunktnull.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.hoffmannsgimmickstaupunkt.txt" afterPath="$PROJECT_DIR$/metadata/de.hoffmannsgimmickstaupunkt.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.j4velin.pedometer.txt" afterPath="$PROJECT_DIR$/metadata/de.j4velin.pedometer.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.j4velin.wifiAutoOff.txt" afterPath="$PROJECT_DIR$/metadata/de.j4velin.wifiAutoOff.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.k3b.android.androFotoFinder.txt" afterPath="$PROJECT_DIR$/metadata/de.k3b.android.androFotoFinder.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.k3b.android.locationMapViewer.txt" afterPath="$PROJECT_DIR$/metadata/de.k3b.android.locationMapViewer.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.live.gdev.cherrymusic.txt" afterPath="$PROJECT_DIR$/metadata/de.live.gdev.cherrymusic.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.live.gdev.timetracker.txt" afterPath="$PROJECT_DIR$/metadata/de.live.gdev.timetracker.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.luhmer.owncloudnewsreader.txt" afterPath="$PROJECT_DIR$/metadata/de.luhmer.owncloudnewsreader.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.markusfisch.android.shadereditor.txt" afterPath="$PROJECT_DIR$/metadata/de.markusfisch.android.shadereditor.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.ph1b.audiobook.txt" afterPath="$PROJECT_DIR$/metadata/de.ph1b.audiobook.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.reimardoeffinger.quickdic.txt" afterPath="$PROJECT_DIR$/metadata/de.reimardoeffinger.quickdic.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.schildbach.wallet.txt" afterPath="$PROJECT_DIR$/metadata/de.schildbach.wallet.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.schildbach.wallet_test.txt" afterPath="$PROJECT_DIR$/metadata/de.schildbach.wallet_test.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/de.tap.easy_xkcd.txt" afterPath="$PROJECT_DIR$/metadata/de.tap.easy_xkcd.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/dev.ukanth.ufirewall.txt" afterPath="$PROJECT_DIR$/metadata/dev.ukanth.ufirewall.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/dk.kk.ibikecph.txt" afterPath="$PROJECT_DIR$/metadata/dk.kk.ibikecph.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/email.schaal.ocreader.txt" afterPath="$PROJECT_DIR$/metadata/email.schaal.ocreader.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/eu.faircode.netguard.txt" afterPath="$PROJECT_DIR$/metadata/eu.faircode.netguard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/eu.hydrologis.geopaparazzi.txt" afterPath="$PROJECT_DIR$/metadata/eu.hydrologis.geopaparazzi.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/eu.kanade.tachiyomi.txt" afterPath="$PROJECT_DIR$/metadata/eu.kanade.tachiyomi.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/eu.siacs.conversations.txt" afterPath="$PROJECT_DIR$/metadata/eu.siacs.conversations.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/eu.veldsoft.complica4.txt" afterPath="$PROJECT_DIR$/metadata/eu.veldsoft.complica4.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/eu.veldsoft.ithaka.board.game.txt" afterPath="$PROJECT_DIR$/metadata/eu.veldsoft.ithaka.board.game.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/fr.neamar.kiss.txt" afterPath="$PROJECT_DIR$/metadata/fr.neamar.kiss.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/fr.s13d.photobackup.txt" afterPath="$PROJECT_DIR$/metadata/fr.s13d.photobackup.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/fr.ybo.transportsbordeaux.txt" afterPath="$PROJECT_DIR$/metadata/fr.ybo.transportsbordeaux.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/fr.ybo.transportsrennes.txt" afterPath="$PROJECT_DIR$/metadata/fr.ybo.transportsrennes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/free.rm.skytube.oss.txt" afterPath="$PROJECT_DIR$/metadata/free.rm.skytube.oss.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/github.daneren2005.dsub.txt" afterPath="$PROJECT_DIR$/metadata/github.daneren2005.dsub.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/im.actor.cloud.free.txt" afterPath="$PROJECT_DIR$/metadata/im.actor.cloud.free.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/im.vector.alpha.txt" afterPath="$PROJECT_DIR$/metadata/im.vector.alpha.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/im.zom.messenger.txt" afterPath="$PROJECT_DIR$/metadata/im.zom.messenger.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/in.p1x.tanks_of_freedom.txt" afterPath="$PROJECT_DIR$/metadata/in.p1x.tanks_of_freedom.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/info.guardianproject.gpg.txt" afterPath="$PROJECT_DIR$/metadata/info.guardianproject.gpg.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/io.github.fvasco.pinpoi.txt" afterPath="$PROJECT_DIR$/metadata/io.github.fvasco.pinpoi.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/io.mapsquare.osmcontributor.txt" afterPath="$PROJECT_DIR$/metadata/io.mapsquare.osmcontributor.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/it.lucci.cm.greyscaletheme.txt" afterPath="$PROJECT_DIR$/metadata/it.lucci.cm.greyscaletheme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/it.sasabz.android.sasabus.txt" afterPath="$PROJECT_DIR$/metadata/it.sasabz.android.sasabus.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/it.skarafaz.mercury.txt" afterPath="$PROJECT_DIR$/metadata/it.skarafaz.mercury.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/jp.forkhub.txt" afterPath="$PROJECT_DIR$/metadata/jp.forkhub.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/me.ccrama.redditslide.txt" afterPath="$PROJECT_DIR$/metadata/me.ccrama.redditslide.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/me.echeung.cdflabs.txt" afterPath="$PROJECT_DIR$/metadata/me.echeung.cdflabs.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/me.sheimi.sgit.txt" afterPath="$PROJECT_DIR$/metadata/me.sheimi.sgit.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/me.shrimadhavuk.watransmitter.txt" afterPath="$PROJECT_DIR$/metadata/me.shrimadhavuk.watransmitter.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/net.alegen.android.netclip.txt" afterPath="$PROJECT_DIR$/metadata/net.alegen.android.netclip.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/net.bible.android.activity.txt" afterPath="$PROJECT_DIR$/metadata/net.bible.android.activity.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/net.osmand.plus.txt" afterPath="$PROJECT_DIR$/metadata/net.osmand.plus.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/net.programmierecke.radiodroid2.txt" afterPath="$PROJECT_DIR$/metadata/net.programmierecke.radiodroid2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/net.somethingdreadful.MAL.txt" afterPath="$PROJECT_DIR$/metadata/net.somethingdreadful.MAL.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/net.sourceforge.opencamera.txt" afterPath="$PROJECT_DIR$/metadata/net.sourceforge.opencamera.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/net.usikkert.kouchat.android.txt" afterPath="$PROJECT_DIR$/metadata/net.usikkert.kouchat.android.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/nitezh.ministock.txt" afterPath="$PROJECT_DIR$/metadata/nitezh.ministock.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/nl.implode.regenalarm.txt" afterPath="$PROJECT_DIR$/metadata/nl.implode.regenalarm.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/nl.mpcjanssen.simpletask.txt" afterPath="$PROJECT_DIR$/metadata/nl.mpcjanssen.simpletask.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.amoradi.syncopoli.txt" afterPath="$PROJECT_DIR$/metadata/org.amoradi.syncopoli.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.andstatus.app.txt" afterPath="$PROJECT_DIR$/metadata/org.andstatus.app.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.disrupted.rumble.txt" afterPath="$PROJECT_DIR$/metadata/org.disrupted.rumble.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.eehouse.android.xw4.txt" afterPath="$PROJECT_DIR$/metadata/org.eehouse.android.xw4.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.ethack.orwall.txt" afterPath="$PROJECT_DIR$/metadata/org.ethack.orwall.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.fdroid.fdroid.txt" afterPath="$PROJECT_DIR$/metadata/org.fdroid.fdroid.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.fitchfamily.android.wifi_backend.txt" afterPath="$PROJECT_DIR$/metadata/org.fitchfamily.android.wifi_backend.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.glucosio.android.txt" afterPath="$PROJECT_DIR$/metadata/org.glucosio.android.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.hwyl.sexytopo.txt" afterPath="$PROJECT_DIR$/metadata/org.hwyl.sexytopo.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.indywidualni.fblite.txt" afterPath="$PROJECT_DIR$/metadata/org.indywidualni.fblite.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.kde.kdeconnect_tp.txt" afterPath="$PROJECT_DIR$/metadata/org.kde.kdeconnect_tp.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.kore.kolabnotes.android.txt" afterPath="$PROJECT_DIR$/metadata/org.kore.kolabnotes.android.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.ligi.fast.txt" afterPath="$PROJECT_DIR$/metadata/org.ligi.fast.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.ligi.gobandroid_hd.txt" afterPath="$PROJECT_DIR$/metadata/org.ligi.gobandroid_hd.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.ligi.passandroid.txt" afterPath="$PROJECT_DIR$/metadata/org.ligi.passandroid.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.lumicall.android.txt" afterPath="$PROJECT_DIR$/metadata/org.lumicall.android.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.mariotaku.twidere.txt" afterPath="$PROJECT_DIR$/metadata/org.mariotaku.twidere.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.mozilla.fennec_fdroid.txt" afterPath="$PROJECT_DIR$/metadata/org.mozilla.fennec_fdroid.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.mozilla.firefox.txt" afterPath="$PROJECT_DIR$/metadata/org.mozilla.firefox.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.mozilla.mozstumbler.txt" afterPath="$PROJECT_DIR$/metadata/org.mozilla.mozstumbler.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.petero.droidfish.txt" afterPath="$PROJECT_DIR$/metadata/org.petero.droidfish.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.quantumbadger.redreader.txt" afterPath="$PROJECT_DIR$/metadata/org.quantumbadger.redreader.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.sufficientlysecure.keychain.txt" afterPath="$PROJECT_DIR$/metadata/org.sufficientlysecure.keychain.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.sufficientlysecure.viewer.txt" afterPath="$PROJECT_DIR$/metadata/org.sufficientlysecure.viewer.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.tasks.txt" afterPath="$PROJECT_DIR$/metadata/org.tasks.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.telegram.messenger.txt" afterPath="$PROJECT_DIR$/metadata/org.telegram.messenger.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.transdroid.search.txt" afterPath="$PROJECT_DIR$/metadata/org.transdroid.search.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.ttrssreader.txt" afterPath="$PROJECT_DIR$/metadata/org.ttrssreader.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.tvbrowser.tvbrowser.txt" afterPath="$PROJECT_DIR$/metadata/org.tvbrowser.tvbrowser.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.videolan.vlc.txt" afterPath="$PROJECT_DIR$/metadata/org.videolan.vlc.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.wikipedia.txt" afterPath="$PROJECT_DIR$/metadata/org.wikipedia.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.wordpress.android.txt" afterPath="$PROJECT_DIR$/metadata/org.wordpress.android.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.xcsoar.txt" afterPath="$PROJECT_DIR$/metadata/org.xcsoar.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/org.y20k.transistor.txt" afterPath="$PROJECT_DIR$/metadata/org.y20k.transistor.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/pe.moe.nori.txt" afterPath="$PROJECT_DIR$/metadata/pe.moe.nori.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/protect.babysleepsounds.txt" afterPath="$PROJECT_DIR$/metadata/protect.babysleepsounds.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/ro.mihai.tpt.txt" afterPath="$PROJECT_DIR$/metadata/ro.mihai.tpt.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/sh.ftp.rocketninelabs.meditationassistant.opensource.txt" afterPath="$PROJECT_DIR$/metadata/sh.ftp.rocketninelabs.meditationassistant.opensource.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/tof.cv.mpp.txt" afterPath="$PROJECT_DIR$/metadata/tof.cv.mpp.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/uk.co.ashtonbrsc.android.intentintercept.txt" afterPath="$PROJECT_DIR$/metadata/uk.co.ashtonbrsc.android.intentintercept.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata/ws.xsoh.etar.txt" afterPath="$PROJECT_DIR$/metadata/ws.xsoh.etar.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srclibs/android-logging-log4j.txt" afterPath="$PROJECT_DIR$/srclibs/android-logging-log4j.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/antifeatures.txt" afterPath="$PROJECT_DIR$/stats/antifeatures.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/categories.txt" afterPath="$PROJECT_DIR$/stats/categories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/disabled_apps.txt" afterPath="$PROJECT_DIR$/stats/disabled_apps.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/known_apks.txt" afterPath="$PROJECT_DIR$/stats/known_apks.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/latestapps.txt" afterPath="$PROJECT_DIR$/stats/latestapps.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/licenses.txt" afterPath="$PROJECT_DIR$/stats/licenses.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/repotypes.txt" afterPath="$PROJECT_DIR$/stats/repotypes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/update_check_modes.txt" afterPath="$PROJECT_DIR$/stats/update_check_modes.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/fdroiddata.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="fdroiddata.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -292,8 +34,8 @@
       <file leaf-file-name="com.nextcloud.client.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/metadata/com.nextcloud.client.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.561674">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.2826087">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -353,6 +95,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
@@ -366,81 +113,8 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="fdroiddata">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="metadata">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="fdroiddata">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="build">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="fdroiddata">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="build">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="com.nextcloud.client">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="fdroiddata">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="build">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="com.nextcloud.client">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="res">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="AndroidView">
-        <subPane />
-      </pane>
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -728,7 +402,6 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -742,6 +415,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -815,8 +489,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/metadata/com.nextcloud.client.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.561674">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metadata/com.nextcloud.client.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2826087">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding />
         </state>
       </provider>
