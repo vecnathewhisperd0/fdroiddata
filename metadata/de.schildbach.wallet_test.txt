@@ -6,7 +6,7 @@ Issue Tracker:https://github.com/schildbach/bitcoin-wallet/issues
 Changelog:https://github.com/schildbach/bitcoin-wallet/blob/HEAD/wallet/CHANGES
 Bitcoin:1HkX6X8EakdsgAysL93oKrWiXGPbFiG1xV
 
-Auto Name:Testnet3
+Auto Name:Bitcoin Wallet [testnet3]
 Summary:Testing version of Bitcoin
 Description:
 A bitcoin wallet, allowing you to store, send and receive bitcoins on your
@@ -553,6 +553,81 @@ Build:4.61-test,251
     scanignore=wallet/assets/ssl-keystore,wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
     build=$$MVN3$$ clean install -Denforcer.skip=true -DskipTests -f $$BitcoinJWallet$$/pom.xml
 
+Build:4.62-test,252
+    commit=v4.62
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml
+    scanignore=wallet/assets/ssl-keystore,wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -Denforcer.skip=true -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.63-test,253
+    commit=v4.63
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml
+    scanignore=wallet/assets/ssl-keystore,wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -Denforcer.skip=true -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.64-test,254
+    commit=v4.64
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml
+    scanignore=wallet/assets/ssl-keystore,wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -Denforcer.skip=true -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.65-test,255
+    commit=v4.65
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -Denforcer.skip=true -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.66-test,256
+    commit=v4.66
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -Denforcer.skip=true -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.67-test,257
+    commit=v4.67
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml && \
+        echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -Denforcer.skip=true -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.68-test,258
+    commit=v4.68
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml && \
+        echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -Denforcer.skip=true -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.69-test,259
+    commit=v4.69
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml && \
+        echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -Denforcer.skip=true -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
 Maintainer Notes:
 Do other wallet app first: can use tags here because security is less important.
 Don't forget the version name though!
@@ -560,5 +635,5 @@ Don't forget the version name though!
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:4.62-test
-Current Version Code:252
+Current Version:4.69-test
+Current Version Code:259

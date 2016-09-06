@@ -36,13 +36,24 @@ Build:2.2,17
     subdir=app
     gradle=yes
 
+Build:2.3,18
+    commit=v2.3
+    subdir=app
+    gradle=yes
+
 Build:2.4,22
     disable=google play services
     commit=v2.4
     subdir=app
     gradle=yes
 
+Build:2.7,34
+    disable=google play services
+    commit=v2.7
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:2.4
-Current Version Code:22
+Current Version:2.7
+Current Version Code:34

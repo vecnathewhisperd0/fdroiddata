@@ -5,7 +5,7 @@ Source Code:https://github.com/SimpleMobileTools/Simple-Music-Player
 Issue Tracker:https://github.com/SimpleMobileTools/Simple-Music-Player/issues
 Changelog:https://github.com/SimpleMobileTools/Simple-Music-Player/blob/HEAD/CHANGELOG.md
 
-Auto Name:Simple Music Player
+Auto Name:Music Player
 Summary:Basic music player with customizable widget
 Description:
 It takes every song from your device that is more than 20 seconds long, without
@@ -51,7 +51,27 @@ Build:1.12,12
     subdir=app
     gradle=yes
 
+Build:1.14,14
+    commit=1.14
+    subdir=app
+    gradle=yes
+
+Build:1.15,15
+    commit=1.15
+    subdir=app
+    gradle=yes
+
+Build:1.16,16
+    commit=1.16
+    subdir=app
+    gradle=yes
+
+Build:1.17,17
+    commit=1.17
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.12
-Current Version Code:12
+Current Version:1.17
+Current Version Code:17

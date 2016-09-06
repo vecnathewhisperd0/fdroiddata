@@ -706,7 +706,27 @@ Build:1.13.6,163
     gradle=free
     prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
 
+Build:1.13.7,165
+    commit=1.13.7
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.13.8,166
+    commit=1.13.8
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.13.9,168
+    commit=1.13.9
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.14.0,171
+    commit=1.14.0
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/play-services-gcm/d' -e '/maven {/,+2d' build.gradle
+
 Auto Update Mode:Version %v
-Update Check Mode:Tags
-Current Version:1.13.6
-Current Version Code:163
+Update Check Mode:Tags ^[0-9.]+$
+Current Version:1.14.0
+Current Version Code:171

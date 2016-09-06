@@ -40,7 +40,22 @@ Build:9.0,9
     subdir=theme
     gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:9.0
-Current Version Code:9
+Build:10.0,10
+    commit=68f7136481dd7b465ebcb3f9015b1b4a793f4747
+    subdir=theme
+    gradle=yes
+
+Build:11.0,11
+    commit=4f9a85c21d8abb3aa8a688c1878d781e9116b9d9
+    subdir=theme
+    gradle=yes
+
+Build:12.0,12
+    commit=12.0
+    subdir=theme
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:12.0
+Current Version Code:12
