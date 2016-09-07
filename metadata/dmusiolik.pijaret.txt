@@ -8,21 +8,32 @@ Auto Name:Pijaret
 Summary:Encrypt text by rotation
 Description:
 Pijaret is just another rotation encryption tool. The main purpose is to create
-a small encryption tool to make services like Whatsapp or Telegram a bit more
+a small encryption tool to make services like Whatsapp or Telegram A BIT more
 secure. The system is easy to understand. You share a numeric key with your
 partner in real life and en/de-crypt some important messages with it. (In case
-you don’t go outside you can just tormail your chat partner or stuff)
+you don’t go outside you can just tormail your chat partner or stuff) Warning!
+The encryptionlevel is verry low! DO NOT USE FOR SERIOUS PURPOSE!
 .
 
 Repo Type:git
 Repo:https://github.com/MrFlyingToasterman/Pijaret
 
-Build:1.3,1
-    commit=8b8ff598fb5e9a974f146d8f7d25539409e0f268
+Build:1.4,1
+    commit=1.4
+    subdir=app
+    gradle=yes
+
+Build:1.4,4
+    commit=89863e1499aca3a1fc440af21868682a7fafe9b7
+    subdir=app
+    gradle=yes
+
+Build:1.5,7
+    commit=7c04c566febb17e4189b541f1b21cc82778c8fe0
     subdir=app
     gradle=yes
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.4
-Current Version Code:1
+Current Version:1.5
+Current Version Code:7
