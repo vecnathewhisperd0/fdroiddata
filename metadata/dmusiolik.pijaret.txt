@@ -29,7 +29,7 @@ Build:1.4,4
     commit=89863e1499aca3a1fc440af21868682a7fafe9b7
     subdir=app
     gradle=yes
-    
+
 Build:1.5,7
     commit=7c04c566febb17e4189b541f1b21cc82778c8fe0
     subdir=app
