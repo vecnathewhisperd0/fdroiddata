@@ -28,12 +28,12 @@ Build:1.4,4
     subdir=app
     gradle=yes
 
-Build:1.5,7
+Build:1.5.2,7
     commit=7c04c566febb17e4189b541f1b21cc82778c8fe0
     subdir=app
     gradle=yes
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.5
+Current Version:1.5.2
 Current Version Code:7
