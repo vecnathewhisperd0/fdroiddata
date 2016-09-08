@@ -16,7 +16,7 @@ Repo:https://github.com/madmanteam/QDict
 Build:2.1.2,20160309
     commit=50a4367679c1761c47d79acf52dba076cddbfb2f
     subdir=qDict
-    rm=libs/nineoldandroids-2.4.0.jar
+    rm=qDict/libs/nineoldandroids-2.4.0.jar
     prebuild=sed -i "s/files(\'libs/nineoldandroids-2.4.0.jar\')/\'com.nineoldandroids:library:2.4.0\'"
 
 Auto Update Mode:None
