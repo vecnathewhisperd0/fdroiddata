@@ -7,11 +7,11 @@ Issue Tracker:https://github.com/kenCode-de/smartcoins-wallet/issues
 Auto Name:Smartcoins Wallet
 Summary:Use Smartcoins like bitBTC, bitUSD & bitEUR in 22 languages w/QR codes & more
 Description:
-Cryptocurrency volatility is now a thing of the past. BitShares’ Smartcoins are
-tokens that are market-pegged to individual fiat currencies like the Dollar,
-Euro, Yuan and assets like Businesses, Gold and Oil. Thousands of investors,
-savers, traders and employers now use Smartcoins to buy and sell goods and
-services globally.
+Cryptocurrency volatility is now a thing of the past. Smartcoins are tokens that
+are market-pegged to individual fiat currencies like the US Dollar, Euro, Yuan,
+Franc and assets like Businesses, Indexes, Gold and Oil. Thousands of merchants,
+investors, savers, traders and employers now use Smartcoins to buy and sell
+goods and services globally.
 
 Smartcoins Wallet now works at all BlockPay enabled merchants worldwide!
 
@@ -35,6 +35,43 @@ Smartcoins Wallet now works at all BlockPay enabled merchants worldwide!
 * Contacts can be organized by nickname labels. Notes and Avatars also supported!
 * Quickly and Easily share your payment address via email, chat, wireless, SMS, social media and telephone
 * Monitor all Balances and Transactions in real-time; UI/UX never needs a refresh
+* Faster, cheaper and safer than carrying cash or cards
+* Send any amount, anywhere, for just a few cents, and in 3 seconds or less!
+* Now in 44 languages!
+
+—------------— Roadmap —------------—
+
+v1.1.0
+
+* Support for Bitcoin blockchain so that all BTC holders can benefit from BlockPay merchants, eReceipts, Loyalty Points, Overdraft Protection, multiple currencies and asset storage, faster and more scalable network, 44 languages, named accounts, Stealth, etc
+
+v1.2.0
+
+* Support for Dash blockchain, same benefits as above
+
+v1.3.0
+
+* Bill-Pay (recurring and scheduled payments)
+* NFC support (send and receive and for older phones)
+
+v2.0.0
+
+* Stealth (100% anon/untraceable, zero-knowledge tx); Send/recv public/Stealth Accounts/Contacts
+
+v2.1.0
+
+* IPFS integration for storing/retrieving backups, audio alert files and avatars, etc.
+* Shared Accounts (with your significant Other)
+* Place pre-orders (so your coffee is paid and ready for you by the time you get there
+
+—---------— Contact Us —---------— BitShares Munich
+
+* [http://BitShares-Munich.de]
+* [http://meetup.com/BitShares-Munich] (meet us in person!)
+* [http://youtube.com/BitSharesMunich-de] (explainer vids too!)
+
+Bugs or Errors? Please let us know:
+[https://github.com/kenCode-de/smartcoins-wallet/issues]
 .
 
 Repo Type:git
