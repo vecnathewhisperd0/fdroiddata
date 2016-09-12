@@ -1,0 +1,26 @@
+Categories:Navigation
+License:GPLv3+
+Web Site:https://github.com/Swati4star/Mobile-store-estimotifier/blob/HEAD/README.md
+Source Code:https://github.com/Swati4star/Mobile-store-estimotifier
+Issue Tracker:https://github.com/Swati4star/Mobile-store-estimotifier/issues
+Changelog:https://github.com/Swati4star/Mobile-store-estimotifier/releases
+
+Summary:An app using Estimote beacon
+Description:
+One Estimote beacon in each Mobile store and with that users can get numerous
+facilities. The data related to that specific airtel store, along with the
+Estimote beacon ID, are uploaded on the cloud MySQL database.
+.
+
+Repo Type:git
+Repo:https://github.com/Swati4star/Mobile-store-estimotifier.git
+
+Build:1.0,1
+    commit=v1.0
+    subdir=android/app
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:1.0
+Current Version Code:1
