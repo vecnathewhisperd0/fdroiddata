@@ -1,0 +1,22 @@
+Categories:Games
+License:GNU General Public Licence Version 3
+Web Site:http://www.paulscode.com
+Source Code:https://github.com/fzurita/mupen64plus-ae
+Issue Tracker:https://github.com/fzurita/mupen64plus-ae/issues
+
+Summary:Mupen64Plus front end
+Description:
+This is a Mupen64Plus front end for Android. Plugin and core are included. RSP:
+rsp-hle, cxd4 Video: GLideN64, Glide64, Rice, glN64, Angrylion
+.
+
+Repo Type:git
+Repo:https://github.com/fzurita/mupen64plus-ae
+
+Build:3.0.10 (beta),85
+    commit=fz-master
+    gradle=yes
+    scandelete=app/libs/ouya-sdk.jar,app/src/main/jni/GLES3/lib/armeabi-v7a/libGLESv3.so,app/src/main/jni/GLES3/lib/x86/libGLESv3.so,app/src/main/jni/SLES/lib/arm/libOpenSLES.so,app/src/main/jni/SLES/lib/x86/libOpenSLES.so,app/src/main/jni/android_framework/lib/armeabi-v7a/libui.so,app/src/main/jni/android_framework/lib/x86/libui.so
+
+Auto Update Mode:Version ver_%c
+Update Check Mode:Tags
