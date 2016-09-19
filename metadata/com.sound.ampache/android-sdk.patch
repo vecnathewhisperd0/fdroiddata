@@ -1,0 +1,19 @@
+Index: amdroid/app/build.gradle
+===================================================================
+--- amdroid.orig/app/build.gradle
++++ amdroid/app/build.gradle
+@@ -1,6 +1,6 @@
+ apply plugin: 'android'
+ android {
+-    compileSdkVersion 19
++    compileSdkVersion 21
+     buildToolsVersion '20.0.0'
+ 
+     defaultConfig {
+@@ -17,4 +17,4 @@ lintOptions { disable "MissingTranslatio
+ }
+ 
+ dependencies {
+-}
+\ No newline at end of file
++}

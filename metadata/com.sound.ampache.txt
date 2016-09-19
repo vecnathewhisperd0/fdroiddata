@@ -16,6 +16,7 @@ Repo:https://github.com/Dejvino/amdroid
 Build:2.0.0,200
     commit=f76e43b
     subdir=app
+    patch=android-sdk.patch
     gradle=yes
     prebuild=sed -i -e '/buildTypes/i\lintOptions { disable "MissingTranslation" }' build.gradle
 
