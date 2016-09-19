@@ -16,9 +16,15 @@ Repo:https://github.com/madmanteam/QDict
 Build:2.1.2,20160309
     commit=50a4367679c1761c47d79acf52dba076cddbfb2f
     subdir=qDict
-    rm=qDict/libs/nineoldandroids-2.4.0.jar
     patch=qdict.diff
     gradle=yes
+    rm=qDict/libs/nineoldandroids-2.4.0.jar
+
+Maintainer Notes:
+There one linter error we have temporarily disabled, so that the app builds. 
+In case something goes wrong, please complain to upstream. 
+Compare https://github.com/madmanteam/QDict/issues/5
+.
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
