@@ -1,0 +1,35 @@
+Categories:Time
+License:GPLv3
+Web Site:https://github.com/DsLNeXuS/Rashr/blob/master/README.md
+Source Code:https://github.com/DsLNeXuS/Rashr
+Issue Tracker:https://github.com/DsLNeXuS/Rashr/issues
+
+Auto Name:Rashr
+Summary: The mobile Android Flash-Tool
+Description:
+This app flashes and backups your device recovery and kernel without rebooting it very fast and easy without a PC or any outside influence.
+
+This app have over 1500 build-in recovery IMGs (ClockworkMod/TWRP/Philz) of course you can choose other IMGs from internal and external storage.
+
+Over 90% of all devices will be supported by the App.
+
+This project is fully open-source if you want to help me with unsupported devices you can use the report button or contact me over XDA.
+
+★Open-Source (on GitHub: https://github.com/dslnexus/Rashr) ★OpenRecovery Script manager to flash ZIPs ★Over 1500 Build-in Recoveries (Clockworkmod/Touch, Team Win Recovery Project and Philz-Touch) ★Flash Kernel and Recoveries without PC ★Flash already downloaded IMGs from internal and external storage ★Backup Kernel and Recovery IMGs without PC ★Needs Root ★Full command logging for more control what this App is doing ★If you don't want to support my work you are able to disable the Ads ★Free full app without Ads and any restrictions
+
+★Support my Work only if you want (with Ads or In-App donations)
+
+.
+
+Repo Type:git
+Repo:https://github.com/DsLNeXuS/Rashr.git
+
+Build:2.3.14,2314
+    commit=2.3.14
+    subdir=RashrApp
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags ^[0-9.v]*$
+Current Version:2.3.14
+Current Version Code:2314
