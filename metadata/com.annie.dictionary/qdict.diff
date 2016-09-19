@@ -16,11 +16,15 @@ index 4b2e0b4..ac6f045 100644
              sourceCompatibility JavaVersion.VERSION_1_7
              targetCompatibility JavaVersion.VERSION_1_7
 diff --git a/qDict/build.gradle b/qDict/build.gradle
-index 12fd099..22f4f7d 100644
+index 12fd099..f10584f 100644
 --- a/qDict/build.gradle
 +++ b/qDict/build.gradle
-@@ -29,9 +29,14 @@ android {
-             proguardFiles 'proguard.cfg'
+@@ -26,12 +26,17 @@ android {
+     buildTypes {
+         release {
+             minifyEnabled true
+-            proguardFiles 'proguard.cfg'
++            proguardFiles getDefaultProguardFile('proguard-android.txt')
          }
      }
 +    
