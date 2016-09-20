@@ -193,6 +193,7 @@ Build:0.4.2b,129
     commit=v0.4.2b
     subdir=core
     gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
     preassemble=SPD-classes:ndkBuild
 
 Auto Update Mode:None
