@@ -1,0 +1,29 @@
+Categories:Internet
+License:GPLv2+
+Web Site:https://actor.im
+Source Code:https://github.com/actorapp/actor-android-open
+Issue Tracker:https://github.com/actorapp/actor-android-open/issues
+
+Auto Name:Actor.im
+Summary:Actor Android Open Client
+Description:
+This repository contains Free (GPL and Google-Free) version of Android client 
+for Actor platform.
+.
+
+Repo Type:git
+Repo:https://github.com/actorapp/actor-android-open.git
+
+Build:1.5.5,1
+    commit=v1.5.5
+    gradle=yes
+
+Build:3.0,3
+    commit=v3.0
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Vercode Operation:%c*10 + 3 
+Current Version:3.0
+Current Version Code:3
