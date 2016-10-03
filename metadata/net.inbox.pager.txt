@@ -1,4 +1,3 @@
-AntiFeatures:NonFreeAssets
 Categories:Internet
 License:GPLv3
 Web Site:https://github.com/itprojects/InboxPager/blob/HEAD/README.md
@@ -14,17 +13,12 @@ E-mail client that supports IMAP, POP and SMTP protocols using SSL/TLS.
 Repo Type:git
 Repo:https://github.com/itprojects/InboxPager.git
 
-Build:1.0,1
-    commit=28193bcd1165a9cd012dfc39cc38162c81eb4925
-    subdir=InboxPager
-    gradle=yes
-
-Build:1.1,2
-    commit=90bee8f98577266c929f7c73a97f01e768d69942
+Build:1.0,3
+    commit=4354f83840e181ce0fe6b135f5d05b32fbd210ab
     subdir=InboxPager
     gradle=yes
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.1
-Current Version Code:2
+Current Version:1.0
+Current Version Code:3
