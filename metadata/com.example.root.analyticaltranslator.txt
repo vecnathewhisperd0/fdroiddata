@@ -15,19 +15,18 @@ explains mistakes. A pedagogical translator for language learners that detects
 and corrects gender,conjugation and declination discrepancies as well as some
 orthographic mistakes.
 
-Only translation from German to Spanish is already implemented (English is
-being implemented right now).
+Only translation from German to Spanish is already implemented.
 .
 
 Repo Type:git
 Repo:https://github.com/xpheres/AndroidAnalyticalTranslator
 
-Build:0.01,1
+Build:0.06,6
     commit=9622285934dbf9fd4497618c43999d673f1ea4e7
     subdir=app
     gradle=yes
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:0.01
-Current Version Code:1
+Current Version:0.06
+Current Version Code:6
