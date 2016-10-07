@@ -12,7 +12,7 @@ usability features:
 
 * Convenient lock screen and home screen widgets provide instant tokencodes without navigating to an app.
 * Optionally save your PIN.
-* Supports SDTID files, importing http://127.0.0.1/... tokens from email, and QR tokens.
+* Supports SDTID files, importing 127.0.0.1/... tokens from email, and QR tokens.
 
 Requirements:
 
@@ -69,4 +69,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:0.91
 Current Version Code:919
-

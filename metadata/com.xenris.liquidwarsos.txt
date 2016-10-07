@@ -7,9 +7,9 @@ Issue Tracker:https://github.com/xenris/liquid-wars-android/issues
 Auto Name:Liquid Wars OS
 Summary:Liquid War game remake
 Description:
-Liquid Wars is a complete rewrite and redesign of the original
-game [http://www.ufoot.org/liquidwar/ Liquid War], but has
-been designed for the Android operating system.
+Liquid Wars is a complete rewrite and redesign of the original game
+[http://www.ufoot.org/liquidwar/ Liquid War], but has been designed for the
+Android operating system.
 .
 
 Repo Type:git
@@ -27,4 +27,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.42
 Current Version Code:11
-

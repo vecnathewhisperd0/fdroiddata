@@ -1,0 +1,58 @@
+Categories:Internet,Time
+License:GPLv3
+Author Name:Gregor Santner
+Author Email:gdev@live.de
+Web Site:https://github.com/gsantner/kimai-android/blob/HEAD/README.md
+Source Code:https://github.com/gsantner/kimai-android
+Issue Tracker:https://github.com/gsantner/kimai-android/issues
+Donate:https://gsantner.github.io/donate/#r
+Bitcoin:1B9ZyYdQoY9BxMe9dRUEKaZbJWsbQqfXU5
+
+Auto Name:Kimai
+Summary:Wrapper for Kimai
+Description:
+Client for the time managment software [http://www.kimai.org/ Kimai]. This app
+makes mobile tracking and logging into your kimai existing installation easier.
+If you want to be auto logged in after application start check the appropiate
+box.
+
+Normally you have to open your browser, go to favourites, click your kimai page,
+input data. Now you only have to do the last step every time you want to add
+entries.
+.
+
+Repo Type:git
+Repo:https://github.com/gsantner/kimai-android.git
+
+Build:1.1,7
+    commit=v1.1
+
+Build:1.11,8
+    commit=v1.11
+    subdir=app
+    gradle=yes
+
+Build:1.12,9
+    commit=v1.12
+    subdir=app
+    gradle=yes
+
+Build:1.13,10
+    commit=v1.13
+    subdir=app
+    gradle=yes
+
+Build:1.14,11
+    commit=v1.14
+    subdir=app
+    gradle=yes
+
+Build:1.2.0,12
+    commit=v1.2.0
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:1.2.0
+Current Version Code:12

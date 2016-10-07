@@ -127,6 +127,7 @@ Build:3.1.5,70
     buildjni=../libraries/Jumble/src/main/jni
 
 Build:3.2.0,71
+    disable=retagged
     commit=3.2.0
     subdir=app
     submodules=yes
@@ -140,8 +141,14 @@ Build:3.2.0,72
     gradle=official
     buildjni=../libraries/Jumble/src/main/jni
 
+Build:3.3.0-rc1,73
+    commit=3.3.0-rc1
+    subdir=app
+    submodules=yes
+    gradle=official
+    buildjni=../libraries/Jumble/src/main/jni
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:3.2.0
-Current Version Code:72
-
+Current Version:3.3.0-rc1
+Current Version Code:73

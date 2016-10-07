@@ -1,8 +1,8 @@
 Categories:Internet
 License:GPLv3
-Web Site:http://sourceforge.net/p/yubnubapp
-Source Code:http://sourceforge.net/p/yubnubapp/code
-Issue Tracker:http://sourceforge.net/p/yubnubapp/tickets
+Web Site:https://sourceforge.net/p/yubnubapp
+Source Code:https://sourceforge.net/p/yubnubapp/code
+Issue Tracker:https://sourceforge.net/p/yubnubapp/tickets
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2WP5VHVRZEP54
 
 Name:YubNub Command Line
@@ -10,8 +10,8 @@ Auto Name:YubNub Command Line AdFree
 Summary:Search the web and get answers
 Description:
 Yubnub is a social command line for the web. By typing short commands into the
-widget you can search
-various websites, translate words and even fetch random quotes from the Simpsons!
+widget you can search various websites, translate words and even fetch random
+quotes from the Simpsons!
 .
 
 Repo Type:git
@@ -33,4 +33,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.1.5
 Current Version Code:7
-

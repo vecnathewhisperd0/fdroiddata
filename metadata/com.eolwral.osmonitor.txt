@@ -3,6 +3,7 @@ License:Apache2
 Web Site:
 Source Code:https://github.com/eolwral/OSMonitor
 Issue Tracker:https://github.com/eolwral/OSMonitor/issues
+Changelog:https://github.com/eolwral/OSMonitor/blob/HEAD/README.md#change-log
 Donate:https://github.com/eolwral/OSMonitor
 
 Auto Name:OS Monitor
@@ -12,13 +13,9 @@ Description:
 * Connection: display every tcp or udp network connection, and query it via WHOIS. There is an option to display the reverse-ip lookup map in OpenStreetMap.
 * Misc: monitor processor, battery and file system.
 * Message: check dmesg or logcat in real-time.
-
-[https://github.com/eolwral/OSMonitor/blob/HEAD/README.md#change-log Changelog] , [https://github.com/eolwral/OSMonitor/blob/HEAD/CHANGELOG.md Changelog (Old releases)]
 .
 
 Repo Type:git
-# For 2.0.5
-#Repo:https://code.google.com/p/android-os-monitor.osmonitor
 Repo:https://github.com/eolwral/OSMonitor
 
 Build:2.0.5,28
@@ -38,7 +35,6 @@ Build:3.0.6.4,41
     build=$$NDK$$/ndk-build && \
         mv libs/armeabi/osmcore assets/osmcore_arm && \
         mv libs/x86/osmcore assets/osmcore_x86
-    buildjni=no
 
 Build:3.0.6.5,42
     commit=330fc16
@@ -49,7 +45,6 @@ Build:3.0.6.5,42
     build=$$NDK$$/ndk-build && \
         mv libs/armeabi/osmcore assets/osmcore_arm && \
         mv libs/x86/osmcore assets/osmcore_x86
-    buildjni=no
 
 Build:3.0.6.6,43
     commit=3.0.6.6
@@ -60,7 +55,6 @@ Build:3.0.6.6,43
     build=$$NDK$$/ndk-build && \
         mv libs/armeabi/osmcore assets/osmcore_arm && \
         mv libs/x86/osmcore assets/osmcore_x86
-    buildjni=no
 
 Build:3.0.7.0,48
     disable=doesn't show any data
@@ -72,7 +66,6 @@ Build:3.0.7.0,48
     build=$$NDK$$/ndk-build && \
         mv libs/armeabi/osmcore assets/osmcore_arm && \
         mv libs/x86/osmcore assets/osmcore_x86
-    buildjni=no
 
 Build:3.0.7.2,50
     commit=3.0.7.2
@@ -83,7 +76,6 @@ Build:3.0.7.2,50
     build=$$NDK$$/ndk-build && \
         mv libs/armeabi/osmcore assets/osmcore_arm && \
         mv libs/x86/osmcore assets/osmcore_x86
-    buildjni=no
 
 Build:3.0.8.2,53
     commit=3.0.8.2
@@ -95,7 +87,6 @@ Build:3.0.8.2,53
     build=$$NDK$$/ndk-build && \
         mv libs/armeabi/osmcore assets/osmcore_arm && \
         mv libs/x86/osmcore assets/osmcore_x86
-    buildjni=no
 
 Build:3.0.9.0,54
     commit=3.0.9.0
@@ -233,7 +224,6 @@ Build:3.4.0.9,81
         mv libs/armeabi/osmcore_pie assets/osmcore_arm_pie && \
         mv libs/mips/osmcore_pie assets/osmcore_mips_pie && \
         mv libs/x86/osmcore_pie assets/osmcore_x86_pie
-    ndk=r10d
 
 Build:3.4.1.0,82
     commit=862a43b84acf3c335e2ea71f946cc2ab60bca79c
@@ -254,10 +244,40 @@ Build:3.4.1.0,82
         mv libs/armeabi/osmcore_pie assets/osmcore_arm_pie && \
         mv libs/mips/osmcore_pie assets/osmcore_mips_pie && \
         mv libs/x86/osmcore_pie assets/osmcore_x86_pie
-    ndk=r10d
+
+Build:3.5.0.6,89
+    commit=294e28d610fdcf61b721d7d5b242eaf21b9c2554
+    subdir=app
+    submodules=yes
+    gradle=yes
+    build=cd src/main && \
+        $$NDK$$/ndk-build -j4 && \
+        mv libs/armeabi/osmcore assets/osmcore_arm && \
+        mv libs/mips/osmcore assets/osmcore_mips && \
+        mv libs/x86/osmcore assets/osmcore_x86 && \
+        mv libs/armeabi/osmcore_pie assets/osmcore_arm_pie && \
+        mv libs/mips/osmcore_pie assets/osmcore_mips_pie && \
+        mv libs/x86/osmcore_pie assets/osmcore_x86_pie
+
+Build:3.5.0.7,90
+    commit=740ca44d07c83cd13dd1208943849d02031d7c08
+    subdir=app
+    submodules=yes
+    gradle=yes
+    build=cd src/main && \
+        $$NDK$$/ndk-build -j4 && \
+        mv libs/armeabi/osmcore assets/osmcore_arm && \
+        mv libs/mips/osmcore assets/osmcore_mips && \
+        mv libs/x86/osmcore assets/osmcore_x86 && \
+        mv libs/armeabi/osmcore_pie assets/osmcore_arm_pie && \
+        mv libs/mips/osmcore_pie assets/osmcore_mips_pie && \
+        mv libs/x86/osmcore_pie assets/osmcore_x86_pie
+
+Maintainer Notes:
+ndkMove doesn't work for some reason, so build the native stuff and move it ourselves.
+.
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:3.4.1.0
-Current Version Code:82
-
+Current Version:3.5.0.7
+Current Version Code:90

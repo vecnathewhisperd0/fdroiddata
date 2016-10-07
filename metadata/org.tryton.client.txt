@@ -1,8 +1,8 @@
-Categories:Office
+Categories:Money
 License:GPLv3
-Web Site:http://trac.scil.coop/tryton_android
-Source Code:http://trac.scil.coop/tryton_android/browser
-Issue Tracker:http://trac.scil.coop/tryton_android/report
+Web Site:
+Source Code:
+Issue Tracker:
 
 Auto Name:Tryton
 Summary:Enterprise resource management
@@ -14,8 +14,8 @@ device.
 It is a generic client like the gtk client, and should be compatible with all
 Tryton modules. It also contains an SVG parser for Android.
 
-Use demo as user and password with the default configuration to connect
-to Tryton demo server.
+Use demo as user and password with the default configuration to connect to
+Tryton demo server.
 .
 
 Repo Type:git
@@ -28,4 +28,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:0.6
 Current Version Code:6
-

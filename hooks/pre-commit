@@ -1,10 +1,14 @@
-#!/bin/sh
-#
-# Simple pre-commit hook to check that there are no errors in the fdroid
-# metadata files.
+#!/bin/bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
 
 # Redirect output to stderr.
 exec 1>&2
 
-# If there are metadata errors, print the stack traces and fail.
-exec fdroid readmeta
+apps="$(git diff --cached --name-only --diff-filter=ACM | sed -n 's@metadata/\(.*\).txt@\1@p')"
+
+if [[ -n "$apps" ]]; then
+	fdroid lint -f $apps
+fi

@@ -1,4 +1,4 @@
-Categories:Office
+Categories:Time
 License:GPLv3
 Web Site:http://sufficientlysecure.org/index.php/android-apps/#birthday
 Source Code:https://github.com/dschuermann/birthday-adapter
@@ -8,7 +8,8 @@ Donate:http://sufficientlysecure.org/index.php/android-apps/#birthday
 Auto Name:Birthday Adapter
 Summary:Birthday Calendar Adapter
 Description:
-Adapter that makes the birthdays from your contacts available as a standard calendar.
+Adapter that makes the birthdays from your contacts available as a standard
+calendar.
 .
 
 Repo Type:git
@@ -47,4 +48,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:1.17
 Current Version Code:18
-

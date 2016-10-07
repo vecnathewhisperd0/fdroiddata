@@ -1,9 +1,9 @@
 AntiFeatures:NonFreeNet,NonFreeDep
-Categories:Internet,Office
+Categories:Internet
 License:MIT
 Web Site:
-Source Code:https://github.com/ilpianista/forvodroid
-Issue Tracker:https://github.com/ilpianista/forvodroid/issues
+Source Code:
+Issue Tracker:
 
 Auto Name:ForvoDroid
 Summary:Check pronunciations
@@ -11,8 +11,8 @@ Description:
 Check for the pronunciation of any word, in any language available on
 [http://forvo.com/ Forvo], by tapping on it after a quickly search.
 
-AntiFeature: You need a free-of-charge Forvo API Key to use this app,
-please visit [http://api.forvo.com/ Forvo's API page].
+AntiFeature: You need a free-of-charge Forvo API Key to use this app, please
+visit [http://api.forvo.com/ Forvo's API page].
 
 Warning: This app may crash on some HTC and Acer devices.
 .
@@ -65,10 +65,12 @@ Build:1.2,3
 Maintainer Notes:
 Some/older HTC and Acer handsets ship with broken gson. Upstream used a
 repackaged gson lib, which we don't.
+
+Upstream removed binaries and source.
 .
 
-Auto Update Mode:Version %v
-Update Check Mode:Tags
+Archive Policy:0 versions
+Auto Update Mode:None
+Update Check Mode:Static
 Current Version:1.2
 Current Version Code:3
-

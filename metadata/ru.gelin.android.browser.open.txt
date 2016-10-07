@@ -1,4 +1,4 @@
-Categories:Office,Internet
+Categories:Internet,Reading
 License:GPLv3
 Web Site:https://bitbucket.org/gelin/open-in-browser
 Source Code:https://bitbucket.org/gelin/open-in-browser/src
@@ -7,8 +7,8 @@ Issue Tracker:https://bitbucket.org/gelin/open-in-browser/issues
 Auto Name:Open in browser
 Summary:Open local HTML files in a browser
 Description:
-Adds ability to open HTML/text/image files saved to SD card from a file
-manager directly in the browser.
+Adds ability to open HTML/text/image files saved to SD card from a file manager
+directly in the browser.
 .
 
 Repo Type:hg
@@ -27,4 +27,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:0.0.7
 Current Version Code:8
-

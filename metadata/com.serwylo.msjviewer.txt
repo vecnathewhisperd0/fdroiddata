@@ -1,5 +1,5 @@
 AntiFeatures:NonFreeNet
-Categories:Internet
+Categories:Sports & Health
 License:GPLv3
 Web Site:
 Source Code:https://github.com/pserwylo/msjviewer
@@ -8,11 +8,11 @@ Issue Tracker:https://github.com/pserwylo/msjviewer/issues
 Auto Name:Mobile MSJ
 Summary:Unofficial client for MSJ
 Description:
-This is an unofficial app for the St John Ambulance Victoria MSJ website,
-where first aid volunteers register their interest in attending events.
+This is an unofficial app for the St John Ambulance Victoria MSJ website, where
+first aid volunteers register their interest in attending events.
 
-It will only be useful to St John Ambulance Victoria members, who
-have access to the MSJ website.
+It will only be useful to St John Ambulance Victoria members, who have access to
+the MSJ website.
 
 The original website is not mobile friendly, and so this app provides an
 alternative way to view the site. It supports viewing upcoming events,
@@ -41,4 +41,3 @@ Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:0.5
 Current Version Code:5
-

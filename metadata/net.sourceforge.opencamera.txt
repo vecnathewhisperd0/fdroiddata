@@ -1,8 +1,9 @@
 Categories:Multimedia
 License:GPLv3+
 Web Site:http://opencamera.sourceforge.net
-Source Code:http://sourceforge.net/p/opencamera/code
-Issue Tracker:http://sourceforge.net/p/opencamera/tickets
+Source Code:https://sourceforge.net/p/opencamera/code
+Issue Tracker:https://sourceforge.net/p/opencamera/tickets
+Changelog:http://opencamera.sourceforge.net/#history
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=2WCE756ZME9JG&lc=GB&item_name=Open%20Camera%20donation&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest
 Bitcoin:1LKCFto9SQGqtcvqZxHkqDPqNjSnfMmsow
 
@@ -10,6 +11,7 @@ Auto Name:Open Camera
 Summary:Camera App
 Description:
 A feature rich camera application, including:
+
 * auto-stabilise option
 * multitouch zoom
 * flash/torch
@@ -24,8 +26,6 @@ A feature rich camera application, including:
 * configurable gui
 * geotagging
 * external microphone support
-
-[http://opencamera.sourceforge.net/#history ChangeLog]
 .
 
 Repo Type:git
@@ -88,8 +88,40 @@ Build:1.24,28
 Build:1.25,29
     commit=v1.25
 
+Build:1.26,30
+    commit=v1.26
+
+Build:1.27,31
+    commit=v1.27
+
+Build:1.28,32
+    commit=v1.28
+
+Build:1.28.1,33
+    commit=v1.28.1
+
+Build:1.29,34
+    commit=v1.29
+
+Build:1.30,35
+    commit=v1.30
+
+Build:1.30.1,36
+    commit=v1.30.1
+
+Build:1.31,37
+    commit=v1.31
+
+Build:1.32,38
+    commit=v1.32
+
+Build:1.32.1,39
+    commit=v1.32.1
+
+Build:1.33,40
+    commit=v1.33
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.25
-Current Version Code:29
-
+Current Version:1.33
+Current Version Code:40

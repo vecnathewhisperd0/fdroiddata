@@ -1,14 +1,14 @@
-Categories:Office
+Categories:Writing
 License:Apache2
-Web Site:https://code.google.com/p/bho
-Source Code:https://code.google.com/p/bho/source
-Issue Tracker:https://code.google.com/p/bho/issues
+Web Site:
+Source Code:https://github.com/iamironrabbit/bho
+Issue Tracker:https://github.com/iamironrabbit/bho/issues
 
 Auto Name:Tibetan Keyboard
 Summary:Keyboard for Tibetan script
 Description:
-Basic Tibetan keyboard; doesn't require special fonts.
-Good for use with [[org.ironrabbit]].
+Basic Tibetan keyboard; doesn't require special fonts. Good for use with
+[[org.ironrabbit]].
 .
 
 Repo Type:srclib
@@ -28,4 +28,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:0.2
 Current Version Code:12
-

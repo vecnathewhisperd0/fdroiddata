@@ -9,8 +9,8 @@ Donate:http://citux.tip.me
 Auto Name:TD
 Summary:Watch Twitch video streams
 Description:
-Watch video streams about gaming with this simple client for
-the [http://twitch.tv Twitch] streaming service.
+Watch video streams about gaming with this simple client for the
+[http://twitch.tv Twitch] streaming service.
 .
 
 Repo Type:git
@@ -24,4 +24,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:0.5.0
 Current Version Code:16
-

@@ -4,15 +4,16 @@ License:Apache2
 Web Site:
 Source Code:https://github.com/microg/AppleWifiNlpBackend
 Issue Tracker:https://github.com/microg/AppleWifiNlpBackend/issues
+Changelog:https://github.com/microg/AppleWifiNlpBackend/releases
 
-Auto Name:AppleWifiNlpBackend
+Auto Name:Apple UnifiedNlp Backend
 Summary:UnifiedNlp location provider (Apple WiFi)
 Description:
-[[com.google.android.gms]] backend that uses Apple's service to resolve WiFi locations.
+[[com.google.android.gms]] backend that uses Apple's service to resolve WiFi
+locations.
 
-Location calculation is done onboard and wifi locations are cached to minimize data usage.
-
-[https://github.com/microg/AppleWifiNlpBackend/releases Changelog]
+Location calculation is done onboard and wifi locations are cached to minimize
+data usage.
 .
 
 Repo Type:git
@@ -46,8 +47,23 @@ Build:1.1.1,10101
     submodules=yes
     gradle=yes
 
+Build:1.2.0,10200
+    commit=v1.2.0
+    submodules=yes
+    gradle=yes
+
+Build:1.2.1,20037
+    disable=weird version output
+    commit=v1.2.1
+    submodules=yes
+    gradle=yes
+
+Build:1.2.2,20038
+    commit=v1.2.2
+    submodules=yes
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.1.1
-Current Version Code:10101
-
+Current Version:1.2.2
+Current Version Code:20038

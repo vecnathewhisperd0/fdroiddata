@@ -1,19 +1,22 @@
 Categories:Internet
 License:GPLv3
+Author Name:Daniel Gultsch
 Web Site:
 Source Code:https://github.com/siacs/Conversations
 Issue Tracker:https://github.com/siacs/Conversations/issues
+Changelog:https://github.com/siacs/Conversations/blob/HEAD/CHANGELOG.md
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CW3SYT3KG5PDL
 FlattrID:3531619
 Bitcoin:1NxSU1YxYzJVDpX1rcESAA3NJki7kRgeeu
 
 Auto Name:Conversations
-Summary:XMPP client
+Summary:Chat using the XMPP network
 Description:
 XMPP client designed with ease of use and security in mind.
 
 Features:
-* End-to-end encryption with either OTR or OpenPGP
+
+* End-to-end encryption with either OTR, OpenPGP and [http://conversations.im/omemo/ OMEMO]
 * Sending and receiving images
 * Indication when your contact has read your message
 * Intuitive UI that follows Android Design guidelines
@@ -25,6 +28,7 @@ Features:
 * Very low impact on battery life
 
 Noteable XEPs:
+
 * XEP-0065: SOCKS5 Bytestreams
 * XEP-0163: Personal Eventing Protocol
 * XEP-0191: Blocking Command
@@ -33,8 +37,6 @@ Noteable XEPs:
 * XEP-0280: Message Carbons
 * XEP-0313: Message Archive Management
 * XEP-0352: Client State Indication
-
-[https://github.com/siacs/Conversations/blob/development/CHANGELOG.md Changelog]
 .
 
 Repo Type:git
@@ -419,17 +421,6 @@ Build:1.2.0-beta,54
         popd && \
         sed -i -e '/mavenCentral/amavenLocal()\n' -e '/maven {/d' -e '/jitsi.github.com/,+1d' -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
 
-#uncomment this build once vc56+ is added via auto-update
-#Build:1.2.0,56
-#    commit=1.2.0
-#    gradle=yes
-#    srclibs=Otr4j-jitsi@8bc49a960b995ab79583df592abe7a5066599491
-#    prebuild=pushd $$Otr4j-jitsi$$ && \
-#        $$MVN3$$ clean && \
-#        $$MVN3$$ install && \
-#        popd && \
-#        sed -i -e '/mavenCentral/amavenLocal()\n' -e '/maven {/d' -e '/jitsi.github.com/,+1d' -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
-#remove this build once vc56+ is added via auto-update
 Build:1.2.0,56
     commit=1.2.0
     gradle=yes
@@ -455,14 +446,312 @@ Build:1.4.2,68
     gradle=yes
     prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
 
-Maintainer Notes:
-Build succeeds now, but fdroid strips a line required for output variants.
-The current solution is to comment out buildTypes {} and lintOptions {}, but
-we should fix this or at least narrow it down. Enabling for now.
-.
+Build:1.4.3,69
+    commit=1.4.3
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.4.4,72
+    commit=1.4.4
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.4.5,73
+    commit=1.4.5
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.4.7,75
+    commit=1.4.7
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.5.0,78
+    commit=1.5.0
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.5.2,80
+    commit=1.5.2
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.6.0,84
+    commit=1.6.0
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.6.3,87
+    commit=1.6.3
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.6.5,90
+    commit=1.6.5
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.6.6,91
+    commit=1.6.6
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.6.7,92
+    commit=1.6.7
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.6.9,95
+    commit=1.6.9
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.6.10,96
+    commit=1.6.10
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.6.11,98
+    commit=1.6.11
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.7.0,102
+    commit=1.7.0
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.7.2,105
+    commit=1.7.2
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.7.3,107
+    commit=1.7.3
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' build.gradle
+
+Build:1.8.0,109
+    commit=1.8.0
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' -e '/maven {/,+2d' build.gradle
+
+Build:1.8.1,112
+    commit=1.8.1
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' -e '/maven {/,+2d' build.gradle
+
+Build:1.8.2,113
+    commit=1.8.2
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' -e '/maven {/,+2d' build.gradle
+
+Build:1.8.3,114
+    commit=1.8.3
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' -e '/maven {/,+2d' build.gradle
+
+Build:1.8.4,115
+    commit=1.8.4
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' -e '/maven {/,+2d' build.gradle
+
+Build:1.9.0,119
+    commit=1.9.0
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' -e '/maven {/,+2d' build.gradle
+
+Build:1.9.1,120
+    commit=1.9.1
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' -e '/maven {/,+2d' build.gradle
+
+Build:1.9.2,121
+    commit=1.9.2
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' -e '/maven {/,+2d' build.gradle
+
+Build:1.9.3,122
+    commit=1.9.3
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' -e '/maven {/,+2d' build.gradle
+
+Build:1.9.4,123
+    commit=1.9.4
+    gradle=yes
+    prebuild=sed -i -e '/applicationVariants/i/*' -e '/lintOptions {/i*/' -e '/maven {/,+2d' build.gradle
+
+Build:1.10.0,127
+    commit=1.10.0
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.10.1,128
+    commit=1.10.1
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.11.0,132
+    commit=1.11.0
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.11.1,133
+    commit=1.11.1
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.11.2,134
+    commit=1.11.2
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.11.3,135
+    commit=1.11.3
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.11.4,136
+    commit=1.11.4
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.11.5,138
+    commit=1.11.5
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.11.6,139
+    commit=1.11.6
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.11.7,140
+    commit=1.11.7
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.12.0,141
+    commit=1.12.0
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.12.1,142
+    commit=1.12.1
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.12.2,143
+    commit=1.12.2
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.12.3,144
+    commit=1.12.3
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.12.4,145
+    commit=1.12.4
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.12.7,148
+    commit=1.12.7
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.12.8,149
+    commit=1.12.8
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.12.9,151
+    commit=1.12.9
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.13.0,154
+    commit=1.13.0
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.13.1,155
+    commit=490a1ca3cf0a13041f51a8cdecb7cadcaf969fbe
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.13.2,159
+    commit=1.13.2
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.13.3,160
+    commit=1.13.3
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.13.4,161
+    commit=1.13.4
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.13.5,162
+    commit=1.13.5
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.13.6,163
+    commit=1.13.6
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.13.7,165
+    commit=1.13.7
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.13.8,166
+    commit=1.13.8
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.13.9,168
+    commit=1.13.9
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.14.0,171
+    commit=1.14.0
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/play-services-gcm/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.14.1,172
+    commit=1.14.1
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/play-services-gcm/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.14.2,173
+    commit=1.14.2
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/play-services-gcm/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.14.3,174
+    commit=1.14.3
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/play-services-gcm/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.14.4,175
+    commit=1.14.4
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/play-services-gcm/d' -e '/maven {/,+2d' build.gradle
+
+Build:1.14.5,176
+    commit=1.14.5
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/play-services-gcm/d' -e '/maven {/,+2d' build.gradle
 
 Auto Update Mode:Version %v
-Update Check Mode:Tags
-Current Version:1.4.2
-Current Version Code:68
-
+Update Check Mode:Tags ^[0-9.]+$
+Current Version:1.14.5
+Current Version Code:176

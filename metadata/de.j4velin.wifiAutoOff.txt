@@ -1,4 +1,4 @@
-Categories:System
+Categories:Connectivity
 License:Apache2
 Web Site:https://github.com/j4velin/WiFi-Auto-Off/blob/HEAD/README.md
 Source Code:https://github.com/j4velin/WiFi-Auto-Off
@@ -9,20 +9,20 @@ Summary:Turn off WiFi automatically
 Description:
 This simple Android app can help you increase the standby time of your device;
 it automatically disables your WiFi radio when you don't need it and thereby
-lowers the battery consumption. It is designed to be used with WiFi-only
-tablets - these devices normally don't require a constant internet connection
-if you're not using them and turning WiFi off can save a lot of battery power.
+lowers the battery consumption. It is designed to be used with WiFi-only tablets
+- these devices normally don't require a constant internet connection if you're
+not using them and turning WiFi off can save a lot of battery power.
 
 You can also specify to automatically turn on WiFi again, if you turn on your
 device. This way, you are always connected to your WiFi network when using the
 the tablet.
 
 This app has a similiar effect like setting the "WiFi sleep policy" in Android
-to "always", except that you can now exactly define the timeout between
-turning the screen off and actually turning off WiFi.
+to "always", except that you can now exactly define the timeout between turning
+the screen off and actually turning off WiFi.
 
-If your device has a cell radio, it might switch to 2G/3G which may consume
-more power than staying on WiFi.
+If your device has a cell radio, it might switch to 2G/3G which may consume more
+power than staying on WiFi.
 .
 
 Repo Type:git
@@ -60,13 +60,11 @@ Build:1.4.2,142
     commit=415388357b4e669d8dd46cce332ebe6c65854f55
     gradle=yes
     prebuild=touch key.properties
-    target=android-19
 
 Build:1.4.4,144
     commit=bc58b160be5d1c5f075f801eaa499cfe00cb6cfd
     gradle=yes
     prebuild=touch key.properties
-    target=android-19
 
 Build:1.4.5,145
     disable=ZipException: invalid entry compressed size
@@ -143,8 +141,68 @@ Build:1.6.1,161
     prebuild=touch key.properties && \
         sed -i -e '/playCompile/d' build.gradle
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:1.6.1
-Current Version Code:161
+Build:1.6.2,162
+    commit=14065b034e0ad3bfa91d147aad8c164926c551b2
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
 
+Build:1.6.3,163
+    commit=7836f23aff067ef51d6feaa66abcec9c46564a0b
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.6.5,165
+    commit=13673cdba9b1937f4a59f9a79b87f6d255dcfaa0
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.6.6,166
+    commit=5aab1e53781be205618d69cdf69214e123befe07
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.6.7,167
+    commit=caf0f729be504557d3a1fe67a44c3a9af516db29
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.6.8,168
+    commit=54b8d81d2db4c7edb43d9b9bca1da37fb5f539bc
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.6.9,169
+    commit=041b9a199e7a85f8d2f88526bc0c3044bf7b375a
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.7,170
+    disable=23.0.0 rc3 is not a supported build tools version
+    commit=d31ebbc0ad41598d76ba5ce7c4f6d94c4d4f448a
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.7.2,172
+    commit=6d651a3b36e028ab615bb03261e04cb2fb2cfee8
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.7.3,173
+    commit=1.7.3
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:1.7.3
+Current Version Code:173

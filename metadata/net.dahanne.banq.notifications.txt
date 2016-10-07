@@ -1,4 +1,4 @@
-Categories:Office
+Categories:Time
 License:GPLv3+
 Web Site:
 Source Code:https://bitbucket.org/anthonydahanne/banqnotificationsproject
@@ -7,11 +7,12 @@ Issue Tracker:https://bitbucket.org/anthonydahanne/banqnotificationsproject/issu
 Auto Name:My Banq
 Summary:BAnQ reminder notifications
 Description:
-Connect to BAnQ (Bibliothèque et Archives nationales du Québec), the Library
-and National Archive of Québec, and keep track of the borrowed items linked to
-your subscription.
+Connect to BAnQ (Bibliothèque et Archives nationales du Québec), the Library and
+National Archive of Québec, and keep track of the borrowed items linked to your
+subscription.
 
 Features include:
+
 * List your borrowed items
 * Receive notifications when the return date is approaching
 * Renew your borrowed items
@@ -50,4 +51,3 @@ Auto Update Mode:Version version-%v
 Update Check Mode:Tags
 Current Version:1.5
 Current Version Code:6
-

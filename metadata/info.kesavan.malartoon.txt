@@ -1,4 +1,3 @@
-#Categories:News,Multimedia
 Categories:Multimedia
 License:GPLv3+
 Web Site:
@@ -8,9 +7,8 @@ Issue Tracker:https://github.com/kesavanm/malartoon/issues
 Auto Name:Malar Toon
 Summary:Viewer for Indian Dinamalar cartoons
 Description:
-Picks cartoon from Dinamalar daily, a leading news portal in Tamil
-from India. Has option to view current day cartoon as well as random
-cartoon
+Picks cartoon from Dinamalar daily, a leading news portal in Tamil from India.
+Has option to view current day cartoon as well as random cartoon
 .
 
 Repo Type:git
@@ -27,8 +25,6 @@ Build:1.2,2
     gradle=yes
 
 Auto Update Mode:None
-#UCM: See if tags are used correctly in the next version and set UCM and AUM
 Update Check Mode:RepoManifest
 Current Version:1.2
 Current Version Code:2
-

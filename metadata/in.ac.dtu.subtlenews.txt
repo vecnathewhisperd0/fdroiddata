@@ -1,7 +1,6 @@
 Categories:Reading
 License:GPLv3
 Web Site:
-#Web Site:http://android.championswimmer.in
 Source Code:https://github.com/teamOSC/SubtleNews_Android_App
 Issue Tracker:https://github.com/teamOSC/SubtleNews_Android_App/issues
 
@@ -9,7 +8,8 @@ Auto Name:Subtle News
 Summary:News digest
 Description:
 Connects to a SubtleNews server (source code in the same project), which
-summarizes the news for you so you have less to read; it can also be read out to you.
+summarizes the news for you so you have less to read; it can also be read out to
+you.
 .
 
 Repo Type:git
@@ -29,4 +29,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:1.0
 Current Version Code:10
-

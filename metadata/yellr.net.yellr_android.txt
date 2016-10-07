@@ -19,11 +19,12 @@ Build:0.1.5,1005
     subdir=app
     gradle=yes
 
-Maintainer Notes:
-Switch to Tags or at least plain RepoManifest after the next version.
-.
+Build:0.1.8,1008
+    commit=v0.1.8
+    subdir=app
+    gradle=yes
 
-#Auto Update Mode:Version v%v
-#Update Check Mode:Tags
-Update Check Mode:RepoManifest/dev
-
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:0.1.8
+Current Version Code:1008

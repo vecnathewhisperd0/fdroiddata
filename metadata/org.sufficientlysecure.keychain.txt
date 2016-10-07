@@ -1,34 +1,37 @@
-Categories:Internet
+Categories:Security
 License:GPLv3+
-Web Site:http://openkeychain.org
-Source Code:https://github.com/open-keychain/open-keychain
-Issue Tracker:https://github.com/open-keychain/open-keychain/issues
+Web Site:http://www.openkeychain.org
+Source Code:https://github.com/openpgp-keychain/openpgp-keychain
+Issue Tracker:https://github.com/openpgp-keychain/openpgp-keychain/issues
+Changelog:https://github.com/open-keychain/open-keychain/blob/HEAD/OpenKeychain/src/main/res/raw/help_changelog.md
+Donate:http://www.openkeychain.org
 
 Auto Name:OpenKeychain
-Summary:Encrypt files and communications with OpenPGP.
+Summary:Encrypt files and communications with OpenPGP
 Description:
 OpenKeychain helps you communicate more privately and securely. It uses
-high-quality modern encryption to ensure that your messages can be read
-only by the people you send them to, others can send you messages that
-only you can read, and these messages can be digitally signed so the
-people getting them are sure who sent them. OpenKeychain is based on the
-well established OpenPGP standard making encryption compatible across
-your devices and operating systems.
+high-quality modern encryption to ensure that your messages can be read only by
+the people you send them to, others can send you messages that only you can
+read, and these messages can be digitally signed so the people getting them are
+sure who sent them. OpenKeychain is based on the well established OpenPGP
+standard making encryption compatible across your devices and operating systems.
 
-Modern encryption is based on digital "keys". OpenKeychain stores and
-manages your keys, and those of the people you communicate with, on your
-Android. It also helps you find others' keys online, and interchange keys
-by touching devices. But its most frequent use is in using those keys to
-encrypt and decrypt messages.
+Modern encryption is based on digital "keys". OpenKeychain stores and manages
+your keys, and those of the people you communicate with, on your Android. It
+also helps you find others' keys online, and interchange keys by touching
+devices. But its most frequent use is in using those keys to encrypt and decrypt
+messages.
 
 OpenKeychain integrates with
 
 * K-9 Mail
 * Conversations
-* and many more...
+* Password Store
+* oandbackup
+* and many more…
 
-OpenKeychain is designed to be trustworthy. It’s Free Software with no
-secrets; anyone can examine and validate every bit of it.
+OpenKeychain is designed to be trustworthy. It’s Free Software with no secrets;
+anyone can examine and validate every bit of it.
 
 Permissions:
 
@@ -36,8 +39,6 @@ Permissions:
 * Near Field Communication: To exchange keys via NFC; Yubikey NEO support
 * Storage: To import/export keys from sd card
 * Identity/Contact: To pre-fill name, email, and search queries; integration with Android's contacts
-
-[https://github.com/open-keychain/open-keychain/blob/development/OpenKeychain/src/main/res/raw/help_changelog.md CHANGELOG]
 .
 
 Repo Type:git
@@ -168,8 +169,142 @@ Build:3.2.2,32200
     submodules=yes
     gradle=yes
 
+Build:3.2.3,32300
+    commit=v3.2.3
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+
+Build:3.3,33000
+    commit=v3.3
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+
+Build:3.4,34000
+    commit=v3.4
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+
+Build:3.4.1,34100
+    commit=v3.4.1
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+
+Build:3.5,35000
+    commit=v3.5
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+
+Build:3.5.1,35100
+    commit=v3.5.1
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+
+Build:3.6,36000
+    commit=v3.6
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+    scanignore=extern/spongycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.6.1,36100
+    commit=v3.6.1
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+    scanignore=extern/spongycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.7,37000
+    commit=v3.7
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+    scanignore=extern/spongycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.8,38000
+    commit=v3.8
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+    scanignore=extern/spongycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.8.1,38100
+    commit=v3.8.1
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+    scanignore=extern/spongycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.8.2,38200
+    commit=v3.8.2
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=yes
+    scanignore=extern/spongycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.9,39000
+    commit=v3.9
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.9.2,39200
+    commit=v3.9.2
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.9.4,39400
+    commit=v3.9.4
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:3.9.5,39510
+    commit=v3.9.5
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:4.0,40000
+    disable=MaxHeap4G
+    commit=v4.0
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:4.0.1,40100
+    commit=v4.0.1
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:4.0.3,40300
+    commit=v4.0.3
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
+Build:4.1,41010
+    commit=v4.1
+    subdir=OpenKeychain
+    submodules=yes
+    gradle=fdroid
+    scanignore=extern/bouncycastle/core/src/test,OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.2.2
-Current Version Code:32200
-
+Current Version:4.1
+Current Version Code:41010

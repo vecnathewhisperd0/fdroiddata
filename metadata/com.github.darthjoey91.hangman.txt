@@ -10,6 +10,7 @@ Description:
 A Hangman game that uses 40000 English words.
 
 To Play:
+
 * Pressing the gallows resets the game.
 * Pressing the blanks submits a letter.
 * Wrong letters appear to the right.
@@ -45,4 +46,3 @@ Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:0.3.1-alpha
 Current Version Code:4
-

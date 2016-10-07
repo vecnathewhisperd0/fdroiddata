@@ -3,31 +3,32 @@ License:GPLv3
 Web Site:https://opensource.srlabs.de/projects/snoopsnitch
 Source Code:https://opensource.srlabs.de/projects/snoopsnitch/repository/revisions/master/show
 Issue Tracker:
+Changelog:https://opensource.srlabs.de/projects/snoopsnitch#Version-history
 
 Auto Name:SnoopSnitch
 Summary:Check mobile network security
 Description:
-Collects and analyzes mobile radio data to make you aware of your mobile
-network security and to warn you about threats like fake base stations
-(IMSI catchers), user tracking and over-the-air updates. With SnoopSnitch
-you can use the data collected in the GSM Security Map at [http://gsmmap.org]
-and contribute your own data to GSM Map.
-
-[https://opensource.srlabs.de/projects/snoopsnitch#Version-history Changelog]
+Collects and analyzes mobile radio data to make you aware of your mobile network
+security and to warn you about threats like fake base stations (IMSI catchers),
+user tracking and over-the-air updates. With SnoopSnitch you can use the data
+collected in the GSM Security Map at [http://gsmmap.org] and contribute your own
+data to GSM Map.
 
 Requirements:
+
 * Qualcomm-based Android phone (see [https://opensource.srlabs.de/projects/snoopsnitch/wiki/DeviceList device list])
 * Stock Android ROM, version 4.1 or later
 * Note: Custom Android ROMs like CyanogenMod may or may not work, depending on the availability of a Qualcomm DIAG kernel driver (DIAG_CHAR).
 * Root privileges on phone
 
 Incompatible Devices:
+
 * Samsung Galaxy S2 & S3
 * Nexus 5 with stock Android
 * Huawei Ascend Y300
 .
 
-Requires Root:Yes
+Requires Root:yes
 
 Repo Type:git
 Repo:https://opensource.srlabs.de/git/snoopsnitch.git
@@ -110,8 +111,40 @@ Build:0.9.7,12
         bash compile.sh -t android -g -u
     buildjni=yes
 
+Build:0.9.8,13
+    commit=SnoopSnitch-0.9.8
+    subdir=SnoopSnitch
+    prebuild=rm -rf ../contrib/prebuilt/*
+    target=android-19
+    build=export PATH=$$NDK$$/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86/bin:$PATH && \
+        export NDK_DIR=$$NDK$$ && \
+        cd ../contrib && \
+        bash compile.sh -t android -g -u
+    buildjni=yes
+
+Build:1.0.0,14
+    commit=SnoopSnitch-1.0.0
+    subdir=SnoopSnitch
+    prebuild=rm -rf ../contrib/prebuilt/*
+    target=android-19
+    build=export PATH=$$NDK$$/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86/bin:$PATH && \
+        export NDK_DIR=$$NDK$$ && \
+        cd ../contrib && \
+        bash compile.sh -t android -g -u
+    buildjni=yes
+
+Build:1.0.1,15
+    commit=SnoopSnitch-1.0.1
+    subdir=SnoopSnitch
+    prebuild=rm -rf ../contrib/prebuilt/*
+    target=android-19
+    build=export PATH=$$NDK$$/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86/bin:$PATH && \
+        export NDK_DIR=$$NDK$$ && \
+        cd ../contrib && \
+        bash compile.sh -t android -g -u
+    buildjni=yes
+
 Auto Update Mode:Version SnoopSnitch-%v
 Update Check Mode:Tags
-Current Version:0.9.7
-Current Version Code:12
-
+Current Version:1.0.1
+Current Version Code:15

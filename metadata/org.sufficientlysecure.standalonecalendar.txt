@@ -1,19 +1,19 @@
-Categories:System,Office
+Categories:Time
 License:Apache2
 Web Site:
-Source Code:https://github.com/dschuermann/standalone-calendar
-Issue Tracker:https://github.com/dschuermann/standalone-calendar/issues
+Source Code:https://github.com/free-software-for-android/Standalone-Calendar
+Issue Tracker:https://github.com/free-software-for-android/Standalone-Calendar/issues
 
 Auto Name:Standalone Calendar
 Summary:AOSP calendar
 Description:
-Fork of the AOSP calendar, mainly for those who would like to have it
-installed but can't. It has a different package name to prevent conflicting
-with “com.android.calendar”.
+Fork of the AOSP calendar, mainly for those who would like to have it installed
+but can't. It has a different package name to prevent conflicting with
+“com.android.calendar”.
 .
 
 Repo Type:git
-Repo:https://github.com/dschuermann/standalone-calendar.git
+Repo:https://github.com/free-software-for-android/Standalone-Calendar.git
 
 Build:standalone-1.2,3
     commit=standalone-1.2
@@ -24,4 +24,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest/standalone
 Current Version:standalone-1.2
 Current Version Code:3
-

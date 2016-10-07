@@ -1,13 +1,18 @@
 Categories:Navigation
 License:GPLv3
-Web Site:http://sourceforge.net/p/bluegps4droid
-Source Code:http://sourceforge.net/p/bluegps4droid/git
-Issue Tracker:http://sourceforge.net/p/bluegps4droid/tickets
+Web Site:https://sourceforge.net/p/bluegps4droid
+Source Code:https://sourceforge.net/p/bluegps4droid/git
+Issue Tracker:https://sourceforge.net/p/bluegps4droid/tickets
 
 Auto Name:BlueGps
 Summary:Connect a GPS via bluetooth
 Description:
-Allows the connection of an external GPS tracker/mouse via bluetooth, injecting the location data as a “mock provider”. This can provide more accurate location than the build-in receiver (very useful for tracking in dense areas or in the woods, esp. for small tracks or streetaddresses etc), as well as make it possible to use GPS inside a car/boot, where the GPS receiver is mounted outside to get better reception.
+Allows the connection of an external GPS tracker/mouse via bluetooth, injecting
+the location data as a “mock provider”. This can provide more accurate location
+than the build-in receiver (very useful for tracking in dense areas or in the
+woods, esp. for small tracks or streetaddresses etc), as well as make it
+possible to use GPS inside a car/boot, where the GPS receiver is mounted outside
+to get better reception.
 .
 
 Repo Type:git
@@ -22,8 +27,6 @@ Build:1.2.6,126
     target=android-7
 
 Auto Update Mode:None
-#Not in market, and can't use RepoManifest because the version name isn't in there
 Update Check Mode:None
 Current Version:1.2.6
 Current Version Code:126
-

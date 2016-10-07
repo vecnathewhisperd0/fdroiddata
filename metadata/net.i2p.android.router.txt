@@ -1,13 +1,14 @@
 Categories:Security,Internet
 License:Apache2
-Web Site:http://geti2p.net
+Web Site:https://geti2p.net
 Source Code:https://github.com/i2p
-Issue Tracker:http://trac.i2p2.de
+Issue Tracker:https://trac.i2p2.de
 Donate:https://geti2p.net/en/get-involved/donate
 FlattrID:13523
 Bitcoin:1BPdWwovytfGdBwUDVgqbMZ8omcPQzshpX
 Litecoin:LM7DTXGHBzh7xeo7ZSWR6hs9s4oVAUsw4E
 
+Name:I2P (legacy)
 Auto Name:I2P
 Summary:I2P anonymous network
 Description:
@@ -15,6 +16,8 @@ I2P is an anonymizing network, offering a simple layer that identity-sensitive
 applications can use to securely communicate. All data is wrapped with several
 layers of encryption, and the network is both distributed and dynamic, with no
 trusted parties.
+
+This is a legacy build, please consider using [[net.i2p.android]] instead.
 .
 
 Repo Type:git
@@ -115,8 +118,10 @@ Build:0.9.13-0_b1-API8,4745216
 
 Build:0.9.18,4745226
     commit=17ab043a4bdd18b9bbe45aabd38b699b44e620e1
-    extlibs=android/android-support-v4.jar
+    subdir=app/
+    gradle=legacy
     srclibs=I2P@ce041dfbc1cfa406b7fbb418695086940700469d,Support/v7/appcompat@android-4.4.2_r2,GradleWitness@10f1269c0aafdc1d478efc005ed48f3a47d44278
+    extlibs=android/android-support-v4.jar
     prebuild=cp -R $$I2P$$ ../i2p.i2p && \
         cp -R $$GradleWitness$$ ../witness && \
         cd ../witness && \
@@ -131,13 +136,13 @@ Build:0.9.18,4745226
         sed -i '50,61d' ../client/build.gradle && \
         sed -i 's|ANDROID_BUILD_TOOLS_VERSION=21.1.2|ANDROID_BUILD_TOOLS_VERSION=22.0.0|' ../gradle.properties
     scandelete=i2p.i2p,routerjars/jni,client/src/main/jniLibs/armeabi,witness/build/classes
-    gradle=legacy
-    subdir=app/
 
 Build:0.9.19,4745227
     commit=234bc6e5a0edcd94c19c62ef5dce8fdbe69c43f1
-    extlibs=android/android-support-v4.jar
+    subdir=app/
+    gradle=legacy
     srclibs=I2P@dd99978b196181106926c73fbfcbf717b19c7000,Support/v7/appcompat@android-4.4.2_r2,GradleWitness@10f1269c0aafdc1d478efc005ed48f3a47d44278
+    extlibs=android/android-support-v4.jar
     prebuild=cp -R $$I2P$$ ../i2p.i2p && \
         cp -R $$GradleWitness$$ ../witness && \
         cd ../witness && \
@@ -149,16 +154,16 @@ Build:0.9.19,4745227
         tar xJvf gmp-4.* -C ../i2p.i2p/core/c/jbigi/ && \
         rm ./gmp-4.* && \
         sed -i 's|gradle/libs/gradle-witness.jar|witness/build/libs/witness.jar|' ../build.gradle && \
-        sed -i '50,61d' ../client/build.gradle &&\
+        sed -i '50,61d' ../client/build.gradle && \
         sed -i 's|ANDROID_BUILD_TOOLS_VERSION=21.1.2|ANDROID_BUILD_TOOLS_VERSION=22.0.0|' ../gradle.properties
     scandelete=i2p.i2p,routerjars/jni,client/src/main/jniLibs/armeabi,witness/build/classes
-    gradle=legacy
-    subdir=app/
 
 Build:0.9.19.1,4745229
     commit=8f302e6eebeec8735a30961553e804b737fb5958
-    extlibs=android/android-support-v4.jar
+    subdir=app/
+    gradle=legacy
     srclibs=I2P@dd99978b196181106926c73fbfcbf717b19c7000,Support/v7/appcompat@android-4.4.2_r2,GradleWitness@10f1269c0aafdc1d478efc005ed48f3a47d44278
+    extlibs=android/android-support-v4.jar
     prebuild=cp -R $$I2P$$ ../i2p.i2p && \
         cp -R $$GradleWitness$$ ../witness && \
         cd ../witness && \
@@ -172,11 +177,53 @@ Build:0.9.19.1,4745229
         sed -i 's|gradle/libs/gradle-witness.jar|witness/build/libs/witness.jar|' ../build.gradle && \
         sed -i '50,61d' ../client/build.gradle
     scandelete=i2p.i2p,routerjars/jni,client/src/main/jniLibs/armeabi,witness/build/classes
-    gradle=legacy
-    subdir=app/
 
+Build:0.9.22,4745231
+    commit=ab6f4799c93407b1ad34a33a4b0976107c592aa
+    subdir=app
+    gradle=legacy
+    srclibs=I2P@fd606064d910fac026d6a72ebdda6c68e573d53a,GradleWitness@10f1269c0aafdc1d478efc005ed48f3a47d44278,PreferenceFragment@717a45433b927d2f0dfc5328f79e77c9682c37bc
+    prebuild=sed -i -e '87d' -e '83d' ./build.gradle && \
+        sed -i -e '16,18d' -e '$d' ../build.gradle && \
+        sed -i '$d' ../build.gradle && \
+        echo $'flatDir {dirs \'$$PreferenceFragment$$/maven-repository/com/android/support/support-v4-preferencefragment/1.0.0\'}}}' >> ../build.gradle && \
+        echo -e "sdk.dir=$$SDK$$\ni2psrc=$$I2P$$" >> ./local.properties && \
+        echo -e "sdk.dir=$$SDK$$\nndk.dir=$$NDK$$\ni2psrc=$$I2P$$" >> ../routerjars/local.properties && \
+        curl https://gmplib.org/download/gmp/gmp-5.0.2.tar.xz | tar xJv -C $$I2P$$/core/c/jbigi/
+    scandelete=client/src/main/jniLibs/
+    build=pushd $$PreferenceFragment$$ && \
+        ./gradlew uploadArchives && \
+        popd && \
+        pushd $$GradleWitness$$ && \
+        gradle build && \
+        popd && \
+        cp $$GradleWitness$$/build/libs/GradleWitness.jar ../gradle/libs/gradle-witness.jar
+
+Build:0.9.25,4745232
+    commit=02030454d10144a390928c88798ac453a23315b0
+    subdir=app
+    gradle=legacy
+    srclibs=I2P@49ff78cf0e535dd81bf2046cf930ac1e13b0813d
+    prebuild=echo -e "i2psrc=../$$I2P$$" >> ../lib/client/local.properties && \
+        echo -e "sdk.dir=$$SDK$$\nndk.dir=$$NDK$$\ni2psrc=$$I2P$$" >> ../routerjars/local.properties && \
+        sed -i '31i checkReleaseBuilds false\n' build.gradle && \
+        curl https://gmplib.org/download/gmp/gmp-5.0.2.tar.xz | tar xJv -C $$I2P$$/core/c/jbigi/
+    scandelete=lib/client/src/main/jniLibs
+
+Build:0.9.26,4745233
+    commit=bd0455c413c611a76f0a47e0a3a0617cc4bffbad
+    subdir=app
+    gradle=legacy
+    srclibs=I2P@249e6f0eea2b72b6973a8e9ba7548019dd536eba
+    prebuild=echo -e "i2psrc=../$$I2P$$" >> ../lib/client/local.properties && \
+        echo -e "sdk.dir=$$SDK$$\nndk.dir=$$NDK$$\ni2psrc=$$I2P$$" >> ../routerjars/local.properties && \
+        sed -i '31i checkReleaseBuilds false\n' build.gradle && \
+        curl https://gmplib.org/download/gmp/gmp-5.0.2.tar.xz | tar xJv -C $$I2P$$/core/c/jbigi/
+    scandelete=lib/client/src/main/jniLibs
 
 Maintainer Notes:
+Always update net.i2p.android aswell!
+
 The version code and name is in app/build.gradle
 Android version code is an integer. So we have 31 bits.
 MAJOR         4 bits 0-15
@@ -191,6 +238,5 @@ Increment build number with 'ant incrementBuild' for updates between router rele
 
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:0.9.19
-Current Version Code:4745227
-
+Current Version:0.9.26
+Current Version Code:4745233

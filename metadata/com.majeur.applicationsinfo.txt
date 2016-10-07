@@ -1,4 +1,4 @@
-Categories:Office,System
+Categories:System
 License:Apache2
 Web Site:https://github.com/MajeurAndroid/Applications-Info/blob/HEAD/README.md
 Source Code:https://github.com/MajeurAndroid/Applications-Info
@@ -7,9 +7,9 @@ Issue Tracker:https://github.com/MajeurAndroid/Applications-Info/issues
 Auto Name:Applications Info
 Summary:Show metadata of installed applications
 Description:
-Monitor all available informations about all installed applications
-or packages on a device. You can view the entire AndroidManifest.xml
-file and get details about:
+Monitor all available informations about all installed applications or packages
+on a device. You can view the entire AndroidManifest.xml file and get details
+about:
 
 * Activities
 * Services
@@ -40,8 +40,18 @@ Build:1.4,5
     subdir=app
     gradle=yes
 
+Build:1.5,6
+    commit=552f2a227373bb1478dc096e101f9e60719ecb3f
+    subdir=app
+    gradle=yes
+
+Build:1.6,7
+    disable=https://github.com/MajeurAndroid/Android-Applications-Info/issues/11
+    commit=c277503ae3cad667f101d381d3b146bfb0a1b5d2
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.4
-Current Version Code:5
-
+Current Version:1.6
+Current Version Code:7

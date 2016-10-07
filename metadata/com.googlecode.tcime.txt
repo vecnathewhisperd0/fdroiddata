@@ -1,8 +1,8 @@
-Categories:Office
+Categories:Writing
 License:Apache2
 Web Site:https://code.google.com/p/android-traditional-chinese-ime
 Source Code:https://code.google.com/p/android-traditional-chinese-ime/source
-Issue Tracker:https://code.google.com/p/android-traditional-chinese-ime/issues
+Issue Tracker:
 
 Auto Name:注音倉頡輸入法
 Summary:Keyboard for zh_TW
@@ -18,8 +18,6 @@ Build:1.0,113
     target=android-4
 
 Auto Update Mode:None
-# Unlikely to get updates; Tags are erratic
 Update Check Mode:RepoManifest
 Current Version:1.0
 Current Version Code:113
-

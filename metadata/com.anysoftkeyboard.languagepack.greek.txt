@@ -1,21 +1,20 @@
-Categories:Office
+Categories:Writing
 License:Apache2
 Web Site:https://github.com/anysoftkeyboard
 Source Code:https://softkeyboard.googlecode.com/svn/trunk/LanguagePacks/Greek
 Issue Tracker:https://github.com/AnySoftKeyboard/LanguagePack/issues
-Donate:https://code.google.com/p/softkeyboard
+Donate:http://anysoftkeyboard.github.io/
 
 Name:AnySoftKeyboard: Greek
 Auto Name:AnySoftKeyboard - Greek Language Pack
 Summary:Language pack for AnySoftKeyboard
 Description:
-Dictionary is based on the Wikipedia article database
-which can be distributed under the terms of either the GNU Free Documentation
-or the Creative Commons Attribution-ShareAlike licenses and
-has about 50,000 words.
+Dictionary is based on the Wikipedia article database which can be distributed
+under the terms of either the GNU Free Documentation or the Creative Commons
+Attribution-ShareAlike licenses and has about 50,000 words.
 
-Install [[com.menny.android.anysoftkeyboard]] first, then select
-the desired layout from AnySoftKeyboard's Settings->Keyboards menu.
+Install [[com.menny.android.anysoftkeyboard]] first, then select the desired
+layout from AnySoftKeyboard's Settings->Keyboards menu.
 .
 
 Repo Type:git-svn
@@ -37,4 +36,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:20110717
 Current Version Code:3
-

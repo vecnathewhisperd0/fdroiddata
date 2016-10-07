@@ -1,5 +1,4 @@
 Categories:Reading
-# see LICENSE
 License:GPLv3
 Web Site:
 Source Code:https://github.com/FredJul/Flym
@@ -8,8 +7,8 @@ Issue Tracker:https://github.com/FredJul/Flym/issues
 Auto Name:Flym
 Summary:Feed reader
 Description:
-Based on Sparse RSS, this checks RSS/Atom news feeds, polling for updates
-from the device on a regular basis.
+Based on Sparse RSS, this checks RSS/Atom news feeds, polling for updates from
+the device on a regular basis.
 .
 
 Repo Type:git
@@ -194,16 +193,55 @@ Build:1.8.0,55
 Build:1.8.1,56
     commit=v1.8.1
     subdir=mobile
-    gradle=yes
-    rm=mobile/src/main/java/net/fred/feedex/wear/,wear/
     patch=wear.patch,gms-version.diff
+    gradle=yes
     srclibs=TextDrawable@558677ea316e60346948b381e5e274f49b00d370
+    rm=mobile/src/main/java/net/fred/feedex/wear/,wear/
     prebuild=sed -i -e '/maven {/,+2d' -e '/gms/d' -e '/textdrawable/d' build.gradle && \
-        mkdir -p ../libs && cp -fR $$TextDrawable$$ ../libs/textdrawable && echo -e '\n\ninclude ":libs:textdrawable"' >> ../settings.gradle && \
+        mkdir -p ../libs && \
+        cp -fR $$TextDrawable$$ ../libs/textdrawable && \
+        echo -e '\n\ninclude ":libs:textdrawable"' >> ../settings.gradle && \
         sed -i -e '/fileTree/acompile project(":libs:textdrawable")' build.gradle
 
-#Auto Update Mode:Version v%v
-Update Check Mode:Tags
-Current Version:1.8.1
-Current Version Code:56
+Build:1.9.0,57
+    commit=v1.9.0
+    subdir=mobile
+    patch=wear.patch,gms-version.diff
+    gradle=yes
+    srclibs=TextDrawable@558677ea316e60346948b381e5e274f49b00d370
+    rm=mobile/src/main/java/net/fred/feedex/wear/,wear/
+    prebuild=sed -i -e '/maven {/,+2d' -e '/gms/d' -e '/textdrawable/d' build.gradle && \
+        mkdir -p ../libs && \
+        cp -fR $$TextDrawable$$ ../libs/textdrawable && \
+        echo -e '\n\ninclude ":libs:textdrawable"' >> ../settings.gradle && \
+        sed -i -e '/fileTree/acompile project(":libs:textdrawable")' build.gradle
 
+Build:1.9.1,58
+    commit=v1.9.1
+    subdir=mobile
+    gradle=yes
+    srclibs=TextDrawable@558677ea316e60346948b381e5e274f49b00d370
+    rm=mobile/src/main/java/net/fred/feedex/wear/,wear/
+    prebuild=sed -i -e '/maven {/,+2d' -e '/gms/d' -e '/textdrawable/d' build.gradle && \
+        mkdir -p ../libs && \
+        cp -fR $$TextDrawable$$ ../libs/textdrawable && \
+        echo -e '\n\ninclude ":libs:textdrawable"' >> ../settings.gradle && \
+        sed -i -e '/fileTree/acompile project(":libs:textdrawable")' build.gradle
+
+Build:1.9.4,61
+    disable=gcm/play-services needs fixing
+    commit=v1.9.4
+    subdir=mobile
+    gradle=yes
+    srclibs=TextDrawable@558677ea316e60346948b381e5e274f49b00d370
+    rm=mobile/src/main/java/net/fred/feedex/wear/,wear/
+    prebuild=sed -i -e '/maven {/,+2d' -e '/gms/d' -e '/textdrawable/d' build.gradle && \
+        mkdir -p ../libs && \
+        cp -fR $$TextDrawable$$ ../libs/textdrawable && \
+        echo -e '\n\ninclude ":libs:textdrawable"' >> ../settings.gradle && \
+        sed -i -e '/fileTree/acompile project(":libs:textdrawable")' build.gradle
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:1.9.5
+Current Version Code:62

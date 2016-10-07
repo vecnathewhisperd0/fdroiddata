@@ -1,24 +1,22 @@
-Categories:Office
+Categories:Writing
 License:Apache2
 Web Site:https://github.com/anysoftkeyboard
 Source Code:https://softkeyboard.googlecode.com/svn/trunk/LanguagePacks/FrenchXLarge
 Issue Tracker:https://github.com/anysoftkeyboard/LanguagePack/issues
-Donate:https://code.google.com/p/softkeyboard
+Donate:http://anysoftkeyboard.github.io/
 
 Name:AnySoftKeyboard: French
 Auto Name:AnySoftKeyboard - French Language Pack with XLarge dictionary
 Summary:Language pack for AnySoftKeyboard
 Description:
-AZERTY, BEPO and French-Canadian layouts with an almost 400,000
-word dictionary.
+AZERTY, BEPO and French-Canadian layouts with an almost 400,000 word dictionary.
 You would need an 800MHz processor for it work smoothly.
 
-Dictionary is from
-[http://www.dicollecte.org/inscription.php?prj=fr Dicollecte.org],
-and is licensed under the terms of the Mozilla public license.
+Dictionary is from [http://www.dicollecte.org/inscription.php?prj=fr
+Dicollecte.org], and is licensed under the terms of the Mozilla public license.
 
-Install [[com.menny.android.anysoftkeyboard]] first, then select
-the desired layout from AnySoftKeyboard's Settings->Keyboards menu.
+Install [[com.menny.android.anysoftkeyboard]] first, then select the desired
+layout from AnySoftKeyboard's Settings->Keyboards menu.
 .
 
 Repo Type:git-svn
@@ -39,4 +37,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:20111029
 Current Version Code:1
-

@@ -8,6 +8,7 @@ Auto Name:Lumicall
 Summary:SIP softphone
 Description:
 SIP softphone with a comprehensive range of features:
+
 * ENUM dialing seamlessly checks all numbers you dial
 * DNS SRV lookup keeps track of which contact email addresses are active for federated SIP
 * TLS encryption of SIP messaging and both SRTP and ZRTP supported for audio stream encryption
@@ -15,10 +16,6 @@ SIP softphone with a comprehensive range of features:
 * Push-to-talk (PTT) walkie-talkie mode allows free group chat on wifi (as long as the router supports multicast)
 * Built in Ganglia agent provides an enterprise-grade monitoring solution to map wifi coverage and it's relationship with call quality
 * Native x86 support
-
-Note: We are currently in the process on removing remaining jar files from this app.
-Please see the [https://f-droid.org/wiki/page/org.lumicall.android maintainer notes]
-about the status.
 .
 
 Repo Type:git
@@ -257,16 +254,200 @@ Build:1.11.12,167
         cp ice4j/lib/junit.jar gmetric4j/lib/junit-4.1.jar
     buildjni=yes
 
-Maintainer Notes:
-* libs/jars:
-    * jain-sdp (ice4j)
-    * xalan (ice4j)
-    * bcprov (zrtp)
-    * zorg-bouncycastle (zrtp)
-.
+Build:1.11.14,169
+    commit=020015c5c9a5522712edef61a2959132aa63d716
+    submodules=yes
+    srclibs=PBKDF2@v1.1.0,dnsjava@dnsjava-2.1.6,RemoteTea@1.0.7,libphonenumber@libphonenumber-7.0.4,JUnit@r4.12,weupnp@weupnp-0.1.2
+    rm=libs/*.jar,opentelecoms.org-util/lib/*.jar,gmetric4j/lib/*.jar,ice4j/lib/weupnp*.jar,ice4j/libs/junit.jar
+    extlibs=android/android-support-v4.jar
+    prebuild=cp assets/app.properties-prod app.properties && \
+        echo "project.target.apilevel=8" > ant.properties && \
+        pushd $$PBKDF2$$ && \
+        gradle install && \
+        popd && \
+        cp $$PBKDF2$$/build/libs/PBKDF2-1.1.0.jar libs/ && \
+        pushd $$dnsjava$$ && \
+        ant jar && \
+        popd && \
+        cp $$dnsjava$$/dnsjava-2.1.6.jar libs/ && \
+        cp libs/dnsjava-2.1.6.jar opentelecoms.org-util/lib/dnsjava-2.1.1.jar && \
+        pushd $$libphonenumber$$/java/ && \
+        $$MVN3$$ package && \
+        popd && \
+        cp $$libphonenumber$$/java/libphonenumber/target/libphonenumber-7.0.4.jar libs/ && \
+        pushd $$RemoteTea$$ && \
+        ant -Dant.build.javac.target=1.5 -Dant.build.javac.source=1.5 jar && \
+        popd && \
+        cp $$RemoteTea$$/classes/oncrpc*jar libs/oncrpc-1.0.7.jar && \
+        cp libs/oncrpc-1.0.7.jar gmetric4j/lib/ && \
+        pushd $$weupnp$$ && \
+        $$MVN3$$ package && \
+        popd && \
+        cp $$weupnp$$/target/weupnp-0.1.2.jar ice4j/lib/weupnp-0.1.2-SNAPSHOT.jar && \
+        pushd $$JUnit$$ && \
+        $$MVN3$$ package && \
+        popd && \
+        cp $$JUnit$$/target/junit-4.12.jar ice4j/lib/junit.jar && \
+        cp ice4j/lib/junit.jar gmetric4j/lib/junit-4.1.jar
+    buildjni=yes
 
-Auto Update Mode:None
+Build:1.11.15,170
+    commit=1.11.15
+    submodules=yes
+    srclibs=PBKDF2@v1.1.0,dnsjava@dnsjava-2.1.6,RemoteTea@1.0.7,libphonenumber@libphonenumber-7.0.4,JUnit@r4.12,weupnp@weupnp-0.1.2
+    rm=libs/*.jar,opentelecoms.org-util/lib/*.jar,gmetric4j/lib/*.jar,ice4j/lib/weupnp*.jar,ice4j/libs/junit.jar
+    extlibs=android/android-support-v4.jar
+    prebuild=cp assets/app.properties-prod app.properties && \
+        echo "project.target.apilevel=8" > ant.properties && \
+        pushd $$PBKDF2$$ && \
+        gradle install && \
+        popd && \
+        cp $$PBKDF2$$/build/libs/PBKDF2-1.1.0.jar libs/ && \
+        pushd $$dnsjava$$ && \
+        ant jar && \
+        popd && \
+        cp $$dnsjava$$/dnsjava-2.1.6.jar libs/ && \
+        cp libs/dnsjava-2.1.6.jar opentelecoms.org-util/lib/dnsjava-2.1.1.jar && \
+        pushd $$libphonenumber$$/java/ && \
+        $$MVN3$$ package && \
+        popd && \
+        cp $$libphonenumber$$/java/libphonenumber/target/libphonenumber-7.0.4.jar libs/ && \
+        pushd $$RemoteTea$$ && \
+        ant -Dant.build.javac.target=1.5 -Dant.build.javac.source=1.5 jar && \
+        popd && \
+        cp $$RemoteTea$$/classes/oncrpc*jar libs/oncrpc-1.0.7.jar && \
+        cp libs/oncrpc-1.0.7.jar gmetric4j/lib/ && \
+        pushd $$weupnp$$ && \
+        $$MVN3$$ package && \
+        popd && \
+        cp $$weupnp$$/target/weupnp-0.1.2.jar ice4j/lib/weupnp-0.1.2-SNAPSHOT.jar && \
+        pushd $$JUnit$$ && \
+        $$MVN3$$ package && \
+        popd && \
+        cp $$JUnit$$/target/junit-4.12.jar ice4j/lib/junit.jar && \
+        cp ice4j/lib/junit.jar gmetric4j/lib/junit-4.1.jar
+    buildjni=yes
+
+Build:1.11.16,171
+    commit=1.11.16
+    submodules=yes
+    srclibs=PBKDF2@v1.1.0,dnsjava@dnsjava-2.1.6,RemoteTea@1.0.7,libphonenumber@libphonenumber-7.0.11,JUnit@r4.12,weupnp@weupnp-0.1.2
+    rm=libs/*.jar,opentelecoms.org-util/lib/*.jar,gmetric4j/lib/*.jar,ice4j/lib/weupnp*.jar,ice4j/libs/junit.jar
+    extlibs=android/android-support-v4.jar
+    prebuild=cp assets/app.properties-prod app.properties && \
+        echo "project.target.apilevel=8" > ant.properties && \
+        pushd $$PBKDF2$$ && \
+        gradle install && \
+        popd && \
+        cp $$PBKDF2$$/build/libs/PBKDF2-1.1.0.jar libs/ && \
+        pushd $$dnsjava$$ && \
+        ant jar && \
+        popd && \
+        cp $$dnsjava$$/dnsjava-2.1.6.jar libs/ && \
+        cp libs/dnsjava-2.1.6.jar opentelecoms.org-util/lib/dnsjava-2.1.1.jar && \
+        pushd $$libphonenumber$$/java/ && \
+        $$MVN3$$ package && \
+        popd && \
+        cp $$libphonenumber$$/java/libphonenumber/target/libphonenumber-7.0.11.jar libs/ && \
+        pushd $$RemoteTea$$ && \
+        ant -Dant.build.javac.target=1.5 -Dant.build.javac.source=1.5 jar && \
+        popd && \
+        cp $$RemoteTea$$/classes/oncrpc*jar libs/oncrpc-1.0.7.jar && \
+        cp libs/oncrpc-1.0.7.jar gmetric4j/lib/ && \
+        pushd $$weupnp$$ && \
+        $$MVN3$$ package && \
+        popd && \
+        cp $$weupnp$$/target/weupnp-0.1.2.jar ice4j/lib/weupnp-0.1.2-SNAPSHOT.jar && \
+        pushd $$JUnit$$ && \
+        $$MVN3$$ package && \
+        popd && \
+        cp $$JUnit$$/target/junit-4.12.jar ice4j/lib/junit.jar && \
+        cp ice4j/lib/junit.jar gmetric4j/lib/junit-4.1.jar
+    scanignore=jni/g729/ITU-samples-200701/Soft/g729*,jni/g729/siphon-g729/Data/*.pcm.out,assets/alerting
+    buildjni=yes
+
+Build:1.12.0,172
+    disable=remove apk
+    commit=1.12.0
+    submodules=yes
+    gradle=yes
+    prebuild=ln -s app.properties-prod assets/app.properties
+    scanignore=jni/g729/ITU-samples-200701/Soft/g729*,jni/g729/siphon-g729/Data/*.pcm.out,assets/alerting
+    buildjni=yes
+
+Build:1.12.3,175
+    commit=1.12.3
+    submodules=yes
+    gradle=yes
+    prebuild=ln -s app.properties-prod assets/app.properties
+    scanignore=jni/g729/ITU-samples-200701/Soft/g729*,jni/g729/siphon-g729/Data/*.pcm.out,assets/alerting
+    buildjni=yes
+
+Build:1.12.4,176
+    commit=1.12.4
+    submodules=yes
+    gradle=yes
+    prebuild=ln -s app.properties-prod assets/app.properties
+    scanignore=jni/g729/ITU-samples-200701/Soft/g729*,jni/g729/siphon-g729/Data/*.pcm.out,assets/alerting
+    buildjni=yes
+
+Build:1.12.7,179
+    commit=1.12.7
+    submodules=yes
+    gradle=yes
+    prebuild=ln -s app.properties-prod assets/app.properties
+    scanignore=jni/g729/ITU-samples-200701/Soft/g729*,jni/g729/siphon-g729/Data/*.pcm.out,assets/alerting
+    buildjni=yes
+
+Build:1.12.8,180
+    commit=1.12.8
+    submodules=yes
+    gradle=yes
+    prebuild=ln -s app.properties-prod assets/app.properties
+    scanignore=jni/g729/ITU-samples-200701/Soft/g729*,jni/g729/siphon-g729/Data/*.pcm.out,assets/alerting
+    buildjni=yes
+
+Build:1.12.9,181
+    commit=1.12.9
+    submodules=yes
+    gradle=yes
+    prebuild=ln -s app.properties-prod assets/app.properties
+    scanignore=jni/g729/ITU-samples-200701/Soft/g729*,jni/g729/siphon-g729/Data/*.pcm.out,assets/alerting
+    buildjni=yes
+
+Build:1.12.11,183
+    commit=1.12.11
+    submodules=yes
+    gradle=yes
+    prebuild=ln -s app.properties-prod assets/app.properties
+    scanignore=jni/g729/ITU-samples-200701/Soft/g729*,jni/g729/siphon-g729/Data/*.pcm.out,assets/alerting
+    buildjni=yes
+
+Build:1.12.13,185
+    commit=1.12.13
+    submodules=yes
+    gradle=yes
+    prebuild=ln -s app.properties-prod assets/app.properties
+    scanignore=jni/g729/ITU-samples-200701/Soft/g729*,jni/g729/siphon-g729/Data/*.pcm.out,assets/alerting
+    buildjni=yes
+
+Build:1.12.14,186
+    commit=1.12.14
+    submodules=yes
+    gradle=yes
+    prebuild=ln -s app.properties-prod assets/app.properties
+    scanignore=jni/g729/ITU-samples-200701/Soft/g729*,jni/g729/siphon-g729/Data/*.pcm.out,assets/alerting
+    buildjni=yes
+
+Build:1.12.16,188
+    commit=1.12.16
+    submodules=yes
+    gradle=yes
+    prebuild=ln -s app.properties-prod assets/app.properties
+    scanignore=jni/g729/ITU-samples-200701/Soft/g729*,jni/g729/siphon-g729/Data/*.pcm.out,assets/alerting
+    buildjni=yes
+
+Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.11.12
-Current Version Code:167
-
+Current Version:1.12.16
+Current Version Code:188

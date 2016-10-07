@@ -4,12 +4,11 @@ Web Site:
 Source Code:https://gitlab.com/fgerbig/SpacePeng
 Issue Tracker:https://gitlab.com/fgerbig/SpacePeng/issues
 
-Name:SpacePeng!
 Auto Name:SpacePeng!
 Summary:A small but fun space shooter
 Description:
-If you loved 'Space Invaders' or 'Phoenix' this game is for you.
-How many levels can you beat in one session?
+If you loved 'Space Invaders' or 'Phoenix' this game is for you. How many levels
+can you beat in one session?
 .
 
 Repo Type:git
@@ -26,4 +25,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.58-1
 Current Version Code:1581
-

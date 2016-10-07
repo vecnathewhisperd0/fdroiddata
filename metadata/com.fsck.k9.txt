@@ -1,24 +1,23 @@
 Provides:org.fdroid.k9
 Categories:Internet
 License:Apache2
-Web Site:https://code.google.com/p/k9mail
+Web Site:https://github.com/k9mail/k-9/wiki
 Source Code:https://github.com/k9mail/k-9
-Issue Tracker:https://code.google.com/p/k9mail/issues
+Issue Tracker:https://github.com/k9mail/k-9/issues
+Changelog:https://github.com/k9mail/k-9/wiki/ReleaseNotes
 
 Auto Name:K-9 Mail
 Summary:Full-featured email client
 Description:
-E-mail client supporting multiple accounts, POP3, IMAP and Push IMAP.
-Can do encryption if [[org.thialfihar.android.apg]] and/or [[org.sufficientlysecure.keychain]]
-is installed -- depending on the version. Settings and account configurations
-can be exported so that they can be imported easily if you are switching
-packages/signatures: a file manager will need to be already installed to
-achieve this.
+E-mail client supporting multiple accounts, POP3, IMAP and Push IMAP. Can do
+encryption if [[org.thialfihar.android.apg]] and/or
+[[org.sufficientlysecure.keychain]] is installed -- depending on the version.
+Settings and account configurations can be exported so that they can be imported
+easily if you are switching packages/signatures: a file manager will need to be
+already installed to achieve this.
 
-If you would like to contribute financially to k9mail, consider donating to
-the local SPCA (Societies for the prevention of cruelty to animals).
-
-[https://github.com/k9mail/k-9/wiki/ReleaseNotes Major version notes]
+If you would like to contribute financially to k9mail, consider donating to the
+local SPCA (Societies for the prevention of cruelty to animals).
 .
 
 Repo Type:git
@@ -33,7 +32,7 @@ Build:4.201,16025
         rm -f libs/jzlib*.jar libs/htmlcleaner*.jar libs/jutf*.jar && \
         mkdir -p tests/res/ && \
         unzip libs/htmlcleaner-2.2-all.zip && \
-        cp -r $$Jutf7$$/src/main/java/com/ src/  && \
+        cp -r $$Jutf7$$/src/main/java/com/ src/ && \
         tar xzf libs/jzlib-1.0.7.tar.gz && \
         mv jzlib-1.0.7/com/jcraft src/com/ && \
         rm -rf libs/jzlib* libs/htmlcleaner*.zip jzlib*
@@ -145,26 +144,78 @@ Build:5.005,22005
         $$MVN3$$ install && \
         popd
 
+Build:5.006,22006
+    commit=5.006
+    gradle=yes
+    srclibs=Jutf7@20
+    rm=libs/*
+    prebuild=sed -i -e "/buildToolsVersion/adefaultConfig {\ntargetSdkVersion 17\n}\n\npackagingOptions {\n exclude 'META-INF/LICENSE.txt'\n  exclude 'META-INF/NOTICE.txt'\n}" -e "/com.android.application/arepositories {\n  mavenCentral()\n  mavenLocal()\n}" -e "/fileTree/acompile 'net.sourceforge.htmlcleaner:htmlcleaner:2.2'" -e "/fileTree/acompile 'org.apache.james:apache-mime4j-core:0.7.2'" -e "/fileTree/acompile 'org.apache.james:apache-mime4j-dom:0.7.2'" -e "/fileTree/acompile 'com.jcraft:jzlib:1.0.7'" -e "/fileTree/acompile 'com.beetstra.jutf7:jutf7:1.0.1-SNAPSHOT'" -e "/fileTree/acompile 'commons-io:commons-io:2.0.1'" build.gradle && \
+        pushd $$Jutf7$$ && \
+        $$MVN3$$ install && \
+        popd
+
+Build:5.007,22007
+    commit=5.007
+    gradle=yes
+    srclibs=Jutf7@20
+    rm=libs/*
+    prebuild=sed -i -e "/buildToolsVersion/adefaultConfig {\ntargetSdkVersion 17\n}\n\npackagingOptions {\n exclude 'META-INF/LICENSE.txt'\n  exclude 'META-INF/NOTICE.txt'\n}" -e "/com.android.application/arepositories {\n  mavenCentral()\n  mavenLocal()\n}" -e "/fileTree/acompile 'net.sourceforge.htmlcleaner:htmlcleaner:2.2'" -e "/fileTree/acompile 'org.apache.james:apache-mime4j-core:0.7.2'" -e "/fileTree/acompile 'org.apache.james:apache-mime4j-dom:0.7.2'" -e "/fileTree/acompile 'com.jcraft:jzlib:1.0.7'" -e "/fileTree/acompile 'com.beetstra.jutf7:jutf7:1.0.1-SNAPSHOT'" -e "/fileTree/acompile 'commons-io:commons-io:2.0.1'" build.gradle && \
+        pushd $$Jutf7$$ && \
+        $$MVN3$$ install && \
+        popd
+
+Build:5.008,22008
+    commit=5.008
+    gradle=yes
+    srclibs=Jutf7@20
+    rm=libs/*
+    prebuild=sed -i -e "/buildToolsVersion/adefaultConfig {\ntargetSdkVersion 17\n}\n\npackagingOptions {\n exclude 'META-INF/LICENSE.txt'\n  exclude 'META-INF/NOTICE.txt'\n}" -e "/com.android.application/arepositories {\n  mavenCentral()\n  mavenLocal()\n}" -e "/fileTree/acompile 'net.sourceforge.htmlcleaner:htmlcleaner:2.2'" -e "/fileTree/acompile 'org.apache.james:apache-mime4j-core:0.7.2'" -e "/fileTree/acompile 'org.apache.james:apache-mime4j-dom:0.7.2'" -e "/fileTree/acompile 'com.jcraft:jzlib:1.0.7'" -e "/fileTree/acompile 'com.beetstra.jutf7:jutf7:1.0.1-SNAPSHOT'" -e "/fileTree/acompile 'commons-io:commons-io:2.0.1'" build.gradle && \
+        pushd $$Jutf7$$ && \
+        $$MVN3$$ install && \
+        popd
+
+Build:5.009,22009
+    disable=binaries
+    commit=5.009
+    gradle=yes
+    srclibs=Jutf7@20
+    rm=libs/*
+    prebuild=sed -i -e "/buildToolsVersion/adefaultConfig {\ntargetSdkVersion 17\n}\n\npackagingOptions {\n exclude 'META-INF/LICENSE.txt'\n  exclude 'META-INF/NOTICE.txt'\n}" -e "/com.android.application/arepositories {\n  mavenCentral()\n  mavenLocal()\n}" -e "/fileTree/acompile 'net.sourceforge.htmlcleaner:htmlcleaner:2.2'" -e "/fileTree/acompile 'org.apache.james:apache-mime4j-core:0.7.2'" -e "/fileTree/acompile 'org.apache.james:apache-mime4j-dom:0.7.2'" -e "/fileTree/acompile 'com.jcraft:jzlib:1.0.7'" -e "/fileTree/acompile 'com.beetstra.jutf7:jutf7:1.0.1-SNAPSHOT'" -e "/fileTree/acompile 'commons-io:commons-io:2.0.1'" build.gradle && \
+        pushd $$Jutf7$$ && \
+        $$MVN3$$ install && \
+        popd
+
+Build:5.010,22010
+    commit=5.010
+    gradle=yes
+    srclibs=Jutf7@20
+    rm=libs/*
+    prebuild=sed -i -e "/buildToolsVersion/adefaultConfig {\ntargetSdkVersion 17\n}\n\npackagingOptions {\n exclude 'META-INF/LICENSE.txt'\n  exclude 'META-INF/NOTICE.txt'\n}" -e "/com.android.application/arepositories {\n  mavenCentral()\n  mavenLocal()\n}" -e "/fileTree/acompile 'net.sourceforge.htmlcleaner:htmlcleaner:2.2'" -e "/fileTree/acompile 'org.apache.james:apache-mime4j-core:0.7.2'" -e "/fileTree/acompile 'org.apache.james:apache-mime4j-dom:0.7.2'" -e "/fileTree/acompile 'com.jcraft:jzlib:1.0.7'" -e "/fileTree/acompile 'com.beetstra.jutf7:jutf7:1.0.1-SNAPSHOT'" -e "/fileTree/acompile 'commons-io:commons-io:2.0.1'" -e "/filetree/acompile 'de.cketti.safecontentresolver:safe-content-resolver-v14:0.0.1'" build.gradle && \
+        pushd $$Jutf7$$ && \
+        $$MVN3$$ install && \
+        popd
+    scandelete=plugins/SafeContentResolver/*
+
+Build:5.112,23111
+    disable=remove
+    commit=5.112
+    subdir=k9mail
+    gradle=yes
+
+Build:5.113,23112
+    commit=5.113
+    subdir=k9mail
+    gradle=yes
+
 Maintainer Notes:
 * Force targetSdk via gradle, to avoid erroneous call_log
   permission requests.
-* Enable AUM when gradle updates hit upstream.
 * PullRequest created.
-
-//Build:5.101,23010
-//    commit=master
-//    gradle=yes
-//    srclibs=Jutf7@20
-//    rm=libs/*
-//    prebuild=sed -i -e "/jcenter/amavenLocal()\n" -e "/fileTree/acompile 'com.beetstra.jutf7:jutf7:1.0.1-SNAPSHOT'" build.gradle && \
-//        pushd $$Jutf7$$ && \
-//        $$MVN3$$ install && \
-//        popd
-
+* Add alpha/beta builds from time to time. OKed by cketti.
 .
 
+Archive Policy:5 versions
 Auto Update Mode:Version %v
 Update Check Mode:RepoManifest/5.0-MAINT
-Current Version:5.005
-Current Version Code:22005
-
+Current Version:5.010
+Current Version Code:22010

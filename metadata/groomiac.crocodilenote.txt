@@ -1,23 +1,22 @@
-Categories:Office
+Categories:Writing,Security
 License:GPLv3
-Web Site:https://code.google.com/p/crocodilenote
-Source Code:https://code.google.com/p/crocodilenote/source
-Issue Tracker:https://code.google.com/p/crocodilenote/issues
+Web Site:
+Source Code:https://github.com/Groomiac/crocodilenote/
+Issue Tracker:https://github.com/Groomiac/crocodilenote/issues
 
 Auto Name:CrocodileNote
 Summary:Take notes and encrypt them
 Description:
-Take simple text notes. You can put them into folders to create your
-own quick, easy and robust file structure. There are two modes supported,
-plain and encryption.
+Take simple text notes. You can put them into folders to create your own quick,
+easy and robust file structure. There are two modes supported, plain and
+encryption.
 
 In encryption mode all data is encrypted using password-based encryption
-(PKCS#5) with AES-256. These are common industry standards and used by,
-e.g., the famous TrueCrypt disk encryption.
+(PKCS#5) with AES-256. These are common industry standards and used by, e.g.,
+the famous TrueCrypt disk encryption.
 
-In plain mode you can view and copy folders directly via PC from your
-internal SD card. Use encryption if you want to protect your data and
-your privacy!
+In plain mode you can view and copy folders directly via PC from your internal
+SD card. Use encryption if you want to protect your data and your privacy!
 
 Further features:
 
@@ -26,8 +25,8 @@ Further features:
 *  Auto-logout switch for 30 minutes (encryption mode only)
 .
 
-Repo Type:git-svn
-Repo:https://crocodilenote.googlecode.com/svn/trunk/
+Repo Type:git
+Repo:https://github.com/Groomiac/crocodilenote/
 
 Build:1.5,15
     commit=r3
@@ -41,4 +40,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.6
 Current Version Code:16
-

@@ -1,4 +1,4 @@
-Categories:Office
+Categories:System
 License:GPLv3
 Web Site:
 Source Code:https://github.com/yankovskiy/SilentNight
@@ -7,8 +7,8 @@ Issue Tracker:https://github.com/yankovskiy/SilentNight/issues
 Auto Name:Silent Night
 Summary:Tell the phone to mute
 Description:
-Configure the phone to go silent and/or airplane mode
-between two times of the day.
+Configure the phone to go silent and/or airplane mode between two times of the
+day.
 .
 
 Repo Type:git
@@ -27,4 +27,3 @@ Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:0.3
 Current Version Code:8
-

@@ -12,6 +12,7 @@ Transports Bordeaux provides quick access to information about public
 transportation of the city of Bordeaux, France and its sprawl.
 
 Un accès rapide aux données des transports de Bordeaux dans votre poche:
+
 * Horaires de Bus et de Tram avec géo-localisation,
 * Arrêts de Bus à proximité,
 * Widgets pour permettre l'accès rapide aux horaires.
@@ -22,13 +23,13 @@ Un accès rapide aux données des transports de Bordeaux dans votre poche:
 * Disponibilité des parkings.
 * Perturbations et compte Twitter @tbc.
 
-Si vous déplacez l'application sur la SD CARD, le widget ne sera plus
-accessible (problème Android).
+Si vous déplacez l'application sur la SD CARD, le widget ne sera plus accessible
+(problème Android).
 
-Les cartes Google n'existent pas dans cettes versions ci;
-pourtant on peut voir la position d'une situation avec une appli cartographique comme
-[[com.robert.maps]] ou [[net.osmand.plus]].
-Une dépendance vers de la code publicitaire a été supprimé.
+Les cartes Google n'existent pas dans cettes versions ci; pourtant on peut voir
+la position d'une situation avec une appli cartographique comme
+[[com.robert.maps]] ou [[net.osmand.plus]]. Une dépendance vers de la code
+publicitaire a été supprimé.
 .
 
 Repo Type:srclib
@@ -163,6 +164,222 @@ Build:2.9.6,296
     rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
     prebuild=cp -R $$MobAdMob$$/src/com/ src/
 
+Build:2.9.7,297
+    commit=TB_noGoogleMap_2.9.7
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:2.9.8,298
+    commit=TB_noGoogleMap_2.9.8
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:2.9.9,299
+    commit=TB_noGoogleMap_2.9.9
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.0.0,300
+    commit=TB_noGoogleMap_3.0.0
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.0.1,301
+    commit=TB_noGoogleMap_3.0.1
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.0.2,302
+    commit=TB_noGoogleMap_3.0.2
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.0.3,303
+    commit=TB_noGoogleMap_3.0.3
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.0.4,304
+    commit=TB_noGoogleMap_3.0.4
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.0.5,305
+    commit=TB_noGoogleMap_3.0.5
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.0.6,306
+    commit=TB_noGoogleMap_3.0.6
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.0.7,307
+    commit=TB_noGoogleMap_3.0.7
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.0.8,308
+    commit=TB_noGoogleMap_3.0.8
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.0.9,309
+    commit=TB_noGoogleMap_3.0.9
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.1.0,310
+    commit=TB_noGoogleMap_3.1.0
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.1.1,311
+    commit=TB_noGoogleMap_3.1.1
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.1.2,312
+    commit=TB_noGoogleMap_3.1.2
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.1.3,313
+    commit=TB_noGoogleMap_3.1.3
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.1.4,314
+    commit=TB_noGoogleMap_3.1.4
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.1.5,315
+    commit=TB_noGoogleMap_3.1.5
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.1.6,316
+    commit=TB_noGoogleMap_3.1.6
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.1.7,317
+    commit=TB_noGoogleMap_3.1.7
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.1.8,318
+    commit=TB_noGoogleMap_3.1.8
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.1.9,319
+    commit=TB_noGoogleMap_3.1.9
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.2.0,320
+    commit=TB_noGoogleMap_3.2.0
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.2.1,321
+    commit=TB_noGoogleMap_3.2.1
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.2.2,322
+    commit=TB_noGoogleMap_3.2.2
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
+Build:3.2.5,325
+    commit=TB_noGoogleMap_3.2.5
+    subdir=TransportsBordeaux
+    gradle=yes
+    srclibs=MobAdMob@2d5736
+    rm=TransportsBordeaux/libs/GoogleAdMobAdsSdk*.jar
+    prebuild=cp -R $$MobAdMob$$/src/com/ src/
+
 Maintainer Notes:
 Replace jar files! (see fr.ybo.transportsrennes)
 
@@ -171,6 +388,5 @@ Replace jar files! (see fr.ybo.transportsrennes)
 
 Auto Update Mode:None
 Update Check Mode:Tags ^TB_noGoogleMap
-Current Version:2.9.6
-Current Version Code:296
-
+Current Version:3.2.5
+Current Version Code:325

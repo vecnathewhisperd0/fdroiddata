@@ -1,4 +1,4 @@
-Categories:System,Office
+Categories:Connectivity,Multimedia
 License:GPLv3
 Web Site:
 Source Code:https://github.com/krt16s/jfcups-service
@@ -7,8 +7,8 @@ Issue Tracker:https://github.com/krt16s/jfcups-service/issues
 Auto Name:JfCupsPrintService
 Summary:Connect to CUPS/IPP network printers
 Description:
-Sample of a printing service that hooks into Android's printing framework
-and provides connectivity for CUPS/IPP network printers.
+Sample of a printing service that hooks into Android's printing framework and
+provides connectivity for CUPS/IPP network printers.
 
 WARNING: This app is no longer maintained.
 .
@@ -25,4 +25,3 @@ Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:0.23
 Current Version Code:23
-

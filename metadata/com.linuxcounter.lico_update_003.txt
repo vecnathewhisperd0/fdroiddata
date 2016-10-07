@@ -1,6 +1,6 @@
-Categories:Office,Internet
+Categories:Internet
 License:GPLv3
-Web Site:https://www.linuxcounter.net/
+Web Site:https://www.linuxcounter.net
 Source Code:https://github.com/alexloehner/linuxcounter.android.app
 Issue Tracker:https://github.com/alexloehner/linuxcounter.android.app/issues
 
@@ -35,4 +35,3 @@ Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:0.0.8
 Current Version Code:8
-

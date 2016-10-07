@@ -1,5 +1,5 @@
 AntiFeatures:Tracking,UpstreamNonFree
-Categories:Office
+Categories:Reading
 License:GPLv3+
 Web Site:http://reader.tomtasche.at
 Source Code:https://github.com/TomTasche/OpenDocument.droid
@@ -9,15 +9,14 @@ FlattrID:117140
 Auto Name:OpenDocument Reader
 Summary:Document reader
 Description:
-Read odf documents. ODF is a document format that can be
-read by a wide variety of programs,
-including OpenOffice and LibreOffice.
+Read odf documents. ODF is a document format that can be read by a wide variety
+of programs, including OpenOffice and LibreOffice.
 
-Anti-feature: Tracking. A recent version had code for sending
-some device info via HTTP POST to a appspot.com server.
+Anti-feature: Tracking. A recent version had code for sending some device info
+via HTTP POST to a appspot.com server.
 
-A proprietary ad library was removed before building. More recent versions
-have several more proprietary binaries.
+A proprietary ad library was removed before building. More recent versions have
+several more proprietary binaries.
 .
 
 Repo Type:git
@@ -46,7 +45,7 @@ Build:1.3.2,24
         rm -rf src/test/
 
 Build:2.0.6,33
-    disable=!unknown build server problems b88d8bf6d
+    disable=unknown build server problems b88d8bf6d
     commit=unknown - see disabled
     srclibs=BillingLibrary@3ecc7cad9c,MobAdMob@2d5736,FilePicker@d12f209e8,aFileChooser@c3197bb151
     prebuild=sed -i 's@\(android.library.reference.1=\).*@\1$$aFileChooser$$@' project.properties && \
@@ -56,7 +55,6 @@ Build:2.0.6,33
         cp $$aFileChooser$$/libs/android-support-v4.jar $$FilePicker$$/libs/ && \
         rm -rf libs/GoogleAdMobAdsSdk-6.1.0.jar libs/androidbillinglibrary_22092012.jar tests
 
-#careful deleting lines in submodule source: they don't reappear
 Build:2.0.7,34
     commit=771437a702
     init=git config -f .gitmodules --remove-section submodule.test && \
@@ -72,7 +70,7 @@ Build:2.0.7,34
     update=.,aFileChooser/aFileChooser,ActionBarSherlock/library,AndroidBillingLibrary/AndroidBillingLibrary,Android-AppMsg/library
 
 Build:2.0.8,35
-    disable=!broken v2.0.8
+    disable=broken v2.0.8
     commit=unknown - see disabled
     init=rm -rf odf2html/.gitmodules odf2html/library/dep/commons && \
         git submodule update --init && \
@@ -94,7 +92,7 @@ Build:2.0.8,35
         mv odf2html.jar ../../libs/
 
 Build:2.0.8.2,37
-    disable=!broken v2.0.8.2
+    disable=broken v2.0.8.2
     commit=unknown - see disabled
     init=rm -rf $(find . -name bin) && \
         rm -rf $(find . -name gen) && \
@@ -118,7 +116,7 @@ Build:2.0.8.2,37
         mv odf2html.jar ../../libs/
 
 Build:2.10.1,45
-    disable=!won't build and probably crashy at v2.10.1
+    disable=won't build and probably crashy at v2.10.1
     commit=v2.10.1
     submodules=yes
     init=rm -rf $(find . -name bin) && \
@@ -148,4 +146,3 @@ Auto Update Mode:None
 Update Check Mode:Static
 Current Version:2.12.6
 Current Version Code:59
-

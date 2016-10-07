@@ -1,23 +1,21 @@
 Categories:Reading
 License:GPLv2+
-Web Site:http://www.fbreader.org/FBReaderJ
+Web Site:https://fbreader.org/FBReaderJ
 Source Code:https://github.com/geometer/FBReaderJ-plugin-local-opds-scanner
 Issue Tracker:https://github.com/geometer/FBReaderJ-plugin-local-opds-scanner/issues
-Donate:http://www.fbreader.org/donation/make.php
+Donate:https://fbreader.org/donation/make.php
 
 Auto Name:FBReader Calibre connector
 Summary:View local book catalogues
 Description:
 Allows automatic discovery of opds shares made discoverable by zeroconf (avahi,
-Bonjour).
-FBReader already allows you to add remote OPDS shares e.g.
-http://m.gutenberg.org or http://bookserver.revues.org.
+Bonjour). FBReader already allows you to add remote OPDS shares e.g.
+[http://m.gutenberg.org] or [http://bookserver.revues.org].
 .
 
 Repo Type:git
 Repo:https://github.com/geometer/FBReaderJ-plugin-local-opds-scanner.git
 
-# Not an official release, but has bugfixes and no official release for 1-year+
 Build:1.1-fd,101001
     commit=9a239a014a272d3b1d642
     forceversion=yes
@@ -44,4 +42,3 @@ Auto Update Mode:Version &v
 Update Check Mode:Tags
 Current Version:1.2
 Current Version Code:102001
-

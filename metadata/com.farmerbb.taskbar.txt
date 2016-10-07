@@ -1,0 +1,76 @@
+Categories:System
+License:Apache2
+Web Site:https://github.com/farmerbb/Taskbar/blob/HEAD/README.md
+Source Code:https://github.com/farmerbb/Taskbar
+Issue Tracker:https://github.com/farmerbb/Taskbar/issues
+
+Auto Name:Taskbar
+Summary:Use a start menu to access apps
+Description:
+Puts a start menu and recent apps tray on top of your screen accessible at any
+time, increasing your productivity and turning your Android tablet or phone into
+a real multitasking machine.
+.
+
+Repo Type:git
+Repo:https://github.com/farmerbb/Taskbar
+
+Build:1.1.8,54
+    commit=b3131f37ac75814fffb1295434fca8e9c1e0aacd
+    subdir=app
+    gradle=yes
+
+Build:1.1.9,56
+    commit=d344934231bdd0587474a3249aca5302db8708ea
+    subdir=app
+    gradle=yes
+
+Build:1.1.9,57
+    commit=055730f44f68824fba0bd10a6eb2f916476ebe7f
+    subdir=app
+    gradle=yes
+
+Build:1.1.10,61
+    commit=cd7ffd8c6193d2ab3c0a8a2dd032a33437793867
+    subdir=app
+    gradle=yes
+
+Build:1.1.10,65
+    commit=e276f1c1a196c2a06fb1bc13a60469428bfa6294
+    subdir=app
+    gradle=yes
+
+Build:1.1.10,67
+    commit=8583d5a605544b536de1a1e47682c4be335a0e50
+    subdir=app
+    gradle=yes
+
+Build:1.2,68
+    commit=0b5b23a7016d7826e62f3ee5fb28331f0e6459a1
+    subdir=app
+    gradle=free
+
+Build:1.2.1,72
+    commit=189cdd7226cb2cf83f88a7cea79a4476546f7405
+    subdir=app
+    gradle=free
+
+Build:2.0,75
+    commit=08e175e2cf01fb03d1f5a48afb23204110c2c37c
+    subdir=app
+    gradle=free
+
+Build:2.0,76
+    commit=7be39e31967f876a8dc79bb6f0b5d265e630b35f
+    subdir=app
+    gradle=free
+
+Build:2.0.1,78
+    commit=832392944ea7c9b72e3d19cd333f7ffcca40d416
+    subdir=app
+    gradle=free
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:2.0.1
+Current Version Code:78

@@ -1,16 +1,16 @@
 Categories:Multimedia
 License:Apache2
-Web Site:http://sourceforge.net/projects/servestream
-Source Code:http://sourceforge.net/p/servestream/code
-Issue Tracker:http://sourceforge.net/tracker/?group_id=361303
-Donate:http://sourceforge.net/p/servestream/donate
+Web Site:https://sourceforge.net/projects/servestream
+Source Code:https://sourceforge.net/p/servestream/code
+Issue Tracker:https://sourceforge.net/p/servestream/_list/tickets
+Donate:https://sourceforge.net/p/servestream/donate
 
 Auto Name:ServeStream
 Summary:Audio stream player
 Description:
-HTTP media server browser and stream player.
-Ideal for playing internet radio or streaming podcasts in the background;
-if you find an audio file on a web page, share the link to Servestream.
+HTTP media server browser and stream player. Ideal for playing internet radio or
+streaming podcasts in the background; if you find an audio file on a web page,
+share the link to Servestream.
 
 * Supports http, https, mms (beta), mmsh (beta)
 * Plays mp3/3gp/mp4/m4a/ogg/wav/mid/xmf/mxmf/rtttl/rtx/ota/imy
@@ -19,11 +19,10 @@ if you find an audio file on a web page, share the link to Servestream.
 * Repeat and shuffle modes
 * Alarm clock support
 * Home screen widget
-* Utilizes HTML parsing to allow navigation of HTTP servers that serve HTML pages e.g. http://listenlive.eu
+* Utilizes HTML parsing to allow navigation of HTTP servers that serve HTML pages e.g. [http://listenlive.eu]
 * Supports x86 and MIPS for ffmpeg playback
 .
 
-#Repo:https://svn.code.sf.net/p/servestream/code/trunk; old url prior to r1160
 Repo Type:git-svn
 Repo:https://svn.code.sf.net/p/servestream/code;trunk=trunk;tags=tags
 
@@ -137,4 +136,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:0.7.0
 Current Version Code:105
-

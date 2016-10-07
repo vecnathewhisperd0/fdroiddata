@@ -1,9 +1,10 @@
 AntiFeatures:Tracking
 Categories:Internet
-License:GPLv2
-Web Site:http://meta.wikimedia.org/wiki/Mobile_Projects
+License:Apache2
+Web Site:https://www.mediawiki.org/wiki/Wikimedia_Apps
 Source Code:https://github.com/wikimedia/apps-android-wikipedia
-Issue Tracker:https://bugzilla.wikimedia.org
+Issue Tracker:https://phabricator.wikimedia.org/project/profile/489/
+Changelog:https://github.com/wikimedia/WikipediaMobile/blob/HEAD/CHANGELOG.md
 Donate:https://donate.wikimedia.org
 
 Auto Name:Wikipedia
@@ -11,7 +12,29 @@ Summary:Wikipedia.org client
 Description:
 Official Wikipedia application.
 
-[https://github.com/wikimedia/WikipediaMobile/blob/HEAD/CHANGELOG.md Changelog]
+Wikipedia is the free encyclopedia containing more than 32 million articles in
+280 languages, and is the most comprehensive and widely used reference work
+humans have ever compiled.
+
+Features:
+
+* Tabbed browsing
+* Lead images
+* Image gallery
+* Descriptions from Wikidata
+* Article suggestions
+* Saved pages
+* Nearby
+* Language support
+* Table of contents
+* Wikipedia Zero
+
+You can send feedback to the app developers. In the menu, press "More", then
+"About the Wikipedia app", then "Send app feedback".
+
+[https://m.wikimediafoundation.org/wiki/Privacy_policy Privacy policy]
+
+[https://m.wikimediafoundation.org/wiki/Terms_of_Use Terms of Use]
 .
 
 Repo Type:git
@@ -83,27 +106,145 @@ Build:2.0-r-2014-10-14,84
         $$MVN3$$ install && \
         popd
 
-Build:2.0-r-2014-10-30,87
-    disable=doesn't compile
-    commit=r/2.0-r-2014-10-30
-    subdir=wikipedia
-    gradle=prod
-    srclibs=MediaWikiApi@32b5b87d0a57900eaa5d7e78d5623cd76f8951b3
+Build:2.0.109-fdroid,109
+    commit=r/2.0.109-r-2015-08-21
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=custom
     forceversion=yes
-    prebuild=sed -i -e '/wmflabs/d' -e '/jcenter/amavenLocal()' ../build.gradle && \
-        pushd $$MediaWikiApi$$ && \
-        sed -i -e '/<plugins>/a<plugin><artifactId>maven-compiler-plugin</artifactId><version>3.0</version><configuration><source>1.7</source><target>1.7</target></configuration></plugin>' pom.xml && \
-        $$MVN3$$ install && \
-        popd
+    gradleprops=customChannel=fdroid,customApplicationId=org.wikipedia
+
+Build:2.0.110-fdroid,110
+    commit=r/2.0.110-r-2015-08-31
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=custom
+    forceversion=yes
+    gradleprops=customChannel=fdroid,customApplicationId=org.wikipedia
+
+Build:2.1.131-fdroid,131
+    commit=r/2.1.131-r-2015-09-28
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=custom
+    forceversion=yes
+    gradleprops=customChannel=fdroid,customApplicationId=org.wikipedia
+
+Build:2.1.132-fdroid,132
+    commit=r/2.1.132-r-2015-10-23
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=custom
+    forceversion=yes
+    gradleprops=customChannel=fdroid,customApplicationId=org.wikipedia
+
+Build:2.1.133-fdroid,133
+    commit=r/2.1.133-r-2015-10-26
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=custom
+    forceversion=yes
+    gradleprops=customChannel=fdroid,customApplicationId=org.wikipedia
+
+Build:2.1.134-fdroid,134
+    commit=r/2.1.134-r-2015-11-12
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=custom
+    forceversion=yes
+    gradleprops=customChannel=fdroid,customApplicationId=org.wikipedia
+
+Build:2.1.135-fdroid,135
+    commit=r/2.1.135-r-2015-12-03
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=custom
+    forceversion=yes
+    gradleprops=customChannel=fdroid,customApplicationId=org.wikipedia
+
+Build:2.1.136-fdroid,136
+    commit=r/2.1.136-r-2015-12-09
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=custom
+    forceversion=yes
+    gradleprops=customChannel=fdroid,customApplicationId=org.wikipedia
+
+Build:2.1.137-fdroid,137
+    commit=r/2.1.137-r-2016-01-11
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=custom
+    forceversion=yes
+    gradleprops=customChannel=fdroid,customApplicationId=org.wikipedia
+
+Build:2.1.139-fdroid,139
+    commit=r/2.1.139-r-2016-01-22
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=custom
+    forceversion=yes
+    gradleprops=customChannel=fdroid,customApplicationId=org.wikipedia
+
+Build:2.1.140-fdroid,140
+    commit=r/2.1.140-r-2016-02-04
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=custom
+    forceversion=yes
+    gradleprops=customChannel=fdroid,customApplicationId=org.wikipedia
+
+Build:2.1.141-fdroid,141
+    commit=r/2.1.141-r-2016-02-10
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=custom
+    forceversion=yes
+    gradleprops=customChannel=fdroid,customApplicationId=org.wikipedia
+
+Build:2.1.143-fdroid,143
+    commit=r/2.1.143-r-2016-03-23
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+
+Build:2.3.150-fdroid,150
+    commit=r/2.3.150-r-2016-07-25
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+
+Build:r/2.3.152-r-2016-08-18,152
+    commit=r/2.3.152-r-2016-08-18
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+
+Build:beta/2.4.156-beta-2016-09-19,156
+    disable=remove prerelease
+    commit=beta/2.4.156-beta-2016-09-19
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+
+Build:r/2.4.157-r-2016-09-28,157
+    commit=r/2.4.157-r-2016-09-28
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
 
 Maintainer Notes:
-* replaced custom maven repo https://tools.wmflabs.org/android-maven-repo/
-* versionname is timebased and generated on build; force it.
-* rework updatechecks
+* versionname is timebased and generated on build; force it. Also remove the timestamp.
+
+TODO(mvdan): Re-enable UCM once fdroidserver py3 is deployed.
 .
 
-Auto Update Mode:None
+Auto Update Mode:Version %v
 Update Check Mode:Tags ^r
-Current Version:${versionStart}-dev-${date}
-Current Version Code:89
-
+Current Version:r/2.4.157-r-2016-09-28
+Current Version Code:157

@@ -1,8 +1,9 @@
-Categories:Office
+Categories:Money
 License:Apache2
 Web Site:http://trickytripper.blogspot.de
 Source Code:https://github.com/koelleChristian/trickytripper
 Issue Tracker:https://github.com/koelleChristian/trickytripper/issues
+Changelog:https://github.com/koelleChristian/trickytripper/blob/HEAD/app/src/main/res/raw/changelog.txt
 
 Auto Name:Tricky Tripper
 Summary:Manage travel expenses
@@ -24,10 +25,26 @@ Build:1.5.2,15
     subdir=app
     gradle=yes
     rm=app/libs/*.jar
-    prebuild=sed -i -e '/fileTree/acompile "com.loopj.android:android-async-http:1.4.7@aar"' build.gradle && sed -i -e '/sonatype/d' ../build.gradle
+    prebuild=sed -i -e '/fileTree/acompile "com.loopj.android:android-async-http:1.4.7@aar"' build.gradle && \
+        sed -i -e '/sonatype/d' ../build.gradle
+
+Build:1.5.4,17
+    disable=build failed
+    commit=697c446fe1ba1edb5d2b12e9cff0dc31f486ecac
+    subdir=app
+    gradle=yes
+
+Build:1.5.5,18
+    commit=bfd6098207098d887f0aa1b37b075759718895e8
+    subdir=app
+    gradle=yes
+
+Build:1.5.6,19
+    commit=42a2d5a69decb11d923f104e0f29ddb861df9595
+    subdir=app
+    gradle=yes
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.5.2
-Current Version Code:15
-
+Current Version:1.5.6
+Current Version Code:19

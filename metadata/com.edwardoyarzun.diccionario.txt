@@ -4,12 +4,11 @@ Web Site:
 Source Code:https://github.com/edwardoyarzun/diccionariochilenoandroid
 Issue Tracker:https://github.com/edwardoyarzun/diccionariochilenoandroid/issues
 
-Name:Diccionario Chileno
 Auto Name:Diccionario Chileno
 Summary:Chilean word dictionary
 Description:
-Diccionario con palabras y frases típicas utilizadas por los chilenos.
-Incluye mas de 500 palabras y su significado.
+Diccionario con palabras y frases típicas utilizadas por los chilenos. Incluye
+mas de 500 palabras y su significado.
 .
 
 Repo Type:git
@@ -30,4 +29,3 @@ Auto Update Mode:None
 Update Check Mode:Static
 Current Version:2.0
 Current Version Code:2
-

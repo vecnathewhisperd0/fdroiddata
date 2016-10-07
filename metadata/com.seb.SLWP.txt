@@ -1,18 +1,17 @@
-Categories:Wallpaper
-License:GPL/Artistic
+Categories:Theming
+License:GPL,Artistic
 Web Site:https://code.google.com/p/earth-live-wallpaper
 Source Code:https://code.google.com/p/earth-live-wallpaper/source
-Issue Tracker:https://code.google.com/p/earth-live-wallpaper/issues
+Issue Tracker:
 
 Auto Name:EarthRot
 Summary:Rotating planets wallpaper
 Description:
-Live wallpaper showing photorealistic and daytime-synchronized
-images of Earth and other planets flying thru space.
+Live wallpaper showing photorealistic and daytime-synchronized images of Earth
+and other planets flying thru space.
 .
 
 Repo Type:git-svn
-# Note the starting space in a subdir name
 Repo:https://earth-live-wallpaper.googlecode.com/svn/trunk/%20earth-live-wallpaper/SLWP
 
 Build:1.4,60
@@ -30,4 +29,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.5
 Current Version Code:61
-

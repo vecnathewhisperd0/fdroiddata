@@ -9,14 +9,16 @@ Auto Name:Agit
 Summary:Read software source code
 Description:
 Clone remote git repositories onto your phone!
+
 * Just like regular Git, the full history is stored for offline access.
 * Animated Diffs - Watch diffs smoothly transition from Before to After.
 * Supports git, http, https protocols. SSH for private repos is also possible
 * Periodic sync enabled on Android 2.3 and later: latest commits fetched quarter-hourly.
-Currently this is a 'read-only' client. You can clone & fetch, but not commit and push.
+
+Currently this is a 'read-only' client. You can clone & fetch, but not commit
+and push.
 .
 
-# Many maven artifacts are uploaded by same dev and thus should be built from source
 Repo Type:git
 Repo:https://github.com/rtyley/agit.git
 
@@ -58,4 +60,3 @@ Auto Update Mode:None
 Update Check Mode:Static
 Current Version:1.39
 Current Version Code:139000000
-

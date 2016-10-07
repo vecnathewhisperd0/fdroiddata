@@ -4,7 +4,7 @@ Web Site:
 Source Code:https://github.com/btmura/rbb
 Issue Tracker:https://github.com/btmura/rbb/issues
 
-Auto Name:reddit by brian
+Auto Name:falling for reddit
 Summary:Simple reddit.com client
 Description:
 Reddit by Brian (rbb) is a fast and simple Reddit client for Android.
@@ -20,6 +20,7 @@ Repo Type:git
 Repo:https://github.com/btmura/rbb.git
 
 Build:2.3,6
+    disable=broken build
     commit=v2.3
     srclibs=ViewPagerIndicator@2.4.1
     prebuild=rm -rf tests eclipse && \
@@ -43,6 +44,10 @@ Build:3.4,11
     commit=v3.4-foss
     target=android-18
 
+Build:3.5,12
+    commit=v3.5-foss
+    target=android-18
+
 Maintainer Notes:
 There's a separate FOSS branch, which doesn't include the proprietary YouTube
 API blob. ([https://github.com/btmura/rbb/issues/286 related issue])
@@ -50,6 +55,5 @@ API blob. ([https://github.com/btmura/rbb/issues/286 related issue])
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:3.4
-Current Version Code:11
-
+Current Version:3.5
+Current Version Code:12

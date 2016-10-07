@@ -3,6 +3,7 @@ License:GPLv3+
 Web Site:https://f-droid.org
 Source Code:https://gitlab.com/fdroid/fdroidclient
 Issue Tracker:https://gitlab.com/fdroid/fdroidclient/issues
+Changelog:https://gitlab.com/fdroid/fdroidclient/raw/HEAD/CHANGELOG.md
 Donate:https://f-droid.org/about
 FlattrID:343053
 Bitcoin:15u8aAPK4jJ5N8wpWJ5gutAyyeHtKX5i18
@@ -13,8 +14,8 @@ Description:
 Connects to F-Droid compatible repositories. The default repo is hosted at
 f-droid.org, which contains only bona fide FOSS.
 
-Android is open in the sense that you are free to install apks from anywhere
-you wish, but there are many good reasons for using a client/repository setup:
+Android is open in the sense that you are free to install apks from anywhere you
+wish, but there are many good reasons for using a client/repository setup:
 
 * Be notified when updates are available
 * Keep track of older and beta versions
@@ -22,12 +23,10 @@ you wish, but there are many good reasons for using a client/repository setup:
 * Find apps via categories and searchable descriptions
 * Access associated urls for donations, source code etc.
 * Stay safe by checking repo index signatures and apk hashes
-
-[https://gitlab.com/fdroid/fdroidclient/raw/master/CHANGELOG.md Changelog]
 .
 
-Repo Type:git
-Repo:https://gitlab.com/fdroid/fdroidclient.git
+Repo Type:srclib
+Repo:fdroidclient
 
 Build:0.17,8
     commit=c626ce5f6d3e10ae15942f01ff028be310cc695a
@@ -377,9 +376,300 @@ Build:0.91,910
     prebuild=./ant-prepare.sh
     update=.
 
-Archive Policy:8 versions
+Build:0.92,920
+    commit=0.92
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.93-test,930
+    commit=0.93-test
+    subdir=F-Droid
+    submodules=yes
+    prebuild=./ant-prepare.sh
+    update=.
+
+Build:0.94-test,940
+    commit=0.94-test
+    subdir=F-Droid
+    submodules=yes
+    gradle=yes
+
+Build:0.95-alpha1,95001
+    commit=0.95-alpha1
+    subdir=F-Droid
+    submodules=yes
+    gradle=yes
+
+Build:0.95-alpha2,95002
+    commit=v0.95-alpha2
+    subdir=F-Droid
+    submodules=yes
+    gradle=yes
+
+Build:0.95,95050
+    commit=v0.95
+    subdir=F-Droid
+    submodules=yes
+    gradle=yes
+
+Build:0.95.1,95150
+    commit=v0.95.1
+    subdir=F-Droid
+    submodules=yes
+    gradle=yes
+
+Build:0.96-alpha1,96001
+    commit=v0.96-alpha1
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.96-alpha2,96002
+    commit=v0.96-alpha2
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.96-alpha3,96003
+    commit=v0.96-alpha3
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.96-alpha4,96004
+    commit=v0.96-alpha4
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.96-alpha5,96005
+    commit=v0.96-alpha5
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.96-alpha6,96006
+    commit=v0.96-alpha6
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.96,96050
+    commit=v0.96
+    subdir=F-Droid
+    gradle=yes
+    scanignore=extern/AndroidPinning/res/raw/cacerts
+
+Build:0.96.1,96150
+    commit=v0.96.1
+    subdir=F-Droid
+    gradle=yes
+    scanignore=extern/AndroidPinning/res/raw/cacerts
+
+Build:0.97-alpha1,97001
+    commit=v0.97-alpha1
+    subdir=F-Droid
+    gradle=yes
+    scanignore=extern/AndroidPinning/res/raw/cacerts
+
+Build:0.97-alpha2,97002
+    commit=v0.97-alpha2
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.97-alpha3,97003
+    commit=v0.97-alpha3
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.97-alpha4,97004
+    commit=v0.97-alpha4
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.97-alpha5,97005
+    commit=v0.97-alpha5
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.97-alpha6,97006
+    commit=v0.97-alpha6
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.97-alpha7,97007
+    commit=v0.97-alpha7
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.97-alpha8,97008
+    commit=v0.97-alpha8
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.97,97050
+    commit=v0.97
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha1,98001
+    commit=v0.98-alpha1
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha2,98002
+    commit=v0.98-alpha2
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha3,98003
+    commit=v0.98-alpha3
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha4,98004
+    commit=v0.98-alpha4
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha5,98005
+    commit=v0.98-alpha5
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha6,98006
+    commit=v0.98-alpha6
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98-alpha7,98007
+    commit=v0.98-alpha7
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98,98050
+    commit=v0.98
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.98.1,98150
+    commit=v0.98.1
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.99-alpha1,99001
+    commit=v0.99-alpha1
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.99-alpha2,99002
+    commit=v0.99-alpha2
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.99,99050
+    commit=v0.99
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.99.1,99150
+    commit=v0.99.1
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.99.2,99250
+    commit=v0.99.2
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.100-alpha1,100001
+    commit=v0.100-alpha1
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.100-alpha2,100002
+    commit=v0.100-alpha2
+    subdir=F-Droid
+    gradle=yes
+
+Build:0.100-alpha3,100003
+    commit=v0.100-alpha3
+    subdir=app
+    gradle=yes
+
+Build:0.100-alpha4,100004
+    commit=v0.100-alpha4
+    subdir=app
+    gradle=yes
+
+Build:0.100-alpha5,100005
+    commit=v0.100-alpha5
+    subdir=app
+    gradle=yes
+
+Build:0.100-alpha6,100006
+    commit=v0.100-alpha6
+    subdir=app
+    gradle=yes
+
+Build:0.100-alpha7,100007
+    commit=v0.100-alpha7
+    subdir=app
+    gradle=yes
+
+Build:0.100-alpha8,100008
+    commit=v0.100-alpha8
+    subdir=app
+    gradle=yes
+
+Build:0.100,100050
+    commit=v0.100
+    subdir=app
+    gradle=yes
+
+Build:0.100.1,100150
+    commit=v0.100.1
+    subdir=app
+    gradle=yes
+
+Build:0.101-alpha1,101001
+    commit=v0.101-alpha1
+    subdir=app
+    gradle=yes
+
+Build:0.101-alpha2,101002
+    commit=v0.101-alpha2
+    subdir=app
+    gradle=yes
+
+Build:0.101-alpha3,101003
+    commit=v0.101-alpha3
+    subdir=app
+    gradle=yes
+
+Build:0.101-alpha4,101004
+    commit=v0.101-alpha4
+    subdir=app
+    gradle=yes
+
+Build:0.101-alpha5,101005
+    commit=v0.101-alpha5
+    subdir=app
+    gradle=yes
+
+Build:0.101-alpha6,101006
+    commit=v0.101-alpha6
+    subdir=app
+    gradle=yes
+
+Build:0.101,101050
+    commit=v0.101
+    subdir=app
+    gradle=yes
+
+Build:0.102-alpha1,102001
+    commit=v0.102-alpha1
+    subdir=app
+    gradle=yes
+
+Archive Policy:12 versions
 Auto Update Mode:None
 Update Check Mode:Static
-Current Version:0.88
-Current Version Code:880
-
+Current Version:0.101
+Current Version Code:101050

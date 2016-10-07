@@ -1,4 +1,4 @@
-Categories:Office
+Categories:Writing
 License:GPLv2
 Web Site:https://github.com/matburt/mobileorg-android/wiki
 Source Code:https://github.com/matburt/mobileorg-android
@@ -7,8 +7,8 @@ Issue Tracker:https://github.com/matburt/mobileorg-android/issues
 Auto Name:MobileOrg
 Summary:TODO list/task management
 Description:
-''Syncing of files via Dropbox won't work because there aren't any API keys in the source code. The other
-syncing methods should work though.''
+''Syncing of files via Dropbox won't work because there aren't any API keys in
+the source code. The other syncing methods should work though.''
 
 TODO/task management based on emacs org-mode files.
 .
@@ -33,9 +33,12 @@ Build:0.9.13,913
         sed -i 's/debuggable="true"/debuggable="false"/g' AndroidManifest.xml
     update=.,libs/locale
 
-# uses submodules
+Maintainer Notes:
+Uses gradle now, but includes jar files. Amongst them dropbox sdk, which
+is most likely non-free software.
+.
+
 Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:0.9.13
 Current Version Code:913
-

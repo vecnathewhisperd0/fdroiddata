@@ -1,20 +1,20 @@
-Disabled:DIAH
 Categories:Internet
 License:FreeBSD
+Author Name:Sam Whited
 Web Site:
-Source Code:https://github.com/SamWhited/OpenShareLocationPlugin
-Issue Tracker:https://github.com/SamWhited/OpenShareLocationPlugin/issues
+Source Code:https://bitbucket.org/SamWhited/opensharelocationplugin
+Issue Tracker:https://bitbucket.org/SamWhited/opensharelocationplugin/issues
 Bitcoin:1PYd7Koqd3ucSxKQRZQZRoB3qi7WaAFvL5
 
 Auto Name:Open Share Location Plugin
-Summary:Easy share your location in Conversations
+Summary:Share your location in Conversations
 Description:
 This plugin for [[eu.siacs.conversations]] allows you to easily share your
 location in a chat.
 .
 
 Repo Type:git
-Repo:https://github.com/SamWhited/OpenShareLocationPlugin/
+Repo:https://bitbucket.org/SamWhited/opensharelocationplugin.git
 
 Build:1.1.1,3
     commit=v1.1.1
@@ -28,8 +28,28 @@ Build:1.1.3,5
     commit=v1.1.3
     gradle=yes
 
-Auto Update Mode:Version v%v
-Update Check Mode:Tags
-Current Version:1.1.3
-Current Version Code:5
+Build:1.2.0-beta3,6
+    commit=v1.2.0-beta3
+    gradle=yes
+    prebuild=mkdir -p src/main/assets && \
+        cp ./LICENSE src/main/assets/
 
+Build:2.0.1,8
+    commit=v2.0.1
+    gradle=yes
+    prebuild=mkdir -p src/main/assets && \
+        cp ./LICENSE src/main/assets/ && \
+        sed -i -e '/applicationVariants/,+10d' build.gradle
+
+Build:2.1.1,10
+    commit=v2.1.1
+    gradle=yes
+    prebuild=mkdir -p src/main/assets && \
+        cp ./LICENSE src/main/assets/ && \
+        sed -i -e '/applicationVariants/,+10d' build.gradle
+
+Archive Policy:0 versions
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:2.1.1
+Current Version Code:10

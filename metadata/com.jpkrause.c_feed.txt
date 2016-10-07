@@ -4,19 +4,17 @@ License:GPLv3
 Web Site:
 Source Code:https://github.com/jpkrause/C-Feed
 Issue Tracker:https://github.com/jpkrause/C-Feed/issues
+Changelog:https://github.com/jpkrause/C-Feed/raw/HEAD/Changelog.txt
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=jkrause%40lavabit%2ecom&lc=US&item_name=JKrause%20Software&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 
 Auto Name:C-Feed
 Summary:Craigslist.com search client
 Description:
-Simply select the city you would like to search, select a category to search
-in, type in your search query and hit “Search”!
+Simply select the city you would like to search, select a category to search in,
+type in your search query and hit “Search”!
 
-The app saves the listings that you have already opened and will show you if
-any of the listings in the search are new (meaning you have not
-opened them yet).
-
-[https://github.com/jpkrause/C-Feed/raw/HEAD/Changelog.txt Changelog]
+The app saves the listings that you have already opened and will show you if any
+of the listings in the search are new (meaning you have not opened them yet).
 .
 
 Repo Type:git
@@ -40,4 +38,3 @@ Build:0.3.9,8
 
 Auto Update Mode:None
 Update Check Mode:Static
-

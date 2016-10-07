@@ -1,33 +1,60 @@
-Categories:Office
+Categories:Money
 License:GPLv3
 Web Site:http://www.myexpenses.mobi
 Source Code:https://github.com/mtotschnig/MyExpenses
 Issue Tracker:https://github.com/mtotschnig/MyExpenses/issues
+Changelog:http://www.myexpenses.mobi/#versionlist
 Donate:http://www.myexpenses.mobi/#donate
 FlattrID:1028216
 Bitcoin:1GCUGCSfFXzSC81ogHu12KxfUn3cShekMn
 
-Auto Name:My Expenses
+Name:My Expenses
+Auto Name:${appName}
 Summary:Manage finances
 Description:
-MyExpenses is designed to keep track of expenses, and to export these expenses
-as QIF files into a finance program (e.g.: Grisbi, GnuCash).
+Easy to use personal finance manager.
 
-Features:
-* Up to five accounts with transfers (unlimited in Contrib version)
-* Define plans (3) for future and recurrent transactions (unlimited in Contrib version)
+* Keep track of your expenses and incomes.
+* Manage them directly on your smartphone.
+* Export them into a Desktop finance program like Grisbi, GnuCash, Quicken or MS Money.
+
+Main Features:
+
+* Up to five accounts with transfers
+* Define templates and plans for future and recurrent transactions
 * Group transactions per day, week, month, year and display sums per group
-* Two levels of categories (import from Grisbi XML and QIF), display distribution of transactions in Contrib version
-* Split transactions (Contrib version)
+* Two levels of categories (import from Grisbi XML and QIF)
 * Calculator
-* Export to QIF and CSV (MS Excel), can be automatically shared (via email, FTP, Dropbox, ...) and done in batch in Contrib version
-* Import QIF data
-* Password protection, recoverable with security question in Contrib version
+* Export to QIF and CSV (MS Excel), can be automatically shared (via email, FTP, Dropbox, ...)
+* Import from QIF and CSV
+* Password protection
 * Integrated Help
-* Create transactions from templates
 * Data backup and restore
-* Aggregate financial situation (Contrib version)
 * Two themes: light and dark
+
+Please contribute by purchasing My Expenses Contrib Key. You gain unrestricted
+access to the following premium features:
+
+* Create an unlimited number of accounts (the free version is limited to five accounts);
+* Create an unlimited number of plans (the free version is limited to three plans);
+* Visualize the statistical distribution of transactions per category over different periods (years, months, weeks, days);
+* Split up transactions to multiple categories and transfer accounts;
+* Instantiate templates directly from a home screen widget;
+* Print the transaction list to a PDF file;
+* Define a security question for recovering a lost password;
+* Attach images to transaction
+
+Additionally, the following features are unlocked if you purchase the Extended
+Key:
+
+* CSV import
+* Auto-backup
+
+My Expenses requires the following permissions:
+
+* Reading and writing the calendar: Plans for future and recurrent transactions are stored either in a special local calendar or in any other calendar you assign.
+* Writing USB storage: Storage of QIF and CSV exports and backup files
+* Network communication: Crash reports are automatically sent to developers unless deactivated by user in app preferences.
 .
 
 Repo Type:git
@@ -347,15 +374,184 @@ Build:2.4.6,208
     submodules=yes
     gradle=yes
 
-Maintainer Notes:
-AUM is broken, because upstream is constructing the versionname out of multiple integers,
-which results in a "unknown" CV for fdroid. AUM is then using this in the update build,
-which -- of course -- fails.
-.
+Build:2.4.7,210
+    commit=r210
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
 
-Auto Update Mode:None
-#Auto Update Mode:Version r%c
+Build:2.4.8,211
+    commit=r211
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/dependencies/acompile "ch.acra:acra:4.6.2"\n' build.gradle
+
+Build:2.4.9,214
+    commit=r214
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/dependencies/acompile "ch.acra:acra:4.6.2"\n' build.gradle
+
+Build:2.4.9.1,215
+    commit=r215
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/dependencies/acompile "ch.acra:acra:4.6.2"\n' build.gradle
+
+Build:2.5.0,217
+    commit=r217
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+
+Build:2.5.1,218
+    commit=r218
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+
+Build:2.5.2,220
+    commit=r220
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+
+Build:2.6.0.2,226
+    commit=r226
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=sed -i -e '/maven {/,+2d' ../build.gradle && \
+        sed -i -e '/cwac/d' build.gradle && \
+        cp -fR $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:2.6.1.1,228
+    commit=r228
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=sed -i -e '/maven {/,+2d' ../build.gradle && \
+        sed -i -e '/cwac/d' build.gradle && \
+        cp -fR $$CWACWakeful$$/wakeful/src/com src/main/java/
+    scandelete=tests/script/monkey_funcs*
+
+Build:2.6.2,231
+    commit=r231
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=sed -i -e '/maven {/,+2d' ../build.gradle && \
+        sed -i -e '/cwac/d' build.gradle && \
+        cp -fR $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:2.6.3,234
+    commit=r234
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=sed -i -e '/maven {/,+2d' ../build.gradle && \
+        sed -i -e '/cwac/d' build.gradle && \
+        cp -fR $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:2.6.4,237
+    commit=r237
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=sed -i -e '/maven {/,+2d' ../build.gradle && \
+        sed -i -e '/cwac/d' build.gradle && \
+        cp -fR $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:2.6.5.1,240
+    commit=r240
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=sed -i -e '/maven {/,+2d' ../build.gradle && \
+        sed -i -e '/cwac/d' build.gradle && \
+        cp -fR $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:2.6.6,242
+    disable=java.lang.IllegalStateException: buildToolsVersion is not specified
+    commit=r242
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=sed -i -e '/maven {/,+2d' ../build.gradle && \
+        sed -i -e '/cwac/d' build.gradle && \
+        cp -fR $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:2.6.6.1,243
+    disable=java.lang.IllegalStateException: buildToolsVersion is not specified
+    commit=r243
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    srclibs=CWACWakeful@v1.0.5
+    prebuild=sed -i -e '/maven {/,+2d' ../build.gradle && \
+        sed -i -e '/cwac/d' build.gradle && \
+        cp -fR $$CWACWakeful$$/wakeful/src/com src/main/java/
+
+Build:2.6.6.1,244
+    commit=r244
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e 's@repo.commonsware.com.s3.amazonaws.com@s3.amazonaws.com/repo.commonsware.com@g' ../build.gradle
+
+Build:2.6.7.1,247
+    commit=r247
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e 's@repo.commonsware.com.s3.amazonaws.com@s3.amazonaws.com/repo.commonsware.com@g' ../build.gradle
+
+Build:2.6.8,251
+    commit=r251
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e 's@repo.commonsware.com.s3.amazonaws.com@s3.amazonaws.com/repo.commonsware.com@g' ../build.gradle
+
+Build:2.6.9,253
+    commit=r253
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e 's@repo.commonsware.com.s3.amazonaws.com@s3.amazonaws.com/repo.commonsware.com@g' ../build.gradle
+
+Build:2.7.0,255
+    commit=r255
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e 's@repo.commonsware.com.s3.amazonaws.com@s3.amazonaws.com/repo.commonsware.com@g' ../build.gradle
+
+Build:2.7.0,256
+    commit=r256
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e 's@repo.commonsware.com.s3.amazonaws.com@s3.amazonaws.com/repo.commonsware.com@g' ../build.gradle
+
+Build:2.7.1,257
+    commit=r257
+    subdir=myExpenses
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e 's@repo.commonsware.com.s3.amazonaws.com@s3.amazonaws.com/repo.commonsware.com@g' ../build.gradle
+
+Auto Update Mode:Version r%c
 Update Check Mode:Tags
-Current Version:2.4.6
-Current Version Code:208
-
+Current Version:2.7.1
+Current Version Code:257

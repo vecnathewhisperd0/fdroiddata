@@ -1,17 +1,18 @@
 Categories:System
 License:GPLv2+
 Web Site:http://andbatdog.sourceforge.net
-Source Code:http://sourceforge.net/projects/andbatdog/develop
+Source Code:https://sourceforge.net/p/andbatdog/code
 Issue Tracker:
+Donate:https://sourceforge.net/p/andbatdog/donate/
 
 Name:Battery Dog
 Auto Name:Android Battery Dog
 Summary:Battery level logger
 Description:
-Android Battery Dog is a watchdog application to facilitate long term
-analysis of the battery level. In addition to showing a graph of this
-information, the file “/sdcard/BatteryDog/battery.csv” is created containing
-the recorded battery levels together with a timestamp.
+Android Battery Dog is a watchdog application to facilitate long term analysis
+of the battery level. In addition to showing a graph of this information, the
+file “/sdcard/BatteryDog/battery.csv” is created containing the recorded battery
+levels together with a timestamp.
 .
 
 Repo Type:git-svn
@@ -27,4 +28,3 @@ Current Version:0.1.1
 Current Version Code:11
 
 No Source Since:0.1.2
-

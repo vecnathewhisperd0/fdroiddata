@@ -7,8 +7,8 @@ Issue Tracker:https://github.com/billthefarmer/melodeon/issues
 Auto Name:Melodeon
 Summary:Melodeon emulator for tablets
 Description:
-Emulates a one row melodeon or a one and a half row organetto.
-There is a choice of midi instruments and keys.
+Emulates a one row melodeon or a one and a half row organetto. There is a choice
+of midi instruments and keys.
 
 * Keys: Eb, Bb, F, C, G, D, A
 * Instruments: Standard midi set, defaults to accordion
@@ -31,7 +31,6 @@ Build:1.0,1
         mv libs/libsonivox.so ndk-r8e/platforms/android-14/arch-arm/usr/lib/ && \
         ./ndk-r8e/ndk-build && \
         rm -rf ndk-r8e/
-    buildjni=no
 
 Build:1.01,101
     commit=v1.01
@@ -44,14 +43,34 @@ Build:1.01,101
         mv libs/libsonivox.so ndk-r9d/platforms/android-17/arch-arm/usr/lib/ && \
         ./ndk-r9d/ndk-build && \
         rm -rf ndk-r9d/
-    buildjni=no
 
 Build:1.02,102
     commit=v1.02
     scanignore=jni/libs
     scandelete=libs
     buildjni=yes
-    ndk=r10d
+
+Build:1.03,103
+    commit=v1.03
+    scanignore=jni/libs
+    scandelete=libs
+    buildjni=yes
+
+Build:1.04,104
+    commit=v1.04
+    scanignore=jni/libs
+    scandelete=libs
+    buildjni=yes
+
+Build:1.05,105
+    commit=v1.05
+    scandelete=libs
+    buildjni=yes
+
+Build:1.06,106
+    commit=v1.06
+    scandelete=libs
+    buildjni=yes
 
 Maintainer Notes:
 As of version 1.02, does not require the convoluted build process used
@@ -64,6 +83,5 @@ for previous versions. This is because the build process:
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.02
-Current Version Code:102
-
+Current Version:1.06
+Current Version Code:106

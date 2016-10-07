@@ -8,12 +8,10 @@ Auto Name:Ham
 Summary:Amateur radio tools
 Description:
 Solar / calculated band conditions, Maidenhead Grid Locator & Callsign lookups
-via QRZ.com XML subscription.
-If you have a non-premium (free) account on QRZ.com, you will only get the
-name and country of callsigns.
-We are looking at offering more callsign databases.
-Many free sources only contain US hams, which is of
-limited use for many users.
+via QRZ.com XML subscription. If you have a non-premium (free) account on
+QRZ.com, you will only get the name and country of callsigns. We are looking at
+offering more callsign databases. Many free sources only contain US hams, which
+is of limited use for many users.
 .
 
 Repo Type:git
@@ -34,4 +32,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.6.0
 Current Version Code:19
-

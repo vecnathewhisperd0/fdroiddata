@@ -1,4 +1,4 @@
-Categories:Wallpaper
+Categories:Theming
 License:GPLv3
 Web Site:
 Source Code:https://github.com/jagossel/MovingPolygons
@@ -7,8 +7,8 @@ Issue Tracker:https://github.com/jagossel/MovingPolygons/issues
 Auto Name:Moving Polygons
 Summary:Bouncing lines live wallpaper
 Description:
-Simple live wallpaper with a series of lines that have points bouncing
-off of the screen.
+Simple live wallpaper with a series of lines that have points bouncing off of
+the screen.
 .
 
 Repo Type:git
@@ -21,4 +21,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:1.0.0.3
 Current Version Code:4
-

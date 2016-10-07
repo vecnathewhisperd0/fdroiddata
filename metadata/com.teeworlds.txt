@@ -7,18 +7,14 @@ Issue Tracker:https://github.com/pelya/commandergenius/issues
 Name:Teeworlds
 Summary:Fast-paced 2D arcade shooter
 Description:
-Teeworlds is a free online multiplayer game, available for all major operating systems. Battle with up
-to 16 players in a variety of game modes, including Team Deathmatch and Capture The Flag. You can even
-design your own maps!
+Teeworlds is a free online multiplayer game, available for all major operating
+systems. Battle with up to 16 players in a variety of game modes, including Team
+Deathmatch and Capture The Flag. You can even design your own maps!
 .
 
-# Upstream isn't particulary happy about "custom clients", so it is likely to be forever
-# buried in depths of commandergenius repository..
 Repo Type:srclib
 Repo:libsdl-android
 
-# some libraries, such as libandroid.so can't be rebuilt from included sources;
-# others, such as python.so may be recompiled (probably, better from srclibs)
 Build:0.6.2.15,6215
     disable=build fails - submodules using ssh?
     commit=a7d9626282f
@@ -36,7 +32,6 @@ Build:0.6.2.15,6215
     target=android-17
     build=cd .. && \
         ./build.sh release
-    buildjni=no
 
 Maintainer Notes:
 Tags and AndroidManifest are unusable. See website for upstream Teeworlds
@@ -47,4 +42,3 @@ Auto Update Mode:None
 Update Check Mode:None
 Current Version:0.6.2.15
 Current Version Code:6215
-

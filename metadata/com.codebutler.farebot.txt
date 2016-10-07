@@ -1,13 +1,14 @@
 Categories:Navigation
 License:GPLv3+
-Web Site:http://codebutler.github.com/farebot
+Web Site:https://codebutler.github.com/farebot
 Source Code:https://github.com/codebutler/farebot
 Issue Tracker:https://github.com/codebutler/farebot/issues
 
 Auto Name:FareBot
 Summary:Transport card reader
 Description:
-Read data from MIFARE public transit cards using your NFC-equipped Android phone.
+Read data from MIFARE public transit cards using your NFC-equipped Android
+phone.
 
 ''N.B'' This build cannot use the Google Maps because no keys are included in
 the source code. Most of its functionalities still work without having Google
@@ -29,8 +30,6 @@ Build:2.5.0,20
     commit=unknown - see disabled
 
 Auto Update Mode:None
-# Uses gradle, but no tags
 Update Check Mode:RepoManifest
-Current Version:2.5.0
-Current Version Code:20
-
+Current Version:2.9.0
+Current Version Code:21

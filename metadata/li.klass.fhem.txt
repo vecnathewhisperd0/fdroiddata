@@ -10,9 +10,9 @@ Summary:Home Automation client
 Description:
 A client for the FHEM software for home automation.
 
-Admob and Amazon Billing nonfree libraries were removed in 2.2.8,
-which is what the Premium version offers. Due to these proprietary
-dependencies, future updates in F-Droid are unlikely.
+Admob and Amazon Billing nonfree libraries were removed in 2.2.8, which is what
+the Premium version offers. Due to these proprietary dependencies, future
+updates in F-Droid are unlikely.
 .
 
 Repo Type:git
@@ -51,8 +51,6 @@ Build:2.4.1,141
         sed -i '184,190d' AndroidManifest.xml
 
 Auto Update Mode:None
-# Not updating - proprietary dependencies
 Update Check Mode:Static
 Current Version:2.4.1
 Current Version Code:141
-

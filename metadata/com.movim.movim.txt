@@ -2,15 +2,15 @@ Categories:Internet
 License:AGPLv3+
 Web Site:https://movim.eu
 Source Code:https://github.com/edhelas/movim_android
-Issue Tracker:https://bugs.launchpad.net/movim
+Issue Tracker:https://github.com/edhelas/movim_android/issues
 
 Auto Name:Movim
 Summary:Decentralized Social Network
 Description:
-Client for [https://movim.eu Movim], a distributed social networking
-platform that tries to protect your privacy and comes with a set of
-interesting features, like integrated Chats, Blogs, News and more --
-all based on open and etablished protocols.
+Client for [https://movim.eu Movim], a distributed social networking platform
+that tries to protect your privacy and comes with a set of interesting features,
+like integrated Chats, Blogs, News and more -- all based on open and etablished
+protocols.
 .
 
 Repo Type:git
@@ -31,11 +31,24 @@ Build:0.9.0.2,3
     rm=android/tests
     target=android-21
 
-Maintainer Notes:
-This is a first snapshot of the Android client of Movim
-.
+Build:0.9.0.3,4
+    commit=56f695e099ae040418c16038cf4c15691921b482
+    rm=android/tests
+    target=android-21
+
+Build:0.9.0.4,5
+    commit=9e40ec5235fe2ac964e092a23829bc464a885185
+    rm=android/tests
+    target=android-21
+
+Build:0.9.0.5,6
+    commit=0d796165ec955aa5237fe6b978f172fe9043ddd2
+    target=android-23
+
+Build:0.9.0.6,7
+    commit=4b1da3f0a07b70309dfae44a6f5bbb52b64573d3
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:0.9.0.2
-Current Version Code:3
+Current Version:0.9.0.6
+Current Version Code:7

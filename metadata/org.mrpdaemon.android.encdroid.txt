@@ -8,7 +8,8 @@ Issue Tracker:https://github.com/mrpdaemon/encdroid/issues
 Auto Name:Encdroid
 Summary:Access encrypted files
 Description:
-Decrypt and access files from an [https://en.wikipedia.org/wiki/EncFS EncFS] storage.
+Decrypt and access files from an [https://en.wikipedia.org/wiki/EncFS EncFS]
+storage.
 .
 
 Repo Type:git
@@ -31,6 +32,5 @@ CVE-2014-0160.
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:2.1.1
-Current Version Code:1400211
-
+Current Version:2.0.6
+Current Version Code:1000206

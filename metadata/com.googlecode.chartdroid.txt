@@ -1,19 +1,20 @@
 Categories:Multimedia
 License:Apache2
-Web Site:https://code.google.com/p/chartdroid
-Source Code:https://code.google.com/p/chartdroid/source
-Issue Tracker:https://code.google.com/p/chartdroid/issues
+Web Site:
+Source Code:https://github.com/kostmo/chartdroid
+Issue Tracker:https://github.com/kostmo/chartdroid/issues
 
 Auto Name:ChartDroid Core
 Summary:Chart engine
 Description:
-You don't need to install this unless another app needs it. ChartDroid is an Intent-based
-"library application" for static chart and graph generation on Android. Other applications can use it to
-graph/plot/display numerical data in many representations by implementing a ContentProvider.
+You don't need to install this unless another app needs it. ChartDroid is an
+Intent-based "library application" for static chart and graph generation on
+Android. Other applications can use it to graph/plot/display numerical data in
+many representations by implementing a ContentProvider.
 .
 
-Repo Type:git-svn
-Repo:https://chartdroid.googlecode.com/svn/trunk/core
+Repo Type:git
+Repo:https://github.com/kostmo/chartdroid
 
 Build:2.0.0,18
     commit=294
@@ -22,4 +23,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:2.0.0
 Current Version Code:18
-

@@ -8,9 +8,9 @@ Auto Name:RoundR
 Summary:Round the corners of the screen
 Description:
 RoundR takes advantage of the fact that regardless of the device's color, the
-screen is surrounded with a pitch black border, the corners of which are
-rarely ever touched. RoundR places four small overlays at the corners of the
-display, to simulate a rounded screen.
+screen is surrounded with a pitch black border, the corners of which are rarely
+ever touched. RoundR places four small overlays at the corners of the display,
+to simulate a rounded screen.
 .
 
 Repo Type:git
@@ -57,8 +57,6 @@ Build:3.0.1,24
     prebuild=rm -rf RoundR/gen/ StandOutRoundR/gen/
 
 Auto Update Mode:None
-# Can cross-reference with Website, Market or apk in repo
 Update Check Mode:RepoManifest
 Current Version:3.0.2
 Current Version Code:24
-

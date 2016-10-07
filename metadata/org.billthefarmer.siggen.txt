@@ -12,10 +12,9 @@ An android signal generator with twirly knob.
 * Frequency range 10Hz - 25KHz
 * Level range 0dB - -80dB
 
-The frequency knob responds to finger twirling. The fine frequency and
-level sliders allow for fine adjustments of frequency and output
-level. The frequency knob is also adjustable using the left and right
-arrow buttons.
+The frequency knob responds to finger twirling. The fine frequency and level
+sliders allow for fine adjustments of frequency and output level. The frequency
+knob is also adjustable using the left and right arrow buttons.
 .
 
 Repo Type:git
@@ -30,8 +29,19 @@ Build:1.01,101
 Build:1.02,102
     commit=v1.02
 
+Build:1.03,103
+    commit=v1.03
+
+Build:1.04,104
+    commit=v1.04
+
+Build:1.05,105
+    commit=v1.05
+
+Build:1.06,106
+    commit=v1.06
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.02
-Current Version Code:102
-
+Current Version:1.06
+Current Version Code:106

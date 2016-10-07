@@ -7,7 +7,8 @@ Issue Tracker:
 Auto Name:Battery Level
 Summary:See the battery level
 Description:
-Simple app the shows the battery level when the app is launched. Press anywhere to close it
+Simple app the shows the battery level when the app is launched. Press anywhere
+to close it
 .
 
 Repo Type:git
@@ -21,4 +22,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:0.3
 Current Version Code:3
-

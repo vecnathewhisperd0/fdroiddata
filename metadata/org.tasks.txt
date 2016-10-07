@@ -1,4 +1,4 @@
-Categories:Office
+Categories:Writing
 License:GPLv3
 Web Site:
 Source Code:https://github.com/abaker/tasks
@@ -117,12 +117,283 @@ Build:4.7.10,359
     gradle=generic
     prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
 
+Build:4.7.11,360
+    disable=retagged by upstream
+    commit=4.7.11-fdroid
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.11,362
+    commit=4.7.11-fdroid
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.12,363
+    commit=4.7.12-fdroid
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.12,364
+    commit=4.7.12
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.13,365
+    commit=4.7.13
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.13,366
+    commit=4.7.13
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.13,367
+    commit=4.7.13
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.13,369
+    commit=4.7.13
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.14,370
+    commit=4.7.14
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.15,371
+    commit=4.7.15
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.16,372
+    commit=4.7.16
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.17,373
+    commit=4.7.17
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.18,374
+    commit=4.7.18
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.19,375
+    commit=4.7.19
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+
+Build:4.7.20,376
+    commit=4.7.20
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.7.21,377
+    commit=4.7.21
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.7.22,379
+    commit=4.7.22
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/googleplayCompile/d' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.0,380
+    commit=4.8.0
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.1,381
+    commit=4.8.1
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.2,382
+    commit=4.8.2
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.2,383
+    commit=4.8.2
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.3,384
+    commit=4.8.3
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.4,386
+    commit=4.8.4
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.4,387
+    commit=4.8.4
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.4,388
+    commit=4.8.4
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.4,391
+    commit=4.8.4
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.5,392
+    commit=4.8.5
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.5,393
+    commit=4.8.5
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.6,394
+    disable=java build fails
+    commit=4.8.6
+    gradle=generic
+    prebuild=sed -i -e '/wrapper/,+2d' -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.7,395
+    disable=java build fails
+    commit=4.8.7
+    gradle=generic
+    prebuild=sed -i -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.8,396
+    disable=java build fails
+    commit=4.8.8
+    gradle=generic
+    prebuild=sed -i -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.9,397
+    commit=4.8.9
+    gradle=generic
+    prebuild=sed -i -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.9,398
+    commit=4.8.9
+    gradle=generic
+    prebuild=sed -i -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.10,399
+    commit=4.8.10
+    gradle=generic
+    prebuild=sed -i -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.12,402
+    commit=4.8.12
+    gradle=generic
+    prebuild=sed -i -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.14,404
+    commit=4.8.14
+    gradle=generic
+    prebuild=sed -i -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.15,405
+    commit=4.8.15
+    gradle=generic
+    prebuild=sed -i -e '/org.mockito:mockito-core/i*/' -e '/com.google.android.gms:play-services-location/i/*' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.16,407
+    commit=4.8.16
+    gradle=generic
+    prebuild=sed -i -e '/googleplayCompile/d' -e '/amazonCompile/d' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.17,408
+    commit=4.8.17
+    gradle=generic
+    prebuild=sed -i -e '/googleplayCompile/d' -e '/amazonCompile/d' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.20,413
+    commit=4.8.20
+    gradle=generic,prod
+    prebuild=sed -i -e '/googleplayCompile/d' -e '/amazonCompile/d' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.21,414
+    commit=4.8.21
+    gradle=generic,prod
+    prebuild=sed -i -e '/googleplayCompile/d' -e '/amazonCompile/d' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.8.22,415
+    commit=4.8.22
+    gradle=generic,prod
+    prebuild=sed -i -e '/googleplayCompile/d' -e '/amazonCompile/d' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.9.0,419
+    commit=4.9.0
+    gradle=generic,prod
+    prebuild=sed -i -e '/googleplayCompile/d' -e '/amazonCompile/d' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.9.1,424
+    commit=4.9.1
+    gradle=generic,prod
+    prebuild=sed -i -e '/googleplayCompile/d' -e '/amazonCompile/d' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.9.2,427
+    commit=4.9.2
+    gradle=generic,prod
+    prebuild=sed -i -e '/googleplayCompile/d' -e '/amazonCompile/d' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.9.3,431
+    commit=4.9.3
+    gradle=generic,prod
+    prebuild=sed -i -e '/googleplayCompile/d' -e '/amazonCompile/d' build.gradle
+    scanignore=src/main/res/raw/gestures
+
+Build:4.9.4,433
+    commit=4.9.4
+    gradle=generic,prod
+    prebuild=sed -i -e '/googleplayCompile/d' -e '/amazonCompile/d' build.gradle
+    scanignore=src/main/res/raw/gestures
+
 Maintainer Notes:
 Upstream releases multiple version with changed vercode. Looks like repushing tags..
 .
 
-Auto Update Mode:Version %v-fdroid
+Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:4.7.10
-Current Version Code:359
-
+Current Version:4.9.4
+Current Version Code:433

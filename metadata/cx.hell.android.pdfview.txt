@@ -1,19 +1,18 @@
 Categories:Reading
 License:GPLv3
-Web Site:https://code.google.com/p/apv
-Source Code:https://code.google.com/p/apv/source
-Issue Tracker:https://code.google.com/p/apv/issues
+Web Site:
+Source Code:https://github.com/mpietrzak/apv
+Issue Tracker:https://github.com/mpietrzak/apv/issues
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LKB59NTKW9QLS
 Bitcoin:1MLdh6uAPymWVJ4bmRde684uTcLJWwumkK
 
 Auto Name:APV PDF Viewer
 Summary:PDF viewer
-#An enhanced version for this is available in [[cx.hell.android.pdfviewpro]]; you
-#should probably install that as this one will probably be removed at some point.
 Description:
 Native PDF viewer based on the MuPDF library
 
 Features:
+
 * Textual search support
 * Flexible key/button/gesture configuration
 * Different color schemes for comfortable reading
@@ -22,8 +21,8 @@ Features:
 * Pinch to zoom
 .
 
-Repo Type:hg
-Repo:https://code.google.com/p/apv
+Repo Type:git
+Repo:https://github.com/mpietrzak/apv
 
 Build:0.3.0,300
     disable=this crashes when built with the patch used in 0.3.2 7a75fb292687
@@ -38,7 +37,6 @@ Build:0.3.2,32000
     patch=fdroid-ndk-build.patch
     prebuild=scripts/build-native.sh
     target=android-8
-    buildjni=no
 
 Build:0.3.4,34000
     commit=4f6cb715dbef
@@ -81,8 +79,6 @@ Build:0.4.0.2,40020
     subdir=pdfview
 
 Auto Update Mode:None
-# See Downloads page (until Google stop new downloads of course)
 Update Check Mode:RepoManifest
 Current Version:0.4.0.2
 Current Version Code:40020
-

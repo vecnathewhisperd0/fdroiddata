@@ -1,4 +1,4 @@
-Categories:Office
+Categories:Writing
 License:Apache2
 Web Site:
 Source Code:https://github.com/knirirr/BeeCount
@@ -8,6 +8,7 @@ Auto Name:BeeCount
 Summary:Knitting row counter
 Description:
 A knitting project helper, with the following features:
+
 * Keep track of several knitting projects.
 * For each project, track several items which need counting, e.g. rows, pattern repeats etc
 * Allow counting up, down and re-setting to zero of these counts.
@@ -141,8 +142,50 @@ Build:2.3.6,96
     subdir=beecount
     gradle=yes
 
+Build:2.3.7-r1,104
+    commit=2.3.7-r1
+    subdir=beecount
+    gradle=yes
+
+Build:2.3.7-r2,105
+    commit=2.3.7-r2
+    subdir=beecount
+    gradle=yes
+
+Build:2.3.8,108
+    commit=2.3.8
+    subdir=beecount
+    gradle=yes
+
+Build:2.3.9,109
+    commit=2.3.9
+    subdir=beecount
+    gradle=yes
+
+Build:2.4.1,114
+    commit=2.4.1
+    subdir=beecount
+    gradle=yes
+
+Build:2.4.2,115
+    disable=misconfigured beta plugin version
+    commit=2.4.2
+    subdir=beecount
+    gradle=yes
+
+Build:2.4.3,116
+    disable=misconfigured beta plugin version
+    commit=2.4.3
+    subdir=beecount
+    gradle=yes
+
+Build:2.4.4,117
+    commit=2.4.4-r1
+    subdir=beecount
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.14.1" }' >> ../build.gradle
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.3.6
-Current Version Code:96
-
+Current Version:2.4.4
+Current Version Code:117

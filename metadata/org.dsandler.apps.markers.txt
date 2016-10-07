@@ -1,21 +1,21 @@
-Categories:Office
+Categories:Graphics
 License:Apache2
-Web Site:https://code.google.com/p/markers-for-android
-Source Code:https://code.google.com/p/markers-for-android/source
-Issue Tracker:https://code.google.com/p/markers-for-android/issues
+Web Site:
+Source Code:https://github.com/dsandler/markers
+Issue Tracker:https://github.com/dsandler/markers/issues
 
 Auto Name:Markers
 Summary:Finger drawing
 Description:
-Uses the multitouch and pressure sensitivity of capactive screens but there
-are differences in screen technology, so please see the website if you
-experience problems.
+Uses the multitouch and pressure sensitivity of capactive screens but there are
+differences in screen technology, so please see the website if you experience
+problems.
 
 A tutorial on the website shows how to simulate layers.
 .
 
 Repo Type:git
-Repo:https://code.google.com/p/markers-for-android
+Repo:https://github.com/dsandler/markers
 
 Build:1.0.3,36
     commit=eeabdb
@@ -53,4 +53,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.2.3
 Current Version Code:56
-

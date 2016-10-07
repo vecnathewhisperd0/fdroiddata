@@ -3,6 +3,7 @@ License:MIT
 Web Site:
 Source Code:https://github.com/raulhaag/MiMangaNu
 Issue Tracker:https://github.com/raulhaag/MiMangaNu/issues
+Changelog:https://github.com/raulhaag/MiMangaNu/blob/HEAD/README.md
 
 Auto Name:Mi Manga Nu
 Summary:Manga reader
@@ -183,8 +184,201 @@ Build:1.26,26
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:1.26
-Current Version Code:26
+Build:1.27,27
+    commit=819d1bd5f16cb161493156a9055df04fba741212
+    subdir=app
+    gradle=yes
 
+Build:1.28,28
+    commit=3b2dc52d770e2d59e431958301037bdbf4ece89e
+    subdir=app
+    gradle=yes
+
+Build:1.29,29
+    commit=d75d5ff846095f58f31d57d99e1ad9a95f434ee2
+    subdir=app
+    gradle=yes
+
+Build:1.30,30
+    commit=c950fd65ab10e12f1763bf2c96a11044744201b5
+    subdir=app
+    gradle=yes
+
+Build:1.31,31
+    commit=7579aa3ebea516ee263529b2acb77f1d36689563
+    subdir=app
+    gradle=yes
+
+Build:1.34,34
+    commit=d4eee8175134cbaad52dd6b1753ae1aa65638865
+    subdir=app
+    gradle=yes
+
+Build:1.35,35
+    commit=df360b2bc771dddfe76f93b60a2259a3893a47a8
+    subdir=app
+    gradle=yes
+
+Build:1.36,36
+    commit=819b27ab4f2292ce8df69597b4a751d7e05b1609
+    subdir=app
+    gradle=yes
+
+Build:1.37,37
+    commit=12e5d69984e134d1718d64a7a64c76b15e7f3211
+    subdir=app
+    gradle=yes
+
+Build:1.38,38
+    commit=470aa7ff27bef12febadbc36ba50ac8bfb8c1ef7
+    subdir=app
+    gradle=yes
+
+Build:1.39,39
+    commit=e74750f460a69730965f61412914ec090fe21548
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.40,40
+    commit=8f2e49b3c1c96e26aedcdd3360f544f976a9b39f
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.41,41
+    commit=75374797094d70a1097a4bd972fef1bc42e91a80
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.42,42
+    commit=5257db2eb64ec60056e915eeef235d613dfe1c26
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.43,43
+    commit=1.43
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.44,44
+    commit=1.44
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.45,45
+    commit=1.45
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.46,46
+    commit=1.46
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.47,47
+    commit=1.47
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.48,48
+    commit=1.48
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.49,49
+    commit=1.49
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.50,50
+    commit=1.50
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.51,51
+    commit=1.51
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.52,52
+    commit=1.52
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e '/maven {/,+2d' ../build.gradle
+
+Build:1.53,53
+    commit=1.53
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.54,54
+    commit=1.54
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@0.2.7
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/g' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:1.54
+Current Version Code:54

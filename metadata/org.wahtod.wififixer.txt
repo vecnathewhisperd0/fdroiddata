@@ -1,4 +1,4 @@
-Categories:System
+Categories:Connectivity
 License:GPLv3
 Web Site:http://wififixer.wordpress.com
 Source Code:https://github.com/Zanshinmu/Wifi-Fixer
@@ -130,8 +130,17 @@ Build:1.0.3.5,1118
     subdir=wififixer
     gradle=yes
 
+Build:1.0.4,1142
+    commit=v1.0.4
+    subdir=wififixer
+    gradle=yes
+
+Build:1.0.5,1165
+    commit=v1.0.5
+    subdir=wififixer
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.0.3.5
-Current Version Code:1118
-
+Current Version:1.0.5
+Current Version Code:1165

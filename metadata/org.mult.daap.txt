@@ -2,7 +2,7 @@ Categories:Multimedia
 License:GPLv2+
 Web Site:https://code.google.com/p/daap-client
 Source Code:https://code.google.com/p/daap-client/source
-Issue Tracker:https://code.google.com/p/daap-client/issues
+Issue Tracker:
 
 Auto Name:DAAP
 Summary:DAAP (Music/media sharing) Client
@@ -36,7 +36,6 @@ Build:.9.7+,45
     forceversion=yes
     target=android-8
 
-# forgot to bump version ... again
 Build:.9.7++,46
     commit=108
     forceversion=yes
@@ -47,4 +46,3 @@ Auto Update Mode:None
 Update Check Mode:None
 Current Version:.9.7
 Current Version Code:46
-

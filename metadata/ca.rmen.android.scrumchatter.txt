@@ -1,4 +1,4 @@
-Categories:Office
+Categories:Time
 License:GPLv3
 Web Site:https://github.com/caarmen/scrumchatter/blob/HEAD/README.md
 Source Code:https://github.com/caarmen/scrumchatter
@@ -7,7 +7,8 @@ Issue Tracker:https://github.com/caarmen/scrumchatter/issues
 Auto Name:Scrum Chatter
 Summary:Time members while they speak at meetings
 Description:
-Time members while they speak at meetings. See who chatters the most in meetings.
+Time members while they speak at meetings. See who chatters the most in
+meetings.
 
 View average and total speaking time of members for all recorded meetings.
 
@@ -18,7 +19,7 @@ Export to Excel so you can add your own lovely charts and graphs as you see fit.
 You can export and import the database.
 
 Note: this app does NOT use the microphone to automatically detect when a person
-is speaking.  You must press on a "play" button when a team member speaks.
+is speaking. You must press on a "play" button when a team member speaks.
 .
 
 Repo Type:git
@@ -34,8 +35,72 @@ Build:1.0.23,10023
     subdir=app
     gradle=yes
 
+Build:1.0.24,10024
+    commit=scrumchatter-1.0.24
+    subdir=app
+    gradle=yes
+
+Build:1.1.2,10102
+    commit=scrumchatter-1.1.2
+    subdir=app
+    gradle=yes
+
+Build:1.1.3,10103
+    commit=scrumchatter-1.1.3
+    subdir=app
+    gradle=yes
+
+Build:1.2.1,10201
+    commit=scrumchatter-1.2.1
+    subdir=app
+    gradle=yes
+
+Build:1.2.2,10202
+    commit=scrumchatter-1.2.2
+    subdir=app
+    gradle=yes
+
+Build:1.2.3,10203
+    commit=scrumchatter-1.2.3
+    subdir=app
+    gradle=yes
+
+Build:1.3.0,10300
+    commit=scrumchatter-1.3.0
+    subdir=app
+    gradle=yes
+
+Build:1.3.1,10301
+    commit=scrumchatter-1.3.1
+    subdir=app
+    gradle=yes
+
+Build:1.3.2,10302
+    commit=scrumchatter-1.3.2
+    subdir=app
+    gradle=yes
+
+Build:1.3.3,10303
+    commit=scrumchatter-1.3.3
+    subdir=app
+    gradle=yes
+
+Build:1.4.0,10400
+    commit=scrumchatter-1.4.0
+    subdir=app
+    gradle=yes
+
+Build:1.5.0,10500
+    commit=scrumchatter-1.5.0
+    subdir=app
+    gradle=yes
+
+Build:1.5.2,10502
+    commit=scrumchatter-1.5.2
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version scrumchatter-%v
 Update Check Mode:Tags ^scrumchatter.[0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*
-Current Version:1.0.23
-Current Version Code:10023
-
+Current Version:1.5.2
+Current Version Code:10502

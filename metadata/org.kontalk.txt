@@ -3,6 +3,7 @@ License:GPLv3
 Web Site:http://www.kontalk.org
 Source Code:https://github.com/kontalk/androidclient
 Issue Tracker:https://github.com/kontalk/androidclient/issues
+Changelog:https://github.com/kontalk/androidclient/blob/HEAD/CHANGELOG.md
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VU57LMG64GATN
 Bitcoin:14vipppSvCG7VdvoYmbhKZ8DbTfv9U1QfS
 
@@ -28,7 +29,8 @@ if you can, please donate on [http://kontalk.net/ kontalk.net]. Even small
 donations matter.
 
 You can find all permissions used by the app explained at
-[https://github.com/kontalk/androidclient/wiki/Android-client-permissions this page].
+[https://github.com/kontalk/androidclient/wiki/Android-client-permissions this
+page].
 
 This version has been stripped of all Google components, meaning no support for
 push notifications.
@@ -244,12 +246,201 @@ Build:3.0-rc4,50
     gradle=basic
     prebuild=sed -i -e "/googleplayCompile/d" build.gradle
 
-Maintainer Notes:
-TODO: Update Check Mode:Tags ^[0-9.]*$
-.
+Build:3.0,52
+    commit=v3.0
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
 
+Build:3.0.1,54
+    commit=v3.0.1
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0.2,56
+    commit=v3.0.2
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0.3,58
+    commit=v3.0.3
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0.4,60
+    commit=v3.0.4
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0.5,62
+    commit=v3.0.5
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.0.6,64
+    commit=v3.0.6
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+    scanignore=app/src/main/res/raw/truststore
+
+Build:3.1-beta1,70
+    commit=v3.1-beta1
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.1-beta2,72
+    commit=v3.1-beta2
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+
+Build:3.1-beta3,74
+    commit=v3.1-beta3
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+    scanignore=app/src/main/res/raw/truststore
+
+Build:3.1,76
+    commit=v3.1
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+    scanignore=app/src/main/res/raw/truststore
+
+Build:3.1.1,78
+    commit=v3.1.1
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+    scanignore=app/src/main/res/raw/truststore
+
+Build:3.1.2,80
+    commit=v3.1.2
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle && \
+        rm ../gradle.properties
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+    scanignore=app/src/main/res/raw/truststore
+
+Build:3.1.3,82
+    commit=v3.1.3
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle && \
+        rm ../gradle.properties
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+    scanignore=app/src/main/res/raw/truststore
+
+Build:3.1.4,100
+    commit=v3.1.4
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle && \
+        rm ../gradle.properties
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+    scanignore=app/src/main/res/raw/truststore
+
+Build:3.1.5,102
+    commit=v3.1.5
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle && \
+        rm ../gradle.properties
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+    scanignore=app/src/main/res/raw/truststore
+
+Build:3.1.6,105
+    commit=v3.1.6
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle && \
+        rm ../gradle.properties
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+    scanignore=app/src/main/res/raw/truststore
+
+Build:3.1.7,109
+    commit=v3.1.7
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle && \
+        rm ../gradle.properties
+    gradle=basic
+    prebuild=sed -i -e "/googleplayCompile/d" build.gradle
+    scanignore=app/src/main/res/raw/truststore
+
+Build:3.1.8,114
+    commit=v3.1.8
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle && \
+        rm ../gradle.properties
+    gradle=basic
+    prebuild=sed -i -e "/crashlytics/,+2d" -e "/googleplayCompile/d" build.gradle && \
+        sed -i -e '/fabric/d' ../build.gradle build.gradle
+    scanignore=app/src/main/res/raw/truststore
+
+Build:3.1.9.1,122
+    commit=v3.1.9.1
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle && \
+        rm ../gradle.properties
+    gradle=basic
+    prebuild=sed -i -e "/crashlytics/,+2d" -e "/googleplayCompile/d" build.gradle && \
+        sed -i -e '/fabric/d' ../build.gradle build.gradle
+    scanignore=app/src/main/res/raw/truststore
+
+Build:3.1.10,124
+    commit=v3.1.10
+    subdir=app
+    submodules=yes
+    init=sed -i -e 's/signingConfig signingConfigs.release/{}/g' build.gradle && \
+        rm ../gradle.properties
+    gradle=basic
+    prebuild=sed -i -e "/crashlytics/,+2d" -e "/googleplayCompile/d" build.gradle && \
+        sed -i -e '/fabric/d' ../build.gradle build.gradle
+    scanignore=app/src/main/res/raw/truststore
+
+Archive Policy:6 versions
 Auto Update Mode:Version v%v
-Update Check Mode:Tags
-Current Version:3.0-rc4
-Current Version Code:50
-
+Update Check Mode:Tags ^v[0-9.]*$
+Current Version:3.1.10
+Current Version Code:124

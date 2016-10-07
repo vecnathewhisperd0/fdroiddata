@@ -1,19 +1,19 @@
 Categories:Navigation
 License:GPLv3+
-Web Site:http://geokrety.org
-Source Code:http://sourceforge.net/p/geokretylog/code
-Issue Tracker:http://forum.opencaching.pl/viewtopic.php?f=6&t=7789
+Web Site:https://geokrety.org
+Source Code:https://sourceforge.net/p/geokretylog/code
+Issue Tracker:https://forum.opencaching.pl/viewtopic.php?f=6&t=7789
 
 Auto Name:GeoKrety Logger
 Summary:Geocaching client
 Description:
-GeoKrety is a non-commercial GeoCaching game.
-People move registered objects (called GeoKrety) from cache to cache and
-register each move with the service.
-For more information please visit the website.
-You'll need account on the website to use the app.
+GeoKrety is a non-commercial GeoCaching game. People move registered objects
+(called GeoKrety) from cache to cache and register each move with the service.
+For more information please visit the website. You'll need account on the
+website to use the app.
 
 How to log GeoKret's movement:
+
 # Click the button "Log GeoKret" on the main screen.
 # Select the type of the log. Make sure that in the "Identify GeoKret" is your login.
 # If you had met or grabbed the GeoKret, fill in it's tracking code. If you drop the GeoKret, you can click "Inventory" and choose Tracking Code from the list of GeoKrets in your inventory.
@@ -45,8 +45,10 @@ Build:0.7.4 beta,39
 Build:0.7.5 beta,41
     commit=release-0.7.5-beta
 
+Build:0.7.6 beta,42
+    commit=release-0.7.6-beta
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:0.7.5 beta
-Current Version Code:41
-
+Current Version:0.7.6 beta
+Current Version Code:42

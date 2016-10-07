@@ -8,8 +8,8 @@ Issue Tracker:
 Auto Name:Ministro configuration tool
 Summary:
 Description:
-This is the configuration utility for [[org.kde.necessitas.ministro]]. You do not
-need to install this (or that) unless another app requests it.
+This is the configuration utility for [[org.kde.necessitas.ministro]]. You do
+not need to install this (or that) unless another app requests it.
 .
 
 Repo Type:git
@@ -25,4 +25,3 @@ Auto Update Mode:None
 Update Check Mode:None
 Current Version:1.0
 Current Version Code:1
-

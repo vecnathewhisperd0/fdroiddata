@@ -1,8 +1,8 @@
 Categories:Reading
 License:GPLv3
-Web Site:https://code.google.com/p/android-comicsreader
-Source Code:https://code.google.com/p/android-comicsreader/source
-Issue Tracker:https://code.google.com/p/android-comicsreader/issues
+Web Site:http://dev.kervala.net/projects/comicsreader/wiki
+Source Code:http://dev.kervala.net/projects/comicsreader/repository
+Issue Tracker:http://dev.kervala.net/projects/comicsreader/issues
 
 Auto Name:Comics Reader
 Summary:Comic and image viewer
@@ -21,7 +21,7 @@ Description:
 .
 
 Repo Type:hg
-Repo:https://code.google.com/p/android-comicsreader
+Repo:http://hg.kervala.net/comicsreader/
 
 Build:1.0,2
     disable=7ecb0e
@@ -32,7 +32,6 @@ Build:1.0.554,11
     disable=No source code published
     commit=unknown - see disabled
 
-#Strings.xml not updated; get version from downloads section
 Build:1.0.566,12
     disable=6fc1154e7964
     commit=unknown - see disabled
@@ -50,36 +49,30 @@ Build:1.1.612,15
     patch=unrar.patch
     forceversion=yes
     prebuild=rm -rf jni/ src/net/kervala/CbrAlbum.java src/net/kervala/RarFile.java
-    buildjni=no
 
 Build:1.1.624,17
     commit=6650f062edf6
     patch=unrar_17.patch
     forceversion=yes
     prebuild=rm -rf jni/ src/net/kervala/CbrAlbum.java src/net/kervala/RarFile.java
-    buildjni=no
 
 Build:1.2,18
     commit=4f88501f41ea
     patch=unrar_18.patch
     prebuild=rm -rf jni/ src/net/kervala/CbrAlbum.java src/net/kervala/RarFile.java
-    buildjni=no
 
 Build:2.0,23
     commit=2fc15e8ff72c134e
     patch=unrar_18.patch
     prebuild=rm -rf jni/ src/net/kervala/CbrAlbum.java src/net/kervala/RarFile.java
-    buildjni=no
 
 Build:2.0b,25
-    forceversion=yes
     commit=12e27d53d640
     patch=unrar_18.patch
+    forceversion=yes
     prebuild=rm -rf jni/ src/net/kervala/CbrAlbum.java src/net/kervala/RarFile.java
-    buildjni=no
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:2.0
-Current Version Code:25
-
+Current Version:2.2.
+Current Version Code:28

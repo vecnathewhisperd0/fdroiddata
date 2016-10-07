@@ -1,18 +1,18 @@
 Categories:Games
 License:GPLv3
-Web Site:https://code.google.com/p/android-dice-game
-Source Code:https://code.google.com/p/android-dice-game/source
-Issue Tracker:https://code.google.com/p/android-dice-game/issues
+Web Site:
+Source Code:https://github.com/FatMonkeySmile/android-dice-game
+Issue Tracker:https://github.com/FatMonkeySmile/android-dice-game/issues
 
 Auto Name:Catan Dice Game
 Summary:Resource dice game
 Description:
-Unofficial version of a very famous resource dice board game. This
-version is not associated with the publishers of the original game.
+Unofficial version of a very famous resource dice board game. This version is
+not associated with the publishers of the original game.
 .
 
-Repo Type:git-svn
-Repo:https://android-dice-game.googlecode.com/svn/trunk
+Repo Type:git
+Repo:https://github.com/FatMonkeySmile/android-dice-game
 
 Build:1.12,13
     commit=125
@@ -22,4 +22,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.12
 Current Version Code:13
-

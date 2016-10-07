@@ -1,4 +1,4 @@
-Categories:Office
+Categories:System
 License:Apache2
 Web Site:
 Source Code:https://github.com/graham22/Classic
@@ -9,12 +9,12 @@ Auto Name:Classic
 Summary:View solar charging device status
 Description:
 Unofficial status monitor for [http://www.midnitesolar.com/ Midnite solar]'s
-Classic 150, 200, 250 Charge Controller. It is a Read Only Program, it does
-not write to the Classic.
+Classic 150, 200, 250 Charge Controller. It is a Read Only Program, it does not
+write to the Classic.
 
-If the app detects a Whizbang Junior current monitor, the State Of Charge
-will display along with a bi-directional current gauge. Basic support for
-the Tristar MPPT charge controller from Morningstar is also included.
+If the app detects a Whizbang Junior current monitor, the State Of Charge will
+display along with a bi-directional current gauge. Basic support for the Tristar
+MPPT charge controller from Morningstar is also included.
 .
 
 Repo Type:git
@@ -45,8 +45,57 @@ Build:2.1.2,212
     subdir=app
     gradle=yes
 
+Build:2.1.5,215
+    commit=674e78f44a4faf583c84fa26f6eabe87af9978ac
+    subdir=app
+    gradle=yes
+
+Build:2.2,220
+    commit=480b5eb66d42c8813d08967d87be826e9c531628
+    subdir=app
+    gradle=yes
+
+Build:2.3,230
+    commit=856f0287f827ecc56b740c37190f0920f7376ecc
+    subdir=app
+    gradle=yes
+
+Build:2.3.1,231
+    commit=164f9fdfd1ab56800df30f5f8479c7da16ce2f1f
+    subdir=app
+    gradle=yes
+
+Build:2.3.2,232
+    commit=99257043f443062353397087a6c0c313813fd9b7
+    subdir=app
+    gradle=yes
+
+Build:2.3.3,233
+    commit=5b7e81a86b7cc8c2ddfca97f99e77c2f986b040e
+    subdir=app
+    gradle=yes
+
+Build:2.4.2,242
+    commit=04ded288cca61d7eeffb068aa5559edadcdcb716
+    subdir=app
+    gradle=yes
+
+Build:2.4.3,243
+    commit=bc9330b4f461201f5e2fc24e11f82c58a47cd046
+    subdir=app
+    gradle=yes
+
+Build:2.4.4,244
+    commit=92edd773506036613abe40f9d148201614d42460
+    subdir=app
+    gradle=yes
+
+Build:2.4.5,245
+    commit=e6d65e0377864f075706ad69b19f9de93f69bd8b
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:2.1.2
-Current Version Code:212
-
+Current Version:2.4.5
+Current Version Code:245

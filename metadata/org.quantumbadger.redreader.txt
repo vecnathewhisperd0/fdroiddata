@@ -5,7 +5,7 @@ Source Code:https://github.com/QuantumBadger/RedReader
 Issue Tracker:https://github.com/QuantumBadger/RedReader/issues
 Bitcoin:1874wapGxDo2vEp4avisda4gx3SCjsHCQJ
 
-Auto Name:RedReader Beta
+Auto Name:RedReader
 Summary:Client for reddit.com
 Description:
 An unofficial client for the news site reddit.com.
@@ -24,11 +24,10 @@ An unofficial client for the news site reddit.com.
 
 Status: BETA
 
-Details of each crash in the UI thread will be logged to external storage,
-under the filename "redreader_crash_log_(UUID).txt" - please attach the
-relevant log when reporting a bug. Crashes in other parts of the application
-will cause a prompt to be displayed asking you to email the exception details
-directly.
+Details of each crash in the UI thread will be logged to external storage, under
+the filename "redreader_crash_log_(UUID).txt" - please attach the relevant log
+when reporting a bug. Crashes in other parts of the application will cause a
+prompt to be displayed asking you to email the exception details directly.
 .
 
 Repo Type:git
@@ -177,13 +176,55 @@ Build:1.8.7.8,62
     prebuild=sed -i 's@<version>3.8.0</version>@<version>3.7.0</version>@g' pom.xml
     target=android-17
 
-Maintainer Notes:
-Check sed replacement on every new release since sed is not meant for XML files.
-Remove it when build server uses maven >= 3.1.1.
-.
+Build:1.9.0,63
+    commit=v1.9.0
+    gradle=yes
+
+Build:1.9.1,64
+    commit=v1.9.1
+    gradle=yes
+
+Build:1.9.2,65
+    commit=v1.9.2
+    gradle=yes
+
+Build:1.9.3,66
+    commit=v1.9.3
+    gradle=yes
+
+Build:1.9.3.1,67
+    commit=v1.9.3.1
+    gradle=yes
+
+Build:1.9.3.2,68
+    commit=v1.9.3.2
+    gradle=yes
+
+Build:1.9.3.3,69
+    commit=v1.9.3.3
+    gradle=yes
+
+Build:1.9.3.4,70
+    commit=v1.9.3.4
+    gradle=yes
+
+Build:1.9.4,71
+    commit=v1.9.4
+    gradle=yes
+
+Build:1.9.5,72
+    commit=v1.9.5
+    gradle=yes
+
+Build:1.9.5.1,73
+    commit=v1.9.5.1
+    gradle=yes
+
+Build:1.9.5.2,74
+    commit=v1.9.5.2
+    gradle=yes
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.8.7.8
-Current Version Code:62
-
+Current Version:1.9.5.2
+Current Version Code:74

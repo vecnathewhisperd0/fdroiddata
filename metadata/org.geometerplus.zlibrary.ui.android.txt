@@ -1,34 +1,32 @@
-AntiFeatures:NonFreeAdd
+AntiFeatures:NonFreeAdd,UpstreamNonFree
 Categories:Reading
 License:GPLv2+
-Web Site:http://www.fbreader.org/FBReaderJ
+Web Site:https://fbreader.org/FBReaderJ
 Source Code:https://github.com/geometer/FBReaderJ
 Issue Tracker:https://github.com/geometer/FBReaderJ/issues
-Donate:http://www.fbreader.org/donation/make.php
+Donate:https://fbreader.org/donation/make.php
 
 Auto Name:FBReader
 Summary:An e-book reader
 Description:
-'''N.B'''There are three different apks to cover the different versions
-of Android.
-Donut covers 1.5-1.6; Froyo covers 2.0-2.3 and Honeycomb covers 3.0+.
+'''N.B'''There are three different apks to cover the different versions of
+Android. Donut covers 1.5-1.6; Froyo covers 2.0-2.3 and Honeycomb covers 3.0+.
 x86 and MIPS are supported natively in all apks.
 
-An e-book reader. Features include the ability to stock up on books from
-online OPDS libraries like Project Gutenberg straight from the app.
-F-Droid.org has two other addon apps that provide text-to-speech functionality
-and one to support ''local'' OPDS shares.
+An e-book reader. Features include the ability to stock up on books from online
+OPDS libraries like Project Gutenberg straight from the app. F-Droid.org has two
+other addon apps that provide text-to-speech functionality and one to support
+''local'' OPDS shares.
 
 Anti-features: Addons. While there are some addons for this app that are free,
 the dictionaries that are suggested are not. However, it does support
-[[aarddict.android]], as long as that is installed beforehand '''and'''
-you choose it via the Dictionary section of the settings.
+[[aarddict.android]], as long as that is installed beforehand '''and''' you
+choose it via the Dictionary section of the settings.
 .
 
 Repo Type:git
 Repo:https://github.com/geometer/FBReaderJ.git
 
-#Build Version:0.99.3,9903,79cf4985a1faa4c80064,antcommands=package
 Build:0.99.11,9911
     commit=0.99.11
     antcommands=package
@@ -292,7 +290,7 @@ Build:2.0.6-ics,2000620
         cp -fR $$JsonSimple$$/src/main/java/org src/ && \
         cp -fR $$PDFParseLib$$/pdfparse-lib/src/main/java/org src/ && \
         rm -fR src/com/paragon && \
-        sed -i -e '/com.google.android.gms.version/d' -e '/google_play_services/d'  AndroidManifest.xml  && \
+        sed -i -e '/com.google.android.gms.version/d' -e '/google_play_services/d'  AndroidManifest.xml && \
         sed -i -e '/google.services.lib.dir/d' project.properties && \
         rm -fR src/org/geometerplus/android/fbreader/network/auth && \
         cp -fR $$FBReaderJ$$/src/org/geometerplus/android/fbreader/network/auth src/org/geometerplus/android/fbreader/network/
@@ -301,7 +299,6 @@ Build:2.0.6-ics,2000620
     buildjni=yes
 
 Build:2.1-ics,2010020
-    disable=testing
     commit=33139e2b04ae36388956a57373ba74e8cc0ef23c
     patch=fbreader-2.0.6.patch
     srclibs=FBReaderJ@2.1,PDFParseLib@36d7479ce85638eb4f0ff9c875ec77680177da5d,ApacheHttpClient@4.2.5,NanoHttpd@Release-2.0.5,JsonSimple@tag_release_1_1_1
@@ -322,7 +319,7 @@ Build:2.1-ics,2010020
         cp -fR $$JsonSimple$$/src/main/java/org src/ && \
         cp -fR $$PDFParseLib$$/pdfparse-lib/src/main/java/org src/ && \
         rm -fR src/com/paragon && \
-        sed -i -e '/com.google.android.gms.version/d' -e '/google_play_services/d'  AndroidManifest.xml  && \
+        sed -i -e '/com.google.android.gms.version/d' -e '/google_play_services/d'  AndroidManifest.xml && \
         sed -i -e '/google.services.lib.dir/d' project.properties && \
         rm -fR src/org/geometerplus/android/fbreader/network/auth && \
         cp -fR $$FBReaderJ$$/src/org/geometerplus/android/fbreader/network/auth src/org/geometerplus/android/fbreader/network/
@@ -353,6 +350,5 @@ sed -i -e '/MinicardContract/d' src/org/geometerplus/android/fbreader/Dictionary
 Archive Policy:6 versions
 Auto Update Mode:None
 Update Check Mode:Tags ^[0-9.]*$
-Current Version:2.4.7
-Current Version Code:2040710
-
+Current Version:2.5.9
+Current Version Code:2050910

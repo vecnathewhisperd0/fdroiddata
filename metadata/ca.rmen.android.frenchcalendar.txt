@@ -1,5 +1,5 @@
-Categories:Wallpaper,Office
-License:GPLv2
+Categories:Theming,Time
+License:GPLv3
 Web Site:https://github.com/caarmen/FRCAndroidWidget/blob/HEAD/README.md
 Source Code:https://github.com/caarmen/FRCAndroidWidget
 Issue Tracker:https://github.com/caarmen/FRCAndroidWidget/issues
@@ -7,17 +7,21 @@ Issue Tracker:https://github.com/caarmen/FRCAndroidWidget/issues
 Auto Name:French Calendar
 Summary:French Revolutionary calendar widget
 Description:
-Resizable widget which displays the current date and time in the French Revolutionary calendar.  The widget supports the following preferences:
+Resizable widget which displays the current date and time in the French
+Revolutionary calendar. The widget supports the following preferences:
+
 * Whether to display the current time, or the name of the object for that day of the year (ex: grape).
 * Calculation method: method used to determine the first day of the year: Either based on the autumn equinox, or the Romme method.
 * Language of the calendar (limited to just a few languages for now).
 
-Other features;
+Other features:
+
 * Possibility to share the information about the current date.
 * The color of the widget is customizable, but by default is different for each month.
 * You can add the widget to your lock screen (on supported devices).
 
 Three widget styles:
+
 * Horizontal parchment
 * Vertical parchment
 * Minimalist
@@ -48,8 +52,74 @@ Build:1.6.1,161
     subdir=handheld
     gradle=foss
 
-Auto Update Mode:Version releases-%v
-Update Check Mode:Tags ^release-
-Current Version:1.6.1
-Current Version Code:161
+Build:1.7.0,170
+    commit=release-1.7.0
+    subdir=handheld
+    gradle=foss
 
+Build:1.7.1,171
+    commit=release-1.7.1
+    subdir=handheld
+    gradle=foss
+
+Build:1.7.2,172
+    commit=release-1.7.2
+    subdir=handheld
+    gradle=foss
+
+Build:1.8.0,180
+    commit=release-1.8.0
+    subdir=handheld
+    gradle=foss
+    scanignore=wearable/build.gradle
+
+Build:1.8.1,181
+    commit=release-1.8.1
+    subdir=handheld
+    gradle=foss
+    scanignore=wearable/build.gradle
+
+Build:1.9.0,190
+    disable=Could not find com.google.android.gms:play-services-wearable:8.4.0.
+    commit=release-1.9.0
+    subdir=handheld
+    gradle=foss
+    scanignore=wearable/build.gradle
+
+Build:1.9.1,191
+    commit=release-1.9.1
+    subdir=handheld
+    gradle=foss
+    prebuild=sed -i -e '/includeWear/s/true/false/g' ../settings.gradle
+    scanignore=wearable/build.gradle
+
+Build:1.9.2,192
+    commit=release-1.9.2
+    subdir=handheld
+    gradle=foss
+    prebuild=sed -i -e '/includeWear/s/true/false/g' ../settings.gradle
+    scanignore=wearable/build.gradle
+
+Build:1.9.3,193
+    commit=release-1.9.3
+    subdir=handheld
+    gradle=foss
+    prebuild=sed -i -e '/includeWear/s/true/false/g' ../settings.gradle
+    scanignore=wearable/build.gradle
+
+Build:1.9.4,194
+    commit=release-1.9.4
+    subdir=handheld
+    gradle=foss
+    prebuild=sed -i -e '/includeWear/s/true/false/g' ../settings.gradle
+    scanignore=wearable/build.gradle
+
+Maintainer Notes:
+Upstream checks flavor containing Foss name and enables/disables wear support. However,
+when building with fdroid, we do a `gradle clean` and thus this check fails.
+.
+
+Auto Update Mode:Version release-%v
+Update Check Mode:Tags ^release-
+Current Version:1.9.4
+Current Version Code:194

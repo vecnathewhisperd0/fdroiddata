@@ -7,11 +7,10 @@ Issue Tracker:
 Auto Name:Puma
 Summary:Client for the Pump.io network
 Description:
-A simple client for Pump.io,
-a stream server for distributed social networking and microblogging.
-Register a [http://pump.io/tryit.html free account] at a participating website
-and follow some [https://static.jpope.org/users.html people],
-before using the app.
+A simple client for Pump.io, a stream server for distributed social networking
+and microblogging. Register a [http://pump.io/tryit.html free account] at a
+participating website and follow some [https://static.jpope.org/users.html
+people], before using the app.
 
 Status: Alpha. Not all the functions of the web UI are available, such as
 following people or viewing profiles.
@@ -73,9 +72,6 @@ tags and included jar files! Replace them before re-enabling:
 .
 
 Auto Update Mode:None
-#Auto Update Mode:Version %v
-#Update Check Mode:Tags
-Update Check Mode:RepoManifest
+Update Check Mode:None
 Current Version:0.18
 Current Version Code:18
-

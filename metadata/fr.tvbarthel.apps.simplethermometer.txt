@@ -1,5 +1,5 @@
 AntiFeatures:NonFreeDep
-Categories:Office
+Categories:System
 License:Apache2
 Web Site:https://github.com/tvbarthel/SimpleThermometerProject/blob/HEAD/README.md
 Source Code:https://github.com/tvbarthel/SimpleThermometerProject
@@ -26,4 +26,3 @@ Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:3.1.0
 Current Version Code:9
-

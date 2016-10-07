@@ -1,22 +1,21 @@
 Categories:Games
-License:GPLv3
-Web Site:https://code.google.com/p/mtg-familiar
-Source Code:https://code.google.com/p/mtg-familiar/source
-Issue Tracker:https://code.google.com/p/mtg-familiar/issues
-Donate:https://code.google.com/p/mtg-familiar
+License:MIT
+Web Site:https://github.com/AEFeinstein/mtg-familiar/blob/HEAD/README.md
+Source Code:https://github.com/AEFeinstein/mtg-familiar
+Issue Tracker:https://github.com/AEFeinstein/mtg-familiar/issues
+Donate:https://github.com/AEFeinstein/mtg-familiar/blob/HEAD/README.md#show-support
 
 Auto Name:MTG Familiar
 Summary:Utilities for the game MTG
 Description:
 This application provides a way to search an offline database of all magic
-cards. The application also provides a life counter, a random number
-generator, card price lookups, and card image downloads. Future features
-include deck management, rules, and anything else which would be useful while
-playing Magic.
+cards. The application also provides a life counter, a random number generator,
+card price lookups, and card image downloads. Future features include deck
+management, rules, and anything else which would be useful while playing Magic.
 .
 
-Repo Type:git-svn
-Repo:https://mtg-familiar.googlecode.com/svn;trunk=trunk;tags=tags
+Repo Type:git
+Repo:https://github.com/AEFeinstein/mtg-familiar
 
 Build:1.8.1,15
     commit=474
@@ -34,8 +33,72 @@ Build:2.1.1,22
     subdir=MTGFamiliar
     prebuild=cp ../actionbarsherlock/libs/android-support-v4.jar ../robospice/libs/
 
+Build:3.2.8-foss,37
+    commit=v3.2.8
+    subdir=mobile
+    gradle=foss
+    prebuild=sed -i -e '/play-services/d' build.gradle
+    scanignore=mobile/src/main/res/raw/datagz
+
+Build:3.2.9-foss,38
+    commit=v3.2.9
+    subdir=mobile
+    gradle=foss
+    prebuild=sed -i -e '/play-services/d' build.gradle
+    scanignore=mobile/src/main/res/raw/datagz
+
+Build:3.2.10-foss,39
+    commit=v3.2.10
+    subdir=mobile
+    gradle=foss
+    prebuild=sed -i -e '/play-services/d' build.gradle
+    scanignore=mobile/src/main/res/raw/datagz
+
+Build:3.3.0-foss,40
+    commit=v3.3.0
+    subdir=mobile
+    gradle=foss
+    prebuild=sed -i -e '/play-services/d' build.gradle
+    scanignore=mobile/src/main/res/raw/datagz
+
+Build:3.3.1-foss,41
+    commit=v3.3.1
+    subdir=mobile
+    gradle=foss
+    prebuild=sed -i -e '/play-services/d' build.gradle
+    scanignore=mobile/src/main/res/raw/datagz
+
+Build:3.3.3-foss,43
+    commit=v3.3.3
+    subdir=mobile
+    gradle=foss
+    forceversion=yes
+    prebuild=sed -i -e '/play-services/d' build.gradle
+    scanignore=mobile/src/main/res/raw/datagz
+
+Build:3.3.4-foss,44
+    commit=v3.3.4
+    subdir=mobile
+    gradle=foss
+    forceversion=yes
+    prebuild=sed -i -e '/play-services/d' build.gradle
+    scanignore=mobile/src/main/res/raw/datagz
+
+Build:3.3.5-foss,45
+    commit=v3.3.5
+    subdir=mobile
+    gradle=foss
+    forceversion=yes
+    prebuild=sed -i -e '/play-services/d' build.gradle && \
+        sed -i '/android.tools.build/d' build.gradle
+    scanignore=mobile/src/main/res/raw/datagz
+
+Maintainer Notes:
+License switched when moving from github.
+Under mobile/src/main/res/raw/datagz is the apps card database.
+.
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:2.1.1
-Current Version Code:22
-
+Current Version:3.3.5
+Current Version Code:45

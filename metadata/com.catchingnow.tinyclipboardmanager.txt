@@ -1,4 +1,4 @@
-Categories:Office
+Categories:System
 License:MIT
 Web Site:https://github.com/heruoxin/Clip-Stack/blob/HEAD/README.md
 Source Code:https://github.com/heruoxin/Clip-Stack
@@ -7,9 +7,9 @@ Issue Tracker:https://github.com/heruoxin/Clip-Stack/issues
 Auto Name:Clip Stack
 Summary:Manage clipboard history
 Description:
-Remember all your clipboard history and recover text after reboot. You
-can easily search, edit, delete and even share your clipboards. Also,
-an export to a plain text file is possible.
+Remember all your clipboard history and recover text after reboot. You can
+easily search, edit, delete and even share your clipboards. Also, an export to a
+plain text file is possible.
 .
 
 Repo Type:git
@@ -44,4 +44,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.5.0
 Current Version Code:57
-

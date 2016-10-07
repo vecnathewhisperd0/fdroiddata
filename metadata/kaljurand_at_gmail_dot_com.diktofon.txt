@@ -1,17 +1,18 @@
-Categories:Office
+Categories:Multimedia
 License:Apache2
-Web Site:https://code.google.com/p/diktofon
+Web Site:
 Source Code:https://github.com/Kaljurand/Diktofon
-Issue Tracker:https://code.google.com/p/diktofon/issues
+Issue Tracker:https://github.com/aljurand/Diktofon/issues
 
 Auto Name:Diktofon
 Summary:Take voice notes
 Description:
-Features include tagging, a high quality built-in voice recorder and the possibility to
-use an external recorder or recording manager app. In addition, it can connect to an
-online Estonian speech-to-text service (http://bark.phon.ioc.ee/webtrans/) to turn the recordings
-into written text. The service can detect speakers in the recordings allowing for novel and powerful
-ways to search, sort and playback the recordings.
+Features include tagging, a high quality built-in voice recorder and the
+possibility to use an external recorder or recording manager app. In addition,
+it can connect to an online Estonian speech-to-text service
+([http://bark.phon.ioc.ee/webtrans/]) to turn the recordings into written text.
+The service can detect speakers in the recordings allowing for novel and
+powerful ways to search, sort and playback the recordings.
 .
 
 Repo Type:git
@@ -33,8 +34,18 @@ Build:0.9.80,980
     extlibs=json-simple/json-simple-1.1.1.jar,net-speech-api/net-speech-api-0.1.8.jar
     target=android-10
 
+Build:0.9.83,983
+    commit=v0.9.83
+    subdir=app
+    extlibs=json-simple/json-simple-1.1.1.jar,net-speech-api/net-speech-api-0.1.8.jar
+    target=android-10
+
+Maintainer Notes:
+Upstream is trying to switch to Gradle to get rid of the jars. Then the build
+will be much easier and we can enable auto updates.
+.
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:0.9.80
-Current Version Code:980
-
+Current Version:0.9.83
+Current Version Code:983

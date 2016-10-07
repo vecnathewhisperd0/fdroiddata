@@ -15,9 +15,9 @@ An android audio oscilloscope and spectrum with following features:
 *  Index
 *  Spectrum
 
-There are toolbar icons to control single step, sync polarity,
-timebase, storage and scrolling. The spectrum display has a display
-lock function and shows the current dominant frequency in the toolbar.
+There are toolbar icons to control single step, sync polarity, timebase, storage
+and scrolling. The spectrum display has a display lock function and shows the
+current dominant frequency in the toolbar.
 .
 
 Repo Type:git
@@ -35,8 +35,28 @@ Build:1.02,102
 Build:1.03,103
     commit=v1.03
 
+Build:1.04,104
+    commit=v1.04
+
+Build:1.05,105
+    commit=v1.05
+
+Build:1.06,106
+    commit=v1.06
+
+Build:1.07,107
+    commit=v1.07
+
+Build:1.08,108
+    commit=v1.08
+
+Build:1.09,109
+    commit=v1.09
+
+Build:1.10,110
+    commit=v1.10
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.03
-Current Version Code:103
-
+Current Version:1.10
+Current Version Code:110

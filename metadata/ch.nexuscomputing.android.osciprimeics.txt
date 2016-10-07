@@ -7,8 +7,8 @@ Issue Tracker:
 Auto Name:OsciPrime
 Summary:Oscilloscope to measure signals
 Description:
-Measure the microphone audio input as well as a USB Oscilloscope on
-sale from the website.
+Measure the microphone audio input as well as a USB Oscilloscope on sale from
+the website.
 .
 
 Repo Type:hg
@@ -30,4 +30,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:Dagobert
 Current Version Code:16
-

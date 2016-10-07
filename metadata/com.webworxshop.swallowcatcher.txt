@@ -9,8 +9,8 @@ FlattrID:126225
 Auto Name:SwallowCatcher
 Summary:Podcast client
 Description:
-A podcatcher, or client for downloading and keeping track of audio shows
-hosted on the internet.
+A podcatcher, or client for downloading and keeping track of audio shows hosted
+on the internet.
 .
 
 Repo Type:git
@@ -29,4 +29,3 @@ Auto Update Mode:None
 Update Check Mode:Static
 Current Version:0.2.0
 Current Version Code:7
-

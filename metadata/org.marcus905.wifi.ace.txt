@@ -1,19 +1,20 @@
-Categories:System
+Categories:Connectivity
 License:Apache2
-Web Site:https://code.google.com/p/android-wifi-ace
-Source Code:https://code.google.com/p/android-wifi-ace/source
-Issue Tracker:https://code.google.com/p/android-wifi-ace/issues
+Web Site:
+Source Code:https://github.com/marcus905/android-wifi-ace
+Issue Tracker:https://github.com/marcus905/android-wifi-ace/issues
 
 Name:WiFi ACE
 Auto Name:WiFi Advanced Configuration Editor
 Summary:WiFi advanced config editor
 Description:
-WiFi Advanced Configuration Editor lets you fine tune the settings of your configured wireless
-networks, such as BSSID, ciphers, WEP keys and various WPA options.
+WiFi Advanced Configuration Editor lets you fine tune the settings of your
+configured wireless networks, such as BSSID, ciphers, WEP keys and various WPA
+options.
 .
 
-Repo Type:git-svn
-Repo:https://android-wifi-ace.googlecode.com/svn/trunk/WiFiACE
+Repo Type:git
+Repo:https://github.com/marcus905/android-wifi-ace
 
 Build:0.10,20100924
     commit=13
@@ -25,4 +26,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:0.11
 Current Version Code:20120115
-

@@ -1,4 +1,4 @@
-Categories:Office
+Categories:Writing
 License:GPLv3+
 Web Site:http://kodakana.b.sourceforge.jp
 Source Code:http://sourceforge.jp/users/kodakana/pf/Lesser_Pad/scm
@@ -68,8 +68,40 @@ Build:0.8d,28
 Build:0.891,29
     commit=0e482dd
 
+Build:0.9,30
+    commit=21ae4dc
+
+Build:0.9b,31
+    commit=8307054
+    subdir=app
+    gradle=yes
+
+Build:0.91,32
+    commit=92f2f9a
+    subdir=app
+    gradle=yes
+
+Build:0.92,33
+    commit=37ee805
+    subdir=app
+    gradle=yes
+
+Build:0.93,35
+    commit=7dbda62
+    subdir=app
+    gradle=yes
+
+Build:0.94,36
+    commit=2f11fff
+    subdir=app
+    gradle=yes
+
+Build:0.94b,37
+    commit=a538338
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:0.891
-Current Version Code:29
-
+Current Version:0.94b
+Current Version Code:37

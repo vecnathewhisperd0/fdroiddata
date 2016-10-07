@@ -7,13 +7,13 @@ Issue Tracker:https://github.com/murraycu/android-galaxyzoo/issues
 Auto Name:Galaxy Zoo
 Summary:Help to classify galaxies
 Description:
-Classify [http://www.galaxyzoo.org/ Galaxy Zoo] subjects. Official approved
-by the [https://www.zooniverse.org/ Zooniverse project].
+Classify [http://www.galaxyzoo.org/ Galaxy Zoo] subjects. Official approved by
+the [https://www.zooniverse.org/ Zooniverse project].
 
-Asks you questions about a picture of a galaxy, with each question depending
-on the previous question. This "Citizen Science" helps astronomers to analyze
-the huge amount of images of galaxies provided, for instance, by the Hubble
-Space Telescope.
+Asks you questions about a picture of a galaxy, with each question depending on
+the previous question. This "Citizen Science" helps astronomers to analyze the
+huge amount of images of galaxies provided, for instance, by the Hubble Space
+Telescope.
 .
 
 Repo Type:git
@@ -146,8 +146,73 @@ Build:1.48,48
     gradle=yes
     prebuild=sed -i -e 's/21.0.2/21.0.+/g' -e 's/gradle:1.0.0-rc4/gradle:0.14.0/g'  build.gradle ../build.gradle
 
+Build:1.49,49
+    commit=1.49
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/21.0.2/21.0.+/g' -e 's/gradle:1.0.0-rc4/gradle:0.14.0/g'  build.gradle ../build.gradle
+
+Build:1.50,50
+    commit=1.50
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/21.0.2/21.0.+/g' -e 's/gradle:1.0.0-rc4/gradle:0.14.0/g'  build.gradle ../build.gradle
+
+Build:1.51,51
+    commit=1.51
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/21.0.2/21.0.+/g' -e 's/gradle:1.0.0-rc4/gradle:0.14.0/g'  build.gradle ../build.gradle
+
+Build:1.52,52
+    commit=1.52
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/21.0.2/21.0.+/g' -e 's/gradle:1.0.0-rc4/gradle:0.14.0/g'  build.gradle ../build.gradle
+
+Build:1.53,53
+    commit=1.53
+    subdir=app
+    gradle=yes
+    scanignore=app/src/main/assets/icons
+
+Build:1.54,54
+    commit=1.54
+    subdir=app
+    gradle=yes
+    scanignore=app/src/main/assets/icons
+
+Build:1.55,55
+    commit=1.55
+    subdir=app
+    gradle=yes
+    scanignore=app/src/main/assets/icons
+
+Build:1.58,58
+    commit=1.58
+    subdir=app
+    gradle=yes
+    scanignore=app/src/main/assets/icons
+
+Build:1.59,59
+    commit=1.59
+    subdir=app
+    gradle=yes
+    scanignore=app/src/main/assets/icons
+
+Build:1.61,61
+    commit=1.61
+    subdir=app
+    gradle=yes
+    scanignore=app/src/main/assets/icons
+
+Build:1.64,64
+    commit=1.64
+    subdir=app
+    gradle=yes
+    scanignore=app/src/main/assets/icons
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.48
-Current Version Code:48
-
+Current Version:1.64
+Current Version Code:64

@@ -1,18 +1,19 @@
 Categories:Development
 License:WTFPL
-Web Site:
+Web Site:https://nolanlawson.com/apps/#catlog
 Source Code:https://github.com/nolanlawson/Catlog
 Issue Tracker:https://github.com/nolanlawson/Catlog/issues
-Donate:http://nolanlawson.com/donate
 
 Auto Name:CatLog
-Summary:System log viewer
+Summary:View the system log
 Description:
-CatLog shows a scrolling (tailed) view of the Android "Logcat" system log, hence the goofy name. It also
-allows you to record logs in real time, send logs via email, and filter using a variety of criteria. It has
-a widget, can record logs in the background and has useful colour coding.
+CatLog shows a scrolling (tailed) view of the Android "Logcat" system log, hence
+the goofy name. It also allows you to record logs in real time, send logs via
+email, and filter using a variety of criteria. It has a widget, can record logs
+in the background and has useful colour coding.
 
-It won't work on Android 4.1+ without root access, since apps are not allowed to access each others' logs.
+It won't work on Android 4.1+ without root access, since apps are not allowed to
+access each others' logs.
 .
 
 Repo Type:git
@@ -38,4 +39,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:1.6.0
 Current Version Code:43
-

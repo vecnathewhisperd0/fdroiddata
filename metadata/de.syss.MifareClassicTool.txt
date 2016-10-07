@@ -1,20 +1,19 @@
-Categories:System
+Categories:Connectivity
 License:GPLv3
 Web Site:http://publications.icaria.de/mct
 Source Code:https://github.com/ikarus23/MifareClassicTool
 Issue Tracker:https://github.com/ikarus23/MifareClassicTool/issues
+Changelog:https://github.com/ikarus23/MifareClassicTool/raw/HEAD/CHANGELOG.txt
 
 Auto Name:Mifare Classic Tool
 Summary:Analyse a type of NFC tag
 Description:
-This is a low-level tool for analysing Mifare Classic RFID tags.
-It is not intended to provide an easy interface for writing URIs to tags
-but that kind of thing is possible.
+This is a low-level tool for analysing Mifare Classic RFID tags. It is not
+intended to provide an easy interface for writing URIs to tags but that kind of
+thing is possible.
 
-The source code page or website for has full instructions.
-It should work on most NFC-enabled devices but there are exceptions.
-
-[https://github.com/ikarus23/MifareClassicTool/raw/HEAD/CHANGELOG.txt Changelog]
+The source code page or website for has full instructions. It should work on
+most NFC-enabled devices but there are exceptions.
 .
 
 Repo Type:git
@@ -115,8 +114,25 @@ Build:2.0.4,35
     gradle=yes
     rm=logo,tools
 
+Build:2.0.5,36
+    commit=v2.0.5
+    subdir=Mifare Classic Tool/app
+    gradle=yes
+    rm=logo,tools
+
+Build:2.0.6,37
+    commit=v2.0.6
+    subdir=Mifare Classic Tool/app
+    gradle=yes
+    rm=logo,tools
+
+Build:2.0.7,38
+    commit=v2.0.7
+    subdir=Mifare Classic Tool/app
+    gradle=yes
+    rm=logo,tools
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.0.4
-Current Version Code:35
-
+Current Version:2.0.7
+Current Version Code:38

@@ -1,29 +1,28 @@
-Categories:Wallpaper
+Categories:Theming
 License:Apache2
-Web Site:https://code.google.com/p/dashclock
-Source Code:https://code.google.com/p/dashclock/source
-Issue Tracker:https://code.google.com/p/dashclock/issues
+Web Site:
+Source Code:https://github.com/romannurik/dashclock/
+Issue Tracker:https://github.com/romannurik/dashclock/issues
+Changelog:https://github.com/romannurik/dashclock/wiki/Changelog
 
 Auto Name:DashClock Widget
 Summary:Extensible lock screen widget
 Description:
 DashClock is a replacement lock screen clock widget for Android 4.2+. It also
-exposes additional status items called extensions. The widget comes bundled
-with extensions that give you instant access to:
+exposes additional status items called extensions. The widget comes bundled with
+extensions that give you instant access to:
+
 * Missed calls and unread text messages
 * Your next calendar appointment
 * Your next scheduled alarm
 * Weather from choice of location
 
-Other extensions are available.
-To add the widget to your Android 4.2 device's lock screen, simply swipe to the
-left-most page of your lock screen and touch the "+" icon. Then, select
-"DashClock" to customize and add the widget. You can make this the primary lock
-screen widget, replacing the default clock, by first touching-and-holding it
-and then dragging it horizontally to the very rightmost position.
-
-Status: Recent versions are using the proprietary Google Play Services
-[https://code.google.com/p/dashclock/wiki/Changelog Changelog]
+Other extensions are available. To add the widget to your Android 4.2 device's
+lock screen, simply swipe to the left-most page of your lock screen and touch
+the "+" icon. Then, select "DashClock" to customize and add the widget. You can
+make this the primary lock screen widget, replacing the default clock, by first
+touching-and-holding it and then dragging it horizontally to the very rightmost
+position.
 .
 
 Repo Type:srclib
@@ -72,4 +71,3 @@ Auto Update Mode:None
 Update Check Mode:None
 Current Version:1.6
 Current Version Code:30
-

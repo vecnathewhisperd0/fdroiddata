@@ -1,14 +1,14 @@
 Categories:Science & Education
 License:Apache2
-Web Site:http://pansanel.github.io/cetoolbox
+Web Site:https://pansanel.github.io/cetoolbox
 Source Code:https://github.com/Pansanel/cetoolbox
 Issue Tracker:https://github.com/Pansanel/cetoolbox/issues
 
 Auto Name:CEToolbox
 Summary:Medical tool
 Description:
-The CEToolbox project aims to provide a convenient tool for computing
-Capillary Electrophoresis parameters.
+The CEToolbox project aims to provide a convenient tool for computing Capillary
+Electrophoresis parameters.
 .
 
 Repo Type:git
@@ -21,4 +21,3 @@ Auto Update Mode:None
 Update Check Mode:None
 Current Version:1.0
 Current Version Code:1
-

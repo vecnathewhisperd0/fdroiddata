@@ -3,21 +3,18 @@ License:GPLv3
 Web Site:http://www.cyclestreets.net/mobile
 Source Code:https://github.com/cyclestreets/android
 Issue Tracker:https://github.com/cyclestreets/android/issues
+Changelog:https://github.com/cyclestreets/android/raw/HEAD/assets/whatsnew.html
 Donate:http://www.cyclestreets.net/donate
 
-Auto Name:@string/app_name
+Auto Name:CycleStreets
 Summary:UK cycling navigation
 Description:
-UK-wide cycle journey planner CycleStreets - Cycle navigation for cyclists,
-by cyclists.
-Plan routes from A to B anywhere in the UK, with a choice of four routing modes
-to suit a range of cyclists from beginner to regular commuter.
-And the Photomap lets you submit photos of infrastructure problems or good
-practice around the UK.
-Routes for cyclists using OpenStreetMap/OpenCycleMap maps that can be cached
-in advance of the journey
-
-[https://github.com/cyclestreets/android/raw/HEAD/assets/whatsnew.html Changelog]
+UK-wide cycle journey planner CycleStreets - Cycle navigation for cyclists, by
+cyclists. Plan routes from A to B anywhere in the UK, with a choice of four
+routing modes to suit a range of cyclists from beginner to regular commuter. And
+the Photomap lets you submit photos of infrastructure problems or good practice
+around the UK. Routes for cyclists using OpenStreetMap/OpenCycleMap maps that
+can be cached in advance of the journey
 .
 
 Repo Type:git
@@ -39,4 +36,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:2.1
 Current Version Code:17
-

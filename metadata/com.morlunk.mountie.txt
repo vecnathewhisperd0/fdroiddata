@@ -16,7 +16,7 @@ Description:
 * Requires a device supporting USB OTG
 .
 
-Requires Root:Yes
+Requires Root:yes
 
 Repo Type:git
 Repo:https://github.com/Morlunk/Mountie.git
@@ -30,4 +30,3 @@ Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:1.0
 Current Version Code:1
-

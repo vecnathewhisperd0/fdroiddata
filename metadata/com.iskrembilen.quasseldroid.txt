@@ -7,8 +7,8 @@ Issue Tracker:https://github.com/sandsmark/QuasselDroid/issues
 Auto Name:Quasseldroid
 Summary:Client for Quassel IRC
 Description:
-Quassel is a distributed, decentralized IRC client. This app is a
-pure Java client for the Quassel core.
+Quassel is a distributed, decentralized IRC client. This app is a pure Java
+client for the Quassel core.
 .
 
 Repo Type:git
@@ -56,8 +56,12 @@ Build:0.11.5,111
     subdir=QuasselDroid
     gradle=yes
 
+Build:0.11.7,142
+    commit=v0.11.7
+    subdir=QuasselDroid
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.11.5
-Current Version Code:111
-
+Current Version:0.11.7
+Current Version Code:142

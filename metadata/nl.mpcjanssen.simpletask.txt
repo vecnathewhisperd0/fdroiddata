@@ -1,16 +1,19 @@
-Categories:Office
+Categories:Writing
 License:GPLv3
-Web Site:https://github.com/mpcjanssen/simpletask-android/blob/HEAD/src/main/assets/index.md
+Web Site:https://github.com/mpcjanssen/simpletask-android/blob/HEAD/src/main/assets/index.en.md
 Source Code:https://github.com/mpcjanssen/simpletask-android
 Issue Tracker:https://github.com/mpcjanssen/simpletask-android/issues
+Changelog:https://github.com/mpcjanssen/simpletask-android/blob/HEAD/src/main/assets/changelog.en.md
 
 Auto Name:Simpletask
 Summary:Todo list manager
 Description:
 A simple task list manager that strives to have just enough features to do GTD
 (the Getting Things Done methodology), but no more.
-Based on the [http://todotxt.com todo.txt] app so all info is stored in a
-single text file called todo.txt.
+
+Based on the [http://todotxt.com todo.txt] app so all info is stored in a single
+text file called todo.txt.
+
 Note that, with this version, you will need to take care of backups yourself.
 
 * Todo list stored in the documented todo.txt format
@@ -19,8 +22,6 @@ Note that, with this version, you will need to take care of backups yourself.
 * Select on or more tasks and press overflow menu->Add reminder
 * Share the complete tasklist or selected tasks using the Android share feature
 * Tasks can deferred into the future. Combined with the "Creation date in future" sort it allows you to get tasks out of your face (as in 1MTD/MYN)
-
-[https://github.com/mpcjanssen/simpletask-android/blob/master/src/main/assets/changelog.md Changelog]
 .
 
 Repo Type:git
@@ -328,8 +329,258 @@ Build:5.3.4,1551
     init=rm libs/*.jar
     gradle=cloudless
 
+Build:5.4.1,1553
+    commit=5.4.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:5.4.2,1554
+    commit=5.4.2
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:5.4.3,1555
+    commit=5.4.3
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:5.4.4,1556
+    commit=5.4.4
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:5.4.6,1558
+    commit=5.4.6
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:5.4.7,1559
+    commit=5.4.7
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:5.5.2,1564
+    commit=5.5.2
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:5.5.3,1566
+    commit=5.5.3
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:5.5.4,1567
+    commit=5.5.4
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:5.5.5,1568
+    commit=5.5.5
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:5.5.6,1569
+    commit=5.5.6
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:5.5.7,1570
+    commit=5.5.7
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.0.2,1576
+    commit=6.0.2
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.0.3,1577
+    commit=6.0.3
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.0.4,1578
+    commit=6.0.4
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.0.5,1579
+    commit=6.0.5
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.0.6,1580
+    commit=6.0.6
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.0.7,1581
+    commit=6.0.7
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.0.8,1582
+    commit=6.0.8
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.1.1,3000
+    disable=bad tag
+    commit=6.1.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.2.0,3001
+    commit=6.2.0
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.1,3003
+    commit=6.3.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.2,3004
+    commit=6.3.2
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.4,3006
+    commit=6.3.4
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.5,3007
+    commit=6.3.5
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:6.3.6,3008
+    commit=6.3.6
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.1,3011
+    commit=7.0.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.2,3012
+    commit=7.0.2
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.3,3013
+    commit=7.0.3
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.4,3014
+    commit=7.0.4
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.5,3015
+    commit=7.0.5
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.6,3016
+    commit=7.0.6
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.7,3017
+    commit=7.0.7
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.9,3019
+    commit=7.0.9
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.10,3020
+    commit=7.0.10
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.12,3022
+    commit=7.0.12
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.13,3023
+    commit=7.0.13
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.0.14,3024
+    commit=7.0.14
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.1.0,3027
+    commit=7.1.0
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.1.1,3028
+    commit=7.1.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.2.1,3030
+    commit=7.2.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:7.2.2,3031
+    commit=7.2.2
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:8.0.0,3032
+    commit=8.0.0
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:8.0.3,3035
+    commit=8.0.3
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:8.0.6,3037
+    commit=8.0.6
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:8.1.0,3038
+    commit=8.1.0
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:8.1.2,3041
+    commit=8.1.2
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:8.2.0,3044
+    commit=8.2.0
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:8.2.1,3046
+    commit=8.2.1
+    init=rm libs/*.jar
+    gradle=cloudless
+
+Build:8.2.2,3047
+    commit=8.2.2
+    init=rm libs/*.jar
+    gradle=cloudless
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:5.3.4
-Current Version Code:1551
-
+Current Version:8.2.2
+Current Version Code:3047

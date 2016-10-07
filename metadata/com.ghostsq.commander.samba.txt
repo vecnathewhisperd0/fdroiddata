@@ -1,25 +1,23 @@
 Categories:System
 License:GPLv3
-Web Site:http://sites.google.com/site/ghostcommander1
-Source Code:http://sourceforge.net/p/gc-samba/code
-Issue Tracker:http://sourceforge.net/p/gc-samba/_list/tickets
-Donate:http://sourceforge.net/p/ghostcommander/donate
+Web Site:https://sites.google.com/site/ghostcommander1
+Source Code:https://sourceforge.net/p/gc-samba/code
+Issue Tracker:https://sourceforge.net/p/gc-samba/bugs/
+Donate:https://sourceforge.net/p/ghostcommander/donate
 
 Auto Name:Ghost Commander - Samba plugin
 Summary:Access files on the network
 Description:
 A plug-in for [[com.ghostsq.commander]] to access to Windows network shared
-folders (also referenced as SMB, Samba, CIFS or even NetBios).
-Launch Ghost Commander and go to 'Menu > Location > Home > Windows share'.
-Alternatively, scroll along the toolbar until you arrive at 'Home'.
-Enter your server name and credentials (if any), then tap the 'Connect' button.
-Once connected, you should be able to see a list of Windows machines or
-Samba servers on the network. Tip: Better have the Windows account with
-password. A passwordless Windows account might not work.
+folders (also referenced as SMB, Samba, CIFS or even NetBios). Launch Ghost
+Commander and go to 'Menu > Location > Home > Windows share'. Alternatively,
+scroll along the toolbar until you arrive at 'Home'. Enter your server name and
+credentials (if any), then tap the 'Connect' button. Once connected, you should
+be able to see a list of Windows machines or Samba servers on the network. Tip:
+Better have the Windows account with password. A passwordless Windows account
+might not work.
 .
 
-# If you are building this yourself, config.py must be edited to sign this
-# with the same key as Ghost Commander
 Repo Type:git-svn
 Repo:https://svn.code.sf.net/p/gc-samba/code
 
@@ -99,7 +97,5 @@ Build:1.32b2,60
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-#Update Check Ignore:b
-Current Version:1.32b2
-Current Version Code:60
-
+Current Version:1.32
+Current Version Code:62

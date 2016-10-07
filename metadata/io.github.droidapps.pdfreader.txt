@@ -1,16 +1,16 @@
-Categories:Office,Reading
+Categories:Reading
 License:GPLv3
 Web Site:https://droidapps.github.io/pdfreader4Android
 Source Code:https://github.com/droidapps/pdfreader4Android
 Issue Tracker:https://github.com/droidapps/pdfreader4Android/issues
 
-Name:PDF Reader
 Auto Name:PDF Reader
 Summary:View PDF files
 Description:
 Simple PDF reader based on [[cx.hell.android.pdfview]].
 
 Features:
+
 * Textual search support
 * Flexible key/button/gesture configuration
 * Different color schemes for comfortable reading
@@ -33,4 +33,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:0.4.0
 Current Version Code:40000
-

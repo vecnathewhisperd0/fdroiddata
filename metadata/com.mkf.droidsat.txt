@@ -1,19 +1,19 @@
 Categories:Science & Education
 License:GPLv3
-Web Site:https://code.google.com/p/droidsat
-Source Code:https://code.google.com/p/droidsat/source
-Issue Tracker:https://code.google.com/p/droidsat/issues
+Web Site:
+Source Code:https://github.com/mkfuchs/droidsat
+Issue Tracker:https://github.com/mkfuchs/droidsat/issues
 
 Auto Name:DroidSat
 Summary:Satellite viewer
 Description:
-This app has a minimal interface and complicated configuration so it is more suited
-towards advanced users. It uses Horst Meyerdierks' Sputnik 3.1 java codebase to
-calculate positions of satellites.
+This app has a minimal interface and complicated configuration so it is more
+suited towards advanced users. It uses Horst Meyerdierks' Sputnik 3.1 java
+codebase to calculate positions of satellites.
 .
 
 Repo Type:git
-Repo:https://code.google.com/p/droidsat
+Repo:https://github.com/mkfuchs/droidsat
 
 Build:2.43,18
     commit=7cd044
@@ -38,8 +38,9 @@ Build:2.51,24
 
 Build:2.52,25
     commit=9a8cd16d7
+    init=rm src/uk/me/chiandh/Sputnik/*.class && \
+        rm src/uk/me/chiandh/Lib/*.class
     target=android-20
-    init=rm src/uk/me/chiandh/Sputnik/*.class && rm src/uk/me/chiandh/Lib/*.class
 
 Maintainer Notes:
 Commit IDs for 2.51 and before are hg. The source repo switched to git after that.
@@ -49,4 +50,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:2.52
 Current Version Code:25
-

@@ -1,8 +1,8 @@
 Categories:System
 License:GPLv2+
-Web Site:http://diskusage.googlecode.com
-Source Code:https://code.google.com/p/diskusage/source
-Issue Tracker:https://code.google.com/p/diskusage/issues
+Web Site:
+Source Code:https://github.com/IvanVolosyuk/diskusage
+Issue Tracker:https://github.com/ivanvolosyuk/diskusage/issues
 
 Auto Name:DiskUsage
 Summary:Disk usage explorer
@@ -11,7 +11,7 @@ Visually explore used and free space on internal and external storage.
 .
 
 Repo Type:git
-Repo:https://code.google.com/p/diskusage
+Repo:https://github.com/IvanVolosyuk/diskusage.git
 
 Build:2.0.4,2004
     commit=d3c0dc5bafdb
@@ -67,20 +67,22 @@ Build:3.4.3,3043
         cp extra/system.jar libs/
     buildjni=yes
 
+Build:3.7.1,3071
+    disable=how is scan5 built?
+    commit=9b73d3a94249f4366e06532f03cd6cf26e2eb2d9
+    patch=ndk-out.patch
+    rm=jni/scan,assets/scan*
+    prebuild=mkdir libs && \
+        cp extra/system.jar libs/
+    scanignore=res/raw/mimes
+    build=$$NDK$$/ndk-build
+
 Maintainer Notes:
 The system.jar is from AOSP - see extra/system.jar.README and
-[https://code.google.com/p/diskusage/issues/detail?id=19]
-
-The build system complains that native code should have been built but none
-was packaged. This is partially correct - it's 'packaged' in the assets
-directory, for some reason. This does highlight a problem, because it means
-that the app will only work on ARM, but Android and the F-Droid client don't
-know that. Really it should be packaged properly. But should we allow the
-build to go through anyway?
+[https://github.com/ivanvolosyuk/diskusage/issues/19]
 .
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:3.4.3
-Current Version Code:3043
-
+Current Version:3.7.1
+Current Version Code:3071

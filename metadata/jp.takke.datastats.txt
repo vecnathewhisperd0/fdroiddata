@@ -1,15 +1,14 @@
-Categories:Internet,Office
+Categories:System
 License:Apache2
 Web Site:
 Source Code:https://github.com/takke/DataStats
 Issue Tracker:https://github.com/takke/DataStats/issues
+Changelog:https://github.com/takke/DataStats/blob/HEAD/ChangeLog.txt
 
 Auto Name:DataStats
 Summary:View bandwith usage
 Description:
 Simple bandwidth consumption viewer with configurable polling options.
-
-[https://github.com/takke/DataStats/blob/HEAD/ChangeLog.txt Changelog]
 .
 
 Repo Type:git
@@ -58,8 +57,12 @@ Build:2.2.2,16
     subdir=app
     gradle=yes
 
+Build:2.2.3,17
+    commit=c8c373d980111d1ca5e3d2ad64fc27643924ce2c
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:2.2.2
-Current Version Code:16
-
+Current Version:2.2.3
+Current Version Code:17

@@ -2,28 +2,29 @@ Categories:Internet
 License:GPLv3
 Web Site:https://code.google.com/p/android-openvpn-settings
 Source Code:https://code.google.com/p/android-openvpn-settings/source
-Issue Tracker:https://code.google.com/p/android-openvpn-settings/issues
+Issue Tracker:
 Donate:https://code.google.com/p/android-openvpn-settings
 FlattrID:621822
 
 Summary:VPN settings
 Description:
-Start, stop and monitor the state of openvpn tunnels in a style very similar to the
-WiFi Settings app that comes with Android. Copy your config file into sdcard/openvpn.
+Start, stop and monitor the state of openvpn tunnels in a style very similar to
+the WiFi Settings app that comes with Android. Copy your config file into
+sdcard/openvpn.
 
 Requirements (app does a check):
+
 * su (root)
 * tun kernel module, for your device (likely already there on Android 4+ or CyanogenMod)
 * busybox (for busybox ifconfig and route)
 * openvpn binary
 .
 
-Requires Root:Yes
+Requires Root:yes
 
 Repo Type:hg
 Repo:https://code.google.com/p/android-openvpn-settings
 
-#don't recognise (old) support jar checksum so replace it
 Build:0.4.14,39
     commit=b78a64143ef8
     extlibs=android/android-support-v4.jar
@@ -44,4 +45,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:0.4.15test1
 Current Version Code:40
-

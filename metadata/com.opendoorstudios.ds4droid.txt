@@ -2,8 +2,8 @@ AntiFeatures:UpstreamNonFree
 Categories:Games
 License:GPLv3+
 Web Site:http://nds4droid.com
-Source Code:http://sourceforge.net/p/nds4droid/code
-Issue Tracker:http://sourceforge.net/p/nds4droid/tickets
+Source Code:https://sourceforge.net/p/nds4droid/code
+Issue Tracker:https://sourceforge.net/p/nds4droid/tickets
 Donate:http://jeffq.com/blog/nds4droid
 
 Auto Name:nds4droid
@@ -151,34 +151,34 @@ Build:46,461
     commit=release46
     patch=remove-rar-46.patch
     forcevercode=yes
+    rm=libs/ouya-sdk.jar
     prebuild=echo 'APP_ABI=x86' >> jni/Application.mk && \
         sed -i 's/IS_OUYA =.*/IS_OUYA = false;/' src/com/opendoorstudios/ds4droid/MainActivity.java
     scanignore=jni/android-ndk-profiler
     scandelete=jni/desmume
-    rm=libs/ouya-sdk.jar
     buildjni=yes
-    ndk=r10d
 
 Build:46,463
     commit=release46
     patch=remove-rar-46.patch
     forcevercode=yes
+    rm=libs/ouya-sdk.jar
     prebuild=echo 'APP_ABI=armeabi-v7a' >> jni/Application.mk && \
         sed -i 's/IS_OUYA =.*/IS_OUYA = false;/' src/com/opendoorstudios/ds4droid/MainActivity.java
     scanignore=jni/android-ndk-profiler
     scandelete=jni/desmume
-    rm=libs/ouya-sdk.jar
     buildjni=yes
-    ndk=r10d
 
-# +0: - (upstream)
-# +1: x86
-# +2: arm
-# +3: armv7 (CV)
+Maintainer Notes:
++0: - (upstream)
++1: x86
++2: arm
++3: armv7 (CV)
+.
+
 Archive Policy:6 versions
 Auto Update Mode:None
 Update Check Mode:Tags
 Vercode Operation:%c*10 + 3
 Current Version:46
 Current Version Code:463
-

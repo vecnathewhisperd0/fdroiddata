@@ -8,9 +8,9 @@ Donate:http://pyload.org
 Auto Name:pyLoad
 Summary:Manage remote downloads
 Description:
-In order to use the Android client make sure your the newest pyLoad Core
-is running on your system, accessible over the network, the
-ip/hostname is correct and the port forwarded if necessary.
+In order to use the Android client make sure your the newest pyLoad Core is
+running on your system, accessible over the network, the ip/hostname is correct
+and the port forwarded if necessary.
 
 * Display current downloads
 * Display queue/collector
@@ -27,7 +27,6 @@ ip/hostname is correct and the port forwarded if necessary.
 Repo Type:git
 Repo:https://github.com/pyload/pyload-android
 
-#Build Version:0.2.5,12,74ce7f5c81b0,prebuild=mv lib/* libs/ && rm -r lib/
 Build:0.3.2,15
     commit=e3c7c812e669a5225cf0a0a7183d827bde2a2eb9
 
@@ -47,4 +46,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:0.3.6
 Current Version Code:19
-

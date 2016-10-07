@@ -7,11 +7,12 @@ Issue Tracker:https://github.com/TKJElectronics/BalanduinoAndroidApp/issues
 Auto Name:Balanduino
 Summary:Controller for a robot
 Description:
-For the [http://www.kickstarter.com/projects/tkjelectronics/balanduino-balancing-robot-kit Balanduino]:
-a kit for a fully-FOSS, arduino-compatible, balancing robot.
+For the
+[http://www.kickstarter.com/projects/tkjelectronics/balanduino-balancing-robot-kit
+Balanduino]: a kit for a fully-FOSS, arduino-compatible, balancing robot.
 
-There are two versions: one with usb OTG (for uploading firmware) and one without
-(for Android 2.2)
+There are two versions: one with usb OTG (for uploading firmware) and one
+without (for Android 2.2)
 .
 
 Repo Type:git
@@ -53,10 +54,11 @@ Build:0.6.3-usb,1200063
 
 Maintainer Notes:
 Submodules contain jars.
+
+Can't use UCM since vercodes are dynamic.
 .
 
 Auto Update Mode:None
-Update Check Mode:Tags
+Update Check Mode:None
 Current Version:0.6.3
-Current Version Code:63
-
+Current Version Code:1200063

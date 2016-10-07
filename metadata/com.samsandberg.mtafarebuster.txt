@@ -7,8 +7,10 @@ Issue Tracker:https://github.com/loisaidasam/mta-fare-buster-android/issues
 Auto Name:MTA Fare Buster
 Summary:Calculate NYC MTA metrocard prices
 Description:
-Calculate needed amount for your travels using NYC MTA: No more leaving
-change on your Metrocard! Based on research by [http://iquantny.tumblr.com/post/96700509489/how-memorizing-19-05-can-help-you-outsmart-the-mta I Quant NY].
+Calculate needed amount for your travels using NYC MTA: No more leaving change
+on your Metrocard! Based on research by
+[http://iquantny.tumblr.com/post/96700509489/how-memorizing-19-05-can-help-you-outsmart-the-mta
+I Quant NY].
 .
 
 Repo Type:git
@@ -35,8 +37,12 @@ Build:1.2,3
     extlibs=android/android-support-v4.jar
     prebuild=cp libs/android-support-v4.jar $$Support$$/libs
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:1.2
-Current Version Code:3
+Build:1.3,4
+    commit=1.3
+    subdir=app
+    gradle=yes
 
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:1.3
+Current Version Code:4

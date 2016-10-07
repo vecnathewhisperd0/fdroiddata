@@ -1,18 +1,18 @@
 Categories:Games
 License:GPLv3
-Web Site:https://code.google.com/p/hunkypunk
-Source Code:https://code.google.com/p/hunkypunk/source
-Issue Tracker:https://code.google.com/p/hunkypunk/issues
+Web Site:
+Source Code:https://github.com/retrobits/son_of_hunkypunk
+Issue Tracker:https://github.com/retrobits/son_of_hunkypunk/issues
 
 Auto Name:Hunky Punk
 Summary:Interactive fiction player
 Description:
 HunkyMod is an interactive fiction manager and interpreter, aiming to be a
-comprehensive multi-interpreter similar to Gargoyle, with metadata
-and story management support.
+comprehensive multi-interpreter similar to Gargoyle, with metadata and story
+management support.
 
-Scrolling works by tapping the screen at the top or bottom and
-if you experience problems try using the stock keyboard.
+Scrolling works by tapping the screen at the top or bottom and if you experience
+problems try using the stock keyboard.
 
 * preloaded with stories
 * metadata and covers are fetched from IFDb
@@ -21,12 +21,12 @@ if you experience problems try using the stock keyboard.
 * blorb support
 * font preference
 
-HunkyMod is a fork/mod of the [http://hunkypunk.sourceforge.net original]
-Hunky Punk, created by Rafał Rzepecki, which hasn't been updated in a while.
+HunkyMod is a fork/mod of the [http://hunkypunk.sourceforge.net original] Hunky
+Punk, created by Rafał Rzepecki, which hasn't been updated in a while.
 .
 
 Repo Type:git
-Repo:https://code.google.com/p/hunkypunk
+Repo:https://github.com/retrobits/son_of_hunkypunk
 
 Build:0.3,1
     commit=14ecc2a0d37c
@@ -35,7 +35,6 @@ Build:0.3,1
         sed -i '68d' build.xml && \
         cd jni/nitfol && \
         bison -o inform.c inform.y
-    buildjni=no
     antcommands=mod-release
 
 Build:0.8,6
@@ -48,10 +47,8 @@ Build:0.8,6
         bison -o inform.c inform.y) && \
         chmod ug+x fix-mod.sh && \
         ./fix-mod.sh
-    buildjni=no
 
 Auto Update Mode:None
 Update Check Mode:None
 Current Version:0.8
 Current Version Code:6
-

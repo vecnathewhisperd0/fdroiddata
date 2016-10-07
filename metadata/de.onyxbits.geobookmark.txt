@@ -3,19 +3,18 @@ License:Apache2
 Web Site:http://www.onyxbits.de/geobookmark
 Source Code:https://github.com/onyxbits/geobookmark
 Issue Tracker:https://github.com/onyxbits/geobookmark/issues
-Donate:http://www.onyxbits.de/geobookmark
 
 Auto Name:Geo Bookmark
 Summary:Save timestamped geo-bookmarks
 Description:
-A simple widget that will add a bookmark with your current time and
-geographical location to the homescreen. The interface is kept minimal
-to allow operation in situations that do not permit extensive interaction
-with the phone (e.g. while driving a car).
+A simple widget that will add a bookmark with your current time and geographical
+location to the homescreen. The interface is kept minimal to allow operation in
+situations that do not permit extensive interaction with the phone (e.g. while
+driving a car).
 
-Bookmarks are color coded. Blue icons represent exact locations, red icons
-mean that the widget could not get a GPS fix within 40 seconds and therefore
-recorded the last known GPS location.
+Bookmarks are color coded. Blue icons represent exact locations, red icons mean
+that the widget could not get a GPS fix within 40 seconds and therefore recorded
+the last known GPS location.
 
 In order to view a bookmark, a suitable maps application needs to be installed
 (e.g. [[net.osmand.plus]]).
@@ -42,4 +41,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:1.2
 Current Version Code:3
-

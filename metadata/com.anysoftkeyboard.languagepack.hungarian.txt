@@ -1,23 +1,21 @@
-Categories:Office
-License:GPL/MPL
+Categories:Writing
+License:GPL,MPL
 Web Site:
 Source Code:https://github.com/rhornig/anysoftkeyboard-hungarian
 Issue Tracker:https://github.com/rhornig/anysoftkeyboard-hungarian/issues
-Donate:https://code.google.com/p/softkeyboard
+Donate:http://anysoftkeyboard.github.io/
 
 Name:AnySoftKeyboard: Magyar
 Auto Name:AnySoftKeyboard - Hungarian Language Pack
 Summary:Language pack for AnySoftKeyboard
 Description:
-Layouts and dictionaries for for the Hungarian language.
-See the Google Play description for usage tips.
+Layouts and dictionaries for for the Hungarian language. See the Google Play
+description for usage tips.
 
-Dictionary is via
-[http://magyarispell.sourceforge.net http://magyarispell.sourceforge.net].
-Licence: GNU GPL/GNU LGPL/Mozilla MPL.
+Dictionary is via [http://magyarispell.sourceforge.net].
 
-Install [[com.menny.android.anysoftkeyboard]] first, then select
-the desired layout from AnySoftKeyboard's Settings->Keyboards menu.
+Install [[com.menny.android.anysoftkeyboard]] first, then select the desired
+layout from AnySoftKeyboard's Settings->Keyboards menu.
 .
 
 Repo Type:git
@@ -61,4 +59,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:20131020
 Current Version Code:16
-

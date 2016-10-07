@@ -2,7 +2,8 @@ Categories:Phone & SMS
 License:GPLv3
 Web Site:https://code.google.com/p/csipsimple
 Source Code:https://code.google.com/p/csipsimple/source
-Issue Tracker:https://code.google.com/p/csipsimple/issues
+Issue Tracker:
+Changelog:https://code.google.com/p/csipsimple/wiki/ChangeLog
 Donate:https://code.google.com/p/csipsimple/wiki/Donate
 
 Auto Name:CSipSimple
@@ -19,8 +20,6 @@ Description:
 * Themes
 
 This build doesn't include SILK (Skype) support.
-
-[https://code.google.com/p/csipsimple/wiki/ChangeLog ChangeLog]
 .
 
 Repo Type:srclib
@@ -41,14 +40,12 @@ Build:1.02.01-2417,2417
         cp -r $$libyuv$$ jni/third_party/libyuv
     scanignore=CSipSimple/jni/webrtc/sources/modules/video_capture/main/source/android/java/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java,CSipSimple/src/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java
     build=make
-    buildjni=no
 
 Build:1.02.03-2459,2459
     commit=2460
     subdir=CSipSimple
     srclibs=codec2-dev@1486,pjsip@4978,portaudio@1433,webrtc@2948,libyuv@426
     forceversion=yes
-    target=android-21
     prebuild=sed -i 's/MY_USE_SILK := 1/MY_USE_SILK := 0/' jni/Application.mk && \
         sed -i 's/ silk//' Makefile && \
         sed -i '/silk/d' jni/Android.mk && \
@@ -59,10 +56,9 @@ Build:1.02.03-2459,2459
         cp -r $$portaudio$$ jni/pjsip/sources/third_party/portaudio && \
         cp -r $$webrtc$$ jni/webrtc/sources && \
         cp -r $$libyuv$$ jni/third_party/libyuv
+    target=android-21
     scanignore=CSipSimple/jni/webrtc/sources/modules/video_capture/main/source/android/java/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java,CSipSimple/src/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java
-    ndk=r10d
     build=PATH=$PATH:$$NDK$$ make NDK_ROOT=$$NDK$$
-    buildjni=no
 
 Maintainer Notes:
 DexClassLoader used to load htc front-facing camera jar on HTC Evo devices.
@@ -70,10 +66,16 @@ Does not break the app on other devices nor on HTC Evo devices that don't have
 the jar shipped with the device from HTC.
 
 To get the srclib revisions, run 'git svn show-externals'. One is nested inside pjsip.
+
+As google code has shut down, the most likely new upstream location is now
+at https://github.com/r3gis3r/CSipSimple.
+
+See https://github.com/r3gis3r/CSipSimple/issues/6 for more discussion about
+this issue, as of June 23 2016, the maintainers haven't responded to that
+question yet.
 .
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.02.03
 Current Version Code:2459
-

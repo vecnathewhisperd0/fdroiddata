@@ -11,9 +11,8 @@ Orweb is a companion browser to [[org.torproject.android]], the port of Tor to
 Android.
 
 Orbot anonymizes internet traffic by routing it through many different stages
-and you must have that enabled first, though root isn't needed.
-Orweb disables certain other browser features that could be used to identify
-you.
+and you must have that enabled first, though root isn't needed. Orweb disables
+certain other browser features that could be used to identify you.
 .
 
 Repo Type:git
@@ -45,14 +44,13 @@ Build:0.6.1,27
     submodules=yes
     prebuild=cp libs/android-support-v4.jar external/netcipher/libnetcipher/libs/android-support-v4.jar
 
-Build:0.7,28
-    disable=wrong paths in project.properties, nonworking build even if fixed
-    commit=0.7
+Build:0.7.1,7010
+    commit=0.7.1
     submodules=yes
     prebuild=cp libs/android-support-v4.jar external/netcipher/libnetcipher/libs/android-support-v4.jar
+    scanignore=external/netcipher/libnetcipher/external/pinning/res/raw/cacerts
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:0.7
-Current Version Code:28
-
+Current Version:0.7.1
+Current Version Code:7010

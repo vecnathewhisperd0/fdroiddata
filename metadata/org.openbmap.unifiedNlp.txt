@@ -43,8 +43,50 @@ Build:0.1.3,5
     gradle=yes
     rm=libs/*
 
+Build:0.1.4,6
+    commit=v0.1.4
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.1.5,7
+    disable=broken
+    commit=v0.1.5
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.1.6,8
+    commit=v0.1.6
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.1.8,9
+    commit=v0.1.8
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.1.11,12
+    commit=v0.1.11
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.2.2,14
+    commit=v0.2.2
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.2.3,15
+    commit=v0.2.3
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.1.3
-Current Version Code:5
-
+Current Version:0.2.3
+Current Version Code:15

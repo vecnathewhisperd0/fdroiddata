@@ -1,22 +1,22 @@
 Categories:Games
 License:GPLv3
-Web Site:https://code.google.com/p/kaesekaestchen
-Source Code:https://code.google.com/p/kaesekaestchen/source
-Issue Tracker:https://code.google.com/p/kaesekaestchen/issues
+Web Site:
+Source Code:https://github.com/StefanOltmann/Kaesekaestchen
+Issue Tracker:https://github.com/StefanOltmann/Kaesekaestchen/issues
 
 Name:Dots'n'Boxes
 Auto Name:Käsekästchen
 Summary:Classic puzzle game
 Description:
-Players take turns joining two horizontally or vertically adjacent
-dots by a line. A player that completes the fourth side of a square (a box)
-colors that box and must play again. When all boxes have been colored,
-the game ends and the player who has colored more boxes wins. You are
-playing against the computer. The computer is red; you are blue.
+Players take turns joining two horizontally or vertically adjacent dots by a
+line. A player that completes the fourth side of a square (a box) colors that
+box and must play again. When all boxes have been colored, the game ends and the
+player who has colored more boxes wins. You are playing against the computer.
+The computer is red; you are blue.
 .
 
-Repo Type:git-svn
-Repo:https://kaesekaestchen.googlecode.com/svn/trunk/Kaesekaestchen
+Repo Type:git
+Repo:https://github.com/StefanOltmann/Kaesekaestchen
 
 Build:0.5,7
     commit=9
@@ -25,4 +25,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:0.5
 Current Version Code:7
-

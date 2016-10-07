@@ -1,5 +1,5 @@
-Categories:Office
-License:CCBYSA
+Categories:Connectivity
+License:CC-BY-SA
 Web Site:
 Source Code:https://github.com/pipakin/Android-Bluetooth-Reprap
 Issue Tracker:https://github.com/pipakin/Android-Bluetooth-Reprap/issues
@@ -8,8 +8,8 @@ FlattrID:434849
 Auto Name:Bluetooth RepRap
 Summary:Reprap (3D printer) controller
 Description:
-Print directly to a RepRap device over Bluetooth. The RepRap project is an initiative to develop a
-3D printer that can print most of its own components.
+Print directly to a RepRap device over Bluetooth. The RepRap project is an
+initiative to develop a 3D printer that can print most of its own components.
 .
 
 Repo Type:git
@@ -22,4 +22,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:0.3.0
 Current Version Code:3
-

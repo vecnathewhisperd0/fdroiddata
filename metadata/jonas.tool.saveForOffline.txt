@@ -3,14 +3,13 @@ License:GPLv2+
 Web Site:https://github.com/JonasCz/save-for-offline/blob/HEAD/README.md
 Source Code:https://github.com/JonasCz/save-for-offline
 Issue Tracker:https://github.com/JonasCz/save-for-offline/issues
+Changelog:https://github.com/JonasCz/save-for-offline/releases
 
 Auto Name:Save For Offline
 Summary:Save websites locally
 Description:
 Save webpages for offline reading. In your web browser select 'share', and then
 'Save For Offline'. Browse saved pages by thumbnail arranged in a grid or list.
-
-[https://github.com/JonasCz/save-for-offline/releases Changelog]
 .
 
 Repo Type:git
@@ -41,12 +40,18 @@ Build:2.1.0 Beta,13
     gradle=yes
     rm=app/libs/*jar
 
-Maintainer Notes:
-UCM:Tags and AUM:Version v%v when tagging is stable.
-.
+Build:3.1.0,18
+    commit=df4a583079c270741203bffd2e2ead0c1dade6fb
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/buildTypes/icompileOptions {\n\nsourceCompatibility JavaVersion.VERSION_1_7\n\ntargetCompatibility JavaVersion.VERSION_1_7\n\n}' build.gradle
 
-Auto Update Mode:None
+Build:3.1.6,21
+    commit=6f7b71852b00721c7eaa9f3b96e0e57f5f846de3
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.1.0 Beta
-Current Version Code:13
-
+Current Version:3.1.6
+Current Version Code:21

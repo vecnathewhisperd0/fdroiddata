@@ -10,7 +10,8 @@ Description:
 [https://icecondor.com IceCondor] is advanced location recording and sharing.
 
 While the app has an on/off control, it is meant to run all day. Also this app
-records and pushes data. Using the data is done on [https://icecondor.com icecondor.com].
+records and pushes data. Using the data is done on [https://icecondor.com
+icecondor.com].
 
 * Time based URLs for easy temporary sharing with anyone
 * Friending for permanent sharing
@@ -53,4 +54,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:20150402
 Current Version Code:20150402
-

@@ -6,7 +6,8 @@ Issue Tracker:
 
 Summary:Web Analytics
 Description:
-Piwik is a free and open source web analytics application written by a team of international developers that runs on a PHP/MySQL webserver.
+Piwik is a free and open source web analytics application written by a team of
+international developers that runs on a PHP/MySQL webserver.
 .
 
 Repo Type:git
@@ -20,4 +21,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:2.0.1
 Current Version Code:1
-

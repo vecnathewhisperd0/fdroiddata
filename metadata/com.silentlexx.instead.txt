@@ -1,8 +1,9 @@
 Categories:Games
 License:GPLv2+
-Web Site:http://instead.syscall.ru
-Source Code:http://sourceforge.net/p/instead/code
+Web Site:https://instead.syscall.ru
+Source Code:https://sourceforge.net/p/instead/code
 Issue Tracker:http://instead.syscall.ru/forum/viewforum.php?id=14
+Changelog:https://sf.net/p/instead/wiki/ChangeLog
 
 Name:INSTEAD
 Auto Name:Instead
@@ -14,8 +15,6 @@ INSTEAD supports URQ quests and Space Rangers in-game quests.
 
 The package includes interpreter and interactive fiction manager, capable of
 downloading games in the chosen language.
-
-[http://sf.net/p/instead/wiki/ChangeLog/ Changelog]
 .
 
 Repo Type:git-svn
@@ -37,4 +36,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.6.1.9
 Current Version Code:16109
-

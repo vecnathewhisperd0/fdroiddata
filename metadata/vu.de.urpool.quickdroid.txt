@@ -1,20 +1,20 @@
 Categories:System
 License:Apache2
-Web Site:https://code.google.com/p/quickdroid
-Source Code:https://code.google.com/p/quickdroid/source
-Issue Tracker:https://code.google.com/p/quickdroid/issues
+Web Site:
+Source Code:https://github.com/himmele/quickdroid
+Issue Tracker:https://github.com/himmele/quickdroid/issues
 
 Auto Name:Quickdroid
 Summary:Search through many areas of the system
 Description:
-Quickly search, find and launch apps, contacts, bookmarks, artists,
-albums and songs. There is also a plugin interface which enables you
-to extend it by other search categories. Similar to Quicksilver,
-Launchy and GNOME Do for other systems.
+Quickly search, find and launch apps, contacts, bookmarks, artists, albums and
+songs. There is also a plugin interface which enables you to extend it by other
+search categories. Similar to Quicksilver, Launchy and GNOME Do for other
+systems.
 .
 
-Repo Type:git-svn
-Repo:https://quickdroid.googlecode.com/svn/trunk
+Repo Type:git
+Repo:https://github.com/himmele/quickdroid
 
 Build:2.9.4,31
     commit=65
@@ -68,4 +68,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:4.4
 Current Version Code:50
-

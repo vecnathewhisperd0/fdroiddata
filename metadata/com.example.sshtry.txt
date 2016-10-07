@@ -10,6 +10,7 @@ Description:
 Manage the miniDLNA service through ssh.
 
 Features:
+
 * Stop mini-dlna daemon.
 * Update media folder content.
 * Shutdown server.
@@ -31,4 +32,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.0
 Current Version Code:1
-

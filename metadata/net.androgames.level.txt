@@ -1,4 +1,4 @@
-Categories:Office
+Categories:Science & Education
 License:GPLv3
 Web Site:http://avianey.blogspot.com
 Source Code:https://github.com/avianey/Level
@@ -21,10 +21,6 @@ plumb, or lay it down on a flat surface for a 360° level.
 Repo Type:git
 Repo:https://github.com/avianey/Level.git
 
-# Build Version:1.8.0,27,75,init=rm -f build.xml
-# Build Version:1.9.0,29,79,init=rm -f build.xml,target=android-11
-# Build Version:1.9.2,31,81,target=android-11
-# Build Version:1.9.3,32,84,target=android-11
 Build:1.9.4,33
     commit=a5e4dd671e
     subdir=Level
@@ -33,13 +29,7 @@ Build:1.9.7,36
     commit=a3a4935f760632d90fc735ff64189333a4a411a2
     subdir=Level
     maven=yes
-    prebuild=$$MVN3$$ install:install-file \
-        -Dfile=$ANDROID_HOME/platforms/android-19/android.jar \
-        -DgroupId=android \
-        -DartifactId=android \
-        -Dversion=4.4.2_r2 \
-        -Dpackaging=jar \
-        -DgeneratePom=true && \
+    prebuild=$$MVN3$$ install:install-file -Dfile=$ANDROID_HOME/platforms/android-19/android.jar -DgroupId=android -DartifactId=android -Dversion=4.4.2_r2 -Dpackaging=jar -DgeneratePom=true && \
         sed -i -e 's@<version>3.8.2</version>@<version>3.7.0</version>@g' pom.xml && \
         sed -i -e '32,65d' pom.xml && \
         sed -i -e 's@<debug>true</debug>@<debug>false</debug>@g' pom.xml && \
@@ -62,4 +52,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.9.7
 Current Version Code:36
-

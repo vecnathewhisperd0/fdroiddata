@@ -1,7 +1,7 @@
 AntiFeatures:UpstreamNonFree
 Categories:Reading
 License:Apache2
-Web Site:http://groups.google.com/group/samlib-info
+Web Site:https://groups.google.com/group/samlib-info
 Source Code:https://github.com/monakhv/samlib-Info
 Issue Tracker:https://github.com/monakhv/samlib-Info/issues
 
@@ -10,8 +10,8 @@ Summary:Track new Russian publications
 Description:
 New publications on samlib.ru site.
 
-Newer versions of this app exist, but require proprietary software, so
-updates will not appear here.
+Newer versions of this app exist, but require proprietary software, so updates
+will not appear here.
 .
 
 Repo Type:git
@@ -35,4 +35,3 @@ Auto Update Mode:None
 Update Check Mode:Static
 Current Version:3.2.3
 Current Version Code:23
-

@@ -7,11 +7,11 @@ Issue Tracker:https://github.com/kaytdek/ColorNamer/issues
 Auto Name:Color Namer
 Summary:Names for colours
 Description:
-Ever wondered what the name for that colour is? Or wanted the code for
-a colour that could be described as 'dusty'?
+Ever wondered what the name for that colour is? Or wanted the code for a colour
+that could be described as 'dusty'?
 
-Identify colours via the camera and the xkcd survey and share them.
-Set colours to wallpaper.
+Identify colours via the camera and the xkcd survey and share them. Set colours
+to wallpaper.
 .
 
 Repo Type:git
@@ -27,4 +27,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:2.32
 Current Version Code:10
-

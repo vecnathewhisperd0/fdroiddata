@@ -1,5 +1,5 @@
 Disabled:Superseded by com.maskyn.fileeditorpro
-Categories:Office
+Categories:Writing
 License:GPLv3
 Web Site:https://vmihalachi.github.io/turbo-editor
 Source Code:https://github.com/vmihalachi/turbo-editor
@@ -10,7 +10,8 @@ FlattrID:2173527
 Auto Name:Turbo Editor
 Summary:Simple text editor
 Description:
-Simple, yet powerful editor for text files. Supersedede by [[com.maskyn.fileeditorpro]].
+Simple, yet powerful editor for text files. Supersedede by
+[[com.maskyn.fileeditorpro]].
 .
 
 Repo Type:git
@@ -23,6 +24,5 @@ Build:1.3,7
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.3
-Current Version Code:7
-
+Current Version:1.19
+Current Version Code:47

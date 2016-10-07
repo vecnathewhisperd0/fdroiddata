@@ -1,26 +1,26 @@
-Categories:Office
+Categories:Writing
 License:GPLv3
-Web Site:https://gitorious.org/~psuresh
-Source Code:https://gitorious.org/amalaki
+Web Site:
+Source Code:https://gitorious.org/amalaki/amalaki
 Issue Tracker:
-Donate:https://code.google.com/p/softkeyboard
+Donate:https://anysoftkeyboard.github.io
 
 Name:AnySoftKeyboard: Malayalam
 Auto Name:AnySoftKeyboard - Malayalam Language Pack
 Summary:Language pack for AnySoftKeyboard
 Description:
-A neat Malayalam font is required.
-You can download Malayalam font optimized for Android from
-[https://gitorious.org/angari here]: root permissions may be necessary for
-installing a font in your system.
+A neat Malayalam font is required. You can download Malayalam font optimized for
+Android from [https://gitorious.org/angari here]: root permissions may be
+necessary for installing a font in your system.
 
 Three layouts are available:
+
 # AmalaKi: A basic multitap layout with 4 letters per soft key.
 # AmalaKi-ext: An extended multitap layout with 2 letters per soft key.
 # Malayalam Numerals: A layout for Malayalam numerals.
 
-Install [[com.menny.android.anysoftkeyboard]] first, then select
-the desired layout from AnySoftKeyboard's Settings->Keyboards menu.
+Install [[com.menny.android.anysoftkeyboard]] first, then select the desired
+layout from AnySoftKeyboard's Settings->Keyboards menu.
 .
 
 Repo Type:git
@@ -33,4 +33,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:20130916-4
 Current Version Code:2
-

@@ -1,14 +1,14 @@
-Categories:Office
+Categories:System
 License:MIT
-Web Site:http://repat.de/2014/01/minimal-open-source-flashlight/
+Web Site:http://repat.de/2014/01/minimal-open-source-flashlight
 Source Code:https://github.com/repat/mosf
 Issue Tracker:https://github.com/repat/mosf/issues
 
 Auto Name:Flashlight
 Summary:Use camera LED as flashlight
 Description:
-Minimalistic approach to flashlights on Android. It consists of only
-one switch to turn the camera LED on and off.
+Minimalistic approach to flashlights on Android. It consists of only one switch
+to turn the camera LED on and off.
 .
 
 Repo Type:git
@@ -23,4 +23,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.0.3
 Current Version Code:5
-

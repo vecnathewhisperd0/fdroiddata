@@ -1,22 +1,22 @@
 Categories:Science & Education
 License:GPLv3+
-Web Site:http://beepme.yourexp.at
-Source Code:https://github.com/yourEXP/beepme
-Issue Tracker:http://issues.yourexp.at/beepme
-Donate:http://beepme.yourexp.at/support-beepme
+Web Site:
+Source Code:https://github.com/nebulon42/beepme
+Issue Tracker:
 
 Auto Name:BeepMe
 Summary:Experience sampling (ESM/DES)
 Description:
-BeepMe is an app for the conduction of experience sampling (ESM/DES).
-Once activated the app sends out beeps at random times. You can enter notes,
-tags and a photo regarding your inner experience at the moment of the beep.
+BeepMe is an app for the conduction of experience sampling (ESM/DES). Once
+activated the app sends out beeps at random times. You can enter notes, tags and
+a photo regarding your inner experience at the moment of the beep.
 
-This data can then either be used in interviews (DES) or being collected directly (ESM).
+This data can then either be used in interviews (DES) or being collected
+directly (ESM).
 .
 
 Repo Type:git
-Repo:https://github.com/yourEXP/beepme.git
+Repo:https://github.com/nebulon42/beepme.git
 
 Build:1.5.1,18
     commit=1.5.1
@@ -42,4 +42,3 @@ Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:1.5.5
 Current Version Code:22
-

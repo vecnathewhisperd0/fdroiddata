@@ -1,7 +1,7 @@
 AntiFeatures:UpstreamNonFree
 Categories:Navigation
 License:LGPL
-Web Site:https://code.google.com/p/osmdroid
+Web Site:
 Source Code:https://github.com/osmdroid/osmdroid
 Issue Tracker:https://github.com/osmdroid/osmdroid/issues
 
@@ -14,7 +14,6 @@ Map viewer using OpenStreetMap tiles.
 Repo Type:git
 Repo:https://github.com/osmdroid/osmdroid
 
-#see https://code.google.com/p/osmdroid/wiki/HowToMaven
 Build:3.0.10,11
     disable=local jar not being recognized (at osmdroid-parent-3.0.10)
     commit=osmdroid-parent-3.0.10
@@ -33,4 +32,3 @@ Auto Update Mode:None
 Update Check Mode:None
 Current Version:4.1
 Current Version Code:15
-

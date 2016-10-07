@@ -1,26 +1,29 @@
 Categories:Games
 License:Apache2
 Web Site:http://solitairecg.sourceforge.net
-Source Code:http://sourceforge.net/p/solitairecg/code
+Source Code:https://sourceforge.net/p/solitairecg/code
 Issue Tracker:http://solitairecg.sourceforge.net/issues.php
+Changelog:http://solitairecg.sourceforge.net/news.php
+Donate:http://solitairecg.sourceforge.net/donations.php
 
 Auto Name:SolitaireCG
 Summary:Solitaire Card Games
 Description:
-SolitaireCG is an adaptation of Ken Magic's "[[com.kmagic.solitaire]]"
-for devices with few hardware buttons.
+SolitaireCG is an adaptation of Ken Magic's "[[com.kmagic.solitaire]]" for
+devices with few hardware buttons.
 
-See [http://solitairecg.sourceforge.net/news.php NEWS] for changes
-against the original code, and project updates.
+Solitaire Card Games include Klondike (regular solitaire), Vegas, Spider, Golf,
+Freecell, Forty Thieves, TriPeaks, and variations of these games.
 
-The changes improve playability and enable card dealing spider. The
-original card graphics, which can scale to higher resolutions, have
-been retained.
+Features include multi-level undo, animated card movement, statistics/score
+tracking, and large card art option.
 
-Solitaire Card Games include Klondike (Regular solitaire), Spider
-solitaire, Freecell, Forty Thieves, and variations of these games.
+See [http://solitairecg.sourceforge.net/news.php NEWS] for changes against the
+original code, and project updates.
 
-[http://solitairecg.sourceforge.net/news.php Changelog]
+The changes fix bugs, add games, and enable card dealing and playability in
+spider.  New hi-res graphics have been added to the original card graphics to
+take advantage of today's larger, higher resolution screens.
 .
 
 Repo Type:git
@@ -38,8 +41,31 @@ Build:1.15.1,454
 Build:1.15.2,455
     commit=SolitaireCG-1.15.2
 
-Auto Update Mode:Version SolitaireCG-%v
-Update Check Mode:Tags
-Current Version:1.15.2
-Current Version Code:455
+Build:2.0,555
+    commit=SolitaireCG-2.0
 
+Build:2.0.1,556
+    commit=SolitaireCG-2.0.1
+
+Build:2.1,560
+    commit=SolitaireCG-2.1
+
+Build:2.2,565
+    commit=SolitaireCG-2.2
+
+Build:2.3,570
+    commit=SolitaireCG-2.3
+
+Build:2.4,575
+    commit=SolitaireCG-2.4
+
+Build:2.5,580
+    commit=SolitaireCG-2.5
+
+Build:2.6.1,590
+    commit=SolitaireCG-2.6.1
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:2.6.1
+Current Version Code:590

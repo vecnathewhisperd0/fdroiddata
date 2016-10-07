@@ -1,4 +1,4 @@
-Categories:Games
+Categories:Sports & Health
 License:Apache2
 Web Site:https://github.com/mvsastry
 Source Code:https://github.com/mvsastry/dashcricket
@@ -8,8 +8,8 @@ Name:DashClock: DashCricket
 Auto Name:DashCricket - DashClock Live Cricket Scores Extension
 Summary:Cricket scores on the lock-screen
 Description:
-[[net.nurik.roman.dashclock]] extension that displays cricket
-match scores from all around the world.
+[[net.nurik.roman.dashclock]] extension that displays cricket match scores from
+all around the world.
 .
 
 Repo Type:git
@@ -40,4 +40,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.4
 Current Version Code:5
-

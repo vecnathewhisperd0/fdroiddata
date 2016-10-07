@@ -4,6 +4,7 @@ License:Apache2
 Web Site:http://smarek.github.io/Simple-Dilbert
 Source Code:https://github.com/smarek/Simple-Dilbert
 Issue Tracker:https://github.com/smarek/Simple-Dilbert/issues
+Changelog:https://github.com/smarek/Simple-Dilbert/blob/HEAD/CHANGELOG.md
 FlattrID:1134425
 Bitcoin:1FpGN3kcZ3GQsaJgBa8rxGRJjBjJavu78g
 
@@ -16,8 +17,6 @@ Description:
 * All comics strips since 16.4.1989
 * Supports both large and small screens
 * Supports all device orientations
-
-[https://github.com/smarek/Simple-Dilbert/blob/HEAD/CHANGELOG.md Changelog]
 .
 
 Repo Type:git
@@ -75,8 +74,15 @@ Build:4.1,34
     gradle=yes
     prebuild=sed -i -e '/android.applicationVariants.all/,$d' -e '/buildTypes/i/*' -e '/defaultConfig/i*/' build.gradle
 
-Auto Update Mode:None
-Update Check Mode:Tags
-Current Version:4.1
-Current Version Code:34
+Build:4.2,35
+    commit=v4.2
+    gradle=yes
 
+Build:4.3,36
+    commit=v4.3
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:4.3
+Current Version Code:36

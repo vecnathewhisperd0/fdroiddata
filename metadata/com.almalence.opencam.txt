@@ -8,6 +8,7 @@ Auto Name:A Better Camera
 Summary:Multi-functional camera
 Description:
 All-purpose full featured camera app. Features include:
+
 * HDR
 * Panorama
 * Groupshot
@@ -25,5 +26,6 @@ Build:3.16,52
     buildjni=yes
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
-
+Update Check Mode:Static
+Current Version:3.16
+Current Version Code:52

@@ -1,21 +1,21 @@
-Categories:Multimedia,Internet
+Categories:Multimedia
 License:GPLv3
 Web Site:https://github.com/geecko86/QuickLyric/blob/HEAD/README.md
 Source Code:https://github.com/geecko86/QuickLyric
 Issue Tracker:https://github.com/geecko86/QuickLyric/issues
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RSJZUSUHBBKTJ&lc=US&item_name=geecko&item_number=00&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted
 
+Name:QuickLyric (old)
 Auto Name:QuickLyric
 Summary:Fetch and display song lyrics
 Description:
 QuickLyric fetches your lyrics for you. It includes a search engine and is
-simple and easy to use. It can also detect what song is playing on your
-device.
+simple and easy to use. It can also detect what song is playing on your device.
 
 The NFC permission is used to share lyrics via Android Beam.
 
-Note that upstream uses a new package id now. Further update will only
-be available with [[com.geecko.QuickLyric]].
+Note that upstream uses a new package id now. Further update will only be
+available with [[com.geecko.QuickLyric]].
 .
 
 Repo Type:git
@@ -53,8 +53,8 @@ Build:1.5.2,5
     prebuild=sed -i -e "/volley/icompile 'com.mcxiaoke.volley:library:1.0.10'" build.gradle && \
         sed -i -e '/fileTree/d' build.gradle
 
+Archive Policy:0 versions
 Auto Update Mode:None
-Update Check Mode:Tags
+Update Check Mode:None
 Current Version:1.5.2
 Current Version Code:5
-

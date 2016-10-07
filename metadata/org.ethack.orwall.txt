@@ -1,4 +1,4 @@
-Categories:Internet
+Categories:Internet,Security
 License:GPLv3
 Web Site:https://orwall.org
 Source Code:https://github.com/EthACKdotOrg/orWall
@@ -12,27 +12,26 @@ Description:
 Force selected applications through Orbot while preventing unchecked
 applications to have network access.
 
-In short, orWall will add special iptables rules in order to redirect
-traffic for applications through Tor; it will also add required rules
-in order to block traffic for other apps. The redirection is based on
-the application user id. Each android application runs as a dedicated
-user, and iptables has support for traffic filtering based on the process
-owner, meaning it's really easy and pretty safe to do this kind of thing
-on an Android device.
+In short, orWall will add special iptables rules in order to redirect traffic
+for applications through Tor; it will also add required rules in order to block
+traffic for other apps. The redirection is based on the application user id.
+Each android application runs as a dedicated user, and iptables has support for
+traffic filtering based on the process owner, meaning it's really easy and
+pretty safe to do this kind of thing on an Android device.
 
-The application works in two stages: first, an init-script will block
-all incoming and outgoing traffic. This should prevent leaks, knowing
-Android sends stuff before you can even access the device. Second stage
-comes once the device is fully booted: orWall itself takes the lead on
-the firewall, and add required rules in order to allow Orbot traffic,
-and redirect selected application to Orbot TransPort.
+The application works in two stages: first, an init-script will block all
+incoming and outgoing traffic. This should prevent leaks, knowing Android sends
+stuff before you can even access the device. Second stage comes once the device
+is fully booted: orWall itself takes the lead on the firewall, and add required
+rules in order to allow Orbot traffic, and redirect selected application to
+Orbot TransPort.
 
 Limitations: init-script works only on Android <= 4.4.x
 
 Conflict: all other firewall application such as AFWall, DroidWall, etc
 .
 
-Requires Root:Yes
+Requires Root:yes
 
 Repo Type:git
 Repo:https://github.com/EthACKdotOrg/orWall.git
@@ -163,8 +162,33 @@ Build:1.0.6,36
     gradle=yes
     scandelete=external/super-commands/ExampleApp/libs,external/i2p/client/src/main/jniLibs/armeabi
 
+Build:1.1.0,38
+    commit=1.1.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/classpath/s/gradle:1\.0\.0-rc2/gradle:2.1.2/g' ../external/NetCipher/libnetcipher/build.gradle ../external/super-commands/libraries/RootCommands/build.gradle && \
+        sed -i -e '/classpath/s/gradle:0\.5\.\+/gradle:2.1.2/g' ../external/super-commands/build.gradle
+    scanignore=external/NetCipher/libnetcipher/external/pinning/res/raw/cacerts
+    scandelete=external/super-commands/ExampleApp/libs,external/i2p/client/src/main/jniLibs/armeabi
+
+Build:1.1.2,39
+    disable=broken sed commands
+    commit=1.1.2
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/classpath/s/gradle:1\.0\.0-rc2/gradle:2.1.2/g' ../external/NetCipher/libnetcipher/build.gradle ../external/super-commands/libraries/RootCommands/build.gradle && \
+        sed -i -e '/classpath/s/gradle:0\.5\.\+/gradle:2.1.2/g' ../external/super-commands/build.gradle
+    scanignore=external/NetCipher/libnetcipher/external/pinning/res/raw/cacerts
+    scandelete=external/super-commands/ExampleApp/libs,external/i2p/client/src/main/jniLibs/armeabi
+
+Build:1.2.0,40
+    commit=1.2.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.0.6
-Current Version Code:36
-
+Current Version:1.2.0
+Current Version Code:40

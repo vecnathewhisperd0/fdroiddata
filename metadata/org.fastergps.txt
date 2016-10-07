@@ -1,30 +1,31 @@
 Categories:System
 License:GPLv3
-Web Site:http://sufficientlysecure.org/index.php/android-apps/#fastergps
-Source Code:https://github.com/dschuermann/faster-gps
-Issue Tracker:https://github.com/dschuermann/faster-gps/issues
-Donate:http://sufficientlysecure.org/index.php/android-apps/#fastergps
+Web Site:http://www.sufficientlysecure.org/android
+Source Code:https://github.com/Free-Software-for-Android/FasterGPS
+Issue Tracker:https://github.com/Free-Software-for-Android/FasterGPS/issues
+Donate:http://www.sufficientlysecure.org/android
 FlattrID:527132
 
 Auto Name:FasterGPS
 Summary:Faster GPS fix
 Description:
-With FasterGPS you can select a NTP Server matching your region to
-speed up the
-process of getting a GPS fix. For more details on why NTP Server choice
-could matter, read
-[http://stackoverflow.com/questions/8308412/gps-how-ntp-time-injection-works this].
+With FasterGPS you can select a NTP Server matching your region to speed up the
+process of getting a GPS fix. For more details on why NTP Server choice could
+matter, read
+[http://stackoverflow.com/questions/8308412/gps-how-ntp-time-injection-works
+this].
 
 Permissions:
+
 * Internet access: To allow donations
 
 Requires root: Yes. To write gps.conf file to /system partition.
 .
 
-Requires Root:Yes
+Requires Root:yes
 
 Repo Type:git
-Repo:https://github.com/dschuermann/faster-gps.git
+Repo:https://github.com/Free-Software-for-Android/FasterGPS.git
 
 Build:1.0,1
     commit=90430ede39c5ad4fef338744af954f865b246c41
@@ -81,4 +82,3 @@ Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:1.11
 Current Version Code:13
-

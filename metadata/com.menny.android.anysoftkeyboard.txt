@@ -1,13 +1,15 @@
-Categories:System
+Categories:Writing
 License:Apache2
 Web Site:https://anysoftkeyboard.github.io
 Source Code:https://github.com/AnySoftKeyboard/AnySoftKeyboard
 Issue Tracker:https://github.com/AnySoftKeyboard/AnySoftKeyboard/issues
-Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=9989122
+Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KDYBGNUNMMN94&lc=US&item_name=AnySoftKeyboard
 
 Auto Name:AnySoftKeyboard
 Summary:Alternative keyboard
 Description:
+Alternative on-screen keyboard for multiple languages.
+
 * Multi-language keyboard support via external packages (English as standard)
 * Completion dictionaries for multiple languages
 * Multitouch support
@@ -17,12 +19,14 @@ Description:
 * Built-in user dictionary words editor
 * Optional 16-key English keyboard
 * Cursor movement soft-keys that can also be mapped to hardware keys
-* Supports x86 and MIPS natively
+* Supports ARM, x86 and MIPS natively
+* Voice-input
 
-There are many language packs and themes available as apks on the website.
-We will try and publish any that have source xml and attribution/licence for the
+There are many language packs and themes available as apks on the website. We
+will try and publish any that have source xml and attribution/licence for the
 dictionaries. For more info see the f-droid.org
-[http://f-droid.org/forums/topic/anysoftkeyboard-language-packs-layouts-plans/#post-6408 forum topic].
+[http://f-droid.org/forums/topic/anysoftkeyboard-language-packs-layouts-plans/#post-6408
+forum topic].
 .
 
 Repo Type:git
@@ -88,8 +92,6 @@ Build:20130807,107
     disable=not published
     commit=unknown - see disabled
 
-#Note that there is a 110 version for Android 1.5, but the F-Droid client no
-#longer supports that anyway, so there seems little point in building it
 Build:20130919,111
     commit=2a68963f
     srclibs=AnySoftKeyboard-API@30851236d7,AnySoftKeyboardTools@73e9a09496
@@ -107,36 +109,41 @@ Build:20131101,114
         rm -rf libs/armeabi*/ libs/x86/ libs/mips/ ant/ keyboard_keystore StoreStuff/ res/raw/words_1.dict
     buildjni=yes
 
-Build:1.2.20140705,125
-    disable=won't build without words_1.dict binary
-    commit=v125
-    patch=gradle_cleanup_125.diff
+Build:1.2.20140705,140
+    disable=build words dict from source, no idea what version name/code it is
+    commit=1.5-r4.1
     gradle=yes
     rm=res/raw/words_1.dict
-    prebuild=sed -i -e 's/version utils\.Utils\..*$/version "1.2.20140705"/g' build.gradle
-    scandelete=buildSrc,src/main/jniLibs
-    build=rm -r buildSrc/build && \
-        mv temp_jni jni && \
-        sed -i 's/BUILD_STATIC_LIBRARY/BUILD_SHARED_LIBRARY/' jni/*/Android.mk && \
-        $$NDK$$/ndk-build && \
-        mv libs src/main/jniLibs
+
+Build:1.8.84,1409
+    commit=1.8-r1
+    init=sed -i -e '/fabric/d' -e '/canaryCompile/,+2d' build.gradle
+    gradle=yes
+    rm=src/main/res/raw/words_1.dict
+    preassemble=makeEnglishDictionary
+
+Build:1.8.133,1458
+    disable=broken subdir
+    commit=1.8-r3
+    subdir=app
+    init=sed -i -e '/fabric/d' -e '/canaryCompile/,+2d' ../build.gradle build.gradle
+    gradle=yes
+    rm=app/src/main/res/raw/words_1.dict
+    preassemble=:makeEnglishDictionary
+
+Build:1.8.146,1471
+    commit=1.8-r4
+    subdir=app
+    init=sed -i -e '/fabric/d' -e '/canaryCompile/,+2d' ../build.gradle build.gradle
+    gradle=yes
+    rm=app/src/main/res/raw/words_1.dict
+    preassemble=:makeEnglishDictionary
 
 Maintainer Notes:
-Patch gets rid of:
-* sonatype.org repo
-* testCompile stuff that we don't need and which would be pulled from sonatype
-* missing property files that would break the build
-* Usage of completely unnecessary plugins like idea and android-sdk-manager
-
-Stuff we have to take care of manually:
-* jni is in temp_jni for some reason
-* upstream clearly built src/main/jniLibs/*.so with BUILD_SHARED_LIBRARY
-* For some reason he put the binaries in src/main/jniLibs, so we have to move them
-* "gradle clean" builds all the groovy stuff for some reason, so we have to clean up after it
+* Generates english dictionary binary (src/main/res/raw/words_1.dict) from source files (under `english_dictionary` folder)
 .
 
 Auto Update Mode:None
-Update Check Mode:Tags
-Current Version:Unknown
-Current Version Code:140
-
+Update Check Mode:None
+Current Version:1.8-r4
+Current Version Code:1470

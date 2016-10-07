@@ -1,37 +1,34 @@
 AntiFeatures:UpstreamNonFree
 Categories:System
-# All source files and jars but no licence in README
 License:Apache2
 Web Site:http://asksven.tumblr.com
 Source Code:https://github.com/asksven/BetterBatteryStats
 Issue Tracker:https://github.com/asksven/BetterBatteryStats/issues
+Changelog:http://better.asksven.org/bbs-changelog
 
 Auto Name:BetterBatteryStats
 Summary:Monitor battery behaviour
 Description:
-Find applications causing the phone to drain battery while it is supposed to
-be asleep and measure the effect of corrective actions:
+Find applications causing the phone to drain battery while it is supposed to be
+asleep and measure the effect of corrective actions:
 
 * Spot drainers based on detailed information about the root cause
 * Measure the effect of actions to reduce drain
 * Detect changes in the awake/sleep profile and quickly find the causes (rogue apps)
 
-The app displays bar graphs based on reference points as explained in the Getting
-Started section of the Help menu and it is good idea to read that if you want to
-have any chance of interpreting the information.
+The app displays bar graphs based on reference points as explained in the
+Getting Started section of the Help menu and it is good idea to read that if you
+want to have any chance of interpreting the information.
 
-Requires root: On Android 4.4 it does. Otherwise you only need root
-to view Network or Alarm stats.
+Requires root: On Android 4.4 it does. Otherwise you only need root to view
+Network or Alarm stats.
 
 Google Analytics and Locale SDK integration were removed.
-
-[http://better.asksven.org/bbs-changelog Changelog]
 .
 
 Repo Type:git
 Repo:https://github.com/asksven/BetterBatteryStats.git
 
-# Need to patch out Locale because it causes build errors
 Build:1.11.0.0,28
     commit=v1.11.0.0
     subdir=BetterBatteryStats
@@ -98,6 +95,5 @@ Beware the stupid line number-based sed in prebuild. Check for Common-AskSven ch
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:2.1.0.0_B3
-Current Version Code:65
-
+Current Version:2.2.0.0RC3
+Current Version Code:81

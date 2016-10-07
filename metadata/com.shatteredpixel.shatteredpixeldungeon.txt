@@ -85,8 +85,121 @@ Build:0.2.4d,38
         echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
     target=android-19
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:0.2.4d
-Current Version Code:38
+Build:0.3.0c,44
+    commit=8c42ebda5e7cd2c223b59933980524d65d8ff7a0
+    srclibs=PDClasses-shattered@43a9126642b88bd41ea4db183bc04f75839bdca5
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
+    target=android-19
 
+Build:0.3.0d,45
+    commit=684c2caacb1775c98db4fb82306b5893a0c824a3
+    srclibs=PDClasses-shattered@43a9126642b88bd41ea4db183bc04f75839bdca5
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
+    target=android-19
+
+Build:0.3.0e,46
+    commit=f4898d903b6c837acea7d34cdacb903066bea724
+    srclibs=PDClasses-shattered@4aaeecf83ff10449614d43421258e3df236a5228
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
+    target=android-19
+
+Build:0.3.1a,55
+    commit=f531879f51d75d0447feb635d2d65c5f127b3c99
+    srclibs=PDClasses-shattered@77b0fbd58608b08b59e86869ebeeec0f7caf93b9
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
+    target=android-19
+
+Build:0.3.1c,57
+    commit=a9fa47b9422ca15e0a37479fa3341858963c8ade
+    srclibs=PDClasses-shattered@4e256b579e15fb099b4b83b608a3c78c65a4fb37
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
+    target=android-19
+
+Build:0.3.1d,59
+    commit=dab5499c223a1af25bac0ed89ecdb067b3fd0931
+    srclibs=PDClasses-shattered@4e256b579e15fb099b4b83b608a3c78c65a4fb37
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
+    target=android-19
+
+Build:0.3.2b,67
+    commit=44880cb44e098f182725300d1dfbf47337b77d21
+    srclibs=PDClasses-shattered@7acaef7924110c4b80a2b60fc883de2a8c21e927
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
+    target=android-19
+
+Build:0.3.3,72
+    commit=75e232a429ad03c10780aa0ca4b99900549f50fa
+    srclibs=PDClasses-shattered@1c4b560b05a0e8f5ee98b1e65b6270a7d125c3a8
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
+    target=android-19
+
+Build:0.3.3b,74
+    commit=v0.3.3b
+    srclibs=PDClasses-shattered@1c4b560b05a0e8f5ee98b1e65b6270a7d125c3a8
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7\njava.encoding=ISO-8859-1' >> ant.properties
+    target=android-23
+
+Build:0.3.4b,92
+    commit=v0.3.4b
+    srclibs=PDClasses-shattered@52858380c095895440918ae455d5a1ce505027e3
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7' >> ant.properties
+    target=android-23
+
+Build:0.3.4c,93
+    commit=v0.3.4c
+    srclibs=PDClasses-shattered@4342062c3f3948d7b6e8fb0d3bb1980b31e3c63e
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7' >> ant.properties
+    target=android-23
+
+Build:0.3.5a,99
+    commit=v0.3.5a
+    srclibs=PDClasses-shattered@4df992d4b3115ab324f2c0d52aff746edd92787a
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7' >> ant.properties
+    target=android-23
+
+Build:0.4.0,107
+    commit=v0.4.0
+    srclibs=PDClasses-shattered@abc43a3e3b4124972df51312d3dd7be2c1e10b6c
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7' >> ant.properties
+    target=android-23
+
+Build:0.4.1a,118
+    commit=v0.4.1a
+    srclibs=PDClasses-shattered@48308cd26657e5f6eb0a79ab98b9d8bdcb52d0d3
+    prebuild=cp -R $$PDClasses-shattered$$/com/watabou/* src/com/shatteredpixel/ && \
+        echo -e 'java.source=1.7\njava.target=1.7' >> ant.properties
+    target=android-23
+
+Build:0.4.2a,127
+    commit=v0.4.2a
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/x86/libFroyoGLES20Fix.so,SPD-classes/src/main/jniLibs/armeabi/libFroyoGLES20Fix.so
+
+Build:0.4.2b,129
+    commit=v0.4.2b
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+
+Maintainer Notes:
+See here regarding jni libs: https://gitlab.com/fdroid/fdroiddata/issues/519
+.
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:0.4.2b
+Current Version Code:129

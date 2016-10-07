@@ -8,8 +8,7 @@ Donate:http://aokp.co/donate
 Auto Name:AOKP.co
 Summary:Wrapper for AOKP website
 Description:
-AOKP is a custom ROM; there you get access to galleries and
-screenshots.
+AOKP is a custom ROM; there you get access to galleries and screenshots.
 .
 
 Repo Type:git
@@ -23,4 +22,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.0
 Current Version Code:2
-

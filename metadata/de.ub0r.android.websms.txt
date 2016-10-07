@@ -1,9 +1,10 @@
 AntiFeatures:UpstreamNonFree
 Categories:Phone & SMS
 License:GPLv3
-Web Site:https://code.google.com/p/websmsdroid
+Web Site:
 Source Code:https://github.com/felixb/websms/source
-Issue Tracker:https://code.google.com/p/websmsdroid/issues
+Issue Tracker:
+Changelog:https://github.com/felixb/websms/blob/HEAD/CHANGELOG.md
 
 Auto Name:WebSMS
 Summary:Send texts via the WWW
@@ -11,19 +12,17 @@ Description:
 WebSMS lets you send free and cheap TXT via different webservices.
 
 You will need at least one WebSMS Connector (plugin/extension) to connect this
-app to the webservice of your choice. We have a couple in the repo but there
-is source code for many on the author's source code page and apks are available
-on the website.
+app to the webservice of your choice. We have a couple in the repo but there is
+source code for many on the author's source code page and apks are available on
+the website.
 
-Pricing depends on the webservice provider connected with the connector.
-The “SMS” Connector shipped with the app itself sends messages via standard
-GSM method and is billed by your operator. It is installed for backup reasons
-and deactivated by default.
+Pricing depends on the webservice provider connected with the connector. The
+“SMS” Connector shipped with the app itself sends messages via standard GSM
+method and is billed by your operator. It is installed for backup reasons and
+deactivated by default.
 
-The proprietary 'admob' binary in the source code has been replaced with a
-FOSS library that does nothing.
-
-[https://github.com/felixb/websms/blob/HEAD/CHANGELOG.md Changelog]
+The proprietary 'admob' binary in the source code has been replaced with a FOSS
+library that does nothing.
 .
 
 Repo Type:git
@@ -38,7 +37,6 @@ Build:4.5.1,7451000
         echo "android.library.reference.3=$$ub0rlib$$" >> project.properties && \
         echo "android.library.reference.4=$$MobAdMob$$" >> project.properties
 
-# There's an extra WebSMS- here, thus the weird tag and the forceversion
 Build:4.5.4,7454000
     commit=WebSMS-WebSMS-4.5.4
     srclibs=ActionBarSherlock@4.2.0,WebSMSAPI@d85a800e,ub0rlib@144a5da04c,MobAdMob@2d5736
@@ -83,6 +81,5 @@ Build:4.9.1,7471005
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:4.9.1
-Current Version Code:7471005
-
+Current Version:4.9.5
+Current Version Code:9495000

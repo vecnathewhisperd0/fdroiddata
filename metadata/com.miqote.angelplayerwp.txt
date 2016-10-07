@@ -1,4 +1,4 @@
-Categories:Wallpaper
+Categories:Theming
 License:GPLv3
 Web Site:https://miqote.com/wallpapers/angelplayerwp
 Source Code:https://code.launchpad.net/~miqote/angelplayerwp/tail
@@ -7,7 +7,8 @@ Issue Tracker:https://answers.launchpad.net/angelplayerwp
 Auto Name:Angel Player Live Wallpaper
 Summary:Anime animated wallpaper
 Description:
-Animated wallpaper featuring a loading screen of the "ANGEL PLAYER" program from Angel Beats anime series.
+Animated wallpaper featuring a loading screen of the "ANGEL PLAYER" program from
+Angel Beats anime series.
 .
 
 Repo Type:bzr
@@ -20,4 +21,3 @@ Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:1.1
 Current Version Code:11
-

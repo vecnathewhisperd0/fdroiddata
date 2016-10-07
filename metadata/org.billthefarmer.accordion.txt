@@ -7,8 +7,8 @@ Issue Tracker:https://github.com/billthefarmer/accordion/issues
 Auto Name:Accordion
 Summary:Accordion emulator for tablets
 Description:
-Emulates a three row diatonic or continental chromatic accordion.
-There is a choice of midi instruments and keys, including C System and B System.
+Emulates a three row diatonic or continental chromatic accordion. There is a
+choice of midi instruments and keys, including C System and B System.
 
 * Keys: F/Bb/Eb, G/C/F, A/D/G, C#/D/G, B/C/C#, C System, B System
 * Instruments: Standard midi set, defaults to accordion
@@ -31,7 +31,6 @@ Build:1.01,101
         mv libs/libsonivox.so ndk-r8e/platforms/android-14/arch-arm/usr/lib/ && \
         ./ndk-r8e/ndk-build && \
         rm -rf ndk-r8e/
-    buildjni=no
 
 Build:1.02,102
     commit=v1.02
@@ -44,14 +43,44 @@ Build:1.02,102
         mv libs/libsonivox.so ndk-r9d/platforms/android-17/arch-arm/usr/lib/ && \
         ./ndk-r9d/ndk-build && \
         rm -rf ndk-r9d/
-    buildjni=no
 
 Build:1.03,103
     commit=v1.03
     scanignore=jni/libs
     scandelete=libs
     buildjni=yes
-    ndk=r10d
+
+Build:1.04,104
+    commit=v1.04
+    scanignore=jni/libs
+    scandelete=libs
+    buildjni=yes
+
+Build:1.05,105
+    commit=v1.05
+    scanignore=jni/libs
+    scandelete=libs
+    buildjni=yes
+
+Build:1.06,106
+    commit=v1.06
+    scandelete=libs
+    buildjni=yes
+
+Build:1.07,107
+    commit=v1.07
+    scandelete=libs
+    buildjni=yes
+
+Build:1.08,108
+    commit=v1.08
+    scandelete=libs
+    buildjni=yes
+
+Build:1.09,109
+    commit=v1.09
+    scandelete=libs
+    buildjni=yes
 
 Maintainer Notes:
 As of version 1.03, does not require the convoluted build process used
@@ -64,6 +93,5 @@ for previous versions. This is because the build process:
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.03
-Current Version Code:103
-
+Current Version:1.09
+Current Version Code:109

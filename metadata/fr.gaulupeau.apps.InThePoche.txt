@@ -1,18 +1,19 @@
-Categories:Internet
+Categories:Internet,Reading
 License:GPLv3
 Web Site:https://www.wallabag.org
 Source Code:https://github.com/wallabag/android-app
 Issue Tracker:https://github.com/wallabag/android-app/issues
+Donate:https://www.wallabag.org/pages/donations.html
 FlattrID:1265480
 
 Auto Name:wallabag
 Summary:Read-it-later client
 Description:
-A self hosted read-it-later app which is made for you to comfortably read
-and archive your articles. Unlike to other services, the server software
-is MIT-licensed, so you can set it up on your own: Just follow the
-instructions at [http://www.wallabag.org wallabag.org]. Optionally you can find a hosting service in
-the [https://www.wallabag.org/frequently-asked-questions/ FAQ].
+A self hosted read-it-later app which is made for you to comfortably read and
+archive your articles. Unlike to other services, the server software is
+MIT-licensed, so you can set it up on your own: Just follow the instructions at
+[http://www.wallabag.org wallabag.org]. Optionally you can find a hosting
+service in the [https://www.wallabag.org/frequently-asked-questions/ FAQ].
 .
 
 Repo Type:git
@@ -36,8 +37,58 @@ Build:1.8,11
     subdir=app
     gradle=yes
 
-Auto Update Mode:Version %v
-Update Check Mode:Tags
-Current Version:1.8
-Current Version Code:11
+Build:1.9,17
+    commit=1.9
+    subdir=app
+    gradle=yes
 
+Build:1.9.1,18
+    disable=mistagged, wrong version name
+    commit=1.9.1
+    subdir=app
+    gradle=yes
+
+Build:1.9.2,19
+    commit=1.9.2
+    subdir=app
+    gradle=yes
+
+Build:1.9.3.1,21
+    commit=1.9.3.1
+    subdir=app
+    gradle=yes
+
+Build:1.9.9.1,22
+    commit=1.9.9.1
+    subdir=app
+    gradle=yes
+
+Build:1.9.9.2,23
+    commit=1.9.9.2
+    subdir=app
+    gradle=yes
+
+Build:1.9.9.3,24
+    commit=1.9.9.3
+    subdir=app
+    gradle=yes
+
+Build:1.9.9.4,25
+    commit=1.9.9.4
+    subdir=app
+    gradle=yes
+
+Build:1.9.9.5,27
+    commit=1.9.9.5
+    subdir=app
+    gradle=yes
+
+Build:1.10.0,28
+    commit=1.10.0
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags ^v?[0-9.]*$
+Current Version:1.10.0
+Current Version Code:28

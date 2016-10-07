@@ -1,9 +1,10 @@
 AntiFeatures:UpstreamNonFree
 Categories:Phone & SMS
 License:GPLv3
-Web Site:https://code.google.com/p/gtalksms
-Source Code:https://code.google.com/p/gtalksms/source
-Issue Tracker:https://code.google.com/p/gtalksms/issues
+Web Site:
+Source Code:https://github.com/Yakoo63/GTalkSMS
+Issue Tracker:https://github.com/Yakoo63/GTalkSMS/Issues
+Changelog:https://github.com/Yakoo63/gtalksms/blob/HEAD/Changelog
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=WQDV6S67WAC7A&lc=US&item_name=GTalkSMS&item_number=WEB&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 FlattrID:130193
 
@@ -12,17 +13,16 @@ Summary:Control your phone via XMPP
 Description:
 Send/receive SMS, make calls, locate your phone via GPS, activate WLAN or
 Bluetooth, etc. It can be useful for those who prefer typing SMS on a real
-keyboard. The app also notifies you about new "events" on the phone, like a
-new text message (SMS) or an incoming call. Think of it as a remote control
-for your Android phone via XMPP that informs you about recent events on
-your smartphone.
+keyboard. The app also notifies you about new "events" on the phone, like a new
+text message (SMS) or an incoming call. Think of it as a remote control for your
+Android phone via XMPP that informs you about recent events on your smartphone.
 
 Note: Newer versions of this app may be available elsewhere, which contain
 proprietary software.
 .
 
 Repo Type:git
-Repo:https://code.google.com/p/gtalksms
+Repo:https://github.com/Yakoo63/GTalkSMS
 
 Build:4.2,64
     commit=4.2
@@ -42,13 +42,18 @@ Build:4.4.1,69
     update=.,external-libs/ActionBarSherlock/library
 
 Build:4.4.2,70
-    disable=!Proprietary binaries (at 4.4.2)
+    disable=Proprietary binaries (at 4.4.2)
     commit=4.4.2
     submodules=yes
     update=.,external-libs/ActionBarSherlock/library
 
-Auto Update Mode:None
-Update Check Mode:Static
-Current Version:4.4.1
-Current Version Code:69
+Build:5.0.1.84,84
+    disable=play-services
+    commit=5.0.1
+    submodules=yes
+    gradle=yes
 
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:5.0.1
+Current Version Code:84

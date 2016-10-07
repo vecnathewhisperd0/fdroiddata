@@ -1,28 +1,22 @@
-AntiFeatures:NonFreeAdd
-Categories:Office
+Categories:Writing
 License:Apache2
-Web Site:https://github.com/dmfs/tasks/blob/HEAD/README.md
-Source Code:https://github.com/dmfs/tasks
-Issue Tracker:https://github.com/dmfs/tasks/issues
+Web Site:https://github.com/dmfs/opentasks/blob/HEAD/README.md
+Source Code:https://github.com/dmfs/opentasks
+Issue Tracker:https://github.com/dmfs/opentasks/issues
 
-Auto Name:Tasks
+Auto Name:OpenTasks
 Summary:Keep track of your list of goals
 Description:
-A simple task manager app, allowing you to categorise your todo list by
-urgency, state, timeframe etc.
-It is supposed to synchronise to a CalDAV server but this only works via
-the author's proprietary app.
-There isn't an option to export the data: therefore you must archive
-/data/app/org.dmfs.tasks as root; or use adb backup if you are on Android 4.
+A simple task manager app, allowing you to categorise your todo list by urgency,
+state, timeframe etc.
 
-Anti-feature: Non-free addons. Your data can't be synchronised or exported
-unless you install another, proprietary app.
+Tasks can be synchronised with a CalDAV server using [[at.bitfire.davdroid]].
 
 Status: Beta.
 .
 
 Repo Type:git
-Repo:https://github.com/dmfs/tasks.git
+Repo:https://github.com/dmfs/opentasks.git
 
 Build:1.0.3,10
     commit=f9d88f8280
@@ -98,13 +92,12 @@ Build:1.1.6,84
         sed -i -e '175d' src/org/dmfs/tasks/TaskGroupPagerAdapter.java
     target=android-21
 
-Maintainer Notes:
-Upstream forgot to tag/push --tags the last release. Switch back to UCM:Tags
-and maybe AUM when appropriated.
-.
+Build:1.1.8.2,103
+    commit=1.1.8.2
+    subdir=opentasks
+    gradle=yes
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:1.1.6
-Current Version Code:84
-
+Update Check Mode:Tags
+Current Version:1.1.8.2
+Current Version Code:103

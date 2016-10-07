@@ -8,9 +8,9 @@ Donate:https://github.com/aaronjwood/PortAuthority/blob/HEAD/README
 Auto Name:Port Authority
 Summary:Port scanner
 Description:
-A handy systems and security-focused tool, Port Authority is a very fast
-port scanner. It also allows you to quickly discover hosts on your network
-and will display useful network information about your device and other hosts.
+A handy systems and security-focused tool, Port Authority is a very fast port
+scanner. It also allows you to quickly discover hosts on your network and will
+display useful network information about your device and other hosts.
 .
 
 Repo Type:git
@@ -58,8 +58,116 @@ Build:1.5.0,13
     gradle=free
     prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
 
+Build:1.5.2,14
+    commit=v1.5.2
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.5.5,16
+    commit=v1.5.5
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.5.7,18
+    commit=v1.5.7
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.6.0,19
+    commit=v1.6.0
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.6.3,21
+    commit=v1.6.3
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.6.4,22
+    commit=v1.6.4
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.6.5,23
+    commit=v1.6.5
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.6.6,24
+    disable=non-free deps
+    commit=v1.6.6
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.6.11,29
+    commit=v1.6.11
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.7.0,30
+    commit=v1.7.0
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.7.1,31
+    commit=v1.7.1
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.7.2,32
+    commit=v1.7.2
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.7.5,34
+    commit=v1.7.5
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.7.6,35
+    commit=v1.7.6
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.7.9,37
+    commit=v1.7.9
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.8.1,39
+    commit=v1.8.1
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.8.2,40
+    commit=v1.8.2
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.8.3,41
+    commit=v1.8.3
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.5.0
-Current Version Code:13
-
+Current Version:1.8.3
+Current Version Code:41

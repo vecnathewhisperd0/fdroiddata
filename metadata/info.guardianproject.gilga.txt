@@ -1,16 +1,15 @@
-Categories:Internet
+Categories:Connectivity
 License:GPLv3
 Web Site:https://github.com/n8fr8/gilgamesh/blob/HEAD/README.md
 Source Code:https://github.com/n8fr8/gilgamesh
 Issue Tracker:https://github.com/n8fr8/gilgamesh/issues
+Changelog:https://github.com/n8fr8/gilgamesh/blob/HEAD/CHANGELOG
 
 Auto Name:Gilga
 Summary:Local chat via Bluetooth
 Description:
 Use Bluetooth to chat with others in the same area, even if Internet access is
 down or restricted.
-
-[https://github.com/n8fr8/gilgamesh/blob/master/CHANGELOG CHANGELOG]
 .
 
 Repo Type:git
@@ -56,4 +55,3 @@ Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:0.0.12
 Current Version Code:12
-

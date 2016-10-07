@@ -1,8 +1,8 @@
 Categories:Multimedia
 License:GPLv3
 Web Site:http://andof.quovadit.org
-Source Code:http://sourceforge.net/p/andof/code
-Issue Tracker:http://sourceforge.net/p/andof/tickets
+Source Code:https://sourceforge.net/p/andof/code
+Issue Tracker:https://sourceforge.net/p/andof/tickets
 
 Auto Name:anDOF
 Summary:Calculate DOF for photography
@@ -33,8 +33,10 @@ Build:2.1,19
 Build:2.2,20
     commit=v2.2
 
-Auto Update Mode:Version v%v
-Update Check Mode:Tags
-Current Version:2.2
-Current Version Code:20
+Build:2.3,21
+    commit=v2.3
 
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:2.3
+Current Version Code:21

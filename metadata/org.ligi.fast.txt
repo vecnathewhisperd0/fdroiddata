@@ -8,12 +8,10 @@ Auto Name:FAST App Search Tool
 Summary:Find apps just by typing
 Description:
 Find your apps without needing to scroll through lists. It can display icons or
-not and search for
-package names too if the option is selected. Long-pressing an entry can display
-options to view the App
-Details, which is helpful for uninstalling apps, or to view the
-app on Google Play.
-Works as a normal app or a launcher.
+not and search for package names too if the option is selected. Long-pressing an
+entry can display options to view the App Details, which is helpful for
+uninstalling apps, or to view the app on Google Play. Works as a normal app or a
+launcher.
 .
 
 Repo Type:git
@@ -110,8 +108,22 @@ Build:6.2,62
     subdir=android
     gradle=forFDroid,withExtras
 
+Build:6.3,63
+    commit=6.3
+    subdir=android
+    gradle=forFDroid,withExtras
+
+Build:6.4,64
+    commit=6.4
+    subdir=android
+    gradle=forFDroid,withExtras
+
+Build:6.5,65
+    commit=6.5
+    subdir=android
+    gradle=forFDroid,withExtras
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:6.2
-Current Version Code:62
-
+Current Version:6.5
+Current Version Code:65

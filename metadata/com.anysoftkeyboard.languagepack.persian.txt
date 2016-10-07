@@ -1,16 +1,16 @@
-Categories:Office
+Categories:Writing
 License:GPLv3
 Web Site:http://www.pedramhayati.com/2011/05/15/persianfarsi-language-for-android
 Source Code:https://github.com/pi3ch/persian_anysoftkeyboard
 Issue Tracker:https://github.com/pi3ch/persian_anysoftkeyboard/issues
-Donate:https://code.google.com/p/softkeyboard
+Donate:http://anysoftkeyboard.github.io/
 
 Name:AnySoftKeyboard: Persian
 Auto Name:Persian for AnySoftKeyboard
 Summary:Language pack for AnySoftKeyboard
 Description:
-N.B You may need to install Persian fonts. This process would require root
-and is described on the website.
+N.B You may need to install Persian fonts. This process would require root and
+is described on the website.
 
 * Full Persian keyboards
 * Farsi and Pinglish word suggestion and auto completion
@@ -24,7 +24,6 @@ which is free only for non-commercial use.
 Repo Type:git
 Repo:https://github.com/pi3ch/persian_anysoftkeyboard
 
-#Uses old format, therefore we won't use ASK-API
 Build:20120613-persian-numbers,4
     commit=5c341f2e73
     patch=xml.patch
@@ -43,4 +42,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:20120613-persian-numbers
 Current Version Code:4
-

@@ -7,8 +7,8 @@ Issue Tracker:https://bitbucket.org/wiffenproof/droid-examiner/issues
 Auto Name:Droid Examiner
 Summary:Device info
 Description:
-Simple app to display information about device hardware and software.
-Doesn't require a touchscreen.
+Simple app to display information about device hardware and software. Doesn't
+require a touchscreen.
 .
 
 Repo Type:git
@@ -22,4 +22,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.0
 Current Version Code:1
-

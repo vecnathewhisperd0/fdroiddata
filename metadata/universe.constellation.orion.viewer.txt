@@ -1,14 +1,14 @@
 Categories:Reading
 License:GPLv3
-Web Site:http://sourceforge.net/projects/orion-viewer
-Source Code:http://sourceforge.net/p/orion-viewer/code/ci/master/tree
-Issue Tracker:http://sourceforge.net/p/orion-viewer/tickets
+Web Site:https://sourceforge.net/projects/orion-viewer
+Source Code:https://sourceforge.net/p/orion-viewer/code
+Issue Tracker:https://sourceforge.net/p/orion-viewer/tickets
 
 Auto Name:Orion Viewer
 Summary:Viewer for PDF, DJVU, XPS and CBZ files
 Description:
-Viewer based on various open-source projects that supports PDF, DJVU,
-XPS and CBZ files.
+Viewer based on various open-source projects that supports PDF, DJVU, XPS and
+CBZ files.
 
 Features:
 
@@ -49,4 +49,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:0.54.2
 Current Version Code:81
-

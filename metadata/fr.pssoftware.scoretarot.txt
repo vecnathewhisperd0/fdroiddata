@@ -1,4 +1,4 @@
-Categories:Games,Office
+Categories:Games
 License:GPLv3
 Web Site:http://scoretarot.tuxfamily.org
 Source Code:http://git.tuxfamily.org/?p=scoretarot/git.git
@@ -26,13 +26,22 @@ Build:2.0,20
     commit=20
     subdir=app
     gradle=yes
-    rm=app/libs/*
     srclibs=AChartengineXlythe@0b27908f012ba17360977f8b87c64e755948302c
+    rm=app/libs/*
     prebuild=cp -fR $$AChartengineXlythe$$/src/org src/main/java/ && \
-         sed -i -e '/achartengine/d' build.gradle
+        sed -i -e '/achartengine/d' build.gradle
 
-Auto Update Mode:Version %c
+Build:2.8,28
+    disable=play-services
+    commit=v28
+    subdir=app
+    gradle=yes
+    srclibs=AChartengineXlythe@0b27908f012ba17360977f8b87c64e755948302c
+    rm=app/libs/*
+    prebuild=cp -fR $$AChartengineXlythe$$/src/org src/main/java/ && \
+        sed -i -e '/achartengine/d' build.gradle
+
+Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:2.0
-Current Version Code:20
-
+Current Version:2.8
+Current Version Code:28

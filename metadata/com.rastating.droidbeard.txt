@@ -1,4 +1,4 @@
-Categories:Office
+Categories:Internet
 License:GPLv3
 Web Site:http://www.droidbeard.com
 Source Code:https://github.com/rastating/DroidBeard
@@ -7,7 +7,8 @@ Issue Tracker:https://github.com/rastating/DroidBeard/issues
 Auto Name:DroidBeard
 Summary:Manage SickBeard installations
 Description:
-Managing your [http://sickbeard.com/ SickBeard] installation either at home or remotely.
+Managing your [http://sickbeard.com/ SickBeard] installation either at home or
+remotely.
 .
 
 Repo Type:git
@@ -98,8 +99,12 @@ Build:1.4.9,1409
     subdir=app
     gradle=yes
 
+Build:1.5.0,1500
+    commit=v1.5
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.4.9
-Current Version Code:1409
-
+Current Version:1.5.0
+Current Version Code:1500

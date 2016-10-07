@@ -10,8 +10,8 @@ Auto Name:MP3tunes
 Summary:Listen to music from MP3tunes
 Description:
 MP3tunes.com is a music storage service, where users can upload their music
-files and stream them from anywhere.
-This is the official Android client for accessing the service.
+files and stream them from anywhere. This is the official Android client for
+accessing the service.
 
 AntiFeatures:NonFreeNet. The website isn't free software.
 
@@ -29,4 +29,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:3.7
 Current Version Code:89
-
