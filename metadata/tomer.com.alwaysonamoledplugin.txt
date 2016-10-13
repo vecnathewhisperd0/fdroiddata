@@ -14,12 +14,12 @@ Turns the hardware buttons light off/on
 Repo Type:git
 Repo:https://github.com/rosenpin/AlwaysOnAmoledPlugin.git
 
-Build:1.0,1
-    commit=1
+Build:1.0,3
+    commit=3
     subdir=app
     gradle=yes
 
 Auto Update Mode:None
 Update Check Mode:Tags ^[0-9\.]+$
 Current Version:1.0
-Current Version Code:1
+Current Version Code:3
