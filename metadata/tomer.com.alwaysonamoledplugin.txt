@@ -9,8 +9,10 @@ Description:
 This plugin is required for devices with capacitive buttons.
 Turns the hardware buttons light off/on
 .
+
 Repo Type:git
 Repo:https://github.com/rosenpin/AlwaysOnAmoledPlugin.git
+
 Build:1.0,1
     commit=1
     subdir=app
