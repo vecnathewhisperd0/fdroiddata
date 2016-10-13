@@ -305,7 +305,42 @@ Build:0.11.2,58
     subdir=app
     gradle=yes
 
+Build:0.12.0,59
+    commit=0.12.0-fdroidfix
+    subdir=app
+    gradle=yes
+
+Build:0.12.2,61
+    commit=0.12.2
+    subdir=app
+    gradle=yes
+
+Build:0.13.0,62
+    commit=0.13.0
+    subdir=app
+    gradle=yes
+
+Build:0.13.1,63
+    commit=0.13.1
+    subdir=app
+    gradle=yes
+
+Build:0.13.2,64
+    commit=0.13.2
+    subdir=app
+    gradle=yes
+
+Build:0.13.3,65
+    commit=0.13.3
+    subdir=app
+    gradle=yes
+
+Build:0.13.4,66
+    commit=0.13.4
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.11.2
-Current Version Code:58
+Current Version:0.13.4
+Current Version Code:66

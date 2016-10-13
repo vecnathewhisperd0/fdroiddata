@@ -81,7 +81,28 @@ Build:15.0.1.928,1501928
     gradle=zomrelease
     prebuild=sed -i '/com.google.android.gms/d' ../chatsecure-push/example/build.gradle
 
+Build:15.0.1.930,1501930
+    commit=15.0.1.930
+    subdir=app
+    submodules=yes
+    gradle=zomrelease
+    prebuild=sed -i '/com.google.android.gms/d' ../chatsecure-push/example/build.gradle
+
+Build:15.0.1.931,1501931
+    commit=15.0.1.931
+    subdir=app
+    submodules=yes
+    gradle=zomrelease
+    prebuild=sed -i '/com.google.android.gms/d' ../chatsecure-push/example/build.gradle
+
+Build:15.0.1.932,1501932
+    commit=15.0.1.932
+    subdir=app
+    submodules=yes
+    gradle=zomrelease
+    prebuild=sed -i '/com.google.android.gms/d' ../chatsecure-push/example/build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:15.0.1.928
-Current Version Code:1501928
+Current Version:15.0.1.932
+Current Version Code:1501932

@@ -628,6 +628,66 @@ Build:4.66,256
     scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
     build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
 
+Build:4.67,257
+    commit=89dcdb32d1f0c8b360cf9ced44d45b4442de7153
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml && \
+        echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.68,258
+    commit=0a1a8db9286f4dde8b497ee391263249234e2276
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml && \
+        echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.69,259
+    commit=a58d26dbf0cf57617bcfd016b863a73f70e2e22b
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml && \
+        echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.71,261
+    commit=22d213f81e7765197fb4f4f4b33b3e99e5b52448
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml && \
+        echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:4.72,262
+    commit=b4725e62e0e018e52a4cd49b27d484ca59608add
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml && \
+        echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:5.0,280
+    commit=4c59d1f380162372a7bd002aa72a89683c3ac486
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml && \
+        echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
 Maintainer Notes:
 See wallet/{README,CHANGES} or git log for info about what BitcoinJ tag to use.
 Use latest commit in 'prod' branch, which is a rebase on top of the latest tag.
@@ -639,5 +699,5 @@ approach to building this in future.
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest/prod
-Current Version:4.66
-Current Version Code:256
+Current Version:5.0
+Current Version Code:280

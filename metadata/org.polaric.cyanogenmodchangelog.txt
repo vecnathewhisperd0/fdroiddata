@@ -25,7 +25,22 @@ Build:5.3,57
     subdir=app
     gradle=yes
 
+Build:5.3,58
+    commit=e78af38d1718148a399fa0a758e43542774861a7
+    subdir=app
+    gradle=yes
+
+Build:5.3,59
+    commit=b73f4aa98e81950d5a4ec37793ce3fa9f994ea39
+    subdir=app
+    gradle=yes
+
+Build:5.4,60
+    commit=8afc6dbce4503aecd63f4c61e50c1536d26e030d
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:5.3
-Current Version Code:57
+Current Version:5.4
+Current Version Code:60

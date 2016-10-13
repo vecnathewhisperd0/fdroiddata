@@ -35,6 +35,9 @@ Smartcoins Wallet now works at all BlockPay enabled merchants worldwide!
 * Contacts can be organized by nickname labels. Notes and Avatars also supported!
 * Quickly and Easily share your payment address via email, chat, wireless, SMS, social media and telephone
 * Monitor all Balances and Transactions in real-time; UI/UX never needs a refresh
+
+You can find more information [https://github.com/kenCode-de/smartcoins-wallet
+here].
 .
 
 Repo Type:git
@@ -45,7 +48,12 @@ Build:1.0.5,186
     subdir=app
     gradle=yes
 
+Build:1.0.6,187
+    commit=v1.0.6
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.0.5
-Current Version Code:186
+Current Version:1.0.6
+Current Version Code:187

@@ -6,8 +6,8 @@ Issue Tracker:https://github.com/stefan-niedermann/OwnCloud-Notes/issues
 Changelog:https://github.com/stefan-niedermann/OwnCloud-Notes/releases
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K7HVLE6J7SXXA
 
-Auto Name:ownCloud Notes
-Summary:Client for ownCloud Notes App
+Auto Name:Notes
+Summary:View and edit notes on ownCloud
 Description:
 Companion app to ownCloud Notes.
 
@@ -78,7 +78,13 @@ Build:0.8.1,13
     subdir=app
     gradle=yes
 
+Build:0.9.0,14
+    commit=v0.9.0
+    subdir=app
+    gradle=yes
+    prebuild=echo -e "android { lintOptions { disable 'MissingTranslation' } }" >> build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.8.1
-Current Version Code:13
+Current Version:0.9.0
+Current Version Code:14

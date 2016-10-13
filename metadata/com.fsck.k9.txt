@@ -196,18 +196,25 @@ Build:5.010,22010
         popd
     scandelete=plugins/SafeContentResolver/*
 
+Build:5.112,23111
+    disable=remove
+    commit=5.112
+    subdir=k9mail
+    gradle=yes
+
+Build:5.113,23112
+    commit=5.113
+    subdir=k9mail
+    gradle=yes
+
 Maintainer Notes:
 * Force targetSdk via gradle, to avoid erroneous call_log
   permission requests.
 * PullRequest created.
-
-//alpha
-Build:5.108,23080
-    commit=5.108
-    gradle=yes
-    subdir=k9mail
+* Add alpha/beta builds from time to time. OKed by cketti.
 .
 
+Archive Policy:5 versions
 Auto Update Mode:Version %v
 Update Check Mode:RepoManifest/5.0-MAINT
 Current Version:5.010

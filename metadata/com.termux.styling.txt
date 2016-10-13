@@ -1,8 +1,10 @@
 Categories:Development
 License:GPLv3
-Web Site:http://termux.com
+Web Site:https://termux.com
 Source Code:https://github.com/termux/termux-styling
 Issue Tracker:https://github.com/termux/termux-styling/issues
+Donate:https://termux.com/donate.html
+Bitcoin:1BXS5qPhJzhr5iK5nmNDSmoLDfB6VmN5hv
 
 Auto Name:Termux:Styling
 Summary:Customize your Termux terminal
@@ -32,7 +34,12 @@ Build:0.12,12
     subdir=app
     gradle=yes
 
+Build:0.13,13
+    commit=v0.13
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.12
-Current Version Code:12
+Current Version:0.13
+Current Version Code:13

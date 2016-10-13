@@ -183,7 +183,23 @@ Build:0.4.1a,118
         echo -e 'java.source=1.7\njava.target=1.7' >> ant.properties
     target=android-23
 
+Build:0.4.2a,127
+    commit=v0.4.2a
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/x86/libFroyoGLES20Fix.so,SPD-classes/src/main/jniLibs/armeabi/libFroyoGLES20Fix.so
+
+Build:0.4.2b,129
+    commit=v0.4.2b
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+
+Maintainer Notes:
+See here regarding jni libs: https://gitlab.com/fdroid/fdroiddata/issues/519
+.
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:0.4.1a
-Current Version Code:118
+Current Version:0.4.2b
+Current Version Code:129

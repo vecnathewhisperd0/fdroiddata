@@ -61,7 +61,17 @@ Build:0.9.3 beta 1,163
     subdir=app
     gradle=yes
 
-Auto Update Mode:Version %v
+Build:0.9.4 beta 1,170
+    commit=0.9.4.1
+    subdir=app
+    gradle=yes
+
+Build:0.9.5,213
+    commit=0.9.5
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:None
 Update Check Mode:Tags ^[0-9\.]+$
-Current Version:0.9.3 beta 1
-Current Version Code:163
+Current Version:0.9.5
+Current Version Code:214

@@ -25,9 +25,9 @@ installed using the apt package manager known from the Debian and Ubuntu Linux
 distributions. Access the built-in help by long-pressing anywhere on the
 terminal and selecting the Help menu option to learn more.
 
-Read help online: [http://termux.com/help]
+Read help online: [https://termux.com/help]
 
-Google+ Community: [http://termux.com/community]
+Google+ Community: [https://termux.com/community]
 .
 
 Repo Type:git
@@ -198,7 +198,22 @@ Build:0.39,39
     subdir=app
     gradle=yes
 
+Build:0.40,40
+    commit=v0.40
+    subdir=app
+    gradle=yes
+
+Build:0.41,41
+    commit=v0.41
+    subdir=app
+    gradle=yes
+
+Build:0.42,42
+    commit=v0.42
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.39
-Current Version Code:39
+Current Version:0.42
+Current Version Code:42

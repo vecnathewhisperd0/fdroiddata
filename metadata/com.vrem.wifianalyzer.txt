@@ -1,5 +1,5 @@
 Categories:Connectivity
-License:Apache2
+License:GPLv3
 Web Site:https://github.com/VREMSoftwareDevelopment/WifiAnalyzer/blob/HEAD/README.md
 Source Code:https://github.com/VREMSoftwareDevelopment/WifiAnalyzer
 Issue Tracker:https://github.com/VREMSoftwareDevelopment/WifiAnalyzer/issues
@@ -46,11 +46,31 @@ Build:1.5.6,14
     subdir=app
     gradle=yes
 
+Build:1.5.7,15
+    commit=V1.5.7-F-DROID
+    subdir=app
+    gradle=yes
+
+Build:1.5.8,16
+    commit=V1.5.8-F-DROID
+    subdir=app
+    gradle=yes
+
+Build:1.6.1,17
+    commit=V1.6.1-F-DROID
+    subdir=app
+    gradle=yes
+
+Build:1.6.2,18
+    commit=V1.6.2-F-DROID
+    subdir=app
+    gradle=yes
+
 Maintainer Notes:
 Upstream generates the version information at compile time.
 .
 
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:1.5.6
-Current Version Code:14
+Current Version:1.6.2
+Current Version Code:18

@@ -27,12 +27,19 @@ Repo Type:git
 Repo:https://github.com/qqq3/good-weather.git
 
 Build:2.1,6
+    disable=pre-release sdk
     commit=v2.1
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.14.1" }' >> ../build.gradle
+    gradle=yes
+
+Build:3.0,7
+    commit=v3.0
     subdir=app
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.14.1" }' >> ../build.gradle
     gradle=yes
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.1
-Current Version Code:6
+Current Version:3.0
+Current Version Code:7

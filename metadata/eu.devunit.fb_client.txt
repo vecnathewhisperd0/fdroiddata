@@ -5,7 +5,7 @@ Source Code:https://github.com/sebastianrakel/fb-client-android
 Issue Tracker:https://github.com/sebastianrakel/fb-client-android/issues
 
 Auto Name:fb-client
-Summary:Mobile companion for [https://paste.xinu.at]
+Summary:Paste and view code snippets
 Description:
 fb-client is the mobile companion for [https://paste.xinu.at] which allows the
 user to easily upload or download files.
@@ -19,5 +19,17 @@ Build:1.1,2
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
+Build:1.2,3
+    commit=v1.2
+    subdir=app
+    gradle=yes
+
+Build:1.2.1,4
+    commit=v1.2.1
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
+Current Version:1.2.1
+Current Version Code:4

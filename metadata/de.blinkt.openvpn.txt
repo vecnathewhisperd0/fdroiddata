@@ -191,7 +191,15 @@ Build:0.6.57,138
     gradle=normal
     build=./misc/build-native.sh
 
+Build:0.6.60,141
+    commit=v0.6.60-production
+    subdir=main
+    submodules=yes
+    gradle=normal
+    scandelete=main/breakpad
+    build=USE_BREAKPAD=0 ./misc/build-native.sh
+
 Auto Update Mode:None
 Update Check Mode:Tags .*-production
-Current Version:0.6.57
-Current Version Code:138
+Current Version:0.6.60
+Current Version Code:141

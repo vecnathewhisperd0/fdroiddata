@@ -50,7 +50,23 @@ Build:11.0,11
     subdir=theme
     gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:11
-Current Version Code:11
+Build:12.0,12
+    commit=12.0
+    subdir=theme
+    gradle=yes
+
+Build:13,13
+    commit=13
+    subdir=theme
+    gradle=yes
+
+Build:14,14
+    commit=14
+    subdir=theme
+    gradle=yes
+    rm=gradle
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:14
+Current Version Code:14
