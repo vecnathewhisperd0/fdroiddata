@@ -6,7 +6,7 @@ Issue Tracker:https://github.com/vanilla-music/vanilla/issues
 Changelog:https://cdn.rawgit.com/vanilla-music/vanilla/HEAD/assets/about.html
 
 Auto Name:Vanilla Music
-Summary:Music player
+Summary:Listen to and manage songs
 Description:
 Music player with a simple interface similar to the stock music player. Supports
 browsing by folder, queueing, shake-to-skip and more. Supports the same audio
@@ -110,7 +110,28 @@ Build:1.0.36,1036
 Build:1.0.37,1037
     commit=1.0.37
 
+Build:1.0.38,1038
+    commit=1.0.38
+
+Build:1.0.39,1039
+    commit=1.0.39
+
+Build:1.0.40,10400
+    commit=1.0.40
+
+Build:1.0.41,10410
+    commit=1.0.41
+
+Build:1.0.42,10420
+    commit=1.0.42
+
+Build:1.0.43,10430
+    commit=1.0.43
+
+Build:1.0.44,10440
+    commit=1.0.44
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.0.37
-Current Version Code:1037
+Current Version:1.0.44
+Current Version Code:10440

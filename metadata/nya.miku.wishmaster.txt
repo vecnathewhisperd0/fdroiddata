@@ -187,7 +187,28 @@ Build:1.4.0,51
     gradle=yes
     rm=libs/*,build.xml
 
+Build:1.4.1,52
+    commit=v1.4.1
+    gradle=yes
+    rm=libs/*,build.xml
+
+Build:1.4.2,53
+    commit=v1.4.2
+    gradle=yes
+    rm=libs/*,build.xml
+
+Build:1.5.0,54
+    commit=v1.5.0
+    gradle=yes
+    rm=libs/*,build.xml
+
+Build:1.5.1,55
+    disable=lint runs and errors
+    commit=v1.5.1
+    gradle=yes
+    rm=libs/*,build.xml
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.4.0
-Current Version Code:51
+Current Version:1.5.1
+Current Version Code:55

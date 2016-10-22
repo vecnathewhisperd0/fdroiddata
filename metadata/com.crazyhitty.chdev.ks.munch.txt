@@ -1,3 +1,4 @@
+AntiFeatures:Tracking
 Categories:Reading
 License:MIT
 Web Site:
@@ -10,6 +11,8 @@ Summary:Manage and view RSS feeds
 Description:
 Enable the users to manage their RSS feeds. User can add new sources, manage
 them and view the article associated with the feeds.
+
+Tries to access dropbox.com when entering settings.
 
 [https://github.com/crazyhitty/Munch/tree/HEAD/screenshots Screenshots]
 .
@@ -29,7 +32,12 @@ Build:0.42,13
     subdir=app
     gradle=yes
 
+Build:0.44,14
+    commit=4ab73a49ac20e9a80694a98a8082b59fe07aa532
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:0.42
-Current Version Code:13
+Current Version:0.44
+Current Version Code:14

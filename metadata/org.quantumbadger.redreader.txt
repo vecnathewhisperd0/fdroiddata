@@ -5,7 +5,7 @@ Source Code:https://github.com/QuantumBadger/RedReader
 Issue Tracker:https://github.com/QuantumBadger/RedReader/issues
 Bitcoin:1874wapGxDo2vEp4avisda4gx3SCjsHCQJ
 
-Auto Name:RedReader Beta
+Auto Name:RedReader
 Summary:Client for reddit.com
 Description:
 An unofficial client for the news site reddit.com.
@@ -196,7 +196,39 @@ Build:1.9.3.1,67
     commit=v1.9.3.1
     gradle=yes
 
+Build:1.9.3.2,68
+    commit=v1.9.3.2
+    gradle=yes
+
+Build:1.9.3.3,69
+    commit=v1.9.3.3
+    gradle=yes
+
+Build:1.9.3.4,70
+    commit=v1.9.3.4
+    gradle=yes
+
+Build:1.9.4,71
+    commit=v1.9.4
+    gradle=yes
+
+Build:1.9.5,72
+    commit=v1.9.5
+    gradle=yes
+
+Build:1.9.5.1,73
+    commit=v1.9.5.1
+    gradle=yes
+
+Build:1.9.5.2,74
+    commit=v1.9.5.2
+    gradle=yes
+
+Build:1.9.6,75
+    commit=v1.9.6
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.9.3.1
-Current Version Code:67
+Current Version:1.9.6
+Current Version Code:75

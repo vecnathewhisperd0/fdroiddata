@@ -52,7 +52,18 @@ Build:1.2.0,10200
     submodules=yes
     gradle=yes
 
+Build:1.2.1,20037
+    disable=weird version output
+    commit=v1.2.1
+    submodules=yes
+    gradle=yes
+
+Build:1.2.2,20038
+    commit=v1.2.2
+    submodules=yes
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.2.0
-Current Version Code:10200
+Current Version:1.2.2
+Current Version Code:20038

@@ -7,7 +7,16 @@ Issue Tracker:https://gitlab.com/Varlorg/uNote/issues
 Auto Name:uNote
 Summary:Lightweight and minimalist notepad
 Description:
-uNote is a lightweight and minimalist notepad
+Lightweight and minimalist notepad which focuses on simplicity and gives only
+basic features:
+
+* add/delete note
+* secure a note with password
+* sort notes by create date, modification date or title
+* search notes (only title or also in content except protected ones)
+* export/import database to sdcard
+
+Attention: the database may be cleaned if you update from 1.0.X to 1.1.X.
 .
 
 Repo Type:git
@@ -34,7 +43,22 @@ Build:1.1.2,4
     subdir=app
     gradle=yes
 
+Build:1.1.3,5
+    commit=v1.1.3
+    subdir=app
+    gradle=yes
+
+Build:1.1.4,6
+    commit=v1.1.4
+    subdir=app
+    gradle=yes
+
+Build:1.1.5,7
+    commit=v1.1.5
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.1.2
-Current Version Code:4
+Current Version:1.1.5
+Current Version Code:7

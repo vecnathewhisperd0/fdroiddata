@@ -50,7 +50,20 @@ Build:2.2.5,225
     subdir=app
     gradle=yes
 
-Auto Update Mode:Version %v-fdroid
-Update Check Mode:Tags .*-fdroid
-Current Version:2.2.5
-Current Version Code:225
+Build:2.2.6,226
+    disable=third party maven repo
+    commit=2.2.6-fdroid
+    subdir=app
+    gradle=yes
+
+Build:2.3.0,2300
+    disable=still failing
+    commit=2.3.0.0
+    subdir=app
+    init=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' build.gradle
+    gradle=fdroid
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:2.2.6
+Current Version Code:226

@@ -39,8 +39,36 @@ Build:1.2.1,1002501
     subdir=app
     gradle=vanilla
 
+Build:1.2.3,1002503
+    commit=v1.2.3
+    subdir=app
+    gradle=vanilla
+
+Build:1.2.4,1002504
+    commit=v1.2.4
+    subdir=app
+    gradle=vanilla
+
+Build:1.3,1003500
+    commit=v1.3
+    subdir=app
+    init=sed -i 's/4g/2g/' build.gradle
+    gradle=vanilla
+
+Build:1.3.1,1003501
+    commit=v1.3.1
+    subdir=app
+    init=sed -i 's/4g/2g/' build.gradle
+    gradle=vanilla
+
+Build:1.4,1004500
+    commit=v1.4
+    subdir=app
+    init=sed -i 's/4g/2g/' build.gradle
+    gradle=vanilla
+
 Auto Update Mode:Version v%v
 Update Check Mode:HTTP
 Update Check Data:https://steamgifts.github.io/SteamGifts/metadata/fdroid-version.txt|versionCode=(.*)|.|versionName=(.*)
-Current Version:1.2.1
-Current Version Code:1002501
+Current Version:1.4
+Current Version Code:1004500

@@ -1,13 +1,14 @@
 Categories:Security,Internet
 License:Apache2
 Web Site:https://geti2p.net
-Source Code:https://gitlab.com/i2p
+Source Code:https://github.com/i2p
 Issue Tracker:https://trac.i2p2.de
 Donate:https://geti2p.net/en/get-involved/donate
 FlattrID:13523
 Bitcoin:1BPdWwovytfGdBwUDVgqbMZ8omcPQzshpX
 Litecoin:LM7DTXGHBzh7xeo7ZSWR6hs9s4oVAUsw4E
 
+Name:I2P (legacy)
 Auto Name:I2P
 Summary:I2P anonymous network
 Description:
@@ -15,10 +16,12 @@ I2P is an anonymizing network, offering a simple layer that identity-sensitive
 applications can use to securely communicate. All data is wrapped with several
 layers of encryption, and the network is both distributed and dynamic, with no
 trusted parties.
+
+This is a legacy build, please consider using [[net.i2p.android]] instead.
 .
 
 Repo Type:git
-Repo:https://gitlab.com/I2P/i2p.android.base.git
+Repo:https://github.com/i2p/i2p.android.base.git
 
 Build:0.9.8.1,4734976
     commit=788445f6ceb0d0c165e98b9b7d1aa732c98d37ac
@@ -196,7 +199,31 @@ Build:0.9.22,4745231
         popd && \
         cp $$GradleWitness$$/build/libs/GradleWitness.jar ../gradle/libs/gradle-witness.jar
 
+Build:0.9.25,4745232
+    commit=02030454d10144a390928c88798ac453a23315b0
+    subdir=app
+    gradle=legacy
+    srclibs=I2P@49ff78cf0e535dd81bf2046cf930ac1e13b0813d
+    prebuild=echo -e "i2psrc=../$$I2P$$" >> ../lib/client/local.properties && \
+        echo -e "sdk.dir=$$SDK$$\nndk.dir=$$NDK$$\ni2psrc=$$I2P$$" >> ../routerjars/local.properties && \
+        sed -i '31i checkReleaseBuilds false\n' build.gradle && \
+        curl https://gmplib.org/download/gmp/gmp-5.0.2.tar.xz | tar xJv -C $$I2P$$/core/c/jbigi/
+    scandelete=lib/client/src/main/jniLibs
+
+Build:0.9.26,4745233
+    commit=bd0455c413c611a76f0a47e0a3a0617cc4bffbad
+    subdir=app
+    gradle=legacy
+    srclibs=I2P@249e6f0eea2b72b6973a8e9ba7548019dd536eba
+    prebuild=echo -e "i2psrc=../$$I2P$$" >> ../lib/client/local.properties && \
+        echo -e "sdk.dir=$$SDK$$\nndk.dir=$$NDK$$\ni2psrc=$$I2P$$" >> ../routerjars/local.properties && \
+        sed -i '31i checkReleaseBuilds false\n' build.gradle && \
+        curl https://gmplib.org/download/gmp/gmp-5.0.2.tar.xz | tar xJv -C $$I2P$$/core/c/jbigi/
+    scandelete=lib/client/src/main/jniLibs
+
 Maintainer Notes:
+Always update net.i2p.android aswell!
+
 The version code and name is in app/build.gradle
 Android version code is an integer. So we have 31 bits.
 MAJOR         4 bits 0-15
@@ -211,5 +238,5 @@ Increment build number with 'ant incrementBuild' for updates between router rele
 
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:0.9.22
-Current Version Code:4745231
+Current Version:0.9.26
+Current Version Code:4745233

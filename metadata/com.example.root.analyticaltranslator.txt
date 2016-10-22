@@ -28,7 +28,33 @@ Build:0.01,1
     subdir=app
     gradle=yes
 
+Build:0.02,2
+    commit=v0.02
+    subdir=app
+    gradle=yes
+
+Build:0.03,3
+    commit=v0.03
+    subdir=app
+    gradle=yes
+
+Build:0.04,4
+    disable=mistagged
+    commit=v0.04
+    subdir=app
+    gradle=yes
+
+Build:0.05,5
+    commit=v0.05
+    subdir=app
+    gradle=yes
+
+Build:0.06,6
+    commit=v.0.06
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:0.01
-Current Version Code:1
+Update Check Mode:Tags
+Current Version:0.06
+Current Version Code:6

@@ -1,0 +1,139 @@
+Categories:Internet
+License:GPLv2
+Web Site:https://nextcloud.com
+Source Code:https://github.com/nextcloud/android
+Issue Tracker:https://github.com/nextcloud/android/issues
+Changelog:https://github.com/nextcloud/android/blob/HEAD/CHANGELOG.md
+Donate:https://www.bountysource.com/teams/nextcloud
+
+Auto Name:Nextcloud beta
+Summary:Synchronization client
+Description:
+A safe home for all your data. Access & share your files, calendars, contacts,
+mail & more from any device, on your terms. This is a beta version of the
+official Nextcloid app and includes brand-new, untested features which might
+lead to instabilities and data loss. The app is designed for users willing to
+test the new features and to report bugs if they occur. Do not use it for your
+productive work!
+
+The beta can be installed alongside the official Nextcloud app which is
+available at F-Droid, too.
+.
+
+Repo Type:git
+Repo:https://github.com/nextcloud/android.git
+
+Build:20160612,20160612
+    commit=beta-20160612
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20160613,20160613
+    commit=beta-20160613
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20160617,20160617
+    commit=beta-20160617
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20160620,20160620
+    commit=beta-20160620
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20160621,20160621
+    commit=beta-20160621
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20160728,20160728
+    commit=beta-20160728
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20160730,20160730
+    disable=java build fails
+    commit=beta-20160730
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20160731,20160731
+    disable=java build fails
+    commit=beta-20160731
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20160802,20160802
+    commit=beta-20160802
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20160808,20160808
+    commit=beta-20160808
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20160809,20160809
+    commit=beta-20160809
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20160903,20160903
+    commit=beta-20160903
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20160907,20160907
+    commit=beta-20160907
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20160922,20160922
+    commit=beta-20160922
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20161006,20161006
+    commit=beta-20161006
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20161012,20161012
+    commit=beta-20161012
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20161017,20161017
+    commit=beta-20161017
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20161019,20161019
+    commit=beta-20161019
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Auto Update Mode:Version beta-%c
+Update Check Mode:Tags ^beta
+Current Version:20161019
+Current Version Code:20161019

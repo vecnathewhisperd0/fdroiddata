@@ -117,7 +117,33 @@ Build:5.7,20
     subdir=app
     gradle=yes
 
+Build:5.8,21
+    disable=lint runs and fails
+    commit=v5.8
+    subdir=app
+    gradle=yes
+
+Build:5.8.1,22
+    commit=v5.8.1
+    subdir=app
+    gradle=yes
+
+Build:5.9,23
+    commit=v5.9
+    subdir=app
+    gradle=yes
+
+Build:6.0.3,27
+    commit=v6.0.3
+    subdir=app
+    gradle=yes
+
+Build:6.0.4,28
+    commit=v6.0.4
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:5.7
-Current Version Code:20
+Current Version:6.0.4
+Current Version Code:28

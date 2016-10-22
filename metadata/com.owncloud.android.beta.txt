@@ -1,3 +1,4 @@
+Disabled:https://gitlab.com/fdroid/fdroiddata/issues/466
 Categories:Internet
 License:GPLv2
 Web Site:https://owncloud.org
@@ -128,30 +129,59 @@ Build:20160206,20160206
     gradle=yes
 
 Build:20160305,20160305
+    disable=fails
     commit=beta-20160305
     submodules=yes
     gradle=yes
     rm=user_manual/ocdoc/win32/wget.exe
 
 Build:20160313,20160313
+    disable=fails
     commit=beta-20160313
     submodules=yes
     gradle=yes
     rm=user_manual/ocdoc/win32/wget.exe
 
 Build:20160317,20160317
+    disable=fails
     commit=beta-20160317
     submodules=yes
     gradle=yes
     rm=user_manual/ocdoc/win32/wget.exe
 
 Build:20160321,20160321
+    disable=fails
     commit=beta-20160321
     submodules=yes
     gradle=yes
     rm=user_manual/ocdoc/win32/wget.exe
 
-Auto Update Mode:Version beta-%c
+Build:20160410,20160410
+    commit=beta-20160410
+    submodules=yes
+    gradle=yes
+    rm=user_manual/ocdoc/win32/wget.exe
+
+Build:20160419,20160419
+    disable=broken submodule
+    commit=beta-20160419
+    submodules=yes
+    gradle=yes
+    rm=user_manual/ocdoc/win32/wget.exe
+
+Build:20160427,20160427
+    commit=beta-20160427
+    submodules=yes
+    gradle=yes
+    rm=user_manual/ocdoc/win32/wget.exe
+
+Build:20160606,20160606
+    commit=beta-20160606
+    submodules=yes
+    gradle=yes
+    rm=user_manual/ocdoc/win32/wget.exe
+
+Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:20160321
-Current Version Code:20160321
+Current Version:20160606
+Current Version Code:20160606

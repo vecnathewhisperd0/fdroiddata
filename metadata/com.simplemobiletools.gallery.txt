@@ -1,0 +1,100 @@
+Categories:Multimedia
+License:Apache2
+Web Site:
+Source Code:https://github.com/SimpleMobileTools/Simple-Gallery
+Issue Tracker:https://github.com/SimpleMobileTools/Simple-Gallery/issues
+Changelog:https://github.com/SimpleMobileTools/Simple-Gallery/blob/HEAD/CHANGELOG.md
+
+Auto Name:Gallery
+Summary:A gallery for viewing photos and videos
+Description:
+A simple tool usable for viewing photos and videos. Items can be sorted by date,
+size, name both ascending or descending, photos can be zoomed in. Media files
+are shown in multiple columns, depending on the size of the display. They can be
+renamed, shared or deleted.
+
+The Gallery is also offered for third party usage for previewing images /
+videos, adding attachments at email clients etc. It's perfect for everyday
+usage.
+
+Contains no ads or unnecessary permissions. It is fully opensource, provides a
+Dark theme too.
+.
+
+Repo Type:git
+Repo:https://github.com/SimpleMobileTools/Simple-Gallery
+
+Build:1.9,10
+    commit=33909cbba4ca354351713077d72b42ae611209af
+    subdir=app
+    gradle=yes
+
+Build:1.11,11
+    commit=1.11
+    subdir=app
+    gradle=yes
+
+Build:1.12,12
+    commit=1.12
+    subdir=app
+    gradle=yes
+
+Build:1.13,13
+    commit=1.13
+    subdir=app
+    gradle=yes
+
+Build:1.14,14
+    commit=1.14
+    subdir=app
+    gradle=yes
+
+Build:1.15,15
+    commit=1.15
+    subdir=app
+    gradle=yes
+
+Build:1.16,16
+    commit=1.16
+    subdir=app
+    gradle=yes
+
+Build:1.17,17
+    commit=1.17
+    subdir=app
+    gradle=yes
+
+Build:1.18,18
+    commit=1.18
+    subdir=app
+    gradle=yes
+
+Build:1.19,19
+    commit=1.19
+    subdir=app
+    gradle=yes
+
+Build:1.20,20
+    commit=1.20
+    subdir=app
+    gradle=yes
+
+Build:1.22,22
+    commit=1.22
+    subdir=app
+    gradle=yes
+
+Build:1.23,23
+    commit=1.23
+    subdir=app
+    gradle=yes
+
+Build:1.24,24
+    commit=1.24
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:1.24
+Current Version Code:24

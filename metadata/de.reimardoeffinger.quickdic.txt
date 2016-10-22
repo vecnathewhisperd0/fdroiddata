@@ -59,7 +59,25 @@ Build:5.2.6,63
     srclibs=QuickdicUtilsRestored@ef7a142ae766f01
     prebuild=echo "quickdicUtilDir=$$QuickdicUtilsRestored$$" >> gradle.properties
 
-Auto Update Mode:Version v%v
-Update Check Mode:None
-Current Version:5.2.6
-Current Version Code:63
+Build:5.2.8,68
+    commit=v5.2.8
+    gradle=yes
+    srclibs=QuickdicUtilsRestored@ef7a142ae766f01
+    prebuild=echo "quickdicUtilDir=$$QuickdicUtilsRestored$$" >> gradle.properties
+
+Build:5.2.9,69
+    commit=v5.2.9
+    gradle=yes
+    srclibs=QuickdicUtilsRestored@ef7a142ae766f01
+    prebuild=echo "quickdicUtilDir=$$QuickdicUtilsRestored$$" >> gradle.properties
+
+Build:5.2.10,70
+    commit=v5.2.10
+    gradle=yes
+    srclibs=QuickdicUtilsRestored@ef7a142ae766f01
+    prebuild=echo "quickdicUtilDir=$$QuickdicUtilsRestored$$" >> gradle.properties
+
+Auto Update Mode:None
+Update Check Mode:Tags ^v[0-9.]*$
+Current Version:5.2.10
+Current Version Code:70

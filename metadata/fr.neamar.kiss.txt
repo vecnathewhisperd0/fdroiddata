@@ -1,5 +1,5 @@
 Categories:Theming
-License:MIT
+License:GPLv3
 Web Site:http://kisslauncher.com
 Source Code:https://github.com/Neamar/KISS
 Issue Tracker:https://github.com/Neamar/KISS/issues
@@ -122,7 +122,42 @@ Build:2.20.0,78
     subdir=app
     gradle=yes
 
+Build:2.21.0,79
+    commit=v2.21.0
+    subdir=app
+    gradle=yes
+
+Build:2.22.0,80
+    commit=v2.22.0
+    subdir=app
+    gradle=yes
+
+Build:2.22.1,81
+    commit=v2.22.1
+    subdir=app
+    gradle=yes
+
+Build:2.23.0,82
+    commit=v2.23.0
+    subdir=app
+    gradle=yes
+
+Build:2.24.0,83
+    commit=v2.24.0
+    subdir=app
+    gradle=yes
+
+Build:2.24.1,84
+    commit=v2.24.1
+    subdir=app
+    gradle=yes
+
+Build:2.25.0,85
+    commit=v2.25.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags ^v[0-9\.]+$
-Current Version:2.20.0
-Current Version Code:78
+Current Version:2.25.0
+Current Version Code:85

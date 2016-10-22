@@ -698,7 +698,49 @@ Build:4.8.0b2,119
         popd && \
         cp $$OkIo$$/okio/target/okio-1.3.0.jar libs/
 
+Build:4.8.0,123
+    commit=53f6782926adbdac367d05970470a1c8153ba98b
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=clients/android/NewsBlur/libs/*.jar
+    scandelete=vendor/mms-agent/srvany.exe
+
+Build:4.8.1b1,124
+    commit=ab8960115650184d46f161c2977f4fcb3d531cb3
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=clients/android/NewsBlur/libs/*.jar
+    scandelete=vendor/mms-agent/srvany.exe
+
+Build:4.8.1b2,125
+    commit=fda1bd72f8ea646b7354e478ded4e5f37a1c2454
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=clients/android/NewsBlur/libs/*.jar
+    scandelete=vendor/mms-agent/srvany.exe
+
+Build:4.9.0b2,126
+    commit=db2dbcd0538f438dd2be41e6f39083e46a67f537
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=clients/android/NewsBlur/libs/*.jar
+    scandelete=vendor/mms-agent/srvany.exe
+
+Build:4.9.0,127
+    commit=3aa90537b4d2ed49a723b1ce3a6d3ebd24b77285
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=clients/android/NewsBlur/libs/*.jar
+    scandelete=vendor/mms-agent/srvany.exe
+
+Build:4.10.0b2,129
+    commit=012442ddd9c8b983160b542a710ced640ae1b5b2
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=clients/android/NewsBlur/libs/*.jar
+    scandelete=vendor/mms-agent/srvany.exe
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:4.8.0b3
-Current Version Code:122
+Current Version:4.10.0b2
+Current Version Code:129

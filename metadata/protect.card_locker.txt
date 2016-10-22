@@ -29,7 +29,27 @@ Build:0.3,3
     subdir=app
     gradle=yes
 
+Build:0.4,4
+    commit=v0.4
+    subdir=app
+    gradle=yes
+
+Build:0.5,5
+    commit=v0.5
+    subdir=app
+    gradle=yes
+
+Build:0.6,6
+    commit=v0.6
+    subdir=app
+    gradle=yes
+
+Build:0.7,7
+    commit=v0.7
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.3
-Current Version Code:3
+Current Version:0.7
+Current Version Code:7

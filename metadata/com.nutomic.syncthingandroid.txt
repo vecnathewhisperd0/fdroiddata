@@ -3,7 +3,8 @@ License:MPL2
 Web Site:https://syncthing.net
 Source Code:https://github.com/syncthing/syncthing-android
 Issue Tracker:https://github.com/syncthing/syncthing-android/issues
-Donate:https://tip4commit.com/github/syncthing/syncthing-android
+Changelog:https://github.com/syncthing/syncthing-android/releases
+Donate:https://syncthing.net/#donate
 
 Auto Name:Syncthing
 Summary:File synchronization
@@ -342,8 +343,99 @@ Build:0.7.12,88
     scandelete=ext/golang/go/src/debug/,ext/golang/go1.4/src/debug/
     preassemble=buildNative
 
-Archive Policy:4 versions
+Build:0.7.15,91
+    commit=0.7.15
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.7.16,92
+    commit=0.7.16
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.7.17,93
+    commit=0.7.17
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.7.18,95
+    commit=0.7.18
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.7.19,96
+    commit=0.7.19
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.7.20,97
+    commit=0.7.20
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.7.21,98
+    commit=0.7.21
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.8.0,99
+    commit=0.8.0
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.8.1,100
+    commit=0.8.1
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.8.2,101
+    commit=0.8.2
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.8.3,102
+    commit=0.8.3
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.8.4,103
+    commit=0.8.4
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    preassemble=buildNative
+
+Build:0.8.6,105
+    commit=0.8.6
+    submodules=yes
+    gradle=fat
+    scanignore=ext/golang
+    scandelete=ext/syncthing/src/github.com/syncthing/syncthing/cmd/stdiscosrv/stdiscosrv
+    preassemble=buildNative
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]*$
-Current Version:0.7.12
-Current Version Code:88
+Current Version:0.8.6
+Current Version Code:105

@@ -5,7 +5,7 @@ Source Code:https://github.com/eliotstocker/Light-Controller
 Issue Tracker:https://github.com/eliotstocker/Light-Controller/issues
 Changelog:https://github.com/eliotstocker/Light-Controller/blob/HEAD/changelog.md
 
-Auto Name:Light controller
+Auto Name:Light Controller
 Summary:Control WiFi light bulbs
 Description:
 Control LED bulbs from following manufacturers:
@@ -50,5 +50,5 @@ Build:1.7.0,1703
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.7.0
-Current Version Code:1704
+Current Version:1.8.0 Beta 1
+Current Version Code:1712

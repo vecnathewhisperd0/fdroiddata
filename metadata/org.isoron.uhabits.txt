@@ -3,11 +3,11 @@ License:GPLv3
 Web Site:https://github.com/iSoron/uhabits/blob/HEAD/README.md
 Source Code:https://github.com/iSoron/uhabits
 Issue Tracker:https://github.com/iSoron/uhabits/issues
-Changelog:https://github.com/iSoron/uhabits/blobHEAD/CHANGELOG.md
+Changelog:https://github.com/iSoron/uhabits/blob/HEAD/CHANGELOG.md
 
 Name:Loop Habit Tracker
 Auto Name:Habits
-Summary:Track you habits and long-term goals
+Summary:Track your habits and long-term goals
 Description:
 Loop is a simple app that helps you create and maintain good habits, allowing
 you to achieve your long-term goals. Detailed graphs and statistics show you how
@@ -72,7 +72,55 @@ Build:1.3.3,13
     rm=app/libs/*.jar
     prebuild=cp -fR $$ActiveAndroid$$/src/com src/main/java
 
+Build:1.4.0,14
+    commit=v1.4.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+    srclibs=ActiveAndroid@08c6335cd7324c6e72da536b0c6fffa5a798f6a2
+    rm=app/libs/*.jar
+    prebuild=cp -fR $$ActiveAndroid$$/src/com src/main/java
+
+Build:1.4.1,15
+    commit=v1.4.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+    srclibs=ActiveAndroid@08c6335cd7324c6e72da536b0c6fffa5a798f6a2
+    rm=app/libs/*.jar
+    prebuild=cp -fR $$ActiveAndroid$$/src/com src/main/java
+
+Build:1.5.1,17
+    commit=v1.5.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.5.2,18
+    commit=v1.5.2
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.5.3,19
+    commit=v1.5.3
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.5.4,20
+    commit=v1.5.4
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.5.6,22
+    commit=v1.5.6
+    subdir=app
+    submodules=yes
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.3.3
-Current Version Code:13
+Current Version:1.5.6
+Current Version Code:22

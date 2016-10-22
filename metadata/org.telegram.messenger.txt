@@ -237,7 +237,22 @@ Build:3.6.1a,756
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
 
+Build:3.7.0,7673
+    commit=v3.7.0
+    subdir=TMessagesProj
+    gradle=fat
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+
+Build:3.10.1,8213
+    commit=v3.10.1
+    subdir=TMessagesProj
+    gradle=fat
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.6.1a
-Current Version Code:756
+Vercode Operation:%c*10 + 3
+Current Version:3.10.1
+Current Version Code:8213

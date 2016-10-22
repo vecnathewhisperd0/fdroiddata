@@ -735,7 +735,180 @@ Build:4.4.4,140
         cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
         sed -i -e '/endless/d' -e '/adapter/d' build.gradle
 
+Build:4.4.6,142
+    commit=4.4.6
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:4.5.1,144
+    commit=4.5.1
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:4.5.2,145
+    commit=4.5.2
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:4.5.3,146
+    commit=4.5.3
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:4.5.4,147
+    commit=4.5.4
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:4.5.5,148
+    commit=4.5.5
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:4.5.6,149
+    commit=4.5.6
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:4.5.7,150
+    commit=4.5.7
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:4.5.8,151
+    commit=4.5.8
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:4.5.9,152
+    commit=4.5.9
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:4.5.11,154
+    commit=4.5.11
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:4.5.12,155
+    commit=4.5.12
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:4.5.13,156
+    commit=4.5.13
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:4.5.14,157
+    commit=4.5.14
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:5.0.0,158
+    disable=endless repo gone
+    commit=5.0.0
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
+Build:5.0.1,159
+    disable=crash
+    commit=5.0.1
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    prebuild=echo 'repositories { maven { url "https://s3.amazonaws.com/repo.commonsware.com" } }' >> build.gradle && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle && \
+        sed -i -e '/support-v4/acompile "com.commonsware.cwac:endless:1.2.3"' build.gradle && \
+        sed -i -e '/support-v4/acompile "com.commonsware.cwac:adapter:1.0.1"' build.gradle
+
+Build:5.0.2,160
+    disable=crash, wait for rebuild
+    commit=5.0.2
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
+    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
+        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:4.4.4
-Current Version Code:140
+Current Version:5.0.2
+Current Version Code:160

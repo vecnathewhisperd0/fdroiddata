@@ -1,4 +1,4 @@
-Categories:System,Time
+Categories:Time
 License:Apache2
 Web Site:
 Source Code:https://github.com/xsoh/Etar-Calendar
@@ -23,7 +23,22 @@ Build:1.0.2,6
     submodules=yes
     gradle=yes
 
-Auto Update Mode:None
+Build:1.0.3,7
+    commit=v1.0.3
+    submodules=yes
+    gradle=yes
+
+Build:1.0.4,8
+    commit=v1.0.4
+    submodules=yes
+    gradle=yes
+
+Build:1.0.6,9
+    commit=v1.0.6
+    submodules=yes
+    gradle=yes
+
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.0.2
-Current Version Code:6
+Current Version:1.0.6
+Current Version Code:9

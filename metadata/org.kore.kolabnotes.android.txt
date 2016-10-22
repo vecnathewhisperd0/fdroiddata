@@ -450,7 +450,57 @@ Build:1.10.2,64
     subdir=app
     gradle=yes
 
+Build:1.11.0,65
+    commit=1.11.0
+    subdir=app
+    gradle=yes
+
+Build:2.0.1,67
+    commit=2.0.1
+    subdir=app
+    gradle=yes
+
+Build:2.0.7,72
+    commit=2.0.7
+    subdir=app
+    gradle=yes
+
+Build:2.0.8,73
+    commit=2.0.8
+    subdir=app
+    gradle=yes
+
+Build:2.1.0,74
+    commit=2.1.0
+    subdir=app
+    gradle=yes
+
+Build:2.1.1,75
+    commit=2.1.1
+    subdir=app
+    gradle=yes
+
+Build:2.1.2,76
+    commit=2.1.2
+    subdir=app
+    gradle=yes
+
+Build:2.2.2,78
+    commit=2.2.2
+    subdir=app
+    gradle=yes
+
+Build:2.2.3,79
+    commit=2.2.3
+    subdir=app
+    gradle=yes
+
+Build:2.2.4,80
+    commit=2.2.4
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.10.2
-Current Version Code:64
+Current Version:2.2.4
+Current Version Code:80

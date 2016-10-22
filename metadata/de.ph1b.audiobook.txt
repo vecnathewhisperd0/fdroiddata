@@ -370,7 +370,46 @@ Build:2.7,121
     subdir=audiobook
     gradle=regularMinSdk
 
+Build:2.7.1,122
+    commit=v2.7.1
+    subdir=audiobook
+    gradle=regularMinSdk
+
+Build:2.7.2.1,124
+    commit=v2.7.2.1
+    subdir=audiobook
+    gradle=regularMinSdk
+
+Build:2.7.2.2,125
+    disable=third party maven repo
+    commit=v2.7.2.2
+    subdir=audiobook
+    gradle=regularMinSdk
+
+Build:2.7.2.3,126
+    commit=v2.7.2.3
+    subdir=audiobook
+    gradle=yes
+
+Build:16.08,127
+    disable=pre-release sdk and buildtools
+    commit=v16.08
+    subdir=audiobook
+    gradle=yes
+
+Build:2.8.0,128
+    disable=pre-release env
+    commit=v2.8.0
+    subdir=audiobook
+    gradle=yes
+
+Build:2.8.0.1,129
+    disable=pre-release env
+    commit=v2.8.0.1
+    subdir=audiobook
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags ^v[0-9.]+?$
-Current Version:2.7
-Current Version Code:121
+Current Version:2.8.0.1
+Current Version Code:129

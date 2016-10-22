@@ -31,7 +31,6 @@ com.google.android.apps.iosched
 com.google.android.maps.mytracks
 com.googlecode.android.wifi.tether
 com.googlecode.androidcells
-com.googlecode.talkmyphone
 com.grapefruitopia.dashclock.k9
 com.hexairbot.hexmini
 com.josegd.monthcalwidget
@@ -46,6 +45,7 @@ com.money.manager.ex
 com.mp3tunes.android.player
 com.nostra13.universalimageloader
 com.npi.muzeiflickr
+com.owncloud.android.beta
 com.quran.labs.androidquran
 com.ratebeer.android
 com.seafile.seadroid
@@ -63,7 +63,6 @@ de.joergjahnke.c64.android
 de.kromonos.android.rpcoiner
 de.leowandersleb.bitcoinsw
 de.locked.cellmapper
-de.ub0r.android.adBlock
 de.zauberstuhl.sechat
 dentex.youtube.downloader
 dk.kk.ibikecph
@@ -74,10 +73,12 @@ fi.mikuz.boarder
 fr.gaulupeau.apps.Poche
 fr.ornidroid
 gr.tsagi.jekyllforandroid
+im.zom.messenger
 in.shubhamchaudhary.logmein
 info.toyonos.hfr4droid
 it.devapp.android
 me.cuelga.me
+net.altcoinfaucet.app
 net.exclaimindustries.geohashdroid
 net.status.client.mobile
 org.abrantix.rockon.rockonnggl
@@ -95,13 +96,15 @@ org.hermit.audalyzer
 org.hermit.dazzle
 org.hermit.netscramble
 org.kde.ministro.config
+org.libresignal
+org.lichess.mobileapp
 org.ligi.solar_activity_monitor
 org.martus.android
 org.mrpdaemon.android.encdroid
 org.opensatnav.android
 org.piwik.mobile
 org.swiftp
-pl.magot.vetch.ancal
+org.tvbrowser.tvbrowser
 ru.orangesoftware.financisto
 ru.qrck.quitetaskmanager
 se.chalmers.doit

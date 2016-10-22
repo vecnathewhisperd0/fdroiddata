@@ -56,11 +56,36 @@ Build:1.0.0,10000
     subdir=platforms/android
 
 Build:1.0.1,10001
-    disable=ant or gradle? also third-party maven repo
+    disable=untrusted xwalk repo
     commit=v1.0.1
     subdir=platforms/android
+    gradle=yes
+    scandelete=platforms/ios
+
+Build:1.0.2,10002
+    commit=v1.0.2
+    subdir=platforms/android
+    gradle=yes
+    prebuild=sed -i -e '/versionCode/s/+ \"0\"//g' -e '/defaultConfig.versionCode +=/d' build.gradle
+
+Build:1.0.3,10003
+    disable=wait for release
+    commit=v1.0.3
+    subdir=platforms/android
+    gradle=yes
+
+Build:1.0.2,100028
+    commit=v1.0.2
+    subdir=platforms/android
+    gradle=yes
+
+Build:1.0.3,100038
+    commit=v1.0.3
+    subdir=platforms/android
+    gradle=yes
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.0.1
-Current Version Code:10001
+Vercode Operation:%c*10 + 8
+Current Version:1.0.3
+Current Version Code:100038

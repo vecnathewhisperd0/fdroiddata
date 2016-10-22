@@ -118,7 +118,16 @@ Build:7.0.3,703
 Build:7.0.4,704
     commit=7.0.4
 
+Build:7.0.6,706
+    commit=7.0.6
+
+Build:7.0.7,707
+    commit=7.0.7
+
+Build:7.0.8,708
+    commit=7.0.8
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:7.0.4
-Current Version Code:704
+Current Version:7.0.8
+Current Version Code:708

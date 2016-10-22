@@ -64,11 +64,77 @@ Build:1.0.15,15
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
     gradle=yes
 
+Build:1.0.16.1,16
+    commit=1.0.16.1
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=yes
+
+Build:1.0.17,17
+    commit=1.0.17
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=yes
+
+Build:1.0.18,18
+    commit=1.0.18
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=yes
+
+Build:1.0.19,19
+    commit=1.0.19
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=yes
+
+Build:1.0.20,20
+    commit=1.0.20
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=yes
+
+Build:1.0.22,22
+    commit=1.0.22
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=fdroid
+
+Build:1.0.23,23
+    commit=1.0.23
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=fdroid
+
+Build:1.0.24,24
+    commit=1.0.24
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=fdroid
+
+Build:1.0.25,25
+    commit=1.0.25
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=fdroid
+
+Build:1.0.26,26
+    commit=1.0.26
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=fdroid
+
+Build:1.0.27,27
+    commit=1.0.27
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=fdroid
+
 Maintainer Notes:
 Uses jitpack, so Gradle 2.11 or newer is needed.
 .
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.0.15
-Current Version Code:15
+Current Version:1.0.27
+Current Version Code:27

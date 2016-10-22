@@ -5,7 +5,7 @@ Web Site:http://osmand.net
 Source Code:https://github.com/osmandapp/Osmand
 Issue Tracker:https://github.com/osmandapp/Osmand/issues
 Changelog:http://osmand.net/help/changes.html
-Donate:https://code.google.com/p/osmand/#Please_support_the_project
+Donate:http://osmand.net/help-online#buy_app
 
 Name:OsmAnd~
 Summary:Offline/online maps and navigation
@@ -19,8 +19,9 @@ for offline usage, and navigation by default uses offline methods. Map data
 packages for many territories can be downloaded from within the app and there is
 a desktop program available on the website as well for creating your own.
 
-Anti-Features: NonFreeAssets - Artwork and layouts are under a non-commercial
-license.
+'''Anti-Features:'''
+
+* NonFreeAssets - Artwork and layouts are under a non-commercial license.
 .
 
 Repo Type:git
@@ -145,11 +146,92 @@ Build:2.2.4,224
         sed -i -e "s/System.getenv(\"TARGET_APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
         sed -i -e '/com.android.vending.BILLING/d' AndroidManifest.xml
 
+Build:2.3.3,235
+    commit=d785ec7a9e0a67ff189758b91b4b28037b1a8c90
+    subdir=android/OsmAnd
+    submodules=yes
+    gradle=full,legacy,fat
+    prebuild=sed -i -e '/qt.*Compile/d' build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_VERSION\")/\"$$VERSION$$\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_NUMBER_VERSION\")/\"$$VERCODE$$\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_FEATURES\")/\"-play_market +gps_status -parking_plugin -blackberry -amazon -route_nav\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"TARGET_APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e '/com.android.vending.BILLING/d' AndroidManifest.xml && \
+        sed -i -e '/javaMaxHeapSize/s/4g/1024m/g' build.gradle
+    scanignore=resources/rendering_styles/style-icons/drawable-mdpi/mx_sport_free_flyingpng
+
+Build:2.3.5,238
+    commit=2.3.5
+    subdir=android/OsmAnd
+    submodules=yes
+    gradle=full,legacy,fat
+    prebuild=sed -i -e '/qt.*Compile/d' build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_VERSION\")/\"$$VERSION$$\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_NUMBER_VERSION\")/\"$$VERCODE$$\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_FEATURES\")/\"-play_market +gps_status -parking_plugin -blackberry -amazon -route_nav\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"TARGET_APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e '/com.android.vending.BILLING/d' AndroidManifest.xml && \
+        sed -i -e '/javaMaxHeapSize/s/4g/1536m/g' build.gradle
+    scanignore=resources/rendering_styles/style-icons/drawable-mdpi/mx_sport_free_flyingpng
+
+Build:2.4.4,244
+    commit=2.4.4
+    subdir=android/OsmAnd
+    submodules=yes
+    gradle=full,legacy,fat
+    prebuild=sed -i -e '/qt.*Compile/d' build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_VERSION\")/\"$$VERSION$$\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_NUMBER_VERSION\")/\"$$VERCODE$$\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_FEATURES\")/\"-play_market +gps_status -parking_plugin -blackberry -amazon -route_nav\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"TARGET_APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e '/com.android.vending.BILLING/d' AndroidManifest.xml && \
+        sed -i -e '/javaMaxHeapSize/s/4g/1536m/g' build.gradle
+    scanignore=resources/rendering_styles/style-icons/drawable-mdpi/mx_sport_free_flyingpng
+    scandelete=resources/.swp
+    ndk=r10e
+
+Build:2.4.6,246
+    commit=2.4.6
+    subdir=android/OsmAnd
+    submodules=yes
+    gradle=full,legacy,fat
+    prebuild=sed -i -e '/qt.*Compile/d' build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_VERSION\")/\"$$VERSION$$\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_NUMBER_VERSION\")/\"$$VERCODE$$\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_FEATURES\")/\"-play_market +gps_status -parking_plugin -blackberry -amazon -route_nav\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"TARGET_APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e '/com.android.vending.BILLING/d' AndroidManifest.xml && \
+        sed -i -e '/javaMaxHeapSize/s/4g/1536m/g' build.gradle
+    scanignore=resources/rendering_styles/style-icons/drawable-mdpi/mx_sport_free_flyingpng
+    scandelete=resources/.swp
+    ndk=r10e
+
+Build:2.4.7,247
+    commit=2.4.7
+    subdir=android/OsmAnd
+    submodules=yes
+    gradle=full,legacy,fat
+    prebuild=sed -i -e '/qt.*Compile/d' build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_VERSION\")/\"$$VERSION$$\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APK_NUMBER_VERSION\")/\"$$VERCODE$$\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_FEATURES\")/\"+play_market +gps_status -parking_plugin -blackberry -amazon -route_nav\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e "s/System.getenv(\"TARGET_APP_NAME\")/\"OsmAnd~\"/g" build.gradle && \
+        sed -i -e '/com.android.vending.BILLING/d' AndroidManifest.xml && \
+        sed -i -e '/javaMaxHeapSize/s/4g/1536m/g' build.gradle
+    scanignore=resources/rendering_styles/style-icons/drawable-mdpi/mx_sport_free_flyingpng
+    scandelete=resources/.swp
+    ndk=r11c
+
 Maintainer Notes:
 Update CV only after sucessfully built and tested.
 .
 
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:2.2.4
-Current Version Code:224
+Current Version:2.4.7
+Current Version Code:247

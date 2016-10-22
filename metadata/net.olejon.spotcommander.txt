@@ -12,10 +12,14 @@ Description:
 Remote control Spotify for Linux. For this to work, you have to install
 [http://www.olejon.net/code/spotcommander/?install SpotCommander] on your
 regular PC first.
+
+This version includes only free software, see
+[https://github.com/olejon/spotcommander/issues/106] for a comparison with the
+non-free version found on the play-store.
 .
 
 Repo Type:git
-Repo:https://github.com/olejon/spotcommander
+Repo:https://github.com/olejon/spotcommander-fdroid
 
 Build:4.7,47
     commit=c468892825cc300889fcb105223e10f271745e98
@@ -112,7 +116,35 @@ Build:6.9,69
     subdir=android/app
     gradle=yes
 
+Build:7.0,70
+    commit=c3ffa910dc9fee2a52497c0e4e160e69361e2b3f
+    subdir=android/mobile
+    gradle=yes
+    rm=android/wear
+    prebuild=sed -i -e 's/play-services/foo/g' build.gradle
+
+Build:7.1,71
+    commit=25503bfa9a1ba30da17ab39707ecbefe903b60c0
+    subdir=android/mobile
+    gradle=yes
+    rm=android/wear
+    prebuild=sed -i -e 's/play-services/foo/g' build.gradle
+
+Build:7.2,72
+    commit=dea432dacdb4f5fe5eff81c1b4c54167a50535c8
+    subdir=android/mobile
+    gradle=yes
+    rm=android/wear
+    prebuild=sed -i -e 's/play-services/foo/g' build.gradle
+
+Build:7.4,74
+    commit=20280f6a56e9ea1888006f66b9498174f4c3a0d4
+    subdir=android/mobile
+    gradle=yes
+    rm=android/wear
+    prebuild=sed -i -e 's/play-services/foo/g' build.gradle
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:6.9
-Current Version Code:69
+Current Version:7.4
+Current Version Code:74

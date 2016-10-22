@@ -12,10 +12,6 @@ Summary:Fight cellular network attacks
 Description:
 Detect attacks of fake base stations such as IMSI-Catcher and StingRay on your
 GSM/UMTS network. Look for silent SMS used by police and intelligence services.
-
-Visit [http://cellularprivacy.github.io/Android-IMSI-Catcher-Detector our
-website] and join us
-[https://github.com/CellularPrivacy/Android-IMSI-Catcher-Detector on GitHub]!
 .
 
 Repo Type:git
@@ -153,7 +149,21 @@ Build:0.1.41-alpha-normal,41
     gradle=normal
     forceversion=yes
 
+Build:0.1.42-alpha-normal,42
+    commit=v0.1.42-alpha
+    subdir=AIMSICD
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=normal
+    forceversion=yes
+
+Build:0.1.43-alpha-normal,43
+    commit=v0.1.43-alpha
+    subdir=AIMSICD
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.12" }' >> ../build.gradle
+    gradle=normal
+    forceversion=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:$project.version-system
-Current Version Code:41
+Current Version Code:43

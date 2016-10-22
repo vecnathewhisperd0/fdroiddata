@@ -1,4 +1,4 @@
-Categories:Internet
+Categories:Money
 License:GPLv3
 Web Site:http://greenaddress.com
 Source Code:https://github.com/greenaddress/GreenBits
@@ -380,15 +380,179 @@ Build:1.70,70
     scandelete=app/src/main/jniLibs,app/scrypt,app/src/btctestnet/assets/checkpoints
     build=./prepare_fdroid.sh
 
-Maintainer Notes:
-scandelete libscrypt.so - it is built by F-Droid via prepare_fdroid.sh,
-but it is still in GreenAddress repo for users who don't want to use NDK,
-so it needs to be removed before building to pass scanning.
+Build:1.71,71
+    disable=disabled
+    commit=r1.71
+    subdir=app
+    submodules=yes
+    gradle=production
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,bitcoinj/wallettemplate,app/src/production/assets/checkpoints
+    scandelete=app/scrypt,app/src/btctestnet/assets/checkpoints
+    build=./prepare_fdroid.sh
 
+Build:1.72,72
+    disable=requires ndk=r11c
+    commit=r1.72
+    subdir=app
+    submodules=yes
+    gradle=production
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,bitcoinj/wallettemplate,app/src/production/assets/checkpoints
+    scandelete=app/scrypt,app/src/btctestnet/assets/checkpoints
+    build=./prepare_fdroid.sh
+
+Build:1.73,73
+    disable=requires ndk=r11c
+    commit=r1.73
+    subdir=app
+    submodules=yes
+    gradle=production
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,bitcoinj/wallettemplate,app/src/production/assets/checkpoints
+    scandelete=app/scrypt,app/src/btctestnet/assets/checkpoints
+    build=./prepare_fdroid.sh
+
+Build:1.74,74
+    commit=r1.74
+    subdir=app
+    submodules=yes
+    gradle=production
+    prebuild=sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,bitcoinj/wallettemplate,app/src/production/assets/checkpoints
+    scandelete=app/scrypt,app/src/btctestnet/assets/checkpoints
+    build=./prepare_fdroid.sh
+
+Build:1.75,75
+    commit=r1.75
+    subdir=app
+    submodules=yes
+    gradle=production
+    prebuild=sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,bitcoinj/wallettemplate,app/src/production/assets/checkpoints
+    scandelete=app/scrypt,app/src/btctestnet/assets/checkpoints
+    build=./prepare_fdroid.sh
+
+Build:1.77,77
+    commit=r1.77
+    subdir=app
+    submodules=yes
+    gradle=production
+    prebuild=sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,bitcoinj/wallettemplate,app/src/production/assets/checkpoints
+    scandelete=app/scrypt,app/src/btctestnet/assets/checkpoints
+    build=./prepare_fdroid.sh
+
+Build:1.80,80
+    disable=compilation error, requires ndk-r11c and 64bit
+    commit=r1.80
+    subdir=app
+    submodules=yes
+    gradle=production
+    prebuild=sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,bitcoinj/wallettemplate,app/src/production/assets/checkpoints
+    scandelete=app/scrypt,app/src/btctestnet/assets/checkpoints
+    build=./prepare_fdroid.sh
+    ndk=r11c
+
+Build:1.82,82
+    disable=not yet build
+    commit=r1.82
+    subdir=app
+    submodules=yes
+    gradle=production
+    prebuild=sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,bitcoinj/wallettemplate,app/src/production/assets/checkpoints
+    scandelete=app/scrypt,app/src/btctestnet/assets/checkpoints
+    build=./prepare_fdroid.sh
+    ndk=r11c
+
+Build:1.83,83
+    disable=not yet build
+    commit=r1.83
+    subdir=app
+    submodules=yes
+    gradle=production
+    prebuild=sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,bitcoinj/wallettemplate,app/src/production/assets/checkpoints
+    scandelete=app/scrypt,app/src/btctestnet/assets/checkpoints
+    build=./prepare_fdroid.sh
+    ndk=r11c
+
+Build:1.84,84
+    disable=https://gitlab.com/fdroid/fdroidserver/issues/176
+    commit=r1.84
+    subdir=app
+    submodules=yes
+    gradle=production
+    prebuild=sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,bitcoinj/wallettemplate,app/src/production/assets/checkpoints
+    scandelete=app/scrypt,app/src/btctestnet/assets/checkpoints
+    build=./prepare_fdroid.sh
+    ndk=r11c
+
+Build:1.87,87
+    commit=r1.87
+    subdir=app
+    gradle=production
+    forcevercode=yes
+    prebuild=sed -i -e 's/enable true/enable false/g' build.gradle && \
+        sed -i -e 's/output.versionCodeOverride =/0 + /g' build.gradle
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,app/src/production/assets/checkpoints
+    scandelete=app/src/btctestnet/assets/checkpoints
+    build=JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::") sh ./prepare_fdroid.sh
+    ndk=r12b
+
+Build:1.89,89
+    commit=r1.89
+    subdir=app
+    gradle=production
+    forcevercode=yes
+    prebuild=sed -i -e 's/enable true/enable false/g' build.gradle && \
+        sed -i -e 's/output.versionCodeOverride =/0 + /g' build.gradle
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,app/src/production/assets/checkpoints
+    scandelete=app/src/btctestnet/assets/checkpoints
+    build=JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::") sh ./prepare_fdroid.sh
+    ndk=r12b
+
+Build:1.90,90
+    commit=r1.90
+    subdir=app
+    gradle=production
+    forcevercode=yes
+    prebuild=sed -i -e 's/enable true/enable false/g' build.gradle && \
+        sed -i -e 's/output.versionCodeOverride =/0 + /g' build.gradle
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,app/src/production/assets/checkpoints
+    scandelete=app/src/btctestnet/assets/checkpoints
+    build=JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::") sh ./prepare_fdroid.sh
+    ndk=r12b
+
+Build:1.91,91
+    commit=r1.91
+    subdir=app
+    gradle=production
+    forcevercode=yes
+    prebuild=sed -i -e 's/enable true/enable false/g' build.gradle && \
+        sed -i -e 's/output.versionCodeOverride =/0 + /g' build.gradle
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,app/src/production/assets/checkpoints
+    scandelete=app/src/btctestnet/assets/checkpoints
+    build=JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::") sh ./prepare_fdroid.sh
+    ndk=r12b
+
+Build:1.92,92
+    commit=r1.92
+    subdir=app
+    gradle=production
+    forcevercode=yes
+    prebuild=sed -i -e 's/enable true/enable false/g' build.gradle && \
+        sed -i -e 's/output.versionCodeOverride =/0 + /g' build.gradle
+    scanignore=bitcoinj/core/src/main/resources/org/bitcoinj/crypto/cacerts,bitcoinj/core/src/test,app/src/production/assets/checkpoints
+    scandelete=app/src/btctestnet/assets/checkpoints
+    build=JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::") sh ./prepare_fdroid.sh
+    ndk=r12b
+
+Maintainer Notes:
 Watch prepare_fdroid.sh for changes on new builds.
 .
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.70
-Current Version Code:70
+Current Version:1.92
+Current Version Code:192

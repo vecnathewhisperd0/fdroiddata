@@ -1,9 +1,8 @@
 Categories:Games
 License:GPLv3
-Web Site:https://code.google.com/p/cuckoochess
-Source Code:https://code.google.com/p/cuckoochess/source
-Issue Tracker:
-Changelog:https://code.google.com/p/cuckoochess/source/list
+Web Site:
+Source Code:https://github.com/peterosterlund2/droidfish
+Issue Tracker:https://github.com/peterosterlund2/droidfish/issues
 
 Auto Name:DroidFish
 Summary:Chess program
@@ -15,8 +14,8 @@ directly from the app by long-pressing the board and choosing Load game from
 Scid file.
 .
 
-Repo Type:git-svn
-Repo:https://cuckoochess.googlecode.com/svn/trunk
+Repo Type:git
+Repo:https://github.com/peterosterlund2/droidfish
 
 Build:1.44,51
     commit=963
@@ -95,7 +94,23 @@ Build:1.57,65
     build=$$NDK$$/ndk-build && \
         ant -f build_copy_exe.xml
 
+Build:1.61,69
+    commit=e2538623d3aa92f3dca88519dbf8c9ca94e3b964
+    subdir=DroidFish
+    prebuild=printf 'source.dir=src;../CuckooChessEngine/src' > ant.properties
+    scanignore=CuckooChessEngine/src/book.bin
+    build=$$NDK$$/ndk-build && \
+        ant -f build_copy_exe.xml
+
+Build:1.62,70
+    commit=ad63e43412e631d78e3501b65990cddc1a350feb
+    subdir=DroidFish
+    prebuild=printf 'source.dir=src;../CuckooChessEngine/src' > ant.properties
+    scanignore=CuckooChessEngine/src/book.bin
+    build=$$NDK$$/ndk-build && \
+        ant -f build_copy_exe.xml
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.57
-Current Version Code:65
+Current Version:1.62
+Current Version Code:70
