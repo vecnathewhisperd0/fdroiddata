@@ -15,8 +15,24 @@ Chromium APK courtesy of the Chrome team https://www.chromium.org
 Repo Type:git
 Repo:https://github.com/andDevW/getChromium
 
+Build:1.0,1
 
-  Build:3.0,20161021
+    commit=bacc6f79fbed5d599e7cfd164b9691e50e2b6a70
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=yes
+    rm=app/libs/*
+
+Build:2.1,20160614
+
+    commit=913065436c6f6c8270b61f7b8fbbfa0688c8f493
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+    gradle=yes
+    rm=app/libs/*
+    
+Build:3.0,20161021
+
        commit=6e86b6ec99b30cedfb0fc144aebc045712a0190f
        subdir=app
        init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
@@ -24,12 +40,7 @@ Repo:https://github.com/andDevW/getChromium
        rm=app/libs/*
 
 
-  Build:2.1,20160614
-     commit=913065436c6f6c8270b61f7b8fbbfa0688c8f493
-     subdir=app
-     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
-     gradle=yes
-     rm=app/libs/*
+
 
 Auto Update Mode:None
 Update Check Mode:Tags
