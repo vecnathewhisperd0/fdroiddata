@@ -15,10 +15,8 @@ Chromium APK courtesy of the Chrome team https://www.chromium.org
 Repo Type:git
 Repo:https://github.com/andDevW/getChromium
 
-
     
 Build:3.0,20161021
-
        commit=6e86b6ec99b30cedfb0fc144aebc045712a0190f
        subdir=app
        init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
@@ -27,8 +25,7 @@ Build:3.0,20161021
 
 
 
-
-Auto Update Mode:None
+Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:3.0
 Current Version Code:20161021
