@@ -16,27 +16,14 @@ Repo Type:git
 Repo:https://github.com/andDevW/getChromium
 
 
-   Build:3.01,20161021
-        commit=9b8623b0567a17edaa4e29169c6bfba21ba5bc20
-        subdir=app
-        init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
-        gradle=yes
-        rm=app/libs/*
-
-
-   Build:2.1,20160614
-      commit=913065436c6f6c8270b61f7b8fbbfa0688c8f493
-      subdir=app
-      init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
-      gradle=yes
-      rm=app/libs/*
-
    Build:3.0,20161021
-     commit=6e86b6ec99b30cedfb0fc144aebc045712a0190f
-     subdir=app
-     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.14.1" }' >> ../build.gradle
-     gradle=yes
-     rm=app/libs/*
+       commit=9b8623b0567a17edaa4e29169c6bfba21ba5bc20
+       subdir=app
+       init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
+       gradle=yes
+       rm=app/libs/*
+
+
 
 Auto Update Mode:None
 <<<<<<< HEAD
