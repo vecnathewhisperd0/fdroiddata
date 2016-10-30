@@ -1,0 +1,27 @@
+Categories:Internet,System
+License:GPLv3
+Web Site:https://github.com/adolfintel/chromiumUpdater
+Source Code:https://github.com/adolfintel/chromiumUpdater
+Issue Tracker:https://github.com/adolfintel/chromiumUpdater/issues
+
+Auto Name:Chromium Auto Updater [Root]
+Summary:Installs and Updates Chromium
+Description:
+Chromium on Android does not have automatic updates like Chrome.
+This app automatically installs Chromium and keeps it updated.
+
+ROOT REQUIRED!
+.
+
+Repo Type:git
+Repo:https://github.com/adolfintel/chromiumUpdater
+
+Build:1.0,1
+    commit=203d891b10e376d94d66c21f91a5b06981d42703
+    subdir=ChromiumAutoUpdater
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.0
+Current Version Code:1
