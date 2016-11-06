@@ -36,7 +36,22 @@ Build:1.0,7
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
+Build:1.0.8,8
+    commit=release-8
+    subdir=app
+    gradle=yes
+
+Build:1.0.9,9
+    commit=release-9
+    subdir=app
+    gradle=yes
+
+Build:1.0.10,10
+    commit=release-10
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version release-%c
 Update Check Mode:Tags
-Current Version:1.0
-Current Version Code:7
+Current Version:1.0.10
+Current Version Code:10

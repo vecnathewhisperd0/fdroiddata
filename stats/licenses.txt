@@ -1,7 +1,7 @@
-GPLv3 790
-Apache2 460
+GPLv3 796
+Apache2 463
 GPLv3+ 242
-MIT 227
+MIT 229
 GPLv2 121
 GPLv2+ 85
 NewBSD 36
@@ -10,7 +10,7 @@ MPL2 17
 AGPLv3 16
 LGPL 14
 WTFPL 14
-FreeBSD 12
+FreeBSD 13
 PublicDomain 12
 AGPLv3+ 10
 ISC 8
@@ -56,7 +56,6 @@ MissingLicense 1
 NCSA 1
 NYSLv0.9982 1
 NetBSD 1
-NetBSD,Apache2 1
 Unlicense,Apache2 1
 X11 1
 XSkat 1

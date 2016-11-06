@@ -885,6 +885,7 @@ Build:5.0.0,158
     prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
         cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
         sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+    preassemble=downloadJson
 
 Build:5.0.1,159
     disable=crash
@@ -896,6 +897,7 @@ Build:5.0.1,159
         sed -i -e '/endless/d' -e '/adapter/d' build.gradle && \
         sed -i -e '/support-v4/acompile "com.commonsware.cwac:endless:1.2.3"' build.gradle && \
         sed -i -e '/support-v4/acompile "com.commonsware.cwac:adapter:1.0.1"' build.gradle
+    preassemble=downloadJson
 
 Build:5.0.2,160
     disable=crash, wait for rebuild
@@ -903,12 +905,29 @@ Build:5.0.2,160
     subdir=opacclient/opacapp
     submodules=yes
     gradle=yes
-    srclibs=Endless@v1.2.3,CWACAdapter@v1.0.1
-    prebuild=cp -fR $$Endless$$/src/com src/main/java/ && \
-        cp -fR $$CWACAdapter$$/src/com src/main/java/ && \
-        sed -i -e '/endless/d' -e '/adapter/d' build.gradle
+    prebuild=echo 'repositories { maven { url "https://s3.amazonaws.com/repo.commonsware.com" } }' >> build.gradle && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle && \
+        sed -i -e '/support-v4/acompile "com.commonsware.cwac:endless:1.2.3"' build.gradle && \
+        sed -i -e '/support-v4/acompile "com.commonsware.cwac:adapter:1.0.1"' build.gradle
+    preassemble=downloadJson
+
+Build:5.0.3,161
+    disable=debugging
+    commit=5.0.3
+    subdir=opacclient/opacapp
+    submodules=yes
+    gradle=yes
+    prebuild=echo 'repositories { maven { url "https://s3.amazonaws.com/repo.commonsware.com" } }' >> build.gradle && \
+        sed -i -e '/endless/d' -e '/adapter/d' build.gradle && \
+        sed -i -e '/support-v4/acompile "com.commonsware.cwac:endless:1.2.3"' build.gradle && \
+        sed -i -e '/support-v4/acompile "com.commonsware.cwac:adapter:1.0.1"' build.gradle
+    preassemble=downloadJson
+
+Maintainer Notes:
+downloadJson needs to be run and should be executed by assembleRelease. Remove broken APK for debugging.
+.
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:5.0.2
-Current Version Code:160
+Current Version:5.0.3
+Current Version Code:161
