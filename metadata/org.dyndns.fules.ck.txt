@@ -1,7 +1,7 @@
 Categories:Writing
 License:NewBSD
-Web Site:https://code.google.com/p/compass-keyboard
-Source Code:https://code.google.com/p/compass-keyboard/source
+Web Site:https://github.com/gsimon75/compass-keyboard/blob/wiki/CompassKeyboard.md
+Source Code:https://github.com/gsimon75/compass-keyboard
 Issue Tracker:
 
 Auto Name:Compass Keyboard
@@ -22,22 +22,22 @@ you are about to enter, visit the entries 'Feedback/Normal feedback' and
 Highlight.
 .
 
-Repo Type:git-svn
-Repo:https://compass-keyboard.googlecode.com/svn/trunk
+Repo Type:git
+Repo:https://github.com/gsimon75/compass-keyboard
 
 Build:v1.3,16
-    commit=19
+    commit=0f16355aa
     target=android-8
 
 Build:v1.4,17
-    commit=29
+    commit=27f7d113f
 
 Build:v1.5,19
-    commit=37
+    commit=09fd15cfe
 
 Build:v1.6pre1,20
     disable=pre-release
-    commit=38
+    commit=81c47517a
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
