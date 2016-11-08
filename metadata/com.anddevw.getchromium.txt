@@ -20,36 +20,36 @@ Build:1.0,1
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
     gradle=yes
     rm=app/libs/*
-
+    
 Build:2.1,20160614
     commit=913065436c6f6c8270b61f7b8fbbfa0688c8f493
     subdir=app
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.11" }' >> ../build.gradle
     gradle=yes
     rm=app/libs/*
-
+    
 Build:3.0,20161021
     commit=6e86b6ec99b30cedfb0fc144aebc045712a0190f
     subdir=app
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.14.1" }' >> ../build.gradle
     gradle=yes
     rm=app/libs/*
-
-Build:3.1,20161025
+    
+ Build:3.1,20161025
     commit=a71f0db354163d910ac461090cf3da8c8f7dfa7b
     subdir=app
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.14.1" }' >> ../build.gradle
     gradle=yes
-    rm=app/libs/*
+    rm=app/libs/* 
     
 Build:3.2,20161103
     commit=8fcbdb7ab6adbf3a425a0126610b9d927a83ea0f
     subdir=app
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.14.1" }' >> ../build.gradle
     gradle=yes
-    rm=app/libs/* 
-
+    rm=app/libs/*    
+    
 Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:3.2
-Current Version Code:20161103
+Current Version Code:20161103    
