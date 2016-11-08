@@ -39,7 +39,12 @@ Build:v1.6pre1,20
     disable=pre-release
     commit=81c47517a
 
+# current head from 2014-12-01
+Build:v1.6pre2,21
+    disable=pre-release
+    commit=ab13259fc
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:v1.6pre1
-Current Version Code:20
+Current Version:v1.6pre2
+Current Version Code:21
