@@ -151,7 +151,31 @@ Build:20161102,20161102
     gradle=yes
     rm=libs/disklrucache*,user_manual
 
+Build:20161107,20161107
+    commit=beta-20161107
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20161108,20161108
+    commit=beta-20161108
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20161109,20161109
+    commit=beta-20161109
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:20161111,20161111
+    commit=beta-20161111
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
 Auto Update Mode:Version beta-%c
 Update Check Mode:Tags ^beta
-Current Version:20161102
-Current Version Code:20161102
+Current Version:20161111
+Current Version Code:20161111

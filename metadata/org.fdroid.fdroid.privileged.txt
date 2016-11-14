@@ -26,6 +26,9 @@ This has several advantages:
 * Reduced disk usage in the system partition
 * System updates don't remove F-Droid
 * The process of installing into system via root is safer
+
+Instead of this build, most users will want to install the "Over-The-Air" (OTA)
+update zip file is called [[org.fdroid.fdroid.privileged.ota]].
 .
 
 Repo Type:git

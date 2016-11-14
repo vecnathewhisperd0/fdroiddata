@@ -214,7 +214,17 @@ Build:7.3.6,58
     subdir=project/app
     gradle=yes
 
-Auto Update Mode:Version %v
+Build:2.0.1,59
+    commit=release_2.0.1
+    subdir=project/app
+    gradle=yes
+
+Build:2.0.2,60
+    commit=release_2.0.2
+    subdir=project/app
+    gradle=yes
+
+Auto Update Mode:Version release_%v
 Update Check Mode:Tags
-Current Version:7.3.6
-Current Version Code:58
+Current Version:2.0.2
+Current Version Code:60
