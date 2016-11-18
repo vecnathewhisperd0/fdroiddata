@@ -94,7 +94,16 @@ Build:0.5.1,501
         sed -i -e '/projectDir/d' ../settings.gradle && \
         sed -i -e '/play-services/d' build.gradle
 
+Build:0.6.0,600
+    commit=48f6f60b95ffc779f292eeaf7e329d3abd0d713d
+    subdir=vector
+    gradle=appfdroid
+    srclibs=matrixsdk@344c3be4b6fafdf105d0d1c7a321ed76edb5cf03
+    prebuild=cp -fR $$matrixsdk$$/matrix-sdk ../ && \
+        sed -i -e '/projectDir/d' ../settings.gradle && \
+        sed -i -e '/play-services/d' build.gradle
+
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:0.5.1
-Current Version Code:501
+Current Version:0.6.0
+Current Version Code:600
