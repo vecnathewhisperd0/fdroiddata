@@ -50,7 +50,11 @@ Build:57,57
     commit=efeba24f9d3560ce98016958616f43640dfb47f8
     gradle=yes
 
+Build:58,58
+    commit=b3cef0ee1c0b42e606c6e9480162beee9bb789c1
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:57
-Current Version Code:57
+Current Version:58
+Current Version Code:58

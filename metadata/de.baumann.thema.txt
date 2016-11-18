@@ -60,7 +60,32 @@ Build:3.7.4,27
     subdir=theme
     gradle=yes
 
+Build:4.0,28
+    commit=v4.0
+    subdir=theme
+    gradle=yes
+
+Build:4.0.1,30
+    commit=v4.0.1
+    subdir=theme
+    gradle=yes
+
+Build:4.1,31
+    commit=v4.1
+    subdir=theme
+    gradle=yes
+
+Build:4.2,32
+    commit=v4.2
+    subdir=theme
+    gradle=yes
+
+Build:4.2.1,33
+    commit=v4.2.1
+    subdir=theme
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.7.4
-Current Version Code:27
+Current Version:4.2.1
+Current Version Code:33

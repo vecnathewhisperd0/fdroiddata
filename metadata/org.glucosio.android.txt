@@ -43,7 +43,32 @@ Build:1.1.2-FOSS,33
     prebuild=sed -i -e '/google-services/d' build.gradle ../build.gradle && \
         sed -i -e 's|@integer/google_play_services_version|0|g' src/main/AndroidManifest.xml
 
+Build:1.2.0-FOSS,34
+    commit=1.2.0-foss
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/gradle/s/2.13/2.14.1/g' ../build.gradle
+
+Build:1.2.1-FOSS,35
+    commit=1.2.1-foss
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/gradle/s/2.13/2.14.1/g' ../build.gradle
+
+Build:1.3.0-FOSS,38
+    commit=1.3.0-foss
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/gradle/s/2.13/2.14.1/g' ../build.gradle
+
+Maintainer Notes:
+Distributing a modified version of the app under the same trademark can
+lead to issues, so avoid it.
+
+See: https://github.com/Glucosio/glucosio-android/issues/219
+.
+
 Auto Update Mode:None
-Update Check Mode:Tags
-Current Version:1.1.2
-Current Version Code:33
+Update Check Mode:Tags ^[0-9.]+-foss$
+Current Version:1.3.0-FOSS
+Current Version Code:38

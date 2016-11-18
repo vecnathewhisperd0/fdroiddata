@@ -1058,6 +1058,7 @@ Build:1.9.0,1090005
         ./compile.sh -a "x86" --release
 
 Build:2.0.2,12000213
+    disable=failing build
     commit=2.0.2.1
     subdir=vlc-android
     gradle=VanillaARMv6fpu
@@ -1067,8 +1068,10 @@ Build:2.0.2,12000213
         wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
         ./compile.sh -a "armeabi" --release
+    ndk=r11c
 
 Build:2.0.2,12000214
+    disable=failing build
     commit=2.0.2.1
     subdir=vlc-android
     gradle=VanillaARMv7
@@ -1078,8 +1081,10 @@ Build:2.0.2,12000214
         wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
         ./compile.sh -a "armeabi-v7a" --release
+    ndk=r11c
 
 Build:2.0.2,12000215
+    disable=failing build
     commit=2.0.2.1
     subdir=vlc-android
     gradle=VanillaX86
@@ -1088,13 +1093,94 @@ Build:2.0.2,12000215
         sed -i -e '/sdk-manager/d' ../build.gradle && \
         wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
+        ./compile.sh -a "x86" --release
+    ndk=r11c
+
+Build:2.0.5,12000523
+    disable=failing build
+    commit=2.0.5
+    subdir=vlc-android
+    gradle=VanillaARMv6fpu
+    srclibs=VLC@6689dcb
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        sed -i -e '/sdk-manager/d' ../build.gradle && \
+        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+    build=cd ../ && \
+        ./compile.sh -a "armeabi" --release
+    ndk=r11c
+
+Build:2.0.5,12000524
+    disable=failing build
+    commit=2.0.5
+    subdir=vlc-android
+    gradle=VanillaARMv7
+    srclibs=VLC@6689dcb
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        sed -i -e '/sdk-manager/d' ../build.gradle && \
+        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+    build=cd ../ && \
+        ./compile.sh -a "armeabi-v7a" --release
+    ndk=r11c
+
+Build:2.0.5,12000525
+    disable=failing build
+    commit=2.0.5
+    subdir=vlc-android
+    gradle=VanillaX86
+    srclibs=VLC@6689dcb
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        sed -i -e '/sdk-manager/d' ../build.gradle && \
+        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+    build=cd ../ && \
         echo $ANDROID_NDK && \
         echo $ANDROID_SDK && \
         ./compile.sh -a "x86" --release
+    ndk=r11c
+
+Build:2.0.6,12000603
+    disable=wait
+    commit=2.0.6
+    subdir=vlc-android
+    gradle=VanillaARMv6fpu
+    srclibs=VLC@6689dcb
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        sed -i -e '/sdk-manager/d' ../build.gradle && \
+        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+    build=cd ../ && \
+        ./compile.sh -a "armeabi" --release
+    ndk=r11c
+
+Build:2.0.6,12000604
+    disable=wait
+    commit=2.0.6
+    subdir=vlc-android
+    gradle=VanillaARMv7
+    srclibs=VLC@6689dcb
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        sed -i -e '/sdk-manager/d' ../build.gradle && \
+        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+    build=cd ../ && \
+        ./compile.sh -a "armeabi-v7a" --release
+    ndk=r11c
+
+Build:2.0.6,12000605
+    disable=builds, weait for https://gitlab.com/fdroid/fdroidserver/issues/224
+    commit=2.0.6
+    subdir=vlc-android
+    gradle=VanillaX86
+    srclibs=VLC@6689dcb
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        sed -i -e '/sdk-manager/d' ../build.gradle && \
+        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+    build=cd ../ && \
+        echo $ANDROID_NDK && \
+        echo $ANDROID_SDK && \
+        ./compile.sh -a "x86" --release
+    ndk=r11c
 
 Maintainer Notes:
 Instructions and dependencies here: http://wiki.videolan.org/AndroidCompile
-see http://buildbot.videolan.org/builders/ for version code scheme
+see http://buildbot.videolan.org/builders /for version code scheme
 The VLC srclib commit can be found out from TESTED_HASH value in compile.sh
 
 On new releases remove the updatecheck and force the CV to the last working

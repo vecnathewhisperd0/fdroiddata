@@ -5,13 +5,17 @@ Source Code:https://github.com/SimpleMobileTools/Simple-Calculator
 Issue Tracker:https://github.com/SimpleMobileTools/Simple-Calculator/issues
 Changelog:https://github.com/SimpleMobileTools/Simple-Calculator/blob/HEAD/CHANGELOG.md
 
-Auto Name:Simple Calculator
-Summary:A basic calculator with a customizable widget
+Auto Name:Calculator
+Summary:A calculator with the basic functions and a customizable widget
 Description:
-A simple calculator with the basic operations. Long press the result or formula
-to copy the value to clipboard. The text color of the widget can be customized,
-as well as the color and the alpha of the background. Press the result or
-formula in the widget to open the app.
+You can copy the result or formula to clipboard by long pressing it.
+
+The text color of the widget can be customized, as well as the color and the
+alpha of the background. Press the result or formula in the widget to open the
+app.
+
+This app contains no ads or unnecessary permissions. It is fully opensource,
+provides a Dark theme too.
 .
 
 Repo Type:git
@@ -27,7 +31,27 @@ Build:1.7,7
     subdir=app
     gradle=yes
 
+Build:1.8,8
+    commit=1.8
+    subdir=app
+    gradle=yes
+
+Build:1.9,9
+    commit=1.9
+    subdir=app
+    gradle=yes
+
+Build:1.10,10
+    commit=1.10
+    subdir=app
+    gradle=yes
+
+Build:1.12,12
+    commit=1.12
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.7
-Current Version Code:7
+Current Version:1.12
+Current Version Code:12

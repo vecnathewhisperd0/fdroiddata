@@ -1,4 +1,4 @@
-AntiFeatures:Tracking
+AntiFeatures:UpstreamNonFree
 Categories:Security,Internet
 License:GPLv3
 Web Site:https://www.netguard.me
@@ -14,9 +14,7 @@ Simple way to block access to the internet - no root required. Applications can
 individually be allowed or denied access via your Wi-Fi and/or mobile
 connection.
 
-AntiFeatures:
-
-* Tracking. Shares anonymized NetGuard usage data with a per-app opt-out.
+Last F-Droid version is 2.44 since later versions have non-free dependencies.
 .
 
 Repo Type:git
@@ -473,7 +471,40 @@ Build:2.38,2016071701
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
     gradle=yes
 
-Auto Update Mode:Version %v
+Build:2.39,2016071901
+    commit=2.39
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.42,2016072303
+    commit=2.42
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.44,2016072411
+    commit=2.44
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+    output=build/outputs/apk/NetGuard-v2.44-kitkat-release-unsigned.apk
+
+Build:2.44,2016072421
+    commit=2.44
+    subdir=app
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    gradle=yes
+    output=build/outputs/apk/NetGuard-v2.44-lollipop-release-unsigned.apk
+
+Maintainer Notes:
+Firebase is proprietary, upstreamnonfree since 2.45. 2.44 is as of 2016-11-13 still
+usable and should therefore not be pushed to archive.
+
 Update Check Mode:Tags ^[0-9.]*$
-Current Version:2.38
-Current Version Code:2016071701
+.
+
+Auto Update Mode:None
+Update Check Mode:None
+Current Version:2.60
+Current Version Code:2016111102

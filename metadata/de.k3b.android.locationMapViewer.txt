@@ -44,7 +44,12 @@ Build:0.3.4.160330,4
     subdir=LocationMapViewer
     gradle=yes
 
+Build:0.3.5.160813,5
+    commit=v0.3.5.160813
+    subdir=LocationMapViewer
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:0.3.4.160330
-Current Version Code:4
+Current Version:0.3.5.160813
+Current Version Code:5

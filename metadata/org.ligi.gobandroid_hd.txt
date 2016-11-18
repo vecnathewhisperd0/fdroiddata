@@ -276,7 +276,43 @@ Build:2.4.0,240
     gradle=NoAnalyticsNoCloud
     prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
 
+Build:2.4.2,242
+    commit=2.4.2
+    subdir=android
+    gradle=NoAnalyticsNoCloud
+    prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
+
+Build:2.4.3,243
+    commit=2.4.3
+    subdir=android
+    gradle=NoAnalyticsNoCloud
+    prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
+
+Build:2.4.5,245
+    commit=2.4.5
+    subdir=android
+    gradle=NoAnalyticsNoCloud
+    prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
+
+Build:2.4.6,246
+    commit=2.4.6
+    subdir=android
+    gradle=NoAnalyticsNoCloudProd
+    prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
+
+Build:2.4.7,247
+    commit=2.4.7
+    subdir=android
+    gradle=NoAnalyticsNoCloudProd
+    prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
+
+Build:2.4.8,248
+    commit=2.4.8
+    subdir=android
+    gradle=NoAnalyticsNoCloudProd
+    prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.4.0
-Current Version Code:240
+Current Version:2.4.8
+Current Version Code:248

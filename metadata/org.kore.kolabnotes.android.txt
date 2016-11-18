@@ -480,7 +480,37 @@ Build:2.1.1,75
     subdir=app
     gradle=yes
 
+Build:2.1.2,76
+    commit=2.1.2
+    subdir=app
+    gradle=yes
+
+Build:2.2.2,78
+    commit=2.2.2
+    subdir=app
+    gradle=yes
+
+Build:2.2.3,79
+    commit=2.2.3
+    subdir=app
+    gradle=yes
+
+Build:2.2.4,80
+    commit=2.2.4
+    subdir=app
+    gradle=yes
+
+Build:2.3.1,82
+    commit=2.3.1
+    subdir=app
+    gradle=yes
+
+Build:2.3.2,83
+    commit=2.3.2
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.1.1
-Current Version Code:75
+Current Version:2.3.2
+Current Version Code:83

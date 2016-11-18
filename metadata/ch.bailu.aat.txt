@@ -42,7 +42,22 @@ Build:v1.1-beta,11
     commit=v1.1-beta
     target=android-21
 
+Build:v1.2-beta,12
+    commit=v1.2-beta
+    subdir=app
+    gradle=yes
+
+Build:v1.3-beta,13
+    commit=v1.3.1-beta
+    subdir=app
+    gradle=yes
+
+Build:v1.4-beta,14
+    commit=v1.4-beta
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:v1.1-beta
-Current Version Code:11
+Current Version:v1.4-beta
+Current Version Code:14

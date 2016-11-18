@@ -258,6 +258,36 @@ Build:3.2.0,320
     gradle=noMaps,noAnalytics,forFDroid
     prebuild=sed -i -e '/play-services/d' -e '/android-sdk-manager/d' -e '/spoon-gradle-plugin/,+2d' -e '/spoon {/,+2d' -e '/spoon/d' build.gradle
 
+Build:3.2.1,321
+    commit=3.2.1
+    subdir=android
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/play-services/d' -e '/android-sdk-manager/d' -e '/spoon-gradle-plugin/,+2d' -e '/spoon {/,+2d' -e '/spoon/d' build.gradle
+
+Build:3.2.2,322
+    commit=3.2.2
+    subdir=android
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/play-services/d' -e '/android-sdk-manager/d' -e '/spoon-gradle-plugin/,+2d' -e '/spoon {/,+2d' -e '/spoon/d' build.gradle
+
+Build:3.2.3,323
+    commit=3.2.3
+    subdir=android
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/play-services/d' -e '/android-sdk-manager/d' -e '/spoon-gradle-plugin/,+2d' -e '/spoon {/,+2d' -e '/spoon/d' build.gradle
+
+Build:3.2.5,325
+    commit=3.2.5
+    subdir=android
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/play-services/d' -e '/android-sdk-manager/d' -e '/spoon-gradle-plugin/,+2d' -e '/spoon {/,+2d' -e '/spoon/d' build.gradle
+
+Build:3.2.7,327
+    commit=3.2.7
+    subdir=android
+    gradle=noMaps,noAnalytics,forFDroid
+    prebuild=sed -i -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
+
 Maintainer Notes:
 TODO: Build zxing-core-2.3.0-SNAPSHOT.jar from source.
 * https://github.com/zxing/zxing
@@ -267,5 +297,5 @@ TODO: Build zxing-core-2.3.0-SNAPSHOT.jar from source.
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:3.2.0
-Current Version Code:320
+Current Version:3.2.9
+Current Version Code:329
