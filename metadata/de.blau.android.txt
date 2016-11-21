@@ -228,6 +228,12 @@ Build:0.9.8.1.1211-fdroid,88
     prebuild=sed -i -e 's/Vespucci/Vespucci (F-Droid)/g' -e 's/1211/1211-fdroid/g' res/values/appname.xml && \
         sed -i -e '/bintray/d' -e '/markdown/d' build.gradle
 
+Build:0.9.8.1.1214-fdroid,89
+    commit=0.9.8r1214
+    gradle=yes
+    prebuild=sed -i -e 's/Vespucci/Vespucci (F-Droid)/g' -e 's/1214/1214-fdroid/g' res/values/appname.xml && \
+        sed -i -e '/bintray/d' -e '/markdown/d' build.gradle
+
 Maintainer Notes:
 * Remove versionCode and versionName from build.gradle due to mismatch (using
   higher VC in AndroidManifest.xml):
@@ -239,5 +245,5 @@ Maintainer Notes:
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:0.9.8.1.1211
-Current Version Code:88
+Current Version:0.9.8.1.1214
+Current Version Code:89
