@@ -14,7 +14,7 @@ Supports the following features:
 * SSL
 * SASL
 * ZNC (I haven't tested this)
-* DCC (again I haven't tested this)
+* DCC (Only supports send)
 * Reciving CTCP FINGER, and VERSION
 * Logging incomming and outgoing irc traffic
 * Android API 11+ (Android 3.0 Honycomb+)
@@ -41,8 +41,14 @@ Build:1.4,14
     gradle=fdroid
     prebuild=sed -i -e '2,6d' build.gradle
 
+Build:1.5,15
+    commit=f8f018c5ede31f1810fe03ec6167b77caabc88d9
+    subdir=application
+    gradle=fdroid
+    prebuild=sed -i -e '2,6d' build.gradle
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
 Update Check Name:tk.jordynsmediagroup.simpleirc
-Current Version:1.4
-Current Version Code:14
+Current Version:1.5
+Current Version Code:15
