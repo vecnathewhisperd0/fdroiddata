@@ -541,7 +541,7 @@ Build:2.0.54,254
         ci/fdroid.sh
 
 Build:2.0.56,256
-    commit=54
+    commit=55
     output=./android-build/navit/android/build/outputs/apk/android-release-unsigned.apk
     prebuild=chmod a+rx ci/fdroid_prebuild.sh && \
         ci/fdroid_prebuild.sh
