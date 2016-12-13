@@ -31,7 +31,52 @@ Build:0.8,1
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
+Build:0.8.1,2
+    commit=0.8.1
+    subdir=app
+    gradle=yes
+
+Build:0.8.2,3
+    commit=0.8.2
+    subdir=app
+    gradle=yes
+
+Build:0.8.3,4
+    commit=0.8.3
+    subdir=app
+    gradle=yes
+
+Build:0.9,5
+    commit=0.9
+    subdir=app
+    gradle=yes
+
+Build:1.0.0,6
+    commit=1.0.0
+    subdir=app
+    gradle=yes
+
+Build:1.0.1,7
+    commit=1.0.1
+    subdir=app
+    gradle=yes
+
+Build:1.0.2,8
+    commit=1.0.2
+    subdir=app
+    gradle=yes
+
+Build:1.0.3,9
+    commit=1.0.3
+    subdir=app
+    gradle=yes
+
+Build:1.1,10
+    commit=1.1
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.8.1
-Current Version Code:2
+Current Version:1.0.4
+Current Version Code:10
