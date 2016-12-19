@@ -5,7 +5,7 @@ Source Code:https://bitbucket.org/bitbatzen/wlanscanner/src
 Issue Tracker:https://bitbucket.org/bitbatzen/wlanscanner/issues
 
 Auto Name:WLANScanner
-Summary:Analyse the WLAN access points in range.
+Summary:Analyse the WLAN access points in range
 Description:
 WLANScanner is a tool with several possibilities to analyse the WLAN access points in range.
 Listview shows SSID, BSSID, supported cryptographic techniques, channel and level.
