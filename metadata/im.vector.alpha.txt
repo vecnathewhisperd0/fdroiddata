@@ -19,6 +19,11 @@ center of all your discussions!
 Now with end-to-end encryption! You can view and verify your various devices in
 the user settings page.
 
+You can find a list of all the changes between versions in
+[https://github.com/vector-im/riot-android/blob/master/CHANGES.rst] and the
+[https://github.com/matrix-org/matrix-android-sdk/blob/master/CHANGES.rst] in
+the matrix-android-sdk dependency.
+
 Features include:
 
 * Instantly share messages, images, videos and files of any kind within groups of any size
@@ -142,7 +147,16 @@ Build:0.6.4,604
         sed -i -e '/projectDir/d' ../settings.gradle && \
         sed -i -e '/play-services/d' build.gradle
 
+Build:0.6.5,605
+    commit=ebddfd4b7bbfb8a80e55a62dfdbc55428bdb16a5
+    subdir=vector
+    gradle=appfdroid
+    srclibs=matrixsdk@fcc72333b0d9bb46f5f3f9ddf1e97de4d17d00d5
+    prebuild=cp -fR $$matrixsdk$$/matrix-sdk ../ && \
+        sed -i -e '/projectDir/d' ../settings.gradle && \
+        sed -i -e '/play-services/d' build.gradle
+
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:0.6.4
-Current Version Code:604
+Current Version:0.6.5
+Current Version Code:605
