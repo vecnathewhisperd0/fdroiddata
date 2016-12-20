@@ -1,8 +1,9 @@
 Categories:Internet,Phone & SMS
 License:Apache-2.0
 Web Site:https://riot.im
-Source Code:https://github.com/vector-im/vector-android
-Issue Tracker:https://github.com/vector-im/vector-android/issues
+Source Code:https://github.com/vector-im/riot-android
+Issue Tracker:https://github.com/vector-im/riot-android/issues
+Changelog:https://github.com/vector-im/riot-android/blob/master/CHANGES.rst
 
 Auto Name:Riot
 Summary:Open team collaboration
@@ -18,11 +19,6 @@ center of all your discussions!
 
 Now with end-to-end encryption! You can view and verify your various devices in
 the user settings page.
-
-You can find a list of all the changes between versions in
-[https://github.com/vector-im/riot-android/blob/master/CHANGES.rst] and the
-[https://github.com/matrix-org/matrix-android-sdk/blob/master/CHANGES.rst] in
-the matrix-android-sdk dependency.
 
 Features include:
 
@@ -49,7 +45,7 @@ sync or even disable background sync completely, in the settings page.
 For developers:
 
 * Riot is a Matrix client - built on the Matrix.org open standard and ecosystem, providing interoperability with all other Matrix compatible apps, servers and integrations
-* Entirely open sourced under the permissive Apache License - get the code from [https://github.com/vector-im/vector-android]. Pull requests welcome!
+* Entirely open sourced under the permissive Apache License - get the code from [https://github.com/vector-im/riot-android]. Pull requests welcome!
 * Trivially extensible via the open Matrix Client-Server API ([https://matrix.org/docs/spec])
 * Run your own server! You can use the default matrix.org server or run your own Matrix home server (e.g. [https://matrix.org/docs/projects/server/synapse.html])
 
@@ -64,7 +60,7 @@ Discover truly efficient and open collaboration with Riot!
 .
 
 Repo Type:git
-Repo:https://github.com/vector-im/vector-android
+Repo:https://github.com/vector-im/riot-android
 
 Build:0.3.2,14
     commit=5e1607ed70e3f0219cb837b7706ead4b97033928
