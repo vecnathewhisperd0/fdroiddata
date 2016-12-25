@@ -1,0 +1,38 @@
+Categories:Graphics
+License:GPLv3
+Web Site:
+Source Code:https://github.com/howeyc/picframe
+Issue Tracker:https://github.com/howeyc/picframe/issues
+
+Auto Name:PicFrame Local
+Summary:Lightweight slideshow app
+Description:
+Fork of PicFrame that only works on local folders.
+
+PicFrame was created with the aim of bringing old, discarded tablets back to
+life as digital picture frames: put your tablet on the wall, and use PicFrame to
+watch a slideshow of your photographs.
+.
+
+Repo Type:git
+Repo:https://github.com/howeyc/picframe
+
+Build:1.6.1,10
+    commit=702af61a3e7e265e012b2d5fc9aa9b20fe00d742
+    subdir=PicFrame/app
+    gradle=yes
+
+Build:1.7.0,13
+    commit=1b1cb5da16a98816af2f9673b209e366c9e4aa2e
+    subdir=PicFrame/app
+    gradle=yes
+
+Build:2.0.0,14
+    commit=52baacee5d21dd25a655a790f0df6fddd8dbf67c
+    subdir=PicFrame/app
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:2.0.0
+Current Version Code:14
