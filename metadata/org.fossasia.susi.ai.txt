@@ -1,0 +1,27 @@
+Categories:Science & Education
+License:Apache 2.0
+Web Site:
+Source Code:https://github.com/fossasia/susi_android
+Issue Tracker:https://github.com/fossasia/susi_android/issues
+
+Auto Name:Susi
+Summary:conversational interface for loklak/AskSusi AI
+Description:
+The main feature of the app is to provide a conversational interface to provide
+intelligent answers using the loklak/AskSusi infrastructure. The app also offers
+login functionalities to connect to other services and stored personal data.
+Additionally the application uses data provided by the user's phone to improve
+Susi answers. Geolocation information for example helps to offer better answers
+related to questions about "things nearby".
+.
+
+Repo Type:git
+Repo:https://github.com/fossasia/susi_android
+
+Build:1.0,1
+    commit=0.2
+    subdir=susi_app
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
