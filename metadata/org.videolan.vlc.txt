@@ -1213,61 +1213,6 @@ Build:2.0.6,12000605
         ./compile.sh -a "x86" --release
     ndk=r11c
 
-Build:2.0.6,12000624
-    disable=last resort
-    commit=2.0.6
-    output=binary/vlc.apk
-    build=mkdir binary && \
-        cd binary && \
-        wget -c https://get.videolan.org/vlc-android/$$VERSION$$/VLC-Android-$$VERSION$$-ARMv7.apk -O vlc.apk && \
-        unzip vlc.apk && \
-        rm -fR META-INF vlc.apk && \
-        zip -r vlc.apk *
-
-Build:2.0.6,12000625
-    disable=last resort
-    commit=2.0.6
-    output=binary/vlc.apk
-    build=mkdir binary && \
-        cd binary && \
-        wget -c https://get.videolan.org/vlc-android/$$VERSION$$/VLC-Android-$$VERSION$$-x86.apk -O vlc.apk && \
-        unzip vlc.apk && \
-        rm -fR META-INF vlc.apk && \
-        zip -r vlc.apk *
-
-Build:2.0.6,12000626
-    disable=last resort
-    commit=2.0.6
-    output=binary/vlc.apk
-    build=mkdir binary && \
-        cd binary && \
-        wget -c https://get.videolan.org/vlc-android/$$VERSION$$/VLC-Android-$$VERSION$$-MIPS.apk -O vlc.apk && \
-        unzip vlc.apk && \
-        rm -fR META-INF vlc.apk && \
-        zip -r vlc.apk *
-
-Build:2.0.6,12000627
-    disable=last resort
-    commit=2.0.6
-    output=binary/vlc.apk
-    build=mkdir binary && \
-        cd binary && \
-        wget -c https://get.videolan.org/vlc-android/$$VERSION$$/VLC-Android-$$VERSION$$-ARMv8.apk -O vlc.apk && \
-        unzip vlc.apk && \
-        rm -fR META-INF vlc.apk && \
-        zip -r vlc.apk *
-
-Build:2.0.6,12000628
-    disable=last resort
-    commit=2.0.6
-    output=binary/vlc.apk
-    build=mkdir binary && \
-        cd binary && \
-        wget -c https://get.videolan.org/vlc-android/$$VERSION$$/VLC-Android-$$VERSION$$-x86_64.apk -O vlc.apk && \
-        unzip vlc.apk && \
-        rm -fR META-INF vlc.apk && \
-        zip -r vlc.apk *
-
 Maintainer Notes:
 Instructions and dependencies here: http://wiki.videolan.org/AndroidCompile
 see http://buildbot.videolan.org/builders /for version code scheme
