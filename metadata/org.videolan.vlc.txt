@@ -1065,8 +1065,9 @@ Build:2.0.2,12000213
     srclibs=VLC@848f58d
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "armeabi" --release
     ndk=r11c
 
@@ -1078,8 +1079,9 @@ Build:2.0.2,12000214
     srclibs=VLC@848f58d
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "armeabi-v7a" --release
     ndk=r11c
 
@@ -1091,8 +1093,9 @@ Build:2.0.2,12000215
     srclibs=VLC@848f58d
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "x86" --release
     ndk=r11c
 
@@ -1104,7 +1107,7 @@ Build:2.0.5,12000523
     srclibs=VLC@6689dcb
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
         ./compile.sh -a "armeabi" --release
     ndk=r11c
@@ -1117,8 +1120,9 @@ Build:2.0.5,12000524
     srclibs=VLC@6689dcb
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "armeabi-v7a" --release
     ndk=r11c
 
@@ -1130,10 +1134,11 @@ Build:2.0.5,12000525
     srclibs=VLC@6689dcb
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
         echo $ANDROID_NDK && \
         echo $ANDROID_SDK && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "x86" --release
     ndk=r11c
 
@@ -1145,8 +1150,9 @@ Build:2.0.6,12000603
     srclibs=VLC@6689dcb
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "armeabi" --release
     ndk=r11c
 
@@ -1158,8 +1164,9 @@ Build:2.0.6,12000604
     srclibs=VLC@6689dcb
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "armeabi-v7a" --release
     ndk=r11c
 
@@ -1171,10 +1178,11 @@ Build:2.0.6,12000605
     srclibs=VLC@6689dcb
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
         echo $ANDROID_NDK && \
         echo $ANDROID_SDK && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "x86" --release
     ndk=r11c
 
