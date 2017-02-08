@@ -1175,7 +1175,7 @@ Build:2.0.6,12000603
     build=cd ../ && \
         sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "armeabi" --release
-    ndk=r11c
+    ndk=r13b
 
 Build:2.0.6,12000604
     disable=still failing
@@ -1192,7 +1192,7 @@ Build:2.0.6,12000604
     build=cd ../ && \
         sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "armeabi-v7a" --release
-    ndk=r11c
+    ndk=r13b
 
 Build:2.0.6,12000605
     disable=builds, wait for https://gitlab.com/fdroid/fdroidserver/issues/224
@@ -1211,7 +1211,7 @@ Build:2.0.6,12000605
         echo $ANDROID_SDK && \
         sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "x86" --release
-    ndk=r11c
+    ndk=r13b
 
 Maintainer Notes:
 Instructions and dependencies here: http://wiki.videolan.org/AndroidCompile
