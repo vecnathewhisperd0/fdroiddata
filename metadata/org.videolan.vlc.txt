@@ -1161,7 +1161,6 @@ Build:2.0.5,12000525
     ndk=r11c
 
 Build:2.0.6,12000603
-    disable=wait
     commit=2.0.6
     subdir=vlc-android
     gradle=VanillaARMv6fpu
@@ -1178,7 +1177,6 @@ Build:2.0.6,12000603
     ndk=r13b
 
 Build:2.0.6,12000604
-    disable=still failing
     commit=2.0.6
     subdir=vlc-android
     gradle=VanillaARMv7
@@ -1195,7 +1193,6 @@ Build:2.0.6,12000604
     ndk=r13b
 
 Build:2.0.6,12000605
-    disable=builds, wait for https://gitlab.com/fdroid/fdroidserver/issues/224
     commit=2.0.6
     subdir=vlc-android
     gradle=VanillaX86
@@ -1218,6 +1215,10 @@ Instructions and dependencies here: http://wiki.videolan.org/AndroidCompile
 see http://buildbot.videolan.org/builders /for version code scheme
 The VLC srclib commit can be found out from TESTED_HASH value in compile.sh
 
+For recommended versions of the build tools, see:
+https://git.videolan.org/?p=vlc.git;a=blob;f=extras/tools/bootstrap;h=e60e5ebf93e69e7bb731e80d0fbc6ebd1226dfdb;hb=HEAD#l73
+https://gitlab.com/fdroid/fdroidserver/issues/224
+
 On new releases remove the updatecheck and force the CV to the last working
 build. This will make sure users don't get notified about the update until
 the final build from the BS has been reviewed and tested. Once done, undo
@@ -1234,5 +1235,5 @@ Archive Policy:0 versions
 Auto Update Mode:None
 Update Check Mode:None
 Vercode Operation:%c + 5
-Current Version:1.9.0
-Current Version Code:1090005
+Current Version:2.0.6
+Current Version Code:12000605
