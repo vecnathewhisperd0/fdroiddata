@@ -37,6 +37,20 @@ OI Notepad works together with the following applications:
 Repo Type:git
 Repo:https://github.com/openintents/notepad
 
+Build:1.5.4,10084
+    commit=009ee9ae2953149fce8b32f3651d2c5d1d7b4ad7
+    subdir=NotePad
+    gradle=yes
+    rm=NotePad/libs/OINotepadMyBackupPro.jar
+    prebuild=sed -i -e '/OINotepadMyBackupPro.jar/d' build.gradle && \
+        sed -i '/non-FOSS/,/non-FOSS-end/ d' src/main/AndroidManifest.xml
+
+Build:1.5.3,10083
+    disable=untrusted repo, jars
+    commit=2b5c9f040236a1c873a76374f7084f30ba4683a1
+    subdir=NotePad
+    gradle=yes
+
 Build:1.3,10068
     commit=3c60f74e529834d2bb70e6ea95116b3c70ac2659
     subdir=NotePad
@@ -48,13 +62,8 @@ Build:1.3,10068
         sed -i '/org.openintents.notepad.backup.MyBackupPro/,/\/>/ d' AndroidManifest.xml
     target=android-19
 
-Build:1.5.3,10083
-    disable=untrusted repo, jars
-    commit=2b5c9f040236a1c873a76374f7084f30ba4683a1
-    subdir=NotePad
-    gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
+Auto Update Mode:Version +-fdroid v%v
+Update Check Mode:Tags
 Current Version:1.5.4
 Current Version Code:10084
