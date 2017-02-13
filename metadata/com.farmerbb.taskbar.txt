@@ -157,6 +157,7 @@ Build:3.0.2,107
     gradle=free
 
 Build:3.0.3,109
+    disable=snapshot dependency
     commit=ffd2d7fd676507219dbf0f3104ea50b35dd3c9ed
     subdir=app
     gradle=free
@@ -191,7 +192,22 @@ Build:3.0.6,117
     subdir=app
     gradle=free
 
+Build:3.0.7,119
+    commit=51725fa26e995cd34b7a558a94450fa9d091ae39
+    subdir=app
+    gradle=free
+
+Build:3.0.7,120
+    commit=ffafbb6020eefbefda757bddc1e84b6fed7597be
+    subdir=app
+    gradle=free
+
+Build:3.0.7,122
+    commit=8e01b77ddc5268b12e1fe990bf7913feca8dcac9
+    subdir=app
+    gradle=free
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:3.0.6
-Current Version Code:117
+Current Version:3.0.7
+Current Version Code:122
