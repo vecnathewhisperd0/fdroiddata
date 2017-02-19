@@ -13,10 +13,11 @@ SkyTube is a YouTube player that allows you to:
 
 * explore Trending and Most Popular videos,
 * browse YouTube channels,
+* channel subscription,
+* bookmark videos,
 * play YouTube videos,
 * view video comments,
 * search videos, music and channels
-* channel subscription
 
 ... all at the tip of your fingers.
 
@@ -53,6 +54,7 @@ Build:2.3,5
     subdir=app
     gradle=oss
     rm=app/libs/*.jar
+
 
 Maintainer Notes:
 * Current versions include app/libs/*.jar. Remove them.
