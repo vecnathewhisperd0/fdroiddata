@@ -1,5 +1,6 @@
 Categories:Games
-License:GPL3
+License:GPL-3.0
+Web Site:
 Source Code:https://gitlab.com/x653/bullseye
 Issue Tracker:https://gitlab.com/x653/bullseye/issues
 
@@ -22,6 +23,7 @@ Repo:https://gitlab.com/x653/bullseye
 Build:0.1,1
     commit=29c854968ec64e23f01912e647d5bdcd4a5be8b1
     subdir=app
+    gradle=yes
 
 Auto Update Mode:None
 Update Check Mode:Tags
