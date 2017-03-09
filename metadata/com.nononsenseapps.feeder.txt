@@ -42,6 +42,6 @@ Build:1.2.1,4
     target=android-25
 
 Auto Update Mode:Version %v
-Update Check Mode:RepoManifest
+Update Check Mode:Tags
 Current Version:1.2.1
 Current Version Code:4
