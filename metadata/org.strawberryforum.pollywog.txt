@@ -17,7 +17,7 @@ Repo Type:git
 Repo:https://github.com/huckleberrypie/pollywog
 
 Build:0.1,1
-    commit=master
+    commit=v0.1
     subdir=app
     gradle=yes
 
