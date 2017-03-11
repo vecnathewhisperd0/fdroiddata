@@ -98,13 +98,15 @@ Build:0.4.2,18
     commit=v0.4.2
     subdir=app
     gradle=fdroid
-    prebuild=sed -i -e '/play-services/d' build.gradle && sed -i '/com.android.support.constraint:constraint-layout/c\compile "com.github.paronos.constraint-layout:constraint-layout-solver:6353c6d"\ncompile "com.github.paronos.constraint-layout:constraint-layout:6353c6d"' build.gradle
+    prebuild=sed -i -e '/play-services/d' build.gradle && \
+    sed -i '/com.android.support.constraint:constraint-layout/c\compile "com.github.paronos.constraint-layout:constraint-layout-solver:6353c6d"\ncompile "com.github.paronos.constraint-layout:constraint-layout:6353c6d"' build.gradle
 
 Build:0.5.0,20
     commit=v0.5.0
     subdir=app
     gradle=fdroid
-    prebuild=sed -i -e '/play-services/d' build.gradle && sed -i '/com.android.support.constraint:constraint-layout/c\compile "com.github.paronos.constraint-layout:constraint-layout-solver:6353c6d"\ncompile "com.github.paronos.constraint-layout:constraint-layout:6353c6d"' build.gradle
+    prebuild=sed -i -e '/play-services/d' build.gradle && \
+    sed -i '/com.android.support.constraint:constraint-layout/c\compile "com.github.paronos.constraint-layout:constraint-layout-solver:6353c6d"\ncompile "com.github.paronos.constraint-layout:constraint-layout:6353c6d"' build.gradle
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
