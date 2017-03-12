@@ -1,5 +1,5 @@
 Categories:Internet,Reading
-License:GPL-2.0
+License:GPL-3.0
 Web Site:https://github.com/spacecowboy/feeder
 Source Code:https://github.com/spacecowboy/feeder
 Issue Tracker:https://github.com/spacecowboy/feeder/issues
@@ -29,19 +29,13 @@ Features:
 Repo Type:git
 Repo:https://github.com/spacecowboy/Feeder.git
 
-Build:1.2.0,3
-    commit=1.2.0
+Build:1.2.2,5
+    commit=1.2.2
     subdir=app
+    submodules=yes
     gradle=yes
-    target=android-25
-
-Build:1.2.1,4
-    commit=1.2.1
-    subdir=app
-    gradle=yes
-    target=android-25
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.2.1
-Current Version Code:4
+Current Version:1.2.2
+Current Version Code:5
