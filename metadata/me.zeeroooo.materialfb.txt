@@ -71,7 +71,17 @@ Build:2.8.0,40
     subdir=app
     gradle=yes
 
+Build:2.8.5,41
+    commit=bcb84d7427f15dd2b77d6a9ff8fbdcf8fc392d85
+    subdir=app
+    gradle=yes
+
+Build:2.9.0,42
+    commit=b17c65cd19c004d8da4d2a0a169a49b67c30feaf
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:2.8.0
-Current Version Code:40
+Current Version:2.9.0
+Current Version Code:42

@@ -3,8 +3,9 @@ License:GPL-3.0
 Web Site:
 Source Code:https://gitlab.com/AndreasK/unpopular-music-player
 Issue Tracker:https://gitlab.com/AndreasK/unpopular-music-player/issues
+Changelog:https://gitlab.com/AndreasK/unpopular-music-player/blob/HEAD/app/src/main/assets/version-history.txt
 
-Auto Name:Unpopular Music Player Free
+Auto Name:Unpopular Music Player
 Summary:A plain music player especially for classical music
 Description:
 Instead of "Artists" and "Songs" in pop(ular) music, this program uses the
@@ -23,7 +24,12 @@ Build:1.03,7
     subdir=app
     gradle=yes
 
+Build:1.04,8
+    commit=29cc6c63df2cd5b7142047db84c85ab937fd33a5
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.03
-Current Version Code:7
+Current Version:1.04
+Current Version Code:8
