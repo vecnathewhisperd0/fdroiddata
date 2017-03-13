@@ -33,7 +33,17 @@ Build:1.0.10,10
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.14.1" }' >> ../build.gradle
     gradle=yes
 
+Build:1.0.12,12
+    commit=cccb947967cdb2a9c5e03f70e5fc2b5dbafac490
+    subdir=app
+    gradle=yes
+
+Build:1.0.13,13
+    commit=b0b380d6e4a4dc02c2742c5c4aa66d1b94463e90
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.0.10
-Current Version Code:10
+Current Version:1.0.13
+Current Version Code:13

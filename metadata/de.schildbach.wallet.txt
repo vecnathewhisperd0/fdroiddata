@@ -805,6 +805,20 @@ Build:5.14,294
     prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
     scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
 
+Build:5.15,295
+    commit=251f2c7bd7ebca06b2ea49c0efa2173b4ab98ba5
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.17,297
+    commit=c7e8150e3ed307a7520459cb98a98f334819f04d
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
 Maintainer Notes:
 See wallet/{README,CHANGES} or git log for info about what BitcoinJ tag to use.
 Use latest commit in 'prod' branch, which is a rebase on top of the latest tag.
@@ -816,5 +830,5 @@ approach to building this in future.
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest/prod
-Current Version:5.14
-Current Version Code:294
+Current Version:5.17
+Current Version Code:297

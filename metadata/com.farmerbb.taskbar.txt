@@ -207,7 +207,22 @@ Build:3.0.7,122
     subdir=app
     gradle=free
 
+Build:3.1,123
+    commit=384a1a4a347c75985bdc332caac0dc6816f051a6
+    subdir=app
+    gradle=free
+
+Build:3.1,125
+    commit=f0c27b9ea3c9c7aadb66c2c014fba7020b80f4fe
+    subdir=app
+    gradle=free
+
+Build:3.1,126
+    commit=627318e4ab9f996499b66fdbd7baea7c8529b0fb
+    subdir=app
+    gradle=free
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:3.0.7
-Current Version Code:122
+Current Version:3.1
+Current Version Code:126
