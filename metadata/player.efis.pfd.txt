@@ -48,6 +48,11 @@ Build:2.3,6
     subdir=app
     gradle=yes
 
+Build:2.4,7
+    commit=b6912e439acdf9ba5d6745c49cec0ca6afaefec4
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:2.4
