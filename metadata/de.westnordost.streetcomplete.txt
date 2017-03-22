@@ -1,5 +1,5 @@
 Categories:Navigation
-License:GPLv3
+License:GPL-3.0
 Author Name:Tobias Zwick
 Author Email:osm@westnordost.de
 Web Site:https://github.com/westnordost/StreetComplete
@@ -24,6 +24,7 @@ Repo:https://github.com/westnordost/StreetComplete.git
 
 Build:0.4,1
     commit=v0.4
+    subdir=app
     gradle=yes
 
 Auto Update Mode:Version v%v
