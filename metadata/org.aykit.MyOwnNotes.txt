@@ -32,7 +32,7 @@ Build:1.5,8
 Build:1.6,9
     commit=1.6
 
-Build:2.0.0,11
+Build:2.0,11
     commit=2.0.0
 
 Auto Update Mode:Version %v
