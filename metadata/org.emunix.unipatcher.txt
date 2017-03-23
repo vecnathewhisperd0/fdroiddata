@@ -38,7 +38,7 @@ Build:0.14.0,140000
     submodules=yes
     gradle=free
     scanignore=app/src/test,app/src/main/cpp/xdelta3/xdelta3/examples
-    ndk=r14b
+    ndk=r13b
 
 Auto Update Mode:None
 Update Check Mode:None
