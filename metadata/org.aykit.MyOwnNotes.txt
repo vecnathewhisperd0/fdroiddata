@@ -3,7 +3,6 @@ License:GPL-3.0
 Web Site:https://aykit.org
 Source Code:https://github.com/aykit/MyOwnNotes
 Issue Tracker:https://github.com/aykit/MyOwnNotes/issues
-FlattrID:2887057
 
 Auto Name:MyOwnNotes
 Summary:Notes management for ownCloud
@@ -13,7 +12,6 @@ Create, edit, delete and sync your notes with ownCloud.
 In order to use this app you will need:
 
 * [[com.owncloud.android]]
-
 .
 
 Repo Type:git
@@ -38,7 +36,6 @@ Build:2.0,11
     commit=2.0
     subdir=app
     gradle=store
-
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
