@@ -11,7 +11,8 @@ Create, edit, delete and sync your notes with ownCloud.
 
 In order to use this app you will need:
 
-* [https://f-droid.org/repository/browse/?fdfilter=owncloud&fdid=com.owncloud.android ownCloud Android Application]
+* [[com.owncloud.android]]
+
 .
 
 Repo Type:git
@@ -32,8 +33,10 @@ Build:1.5,8
 Build:1.6,9
     commit=1.6
 
-Build:2.0.0,11
+Build:2.0,11
     commit=2.0.0
+    subdir=app
+    gradle=store
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
