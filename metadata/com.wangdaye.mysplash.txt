@@ -61,11 +61,17 @@ Build:2.9.4,294
     gradle=yes
 
 Build:3.0.1,301
+    disable=doesnt build
     commit=3.0.1
+    subdir=app
+    gradle=yes
+
+Build:3.0.5,305
+    commit=3.0.5
     subdir=app
     gradle=yes
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:3.0.1
-Current Version Code:301
+Current Version:3.0.5
+Current Version Code:305

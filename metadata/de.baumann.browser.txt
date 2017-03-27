@@ -80,7 +80,18 @@ Build:2.8,27
     subdir=app
     gradle=yes
 
+Build:2.9,28
+    commit=v2.9
+    subdir=app
+    gradle=yes
+
+Build:3.0,29
+    commit=v3.0
+    subdir=app
+    gradle=yes
+    prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.8
-Current Version Code:27
+Current Version:3.0
+Current Version Code:29

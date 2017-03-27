@@ -23,7 +23,14 @@ Build:0.8.3,83
     gradle=fdroid
     prebuild=sed -i -e '/googleplayCompile/d' build.gradle
 
+Build:1.0.1,101
+    commit=6cc3cd8c015f75a87573ac0f3d7e1858682a493e
+    subdir=android/app
+    gradle=fdroid
+    prebuild=sed -i -e '/googleplayCompile/d' build.gradle && \
+        sed -i -e 's/<!--//g' -e 's/-->//g'  src/main/res/menu/drawer.xml 
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest/development
-Current Version:0.8.3
-Current Version Code:83
+Current Version:1.0.1
+Current Version Code:101
