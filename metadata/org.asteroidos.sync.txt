@@ -23,7 +23,7 @@ Build:0.2,2
     subdir=app
     gradle=yes
 
-build:0.3,3
+Build:0.3,3
     commit=v0.3
     subdir=app
     gradle=yes
