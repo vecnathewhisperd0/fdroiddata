@@ -33,16 +33,19 @@ Repo Type:git
 Repo:https://github.com/imshyam/mintube
 
 Build:0.90,1
+    disable=Includes crashlytics
     commit=v0.90
     subdir=app
 
 Build:0.91,2
+    disable=Includes crashlytics
     commit=v0.91
     subdir=app
 
 Build:0.95,3
     commit=v0.95
     subdir=app
+    gradle=yes
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
