@@ -45,6 +45,11 @@ Build:1.6.1,13
     commit=4c2f38643e4a87ea7142c76d9c149ce8ed324ce9
     subdir=app
     gradle=yes
+    
+Build=1.7.0,14
+    commit=762fa570e45210a8e2416bb0de306e66cd50872c
+    subdir=app
+    gradle=yes
 
 Maintainer Notes:
 Tracking via Countly setup in app/src/main/java/com/orpheusdroid/screenrecorder/MainActivity.java
@@ -55,5 +60,7 @@ app/src/main/java/com/orpheusdroid/screenrecorder/Const.java.
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.6.1
-Current Version Code:13
+Current Version:1.7.0
+Current Version Code:14
+Bitcoin:1Cbf61y8XNx3BLWvoZB71x4XgBKB7r8BuB
+FlattrID:66ngyo
