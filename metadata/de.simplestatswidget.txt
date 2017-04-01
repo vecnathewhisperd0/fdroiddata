@@ -19,7 +19,6 @@ Build:1.0.1,101
     commit=v1.0.1
     subdir=app
     gradle=yes
-    forceversion=yes
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
