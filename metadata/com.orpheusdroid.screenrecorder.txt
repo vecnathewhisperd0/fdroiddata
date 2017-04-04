@@ -1,7 +1,7 @@
 AntiFeatures:Tracking
 Categories:System
 License:AGPL-3.0
-Web Site:
+Web Site:https://orpheusdroid.com
 Source Code:https://github.com/vijai1996/screenrecorder
 Issue Tracker:https://github.com/vijai1996/screenrecorder/issues
 
@@ -51,6 +51,11 @@ Build:1.7.0,14
     subdir=app
     gradle=yes
 
+Build:1.7.1,15
+    commit=f51d92f62ee225058937dfb90b9cf862b0c9c2aa
+    subdir=app
+    gradle=yes
+
 Maintainer Notes:
 Tracking via Countly setup in app/src/main/java/com/orpheusdroid/screenrecorder/MainActivity.java
 for release builds. Either comment out "setupAnalytics();" there or just move endpoint url -- 
@@ -60,5 +65,6 @@ app/src/main/java/com/orpheusdroid/screenrecorder/Const.java.
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.7.0
-Current Version Code:14
+Current Version:1.7.1
+Current Version Code:15
+Bitcoin:1Cbf61y8XNx3BLWvoZB71x4XgBKB7r8BuB
