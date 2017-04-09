@@ -13,6 +13,8 @@ message "Can't connect to camera" or similar. You tap on KILL button. Once the
 camera service killed, it should be automatically restarted by the system. So
 you don't need to restart your device just to take a photo and therefor loose
 the opportunity!
+
+Requires root: Yes. Killing camera service requires root.
 .
 
 Requires Root:yes
