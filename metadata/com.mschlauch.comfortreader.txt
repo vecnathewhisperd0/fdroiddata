@@ -23,7 +23,7 @@ text appearance and reading configuration
 Repo Type:git
 Repo:https://github.com/mschlauch/comfortreader
 
-Build:1.9,1
+Build:1.9alpha,6
     commit=v1.9
     subdir=app
     gradle=yes
