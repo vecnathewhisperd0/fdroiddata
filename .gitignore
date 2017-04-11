@@ -1,0 +1,12 @@
+/config.py
+/unsigned/
+/repo/
+/archive/
+/logs/
+/tmp/
+/builder/
+*~
+*.pyc
+.fdroid*
+*.apk
+*.jks

@@ -1,0 +1,7 @@
+Repo Type:git
+Repo:https://github.com/keyboardsurfer/Crouton
+
+Subdir:library
+
+# for support jar
+Prepare:mkdir -p libs
