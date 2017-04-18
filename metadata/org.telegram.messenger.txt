@@ -22,7 +22,7 @@ exist as well.
 Several proprietary parts were removed from the original Telegram client,
 including Google Play Services for the location services, HockeySDK for
 self-updates and push notifications through Google Cloud Messaging. Location
-sharing functionality is restored using OpenStreetMaps.
+sharing functionality is restored using OpenStreetMap.
 
 Anti-Feature: Non-Free Network, since the servers run proprietary software.
 
