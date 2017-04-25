@@ -1,0 +1,18 @@
+Categories:Multimedia
+License:GPLv3
+Source Code:https://github.com/funkyg/funkytunes
+Issue Tracker:https://github.com/funkyg/funkytunes/issues
+
+Name:Funkytunes
+Summary:A streaming music player for Android, using torrents. 
+Description:
+Funkytunes is a BitTorrent-based music app for Android, like Spotify or Pandora. You can stream any music for free. The app is completely open-source.
+.
+
+Repo Type:git
+Repo:https://github.com/funkyg/funkytunes
+
+Auto Update Mode:%v
+Update Check Mode:Tags
+Current Version:0.1.0
+Current Version Code:1
