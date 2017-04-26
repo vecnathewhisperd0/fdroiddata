@@ -16,7 +16,6 @@ feed (media server).
 Repo Type:git
 Repo:https://github.com/fustesr/floatingimage.git
 
-
 Build:3.5.0,124
     commit=71621044d54912707bd297dafaff912e7d1e9d75
     subdir=app
