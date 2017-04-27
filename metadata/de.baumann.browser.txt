@@ -81,6 +81,7 @@ Build:2.8,27
     gradle=yes
 
 Build:2.9,28
+    disable=lint issues
     commit=v2.9
     subdir=app
     gradle=yes
@@ -91,7 +92,19 @@ Build:3.0,29
     gradle=yes
     prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
 
+Build:3.1,30
+    commit=v3.1
+    subdir=app
+    gradle=yes
+    prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
+
+Build:3.2,31
+    commit=v3.2
+    subdir=app
+    gradle=yes
+    prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.0
-Current Version Code:29
+Current Version:3.2
+Current Version Code:31

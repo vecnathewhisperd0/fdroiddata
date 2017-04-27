@@ -6,7 +6,7 @@ Issue Tracker:https://github.com/VREMSoftwareDevelopment/WifiAnalyzer/issues
 Changelog:https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer/releases
 Donate:https://vremsoftwaredevelopment.github.io/WiFiAnalyzer/#donations
 
-Auto Name:WiFi Analyzer
+Auto Name:WiFiAnalyzer
 Summary:Optimize your WiFi network
 Description:
 Optimize your WiFi network by examining surrounding WiFi networks, measuring
@@ -24,6 +24,7 @@ Features:
 * Dark or Light theme available
 * Pause/Resume scanning
 * Swipe left/right at the bottom of the screen to navigate to the next/previous screen
+* Available filters: WiFi band, Signal strength, Security and SSID
 .
 
 Repo Type:git
@@ -99,11 +100,16 @@ Build:1.7.4,26
     subdir=app
     gradle=yes
 
+Build:1.8.3,29
+    commit=V1.8.3-F-DROID
+    subdir=app
+    gradle=yes
+
 Maintainer Notes:
 Upstream generates the version information at compile time.
 .
 
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:1.7.4
-Current Version Code:26
+Current Version:1.8.3
+Current Version Code:29

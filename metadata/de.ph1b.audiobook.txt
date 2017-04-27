@@ -511,7 +511,31 @@ Build:3.0.12,167
     subdir=audiobook
     gradle=yes
 
-Auto Update Mode:Version v%v
-Update Check Mode:Tags ^v[0-9.]+?$
-Current Version:3.0.12
-Current Version Code:167
+Build:3.2.0,178
+    commit=3.2.0
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.2.0.1,179
+    commit=3.2.0.1
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.2.0.2,180
+    commit=3.2.0.2
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.2.0.3,182
+    commit=3.2.0.3
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags ^[0-9.]+?$
+Current Version:3.2.0.3
+Current Version Code:182

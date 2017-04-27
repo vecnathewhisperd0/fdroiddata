@@ -334,7 +334,27 @@ Build:2.7.4,88
     subdir=app
     gradle=yes
 
+Build:2.8.0,89
+    commit=2.8.0
+    subdir=app
+    gradle=yes
+
+Build:2.8.3,92
+    commit=2.8.3
+    subdir=app
+    gradle=yes
+
+Build:2.8.4,93
+    commit=2.8.4
+    subdir=app
+    gradle=yes
+
+Build:2.8.6,95
+    commit=2.8.6
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.7.4
-Current Version Code:88
+Current Version:2.8.6
+Current Version Code:95

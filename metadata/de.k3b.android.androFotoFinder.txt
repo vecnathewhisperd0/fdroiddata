@@ -29,7 +29,7 @@ Required Android Permissions:
 .
 
 Repo Type:git
-Repo:https://github.com/k3b/androFotoFinder.git
+Repo:https://github.com/k3b/androFotoFinder
 
 Build:0.3.4.150728,4
     commit=v0.3.4.150728
@@ -140,11 +140,27 @@ Build:0.6.0.170315,26
     subdir=app
     gradle=yes
 
+Build:0.6.0.170402,27
+    disable=wrong tag
+    commit=v0.6.0.170402
+    subdir=app
+    gradle=yes
+
+Build:0.6.0.170404,28
+    commit=v0.6.0.170404
+    subdir=app
+    gradle=yes
+
+Build:0.6.0.170421,29
+    commit=v0.6.0.170421
+    subdir=app
+    gradle=yes
+
 Maintainer Notes:
 Please use git-branch "FDroid" for FDroid-builds.
 .
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.6.0.170315
-Current Version Code:26
+Current Version:0.6.0.170421
+Current Version Code:29

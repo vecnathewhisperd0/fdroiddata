@@ -693,8 +693,28 @@ Build:0.102.2,102250
     subdir=app
     gradle=yes
 
+Build:0.102.3,102350
+    commit=v0.102.3
+    subdir=app
+    gradle=yes
+
+Build:0.103-alpha1,103001
+    commit=v0.103-alpha1
+    subdir=app
+    gradle=yes
+
+Build:0.103-alpha2,103002
+    commit=v0.103-alpha2
+    subdir=app
+    gradle=yes
+
+Build:0.103-alpha3,103003
+    commit=v0.103-alpha3
+    subdir=app
+    gradle=yes
+
 Archive Policy:12 versions
 Auto Update Mode:None
 Update Check Mode:Static
-Current Version:0.102.1
-Current Version Code:102150
+Current Version:0.102.3
+Current Version Code:102350

@@ -33,6 +33,8 @@ the /data/data/org.fdroid.fdroid folder on the /data partition. The standalone
 APK is called [[org.fdroid.fdroid.privileged]].
 .
 
+Requires Root:yes
+
 Repo Type:git
 Repo:https://gitlab.com/fdroid/privileged-extension.git
 
@@ -43,16 +45,20 @@ Build:0.2.1,2000
 
 Build:0.2.2,2020
     commit=0.2.2-ota
-    output=app/build/distributions/FDroidPrivilegedExtensionFromBinaries-0.2.2.zip
+    output=app/build/distributions/FDroidPrivilegedExtensionFromBinaries-0.2.2-ota.zip
     build=gradle assembleUpdateZipFromBinariesDebug
 
-Maintainer Notes:
-* 0.2.2 might have changed build recipe
-* Set AUM once https://gitlab.com/fdroid/fdroidserver/issues/263 has been addressed
-  since we need version information in output field.
-.
+Build:0.2.3,2030
+    commit=0.2.3-ota
+    output=app/build/distributions/FDroidPrivilegedExtensionFromBinaries-$$VERSION$$-ota.zip
+    build=gradle assembleUpdateZipFromBinariesDebug
 
-Auto Update Mode:None
+Build:0.2.4,2040
+    commit=0.2.4
+    output=app/build/distributions/FDroidPrivilegedExtensionFromBinaries-$$VERSION$$.zip
+    build=./create_ota.sh release binaries
+
+Auto Update Mode:Version %v-ota
 Update Check Mode:Tags
-Current Version:0.2.1
-Current Version Code:2000
+Current Version:0.2.3
+Current Version Code:2030

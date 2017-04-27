@@ -163,7 +163,27 @@ Build:4.0,52
     subdir=app
     gradle=yes
 
+Build:4.1,53
+    commit=v4.1
+    subdir=app
+    gradle=yes
+
+Build:4.2,54
+    commit=v4.2
+    subdir=app
+    gradle=yes
+
+Build:4.3,55
+    commit=v4.3
+    subdir=app
+    gradle=yes
+
+Build:4.4,56
+    commit=v4.4
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:4.0
-Current Version Code:52
+Current Version:4.4
+Current Version Code:56
