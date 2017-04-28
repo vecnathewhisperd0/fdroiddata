@@ -18,7 +18,7 @@ Repo Type:git
 Repo:https://github.com/seguri/lock
 
 Build:1.0.1,2
-    commit=b558114f72256adf7382687fe153b09765b85e66
+    commit=1.0.1
     subdir=app
     gradle=yes
 
