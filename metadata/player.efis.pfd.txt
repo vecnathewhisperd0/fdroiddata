@@ -14,7 +14,7 @@ devices equipped with a GPS, gyroscope, accelerometer and a CPU with reasonable
 performance.
 
 * Synthetic Vision 
-The the synthetic vision is built from the 3 arc second Digital Elevation Model 
+The the synthetic vision is built from the USGS 3 arc second Digital Elevation Model 
 data (GPTO30). If enabled, it also allows for some terrain collision detection.  
 
 * Flight Director 
