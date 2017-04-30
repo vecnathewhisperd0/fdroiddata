@@ -208,11 +208,18 @@ Build:5.5.5,264
 Build:5.6,267
     commit=5.6
     subdir=app
-    gradle=prod,noGPlay
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.6.1,270
+    commit=5.6.1
+    subdir=app
+    gradle=noGPlay
     forceversion=yes
     prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags [0-9\.]*$
-Current Version:5.6
-Current Version Code:267
+Current Version:5.6.1
+Current Version Code:270
