@@ -5,12 +5,8 @@ Source Code:https://github.com/billthefarmer/diary
 Issue Tracker:https://github.com/billthefarmer/diary/issues
 Changelog:https://github.com/billthefarmer/diary/releases
 
-Web Site:http://josep-portella.com/en/software/diary
-Source Code:http://git.savannah.gnu.org/cgit/diary.git
-Issue Tracker:
-
 Auto Name:Personal Diary
-Summary:Personal diary - forked from http://git.savannah.gnu.org/cgit/diary.git
+Summary:Personal diary or journal
 Description:
 Write down what you did, your ideas, your dreams... This application
 will help you keep it ordered by date like a traditional journal or
@@ -22,6 +18,7 @@ easy to backup and you can open the files with other applications.
 Includes basic functionality for browsing the old entries. Available
 in English, Catalan and Spanish.
 
+Forked from [http://git.savannah.gnu.org/cgit/diary.git]
 Updated for android 4 and later.
 .
 
