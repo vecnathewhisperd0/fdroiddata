@@ -19,6 +19,10 @@ The the synthetic vision is built from the USGS 3 arc second Digital Elevation
 Model data (GPTO30). If enabled, it also allows for some terrain collision
 detection.
 
+The required terrain data package (player.efis.data) is available on F-Droid.
+[https://f-droid.org/repository/browse/?fdfilter=kwik&fdid=player.efis.data Kwik EFIS DataPac]
+
+
 * Flight Director
 
 Kwik EFIS has a fully functional flight director built in. It uses  the standard
@@ -39,16 +43,6 @@ on the pitch.
 Repo Type:git
 Repo:https://github.com/ninelima/kwikEFIS
 
-Build:2.2.0,3
-    commit=42b6ea0131afd1cb2fa1ea4de2e1eb70258bb602
-    subdir=app
-    gradle=yes
-
-Build:2.3,4
-    commit=c21215e80c40fa191bc575b1e7615f10279763a0
-    subdir=app
-    gradle=yes
-
 Build:2.3,6
     commit=e9eac9018e260ecc33737bc7c23f1c44e22e3e3c
     subdir=app
@@ -59,7 +53,12 @@ Build:2.4,7
     subdir=app
     gradle=yes
 
+Build:3.0,9
+    commit=c3dff097d266163dfb604c61fe3cf855facecc19
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags ^PROD
-Current Version:2.4
-Current Version Code:7
+Current Version:3.0
+Current Version Code:9
