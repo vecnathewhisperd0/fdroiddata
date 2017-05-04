@@ -20,9 +20,8 @@ Model data (GPTO30). If enabled, it also allows for some terrain collision
 detection.
 
 The required terrain data package (player.efis.data) is available on F-Droid.
-[https://f-droid.org/repository/browse/?fdfilter=kwik&fdid=player.efis.data 
-Kwik EFIS DataPac]
-
+[https://f-droid.org/repository/browse/?fdfilter=kwik&fdid=player.efis.data Kwik
+EFIS DataPac]
 
 * Flight Director
 
@@ -61,5 +60,5 @@ Build:3.0,9
 
 Auto Update Mode:None
 Update Check Mode:Tags ^PROD
-Current Version:3.0
-Current Version Code:9
+Current Version:2.4
+Current Version Code:7
