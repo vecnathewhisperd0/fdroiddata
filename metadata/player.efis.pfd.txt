@@ -64,7 +64,7 @@ Build:2.4,7
     gradle=yes
 
 Build:3.0,9
-    commit=c3dff097d266163dfb604c61fe3cf855facecc19
+    commit=5d02ed4b81ebe8b52c0c1ea9b5de03fd6dadbf54
     subdir=app
     gradle=yes
 
