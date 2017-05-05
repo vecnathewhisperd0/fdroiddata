@@ -43,6 +43,16 @@ on the pitch.
 Repo Type:git
 Repo:https://github.com/ninelima/kwikEFIS
 
+Build:2.2.0,3
+    commit=42b6ea0131afd1cb2fa1ea4de2e1eb70258bb602
+    subdir=app
+    gradle=yes
+
+Build:2.3,4
+    commit=c21215e80c40fa191bc575b1e7615f10279763a0
+    subdir=app
+    gradle=yes
+
 Build:2.3,6
     commit=e9eac9018e260ecc33737bc7c23f1c44e22e3e3c
     subdir=app
