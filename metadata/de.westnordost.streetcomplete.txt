@@ -52,7 +52,7 @@ Build:0.8,5
     subdir=app
     gradle=yes
     prebuild=sed -i -e '/def keystorePropertiesFile/,+9d' build.gradle
-    
+
 Build:0.10,6
     commit=v0.10
     subdir=app
