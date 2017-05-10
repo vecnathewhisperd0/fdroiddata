@@ -15,12 +15,10 @@ performance.
 
 * Synthetic Vision
 
-The the synthetic vision is built from the USGS 3 arc second Digital Elevation
-Model data (GPTO30). If enabled, it also allows for some terrain collision
-detection.
-
-The required terrain data package (player.efis.data) is available on F-Droid,
-see [[player.efis.data]].
+Synthetic vision is built from the USGS 3 arc second Digital Elevation
+Model data. If enabled, it also allows for some terrain collision
+detection. The required terrain data package (player.efis.data) is available on
+F-Droid, see [[player.efis.data]].
 
 * Flight Director
 
