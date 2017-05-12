@@ -1,0 +1,3 @@
+Repo Type:git
+Repo:git://git.videolan.org/vlc.git
+Prepare:patch -Np1 -i ../../../srclibs/VLC-2.0.6/libvlc-fixes.patch
