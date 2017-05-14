@@ -7,7 +7,7 @@ index 6604a76..26ba50a 100644
  #Uncomment the one you want
  #USE_LIBAV ?= 1
 -#USE_FFMPEG ?= 1
-+USE_FFMPEG ?= 1
++USE_LIBAV ?= 1
  
  ifdef USE_FFMPEG
 -FFMPEG_HASH=HEAD
@@ -16,7 +16,7 @@ index 6604a76..26ba50a 100644
  FFMPEG_GITURL := git://git.videolan.org/ffmpeg.git
  else
 -FFMPEG_HASH=HEAD
-+FFMPEG_HASH=v11.9
++FFMPEG_HASH=v12
  FFMPEG_SNAPURL := http://git.libav.org/?p=libav.git;a=snapshot;h=$(FFMPEG_HASH);sf=tgz
  FFMPEG_GITURL := git://git.libav.org/libav.git
  endif
