@@ -195,7 +195,23 @@ Build:15.1.0-alpha-3,1510003
     gradle=zomrelease
     prebuild=sed -i '/com.google.android.gms/d' ../chatsecure-push/example/build.gradle
 
-Auto Update Mode:Version %v
+Build:15.1.0-alpha-4,1510004
+    disable=builds, but doesnt verify
+    commit=15.1.0-alpha-4
+    subdir=app
+    submodules=yes
+    gradle=zomrelease
+    prebuild=sed -i '/com.google.android.gms/d' ../chatsecure-push/example/build.gradle
+
+Build:15.1.0-alpha-5,1510005
+    disable=builds, doesnt verify
+    commit=15.1.0-alpha-5
+    subdir=app
+    submodules=yes
+    gradle=zomrelease
+    prebuild=sed -i '/com.google.android.gms/d' ../chatsecure-push/example/build.gradle
+
+Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:15.1.0-alpha-3
-Current Version Code:1510003
+Current Version:15.1.0-beta-2
+Current Version Code:1510008

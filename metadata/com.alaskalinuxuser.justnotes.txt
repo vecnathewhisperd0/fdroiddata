@@ -61,7 +61,12 @@ Build:1.7,7
     gradle=yes
     prebuild=sed -i -e '/constraint-layout/s/1.0.0-alpha9/1.0.2/g' build.gradle
 
+Build:1.9,9
+    commit=174c6f1ee661a902daba9d5a098d82c0cf228f85
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.7
-Current Version Code:7
+Current Version:1.9
+Current Version Code:9

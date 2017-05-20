@@ -1,7 +1,8 @@
 AntiFeatures:NonFreeNet
 Categories:Development,System
 License:GPL-3.0
-Web Site:https://github.com/Adonai/Man-Man/blob/HEAD/README.md
+Author Web Site:https://plus.google.com/102332121455682860724
+Web Site:
 Source Code:https://github.com/Adonai/Man-Man
 Issue Tracker:https://github.com/Adonai/Man-Man/issues
 Donate:https://www.patreon.com/kanedias
@@ -118,7 +119,12 @@ Build:1.7.0,170
     subdir=app
     gradle=fdroid
 
+Build:1.7.1,171
+    commit=1.7.1
+    subdir=app
+    gradle=fdroid
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.7.0
-Current Version Code:170
+Current Version:1.7.1
+Current Version Code:171

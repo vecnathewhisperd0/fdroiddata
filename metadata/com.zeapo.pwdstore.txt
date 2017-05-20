@@ -470,7 +470,19 @@ Build:1.2.0.57,77
     submodules=yes
     gradle=yes
 
+Build:1.2.0.58,78
+    commit=v1.2.0.58
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/classpath/s/2.3.2/2.3.1/' build.gradle
+
+Maintainer Notes:
+Downgrade since https://developer.android.com/studio/releases/gradle-plugin.html
+doesnt -- at the time of writing -- list 2.3.2.
+.
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.2.0.57
-Current Version Code:77
+Current Version:1.2.0.58
+Current Version Code:78

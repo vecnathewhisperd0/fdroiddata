@@ -94,6 +94,11 @@ Build:3.1.1,311
     subdir=app
     gradle=yes
 
+Build:3.1.2,312
+    commit=763f0c2a41f8a28f91252b144799676b43393a19
+    subdir=app
+    gradle=yes
+
 Maintainer Notes:
 AUM is disabled because author used to delete tags and also tag wrong
 commits (version in build.gradle did not match tag name).
@@ -101,5 +106,5 @@ commits (version in build.gradle did not match tag name).
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:3.1.1
-Current Version Code:311
+Current Version:3.1.2
+Current Version Code:312
