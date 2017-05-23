@@ -56,7 +56,7 @@ Build:2.2.0,7
     gradle=yes
 
 Build:2.3.0,8
-    commit=v2.2.0
+    commit=v2.3.0
     subdir=app
     gradle=yes
     
