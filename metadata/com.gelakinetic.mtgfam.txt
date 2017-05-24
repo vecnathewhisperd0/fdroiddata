@@ -111,6 +111,15 @@ Build:3.4.0-foss,47
         sed -i '/android.tools.build/d' build.gradle
     scanignore=mobile/src/main/res/raw/datagz
 
+Build:3.4.1-foss,48
+    commit=v3.4.1
+    subdir=mobile
+    gradle=foss
+    forceversion=yes
+    prebuild=sed -i -e '/play-services/d' -e '/firebase/d' build.gradle && \
+        sed -i '/android.tools.build/d' build.gradle
+    scanignore=mobile/src/main/res/raw/datagz
+
 Maintainer Notes:
 License switched when moving from github.
 Under mobile/src/main/res/raw/datagz is the apps card database.
@@ -118,5 +127,5 @@ Under mobile/src/main/res/raw/datagz is the apps card database.
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:3.4.0
-Current Version Code:47
+Current Version:3.4.1
+Current Version Code:48
