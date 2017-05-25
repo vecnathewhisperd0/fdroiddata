@@ -1,5 +1,5 @@
-Categories:Office
-License:GPLv3+
+Categories:Connectivity
+License:GPL-3.0+
 Web Site:
 Source Code:https://github.com/glesik/wifireminders
 Issue Tracker:https://github.com/glesik/wifireminders/issues
@@ -9,11 +9,11 @@ Bitcoin:15bSZLRTF3nH9uLrsqW2xm5UMdcd3eqF1e
 Auto Name:Wi-Fi Reminders
 Summary:Wi-Fi based reminders
 Description:
-Shows custom notifications when specified wireless networks are in
-range. You can set arbitrary reminders for any stored wireless
-network. As soon as your device is active (e. g. the screen is on)
-and the network is visible, the reminder will be displayed as
-standard notification with sound, vibration and blinking indicator.
+Shows custom notifications when specified wireless networks are in range. You
+can set arbitrary reminders for any stored wireless network. As soon as your
+device is active (e. g. the screen is on) and the network is visible, the
+reminder will be displayed as standard notification with sound, vibration and
+blinking indicator.
 .
 
 Repo Type:git
@@ -43,8 +43,17 @@ Build:1.2.3,123
     subdir=app
     gradle=yes
 
+Build:1.2.4,124
+    commit=v1.2.4
+    subdir=app
+    gradle=yes
+
+Build:1.2.5,125
+    commit=v1.2.5
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.2.3
-Current Version Code:123
-
+Current Version:1.2.5
+Current Version Code:125

@@ -1,19 +1,19 @@
 Categories:System
 License:WTFPL
-Web Site:
+Web Site:https://nolanlawson.com/apps
 Source Code:https://github.com/nolanlawson/AppTracker
 Issue Tracker:https://github.com/nolanlawson/AppTracker/issues
-Donate:http://nolanlawson.com/donation
 
 Auto Name:App Tracker
 Summary:Track your app usage
 Description:
-App Tracker is a productivity app that keeps track of other apps you’ve used, and compiles some useful
-statistics about them (most used, seldom used, recently used, etc.). You can then display this information
-in a widget or in the app itself, and launch them easily.
+App Tracker is a productivity app that keeps track of other apps you’ve used,
+and compiles some useful statistics about them (most used, seldom used, recently
+used, etc.). You can then display this information in a widget or in the app
+itself, and launch them easily.
 
-Uses logcat to figure out what apps have been launched, which means it may not work on
-Android 4.1+.
+Uses logcat to figure out what apps have been launched, which means it may not
+work on Android 4.1+.
 .
 
 Repo Type:git
@@ -27,4 +27,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.0.9
 Current Version Code:10
-

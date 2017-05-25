@@ -1,5 +1,5 @@
 Categories:Navigation
-License:GPLv2
+License:GPL-2.0
 Web Site:http://aagtl.work.zoff.cc
 Source Code:http://aagtl.zoffcc.com/aagtl_public1
 Issue Tracker:
@@ -22,8 +22,10 @@ Build:1.0.30,30
 Build:1.0.31,31
     commit=3
 
+Build:1.0.36,36
+    commit=4
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.0.31
-Current Version Code:31
-
+Current Version:1.0.36
+Current Version Code:36

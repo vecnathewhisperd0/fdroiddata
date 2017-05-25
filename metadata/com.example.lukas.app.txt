@@ -1,5 +1,5 @@
-Categories:Navigation,Office
-License:GPLv3
+Categories:Navigation,Science & Education
+License:GPL-3.0
 Web Site:https://github.com/kas70/SAnd/blob/HEAD/README.md
 Source Code:https://github.com/kas70/SAnd
 Issue Tracker:https://github.com/kas70/SAnd/issues
@@ -17,11 +17,10 @@ Repo Type:git
 Repo:https://github.com/kas70/SAnd
 
 Build:1.0,1
-    commit=v1.0
     disable=remove apk
+    commit=v1.0
 
 Auto Update Mode:None
 Update Check Mode:Static
 Current Version:1.0
 Current Version Code:1
-

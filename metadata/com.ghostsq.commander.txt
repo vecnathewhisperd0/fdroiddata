@@ -1,9 +1,10 @@
 Categories:System
-License:GPLv3
-Web Site:http://sites.google.com/site/ghostcommander1
-Source Code:http://sourceforge.net/p/ghostcommander/code
-Issue Tracker:http://sourceforge.net/projects/ghostcommander/support
-Donate:http://sourceforge.net/p/ghostcommander/donate
+License:GPL-3.0
+Web Site:https://sites.google.com/site/ghostcommander1
+Source Code:https://sourceforge.net/p/ghostcommander/code
+Issue Tracker:https://sourceforge.net/projects/ghostcommander/support
+Changelog:https://sites.google.com/site/ghostcommander1/history
+Donate:https://sourceforge.net/p/ghostcommander/donate
 
 Auto Name:Ghost Commander
 Summary:Dual-panel file manager
@@ -26,7 +27,6 @@ with system files.
 Repo Type:srclib
 Repo:GhostCommander
 
-# All commit messages are empty, so I'm just guessing the revision.
 Build:1.35,94
     commit=131
 
@@ -45,7 +45,6 @@ Build:1.40.1,163
 Build:1.40.2,164
     commit=314
 
-# DexClassLoader seems to be used for the samba/sftp plugins
 Build:1.43.3b1,210
     commit=407
     scanignore=src/com/ghostsq/commander/adapters/CA.java
@@ -113,6 +112,168 @@ Build:1.53b3,281
     target=android-21
     scanignore=src/com/ghostsq/commander/adapters/CA.java
 
+Build:1.53b4,282
+    commit=516
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53b5,283
+    commit=517
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53b6,284
+    commit=518
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53,285
+    commit=519
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.1b1,286
+    commit=522
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.1,287
+    commit=523
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.2b1,288
+    commit=525
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.2b2,289
+    commit=529
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.2b3,290
+    commit=530
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.2,291
+    commit=531
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.3b1,292
+    commit=532
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.3,293
+    commit=533
+    extlibs=android/android-support-v4.jar
+    target=android-21
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.4b2,295
+    commit=535
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.4b3,296
+    commit=538
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.4,300
+    commit=544
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.5b1,301
+    commit=546
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.5b2,302
+    commit=548
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.5b3,303
+    commit=549
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.6b1,305
+    commit=550
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.6b2,306
+    commit=552
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.6,308
+    commit=554
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.7b1,311
+    commit=559
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.8,315
+    commit=563
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.9b2,317
+    commit=565
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.9b3,318
+    commit=566
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.9b4,319
+    commit=570
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.9,320
+    commit=571
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.10b1,321
+    commit=572
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.10b2,322
+    commit=573
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
+Build:1.53.10b4,323
+    commit=575
+    extlibs=android/android-support-v4.jar
+    scanignore=src/com/ghostsq/commander/adapters/CA.java
+
 Maintainer Notes:
 No commit messages in source repo! No tags. Apks on website can be used to
 confirm a release is real. Commit where AndroidManifest is changed usually
@@ -121,9 +282,8 @@ corresponds to version.
 The scanignore is for the dex class loading which is used for loading plugins.
 .
 
+Archive Policy:4 versions
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-#Update Check Ignore:b
-Current Version:1.53b3
-Current Version Code:281
-
+Current Version:1.53.10b4
+Current Version Code:323

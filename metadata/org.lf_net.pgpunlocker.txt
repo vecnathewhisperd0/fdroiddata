@@ -1,5 +1,6 @@
 Categories:Internet,Security
 License:MIT
+Web Site:
 Source Code:https://github.com/PGPAuth/PGPAuth_Android
 Issue Tracker:https://github.com/PGPAuth/PGPAuth_Android/issues
 FlattrID:372271
@@ -10,12 +11,15 @@ Summary:Send PGP-verified requests
 Description:
 This app sends GPG-verified requests over the internet to a given server.
 
-Currently there are the actions open and close, but request-type will be configurable.
-The request also includes a timestamp to verify the request is sent by the owner of the gpg-key and is not sent again by someone else.
+Currently there are the actions open and close, but request-type will be
+configurable. The request also includes a timestamp to verify the request is
+sent by the owner of the gpg-key and is not sent again by someone else.
 
-It is used in the ChaosChemnitz hackerspace in Germany to open and close the door without the need of a "real" key.
+It is used in the ChaosChemnitz hackerspace in Germany to open and close the
+door without the need of a "real" key.
 
-You'll need [[org.thialfihar.android.apg]] or [[org.sufficientlysecure.keychain]] to sign requests.
+You'll need [[org.thialfihar.android.apg]] or
+[[org.sufficientlysecure.keychain]] to sign requests.
 .
 
 Repo Type:git
@@ -47,8 +51,12 @@ Build:1.6.1,13
     commit=v1.6.1
     subdir=PGPAuth
 
+Build:1.7.1,2017051001
+    commit=v1.7.1
+    subdir=PGPAuth
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.6.1
-Current Version Code:13
-
+Current Version:1.7.1
+Current Version Code:2017051001

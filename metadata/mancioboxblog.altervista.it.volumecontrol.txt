@@ -1,5 +1,5 @@
 Categories:System
-License:GPLv3
+License:GPL-3.0
 Web Site:http://mancioboxblog.altervista.org
 Source Code:https://github.com/mancio/Volume-Control
 Issue Tracker:https://github.com/mancio/Volume-Control/issues
@@ -8,8 +8,8 @@ Donate:http://mancioboxblog.altervista.org
 Auto Name:Volume Control
 Summary:Change volume without buttons
 Description:
-Resizable widget that reveals more functionality depending on size.
-Channels can be isolated and a mute switch is present.
+Resizable widget that reveals more functionality depending on size. Channels can
+be isolated and a mute switch is present.
 .
 
 Repo Type:git
@@ -20,8 +20,6 @@ Build:1.0,1
     subdir=Volume Control
 
 Auto Update Mode:None
-#No version code on market, but commit info is not mush good so far
 Update Check Mode:RepoManifest
 Current Version:1.0
 Current Version Code:1
-

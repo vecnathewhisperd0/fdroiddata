@@ -1,7 +1,7 @@
 AntiFeatures:UpstreamNonFree
-Categories:Office
-License:Apache2
-Web Site:
+Categories:Theming
+License:Apache-2.0
+Web Site:http://www.blntsoft.com/category/email-popup/
 Source Code:https://github.com/baolongnt/EmailPopup
 Issue Tracker:https://github.com/baolongnt/EmailPopup/issues
 
@@ -26,4 +26,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:0.2.2
 Current Version Code:14
-

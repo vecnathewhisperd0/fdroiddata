@@ -1,8 +1,8 @@
-Categories:Office
-License:GPLv3
+Categories:Writing
+License:GPL-3.0
 Web Site:https://code.google.com/p/simply-do
 Source Code:https://code.google.com/p/simply-do/source
-Issue Tracker:https://code.google.com/p/simply-do/issues
+Issue Tracker:
 
 Auto Name:Simply Do
 Summary:Simple item list manager
@@ -27,7 +27,6 @@ Build:0.9.3,3
     subdir=simply-do-app
 
 Auto Update Mode:None
-Update Check Mode:Tags
+Update Check Mode:Static
 Current Version:0.9.3
 Current Version Code:3
-

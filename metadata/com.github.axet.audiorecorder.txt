@@ -1,0 +1,51 @@
+Categories:Multimedia
+License:GPL-3.0
+Web Site:https://gitlab.com/axet/android-audio-recorder
+Source Code:https://gitlab.com/axet/android-audio-recorder/tree/HEAD
+Issue Tracker:https://gitlab.com/axet/android-audio-recorder/issues
+
+Auto Name:Audio Recorder
+Summary:Record audio files
+Description:
+Audio recorder with custom recording folder, nice recording volume indicator,
+recording notification, recording lock screen activity.
+.
+
+Repo Type:git
+Repo:https://gitlab.com/axet/android-audio-recorder.git
+
+Build:1.4.19,121
+    disable=non-free
+    commit=audiorecorder-1.4.19
+    subdir=app
+    gradle=yes
+
+Build:1.4.26,128
+    commit=audiorecorder-1.4.26
+    subdir=app
+    gradle=yes
+
+Build:1.5.1,130
+    commit=audiorecorder-1.5.1
+    subdir=app
+    gradle=yes
+
+Build:1.5.2,131
+    commit=audiorecorder-1.5.2
+    subdir=app
+    gradle=yes
+
+Build:1.5.10,139
+    commit=audiorecorder-1.5.10
+    subdir=app
+    gradle=yes
+
+Build:1.5.11,140
+    commit=audiorecorder-1.5.11
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version audiorecorder-%v
+Update Check Mode:Tags
+Current Version:1.5.11
+Current Version Code:140

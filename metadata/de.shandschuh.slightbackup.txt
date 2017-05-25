@@ -8,6 +8,7 @@ Auto Name:Slight backup
 Summary:A very simple backup program
 Description:
 This small program allows you to backup and restore specific data:
+
 * SMS (only if the standard application is used)
 * Call-logs (no voicemails)
 * Settings (experimental)
@@ -55,4 +56,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:0.5.2
 Current Version Code:19
-

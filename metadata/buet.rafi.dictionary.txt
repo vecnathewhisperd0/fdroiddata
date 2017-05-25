@@ -1,5 +1,6 @@
-Categories:Office
-License:GPLv2
+Categories:Reading
+License:GPL-2.0
+Author Web Site:http://facebook.com/RidmikLab
 Web Site:
 Source Code:https://github.com/rafi-kamal/Bangla-Dictionary
 Issue Tracker:https://github.com/rafi-kamal/Bangla-Dictionary/issues
@@ -14,7 +15,6 @@ Based on ankur.org's database. More info
 Repo Type:git
 Repo:https://github.com/rafi-kamal/Bangla-Dictionary.git
 
-# use target to avoid build-tools bug if necessary
 Build:2.3,5
     commit=05901
 
@@ -26,4 +26,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:2.3
 Current Version Code:5
-

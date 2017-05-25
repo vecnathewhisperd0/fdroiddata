@@ -1,6 +1,6 @@
-Categories:System
-License:GPLv2
-Web Site:http://kismetwireless.net/android-swm/
+Categories:Connectivity
+License:GPL-2.0
+Web Site:http://kismetwireless.net/android-swm
 Source Code:http://kismetwireless.net/gitweb/?p=android-smarterwifi.git;a=summary
 Issue Tracker:
 
@@ -19,10 +19,39 @@ Build:2015.03.56,56
     commit=67a63902c880feccb24f65c867277ac466cc7cc1
     subdir=SmarterWifiManager
     gradle=yes
-    prebuild=mkdir -p build/outputs/apk  && cd build && ln -s outputs/apk/ apk
+
+Build:2015.04.59,59
+    commit=e499a21a53e23a58eff672646a4ad13e5d55fdc2
+    subdir=SmarterWifiManager
+    gradle=yes
+
+Build:2015.07.70,70
+    commit=6169262b53e849771133082e58faf48f8e003bab
+    subdir=SmarterWifiManager
+    gradle=standard
+
+Build:2015.12.77,77
+    disable=gradle issue
+    commit=5b10aa433396dda1221ac066cd558927a1a1476a
+    subdir=SmarterWifiManager
+    gradle=standard
+
+Build:2016.11.84,84
+    commit=cf6f42ef56c7c63efba760ed9f62055c31d22fab
+    subdir=SmarterWifiManager
+    gradle=standard
+
+Build:2016.12.85,85
+    commit=8ffa4f630ac9338ca63eb755ea6b8bd804e37f41
+    subdir=SmarterWifiManager
+    gradle=standard
+
+Maintainer Notes:
+Version information are stored in gradle variables, so our update checks
+don't detect them now.
+.
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:2015.03.56
-Current Version Code:56
-
+Update Check Mode:None
+Current Version:2016.11.84
+Current Version Code:84

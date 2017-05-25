@@ -1,4 +1,4 @@
-Categories:Office
+Categories:Development
 License:WTFPL
 Web Site:
 Source Code:https://github.com/Gittner/OSMBugs
@@ -14,6 +14,7 @@ Supported Platforms:
 * Notes
 * Keepright
 * Mapdust
+* Osmose
 .
 
 Repo Type:git
@@ -49,8 +50,23 @@ Build:0-9-0,19
     subdir=app
     gradle=yes
 
+Build:0-9-1,20
+    commit=0-9-1
+    subdir=app
+    gradle=yes
+
+Build:0-9-3,22
+    disable=vanished material-dialogs
+    commit=0-9-3
+    subdir=app
+    gradle=yes
+
+Build:0-9-4,23
+    commit=0-9-4
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0-9-0
-Current Version Code:19
-
+Current Version:0-9-4
+Current Version Code:23

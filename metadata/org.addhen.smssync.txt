@@ -1,5 +1,5 @@
 Categories:Phone & SMS
-License:LGPL
+License:LGPL-3.0
 Web Site:http://smssync.ushahidi.com
 Source Code:https://github.com/ushahidi/SMSSync
 Issue Tracker:https://github.com/ushahidi/SMSSync/issues
@@ -8,8 +8,8 @@ Donate:http://ushahidi.com/get-involved
 Auto Name:SMSsync
 Summary:SMS to internet gateway
 Description:
-Have received SMS' forwarded to an internet url. Options exist to filter by keywords, to block
-SMS' that don't include a secret and to identify the sender.
+Have received SMS' forwarded to an internet url. Options exist to filter by
+keywords, to block SMS' that don't include a secret and to identify the sender.
 .
 
 Repo Type:git
@@ -70,8 +70,28 @@ Build:2.7.3,26
     gradle=noAnalytics
     prebuild=sed -i -e '/flavorDimensions/i*/' -e '/applicationVariants/i/*' build.gradle
 
+Build:2.8.0,31
+    disable=wip
+    commit=v2.8.0-rc.1
+    subdir=smssync
+    gradle=noAnalytics
+    srclibs=CWACMerge@v1.0.1,CWACSacklist@v1.0.1
+    rm=smssync/libs/*.jar
+    prebuild=sed -i -e '/flavorDimensions/i*/' -e '/applicationVariants/i/*' -e '/commonsware/d' build.gradle && \
+        sed -i -e '/maven {/d' -e '/amazonaws/,+1d' ../build.gradle && \
+        cp -fR $$CWACMerge$$/merge/src/com src/main/java/ && \
+        cp -fR $$CWACSacklist$$/sacklist/src/com src/main/java && \
+        sed -i -e '153,163d' build.gradle && \
+        sed -i -e '/grgit/d' build.gradle
+
+Build:2.8.3,36
+    disable=incredible gradle mess, no way to build from a clean clone
+    commit=v2.8.3
+    subdir=smssync
+    gradle=noAnalytics
+    rm=smssync/libs
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:2.8.0
-Current Version Code:30
-
+Current Version:2.8.3
+Current Version Code:36

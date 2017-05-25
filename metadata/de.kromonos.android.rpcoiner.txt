@@ -1,6 +1,6 @@
 Disabled:Alpha and development stopped
-Categories:Office
-License:GPLv3
+Categories:Money
+License:GPL-3.0
 Web Site:http://kromonos.net
 Source Code:https://gitorious.org/rpcoiner/rpcoiner
 Issue Tracker:https://bugs.bka.li/describecomponents.cgi?product=RPCoiner
@@ -19,8 +19,6 @@ Build:0.1 Alpha,1
     subdir=RPCoiner
 
 Auto Update Mode:None
-#version in strings.xml
 Update Check Mode:Static
 Current Version:0.1 Alpha
 Current Version Code:1
-

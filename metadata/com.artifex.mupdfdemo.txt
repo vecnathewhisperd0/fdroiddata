@@ -1,25 +1,20 @@
 Categories:Reading
-License:AGPLv3+
+License:AGPL-3.0+
 Web Site:http://mupdf.com
 Source Code:http://git.ghostscript.com/?p=mupdf.git;a=summary
 Issue Tracker:http://bugs.ghostscript.com
+Changelog:http://git.ghostscript.com/?p=mupdf.git;a=blob_plain;f=CHANGES;hb=HEAD
 
 Auto Name:MuPDF
 Summary:Lightweight document viewer
 Description:
-'''N.B''' The names of the versions correspond to the chip architectures that
-the apk is designed to run on.
-This is the only PDF viewer we have that is designed for MIPS; the ARM apk
-contains libraries for both ARM and ARMv7a.
-
 MuPDF supports PDF 1.7 with transparency, encryption, hyperlinks, annotations,
-searching, form editing and more.
-It also reads OpenXPS and CBZ (comic book) documents.
+searching, form editing and more. It also reads OpenXPS and CBZ (comic book)
+documents.
 .
 
 Repo Type:git
-#Repo:https://git.ghostscript.com/mupdf.git
-Repo:http://git.ghostscript.com/mupdf.git
+Repo:http://git.ghostscript.com/mupdf-android-viewer-old.git
 
 Build:1.2,2
     commit=1.2
@@ -134,11 +129,229 @@ Build:1.6,63
     scandelete=build/debug/
     buildjni=yes
 
-Maintainer Notes:
-Our version codes differs until 1.5. With 1.6 we try to sync up with
-upstream releases. They will try to tag android releases and update
-their versionCode in the Manifest, too.
+Build:1.7,71
+    commit=1.7
+    subdir=platform/android
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i 's/armeabi-v7a/armeabi armeabi-v7a/g' jni/Application.mk && \
+        cd ../.. && \
+        make generate
+    scandelete=build/debug/
+    buildjni=yes
 
+Build:1.7,72
+    commit=1.7
+    subdir=platform/android
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/x86/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../.. && \
+        make generate
+    scandelete=build/debug/
+    buildjni=yes
+
+Build:1.7,73
+    commit=1.7
+    subdir=platform/android
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/mips/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../.. && \
+        make generate
+    scandelete=build/debug/
+    buildjni=yes
+
+Build:1.7a,76
+    commit=1.7a
+    subdir=platform/android
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i 's/armeabi-v7a/armeabi armeabi-v7a/g' jni/Application.mk && \
+        cd ../.. && \
+        make generate
+    scandelete=build/debug/
+    buildjni=yes
+
+Build:1.7a,77
+    commit=1.7a
+    subdir=platform/android
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/x86/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../.. && \
+        make generate
+    scandelete=build/debug/
+    buildjni=yes
+
+Build:1.7a,78
+    commit=1.7a
+    subdir=platform/android
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/mips/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../.. && \
+        make generate
+    scandelete=build/debug/
+    buildjni=yes
+
+Build:1.8,81
+    commit=1.8
+    subdir=platform/android
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i 's/armeabi-v7a/armeabi armeabi-v7a/g' jni/Application.mk && \
+        cd ../.. && \
+        make generate
+    scandelete=build/debug/,thirdparty/curl/tests/data/test*
+    buildjni=yes
+
+Build:1.8,82
+    commit=1.8
+    subdir=platform/android
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/x86/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../.. && \
+        make generate
+    scandelete=build/debug/,thirdparty/curl/tests/data/test*
+    buildjni=yes
+
+Build:1.8,83
+    commit=1.8
+    subdir=platform/android
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/mips/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../.. && \
+        make generate
+    scandelete=build/debug/,thirdparty/curl/tests/data/test*
+    buildjni=yes
+
+Build:1.9,91
+    commit=1.9a
+    subdir=platform/android/viewer
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i 's/armeabi-v7a/armeabi armeabi-v7a/g' jni/Application.mk && \
+        cd ../../.. && \
+        make generate
+    scandelete=build/release/,thirdparty/curl/tests/data/test*
+    buildjni=yes
+
+Build:1.9,92
+    commit=1.9a
+    subdir=platform/android/viewer
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/x86/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../../.. && \
+        make generate
+    scandelete=build/release/,thirdparty/curl/tests/data/test*
+    buildjni=yes
+
+Build:1.9,93
+    commit=1.9a
+    subdir=platform/android/viewer
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/mips/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../../.. && \
+        make generate
+    scandelete=build/release/,thirdparty/curl/tests/data/test*
+    buildjni=yes
+
+Build:1.10,101
+    commit=1.10a
+    subdir=platform/android/viewer
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/armeabi-v7a/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../../.. && \
+        make generate
+    scandelete=build/release/,thirdparty/curl/tests/data/test*
+    buildjni=yes
+    ndk=r11c
+
+Build:1.10,102
+    commit=1.10a
+    subdir=platform/android/viewer
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/x86/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../../.. && \
+        make generate
+    scandelete=build/release/,thirdparty/curl/tests/data/test*
+    buildjni=yes
+    ndk=r11c
+
+Build:1.10,103
+    commit=1.10a
+    subdir=platform/android/viewer
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/mips/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../../.. && \
+        make generate
+    scandelete=build/release/,thirdparty/curl/tests/data/test*
+    buildjni=yes
+    ndk=r11c
+
+Build:1.11,111
+    disable=wait for x86
+    commit=1.11
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=pushd libmupdf && \
+        make generate && \
+        popd && \
+        make release APP_ABI=armeabi-v7a
+    buildjni=yes
+    ndk=r11c
+
+Build:1.11,112
+    disable=needs some work
+    commit=1.11
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=pushd libmupdf && \
+        make generate && \
+        popd && \
+        make release APP_ABI=x86
+    buildjni=yes
+    ndk=r11c
+
+Build:1.11,113
+    disable=wait for x86
+    commit=1.11
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=pushd libmupdf && \
+        make generate && \
+        popd && \
+        make release APP_ABI=mips
+    buildjni=yes
+    ndk=r11c
+
+Maintainer Notes:
 armeabi = baseversion + 0, e.g. mupdf-1.5-android-50-armeabi.apk
 armv7 = baseversion + 1, e.g. mupdf-1.5-android-51-armv7a.apk
 x86 = baseversion + 2, e.g. mupdf-1.5-android-52-x86.apk
@@ -153,9 +366,16 @@ http://www.mupdf.com/docs/how-to-build-mupdf-for-android
 http://mupdf.com/downloads/
 http://twiki.ghostscript.com/do/view/MuPDF/AndroidReleases
 http://git.ghostscript.com/?p=mupdf.git;a=blob;f=platform/android/jni/Application.mk;h=60909b6e9989b79231a6f3a7a04f371039185dbf;hb=HEAD
+
+Versions:
+Split Android and iOS viewers into separate projects:
+ * mupdf-viewer-ios.git has the iOS viewer.
+ * mupdf-viewer-android-old.git has the Android viewer.
+ * mupdf-viewer-android-nui.git has a new advanced Android viewer.
+ * mupdf-viewer-android-mini.git has a new minimalist Android viewer.
 .
 
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:1.6
-Current Version Code:63
+Current Version:1.10
+Current Version Code:103

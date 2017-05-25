@@ -1,6 +1,6 @@
 AntiFeatures:UpstreamNonFree
-Categories:Office
-License:GPLv3
+Categories:System
+License:GPL-3.0
 Web Site:
 Source Code:https://github.com/loadrunner/Facebook-Contact-Sync
 Issue Tracker:https://github.com/loadrunner/Facebook-Contact-Sync/issues
@@ -8,9 +8,8 @@ Issue Tracker:https://github.com/loadrunner/Facebook-Contact-Sync/issues
 Auto Name:UberSync for Facebook
 Summary:Sync your Facebook Contacts
 Description:
-To configure, go to "Settings => Accounts & Sync => Add Account".
-Depending on how many friends you have, the first import might take a while,
-so be patient.
+To configure, go to "Settings => Accounts & Sync => Add Account". Depending on
+how many friends you have, the first import might take a while, so be patient.
 
 * Facebook does not allow to export phone numbers or emails: only names, pictures and statuses are synced.
 * Facebook users have the option to block one or all apps: if they opt for that, they will be EXCLUDED from your friends list.
@@ -58,8 +57,8 @@ Build:2.1.1,48
 Build:2.1.2,49
     disable=Labelled as pre-release, so skipped
 
+Archive Policy:0 versions
 Auto Update Mode:None
-Update Check Mode:Tags
+Update Check Mode:None
 Current Version:2.1.2
 Current Version Code:49
-

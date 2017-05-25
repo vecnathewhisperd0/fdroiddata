@@ -9,3 +9,5 @@
 *.pyc
 .fdroid*
 *.apk
+*.jks
+/metadata/dump_*

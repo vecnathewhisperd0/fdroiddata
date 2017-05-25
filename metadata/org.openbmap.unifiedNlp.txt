@@ -1,5 +1,5 @@
 Categories:Navigation
-License:AGPLv3
+License:AGPL-3.0
 Web Site:http://www.radiocells.org
 Source Code:https://github.com/wish7code/org.openbmap.unifiedNlpProvider
 Issue Tracker:https://github.com/wish7code/org.openbmap.unifiedNlpProvider/issues
@@ -37,8 +37,69 @@ Build:0.1.2,4
     gradle=yes
     rm=libs/*
 
+Build:0.1.3,5
+    commit=v0.1.3
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.1.4,6
+    commit=v0.1.4
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.1.5,7
+    disable=broken
+    commit=v0.1.5
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.1.6,8
+    commit=v0.1.6
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.1.8,9
+    commit=v0.1.8
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.1.11,12
+    commit=v0.1.11
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.2.2,14
+    commit=v0.2.2
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.2.3,15
+    commit=v0.2.3
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.2.5,17
+    disable=old failing build
+    commit=v0.2.5
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
+Build:0.2.6,18
+    commit=v0.2.6
+    submodules=yes
+    gradle=yes
+    rm=libs/*
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.1.2
-Current Version Code:4
-
+Current Version:0.2.6
+Current Version Code:18

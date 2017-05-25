@@ -1,5 +1,5 @@
 Categories:Development
-License:Apache2
+License:Apache-2.0
 Web Site:https://github.com/joanpuigsanz/servdroid/wiki
 Source Code:https://github.com/joanpuigsanz/servdroid
 Issue Tracker:https://github.com/joanpuigsanz/servdroid/issues
@@ -8,6 +8,7 @@ Auto Name:ServDroid
 Summary:Web server
 Description:
 Auto start options
+
 * Can run under port 1024 (iptables and super user rights are required). Check the wiki for more information
 * Only serves HTML pages (Servlets implementations will be considered for in future versions).
 * Log of all requests are saved in the Android database. This information can be dumped to a text file.
@@ -28,4 +29,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:1.0.3
 Current Version Code:1000300
-

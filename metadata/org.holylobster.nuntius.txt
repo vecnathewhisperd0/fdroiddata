@@ -1,18 +1,17 @@
-Categories:Office
-License:GPLv2+
+Categories:System
+License:GPL-2.0+
 Web Site:https://github.com/holylobster/nuntius-android/blob/HEAD/README.md
 Source Code:https://github.com/holylobster/nuntius-android
 Issue Tracker:https://github.com/holylobster/nuntius-android/issues
+Changelog:https://raw.githubusercontent.com/holylobster/nuntius-android/HEAD/NEWS
 
 Auto Name:Nuntius
 Summary:Push notifications to a desktop PC
 Description:
-Nuntius delivers notifications from your phone or tablet to your computer
-over Bluetooth. To use Nuntius you will need to install a companion tool
-on your computer and pair your phone via Bluetooth. See the README for
-additional information.
-
-[https://raw.githubusercontent.com/holylobster/nuntius-android/HEAD/NEWS Changelog]
+Nuntius delivers notifications from your phone or tablet to your computer over
+Bluetooth. To use Nuntius you will need to install a companion tool on your
+computer and pair your phone via Bluetooth. See the README for additional
+information.
 .
 
 Repo Type:git
@@ -33,8 +32,12 @@ Build:1.0.2,3
     subdir=app
     gradle=yes
 
+Build:1.1,4
+    commit=v1.1
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.0.2
-Current Version Code:3
-
+Current Version:1.1
+Current Version Code:4

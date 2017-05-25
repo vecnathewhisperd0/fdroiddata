@@ -1,8 +1,9 @@
 Categories:Multimedia
-License:Apache2
-Web Site:
+License:Apache-2.0
+Web Site:https://github.com/abarisain/dmix/blob/HEAD/README.md
 Source Code:https://github.com/abarisain/dmix
 Issue Tracker:https://github.com/abarisain/dmix/issues
+Changelog:https://github.com/abarisain/dmix/releases
 
 Auto Name:MPDroid
 Summary:MPD (Music Player Daemon) client
@@ -76,10 +77,10 @@ Build:1.06,40
 Build:1.07.2,54
     commit=1_07_2_final
     subdir=MPDroid
-    gradle=foss
-    forceversion=yes
     init=sed -i '/crashlytics/d' build.gradle && \
         sed -i '/gradleVersion/d' ../build.gradle
+    gradle=foss
+    forceversion=yes
 
 Maintainer Notes:
 Remove the gradleVersion sed once it is set up correctly (using 2.1 instead of

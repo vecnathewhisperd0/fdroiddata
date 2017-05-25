@@ -1,4 +1,4 @@
-Categories:Office
+Categories:Graphics
 License:MIT
 Web Site:https://github.com/snaheth/TrulyRandom/blob/HEAD/README.md
 Source Code:https://github.com/snaheth/TrulyRandom
@@ -7,12 +7,12 @@ Issue Tracker:https://github.com/snaheth/TrulyRandom/issues
 Auto Name:Truly Random
 Summary:Generate random gradients
 Description:
-Use a random number generator at Australia National University's Quantum
-Numbers lab to generate random gradients.
+Use a random number generator at Australia National University's Quantum Numbers
+lab to generate random gradients.
 
-If you are not connected to the internet, the generated numbers and
-gradients will still be random, but not as random as the numbers you
-could get by being connected to the internet.
+If you are not connected to the internet, the generated numbers and gradients
+will still be random, but not as random as the numbers you could get by being
+connected to the internet.
 .
 
 Repo Type:git
@@ -24,8 +24,11 @@ Build:1.01,2
     subdir=app
     gradle=yes
 
+Maintainer Notes:
+Github repo deleted.
+.
+
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:None
 Current Version:1.01
 Current Version Code:2
-

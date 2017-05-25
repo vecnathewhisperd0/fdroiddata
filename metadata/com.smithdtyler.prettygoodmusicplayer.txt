@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:GPLv3
+License:GPL-3.0
 Web Site:
 Source Code:https://github.com/smithdtyler/prettygoodmusicplayer
 Issue Tracker:https://github.com/smithdtyler/prettygoodmusicplayer/issues
@@ -106,8 +106,49 @@ Build:3.2.7,58
     commit=3.2.7
     forceversion=yes
 
+Build:3.2.9,60
+    commit=3.2.9
+    forceversion=yes
+
+Build:3.2.10,61
+    commit=3.2.10
+    forceversion=yes
+
+Build:3.2.11,62
+    commit=3.2.11
+    forceversion=yes
+
+Build:3.2.14,65
+    disable=xml error in manifest
+    commit=3.2.14
+
+Build:3.2.15,66
+    commit=3.2.15
+
+Build:3.2.16,67
+    commit=3.2.16
+
+Build:3.3.0,69
+    commit=3.3.0
+    gradle=yes
+    rm=libs
+
+Build:3.3.1,70
+    commit=3.3.1
+    gradle=yes
+    rm=libs
+
+Build:3.3.2,71
+    commit=3.3.2
+    gradle=yes
+    rm=libs
+
+Build:3.3.3,72
+    commit=3.3.3
+    gradle=yes
+    rm=libs
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]*$
-Current Version:3.2.7
-Current Version Code:58
-
+Current Version:3.3.3
+Current Version Code:72

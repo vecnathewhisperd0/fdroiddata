@@ -1,5 +1,5 @@
 Categories:Navigation
-License:Apache2
+License:Apache-2.0
 Web Site:https://www.traccar.org
 Source Code:https://github.com/tananaev/traccar-client-android
 Issue Tracker:https://github.com/tananaev/traccar-client-android/issues
@@ -8,8 +8,8 @@ Donate:http://www.traccar.org/donate.jsp
 Auto Name:Traccar Client
 Summary:Track your location
 Description:
-Client for Traccar server software. A demo server is setup in the app
-for trying it out and the results can be viewed in a browser.
+Client for Traccar server software. A demo server is setup in the app for trying
+it out and the results can be viewed in a browser.
 .
 
 Repo Type:git
@@ -43,8 +43,64 @@ Build:3.0,20
     subdir=traccar-client
     gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:3.0
-Current Version Code:20
+Build:3.2,22
+    commit=v3.2
+    subdir=traccar-client
+    gradle=yes
 
+Build:3.7,27
+    commit=v3.7
+    subdir=app
+    gradle=regular
+
+Build:3.8,28
+    commit=v3.8
+    subdir=app
+    gradle=regular
+
+Build:3.9,29
+    commit=v3.9
+    subdir=app
+    gradle=regular
+
+Build:3.10,30
+    commit=v3.10
+    subdir=app
+    gradle=regular
+
+Build:3.11,31
+    commit=v3.11
+    subdir=app
+    gradle=regular
+
+Build:3.12,32
+    disable=plugin 2.2.0 not set up properly
+    commit=v3.12
+    subdir=app
+    gradle=regular
+
+Build:4.0,33
+    disable=build fails
+    commit=v4.0
+    subdir=app
+    gradle=regular
+
+Build:4.1,34
+    commit=v4.1
+    subdir=app
+    gradle=regular
+
+Build:4.2,35
+    commit=v4.2
+    subdir=app
+    gradle=regular
+
+Build:4.3,36
+    commit=v4.3
+    subdir=app
+    gradle=regular
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:4.3
+Current Version Code:36

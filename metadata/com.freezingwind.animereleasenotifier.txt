@@ -1,5 +1,5 @@
-Categories:Office
-License:GPLv2+
+Categories:Time
+License:GPL-2.0+
 Web Site:https://animereleasenotifier.com
 Source Code:https://github.com/blitzprog/anime-release-notifier-android
 Issue Tracker:https://github.com/blitzprog/anime-release-notifier-android/issues
@@ -7,9 +7,8 @@ Issue Tracker:https://github.com/blitzprog/anime-release-notifier-android/issues
 Auto Name:Anime Release Notifier
 Summary:Track anime release dates
 Description:
-Fetches your anime "watching" list and notifies you when a new anime
-episode is available. It also displays the time until a new episode
-is released.
+Fetches your anime "watching" list and notifies you when a new anime episode is
+available. It also displays the time until a new episode is released.
 
 Supports anime lists from:
 
@@ -37,8 +36,12 @@ Build:0.1.7,8
     subdir=app
     gradle=yes
 
+Build:0.1.8,9
+    commit=5f366cf0baa5e5974e61ab0491814fc681f39b50
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:0.1.7
-Current Version Code:8
-
+Current Version:0.1.8
+Current Version Code:9

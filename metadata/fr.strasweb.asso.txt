@@ -1,5 +1,5 @@
 Categories:Navigation
-License:GPLv3
+License:GPL-3.0
 Web Site:http://www.chacunsonasso.net
 Source Code:https://svn.strasweb.fr/strasweb/API%20Animafac/phonegap
 Issue Tracker:
@@ -7,9 +7,9 @@ Issue Tracker:
 Auto Name:ChacunSonAsso
 Summary:For French students
 Description:
-This app allows students wishing to volunteer to find an association that suits them.
-It allows you to search for associations in the Animafac directory,
-by theme, department and name.
+This app allows students wishing to volunteer to find an association that suits
+them. It allows you to search for associations in the Animafac directory, by
+theme, department and name.
 .
 
 Repo Type:git-svn
@@ -23,4 +23,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.0.1
 Current Version Code:2
-

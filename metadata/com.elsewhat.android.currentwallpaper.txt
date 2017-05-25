@@ -1,14 +1,14 @@
-Categories:Wallpaper,Multimedia
-License:Apache2
-Web Site:
+Categories:Theming,Multimedia
+License:Apache-2.0
+Web Site:http://elsewhat.com
 Source Code:https://github.com/elsewhat/com.elsewhat.android.currentwallpaper
 Issue Tracker:https://github.com/elsewhat/com.elsewhat.android.currentwallpaper/issues
 
 Auto Name:Current Wallpaper
 Summary:Display wallpapers as standalone
 Description:
-Show the current wallpaper in fullscreen without conflicting elements from
-the launcher or app icons.
+Show the current wallpaper in fullscreen without conflicting elements from the
+launcher or app icons.
 .
 
 Repo Type:git
@@ -21,4 +21,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.0
 Current Version Code:2
-

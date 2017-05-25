@@ -1,5 +1,5 @@
-Categories:Office
-License:GPLv3
+Categories:Security
+License:GPL-3.0
 Web Site:https://guardianproject.info
 Source Code:https://github.com/guardianproject/PixelKnot
 Issue Tracker:https://github.com/guardianproject/PixelKnot/issues
@@ -19,8 +19,27 @@ Build:0.3.1,4
     init=sed -i '/reference/d' project.properties
     srclibs=2:ActionBarSherlock@90939dc,1:F5@ce9c78497a0cc22a
 
+Build:0.3.3,6
+    commit=0.3.3
+    subdir=app
+    submodules=yes
+    init=mv res/values-zh_TW res/values-zh-rTW && \
+        mv res/values-nb_NO res/values-nb-rNO
+    target=android-22
+
+Build:1.0,10
+    commit=1.0.0
+    subdir=PixelKnot
+    submodules=yes
+    gradle=yes
+
+Build:1.0.1,101
+    commit=1.0.1
+    subdir=PixelKnot
+    submodules=yes
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:0.3.1
-Current Version Code:4
-
+Current Version:1.0.1
+Current Version Code:101

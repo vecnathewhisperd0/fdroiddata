@@ -1,10 +1,10 @@
 Categories:Internet
-License:GPLv3
-Web Site:http://cadroid.bitfire.at/#donations
+License:GPL-3.0
+Author Web Site:https://www.bitfire.at
+Web Site:http://cadroid.bitfire.at
 Source Code:https://github.com/bitfireAT/cadroid
 Issue Tracker:https://github.com/bitfireAT/cadroid/issues
-Donate:http://cadroid.bitfire.at/#donations
-#FlattrID:ad80f1bb8abbdacfba8e60c85d23791f
+Donate:https://davdroid.bitfire.at/donate
 FlattrID:2100160
 Bitcoin:1KSCy7RHztKuhW9fLLaUYqdwdC2iwbejZU
 
@@ -21,7 +21,8 @@ simply import the certificate from the file with a few clicks.
 
 When the certificate was imported correctly, it will be accepted in (nearly) all
 apps, including [[at.bitfire.davdroid]] and the Android email app don't choose
-"Accept all certificates" there, see [https://code.google.com/p/android/issues/detail?id=67038].
+"Accept all certificates" there, see
+[https://code.google.com/p/android/issues/detail?id=67038].
 .
 
 Repo Type:git
@@ -54,8 +55,23 @@ Build:1.0.1,6
     gradle=yes
     rm=app/libs/*
 
+Build:1.0.2,7
+    commit=v1.0.2
+    subdir=app
+    gradle=yes
+    rm=app/libs/*
+
+Build:1.0.3,8
+    commit=v1.0.3
+    subdir=app
+    gradle=yes
+    rm=app/libs/*
+
+Maintainer Notes:
+FlattrID:ad80f1bb8abbdacfba8e60c85d23791f
+.
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.0.1
-Current Version Code:6
-
+Current Version:1.0.3
+Current Version Code:8

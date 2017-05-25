@@ -1,5 +1,5 @@
 Categories:Navigation
-License:GPLv3
+License:GPL-3.0
 Web Site:http://keepingtracks.seawolfsanctuary.com
 Source Code:http://code.seawolfsanctuary.com/keepingtracks
 Issue Tracker:http://code.seawolfsanctuary.com/keepingtracks/issues?status=new&status=open
@@ -8,7 +8,6 @@ FlattrID:1146360
 Auto Name:KeepingTracks
 Summary:Keep track of your rail journeys
 Description:
-
 Features:
 
 * auto-complete station names and three-letter codes
@@ -101,4 +100,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:1.06
 Current Version Code:20140222
-

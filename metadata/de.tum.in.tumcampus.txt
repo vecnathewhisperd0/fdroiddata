@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPLv3 or New BSD
+License:GPL-3.0
 Web Site:https://apps.wiki.tum.de/TUM+Campus+App
 Source Code:https://github.com/TCA-Team/TumCampusApp
 Issue Tracker:https://github.com/TCA-Team/TumCampusApp/issues
@@ -7,8 +7,8 @@ Issue Tracker:https://github.com/TCA-Team/TumCampusApp/issues
 Auto Name:TUM Campus App
 Summary:Information about TU München
 Description:
-The Technical University of Munich is one of the biggest in Germany.
-This app displays:
+The Technical University of Munich is one of the biggest in Germany. This app
+displays:
 
 * Events
 * Messages
@@ -21,10 +21,9 @@ This app displays:
 * Automatic muting of the phone during lectures
 * Access to TUMonline
 
-This app uses binary jar files that have been verified to match their
-upstream versions.
-Bugsense has been removed for F-droid distribution.
-Status: Active Development.
+This app uses binary jar files that have been verified to match their upstream
+versions. Bugsense has been removed for F-droid distribution. Status: Active
+Development.
 .
 
 Repo Type:git
@@ -48,8 +47,18 @@ Build:1.1.5,35
         rm libs/bugsense* && \
         cp libs/android-support-v4.jar $$ActionBarSherlock$$/libs/android-support-v4.jar
 
+Build:1.3.0,55
+    disable=play-services
+    commit=0e49b58970d72de82dc5172c3c78a6774f0e52e6
+    subdir=app
+    gradle=yes
+
+Maintainer Notes:
+See https://github.com/TCA-Team/TumCampusApp/issues/226
+.
+
+Archive Policy:0 versions
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.1.5
-Current Version Code:35
-
+Current Version:1.4.8-dev
+Current Version Code:514

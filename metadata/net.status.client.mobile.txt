@@ -1,6 +1,6 @@
 Disabled:Doesn't work and we can't build it as it uses Titanium SDK
 Categories:Internet
-License:Apache2
+License:Apache-2.0
 Web Site:http://status.net/wiki/Client
 Source Code:http://www.gitorious.org/statusnet-client
 Issue Tracker:
@@ -14,4 +14,3 @@ Auto Update Mode:None
 Update Check Mode:Static
 Current Version:1.0.2
 Current Version Code:2
-

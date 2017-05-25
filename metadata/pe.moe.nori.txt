@@ -7,13 +7,15 @@ Issue Tracker:https://github.com/vomitcuddle/nori/issues
 Auto Name:Nori
 Summary:Online gallery viewer
 Description:
-Connect to Danbooru image galleries and browse by
-tags (A swipe from the side reveals the action bar).
+This app has been deprecated in favor of [[io.github.tjg1.nori]] from the same
+author.
 
-The safebooru.org site is preloaded which shows Anime images
-that are considered 'safe for work'. Note that the images there are usually
-of high quality and though the app is fast, a lot of data
-will be downloaded.
+Connect to Danbooru image galleries and browse by tags (A swipe from the side
+reveals the action bar).
+
+The safebooru.org site is preloaded which shows Anime images that are considered
+'safe for work'. Note that the images there are usually of high quality and
+though the app is fast, a lot of data will be downloaded.
 .
 
 Repo Type:git
@@ -29,8 +31,8 @@ Build:1.2.0,11
     srclibs=1:Volley@android-4.4_r1.2,2:NoAnalytics@c8d7785075
     rm=libs/libGoogleAnalyticsV2.jar
 
+Archive Policy:0 versions
 Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:1.2.0
 Current Version Code:11
-

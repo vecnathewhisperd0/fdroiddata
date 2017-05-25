@@ -1,9 +1,9 @@
 Categories:System
-License:GPLv3
-Web Site:http://sufficientlysecure.org/index.php/android-apps/#ntpsync
-Source Code:https://github.com/dschuermann/ntp-sync
-Issue Tracker:https://github.com/dschuermann/ntp-sync/issues
-Donate:http://sufficientlysecure.org/index.php/android-apps/#ntpsync
+License:GPL-3.0
+Web Site:https://www.sufficientlysecure.org/android/
+Source Code:https://github.com/free-software-for-android/NTPSync
+Issue Tracker:https://github.com/free-software-for-android/NTPSync/issues
+Donate:https://www.sufficientlysecure.org/android/
 FlattrID:669294
 
 Auto Name:NTPSync
@@ -16,7 +16,7 @@ time root is needed.
 .
 
 Repo Type:git
-Repo:https://github.com/dschuermann/ntp-sync.git
+Repo:https://github.com/free-software-for-android/NTPSync.git
 
 Build:1.0,1
     commit=038ddd0d3e822c535339a2ef1ca513810ff15fd3
@@ -70,8 +70,12 @@ Build:1.9,11
     subdir=NTPSync
     gradle=fdroid
 
+Build:1.10,12
+    commit=v1.10
+    subdir=NTPSync
+    gradle=fdroid
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.9
-Current Version Code:11
-
+Current Version:1.10
+Current Version Code:12

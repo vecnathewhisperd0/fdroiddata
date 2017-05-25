@@ -1,6 +1,6 @@
-Categories:Office
-License:Apache2
-Web Site:https://github.com/wakhub/tinyclock/blob/HEAD/README.rst
+Categories:Time
+License:Apache-2.0
+Web Site:http://www.wakcat.com
 Source Code:https://github.com/wakhub/tinyclock
 Issue Tracker:https://github.com/wakhub/tinyclock/issues
 
@@ -29,4 +29,3 @@ Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:1.2.2
 Current Version Code:5
-

@@ -1,5 +1,5 @@
 Categories:Development
-License:GPLv3
+License:GPL-3.0
 Web Site:http://blog.ecomobilecitizen.com/android/bluetoothviewer
 Source Code:https://github.com/janosgyerik/bluetoothviewer
 Issue Tracker:https://github.com/janosgyerik/bluetoothviewer/issues
@@ -42,8 +42,17 @@ Build:1.0.4,5
     gradle=yes
     rm=scripts,samples,graphics
 
+Build:1.1.1,7
+    commit=v7
+    subdir=bluetoothviewer-lite
+    gradle=yes
+
+Build:1.1.2,8
+    commit=v8
+    subdir=bluetoothviewer-lite
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.0.4
-Current Version Code:5
-
+Current Version:1.1.2
+Current Version Code:8

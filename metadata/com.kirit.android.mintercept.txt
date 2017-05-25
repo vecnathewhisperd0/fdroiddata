@@ -1,6 +1,6 @@
 Disabled:SVN source code repo gives a 503, can't be cloned
 Categories:Games
-License:GPLv3+
+License:GPL-3.0+
 Web Site:http://www.kirit.com/Missile%20intercept
 Source Code:http://www.kirit.com/Missile%20intercept
 Issue Tracker:
@@ -8,8 +8,8 @@ Issue Tracker:
 Auto Name:Missile intercept
 Summary:Missile Command style game
 Description:
-A game in the style of the classic Missile Command. Defend your cities from incoming
-enemy missiles.
+A game in the style of the classic Missile Command. Defend your cities from
+incoming enemy missiles.
 .
 
 Repo Type:git-svn
@@ -24,4 +24,3 @@ Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:0.5.1
 Current Version Code:6
-

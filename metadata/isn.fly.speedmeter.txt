@@ -1,5 +1,5 @@
 Categories:Navigation
-License:GPLv2
+License:GPL-2.0
 Web Site:
 Source Code:https://github.com/flyingrub/SpeedMeter
 Issue Tracker:https://github.com/flyingrub/SpeedMeter/issues
@@ -9,12 +9,14 @@ Auto Name:SpeedMeter
 Summary:Lightweight speed meter
 Description:
 This app can display some useful information about a route:
+
 * Actual speed
 * Time elapsed
 * M or KM traveled
 * Max speed
 
-Upstream changed application id, newer versions are available at [[fly.speedmeter.grub]].
+Upstream changed application id, newer versions are available at
+[[fly.speedmeter.grub]].
 .
 
 Repo Type:git
@@ -33,8 +35,8 @@ Maintainer Notes:
 Disable after migration to new app id.
 .
 
+Archive Policy:0 versions
 Auto Update Mode:None
 Update Check Mode:Static
 Current Version:1.1
 Current Version Code:11
-

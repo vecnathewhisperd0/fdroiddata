@@ -1,5 +1,5 @@
-Categories:Office
-License:Apache2
+Categories:Multimedia
+License:Apache-2.0
 Web Site:
 Source Code:https://github.com/MiCode/SoundRecorder
 Issue Tracker:https://github.com/MiCode/SoundRecorder/issues
@@ -9,8 +9,8 @@ Summary:Record your voice
 Description:
 Simple sound recorder from the MiCode project.
 
-Uses AMR encoder which is part of Android though patent-encumbered, but
-a license to use it probably comes with your device.
+Uses AMR encoder which is part of Android though patent-encumbered, but a
+license to use it probably comes with your device.
 .
 
 Repo Type:git
@@ -24,4 +24,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.0
 Current Version Code:1
-

@@ -1,5 +1,5 @@
 Categories:Internet
-License:Apache2
+License:Apache-2.0
 Web Site:
 Source Code:https://github.com/nephoapp/anarxiv
 Issue Tracker:
@@ -18,8 +18,6 @@ Build:1.0,1
     target=android-8
 
 Auto Update Mode:None
-#v1.0 not in master; not updated since 02/11
 Update Check Mode:Static
 Current Version:1.0
 Current Version Code:1
-

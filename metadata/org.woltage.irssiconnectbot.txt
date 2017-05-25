@@ -1,9 +1,9 @@
 Categories:System
-License:Apache2
+License:Apache-2.0
 Web Site:
 Source Code:https://github.com/irssiconnectbot/irssiconnectbot
 Issue Tracker:https://github.com/irssiconnectbot/irssiconnectbot/issues
-Donate:http://bit.ly/icbDonate
+Donate:http://icb.woltage.org/donate.php
 Bitcoin:12Xe9L8Kam2F838RipTstT1BAxWLZjWRxh
 
 Auto Name:Irssi ConnectBot
@@ -17,12 +17,11 @@ other utilities through SSH.
 * Left/Right swipe changes irc channel
 * Long press opens popup menu with commands
 
-[[org.pocketworkstation.pckeyboard]],
-[[com.anysoftkeyboard.languagepack.SSH]] and the Android
-PC-keyboard-layout in Android 4.1 are well suited to terminal work.
+[[org.pocketworkstation.pckeyboard]], [[com.anysoftkeyboard.languagepack.SSH]]
+and the Android PC-keyboard-layout in Android 4.1 are well suited to terminal
+work.
 .
 
-# possible move to https://github.com/irssiconnectbot/irssiconnectbot2
 Repo Type:git
 Repo:https://github.com/irssiconnectbot/irssiconnectbot.git
 
@@ -40,4 +39,3 @@ Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.7.1-irssi
 Current Version Code:395
-

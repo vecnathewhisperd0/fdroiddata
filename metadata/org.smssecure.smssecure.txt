@@ -1,24 +1,26 @@
-Categories:Phone & SMS
-License:GPLv3
-Web Site:http://www.smssecure.org
-Source Code:https://github.com/SMSSecure/SMSSecure
-Issue Tracker:https://github.com/SMSSecure/SMSSecure/issues
+Categories:Phone & SMS,Security
+License:GPL-3.0
+Web Site:https://silence.im/
+Source Code:https://github.com/SilenceIM/Silence
+Issue Tracker:https://github.com/SilenceIM/Silence/issues
+Changelog:https://github.com/SilenceIM/Silence/blob/HEAD/CHANGELOG.md
+Bitcoin:1LoKZXg3bx6kfwAhEFQqS9pgeCE1CFMEJb
 
-Auto Name:SMSSecure
-Summary:Send encrypted text messages (SMS)
+Auto Name:Silence
+Summary:Send encrypted text messages (SMS/MMS)
 Description:
-SMSSecure is an SMS/MMS application that allows you to protect your privacy while communicating with friends.
-Using SMSSecure, you can send SMS messages and share media or attachments with complete privacy.
+Silence is an SMS/MMS application that allows you to protect your privacy while
+communicating with friends. Using Silence, you can send SMS messages and share
+media or attachments with complete privacy.
 
-* Easy. SMSSecure works like any other SMS application. There's nothing to sign up for and no new service your friends need to join.
-* Reliable. SMSSecure communicates using encrypted SMS messages. No servers or internet connection required.
-* Private. SMSSecure uses the TextSecure encryption protocol to provide privacy for every message, every time.
+* Easy. Silence works like any other SMS application. There's nothing to sign up for and no new service your friends need to join.
+* Reliable. Silence communicates using encrypted SMS messages. No servers or internet connection required.
+* Private. Silence provides end-to-end encryption for your messages using the painstakingly engineered Signal encryption protocol.
 * Safe. All messages are encrypted locally, so if your phone is lost or stolen, your messages are protected.
-* Open Source. SMSSecure is Free and Open Source, enabling anyone to verify its security by auditing the code.
 .
 
 Repo Type:git
-Repo:https://github.com/SMSSecure/SMSSecure
+Repo:https://github.com/SilenceIM/Silence
 
 Build:0.3.3,5
     disable=builds, merge changes into upstream
@@ -45,7 +47,7 @@ Build:0.3.3,5
         cp -fR smil/java/org src/ && \
         rm -fR smil && \
         sed -i -e '/org.w3c.smil/d' build.gradle && \
-        cp -fR $$AospMms$$/src/org src/ 
+        cp -fR $$AospMms$$/src/org src/
 
 Build:0.3.3,6
     disable=builds, wait for upstream
@@ -82,6 +84,7 @@ Build:0.5.1,11
         echo "org.gradle.jvmargs=-Xms512m -Xmx512m -XX:MaxPermSize=512m" >> gradle.properties
 
 Build:0.5.2,12
+    disable=broken in upstream
     commit=v0.5.2
     submodules=yes
     gradle=yes
@@ -90,8 +93,352 @@ Build:0.5.2,12
         ./scripts/build-witness.sh && \
         rm -rf libs/gradle-witness/build
 
-Auto Update Mode:Version v%v
-Update Check Mode:Tags
-Current Version:0.5.2
-Current Version Code:12
+Build:0.5.3,100
+    commit=v0.5.3
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
 
+Build:0.5.4,101
+    commit=v0.5.4
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.6.0,102
+    commit=v0.6.0
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.7.0,103
+    commit=v0.7.0
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.8.0,104
+    commit=v0.8.0
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.8.1,105
+    commit=v0.8.1
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.9.0,106
+    commit=v0.9.0
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.10.0,107
+    commit=v0.10.0
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.10.1,108
+    commit=v0.10.1
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.11.0,109
+    commit=v0.11.0
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.11.1,110
+    disable=build fails
+    commit=v0.11.1
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.11.2,111
+    disable=missing dependency (removed from jcenterI
+    commit=v0.11.2
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.11.3,112
+    commit=v0.11.3
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.12.0,113
+    commit=v0.12.0
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.12.1,114
+    commit=v0.12.1
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.12.3,116
+    commit=v0.12.3
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.13.0,117
+    commit=v0.13.0
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.13.1,118
+    commit=v0.13.1
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.13.2,119
+    commit=v0.13.2
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.14.0,120
+    commit=v0.14.0
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.14.1,121
+    commit=v0.14.1
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.14.2,122
+    commit=v0.14.2
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.14.3,123
+    commit=v0.14.3
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.14.4,124
+    commit=v0.14.4
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.14.5,125
+    commit=v0.14.5
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.14.6,126
+    commit=v0.14.6
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.14.7,127
+    commit=v0.14.7
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.14.8,128
+    commit=v0.14.8
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.1,129
+    commit=v0.15.1
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.2,130
+    commit=v0.15.2
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.0-unstable,131
+    commit=v0.16.0-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.4,133
+    commit=v0.15.4
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.5,134
+    commit=v0.15.5
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.6,135
+    commit=v0.15.6
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.7,136
+    commit=v0.15.7
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.1-unstable,200
+    commit=v0.16.1-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.2-unstable,201
+    commit=v0.16.2-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.3-unstable,202
+    commit=v0.16.3-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Archive Policy:12 versions
+Auto Update Mode:Version v%v
+Update Check Mode:Tags ^v[0-9\\.]+$
+Current Version:0.15.7
+Current Version Code:136

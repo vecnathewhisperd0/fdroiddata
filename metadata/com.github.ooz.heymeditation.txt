@@ -1,15 +1,14 @@
-Categories:Office
+Categories:Time
 License:MIT
-Web Site:https://github.com/ooz/HeyMeditation/blob/master/README.md
+Web Site:https://github.com/ooz/HeyMeditation/blob/HEAD/README.md
 Source Code:https://github.com/ooz/HeyMeditation
 Issue Tracker:https://github.com/ooz/HeyMeditation/issues
+Changelog:https://github.com/ooz/HeyMeditation/blob/HEAD/CHANGES.txt
 
 Auto Name:Hey! Meditation
 Summary:Helps with meditation sessions
 Description:
 Simple guide for short meditation sessions.
-
-[https://github.com/ooz/HeyMeditation/blob/HEAD/CHANGES.txt Changelog]
 .
 
 Repo Type:git
@@ -42,4 +41,3 @@ Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:1.1.1
 Current Version Code:4
-

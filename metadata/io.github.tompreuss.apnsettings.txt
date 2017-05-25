@@ -1,5 +1,5 @@
 Categories:System
-License:GPLv3+
+License:GPL-3.0+
 Web Site:
 Source Code:https://github.com/tompreuss/APNSettings
 Issue Tracker:https://github.com/tompreuss/APNSettings/issues
@@ -15,11 +15,10 @@ Repo:https://github.com/tompreuss/APNSettings.git
 
 Build:1.0,1
     commit=v1.0
-    gradle=yes
     subdir=app
+    gradle=yes
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Tags
 Current Version:1.0
 Current Version Code:1
-

@@ -1,19 +1,17 @@
 Categories:Navigation
-License:GPLv3
+License:GPL-3.0
 Web Site:http://jkliemann.de/parkendd
 Source Code:https://github.com/jklmnn/ParkenDD
 Issue Tracker:https://github.com/jklmnn/ParkenDD/issues
-#FlattrID:https://flattr.com/thing/752f3c69bfdeca06686f730348e93fdd
 FlattrID:752f3c69bfdeca06686f730348e93fdd
 Bitcoin:1HBFDdz7dJeBE2c3zQmWnzeWCbHoZQ64dd
 
 Auto Name:ParkenDD
 Summary:Show available parking slots in Dresden
 Description:
-Shows available parking lots in Dresden, Germany. Note that the
-homepage is only available in German at the moment. The app is
-translated into English and a few other languages. Further
-languages will come.
+Shows available parking lots in Dresden, Germany. Note that the homepage is only
+available in German at the moment. The app is translated into English and a few
+other languages. Further languages will come.
 .
 
 Repo Type:git
@@ -79,8 +77,83 @@ Build:0.6.0-test,12
     subdir=app
     gradle=yes
 
+Build:0.6.1-test,13
+    commit=v0.6.1-test
+    subdir=app
+    gradle=yes
+
+Build:0.7.0-test,14
+    commit=v0.7.0-test
+    subdir=app
+    gradle=yes
+
+Build:0.7.1-test,15
+    commit=v0.7.1-test
+    subdir=app
+    gradle=yes
+
+Build:0.7.2-test,16
+    commit=v0.7.2-test
+    subdir=app
+    gradle=yes
+
+Build:0.7.3-test,17
+    commit=v0.7.3-test
+    subdir=app
+    gradle=yes
+
+Build:0.7.4-test,18
+    commit=v0.7.4-test
+    subdir=app
+    gradle=yes
+
+Build:0.8.0,19
+    commit=v0.8.0
+    subdir=app
+    gradle=yes
+
+Build:0.8.1,20
+    commit=v0.8.1
+    subdir=app
+    gradle=yes
+
+Build:1.0.0,21
+    commit=v1.0.0
+    subdir=app
+    gradle=yes
+
+Build:1.1.0,22
+    disable=lint errors
+    commit=v1.1.0
+    subdir=app
+    gradle=yes
+
+Build:1.1.1,23
+    commit=v1.1.1
+    subdir=app
+    gradle=yes
+
+Build:1.1.2,24
+    commit=v1.1.2
+    subdir=app
+    gradle=yes
+
+Build:1.2.0,25
+    commit=v1.2.0
+    subdir=app
+    gradle=yes
+
+Build:1.2.1,26
+    commit=v1.2.1
+    subdir=app
+    gradle=yes
+
+Build:1.2.2,27
+    commit=v1.2.2
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.6.0-test
-Current Version Code:12
-
+Current Version:1.2.2
+Current Version Code:27

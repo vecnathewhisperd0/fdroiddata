@@ -1,0 +1,49 @@
+Categories:Internet,Security
+License:BSD-2-Clause
+Web Site:https://ooni.torproject.org/
+Source Code:https://github.com/TheTorProject/ooniprobe-android
+Issue Tracker:https://github.com/TheTorProject/ooniprobe-android/issues
+
+Auto Name:ooniprobe
+Summary:Open Observatory of Network Interference probe
+Description:
+Interested in collecting evidence of Internet censorship? Curious about the
+speed and performance of the network that you are using?
+
+By running the tests in this app, you will examine the following:
+
+* Blocking of websites
+
+* Presence of systems that could be responsible for censorship and/or surveillance
+
+* Speed and performance of your network
+
+These tests have been developed by the **Open Observatory of Network
+Interference (OONI)**, a free software project (under The Tor Project) that aims
+to uncover **Internet censorship** around the world. Since 2012, OONI has
+collected millions of network measurements across more than 90
+.
+
+Repo Type:git
+Repo:https://github.com/TheTorProject/ooniprobe-android
+
+Build:1.1.3,5
+    commit=v1.1.3-fdroid-1
+    subdir=app
+    gradle=yes
+
+Build:1.1.4-dev,6
+    disable=pre-release
+    commit=v1.1.4-dev-fdroid
+    subdir=app
+    gradle=yes
+
+Maintainer Notes:
+Binaries:https://github.com/TheTorProject/ooniprobe-android/releases/download/v%v/ooniprobe-android-%v.apk
+Auto Update Mode:Version v%v-fdroid
+.
+
+Auto Update Mode:None
+Update Check Mode:Tags fdroid
+Current Version:1.1.4-dev
+Current Version Code:6
