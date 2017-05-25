@@ -24,8 +24,8 @@ Repo:https://github.com/genonbeta/TrebleShot.git
 
 Build:1.20-beta.5,44
     commit=04b2aa13d1a3bc56047b69ff1fb9c02f8f2e3395
-    gradle=yes
     subdir=app
+    gradle=yes
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
