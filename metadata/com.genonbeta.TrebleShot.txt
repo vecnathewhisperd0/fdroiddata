@@ -1,5 +1,5 @@
 Categories:Connectivity,Multimedia
-License:GPL-2.0
+License:GPL-2.0+
 Web Site:
 Source Code:https://github.com/genonbeta/TrebleShot
 Issue Tracker:https://github.com/genonbeta/TrebleShot/issues
@@ -23,8 +23,9 @@ Repo Type:git
 Repo:https://github.com/genonbeta/TrebleShot.git
 
 Build:1.20-beta.5,44
-    commit=2361a12a506e0e70eefaef011c30a59e14a3c101
+    commit=04b2aa13d1a3bc56047b69ff1fb9c02f8f2e3395
     gradle=yes
+    subdir=app
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
