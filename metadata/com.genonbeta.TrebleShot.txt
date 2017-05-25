@@ -1,0 +1,31 @@
+Categories:Tools
+License:GPL-2.0
+Web Site:
+Source Code:https://github.com/genonbeta/TrebleShot
+Issue Tracker:https://github.com/genonbeta/TrebleShot/issues
+
+Auto Name:TrebleShot
+Summary: An app allows you to send and receive files over available connections, and pause and resume transfer process even when an error is given
+Description:
+'''Main Features'''
+* Pause or resume transfers even when an error is given
+* Share your videos and songs within the application
+* There is no limit. You can send thousands of files with only one connection
+* You have the updates installed on your phone but your friend doesn't? Send them with the app
+* Install it on your all android devices and get the things easier
+* You need to send some text information? Just use TrebleShot to do it
+
+See the development process: [https://trello.com/b/YmbwDHHo Trello]
+.
+
+Repo Type:git
+Repo:https://github.com/genonbeta/TrebleShot.git
+
+Build:1.20-beta.5,44
+    commit=2361a12a506e0e70eefaef011c30a59e14a3c101
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.20-beta.5
+Current Version Code:44
