@@ -41,7 +41,7 @@ Build:1.4.13,63
     commit=v1.4.13
     subdir=app
     gradle=fdroid
-    
+
 Build:1.5-alpha.1,64
     commit=v1.5-alpha.1
     subdir=app
