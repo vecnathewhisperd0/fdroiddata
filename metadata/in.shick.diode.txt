@@ -64,11 +64,14 @@ Build:1.2.1,18
 Build:1.2.2,19
     commit=d1.2.2
 
+Build:1.2.3,20
+    commit=d1.2.3
+
 Maintainer Notes:
 Replace jar files before AUM!
 .
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.2.2
-Current Version Code:19
+Current Version:1.2.3
+Current Version Code:20

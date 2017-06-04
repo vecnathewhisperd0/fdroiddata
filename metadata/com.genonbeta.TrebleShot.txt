@@ -1,0 +1,42 @@
+Categories:Connectivity,Multimedia
+License:GPL-2.0+
+Web Site:
+Source Code:https://github.com/genonbeta/TrebleShot
+Issue Tracker:https://github.com/genonbeta/TrebleShot/issues
+
+Auto Name:TrebleShot
+Summary:Send and receive files over available connections
+Description:
+'Main Features'
+
+* Pause or resume transfers even when an error is given
+* Share your videos and songs within the application
+* There is no limit. You can send thousands of files with only one connection
+* You have the updates installed on your phone but your friend doesn't? Send them with the app
+* Install it on your all android devices and get the things easier
+* You need to send some text information? Just use TrebleShot to do it
+
+See the development process: [https://trello.com/b/YmbwDHHo Trello]
+.
+
+Repo Type:git
+Repo:https://github.com/genonbeta/TrebleShot.git
+
+Build:1.2.0-beta.5,44
+    commit=04b2aa13d1a3bc56047b69ff1fb9c02f8f2e3395
+    subdir=app
+    gradle=yes
+    prebuild=mkdir -p gradle/wrapper && \
+        echo -e 'distributionUrl=https://services.gradle.org/distributions/gradle-3.3-bin.zip' > gradle/wrapper/gradle-wrapper.properties
+
+Build:1.2.1,45
+    commit=c50fb434bf53215038c1c7ba67e3218f16a9b07c
+    subdir=app
+    gradle=yes
+    prebuild=mkdir -p gradle/wrapper && \
+        echo -e 'distributionUrl=https://services.gradle.org/distributions/gradle-3.3-bin.zip' > gradle/wrapper/gradle-wrapper.properties
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.2.1
+Current Version Code:45

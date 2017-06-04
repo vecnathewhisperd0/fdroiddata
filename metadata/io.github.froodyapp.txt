@@ -1,11 +1,11 @@
 Categories:Sports & Health,Internet
-License:GPL-3.0
+License:Apache-2.0
 Author Name:Gregor Santner
 Web Site:https://froodyapp.github.io/
 Source Code:https://github.com/froodyapp/froody-android
 Issue Tracker:https://github.com/froodyapp/froody-android/issues
 Changelog:https://github.com/froodyapp/froody-android/blob/HEAD/CHANGELOG.md
-Donate:https://gsantner.github.io/donate/#r
+Donate:https://gsantner.github.io/#donate
 Bitcoin:1B9ZyYdQoY9BxMe9dRUEKaZbJWsbQqfXU5
 
 Auto Name:Froody
@@ -84,7 +84,12 @@ Build:0.2.10,15
     subdir=app
     gradle=FlavorDefault
 
+Build:0.2.11,16
+    commit=v0.2.11
+    subdir=app
+    gradle=FlavorDefault
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.2.10
-Current Version Code:15
+Current Version:0.2.11
+Current Version Code:16

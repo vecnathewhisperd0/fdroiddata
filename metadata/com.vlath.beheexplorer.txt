@@ -36,7 +36,12 @@ Build:2.5.1,20051
     subdir=app
     gradle=yes
 
+Build:2.6.4,20064
+    commit=a3bc9fdcbe75a3c81d73c3e30e06eaac13f0ceb3
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest/master
-Current Version:2.5.0
-Current Version Code:2050
+Current Version:2.0.2
+Current Version Code:20002

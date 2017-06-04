@@ -24,7 +24,7 @@ interested, please have a look.
 .
 
 Repo Type:git
-Repo:https://github.com/renyuneyun/Easer
+Repo:https://github.com/renyuneyun/Easer.git
 
 Build:0.2.1.0,6
     commit=v0.2.1.0
@@ -46,7 +46,22 @@ Build:0.2.5.2,13
     subdir=app
     gradle=yes
 
+Build:0.2.6,15
+    commit=v0.2.6
+    subdir=app
+    gradle=yes
+
+Build:0.2.7,16
+    commit=v0.2.7
+    subdir=app
+    gradle=yes
+
+Build:0.2.9,18
+    commit=v0.2.9
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.2.5.2
-Current Version Code:13
+Current Version:0.2.9
+Current Version Code:18
