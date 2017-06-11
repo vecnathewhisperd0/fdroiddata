@@ -1,8 +1,8 @@
 Categories:Time
-License:GPLv3
+License:GPL-3.0
 Web Site:https://laicare.frangor.info
-Source Code:https://gitlab.com/frangor/laicare
-Issue Tracker:https://gitlab.com/frangor/laicare/issues
+Source Code:https://gitlab.com/LaiCare/laicare
+Issue Tracker:https://gitlab.com/LaiCare/laicare/issues
 
 Auto Name:LaiCare
 Summary:Manage the care of dogs and cats
@@ -18,7 +18,7 @@ Features:
 .
 
 Repo Type:git
-Repo:https://gitlab.com/frangor/laicare.git
+Repo:https://gitlab.com/LaiCare/laicare.git
 
 Build:0.0.1,1
     commit=0.0.1

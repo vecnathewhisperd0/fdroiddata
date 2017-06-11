@@ -1,10 +1,10 @@
 AntiFeatures:NonFreeNet
 Categories:Multimedia,Internet
-License:GPLv3+
+License:GPL-3.0+
 Web Site:https://newpipe.schabi.org
-Source Code:https://github.com/theScrabi/NewPipe
-Issue Tracker:https://github.com/theScrabi/NewPipe/issues
-Changelog:https://github.com/theScrabi/NewPipe/releases
+Source Code:https://github.com/TeamNewPipe/NewPipe
+Issue Tracker:https://github.com/TeamNewPipe/NewPipe/issues
+Changelog:https://github.com/TeamNewPipe/NewPipe/releases
 Bitcoin:16A9J59ahMRqkLSZjhYj33n9j3fMztFxnh
 
 Auto Name:NewPipe
@@ -21,7 +21,7 @@ to this app. It will improve...
 .
 
 Repo Type:git
-Repo:https://github.com/theScrabi/NewPipe
+Repo:https://github.com/TeamNewPipe/NewPipe
 
 Build:0.3,1
     commit=v0.3
@@ -109,7 +109,99 @@ Build:0.8.0,18
     subdir=app
     gradle=yes
 
+Build:0.8.5,19
+    commit=v0.8.5
+    subdir=app
+    gradle=yes
+
+Build:0.8.6,20
+    commit=v0.8.6
+    subdir=app
+    gradle=yes
+
+Build:0.8.7,21
+    commit=v0.8.7
+    subdir=app
+    gradle=yes
+
+Build:0.8.8,22
+    commit=v0.8.8
+    subdir=app
+    gradle=yes
+
+Build:0.8.9,23
+    commit=v0.8.9
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/com.android.support/s/25.1.1/25.1.0/g' build.gradle
+
+Build:0.8.10,24
+    commit=v0.8.10
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/com.android.support/s/25.1.1/25.1.0/g' build.gradle
+
+Build:0.8.11,25
+    commit=v0.8.11
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.8.12,26
+    commit=v0.8.12
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.9.0,27
+    commit=v0.9.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.9.1,28
+    commit=v0.9.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.9.2,29
+    commit=v0.9.2
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.9.3,30
+    commit=v0.9.3
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.9.4,31
+    commit=v0.9.4
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.9.5,32
+    commit=v0.9.5
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.9.6,33
+    commit=v0.9.6
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.9.7,34
+    commit=v0.9.7
+    subdir=app
+    submodules=yes
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.8.0
-Current Version Code:18
+Current Version:0.9.7
+Current Version Code:34

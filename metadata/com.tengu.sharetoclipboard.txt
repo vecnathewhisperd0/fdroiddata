@@ -1,5 +1,5 @@
 Categories:System
-License:GPLv3
+License:GPL-3.0
 Web Site:
 Source Code:https://github.com/tengusw/share_to_clipboard
 Issue Tracker:https://github.com/tengusw/share_to_clipboard/issues
@@ -84,7 +84,12 @@ Build:1.5.0,14
     subdir=app
     gradle=yes
 
+Build:1.6.0,15
+    commit=v1.6.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.5.0
-Current Version Code:14
+Current Version:1.6.0
+Current Version Code:15

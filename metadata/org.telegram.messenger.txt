@@ -1,15 +1,17 @@
-AntiFeatures:NonFreeNet
+AntiFeatures:NonFreeNet,UpstreamNonFree
 Categories:Internet
-License:GPLv2+
+License:GPL-2.0+
 Web Site:https://telegram.org
-Source Code:https://github.com/slp/Telegram-FOSS
-Issue Tracker:https://github.com/slp/Telegram-FOSS/issues
-Changelog:https://github.com/slp/Telegram-FOSS/blob/HEAD/Changelog.md
-Donate:https://sinrega.org/?page_id=241
+Source Code:https://github.com/Telegram-FOSS-Team/Telegram-FOSS
+Issue Tracker:https://github.com/Telegram-FOSS-Team/Telegram-FOSS/issues
+Changelog:https://github.com/Telegram-FOSS-Team/Telegram-FOSS/blob/HEAD/Changelog.md
 
 Auto Name:Telegram
 Summary:Messaging client
 Description:
+'''Warning:''' While this build is based on a pure-floss fork, original upstream
+is not always fast with publishing the sourcecode for recent vesions.
+
 Client for the Telegram messaging platform. Chat with friends, start group chats
 and share all kinds of content. All of your messages and conversations are
 stored in Telegram's cloud.
@@ -18,9 +20,9 @@ The messaging platform is aimed at mobile devices, but desktop and web clients
 exist as well.
 
 Several proprietary parts were removed from the original Telegram client,
-including Google Play Services for the location services and HockeySDK for
-self-updates. Push notifications through Google Cloud Messaging and the
-automatic SMS receiving features were also removed.
+including Google Play Services for the location services, HockeySDK for
+self-updates and push notifications through Google Cloud Messaging. Location
+sharing functionality is restored using OpenStreetMap.
 
 Anti-Feature: Non-Free Network, since the servers run proprietary software.
 
@@ -30,7 +32,7 @@ certain lag.
 .
 
 Repo Type:git
-Repo:https://github.com/slp/Telegram-FOSS.git
+Repo:https://github.com/Telegram-FOSS-Team/Telegram-FOSS.git
 
 Build:1.3.21,160
     commit=v1.3.21a
@@ -244,8 +246,46 @@ Build:3.7.0,7673
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
 
+Build:3.10.1,8213
+    commit=v3.10.1
+    subdir=TMessagesProj
+    gradle=fat
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+
+Build:3.13.1,8513
+    commit=v3.13.1
+    subdir=TMessagesProj
+    gradle=fat
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+
+Build:3.18.0,9575
+    commit=v3.18.0
+    subdir=TMessagesProj
+    submodules=yes
+    gradle=fat
+    ndk=r14
+
+Build:3.18.0a,9585
+    commit=v3.18.0a
+    subdir=TMessagesProj
+    submodules=yes
+    gradle=fat
+    ndk=r14
+
+Build:3.18.0b,9595
+    commit=v3.18.0b
+    subdir=TMessagesProj
+    submodules=yes
+    gradle=fat
+    prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
+    ndk=r14
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Vercode Operation:%c*10 + 3
-Current Version:3.7.0
-Current Version Code:7673
+Vercode Operation:%c*10 + 5
+Current Version:3.18.0b
+Current Version Code:9595
+
+No Source Since:3.18.1

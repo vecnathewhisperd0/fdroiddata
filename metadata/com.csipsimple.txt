@@ -1,6 +1,6 @@
 Categories:Phone & SMS
-License:GPLv3
-Web Site:https://code.google.com/p/csipsimple
+License:GPL-3.0
+Web Site:http://www.csipsimple.com
 Source Code:https://code.google.com/p/csipsimple/source
 Issue Tracker:
 Changelog:https://code.google.com/p/csipsimple/wiki/ChangeLog
@@ -75,6 +75,7 @@ this issue, as of June 23 2016, the maintainers haven't responded to that
 question yet.
 .
 
+Archive Policy:0 versions
 Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.02.03

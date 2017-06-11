@@ -1,22 +1,24 @@
 Categories:Multimedia,Internet
-License:GPLv3
-Web Site:https://gitlab.com/sangre/cherrymusic-android/blob/HEAD/README.md
-Source Code:https://gitlab.com/sangre/cherrymusic-android
-Issue Tracker:https://gitlab.com/sangre/cherrymusic-android/issues
-Donate:https://sangre.gitlab.io/donate/#r
+License:MIT
+Author Name:Gregor Santner
+Web Site:https://github.com/gsantner/cherrymusic-android/blob/HEAD/README.md
+Source Code:https://github.com/gsantner/cherrymusic-android
+Issue Tracker:https://github.com/gsantner/cherrymusic-android/issues
+Changelog:https://github.com/gsantner/cherrymusic-android/blob/HEAD/CHANGELOG.md
+Donate:https://gsantner.github.io/#donate
 Bitcoin:1B9ZyYdQoY9BxMe9dRUEKaZbJWsbQqfXU5
 
 Auto Name:Cherry
 Summary:Wrapper for CherryMusic
 Description:
 Wrapper for CherryMusic, a self-hosted streaming web-application. A lightweight
-alternative to Ampache, Google Play Music,Spotify,..
+alternative to Ampache, Google Play Music, Spotify,..
 
-See [http://www.fomori.org/cherrymusic/] for more informations.
+See [http://www.fomori.org/cherrymusic/] for more information.
 .
 
 Repo Type:git
-Repo:https://gitlab.com/sangre/cherrymusic-android.git
+Repo:https://github.com/gsantner/cherrymusic-android
 
 Build:1.0,1
     commit=v1.0
@@ -41,7 +43,17 @@ Build:1.13,6
     subdir=app
     gradle=yes
 
+Build:1.2.0,7
+    commit=v1.2.0
+    subdir=app
+    gradle=yes
+
+Build:1.3.0,8
+    commit=v1.3.0
+    subdir=app
+    gradle=FlavorDefault
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.13
-Current Version Code:6
+Current Version:1.3.0
+Current Version Code:8

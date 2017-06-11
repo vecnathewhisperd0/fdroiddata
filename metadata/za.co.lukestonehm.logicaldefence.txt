@@ -1,5 +1,5 @@
 Categories:Reading
-License:GPLv2+
+License:GPL-2.0+
 Web Site:
 Source Code:https://github.com/LukeStonehm/LogicalDefence
 Issue Tracker:https://github.com/LukeStonehm/LogicalDefence/issues
@@ -93,7 +93,22 @@ Build:1.4.0,19
     subdir=app
     gradle=yes
 
+Build:1.4.1,20
+    commit=85e8baad4376e77a5ec722248cbd956179151b51
+    subdir=app
+    gradle=yes
+
+Build:1.5.0,21
+    commit=fd6b68d4ea58e818b578e53b416029d9c907d5ea
+    subdir=app
+    gradle=yes
+
+Build:1.5.1,22
+    commit=b637aa73f9d5a82b8d372487e734bb12ed10215d
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.4.0
-Current Version Code:19
+Current Version:1.5.1
+Current Version Code:22

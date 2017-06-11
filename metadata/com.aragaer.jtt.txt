@@ -35,7 +35,11 @@ Build:1.5.2,29
     commit=v1.5.2
     gradle=yes
 
+Build:1.6,34
+    commit=v1.6
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.5.2
-Current Version Code:29
+Current Version:1.6
+Current Version Code:34

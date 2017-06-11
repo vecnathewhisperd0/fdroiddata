@@ -1,5 +1,5 @@
 Categories:Reading
-License:AGPLv3+
+License:AGPL-3.0+
 Web Site:http://mupdf.com
 Source Code:http://git.ghostscript.com/?p=mupdf.git;a=summary
 Issue Tracker:http://bugs.ghostscript.com
@@ -14,7 +14,7 @@ documents.
 .
 
 Repo Type:git
-Repo:http://git.ghostscript.com/mupdf.git
+Repo:http://git.ghostscript.com/mupdf-android-viewer-old.git
 
 Build:1.2,2
     commit=1.2
@@ -273,6 +273,84 @@ Build:1.9,93
     scandelete=build/release/,thirdparty/curl/tests/data/test*
     buildjni=yes
 
+Build:1.10,101
+    commit=1.10a
+    subdir=platform/android/viewer
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/armeabi-v7a/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../../.. && \
+        make generate
+    scandelete=build/release/,thirdparty/curl/tests/data/test*
+    buildjni=yes
+    ndk=r11c
+
+Build:1.10,102
+    commit=1.10a
+    subdir=platform/android/viewer
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/x86/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../../.. && \
+        make generate
+    scandelete=build/release/,thirdparty/curl/tests/data/test*
+    buildjni=yes
+    ndk=r11c
+
+Build:1.10,103
+    commit=1.10a
+    subdir=platform/android/viewer
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=sed -i -e 's/armeabi-v7a/mips/g' -e 's/android-8/android-9/g' jni/Application.mk && \
+        cd ../../.. && \
+        make generate
+    scandelete=build/release/,thirdparty/curl/tests/data/test*
+    buildjni=yes
+    ndk=r11c
+
+Build:1.11,111
+    disable=wait for x86
+    commit=1.11
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=pushd libmupdf && \
+        make generate && \
+        popd && \
+        make release APP_ABI=armeabi-v7a
+    buildjni=yes
+    ndk=r11c
+
+Build:1.11,112
+    disable=needs some work
+    commit=1.11
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=pushd libmupdf && \
+        make generate && \
+        popd && \
+        make release APP_ABI=x86
+    buildjni=yes
+    ndk=r11c
+
+Build:1.11,113
+    disable=wait for x86
+    commit=1.11
+    submodules=yes
+    forceversion=yes
+    forcevercode=yes
+    prebuild=pushd libmupdf && \
+        make generate && \
+        popd && \
+        make release APP_ABI=mips
+    buildjni=yes
+    ndk=r11c
+
 Maintainer Notes:
 armeabi = baseversion + 0, e.g. mupdf-1.5-android-50-armeabi.apk
 armv7 = baseversion + 1, e.g. mupdf-1.5-android-51-armv7a.apk
@@ -288,9 +366,16 @@ http://www.mupdf.com/docs/how-to-build-mupdf-for-android
 http://mupdf.com/downloads/
 http://twiki.ghostscript.com/do/view/MuPDF/AndroidReleases
 http://git.ghostscript.com/?p=mupdf.git;a=blob;f=platform/android/jni/Application.mk;h=60909b6e9989b79231a6f3a7a04f371039185dbf;hb=HEAD
+
+Versions:
+Split Android and iOS viewers into separate projects:
+ * mupdf-viewer-ios.git has the iOS viewer.
+ * mupdf-viewer-android-old.git has the Android viewer.
+ * mupdf-viewer-android-nui.git has a new advanced Android viewer.
+ * mupdf-viewer-android-mini.git has a new minimalist Android viewer.
 .
 
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:1.8
-Current Version Code:83
+Current Version:1.10
+Current Version Code:103
