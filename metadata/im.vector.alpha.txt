@@ -190,8 +190,19 @@ Build:0.6.10,610
         sed -i -e '/com.google.android.gms/d' build.gradle && \
         sed -i -e '/com.google.gms.google-services/d' build.gradle
 
+Build:0.6.12,612
+    commit=787c09b210ce0d1c8a9d1eb54576f94756a68d63
+    subdir=vector
+    gradle=appfdroid
+    srclibs=matrixsdk@a4e5bd65084b3bb14d1744884c4335bcd50b32c5
+    prebuild=cp -fR $$matrixsdk$$/matrix-sdk ../ && \
+        sed -i -e '/projectDir/d' ../settings.gradle && \
+        sed -i -e '/com.google.firebase/d' build.gradle && \
+        sed -i -e '/com.google.android.gms/d' build.gradle && \
+        sed -i -e '/com.google.gms.google-services/d' build.gradle
+
 Auto Update Mode:None
 Update Check Mode:HTTP
 Update Check Data:https://raw.githubusercontent.com/vector-im/riot-android/master/build.gradle|versionCodeProp = (.*)|.|versionNameProp = "(.*)"
-Current Version:0.6.10
-Current Version Code:610
+Current Version:0.6.11
+Current Version Code:612
