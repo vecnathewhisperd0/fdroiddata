@@ -16,7 +16,8 @@ bootstrap is executed on the Device itself without any help of a larger PC,
 Android debugging bridge or similar.
 .
 
-Requires Root:yes
+Requires root: Yes, because it needs to run debootstrap, create dirs in /,
+mount/umount, etc.
 
 Repo Type:git
 Repo:git://git.code.sf.net/p/debian-kit/code
