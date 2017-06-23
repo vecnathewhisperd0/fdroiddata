@@ -623,7 +623,7 @@ Build:9.0.7,3061
     commit=9.0.7
     subdir=app
     gradle=cloudless
-    rm=app/libs/*.jar
+    init=rm app/libs/*.jar
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
