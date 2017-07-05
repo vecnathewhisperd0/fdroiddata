@@ -21,6 +21,7 @@ Repo Type:git
 Repo:https://github.com/mwgg/passera
 
 Build:0.1.1,1
+    disable=try to fix #788
     commit=247fb96e4776035704d137064ff7dea1ffc5429f
     subdir=android/app
     gradle=yes
