@@ -438,9 +438,8 @@ Build:4.9.14,457
 
 Build:4.9.15,458
     commit=4.9.15
-    subdir=app
     gradle=generic,prod
-    prebuild=sed -i -e '/googleplayCompile/d' -e '/amazonCompile/d' build.gradle
+    prebuild=sed -i -e '/googleplayCompile/d' -e '/amazonCompile/d' app/build.gradle
 
 Maintainer Notes:
 Upstream releases multiple version with changed vercode. Looks like repushing tags..
