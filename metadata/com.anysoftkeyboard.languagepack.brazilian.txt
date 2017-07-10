@@ -21,7 +21,7 @@ Repo Type:git
 Repo:https://github.com/AnySoftKeyboard/LanguagePack.git
 
 Build:2.0,100
-    commit=Brazilian-2.0
+    commit=brazilian-2.0
     gradle=yes
     forceversion=yes
     preassemble=:makeDictionary
