@@ -28,6 +28,7 @@ Build:1.0.2,3
     commit=v1.0.2
 
 Build:1.0.3,4
+    disable=for rebuild
     commit=v1.0.3
 
 Auto Update Mode:Version v%v
