@@ -7,10 +7,12 @@ Issue Tracker:https://github.com/btcontract/wallet/issues
 Auto Name:Bitcoin
 Summary:Simple Bitcoin wallet
 Description:
-A single-page standalone Android wallet which allows you to store bitcoins securely and transfer them easily
+Simple Bitcoin is a standalone wallet for Android devices which does not depend
+on any centralized service and gives you full control over your money.
 .
 
 Repo Type:git
+
 Repo:https://github.com/btcontract/wallet.git
 
 Build:1.075,53
