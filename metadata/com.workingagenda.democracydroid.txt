@@ -102,7 +102,7 @@ Build:3.3,33
     rm=picasso-2.5.2/picasso-2.5.2.jar
 
 Build:3.4,34
-    commit=c1574cb1949f8a4f34c5245f8a1240c0d84d1a3e
+    commit=3.4
     subdir=app
     gradle=yes
 
