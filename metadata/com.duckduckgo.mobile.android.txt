@@ -140,7 +140,7 @@ Build:3.0.17,79
     submodules=yes
     gradle=yes
     scanignore=libs/OnionKit/libnetcipher/external/pinning/res/raw/cacerts
-    
+
 Build:3.1.0,100
     commit=3.1.0
     submodules=yes
