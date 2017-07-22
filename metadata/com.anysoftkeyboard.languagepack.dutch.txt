@@ -34,6 +34,12 @@ Build:1.0,1
     forceversion=yes
     preassemble=:makeDictionary
 
+Build:1.4,5
+    commit=dutch-1.4
+    gradle=yes
+    forceversion=yes
+    preassemble=:makeDictionary
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest/Dutch
 Current Version:1.4
