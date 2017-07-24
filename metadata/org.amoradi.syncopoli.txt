@@ -63,6 +63,7 @@ Build:v0.4,8
     submodules=yes
     gradle=yes
     buildjni=no
+    ndk=r15b
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
