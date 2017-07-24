@@ -51,8 +51,8 @@ Build:2.2.0,3
     gradle=yes
 
 Build:2.3,4
-    disable=Superceded by 2.3,6
     commit=c21215e80c40fa191bc575b1e7615f10279763a0
+    disable=Superceded by 2.3,6
     subdir=app
     gradle=yes
 
