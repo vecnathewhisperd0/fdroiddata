@@ -60,9 +60,9 @@ Build:v0.3.3,7
 Build:v0.4,8
     commit=v0.4
     subdir=app
+    submodules=yes
     gradle=yes
     buildjni=no
-    submodules=yes
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
