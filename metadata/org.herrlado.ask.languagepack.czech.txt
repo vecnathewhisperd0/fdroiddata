@@ -20,8 +20,8 @@ layout from AnySoftKeyboard's Settings->Keyboards menu.
 Repo Type:git
 Repo:https://github.com/AnySoftKeyboard/LanguagePack.git
 
-Build:2.0,200
-    commit=czech-2.0
+Build:2.0.0,258
+    commit=czech-2.0.0
     gradle=yes
     forceversion=yes
     preassemble=:makeDictionary
@@ -29,4 +29,4 @@ Build:2.0,200
 Auto Update Mode:None
 Update Check Mode:RepoManifest/Czech
 Current Version:2.0.0
-Current Version Code:200
+Current Version Code:258

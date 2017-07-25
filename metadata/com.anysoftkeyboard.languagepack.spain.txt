@@ -48,13 +48,13 @@ Build:2.0,100
     forceversion=yes
     preassemble=:makeDictionary
 
-Build:2.1,210
-    commit=spanish-2.1
+Build:2.1.0,166
+    commit=spanish-2.1.0
     gradle=yes
     forceversion=yes
     preassemble=:makeDictionary
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest/Spanish
-Current Version:2.1
-Current Version Code:210
+Current Version:2.1.0
+Current Version Code:166
