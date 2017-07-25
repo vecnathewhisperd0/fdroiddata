@@ -460,7 +460,7 @@ Build:20170531,79
         export ANDROID_ABI="armeabi-v7a" && \
         cd ../../ && \
         ./compile.sh release
-    ndk=r14
+    ndk=r14b
 
 Maintainer Notes:
 Looks like buildserver/setup-env-vars wasnt properly run the last time. PATH
@@ -471,5 +471,5 @@ echo 'export PATH=$PATH:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:/op
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest/production
-Current Version:20170706
-Current Version Code:83
+Current Version:20170720
+Current Version Code:86

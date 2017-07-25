@@ -39,7 +39,7 @@ works like a crude flight simulator. The heading and altitude can be changed by
 pitching and banking the device. The speed runs up and down automatically based
 on the pitch.
 
-'''Screenshots''' [http://members.iinet.net.au/~ninelima/efis/gallery.html gallery]
+'''Screenshots''' [http://members.iinet.net.au/~ninelima/efis/gallery.html]
 .
 
 Repo Type:git
@@ -52,7 +52,6 @@ Build:2.2.0,3
 
 Build:2.3,4
     commit=c21215e80c40fa191bc575b1e7615f10279763a0
-    disable=Superceded by 2.3,6
     subdir=app
     gradle=yes
 

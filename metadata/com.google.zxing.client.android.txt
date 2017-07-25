@@ -76,6 +76,7 @@ Build:4.7.3,103
     prebuild=echo -e "java.source=7\njava.target=7" >> local.properties && \
         echo 'source.dir=src;../android-core/src' >> project.properties
     target=android-19
+    scanignore=core/src/test
     build=$$MVN3$$ package -f ../core/pom.xml
 
 Build:4.7.4,104
@@ -98,13 +99,13 @@ Build:4.7.5,105
         $$MVN3$$ install -f ../android-core/pom.xml -Dmaven.test.skip=true
 
 Build:4.7.6,106
+    disable=for rebuild since built but was not added
     commit=BS-4.7.6
     subdir=android
+    sudo=apt-get -y install -t jessie-backports maven
     maven=yes
     output=target/android-4.7.6-aligned.apk
-    prebuild=echo "Using SUDO to install maven from jessie-backports repo!" && \
-        sudo apt-get -y install -t jessie-backports maven && \
-        sed -i "58iandroid:debuggable=\"false\"" AndroidManifest.xml
+    prebuild=sed -i "58iandroid:debuggable=\"false\"" AndroidManifest.xml
     scanignore=core/src/test
     build=$$MVN3$$ install -f ../core/pom.xml -Dmaven.test.skip=true && \
         $$MVN3$$ install -f ../android-core/pom.xml -Dmaven.test.skip=true && \

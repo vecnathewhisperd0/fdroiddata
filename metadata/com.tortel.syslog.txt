@@ -46,11 +46,17 @@ Build:2.1.0,24
     subdir=app
     gradle=yes
 
+Build:2.1.1,25
+    disable=requires Gradle 4.1-milestone-1
+    commit=v2.1.1
+    subdir=app
+    gradle=yes
+
 Maintainer Notes:
 This is GPLv2+ as given in the sourcecode, root LICENSE file is just GPLv2/2+ license text.
 .
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.1.0
-Current Version Code:24
+Current Version:2.1.1
+Current Version Code:25

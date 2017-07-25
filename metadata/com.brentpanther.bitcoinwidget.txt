@@ -117,11 +117,16 @@ Build:4.4,80
     gradle=yes
 
 Build:5.0.5,106
-    commit=5.0.5
-    subdir=mobile
+    commit=0ace87fcb648b6022ec43593c2d70b7863c0b007
+    subdir=bitcoin
+    gradle=yes
+
+Build:5.0.7,108
+    commit=5.0.7
+    subdir=bitcoin
     gradle=yes
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:5.0.5
-Current Version Code:106
+Current Version:5.0.7
+Current Version Code:108
