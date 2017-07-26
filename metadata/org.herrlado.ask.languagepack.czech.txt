@@ -24,6 +24,7 @@ Build:2.0.0,258
     commit=czech-2.0.0
     gradle=yes
     forceversion=yes
+    forcevercode=yes
     preassemble=:makeDictionary
 
 Auto Update Mode:None

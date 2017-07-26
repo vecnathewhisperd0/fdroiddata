@@ -38,6 +38,7 @@ Build:v2.0.4,174
     commit=german-2.0.4
     gradle=yes
     forceversion=yes
+    forcevercode=yes
     preassemble=:makeDictionary
 
 Auto Update Mode:None
