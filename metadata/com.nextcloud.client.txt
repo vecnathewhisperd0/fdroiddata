@@ -113,6 +113,12 @@ Build:1.4.1,10040199
     rm=libs/disklrucache*,user_manual
 
 Build:1.4.2,10040299
+    commit=stable-1.4.2
+    submodules=yes
+    gradle=generic
+    rm=libs/disklrucache*,user_manual
+
+Build:1.4.3,10040300
     commit=stable-1.4.3
     submodules=yes
     gradle=generic
@@ -120,5 +126,5 @@ Build:1.4.2,10040299
 
 Auto Update Mode:Version stable-%v
 Update Check Mode:Tags ^stable
-Current Version:1.4.2
-Current Version Code:10040299
+Current Version:1.4.3
+Current Version Code:10040300
