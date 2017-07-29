@@ -50,23 +50,6 @@ Build:2.16_test,87
         mvn3 install:install-file -DgroupId=android -DartifactId=android -Dversion=2.3.3_r2 -Dpackaging=jar -Dfile=$$SDK$$/platforms/android-10/android.jar && \
         mvn3 install:install-file -DgroupId=android.support -DartifactId=compatibility-v4 -Dversion=r6 -Dpackaging=jar -Dfile=$$SDK$$/android-compatibility/v4/android-support-v4.jar
 
-Build:3.01-test,121
-    commit=v3.01
-    patch=pom.patch
-    maven=yes
-    srclibs=BitcoinJWallet-schildbach@1649520e3183
-    prebuild=sed -i '54 i \\tandroid:debuggable=\"false\"' wallet/AndroidManifest.xml && \
-        cp -r $$BitcoinJWallet-schildbach$$/ . && \
-        rm -rf market/
-
-Build:3.04-test,124
-    commit=v3.04
-    patch=pom.patch
-    maven=yes
-    srclibs=BitcoinJWallet-schildbach@7cb7bfc11c11
-    prebuild=cp -r $$BitcoinJWallet-schildbach$$/ . && \
-        rm -rf market/
-
 Build:3.14-test,134
     commit=v3.14
     maven=yes
