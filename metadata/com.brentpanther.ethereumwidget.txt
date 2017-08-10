@@ -20,7 +20,7 @@ Build:1.0.9,10
     subdir=ethereum
     gradle=yes
 
-Auto Update Mode:Version %v
+Auto Update Mode:Version eth-%v
 Update Check Mode:Tags
 Current Version:1.0.9
 Current Version Code:10
