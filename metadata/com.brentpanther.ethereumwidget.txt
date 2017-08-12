@@ -16,7 +16,7 @@ Repo Type:git
 Repo:https://github.com/hwki/SimpleBitcoinWidget.git
 
 Build:1.0.9,10
-    commit=1.0.9
+    commit=eth-1.0.9
     subdir=ethereum
     gradle=yes
 
