@@ -31,14 +31,14 @@ Build:0.9,11
     init=rm -f build.properties
 
 Build:1.0,12
-    disable=bad signature, waiting for rebuild
+    disable=required dependency no longer avaialbe (ViewPagerIndicator)
     commit=v1.0
     subdir=application
 
 Build:1.1,13
-    disable=bad signature, waiting for rebuild
     commit=v1.1
     subdir=app
+    patch=0001-use-fork-of-ViewPagerIndicator-provided-on-jitpack.i.patch
     gradle=yes
 
 Auto Update Mode:Version v%v

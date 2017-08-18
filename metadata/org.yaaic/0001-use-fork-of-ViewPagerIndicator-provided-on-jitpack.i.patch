@@ -1,0 +1,42 @@
+From 9e91b3991b33ce4fa5305a7f2af88485e12abc3a Mon Sep 17 00:00:00 2001
+From: Marcus Hoffmann <m.hoffmann@cartelsol.com>
+Date: Thu, 17 Aug 2017 22:59:48 +0200
+Subject: [PATCH 1/1] use fork of ViewPagerIndicator provided on jitpack.io
+
+The only difference between the previously-used 2.4.1 and this 2.4.2 is
+a switch to the gradle build.
+
+[yann.morin.1998@free.fr: grap patch from Marcus, add commit log]
+Signed-off-by: "Yann E. MORIN" <yann.morin.1998@free.fr>
+---
+ app/build.gradle | 2 +-
+ build.gradle     | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/app/build.gradle b/app/build.gradle
+index a8da0ab..2349bb8 100644
+--- a/app/build.gradle
++++ b/app/build.gradle
+@@ -24,5 +24,5 @@ dependencies {
+ 
+     compile 'com.android.support:support-v4:22.0.0'
+ 
+-    compile 'com.viewpagerindicator:library:2.4.1@aar'
++    compile 'com.github.nitinverma:ViewPagerIndicator:2.4.2.0:release@aar'
+ }
+diff --git a/build.gradle b/build.gradle
+index 331760c..a926c98 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -14,7 +14,7 @@ buildscript {
+ 
+ allprojects {
+     repositories {
+-        maven { url "http://dl.bintray.com/populov/maven" }
++        maven { url "https://jitpack.io" }
+ 
+         jcenter()
+     }
+-- 
+2.11.0
+
