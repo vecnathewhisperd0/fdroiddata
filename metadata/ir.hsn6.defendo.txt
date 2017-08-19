@@ -23,9 +23,9 @@ Build:2.3.1,6
         cp -R $$Godot$$ godot
     target=android-19
     build=cd godot && \
-        scons -j 4 p=server unix_global_settings_path=".." && \
+        scons -j `nproc` p=server unix_global_settings_path=".." && \
         export ANDROID_NDK_ROOT=$$NDK$$ && \
-        scons -j 4 p=android target=release && \
+        scons -j `nproc` p=android target=release && \
         mkdir -p platform/android/java/libs/armeabi && \
         cp bin/libgodot.android.opt.armv7.neon.so platform/android/java/libs/armeabi/libgodot_android.so && \
         pushd platform/android/java/ && \
