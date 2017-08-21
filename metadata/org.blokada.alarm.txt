@@ -1,5 +1,5 @@
 Provides:org.blokada.alarm
-Categories:Apps
+Categories:Internet
 License:GPL-3.0
 Author Name:Karsen and the Blokada community
 Author Email:hello@blokada.org
@@ -57,6 +57,7 @@ Build:2.2,26
     commit=v2.2
     subdir=app
     gradle=ProdIncognito
+    prebuild=echo -e "ext {\n extVersionName = \"$$VERSION$$\"\n extVersionCode = $$VERCODE$$ \n }" >> ../version.gradle
     build=cd ../ && \
         ./makef prod i ass
 
