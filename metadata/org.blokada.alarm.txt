@@ -58,6 +58,6 @@ Build:2.2.2,28
     prebuild=echo -e "ext {\n extVersionName = \"$$VERSION$$\"\n extVersionCode = $$VERCODE$$ \n }" >> ../version.gradle
 
 Auto Update Mode:Version v%v
-Update Check Mode:Tags v\d+\.\d+(\.\d+)?
+Update Check Mode:Tags
 Current Version:2.2.2
 Current Version Code:28
