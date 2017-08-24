@@ -51,7 +51,6 @@ free! See how you can help at [http://blokada.org/#you]
 
 Repo Type:git
 Repo:https://github.com/blokadaorg/blokada.git
-Binaries:https://github.com/blokadaorg/blokada/releases/download/v%v/blokada-fdroid-v%v.apk
 
 Build:2.2.1,27
     commit=v2.2.1
