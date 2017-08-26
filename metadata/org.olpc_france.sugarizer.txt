@@ -26,7 +26,10 @@ Build:0.7.0,700
 Build:0.8.0,800
     commit=v0.8
 
+Build:0.9.0,900
+    commit=v0.9
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.8.0
-Current Version Code:800
+Current Version:0.9.0
+Current Version Code:900
