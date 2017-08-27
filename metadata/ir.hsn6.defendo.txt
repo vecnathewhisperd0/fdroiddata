@@ -32,7 +32,7 @@ Build:2.3.1,6
         export HOME=$PWD && \
         mkdir -p ../templates/ && \
         cp bin/android_release.apk ../templates && \
-        cd ../tof && \
+        cd ../defendo && \
         ../godot/bin/godot_server.server.tools.* -export Android ../defendo.apk
 
 Auto Update Mode:None
