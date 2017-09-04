@@ -28,6 +28,7 @@ Build:0.8.0,800
 
 Build:0.9.0,900
     commit=v0.9
+    gradle=yes
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
