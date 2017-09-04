@@ -17,7 +17,7 @@ Repo:https://github.com/HassanHeydariNasab/defendo.git
 Build:2.3.1,6
     commit=50fe9d06cb572dc368cef13764710643e322e5ac
     output=defendo.apk
-    srclibs=Godot@d8ae244d51ed157d96346c510baeb637239e3200
+    srclibs=Godot@2.1.2-stable-0-gc508b5b2e14c43a6e7a629f0d655a0e5ddcd6cd7
     prebuild=mkdir defendo && \
         bash -O extglob -c "mv !(defendo) defendo" && \
         cp -R $$Godot$$ godot
