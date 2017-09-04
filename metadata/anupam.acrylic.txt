@@ -45,7 +45,7 @@ Build:2.2.0,15
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
+Auto Update Mode:Version %v
+Update Check Mode:Tags
 Current Version:2.2.0
 Current Version Code:15
