@@ -15,7 +15,7 @@ Repo Type:git
 Repo:https://github.com/HassanHeydariNasab/defendo.git
 
 Build:2.3.1,6
-    commit=50fe9d06cb572dc368cef13764710643e322e5ac
+    commit=93a4c98e5b8482c6d7d7fb8abe3fa1d3fed9683a
     output=defendo.apk
     srclibs=Godot@2.1.2-stable-0-gc508b5b2e14c43a6e7a629f0d655a0e5ddcd6cd7
     prebuild=mkdir defendo && \
