@@ -53,6 +53,7 @@ Build:1.0.8.170626,8
     gradle=yes
 
 Build:1.0.9.170725,9
+    disable=rebuild pending
     commit=v1.0.9.170725
     subdir=app
     gradle=yes
