@@ -164,8 +164,8 @@ Build:1.98_testnet,98
     build=JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::") sh ./prepare_fdroid.sh
     ndk=r14b
 
-Build:1.99_testnet,99
-    commit=r1.99
+Build:2.00_testnet,200
+    commit=r2.00
     subdir=app
     gradle=btctestnet
     forcevercode=yes
@@ -178,5 +178,5 @@ Build:1.99_testnet,99
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.99
-Current Version Code:199
+Current Version:2.00
+Current Version Code:200
