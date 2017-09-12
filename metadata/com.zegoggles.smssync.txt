@@ -209,6 +209,18 @@ Build:1.5.10,1554
         $$MVN3$$ -Dmaven.test.skip=true install && \
         popd
 
+Build:1.5.11-beta4,1557
+    commit=b37c58dcba61ee9b18295c76df7c955170d1cd66
+    gradle=yes
+    srclibs=k9lib@75bb29398457da6fba231c6fba0b08991a8a9ec1
+    prebuild=pushd $$k9lib$$/k9mail-library && \
+        sed -i -e '/mavenDeployer/a/*' -e '/pom.project/i*/' build.gradle && \
+        sed -i -e '/mavenDeployer/adef sha = "git rev-parse --short HEAD".execute().text' build.gradle && \
+        sed -i -e '/mavenDeployer/arepository(url: mavenLocal().url) {' build.gradle && \
+        gradle uploadArchives && \
+        popd && \
+        sed -i -e 's#maven { url "https://dl.bintray.com/jberkel/maven" }#mavenLocal()#' build.gradle
+
 Maintainer Notes:
 We try to repurpose the official mavendeployer (which deploys to bintray) for a
 mavenLocal() deployment. I don't know if this will work on the BS. It builds
