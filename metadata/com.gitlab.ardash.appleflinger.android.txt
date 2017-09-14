@@ -4,6 +4,7 @@ Web Site:https://gitlab.com/ar-/apple-flinger
 Source Code:https://gitlab.com/ar-/apple-flinger
 Issue Tracker:https://gitlab.com/ar-/apple-flinger/issues
 Changelog:https://gitlab.com/ar-/apple-flinger/tags
+Bitcoin:1J2bbhJYksSjeynGGhuSPN9aTEaxiGm4nR
 
 Auto Name:Apple Flinger
 Summary:Funny single/multiplayer game - Use a slingshot to shoot with apples.
@@ -17,7 +18,7 @@ Features:
 * fine detailed animations and particle systems 
 * brand new and innovative game concept
 * single/multiplayer
-* 100% open source
+* 100% open source (GPL3)
 
 You use a slingshot to shoot with apples. Be first to destroy the whole enemy base, but be aware, the other side shoots back. This game has a balanced mix of puzzle, strategy, patience and action.
 
@@ -35,13 +36,13 @@ IARC: 3
 Repo Type:git
 Repo:https://gitlab.com/ar-/apple-flinger.git
 
-Build:1.3.10,13
-    commit=v1.3.10
+Build:1.3.11,14
+    commit=v1.3.11
     subdir=android
     gradle=yes
     scanignore=android/libs/*;gradle/wrapper/*;desktop
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.3.10
-Current Version Code:13
+Current Version:1.3.11
+Current Version Code:14
