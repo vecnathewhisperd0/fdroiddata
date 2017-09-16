@@ -43,8 +43,8 @@ international age ratings:
 Repo Type:git
 Repo:https://gitlab.com/ar-/apple-flinger.git
 
-Build:1.3.11,14
-    commit=v1.3.11
+Build:1.3.12,15
+    commit=v1.3.12
     subdir=android
     gradle=yes
     rm=desktop
@@ -52,5 +52,5 @@ Build:1.3.11,14
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.3.11
-Current Version Code:14
+Current Version:1.3.12
+Current Version Code:15
