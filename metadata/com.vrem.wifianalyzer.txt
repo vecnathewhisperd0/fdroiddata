@@ -115,7 +115,7 @@ Build:1.8.5,31
     subdir=app
     gradle=yes
 
-Build:1.8.6,36
+Build:1.8.6,32
     commit=V1.8.6-F-DROID
     subdir=app
     gradle=yes
