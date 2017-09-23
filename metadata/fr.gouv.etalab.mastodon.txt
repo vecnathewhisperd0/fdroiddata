@@ -73,6 +73,12 @@ Build:1.4.9-beta-3,51
     subdir=app
     gradle=fdroid
 
+Build:1.4.9-beta-4,52
+    commit=1.4.9-beta-4
+    subdir=app
+    gradle=fdroid
+
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:1.4.9-beta-3
