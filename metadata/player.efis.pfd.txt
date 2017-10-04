@@ -40,6 +40,11 @@ pitching and banking the device. The speed runs up and down automatically based
 on the pitch.
 
 '''Screenshots''' [http://members.iinet.net.au/~ninelima/efis/gallery.html]
+
+'''Digital moving Map''' 
+
+[[player.efis.mfd]] Kwik Moving Map is a companion application to the EFIS. It 
+provides  situational awareness and and navigation functionality.
 .
 
 Repo Type:git
@@ -90,7 +95,12 @@ Build:3.5,14
     subdir=pfd
     gradle=yes
 
+Build:3.6,15
+    commit=VER_3.6
+    subdir=pfd
+    gradle=yes
+
 Auto Update Mode:Version VER_%v
 Update Check Mode:Tags ^VER
-Current Version:3.5
-Current Version Code:14
+Current Version:3.6
+Current Version Code:15
