@@ -639,6 +639,11 @@ Build:10.0.4,3072
     gradle=cloudless
     rm=app/libs/*.jar
 
+Build:10.0.5,3073
+    commit=10.0.5
+    subdir=app
+    gradle=cloudless
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:10.0.4
