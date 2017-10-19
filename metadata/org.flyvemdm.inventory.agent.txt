@@ -18,7 +18,7 @@ It features a complete inventory of your Android devices: both hardware and soft
 Repo Type:git
 Repo:https://github.com/flyve-mdm/flyve-mdm-android-inventory-agent.git
 
-Build:0.4.0
+Build:0.4.0,100
     commit=0.4.0
     subdir=app
     gradle=yes
@@ -26,4 +26,4 @@ Build:0.4.0
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:0.4.0
-Current Version Code:36756
+Current Version Code:100
