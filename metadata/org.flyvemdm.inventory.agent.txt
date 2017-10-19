@@ -13,6 +13,7 @@ Description:
 This application is the Android inventory agent of the Inventory project.
 
 It features a complete inventory of your Android devices: both hardware and software informations are collected. You get the data about processor, memory, drives, sensors, the list and description of installed application (apk) and more.
+.
 
 Repo Type:git
 Repo:https://github.com/flyve-mdm/flyve-mdm-android-inventory-agent.git
