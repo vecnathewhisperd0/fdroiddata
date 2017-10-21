@@ -94,7 +94,7 @@ Build:2.1.1,36
     gradle=yes
     rm=FileManager/libs
 
-Auto Update Mode:None
+Auto Update Mode:Version +-fdroid %v
 Update Check Mode:Tags
 Current Version:2.1.1
 Current Version Code:36
