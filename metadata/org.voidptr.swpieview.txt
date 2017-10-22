@@ -5,14 +5,14 @@ Author Email:errant@voidptr.org
 Web Site:https://voidptr.org/swpieview
 Source Code:https://github.com/err4nt/SwpieView
 Issue Tracker:https://github.com/err4nt/SwpieView/issues
-Description:
-SwpieView is a minimalist image viewer that aims for good GIF support.
-It can show a directory of images in gallery mode, swiping left or right
-between images, or display a single image if called from an external
-application. It supports pause/play of GIFs and a slideshow mode.
-.
 
 Auto Name:SwpieView
+Description:
+SwpieView is a minimalist image viewer that aims for good GIF support. It can
+show a directory of images in gallery mode, swiping left or right between
+images, or display a single image if called from an external application. It
+supports pause/play of GIFs and a slideshow mode.
+.
 
 Repo Type:git
 Repo:https://github.com/err4nt/SwpieView
