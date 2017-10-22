@@ -1,0 +1,22 @@
+Categories:Graphics
+License:GPL-3.0
+Author Name:Danielle Jackson
+Author Email:errant@voidptr.org
+Web Site:https://voidptr.org/swpieview
+Source Code:https://github.com/err4nt/SwpieView
+Issue Tracker:https://github.com/err4nt/SwpieView/issues
+
+Auto Name:SwpieView
+
+Repo Type:git
+Repo:https://github.com/err4nt/SwpieView
+
+Build:1.0,1
+    commit=23ffb254a0dc6b7db159bab08f70aa07375422b4
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:1.0
+Current Version Code:1
