@@ -26,6 +26,10 @@ Build:2.0.2,140630
     commit=bbad9688f9ceff52086a80ece1fbca4e8fec20a6
     gradle=yes
 
+Build:2.0.3,140632
+    commit=5c1ace248217bb5902509536d8d9b26dbd009295
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:None
 Current Version:2.0.2
