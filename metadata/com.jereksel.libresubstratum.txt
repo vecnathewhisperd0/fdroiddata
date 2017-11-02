@@ -13,11 +13,11 @@ Repo:https://github.com/jereksel/LibreSubstratum
 
 Build:1.0-fdroid,1
     commit=5416f2e2d4e1a067b236cc8be702123bd5d44415
-    init=./removeprop.sh
-    submodules=yes
     subdir=app
-    gradleprops=fdroid
+    submodules=yes
+    init=./removeprop.sh
     gradle=Fdroid
+    gradleprops=fdroid
 
 Auto Update Mode:None
 Update Check Mode:None
