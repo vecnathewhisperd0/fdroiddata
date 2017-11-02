@@ -18,8 +18,6 @@ Build:1.0-fdroid,1
     subdir=app
     gradleprops=fdroid
     gradle=Fdroid
-    forceversion=no
-    forcevercode=no
 
 Auto Update Mode:None
 Update Check Mode:None
