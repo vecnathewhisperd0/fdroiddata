@@ -27,7 +27,7 @@ Build:2.0.2,140630
     gradle=yes
 
 Build:2.0.3,140632
-    commit=2.0.3
+    commit=668c2bba8bc2a0c557a95cba84919a7137570b86
     gradle=yes
 
 Auto Update Mode:Version %v
