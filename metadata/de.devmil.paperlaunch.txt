@@ -28,7 +28,7 @@ Build:1.0.6,6
     subdir=app
     gradle=yes
 
-Auto Update Mode:Version release_%c
+Auto Update Mode:Version release_%v
 Update Check Mode:Tags
 Current Version:1.0.6
 Current Version Code:6
