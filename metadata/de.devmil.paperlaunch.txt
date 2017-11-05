@@ -24,11 +24,11 @@ Repo Type:git
 Repo:https://github.com/devmil/PaperLaunch.git
 
 Build:1.0.6,6
-    commit=2cd4db8a3baea6565ce171d0b9f178efbc9f2148
+    commit=release_1.0.6
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
+Auto Update Mode:Version release_%c
 Update Check Mode:Tags
 Current Version:1.0.6
 Current Version Code:6
