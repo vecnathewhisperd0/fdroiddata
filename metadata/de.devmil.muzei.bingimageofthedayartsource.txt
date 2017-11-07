@@ -9,8 +9,12 @@ Summary:A Muzei art source that retrieves the Bing image of the day
 Description:
 This Muzei art source retrieves the current Bing image of the day.
 
-Features: - Choose what orientation optimization you prefer (portrait or
-landscape) - Choose the Bing market to be used - Switch between the last 8 Bing
+Features: 
+
+* Choose what orientation optimization you prefer (portrait or
+landscape) 
+* Choose the Bing market to be used 
+* Switch between the last 8 Bing
 images of the day without reloading them each time
 .
 
