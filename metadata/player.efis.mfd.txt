@@ -7,7 +7,7 @@ Changelog:https://github.com/ninelima/kwikEFIS/blob/HEAD/CHANGELOG.md
 Bitcoin:1KKWRF25NwVgNdankr1vBphtkLbX766Ee1
 
 Auto Name:Kwik DMAP
-Summary:Electronic Flight Information System (MMAP)
+Summary:Electronic Flight Information System (DMAP)
 Description:
 Kwik Moving Map is a companion application to the EFIS. It provides  situational
 awareness and and navigation functionality.
@@ -66,7 +66,12 @@ Build:1.1,2
     subdir=mfd
     gradle=yes
 
+Build:1.2,3
+    commit=REL_3.8
+    subdir=mfd
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags ^VER
-Current Version:1.1
-Current Version Code:2
+Current Version:1.2
+Current Version Code:3
