@@ -81,8 +81,6 @@ Build:0.60,60
     commit=v0.60alphaPoC
     subdir=app
     gradle=prod
-    forcevercode=yes
-    prebuild=sed -i -e 's/versionCode Integer/0 + Integer/g' build.gradle
 
 Auto Update Mode:Version v%valphaPoC
 Update Check Mode:Tags
