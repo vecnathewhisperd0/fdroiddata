@@ -18,6 +18,7 @@ Build:0.1-fdroid,1
     init=./removeprop.sh
     gradle=Fdroid
     gradleprops=fdroid
+    scandelete=testthemes
 
 Auto Update Mode:None
 Update Check Mode:None
