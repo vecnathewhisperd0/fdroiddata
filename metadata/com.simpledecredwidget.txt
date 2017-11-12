@@ -1,0 +1,26 @@
+Categories:Money
+License:Apache-2.0
+Web Site:
+Source Code:https://github.com/C-ollins/Simple-Decred-Widget
+Issue Tracker:https://github.com/C-ollins/Simple-Decred-Widget/issues
+
+Auto Name:Simple Decred Widget
+Summary:View Decred Statistics
+Description:
+A simple widget for viewing Decred exchange rate, as well as PoS Ticket price,
+mining difficulty, and more
+.
+
+Repo Type:git
+Repo:https://github.com/C-ollins/Simple-Decred-Widget
+
+Build:1.0,1
+    disable=build issues, no license
+    commit= aac3576
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:1
+Current Version Code:1
