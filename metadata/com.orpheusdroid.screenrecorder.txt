@@ -75,7 +75,7 @@ Build:1.8.1,18
     commit=49cd3980fe5c64e71ae5c9e6adabe7e5fe94a8fe
     subdir=app
     gradle=yes
-    
+
 Build:1.8.2,19
     commit=70494643404a468247d4b61c49e51f3af771db12
     subdir=app
