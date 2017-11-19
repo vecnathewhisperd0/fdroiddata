@@ -656,11 +656,22 @@ Build:2.8.2.1,297
 Build:2.8.3,300
     commit=r300
     subdir=myExpenses
-    submodules=yes
     gradle=yes
-    prebuild=sed -i -e 's@repo.commonsware.com.s3.amazonaws.com@s3.amazonaws.com/repo.commonsware.com@g' ../build.gradle
+    rm=tests
+
+Build:2.8.3,301
+    commit=r301
+    subdir=myExpenses
+    gradle=yes
+    rm=tests
+
+Build:2.8.3.1,302
+    commit=r302
+    subdir=myExpenses
+    gradle=yes
+    rm=tests
 
 Auto Update Mode:Version r%c
 Update Check Mode:Tags
-Current Version:2.8.3
-Current Version Code:300
+Current Version:2.8.3.1
+Current Version Code:302
