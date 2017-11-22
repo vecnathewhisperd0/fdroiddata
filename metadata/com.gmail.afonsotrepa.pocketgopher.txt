@@ -1,0 +1,25 @@
+Categories:Internet
+License:Unlicense
+Web Site:https://afonsotrepa.github.io/PocketGopher/
+Source Code:https://github.com/afonsotrepa/PocketGopher
+Issue Tracker:https://github.com/afonsotrepa/PocketGopher/issues
+
+Auto Name:Pocket Gopher
+
+Repo Type:git
+Repo:https://github.com/afonsotrepa/PocketGopher
+
+Build:1.2.3,1
+    commit=9c7b3ffe6c608698378848cf8416851b7aa8a39c
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:None
+Summary:A Gopher Client
+Description:
+Browse the Gopherspace with this fast but feature-rich client.
+.
+
+Update Check Mode:Tags
+Current Version:1.2.3
+Current Version Code:1
