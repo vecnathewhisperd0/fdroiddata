@@ -7,26 +7,6 @@ Changelog:https://github.com/k3b/androFotoFinder/wiki/History
 Donate:http://donate.openstreetmap.org/
 
 Auto Name:A Photo Manager
-Summary:Find local photos by folder, date and/or location
-Description:
-Search photos in local media store for viewing and maintenance.
-
-Features:
-
-* Can handle big image collections (15000+ images in 1000+ folders).
-* Uses Android's image content-provider. No initial image scan neccessary.
-* Find images via folder (with hirachical picker), wildcards that match folder/filename, date and/or area (if gps-exif data exists).
-* Show results in a scrollable gallery view.
-* Detail view features zooming, swiping for next/previous image and extended image info (Exif, IPTC, XMP, ICC).
-* Do simple file operations (copy, move, rename, delete, send, set gps exif data) that also update local media database and xmp sidecar file.
-* The geografic map shows markers at places where fotos were taken.
-
-Required Android Permissions:
-
-* INTERNET: to download map data from Open Streetmap Server
-* ACCESS_NETWORK_STATE and ACCESS_WIFI_STATE: to find out if wifi/internet is online to start downloaded geodata
-* WRITE_EXTERNAL_STORAGE to cache downloaded map data in local file system and to do file operations with the photos
-.
 
 Repo Type:git
 Repo:https://github.com/k3b/androFotoFinder
@@ -166,6 +146,7 @@ Build:0.6.0.170502,30
     gradle=yes
 
 Build:0.6.1.170803,31
+    disable=App may crash with Nullpointer Exception
     commit=v0.6.1.170803
     subdir=app
     gradle=yes
@@ -176,6 +157,7 @@ Build:0.6.1.170816,32
     gradle=yes
 
 Build:0.6.2.171114,33
+    disable=App may crash with Nullpointer Exception
     commit=v0.6.2.171114
     subdir=app
     gradle=yes
