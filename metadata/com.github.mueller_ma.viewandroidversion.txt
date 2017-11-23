@@ -1,0 +1,25 @@
+Categories:Games
+License:GPL-3.0
+Web Site:https://github.com/mueller-ma/View-android-version/blob/HEAD/README.md
+Source Code:https://github.com/mueller-ma/View-android-version
+Issue Tracker:https://github.com/mueller-ma/View-android-version/issues
+
+Summary:Simple app to view android version information
+Description:
+Displays Android code name, api level and some other usefull information.
+Usually these information are visible under Settings => About, but on some ROMs,
+e. g. FireOS, they are not visible.
+.
+
+Repo Type:git
+Repo:https://github.com/mueller-ma/View-android-version.git
+
+Build:1.0,1
+    commit=v1.0
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:1.0
+Current Version Code:1
