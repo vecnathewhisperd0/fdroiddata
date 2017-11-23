@@ -9,6 +9,8 @@ Donate:http://www.myexpenses.mobi/#donate
 FlattrID:1028216
 Bitcoin:1GCUGCSfFXzSC81ogHu12KxfUn3cShekMn
 
+Auto Name:${appName}
+
 Repo Type:git
 Repo:https://github.com/mtotschnig/MyExpenses.git
 
