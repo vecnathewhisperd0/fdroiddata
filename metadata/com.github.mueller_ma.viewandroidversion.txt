@@ -7,12 +7,12 @@ Issue Tracker:https://github.com/mueller-ma/View-android-version/issues
 Repo Type:git
 Repo:https://github.com/mueller-ma/View-android-version.git
 
-Build:1.0,1
-    commit=v1.1
+Build:1.2,2
+    commit=v1.2
     subdir=app
     gradle=yes
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.0
-Current Version Code:1
+Current Version:1.2
+Current Version Code:2
