@@ -15,7 +15,7 @@ Repo Type:git
 Repo:https://github.com/C-ollins/Simple-Decred-Widget
 
 Build:3.0,3
-    commit=d8cb947528da73a40ba25247698877b670f04466
+    commit=e0b3b406bd7871ca84c8b63ee2cf4bd9d31fc792
     subdir=app
     gradle=yes
 
