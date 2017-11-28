@@ -196,10 +196,10 @@ Build:4.4.119,115
     gradle=Xw4
     gradleprops=forFDroid
 
-Build:4.4.130,126
-    commit=android_beta_130
+Build:4.4.131,127
+    commit=android_beta_131
     subdir=xwords4/android
-    gradle=Xw4
+    gradle=Xw4fdroid
     gradleprops=forFDroid
 	prebuild=sed -i -e '/fabric/d' build.gradle && \
 				 sed -i -e '/fabric/d' -e '/crashlytics/,+2d' app/build.gradle
