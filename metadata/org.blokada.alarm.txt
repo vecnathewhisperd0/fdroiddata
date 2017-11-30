@@ -5,6 +5,7 @@ Author Email:hello@blokada.org
 Web Site:http://blokada.org
 Source Code:https://github.com/blokadaorg/blokada
 Issue Tracker:https://github.com/blokadaorg/blokada/issues
+Bitcoin:16rJ49uNKCohVhHvWNganP6Y48Ba9BTyKd
 
 Name:Blokada ad blocker
 Summary:The ad blocker - battery efficient, fast, powerful and simple to use
@@ -51,8 +52,8 @@ free! See how you can help at [http://blokada.org/#you]
 Repo Type:git
 Repo:https://github.com/blokadaorg/blokada.git
 
-Build:2.2.2,28
-    commit=v2.2.2
+Build:2.2.3,29
+    commit=v2.2.3
     subdir=app
     gradle=Prod
     prebuild=echo -e "ext {\n extVersionName = \"$$VERSION$$\"\n extVersionCode = $$VERCODE$$ \n }" >> ../version.gradle && \
@@ -60,5 +61,5 @@ Build:2.2.2,28
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.2.2
-Current Version Code:28
+Current Version:2.2.3
+Current Version Code:29
