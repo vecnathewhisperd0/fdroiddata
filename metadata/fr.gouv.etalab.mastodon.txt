@@ -150,6 +150,10 @@ Build:1.6.3,82
     commit=1.6.3
     subdir=app
     gradle=fdroid
+    sudo=. /etc/profile.d/bsenv.sh && \
+        echo -e '\nd56f5187479451eabf01fb78af6dfcb131a6481e' > $ANDROID_HOME/licenses/android-sdk-license && \
+        chgrp vagrant $ANDROID_HOME/platforms && \
+        chmod g+w $ANDROID_HOME/platforms
     prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
         sed -i -e '/safetynetImplementation/d' build.gradle
 
