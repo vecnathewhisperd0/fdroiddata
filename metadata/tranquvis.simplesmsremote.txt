@@ -60,7 +60,7 @@ Build:1.1,110
     prebuild=cp -fR $$tranquisdirpicker$$/app ../tranquvis.directorypicker
 
 Build:1.2,120
-    commit=fcb9d51742d172c9c3c65c8853adc3ff0d471263
+    commit=a401cae945840a51f4a23b3239d65452fae27f55
     subdir=app
     gradle=yes
     srclibs=tranquisdirpicker@c2e29f8d0d88376f5e26b9ab8cc4b475e6664bf1
