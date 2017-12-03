@@ -59,7 +59,15 @@ Build:1.1,110
     rm=tranquvis.directorypicker
     prebuild=cp -fR $$tranquisdirpicker$$/app ../tranquvis.directorypicker
 
+Build:1.2,120
+    commit=fcb9d51742d172c9c3c65c8853adc3ff0d471263
+    subdir=app
+    gradle=yes
+    srclibs=tranquisdirpicker@c2e29f8d0d88376f5e26b9ab8cc4b475e6664bf1
+    rm=tranquvis.directorypicker
+    prebuild=cp -fR $$tranquisdirpicker$$/app ../tranquvis.directorypicker
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.1
-Current Version Code:110
+Current Version:1.2
+Current Version Code:120
