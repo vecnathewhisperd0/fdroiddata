@@ -64,7 +64,28 @@ Build:1.4.3,12
     subdir=app
     gradle=yes
 
+Build:1.4.4,13
+    disable=uses com.android.tools.build:gradle:3.0.0-alpha3
+    commit=r1.4.4
+    subdir=app
+    gradle=yes
+
+Build:1.4.4.2,14
+    commit=r1.4.4.2
+    subdir=app
+    gradle=yes
+
+Build:1.4.5,15
+    commit=r1.4.5
+    subdir=app
+    gradle=yes
+
+Build:1.4.6,16
+    commit=r1.4.6
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version r%v
 Update Check Mode:Tags
-Current Version:1.4.3
-Current Version Code:12
+Current Version:1.4.6
+Current Version Code:16

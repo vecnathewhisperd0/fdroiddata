@@ -1,6 +1,7 @@
 android.tether
 at.bitfire.davdroid.mirakel
 ca.cumulonimbus.barometernetwork
+cat.mvmike.minimalcalendarwidget
 cgeo.geocaching
 cm.aptoide.pt
 co.wakarimasen.ceredux
@@ -25,6 +26,8 @@ com.drodin.zxdroid
 com.droidwave.offlinecalendar
 com.eddyspace.networkmonitor
 com.emartynov.android.app.urlsetter
+com.fairphone.clock
+com.fairphone.mycontacts
 com.funambol.androidsync
 com.google.android.apps.iosched
 com.google.android.maps.mytracks
@@ -38,14 +41,12 @@ com.kirit.android.mintercept
 com.kkinder.sharelocation
 com.longevitysoft.android.appwidget.hstfeed
 com.mattermost.mattermost
-com.memetro.android
 com.miz.mizuu
 com.mobilepearls.memory
 com.money.manager.ex
 com.mp3tunes.android.player
 com.nostra13.universalimageloader
 com.npi.muzeiflickr
-com.owncloud.android.beta
 com.ratebeer.android
 com.seafile.seadroid
 com.semche.invasion
@@ -75,7 +76,6 @@ gr.tsagi.jekyllforandroid
 in.shubhamchaudhary.logmein
 info.toyonos.hfr4droid
 it.devapp.android
-me.cuelga.me
 net.altcoinfaucet.app
 net.exclaimindustries.geohashdroid
 net.status.client.mobile
@@ -83,6 +83,7 @@ org.abrantix.rockon.rockonnggl
 org.androhid
 org.androidsoft.opendata.remarkabletrees
 org.anhonesteffort.flock
+org.briarproject.briar.beta
 org.curiouscreature.android.shelves
 org.fairphone.launcher
 org.fdroid.superuser
@@ -102,6 +103,7 @@ org.opensatnav.android
 org.piwik.mobile
 org.swiftp
 org.tvbrowser.tvbrowser
+player.efis.data
 ru.qrck.quitetaskmanager
 se.chalmers.doit
 se.peterbjorkman.android.trafikinfo

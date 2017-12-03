@@ -315,7 +315,92 @@ Build:2.5.1,78
     gradle=yes
     prebuild=sed -i -e '/google-api/d' -e '/play-services/d' build.gradle
 
+Build:2.5.2,79
+    commit=2.5.2
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/google-api/d' -e '/play-services/d' build.gradle
+
+Build:2.5.3,80
+    commit=2.5.3
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/google-api/d' -e '/play-services/d' build.gradle
+
+Build:2.5.6,83
+    commit=2.5.6
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/google-api/d' -e '/play-services/d' build.gradle
+
+Build:2.5.7,84
+    commit=2.5.7
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/google-api/d' -e '/play-services/d' build.gradle
+
+Build:2.6.1,87
+    disable=links against com.google.android.gms:play-services-auth
+    commit=2.6.1
+    subdir=app
+    gradle=yes
+
+Build:2.7.4,92
+    commit=2.7.4
+    subdir=app
+    gradle=yes
+
+Build:2.7.5,93
+    commit=2.7.5
+    subdir=app
+    gradle=yes
+
+Build:2.7.6,94
+    commit=2.7.6
+    subdir=app
+    gradle=yes
+
+Build:2.8.1,96
+    commit=2.8.1
+    subdir=app
+    gradle=yes
+
+Build:2.8.2,97
+    commit=2.8.2
+    subdir=app
+    gradle=yes
+
+Build:2.9.0,98
+    commit=2.9.0
+    subdir=app
+    gradle=yes
+
+Build:2.9.1,99
+    commit=2.9.1
+    subdir=app
+    gradle=yes
+
+Build:2.9.2,100
+    commit=2.9.2
+    subdir=app
+    gradle=yes
+
+Build:2.10.1,102
+    commit=2.10.1
+    subdir=app
+    gradle=yes
+
+Build:2.11.0,103
+    commit=2.11.0
+    subdir=app
+    gradle=yes
+
+Build:2.12.0,104
+    commit=2.12.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.5.1
-Current Version Code:78
+Current Version:2.12.0
+Current Version Code:104

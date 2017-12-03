@@ -9,21 +9,6 @@ FlattrID:343053
 Bitcoin:15u8aAPK4jJ5N8wpWJ5gutAyyeHtKX5i18
 
 Auto Name:F-Droid
-Summary:Application manager
-Description:
-Connects to F-Droid compatible repositories. The default repo is hosted at
-f-droid.org, which contains only bona fide FOSS.
-
-Android is open in the sense that you are free to install apks from anywhere you
-wish, but there are many good reasons for using a client/repository setup:
-
-* Be notified when updates are available
-* Keep track of older and beta versions
-* Filter apps that aren't compatible with the device
-* Find apps via categories and searchable descriptions
-* Access associated urls for donations, source code etc.
-* Stay safe by checking repo index signatures and apk hashes
-.
 
 Repo Type:srclib
 Repo:fdroidclient
@@ -699,37 +684,100 @@ Build:0.102.3,102350
     gradle=yes
 
 Build:0.103-alpha1,103001
+    disable=no longer supported, incompatible with index-v1.json format
     commit=v0.103-alpha1
     subdir=app
     gradle=yes
 
 Build:0.103-alpha2,103002
+    disable=no longer supported, incompatible with index-v1.json format
     commit=v0.103-alpha2
     subdir=app
     gradle=yes
 
 Build:0.103-alpha3,103003
+    disable=no longer supported, incompatible with index-v1.json format
     commit=v0.103-alpha3
     subdir=app
     gradle=yes
 
 Build:0.103,103050
+    disable=no longer supported, incompatible with index-v1.json format
     commit=v0.103
     subdir=app
     gradle=yes
 
 Build:0.103.1,103150
+    disable=no longer supported, incompatible with index-v1.json format
     commit=v0.103.1
     subdir=app
     gradle=yes
 
 Build:0.103.2,103250
+    disable=no longer supported, incompatible with index-v1.json format
     commit=v0.103.2
     subdir=app
     gradle=yes
 
-Archive Policy:12 versions
+Build:0.104,104050
+    commit=v0.104
+    subdir=app
+    gradle=yes
+
+Build:1.0-alpha0,1000000
+    commit=1.0-alpha0
+    subdir=app
+    gradle=yes
+
+Build:1.0-alpha1,1000001
+    commit=1.0-alpha1
+    subdir=app
+    gradle=yes
+
+Build:1.0-alpha2,1000002
+    commit=1.0-alpha2
+    subdir=app
+    gradle=yes
+
+Build:1.0-alpha3,1000003
+    commit=1.0-alpha3
+    subdir=app
+    gradle=yes
+
+Build:1.0-alpha4,1000004
+    disable=totally broken upgrades
+    commit=1.0-alpha4
+    subdir=app
+    gradle=yes
+
+Build:1.0-alpha5,1000005
+    disable=totally broken upgrades
+    commit=1.0-alpha5
+    subdir=app
+    gradle=yes
+
+Build:1.0,1000010
+    commit=1.0
+    subdir=app
+    gradle=yes
+
+Build:1.0.1,1000011
+    commit=1.0.1
+    subdir=app
+    gradle=yes
+
+Build:1.0.2,1000012
+    commit=1.0.2
+    subdir=app
+    gradle=yes
+
+Build:1.1-alpha0,1001000
+    commit=1.1-alpha0
+    subdir=app
+    gradle=yes
+
+Archive Policy:20 versions
 Auto Update Mode:None
 Update Check Mode:Static
-Current Version:0.102.3
-Current Version Code:102350
+Current Version:1.0.1
+Current Version Code:1000011

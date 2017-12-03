@@ -1,7 +1,7 @@
 AntiFeatures:UpstreamNonFree
 Categories:Games
 License:GPL-2.0+
-Web Site:http://tuxrider.drodin.com
+Web Site:http://drodin.com/tuxrider
 Source Code:https://github.com/drodin/TuxRider
 Issue Tracker:https://github.com/drodin/TuxRider/issues
 Donate:http://drodin.com/tuxrider
@@ -30,5 +30,5 @@ Build:1.0.9,11
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.0.9
-Current Version Code:11
+Current Version:1.0.10
+Current Version Code:12

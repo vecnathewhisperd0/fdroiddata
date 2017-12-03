@@ -6,23 +6,6 @@ Issue Tracker:https://github.com/gateship-one/malp/issues
 Changelog:https://github.com/gateship-one/malp/blob/HEAD/CHANGELOG.md
 
 Auto Name:M.A.L.P.
-Summary:Control your MPD server
-Description:
-MPD remote control client that is optimized for speed (even with large music
-libraries).
-
-It strictly follows the Material design guidelines.
-
-It's main features are a fast music library browser (artist, album, file
-browser, playlist management).
-
-It also includes an launcher widget and an optional notification with a
-background service.
-
-Artwork download available via MusicBrainz, Fanart.TV and Last.fm.
-
-Works from MPD v. 0.14 and newer
-.
 
 Repo Type:git
 Repo:https://github.com/gateship-one/malp
@@ -52,7 +35,42 @@ Build:1.1.4,13
     subdir=app
     gradle=yes
 
+Build:1.1.5,14
+    commit=release-14
+    subdir=app
+    gradle=yes
+
+Build:1.1.6,15
+    commit=release-15
+    subdir=app
+    gradle=yes
+
+Build:1.1.7,16
+    commit=release-16
+    subdir=app
+    gradle=yes
+
+Build:1.1.8,17
+    commit=release-17
+    subdir=app
+    gradle=yes
+
+Build:1.1.9,18
+    commit=release-18
+    subdir=app
+    gradle=yes
+
+Build:1.1.10,19
+    commit=release-19
+    subdir=app
+    gradle=yes
+
+Build:1.1.11,20
+    commit=release-20
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version release-%c
 Update Check Mode:Tags
-Current Version:1.1.4
-Current Version Code:13
+Current Version:1.1.11
+Current Version Code:20

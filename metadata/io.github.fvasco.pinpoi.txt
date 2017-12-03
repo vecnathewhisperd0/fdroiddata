@@ -231,7 +231,55 @@ Build:1.4.10,42
     gradle=yes
     prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
 
+Build:1.4.11,43
+    commit=1.4.11
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '2.14.1'/gradleVersion = '3.5'/" ../build.gradle
+
+Build:1.4.12,44
+    commit=1.4.12
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '2.14.1'/gradleVersion = '3.5'/" ../build.gradle
+
+Build:1.4.13,45
+    commit=1.4.13
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '2.14.1'/gradleVersion = '3.5'/" ../build.gradle
+
+Build:1.4.14,46
+    commit=1.4.14
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '2.14.1'/gradleVersion = '3.5'/" ../build.gradle
+
+Build:1.4.16,48
+    commit=1.4.16
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '2.14.1'/gradleVersion = '3.5'/" ../build.gradle
+
+Build:1.4.17,49
+    commit=1.4.17
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '2.14.1'/gradleVersion = '3.5'/" ../build.gradle
+
+Build:1.4.19,51
+    commit=1.4.19
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '2.14.1'/gradleVersion = '3.5'/" ../build.gradle
+
+Build:1.4.20,52
+    commit=1.4.20
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '2.14.1'/gradleVersion = '3.5'/" ../build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.4.10
-Current Version Code:42
+Current Version:1.4.20
+Current Version Code:52

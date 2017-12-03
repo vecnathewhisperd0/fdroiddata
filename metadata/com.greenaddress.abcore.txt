@@ -63,7 +63,33 @@ Build:0.55,55
     forcevercode=yes
     prebuild=sed -i -e 's/versionCode Integer/0 + Integer/g' build.gradle
 
-Auto Update Mode:None
+Build:0.58,58
+    commit=v0.58alphaPoC
+    subdir=app
+    gradle=prod
+    forcevercode=yes
+    prebuild=sed -i -e 's/versionCode Integer/0 + Integer/g' build.gradle
+
+Build:0.59,59
+    commit=v0.59alphaPoC
+    subdir=app
+    gradle=prod
+    forcevercode=yes
+    prebuild=sed -i -e 's/versionCode Integer/0 + Integer/g' build.gradle
+
+Build:0.60,60
+    commit=v0.60alphaPoC
+    subdir=app
+    gradle=prod
+    prebuild=sed -i -e '/versionCode Integer.parseInt/d' build.gradle
+
+Build:0.61,61
+    commit=v0.61alphaPoC
+    subdir=app
+    gradle=prod
+    prebuild=sed -i -e '/versionCode Integer.parseInt/d' build.gradle
+
+Auto Update Mode:Version v%valphaPoC
 Update Check Mode:Tags
-Current Version:0.57
-Current Version Code:57
+Current Version:0.61
+Current Version Code:61

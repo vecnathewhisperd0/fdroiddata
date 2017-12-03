@@ -58,7 +58,17 @@ Build:1.5,105
     subdir=app
     gradle=yes
 
+Build:1.6,106
+    commit=1.6
+    subdir=app
+    gradle=yes
+
+Build:1.7,107
+    commit=1.7
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.5
-Current Version Code:105
+Current Version:1.7
+Current Version Code:107

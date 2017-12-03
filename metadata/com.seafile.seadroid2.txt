@@ -368,7 +368,65 @@ Build:2.1.12,66
     subdir=app
     gradle=yes
 
+Build:2.1.13,67
+    commit=2.1.13
+    subdir=app
+    gradle=yes
+
+Build:2.1.14,68
+    commit=2.1.14
+    subdir=app
+    gradle=yes
+
+Build:2.1.15,69
+    commit=2.1.15
+    subdir=app
+    gradle=yes
+
+Build:2.1.16,70
+    commit=2.1.16
+    subdir=app
+    gradle=yes
+
+Build:2.1.17,71
+    commit=2.1.17
+    subdir=app
+    gradle=yes
+
+Build:2.1.18,72
+    commit=2.1.18
+    subdir=app
+    gradle=yes
+    srclibs=android-vcard@android-vcard-1.4
+    rm=app/libs
+    prebuild=find $$android-vcard$$ -name '*.jar' -delete && \
+        sed -i -e '/repositories/a\        mavenLocal()' ../build.gradle && \
+        sed -i -e 's/compile fileTree.*/compile "com.googlecode.android-vcard:android-vcard:1.4"/' build.gradle
+    build=$$MVN3$$ install -f $$android-vcard$$ -Dmaven.test.skip=true
+
+Build:2.1.20,74
+    commit=2.1.20
+    subdir=app
+    gradle=yes
+    srclibs=android-vcard@android-vcard-1.4
+    rm=app/libs
+    prebuild=find $$android-vcard$$ -name '*.jar' -delete && \
+        sed -i -e '/repositories/a\        mavenLocal()' ../build.gradle && \
+        sed -i -e 's/compile fileTree.*/compile "com.googlecode.android-vcard:android-vcard:1.4"/' build.gradle
+    build=$$MVN3$$ install -f $$android-vcard$$ -Dmaven.test.skip=true
+
+Build:2.2.0,75
+    commit=2.2.0
+    subdir=app
+    gradle=yes
+    srclibs=android-vcard@android-vcard-1.4
+    rm=app/libs
+    prebuild=find $$android-vcard$$ -name '*.jar' -delete && \
+        sed -i -e '/repositories/a\        mavenLocal()' ../build.gradle && \
+        sed -i -e 's/compile fileTree.*/compile "com.googlecode.android-vcard:android-vcard:1.4"/' build.gradle
+    build=$$MVN3$$ install -f $$android-vcard$$ -Dmaven.test.skip=true
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.1.12
-Current Version Code:66
+Current Version:2.2.0
+Current Version Code:75

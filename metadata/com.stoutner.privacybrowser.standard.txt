@@ -7,26 +7,9 @@ Source Code:https://git.stoutner.com/?p=PrivacyBrowser.git;a=summary
 Issue Tracker:https://redmine.stoutner.com/projects/privacy-browser/issues
 Changelog:https://www.stoutner.com/privacy-browser/changelog/
 Donate:https://www.stoutner.com/privacy-browser/contributors/
+Bitcoin:1Jiooc5L238VnhiWtkdYEkwm7kRNWQspSC
 
 Auto Name:Privacy Browser
-Summary:A web browser that respects your privacy
-Description:
-Privacy Browser protects your privacy by disabling JavaScript, DOM storage, and
-cookies by default, but providing quick methods to enable them for websites
-where they are required. Many websites use these technologies to track users
-between visits and across sites.
-
-Privacy Browser uses Android's built-in WebView to render web pages. As such, it
-works best if you have updated to the latest version of WebView.
-
-Warning: Privacy Browser is susceptible to
-[https://www.stoutner.com/kitkat-security-problems/ MITM (Man In The Middle)
-attacks] when browsing insecure websites from devices running Android KitKat
-(version 4.4.x, API 19).
-
-Features full screen browsing mode, integrated ad blocker, and Tor Orbot proxy
-support.
-.
 
 Repo Type:git
 Repo:git://git.stoutner.com/git/PrivacyBrowser.git
@@ -152,7 +135,43 @@ Build:2.3,23
     gradle=standard
     prebuild=sed -i -e '/firebase/d' build.gradle
 
+Build:2.4,24
+    commit=v2.4
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.5,25
+    commit=v2.5
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.6,26
+    commit=v2.6
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.7.1,28
+    commit=v2.7.1
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.7.2,29
+    commit=v2.7.2
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Maintainer Notes:
+Summary and Description are maintained by upstream using fastlane in
+the source repo:
+https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
+.
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.3
-Current Version Code:23
+Current Version:2.7.2
+Current Version Code:29

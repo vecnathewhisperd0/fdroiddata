@@ -4,16 +4,16 @@ Web Site:
 Source Code:https://github.com/beli3ver/Paper-FOSS-Theme
 Issue Tracker:https://github.com/beli3ver/Paper-FOSS-Theme/issues
 Changelog:https://github.com/beli3ver/Paper-FOSS-Theme/blob/HEAD/CHANGELOG.md
-Bitcoin:1HtFGvPieXqwiYrTPmN2xyF1BVkQJfhoSh
+Bitcoin:1CYiRF6AncdNkxcWTRFf5Mxi7UaFhC3jFG
+Litecoin:LY4Bq1K9gVWrMb4hkGQ39zGUcYJBx7dYcU
 
-Auto Name:Paper FOSS Theme
+Auto Name:Paper
 Summary:Icon theme
 Description:
-CM12 theme that is inspired by material design. It's aiming to provide a
-consistent and minimalistic look to your device. It is based on several other
-CM12 themes as well as [https://github.com/snwh/paper-icon-theme the GTK theme
-"Paper"]. A device running the Cyanogenmod 12 ROM or any other rom compatible
-with the CM12 theme engine is needed to use the theme.
+This icon theme based on the two GTK Icon Themes,
+[https://github.com/snwh/paper-icon-theme Paper from Sam Hewitt] and
+[https://github.com/PapirusDevelopmentTeam/papirus-icon-theme Papirus]. It's
+aiming to provide a consistent and minimalistic look to your device.
 .
 
 Repo Type:git
@@ -73,7 +73,49 @@ Build:0.7.4,13
     gradle=yes
     prebuild=sed -i -e 's/gradle:2.2.0-alpha3/gradle:2.1.0/g' ../build.gradle
 
+Build:1.0.1,15
+    commit=v1.0.1
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/gradle:2.2.0-alpha3/gradle:2.1.0/g' ../build.gradle
+
+Build:1.0.4,18
+    commit=v1.0.4
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/gradle:2.2.0-alpha3/gradle:2.1.0/g' ../build.gradle
+
+Build:1.0.6,20
+    commit=v1.0.6
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/gradle:2.2.0-alpha3/gradle:2.1.0/g' ../build.gradle
+
+Build:1.0.8,22
+    commit=v1.0.8
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/gradle:2.2.0-alpha3/gradle:2.1.0/g' ../build.gradle
+
+Build:1.1.0,24
+    commit=v1.1.0
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/gradle:2.2.0-alpha3/gradle:2.1.0/g' ../build.gradle
+
+Build:1.1.2,26
+    commit=v1.1.2.1
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/gradle:2.2.0-alpha3/gradle:2.1.0/g' ../build.gradle
+
+Build:1.1.5.1,30
+    commit=v1.1.5.1
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.7.4
-Current Version Code:13
+Current Version:1.1.5.1
+Current Version Code:30

@@ -116,7 +116,52 @@ Build:4.4,80
     subdir=mobile
     gradle=yes
 
-Auto Update Mode:Version %v
+Build:5.0.5,106
+    commit=0ace87fcb648b6022ec43593c2d70b7863c0b007
+    subdir=bitcoin
+    gradle=yes
+
+Build:5.0.7,108
+    commit=5.0.7
+    subdir=bitcoin
+    gradle=yes
+
+Build:5.0.9,110
+    commit=5.0.9
+    subdir=bitcoin
+    gradle=yes
+
+Build:5.1,111
+    commit=btc-5.1
+    subdir=bitcoin
+    gradle=yes
+
+Build:5.1.1,112
+    commit=btc-5.1.1
+    subdir=bitcoin
+    gradle=yes
+
+Build:5.2,120
+    commit=btc-5.2
+    subdir=bitcoin
+    gradle=yes
+
+Build:5.2.1,121
+    commit=btc-5.2.1
+    subdir=bitcoin
+    gradle=yes
+
+Build:5.2.2,122
+    commit=btc-5.2.2
+    subdir=bitcoin
+    gradle=yes
+
+Build:5.3,130
+    commit=btc-5.3
+    subdir=bitcoin
+    gradle=yes
+
+Auto Update Mode:Version btc-%v
 Update Check Mode:Tags
-Current Version:4.4
-Current Version Code:80
+Current Version:5.3
+Current Version Code:130

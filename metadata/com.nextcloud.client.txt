@@ -113,10 +113,63 @@ Build:1.4.1,10040199
     rm=libs/disklrucache*,user_manual
 
 Build:1.4.2,10040299
-    disable=play-services, see https://github.com/nextcloud/android/commit/e245b1f91dd30994f182892255d963a62dc6429c#commitcomment-21381828
-    commit=stable-1.4.2
+    commit=stable-1.4.3
     submodules=yes
-    gradle=yes
+    gradle=generic
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.0RC5,20000005
+    disable=obsolete RC
+    commit=rc-2.0.0-05
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.0RC6,20000006
+    disable=obsolete RC
+    commit=rc-2.0.0-06
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.0RC7,20000007
+    disable=obsolete RC
+    commit=rc-2.0.0-07
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.0RC8,20000008
+    disable=obsolete RC
+    commit=rc-2.0.0-08
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.0RC9,20000009
+    disable=obsolete RC
+    commit=rc-2.0.0-09
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.0,20000099
+    commit=stable-2.0.0
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.1,20000199
+    commit=stable-2.0.1
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
     rm=libs/disklrucache*,user_manual
 
 Auto Update Mode:Version stable-%v

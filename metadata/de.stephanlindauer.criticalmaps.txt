@@ -1,7 +1,7 @@
-AntiFeatures:NonFreeNet
+AntiFeatures:Tracking
 Categories:Internet
 License:Apache-2.0
-Web Site:http://criticalmaps.net
+Web Site:https://criticalmaps.net
 Source Code:https://github.com/CriticalMaps/criticalmaps-android
 Issue Tracker:https://github.com/CriticalMaps/criticalmaps-android/issues
 
@@ -13,7 +13,7 @@ with all other participants of the critical mass bicycle protest. You can use
 the chat to communicate with all other participants.
 
 Location sharing and chat relies on [http://criticalmaps.net criticalmaps.net].
-The communication is unencrypted at the moment.
+Location tracking is always active while using the app.
 .
 
 Repo Type:git
@@ -124,7 +124,22 @@ Build:2.2.1,28
     prebuild=sed -i -e '/slf4j-android/d' $$OSMBonusPack$$/build.gradle && \
         cp -r $$OSMBonusPack$$ ../
 
+Build:2.3.0,29
+    commit=2.3.0
+    subdir=app
+    gradle=yes
+
+Build:2.3.1,30
+    commit=2.3.1
+    subdir=app
+    gradle=yes
+
+Build:2.3.2,31
+    commit=2.3.2
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.2.1
-Current Version Code:28
+Current Version:2.3.2
+Current Version Code:31

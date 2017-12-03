@@ -1,0 +1,83 @@
+Categories:Internet
+License:GPL-2.0
+Web Site:
+Source Code:https://github.com/zoff99/ToxAndroidRefImpl
+Issue Tracker:https://github.com/zoff99/ToxAndroidRefImpl/issues
+Bitcoin:1ZANav18WY8ytM7bhnAEBS3bdrTohsD9p
+
+Auto Name:TRIfA
+Summary:TRIfA Tox Client
+Description:
+TRIfA is a Tox Client for Android. it's still currently in heavy development. To
+get more information about Tox please visit [https://tox.chat/faq.html]
+.
+
+Repo Type:git
+Repo:https://github.com/zoff99/ToxAndroidRefImpl
+
+Build:1.0.2,10002
+    commit=3ebe7560ae6f588db0f41ad2e669b6284fdbf767
+    subdir=android-refimpl-app/app
+    gradle=yes
+
+Build:1.0.3,10003
+    commit=0072d16efc1fa24e34a94b75c5a1d9d531d4e0f2
+    subdir=android-refimpl-app/app
+    gradle=yes
+
+Build:1.0.4,10004
+    disable=Don't build gradle witness. Use jar from repo.
+    commit=c94404779343280593fc42a93a246b6496fd240c
+    subdir=android-refimpl-app/app
+    gradle=yes
+    prebuild=cd ../gwitness ; rm -f build/libs/* ; gradle build --info && \
+        cp build/libs/gwitness.jar ./gwitness.jar && \
+        sed -i -e 's#../gwitness/build/libs/gwitness.jar#../gwitness/gwitness.jar#' ../app/build.gradle
+    scanignore=android-refimpl-app/gwitness/gwitness.jar
+
+Build:1.0.5,10005
+    commit=5d4349e31333ba4ae67caafba4976322841ee6d3
+    subdir=android-refimpl-app/app
+    gradle=yes
+    ndk=r13b
+
+Build:1.0.6,10006
+    commit=82678cfbc7b2b3b7fde0a8e0a1f7b047f73814d4
+    subdir=android-refimpl-app/app
+    gradle=yes
+    ndk=r13b
+
+Build:1.0.7,10007
+    commit=8d30843bdb9d179c9c1fe1e6d1e71b71996543be
+    subdir=android-refimpl-app/app
+    gradle=yes
+    ndk=r13b
+
+Build:1.0.8,10008
+    commit=1.0.8
+    subdir=android-refimpl-app/app
+    gradle=yes
+    ndk=r13b
+
+Build:1.0.9,10009
+    commit=1.0.9
+    subdir=android-refimpl-app/app
+    gradle=yes
+    ndk=r13b
+
+Build:1.0.10,10010
+    commit=1.0.10
+    subdir=android-refimpl-app/app
+    gradle=yes
+    ndk=r13b
+
+Build:1.0.11,10011
+    commit=1.0.11
+    subdir=android-refimpl-app/app
+    gradle=yes
+    ndk=r13b
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags ^[0-9].*
+Current Version:1.0.11
+Current Version Code:10011

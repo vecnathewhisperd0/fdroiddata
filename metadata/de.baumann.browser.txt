@@ -122,7 +122,50 @@ Build:3.6,41
     gradle=yes
     prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
 
+Build:3.7,42
+    commit=v3.7
+    subdir=app
+    gradle=yes
+    prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
+
+Build:3.8.1,45
+    commit=v3.8.1
+    subdir=app
+    gradle=yes
+    prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
+
+Build:4.0,50
+    commit=v4.0
+    subdir=app
+    gradle=yes
+    prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
+
+Build:4.1,55
+    commit=v4.1
+    subdir=app
+    gradle=yes
+    prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
+
+Build:4.3,58
+    commit=v4.3
+    subdir=app
+    gradle=yes
+    prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
+
+Build:4.4,59
+    commit=v4.4
+    subdir=app
+    gradle=yes
+    prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
+
+Build:4.5.1,61
+    disable=missing some resource files
+    commit=v4.5.1
+    subdir=app
+    gradle=yes
+    prebuild=echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation' } }" >> build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.6
-Current Version Code:41
+Current Version:4.5.1
+Current Version Code:61

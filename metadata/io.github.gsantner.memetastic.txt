@@ -1,41 +1,14 @@
-AntiFeatures:NonFreeAssets
 Categories:Graphics,Multimedia
 License:GPL-3.0+
+Author Name:Gregor Santner
 Web Site:https://github.com/gsantner/memetastic/blob/HEAD/README.md
 Source Code:https://github.com/gsantner/memetastic
 Issue Tracker:https://github.com/gsantner/memetastic/issues
 Changelog:https://github.com/gsantner/memetastic/blob/HEAD/CHANGELOG.md
-Donate:https://gsantner.github.io/donate/#r
+Donate:http://gsantner.net/#donate
 Bitcoin:1B9ZyYdQoY9BxMe9dRUEKaZbJWsbQqfXU5
 
-Name:MemeTastic
-Auto Name:${appName}
-Summary:Simple Meme Creator
-Description:
-Simple Meme Creator which includes most common templates. Completly ad-free,
-works offline and adds no watermarks.
-
-Memes can be created from templates included in the app, from pictures shared
-into the app and pictures from gallery & camera
-
-There are many meme customization options available:
-
-* Top & bottom caption
-* Font & border text color
-* Text size, font and capitalization
-
-'''More Features:'''
-
-* Show saved memes
-* Create favorites
-* Share into any app accepting pictures
-
-[https://github.com/gsantner/memetastic/blob/HEAD/README.md#screenshots View
-screenshots on bottom of README]
-
-[http://gsantner.gitlab.io/fdroid/latest/io.github.gsantner.memetastic.test.apk
-Get nightly version of app]
-.
+Auto Name:MemeTastic
 
 Repo Type:git
 Repo:https://github.com/gsantner/memetastic
@@ -76,11 +49,82 @@ Build:0.9.7,20
     subdir=app
     gradle=FlavorDefault
 
+Build:1.0.0,21
+    commit=v1.0.0
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.0.1,22
+    commit=v1.0.1
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.0.2,23
+    commit=v1.0.2
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.1.0,24
+    commit=v1.1.0
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.1.1,25
+    commit=v1.1.1
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.1.2,26
+    commit=v1.1.2
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.2.0,30
+    commit=v1.2.0
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.2.1,31
+    commit=v1.2.1
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.2.2,32
+    commit=v1.2.2
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.2.3,33
+    commit=v1.2.3
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.2.4,34
+    commit=v1.2.4
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.2.5,35
+    commit=v1.2.5
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.2.7,37
+    commit=v1.2.7
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
 Maintainer Notes:
-NonFreeAssets due to https://github.com/gsantner/memetastic/blob/master/app/src/main/res/raw/licenses_3rd_party.md
+Description and summary in app git repository
 .
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.9.7
-Current Version Code:20
+Current Version:1.2.7
+Current Version Code:37

@@ -13,31 +13,38 @@ Kwik EFIS is a Glass Cockpit application designed to work on most Android
 devices equipped with a GPS, gyroscope, accelerometer and a CPU with reasonable
 performance.
 
-* Synthetic Vision
+'''Synthetic Vision'''
 
 Synthetic vision is built from the USGS 3 arc second Digital Elevation Model
 data. If enabled, it also allows for some terrain collision detection. The
 required terrain data packages are available on F-Droid, see:
 
-1. North America/Canada [[player.efis.data.usa.can]]
+* [[player.efis.data.usa.can]] North America/Canada
+* [[player.efis.data.eur.rus]] Europe/Russia
+* [[player.efis.data.sah.jap]] Sahara/Northern Africa/India/Indonesia/Japan
+* [[player.efis.data.zar.aus]] Southern Africa/Australia
+* [[player.efis.data.pan.arg]] South America
 
-2. Southren Africa/Australia [[player.efis.data.zar.aus]]
-
-* Flight Director
+'''Flight Director'''
 
 Kwik EFIS has a fully functional flight director built in. It uses the standard
 V-Bar symbology common to modern flight directors. The target  waypoint and
 altitude is set on-screen by means of the spinner controls on the right top and
 bottom of the screen.
 
-* Demo Mode
+'''Demo Mode'''
 
 There is a "Demo Mode" available in the application. It is fairly basic and
 works like a crude flight simulator. The heading and altitude can be changed by
 pitching and banking the device. The speed runs up and down automatically based
 on the pitch.
 
-* Screenshots [http://members.iinet.net.au/~ninelima/efis/gallery.html]
+'''Digital moving Map'''
+
+[[player.efis.mfd]] is a companion application to the EFIS. It provides
+situational awareness and navigation functionality.
+
+'''Screenshots''' [http://members.iinet.net.au/~ninelima/efis/gallery.html]
 .
 
 Repo Type:git
@@ -68,7 +75,42 @@ Build:3.0,9
     subdir=app
     gradle=yes
 
+Build:3.2,11
+    commit=dc193e2f873c66ef0a041db703519c6aa35745a1
+    subdir=app
+    gradle=yes
+
+Build:3.3,12
+    commit=VER_3.3
+    subdir=app
+    gradle=yes
+
+Build:3.4,13
+    commit=VER_3.4
+    subdir=app
+    gradle=yes
+
+Build:3.5,14
+    commit=VER_3.5
+    subdir=pfd
+    gradle=yes
+
+Build:3.6,15
+    commit=VER_3.6
+    subdir=pfd
+    gradle=yes
+
+Build:3.7,16
+    commit=REL_3.8
+    subdir=pfd
+    gradle=yes
+
+Build:3.8,17
+    commit=REL_3.10
+    subdir=pfd
+    gradle=yes
+
 Auto Update Mode:None
-Update Check Mode:Tags ^PROD
-Current Version:3.1
-Current Version Code:10
+Update Check Mode:Tags ^REL
+Current Version:3.8
+Current Version Code:17

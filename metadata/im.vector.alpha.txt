@@ -4,8 +4,9 @@ Web Site:https://riot.im
 Source Code:https://github.com/vector-im/riot-android
 Issue Tracker:https://github.com/vector-im/riot-android/issues
 Changelog:https://github.com/vector-im/riot-android/blob/HEAD/CHANGES.rst
+Bitcoin:1LxowEgsquZ3UPZ68wHf8v2MDZw82dVmAE
 
-Auto Name:Riot
+Auto Name:Riot.im
 Summary:Open team collaboration
 Description:
 Riot gathers all your conversations and app integrations into one single app.
@@ -40,7 +41,8 @@ Features include:
 Note that the F-Droid release does not use GCM for notifications - instead it
 will keep syncing in the background. If you find that the ongoing background
 sync is using too much battery, you can add a delay or change the timeout of the
-sync or even disable background sync completely, in the settings page.
+sync or even disable background sync completely, in the settings page. Also
+please note that Google Analytics has been removed from the F-Droid release.
 
 For developers:
 
@@ -179,7 +181,84 @@ Build:0.6.9,609
         sed -i -e '/projectDir/d' ../settings.gradle && \
         sed -i -e '/play-services/d' build.gradle
 
+Build:0.6.10,610
+    commit=f5860d676f06838ab7f128b04b474fc600642b6c
+    subdir=vector
+    gradle=appfdroid
+    srclibs=matrixsdk@e7f96b88b69c900e13e7125d8db114fcc796ab20
+    prebuild=cp -fR $$matrixsdk$$/matrix-sdk ../ && \
+        sed -i -e '/projectDir/d' ../settings.gradle && \
+        sed -i -e '/com.google.firebase/d' build.gradle && \
+        sed -i -e '/com.google.android.gms/d' build.gradle && \
+        sed -i -e '/com.google.gms.google-services/d' build.gradle
+
+Build:0.6.12,61202
+    commit=v0.6.12
+    subdir=vector
+    gradle=appfdroid
+    srclibs=matrixsdk@v0.7.13
+    prebuild=cp -fR $$matrixsdk$$/matrix-sdk ../ && \
+        sed -i -e '/projectDir/d' ../settings.gradle && \
+        sed -i -e '/com.google.firebase/d' build.gradle && \
+        sed -i -e '/com.google.android.gms/d' build.gradle && \
+        sed -i -e '/com.google.gms.google-services/d' build.gradle
+
+Build:0.6.13,61306
+    commit=v0.6.13
+    subdir=vector
+    gradle=appfdroid
+    srclibs=matrixsdk@v0.7.14
+    prebuild=cp -fR $$matrixsdk$$/matrix-sdk ../ && \
+        sed -i -e '/projectDir/d' ../settings.gradle && \
+        sed -i -e '/com.google.firebase/d' build.gradle && \
+        sed -i -e '/com.google.android.gms/d' build.gradle && \
+        sed -i -e '/com.google.gms.google-services/d' build.gradle
+
+Build:0.6.14,61401
+    commit=v0.6.14
+    subdir=vector
+    gradle=appfdroid
+    srclibs=matrixsdk@v0.7.14
+    prebuild=cp -fR $$matrixsdk$$/matrix-sdk ../ && \
+        sed -i -e '/projectDir/d' ../settings.gradle && \
+        sed -i -e '/com.google.firebase/d' build.gradle && \
+        sed -i -e '/com.google.android.gms/d' build.gradle && \
+        sed -i -e '/com.google.gms.google-services/d' build.gradle
+
+Build:0.7.00,70000
+    commit=v0.7.0
+    subdir=vector
+    gradle=appfdroid
+    srclibs=matrixsdk@v0.8.0
+    prebuild=cp -fR $$matrixsdk$$/matrix-sdk ../ && \
+        sed -i -e '/projectDir/d' ../settings.gradle && \
+        sed -i -e '/com.google.firebase/d' build.gradle && \
+        sed -i -e '/com.google.android.gms/d' build.gradle && \
+        sed -i -e '/com.google.gms.google-services/d' build.gradle
+
+Build:0.7.01,70100
+    commit=v0.7.01
+    subdir=vector
+    gradle=appfdroid
+    srclibs=matrixsdk@v0.8.01
+    prebuild=cp -fR $$matrixsdk$$/matrix-sdk ../ && \
+        sed -i -e '/projectDir/d' ../settings.gradle && \
+        sed -i -e '/com.google.firebase/d' build.gradle && \
+        sed -i -e '/com.google.android.gms/d' build.gradle && \
+        sed -i -e '/com.google.gms.google-services/d' build.gradle
+
+Build:0.7.03,70301
+    commit=v0.7.03
+    subdir=vector
+    gradle=appfdroid
+    srclibs=matrixsdk@v0.8.03
+    prebuild=cp -fR $$matrixsdk$$/matrix-sdk ../ && \
+        sed -i -e '/projectDir/d' ../settings.gradle && \
+        sed -i -e '/com.google.firebase/d' build.gradle && \
+        sed -i -e '/com.google.android.gms/d' build.gradle && \
+        sed -i -e '/com.google.gms.google-services/d' build.gradle
+
 Auto Update Mode:None
-Update Check Mode:None
-Current Version:0.6.9
-Current Version Code:609
+Update Check Mode:Tags
+Current Version:0.7.03
+Current Version Code:70301
