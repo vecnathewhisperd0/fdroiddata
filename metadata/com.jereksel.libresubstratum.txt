@@ -1,5 +1,5 @@
 Categories:Theming
-License:MIT
+License:GPL-3.0
 Author Email:jereksel@gmail.com
 Web Site:
 Source Code:https://github.com/jereksel/Bucket
@@ -11,15 +11,6 @@ Auto Name:Bucket
 Repo Type:git
 Repo:https://github.com/jereksel/Bucket
 
-Build:0.2-fdroid,2
-    commit=e97e8eba8f5f95b71caea2bac5f7eabb1ffd9403
-    subdir=app
-    submodules=yes
-    init=./removeprop.sh
-    gradle=Fdroid
-    ndk=r15c
-    gradleprops=fdroid
-
 Build:0.1-fdroid,1
     commit=v0.1
     subdir=app
@@ -27,6 +18,15 @@ Build:0.1-fdroid,1
     init=./removeprop.sh
     gradle=Fdroid
     rm=testthemes/OmniTheme/substrate/substrate.aar
+    ndk=r15c
+    gradleprops=fdroid
+
+Build:0.2-fdroid,2
+    commit=e97e8eba8f5f95b71caea2bac5f7eabb1ffd9403
+    subdir=app
+    submodules=yes
+    init=./removeprop.sh
+    gradle=Fdroid
     ndk=r15c
     gradleprops=fdroid
 
