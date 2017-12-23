@@ -23,12 +23,12 @@ feature requests and pull requests!
 Repo Type:git
 Repo:https://github.com/ramack/ActivityDiary
 
-Build:1.0.0,100
-    commit=v1.0.0
+Build:1.0.5,105
+    commit=v1.0.5
     subdir=app
     gradle=yes
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.0.0
-Current Version Code:100
+Current Version:1.0.5
+Current Version Code:105
