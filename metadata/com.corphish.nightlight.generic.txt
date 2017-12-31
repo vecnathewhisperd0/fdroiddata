@@ -1,5 +1,5 @@
 Categories:System
-License:
+License:GPL-3.0
 Web Site:https://github.com/corphish/NightLight
 Source Code:https://github.com/corphish/NightLight
 Issue Tracker:https://github.com/corphish/NightLight/issues
@@ -34,7 +34,7 @@ Repo Type:git
 Repo:https://github.com/corphish/NightLight
 
 Build:1.1.6,11
-    commit=d24d70f740e791ef438c680b8202e41277b0b3c2
+    commit=b60d8a31c4de8f379fd7798c196e40cee504345e
     subdir=app
     gradle=foss
     prebuild=sed -i -e '/io.fabric/d' -e '/fabric.io/d' -e '/genericImplementation(.*) {/,/}/d' -e '/donateImplementation(.*) {/,/}/d' ../build.gradle build.gradle
