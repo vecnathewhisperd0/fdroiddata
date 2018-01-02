@@ -25,8 +25,8 @@ Features:
 Repo Type:git
 Repo:https://github.com/abertschi/ad-free
 
-Build:0.0.4.2,16
-    commit=0.0.4.2
+Build:0.0.4.3,17
+    commit=0.0.4.3
     subdir=app
     gradle=yes
     scandelete=asset/
