@@ -53,7 +53,6 @@ Build:1.4.3,10403
 Build:1.4.5,10405
     commit=1.4.5
     submodules=yes
-    prebuild=echo "ndk.dir=$$NDK$$" >> local.properties
 
 Auto Update Mode:None
 Update Check Mode:Tags

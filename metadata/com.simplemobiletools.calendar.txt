@@ -360,7 +360,54 @@ Build:2.7.6,94
     subdir=app
     gradle=yes
 
+Build:2.8.1,96
+    commit=2.8.1
+    subdir=app
+    gradle=yes
+
+Build:2.8.2,97
+    commit=2.8.2
+    subdir=app
+    gradle=yes
+
+Build:2.9.0,98
+    commit=2.9.0
+    subdir=app
+    gradle=yes
+
+Build:2.9.1,99
+    commit=2.9.1
+    subdir=app
+    gradle=yes
+
+Build:2.9.2,100
+    commit=2.9.2
+    subdir=app
+    gradle=yes
+
+Build:2.10.1,102
+    disable=Could not find com.android.tools.build:gradle:3.0.0
+    commit=2.10.1
+    subdir=app
+    gradle=yes
+
+Build:2.11.0,103
+    disable=Could not find com.android.tools.build:gradle:3.0.0
+    commit=2.11.0
+    subdir=app
+    gradle=yes
+
+Build:2.12.0,104
+    commit=2.12.0
+    subdir=app
+    gradle=yes
+
+Build:3.0.1,106
+    commit=3.0.1
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.7.6
-Current Version Code:94
+Current Version:3.0.1
+Current Version Code:106

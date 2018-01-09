@@ -18,7 +18,43 @@ Build:0.4.3.3,16
     commit=v0.4.3.3
     target=android-21
 
+Build:0.4.4,17
+    commit=v0.4.4
+    target=android-21
+
+Build:0.5.0.1,19
+    commit=v0.5.0.1
+    target=android-21
+
+Build:0.5.2,22
+    commit=v0.5.2
+    target=android-26
+
+Build:0.5.2.1,23
+    commit=v0.5.2.1
+    target=android-26
+
+Build:0.5.2.2,24
+    commit=v0.5.2.2
+    target=android-26
+
+Build:0.5.2.3,25
+    commit=v0.5.2.3
+    target=android-26
+
+Build:0.5.2.4,26
+    commit=v0.5.2.4
+    target=android-26
+
+Build:0.5.3,28
+    commit=v0.5.3
+    target=android-26
+
+Build:0.5.3.1,29
+    commit=v0.5.3.1
+    target=android-26
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.4.3.3
-Current Version Code:16
+Current Version:0.5.3.1
+Current Version Code:29

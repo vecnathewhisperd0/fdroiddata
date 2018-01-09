@@ -4,7 +4,7 @@ Web Site:https://github.com/gsantner/markor/blob/HEAD/README.md
 Source Code:https://github.com/gsantner/markor
 Issue Tracker:https://github.com/gsantner/markor/issues
 Changelog:https://github.com/gsantner/markor/blob/HEAD/CHANGELOG.md
-Donate:https://gsantner.github.io/#donate
+Donate:http://gsantner.net/#donate
 Bitcoin:1B9ZyYdQoY9BxMe9dRUEKaZbJWsbQqfXU5
 
 Auto Name:Markor
@@ -42,11 +42,59 @@ Build:0.1.4,5
     submodules=yes
     gradle=FlavorDefault
 
+Build:0.1.5,6
+    commit=v0.1.5
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:0.1.6,7
+    commit=v0.1.6
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:0.2.2,10
+    commit=v0.2.2
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:0.2.3,11
+    commit=v0.2.3
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:0.2.4,12
+    commit=v0.2.4
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:0.2.5,13
+    commit=v0.2.5
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:0.3.0,14
+    commit=v0.3.0
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:0.3.1,15
+    commit=v0.3.1
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
 Maintainer Notes:
 Description and summary in git metadata submodule
 .
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.1.4
-Current Version Code:5
+Current Version:0.3.1
+Current Version Code:15

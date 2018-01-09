@@ -202,8 +202,59 @@ Build:0.9.4,433
     build=$$NDK$$/ndk-build && \
         gradle nativeLibsToJar
 
+Build:0.9.5,443
+    commit=v0.9.5
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+
+Build:0.9.6,453
+    commit=v0.9.6
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build && \
+        gradle nativeLibsToJar
+
+Build:0.9.8,473
+    commit=v0.9.8
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r15c
+
+Build:0.9.9,483
+    commit=v0.9.9
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r15c
+
+Build:0.11.4,509
+    commit=v0.11.4
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r15c
+
+Build:0.12.0,510
+    commit=v0.12.0
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r15c
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Vercode Operation:%c*10 + 3
-Current Version:0.9.4
-Current Version Code:433
+Current Version:0.12.0
+Current Version Code:510

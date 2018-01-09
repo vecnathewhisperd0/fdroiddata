@@ -474,7 +474,63 @@ Build:2.15.2,135
     subdir=app
     gradle=yes
 
+Build:2.16.0,136
+    commit=2.16.0
+    subdir=app
+    gradle=yes
+
+Build:2.17.2,140
+    commit=2.17.2
+    subdir=app
+    gradle=yes
+
+Build:2.17.3,141
+    commit=2.17.3
+    subdir=app
+    gradle=yes
+
+Build:2.18.0,143
+    disable=Could not find com.android.tools.build:gradle:3.0.0
+    commit=2.18.0
+    subdir=app
+    gradle=yes
+
+Build:2.19.0,145
+    commit=2.19.0
+    subdir=app
+    gradle=yes
+
+Build:3.0.1,147
+    commit=3.0.1
+    subdir=app
+    gradle=yes
+
+Build:3.0.2,148
+    commit=3.0.2
+    subdir=app
+    gradle=yes
+
+Build:3.0.3,149
+    commit=3.0.3
+    subdir=app
+    gradle=yes
+
+Build:3.1.0,150
+    commit=3.1.0
+    subdir=app
+    gradle=yes
+
+Build:3.1.2,152
+    commit=3.1.2
+    subdir=app
+    gradle=yes
+
+Build:3.2.1,154
+    commit=3.2.1
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.15.2
-Current Version Code:135
+Current Version:3.2.1
+Current Version Code:154

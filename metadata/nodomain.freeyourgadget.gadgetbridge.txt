@@ -4,7 +4,7 @@ Web Site:https://gadgetbridge.org
 Source Code:https://github.com/Freeyourgadget/Gadgetbridge
 Issue Tracker:https://github.com/Freeyourgadget/Gadgetbridge/issues
 Changelog:https://github.com/Freeyourgadget/Gadgetbridge/blob/HEAD/CHANGELOG.md
-Donate:https://liberapay.com/Gadgetbridge
+LiberapayID:11276
 
 Auto Name:Gadgetbridge
 Summary:Communicate with Pebble/Mi Band/Amazfit Bip/Hplus devices and more
@@ -528,7 +528,57 @@ Build:0.21.5,106
     subdir=app
     gradle=yes
 
+Build:0.21.6,107
+    commit=0.21.6
+    subdir=app
+    gradle=yes
+
+Build:0.22.0,108
+    commit=0.22.0
+    subdir=app
+    gradle=yes
+
+Build:0.22.1,109
+    commit=0.22.1
+    subdir=app
+    gradle=yes
+
+Build:0.22.2,110
+    commit=0.22.2
+    subdir=app
+    gradle=yes
+
+Build:0.22.3,111
+    commit=0.22.3
+    subdir=app
+    gradle=yes
+
+Build:0.22.4,112
+    commit=0.22.4
+    subdir=app
+    gradle=yes
+
+Build:0.22.5,113
+    commit=0.22.5
+    subdir=app
+    gradle=yes
+
+Build:0.23.0,114
+    commit=0.23.0
+    subdir=app
+    gradle=yes
+
+Build:0.23.1,115
+    commit=0.23.1
+    subdir=app
+    gradle=yes
+
+Build:0.23.2,116
+    commit=0.23.2
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.21.5
-Current Version Code:106
+Current Version:0.23.2
+Current Version Code:116

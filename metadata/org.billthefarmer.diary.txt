@@ -17,7 +17,7 @@ backup and you can open the files with other applications.
 Includes basic functionality for browsing the old entries. Available in English,
 Catalan and Spanish.
 
-Forked from [http://git.savannah.gnu.org/cgit/diary.git] Updated for android 4
+Forked from [https://git.savannah.gnu.org/cgit/diary.git] Updated for android 4
 and later.
 .
 
@@ -88,7 +88,35 @@ Build:1.16,116
     commit=v1.16
     gradle=yes
 
+Build:1.17,117
+    commit=v1.17
+    gradle=yes
+
+Build:1.18,118
+    commit=v1.18
+    gradle=yes
+
+Build:1.19,119
+    commit=v1.19
+    gradle=yes
+
+Build:1.20,120
+    commit=v1.20
+    gradle=yes
+
+Build:1.21,121
+    commit=v1.21
+    gradle=yes
+
+Build:1.22,122
+    commit=v1.22
+    gradle=yes
+
+Build:1.23,123
+    commit=v1.23
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.16
-Current Version Code:116
+Current Version:1.23
+Current Version Code:123

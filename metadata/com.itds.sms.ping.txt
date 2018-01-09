@@ -24,7 +24,17 @@ Build:2,3
     subdir=app
     gradle=yes
 
+Build:3,4
+    commit=v3
+    subdir=app
+    gradle=yes
+
+Build:4-alpha-1,5
+    commit=v4-alpha-1
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2
-Current Version Code:3
+Current Version:4-alpha-1
+Current Version Code:5
