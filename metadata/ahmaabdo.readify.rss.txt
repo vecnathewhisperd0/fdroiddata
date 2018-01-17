@@ -20,7 +20,7 @@ Binaries:https://github.com/ahmaabdo/ReadifyRSS/raw/master/app/release/app-relea
 
 Build:1.5.2,8
     commit=1.5.2
-    subdir=/app
+    subdir=app
     gradle=yes
 
 Auto Update Mode:Version %v
