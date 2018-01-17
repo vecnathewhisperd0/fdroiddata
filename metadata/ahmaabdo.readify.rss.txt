@@ -1,0 +1,29 @@
+Categories:Reading
+License:GPL-3.0
+Author Name:Ahmad Abdo
+Author Email:a7maabdo@gmail.com
+Web Site:https://github.com/ahmaabdo/ReadifyRSS
+Source Code:https://github.com/ahmaabdo/ReadifyRSS
+Issue Tracker:https://github.com/ahmaabdo/ReadifyRSS/issues
+
+Auto Name:Readify
+Summary:RSS Feed reader
+Description:
+Based on spaRSS which based on Flym and Sparse RSS, this checks RSS/Atom news
+feeds, polling for updates from the device on a regular basis. Fetched items are
+available for offline reading.
+.
+
+Repo Type:git
+Repo:https://github.com/ahmaabdo/ReadifyRSS.git
+Binaries:https://github.com/ahmaabdo/ReadifyRSS/raw/master/app/release/app-release.apk
+
+Build:1.5.2,8
+    commit=1.5.2
+    subdir=/
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:Tags
+Current Version:1.5.2
+Current Version Code:8
