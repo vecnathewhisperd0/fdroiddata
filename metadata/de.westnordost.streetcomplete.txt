@@ -162,7 +162,7 @@ Build:3.4,304
     gradle=yes
 
 Auto Update Mode:Version v%v
-Update Check Ignore:(alpha|beta|rc|RC)
 Update Check Mode:Tags
+Update Check Ignore:(alpha|beta|rc|RC)
 Current Version:3.4
 Current Version Code:304
