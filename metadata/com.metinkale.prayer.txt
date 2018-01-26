@@ -207,7 +207,6 @@ Build:3.6.6,191
         sed -i -e '/om.google.android.gms:play-services/d' app/build.gradle
 
 Build:3.7,192
-    disable=compile error in pray-times library
     commit=fdroid-v3.7
     subdir=app
     submodules=yes
