@@ -19,7 +19,7 @@ Repo Type:git
 Repo:https://gitlab.com/ymber/Eleven.git
 
 Build:1.0,1
-    commit=1.0
+    commit=1.1
     subdir=app
     gradle=yes
 
