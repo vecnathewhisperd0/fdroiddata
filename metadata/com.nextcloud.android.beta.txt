@@ -906,11 +906,137 @@ Build:20171220,20171220
     rm=user_manual
     prebuild=sed -i -e '/google-services/d' -e '/modifiedCompile/d' build.gradle
 
+Build:20171223,20171223
+    commit=dev-20171223
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    prebuild=sed -i -e '/google-services/d' -e '/modifiedCompile/d' build.gradle
+
+Build:20171228,20171228
+    commit=dev-20171228
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    prebuild=sed -i -e '/google-services/d' -e '/modifiedCompile/d' build.gradle
+
+Build:20171230,20171230
+    commit=dev-20171230
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    prebuild=sed -i -e '/google-services/d' -e '/modifiedCompile/d' build.gradle
+
+Build:20180105,20180105
+    commit=dev-20180105
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    prebuild=sed -i -e '/google-services/d' -e '/modifiedCompile/d' build.gradle
+
+Build:20180106,20180106
+    commit=dev-20180106
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    prebuild=sed -i -e '/google-services/d' -e '/modifiedCompile/d' build.gradle
+
+Build:20180108,20180108
+    commit=dev-20180108
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    prebuild=sed -i -e '/google-services/d' -e '/modifiedCompile/d' build.gradle
+
+Build:20180109,20180109
+    commit=dev-20180109
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    prebuild=sed -i -e '/google-services/d' -e '/modifiedCompile/d' build.gradle
+
+Build:20180111,20180111
+    commit=dev-20180111
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    prebuild=sed -i -e '/google-services/d' -e '/modifiedCompile/d' build.gradle
+
+Build:20180112,20180112
+    commit=dev-20180112
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    prebuild=sed -i -e '/google-services/d' -e '/modifiedCompile/d' build.gradle
+
+Build:20180114,20180114
+    commit=dev-20180114
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    prebuild=sed -i -e '/google-services/d' -e '/modifiedCompile/d' build.gradle
+
+Build:20180117,20180117
+    commit=dev-20180117
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:20180118,20180118
+    commit=dev-20180118
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:20180121,20180121
+    commit=dev-20180121
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:20180123,20180123
+    commit=dev-20180123
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:20180127,20180127
+    commit=dev-20180127
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:20180131,20180131
+    commit=dev-20180131
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:20180201,20180201
+    commit=dev-20180201
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:20180204,20180204
+    commit=dev-20180204
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual
+    scandelete=src/androidTest
+
 Maintainer Notes:
 Tags get removed. See https://github.com/nextcloud/android/issues/969.
 .
 
 Auto Update Mode:Version dev-%c
 Update Check Mode:Tags ^dev
-Current Version:20171220
-Current Version Code:20171220
+Current Version:20180204
+Current Version Code:20180204

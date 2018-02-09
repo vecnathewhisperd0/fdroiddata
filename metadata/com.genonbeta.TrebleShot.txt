@@ -66,7 +66,37 @@ Build:1.2.4.4,54
     subdir=app
     gradle=yes
 
+Build:1.2.5,55
+    commit=1.2.5
+    subdir=app
+    gradle=yes
+
+Build:1.2.5.1,56
+    commit=1.2.5.1
+    subdir=app
+    gradle=yes
+
+Build:1.2.5.2,57
+    commit=1.2.5.2
+    subdir=app
+    gradle=yes
+
+Build:1.2.5.3,58
+    commit=1.2.5.3
+    subdir=app
+    gradle=yes
+
+Build:1.2.5.4,59
+    commit=1.2.5.4
+    subdir=app
+    gradle=yes
+
+Build:1.2.5.5,60
+    commit=1.2.5.5
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9\.]*$
-Current Version:1.2.4.4
-Current Version Code:54
+Current Version:1.2.5.5
+Current Version Code:60

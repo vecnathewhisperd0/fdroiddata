@@ -6,8 +6,7 @@ Source Code:https://github.com/siacs/Conversations
 Issue Tracker:https://github.com/siacs/Conversations/issues
 Changelog:https://github.com/siacs/Conversations/blob/HEAD/CHANGELOG.md
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CW3SYT3KG5PDL
-FlattrID:3531619
-Bitcoin:1NxSU1YxYzJVDpX1rcESAA3NJki7kRgeeu
+Bitcoin:1AeqNAcg85APAZj9BZfAjdFCC5zesqXp2B
 
 Auto Name:Conversations
 Summary:Chat using the XMPP network
@@ -917,7 +916,12 @@ Build:1.23.3,247
     gradle=free
     prebuild=sed -i -e '/playstoreCompile/d' -e '/play-services-gcm/d' build.gradle
 
+Build:1.23.4,251
+    commit=1.23.4
+    gradle=free
+    prebuild=sed -i -e '/playstoreCompile/d' -e '/play-services-gcm/d' build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]+$
-Current Version:1.23.3
-Current Version Code:247
+Current Version:1.23.4
+Current Version Code:251

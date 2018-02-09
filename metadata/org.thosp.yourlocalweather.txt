@@ -1,0 +1,81 @@
+Categories:Internet
+License:GPL-3.0+
+Web Site:
+Source Code:https://github.com/thuryn/your-local-weather
+Issue Tracker:https://github.com/thuryn/your-local-weather/issues
+Changelog:https://raw.githubusercontent.com/thuryn/your-local-weather/HEAD/CHANGELOG
+
+Auto Name:Your local weather
+Summary:Display weather information
+Description:
+Show current weather information from [http://openweathermap.org/
+OpenWeatherMap].
+
+Features:
+
+* Different languages: Basque, Belarusian, Czech, English, French, German, Japanese, Spanish, Polish, Russian
+* Current weather
+* 7 day forecast
+* Many locations
+* Notifications
+* Support different measuring units
+* Ad-free
+* Accelerometer based updates
+* Mozilla location provider
+* Nominatim address resolver
+.
+
+Repo Type:git
+Repo:https://github.com/thuryn/your-local-weather
+
+Build:1.0,1
+    commit=v1.0.2
+    subdir=app
+    gradle=yes
+
+Build:1.6,8
+    disable=wrong version name/code
+    commit=v1.6
+    subdir=app
+    gradle=yes
+
+Build:1.7,9
+    disable=wrong version name/code
+    commit=v1.7
+    subdir=app
+    gradle=yes
+
+Build:1.7.1,10
+    commit=v1.7.1
+    subdir=app
+    gradle=yes
+
+Build:1.8,12
+    commit=v1.8
+    subdir=app
+    gradle=yes
+
+Build:1.9,13
+    commit=v1.9
+    subdir=app
+    gradle=yes
+
+Build:2.2,16
+    commit=v2.2
+    subdir=app
+    gradle=yes
+
+Build:2.2.2,18
+    commit=v2.2.2
+    subdir=app
+    gradle=yes
+
+Build:2.3,19
+    commit=v2.3
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:2.3
+Current Version Code:19

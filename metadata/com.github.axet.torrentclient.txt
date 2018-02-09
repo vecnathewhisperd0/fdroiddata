@@ -289,7 +289,49 @@ Build:3.4.84,572
     gradle=yes
     prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
 
+Build:3.4.86,574
+    commit=torrentclient-3.4.86
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.89,577
+    commit=torrentclient-3.4.89
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.93,581
+    commit=torrentclient-3.4.93
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.96,584
+    commit=torrentclient-3.4.96
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.98,586
+    commit=torrentclient-3.4.98
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.105,593
+    commit=torrentclient-3.4.105
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.106,594
+    commit=torrentclient-3.4.106
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
 Auto Update Mode:Version torrentclient-%v
 Update Check Mode:Tags
-Current Version:3.4.84
-Current Version Code:572
+Current Version:3.4.106
+Current Version Code:594

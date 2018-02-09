@@ -29,12 +29,22 @@ Repo Type:git
 Repo:https://github.com/LISTEN-moe/android-app
 
 Build:1.6.4,30
-    commit=1.6.4
+    commit=v1.6.4
+    subdir=app
+    gradle=fdroid
+
+Build:2.0.0,31
+    commit=v2.0.0
+    subdir=app
+    gradle=fdroid
+
+Build:2.0.3,34
+    commit=v2.0.3
     subdir=app
     gradle=fdroid
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Update Check Name:me.echeung.moemoekyun
-Current Version:1.6.4
-Current Version Code:30
+Current Version:2.0.3
+Current Version Code:34
