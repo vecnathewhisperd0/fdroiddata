@@ -37,7 +37,7 @@ Build:1.8-floss,18003
     commit=1.8.3
     subdir=app
     gradle=floss
-    prebuild=sed -i -e '/playCompile/d' -e '/fabric/d' build.gradle ../build.gradle
+    prebuild=sed -i -e '/playImplementation/d' -e '/fabric/d' build.gradle ../build.gradle
 
 Maintainer Notes:
 Summary and Description have been removed since upstream provides
