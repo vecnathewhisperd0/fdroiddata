@@ -11,7 +11,7 @@ Repo Type:git
 Repo:https://github.com/toxtox/SimplePhilosopherstoneWidget
 
 Build:1.0,1
-    commit=master
+    commit=tagfor1p0
     subdir=philosopherstone
     gradle=yes
 
