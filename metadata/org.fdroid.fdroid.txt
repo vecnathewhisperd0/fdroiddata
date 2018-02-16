@@ -787,7 +787,13 @@ Build:1.1-alpha1,1001001
     gradle=yes
 
 Build:1.1-alpha2,1001002
+    disable=constantly does index updates
     commit=1.1-alpha2
+    subdir=app
+    gradle=yes
+
+Build:1.1-alpha3,1001003
+    commit=1.1-alpha3
     subdir=app
     gradle=yes
 
