@@ -224,6 +224,7 @@ Build:2.2.0.8,164
     rm=app/libs
 
 Build:2.2.0.9,165
+    disable=old and failing
     commit=v2.2.0.9
     subdir=app
     gradle=flavor1
