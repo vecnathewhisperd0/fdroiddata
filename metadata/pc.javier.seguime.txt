@@ -11,11 +11,10 @@ Description:
 Almacena coordenadas GPS y las envia a un servidor web y asi poder ver donde
 esta el dispositivo.
 
-*Podes montar tu propio sitio (Mayor privacidad).
-*Envia coordenadas por Telegram (Bot) y SMS.
-*Configurable desde el sitio web.
-*Control sobre tiempos de actividad e inactividad para ahorrar bateria.
-*Cuentas faciles de crear sin solicitar datos personales.
+*Podes montar tu propio sitio (Mayor privacidad). *Envia coordenadas por
+Telegram (Bot) y SMS. *Configurable desde el sitio web. *Control sobre tiempos
+de actividad e inactividad para ahorrar bateria. *Cuentas faciles de crear sin
+solicitar datos personales.
 
 Es solo un proyecto, por lo tanto solo podra usarse con fines experimentales y
 no con fines de seguridad.
