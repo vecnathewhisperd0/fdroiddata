@@ -6,8 +6,6 @@ Issue Tracker:
 Changelog:
 Donate:https://gitlab.com/javipc/seguime
 
-
-
 Auto Name: Seguime
 Summary: Segui a donde va tu dispositivo
 Description:
@@ -24,13 +22,9 @@ Esta NO ES UNA APLICACION DE SEGURIDAD, es solo un proyecto, por lo tanto solo p
 Repo Type:git
 Repo:https://gitlab.com/javipc/seguime.git
 
-
-
 Build:0.1,1
 	commit=v0.1
     gradle=yes
-
-
 
 Auto Update Mode:None
 Update Check Mode:None
