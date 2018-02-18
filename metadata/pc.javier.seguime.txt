@@ -23,10 +23,10 @@ Repo Type:git
 Repo:https://gitlab.com/javipc/seguime.git
 
 Build:0.1,1
-	commit=v0.1
+    commit=0.1
     gradle=yes
 
 Auto Update Mode:None
-Update Check Mode:None
+Update Check Mode:Tags
 Current Version:0.1
 Current Version Code:1
