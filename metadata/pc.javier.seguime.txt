@@ -1,4 +1,4 @@
-Categories:Navigation
+Categories:Navigation,Security
 License:GNU GPLv3
 Web Site:http://javierpc.esy.es/seguime
 Source Code:https://gitlab.com/javipc/seguime
@@ -17,7 +17,7 @@ Almacena coordenadas GPS y las envia a un servidor web y asi poder ver donde est
 * Control sobre tiempos de actividad e inactividad para ahorrar bateria
 * Cuentas faciles de crear desde la aplicacion
 
-Esta NO ES UNA APLICACION DE SEGURIDAD, es solo un proyecto, por lo tanto solo podra usarse con fines experimentales.
+Es solo un proyecto, por lo tanto solo podra usarse con fines experimentales y no con fines de seguridad.
 .
 
 Repo Type:git
