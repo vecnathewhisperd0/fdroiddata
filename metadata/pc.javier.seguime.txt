@@ -9,7 +9,8 @@ Donate:https://gitlab.com/javipc/seguime
 Auto Name:Seguime
 Summary:Segui a donde va tu dispositivo
 Description:
-Almacena coordenadas GPS y las envia a un servidor web y asi poder ver donde esta el dispositivo.
+Almacena coordenadas GPS y las envia a un servidor web y asi poder ver donde 
+esta el dispositivo.
 
 * Podes montar tu propio sitio (Mayor privacidad) 
 * Envia coordenadas por Telegram (Bot) y SMS
@@ -17,7 +18,8 @@ Almacena coordenadas GPS y las envia a un servidor web y asi poder ver donde est
 * Control sobre tiempos de actividad e inactividad para ahorrar bateria
 * Cuentas faciles de crear desde la aplicacion
 
-Es solo un proyecto, por lo tanto solo podra usarse con fines experimentales y no con fines de seguridad.
+Es solo un proyecto, por lo tanto solo podra usarse con fines experimentales 
+y no con fines de seguridad.
 .
 
 Repo Type:git
