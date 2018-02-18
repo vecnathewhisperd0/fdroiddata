@@ -1,4 +1,4 @@
-Categories:Navigation,Security
+Categories:Navigation
 License:GNU GPLv3
 Web Site:http://javierpc.esy.es/seguime
 Source Code:https://gitlab.com/javipc/seguime
@@ -6,8 +6,8 @@ Issue Tracker:
 Changelog:
 Donate:https://gitlab.com/javipc/seguime
 
-Auto Name: Seguime
-Summary: Segui a donde va tu dispositivo
+Auto Name:Seguime
+Summary:Segui a donde va tu dispositivo
 Description:
 Almacena coordenadas GPS y las envia a un servidor web y asi poder ver donde esta el dispositivo.
 
@@ -19,6 +19,7 @@ Almacena coordenadas GPS y las envia a un servidor web y asi poder ver donde est
 
 Esta NO ES UNA APLICACION DE SEGURIDAD, es solo un proyecto, por lo tanto solo podra usarse con fines experimentales.
 .
+
 Repo Type:git
 Repo:https://gitlab.com/javipc/seguime.git
 
