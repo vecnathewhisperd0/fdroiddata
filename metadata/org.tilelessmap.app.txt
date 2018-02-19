@@ -11,7 +11,7 @@ Name:TilelessMap
 Repo Type:git
 Repo:https://github.com/TilelessMap/TilelessMap
 
-Build:0.1.0,1
+Build:0.1.1,1
     commit=v0.1.0
     subdir=Android/app
     gradle=yes
