@@ -3,7 +3,8 @@ License:GPL-3.0+
 Web Site:http://javierpc.esy.es/seguime
 Source Code:https://gitlab.com/javipc/seguime
 Issue Tracker:https://gitlab.com/javipc/seguime/issues
-Donate:https://gitlab.com/javipc/seguime
+Changelog:https://gitlab.com/javipc/seguime/blob/master/CHANGELOG.md
+Donate:http://javierpc.esy.es/seguime
 
 Auto Name:Seguime
 Summary:Segui a donde va tu dispositivo
@@ -28,7 +29,7 @@ Build:0.1,1
     commit=0.1
     gradle=yes
 
-Auto Update Mode:None
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.1
-Current Version Code:1
+Current Version:0.2
+Current Version Code:2
