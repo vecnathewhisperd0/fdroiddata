@@ -157,11 +157,7 @@ Build:2.5.2,33
         popd && \
         cp $$google-rfc-2445$$/jars/rfc2445.jar libs/
 
-Maintainer Notes:
-* Tags are unreliable
-.
-
-Auto Update Mode:None
-Update Check Mode:RepoManifest
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
 Current Version:2.5.2
 Current Version Code:33
