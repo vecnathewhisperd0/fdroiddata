@@ -1,0 +1,34 @@
+Categories:Navigation,Security
+License:GPL-3.0+
+Web Site:http://javierpc.esy.es/seguime
+Source Code:https://gitlab.com/javipc/seguime
+Issue Tracker:https://gitlab.com/javipc/seguime/issues
+Donate:http://javierpc.esy.es/seguime
+
+Auto Name:Seguime
+Summary:Segui a donde va tu dispositivo
+Description:
+Almacena coordenadas GPS y las envia a un servidor web y asi poder ver donde
+esta el dispositivo.
+
+* Podes montar tu propio sitio (Mayor privacidad).
+* Envia coordenadas por Telegram (Bot) y SMS.
+* Configurable desde el sitio web.
+* Control sobre tiempos de actividad e inactividad para ahorrar bateria.
+* Cuentas faciles de crear sin solicitar datos personales.
+
+Es solo un proyecto, por lo tanto solo podra usarse con fines experimentales y
+no con fines de seguridad.
+.
+
+Repo Type:git
+Repo:https://gitlab.com/javipc/seguime.git
+
+Build:0.2,2
+    commit=0.2
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:0.2
+Current Version Code:2
