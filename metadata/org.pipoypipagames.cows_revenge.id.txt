@@ -36,8 +36,7 @@ Build:1.0.1,1
         cp -R $$Godot$$ godot
     target=android-19
     build=cd godot && \
-        scons platform=server -j `nproc` use_llvm=yes unix_global_settings_path=".."&& \
-        export ANDROID_NDK_ROOT=$$NDK$$ && \
+        scons platform=server -j `nproc` use_llvm=yes unix_global_settings_path=".."&& export ANDROID_NDK_ROOT=$$NDK$$ && \
         scons -j `nproc` p=android target=release && \
         pushd platform/android/java/ && \
         gradle assembleRelease && \
