@@ -26,28 +26,25 @@ Made with Godot Engine 2.1.5
 Repo Type:git
 Repo:https://github.com/Dariasteam/Cows-Revenge.git
 
-Build:1.0,1
-    commit=42bae3a9e28128f125daedaa531f4846921d3783
+Build:1.0.1,1
+    commit=2fd1d0689525a90706ce8ef7286c8eef2d8e1044
+    sudo=apt-get install -y clang++
     output=cows_revenge.apk
     srclibs=Godot@50eb6bca8c278590c61afaa75ad32ddc2c49c8e2
     prebuild=mkdir cows_revenge && \
-        bash -O extglob -c "mv !(cows_revenge) cows_revenge" && \
-        printf "[platform:Android]\n\npackage/icon=\"res://Sprites/GUI/Buttons/btn_shoot.png\"\npackage/name=\"Cow's Revenge\"\npackage/unique_name=\"org.pipoypipagames.cows_revenge\"\nversion/code=\"1\"\nversion/name=\"1.0\"\n" > cows_revenge/export.cfg && \
+        bash -O extglob -c "mv !(cows_revenge)" && \
         cp -R $$Godot$$ godot
     target=android-19
-    scandelete=godot/platform/flash/lib/libGL.a,godot/platform/android/libs/google_play_services/libs/google-play-services.jar
     build=cd godot && \
-        scons platform=server -j 8 use_llvm=yes && \
+        scons platform=server -j `nproc` use_llvm=yes unix_global_settings_path=".."&& \
         export ANDROID_NDK_ROOT=$$NDK$$ && \
-        scons -j 8 p=android target=release && \
-        mkdir -p platform/android/java/libs/armeabi && \
-        cp bin/libgodot.android.opt.so platform/android/java/libs/armeabi/libgodot_android.so && \
+        scons -j `nproc` p=android target=release && \
         pushd platform/android/java/ && \
-        ant release && \
+        gradle assembleRelease && \
         popd && \
         export HOME=$PWD && \
-        mkdir -p ~/.godot/templates/ && \
-        cp platform/android/java/bin/Godot-release-unsigned.apk ~/.godot/templates/android_release.apk && \
+        mkdir -p ../templates/ && \
+        cp bin/android_release.apk ../templates && \
         cd ../cows_revenge && \
         ../godot/bin/godot_server.server.tools.* -export Android ../cows_revenge.apk
 
