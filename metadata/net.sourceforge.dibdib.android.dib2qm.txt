@@ -19,7 +19,7 @@ Build:0.17.12,1711
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:0.17.12
 Current Version Code:1711
