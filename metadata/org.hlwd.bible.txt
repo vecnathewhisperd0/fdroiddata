@@ -44,7 +44,7 @@ Build:2.12,20180203
     gradle=yes
 
 Build:2.13,20180304
-    commit=2.13
+    commit=v2.13
     subdir=app
     gradle=yes
 
