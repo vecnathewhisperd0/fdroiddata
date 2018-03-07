@@ -71,10 +71,13 @@ Build:3.0.0,32
     subdir=app
     gradle=Prod
     prebuild=echo -e "ext {\n extVersionName = \"$$VERSION$$\"\n extVersionCode = $$VERCODE$$ \n }" >> ../version.gradle && \
+        touch ../paths.gradle && \
+        git clone https://github.com/kar/gscore.git ../gscore && \
+        cp ../version.gradle ../gscore/ && \
         sed -i -e "/firebaseImplementation/d" build.gradle && \
         sed -i -e "/apply plugin: 'com.google.gms.google-services/d" build.gradle
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:3.0.0
-Current Version Code:29
+Current Version Code:32
