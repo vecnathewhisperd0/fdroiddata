@@ -70,9 +70,9 @@ Build:3.0.0,32
     commit=3.0.0
     subdir=app
     gradle=Prod
+    srclibs=gscore@1.2
     prebuild=echo -e "ext {\n extVersionName = \"$$VERSION$$\"\n extVersionCode = $$VERCODE$$ \n }" >> ../version.gradle && \
         touch ../paths.gradle && \
-        git clone https://github.com/kar/gscore.git ../gscore && \
         cp ../version.gradle ../gscore/ && \
         sed -i -e "/firebaseImplementation/d" build.gradle && \
         sed -i -e "/apply plugin: 'com.google.gms.google-services/d" build.gradle
