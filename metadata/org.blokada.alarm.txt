@@ -1,8 +1,8 @@
 Categories:Internet
 License:GPL-3.0
-Author Name:Karsen and the Blokada community
+Author Name:The Blokada Community
 Author Email:hello@blokada.org
-Web Site:http://blokada.org
+Web Site:https://blokada.org
 Source Code:https://github.com/blokadaorg/blokada
 Issue Tracker:https://github.com/blokadaorg/blokada/issues
 Bitcoin:16rJ49uNKCohVhHvWNganP6Y48Ba9BTyKd
@@ -51,6 +51,14 @@ free! See how you can help at [http://blokada.org/#you]
 
 Repo Type:git
 Repo:https://github.com/blokadaorg/blokada.git
+
+Build:3.0.0,32
+    commit=3.0.0
+    subdir=app
+    gradle=Prod
+    prebuild=echo -e "ext {\n extVersionName = \"$$VERSION$$\"\n extVersionCode = $$VERCODE$$ \n }" >> ../version.gradle && \
+        sed -i -e "/firebaseImplementation/d" build.gradle && \
+        sed -i -e "/apply plugin: 'com.google.gms.google-services/d" build.gradle
 
 Build:2.2.2,28
     commit=v2.2.2
