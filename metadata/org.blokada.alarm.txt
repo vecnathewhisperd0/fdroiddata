@@ -71,9 +71,9 @@ Build:3.0.0,32
     subdir=app
     gradle=Prod
     srclibs=gscore@1.2
-    prebuild=echo -e "ext {\n extVersionName = \"$$VERSION$$\"\n extVersionCode = $$VERCODE$$ \n }" >> ../version.gradle && \
-        touch ../paths.gradle && \
-        cp ../version.gradle ../gscore/ && \
+    prebuild=echo -e "ext {\n extVersionName = \"3.0.0\"\n extVersionCode = 32 \n }" >> ../version.gradle && \
+        echo "project(':gscore').projectDir = new File('$PWD/../../srclib/gscore')" >> ../paths.gradle && \
+        echo -e "ext {\n extVersionName = \"1.2\"\n extVersionCode = 12 \n }" >> ../../srclib/gscore/version.gradle && \
         sed -i -e "/firebaseImplementation/d" build.gradle && \
         sed -i -e "/apply plugin: 'com.google.gms.google-services/d" build.gradle
 
