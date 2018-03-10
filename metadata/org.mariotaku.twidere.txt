@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPLv3
+License:GPL-3.0
 Web Site:
 Source Code:https://github.com/TwidereProject/Twidere-Android
 Issue Tracker:https://github.com/TwidereProject/Twidere-Android/issues
@@ -838,11 +838,426 @@ Build:3.3.10,228
     gradle=fdroid
     rm=twidere/lib,twidere.donate*,twidere.wear
 
-Maintainer Notes:
-jitpack has TLS issues if gradle 2.10 or earlier is used.
-.
+Build:3.3.16,234
+    commit=3.3.16
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.3.20,238
+    commit=3.3.20
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.3.24,242
+    commit=3.3.24
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.3.29,247
+    commit=3.3.29
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.3.35,253
+    commit=3.3.35
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.3.38,256
+    commit=3.3.38
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere/lib,twidere.donate*,twidere.wear
+
+Build:3.3.41,259
+    commit=3.3.41
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.donate*,twidere.wear
+
+Build:3.3.42,260
+    commit=3.3.42
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.donate*,twidere.wear
+
+Build:3.4.2,263
+    commit=3.4.2
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.donate*,twidere.wear
+
+Build:3.4.5,266
+    commit=3.4.5
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.donate*,twidere.wear
+
+Build:3.4.9,270
+    commit=3.4.9
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.donate*,twidere.wear
+
+Build:3.4.14,276
+    commit=3.4.14
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.16,278
+    commit=3.4.16
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.20,282
+    commit=3.4.20
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.22,284
+    commit=3.4.22
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.26,288
+    commit=3.4.26
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.27,289
+    commit=3.4.27
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.28,290
+    commit=3.4.28
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.29,291
+    commit=3.4.29
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.31,293
+    commit=3.4.31
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.32,294
+    commit=3.4.32
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.35,297
+    commit=3.4.35
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.37,299
+    commit=3.4.37
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.39,301
+    commit=3.4.39
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.41,303
+    commit=3.4.41
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.42,304
+    commit=3.4.42
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.44,306
+    commit=3.4.44
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.47,309
+    commit=3.4.47
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.48,310
+    commit=3.4.48
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.49,311
+    commit=3.4.49
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.52,314
+    commit=3.4.52
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.4.54,316
+    commit=3.4.54
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.5.5,322
+    commit=3.5.5
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.5.9,326
+    commit=3.5.9
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.5.11,328
+    commit=3.5.11
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.5.13,330
+    commit=3.5.13
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.5.16,333
+    commit=3.5.16
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.5.18,335
+    commit=3.5.18
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.5.21,338
+    commit=3.5.21
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.5.25,342
+    commit=3.5.25
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.5.30,347
+    commit=3.5.30
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.5.31,348
+    commit=3.5.31
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.5.33,350
+    commit=3.5.33
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.5.36,353
+    commit=3.5.36
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.5.40,357
+    commit=3.5.40
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.6.10,370
+    commit=3.6.10
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.6.11,371
+    commit=3.6.11
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.6.14,374
+    commit=3.6.14
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.6.15,375
+    commit=3.6.15
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.6.16,376
+    commit=3.6.16
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.6.18,378
+    commit=3.6.18
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.6.19,379
+    commit=3.6.19
+    subdir=twidere
+    init=patch -p1 <patches/remove_closed_source_dependencies.patch
+    gradle=fdroid
+    rm=twidere.wear
+
+Build:3.6.21,381
+    commit=3.6.21
+    subdir=twidere
+    gradle=fdroid
+    rm=twidere.wear
+    prebuild=sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle && \
+        sed -i -e '/^bintray/,$d' ../twidere.component.common/build.gradle
+
+Build:3.6.24,384
+    commit=3.6.24
+    subdir=twidere
+    gradle=fdroid
+    rm=twidere.wear
+    prebuild=sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle && \
+        sed -i -e '/^bintray/,$d' ../twidere.component.common/build.gradle
+
+Build:3.6.29,389
+    commit=3.6.29
+    subdir=twidere
+    gradle=fdroid
+    rm=twidere.wear
+    prebuild=sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle && \
+        sed -i -e '/^bintray/,$d' ../twidere.component.common/build.gradle
+
+Build:3.6.33,393
+    commit=3.6.33
+    subdir=twidere
+    gradle=fdroid
+    rm=twidere.wear
+    prebuild=sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle && \
+        sed -i -e '/^bintray/,$d' ../twidere.component.common/build.gradle
+
+Build:3.7.0,394
+    commit=3.7.0
+    subdir=twidere
+    gradle=fdroid
+    rm=twidere.wear
+    prebuild=sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle && \
+        sed -i -e '/^bintray/,$d' ../twidere.component.common/build.gradle
+
+Build:3.7.1,395
+    commit=3.7.1
+    subdir=twidere
+    gradle=fdroid
+    prebuild=sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle && \
+        sed -i -e '/^bintray/,$d' ../twidere.component.common/build.gradle
+
+Build:3.7.3,397
+    commit=3.7.3
+    subdir=twidere
+    gradle=fdroid
+    prebuild=sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle && \
+        sed -i -e '/^bintray/,$d' ../twidere.component.common/build.gradle
 
 Auto Update Mode:Version %v
-Update Check Mode:Tags ^[v0-9.]*$
-Current Version:3.3.10
-Current Version Code:228
+Update Check Mode:HTTP
+Update Check Data:https://raw.githubusercontent.com/TwidereProject/Twidere-Android/master/build.gradle|projectVersionCode = (.*)|.|projectVersionName = '(.*)'
+Current Version:3.7.3
+Current Version Code:397

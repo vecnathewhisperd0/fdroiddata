@@ -1,6 +1,6 @@
 AntiFeatures:NonFreeDep
 Categories:Multimedia
-License:Apache2
+License:Apache-2.0
 Web Site:https://code.google.com/p/flickr-viewer-for-honeycomb/wiki/FeatureGuide
 Source Code:https://code.google.com/p/flickr-viewer-for-honeycomb/source
 Issue Tracker:
@@ -19,6 +19,6 @@ Build:1.2.8,19
     target=Google Inc.:Google APIs:16
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.2.8
 Current Version Code:19

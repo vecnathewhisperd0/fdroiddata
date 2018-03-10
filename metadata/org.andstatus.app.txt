@@ -1,5 +1,5 @@
 Categories:Internet
-License:Apache2
+License:Apache-2.0
 Web Site:http://andstatus.org
 Source Code:https://github.com/andstatus/andstatus
 Issue Tracker:https://github.com/andstatus/andstatus/issues
@@ -12,9 +12,10 @@ A low traffic social networking client with tree-like threaded conversations.
 
 It supports multiple protocols, including [http://gnu.io/ GNU social]/StatusNet
 (e.g. [http://quitter.se/ Quitter], [https://loadaverage.org/ LoadAverage],
-[https://status.vinilox.eu/ Vinilox] etc.), [http://www.twitter.com/ Twitter]
-and [http://pump.io Pump.io]. It combines your accounts from all networks into
-one timeline and allows you reading and posting even while you are offline.
+[https://status.vinilox.eu/ Vinilox] etc.), [http://www.twitter.com/ Twitter],
+[https://github.com/tootsuite/mastodon Mastodon] and [http://pump.io Pump.io].
+It combines your accounts from all networks into one timeline and allows you
+reading and posting even while you are offline.
 
 Differentiating features of AndStatus:
 
@@ -403,11 +404,96 @@ Build:30.05,199
     subdir=app
     gradle=yes
 
+Build:31.02,202
+    commit=31.02-release
+    subdir=app
+    gradle=yes
+
+Build:31.03,203
+    commit=31.03-release
+    subdir=app
+    gradle=yes
+
+Build:31.04,204
+    commit=31.04-release
+    subdir=app
+    gradle=yes
+
+Build:32.02,207
+    commit=32.02-release
+    subdir=app
+    gradle=yes
+
+Build:33.04,212
+    commit=33.04-release
+    subdir=app
+    gradle=yes
+
+Build:33.07,215
+    commit=33.07-release
+    subdir=app
+    gradle=yes
+
+Build:33.08,216
+    commit=33.08-release
+    subdir=app
+    gradle=yes
+
+Build:33.11,219
+    commit=33.11-release
+    subdir=app
+    gradle=yes
+
+Build:34.01,221
+    commit=34.01-release
+    subdir=app
+    gradle=yes
+
+Build:34.04,224
+    commit=34.04-release
+    subdir=app
+    gradle=yes
+
+Build:34.05,225
+    commit=34.05-release
+    subdir=app
+    gradle=yes
+
+Build:35.03,229
+    commit=35.03-release
+    subdir=app
+    gradle=yes
+
+Build:35.05,231
+    commit=35.05-release
+    subdir=app
+    gradle=yes
+
+Build:35.06,232
+    commit=35.06-release
+    subdir=app
+    gradle=yes
+
+Build:36.05,239
+    commit=36.05-release
+    subdir=app
+    gradle=yes
+
+Build:36.06,240
+    commit=36.06-release
+    subdir=app
+    gradle=yes
+
+Build:36.09,243
+    commit=36.09-release
+    subdir=app
+    gradle=yes
+
 Maintainer Notes:
 Remove the jars at https://github.com/andstatus/andstatus/tree/master/app/libs
 .
 
 Auto Update Mode:Version %v-release
 Update Check Mode:Tags ^[0-9.]+-release$
-Current Version:30.05
-Current Version Code:199
+Current Version:36.09
+Current Version Code:243

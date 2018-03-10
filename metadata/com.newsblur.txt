@@ -761,7 +761,78 @@ Build:5.0.0b3,132
     rm=clients/android/NewsBlur/libs/*.jar
     scandelete=vendor/mms-agent/srvany.exe
 
+Build:5.0.0,133
+    commit=aee018f39c813bb3ff12f67f19022d5c584f629b
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=clients/android/NewsBlur/libs/*.jar
+    scandelete=vendor/mms-agent/srvany.exe
+
+Build:5.1.0b1,134
+    commit=cfc575d48ac65bacd3d47233e9fb58e2ea5d4aff
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=clients/android/NewsBlur/libs/*.jar
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.3" }' >> build.gradle
+    scandelete=vendor/mms-agent/srvany.exe
+
+Build:5.1.0,135
+    commit=0e9b94b0565482e7c674e7393987a5eaa366aea4
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=clients/android/NewsBlur/libs/*.jar
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.3" }' >> build.gradle
+    scandelete=vendor/mms-agent/srvany.exe
+
+Build:5.2.0b1,136
+    commit=5348ad9798ea2760c3cf1aace04b1a0ee13055bc
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=clients/android/NewsBlur/libs/*.jar
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.3" }' >> build.gradle
+    scandelete=vendor/mms-agent/srvany.exe
+
+Build:5.2.0b2,137
+    commit=2517f903ce7e8d0d86b4d2a399fb1942de54295a
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=clients/android/NewsBlur/libs/*.jar
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.3" }' >> build.gradle
+    scandelete=vendor/mms-agent/srvany.exe
+
+Build:5.2.0b3,138
+    commit=10017b10df97980612444c84a8d3767183724d95
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=clients/android/NewsBlur/libs/*.jar
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.3" }' >> build.gradle
+    scandelete=vendor/mms-agent/srvany.exe
+
+Build:6.1.0b2,144
+    commit=43d0208f534af52679be7ae8d43a692a8a5e675c
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=api,apps,clients/ios,config,docker,documents,flask,logs,media,node,r,templates,utils,vendor,[_a-z]*.*,clients/android/NewsBlur/libs/*.jar,clients/android/NewsBlur/buildtools/*.jar
+
+Build:6.1.0,145
+    commit=c34bdcdf783327f351f3e6df0ac7bbe326cd9a44
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=api,apps,clients/ios,config,docker,documents,flask,logs,media,node,r,templates,utils,vendor,[_a-z]*.*,clients/android/NewsBlur/libs/*.jar,clients/android/NewsBlur/buildtools/*.jar
+
+Build:7.0.2,152
+    commit=a88490e2510fd211b181b70c949dca3b7f8cd102
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=api,apps,clients/ios,config,docker,documents,flask,logs,media,node,r,templates,utils,vendor,[_a-z]*.*,clients/android/NewsBlur/libs/*.jar,clients/android/NewsBlur/buildtools/*.jar
+
+Build:7.0.3,153
+    commit=f8405607d891fd56a2da308680becd2307d0d985
+    subdir=clients/android/NewsBlur
+    gradle=yes
+    rm=api,apps,clients/ios,config,docker,documents,flask,logs,media,node,r,templates,utils,vendor,[_a-z]*.*,clients/android/NewsBlur/libs/*.jar,clients/android/NewsBlur/buildtools/*.jar
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:5.0.0b3
-Current Version Code:132
+Current Version:7.1.0
+Current Version Code:154

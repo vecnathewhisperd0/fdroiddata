@@ -1,11 +1,12 @@
 AntiFeatures:UpstreamNonFree
 Categories:Money
-License:GPL
+License:GPL-3.0
+Author Web Site:http://touch.facebook.com/profile.php?id=100393240038469
 Web Site:
-Source Code:https://github.com/dennischen/daily-money
-Issue Tracker:
+Source Code:https://github.com/dennischen/dailymoney2017
+Issue Tracker:https://github.com/dennischen/dailymoney2017/issues
 
-Auto Name:Daily Money
+Auto Name:DailyMoney
 Summary:Finance manager
 Description:
 * Record your daily expense, income, asset and liability
@@ -19,7 +20,7 @@ didn't seem to be needed for anything else.
 .
 
 Repo Type:git
-Repo:https://github.com/dennischen/daily-money.git
+Repo:https://github.com/dennischen/dailymoney2017.git
 
 Build:0.9.8-121107-freshly,2012110700
     commit=0b012b639a2e
@@ -30,7 +31,13 @@ Build:0.9.8-121107-freshly,2012110700
         sed -i '/android.permission.INTERNET/d' AndroidManifest.xml
     update=.,../dailymoney
 
+Build:dev,2012110701
+    disable=not functional
+    commit=062df6bad7b68149383e869f39556dc4c36f3eab
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:0.9.8-121107-freshly
-Current Version Code:2012110700
+Current Version:1.0
+Current Version Code:1

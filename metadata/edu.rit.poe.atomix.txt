@@ -1,5 +1,5 @@
 Categories:Games
-License:GPLv2
+License:GPL-2.0
 Web Site:https://code.google.com/p/droid-atomix
 Source Code:https://code.google.com/p/droid-atomix/source
 Issue Tracker:
@@ -20,6 +20,6 @@ Build:1.0.1,2
     target=android-4
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.0.1
 Current Version Code:2

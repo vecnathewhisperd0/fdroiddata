@@ -1,6 +1,6 @@
 Categories:Reading,Internet
-License:GPLv3+
-Web Site:https://github.com/enricocid/lffl-feed-reader/blob/HEAD/README.md
+License:GPL-3.0+
+Web Site:http://forum.xda-developers.com/member.php?u=4884893
 Source Code:https://github.com/enricocid/lffl-feed-reader
 Issue Tracker:https://github.com/enricocid/lffl-feed-reader/issues
 
@@ -224,7 +224,33 @@ Build:2.0.2,60
     subdir=project/app
     gradle=yes
 
-Auto Update Mode:Version release_%v
+Build:3.0.1,62
+    commit=3.0.1
+    subdir=project/app
+    gradle=yes
+
+Build:3.0.2,63
+    commit=3.0.2
+    subdir=project/app
+    gradle=yes
+
+Build:3.1,65
+    commit=3.1
+    subdir=project/app
+    gradle=yes
+
+Build:3.2,66
+    commit=release_3.2
+    subdir=project/app
+    gradle=yes
+
+Maintainer Notes:
+After 7.3.6 the upstream began to reuse version numbers starting with 2.0.1.
+When a new versions name coincides with an old one, they tag a new release as
+release_%v instead of %v.
+.
+
+Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.0.2
-Current Version Code:60
+Current Version:3.2
+Current Version Code:66

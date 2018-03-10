@@ -1,5 +1,5 @@
 Categories:Sports & Health
-License:GPLv3
+License:GPL-3.0
 Web Site:https://github.com/iSoron/uhabits/blob/HEAD/README.md
 Source Code:https://github.com/iSoron/uhabits
 Issue Tracker:https://github.com/iSoron/uhabits/issues
@@ -125,7 +125,42 @@ Build:1.6.2,25
     subdir=app
     gradle=yes
 
+Build:1.7.0,27
+    commit=v1.7.0
+    subdir=app
+    gradle=yes
+
+Build:1.7.1,28
+    commit=v1.7.1
+    subdir=app
+    gradle=yes
+
+Build:1.7.2,29
+    commit=v1.7.2
+    subdir=app
+    gradle=yes
+
+Build:1.7.4,31
+    commit=v1.7.4
+    subdir=app
+    gradle=yes
+
+Build:1.7.5,32
+    commit=v1.7.5
+    subdir=app
+    gradle=yes
+
+Build:1.7.6,33
+    commit=v1.7.6
+    subdir=app
+    gradle=yes
+
+Build:1.7.8,35
+    commit=v1.7.8
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.6.
-Current Version Code:25
+Current Version:1.7.8
+Current Version Code:35

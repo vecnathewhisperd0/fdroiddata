@@ -1,5 +1,5 @@
 Categories:Games
-License:GPLv3
+License:GPL-3.0
 Web Site:https://code.google.com/p/mahjonggbuilder
 Source Code:https://code.google.com/p/mahjonggbuilder/source
 Issue Tracker:
@@ -21,6 +21,6 @@ Build:1.4.4,14
     commit=15
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.4.4
 Current Version Code:14

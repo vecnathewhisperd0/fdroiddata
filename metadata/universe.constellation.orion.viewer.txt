@@ -1,5 +1,5 @@
 Categories:Reading
-License:GPLv3
+License:GPL-3.0
 Web Site:https://sourceforge.net/projects/orion-viewer
 Source Code:https://sourceforge.net/p/orion-viewer/code
 Issue Tracker:https://sourceforge.net/p/orion-viewer/tickets
@@ -24,7 +24,7 @@ Features:
 .
 
 Repo Type:git
-Repo:git://git.code.sf.net/p/orion-viewer/code
+Repo:https://git.code.sf.net/p/orion-viewer/code
 
 Build:0.54.2,81
     disable=needs work on jni

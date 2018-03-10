@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPLv2+
+License:GPL-2.0+
 Web Site:https://wiki.vuze.com/w/Android_Remote_Guide
 Source Code:https://github.com/vuze/vuze-remote-for-android
 Issue Tracker:http://forum.vuze.com/Forum-Android-Remote-Client
@@ -73,7 +73,14 @@ Build:2.5.2,78
     gradle=CoreFlavorNogaFlavor
     prebuild=sed -i -e '/gaFlavorCompile/d' build.gradle
 
+Build:2.6.1,82
+    commit=v2.6.1
+    subdir=vuzeAndroidRemote
+    gradle=CoreFlavorNogaFlavor
+    prebuild=sed -i -e '/gaFlavorCompile/d' build.gradle
+    scanignore=vuzeAndroidRemote/src/coreFlavor/java/com/vuze/android/core/az/PlatformManagerImpl.java
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:2.5.2
-Current Version Code:78
+Current Version:2.6.1
+Current Version Code:82

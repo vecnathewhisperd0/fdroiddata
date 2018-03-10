@@ -1,5 +1,5 @@
 Categories:System
-License:Apache2
+License:Apache-2.0
 Web Site:https://github.com/vitas/beaconloc/blob/HEAD/README.md
 Source Code:https://github.com/vitas/beaconloc
 Issue Tracker:https://github.com/vitas/beaconloc/issues
@@ -76,7 +76,32 @@ Build:1.0.9,109
     subdir=app
     gradle=yes
 
+Build:1.1.1,111
+    commit=1.1.1
+    subdir=app
+    gradle=yes
+
+Build:1.1.4,114
+    commit=1.1.4
+    subdir=app
+    gradle=yes
+
+Build:1.1.5,115
+    commit=1.1.5
+    subdir=app
+    gradle=yes
+
+Build:1.1.6,116
+    commit=1.1.6
+    subdir=app
+    gradle=yes
+
+Build:1.1.8,118
+    commit=1.1.8
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.0.9
-Current Version Code:109
+Current Version:1.1.8
+Current Version Code:118

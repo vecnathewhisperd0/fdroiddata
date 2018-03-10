@@ -1,5 +1,5 @@
 Categories:Writing
-License:GPLv3+
+License:GPL-3.0+
 Web Site:
 Source Code:https://github.com/scoute-dich/PDFCreator
 Issue Tracker:https://github.com/scoute-dich/PDFCreator/issues
@@ -52,7 +52,90 @@ Build:2.2,8
     subdir=app
     gradle=yes
 
+Build:2.3,9
+    commit=v2.3
+    subdir=app
+    gradle=yes
+
+Build:2.3.1,10
+    commit=v2.3.1
+    subdir=app
+    gradle=yes
+
+Build:2.4,11
+    disable=old failing build (scanner error)
+    commit=v2.4
+    subdir=app
+    gradle=yes
+
+Build:2.5,12
+    commit=v2.5
+    subdir=app
+    gradle=yes
+
+Build:2.7,14
+    commit=v2.7
+    subdir=app
+    gradle=yes
+
+Build:2.9,16
+    commit=v2.9
+    subdir=app
+    gradle=yes
+
+Build:3.0,17
+    commit=v3.0
+    subdir=app
+    gradle=yes
+
+Build:3.2,19
+    commit=v3.2
+    subdir=app
+    gradle=yes
+
+Build:3.3,20
+    commit=v3.3
+    subdir=app
+    gradle=yes
+
+Build:3.4,21
+    commit=v3.4
+    subdir=app
+    gradle=yes
+
+Build:3.5,22
+    commit=v3.5
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo -e 'distributionUrl=https://services.gradle.org/distributions/gradle-3.3-bin.zip' > gradle/wrapper/gradle-wrapper.properties
+
+Build:3.6,23
+    commit=v3.6
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo -e 'distributionUrl=https://services.gradle.org/distributions/gradle-3.3-bin.zip' > gradle/wrapper/gradle-wrapper.properties
+
+Build:3.7,24
+    commit=v3.7
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo -e 'distributionUrl=https://services.gradle.org/distributions/gradle-3.3-bin.zip' > gradle/wrapper/gradle-wrapper.properties
+
+Build:3.8,25
+    commit=v3.8
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo -e 'distributionUrl=https://services.gradle.org/distributions/gradle-3.3-bin.zip' > gradle/wrapper/gradle-wrapper.properties
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.2
-Current Version Code:8
+Current Version:3.8
+Current Version Code:25

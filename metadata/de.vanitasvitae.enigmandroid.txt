@@ -1,5 +1,5 @@
 Categories:Science & Education
-License:GPLv2
+License:GPL-2.0
 Author Name:Paul Schaub
 Web Site:https://github.com/vanitasvitae/EnigmAndroid/wiki/EnigmAndroid
 Source Code:https://github.com/vanitasvitae/EnigmAndroid
@@ -78,7 +78,17 @@ Build:0.1.9-09.10.2015-beta,15
     subdir=app
     gradle=yes
 
+Build:1.0.0-05.05.2017,16
+    commit=v1.0.0-05.05.2017
+    subdir=app
+    gradle=yes
+
+Build:1.0.1-12.01.2018,17
+    commit=v1.0.1-12.01.2018
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.1.9-09.10.2015-beta
-Current Version Code:15
+Current Version:1.0.1-12.01.2018
+Current Version Code:17

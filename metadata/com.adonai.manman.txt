@@ -1,10 +1,11 @@
 AntiFeatures:NonFreeNet
 Categories:Development,System
-License:GPLv3
-Web Site:https://github.com/Adonai/Man-Man/blob/HEAD/README.md
+License:GPL-3.0
+Author Web Site:https://plus.google.com/102332121455682860724
+Web Site:
 Source Code:https://github.com/Adonai/Man-Man
 Issue Tracker:https://github.com/Adonai/Man-Man/issues
-Donate:https://www.paypal.com/cgi-bin/webscr/?cmd=_s-xclick&hosted_button_id=6CFFYXFT6QT46
+Donate:https://www.patreon.com/kanedias
 
 Auto Name:Man Man
 Summary:View, download and search Linux manpages
@@ -113,7 +114,17 @@ Build:1.6.2,162
     subdir=app
     gradle=fdroid
 
+Build:1.7.0,170
+    commit=1.7.0
+    subdir=app
+    gradle=fdroid
+
+Build:1.7.1,171
+    commit=1.7.1
+    subdir=app
+    gradle=fdroid
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.6.2
-Current Version Code:162
+Current Version:1.7.1
+Current Version Code:171

@@ -1,5 +1,5 @@
 Categories:Writing
-License:Apache2
+License:Apache-2.0
 Web Site:
 Source Code:https://github.com/knirirr/BeeCount
 Issue Tracker:https://github.com/knirirr/BeeCount/issues
@@ -185,7 +185,19 @@ Build:2.4.4,117
     init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.14.1" }' >> ../build.gradle
     gradle=yes
 
+Build:2.4.5,118
+    commit=2.4.5
+    subdir=beecount
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.14.1" }' >> ../build.gradle
+    gradle=yes
+
+Build:2.4.6,119
+    commit=2.4.6
+    subdir=beecount
+    init=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.14.1" }' >> ../build.gradle
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.4.4
-Current Version Code:117
+Current Version:2.4.6
+Current Version Code:119

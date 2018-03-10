@@ -1,5 +1,5 @@
 Categories:Navigation
-License:GPLv3+
+License:GPL-3.0+
 Author Name:Torsten Grote
 Web Site:https://transportr.grobox.de?utm_source=fdroid
 Source Code:https://github.com/grote/Transportr
@@ -191,7 +191,35 @@ Build:1.1.5,42
     prebuild=./pre-build.sh
     gradleprops=buildServer
 
+Build:1.1.6,45
+    commit=1.1.6
+    submodules=yes
+    gradle=yes
+    prebuild=./pre-build.sh
+    gradleprops=buildServer
+
+Build:1.1.7,47
+    commit=1.1.7
+    submodules=yes
+    gradle=yes
+    prebuild=./pre-build.sh
+    gradleprops=buildServer
+
+Build:1.1.8,48
+    commit=1.1.8
+    submodules=yes
+    gradle=yes
+    prebuild=./pre-build.sh
+    gradleprops=buildServer
+
+Build:1.1.9,49
+    commit=1.1.9
+    submodules=yes
+    gradle=yes
+    prebuild=./pre-build.sh
+    gradleprops=buildServer
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.1.5
-Current Version Code:42
+Current Version:1.1.9
+Current Version Code:49

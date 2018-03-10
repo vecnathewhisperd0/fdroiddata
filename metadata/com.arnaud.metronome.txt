@@ -1,14 +1,16 @@
 Categories:Multimedia
-License:GPLv3
+License:GPL-3.0
 Web Site:
 Source Code:https://gitlab.com/funkygoby/metronome
 Issue Tracker:https://gitlab.com/funkygoby/metronome/issues
+Changelog:https://gitlab.com/funkygoby/metronome/blob/HEAD/CHANGELOG
 
 Auto Name:Metronome
-Summary:Use your smartphone as a metronome
+Summary:A light and reliable metronome
 Description:
-A reliable metronome for Android with large BPM capabilities and able to follow
-a user-defined structure
+A reliable metronome for Android with large BPM capabilities, able to follow a
+user-defined structure, polyrhythms and random mute. With generated or native
+sounds
 .
 
 Repo Type:git
@@ -22,7 +24,15 @@ Build:1.0.1,2
     commit=ba9c516c3e84e7510b422cc2d6950fbda54abad1
     scanignore=res/raw/*
 
+Build:1.1.0,3
+    commit=fdf1fd01ad1909e2a29a47d879a729032549da58
+    scanignore=res/raw/*
+
+Build:1.1.2,5
+    commit=4c855a71e647726df86e332ebda2179510141298
+    scanignore=res/raw/*
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.0.1
-Current Version Code:2
+Current Version:1.1.3
+Current Version Code:6

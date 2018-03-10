@@ -1,5 +1,5 @@
 Categories:Navigation,Sports & Health
-License:GPLv3+
+License:GPL-3.0+
 Web Site:http://bailu.ch/aat
 Source Code:https://github.com/bailuk/AAT
 Issue Tracker:https://github.com/bailuk/AAT/issues
@@ -8,7 +8,8 @@ Auto Name:AAT
 Summary:Track your activities
 Description:
 GPS-tracking application for tracking sportive activities, with emphasis on
-cycling. It uses osmdroid to display map tiles from the OpenStreetMap  project.
+cycling. It uses MapsForge to display map tiles and offline maps from the
+OpenStreetMap project.
 .
 
 Repo Type:git
@@ -57,7 +58,42 @@ Build:v1.4-beta,14
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
+Build:v1.5-beta,15
+    commit=v1.5-beta
+    subdir=app
+    gradle=yes
+
+Build:v1.6-beta,16
+    commit=v1.6-beta
+    subdir=app
+    gradle=yes
+
+Build:v1.7-beta,17
+    commit=v1.7-beta
+    subdir=app
+    gradle=yes
+
+Build:v1.8-beta,18
+    commit=v1.8-beta
+    subdir=app
+    gradle=yes
+
+Build:v1.9-beta,19
+    commit=v1.9-beta
+    subdir=app
+    gradle=yes
+
+Build:v1.10-beta,20
+    commit=v1.10-beta
+    subdir=app
+    gradle=yes
+
+Build:v1.11-beta,21
+    commit=v1.11-beta
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:v1.4-beta
-Current Version Code:14
+Current Version:v1.11-beta
+Current Version Code:21

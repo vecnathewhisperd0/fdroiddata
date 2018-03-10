@@ -1,8 +1,11 @@
 Categories:Internet,Security,Security
-License:GPLv3
-Web Site:https://leap.se
-Source Code:https://github.com/leapcode/bitmask_android
-Issue Tracker:https://leap.se/code/projects/android/issues
+License:GPL-3.0
+Web Site:https://bitmask.net
+Source Code:https://0xacab.org/leap/bitmask_android
+Issue Tracker:https://0xacab.org/leap/bitmask_android/issues
+Changelog:https://0xacab.org/leap/bitmask_android/blob/master/CHANGELOG
+Donate:https://leap.se/en/about-us/donate
+Bitcoin:1Fze6GLjoxFnwAGNreYLK8ktFdGJdPRxeY
 
 Auto Name:Bitmask
 Summary:Easy and secure encrypted communication (VPN)
@@ -14,64 +17,28 @@ soon.
 .
 
 Repo Type:git
-Repo:https://github.com/leapcode/bitmask_android.git
-Binaries:https://dl.bitmask.net/client/android/Bitmask-Android-%v.apk
+Repo:https://0xacab.org/leap/bitmask_android.git
 
-Build:0.7.0,93
-    disable=skip
-    commit=0.7.0
-    subdir=app
-    gradle=yes
-    build=misc/build-native.sh
-
-Build:0.8.1,107
-    disable=skip
-    commit=0.8.1
-    subdir=app
-    gradle=yes
-    build=misc/build-native.sh
-
-Build:0.9.2RC2,114
-    disable=does not verify
-    commit=0.9.2RC2
-    subdir=app
-    gradle=yes
-    build=misc/build-native.sh
-
-Build:0.9.2RC3,115
-    disable=does not verify (all ndk-built files)
-    commit=0.9.2RC3
-    subdir=app
-    gradle=yes
-    build=misc/build-native.sh
-
-Build:0.9.2,116
-    disable=does not verify (just MIPS)
-    commit=0.9.2
-    subdir=app
-    gradle=yes
-    build=misc/build-native.sh
-
-Build:0.9.3,120
-    disable=does not verify (just MIPS, jar-xf/assets/nopievpn.mips and pievpn.mips)
-    commit=0.9.3
-    subdir=app
-    gradle=yes
-    build=misc/build-native.sh
-
-Build:0.9.4,125
-    disable=doesnt verify (r10d vs. r10e)
-    commit=0.9.4_FDROID
+Build:0.9.7,131
+    commit=0.9.7
     subdir=app
     submodules=yes
     gradle=production
     build=misc/build-native.sh
+    ndk=r15c
 
-Maintainer Notes:
-0.9.4_FDROID should verify with r10d, but we switched already to r10e...
-.
+Build:0.9.8,134
+    commit=0.9.8
+    subdir=app
+    submodules=yes
+    gradle=production
+    rm=ics-openvpn/main/src/main/cpp/mbedtls/tests
+    prebuild=sed -i -e 's|./gradlew|gradle|' ../build_deps.sh
+    build=cd .. && \
+        ./build_deps.sh
+    ndk=r16b
 
 Auto Update Mode:Version %v
-Update Check Mode:Tags
-Current Version:0.9.4
-Current Version Code:125
+Update Check Mode:Tags ^[0-9.]+$
+Current Version:0.9.8
+Current Version Code:134

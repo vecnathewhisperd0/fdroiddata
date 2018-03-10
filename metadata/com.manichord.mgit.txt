@@ -1,5 +1,5 @@
 Categories:Development
-License:GPLv3
+License:GPL-3.0
 Web Site:http://manichord.com/MGit
 Source Code:https://github.com/maks/MGit
 Issue Tracker:https://github.com/maks/MGit/issues
@@ -18,7 +18,19 @@ Build:1.5.0,201
     commit=v1.5.0-2
     gradle=yes
 
-Auto Update Mode:None
+Build:1.5.1,202
+    commit=v1.5.1
+    gradle=yes
+
+Build:1.5.2,203
+    commit=v1.5.2
+    gradle=yes
+
+Build:1.5.3,204
+    commit=v1.5.3
+    gradle=yes
+
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.5.0
-Current Version Code:201
+Current Version:1.5.3
+Current Version Code:204

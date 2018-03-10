@@ -1,5 +1,5 @@
 Categories:Time
-License:Apache2
+License:Apache-2.0
 Web Site:
 Source Code:https://github.com/plusonelabs/calendar-widget
 Issue Tracker:https://github.com/plusonelabs/calendar-widget/issues
@@ -83,6 +83,16 @@ Build:1.9.3-35a0ac1,347
     subdir=app/calendar-widget
     gradle=yes
 
+Build:1.10.0-e7438daa,408
+    commit=v1.10.0
+    subdir=app/calendar-widget
+    gradle=yes
+
+Build:1.10.1-4853a036,414
+    commit=v1.10.1
+    subdir=app/calendar-widget
+    gradle=yes
+
 Maintainer Notes:
 Upstream generates CV and CVC from git, so we don't catch that anymore,
 see https://github.com/plusonelabs/calendar-widget/issues/210.
@@ -90,5 +100,5 @@ see https://github.com/plusonelabs/calendar-widget/issues/210.
 
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:1.9.3
-Current Version Code:347
+Current Version:1.10.1-4853a036
+Current Version Code:414

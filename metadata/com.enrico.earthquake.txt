@@ -1,5 +1,5 @@
 Categories:Theming
-License:GPLv3
+License:GPL-3.0
 Web Site:https://github.com/enricocid/Simply-Solid/blob/HEAD/README.md
 Source Code:https://github.com/enricocid/Simply-Solid
 Issue Tracker:https://github.com/enricocid/Simply-Solid/issues
@@ -23,7 +23,42 @@ Build:2.0.1,9
     subdir=project/app
     gradle=yes
 
-Auto Update Mode:None
+Build:3.0.0,10
+    commit=3.0.0
+    subdir=project/app
+    gradle=yes
+
+Build:3.0.1,11
+    commit=3.0.1
+    subdir=project/app
+    gradle=yes
+
+Build:3.0.2,12
+    commit=3.0.2
+    subdir=project/app
+    gradle=yes
+
+Build:3.0.3,13
+    commit=3.0.3
+    subdir=project/app
+    gradle=yes
+
+Build:3.0.4,14
+    commit=3.0.4
+    subdir=project/app
+    gradle=yes
+
+Build:3.0.5,15
+    commit=3.0.5
+    subdir=project/app
+    gradle=yes
+
+Build:3.0.6,16
+    commit=3.0.6
+    subdir=project/app
+    gradle=yes
+
+Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.0.1
-Current Version Code:9
+Current Version:3.0.6
+Current Version Code:16

@@ -83,6 +83,76 @@ Build:2.4.6,27
     subdir=app
     gradle=yes
 
+Build:2.5.0,28
+    commit=2.5.0
+    subdir=app
+    gradle=yes
+
+Build:2.5.1,29
+    commit=2.5.1
+    subdir=app
+    gradle=yes
+
+Build:2.5.2,30
+    commit=2.5.2
+    subdir=app
+    gradle=yes
+
+Build:2.5.3,31
+    commit=2.5.3
+    subdir=app
+    gradle=yes
+
+Build:2.6.1,33
+    commit=2.6.1
+    subdir=app
+    gradle=yes
+
+Build:2.7.0,34
+    commit=2.7.0
+    subdir=app
+    gradle=yes
+
+Build:2.8.0,35
+    commit=2.8.0
+    subdir=app
+    gradle=yes
+
+Build:2.8.1,36
+    commit=2.8.1
+    subdir=app
+    gradle=yes
+
+Build:2.9.0,37
+    commit=2.9.0
+    subdir=app
+    gradle=yes
+
+Build:2.9.1,38
+    commit=2.9.1
+    subdir=app
+    gradle=yes
+
+Build:2.10.1,40
+    commit=2.10.1
+    subdir=app
+    gradle=yes
+
+Build:2.10.3,42
+    commit=2.10.3
+    subdir=app
+    gradle=yes
+
+Build:2.10.5,44
+    commit=2.10.5
+    subdir=app
+    gradle=yes
+
+Build:2.10.6,45
+    commit=2.10.6
+    subdir=app
+    gradle=yes
+
 Maintainer Notes:
 TouchThruDrawerlayout.java can be removed since its identical to the correctly
 named TouchThruDrawerLayout.java.
@@ -90,5 +160,5 @@ named TouchThruDrawerLayout.java.
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.4.6
-Current Version Code:27
+Current Version:2.10.6
+Current Version Code:45

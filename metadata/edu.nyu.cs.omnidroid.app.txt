@@ -1,5 +1,5 @@
 Categories:System
-License:Apache2
+License:Apache-2.0
 Web Site:https://code.google.com/p/omnidroid
 Source Code:https://code.google.com/p/omnidroid/source
 Issue Tracker:
@@ -22,6 +22,6 @@ Build:0.2.1,6
     subdir=omnidroid
 
 Auto Update Mode:None
-Update Check Mode:Tags
+Update Check Mode:Static
 Current Version:0.2.1
 Current Version Code:6

@@ -1,5 +1,5 @@
 Categories:Development
-License:Apache2
+License:Apache-2.0
 Web Site:https://sites.google.com/site/zipsigner
 Source Code:https://code.google.com/p/zip-signer/source
 Issue Tracker:
@@ -26,6 +26,6 @@ Build:3.4,31
     commit=453
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:3.4
 Current Version Code:31

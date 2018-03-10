@@ -1,5 +1,6 @@
+AntiFeatures:UpstreamNonFree
 Categories:Security
-License:Artistic2
+License:Artistic-2.0
 Web Site:http://passwdsafe.sourceforge.net
 Source Code:https://sourceforge.net/p/passwdsafe/code/ci/default/tree
 Issue Tracker:https://sourceforge.net/projects/passwdsafe/support
@@ -126,7 +127,8 @@ Build:5.4.0,50400
     rm=passwdsafe/libs/*.jar
     prebuild=sed -i -e '/fileTree/acompile "org.bouncycastle:bcprov-jdk14:1.51"' build.gradle
 
+Archive Policy:0 versions
 Auto Update Mode:None
-Update Check Mode:Tags
-Current Version:6.5.0
-Current Version Code:60500
+Update Check Mode:Static
+Current Version:6.7.1
+Current Version Code:60701

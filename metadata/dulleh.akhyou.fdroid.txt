@@ -1,6 +1,6 @@
 AntiFeatures:Tracking
 Categories:Multimedia
-License:GPLv3+
+License:GPL-3.0+
 Web Site:https://dulleh.github.io/akhyou/
 Source Code:https://github.com/dulleh/akhyou
 Issue Tracker:https://github.com/dulleh/akhyou/issues
@@ -20,7 +20,13 @@ Build:2.0.6,3
     subdir=akhyou2
     gradle=fdroid
 
+Build:2.0.8,5
+    commit=v2.0.8
+    subdir=akhyou2
+    init=sed -i -e '/gradle/s/2.13/2.14.1/g' ../gradle/wrapper/gradle-wrapper.properties
+    gradle=fdroid
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.0.6
-Current Version Code:3
+Current Version:2.0.8
+Current Version Code:5

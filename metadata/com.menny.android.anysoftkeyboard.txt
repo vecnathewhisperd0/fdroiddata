@@ -1,34 +1,11 @@
 Categories:Writing
-License:Apache2
+License:Apache-2.0
 Web Site:https://anysoftkeyboard.github.io
 Source Code:https://github.com/AnySoftKeyboard/AnySoftKeyboard
 Issue Tracker:https://github.com/AnySoftKeyboard/AnySoftKeyboard/issues
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KDYBGNUNMMN94&lc=US&item_name=AnySoftKeyboard
 
 Auto Name:AnySoftKeyboard
-Summary:Alternative keyboard
-Description:
-Alternative on-screen keyboard for multiple languages.
-
-* Multi-language keyboard support via external packages (English as standard)
-* Completion dictionaries for multiple languages
-* Multitouch support
-* Extension keyboard (swipe your finger all the way up out of the keyboard)
-* Gesture support: swipe left or right to switch layouts; swipe up to shift; swipe down to close the keyboard
-* Theme support (comes with several skins)
-* Emoji keyboard plus emoji tag search - type ":emoji_name"
-* Built-in user dictionary words editor
-* Optional 16-key English keyboard
-* Cursor movement soft-keys that can also be mapped to hardware keys
-* Supports ARM, x86 and MIPS natively
-* Voice-input
-
-There are many language packs and themes available as apks on the website. We
-will try and publish any that have source xml and attribution/licence for the
-dictionaries. For more info see the f-droid.org
-[http://f-droid.org/forums/topic/anysoftkeyboard-language-packs-layouts-plans/#post-6408
-forum topic].
-.
 
 Repo Type:git
 Repo:https://github.com/AnySoftKeyboard/AnySoftKeyboard.git
@@ -167,11 +144,115 @@ Build:1.8.253,1578
     prebuild=sed -i -e '/versionCode/d' -e '/versionName/aversionCode $$VERCODE$$'  build.gradle
     preassemble=:makeEnglishDictionary
 
+Build:1.8.329,1654
+    commit=1.8-r7
+    subdir=app
+    init=sed -i -e '/fabric/d' -e '/canaryCompile/,+2d' ../build.gradle build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=app/src/main/res/raw/words_1.dict
+    prebuild=sed -i -e '/versionCode/d' -e '/versionName/aversionCode $$VERCODE$$'  build.gradle
+    preassemble=:makeEnglishDictionary
+
+Build:1.8.401,1726
+    commit=1.8-r7.1
+    subdir=app
+    init=sed -i -e '/fabric/d' -e '/canaryCompile/,+2d' ../build.gradle build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=app/src/main/res/raw/words_1.dict
+    prebuild=sed -i -e '/versionCode/d' -e '/versionName/aversionCode $$VERCODE$$' build.gradle && \
+        sed -i -e '/crashlytics/,$d' build.gradle
+    preassemble=:makeEnglishDictionary
+
+Build:1.8.503,1828
+    commit=1.8-r8
+    subdir=app
+    init=sed -i -e '/fabric/d' -e '/canaryCompile/,+2d' ../build.gradle build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=app/src/main/res/raw/words_*.dict
+    prebuild=sed -i -e '/versionCode/d' -e '/versionName/aversionCode $$VERCODE$$' build.gradle && \
+        sed -i -e '/crashlytics/,$d' build.gradle
+    preassemble=:makeEnglishDictionary
+
+Build:1.8.585,1910
+    commit=1.8-r9
+    subdir=app
+    init=sed -i -e '/fabric/d' -e '/canaryCompile/,+2d' ../build.gradle build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=app/src/main/res/raw/words_*.dict
+    prebuild=sed -i -e '/versionCode/d' -e '/versionName/aversionCode $$VERCODE$$' build.gradle && \
+        sed -i -e '/crashlytics/,$d' build.gradle
+    preassemble=:makeEnglishDictionary
+
+Build:1.8.735,2060
+    commit=1.8-r10
+    subdir=app
+    init=sed -i -e '/fabric/d' -e '/canaryCompile/,+2d' ../build.gradle build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=app/src/main/res/raw/words_*.dict
+    prebuild=sed -i -e '/versionCode/d' -e '/versionName/aversionCode $$VERCODE$$' build.gradle && \
+        sed -i -e '/crashlytics/,$d' build.gradle
+    preassemble=:makeEnglishDictionary
+
+Build:1.8.844,2169
+    commit=1.8-r11
+    subdir=app
+    init=sed -i -e '/fabric/d' -e '/canaryCompile/,+2d' ../build.gradle build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=app/src/main/res/raw/words_*.dict
+    prebuild=sed -i -e '/versionCode/d' -e '/versionName/aversionCode $$VERCODE$$' build.gradle && \
+        sed -i -e '/crashlytics/,$d' build.gradle
+    preassemble=:makeEnglishDictionary
+
+Build:1.8.1241,2566
+    commit=1.8-r12
+    subdir=app
+    init=sed -i -e '/fabric/d' -e '/canaryCompile/,+2d' ../build.gradle build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=app/src/main/res/raw/words_*.dict
+    prebuild=sed -i -e '/versionCode/d' -e '/versionName/aversionCode $$VERCODE$$' build.gradle && \
+        sed -i -e '/crashlytics/,$d' build.gradle
+    preassemble=:makeEnglishDictionary
+
+Build:1.8.1333,2658
+    commit=1.8-r12.2
+    subdir=app
+    init=sed -i -e '/fabric/d' -e '/canaryCompile/,+2d' ../build.gradle build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=app/src/main/res/raw/words_*.dict
+    prebuild=sed -i -e '/versionCode/d' -e '/versionName/aversionCode $$VERCODE$$' build.gradle && \
+        sed -i -e '/crashlytics/,$d' build.gradle
+    ndk=r11c
+    preassemble=:makeEnglishDictionary
+
+Build:1.9.1117,3692
+    commit=1.9-r1
+    subdir=app
+    init=sed -i -e '/fabric/d' -e '/canaryImplementation/,+2d' ../build.gradle build.gradle
+    gradle=yes
+    forceversion=yes
+    rm=app/src/main/res/raw/words_*.dict
+    prebuild=sed -i -e '/versionCode/d' -e '/versionName/aversionCode $$VERCODE$$' -e '/crashlytics/,$d' build.gradle && \
+        sed -i -e 's/gradle:3.1.0-alpha06/gradle:3.0.1/' ../build.gradle
+    scandelete=buildSrc,app/src/debug
+    ndk=r14b
+    preassemble=:makeEnglishDictionary
+
 Maintainer Notes:
-* Generates english dictionary binary (src/main/res/raw/words_1.dict) from source files (under `english_dictionary` folder)
+* Generates english dictionary binary (src/main/res/raw/words_*.dict) from source files (under `english_dictionary` folder. Mostly AOSP word-list)
+
+Summary and Description have been moved to the new localizable text files:
+https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
 .
 
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:1.8.253
-Current Version Code:1578
+Current Version:1.9.1117
+Current Version Code:3692

@@ -1,5 +1,5 @@
 Categories:Games
-License:NewBSD
+License:BSD-3-Clause
 Web Site:https://code.google.com/p/tiltmazes
 Source Code:https://code.google.com/p/tiltmazes/source
 Issue Tracker:
@@ -21,6 +21,6 @@ Build:1.2,3
     target=android-4
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.2
 Current Version Code:3

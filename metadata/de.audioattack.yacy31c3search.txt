@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPLv3
+License:GPL-3.0
 Web Site:https://gitlab.com/marc.nause/31c3-search
 Source Code:https://gitlab.com/marc.nause/31c3-search/tree/HEAD
 Issue Tracker:https://gitlab.com/marc.nause/31c3-search/issues
@@ -22,6 +22,6 @@ Build:1.6,7
 
 Archive Policy:0 versions
 Auto Update Mode:None
-Update Check Mode:None
+Update Check Mode:Static
 Current Version:1.6
 Current Version Code:7

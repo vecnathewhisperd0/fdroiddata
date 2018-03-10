@@ -1,5 +1,5 @@
 Categories:Sports & Health
-License:GPLv3+
+License:GPL-3.0+
 Web Site:https://secuso.org/pfa
 Source Code:https://github.com/SecUSo/privacy-friendly-pedometer
 Issue Tracker:https://github.com/SecUSo/privacy-friendly-pedometer/issues
@@ -41,7 +41,22 @@ Build:1.0.2,3
     subdir=app
     gradle=yes
 
+Build:1.0.3,4
+    commit=v1.0.3
+    subdir=app
+    gradle=yes
+
+Build:1.0.4,5
+    commit=v1.0.4
+    subdir=app
+    gradle=yes
+
+Build:1.0.5,6
+    commit=v1.0.5
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.0.2
-Current Version Code:3
+Current Version:1.0.5
+Current Version Code:6

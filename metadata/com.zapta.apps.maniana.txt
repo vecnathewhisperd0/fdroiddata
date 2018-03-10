@@ -1,5 +1,5 @@
 Categories:Writing
-License:Apache2
+License:Apache-2.0
 Web Site:https://code.google.com/p/maniana
 Source Code:https://code.google.com/p/maniana/source
 Issue Tracker:
@@ -42,6 +42,6 @@ Build:1.26,26015
     subdir=Maniana
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.26
 Current Version Code:26015

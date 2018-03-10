@@ -1,5 +1,5 @@
 Categories:Games
-License:GPLv2+
+License:GPL-2.0+
 Web Site:http://np2android.sf.net
 Source Code:http://sf.net/p/np2android/code
 Issue Tracker:http://sf.net/p/np2android/tickets
@@ -21,7 +21,7 @@ version, F-Droid build additionally supports mips and ARMv6.
 .
 
 Repo Type:git
-Repo:git://git.code.sf.net/p/np2android/code
+Repo:https://git.code.sf.net/p/np2android/code
 
 Build:20120217,20120217
     commit=20120217

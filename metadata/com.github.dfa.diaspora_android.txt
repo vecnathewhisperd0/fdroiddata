@@ -1,26 +1,15 @@
 Categories:Internet
-License:GPLv3+
-Web Site:https://github.com/Diaspora-for-Android/dandelion/blob/HEAD/README.md
+License:GPL-3.0+
+Web Site:https://diasp.org/people/48b78420923501341ef3782bcb452bd5
 Source Code:https://github.com/Diaspora-for-Android/dandelion
 Issue Tracker:https://github.com/Diaspora-for-Android/dandelion/issues
 Changelog:https://github.com/Diaspora-for-Android/dandelion/blob/HEAD/CHANGELOG.md
+Donate:https://github.com/Diaspora-for-Android/dandelion/blob/HEAD/README.md#maintainers
+Bitcoin:1B9ZyYdQoY9BxMe9dRUEKaZbJWsbQqfXU5
+Litecoin:LSC2NUiXmnsJiaRczq9AKceX6CEHQHP39w
 
-Auto Name:dandelion*
-Summary:Client for the diaspora* social network
-Description:
-dandelion* is a client for the community-run, distributed social network
-diaspora*. It adds some useful features to your networking experience:
-
-* Toolbars and navigation slider for quick access to some features
-* Share content to and from the app
-* Proxy support (eg. Tor network via [[org.torproject.android]])
-* In-app-browser to view posted websites
-
-dandelion* is currently under development and should be used with that in mind.
-Please report any bugs you might find. The app is not available in your
-language? Submit translations on
-[https://crowdin.com/project/diaspora-for-android/invite Crowdin]!
-.
+Name:dandelion*
+Auto Name:${appName}
 
 Repo Type:git
 Repo:https://github.com/Diaspora-for-Android/dandelion
@@ -76,7 +65,89 @@ Build:0.2.1,11
     subdir=app
     gradle=yes
 
+Build:0.2.2,12
+    commit=v0.2.2
+    subdir=app
+    gradle=yes
+
+Build:0.2.3,13
+    commit=v0.2.3
+    subdir=app
+    gradle=FlavorDandelion
+
+Build:0.2.4,14
+    commit=v0.2.4
+    subdir=app
+    gradle=FlavorDefault
+
+Build:0.2.5,15
+    commit=v0.2.5
+    subdir=app
+    gradle=FlavorDefault
+
+Build:0.2.6,16
+    commit=v0.2.6
+    subdir=app
+    gradle=FlavorDefault
+
+Build:0.2.7,17
+    commit=v0.2.7
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.0.0,20
+    commit=v1.0.0
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.0.1,21
+    commit=v1.0.1
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.0.2,22
+    commit=v1.0.2
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.0.3,23
+    commit=v1.0.3
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.0.4,24
+    commit=v1.0.4
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.0.6,26
+    commit=v1.0.6
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.0.8,28
+    commit=v1.0.8
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.1.0,29
+    commit=v1.1.0
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.1.1,30
+    commit=v1.1.1
+    subdir=app
+    gradle=FlavorDefault
+
+Maintainer Notes:
+Description and summary in app git repository
+.
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.2.1
-Current Version Code:11
+Current Version:1.1.1
+Current Version Code:30

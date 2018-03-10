@@ -1,10 +1,11 @@
 Categories:Money
-License:GPLv3+
+License:GPL-3.0+
 Web Site:
 Source Code:https://github.com/brarcher/loyalty-card-locker
 Issue Tracker:https://github.com/brarcher/loyalty-card-locker/issues
+Changelog:https://github.com/brarcher/loyalty-card-locker/blob/HEAD/CHANGELOG.md
 
-Auto Name:Loyalty Card Locker
+Auto Name:Loyalty Card Keychain
 Summary:Manages barcode-based store/loyalty cards on your phone
 Description:
 Manages barcode-based store/loyalty cards on your phone, removing the need to
@@ -54,7 +55,97 @@ Build:0.8,8
     subdir=app
     gradle=yes
 
+Build:0.9,9
+    commit=v0.9
+    subdir=app
+    gradle=yes
+
+Build:0.10,10
+    commit=v0.10
+    subdir=app
+    gradle=yes
+
+Build:0.11,11
+    commit=v0.11
+    subdir=app
+    gradle=yes
+
+Build:0.11.1,12
+    commit=v0.11.1
+    subdir=app
+    gradle=yes
+
+Build:0.12,13
+    commit=v0.12
+    subdir=app
+    gradle=yes
+
+Build:0.13,14
+    commit=v0.13
+    subdir=app
+    gradle=yes
+
+Build:0.14,15
+    commit=v0.14
+    subdir=app
+    gradle=yes
+
+Build:0.15,16
+    commit=v0.15
+    subdir=app
+    gradle=yes
+
+Build:0.16,17
+    commit=v0.16
+    subdir=app
+    gradle=yes
+
+Build:0.17,18
+    commit=v0.17
+    subdir=app
+    gradle=yes
+
+Build:0.18,19
+    commit=v0.18
+    subdir=app
+    gradle=yes
+
+Build:0.18.1,20
+    commit=v0.18.1
+    subdir=app
+    gradle=yes
+
+Build:0.19,21
+    commit=v0.19
+    subdir=app
+    gradle=yes
+
+Build:0.20,22
+    commit=v0.20
+    subdir=app
+    gradle=yes
+
+Build:0.21,23
+    commit=v0.21
+    subdir=app
+    gradle=yes
+
+Build:0.22,24
+    commit=v0.22
+    subdir=app
+    gradle=yes
+
+Build:0.23,25
+    commit=v0.23
+    subdir=app
+    gradle=yes
+
+Build:0.23.1,26
+    commit=v0.23.1
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.8
-Current Version Code:8
+Current Version:0.23.1
+Current Version Code:26

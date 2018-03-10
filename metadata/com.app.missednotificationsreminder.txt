@@ -1,5 +1,5 @@
 Categories:Connectivity
-License:Apache 2.0
+License:Apache-2.0
 Web Site:
 Source Code:https://github.com/httpdispatch/MissedNotificationsReminder
 Issue Tracker:https://github.com/httpdispatch/MissedNotificationsReminder/issues
@@ -22,6 +22,11 @@ Build:1.1.5,1401010500
     subdir=app
     gradle=v14
 
+Build:1.1.11,1401011100
+    commit=1.1.11
+    subdir=app
+    gradle=v14
+
 Build:1.1.5,1801010500
     commit=cab55edf82430474db99e826d9e5f2858215b4fe
     subdir=app
@@ -32,11 +37,23 @@ Build:1.1.11,1801011100
     subdir=app
     gradle=v18
 
+Build:1.1.15,2010115014
+    commit=1.1.15
+    subdir=app
+    gradle=v14
+
+Build:1.1.15,2010115018
+    commit=1.1.15
+    subdir=app
+    gradle=v18
+
 Maintainer Notes:
+Build both flavors with each release.
 VC is generated at buildtime, cannot set UCM.
 .
 
+Archive Policy:4 versions
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:1.1.11
-Current Version Code:1801011100
+Current Version:1.1.15
+Current Version Code:2010115018

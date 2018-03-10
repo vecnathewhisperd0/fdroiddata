@@ -1,5 +1,5 @@
 Categories:Reading,Internet
-License:GPLv3
+License:GPL-3.0
 Web Site:https://github.com/ccrama/Slide/blob/HEAD/README.md
 Source Code:https://github.com/ccrama/Slide
 Issue Tracker:https://github.com/ccrama/Slide/issues
@@ -191,7 +191,140 @@ Build:5.5.2,261
     forceversion=yes
     prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
 
+Build:5.5.4,263
+    commit=5.5.4
+    subdir=app
+    gradle=prod,noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.5.5,264
+    commit=58d44b9c77cb4c0320e36dd1dae98e62fe7d0711
+    subdir=app
+    gradle=prod,noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.6,267
+    commit=5.6
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.6.1,270
+    commit=5.6.1
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.6.2,271
+    commit=5.6.2
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.6.5,272
+    commit=5.6.5
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.6.5-alpha5,282
+    commit=5.6.5-alpha5
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.6.5-alpha6,284
+    commit=5.6.5-alpha6
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.6.5-alpha5.1,285
+    commit=5.6.5-alpha5.1
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.7,286
+    commit=5.7
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.7.1,287
+    commit=5.7.1
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.7.2-alpha1,289
+    commit=5.7.2-alpha1
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.7.2,291
+    commit=5.7.2
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.8-alpha1,292
+    commit=5.8-alpha1
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.8-alpha1.5,293
+    commit=5.8-alpha1.5
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.8-alpha2,294
+    commit=5.8-alpha2
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.8-alpha2.1,295
+    commit=5.8-alpha2.1
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.8-alpha3,297
+    commit=5.8-alpha3
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
+Build:5.8.2,301
+    commit=5.8.2
+    subdir=app
+    gradle=noGPlay
+    forceversion=yes
+    prebuild=sed -i -e '/withGPlayCompile/d' -e 's/8g/2g/' build.gradle
+
 Auto Update Mode:Version %v
-Update Check Mode:Tags [0-9\.]*$
-Current Version:5.5.2
-Current Version Code:261
+Update Check Mode:Tags
+Current Version:5.8.2
+Current Version Code:301

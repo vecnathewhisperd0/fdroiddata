@@ -41,7 +41,74 @@ Build:0.9.5 (The Great Gig in the Sky),6
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
+Build:1.0.0 (Astronomy Domine),7
+    commit=1.0.0
+    subdir=app
+    gradle=yes
+
+Build:1.0.1 (Astronomy Domine),8
+    commit=1.0.1
+    subdir=app
+    gradle=yes
+
+Build:1.0.2 (Astronomy Domine),9
+    commit=v1.0.2
+    subdir=app
+    gradle=yes
+
+Build:1.0.3 (Astronomy Domine),10
+    commit=v1.0.3
+    subdir=app
+    gradle=yes
+
+Build:1.0.4 (Astronomy Domine),11
+    commit=v1.0.4
+    subdir=app
+    gradle=yes
+
+Build:1.0.5 (Astronomy Domine),12
+    commit=v1.0.5
+    subdir=app
+    gradle=yes
+
+Build:1.0.6 (Astronomy Domine),13
+    commit=v1.0.6
+    subdir=app
+    gradle=yes
+
+Build:1.0.7,14
+    commit=v1.0.7
+    subdir=app
+    gradle=yes
+
+Build:1.0.8,15
+    commit=v1.0.8
+    subdir=app
+    gradle=yes
+
+Build:1.1.0,16
+    disable=missing google() repo
+    commit=v1.1.0
+    subdir=app
+    gradle=yes
+
+Build:1.1.2,18
+    disable=missing google() repo
+    commit=v1.1.2
+    subdir=app
+    gradle=yes
+
+Build:1.1.3,19
+    commit=v1.1.3
+    subdir=app
+    gradle=yes
+
+Build:1.1.4,20
+    commit=v1.1.4
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.9.5 (The Great Gig in the Sky)
-Current Version Code:6
+Current Version:1.1.4
+Current Version Code:20

@@ -1,5 +1,5 @@
 Categories:Reading
-License:GPLv3
+License:GPL-3.0
 Web Site:https://github.com/ligi/SurvivalManual/blob/HEAD/README.md
 Source Code:https://github.com/ligi/SurvivalManual
 Issue Tracker:https://github.com/ligi/SurvivalManual/issues
@@ -90,7 +90,111 @@ Build:2.4,24
     prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
         sed -i '/android-sdk-manager/d' build.gradle
 
+Build:2.6,26
+    commit=2.6
+    subdir=android
+    submodules=yes
+    gradle=prodNoFirebase
+    prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
+Build:2.7,27
+    commit=2.7
+    subdir=android
+    submodules=yes
+    gradle=prodNoFirebase
+    prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
+Build:2.8,28
+    commit=2.8
+    subdir=android
+    submodules=yes
+    gradle=prodNoFirebase
+    prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
+Build:3.1,31
+    commit=3.1
+    subdir=android
+    submodules=yes
+    gradle=prodNoFirebase
+    prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
+Build:3.2,32
+    commit=3.2
+    subdir=android
+    submodules=yes
+    gradle=prodNoFirebase
+    prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
+Build:3.3,33
+    commit=3.3
+    subdir=android
+    submodules=yes
+    gradle=prodNoFirebase
+    prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
+Build:3.5,35
+    commit=3.5
+    subdir=android
+    submodules=yes
+    gradle=prodNoFirebaseForFdroid
+    prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
+Build:3.6,36
+    commit=3.6
+    subdir=android
+    submodules=yes
+    gradle=noFirebaseForFdroid
+    prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
+Build:3.7,37
+    commit=3.7
+    subdir=android
+    submodules=yes
+    gradle=noFirebaseForFdroid
+    prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
+Build:3.8,38
+    commit=3.8
+    subdir=android
+    submodules=yes
+    gradle=noFirebaseForFdroid
+    prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
+Build:3.9,39
+    commit=3.9
+    subdir=android
+    submodules=yes
+    gradle=noFirebaseForFdroid
+    prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
+Build:40,40
+    commit=4.0
+    subdir=android
+    submodules=yes
+    gradle=noFirebaseForFdroid
+    prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
+Build:4.1,41
+    commit=4.1
+    subdir=android
+    submodules=yes
+    gradle=noFirebaseForFdroid
+    prebuild=sed -i -e '/play_services/d'  -e '/withFirebaseCompile/d' build.gradle && \
+        sed -i '/android-sdk-manager/d' build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.4
-Current Version Code:24
+Current Version:4.1
+Current Version Code:41

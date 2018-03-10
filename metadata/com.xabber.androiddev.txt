@@ -1,9 +1,9 @@
 Categories:Internet
-License:GPLv3
+License:GPL-3.0
 Web Site:https://www.xabber.com
 Source Code:https://github.com/redsolution/xabber-android
 Issue Tracker:https://github.com/redsolution/xabber-android/issues
-Changelog:https://github.com/redsolution/xabber-android/wiki/Xabber-Version-History
+Changelog:https://github.com/redsolution/xabber-android/releases
 
 Name:Xabber
 Auto Name:Xabber Development Version
@@ -408,7 +408,92 @@ Build:1.0.74,247
     submodules=yes
     gradle=dev
 
-Auto Update Mode:Version %v
+Build:1.0.155,327
+    commit=558839176ecda7a3fc33b17691f4eebd14b94d9e
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+    output=build/outputs/apk/xabber-dev-universal-release-unsigned.apk
+
+Build:1.0.168,340
+    disable=untrusted repo
+    commit=1.0.168
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+    output=build/outputs/apk/xabber-dev-universal-release-unsigned.apk
+
+Build:1.0.170,342
+    disable=untrusted repo
+    commit=1.0.170
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+    output=build/outputs/apk/xabber-dev-universal-release-unsigned.apk
+
+Build:1.0.171,343
+    disable=untrusted repo
+    commit=1.0.171
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+    output=build/outputs/apk/xabber-dev-universal-release-unsigned.apk
+
+Build:1.0.173,345
+    disable=untrusted repo
+    commit=1.0.173
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+    output=build/outputs/apk/xabber-dev-universal-release-unsigned.apk
+
+Build:2.0.0,347
+    disable=untrusted repo
+    commit=2.0.0
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+    output=build/outputs/apk/xabber-dev-universal-release-unsigned.apk
+
+Build:2.0.1,348
+    commit=2.0.1
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+    output=build/outputs/apk/xabber-dev-universal-release-unsigned.apk
+    prebuild=echo "smackCommitShortHash=8466a5a" >> gradle.properties && \
+        sed -i "s/maven { url 'https:\/\/igniterealtime.org\/repo' }//" ../build.gradle && \
+        sed -i 's/compile \"org.igniterealtime.smack:smack-android-extensions.*\"/compile \"com.github.igniterealtime.smack:smack-android-extensions:$smackCommitShortHash\"/' build.gradle && \
+        sed -i 's/compile \"org.igniterealtime.smack:smack-experimental.*\"/compile \"com.github.igniterealtime.smack:smack-experimental:$smackCommitShortHash\"/' build.gradle && \
+        sed -i 's/compile \"org.igniterealtime.smack:smack-experimental.*\"/compile \"com.github.igniterealtime.smack:smack-experimental:$smackCommitShortHash\"/' build.gradle && \
+        sed -i 's/compile \"org.igniterealtime.smack:smack-tcp.*\"/compile \"com.github.igniterealtime.smack:smack-tcp:$smackCommitShortHash\"/' build.gradle && \
+        sed -i 's/compile \"org.igniterealtime.smack:smack-resolver-dnsjava.*\"/compile \"com.github.igniterealtime.smack:smack-resolver-dnsjava:$smackCommitShortHash\"/' build.gradle
+
+Build:2.1,404
+    disable=crashlytics, gsm
+    commit=v2.1
+    subdir=xabber
+    submodules=yes
+    gradle=dev
+    output=build/outputs/apk/xabber-dev-universal-release-unsigned.apk
+    prebuild=echo "smackCommitShortHash=ffb99cc" >> gradle.properties && \
+        sed -i "s/maven { url 'https:\/\/igniterealtime.org\/repo' }//" ../build.gradle && \
+        sed -i 's/compile \"org.igniterealtime.smack:smack-android-extensions.*\"/compile \"com.github.igniterealtime.smack:smack-android-extensions:$smackCommitShortHash\"/' build.gradle && \
+        sed -i 's/compile \"org.igniterealtime.smack:smack-experimental.*\"/compile \"com.github.igniterealtime.smack:smack-experimental:$smackCommitShortHash\"/' build.gradle && \
+        sed -i 's/compile \"org.igniterealtime.smack:smack-tcp.*\"/compile \"com.github.igniterealtime.smack:smack-tcp:$smackCommitShortHash\"/' build.gradle && \
+        sed -i 's/compile \"org.igniterealtime.smack:smack-resolver-dnsjava.*\"/compile \"com.github.igniterealtime.smack:smack-resolver-dnsjava:$smackCommitShortHash\"/' build.gradle && \
+        sed -i -e '/fabric/d' -e '/google-services/d' ../build.gradle
+
+Maintainer Notes:
+Upstream uses the (untrusted) igniterealtime Maven repository for Smack.
+While it does this, before adding an update, make sure
+smackCommitShortHash is the commit corresponding to the Smack snapshot
+used by upstream.  To do this, cross reference xabber/build.gradle
+dependencies (version/date) with commits in igniterealtime's Smack
+github respository (may not be in master branch).
+.
+
+Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.0.74
-Current Version Code:247
+Current Version:2.1(404)
+Current Version Code:404

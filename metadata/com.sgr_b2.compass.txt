@@ -1,5 +1,5 @@
 Categories:Navigation
-License:GPLv3+
+License:GPL-3.0+
 Web Site:
 Source Code:https://bitbucket.org/alekseyt/compass
 Issue Tracker:https://bitbucket.org/alekseyt/compass/issues
@@ -53,7 +53,6 @@ Build:1.4.3,10403
 Build:1.4.5,10405
     commit=1.4.5
     submodules=yes
-    prebuild=echo "ndk.dir=$$NDK$$" >> local.properties
 
 Auto Update Mode:None
 Update Check Mode:Tags

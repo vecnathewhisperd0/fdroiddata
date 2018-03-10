@@ -122,7 +122,100 @@ Build:2.1.7 (Moonage Daydream),33
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
+Build:2.1.8 (Moonage Daydream),34
+    commit=2.1.8
+    subdir=app
+    gradle=yes
+
+Build:2.2.0 (Sons Of The Silent Age),35
+    commit=v2.2.0
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo -e 'distributionUrl=https://services.gradle.org/distributions/gradle-3.3-bin.zip' > gradle/wrapper/gradle-wrapper.properties
+
+Build:2.2.1 (Sons Of The Silent Age),36
+    commit=v2.2.1
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo -e 'distributionUrl=https://services.gradle.org/distributions/gradle-3.3-bin.zip' > gradle/wrapper/gradle-wrapper.properties
+    scanignore=ExoPlayer/library/src/androidTest/assets/webm/vorbis_codec_private
+
+Build:2.2.2 (Sons Of The Silent Age),37
+    commit=v2.2.2
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo -e 'distributionUrl=https://services.gradle.org/distributions/gradle-3.3-bin.zip' > gradle/wrapper/gradle-wrapper.properties
+
+Build:2.2.3 (Sons Of The Silent Age),38
+    commit=v2.2.3
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo -e 'distributionUrl=https://services.gradle.org/distributions/gradle-3.3-bin.zip' > gradle/wrapper/gradle-wrapper.properties
+
+Build:2.2.4 (Sons Of The Silent Age),39
+    commit=v2.2.4
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo -e 'distributionUrl=https://services.gradle.org/distributions/gradle-3.3-bin.zip' > gradle/wrapper/gradle-wrapper.properties
+
+Build:2.2.5 (Sons Of The Silent Age),40
+    commit=v2.2.5
+    subdir=app
+    gradle=yes
+    prebuild=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo -e 'distributionUrl=https://services.gradle.org/distributions/gradle-3.3-bin.zip' > gradle/wrapper/gradle-wrapper.properties
+
+Build:2.2.6 (Sons Of The Silent Age),41
+    commit=v2.2.6
+    subdir=app
+    gradle=yes
+
+Build:2.3.3,45
+    commit=v2.3.3
+    subdir=app
+    gradle=yes
+    rm=exoplayer/ExoPlayer-r2.5.1/library/core/src/androidTest,exoplayer/ExoPlayer-r2.5.1/extensions/ima
+
+Build:2.3.6,48
+    commit=v2.3.6
+    subdir=app
+    gradle=yes
+    rm=exoplayer/ExoPlayer-*/*/*/*/androidTest,exoplayer/ExoPlayer-*/extensions/ima
+
+Build:2.3.7,49
+    commit=v2.3.7
+    subdir=app
+    gradle=yes
+    rm=exoplayer/ExoPlayer-*/*/*/*/androidTest,exoplayer/ExoPlayer-*/extensions/ima
+
+Build:3.0.0,50
+    commit=v3.0.0
+    subdir=app
+    gradle=yes
+    rm=libraries/ExoPlayer-*/*/*/*/androidTest,libraries/ExoPlayer-*/extensions/ima
+
+Build:3.0.2,52
+    commit=v3.0.2
+    subdir=app
+    gradle=yes
+
+Build:3.0.3,53
+    commit=v3.0.3
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.1.7 (Moonage Daydream)
-Current Version Code:33
+Current Version:3.0.3
+Current Version Code:53

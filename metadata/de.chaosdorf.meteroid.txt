@@ -30,7 +30,32 @@ Build:2.2.0,23
     subdir=meteroid
     gradle=yes
 
+Build:2.3.0,24
+    commit=v2.3.0
+    subdir=meteroid
+    gradle=yes
+
+Build:2.3.1,25
+    commit=v2.3.1
+    subdir=meteroid
+    gradle=yes
+
+Build:2.3.2,26
+    commit=v2.3.2
+    subdir=meteroid
+    gradle=yes
+
+Build:2.3.3,27
+    commit=v2.3.3
+    subdir=meteroid
+    gradle=yes
+
+Build:2.4.0,28
+    commit=v2.4.0
+    subdir=meteroid
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.2.0
-Current Version Code:23
+Current Version:2.4.0
+Current Version Code:28

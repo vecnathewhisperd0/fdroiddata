@@ -1,5 +1,5 @@
 Categories:Writing
-License:Apache2
+License:Apache-2.0
 Web Site:https://github.com/anysoftkeyboard
 Source Code:https://softkeyboard.googlecode.com/svn/trunk/LanguagePacks/Lithuanian
 Issue Tracker:https://github.com/AnySoftKeyboard/LanguagePack/issues
@@ -46,6 +46,6 @@ Build:20111024,9
     build=java -jar $$AnySoftKeyboardTools$$/makedict/makedict.jar
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:20111024
 Current Version Code:9

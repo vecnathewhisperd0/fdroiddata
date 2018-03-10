@@ -1,9 +1,8 @@
 Categories:Internet,Reading
-License:GPLv3
+License:GPL-3.0
 Web Site:https://www.wallabag.org
 Source Code:https://github.com/wallabag/android-app
 Issue Tracker:https://github.com/wallabag/android-app/issues
-Donate:https://www.wallabag.org/pages/donations.html
 FlattrID:1265480
 
 Auto Name:wallabag
@@ -93,7 +92,37 @@ Build:1.11.0,29
     subdir=app
     gradle=yes
 
+Build:1.12.0,30
+    commit=1.12.0
+    subdir=app
+    gradle=yes
+
+Build:1.12.1,31
+    commit=1.12.1
+    subdir=app
+    gradle=yes
+
+Build:1.12.2,32
+    commit=1.12.2
+    subdir=app
+    gradle=yes
+
+Build:2.0.0,104
+    commit=2.0.0
+    subdir=app
+    gradle=yes
+
+Build:2.0.1,105
+    commit=2.0.1
+    subdir=app
+    gradle=yes
+
+Build:2.0.2,106
+    commit=2.0.2
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^v?[0-9.]*$
-Current Version:1.11.0
-Current Version Code:29
+Current Version:2.0.2
+Current Version Code:106

@@ -1,5 +1,5 @@
 Categories:Navigation
-License:GPLv3
+License:GPL-3.0
 Web Site:http://brouter.de/brouter
 Source Code:https://github.com/abrensch/brouter
 Issue Tracker:https://github.com/abrensch/brouter/issues
@@ -92,7 +92,18 @@ Build:1.4.8,19
     prebuild=sed -i -e '79,81d' pom.xml && \
         sed -i -e '44,70d' pom.xml
 
+Build:1.4.9,21
+    commit=c517ccc2dffc1ae345e4b93b1f3b00bfabbfe4de
+    subdir=brouter-routing-app
+    maven=yes@..
+    prebuild=sed -i -e '79,81d' pom.xml && \
+        sed -i -e '44,70d' pom.xml
+
+Maintainer Notes:
+The sed's remove signing stuff.
+.
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.4.8
-Current Version Code:19
+Current Version:1.4.9
+Current Version Code:21

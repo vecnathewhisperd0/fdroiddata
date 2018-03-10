@@ -1,5 +1,5 @@
 Categories:Multimedia,Internet
-License:GPLv3
+License:GPL-3.0
 Web Site:http://www.radio-browser.info
 Source Code:https://github.com/segler-alex/RadioDroid
 Issue Tracker:https://github.com/segler-alex/RadioDroid/issues
@@ -162,7 +162,69 @@ Build:0.25,35
     subdir=app
     gradle=yes
 
+Build:0.26,36
+    commit=0.26
+    subdir=app
+    gradle=yes
+
+Build:0.27,37
+    commit=0.27
+    subdir=app
+    gradle=yes
+
+Build:0.28,38
+    commit=0.28
+    subdir=app
+    gradle=yes
+
+Build:0.29,39
+    commit=0.29
+    subdir=app
+    gradle=yes
+
+Build:0.31,41
+    commit=0.31
+    subdir=app
+    gradle=yes
+
+Build:0.36,46
+    disable=includes proprietary Google Play Services Cast libs
+    commit=0.36
+    subdir=app
+    gradle=yes
+
+Build:0.37,47
+    commit=0.37
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/playCompile/d' build.gradle
+
+Build:0.46,56
+    disable=Could not find com.android.tools.build:gradle:3.0.1
+    commit=0.46
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/playCompile/d' build.gradle
+
+Build:0.48,58
+    commit=0.48
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/playCompile/d' build.gradle
+
+Build:0.51,61
+    commit=0.51
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/playCompile/d' build.gradle
+
+Build:0.53,63
+    commit=0.53
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/playCompile/d' build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.25
-Current Version Code:35
+Current Version:0.53
+Current Version Code:63

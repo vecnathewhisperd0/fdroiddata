@@ -1,25 +1,16 @@
 Categories:Multimedia
-License:Apache2
-Web Site:
+License:Apache-2.0
+Author Name:Tibor Kaputa
+Author Email:hello@simplemobiletools.com
+Web Site:https://simplemobiletools.github.io
 Source Code:https://github.com/SimpleMobileTools/Simple-Camera
 Issue Tracker:https://github.com/SimpleMobileTools/Simple-Camera/issues
 Changelog:https://github.com/SimpleMobileTools/Simple-Camera/blob/HEAD/CHANGELOG.md
+Donate:https://simplemobiletools.github.io/donate
+Bitcoin:19Hc8A7sWGud8sP19VXDC5a5j28UyJfpyJ
+Litecoin:LYACbHTKaM9ZubKQGxJ4NRyVy1gHUuztRP
 
 Auto Name:Camera
-Summary:A front/rear camera with flash and zoom
-Description:
-The camera is useable for both photo taking and video recording. You can switch
-between front and rear camera, the flash can be turned on and off, pinch to zoom
-in. While recording a video, the flash can be used as a flashlight. It allows
-you to limit the photo and video resolution.
-
-If you want to launch this app at pressing the hardware camera button, you might
-have to disable the built in Camera app in Settings -> Apps -> Camera ->
-Disable.
-
-Contains no ads or unnecessary permissions. It is fully opensource, provides a
-Dark theme too.
-.
 
 Repo Type:git
 Repo:https://github.com/SimpleMobileTools/Simple-Camera
@@ -104,7 +95,97 @@ Build:1.31,31
     subdir=app
     gradle=yes
 
+Build:1.32,32
+    commit=1.32
+    subdir=app
+    gradle=yes
+
+Build:2.0.1,34
+    commit=2.0.1
+    subdir=app
+    gradle=yes
+
+Build:2.1.0,35
+    commit=2.1.0
+    subdir=app
+    gradle=yes
+
+Build:2.1.1,36
+    commit=2.1.1
+    subdir=app
+    gradle=yes
+
+Build:2.2.0,37
+    commit=2.2.0
+    subdir=app
+    gradle=yes
+
+Build:2.2.1,38
+    commit=2.2.1
+    subdir=app
+    gradle=yes
+
+Build:2.3.1,40
+    commit=2.3.1
+    subdir=app
+    gradle=yes
+
+Build:2.3.2,41
+    commit=2.3.2
+    subdir=app
+    gradle=yes
+
+Build:2.3.4,43
+    commit=2.3.4
+    subdir=app
+    gradle=yes
+
+Build:2.3.5,44
+    commit=2.3.5
+    subdir=app
+    gradle=yes
+
+Build:2.3.6,45
+    commit=2.3.6
+    subdir=app
+    gradle=yes
+
+Build:2.4.1,47
+    commit=2.4.1
+    subdir=app
+    gradle=yes
+
+Build:2.5.0,48
+    commit=2.5.0
+    subdir=app
+    gradle=yes
+
+Build:3.0.0,50
+    commit=3.0.0
+    subdir=app
+    gradle=yes
+
+Build:3.0.1,51
+    commit=3.0.1
+    subdir=app
+    gradle=yes
+
+Build:3.1.1,53
+    commit=3.1.1
+    subdir=app
+    gradle=yes
+
+Build:3.1.2,54
+    commit=3.1.2
+    subdir=app
+    gradle=yes
+
+Build:3.1.4,55
+    commit=3.1.4
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.31
-Current Version Code:31
+Current Version:3.1.4
+Current Version Code:55

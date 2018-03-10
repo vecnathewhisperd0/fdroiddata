@@ -1,7 +1,7 @@
 AntiFeatures:NonFreeAdd
 Categories:System
-License:GPLv3
-Web Site:https://code.google.com/p/droid-notify
+License:GPL-3.0
+Web Site:https://sites.google.com/site/notifyapplication
 Source Code:https://code.google.com/p/droid-notify/source
 Issue Tracker:
 
@@ -140,6 +140,6 @@ Use Color-Picker-2 next time
 .
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:3.29.2
 Current Version Code:67

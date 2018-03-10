@@ -1,5 +1,5 @@
 Categories:Time
-License:GPLv3
+License:GPL-3.0
 Web Site:https://bitbucket.org/m_reiter/countit
 Source Code:https://bitbucket.org/m_reiter/countit/src
 Issue Tracker:https://bitbucket.org/m_reiter/countit/issues
@@ -16,6 +16,7 @@ Repo Type:hg
 Repo:https://bitbucket.org/m_reiter/countit
 
 Build:1.0.1,2
+    disable=rebuild pending
     commit=1.0.1
 
 Auto Update Mode:None

@@ -1,6 +1,6 @@
 Categories:Multimedia
-License:Apache2
-Web Site:https://code.google.com/p/eyes-free
+License:Apache-2.0
+Web Site:http://eyes-free.googlecode.com
 Source Code:https://code.google.com/p/eyes-free/source
 Issue Tracker:
 
@@ -35,6 +35,6 @@ binary files in libs/ are deleted before build and then rebuild
 .
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.46.02_r7
 Current Version Code:7

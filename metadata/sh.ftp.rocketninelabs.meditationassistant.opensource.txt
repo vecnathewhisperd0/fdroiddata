@@ -1,35 +1,33 @@
 Categories:Time,Sports & Health
-License:GPLv3
-Web Site:http://rocketninelabs.ftp.sh
-Source Code:https://github.com/tslocum/MeditationAssistant
-Issue Tracker:https://github.com/tslocum/MeditationAssistant/issues
-Changelog:https://github.com/tslocum/MeditationAssistant/blob/HEAD/CHANGELOG
-Donate:http://rocketninelabs.ftp.sh/donate/
+License:GPL-3.0
+Web Site:https://rocketnine.space
+Source Code:https://gitlab.com/tslocum/meditationassistant
+Issue Tracker:https://gitlab.com/tslocum/meditationassistant/issues
+Changelog:https://gitlab.com/tslocum/meditationassistant/blob/HEAD/CHANGELOG
+Donate:https://rocketnine.space/donate/
 
-Auto Name:Meditation Assistant
-Summary:Feature packed meditation timer and recorder
+Auto Name:Meditation Assistant Free
+Summary:Feature packed meditation session timer and recorder
 Description:
-Meditation Assistant's features (e.g., automatically setting your device to
-vibrate/silent while you meditate) and customization (e.g., choosing any file on
-your device as the start/finish/interval sound for your session) make it the
-ideal assistant to your meditation practice.
-
-This application will help your practice by giving you an easy to read  overview
-of your progress (see screenshots), as well as display your  meditation streak.
-Your streak is calculated based on the number of  consecutive days you have
-recorded at least one session. As your streak grows,  "not breaking the chain"
-becomes quite important. Soon you will be meditating  once a day, even if it's
-five or ten minutes out of your schedule.
+This application assists with both timed (via duration or ending at a specific
+time) and untimed sessions, with numerous customizations, including
+start/interval/end sounds and device behavior. It also provides a monthly
+overview of your progress.
 
 A major feature in this application is the ability to share your sessions
 online. Though entirely optional, sharing your progress online adds another
-dimension to your accountability. Now that you've gone public, as your streak
-increases more users will see it as a goal of their own. One user has posted
-over ONE YEAR! of consecutive days of meditation. Could you achieve the same?
+dimension to your accountability. Now that you've gone public, as your
+meditation streak increases more users will see it as a goal of their own. One
+user has posted over 500 days of consecutive days of meditation.
+
+Your meditation streak is the number of consecutive days you have recorded at
+least one session. As your streak grows, "not breaking the chain" becomes quite
+important. Soon you will be meditating once a day, even if it's five or ten
+minutes out of your schedule.
 .
 
 Repo Type:git
-Repo:https://github.com/tslocum/MeditationAssistant
+Repo:https://gitlab.com/tslocum/meditationassistant
 
 Build:1.2.7,127
     disable=aidl missing
@@ -144,8 +142,49 @@ Build:1.4.0,140
     prebuild=sed -i -e '/play-services/d' -e '/applicationVariants.all/i/*' -e '/sourceSets/i*/' build.gradle && \
         sed -i 's/4096m/1024m/' ../gradle.properties
 
+Build:1.4.1,141
+    disable=Cannot resolve external dependency com.android.tools.build:gradle:2.3.3 because no repositories are defined
+    commit=1.4.1
+    subdir=MeditationAssistant
+    gradle=opensource
+    rm=MeditationAssistantWear
+    prebuild=sed -i -e '/play-services/d' -e '/applicationVariants.all/i/*' -e '/sourceSets/i*/' build.gradle && \
+        sed -i 's/4096m/1024m/' ../gradle.properties
+
+Build:1.4.2,142
+    commit=1.4.2
+    subdir=MeditationAssistant
+    gradle=opensource
+    rm=MeditationAssistantWear
+    prebuild=sed -i -e '/play-services/d' build.gradle && \
+        sed -i 's/4096m/1024m/' ../gradle.properties
+
+Build:1.4.3,143
+    commit=1.4.3
+    subdir=MeditationAssistant
+    gradle=opensource
+    rm=MeditationAssistantWear
+    prebuild=sed -i -e '/play-services/d' build.gradle && \
+        sed -i 's/4096m/1024m/' ../gradle.properties
+
+Build:1.4.5,145
+    commit=1.4.5
+    subdir=MeditationAssistant
+    gradle=opensource
+    rm=MeditationAssistantWear
+    prebuild=sed -i -e '/play-services/d' build.gradle && \
+        sed -i 's/4096m/1024m/' ../gradle.properties
+
+Build:1.4.7,147
+    commit=1.4.7
+    subdir=MeditationAssistant
+    gradle=opensource
+    rm=MeditationAssistantWear
+    prebuild=sed -i -e '/play-services/d' build.gradle && \
+        sed -i 's/4096m/1024m/' ../gradle.properties
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
 Update Check Name:sh.ftp.rocketninelabs.meditationassistant
-Current Version:1.4.0
-Current Version Code:140
+Current Version:1.4.7
+Current Version Code:147

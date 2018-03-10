@@ -3,8 +3,6 @@ License:MIT
 Web Site:http://ultramegasoft.com
 Source Code:https://github.com/ultramega/elementary
 Issue Tracker:https://github.com/ultramega/elementary/issues
-Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=76UJ7AX8VJT5Q
-Bitcoin:1NWnY7XCH65gu9xknsqNvDfyNhVy7AEeLS
 
 Auto Name:Elementary
 Summary:Periodic Table of the Elements reference app
@@ -111,7 +109,33 @@ Build:0.7.0,25
     subdir=app
     gradle=yes
 
+Build:0.8.0,26
+    commit=0.8.0
+    subdir=app
+    gradle=yes
+
+Build:0.8.1,27
+    commit=0.8.1
+    subdir=app
+    gradle=yes
+
+Build:0.8.2,28
+    commit=0.8.2
+    subdir=app
+    gradle=yes
+
+Build:0.8.3,29
+    commit=0.8.3
+    subdir=app
+    gradle=yes
+
+Build:0.8.4,30
+    disable=Could not find com.android.tools.build:gradle:3.0.1
+    commit=0.8.4
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.7.0
-Current Version Code:25
+Current Version:0.8.4
+Current Version Code:30

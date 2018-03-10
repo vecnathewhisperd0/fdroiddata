@@ -1,5 +1,5 @@
 Categories:Games
-License:GPLv3
+License:GPL-3.0
 Web Site:https://secuso.org/pfa
 Source Code:https://github.com/SecUSo/privacy-friendly-memo-game
 Issue Tracker:https://github.com/SecUSo/privacy-friendly-memo-game/issues
@@ -24,7 +24,18 @@ Build:1.0.1,2
     subdir=app
     gradle=yes
 
+Build:1.0.2,3
+    commit=v1.0.2
+    subdir=app
+    gradle=yes
+    rm=gradle
+
+Maintainer Notes:
+Gradle wrapper's distributionUrl suggests Gradle 2.14.1, but Android Gradle
+plugin actually requires newer Gradle version.
+.
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.0.1
-Current Version Code:2
+Current Version:1.0.2
+Current Version Code:3

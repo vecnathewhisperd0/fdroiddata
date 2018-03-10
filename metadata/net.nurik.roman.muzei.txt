@@ -1,5 +1,6 @@
+AntiFeatures:UpstreamNonFree
 Categories:Multimedia,Theming
-License:Apache2
+License:Apache-2.0
 Web Site:http://www.muzei.co
 Source Code:https://github.com/romannurik/muzei
 Issue Tracker:https://github.com/romannurik/muzei/issues
@@ -37,11 +38,36 @@ Build:2.0.2,2003
         rm -fR ../wearable ../example-watchface && \
         sed -i -e "s/':wearable',//g" -e "s/, 'example-watchface'//g" ../settings.gradle
 
+Build:2.3,23015
+    commit=v2.3
+    subdir=main
+    patch=2.3-remove-play-services.patch
+    gradle=prod
+    rm=wearable,example-watchface
+
+Build:2.3.1,23124
+    commit=v2.3.1-rc3
+    subdir=main
+    patch=2.3.1-remove-play-services.patch
+    gradle=prod
+    rm=wearable,example-watchface
+
+Build:2.4.0,24016
+    commit=v2.4.0-rc2
+    subdir=main
+    patch=2.4.0-remove-play-services.patch
+    gradle=yes
+    rm=wearable,example-watchface
+
 Maintainer Notes:
 Custom version format, so no UCM applies.
+
+Since 2.0, source code needs to be patched to get rid of Google Play Services.
+The "wearable" and "example-watchface" components should be removed
+completely, the rest of the code has to be cleaned up from FirebaseAnalytics.
 .
 
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:1.0.1
-Current Version Code:1008
+Current Version:2.4.0
+Current Version Code:24016

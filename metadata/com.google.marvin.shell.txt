@@ -1,6 +1,6 @@
 Categories:System
-License:Apache2
-Web Site:https://code.google.com/p/eyes-free
+License:Apache-2.0
+Web Site:https://groups.google.com/group/eyes-free
 Source Code:https://code.google.com/p/eyes-free/source
 Issue Tracker:
 
@@ -34,7 +34,7 @@ Build:3.0.4,33
     target=android-15
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:3.0.4
 Current Version Code:33
 

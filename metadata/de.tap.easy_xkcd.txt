@@ -1,5 +1,5 @@
 Categories:Reading
-License:Apache2
+License:Apache-2.0
 Web Site:
 Source Code:https://github.com/T-Rex96/Easy_xkcd
 Issue Tracker:https://github.com/T-Rex96/Easy_xkcd/issues
@@ -695,7 +695,42 @@ Build:5.3.6,135
     gradle=yes
     prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
 
-Auto Update Mode:None
+Build:5.3.7,136
+    commit=release_5.3.7
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Build:5.3.9,138
+    commit=release_5.3.9
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Build:6.0.1,140
+    commit=release_6.0.1
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Build:6.0.2,141
+    commit=release_6.0.2
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Build:6.0.4,143
+    commit=release_6.0.4
+    subdir=app
+    init=sed -i -e '/lukaville/iurl "https://jitpack.io"' -e '/lukaville/,/dasar/d' build.gradle
+    gradle=yes
+    prebuild=sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/g' -e 's/com.nbsp:library:1.03/com.github.nbsp-team:MaterialFilePicker:fc275cba7b/g' build.gradle
+
+Auto Update Mode:Version release_%v
 Update Check Mode:Tags ^release
-Current Version:5.3.6
-Current Version Code:135
+Current Version:6.0.4
+Current Version Code:143

@@ -1,8 +1,9 @@
 Categories:Time
-License:GPLv3+
+License:GPL-3.0+
 Web Site:
 Source Code:https://github.com/forrestguice/SuntimesWidget
 Issue Tracker:https://github.com/forrestguice/SuntimesWidget/issues
+Changelog:https://github.com/forrestguice/SuntimesWidget/blob/HEAD/CHANGELOG.md
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NZJ5FJBCKY6K2
 
 Auto Name:Suntimes
@@ -48,7 +49,62 @@ Build:0.2.3,8
     subdir=app
     gradle=yes
 
+Build:0.3.0,9
+    commit=v0.3.0
+    subdir=app
+    gradle=yes
+
+Build:0.3.1,10
+    commit=v0.3.1
+    subdir=app
+    gradle=yes
+
+Build:0.4.0,11
+    commit=v0.4.0
+    subdir=app
+    gradle=yes
+
+Build:0.4.1,12
+    commit=v0.4.1
+    subdir=app
+    gradle=yes
+
+Build:0.5.0,13
+    commit=v0.5.0
+    subdir=app
+    gradle=yes
+
+Build:0.5.1,14
+    commit=v0.5.1
+    subdir=app
+    gradle=yes
+
+Build:0.6.0,16
+    commit=v0.6.0
+    subdir=app
+    gradle=yes
+
+Build:0.6.1,17
+    commit=v0.6.1
+    subdir=app
+    gradle=yes
+
+Build:0.6.2,18
+    commit=v0.6.2
+    subdir=app
+    gradle=yes
+
+Build:0.7.0,19
+    commit=v0.7.0
+    subdir=app
+    gradle=yes
+
+Build:0.7.1,20
+    commit=v0.7.1
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.2.3
-Current Version Code:8
+Current Version:0.7.1
+Current Version Code:20

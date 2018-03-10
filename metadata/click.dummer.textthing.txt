@@ -1,14 +1,14 @@
 Categories:Development,Writing
-License:FreeBSD
-Author Name:deadlockz
-Web Site:http://dummer.click
+License:BSD-2-Clause-FreeBSD
+Author Name:Jochen Peters
+Web Site:https://no-go.github.io/TextThing/
 Source Code:https://github.com/no-go/TextThing
 Issue Tracker:https://github.com/no-go/TextThing/issues
 
-Auto Name:TextThing
-Summary:Text editor
+Auto Name:Retro Text Editor
+Summary:Edit text files
 Description:
-TextThing is a simple text file editor.
+Retro Text Editor is a simple text file editor.
 
 Features:
 
@@ -17,9 +17,6 @@ Features:
 * use the App to write notes
 * stores changes on closing or pausing the App
 * set your favorite font size and switch between normal or monospace style
-
-[https://github.com/no-go/TextThing/blob/master/README.md#screenshots
-Screenshots]
 
 '''There is no file manager integrated'''.
 .
@@ -43,7 +40,27 @@ Build:1.9,19
     subdir=app
     gradle=yes
 
+Build:1.91,191
+    commit=v1.91
+    subdir=app
+    gradle=yes
+
+Build:1.92,192
+    commit=v1.92
+    subdir=app
+    gradle=yes
+
+Build:1.94,194
+    commit=v1.94
+    subdir=app
+    gradle=yes
+
+Build:2.00,200
+    commit=v2.00
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.9
-Current Version Code:19
+Current Version:2.00
+Current Version Code:200

@@ -1,5 +1,5 @@
 Categories:Internet,Science & Education
-License:GPLv3
+License:GPL-3.0
 Web Site:https://github.com/zeapo/Android-Password-Store/blob/HEAD/README.md
 Source Code:https://github.com/zeapo/Android-Password-Store
 Issue Tracker:https://github.com/zeapo/Android-Password-Store/issues
@@ -446,7 +446,122 @@ Build:1.2.0.52,72
     submodules=yes
     gradle=yes
 
+Build:1.2.0.54,74
+    commit=v1.2.0.54
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.2.0.55,75
+    commit=v1.2.0.55
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.2.0.56,76
+    commit=v1.2.0.56
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.2.0.57,77
+    commit=v1.2.0.57
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.2.0.58,78
+    commit=v1.2.0.58
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/classpath/s/2.3.2/2.3.1/' build.gradle
+
+Build:1.2.0.59,79
+    commit=v1.2.0.59
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/classpath/s/2.3.2/2.3.1/' build.gradle
+
+Build:1.2.0.60,80
+    commit=v1.2.0.60
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/classpath/s/2.3.2/2.3.1/' build.gradle
+
+Build:1.2.0.61,81
+    commit=v1.2.0.61
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/classpath/s/2.3.2/2.3.1/' build.gradle
+
+Build:1.2.0.62-alpha,82
+    commit=v1.2.0.62-alpha
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/classpath/s/2.3.2/2.3.1/' build.gradle
+
+Build:1.2.0.63,83
+    commit=v1.2.0.63
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/classpath/s/2.3.2/2.3.1/' build.gradle
+
+Build:1.2.0.64,84
+    commit=v1.2.0.64
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/classpath/s/2.3.2/2.3.1/' build.gradle
+
+Build:1.2.0.66,86
+    commit=v1.2.0.66
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/classpath/s/2.3.2/2.3.1/' build.gradle
+
+Build:1.2.0.67,87
+    commit=v1.2.0.67
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/classpath/s/2.3.2/2.3.1/' build.gradle
+
+Build:1.2.0.68,88
+    commit=v1.2.0.68
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=sed -i -e '/classpath/s/2.3.2/2.3.1/' build.gradle
+
+Build:1.2.0.69,89
+    commit=v1.2.0.69
+    subdir=app
+    submodules=yes
+    gradle=yes
+    scanignore=app/src/androidTest/assets/private_key
+
+Build:1.2.0.73,93
+    commit=v1.2.0.73
+    subdir=app
+    submodules=yes
+    gradle=yes
+    scanignore=app/src/androidTest/assets/private_key
+
+Build:1.2.0.74,94
+    commit=v1.2.0.74
+    subdir=app
+    submodules=yes
+    gradle=yes
+    scanignore=app/src/androidTest/assets/private_key
+
 Auto Update Mode:Version v%v
-Update Check Mode:Tags
-Current Version:1.2.0.52
-Current Version Code:72
+Update Check Mode:Tags .*[0-9]$
+Current Version:1.2.0.74
+Current Version Code:94

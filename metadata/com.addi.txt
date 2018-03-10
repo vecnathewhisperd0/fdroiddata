@@ -1,6 +1,6 @@
 Categories:Science & Education
-License:GPLv3
-Web Site:https://code.google.com/p/addi
+License:GPL-3.0
+Web Site:http://addi.googlecode.com
 Source Code:https://code.google.com/p/addi/source
 Issue Tracker:
 Donate:https://code.google.com/p/addi/wiki/Donate
@@ -34,6 +34,6 @@ Build:1.98,44
     buildjni=yes
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.98
 Current Version Code:44

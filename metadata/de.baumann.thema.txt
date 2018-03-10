@@ -1,5 +1,5 @@
 Categories:Theming
-License:GPLv3+
+License:GPL-3.0+
 Web Site:
 Source Code:https://github.com/scoute-dich/Baumann_Theme
 Issue Tracker:https://github.com/scoute-dich/Baumann_Theme/issues
@@ -90,7 +90,52 @@ Build:4.3,34
     subdir=theme
     gradle=yes
 
+Build:4.4,35
+    commit=v4.4
+    subdir=theme
+    gradle=yes
+
+Build:4.5,36
+    commit=v4.5
+    subdir=theme
+    gradle=yes
+
+Build:4.5.1,37
+    commit=v4.5.1
+    subdir=theme
+    gradle=yes
+
+Build:4.5.2,38
+    commit=v4.5.2
+    subdir=theme
+    gradle=yes
+
+Build:4.6,39
+    commit=v4.6
+    subdir=theme
+    gradle=yes
+
+Build:4.7,40
+    commit=v4.7
+    subdir=theme
+    gradle=yes
+
+Build:4.8,41
+    commit=v4.8
+    subdir=theme
+    gradle=yes
+
+Build:4.9,42
+    commit=v4.9
+    subdir=theme
+    gradle=yes
+
+Build:5.0,43
+    commit=v5.0
+    subdir=theme
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:4.3
-Current Version Code:34
+Current Version:5.0
+Current Version Code:43

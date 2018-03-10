@@ -1,5 +1,5 @@
 Categories:System
-License:Apache2
+License:Apache-2.0
 Web Site:https://code.google.com/p/android-notifier
 Source Code:https://code.google.com/p/android-notifier/source
 Issue Tracker:
@@ -31,6 +31,6 @@ publish this version anyway.
 .
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:0.3
 Current Version Code:12

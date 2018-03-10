@@ -1,6 +1,6 @@
 AntiFeatures:NonFreeNet
 Categories:Internet
-License:GPLv2+
+License:GPL-2.0+
 Web Site:http://forum.xda-developers.com/android/apps-games/app-slimtwitter-t3269323
 Source Code:https://github.com/rignaneseleo/SlimSocial-for-Twitter
 Issue Tracker:https://github.com/rignaneseleo/SlimSocial-for-Twitter/issues
@@ -20,6 +20,11 @@ Build:3.1,4
     subdir=SlimTwitter/app
     gradle=yes
 
+Build:3.2,5
+    commit=32e6c481330e4be0d7fe88d0ae60b575f4aa40e6
+    subdir=SlimTwitter/app
+    gradle=yes
+
 Maintainer Notes:
 Multiple commits say they are 3.1 release... even after a tag was
 created. Dont use tags for now, since upstream seems to be a little
@@ -28,5 +33,5 @@ itchy about versioning...
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:3.1
-Current Version Code:4
+Current Version:3.2
+Current Version Code:5

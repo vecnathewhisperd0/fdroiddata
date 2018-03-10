@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:GPLv2
+License:GPL-2.0
 Web Site:https://sourceforge.net/projects/midisheetmusic
 Source Code:https://sourceforge.net/p/midisheetmusic/source
 Issue Tracker:https://sourceforge.net/p/midisheetmusic/bugs
@@ -22,7 +22,7 @@ Features include:
 .
 
 Repo Type:git
-Repo:git://git.code.sf.net/p/midisheetmusic/source
+Repo:https://git.code.sf.net/p/midisheetmusic/source
 
 Build:2.5.1,8
     commit=6d9e80ad1f6182

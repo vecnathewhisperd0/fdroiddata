@@ -1,5 +1,5 @@
 Categories:Multimedia,System
-License:GPLv3
+License:GPL-3.0
 Web Site:https://secuso.org/pfa
 Source Code:https://github.com/SecUSo/privacy-friendly-qr-scanner
 Issue Tracker:https://github.com/SecUSo/privacy-friendly-qr-scanner/issues
@@ -32,11 +32,19 @@ Build:1.5,7
     gradle=yes
     prebuild=sed -i -e '/maven {/,+2d' ../build.gradle
 
-Maintainer Notes:
-Tags are not up-to-date, package id might change like it did with other SECUSO apps.
-.
+Build:1.6,8
+    commit=v1.6
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/maven {/,+2d' ../build.gradle
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:1.5
-Current Version Code:7
+Build:1.6.1,9
+    commit=v1.6.1
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/maven {/,+2d' ../build.gradle
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:1.6.1
+Current Version Code:9

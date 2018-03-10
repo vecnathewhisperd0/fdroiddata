@@ -1,6 +1,6 @@
 Categories:Writing
-License:Apache2
-Web Site:https://github.com/anysoftkeyboard
+License:Apache-2.0
+Web Site:http://s.evendanan.net/ask
 Source Code:https://softkeyboard.googlecode.com/svn/trunk/LanguagePacks/Esperanto
 Issue Tracker:https://github.com/AnySoftKeyboard/LanguagePack/issues
 Donate:http://anysoftkeyboard.github.io/
@@ -32,6 +32,6 @@ Build:20100613,2
     build=java -jar $$AnySoftKeyboardTools$$/makedict/makedict.jar
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:20100613
 Current Version Code:2

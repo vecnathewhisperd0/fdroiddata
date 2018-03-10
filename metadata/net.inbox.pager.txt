@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPLv3
+License:GPL-3.0
 Web Site:https://github.com/itprojects/InboxPager/blob/HEAD/README.md
 Source Code:https://github.com/itprojects/InboxPager
 Issue Tracker:https://github.com/itprojects/InboxPager/issues
@@ -28,6 +28,16 @@ Build:1.0,3
     subdir=InboxPager
     gradle=yes
 
+Build:2.0,4
+    commit=619e6771963ef472889a44f5d175452bec869c82
+    subdir=InboxPager
+    gradle=yes
+
+Build:2.1,5
+    commit=6d71f0db1e936ef714ffa16f0eb1f72cbc08cc09
+    subdir=InboxPager
+    gradle=yes
+
 Maintainer Notes:
 Upstream force-pushed, reset archive policy after 3 builds.
 .
@@ -35,5 +45,5 @@ Upstream force-pushed, reset archive policy after 3 builds.
 Archive Policy:1 versions
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1
-Current Version Code:3
+Current Version:2.1
+Current Version Code:5

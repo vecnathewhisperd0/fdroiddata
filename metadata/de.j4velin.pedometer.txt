@@ -1,5 +1,5 @@
 Categories:Sports & Health
-License:Apache2
+License:Apache-2.0
 Web Site:https://github.com/j4velin/Pedometer/blob/HEAD/README.md
 Source Code:https://github.com/j4velin/Pedometer
 Issue Tracker:https://github.com/j4velin/Pedometer/issues
@@ -50,7 +50,21 @@ Build:1.4.9,149
         sed -i -e '/debug {/,+4d' build.gradle && \
         sed -i -e 's/23.0.0 rc3/23.0.3/g' build.gradle
 
+Build:1.5,150
+    commit=539eec1d4b52a06e4e63fefe11909954a02cd0cc
+    gradle=fdroid
+    prebuild=sed -i -e '/playCompile/d' build.gradle && \
+        touch key.properties && \
+        sed -i -e '/debug {/,+4d' build.gradle
+
+Build:1.5.1,151
+    commit=2f3b46cc9c5df55da3f6ceb61ccaa6ff0e9d6dcf
+    gradle=fdroid
+    prebuild=sed -i -e '/playCompile/d' build.gradle && \
+        touch key.properties && \
+        sed -i -e '/debug {/,+4d' build.gradle
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.4.9
-Current Version Code:149
+Current Version:1.5.2
+Current Version Code:152

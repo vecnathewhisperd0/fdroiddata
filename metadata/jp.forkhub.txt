@@ -1,24 +1,12 @@
 AntiFeatures:NonFreeNet
 Categories:Development
-License:Apache2
+License:Apache-2.0
 Web Site:https://github.com/jonan/ForkHub/blob/HEAD/README.md
 Source Code:https://github.com/jonan/ForkHub
 Issue Tracker:https://github.com/jonan/ForkHub/issues
 Changelog:https://github.com/jonan/ForkHub/blob/HEAD/CHANGELOG.md
 
 Auto Name:ForkHub
-Summary:Unofficial GitHub companion
-Description:
-Create, manage, and discuss issues and stay up to date with an integrated news
-feed for all your organizations, friends, and repositories.
-
-View your issues dashboard to stay connected with all the issues you've
-reported, been assigned, or participating in the discussion on. You can also
-view and filter a repository's issue list and bookmark it for quick access.
-
-Discover, share, and discuss code snippets using the integrated GitHub Gists
-support.
-.
 
 Repo Type:git
 Repo:https://github.com/jonan/ForkHub.git
@@ -126,8 +114,47 @@ Build:1.2.4,1020400
         $$MVN3$$ -f pom-jar.xml clean install && \
         popd
 
+Build:1.2.6,1020600
+    commit=ForkHub-v1.2.6
+    subdir=app
+    gradle=yes
+    srclibs=Wishlist@c5aa973d2d3504e72b0665d95d0b81f3d7609d6d,egit-github@v4.4.0.201606070830-r
+    rm=app/libs/*
+    prebuild=sed -i -e '/compile(name/d' -e 's/com.viewpagerindicator/fr.avianey.com.viewpagerindicator/g' build.gradle && \
+        cp -fR $$Wishlist$$/lib/src/main/java/com src/main/java/ && \
+        sed -i -e '/populov/d' -e '/repo.eclipse.org/d' -e '/jcenter/imavenCentral()\nmavenLocal()' ../build.gradle && \
+        pushd $$egit-github$$/org.eclipse.egit.github.core/ && \
+        $$MVN3$$ -f pom-jar.xml clean install && \
+        popd
+
+Build:1.2.7,1020700
+    commit=ForkHub-v1.2.7
+    subdir=app
+    gradle=yes
+    srclibs=Wishlist@c5aa973d2d3504e72b0665d95d0b81f3d7609d6d,egit-github@v4.4.0.201606070830-r
+    rm=app/libs/*
+    prebuild=sed -i -e '/compile(name/d' -e 's/com.viewpagerindicator/fr.avianey.com.viewpagerindicator/g' build.gradle && \
+        cp -fR $$Wishlist$$/lib/src/main/java/com src/main/java/ && \
+        sed -i -e '/populov/d' -e '/repo.eclipse.org/d' -e '/jcenter/imavenCentral()\nmavenLocal()' ../build.gradle && \
+        pushd $$egit-github$$/org.eclipse.egit.github.core/ && \
+        $$MVN3$$ -f pom-jar.xml clean install && \
+        popd
+
+Build:1.2.8,1020800
+    commit=ForkHub-v1.2.8
+    subdir=app
+    gradle=yes
+    srclibs=Wishlist@c5aa973d2d3504e72b0665d95d0b81f3d7609d6d,egit-github@v4.4.0.201606070830-r
+    rm=app/libs/*
+    prebuild=sed -i -e '/compile(name/d' -e 's/com.viewpagerindicator/fr.avianey.com.viewpagerindicator/g' build.gradle && \
+        cp -fR $$Wishlist$$/lib/src/main/java/com src/main/java/ && \
+        sed -i -e '/populov/d' -e '/repo.eclipse.org/d' -e '/jcenter/imavenCentral()\nmavenLocal()' ../build.gradle && \
+        pushd $$egit-github$$/org.eclipse.egit.github.core/ && \
+        $$MVN3$$ -f pom-jar.xml clean install && \
+        popd
+
 Auto Update Mode:None
 Update Check Mode:Tags
 Update Check Name:com.github.mobile
-Current Version:1.2.4
-Current Version Code:1020400
+Current Version:1.2.8
+Current Version Code:1020800

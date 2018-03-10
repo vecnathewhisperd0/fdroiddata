@@ -1,5 +1,5 @@
 Categories:System
-License:Apache2
+License:Apache-2.0
 Web Site:https://code.google.com/p/android-cmis-browser
 Source Code:https://code.google.com/p/android-cmis-browser/source
 Issue Tracker:
@@ -24,6 +24,6 @@ Build:0.9.6,8
     commit=release 0.9.6
 
 Auto Update Mode:None
-Update Check Mode:Tags
+Update Check Mode:Static
 Current Version:0.9.6
 Current Version Code:8

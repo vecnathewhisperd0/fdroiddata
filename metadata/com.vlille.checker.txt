@@ -1,5 +1,5 @@
 Categories:Navigation
-License:GPLv3
+License:GPL-3.0
 Web Site:
 Source Code:https://github.com/ojacquemart/vlilleChecker
 Issue Tracker:https://github.com/ojacquemart/vlilleChecker/issues
@@ -54,7 +54,12 @@ Build:4.2.0,720
     subdir=app
     gradle=yes
 
+Build:4.2.3,723
+    commit=v4.2.3
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:4.2.0
-Current Version Code:720
+Current Version:4.4.0
+Current Version Code:740

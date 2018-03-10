@@ -1,5 +1,5 @@
 Categories:Money
-License:GPLv3
+License:GPL-3.0
 Web Site:http://bitshares-munich.de
 Source Code:https://github.com/kenCode-de/smartcoins-wallet
 Issue Tracker:https://github.com/kenCode-de/smartcoins-wallet/issues
@@ -53,7 +53,20 @@ Build:1.0.6,187
     subdir=app
     gradle=yes
 
-Auto Update Mode:Version v%v
-Update Check Mode:Tags
-Current Version:1.0.6
-Current Version Code:187
+Build:1.5.13,202
+    disable=crashlytics
+    commit=v1.5.13
+    subdir=app
+    gradle=yes
+
+Build:1.5.14,203
+    disable=crashlytics, see https://github.com/kenCode-de/smartcoins-wallet/issues/68
+    commit=v1.5.14
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:HTTP
+Update Check Data:https://raw.githubusercontent.com/kenCode-de/smartcoins-wallet/HEAD/build.gradle|versionCode (.*)|.|versionName "(.*)"
+Current Version:1.5.16
+Current Version Code:205

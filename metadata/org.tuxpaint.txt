@@ -1,5 +1,5 @@
 Categories:Graphics,Science & Education
-License:GPLv2+
+License:GPL-2.0+
 Web Site:http://tuxpaint.org
 Source Code:https://github.com/tux4kids/Tuxpaint-Android
 Issue Tracker:https://sourceforge.net/p/tuxpaint/bugs/?source=navbar
@@ -56,7 +56,61 @@ Build:0.9.23-beta_7,7
     scandelete=jni/
     buildjni=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:0.9.23-beta_7
-Current Version Code:7
+Build:0.9.23-beta_8,8
+    commit=f5cd0709c5e062ef7794f7824e489fc10b642078
+    extlibs=android/android-support-v4.jar
+    prebuild=cd jni/tuxpaint/ && \
+        ./mkzip_assets.sh
+    scandelete=jni/
+    buildjni=yes
+
+Build:0.9.23-beta_10,10
+    commit=0.9.23-beta_10
+    subdir=app
+    gradle=yes
+    extlibs=android/android-support-v4.jar
+    prebuild=echo NDK_TOOLCHAIN_VERSION := 4.9 >> src/main/jni/Application.mk && \
+        cd src/main/jni/tuxpaint/ && \
+        ./mkzip_assets.sh
+    scandelete=app/src/main/jni/
+    ndk=r14b
+
+Build:0.9.23-beta_11,11
+    disable=build failing
+    commit=0.9.23-beta_11
+    subdir=app
+    gradle=yes
+    extlibs=android/android-support-v4.jar
+    prebuild=echo NDK_TOOLCHAIN_VERSION := 4.9 >> src/main/jni/Application.mk && \
+        cd src/main/jni/tuxpaint/ && \
+        ./mkzip_assets.sh
+    scandelete=app/src/main/jni/
+    ndk=r14b
+
+Build:0.9.23-beta_11b1,111
+    disable=Disabled due to crashes
+    commit=0.9.23-beta_11b1
+    subdir=app
+    gradle=yes
+    extlibs=android/android-support-v4.jar
+    prebuild=echo NDK_TOOLCHAIN_VERSION := 4.9 >> src/main/jni/Application.mk && \
+        cd src/main/jni/tuxpaint/ && \
+        ./mkzip_assets.sh
+    scandelete=app/src/main/jni/
+    ndk=r14b
+
+Build:0.9.23-beta_11b2,112
+    commit=0.9.23-beta_11b2
+    subdir=app
+    gradle=yes
+    extlibs=android/android-support-v4.jar
+    prebuild=echo NDK_TOOLCHAIN_VERSION := 4.9 >> src/main/jni/Application.mk && \
+        cd src/main/jni/tuxpaint/ && \
+        ./mkzip_assets.sh
+    scandelete=app/src/main/jni/
+    ndk=r14b
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:0.9.23-beta_11b2
+Current Version Code:112

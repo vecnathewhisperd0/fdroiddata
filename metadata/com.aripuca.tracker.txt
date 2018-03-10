@@ -1,7 +1,7 @@
 Disabled:Depends on non-functional maps API
 Categories:Navigation
-License:Apache2
-Web Site:https://code.google.com/p/aripuca-tracker
+License:Apache-2.0
+Web Site:http://tracker.aripuca.com/blog/
 Source Code:https://code.google.com/p/aripuca-tracker/source
 Issue Tracker:
 
@@ -51,6 +51,6 @@ Build:1.3.6,26
     target=Google Inc.:Google APIs:17
 
 Auto Update Mode:None
-Update Check Mode:Tags
+Update Check Mode:Static
 Current Version:1.3.7
 Current Version Code:27

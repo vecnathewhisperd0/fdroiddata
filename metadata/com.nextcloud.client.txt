@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPLv2
+License:GPL-2.0
 Web Site:https://nextcloud.com
 Source Code:https://github.com/nextcloud/android
 Issue Tracker:https://github.com/nextcloud/android/issues
@@ -35,6 +35,7 @@ Build:1.1.0,10010099
     rm=libs/disklrucache*,user_manual
 
 Build:1.2.0 RC2,10020002
+    disable=pre-release
     commit=rc-1.2.0-02
     submodules=yes
     gradle=yes
@@ -47,12 +48,14 @@ Build:1.2.0,10020099
     rm=libs/disklrucache*,user_manual
 
 Build:1.3.0 RC1,10030001
+    disable=pre-release
     commit=rc-1.3.0-01
     submodules=yes
     gradle=yes
     rm=libs/disklrucache*,user_manual
 
 Build:1.3.0 RC2,10030002
+    disable=pre-release
     commit=rc-1.3.0-02
     submodules=yes
     gradle=yes
@@ -78,6 +81,7 @@ Build:1.4.0 RC1,10040001
     rm=libs/disklrucache*,user_manual
 
 Build:1.4.0 RC2,10040002
+    disable=pre-release
     commit=rc-1.4.0-02
     submodules=yes
     gradle=yes
@@ -89,7 +93,137 @@ Build:1.4.0,10040099
     gradle=yes
     rm=libs/disklrucache*,user_manual
 
+Build:1.4.1 RC1,10040101
+    disable=pre-release
+    commit=rc-1.4.1-01
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:1.4.1 RC2,10040102
+    commit=rc-1.4.1-02
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:1.4.1,10040199
+    commit=stable-1.4.1
+    submodules=yes
+    gradle=yes
+    rm=libs/disklrucache*,user_manual
+
+Build:1.4.2,10040299
+    commit=stable-1.4.3
+    submodules=yes
+    gradle=generic
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.0RC5,20000005
+    disable=obsolete RC
+    commit=rc-2.0.0-05
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.0RC6,20000006
+    disable=obsolete RC
+    commit=rc-2.0.0-06
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.0RC7,20000007
+    disable=obsolete RC
+    commit=rc-2.0.0-07
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.0RC8,20000008
+    disable=obsolete RC
+    commit=rc-2.0.0-08
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.0RC9,20000009
+    disable=obsolete RC
+    commit=rc-2.0.0-09
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.0,20000099
+    commit=stable-2.0.0
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
+    rm=libs/disklrucache*,user_manual
+
+Build:2.0.1,20000199
+    commit=stable-2.0.1
+    submodules=yes
+    gradle=generic
+    output=build/outputs/apk/generic/release/com.nextcloud.client-generic-release-unsigned.apk
+    rm=libs/disklrucache*,user_manual
+
+Build:3.0.0 RC1,30000001
+    disable=obsolete RC
+    commit=rc-3.0.0-01
+    submodules=yes
+    gradle=generic
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:3.0.0 RC2,30000002
+    disable=obsolete RC
+    commit=rc-3.0.0-02
+    submodules=yes
+    gradle=generic
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:3.0.0 RC3,30000003
+    commit=rc-3.0.0-03
+    submodules=yes
+    gradle=generic
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:3.0.0,30000099
+    commit=stable-3.0.0
+    submodules=yes
+    gradle=generic
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:3.0.1,30000199
+    commit=stable-3.0.1
+    submodules=yes
+    gradle=generic
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:3.0.2,30000299
+    commit=stable-3.0.2
+    submodules=yes
+    gradle=generic
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:3.0.3,30000399
+    commit=stable-3.0.3
+    submodules=yes
+    gradle=generic
+    rm=user_manual
+    scandelete=src/androidTest
+
 Auto Update Mode:Version stable-%v
 Update Check Mode:Tags ^stable
-Current Version:1.4.0
-Current Version Code:10040099
+Current Version:3.0.3
+Current Version Code:30000399

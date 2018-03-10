@@ -1,5 +1,5 @@
 Categories:Science & Education
-License:GPLv3+
+License:GPL-3.0+
 Web Site:https://arnowelzel.de/wiki/android/app/periodical
 Source Code:https://github.com/arnowelzel/periodical
 Issue Tracker:https://github.com/arnowelzel/periodical/issues
@@ -77,7 +77,32 @@ Build:0.29,29
     subdir=app
     gradle=yes
 
+Build:0.30,30
+    commit=0.30
+    subdir=app
+    gradle=yes
+
+Build:0.31,31
+    commit=0.31
+    subdir=app
+    gradle=yes
+
+Build:0.32,32
+    commit=0.32
+    subdir=app
+    gradle=yes
+
+Build:0.33,33
+    commit=0.33
+    subdir=app
+    gradle=yes
+
+Build:0.35,35
+    commit=0.35
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.29
-Current Version Code:29
+Current Version:0.35
+Current Version Code:35

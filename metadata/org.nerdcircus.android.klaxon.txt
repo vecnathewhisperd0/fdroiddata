@@ -1,5 +1,5 @@
 Categories:Phone & SMS
-License:Apache2
+License:Apache-2.0
 Web Site:https://code.google.com/p/klaxon
 Source Code:https://code.google.com/p/klaxon/source
 Issue Tracker:
@@ -21,6 +21,6 @@ Build:0.27,27
     target=android-14
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:0.27
 Current Version Code:27

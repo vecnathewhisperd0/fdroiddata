@@ -1,5 +1,5 @@
 Categories:Time
-License:GPLv3
+License:GPL-3.0
 Web Site:https://icsdroid.bitfire.at/
 Source Code:https://icsdroid.bitfire.at/source/
 Issue Tracker:https://icsdroid.bitfire.at/forums/
@@ -10,11 +10,12 @@ Bitcoin:1KSCy7RHztKuhW9fLLaUYqdwdC2iwbejZU
 Auto Name:ICSdroid
 Summary:Subscribe ics calendars
 Description:
-ICSdroid can subscribe to remote iCalendar files (like time tables of your
-school/university or event files of your sports team). It will download the
-remote calendars with a certain (free-to-choose) interval and synchronize them
-into local native read-only calendars which can then used with your calendar
-app.
+Subscribe to iCalendar files like time tables of your school/university or event
+files of your sports team. It will fetch the calendars with a certain
+(free-to-choose) interval from either remote sources (http and webcal URIs) or
+from the local file system (file URI). After that it will synchronize them into
+local, native and read-only Android calendars. You can view them with your
+calendar app.
 
 No data (neither login data, nor calendar data, nor statistical or usage data)
 is transferred to anywhere except the chosen server. No Google Calendar or
@@ -72,7 +73,37 @@ Build:1.3,9
     submodules=yes
     gradle=yes
 
+Build:1.4,10
+    commit=v1.4
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.4.2,12
+    commit=v1.4.2
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.4.3,13
+    commit=v1.4.3
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.5.2,16
+    commit=v1.5.2
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.5.4,18
+    commit=v1.5.4
+    subdir=app
+    submodules=yes
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.3
-Current Version Code:9
+Current Version:1.5.4
+Current Version Code:18

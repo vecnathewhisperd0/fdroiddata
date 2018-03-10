@@ -1,6 +1,6 @@
 AntiFeatures:NonFreeNet
 Categories:Internet
-License:GPLv2+
+License:GPL-2.0+
 Web Site:http://forum.xda-developers.com/android/apps-games/app-slimfacebook-1mb-0-permissions-t3254174
 Source Code:https://github.com/rignaneseleo/SlimSocial-for-Facebook
 Issue Tracker:https://github.com/rignaneseleo/SlimSocial-for-Facebook/issues
@@ -20,13 +20,37 @@ Build:3.5.6,40
     subdir=SlimFacebook/app
     gradle=yes
 
-Maintainer Notes:
-There are multiple commits saying "v3.5.6", one of them is actualy tagged as
-v3.6.0... looks like upstream is up to some version madness. Dont use tags for
-now.
-.
+Build:3.6.2,43
+    commit=v3.6.2
+    subdir=SlimFacebook/app
+    gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:3.5.6
-Current Version Code:40
+Build:3.6.5,44
+    commit=v3.6.5
+    subdir=SlimFacebook/app
+    gradle=yes
+
+Build:3.6.6,45
+    commit=v3.6.6
+    subdir=SlimFacebook/app
+    gradle=yes
+
+Build:3.6.7,46
+    commit=v3.6.7
+    subdir=SlimFacebook/app
+    gradle=yes
+
+Build:3.6.8,47
+    commit=v3.6.8
+    subdir=SlimFacebook/app
+    gradle=yes
+
+Build:3.7.1,49
+    commit=v3.7.1
+    subdir=SlimFacebook/app
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:3.7.1
+Current Version Code:49

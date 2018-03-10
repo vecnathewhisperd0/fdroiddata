@@ -1,38 +1,43 @@
 Categories:Money
-License:GPLv3
-Web Site:http://wallet.schildbach.de
-Source Code:https://github.com/schildbach/bitcoin-wallet
-Issue Tracker:https://github.com/schildbach/bitcoin-wallet/issues
-Changelog:https://raw.github.com/schildbach/bitcoin-wallet/prod/wallet/CHANGES
+License:GPL-3.0
+Web Site:https://wallet.schildbach.de
+Source Code:https://github.com/bitcoin-wallet/bitcoin-wallet
+Issue Tracker:https://github.com/bitcoin-wallet/bitcoin-wallet/issues
+Changelog:https://raw.github.com/bitcoin-wallet/bitcoin-wallet/prod/wallet/CHANGES
 Bitcoin:1HkX6X8EakdsgAysL93oKrWiXGPbFiG1xV
 
-Auto Name:Bitcoin
+Auto Name:Bitcoin Wallet
 Summary:Store digital currency
 Description:
-* No cloud server or web service needed: this wallet works peer to peer
-* Display of wallet balance in Bitcoin and various other currencies
-* Sending and receiving of Bitcoin via NFC, QR-codes or Bitcoin URLs
-* Address book for regularly used Bitcoin addresses
-* Enter transactions while offline, will be executed when online
-* Manages blockchain on your device
-* System notifications for Bitcoin connectivity and received coins
-* App widget for Bitcoin balance
-* Back up private keys to local storage encrypted with a password
+Have your Bitcoins always with you, in your pocket! You pay by quickly scanning
+a QR code. As a merchant, you receive payments reliably and instantly. Bitcoin
+Wallet is the first mobile Bitcoin app, and arguably also the most secure!
 
-A few tens of MiB must be downloaded to set up the blockchain and a couple more
-per month subsequently to keep it updated.
+* No registration, web service or cloud needed! This wallet is de-centralized and peer to peer.
+* Display of Bitcoin amount in BTC, mBTC and µBTC.
+* Conversion to and from national currencies.
+* Sending and receiving of Bitcoin via NFC, QR codes or Bitcoin URLs.
+* Address book for regularly used Bitcoin addresses.
+* When you're offline, you can still pay via Bluetooth.
+* System notification for received coins.
+* Sweeping of paper wallets (e.g. those used for cold storage).
+* App widget for Bitcoin balance.
 
-See the [http://bitcoin-wallet.googlecode.com/git/wallet/README Readme] for more
-details. Use this at your own risk and be wary that if you don't make a backup
-of the private keys you will no longer be able to acces the Bitcoins contained
-in the wallet, should the data of the app be lost.
+See the
+[https://raw.githubusercontent.com/bitcoin-wallet/bitcoin-wallet/master/wallet/README.md
+README] for more details. Use this at your own risk and be wary that if you
+don't make a backup of the private keys you will no longer be able to access the
+Bitcoins contained in the wallet, should the data of the app be lost.
 
 There's a separate version of this application that uses a test version of the
 Bitcoin network: [[de.schildbach.wallet_test]].
+
+All translations are managed via the
+[https://www.transifex.com/bitcoin-wallet/bitcoin-wallet/ Transifex project].
 .
 
 Repo Type:git
-Repo:https://github.com/schildbach/bitcoin-wallet.git
+Repo:https://github.com/bitcoin-wallet/bitcoin-wallet.git
 
 Build:2.01,74
     commit=a55ef6822c9e
@@ -758,16 +763,162 @@ Build:5.08,288
     scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
     build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
 
-Maintainer Notes:
-See wallet/{README,CHANGES} or git log for info about what BitcoinJ tag to use.
-Use latest commit in 'prod' branch, which is a rebase on top of the latest tag.
+Build:5.10,290
+    commit=810c38b8595c3c500e276dbb27e4c35d722c2b85
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml && \
+        echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
 
-Note also that the 'prod:' commits seem to disappear, as if the developer is
-removing them and force-pushing the branch. We need to take an alternative
-approach to building this in future.
-.
+Build:5.11,291
+    commit=f98830368256c6012e5961d6667f3ebdfc1abe52
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml && \
+        echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:5.12,292
+    commit=9b37cd7306db14e02c27606ea7084fae5be65f7c
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml && \
+        echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:5.13,293
+    commit=c1cb36882a98e2f9d918cb4c173202674fcb42b0
+    subdir=wallet
+    gradle=yes
+    srclibs=BitcoinJWallet@v0.14.3
+    prebuild=sed -i -e '/<module>examples/d' -e '/<module>tools/d' -e '/<module>wallettemplate/d' $$BitcoinJWallet$$/pom.xml && \
+        echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    build=$$MVN3$$ clean install -DskipTests -f $$BitcoinJWallet$$/pom.xml
+
+Build:5.14,294
+    commit=670a6a18dacdc87a1a2516af3a21ae5fbca2b106
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.15,295
+    commit=251f2c7bd7ebca06b2ea49c0efa2173b4ab98ba5
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.17,297
+    commit=c7e8150e3ed307a7520459cb98a98f334819f04d
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.18,298
+    commit=f596982c252462e350a4dbf24dc951d414db6fbc
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.20,300
+    disable=build fails
+    commit=d9dca34833ba3ceb56b222347550aad083032ceb
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.21,301
+    commit=d07616ca547b7418a2692faefef833cff05520d0
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle && \
+        sed -i -e "s,url 'https://maven.google.com',url 'https://jitpack.io',g" build.gradle ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.23,303
+    commit=a240ca670c8ee1fd8827fc5229b0d9e759ba497e
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle && \
+        sed -i -e "s,url 'https://maven.google.com',url 'https://jitpack.io',g" build.gradle ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.25,305
+    commit=v5.25-prod
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.26,306
+    commit=v5.26-prod
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.28,308
+    commit=v5.28-prod
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.31,311
+    commit=v5.31-prod
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.37,317
+    commit=v5.37-prod
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.39,319
+    commit=v5.39-prod
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.44,324
+    commit=v5.44-prod
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:5.45,325
+    commit=v5.45-prod
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+Build:6.03,343
+    commit=v6.03-prod
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "2.10" }' >> ../build.gradle
+    scanignore=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest/prod
-Current Version:5.08
-Current Version Code:288
+Current Version:6.03
+Current Version Code:343

@@ -1,5 +1,5 @@
 Categories:Internet
-License:Apache2
+License:Apache-2.0
 Web Site:https://commons-app.github.io/
 Source Code:https://github.com/commons-app/apps-android-commons
 Issue Tracker:https://github.com/commons-app/apps-android-commons/issues
@@ -28,7 +28,102 @@ Build:1.32,50
     subdir=app
     gradle=yes
 
+Build:1.41,59
+    commit=v1.41
+    subdir=app
+    gradle=yes
+
+Build:1.42,60
+    commit=v1.42
+    subdir=app
+    gradle=yes
+
+Build:1.44,62
+    commit=v1.44
+    subdir=app
+    gradle=yes
+
+Build:2.0,63
+    commit=v2.0
+    subdir=app
+    gradle=yes
+
+Build:2.0.1,64
+    commit=v2.0.1
+    subdir=app
+    gradle=yes
+
+Build:2.0.2 beta,65
+    commit=v2.0.2
+    subdir=app
+    gradle=yes
+
+Build:2.1,66
+    commit=v2.1
+    subdir=app
+    gradle=yes
+
+Build:2.2,67
+    commit=v2.2
+    subdir=app
+    gradle=yes
+
+Build:2.2.1,68
+    commit=v2.2.1
+    subdir=app
+    gradle=yes
+
+Build:2.2.2,69
+    commit=v2.2.2
+    subdir=app
+    gradle=yes
+
+Build:2.3,70
+    commit=v2.3
+    subdir=app
+    gradle=yes
+
+Build:2.4,71
+    commit=v2.4
+    subdir=app
+    gradle=yes
+
+Build:2.4.1,72
+    commit=v2.4.1
+    subdir=app
+    gradle=yes
+
+Build:2.4.2,73
+    commit=v2.4.2
+    subdir=app
+    gradle=yes
+
+Build:2.5.0,74
+    commit=v2.5.0
+    subdir=app
+    gradle=yes
+
+Build:2.6.0,75
+    commit=v2.6.0
+    subdir=app
+    gradle=prod
+
+Build:2.6.5,80
+    commit=v2.6.5
+    subdir=app
+    gradle=prod
+
+Build:2.6.6,81
+    commit=v2.6.6
+    subdir=app
+    gradle=prod
+
+Build:2.6.7,82
+    commit=v2.6.7
+    subdir=app
+    gradle=prod
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.32
-Current Version Code:50
+Current Version:2.6.7
+Current Version Code:82

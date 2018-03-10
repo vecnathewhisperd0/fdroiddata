@@ -1,5 +1,5 @@
 Categories:Writing
-License:Apache2
+License:Apache-2.0
 Web Site:https://github.com/nbossard/packlist/blob/HEAD/README.md
 Source Code:https://github.com/nbossard/packlist
 Issue Tracker:https://github.com/nbossard/packlist/issues
@@ -62,7 +62,25 @@ Build:0.10.2,16
     gradle=yes
     rm=gradle.properties
 
+Build:0.11,17
+    commit=0.11
+    subdir=app
+    gradle=yes
+    rm=gradle.properties
+
+Build:0.12,18
+    commit=0.12
+    subdir=app
+    gradle=yes
+    rm=gradle.properties
+
+Build:0.13,19
+    commit=0.13
+    subdir=app
+    gradle=yes
+    rm=gradle.properties
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.10.2
-Current Version Code:16
+Current Version:0.13
+Current Version Code:19

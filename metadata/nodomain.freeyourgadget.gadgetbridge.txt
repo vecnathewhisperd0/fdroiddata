@@ -1,19 +1,27 @@
-Categories:Connectivity
-License:AGPLv3
-Web Site:https://github.com/Freeyourgadget/Gadgetbridge/blob/HEAD/README.md
+Categories:Connectivity,System,Navigation
+License:AGPL-3.0
+Web Site:https://gadgetbridge.org
 Source Code:https://github.com/Freeyourgadget/Gadgetbridge
 Issue Tracker:https://github.com/Freeyourgadget/Gadgetbridge/issues
 Changelog:https://github.com/Freeyourgadget/Gadgetbridge/blob/HEAD/CHANGELOG.md
+LiberapayID:11276
 
 Auto Name:Gadgetbridge
-Summary:Communicate with your Pebble/Miband
+Summary:Communicate with Pebble/Mi Band/Amazfit Bip/Hplus devices and more
 Description:
-Use your Pebble/Miband without the vendor's closed source application and
-without the need to create an account and transmit any of your data to the
-vendor's servers.
+Use your Pebble/Mi Band/Amazfit Bip/Hplus device without the vendor's closed
+source application and without the need to create an account and transmit any of
+your data to the vendor's servers.
 
-Gadgetbridge is under active development, for an overview of current features
-for each suppoerted device, please refer to the the
+You can get notifications on your wrist and (depending on the device):
+
+* collect data from the device sensors
+* control music playing on your android device
+* see the weather (you need [[ru.gelin.android.weather.notification]] installed)
+* get directions (e.g. by using [[net.osmand.plus]])
+
+Gadgetbridge is under active development, for an up to date list of supported
+devices and an overview of current features, please refer to the
 [https://github.com/Freeyourgadget/Gadgetbridge/blob/HEAD/README.md README].
 .
 
@@ -390,7 +398,222 @@ Build:0.15.0,77
     subdir=app
     gradle=yes
 
+Build:0.15.1,78
+    commit=0.15.1
+    subdir=app
+    gradle=yes
+
+Build:0.15.2,79
+    commit=0.15.2
+    subdir=app
+    gradle=yes
+
+Build:0.16.0,80
+    commit=0.16.0
+    subdir=app
+    gradle=yes
+
+Build:0.17.0,81
+    commit=0.17.0
+    subdir=app
+    gradle=yes
+
+Build:0.17.1,82
+    commit=0.17.1
+    subdir=app
+    gradle=yes
+
+Build:0.17.2,83
+    commit=0.17.2
+    subdir=app
+    gradle=yes
+
+Build:0.17.3,84
+    commit=0.17.3
+    subdir=app
+    gradle=yes
+
+Build:0.17.4,85
+    commit=0.17.4
+    subdir=app
+    gradle=yes
+
+Build:0.17.5,86
+    commit=0.17.5
+    subdir=app
+    gradle=yes
+
+Build:0.18.0,87
+    commit=0.18.0
+    subdir=app
+    gradle=yes
+
+Build:0.18.1,88
+    commit=0.18.1
+    subdir=app
+    gradle=yes
+
+Build:0.18.3,90
+    commit=0.18.3
+    subdir=app
+    gradle=yes
+
+Build:0.18.4,91
+    commit=0.18.4
+    subdir=app
+    gradle=yes
+
+Build:0.18.5,92
+    commit=0.18.5
+    subdir=app
+    gradle=yes
+
+Build:0.19.1,94
+    commit=0.19.1
+    subdir=app
+    gradle=yes
+
+Build:0.19.2,95
+    commit=0.19.2
+    subdir=app
+    gradle=yes
+
+Build:0.19.3,96
+    commit=0.19.3
+    subdir=app
+    gradle=yes
+
+Build:0.19.4,97
+    commit=0.19.4
+    subdir=app
+    gradle=yes
+
+Build:0.20.0,98
+    commit=0.20.0
+    subdir=app
+    gradle=yes
+
+Build:0.20.1,99
+    commit=0.20.1
+    subdir=app
+    gradle=yes
+
+Build:0.20.2,100
+    commit=0.20.2
+    subdir=app
+    gradle=yes
+
+Build:0.21.0,101
+    commit=0.21.0
+    subdir=app
+    gradle=yes
+
+Build:0.21.1,102
+    commit=0.21.1
+    subdir=app
+    gradle=yes
+
+Build:0.21.2,103
+    commit=0.21.2
+    subdir=app
+    gradle=yes
+
+Build:0.21.3,104
+    commit=0.21.3
+    subdir=app
+    gradle=yes
+
+Build:0.21.5,106
+    commit=0.21.5
+    subdir=app
+    gradle=yes
+
+Build:0.21.6,107
+    commit=0.21.6
+    subdir=app
+    gradle=yes
+
+Build:0.22.0,108
+    commit=0.22.0
+    subdir=app
+    gradle=yes
+
+Build:0.22.1,109
+    commit=0.22.1
+    subdir=app
+    gradle=yes
+
+Build:0.22.2,110
+    commit=0.22.2
+    subdir=app
+    gradle=yes
+
+Build:0.22.3,111
+    commit=0.22.3
+    subdir=app
+    gradle=yes
+
+Build:0.22.4,112
+    commit=0.22.4
+    subdir=app
+    gradle=yes
+
+Build:0.22.5,113
+    commit=0.22.5
+    subdir=app
+    gradle=yes
+
+Build:0.23.0,114
+    commit=0.23.0
+    subdir=app
+    gradle=yes
+
+Build:0.23.1,115
+    commit=0.23.1
+    subdir=app
+    gradle=yes
+
+Build:0.23.2,116
+    commit=0.23.2
+    subdir=app
+    gradle=yes
+
+Build:0.24.0,117
+    commit=0.24.0
+    subdir=app
+    gradle=yes
+
+Build:0.24.1,118
+    commit=0.24.1
+    subdir=app
+    gradle=yes
+
+Build:0.24.2,119
+    commit=0.24.2
+    subdir=app
+    gradle=yes
+
+Build:0.24.3,120
+    commit=0.24.3
+    subdir=app
+    gradle=yes
+
+Build:0.24.4,121
+    commit=0.24.4
+    subdir=app
+    gradle=yes
+
+Build:0.24.5,122
+    commit=0.24.5
+    subdir=app
+    gradle=yes
+
+Build:0.24.6,123
+    commit=0.24.6
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.15.0
-Current Version Code:77
+Current Version:0.24.6
+Current Version Code:123

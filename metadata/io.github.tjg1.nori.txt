@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:GPLv2
+License:GPL-2.0
 Author Name:Tomasz Jan Góralczyk
 Author Email:tomg@fastmail.uk
 Web Site:https://twitter.com/Nori_Android
@@ -14,9 +14,8 @@ Summary:Online tag-based image archive viewer
 Description:
 Connect to *booru tag-based image archives and browse by tags.
 
-The safebooru.org site is preloaded which shows Anime images that are considered
-'safe for work'. Note that the images there are usually of high quality and
-though the app is fast, a lot of data will be downloaded.
+Note that the images there are usually of high quality and though the app is
+fast, a lot of data will be downloaded.
 .
 
 Repo Type:git
@@ -58,7 +57,18 @@ Build:3.1.0,8
     submodules=yes
     gradle=fdroid
 
+Build:3.1.1,9
+    commit=v3.1.1
+    subdir=app
+    submodules=yes
+    gradle=fdroid
+
+Build:2017.06.1,13
+    commit=v2017.06.1
+    subdir=app
+    gradle=fdroid
+
 Auto Update Mode:Version v%v
-Update Check Mode:Tags v[0-9.]+$
-Current Version:3.1.0
-Current Version Code:8
+Update Check Mode:Tags
+Current Version:2017.06.1
+Current Version Code:13

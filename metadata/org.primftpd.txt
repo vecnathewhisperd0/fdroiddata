@@ -1,5 +1,5 @@
 Categories:Connectivity
-License:Apache2
+License:Apache-2.0
 Web Site:
 Source Code:https://github.com/wolpi/prim-ftpd
 Issue Tracker:https://github.com/wolpi/prim-ftpd/issues
@@ -96,7 +96,60 @@ Build:4.7,21
     subdir=primitiveFTPd
     gradle=yes
 
+Build:4.8,22
+    disable=gradle issue
+    commit=prim-ftpd-4.8
+    subdir=primitiveFTPd
+    gradle=yes
+
+Build:4.8.2,23
+    commit=prim-ftpd-4.8.2
+    subdir=primitiveFTPd
+    gradle=yes
+
+Build:4.9,24
+    commit=prim-ftpd-4.9
+    subdir=primitiveFTPd
+    gradle=yes
+
+Build:4.10,25
+    commit=prim-ftpd-4.10
+    subdir=primitiveFTPd
+    gradle=yes
+
+Build:5.0,26
+    disable=prebuilt JARs
+    commit=prim-ftpd-5.0
+    subdir=primitiveFTPd
+    gradle=yes
+
+Build:5.2,28
+    disable=prebuilt JARs
+    commit=prim-ftpd-5.2
+    subdir=primitiveFTPd
+    gradle=yes
+
+Build:5.3,29
+    commit=prim-ftpd-5.3
+    subdir=primitiveFTPd
+    gradle=yes
+
+Build:5.4,30
+    commit=prim-ftpd-5.4
+    subdir=primitiveFTPd
+    gradle=yes
+
+Build:5.5,31
+    commit=prim-ftpd-5.5
+    subdir=primitiveFTPd
+    gradle=yes
+
+Build:5.6,32
+    commit=prim-ftpd-5.6
+    subdir=primitiveFTPd
+    gradle=yes
+
 Auto Update Mode:Version prim-ftpd-%v
-Update Check Mode:Tags
-Current Version:4.7
-Current Version Code:21
+Update Check Mode:Tags ^prim-ftpd-
+Current Version:5.6
+Current Version Code:32

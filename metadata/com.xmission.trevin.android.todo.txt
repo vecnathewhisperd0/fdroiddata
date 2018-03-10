@@ -1,5 +1,5 @@
 Categories:Writing
-License:GPLv3
+License:GPL-3.0
 Web Site:https://sourceforge.net/p/androidtodolist
 Source Code:https://sourceforge.net/p/androidtodolist/code
 Issue Tracker:https://sourceforge.net/p/androidtodolist/tickets
@@ -12,7 +12,7 @@ configurable recurring tasks, and add detailed notes to items.
 .
 
 Repo Type:git
-Repo:git://git.code.sf.net/p/androidtodolist/code
+Repo:https://git.code.sf.net/p/androidtodolist/code
 
 Build:1.0,1
     commit=487164c148b5bf5a8831a8119af38af69d417748
@@ -26,5 +26,5 @@ they do.
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.0
-Current Version Code:1
+Current Version:1.1.1
+Current Version Code:3

@@ -1,41 +1,12 @@
 AntiFeatures:Tracking
 Categories:Internet
-License:Apache2
+License:Apache-2.0
 Web Site:https://www.mediawiki.org/wiki/Wikimedia_Apps
 Source Code:https://github.com/wikimedia/apps-android-wikipedia
 Issue Tracker:https://phabricator.wikimedia.org/project/profile/489/
-Changelog:https://github.com/wikimedia/WikipediaMobile/blob/HEAD/CHANGELOG.md
 Donate:https://donate.wikimedia.org
 
 Auto Name:Wikipedia
-Summary:Wikipedia.org client
-Description:
-Official Wikipedia application.
-
-Wikipedia is the free encyclopedia containing more than 32 million articles in
-280 languages, and is the most comprehensive and widely used reference work
-humans have ever compiled.
-
-Features:
-
-* Tabbed browsing
-* Lead images
-* Image gallery
-* Descriptions from Wikidata
-* Article suggestions
-* Saved pages
-* Nearby
-* Language support
-* Table of contents
-* Wikipedia Zero
-
-You can send feedback to the app developers. In the menu, press "More", then
-"About the Wikipedia app", then "Send app feedback".
-
-[https://m.wikimediafoundation.org/wiki/Privacy_policy Privacy policy]
-
-[https://m.wikimediafoundation.org/wiki/Terms_of_Use Terms of Use]
-.
 
 Repo Type:git
 Repo:https://github.com/wikimedia/apps-android-wikipedia.git
@@ -252,13 +223,63 @@ Build:r/2.4.183-r-2016-12-08,183
     gradle=fdroid
     forceversion=yes
 
+Build:r/2.4.184-r-2016-12-14,184
+    commit=r/2.4.184-r-2016-12-14
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+
+Build:r/2.5.190-r-2017-02-24,190
+    commit=r/2.5.190-r-2017-02-24
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+
+Build:r/2.5.191-r-2017-03-31,191
+    commit=r/2.5.191-r-2017-03-31
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+
+Build:r/2.5.195-r-2017-04-21,194
+    commit=r/2.5.195-r-2017-04-21
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+
+Build:r/2.6.203-r-2017-08-28,203
+    commit=r/2.6.203-r-2017-08-28
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+
+Build:r/2.7.222-r-2017-12-15,222
+    commit=r/2.7.222-r-2017-12-15
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+
+Build:r/2.7.225-r-2018-02-06,225
+    commit=r/2.7.225-r-2018-02-06
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+
 Maintainer Notes:
 * versionname is timebased and generated on build; force it. Also remove the timestamp.
 
-TODO(mvdan): Re-enable UCM once fdroidserver py3 is deployed.
+Summary and Description have been moved to the new localizable text files:
+https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
 .
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^r
-Current Version:r/2.4.183-r-2016-12-08
-Current Version Code:183
+Current Version:r/2.7.225-r-2018-02-06
+Current Version Code:225

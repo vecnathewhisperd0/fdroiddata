@@ -1,6 +1,6 @@
 Categories:System
-License:GPLv3
-Web Site:
+License:GPL-3.0
+Web Site:https://gabm.github.io/TapAndTurn/
 Source Code:https://github.com/gabm/TapAndTurn
 Issue Tracker:https://github.com/gabm/TapAndTurn/issues
 
@@ -39,7 +39,48 @@ Build:2.1.1,4
     subdir=app
     gradle=yes
 
+Build:2.2.0-beta,5
+    disable=old failing build, with missing translations
+    commit=1379ba86caf4a9f6fb503f31e8406083c399d10c
+    subdir=app
+    gradle=yes
+
+Build:2.2.0-beta2,6
+    commit=a6e396171a6505aa0a06d1c637b7e87fdf3dc1b0
+    subdir=app
+    gradle=yes
+
+Build:2.2.0,7
+    commit=v2.2.0
+    subdir=app
+    gradle=yes
+
+Build:2.3.0,8
+    commit=v2.3.0
+    subdir=app
+    gradle=yes
+
+Build:2.4.0,9
+    commit=v2.4.0
+    subdir=app
+    gradle=yes
+
+Build:2.5.0,10
+    commit=v2.5.0
+    subdir=app
+    gradle=yes
+
+Build:2.7.0,12
+    commit=v2.7.0
+    subdir=app
+    gradle=yes
+
+Build:2.8.0,13
+    commit=v2.8.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.1.1
-Current Version Code:4
+Current Version:2.8.0
+Current Version Code:13

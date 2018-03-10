@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:GPLv3
+License:GPL-3.0
 Web Site:https://github.com/bottiger/SoundWaves/blob/HEAD/Readme.md
 Source Code:https://github.com/bottiger/SoundWaves
 Issue Tracker:https://github.com/bottiger/SoundWaves/issues
@@ -565,6 +565,7 @@ Build:0.148.12,334
         sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle
 
 Build:0.148.14,336
+    disable=old failing build
     commit=336
     subdir=app
     gradle=free
@@ -572,7 +573,184 @@ Build:0.148.14,336
     prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
         sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle
 
+Build:0.148.16,338
+    disable=old failing build
+    commit=338
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle
+
+Build:0.148.18,340
+    disable=old failing build
+    commit=340
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle
+
+Build:0.148.20,342
+    disable=jars gone, wait for next release
+    commit=342
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle
+
+Build:0.148.26,348
+    commit=348
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle
+
+Build:0.148.28,350
+    disable=gms, old failing build
+    commit=350
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle
+
+Build:0.148.30,352
+    commit=352
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle
+
+Build:0.148.34,356
+    commit=356
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle
+
+Build:0.148.36,358
+    commit=358
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle
+
+Build:0.148.40,362
+    commit=362
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle
+
+Build:0.148.42,364
+    commit=364
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle
+
+Build:0.150,370
+    commit=370
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle
+
+Build:0.157,377
+    commit=377
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle && \
+        sed -i -e '/google-services/d' build.gradle
+
+Build:0.158,378
+    commit=378
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle && \
+        sed -i -e '/google-services/d' build.gradle
+
+Build:0.158.2,380
+    commit=380
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle && \
+        sed -i -e '/google-services/d' build.gradle
+
+Build:0.158.4,382
+    disable=pro-guard issues
+    commit=382
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle && \
+        sed -i -e '/google-services/d' build.gradle
+
+Build:0.158.8,386
+    disable=fails to resolve dependencies
+    commit=386
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle && \
+        sed -i -e '/google-services/d' build.gradle
+
+Build:0.158.10,390
+    commit=390
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle && \
+        sed -i -e '/google-services/d' build.gradle
+
+Build:0.158.13,409
+    disable=tag is gone
+    commit=409
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle && \
+        sed -i -e '/google-services/d' build.gradle
+
+Build:0.160.2,422
+    disable=error: VendorMediaRouteCast is not abstract and does not override abstract method removeListener(EventListener)
+    commit=422
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle && \
+        sed -i -e '/google-services/d' build.gradle
+
+Build:0.160.2,424
+    commit=424
+    subdir=app
+    gradle=free
+    rm=app/src/amazon/libs/*.jar
+    prebuild=sed -i -e '/amazonCompile/d' -e '/googleCompile/d' build.gradle && \
+        sed -i -e 's/javaMaxHeapSize "4g"/javaMaxHeapSize "2g"/g' build.gradle && \
+        sed -i -e '/google-services/d' build.gradle
+
 Auto Update Mode:Version %c
 Update Check Mode:Tags
-Current Version:0.148.14
-Current Version Code:336
+Current Version:0.160.2
+Current Version Code:424

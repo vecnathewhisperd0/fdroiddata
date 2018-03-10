@@ -1,5 +1,5 @@
 Categories:Internet
-License:AGPLv3+
+License:AGPL-3.0+
 Web Site:http://seafile.com/en/download
 Source Code:https://github.com/haiwen/seadroid
 Issue Tracker:https://github.com/haiwen/seadroid/issues
@@ -348,7 +348,96 @@ Build:2.1.7,61
     subdir=app
     gradle=yes
 
+Build:2.1.9,63
+    commit=2.1.9
+    subdir=app
+    gradle=yes
+
+Build:2.1.10,64
+    commit=2.1.10
+    subdir=app
+    gradle=yes
+
+Build:2.1.11,65
+    commit=2.1.11
+    subdir=app
+    gradle=yes
+
+Build:2.1.12,66
+    commit=2.1.12
+    subdir=app
+    gradle=yes
+
+Build:2.1.13,67
+    commit=2.1.13
+    subdir=app
+    gradle=yes
+
+Build:2.1.14,68
+    commit=2.1.14
+    subdir=app
+    gradle=yes
+
+Build:2.1.15,69
+    commit=2.1.15
+    subdir=app
+    gradle=yes
+
+Build:2.1.16,70
+    commit=2.1.16
+    subdir=app
+    gradle=yes
+
+Build:2.1.17,71
+    commit=2.1.17
+    subdir=app
+    gradle=yes
+
+Build:2.1.18,72
+    commit=2.1.18
+    subdir=app
+    gradle=yes
+    srclibs=android-vcard@android-vcard-1.4
+    rm=app/libs
+    prebuild=find $$android-vcard$$ -name '*.jar' -delete && \
+        sed -i -e '/repositories/a\        mavenLocal()' ../build.gradle && \
+        sed -i -e 's/compile fileTree.*/compile "com.googlecode.android-vcard:android-vcard:1.4"/' build.gradle
+    build=$$MVN3$$ install -f $$android-vcard$$/pom.xml -Dmaven.test.skip=true
+
+Build:2.1.20,74
+    commit=2.1.20
+    subdir=app
+    gradle=yes
+    srclibs=android-vcard@android-vcard-1.4
+    rm=app/libs
+    prebuild=find $$android-vcard$$ -name '*.jar' -delete && \
+        sed -i -e '/repositories/a\        mavenLocal()' ../build.gradle && \
+        sed -i -e 's/compile fileTree.*/compile "com.googlecode.android-vcard:android-vcard:1.4"/' build.gradle
+    build=$$MVN3$$ install -f $$android-vcard$$/pom.xml -Dmaven.test.skip=true
+
+Build:2.2.0,75
+    commit=2.2.0
+    subdir=app
+    gradle=yes
+    srclibs=android-vcard@android-vcard-1.4
+    rm=app/libs
+    prebuild=find $$android-vcard$$ -name '*.jar' -delete && \
+        sed -i -e '/repositories/a\        mavenLocal()' ../build.gradle && \
+        sed -i -e 's/compile fileTree.*/compile "com.googlecode.android-vcard:android-vcard:1.4"/' build.gradle
+    build=$$MVN3$$ install -f $$android-vcard$$/pom.xml -Dmaven.test.skip=true
+
+Build:2.2.1,76
+    commit=2.2.1
+    subdir=app
+    gradle=yes
+    srclibs=android-vcard@android-vcard-1.4
+    rm=app/libs
+    prebuild=find $$android-vcard$$ -name '*.jar' -delete && \
+        sed -i -e '/repositories/a\        mavenLocal()' ../build.gradle && \
+        sed -i -e 's/compile fileTree.*/compile "com.googlecode.android-vcard:android-vcard:1.4"/' build.gradle
+    build=$$MVN3$$ install -f $$android-vcard$$/pom.xml -Dmaven.test.skip=true
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.1.7
-Current Version Code:61
+Current Version:2.2.1
+Current Version Code:76

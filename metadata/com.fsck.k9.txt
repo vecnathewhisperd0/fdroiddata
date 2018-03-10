@@ -1,7 +1,7 @@
 Provides:org.fdroid.k9
 Categories:Internet
-License:Apache2
-Web Site:https://github.com/k9mail/k-9/wiki
+License:Apache-2.0
+Web Site:https://k9mail.github.io/
 Source Code:https://github.com/k9mail/k-9
 Issue Tracker:https://github.com/k9mail/k-9/issues
 Changelog:https://github.com/k9mail/k-9/wiki/ReleaseNotes
@@ -196,26 +196,83 @@ Build:5.010,22010
         popd
     scandelete=plugins/SafeContentResolver/*
 
-Build:5.114,23113
-    disable=remove
-    commit=5.114
-    subdir=k9mail
-    gradle=yes
-
 Build:5.115,23114
+    disable=remove
     commit=5.115
     subdir=k9mail
     gradle=yes
 
-Maintainer Notes:
-* Force targetSdk via gradle, to avoid erroneous call_log
-  permission requests.
-* PullRequest created.
-* Add alpha/beta builds from time to time. OKed by cketti.
-.
+Build:5.200-RC2,23191
+    disable=remove
+    commit=5.115
+    subdir=k9mail
+    gradle=yes
 
-Archive Policy:5 versions
+Build:5.200,23200
+    commit=5.200
+    subdir=k9mail
+    gradle=yes
+
+Build:5.201,23210
+    commit=5.201
+    subdir=k9mail
+    gradle=yes
+
+Build:5.202,23220
+    commit=5.202
+    subdir=k9mail
+    gradle=yes
+
+Build:5.203,23230
+    commit=5.203
+    subdir=k9mail
+    gradle=yes
+
+Build:5.205,23250
+    commit=5.205
+    subdir=k9mail
+    gradle=yes
+
+Build:5.206,23260
+    commit=5.206
+    subdir=k9mail
+    gradle=yes
+
+Build:5.207,23270
+    commit=5.207
+    subdir=k9mail
+    gradle=yes
+
+Build:5.208,23271
+    commit=5.208
+    subdir=k9mail
+    gradle=yes
+
+Build:5.400,23600
+    commit=5.400
+    subdir=k9mail
+    gradle=yes
+    rm=tools/android-studio/settings.jar
+
+Build:5.401,23610
+    commit=5.401
+    subdir=k9mail
+    gradle=yes
+    rm=tools/android-studio/settings.jar
+
+Build:5.402,23620
+    commit=5.402
+    subdir=k9mail
+    gradle=yes
+    rm=tools/android-studio/settings.jar
+
+Build:5.403,23630
+    commit=5.403
+    subdir=k9mail
+    gradle=yes
+    rm=tools/android-studio/settings.jar
+
 Auto Update Mode:Version %v
-Update Check Mode:RepoManifest/5.0-MAINT
-Current Version:5.010
-Current Version Code:22010
+Update Check Mode:RepoManifest/5.4-MAINT
+Current Version:5.403
+Current Version Code:23630

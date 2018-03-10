@@ -1,8 +1,9 @@
 Categories:Internet
-License:NewBSD
-Web Site:https://github.com/marcosdiez/shareviahttp/blob/HEAD/README.md
+License:BSD-3-Clause
+Web Site:http://www.webdanfe.com.br
 Source Code:https://github.com/marcosdiez/shareviahttp
 Issue Tracker:https://github.com/marcosdiez/shareviahttp/issues
+Changelog:https://github.com/marcosdiez/shareviahttp#changelog
 
 Auto Name:Share via HTTP
 Summary:File sharing tool
@@ -48,7 +49,28 @@ Build:2.0.3,23
     subdir=ShareViaHttp/app
     gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:2.0.3
-Current Version Code:23
+Build:2.0.4,24
+    commit=06d7a0ff71c7902baf6a75354db23b1ec1f8f41b
+    subdir=ShareViaHttp/app
+    gradle=yes
+
+Build:2.0.5,25
+    commit=438d2ad4dc160a65fc25cdc02e17a5da9afeac2d
+    subdir=ShareViaHttp/app
+    gradle=yes
+
+Build:2.0.8,28
+    commit=v2.0.8
+    subdir=ShareViaHttp/app
+    gradle=yes
+
+Build:2.0.9,29
+    disable=Could not find com.android.tools.build:gradle:3.0.1
+    commit=v2.0.9
+    subdir=ShareViaHttp/app
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags ^v[0-9\.]+$
+Current Version:2.0.9
+Current Version Code:29

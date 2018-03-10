@@ -1,12 +1,12 @@
 Categories:System
-License:GPLv3
-Web Site:http://www.batterybot.info/
+License:GPL-3.0
+Web Site:https://www.batterybot.info
 Source Code:https://github.com/darshan-/Battery-Indicator-Free
 Issue Tracker:https://github.com/darshan-/Battery-Indicator-Free/issues
 Donate:https://github.com/darshan-/Battery-Indicator-Support/blob/HEAD/PackageDownload.md#support--donate
 
 Auto Name:BatteryBot
-Summary:Battery monitoring tool
+Summary:Battery monitoring tool, "free" version
 Description:
 Shows your battery charge level (percent) as an icon in your status bar, with
 temperature, health, voltage, and time since plugged / unplugged in the
@@ -32,5 +32,5 @@ Build:10.0.1-beta1,13022
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:10.0.1-beta1
-Current Version Code:13022
+Current Version:10.0.4
+Current Version Code:13030

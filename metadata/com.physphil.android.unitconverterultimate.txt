@@ -1,5 +1,5 @@
 Categories:Science & Education
-License:Apache2
+License:Apache-2.0
 Web Site:
 Source Code:https://github.com/physphil/UnitConverterUltimate
 Issue Tracker:https://github.com/physphil/UnitConverterUltimate/issues
@@ -55,7 +55,16 @@ Build:5.1,50100
         sed -i -e '/gms/d' -e 's/\(repositories {\)/\1 jcenter()/' ../build.gradle && \
         sed -i -e '/firebase/d' build.gradle
 
+Build:5.2,50200
+    commit=v5.2
+    subdir=app
+    gradle=base
+    prebuild=perl -0 -p -i -e 's|<Preference\s[^<]*<intent\s[^<]*\.DonateActivity".*?</Preference>\s*||s' app/src/main/res/xml/preferences.xml && \
+        perl -0 -p -i -e 's|<activity\s[^<]*"\.DonateActivity".*?/>\s*||s' app/src/main/AndroidManifest.xml && \
+        sed -i -e '/gms/d' -e 's/\(repositories {\)/\1 jcenter()/' ../build.gradle && \
+        sed -i -e '/firebase/d' build.gradle
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:5.1
-Current Version Code:50100
+Current Version:5.2
+Current Version Code:50200

@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:GPLv3
+License:GPL-3.0
 Web Site:http://www.videolan.org/vlc/download-android.html
 Source Code:https://code.videolan.org/videolan/vlc-android
 Issue Tracker:https://code.videolan.org/videolan/vlc-android/issues
@@ -1056,6 +1056,7 @@ Build:1.9.0,1090005
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc
     build=cd ../ && \
         ./compile.sh -a "x86" --release
+    ndk=r10e
 
 Build:2.0.2,12000213
     disable=failing build
@@ -1065,8 +1066,9 @@ Build:2.0.2,12000213
     srclibs=VLC@848f58d
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "armeabi" --release
     ndk=r11c
 
@@ -1078,8 +1080,9 @@ Build:2.0.2,12000214
     srclibs=VLC@848f58d
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "armeabi-v7a" --release
     ndk=r11c
 
@@ -1091,8 +1094,9 @@ Build:2.0.2,12000215
     srclibs=VLC@848f58d
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "x86" --release
     ndk=r11c
 
@@ -1104,8 +1108,9 @@ Build:2.0.5,12000523
     srclibs=VLC@6689dcb
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "armeabi" --release
     ndk=r11c
 
@@ -1117,8 +1122,9 @@ Build:2.0.5,12000524
     srclibs=VLC@6689dcb
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "armeabi-v7a" --release
     ndk=r11c
 
@@ -1130,74 +1136,453 @@ Build:2.0.5,12000525
     srclibs=VLC@6689dcb
     prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
     build=cd ../ && \
-        echo $ANDROID_NDK && \
-        echo $ANDROID_SDK && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "x86" --release
     ndk=r11c
 
 Build:2.0.6,12000603
-    disable=wait
     commit=2.0.6
     subdir=vlc-android
     gradle=VanillaARMv6fpu
-    srclibs=VLC@6689dcb
-    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+    srclibs=VLC-2.0.6@6689dcb
+    prebuild=ln -s vlc-android/$$VLC-2.0.6$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz && \
+        echo "3a753ea48d917945dd54a2d97de388aa06ca2eb1066cbfdc6652036349fe05a7  jpegsrc.v9a.tar.gz" > ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz.sha256 && \
+        cd ../vlc/contrib/tarballs/ && \
+        sha256sum -c jpegsrc.v9a.tar.gz.sha256
     build=cd ../ && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "armeabi" --release
     ndk=r11c
 
 Build:2.0.6,12000604
-    disable=wait
     commit=2.0.6
     subdir=vlc-android
     gradle=VanillaARMv7
-    srclibs=VLC@6689dcb
-    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+    srclibs=VLC-2.0.6@6689dcb
+    prebuild=ln -s vlc-android/$$VLC-2.0.6$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz && \
+        echo "3a753ea48d917945dd54a2d97de388aa06ca2eb1066cbfdc6652036349fe05a7  jpegsrc.v9a.tar.gz" > ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz.sha256 && \
+        cd ../vlc/contrib/tarballs/ && \
+        sha256sum -c jpegsrc.v9a.tar.gz.sha256
     build=cd ../ && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "armeabi-v7a" --release
     ndk=r11c
 
 Build:2.0.6,12000605
-    disable=builds, weait for https://gitlab.com/fdroid/fdroidserver/issues/224
     commit=2.0.6
     subdir=vlc-android
     gradle=VanillaX86
-    srclibs=VLC@6689dcb
-    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+    srclibs=VLC-2.0.6@6689dcb
+    prebuild=ln -s vlc-android/$$VLC-2.0.6$$ ../vlc && \
         sed -i -e '/sdk-manager/d' ../build.gradle && \
-        wget -c http://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz
+        wget -c https://downloads.videolan.org/pub/contrib/jpeg/jpegsrc.v9a.tar.gz -O ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz && \
+        echo "3a753ea48d917945dd54a2d97de388aa06ca2eb1066cbfdc6652036349fe05a7  jpegsrc.v9a.tar.gz" > ../vlc/contrib/tarballs/jpegsrc.v9a.tar.gz.sha256 && \
+        cd ../vlc/contrib/tarballs/ && \
+        sha256sum -c jpegsrc.v9a.tar.gz.sha256
     build=cd ../ && \
-        echo $ANDROID_NDK && \
-        echo $ANDROID_SDK && \
+        sed -i 's,http://download,https://download,g' compile.sh && \
         ./compile.sh -a "x86" --release
     ndk=r11c
 
+Build:2.1.4,12000609
+    disable=contrib make failed
+    commit=2.1.4
+    subdir=vlc-android
+    gradle=VanillaX86
+    srclibs=VLC@ed56521
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        mkdir -p gradle/wrapper/ && \
+        echo 'distributionUrl=https://services.gradle.org/distributions/gradle-3.4.1-bin.zip' > gradle/wrapper/gradle-wrapper.properties && \
+        sed -i -e '/signingConfigs/d' build.gradle
+    build=pushd ../vlc/extras/tools && \
+        ./bootstrap && \
+        popd && \
+        pushd ../vlc/contrib && \
+        mkdir native && \
+        pushd native && \
+        ../bootstrap && \
+        make && \
+        popd && \
+        popd && \
+        cd ../ && \
+        ./compile.sh -a "x86" && \
+        ./compile release
+    ndk=r14
+
+Build:2.1.20,12012004
+    commit=2.1.20
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel
+    init=echo y | $$SDK$$/tools/bin/sdkmanager 'build-tools;26.0.1'
+    gradle=VanillaARMv7
+    srclibs=VLC@6c643e6
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a arm release
+    ndk=r14b
+
+Build:2.1.20,12012005
+    commit=2.1.20
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel
+    init=echo y | $$SDK$$/tools/bin/sdkmanager 'build-tools;26.0.1'
+    gradle=VanillaX86
+    srclibs=VLC@6c643e6
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a x86 release
+    ndk=r14b
+
+Build:2.1.20,12012007
+    commit=2.1.20
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel
+    init=echo y | $$SDK$$/tools/bin/sdkmanager 'build-tools;26.0.1'
+    gradle=VanillaARMv8
+    srclibs=VLC@6c643e6
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a arm64 release
+    ndk=r14b
+
+Build:2.5.2,12050204
+    commit=2.5.2
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaARMv7
+    srclibs=VLC@ef7c26f5,VLCmedialibrary@6e94f5a0
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a arm release
+    ndk=r14b
+
+Build:2.5.2,12050205
+    commit=2.5.2
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaX86
+    srclibs=VLC@ef7c26f5,VLCmedialibrary@6e94f5a0
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a x86 release
+    ndk=r14b
+
+Build:2.5.2,12050207
+    commit=2.5.2
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaARMv8
+    srclibs=VLC@ef7c26f5,VLCmedialibrary@6e94f5a0
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a arm64 release
+    ndk=r14b
+
+Build:2.5.8,12050804
+    commit=2.5.8
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaARMv7
+    srclibs=VLC@35acae8,VLCmedialibrary@1f7e168
+    rm=java-libs/appcompat/libs,java-libs/cardview/libs
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a arm release
+    ndk=r14b
+
+Build:2.5.8,12050805
+    commit=2.5.8
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaX86
+    srclibs=VLC@35acae8,VLCmedialibrary@1f7e168
+    rm=java-libs/appcompat/libs,java-libs/cardview/libs
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a x86 release
+    ndk=r14b
+
+Build:2.5.8,12050807
+    commit=2.5.8
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaARMv8
+    srclibs=VLC@35acae8,VLCmedialibrary@1f7e168
+    rm=java-libs/appcompat/libs,java-libs/cardview/libs
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a arm64 release
+    ndk=r14b
+
+Build:2.5.9,12050904
+    commit=2.5.9
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaARMv7
+    srclibs=VLC@35acae8,VLCmedialibrary@786131a
+    rm=java-libs/appcompat/libs,java-libs/cardview/libs
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a arm release
+    ndk=r14b
+
+Build:2.5.9,12050905
+    commit=2.5.9
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaX86
+    srclibs=VLC@35acae8,VLCmedialibrary@786131a
+    rm=java-libs/appcompat/libs,java-libs/cardview/libs
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a x86 release
+    ndk=r14b
+
+Build:2.5.9,12050907
+    commit=2.5.9
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaARMv8
+    srclibs=VLC@35acae8,VLCmedialibrary@786131a
+    rm=java-libs/appcompat/libs,java-libs/cardview/libs
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a arm64 release
+    ndk=r14b
+
+Build:2.5.12,12051204
+    commit=2.5.12
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaARMv7
+    srclibs=VLC@35acae8,VLCmedialibrary@15ab842
+    rm=java-libs/appcompat/libs,java-libs/cardview/libs
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a arm release
+    ndk=r14b
+
+Build:2.5.12,12051205
+    commit=2.5.12
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaX86
+    srclibs=VLC@35acae8,VLCmedialibrary@15ab842
+    rm=java-libs/appcompat/libs,java-libs/cardview/libs
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a x86 release
+    ndk=r14b
+
+Build:2.5.12,12051207
+    commit=2.5.12
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaARMv8
+    srclibs=VLC@35acae8,VLCmedialibrary@15ab842
+    rm=java-libs/appcompat/libs,java-libs/cardview/libs
+    prebuild=ln -s vlc-android/$$VLC$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/^\.libarchive/a\\t$(RECONF)' ../vlc/contrib/src/libarchive/rules.mak && \
+        sed -i -e 's/git reset --hard ${TESTED_HASH}/true/' ../compile.sh && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a arm64 release
+    ndk=r14b
+
+Build:2.5.17,12051704
+    commit=2.5.17
+    timeout=10800
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaARMv7
+    srclibs=VLC-3.0@ced0c03,VLCmedialibrary@ed75aef
+    rm=java-libs/appcompat/libs,java-libs/cardview/libs
+    prebuild=ln -s vlc-android/$$VLC-3.0$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a arm release
+    ndk=r14b
+
+Build:2.5.17,12051705
+    commit=2.5.17
+    timeout=10800
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaX86
+    srclibs=VLC-3.0@ced0c03,VLCmedialibrary@ed75aef
+    rm=java-libs/appcompat/libs,java-libs/cardview/libs
+    prebuild=ln -s vlc-android/$$VLC-3.0$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a x86 release
+    ndk=r14b
+
+Build:2.5.17,12051707
+    commit=2.5.17
+    timeout=10800
+    subdir=vlc-android
+    sudo=apt-get -y install g++ ragel libltdl-dev
+    gradle=VanillaARMv8
+    srclibs=VLC-3.0@ced0c03,VLCmedialibrary@ed75aef
+    rm=java-libs/appcompat/libs,java-libs/cardview/libs
+    prebuild=ln -s vlc-android/$$VLC-3.0$$ ../vlc && \
+        ln -s $$VLCmedialibrary$$ ../medialibrary/medialibrary && \
+        sed -i -e '/signingConfig/d' build.gradle
+    build=cd .. && \
+        mkdir -p gradle/wrapper && \
+        echo 'gradle "$@"' > gradlew && \
+        chmod a+x gradlew && \
+        ./compile.sh -a arm64 release
+    ndk=r14b
+
 Maintainer Notes:
 Instructions and dependencies here: http://wiki.videolan.org/AndroidCompile
-see http://buildbot.videolan.org/builders /for version code scheme
-The VLC srclib commit can be found out from TESTED_HASH value in compile.sh
 
-On new releases remove the updatecheck and force the CV to the last working
-build. This will make sure users don't get notified about the update until
-the final build from the BS has been reviewed and tested. Once done, undo
-those changes.
+The VLC srclib commit can be found out from TESTED_HASH value in compile.sh,
+but sometimes it's different in official builds.
 
-Recent issues with 1.4.x are due outdated build system, see the following
-thread https://forum.videolan.org/viewtopic.php?f=35&t=126228 .
+The VLCmedialibrary srclib commit can be found out from MEDIALIBRARY_HASH in
+compile-libvlc.sh.
 
-1.7.5 x86 test build: livemedia doesnt keep an archive of older, tested
-releases.
+For recommended versions of the build tools, see:
+https://git.videolan.org/?p=vlc.git;a=blob;f=extras/tools/bootstrap#l72
+
+Actual versioncodes are:
+
+* Build:2.0.6,12000624 armv7
+* Build:2.0.6,12000625 x86
+* Build:2.0.6,12000626 mips
+* Build:2.0.6,12000627 armv8
+* Build:2.0.6,12000628 x86_64
+
+A last-resort update option if builds keep broken for a long time is to
+resign official apks:
+
+    commit=2.0.6
+    output=binary/vlc.apk
+    build=mkdir binary && \
+        cd binary && \
+        wget -c https://get.videolan.org/vlc-android/$$VERSION$$/VLC-Android-$$VERSION$$-x86_64.apk -O vlc.apk && \
+        unzip vlc.apk && \
+        rm -fR META-INF vlc.apk && \
+        zip -r vlc.apk *
 .
 
-Archive Policy:10 versions
+Archive Policy:0 versions
 Auto Update Mode:None
-Update Check Mode:None
-Vercode Operation:%c + 5
-Current Version:1.9.0
-Current Version Code:1090005
+Update Check Mode:Static
+Current Version:2.5.12
+Current Version Code:12051207

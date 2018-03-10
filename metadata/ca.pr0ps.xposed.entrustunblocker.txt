@@ -23,6 +23,8 @@ Just install, enable, reboot, and you're done. Get back to work.
 Requires the [http://xposed.info Xposed framework]
 .
 
+Requires Root:yes
+
 Repo Type:git
 Repo:https://github.com/pR0Ps/Entrust-IdentityGuard-Unblocker
 
@@ -36,7 +38,12 @@ Build:1.1,2
     subdir=app
     gradle=yes
 
+Build:1.2,3
+    commit=v1.2
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.1
-Current Version Code:2
+Current Version:1.2
+Current Version Code:3

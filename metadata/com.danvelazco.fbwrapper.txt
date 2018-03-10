@@ -1,7 +1,7 @@
 AntiFeatures:Tracking
 Categories:Internet
-License:Apache2
-Web Site:
+License:Apache-2.0
+Web Site:http://www.danvelazco.com
 Source Code:https://github.com/velazcod/Tinfoil-Facebook
 Issue Tracker:https://github.com/velazcod/Tinfoil-Facebook/issues
 
@@ -91,7 +91,17 @@ Build:1.7.5,20150205
     subdir=Tinfoil-for-Facebook
     gradle=yes
 
+Build:1.7.6,20170220
+    commit=1.7.6
+    subdir=app
+    gradle=yes
+
+Build:1.7.7,20170312
+    commit=1.7.7
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.7.5
-Current Version Code:20150205
+Current Version:1.7.7
+Current Version Code:20170312

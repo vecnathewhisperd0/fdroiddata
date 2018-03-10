@@ -1,5 +1,5 @@
 Categories:Security
-License:NewBSD
+License:BSD-3-Clause
 Web Site:http://mobile.thauvin.net/android/#noussd
 Source Code:https://github.com/ethauvin/NoUSSD
 Issue Tracker:https://github.com/ethauvin/NoUSSD/issues
@@ -25,8 +25,6 @@ Build:1.0,1
 
 Build:1.0.1,2
     commit=1afdca26803
-    rm=libs/android-support-v4.jar
-    extlibs=android/android-support-v4.jar
     target=android-15
 
 Auto Update Mode:None

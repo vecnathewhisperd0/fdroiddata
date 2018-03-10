@@ -1,5 +1,5 @@
 Categories:Games
-License:GPLv3+
+License:GPL-3.0+
 Web Site:http://shatteredpixel.tumblr.com
 Source Code:https://github.com/00-Evan/shattered-pixel-dungeon
 Issue Tracker:https://github.com/00-Evan/shattered-pixel-dungeon/issues
@@ -216,7 +216,78 @@ Build:0.4.3c,148
     scandelete=SPD-classes/src/main/jniLibs/
     preassemble=:SPD-classes:ndkBuild
 
+Build:0.5.0a,158
+    commit=v0.5.0a
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.5.0b,159
+    commit=v0.5.0b
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.6.0,181
+    commit=v0.6.0
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.6.0b,185
+    commit=v0.6.0b
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.6.1a,206
+    commit=v0.6.1a
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.6.1b,209
+    commit=v0.6.1b
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.6.2a,224
+    disable=Could not find com.android.tools.build:gradle:3.0.0
+    commit=v0.6.2a
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.6.2d,228
+    commit=v0.6.2d
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.6.2e,229
+    commit=v0.6.2e
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.6.3a,242
+    commit=v0.6.3a
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.4.3c
-Current Version Code:148
+Current Version:0.6.3a
+Current Version Code:242

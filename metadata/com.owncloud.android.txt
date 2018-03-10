@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPLv2
+License:GPL-2.0
 Web Site:https://owncloud.org
 Source Code:https://github.com/owncloud/android
 Issue Tracker:https://github.com/owncloud/android/issues
@@ -248,14 +248,47 @@ Build:2.1.2,20100200
     srclibs=TouchImageView@v1.2.0
     rm=libs/disklrucache*,owncloud-android-library/libs,user_manual
 
+Build:2.2.0,20200000
+    commit=oc-android-2.2.0
+    submodules=yes
+    gradle=yes
+    srclibs=TouchImageView@v1.2.0
+    rm=libs/disklrucache*,owncloud-android-library/libs,user_manual
+
+Build:2.3.0,20300000
+    commit=oc-android-2.3.0
+    submodules=yes
+    gradle=yes
+    srclibs=TouchImageView@v1.2.0
+    rm=libs/disklrucache*,owncloud-android-library/libs,user_manual
+
+Build:2.4.0,20400000
+    commit=oc-android-2.4.0
+    submodules=yes
+    gradle=yes
+    srclibs=TouchImageView@v1.2.0
+    rm=libs/disklrucache*,owncloud-android-library/libs,user_manual
+
+Build:2.5.0,20500000
+    commit=oc-android-2.5.0
+    submodules=yes
+    gradle=yes
+    srclibs=TouchImageView@v1.2.0
+    rm=libs/disklrucache*,owncloud-android-library/libs,user_manual
+
+Build:2.6.0,20600000
+    commit=oc-android-2.6.0
+    submodules=yes
+    gradle=yes
+    srclibs=TouchImageView@v1.2.0
+    rm=libs/disklrucache*,owncloud-android-library/libs,user_manual
+
 Maintainer Notes:
 Last jar in use is touch-image-view, since apparently it's not in any maven
 repo. Verified against upstream at https://github.com/MikeOrtiz/TouchImageView.
-
-Can't use AUM since tag names are very inconsistent.
 .
 
-Auto Update Mode:None
+Auto Update Mode:Version oc-android-%v
 Update Check Mode:Tags ^oc-android-[0-9.]*
-Current Version:2.1.2
-Current Version Code:20100200
+Current Version:2.6.0
+Current Version Code:20600000

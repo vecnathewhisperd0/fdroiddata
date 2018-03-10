@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPLv3
+License:GPL-3.0
 Web Site:https://code.google.com/p/zirco-browser
 Source Code:https://code.google.com/p/zirco-browser/source
 Issue Tracker:
@@ -53,6 +53,6 @@ Build:0.4.4,18
     target=android-10
 
 Auto Update Mode:None
-Update Check Mode:Tags
+Update Check Mode:Static
 Current Version:0.4.4
 Current Version Code:18

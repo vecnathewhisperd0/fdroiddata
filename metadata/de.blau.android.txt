@@ -1,5 +1,5 @@
 Categories:Navigation
-License:Apache2
+License:Apache-2.0
 Web Site:http://vespucci.io/
 Source Code:https://github.com/MarcusWolschon/osmeditor4android
 Issue Tracker:https://github.com/MarcusWolschon/osmeditor4android/issues
@@ -241,16 +241,53 @@ Build:0.9.8.1.1216-fdroid,90
     prebuild=sed -i -e 's/Vespucci/Vespucci (F-Droid)/g' -e 's/1216/1216-fdroid/g' res/values/appname.xml && \
         sed -i -e '/bintray/d' -e '/markdown/d' build.gradle
 
+Build:0.9.8.1.1228-fdroid,91
+    commit=0.9.8r1228
+    gradle=yes
+    prebuild=sed -i -e 's/Vespucci/Vespucci (F-Droid)/g' -e 's/1228/1228-fdroid/g' res/values/appname.xml && \
+        sed -i -e '/bintray/d' -e '/markdown/d' build.gradle
+
+Build:0.9.8.1.1242-fdroid,93
+    commit=0.9.8r1242
+    gradle=yes
+    prebuild=sed -i -e 's/Vespucci/Vespucci (F-Droid)/g' -e 's/1242/1242-fdroid/g' res/values/appname.xml && \
+        sed -i -e '/bintray/d' -e '/markdown/d' build.gradle
+
+Build:0.9.9.0.1261-fdroid,96
+    commit=0.9.9beta
+    gradle=yes
+    prebuild=sed -i -e 's/Vespucci/Vespucci (F-Droid)/g' -e 's/1261/1261-fdroid/g' src/main/res/values/appname.xml && \
+        sed -i -e '/bintray/d' -e '/markdown/d' build.gradle
+
+Build:0.9.9.0.1266-fdroid,98
+    commit=0.9.9b1266
+    gradle=yes
+    prebuild=sed -i -e 's/Vespucci/Vespucci (F-Droid)/g' -e 's/1266/1266-fdroid/g' src/main/res/values/appname.xml && \
+        sed -i -e '/bintray/d' -e '/markdown/d' build.gradle
+
+Build:0.9.9.1.1300-fdroid,204
+    commit=0.9.9r1300
+    gradle=yes
+    prebuild=sed -i -e 's/Vespucci/Vespucci (F-Droid)/g' -e 's/1300/1300-fdroid/g' src/main/res/values/appname.xml && \
+        sed -i -e '/bintray/d' -e '/markdown/d' build.gradle
+
+Build:0.9.9.1.1311-fdroid,207
+    commit=0.9.9r1311
+    gradle=yes
+    prebuild=sed -i -e 's/Vespucci/Vespucci (F-Droid)/g' -e 's/1311/1311-fdroid/g' src/main/res/values/appname.xml && \
+        sed -i -e '/bintray/d' -e '/markdown/d' build.gradle
+
+Build:10.0.5-fdroid,307
+    commit=10.0.5
+    gradle=yes
+    prebuild=sed -i -e 's/Vespucci/Vespucci (F-Droid)/g' -e 's/10.0.5/10.0.5-fdroid/g' src/main/res/values/appname.xml && \
+        sed -i -e '/bintray/d' -e '/markdown/d' -e '/preset-utils/d' build.gradle
+
 Maintainer Notes:
-* Remove versionCode and versionName from build.gradle due to mismatch (using
-  higher VC in AndroidManifest.xml):
-  https://github.com/MarcusWolschon/osmeditor4android/issues/286
-* Cannot replace JAR file with com.drewnoakes:metadata-extractor:2.8.1:
-  https://github.com/MarcusWolschon/osmeditor4android/issues/285
 * Upstream requires -fdroid specific appname
 .
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:0.9.8.1.1216
-Current Version Code:90
+Current Version:10.1.0
+Current Version Code:402

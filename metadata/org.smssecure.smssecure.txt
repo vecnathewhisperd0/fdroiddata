@@ -1,22 +1,12 @@
 Categories:Phone & SMS,Security
-License:GPLv3
+License:GPL-3.0
 Web Site:https://silence.im/
 Source Code:https://github.com/SilenceIM/Silence
 Issue Tracker:https://github.com/SilenceIM/Silence/issues
 Changelog:https://github.com/SilenceIM/Silence/blob/HEAD/CHANGELOG.md
+Bitcoin:1LoKZXg3bx6kfwAhEFQqS9pgeCE1CFMEJb
 
 Auto Name:Silence
-Summary:Send encrypted text messages (SMS/MMS)
-Description:
-Silence is an SMS/MMS application that allows you to protect your privacy while
-communicating with friends. Using Silence, you can send SMS messages and share
-media or attachments with complete privacy.
-
-* Easy. Silence works like any other SMS application. There's nothing to sign up for and no new service your friends need to join.
-* Reliable. Silence communicates using encrypted SMS messages. No servers or internet connection required.
-* Private. Silence provides end-to-end encryption for your messages using the painstakingly engineered Axolotl encryption protocol.
-* Safe. All messages are encrypted locally, so if your phone is lost or stolen, your messages are protected.
-.
 
 Repo Type:git
 Repo:https://github.com/SilenceIM/Silence
@@ -328,8 +318,214 @@ Build:0.14.6,126
         ./scripts/build-witness.sh && \
         rm -rf libs/gradle-witness/build
 
+Build:0.14.7,127
+    commit=v0.14.7
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.14.8,128
+    commit=v0.14.8
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.1,129
+    commit=v0.15.1
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.2,130
+    commit=v0.15.2
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.0-unstable,131
+    commit=v0.16.0-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.4,133
+    commit=v0.15.4
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.5,134
+    commit=v0.15.5
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.6,135
+    commit=v0.15.6
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.7,136
+    commit=v0.15.7
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.8,137
+    commit=v0.15.8
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.9,138
+    commit=v0.15.9
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.10,139
+    commit=v0.15.10
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.11,140
+    commit=v0.15.11
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.12,141
+    commit=v0.15.12
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.1-unstable,200
+    commit=v0.16.1-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.2-unstable,201
+    commit=v0.16.2-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.3-unstable,202
+    commit=v0.16.3-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.4-unstable,203
+    commit=v0.16.4-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.5-unstable,204
+    commit=v0.16.5-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.6-unstable,205
+    commit=v0.16.6-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.7-unstable,206
+    commit=v0.16.7-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.8-unstable,207
+    commit=v0.16.8-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Maintainer Notes:
+Auto Update does not really work because the latest unstable build is newer than CV.
+So we need to always add new build manually.
+
+Summary and Description have been moved to the new localizable text files:
+https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
+.
+
 Archive Policy:12 versions
 Auto Update Mode:Version v%v
-Update Check Mode:Tags
-Current Version:0.14.6
-Current Version Code:126
+Update Check Mode:Tags ^v[0-9\\.]+$
+Current Version:0.15.12
+Current Version Code:141

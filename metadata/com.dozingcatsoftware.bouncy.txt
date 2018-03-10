@@ -1,6 +1,6 @@
 Categories:Games
-License:GPLv3
-Web Site:http://www.dozingcatsoftware.com
+License:GPL-3.0
+Web Site:http://www.vectorpinball.com
 Source Code:https://github.com/dozingcat/Vector-Pinball
 Issue Tracker:https://github.com/dozingcat/Vector-Pinball/issues
 
@@ -105,7 +105,7 @@ Build:1.5.5,20
 
 Build:1.5.6,21
     commit=3f28de69a6b182287fb52f3cb6cdd4322fbeeee1
-    srclibs=libgdx@1.4.1
+    srclibs=libgdx@1.9.5
     rm=libs/*
     prebuild=pushd $$libgdx$$ && \
         rm gdx/jni/build.xml && \

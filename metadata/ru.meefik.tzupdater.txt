@@ -1,5 +1,5 @@
 Categories:System
-License:GPLv3+
+License:GPL-3.0+
 Web Site:https://github.com/meefik/tzupdater/blob/HEAD/README.md
 Source Code:https://github.com/meefik/tzupdater
 Issue Tracker:https://github.com/meefik/tzupdater/issues
@@ -47,5 +47,5 @@ Build:1.0.2,18
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.0.2
-Current Version Code:18
+Current Version:1.0.3
+Current Version Code:19

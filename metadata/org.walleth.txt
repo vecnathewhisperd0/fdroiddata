@@ -1,0 +1,112 @@
+Categories:Money
+License:GPL-3.0
+Web Site:http://walleth.org
+Source Code:https://github.com/walleth/walleth
+Issue Tracker:https://github.com/walleth/walleth/issues
+
+Name:WALLETH
+Auto Name:WALLΞTH
+Summary:Ethereum wallet
+Description:
+Ethereum wallet Networks: main(1), ropsten(3), rinkeby(4) Features:
+Tokens(ERC-20), ERC-67 URLs, ERC-55 Checksums, TREZOR Support, watch only
+accounts, contains go-ethereum light client
+.
+
+Repo Type:git
+Repo:https://github.com/walleth/walleth
+
+Build:0.15,15
+    commit=0.15
+    subdir=app
+    gradle=noFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.16,16
+    commit=0.16
+    subdir=app
+    gradle=noFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.17,17
+    commit=0.17
+    subdir=app
+    gradle=noFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.18,18
+    commit=0.18
+    subdir=app
+    gradle=noFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.20,20
+    commit=0.20
+    subdir=app
+    gradle=noFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.21,21
+    commit=0.21
+    subdir=app
+    gradle=noFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.23,23
+    commit=0.23
+    subdir=app
+    gradle=noFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.25,25
+    commit=0.25
+    subdir=app
+    gradle=noFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.26,26
+    commit=0.26
+    subdir=app
+    gradle=noFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.27,27
+    commit=0.27
+    subdir=app
+    gradle=noFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.28,28
+    commit=0.28
+    subdir=app
+    gradle=noFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.29,29
+    commit=0.29
+    subdir=app
+    gradle=withGethNoFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.31,31
+    commit=0.31
+    subdir=app
+    gradle=withGethNoFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.32,32
+    commit=0.32
+    subdir=app
+    gradle=withGethNoFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Build:0.33,33
+    commit=0.33
+    subdir=app
+    gradle=withGethNoFirebaseForFDroid
+    prebuild=sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:0.33
+Current Version Code:33

@@ -1,5 +1,5 @@
 Categories:Navigation
-License:GPLv3
+License:GPL-3.0
 Web Site:https://sourceforge.net/projects/androidrun
 Source Code:https://sourceforge.net/p/androidrun/code
 Issue Tracker:
@@ -14,7 +14,7 @@ that can easily be imported, e.g. in LibreOffice, for offline analysis.
 .
 
 Repo Type:git
-Repo:git://git.code.sf.net/p/androidrun/code
+Repo:https://git.code.sf.net/p/androidrun/code
 
 Build:1.0,1
     commit=dbf642887a200b448e84e53e582e4e2d678c45a1

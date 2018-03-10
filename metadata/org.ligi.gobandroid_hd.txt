@@ -1,5 +1,5 @@
 Categories:Games
-License:GPLv3
+License:GPL-3.0
 Web Site:https://github.com/ligi/gobandroid/blob/HEAD/README.md
 Source Code:https://github.com/ligi/gobandroid
 Issue Tracker:https://github.com/ligi/gobandroid/issues
@@ -325,6 +325,7 @@ Build:2.5.0,250
     prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
 
 Build:2.5.1,251
+    disable=lint error
     commit=2.5.1
     subdir=android
     gradle=NoAnalyticsNoCloudProd
@@ -336,7 +337,43 @@ Build:2.5.2,252
     gradle=NoAnalyticsNoCloudProd
     prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
 
+Build:2.5.3,253
+    commit=2.5.3
+    subdir=android
+    gradle=NoAnalyticsNoCloudProd
+    prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
+
+Build:2.5.4,254
+    commit=2.5.4
+    subdir=android
+    gradle=NoAnalyticsNoCloudProd
+    prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
+
+Build:2.5.5,255
+    commit=2.5.5
+    subdir=android
+    gradle=NoAnalyticsNoCloudProd
+    prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
+
+Build:2.5.6,256
+    commit=2.5.6
+    subdir=android
+    gradle=NoAnalyticsNoCloud
+    prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
+
+Build:2.5.7,257
+    commit=2.5.7
+    subdir=android
+    gradle=NoAnalyticsNoCloud
+    prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
+
+Build:2.5.8,258
+    commit=2.5.8
+    subdir=android
+    gradle=NoAnalyticsNoCloud
+    prebuild=sed -i -e '/play_services/d' -e '/play-services/d' -e '/android-sdk-manager/d' build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.5.2
-Current Version Code:252
+Current Version:2.5.8
+Current Version Code:258

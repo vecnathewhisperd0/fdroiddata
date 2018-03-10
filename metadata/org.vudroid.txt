@@ -1,5 +1,5 @@
 Categories:Reading
-License:GPLv3
+License:GPL-3.0
 Web Site:https://code.google.com/p/vudroid
 Source Code:https://code.google.com/p/vudroid/source
 Issue Tracker:
@@ -29,6 +29,6 @@ Build:1.4,5
     buildjni=yes
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.4
 Current Version Code:5

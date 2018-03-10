@@ -112,7 +112,17 @@ Build:2.5,25
     subdir=app
     gradle=yes
 
+Build:2.6,26
+    commit=v2.6
+    subdir=app
+    gradle=yes
+
+Build:2.7,27
+    commit=v2.7
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.5
-Current Version Code:25
+Current Version:2.7
+Current Version Code:27

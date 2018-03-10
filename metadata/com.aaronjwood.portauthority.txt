@@ -1,8 +1,9 @@
 Categories:Security
-License:GPLv3
+License:GPL-3.0
 Web Site:
 Source Code:https://github.com/aaronjwood/PortAuthority
 Issue Tracker:https://github.com/aaronjwood/PortAuthority/issues
+Changelog:https://github.com/aaronjwood/PortAuthority/releases
 Donate:https://github.com/aaronjwood/PortAuthority/blob/HEAD/README
 
 Auto Name:Port Authority
@@ -179,7 +180,49 @@ Build:1.9.2,43
     gradle=free
     prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
 
+Build:1.9.4,44
+    commit=v1.9.4
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.9.5,45
+    commit=v1.9.5
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.9.8,46
+    commit=v1.9.8
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:1.9.9,47
+    commit=v1.9.9
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:2.0.0,48
+    commit=v2.0.0
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:2.0.1,49
+    commit=v2.0.1
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/com.aaronjwood.portauthority.free/d' build.gradle
+
+Build:2.2.6,54
+    commit=v2.2.6
+    subdir=app
+    gradle=free
+    prebuild=sed -i -e '/applicationIdSuffix/d; /versionNameSuffix/d' build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.9.2
-Current Version Code:43
+Current Version:2.2.6
+Current Version Code:54

@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPLv3+
+License:GPL-3.0+
 Web Site:https://github.com/scoute-dich/Weather/blob/HEAD/README.md
 Source Code:https://github.com/scoute-dich/Weather
 Issue Tracker:https://github.com/scoute-dich/Weather/issues
@@ -110,7 +110,42 @@ Build:3.4,33
     subdir=app
     gradle=yes
 
+Build:3.5,34
+    commit=v3.5
+    subdir=app
+    gradle=yes
+
+Build:3.7,36
+    commit=v3.7
+    subdir=app
+    gradle=yes
+
+Build:3.8,37
+    commit=v3.8
+    subdir=app
+    gradle=yes
+
+Build:3.9,38
+    commit=v3.9
+    subdir=app
+    gradle=yes
+
+Build:4.0,39
+    commit=v4.0
+    subdir=app
+    gradle=yes
+
+Build:4.1,40
+    commit=v4.1
+    subdir=app
+    gradle=yes
+
+Build:4.3,46
+    commit=v4.3
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.4
-Current Version Code:33
+Current Version:4.3
+Current Version Code:46

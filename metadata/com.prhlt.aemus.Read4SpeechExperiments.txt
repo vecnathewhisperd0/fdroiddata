@@ -1,5 +1,5 @@
 Categories:Science & Education
-License:GPLv3
+License:GPL-3.0
 Web Site:https://gitlab.com/egranell/Read4SpeechExperiments
 Source Code:https://gitlab.com/egranell/Read4SpeechExperiments/tree/HEAD
 Issue Tracker:https://gitlab.com/egranell/Read4SpeechExperiments/issues
@@ -48,7 +48,12 @@ Build:1.06,18
     gradle=yes
     prebuild=echo -e "android { lintOptions { disable 'MissingTranslation' } }" >> build.gradle
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest/master
-Current Version:1.06
-Current Version Code:18
+Build:1.1,19
+    commit=1.1
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:1.1
+Current Version Code:19

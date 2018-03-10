@@ -1,6 +1,6 @@
 Categories:Time
-License:GPLv3
-Web Site:
+License:GPL-3.0
+Web Site:http://yuchenhou.com/
 Source Code:https://github.com/icechen1/Notable
 Issue Tracker:https://github.com/icechen1/Notable/issues
 
@@ -35,7 +35,14 @@ Build:1.5.8,42
     prebuild=sed -i -e '/support-v4/acompile "com.google.android.apps.dashclock:dashclock-api:2.0.0"' ../notableLibrary/build.gradle && \
         sed -i -e 's/gradle:2.0.0/gradle:1.5.\+/g' ../build.gradle
 
+Build:1.6.0,44
+    commit=c0930e24a65284a8d2c523c045de151367c54b3b
+    subdir=notablePro
+    gradle=yes
+    rm=notableLibrary/libs/*.jar
+    prebuild=sed -i -e '/support-v4/acompile "com.google.android.apps.dashclock:dashclock-api:2.0.0"' ../notableLibrary/build.gradle
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.5.8
-Current Version Code:42
+Current Version:1.6.0
+Current Version Code:44

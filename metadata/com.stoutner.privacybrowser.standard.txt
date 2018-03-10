@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPLv3+
+License:GPL-3.0+
 Author Name:Soren Stoutner
 Author Email:soren@stoutner.com
 Web Site:https://www.stoutner.com/privacy-browser
@@ -7,25 +7,9 @@ Source Code:https://git.stoutner.com/?p=PrivacyBrowser.git;a=summary
 Issue Tracker:https://redmine.stoutner.com/projects/privacy-browser/issues
 Changelog:https://www.stoutner.com/privacy-browser/changelog/
 Donate:https://www.stoutner.com/privacy-browser/contributors/
+Bitcoin:1Jiooc5L238VnhiWtkdYEkwm7kRNWQspSC
 
 Auto Name:Privacy Browser
-Summary:A web browser that respects your privacy
-Description:
-Privacy Browser is a web browser that protects your privacy by giving you easy
-control over the use of JavaScript, DOM storage, and cookies. Many websites use
-these technologies to track users between visits and between sites. Tapping the
-privacy shield toggles whether JavaScript is enabled and reloads the WebView.
-When JavaScript is disabled, not only are privacy and security increased, but
-web pages load faster with less bandwidth consumption.
-
-Warning: Privacy Browser is susceptible to
-[https://www.stoutner.com/kitkat-security-problems/ MITM (Man In The Middle)
-attacks] when browsing insecure websites from devices running Android KitKat
-(version 4.4.x, API 19).
-
-Privacy Browser uses Android's built-in WebView to render web pages. As such, it
-works best if you have updated to the latest version of WebView.
-.
 
 Repo Type:git
 Repo:git://git.stoutner.com/git/PrivacyBrowser.git
@@ -103,7 +87,104 @@ Build:1.13,15
     gradle=standard
     prebuild=sed -i -e '/firebase/d' build.gradle
 
+Build:1.14,16
+    commit=v1.14
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:1.14.1,17
+    commit=v1.14.1
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:1.15,18
+    commit=v1.15
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.0,19
+    commit=v2.0
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.0.1,20
+    commit=v2.0.1
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.1,21
+    commit=v2.1
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.2,22
+    commit=v2.2
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.3,23
+    commit=v2.3
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.4,24
+    commit=v2.4
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.5,25
+    commit=v2.5
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.6,26
+    commit=v2.6
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.7.1,28
+    disable=Could not find com.android.tools.build:gradle:3.0.0
+    commit=v2.7.1
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.7.2,29
+    commit=v2.7.2
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.8,30
+    commit=v2.8
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.8.1,31
+    commit=v2.8.1
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Maintainer Notes:
+Summary and Description are maintained by upstream using fastlane in
+the source repo:
+https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
+.
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.13
-Current Version Code:15
+Current Version:2.8.1
+Current Version Code:31

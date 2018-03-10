@@ -1,5 +1,5 @@
 Categories:Reading,Internet
-License:GPLv3+
+License:GPL-3.0+
 Author Name:Daniel Schaal
 Author Email:daniel@schaal.email
 Web Site:
@@ -151,7 +151,77 @@ Build:0.24,27
     subdir=app
     gradle=yes
 
+Build:0.25,28
+    commit=v0.25
+    subdir=app
+    gradle=yes
+
+Build:0.26,29
+    commit=v0.26
+    subdir=app
+    gradle=yes
+
+Build:0.27,30
+    commit=v0.27
+    subdir=app
+    gradle=yes
+
+Build:0.28,31
+    commit=v0.28
+    subdir=app
+    gradle=yes
+
+Build:0.29,32
+    commit=v0.29
+    subdir=app
+    gradle=yes
+
+Build:0.30,33
+    commit=v0.30
+    subdir=app
+    gradle=yes
+
+Build:0.31,34
+    commit=v0.31
+    subdir=app
+    gradle=yes
+
+Build:0.33,36
+    commit=v0.33
+    subdir=app
+    gradle=yes
+
+Build:0.34,37
+    commit=v0.34
+    subdir=app
+    gradle=yes
+
+Build:0.35,38
+    commit=v0.35
+    subdir=app
+    gradle=yes
+
+Build:0.36,39
+    commit=v0.36
+    subdir=app
+    gradle=yes
+
+Build:0.37,40
+    commit=v0.37
+    subdir=app
+    gradle=yes
+
+Build:0.38,41
+    commit=v0.38
+    subdir=app
+    gradle=yes
+
+Build:0.39,42
+    commit=v0.39
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.24
-Current Version Code:27
+Current Version:0.39
+Current Version Code:42

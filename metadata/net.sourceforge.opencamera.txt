@@ -1,9 +1,9 @@
 Categories:Multimedia
-License:GPLv3+
+License:GPL-3.0+
 Web Site:http://opencamera.sourceforge.net
 Source Code:https://sourceforge.net/p/opencamera/code
 Issue Tracker:https://sourceforge.net/p/opencamera/tickets
-Changelog:http://opencamera.sourceforge.net/#history
+Changelog:http://opencamera.sourceforge.net/history.html
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=2WCE756ZME9JG&lc=GB&item_name=Open%20Camera%20donation&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest
 Bitcoin:1LKCFto9SQGqtcvqZxHkqDPqNjSnfMmsow
 
@@ -29,7 +29,7 @@ A feature rich camera application, including:
 .
 
 Repo Type:git
-Repo:git://git.code.sf.net/p/opencamera/code
+Repo:https://git.code.sf.net/p/opencamera/code
 
 Build:1.7,9
     commit=v1.7
@@ -129,7 +129,62 @@ Build:1.35,42
     subdir=app
     gradle=yes
 
+Build:1.36.2,45
+    commit=v1.36.2
+    subdir=app
+    gradle=yes
+
+Build:1.37,46
+    commit=v1.37
+    subdir=app
+    gradle=yes
+
+Build:1.38,47
+    commit=v1.38
+    subdir=app
+    gradle=yes
+
+Build:1.38.1,48
+    commit=v1.38.1
+    subdir=app
+    gradle=yes
+
+Build:1.38.2,49
+    commit=v1.38.2
+    subdir=app
+    gradle=yes
+
+Build:1.39,50
+    commit=v1.39
+    subdir=app
+    gradle=yes
+
+Build:1.40,51
+    commit=v1.40
+    subdir=app
+    gradle=yes
+
+Build:1.41.1,53
+    commit=v1.41.1
+    subdir=app
+    gradle=yes
+
+Build:1.42,54
+    commit=v1.42
+    subdir=app
+    gradle=yes
+
+Build:1.42.1,55
+    commit=v1.42.1
+    subdir=app
+    gradle=yes
+
+Build:1.42.2,57
+    commit=v1.42.2
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.35
-Current Version Code:42
+Current Version:1.42.2
+Current Version Code:57

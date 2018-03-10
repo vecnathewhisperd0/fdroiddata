@@ -1,11 +1,11 @@
 Categories:Multimedia
-License:GPLv3+
+License:GPL-3.0+
 Web Site:
-Source Code:https://github.com/Ph1b/MaterialAudiobookPlayer
-Issue Tracker:https://github.com/Ph1b/MaterialAudiobookPlayer/issues
-Changelog:https://github.com/Ph1b/MaterialAudiobookPlayer/blob/HEAD/CHANGELOG.md
+Source Code:https://github.com/PaulWoitaschek/Voice
+Issue Tracker:https://github.com/PaulWoitaschek/Voice/issues
+Changelog:https://github.com/PaulWoitaschek/Voice/blob/HEAD/CHANGELOG.md
 
-Auto Name:Material Player
+Auto Name:Voice
 Summary:Simple audiobook player
 Description:
 Audiobook player with the following basic features:
@@ -17,7 +17,7 @@ Audiobook player with the following basic features:
 .
 
 Repo Type:git
-Repo:https://github.com/Ph1b/MaterialAudiobookPlayer
+Repo:https://github.com/PaulWoitaschek/Voice
 
 Build:1.2.1,5
     commit=348a47364b151f698c8
@@ -440,11 +440,219 @@ Build:v2.9.0.1,139
     gradle=yes
 
 Build:v2.9.0.2,140
+    disable=pre-release ConstraintLayout
     commit=v2.9.0.2
     subdir=audiobook
     gradle=yes
 
-Auto Update Mode:Version %v
+Build:2.9.1.4,145
+    disable=pre-release ConstraintLayout
+    commit=v2.9.1.4
+    subdir=audiobook
+    gradle=yes
+
+Build:2.9.2,146
+    disable=pre-release ConstraintLayout
+    commit=v2.9.2
+    subdir=audiobook
+    gradle=yes
+
+Build:2.9.3.1,148
+    disable=pre-release ConstraintLayout
+    commit=v2.9.3.1
+    subdir=audiobook
+    gradle=yes
+
+Build:2.9.3.3,150
+    disable=pre-release ConstraintLayout
+    commit=v2.9.3.3
+    subdir=audiobook
+    gradle=yes
+
+Build:2.9.3.5,152
+    disable=pre-release ConstraintLayout
+    commit=v2.9.3.5
+    subdir=audiobook
+    gradle=yes
+
+Build:2.9.3.6,153
+    disable=pre-release ConstraintLayout
+    commit=v2.9.3.6
+    subdir=audiobook
+    gradle=yes
+
+Build:2.9.3.7,154
+    disable=pre-release ConstraintLayout
+    commit=v2.9.3.7
+    subdir=audiobook
+    gradle=yes
+
+Build:3.0.7,162
+    disable=pre-release ConstraintLayout
+    commit=v3.0.7
+    subdir=audiobook
+    gradle=yes
+
+Build:3.0.8,163
+    disable=pre-release ConstraintLayout
+    commit=v3.0.8
+    subdir=audiobook
+    gradle=yes
+
+Build:3.0.11,166
+    disable=crashlytics
+    commit=v3.0.11
+    subdir=audiobook
+    gradle=yes
+
+Build:3.0.12,167
+    disable=crashlytics
+    commit=v3.0.12
+    subdir=audiobook
+    gradle=yes
+
+Build:3.2.0,178
+    commit=3.2.0
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.2.0.1,179
+    commit=3.2.0.1
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.2.0.2,180
+    commit=3.2.0.2
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.2.0.3,182
+    commit=3.2.0.3
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.3.3,188
+    disable=prepareOpus FAILED
+    commit=3.3.3
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.3.3.3,191
+    commit=3.3.3.3
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' -e '/maven.google.com/d' ../build.gradle build.gradle
+
+Build:3.3.3.4,192
+    commit=3.3.3.4
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' -e '/maven.google.com/d' ../build.gradle build.gradle
+
+Build:3.3.3.5,193
+    commit=3.3.3.5
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' -e '/maven.google.com/d' ../build.gradle build.gradle
+
+Build:3.3.3.6,194
+    commit=3.3.3.6
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' -e '/maven.google.com/d' ../build.gradle build.gradle
+
+Build:3.3.3.6.2,196
+    commit=3.3.3.6.2
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' -e '/maven.google.com/d' ../build.gradle build.gradle
+
+Build:3.3.4,197
+    commit=3.3.4
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' -e '/maven.google.com/d' ../build.gradle build.gradle
+
+Build:3.3.5,198
+    commit=v3.3.5
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' -e '/maven.google.com/d' ../build.gradle build.gradle
+
+Build:3.3.6.2,201
+    commit=v3.3.6.2
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.3.6.3,202
+    commit=v3.3.6.3
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.3.6.4,203
+    commit=v3.3.6.4
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.4.0,204
+    commit=v3.4.0
+    subdir=audiobook
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.4.1,205
+    disable=Older failing build
+    commit=v3.4.1
+    subdir=app
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.4.2.1,207
+    commit=v3.4.2.1
+    subdir=app
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.4.2.2,208
+    commit=v3.4.2.2
+    subdir=app
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.5.0,209
+    commit=v3.5.0
+    subdir=app
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.5.0.1,210
+    commit=v3.5.0.1
+    subdir=app
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.6.1,212
+    commit=v3.6.1
+    subdir=app
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Build:3.6.2,213
+    disable=ProGuard fails: there were 13 unresolved references to classes or interfaces
+    commit=v3.6.2
+    subdir=app
+    gradle=opensource
+    prebuild=sed -i -e '/fabric/d' -e '/crashlytics/,+2d' ../build.gradle build.gradle
+
+Auto Update Mode:Version v%v
 Update Check Mode:Tags ^v[0-9.]+?$
-Current Version:v2.9.0.2
-Current Version Code:140
+Current Version:3.6.2
+Current Version Code:213

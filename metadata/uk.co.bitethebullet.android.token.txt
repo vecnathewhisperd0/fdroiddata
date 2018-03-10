@@ -1,5 +1,5 @@
 Categories:System
-License:GPLv3
+License:GPL-3.0
 Web Site:https://github.com/markmcavoy/androidtoken/blob/HEAD/README.md
 Source Code:https://github.com/markmcavoy/androidtoken
 Issue Tracker:https://github.com/markmcavoy/androidtoken/issues
@@ -32,7 +32,11 @@ Build:2.10,5
     subdir=src
     target=android-16
 
+Build:2.11,6
+    commit=d61974f49399e1b38c5a3f3202cfadea55691eb3
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:2.10
-Current Version Code:5
+Current Version:2.11
+Current Version Code:6
