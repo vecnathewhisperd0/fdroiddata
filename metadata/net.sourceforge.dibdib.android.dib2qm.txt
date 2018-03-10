@@ -14,12 +14,12 @@ therefore does not depend on an overall centralized server.
 Repo Type:git
 Repo:https://gitlab.com/gxworks/Dib2Qm.git
 
-Build:0.17.12,1711
-    commit=23d02871cd01bb15717ce25624609bc724667ab8
+Build:0.17.20,1720
+    commit=8174036b444a0d8c27f00ba933b0ada524661644
     subdir=app
     gradle=yes
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.17.12
-Current Version Code:1711
+Current Version:0.17.20
+Current Version Code:1720
