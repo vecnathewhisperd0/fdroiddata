@@ -28,6 +28,6 @@ Build:1.0,3
     gradle=yes
 
 Auto Update Mode:Version %v
-Update Check Mode:Tags
+Update Check Mode:Static
 Current Version:1.0
 Current Version Code:3
