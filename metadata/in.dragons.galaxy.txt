@@ -1,0 +1,33 @@
+Categories:System
+License:GPL-2.0
+Author Name:Rahul Patel
+Author Email:whyorean@gmail.com
+Web Site:
+Source Code:https://github.com/whyorean/Galaxy
+Issue Tracker:https://github.com/whyorean/Galaxy/issues
+Changelog:https://github.com/whyorean/Galaxy/releases
+Donate:https://www.paypal.me/whyorean
+
+Auto Name:Galaxy
+Summary:Download apks from Google Play Store
+Description:
+Galaxy is a fork of '''Yalp Store''' by '''Sergey Yeriomin'''  It lets you
+download apps '''directly''' from Google Play Store '''as apk files'''. It can
+search for '''updates''' of installed apps and lets you '''search''' for other
+apps.
+
+'''Galaxy''' provides a '''Material UI'''  to Yalp Store.
+.
+
+Repo Type:git
+Repo:https://github.com/whyorean/Galaxy.git
+
+Build:1.0,3
+    commit=11372e0b46b91bd238f3a25d8fd48907a7e18ddb
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:1.0
+Current Version Code:3
