@@ -22,12 +22,12 @@ apps.
 Repo Type:git
 Repo:https://github.com/whyorean/Galaxy.git
 
-Build:1.0,3
-    commit=11372e0b46b91bd238f3a25d8fd48907a7e18ddb
+Build:1.0.4,4
+    commit=v1.0.4
     subdir=app
     gradle=yes
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:1.0
-Current Version Code:3
+Current Version Code:4
