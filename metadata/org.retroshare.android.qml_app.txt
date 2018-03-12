@@ -19,6 +19,7 @@ Repo:https://github.com/RetroShare/RetroShare
 
 Build:0.6.4,1
     commit=v0.6.4
+    sudo=apt-get install -y libx11-xcb1 tcl
     output=build/bin/QtApp-release-unsigned.apk
     rm=retroshare-gui,build_scripts/Windows
     target=android-18
@@ -31,7 +32,7 @@ Build:0.6.4,1
         ./android-prepare-toolchain.sh && \
         export Qt5_android=${NATIVE_LIBS_TOOLCHAIN_PATH}/Qt/${QT_VERSION}/android_armv7 && \
         $Qt5_android/bin/qmake CONFIG-=debug CONFIG+=release CONFIG+=no_retroshare_gui CONFIG+=no_retroshare_nogui CONFIG+=no_retroshare_plugins CONFIG+=retroshare_android_service CONFIG+=libresapilocalserver CONFIG+=no_libresapihttpserver CONFIG+=retroshare_qml_app CONFIG+=retroshare_android_notify_service && \
-        make -j $(grep "^processor" /proc/cpuinfo | wc -l) && \
+        make -j$(nproc) && \
         make install INSTALL_ROOT=build && \
         export BUNDLED_LIB_PATH="build/libs/armeabi-v7a" && \
         mkdir -p ${BUNDLED_LIB_PATH} && \
