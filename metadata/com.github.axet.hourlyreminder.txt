@@ -191,7 +191,62 @@ Build:3.0.68,320
     subdir=app
     gradle=yes
 
+Build:3.1.5,326
+    commit=hourlyreminder-3.1.5
+    subdir=app
+    gradle=yes
+
+Build:3.1.7,328
+    commit=hourlyreminder-3.1.7
+    subdir=app
+    gradle=yes
+
+Build:3.1.8,329
+    commit=hourlyreminder-3.1.8
+    subdir=app
+    gradle=yes
+
+Build:3.1.15,336
+    commit=hourlyreminder-3.1.15
+    subdir=app
+    gradle=yes
+
+Build:3.1.16,337
+    commit=hourlyreminder-3.1.16
+    subdir=app
+    gradle=yes
+
+Build:3.1.17,338
+    commit=hourlyreminder-3.1.17
+    subdir=app
+    gradle=yes
+
+Build:3.1.18,339
+    commit=hourlyreminder-3.1.18
+    subdir=app
+    gradle=yes
+
+Build:3.1.20,341
+    commit=hourlyreminder-3.1.20
+    subdir=app
+    gradle=yes
+
+Build:3.1.21,342
+    commit=hourlyreminder-3.1.21
+    subdir=app
+    gradle=yes
+
+Build:3.1.22,343
+    commit=hourlyreminder-3.1.22
+    subdir=app
+    gradle=yes
+
+Build:3.1.23,344
+    commit=hourlyreminder-3.1.23
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version hourlyreminder-%v
 Update Check Mode:Tags
-Current Version:3.0.68
-Current Version Code:320
+Current Version:3.1.23
+Current Version Code:344

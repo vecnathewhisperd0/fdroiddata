@@ -412,7 +412,34 @@ Build:0.15.9,138
     commit=v0.15.9
     submodules=yes
     gradle=yes
-    rm=libs/*.jar
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.10,139
+    commit=v0.15.10
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.11,140
+    commit=v0.15.11
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.15.12,141
+    commit=v0.15.12
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
     prebuild=touch signing.properties && \
         ./scripts/build-witness.sh && \
         rm -rf libs/gradle-witness/build
@@ -457,7 +484,34 @@ Build:0.16.5-unstable,204
     commit=v0.16.5-unstable
     submodules=yes
     gradle=yes
-    rm=libs/*.jar
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.6-unstable,205
+    commit=v0.16.6-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.7-unstable,206
+    commit=v0.16.7-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
+    prebuild=touch signing.properties && \
+        ./scripts/build-witness.sh && \
+        rm -rf libs/gradle-witness/build
+
+Build:0.16.8-unstable,207
+    commit=v0.16.8-unstable
+    submodules=yes
+    gradle=yes
+    rm=libs/*.jar,libs/org.greenrobot.eventbus/EventBusTest/libs/*.jar,libs/com.android.support.support-v4-preferencefragment/maven-repository/
     prebuild=touch signing.properties && \
         ./scripts/build-witness.sh && \
         rm -rf libs/gradle-witness/build
@@ -473,5 +527,5 @@ https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
 Archive Policy:12 versions
 Auto Update Mode:Version v%v
 Update Check Mode:Tags ^v[0-9\\.]+$
-Current Version:0.15.9
-Current Version Code:138
+Current Version:0.15.12
+Current Version Code:141

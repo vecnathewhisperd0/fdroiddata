@@ -32,7 +32,6 @@ com.funambol.androidsync
 com.google.android.apps.iosched
 com.google.android.maps.mytracks
 com.googlecode.android.wifi.tether
-com.googlecode.androidcells
 com.grapefruitopia.dashclock.k9
 com.hexairbot.hexmini
 com.josegd.monthcalwidget
@@ -83,7 +82,6 @@ org.abrantix.rockon.rockonnggl
 org.androhid
 org.androidsoft.opendata.remarkabletrees
 org.anhonesteffort.flock
-org.briarproject.briar.beta
 org.curiouscreature.android.shelves
 org.fairphone.launcher
 org.fdroid.superuser
@@ -102,13 +100,13 @@ org.mrpdaemon.android.encdroid
 org.opensatnav.android
 org.piwik.mobile
 org.swiftp
+org.thoughtcrime.securesms
 org.tvbrowser.tvbrowser
 player.efis.data
 ru.qrck.quitetaskmanager
 se.chalmers.doit
 se.peterbjorkman.android.trafikinfo
 se.sandos.android.delayed
-stericson.busybox
 stericson.busybox.donate
 tritop.android.androsens
 uk.co.turtle-player
