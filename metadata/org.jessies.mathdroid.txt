@@ -22,6 +22,7 @@ Build:2.9.2,292
     target=android-17
 
 Build:2.9.3,293
+    disable=rebuild pending
     commit=682
     prebuild=sed -i 's/android:minSdkVersion=\"3\"/android:minSdkVersion=\"4\"/g' AndroidManifest.xml && \
         cd src/org/jessies/ && \
