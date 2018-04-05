@@ -27,10 +27,10 @@ Repo Type:git
 Repo:https://github.com/Dariasteam/Cows-Revenge.git
 
 Build:1.0.1,1
-    commit=2fd1d0689525a90706ce8ef7286c8eef2d8e1044
+    commit=59e63febf49568dbf5174d69c282234932f265db
     sudo=apt-get install -y -t jessie-backports clang
     output=cows_revenge.apk
-    srclibs=Godot@50eb6bca8c278590c61afaa75ad32ddc2c49c8e2
+    srclibs=Godot@0b180a07321a7a05d50b38760618189aa86f07a5
     prebuild=mkdir cows_revenge && \
         bash -O extglob -c "mv !(cows_revenge) cows_revenge" && \
         cp -R $$Godot$$ godot
@@ -41,11 +41,11 @@ Build:1.0.1,1
         pushd platform/android/java/ && \
         gradle assembleRelease && \
         popd && \
-        export HOME=$PWD && \
         mkdir -p ../templates/ && \
         cp bin/android_release.apk ../templates && \
         cd ../cows_revenge && \
-        ../godot/bin/godot_server.server.tools.* -export Android ../cows_revenge.apk
+        ../godot/bin/godot_server.server.tools.64 -export Android cows_revenge.apk && \
+        mv cows_revenge.apk ../
 
 Auto Update Mode:None
 Update Check Mode:None
