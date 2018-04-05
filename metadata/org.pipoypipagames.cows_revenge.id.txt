@@ -26,7 +26,7 @@ Made with Godot Engine 2.1.5
 Repo Type:git
 Repo:https://github.com/Dariasteam/Cows-Revenge.git
 
-Build:1.0.1,1
+Build:1.0.5,1
     commit=59e63febf49568dbf5174d69c282234932f265db
     sudo=apt-get install -y -t jessie-backports clang
     output=cows_revenge.apk
