@@ -6,27 +6,12 @@ Source Code:https://github.com/Dariasteam/Cows-Revenge
 Issue Tracker:https://github.com/Dariasteam/Cows-Revenge/issues
 Changelog:https://github.com/Dariasteam/Cows-Revenge/releases
 
-Name:Cow's Revenge
-Summary:Indie Platformer in Pixel Art Game
-Description:
-You are a cow abducted and genetically improved by aliens which now have the
-opportunity to rebel against livestock industry by freeing the encaged hens and
-killing butchers. You used to be a regular cow raised as a dairy cow​, but you
-ain't that anymore. You have become better. You are... THE COWEST.
-
-The game supports both onscreen buttons / gamepad and also have versions for
-windows, linux and mac.
-
-All the sprites, sounds and music themes are licensed as Creative Commons
-Attribution-onCommercial-ShareAlike 4.0 International.
-
-Made with Godot Engine 2.1.5
-.
+Auto Name:Cow's Revenge
 
 Repo Type:git
 Repo:https://github.com/Dariasteam/Cows-Revenge.git
 
-Build:1.0.5,1
+Build:1.0.3,4
     commit=59e63febf49568dbf5174d69c282234932f265db
     sudo=apt-get install -y -t jessie-backports clang
     output=cows_revenge.apk
