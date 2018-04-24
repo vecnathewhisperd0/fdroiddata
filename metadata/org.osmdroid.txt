@@ -1,7 +1,7 @@
 AntiFeatures:UpstreamNonFree
 Categories:Navigation
-License:LGPL-3.0
-Web Site:
+License:Apache-2.0
+Web Site:http://osmdroid.github.io/osmdroid/
 Source Code:https://github.com/osmdroid/osmdroid
 Issue Tracker:https://github.com/osmdroid/osmdroid/issues
 
@@ -28,7 +28,15 @@ Build:4.1,15
     gradle=yes
     prebuild=sed -i -e 's/4.2-SNAPSHOT/4.2/g' -e 's/android.support:compatibility-v4/com.android.support:support-v4/g' build.gradle
 
-Auto Update Mode:None
-Update Check Mode:None
-Current Version:4.1
-Current Version Code:15
+Build:6.0.1,31
+    commit=osmdroid-parent-6.0.1
+    subdir=OpenStreetMapViewer
+    gradle=yes
+    prebuild=rm -r ../GoogleWrapperSample/ ../osmdroid-third-party/ && \
+        echo "afterEvaluate { tasks.packageRelease.setEnabled(true); tasks.assembleRelease.setEnabled(true); }" >> build.gradle && \
+        echo "android.buildTypes.release.signingConfig null" >> build.gradle
+
+Auto Update Mode:Version osmdroid-parent-%v
+Update Check Mode:Tags
+Current Version:6.0.1
+Current Version Code:31
