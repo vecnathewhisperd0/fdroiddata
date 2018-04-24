@@ -32,8 +32,8 @@ Build:6.0.1,31
     commit=osmdroid-parent-6.0.1
     subdir=OpenStreetMapViewer
     gradle=yes
-    prebuild=rm -r ../GoogleWrapperSample/ ../osmdroid-third-party/ && \
-        echo "afterEvaluate { tasks.packageRelease.setEnabled(true); tasks.assembleRelease.setEnabled(true); }" >> build.gradle && \
+    rm=GoogleWrapperSample,osmdroid-third-party
+    prebuild=echo "afterEvaluate { tasks.packageRelease.setEnabled(true); tasks.assembleRelease.setEnabled(true); }" >> build.gradle && \
         echo "android.buildTypes.release.signingConfig null" >> build.gradle
 
 Auto Update Mode:Version osmdroid-parent-%v
