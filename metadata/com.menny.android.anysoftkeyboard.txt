@@ -253,7 +253,7 @@ Build:1.9.1762,4337
     forceversion=yes
     rm=app/src/main/res/raw/words_*.dict
     prebuild=sed -i -e '/versionCode/d' -e '/versionName/aversionCode $$VERCODE$$' -e '/crashlytics/,$d' build.gradle && \
-         ../build.gradle
+        ../build.gradle
     scandelete=buildSrc,app/src/debug
     ndk=r14b
     preassemble=:makeEnglishDictionary
