@@ -4,6 +4,7 @@ Web Site:https://github.com/materialos/android-icon-pack
 Source Code:https://github.com/materialos/android-icon-pack
 Issue Tracker:https://github.com/materialos/android-icon-pack/issues
 
+Auto Name:MaterialOS
 Summary:Material Design icons for your homescreen
 Description:
 MaterialOS - Icons is an icon pack from a community of designers. It features
@@ -39,12 +40,12 @@ Repo Type:git
 Repo:https://github.com/materialos/android-icon-pack.git
 
 Build:1.0.1,7
-    commit=v1.0.1
+    commit=1cd349cd33678a20df7591dac94fa35efa78e255
     subdir=Project/MaterialOS/app
     patch=dependencies.patch
     gradle=yes
 
 Auto Update Mode:None
-Update Check Mode:None
-Current Version:1.0.1
-Current Version Code:7
+Update Check Mode:RepoManifest
+Current Version:2.1
+Current Version Code:10
