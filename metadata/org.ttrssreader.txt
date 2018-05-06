@@ -350,6 +350,12 @@ Build:1.91.1,1911
     gradle=fdroid
     prebuild=sed -i -e '/playCompile/d' build.gradle
 
+Build:1.93.3,1933
+    commit=860b3b58ce3d895e8d4ea18dd581f07fe48a0ab2
+    subdir=ttrssreader
+    gradle=fdroid
+    prebuild=sed -i -e '/playCompile/d' build.gradle
+
 Maintainer Notes:
 Upstream mistags often and retags, so never use tags directly.
 
