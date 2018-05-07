@@ -51,10 +51,11 @@ Build:2.1,10
     patch=dependencies-10.patch
     gradle=yes
     srclibs=IconRequest@591e61811a95b4acd991df7bce0edcfe21b6dcc8
-    prebuild=pushd $$IconRequest$$ && \
+    prebuild=mkdir libs/ && \
+        touch libs/IconRequest.aar
+    build=pushd $$IconRequest$$ && \
         gradle clean assembleRelease && \
         popd && \
-        mkdir libs/ && \
         cp $$IconRequest$$/library/build/outputs/aar/library-release.aar libs/IconRequest.aar
 
 Auto Update Mode:None
