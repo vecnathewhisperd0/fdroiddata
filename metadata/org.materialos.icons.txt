@@ -40,7 +40,7 @@ Repo Type:git
 Repo:https://github.com/materialos/android-icon-pack.git
 
 Build:1.0.1,7
-    commit=1cd349cd33678a20df7591dac94fa35efa78e255
+    commit=v1.0.1
     subdir=Project/MaterialOS/app
     patch=dependencies.patch
     gradle=yes
