@@ -45,6 +45,18 @@ Build:1.0.1,7
     patch=dependencies.patch
     gradle=yes
 
+Build:2.1,10
+    commit=f5a4cf2a90eb6952aa393ae9b276bfc1b084199c
+    subdir=app
+    patch=dependencies-10.patch
+    gradle=yes
+    srclibs=IconRequest@591e61811a95b4acd991df7bce0edcfe21b6dcc8
+    prebuild=pushd $$IconRequest$$ && \
+        gradle clean assembleRelease && \
+        popd && \
+        mkdir libs/ && \
+        cp $$IconRequest$$/library/build/outputs/aar/library-release.aar libs/IconRequest.aar
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:2.1
