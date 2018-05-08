@@ -1,0 +1,47 @@
+Categories:Science & Education
+License:Apache-2.0
+Web Site:https://lopespm.github.io/arxiv-papers-mobile
+Source Code:https://github.com/lopespm/arxiv-papers-mobile
+Issue Tracker:https://github.com/lopespm/arxiv-papers-mobile/issues
+Changelog:https://github.com/vector-im/riot-android/blob/HEAD/CHANGES.rst
+Bitcoin:1jokQaTneW1KCbCWsMdVtvPv6oSJ1H3tF
+
+Auto Name:ArXiv Papers
+Summary:Search, download and save arXiv scientific papers
+Description:
+Quickly search through a wealth of scientific papers offered by arXiv. Those you
+choose to download are kept at easy reach to consult and see.
+
+App built using react native.
+.
+
+Repo Type:git
+Repo:https://github.com/lopespm/arxiv-papers-mobile
+
+Build:1.0-no-google-play,9
+    commit=v1.0-no-google-play
+    subdir=android
+    sudo=curl -Lo node.tar.xz https://nodejs.org/dist/v8.9.4/node-v8.9.4-linux-x64.tar.xz && \
+        echo "68b94aac38cd5d87ab79c5b38306e34a20575f31a3ea788d117c20fffcca3370 node.tar.xz" | sha256sum -c - && \
+        tar xJf node.tar.xz && \
+        cp -a node-v8.9.4-linux-x64/. /usr/local/ && \
+        npm install -g react-native-cli
+    gradle=yes
+    output=app/build/outputs/apk/release/app-release-unsigned.apk
+    prebuild=npm install && \
+        rm ../node_modules/node-notifier/vendor/snoreToast/SnoreToast.exe && \
+        rm ../node_modules/node-notifier/vendor/notifu/notifu64.exe && \
+        rm ../node_modules/node-notifier/vendor/notifu/notifu.exe && \
+        rm ../node_modules/node-notifier/vendor/terminal-notifier.app/Contents/MacOS/terminal-notifier && \
+        rm ../node_modules/react-native/local-cli/templates/HelloWorld/android/build.gradle && \
+        rm ../node_modules/flow-bin/flow-linux64-v0.66.0/flow && \
+        rm ../node_modules/flow-bin/flow-osx-v0.66.0/flow && \
+        rm ../node_modules/flow-bin/flow-win64-v0.66.0/flow.exe && \
+        rm ../node_modules/dateformat/.vs/node-dateformat/v15/.suo && \
+        rm ../node_modules/clipboardy/fallbacks/windows/clipboard_i686.exe && \
+        rm ../node_modules/clipboardy/fallbacks/windows/clipboard_x86_64.exe && \
+        rm ../node_modules/fsevents/build/Release/.node
+    scanignore=android/build.gradle,node_modules/clipboardy/fallbacks/linux/xsel,node_modules/react-native/local-cli/server/util/external/xsel
+
+Auto Update Mode:None
+Update Check Mode:Tags
