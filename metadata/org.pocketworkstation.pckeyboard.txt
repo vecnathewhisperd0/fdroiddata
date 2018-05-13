@@ -101,6 +101,7 @@ Build:v1.39.1,1039001
     buildjni=yes
 
 Build:v1.39.3,1039003
+    disable=for rebuild
     commit=1.39.3
     subdir=java
     srclibs=1:VoiceIME@5763e36eab31
