@@ -21,8 +21,9 @@ Build:1.0.0,10000
     commit=v1.0
     subdir=platforms/android/app
     gradle=yes
+    rm=node_modules,platforms/android/CordovaLib/build/intermediates,platforms/android/app/build/intermediates,platforms/browser,plugins
     prebuild=sed -i -e '/gradleVersion/d' build.gradle
-    scandelete=node_modules,plugins,platforms
+    scandelete=platforms
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
