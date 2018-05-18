@@ -21,6 +21,7 @@ Build:1.0.0,10000
     commit=v1.0
     subdir=platforms/android/app
     gradle=yes
+    prebuild=sed -i -e '/gradleVersion/d' build.gradle
     scandelete=node_modules,plugins,platforms
 
 Auto Update Mode:Version v%v
