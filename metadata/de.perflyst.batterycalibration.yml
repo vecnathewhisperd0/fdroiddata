@@ -1,0 +1,23 @@
+Categories:
+  - System
+License: MIT
+SourceCode: https://github.com/Perflyst/BatteryCalibration
+IssueTracker: https://github.com/Perflyst/BatteryCalibration/issues
+
+AutoName: BatteryCalibration
+
+RepoType: git
+Repo: https://github.com/Perflyst/BatteryCalibration
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: 57ff06bd980fc5538651577b2aa4b362f207ed5b
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
