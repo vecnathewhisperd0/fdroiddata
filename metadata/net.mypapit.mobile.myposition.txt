@@ -16,31 +16,25 @@ Repo:https://github.com/gjedeer/mylocation
 
 Build:1.2.1,8
     commit=1928c284570bdee12ce3a4b7f44a7118e20a30b4
-    target=android-23
 
 Build:1.2.2,9
     commit=9eeb159ffcbc337e16335ea269a0e4f65c71e4b0
-    target=android-23
 
 Build:1.2.3,10
     commit=1.2.3
-    target=android-23
 
 Build:1.2.4,11
     commit=1.2.4
-    target=android-23
 
 Build:1.2.5,12
     commit=1.2.5
     subdir=app
     gradle=yes
-    target=android-25
 
 Build:1.3.0,13
     commit=1.3.0
     subdir=app
     gradle=yes
-    target=android-25
 
 Auto Update Mode:None
 Update Check Mode:Tags
