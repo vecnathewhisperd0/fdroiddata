@@ -34,7 +34,7 @@ Build:1.2.5,12
     commit=1.2.5
     subdir=app
     gradle=yes
-    target=android-23
+    target=android-25
 
 Build:1.3.0,13
     commit=1.3.0
