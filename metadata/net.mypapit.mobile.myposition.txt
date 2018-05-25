@@ -36,6 +36,13 @@ Build:1.2.5,12
     gradle=yes
     target=android-25
 
+Build:1.3.0,13
+    commit=1.3.0
+    subdir=app
+    gradle=yes
+    target=android-25
+
+
 Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:1.3.0
