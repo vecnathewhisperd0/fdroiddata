@@ -42,6 +42,11 @@ Build:3.2.0,20
     subdir=nusic-apk
     gradle=yes
 
+Build:3.3.0,21
+    commit=v.3.3.0
+    subdir=nusic-apk
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:HTTP
 Update Check Data:https://raw.githubusercontent.com/schnatterer/nusic/master/gradle.properties|versionCode=(.*)|.|version=(.*)
