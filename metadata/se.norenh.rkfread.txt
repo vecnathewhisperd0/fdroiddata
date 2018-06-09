@@ -36,6 +36,7 @@ Build:1.2,3
 Build:1.3,4
     commit=1.3
     subdir=RKFRead
+    gradle=yes
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
