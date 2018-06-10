@@ -1,0 +1,26 @@
+Categories:Reading
+License:GPL-3.0-or-later
+Author Name:Paul Hill
+Web Site:https://github.com/zikalify/StoicReading
+Source Code:https://github.com/zikalify/StoicReading
+Issue Tracker:https://github.com/zikalify/StoicReading/issues
+
+Auto Name:Stoic Reading
+Summary:Consolidation of many Stoic texts
+Description:
+Texts from Aurelius, Epictetus, Hierocles, and Rufus are available with plans to
+add Seneca's letters and may add Juvenal's and Persius' Satires.
+.
+
+Repo Type:git
+Repo:https://github.com/zikalify/StoicReading
+
+Build:0.7.1,4
+    commit=0.7.1
+    gradle=yes
+    output=app/build/outputs/apk/release/app-release-unsigned.apk
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags ^[0-9.]+$
+Current Version:0.7.1
+Current Version Code:4
