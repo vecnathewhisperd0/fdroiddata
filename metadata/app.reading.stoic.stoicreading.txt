@@ -18,8 +18,8 @@ Repo:https://github.com/zikalify/StoicReading
 
 Build:0.7.1,4
     commit=0.7.1
+    subdir=app
     gradle=yes
-    output=app/build/outputs/apk/release/app-release-unsigned.apk
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]+$
