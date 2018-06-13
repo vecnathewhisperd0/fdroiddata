@@ -9,7 +9,7 @@ Donate:http://igisw-bilancio.sourceforge.net/donation.html
 Auto Name:OpenMoneyBox
 
 Repo Type:git
-Repo:git@gitlab.com:igi0/openmoneybox.git
+Repo:https://gitlab.com/igi0/openmoneybox.git
 
 Build:3.1.2.5,17
     commit=4
