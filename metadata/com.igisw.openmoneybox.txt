@@ -17,7 +17,7 @@ Build:3.1.2.5,17
     gradle=yes
 
 Build:3.2.1.1,18
-    commit=16243f87
+    commit=v3.2.1.1
     subdir=android/API24
     gradle=yes
 
