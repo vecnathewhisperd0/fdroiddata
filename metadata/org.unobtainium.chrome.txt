@@ -1,0 +1,59 @@
+AntiFeatures:Ads,Tracking,UpstreamNonFree
+Categories:Internet
+License:BSD-3-Clause
+Web Site:https://gitlab.com/thermatk/Unobtainium
+Source Code:https://gitlab.com/thermatk/Unobtainium
+Issue Tracker:https://gitlab.com/thermatk/Unobtainium/issues
+LiberapayID:27901
+
+Name:Unobtainium
+Summary:FOSS Chromium and WebView
+Description:
+Unobtainium is a libre fork of Chromium. 
+Do not expect it to be ungoogled, it's unblobbed!
+
+'''Anti-Features'''
+
+* Ads: May show you featured websites
+* Tracking: While most of it died with blobs, some tracking may remain inside
+* UpstreamNonFree: This fork cleans it from GMS and other blobs
+
+.
+
+Repo Type:git
+Repo:https://gitlab.com/thermatk/Unobtainium.git
+
+Build:67.0.3396.87-arm64-sdk21,67023
+    commit=67.0.3396.87_liberated
+    timeout=32400
+    sudo=echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections && \
+        build/install-build-deps-android.sh && \
+        wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add - && \
+        echo "deb http://apt.llvm.org/jessie/ llvm-toolchain-jessie main" >> /etc/apt/sources.list && \
+        apt-get update && \
+        apt-get install && \
+        apt-get install clang-7 clang-tools-7 libllvm7 lldb-7 llvm-7 llvm-7-runtime clang-format-7 python-clang-7 lld-7
+    output=out/Release_arm64/gen/chrome/android/chrome_modern_public_apk/chrome_modern_public_apk_unsigned.apk
+    forceversion=yes
+    prebuild=export NDK=$$NDK$$ && \
+        export ANDROID_HOME=$$SDK$$ && \
+        ./prebuild.sh
+    build=./build.sh 67023 arm64 chrome_modern_public_apk
+    ndk=r16b
+    novcheck=yes
+
+Maintainer Notes:
+
+Version codes system:
+MainVersion+FdroidAttemptWithMainVersion+Arch+Target
+where 
+FdroidAttemptWithMainVersion: starts from 0
+Arch: arm=1, arm64=2, x86=3, x86_64=4
+Target: chrome_public_apk=1, system_webview_apk=2, chrome_modern_public_apk=3, monochrome_public_apk=4
+.
+
+Archive Policy:0 versions
+Auto Update Mode:None
+Update Check Mode:None
+Current Version:67.0.3396.87
+Current Version Code:67023
