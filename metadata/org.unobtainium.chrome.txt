@@ -31,7 +31,6 @@ Build:67.0.3396.87-arm64-sdk21,67023
         wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add - && \
         echo "deb http://apt.llvm.org/jessie/ llvm-toolchain-jessie main" >> /etc/apt/sources.list && \
         apt-get update && \
-        apt-get install && \
         apt-get install clang-7 clang-tools-7 libllvm7 lldb-7 llvm-7 llvm-7-runtime clang-format-7 python-clang-7 lld-7
     output=out/Release_arm64/gen/chrome/android/chrome_modern_public_apk/chrome_modern_public_apk_unsigned.apk
     forceversion=yes
