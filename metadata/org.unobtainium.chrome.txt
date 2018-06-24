@@ -28,7 +28,7 @@ Build:67.0.3396.87-arm64-sdk21,67023
     timeout=32400
     sudo=echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections && \
         build/install-build-deps-android.sh && \
-        wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add - && \
+        wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|apt-key add - && \
         echo "deb http://apt.llvm.org/jessie/ llvm-toolchain-jessie main" >> /etc/apt/sources.list && \
         apt-get update && \
         apt-get install clang-7 clang-tools-7 libllvm7 lldb-7 llvm-7 llvm-7-runtime clang-format-7 python-clang-7 lld-7
