@@ -27,7 +27,7 @@ Build:67.0.3396.87-arm64-sdk21,67023
     commit=67.0.3396.87_liberated
     timeout=32400
     sudo=echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections && \
-        build/install-build-deps-android.sh && \
+        build/org.unobtainium.chrome/build/install-build-deps-android.sh && \
         wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|apt-key add - && \
         echo "deb http://apt.llvm.org/jessie/ llvm-toolchain-jessie main" >> /etc/apt/sources.list && \
         apt-get update && \
