@@ -46,7 +46,7 @@ Build:67.0.3396.87-arm64-sdk21,67023
     prebuild=export NDK=$$NDK$$ && \
         export ANDROID_HOME=$$SDK$$ && \
         ./prebuild.sh
-    scanignore=third_party/android_sdk/public/extras/android/m2repository/com/android,third_party/android_sdk/public/extras/android/support,third_party/android_tools/sdk/extras/android/m2repository/com/android/support,third_party/android_tools/sdk/extras/android/support,third_party/android_tools/sdk/extras/android/m2repository/android/arch,third_party/android_deps/repository
+    scanignore=third_party/android_sdk/public/extras/android/m2repository/com/android,third_party/android_sdk/public/extras/android/support,third_party/android_tools/sdk/extras/android/m2repository/com/android/support,third_party/android_tools/sdk/extras/android/support,third_party/android_tools/sdk/extras/android/m2repository/android/arch,third_party/android_deps/repository,third_party/node
     build=./build.sh 67023 arm64 chrome_modern_public_apk
     ndk=r16b
     novcheck=yes
