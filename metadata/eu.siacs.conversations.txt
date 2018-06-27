@@ -1030,7 +1030,7 @@ Build:2.2.3,274
 
 Build:2.2.4,276
     commit=2.2.4
-    gradle=free
+    gradle=freeCompat
     prebuild=sed -i -e '/playstoreCompile/d' -e '/play-services-gcm/d' build.gradle
 
 Auto Update Mode:Version %v
