@@ -8,7 +8,8 @@ Name:Radiocells.org UnifiedNlp Backend
 Auto Name:org.openbmap.unifiedNlpProvider
 Summary:UnifiedNlp location provider (Radiocells.org)
 Description:
-[[com.google.android.gms]] backend that uses [https://radiocells.org Radiocells.org] database for geolocation.
+[[com.google.android.gms]] wifi/cell geolocation backend that uses
+[https://radiocells.org Radiocells.org] database for geolocation.
 
 Location can be retrieved either online or completely offline if a local
 database is already present.
