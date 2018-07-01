@@ -28,10 +28,12 @@ Build:67.0.3396.87-arm64-sdk21,67023
     timeout=32400
     sudo=echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections && \
         build/org.unobtainium.chrome/build/install-build-deps-android.sh && \
+        curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - && \
         wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|apt-key add - && \
         echo "deb http://apt.llvm.org/jessie/ llvm-toolchain-jessie main" >> /etc/apt/sources.list && \
         apt-get update && \
         apt-get -y install clang-7 clang-tools-7 libllvm7 llvm-7 llvm-7-runtime clang-format-7 lld-7 && \
+        apt-get install -y nodejs && \
         update-alternatives --install /usr/bin/clang clang /usr/bin/clang-7 1000 && \
         update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-7 1000 && \
         update-alternatives --install /usr/bin/clang-cl clang-cl /usr/bin/clang-cl-7 1000 && \
@@ -46,7 +48,7 @@ Build:67.0.3396.87-arm64-sdk21,67023
     prebuild=export NDK=$$NDK$$ && \
         export ANDROID_HOME=$$SDK$$ && \
         ./prebuild.sh
-    scanignore=third_party/android_sdk/public/extras/android/m2repository/com/android,third_party/android_sdk/public/extras/android/support,third_party/android_tools/sdk/extras/android/m2repository/com/android/support,third_party/android_tools/sdk/extras/android/support,third_party/android_tools/sdk/extras/android/m2repository/android/arch,third_party/android_deps/repository,third_party/node
+    scanignore=third_party/android_tools/sdk/extras/android,third_party/android_deps/repository,third_party/node,*.png,*.ttf
     build=./build.sh 67023 arm64 chrome_modern_public_apk
     ndk=r16b
     novcheck=yes
