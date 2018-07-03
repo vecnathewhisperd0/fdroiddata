@@ -48,7 +48,7 @@ Build:67.0.3396.87-arm64-sdk21,67023
     prebuild=export NDK=$$NDK$$ && \
         export ANDROID_HOME=$$SDK$$ && \
         ./prebuild.sh
-    scanignore=third_party/android_tools/sdk/extras/android,third_party/android_deps/repository,third_party/node,*.png,*.ttf
+    scanignore=third_party/android_tools/sdk/extras/android,third_party/android_deps/repository,third_party/node
     build=./build.sh 67023 arm64 chrome_modern_public_apk
     ndk=r16b
     novcheck=yes
