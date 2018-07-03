@@ -42,13 +42,15 @@ Build:67.0.3396.87-arm64-sdk21,67023
         update-alternatives --install /usr/bin/lld-link lld-link /usr/bin/lld-link-7 1000 && \
         update-alternatives --install /usr/bin/llvm-ar llvm-ar /usr/bin/llvm-ar-7 1000 && \
         update-alternatives --install /usr/bin/llvm-symbolizer llvm-symbolizer /usr/bin/llvm-symbolizer-7 1000 && \
-        update-alternatives --install /usr/bin/sancov sancov /usr/bin/sancov-7 1000
+        update-alternatives --install /usr/bin/sancov sancov /usr/bin/sancov-7 1000 && \
+        wget https://github.com/ninja-build/ninja/releases/download/v1.8.2/ninja-linux.zip && \
+        unzip ninja-linux.zip -d /usr/bin/
     output=out/Release_arm64/gen/chrome/android/chrome_modern_public_apk/chrome_modern_public_apk_unsigned.apk
     forceversion=yes
     prebuild=export NDK=$$NDK$$ && \
         export ANDROID_HOME=$$SDK$$ && \
         ./prebuild.sh
-    scanignore=third_party/android_tools/sdk/extras/android,third_party/android_deps/repository,third_party/node
+    scanignore=third_party/node
     build=./build.sh 67023 arm64 chrome_modern_public_apk
     ndk=r16b
     novcheck=yes
