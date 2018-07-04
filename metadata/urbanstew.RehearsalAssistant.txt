@@ -24,6 +24,9 @@ inspiration.
 Also works great for shopping lists and other kinds of reminders.
 .
 
+Repo Type:git-svn
+Repo:https://svn.code.sf.net/p/rehearsalassist/code/
+
 Build:0.8.2,22
     commit=90
     prebuild=mkdir -p gen/urbanstew/RehearsalAssistant && \
