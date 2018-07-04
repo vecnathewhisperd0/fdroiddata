@@ -36,8 +36,9 @@ Build:1.0.0,1000
 
 Build:1.0.1,1001
     commit=v1.0.1
+    gradle=yes
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.0.1
-Current Version Code:1001
+Current Version:0.0.8
+Current Version Code:800
