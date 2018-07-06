@@ -14,6 +14,7 @@ apply routes based on the active SSID, to ensure the route is only applied in
 the correct Wifi network. If it is set, the routes are applied during the
 Android boot.
 .
+
 Requires Root:Yes
 
 Repo Type:git
