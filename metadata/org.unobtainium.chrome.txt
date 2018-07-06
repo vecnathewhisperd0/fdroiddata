@@ -46,7 +46,7 @@ Build:67.0.3396.87-arm64-sdk21,67023
         wget https://github.com/ninja-build/ninja/releases/download/v1.8.2/ninja-linux.zip && \
         echo "d2fea9ff33b3ef353161ed906f260d565ca55b8ca0568fa07b1d2cab90a84a07 ninja-linux.zip" | sha256sum -c && \
         unzip ninja-linux.zip -d /usr/bin/ && \
-        $ANDROID_HOME/tools/bin/sdkmanager --update
+        /home/vagrant/android-sdk/tools/bin/sdkmanager --update
     output=out/Release_arm64/gen/chrome/android/chrome_modern_public_apk/chrome_modern_public_apk_unsigned.apk
     forceversion=yes
     prebuild=export NDK=$$NDK$$ && \
