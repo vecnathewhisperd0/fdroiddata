@@ -1,8 +1,8 @@
 Categories:Multimedia
 License:GPL-3.0-only
 Web Site:
-Source Code:https://github.com/herverenault/DirectDictaphone
-Issue Tracker:https://github.com/herverenault/DirectDictaphone/issues
+Source Code:
+Issue Tracker:
 
 Auto Name:Direct Dictaphone
 Summary:Record short audio notes
@@ -25,9 +25,6 @@ No network connection needed: notes are stored on the SD card. You can listen to
 notes later: press the "Menu" key in Android 2, or click on "Listen" in Android
 4 action bar. Then click on a note.
 .
-
-Repo Type:git
-Repo:https://github.com/herverenault/DirectDictaphone
 
 Build:1.8,14
     commit=v1.8
