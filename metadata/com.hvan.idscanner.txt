@@ -1,0 +1,42 @@
+# F-Droid metadata template
+# 
+# See http://f-droid.org/manual for more details
+# 
+# Fields that are commented out are optional
+# 
+# Single-line fields start right after the colon (without whitespace).
+Categories:Graphics
+License:GPL-3.0-only
+Web Site:https://github.com/hieu-van/vn-id-scanner
+Source Code:https://github.com/hieu-van/vn-id-scanner
+Issue Tracker:https://github.com/hieu-van/vn-id-scanner/issues
+
+# Changelog:(web link)
+# Donate:(web link)
+# FlattrID:(number)
+# LiberapayID:(number)
+# Bitcoin:(bitcoin address)
+Summary:Vietnam ID Scanner
+Description:
+Scan for and decode data encoded in QR codes which are commonly found on
+government-issued IDs in Vietnam, such as Health Insurance, Identity Card, etc.
+.
+
+Repo Type:git
+Repo:https://github.com/hieu-van/vn-id-scanner
+
+# At least one for new apps
+Build:0.3-alpha,3
+    commit=55f9dd7
+
+# [...]
+# 
+# For a complete list of possible flags, see the manual
+# Maintainer Notes:
+# Here go the notes to take into account for future updates, builds, etc.
+# Will be published in the wiki if present.
+# .
+Auto Update Mode:None
+Update Check Mode:None
+Current Version:0.3-alpha
+Current Version Code:3
