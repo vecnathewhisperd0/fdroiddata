@@ -28,7 +28,7 @@ Build:67.0.3396.87-arm64-sdk21,67023
     timeout=32400
     sudo=echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections && \
         build/org.unobtainium.chrome/build/install-build-deps-android.sh && \
-        curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - && \
+        curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
         wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|apt-key add - && \
         echo "deb http://apt.llvm.org/jessie/ llvm-toolchain-jessie main" >> /etc/apt/sources.list && \
         apt-get update && \
@@ -46,7 +46,11 @@ Build:67.0.3396.87-arm64-sdk21,67023
         wget https://github.com/ninja-build/ninja/releases/download/v1.8.2/ninja-linux.zip && \
         echo "d2fea9ff33b3ef353161ed906f260d565ca55b8ca0568fa07b1d2cab90a84a07 ninja-linux.zip" | sha256sum -c && \
         unzip ninja-linux.zip -d /usr/bin/ && \
-        /home/vagrant/android-sdk/tools/bin/sdkmanager --update
+        /home/vagrant/android-sdk/tools/bin/sdkmanager --update && \
+        apt-get install -y autoconf gawk && \
+        echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | tee /etc/apt/sources.list.d/bazel.list && \
+        curl https://bazel.build/bazel-release.pub.gpg | apt-key add - && \
+        apt-get update && apt-get -y install bazel
     output=out/Release_arm64/gen/chrome/android/chrome_modern_public_apk/chrome_modern_public_apk_unsigned.apk
     forceversion=yes
     prebuild=export NDK=$$NDK$$ && \
