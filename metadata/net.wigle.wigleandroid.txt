@@ -96,7 +96,7 @@ Build:2.10,210
     prebuild=sed -i -e '/support-v4/acompile "org.slf4j:slf4j-android:1.7.19"' -e '/slf4j-android-1.5.8.jar/d' -e 's/net.wigle.wigleandroid.foss/net.wigle.wigleandroid/g' build.gradle
 
 Build:2.29,229
-    commit=4d9b02f6f516818458f88fe153613689495e204d
+    commit=a1ca07b8531e7fef56c7a613a5e348403a8cc86e
     subdir=wiglewifiwardriving
     gradle=yes
 
