@@ -50,7 +50,8 @@ Build:67.0.3396.87-arm64-sdk21,67023
         apt-get install -y autoconf gawk && \
         echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | tee /etc/apt/sources.list.d/bazel.list && \
         curl https://bazel.build/bazel-release.pub.gpg | apt-key add - && \
-        apt-get update && apt-get -y install bazel
+        apt-get update && \
+        apt-get -y install bazel
     output=out/Release_arm64/gen/chrome/android/chrome_modern_public_apk/chrome_modern_public_apk_unsigned.apk
     forceversion=yes
     prebuild=export NDK=$$NDK$$ && \
