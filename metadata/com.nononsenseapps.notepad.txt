@@ -10,6 +10,21 @@ Auto Name:Notes
 Summary:Notepad and todo app with sync support
 Description:
 Notepad and todo list app with a modern look.
+
+'''Features:'''
+
+* Dash Clock support
+* Notifications (repeatable)
+* Location reminders
+* Language selection
+* Widget, lockscreen-support, resizeable and configurable.
+* Automatic synchronization with Google Tasks
+* Ability to set passwords on notes
+* Move tasks between different lists
+* Drag to reorder your tasks
+* Integration with Android Agenda Widget
+* Search
+* Themes: light and dark available
 .
 
 Repo Type:git
