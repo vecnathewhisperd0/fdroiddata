@@ -27,6 +27,7 @@ Build:1.16-7-sf,7
     gradle=yes
     forceversion=yes
 
+Archive Policy:0 versions
 Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.16-7-sf
