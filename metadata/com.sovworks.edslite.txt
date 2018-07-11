@@ -1,0 +1,31 @@
+AntiFeatures:NonFreeAdd
+Categories:System
+License:GPL-2.0-or-later
+Web Site:https://sovworks.com/eds/
+Source Code:https://github.com/sovworks/edslite
+Issue Tracker:https://github.com/sovworks/edslite/issues
+Donate:https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=pC9e8lKbDfQ1U0F4ghIWmj9bIK2fbmYKFCxrqEENCP9EteFuAeXgNqqoMgu&dispatch=5885d80a13c0db1f8e263663d3faee8db8175432b4df92754f4b4adb5a123d61&rapidsState=Donation__DonationFlow___StateDonationBilling&rapidsStateSignature=5b48c7511fce994c3ec7be8c6cce67dc519f9241
+
+Auto Name:EDS lite
+Summary:A filemanager to open LUNK and Veracrypt container
+Description:
+EDS (Encrypted Data Store) is a virtual disk encryption software for Android
+which allows you to store your files in an encrypted container. EDS Lite is an
+open source edition of EDS. Visit EDS web site to learn about EDS features and
+capabilities.
+.
+
+Repo Type:git
+Repo:https://github.com/sovworks/edslite.git
+
+Build:2.0.0.224,224
+    commit=release-lite-224
+    subdir=app
+    output=build/outputs/apk/liteLicCheckNoneNoinetNofsml/release/*.apk
+    build=gradle assembleLite
+    ndk=r13b
+
+Auto Update Mode:Version release-lite-%c
+Update Check Mode:Tags
+Current Version:2.0.0.224
+Current Version Code:224
