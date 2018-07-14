@@ -1,0 +1,32 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+SourceCode: https://github.com/kriztan/Pix-Art-Messenger
+IssueTracker: https://github.com/kriztan/Pix-Art-Messenger/issues
+
+RepoType: git
+Repo: https://github.com/kriztan/Pix-Art-Messenger
+
+Builds:
+  - versionName: 2.0.2
+    versionCode: 234
+    commit: 2.0.2
+    gradle:
+      - yes
+
+  - versionName: 2.1.0 (beta 2018-06-30)
+    versionCode: 235
+    commit: 2.1.0.1
+    gradle:
+      - yes
+
+  - versionName: 2.1.0 (beta 2018-07-09)
+    versionCode: 236
+    commit: 2.1.0.2
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %
+UpdateCheckMode: Tags
+CurrentVersion: 2.0.2
+CurrentVersionCode: 234
