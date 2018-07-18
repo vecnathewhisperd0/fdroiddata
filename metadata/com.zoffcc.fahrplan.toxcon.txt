@@ -10,7 +10,7 @@ Repo Type:git
 Repo:https://github.com/zoff99/CampFahrplan
 
 Build:1.0.0,10000
-    commit=d1ad21e0d47fbb2fed658633163291e1b7d30544
+    commit=046d17c6e4e3c9b467f5865e09de701c0f37f041
     subdir=app
     gradle=yes
 
