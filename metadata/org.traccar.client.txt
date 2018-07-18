@@ -1,8 +1,8 @@
 Categories:Navigation
 License:Apache-2.0
 Web Site:https://www.traccar.org
-Source Code:https://github.com/tananaev/traccar-client-android
-Issue Tracker:https://github.com/tananaev/traccar-client-android/issues
+Source Code:https://github.com/traccar/traccar-client-android
+Issue Tracker:https://github.com/traccar/traccar-client-android/issues
 Donate:http://www.traccar.org/donate.jsp
 
 Auto Name:Traccar Client
@@ -13,7 +13,7 @@ it out and the results can be viewed in a browser.
 .
 
 Repo Type:git
-Repo:https://github.com/tananaev/traccar-client-android.git
+Repo:https://github.com/traccar/traccar-client-android.git
 
 Build:2.7,14
     commit=10745c
@@ -144,7 +144,13 @@ Build:5.8,45
     gradle=regular
     prebuild=sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' ../build.gradle build.gradle
 
+Build:5.10,47
+    commit=v5.10
+    subdir=app
+    gradle=regular
+    prebuild=sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/fabric/d' -e '/crashlytics/d' ../build.gradle build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:5.8
-Current Version Code:45
+Current Version:5.10
+Current Version Code:47

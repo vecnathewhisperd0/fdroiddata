@@ -1,5 +1,5 @@
 Categories:System,Multimedia,Internet
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://secuso.org/pfa
 Source Code:https://github.com/SecUSo/privacy-friendly-netmonitor
 Issue Tracker:https://github.com/SecUSo/privacy-friendly-netmonitor/issues
@@ -51,7 +51,12 @@ Build:1.2,7
     subdir=app
     gradle=yes
 
+Build:2.0,8
+    commit=v2.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.2
-Current Version Code:7
+Current Version:2.0
+Current Version Code:8

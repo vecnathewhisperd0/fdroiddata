@@ -435,7 +435,52 @@ Build:3.3.2,115
     subdir=app
     gradle=yes
 
+Build:3.4.0,116
+    commit=3.4.0
+    subdir=app
+    gradle=yes
+
+Build:3.4.1,117
+    commit=3.4.1
+    subdir=app
+    gradle=yes
+
+Build:3.4.2,118
+    commit=3.4.2
+    subdir=app
+    gradle=yes
+
+Build:4.0.0,119
+    commit=4.0.0
+    subdir=app
+    gradle=yes
+
+Build:4.0.3,122
+    commit=4.0.3
+    subdir=app
+    gradle=yes
+
+Build:4.0.4,123
+    commit=4.0.4
+    subdir=app
+    gradle=yes
+
+Build:4.1.0,124
+    commit=4.1.0
+    subdir=app
+    gradle=yes
+
+Build:4.1.1,125
+    commit=4.1.1
+    subdir=app
+    gradle=yes
+
+Build:4.1.2,126
+    commit=4.1.2
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:3.3.2
-Current Version Code:115
+Current Version:4.1.2
+Current Version Code:126

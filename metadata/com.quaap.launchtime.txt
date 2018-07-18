@@ -1,5 +1,5 @@
 Categories:System
-License:GPL-3.0+
+License:GPL-3.0-or-later
 Web Site:http://quaap.com/D/LaunchTime
 Source Code:https://github.com/quaap/LaunchTime
 Issue Tracker:https://github.com/quaap/LaunchTime/issues
@@ -93,7 +93,22 @@ Build:0.7.4,74
     subdir=app
     gradle=yes
 
+Build:0.7.5,75
+    commit=v0.7.5
+    subdir=app
+    gradle=yes
+
+Build:0.7.6,76
+    commit=v0.7.6
+    subdir=app
+    gradle=yes
+
+Build:0.8.0,801
+    commit=v0.8.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags ^v[0-9\.]+$
-Current Version:0.7.4
-Current Version Code:74
+Current Version:0.8.0
+Current Version Code:801

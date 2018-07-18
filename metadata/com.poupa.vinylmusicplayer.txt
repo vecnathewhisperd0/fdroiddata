@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:GPL-3.0
+License:GPL-3.0-only
 Author Name:Adrien Poupa
 Author Email:adrien@poupa.fr
 Web Site:https://adrien.poupa.fr
@@ -32,7 +32,17 @@ Build:0.16.4.4,150
     subdir=app
     gradle=yes
 
+Build:0.16.5.2,153
+    commit=0.16.5.2
+    subdir=app
+    gradle=yes
+
+Build:0.17.0,155
+    commit=0.17.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.16.4.4
-Current Version Code:150
+Current Version:0.17.0
+Current Version Code:155

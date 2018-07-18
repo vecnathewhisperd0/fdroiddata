@@ -104,7 +104,22 @@ Build:2.4.5,245
     subdir=tourcount
     gradle=yes
 
+Build:2.4.6,246
+    commit=2.4.6
+    subdir=tourcount
+    gradle=yes
+
+Build:3.0.1,301
+    commit=3.0.1
+    subdir=tourcount
+    gradle=yes
+
+Build:3.0.3,303
+    commit=3.0.3
+    subdir=tourcount
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.4.5
-Current Version Code:245
+Current Version:3.0.3
+Current Version Code:303

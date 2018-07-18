@@ -1,5 +1,5 @@
 Categories:Writing
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://gitlab.com/Varlorg/uNote
 Source Code:https://gitlab.com/Varlorg/uNote/tree/HEAD
 Issue Tracker:https://gitlab.com/Varlorg/uNote/issues
@@ -93,7 +93,22 @@ Build:1.4.1,15
     subdir=app
     gradle=yes
 
+Build:1.4.2,16
+    commit=v1.4.2
+    subdir=app
+    gradle=yes
+
+Build:1.4.3,17
+    commit=v1.4.3
+    subdir=app
+    gradle=yes
+
+Build:1.4.4,18
+    commit=v1.4.4
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.4.1
-Current Version Code:15
+Current Version:1.4.4
+Current Version Code:18

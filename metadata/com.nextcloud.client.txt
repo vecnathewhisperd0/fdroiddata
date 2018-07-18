@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPL-2.0
+License:GPL-2.0-only
 Web Site:https://nextcloud.com
 Source Code:https://github.com/nextcloud/android
 Issue Tracker:https://github.com/nextcloud/android/issues
@@ -11,6 +11,15 @@ Summary:Synchronization client
 Description:
 A safe home for all your data. Access & share your files, calendars, contacts,
 mail & more from any device, on your terms. This is the official Android app.
+
+'''Features:'''
+
+* Easy, modern interface
+* Upload your files to your Nextcloud server
+* Share your files with others
+* Keep your favorite files and folders synced
+* Instant Upload for photos and videos taken by your device
+* Multi-account support
 .
 
 Repo Type:git
@@ -189,6 +198,7 @@ Build:3.0.0 RC2,30000002
     scandelete=src/androidTest
 
 Build:3.0.0 RC3,30000003
+    disable=obsolete RC
     commit=rc-3.0.0-03
     submodules=yes
     gradle=generic
@@ -223,7 +233,52 @@ Build:3.0.3,30000399
     rm=user_manual
     scandelete=src/androidTest
 
+Build:3.1.0 RC1,30010050
+    disable=obsolete RC
+    commit=rc-3.1.0-01
+    submodules=yes
+    gradle=generic
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:3.1.0,30010099
+    commit=stable-3.1.0
+    submodules=yes
+    gradle=generic
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:3.2.0 RC1,30020050
+    disable=obsolete RC
+    commit=rc-3.2.0-01
+    submodules=yes
+    gradle=generic
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:3.2.0 RC2,30020051
+    disable=obsolete RC
+    commit=rc-3.2.0-02
+    submodules=yes
+    gradle=generic
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:3.2.0,30020099
+    commit=stable-3.2.0
+    submodules=yes
+    gradle=generic
+    rm=user_manual
+    scandelete=src/androidTest
+
+Build:3.2.1,30020199
+    commit=stable-3.2.1
+    submodules=yes
+    gradle=generic
+    rm=user_manual
+    scandelete=src/androidTest
+
 Auto Update Mode:Version stable-%v
-Update Check Mode:Tags ^stable
-Current Version:3.0.3
-Current Version Code:30000399
+Update Check Mode:Static
+Current Version:3.2.1
+Current Version Code:30020199

@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://github.com/nilsbraden/ttrss-reader-fork/blob/HEAD/README.md
 Source Code:https://github.com/nilsbraden/ttrss-reader-fork
 Issue Tracker:https://github.com/nilsbraden/ttrss-reader-fork/issues
@@ -350,6 +350,12 @@ Build:1.91.1,1911
     gradle=fdroid
     prebuild=sed -i -e '/playCompile/d' build.gradle
 
+Build:1.93.3,1933
+    commit=v1.93.3
+    subdir=ttrssreader
+    gradle=fdroid
+    prebuild=sed -i -e '/playCompile/d' build.gradle
+
 Maintainer Notes:
 Upstream mistags often and retags, so never use tags directly.
 
@@ -361,7 +367,7 @@ Old Repo is:
 * Repo:https://ttrss-reader-fork.googlecode.com/hg
 .
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:1.93.0
-Current Version Code:1930
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:1.93.3
+Current Version Code:1933

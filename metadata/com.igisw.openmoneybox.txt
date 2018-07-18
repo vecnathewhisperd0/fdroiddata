@@ -1,18 +1,23 @@
 Categories:Money
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:http://igisw-bilancio.sourceforge.net/
 Source Code:https://launchpad.net/bilancio
 Issue Tracker:https://bugs.launchpad.net/bilancio
-Changelog:https://sourceforge.net/p/igisw-bilancio/wiki/Changelog_3.1.2_Android/
+Changelog:https://sourceforge.net/p/igisw-bilancio/wiki/Changelog_3.2.1_Android/
 Donate:http://igisw-bilancio.sourceforge.net/donation.html
 
 Auto Name:OpenMoneyBox
 
-Repo Type:bzr
-Repo:lp:bilancio/trunk
+Repo Type:git
+Repo:https://gitlab.com/igi0/openmoneybox.git
 
 Build:3.1.2.5,17
     commit=4
+    subdir=android/API24
+    gradle=yes
+
+Build:3.2.1.1,18
+    commit=v3.2.1.1
     subdir=android/API24
     gradle=yes
 
@@ -21,7 +26,7 @@ Summary and Description have been moved to the new localizable text files:
 https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
 .
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:3.1.2.5
-Current Version Code:17
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:3.2.1.1
+Current Version Code:18
