@@ -11,7 +11,7 @@ Auto Name:Cow's Revenge
 Repo Type:git
 Repo:https://github.com/Dariasteam/Cows-Revenge.git
 
-Build:1.0.3,4
+Build:1.0.4,6
     commit=fa520134a0695ed5f1d5425652d1161bae2fad1b
     sudo=apt-get install -y -t jessie-backports clang
     output=cows_revenge.apk
