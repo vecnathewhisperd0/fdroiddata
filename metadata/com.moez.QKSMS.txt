@@ -311,7 +311,7 @@ Build:3.3.7,178
     subdir=presentation
     gradle=noAnalytics
     prebuild=sed -i -e 's/enable true/enable false/' -e '/withAnalyticsImplementation/d' build.gradle && \
-    sed -i -e '/glide-snapshot/d' ../build.gradle
+        sed -i -e '/glide-snapshot/d' ../build.gradle
     ndk=r16b
 
 Auto Update Mode:Version v%v
