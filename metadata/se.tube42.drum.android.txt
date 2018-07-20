@@ -77,7 +77,10 @@ Build:0.2.4,24
 Build:0.2.6,26
     commit=v0.2.6
     submodules=yes
-    build=ant setup
+    gradle=yes
+    scanignore=android/libs
+    output=android/build/outputs/apk/android-release-unsigned.apk
+    prebuild=sed -i -e 's/\"se.tube42.drumon\"/\"se.tube42.drum.android\"/' android/build.gradle
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
