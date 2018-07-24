@@ -45,18 +45,6 @@ Builds:
     gradle:
       - standard
 
-  - versionName: 2.1.0 (beta 2018-06-30)
-    versionCode: 235
-    commit: 2.1.0.1
-    gradle:
-      - standard
-
-  - versionName: 2.1.0 (beta 2018-07-09)
-    versionCode: 236
-    commit: 2.1.0.2
-    gradle:
-      - standard
-
   - versionName: 2.1.0 (beta 2018-07-15)
     versionCode: 237
     commit: 2.1.0.3
