@@ -117,7 +117,7 @@ Build:2.2,44
     commit=v2.2
     subdir=app
     gradle=yes
-    
+
 Build:2.3,45
     commit=v2.3
     subdir=app
