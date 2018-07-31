@@ -362,6 +362,25 @@ Build:4.6.0c,11585
         popd
     ndk=r14b
 
+Build:4.9.0,13400
+    commit=v4.9
+    sudo=wget https://github.com/ninja-build/ninja/releases/download/v1.8.2/ninja-linux.zip && \
+        echo "d2fea9ff33b3ef353161ed906f260d565ca55b8ca0568fa07b1d2cab90a84a07 ninja-linux.zip" | sha256sum -c && \
+        unzip ninja-linux.zip -d /usr/bin/
+    subdir=TMessagesProj
+    submodules=yes
+    gradle=fat
+    rm=TMessagesProj/jni/libwebp/swig/libwebp.jar,TMessagesProj/jni/ffmpeg/tests/ref/fate/sub-microdvd-remux
+    prebuild=echo -e 'APP_ID = 12834\nAPP_HASH = c84d9229db1d6be95c067b02b126352c' > API_KEYS
+    build=export NDK=$$NDK$$ && \
+        export NINJA_PATH=/usr/bin/ninja && \
+        pushd jni && \
+        ./build_boringssl.sh && \
+        export NDK=PATHR14B && \
+        ./build_ffmpeg_android.sh && \
+        popd
+    ndk=r16b
+
 Maintainer Notes:
 Summary and Description have been moved to the new localizable text files:
 https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
@@ -372,5 +391,5 @@ Bump again for faster build.
 
 Auto Update Mode:None
 Update Check Mode:None
-Current Version:4.6.0c
-Current Version Code:11585
+Current Version:4.9.0
+Current Version Code:13400
