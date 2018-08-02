@@ -17,7 +17,7 @@ Repo: https://github.com/albertolalanda/new-ultrasonic-fork-for-MyMusicQoE
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: '?'
+    commit: 'db9fb298e2ee4e77cf885eb642a0125bf7d02043'
     subdir: ultrasonic
     gradle:
       - yes
