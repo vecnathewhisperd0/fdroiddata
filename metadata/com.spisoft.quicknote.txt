@@ -41,7 +41,7 @@ Repo Type:git
 Repo:https://github.com/PhieF/CarnetFdroid.git
 
 Build:0.1,1
-    commit=e7d0f1b4c2c4b1e5918a52791d6eed484c6380ed
+    commit=e6639d21a1908c030329032d5de25e79afd5043e
     subdir=CarnetAndroid
     submodules=yes
     patch=patchsettings,patchbuildgradle
