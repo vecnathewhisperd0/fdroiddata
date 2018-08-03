@@ -7,12 +7,12 @@ Issue Tracker:https://gitlab.com/kollo/Tschernobyl/issues
 Auto Name:TSCH_BYL
 Summary:Calculates radiation doses and consequences after nuclear power accidents
 Description:
-Programm zur Abschätzung der Folgen durch radioaktive Belastung nach einem
-Kernkraftwerksunfall. Ausgangsgröße ist die gemessene radioaktive Belastung der
-Luft, wie sie beim Erreichen des betroffenen Gebietes zuerst gemessen wird.
-Daraus werden  die Strahlenbelastungen durch die Direktstrahlung, Bodenstrahlung
-und Nahrungsaufnahme abgeschätzt.  Dann werden die Risiken analysiert und
-Verhaltensmaßregeln abgeleitet.
+Program to estimate the consequences of radioactive  pollution after a nuclear
+power plant accident. The starting point is the measured radioactive
+contamination of the air, as measured  when it reaches the affected area first.
+From this, the radiation exposure from  direct radiation, soil radiation and
+food intake is estimated. Then the risks are  analyzed and behavioral measures
+are derived.
 .
 
 Repo Type:git
