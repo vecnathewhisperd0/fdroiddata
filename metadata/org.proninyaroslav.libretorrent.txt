@@ -82,6 +82,7 @@ Build:1.8,9
     commit=1.8
     subdir=app
     gradle=yes
+    prebuild=sed -i -e '/splits/,+16d' build.gradle
 
 Maintainer Notes:
 Push 1.0 to archive due to https://github.com/proninyaroslav/libretorrent/issues/4.
