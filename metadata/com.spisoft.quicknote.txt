@@ -44,11 +44,10 @@ Build:0.1,1
     commit=e6639d21a1908c030329032d5de25e79afd5043e
     subdir=CarnetAndroid
     submodules=yes
-    patch=patchsettings,patchbuildgradle
+    prebuild=sed -i -e '1d' -e "2s/^/include\ \'\:app\'\,\ \'\:Sync\' \n/" -e '/GoogleSync/d' settings.gradle && \
+        sed -i -e '/googleCompile/d' app/build.gradle
     gradle=fdroid
     output=app/build/outputs/apk/fdroid/release/app-fdroid-release-unsigned.apk
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:0.1
-Current Version Code:1
