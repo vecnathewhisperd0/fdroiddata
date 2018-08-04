@@ -5,9 +5,9 @@ Source Code:https://gitlab.com/anoopknr/pastebin/tree/HEAD
 Issue Tracker:https://gitlab.com/anoopknr/pastebin/issues
 
 Auto Name:PasteBin
-Summary:client application for Ubuntu pastebin
+Summary:Client application for Ubuntu pastebin
 Description:
-Android client application for Ubuntu pastebin ,a web application where you can
+Client application for Ubuntu pastebin ,a web application where you can
 paste snippets of text, usually source code or log files, for public viewing.
 Pastes made to pastebin are usually only saved for a short period of time.
 .
@@ -21,6 +21,6 @@ Build:1.0,1
     subdir=app
 
 Auto Update Mode:Version %v
-Update Check Mode:Tags ^[0-9\.]+$
+Update Check Mode:Tags
 Current Version:1.0
 Current Version Code:1
