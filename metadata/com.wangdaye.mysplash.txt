@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:LGPL-3.0
+License:LGPL-3.0-only
 Web Site:https://github.com/WangDaYeeeeee/Mysplash/blob/HEAD/README.md
 Source Code:https://github.com/WangDaYeeeeee/Mysplash
 Issue Tracker:https://github.com/WangDaYeeeeee/Mysplash/issues
@@ -160,7 +160,51 @@ Build:3.2.4,324
     gradle=yes
     prebuild=sed -i -Ee '/systemProp.https?.proxy/d' ../gradle.properties
 
-Auto Update Mode:Version %v
+Build:3.2.5,325
+    disable=can't find gradle plugin
+    commit=3.2.5
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -Ee '/systemProp.https?.proxy/d' ../gradle.properties
+
+Build:3.2.7,327
+    commit=3.2.7
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -Ee '/systemProp.https?.proxy/d' ../gradle.properties
+
+Build:3.2.8,328
+    commit=3.2.8
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -Ee '/systemProp.https?.proxy/d' ../gradle.properties
+
+Build:3.3.0,330
+    commit=3.3.0
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -Ee '/systemProp.https?.proxy/d' ../gradle.properties
+
+Build:3.3.1,331
+    commit=3.3.1
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -Ee '/systemProp.https?.proxy/d' ../gradle.properties
+
+Build:3.3.3,333
+    commit=3.3.3
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -Ee '/systemProp.https?.proxy/d' ../gradle.properties
+
+Build:3.3.7,337
+    disable=missing API keys
+    commit=3.3.7
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -Ee '/systemProp.https?.proxy/d' ../gradle.properties
+
+Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:3.2.4
-Current Version Code:324
+Current Version:3.3.7
+Current Version Code:337

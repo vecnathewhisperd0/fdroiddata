@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:GPL-2.0
+License:GPL-2.0-only
 Web Site:https://code.google.com/p/stickeroid
 Source Code:https://code.google.com/p/stickeroid/source
 Issue Tracker:
@@ -22,6 +22,6 @@ Build:1.1.2,6
     commit=20
 
 Auto Update Mode:None
-Update Check Mode:Tags
+Update Check Mode:Static
 Current Version:1.1.2
 Current Version Code:6

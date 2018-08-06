@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPL-3.0+
+License:GPL-3.0-or-later
 Web Site:https://delta.chat/
 Source Code:https://github.com/deltachat/deltachat-android
 Issue Tracker:https://github.com/deltachat/deltachat-android/issues
@@ -19,7 +19,7 @@ data are not related to Delta Chat, you won't even add new dependencies here.
 
 Some features at a glance:
 
-* Secure with automatic end-to-end-encryption, supporting the new [https://autocrypt.readthedocs.io/en/latest/ Autocrypt] standard
+* Secure with automatic end-to-end-encryption, supporting the new [https://autocrypt.org Autocrypt] standard
 * Fast by the use of Push-IMAP
 * Largest userbase -- receivers not using Delta Chat can be reached as well
 * Compatible -- not only to itself
@@ -254,7 +254,106 @@ Build:0.12.0,510
         gradle nativeLibsToJar
     ndk=r15c
 
+Build:0.13.0,511
+    commit=v0.13.0
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r15c
+
+Build:0.14.0,512
+    commit=v0.14.0
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r14b
+
+Build:0.15.0,513
+    commit=v0.15.0
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r14b
+
+Build:0.16.0,514
+    commit=v0.16.0
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r14b
+
+Build:0.17.0,517
+    commit=v0.17.0
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r14b
+
+Build:0.17.1,518
+    commit=v0.17.1
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r14b
+
+Build:0.17.2,519
+    commit=v0.17.2
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r14b
+
+Build:0.17.3,520
+    commit=v0.17.3
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r14b
+
+Build:0.18.0,530
+    commit=v0.18.0
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r14b
+
+Build:0.18.2,534
+    commit=v0.18.2
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r14b
+
+Build:0.19.0,535
+    commit=v0.19.0
+    subdir=MessengerProj
+    submodules=yes
+    gradle=fat
+    build=$$NDK$$/ndk-build -j `nproc` && \
+        gradle nativeLibsToJar
+    ndk=r14b
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.12.0
-Current Version Code:510
+Current Version:0.19.0
+Current Version Code:535

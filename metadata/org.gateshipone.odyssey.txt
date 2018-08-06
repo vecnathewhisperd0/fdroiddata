@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:GPL-3.0+
+License:GPL-3.0-or-later
 Web Site:https://github.com/gateship-one/odyssey/blob/HEAD/README.md
 Source Code:https://github.com/gateship-one/odyssey
 Issue Tracker:https://github.com/gateship-one/odyssey/issues
@@ -112,7 +112,32 @@ Build:1.1.10,22
     subdir=app
     gradle=yes
 
+Build:1.1.11,23
+    commit=release-23
+    subdir=app
+    gradle=yes
+
+Build:1.1.12,24
+    commit=release-24
+    subdir=app
+    gradle=yes
+
+Build:1.1.13,25
+    commit=release-25
+    subdir=app
+    gradle=yes
+
+Build:1.1.14,26
+    commit=release-26
+    subdir=app
+    gradle=yes
+
+Build:1.1.15,27
+    commit=release-27
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version release-%c
 Update Check Mode:Tags
-Current Version:1.1.10
-Current Version Code:22
+Current Version:1.1.15
+Current Version Code:27

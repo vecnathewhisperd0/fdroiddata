@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/android-tinyurl
 Source Code:https://code.google.com/p/android-tinyurl/source
 Issue Tracker:
@@ -20,6 +20,6 @@ Build:1.0.9,10
     target=android-7
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.0.9
 Current Version Code:10

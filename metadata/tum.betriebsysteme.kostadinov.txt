@@ -1,5 +1,5 @@
 Categories:Connectivity
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/android-bluetooth-touchpad
 Source Code:https://code.google.com/p/android-bluetooth-touchpad/source
 Issue Tracker:
@@ -25,6 +25,6 @@ Missing bluetooth.h and bluetooth.c files. Also includes binaries.
 .
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.0
 Current Version Code:1

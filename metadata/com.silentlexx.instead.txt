@@ -1,5 +1,5 @@
 Categories:Games
-License:GPL-2.0+
+License:GPL-2.0-or-later
 Web Site:https://instead.syscall.ru
 Source Code:https://sourceforge.net/p/instead/code
 Issue Tracker:http://instead.syscall.ru/forum/viewforum.php?id=14
@@ -33,6 +33,6 @@ Build:1.6.1.9,16109
     buildjni=yes
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.6.1.9
 Current Version Code:16109

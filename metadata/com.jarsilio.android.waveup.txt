@@ -1,5 +1,5 @@
 Categories:System
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://gitlab.com/juanitobananas/wave-up
 Source Code:https://gitlab.com/juanitobananas/wave-up/tree/HEAD
 Issue Tracker:https://gitlab.com/juanitobananas/wave-up/issues
@@ -213,7 +213,82 @@ Build:1.5-4,37
     subdir=app
     gradle=yes
 
+Build:1.5-5,38
+    commit=v1.5-5
+    subdir=app
+    gradle=yes
+
+Build:1.5-5a,39
+    commit=v1.5-5a
+    subdir=app
+    gradle=yes
+
+Build:1.6.0,40
+    commit=v1.6.0
+    subdir=app
+    gradle=yes
+
+Build:1.6.1,41
+    commit=v1.6.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.6.1a,42
+    commit=v1.6.1a
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.6.2,43
+    commit=v1.6.2
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.7.0,44
+    commit=v1.7.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.7.1,45
+    commit=v1.7.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:2.0.0,46
+    commit=v2.0.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:2.0.1,47
+    commit=v2.0.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:2.1.0,48
+    commit=v2.1.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:2.1.0a,49
+    commit=v2.1.0a
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:2.1.0b,50
+    commit=v2.1.0b
+    subdir=app
+    submodules=yes
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.5-4
-Current Version Code:37
+Current Version:2.1.0b
+Current Version Code:50

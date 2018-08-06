@@ -1,6 +1,6 @@
 AntiFeatures:UpstreamNonFree
 Categories:Multimedia
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:
 Source Code:https://github.com/fyhertz/spydroid-ipcamera
 Issue Tracker:https://github.com/fyhertz/spydroid-ipcamera/issues
@@ -18,11 +18,9 @@ Description:
 
 Requirements:
 
-* Gingerbread or better (API level >=9)
 * H.263: should work on phones that supports h263
 * H.264: should work on phones that supports h264
 * AMR: should work everywhere !
-* AAC: requires API level >=14
 
 Proprietary Google libraries removed in all but v4.2.
 .

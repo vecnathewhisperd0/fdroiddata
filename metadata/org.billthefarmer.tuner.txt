@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://github.com/billthefarmer/tuner/wiki
 Source Code:https://github.com/billthefarmer/tuner
 Issue Tracker:https://github.com/billthefarmer/tuner/issues
@@ -10,6 +10,13 @@ Summary:Musical instrument pitch tuning
 Description:
 Accordion tuner with scope, spectrum and strobe. Can show up to eight different
 notes or reeds concurrently.
+
+Hold the phone/tablet near the instrument, play a note and observe the display.
+In portrait the app shows a scope with the input signal, a spectrum showing the
+processed signal, the main display with the note value, cents error, frequency
+error etc, a strobe display and a meter display showing the cents error. In
+landscape the app shows just the main display and the meter. There is a signal
+indicator in the action bar which is useful in landscape mode.
 .
 
 Repo Type:git
@@ -76,7 +83,19 @@ Build:1.18,118
     commit=v1.18
     gradle=yes
 
+Build:1.19,119
+    commit=v1.19
+    gradle=yes
+
+Build:1.20,120
+    commit=v1.20
+    gradle=yes
+
+Build:1.21,121
+    commit=v1.21
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.18
-Current Version Code:118
+Current Version:1.21
+Current Version Code:121

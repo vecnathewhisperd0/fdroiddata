@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/tunesremote-plus
 Source Code:https://code.google.com/p/tunesremote-plus/source
 Issue Tracker:
@@ -20,6 +20,6 @@ Build:2.5.3,253
     commit=154
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:2.5.3
 Current Version Code:253

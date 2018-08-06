@@ -29,10 +29,10 @@ com.emartynov.android.app.urlsetter
 com.fairphone.clock
 com.fairphone.mycontacts
 com.funambol.androidsync
+com.google.android.accessibility.talkback
 com.google.android.apps.iosched
 com.google.android.maps.mytracks
 com.googlecode.android.wifi.tether
-com.googlecode.androidcells
 com.grapefruitopia.dashclock.k9
 com.hexairbot.hexmini
 com.josegd.monthcalwidget
@@ -40,7 +40,6 @@ com.jpkrause.c_feed
 com.kirit.android.mintercept
 com.kkinder.sharelocation
 com.longevitysoft.android.appwidget.hstfeed
-com.mattermost.mattermost
 com.miz.mizuu
 com.mobilepearls.memory
 com.money.manager.ex
@@ -89,6 +88,7 @@ org.fdroid.superuser
 org.fosdem
 org.fox.ttirc
 org.fox.ttrss
+org.havenapp.main
 org.hermit.audalyzer
 org.hermit.dazzle
 org.hermit.netscramble
@@ -101,13 +101,13 @@ org.mrpdaemon.android.encdroid
 org.opensatnav.android
 org.piwik.mobile
 org.swiftp
+org.thoughtcrime.securesms
 org.tvbrowser.tvbrowser
 player.efis.data
 ru.qrck.quitetaskmanager
 se.chalmers.doit
 se.peterbjorkman.android.trafikinfo
 se.sandos.android.delayed
-stericson.busybox
 stericson.busybox.donate
 tritop.android.androsens
 uk.co.turtle-player

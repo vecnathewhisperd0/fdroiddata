@@ -1,5 +1,5 @@
 Categories:Games
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:http://jugglinglab.sourceforge.net
 Source Code:https://code.google.com/p/jugglinglab/source
 Issue Tracker:
@@ -29,6 +29,6 @@ Build:1.3,5
     srclibs=1:GreenDroid@greendroid-0.2,2:SuperDryColorPicker@5c488
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.3
 Current Version Code:5

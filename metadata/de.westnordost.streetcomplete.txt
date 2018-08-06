@@ -1,5 +1,5 @@
 Categories:Navigation
-License:GPL-3.0
+License:GPL-3.0-only
 Author Name:Tobias Zwick
 Author Email:osm@westnordost.de
 Web Site:https://github.com/westnordost/StreetComplete
@@ -161,7 +161,58 @@ Build:3.4,304
     subdir=app
     gradle=yes
 
+Build:3.5,305
+    commit=v3.5
+    subdir=app
+    gradle=yes
+
+Build:3.6,306
+    commit=v3.6
+    subdir=app
+    gradle=yes
+
+Build:3.7,307
+    commit=v3.7
+    subdir=app
+    gradle=yes
+
+Build:4.0,402
+    commit=v4.0
+    subdir=app
+    gradle=yes
+
+Build:4.1,403
+    commit=v4.1
+    subdir=app
+    gradle=yes
+
+Build:5.0,502
+    commit=v5.0
+    subdir=app
+    gradle=yes
+
+Build:5.1,503
+    commit=v5.1
+    subdir=app
+    gradle=yes
+
+Build:5.2,504
+    commit=v5.2
+    subdir=app
+    gradle=yes
+
+Build:6.0,602
+    commit=v6.0
+    subdir=app
+    gradle=yes
+
+Build:6.1,603
+    commit=v6.1
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.4
-Current Version Code:304
+Update Check Ignore:(alpha|beta|rc|RC)
+Current Version:6.1
+Current Version Code:603

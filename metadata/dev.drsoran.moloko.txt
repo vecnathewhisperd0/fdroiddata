@@ -1,5 +1,5 @@
 Categories:Writing
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/moloko
 Source Code:https://code.google.com/p/moloko/source
 Issue Tracker:
@@ -59,6 +59,6 @@ Build:0.17.4b,94212
     update=.,lib/ActionBarSherlock
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:0.17.4b
 Current Version Code:94212

@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/android-vlc-remote
 Source Code:https://code.google.com/p/android-vlc-remote/source
 Issue Tracker:
@@ -28,6 +28,6 @@ Build:0.5.8,58
     commit=1e95d35ac1d2e1380d9
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:0.5.8
 Current Version Code:58

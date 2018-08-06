@@ -1,5 +1,5 @@
 Categories:Writing
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/pomodorotasks
 Source Code:https://code.google.com/p/pomodorotasks/source
 Issue Tracker:
@@ -22,6 +22,6 @@ Build:1.5,8
     subdir=PomodoroTasks
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.5
 Current Version Code:8

@@ -1,5 +1,5 @@
 Categories:Science & Education
-License:GPL-2.0
+License:GPL-2.0-only
 Web Site:
 Source Code:https://gitlab.com/kollo/Tschernobyl
 Issue Tracker:https://gitlab.com/kollo/Tschernobyl/issues
@@ -24,5 +24,5 @@ Build:1.16-7,7
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.16-7
-Current Version Code:7
+Current Version:1.16-8-sf
+Current Version Code:8

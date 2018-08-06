@@ -1,25 +1,16 @@
 Categories:Multimedia
 License:Apache-2.0
-Web Site:https://simplemobiletools.github.io/
+Author Name:Tibor Kaputa
+Author Email:hello@simplemobiletools.com
+Web Site:https://simplemobiletools.github.io
 Source Code:https://github.com/SimpleMobileTools/Simple-Gallery
 Issue Tracker:https://github.com/SimpleMobileTools/Simple-Gallery/issues
 Changelog:https://github.com/SimpleMobileTools/Simple-Gallery/blob/HEAD/CHANGELOG.md
+Donate:https://simplemobiletools.github.io/donate
+Bitcoin:19Hc8A7sWGud8sP19VXDC5a5j28UyJfpyJ
+Litecoin:LYACbHTKaM9ZubKQGxJ4NRyVy1gHUuztRP
 
 Auto Name:Gallery
-Summary:A gallery for viewing photos and videos
-Description:
-A simple tool usable for viewing photos and videos. Items can be sorted by date,
-size, name both ascending or descending, photos can be zoomed in. Media files
-are shown in multiple columns, depending on the size of the display. They can be
-renamed, shared or deleted.
-
-The Gallery is also offered for third party usage for previewing images /
-videos, adding attachments at email clients etc. It's perfect for everyday
-usage.
-
-Contains no ads or unnecessary permissions. It is fully opensource, provides a
-Dark theme too.
-.
 
 Repo Type:git
 Repo:https://github.com/SimpleMobileTools/Simple-Gallery
@@ -511,26 +502,191 @@ Build:3.0.2,148
     gradle=yes
 
 Build:3.0.3,149
+    disable=ProGuard fails
     commit=3.0.3
     subdir=app
     gradle=yes
 
 Build:3.1.0,150
+    disable=ProGuard fails
     commit=3.1.0
     subdir=app
     gradle=yes
 
 Build:3.1.2,152
+    disable=ProGuard fails
     commit=3.1.2
     subdir=app
     gradle=yes
 
 Build:3.2.1,154
+    disable=ProGuard fails
     commit=3.2.1
+    subdir=app
+    gradle=yes
+
+Build:3.2.2,155
+    disable=ProGuard fails
+    commit=3.2.2
+    subdir=app
+    gradle=yes
+
+Build:3.2.3,156
+    commit=3.2.3
+    subdir=app
+    gradle=yes
+
+Build:3.2.4,157
+    commit=3.2.4
+    subdir=app
+    gradle=yes
+
+Build:3.3.0,158
+    commit=3.3.0
+    subdir=app
+    gradle=yes
+
+Build:3.3.1,159
+    commit=3.3.1
+    subdir=app
+    gradle=yes
+
+Build:3.4.0,160
+    commit=3.4.0
+    subdir=app
+    gradle=yes
+
+Build:3.4.1,161
+    commit=3.4.1
+    subdir=app
+    gradle=yes
+
+Build:3.5.0,162
+    commit=3.5.0
+    subdir=app
+    gradle=yes
+
+Build:3.5.2,164
+    commit=3.5.2
+    subdir=app
+    gradle=yes
+
+Build:3.5.3,165
+    commit=3.5.3
+    subdir=app
+    gradle=yes
+
+Build:3.6.0,166
+    commit=3.6.0
+    subdir=app
+    gradle=yes
+
+Build:3.6.2,168
+    commit=3.6.2
+    subdir=app
+    gradle=yes
+
+Build:3.6.3,169
+    commit=3.6.3
+    subdir=app
+    gradle=yes
+
+Build:3.7.0,170
+    commit=3.7.0
+    subdir=app
+    gradle=yes
+
+Build:3.7.1,171
+    commit=3.7.1
+    subdir=app
+    gradle=yes
+
+Build:3.7.2,172
+    commit=3.7.2
+    subdir=app
+    gradle=yes
+
+Build:3.7.3,173
+    commit=3.7.3
+    subdir=app
+    gradle=yes
+
+Build:3.8.0,174
+    commit=3.8.0
+    subdir=app
+    gradle=yes
+
+Build:3.8.1,175
+    commit=3.8.1
+    subdir=app
+    gradle=yes
+
+Build:3.8.2,176
+    commit=3.8.2
+    subdir=app
+    gradle=yes
+
+Build:4.0.0,177
+    commit=4.0.0
+    subdir=app
+    gradle=yes
+
+Build:4.1.0,178
+    commit=4.1.0
+    subdir=app
+    gradle=yes
+
+Build:4.1.1,179
+    commit=4.1.1
+    subdir=app
+    gradle=yes
+
+Build:4.2.0,180
+    commit=4.2.0
+    subdir=app
+    gradle=yes
+
+Build:4.2.1,181
+    commit=4.2.1
+    subdir=app
+    gradle=yes
+
+Build:4.3.1,183
+    commit=4.3.1
+    subdir=app
+    gradle=yes
+
+Build:4.3.3,185
+    commit=4.3.3
+    subdir=app
+    gradle=yes
+
+Build:4.3.4,186
+    commit=4.3.4
+    subdir=app
+    gradle=yes
+
+Build:4.3.5,187
+    commit=4.3.5
+    subdir=app
+    gradle=yes
+
+Build:4.4.0,188
+    commit=4.4.0
+    subdir=app
+    gradle=yes
+
+Build:4.4.1,189
+    commit=4.4.1
+    subdir=app
+    gradle=yes
+
+Build:4.4.4,192
+    commit=4.4.4
     subdir=app
     gradle=yes
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:3.2.1
-Current Version Code:154
+Current Version:4.4.4
+Current Version Code:192

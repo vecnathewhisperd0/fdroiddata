@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPL-3.0+
+License:GPL-3.0-or-later
 Author Name:Soren Stoutner
 Author Email:soren@stoutner.com
 Web Site:https://www.stoutner.com/privacy-browser
@@ -166,6 +166,42 @@ Build:2.7.2,29
     gradle=standard
     prebuild=sed -i -e '/firebase/d' build.gradle
 
+Build:2.8,30
+    commit=v2.8
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.8.1,31
+    commit=v2.8.1
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.9,32
+    commit=v2.9
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.10,33
+    commit=v2.10
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.11,34
+    commit=v2.11
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
+Build:2.12,35
+    commit=v2.12
+    subdir=app
+    gradle=standard
+    prebuild=sed -i -e '/firebase/d' build.gradle
+
 Maintainer Notes:
 Summary and Description are maintained by upstream using fastlane in
 the source repo:
@@ -174,5 +210,5 @@ https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.7.2
-Current Version Code:29
+Current Version:2.12
+Current Version Code:35

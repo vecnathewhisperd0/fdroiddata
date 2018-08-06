@@ -1,12 +1,14 @@
 Categories:Internet,Time
 License:MIT
 Author Name:Gregor Santner
-Web Site:https://github.com/gsantner/kimai-android/blob/HEAD/README.md
+Web Site:https://gsantner.net/index.html?source=fdroid&project=kimai
 Source Code:https://github.com/gsantner/kimai-android
 Issue Tracker:https://github.com/gsantner/kimai-android/issues
 Changelog:https://github.com/gsantner/kimai-android/blob/HEAD/CHANGELOG.md
-Donate:http://gsantner.net/#donate
+Donate:https://gsantner.net/supportme/?project=kimai&source=fdroid
+LiberapayID:13079
 Bitcoin:1B9ZyYdQoY9BxMe9dRUEKaZbJWsbQqfXU5
+Litecoin:LSC2NUiXmnsJiaRczq9AKceX6CEHQHP39w
 
 Auto Name:Kimai
 Summary:Wrapper for Kimai - Time-Tracking
@@ -117,7 +119,12 @@ Build:1.3.12,25
     subdir=app
     gradle=FlavorDefault
 
+Build:1.3.13,26
+    commit=v1.3.13
+    subdir=app
+    gradle=FlavorDefault
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.3.12
-Current Version Code:25
+Current Version:1.3.13
+Current Version Code:26

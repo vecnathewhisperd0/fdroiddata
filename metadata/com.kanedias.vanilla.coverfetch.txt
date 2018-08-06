@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://vanilla-music.github.io
 Source Code:https://github.com/vanilla-music/vanilla-music-cover-fetch
 Issue Tracker:https://github.com/vanilla-music/vanilla-music-cover-fetch/issues
@@ -14,12 +14,12 @@ are installed, request a context menu from library screen, select "Plugins" and
 "Cover fetch" afterwards. Note that this plugin requires internet connection to
 be useful.
 
-Features:
+'''Features:'''
 
 * Requests artwork by artist and album from musicbrainz
 * Can interact with Tag Editor plugin:
-* - Can read artwork from file tags and show them without internet connection.
-* - Can write artwork retrieved from wiki to file tags
+* Can read artwork from file tags and show them without internet connection.
+* Can write artwork retrieved from wiki to file tags
 .
 
 Repo Type:git

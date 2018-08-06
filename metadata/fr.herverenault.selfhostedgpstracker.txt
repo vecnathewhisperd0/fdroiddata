@@ -1,5 +1,5 @@
 Categories:Navigation
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://github.com/herverenault/Self-Hosted-GPS-Tracker/blob/HEAD/README.md
 Source Code:https://github.com/herverenault/Self-Hosted-GPS-Tracker
 Issue Tracker:https://github.com/herverenault/Self-Hosted-GPS-Tracker/issues
@@ -54,7 +54,13 @@ Build:1.8,13
     prebuild=mv java src
     target=android-17
 
+Maintainer Notes:
+The app needs server part, but author deleted both app and server source code
+repositories.
+.
+
+Archive Policy:0 versions
 Auto Update Mode:None
-Update Check Mode:Tags
+Update Check Mode:Static
 Current Version:1.8
 Current Version Code:13

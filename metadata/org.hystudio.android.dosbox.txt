@@ -1,5 +1,5 @@
 Categories:Games
-License:LGPL-2.1
+License:LGPL-2.1-only
 Web Site:
 Source Code:https://code.google.com/archive/p/adosbox/source
 Issue Tracker:
@@ -22,6 +22,6 @@ Build:0.2.5,20500
     buildjni=yes
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:0.2.5
 Current Version Code:20500

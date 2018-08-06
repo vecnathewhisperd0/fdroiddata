@@ -29,12 +29,63 @@ Repo Type:git
 Repo:https://github.com/LISTEN-moe/android-app
 
 Build:1.6.4,30
-    commit=1.6.4
+    commit=v1.6.4
+    subdir=app
+    gradle=fdroid
+
+Build:2.0.0,31
+    commit=v2.0.0
+    subdir=app
+    gradle=fdroid
+
+Build:2.0.3,34
+    commit=v2.0.3
+    subdir=app
+    gradle=fdroid
+
+Build:2.0.4,39
+    commit=v2.0.4
+    subdir=app
+    gradle=fdroid
+
+Build:3.0.0,55
+    commit=v3.0.0
+    subdir=app
+    gradle=fdroid
+
+Build:3.0.1,56
+    commit=v3.0.1
+    subdir=app
+    gradle=fdroid
+
+Build:3.0.2,57
+    commit=v3.0.2
+    subdir=app
+    gradle=fdroid
+
+Build:3.0.3,58
+    commit=v3.0.3
+    subdir=app
+    gradle=fdroid
+
+Build:3.0.4,59
+    disable=ProGuard: Unsupported class version number [53.0] (maximum 52.0, Java 1.8)
+    commit=v3.0.4
+    subdir=app
+    gradle=fdroid
+
+Build:3.0.5,60
+    commit=v3.0.5
+    subdir=app
+    gradle=fdroid
+
+Build:3.0.6,61
+    commit=v3.0.6
     subdir=app
     gradle=fdroid
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Update Check Name:me.echeung.moemoekyun
-Current Version:1.6.4
-Current Version Code:30
+Current Version:3.0.6
+Current Version Code:61

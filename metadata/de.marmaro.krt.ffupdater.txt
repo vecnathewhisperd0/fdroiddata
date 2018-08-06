@@ -1,6 +1,6 @@
 AntiFeatures:NonFreeAdd
 Categories:Internet
-License:GPL-3.0+
+License:GPL-3.0-or-later
 Web Site:
 Source Code:https://gitlab.com/krt/ffupdater
 Issue Tracker:https://gitlab.com/krt/ffupdater/issues
@@ -9,7 +9,7 @@ Auto Name:FFUpdater
 Summary:Download Firefox
 Description:
 Simple downloader for [[org.mozilla.firefox]]. It generates the download link
-matching your device and sends and intent to download it.
+matching your device and sends an intent to download it.
 
 This app is alpha quality.
 .

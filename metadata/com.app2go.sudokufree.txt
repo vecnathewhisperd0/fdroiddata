@@ -1,6 +1,6 @@
 AntiFeatures:UpstreamNonFree
 Categories:Games
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:http://www.1gravity.com
 Source Code:https://code.google.com/p/sudoku-pro-android/source
 Issue Tracker:
@@ -31,6 +31,6 @@ Build:1.1,3
     prebuild=sed -i 's@\(android.library.reference.1=\).*@\1$$MobAdMob$$@' project.properties
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.1
 Current Version Code:3

@@ -1,6 +1,6 @@
 Disabled:Not working and in beta for two years
 Categories:Navigation
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/android-delayed
 Source Code:https://code.google.com/p/android-delayed/source
 Issue Tracker:
@@ -20,6 +20,6 @@ Build:0.9-BETA5,18
     target=android-15
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:0.9-BETA5
 Current Version Code:18

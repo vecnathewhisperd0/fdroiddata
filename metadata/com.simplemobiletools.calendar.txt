@@ -1,23 +1,16 @@
 Categories:System
 License:Apache-2.0
-Web Site:
+Author Name:Tibor Kaputa
+Author Email:hello@simplemobiletools.com
+Web Site:https://simplemobiletools.github.io/
 Source Code:https://github.com/SimpleMobileTools/Simple-Calendar
 Issue Tracker:https://github.com/SimpleMobileTools/Simple-Calendar/issues
 Changelog:https://github.com/SimpleMobileTools/Simple-Calendar/blob/HEAD/CHANGELOG.md
+Donate:https://simplemobiletools.github.io/donate
+Bitcoin:19Hc8A7sWGud8sP19VXDC5a5j28UyJfpyJ
+Litecoin:LYACbHTKaM9ZubKQGxJ4NRyVy1gHUuztRP
 
 Auto Name:Calendar
-Summary:A simple calendar with events and a customizable widget
-Description:
-A monthly calendar without any other calendar integration. You can easily create
-events and setup reminders.
-
-Contains a resizable 4x4 widget where you can customize the color of the text,
-as well as the alpha and the color of the background. To open the app from the
-widget press the month label.
-
-This app contains no ads or unnecessary permissions. It is fully opensource,
-provides a Dark theme too.
-.
 
 Repo Type:git
 Repo:https://github.com/SimpleMobileTools/Simple-Calendar
@@ -407,7 +400,92 @@ Build:3.0.1,106
     subdir=app
     gradle=yes
 
+Build:3.1.0,107
+    commit=3.1.0
+    subdir=app
+    gradle=yes
+
+Build:3.2.1,109
+    commit=3.2.1
+    subdir=app
+    gradle=yes
+
+Build:3.2.2,110
+    commit=3.2.2
+    subdir=app
+    gradle=yes
+
+Build:3.2.3,111
+    commit=3.2.3
+    subdir=app
+    gradle=yes
+
+Build:3.2.4,112
+    commit=3.2.4
+    subdir=app
+    gradle=yes
+
+Build:3.3.0,113
+    commit=3.3.0
+    subdir=app
+    gradle=yes
+
+Build:3.3.2,115
+    commit=3.3.2
+    subdir=app
+    gradle=yes
+
+Build:3.4.0,116
+    commit=3.4.0
+    subdir=app
+    gradle=yes
+
+Build:3.4.1,117
+    commit=3.4.1
+    subdir=app
+    gradle=yes
+
+Build:3.4.2,118
+    commit=3.4.2
+    subdir=app
+    gradle=yes
+
+Build:4.0.0,119
+    commit=4.0.0
+    subdir=app
+    gradle=yes
+
+Build:4.0.3,122
+    commit=4.0.3
+    subdir=app
+    gradle=yes
+
+Build:4.0.4,123
+    commit=4.0.4
+    subdir=app
+    gradle=yes
+
+Build:4.1.0,124
+    commit=4.1.0
+    subdir=app
+    gradle=yes
+
+Build:4.1.1,125
+    commit=4.1.1
+    subdir=app
+    gradle=yes
+
+Build:4.1.2,126
+    commit=4.1.2
+    subdir=app
+    gradle=yes
+
+Build:4.1.3,127
+    commit=4.1.3
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:3.0.1
-Current Version Code:106
+Current Version:4.1.3
+Current Version Code:127

@@ -1,6 +1,6 @@
 AntiFeatures:UpstreamNonFree
 Categories:Games
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/wonderdroid
 Source Code:https://code.google.com/p/wonderdroid/source
 Issue Tracker:
@@ -48,6 +48,6 @@ Build:1.9,39
     buildjni=yes
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.9
 Current Version Code:39

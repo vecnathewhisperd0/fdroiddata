@@ -9,6 +9,8 @@ Summary:Send sensor data via Open Sound Control (OSC).
 Description:
 Read sensor data from your phone and send them to a receiver via Open Sound
 Control (OSC).
+
+Typical use case is controlling a music application from your phone or tablet.
 .
 
 Repo Type:git
@@ -24,7 +26,12 @@ Build:0.2.0,2
     subdir=app
     gradle=yes
 
+Build:0.3.0,3
+    commit=0.3.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.2.0
-Current Version Code:2
+Current Version:0.3.0
+Current Version Code:3

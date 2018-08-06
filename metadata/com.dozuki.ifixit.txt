@@ -1,6 +1,6 @@
 AntiFeatures:UpstreamNonFree
 Categories:System
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://www.ifixit.com
 Source Code:https://github.com/iFixit/iFixitAndroid
 Issue Tracker:https://github.com/iFixit/iFixitAndroid/issues
@@ -132,5 +132,5 @@ Build:2.9.2,60
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:2.9.2
-Current Version Code:60
+Current Version:3.0.6
+Current Version Code:67

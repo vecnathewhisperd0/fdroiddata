@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/android-openvpn-settings
 Source Code:https://code.google.com/p/android-openvpn-settings/source
 Issue Tracker:
@@ -42,6 +42,6 @@ Uses embedded copy of openssl source based on 0.9.8h. Not vulnerable to CVE-2014
 .
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:0.4.15test1
 Current Version Code:40

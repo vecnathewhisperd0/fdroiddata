@@ -1,5 +1,5 @@
 Categories:Multimedia
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://github.com/pmarks-net/chromadoze/blob/HEAD/README.md
 Source Code:https://github.com/pmarks-net/chromadoze
 Issue Tracker:https://github.com/pmarks-net/chromadoze/issues
@@ -92,7 +92,17 @@ Build:3.5.5,22
     subdir=app
     gradle=yes
 
+Build:3.6,23
+    commit=v3.6
+    subdir=app
+    gradle=yes
+
+Build:3.7.1,25
+    commit=v3.7.1
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.5.5
-Current Version Code:22
+Current Version:3.7.1
+Current Version Code:25

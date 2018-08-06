@@ -1,5 +1,5 @@
 Categories:Internet,Reading
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://gitlab.com/spacecowboy/Feeder
 Source Code:https://gitlab.com/spacecowboy/Feeder
 Issue Tracker:https://gitlab.com/spacecowboy/Feeder/issues
@@ -154,7 +154,67 @@ Build:1.4.2,25
     submodules=yes
     gradle=yes
 
+Build:1.4.3,26
+    commit=1.4.3
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.5.0,27
+    commit=1.5.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.6.0,28
+    commit=1.6.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.6.1,29
+    commit=1.6.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.6.2,30
+    commit=1.6.2
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.6.3,31
+    commit=1.6.3
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.6.4,32
+    commit=1.6.4
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.6.5,33
+    commit=1.6.5
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.6.6,34
+    commit=1.6.6
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.6.7,35
+    commit=1.6.7
+    subdir=app
+    submodules=yes
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.4.2
-Current Version Code:25
+Current Version:1.6.7
+Current Version Code:35

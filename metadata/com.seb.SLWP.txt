@@ -1,5 +1,5 @@
 Categories:Theming
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/earth-live-wallpaper
 Source Code:https://code.google.com/p/earth-live-wallpaper/source
 Issue Tracker:
@@ -26,6 +26,6 @@ Build:1.5,61
     target=android-10
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.5
 Current Version Code:61

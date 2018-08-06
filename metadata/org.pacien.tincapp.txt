@@ -1,5 +1,5 @@
 Categories:Connectivity,Internet,Security,System
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:http://tincapp.pacien.org
 Source Code:https://github.com/pacien/tincapp
 Issue Tracker:https://github.com/pacien/tincapp/issues
@@ -65,7 +65,59 @@ Build:0.7,7
     subdir=app
     gradle=yes
 
+Build:0.8,8
+    commit=v0.8
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/repositories {/ a google()' ../build.gradle && \
+        sed -i -e '/lintOptions {/ a abortOnError false' build.gradle
+
+Build:0.9,9
+    commit=v0.9
+    subdir=app
+    gradle=yes
+
+Build:0.10,10
+    commit=v0.10
+    subdir=app
+    gradle=yes
+
+Build:0.11,11
+    commit=v0.11
+    subdir=app
+    gradle=yes
+
+Build:0.12,12
+    commit=v0.12
+    subdir=app
+    gradle=yes
+
+Build:0.13,13
+    commit=v0.13
+    subdir=app
+    gradle=yes
+
+Build:0.14,14
+    commit=v0.14
+    subdir=app
+    gradle=yes
+
+Build:0.15,15
+    commit=v0.15
+    subdir=app
+    gradle=yes
+
+Build:0.16,16
+    commit=v0.16
+    subdir=app
+    gradle=yes
+
+Build:0.17,17
+    commit=v0.17
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.7
-Current Version Code:7
+Current Version:0.17
+Current Version Code:17

@@ -1,5 +1,5 @@
 Categories:Development
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/enh/wiki/DalvikExplorer
 Source Code:https://code.google.com/p/enh/source
 Issue Tracker:
@@ -45,6 +45,6 @@ Build:3.9,39
     target=android-19
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:3.9
 Current Version Code:39

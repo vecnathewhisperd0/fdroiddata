@@ -1,6 +1,6 @@
 Disabled:Superseeded by com.tritop.androsense2 from the same upstream
 Categories:Connectivity
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/androsens
 Source Code:https://code.google.com/p/androsens/source
 Issue Tracker:
@@ -22,6 +22,6 @@ Build:1.2,2
     commit=33
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:1.2
 Current Version Code:2

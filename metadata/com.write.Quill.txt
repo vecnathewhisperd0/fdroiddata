@@ -1,5 +1,5 @@
 Categories:Graphics
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/android-quill
 Source Code:https://code.google.com/p/android-quill/source
 Issue Tracker:
@@ -61,6 +61,6 @@ Build:10.7,41
     buildjni=yes
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:10.7
 Current Version Code:41

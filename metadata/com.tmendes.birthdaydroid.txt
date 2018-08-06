@@ -1,5 +1,5 @@
 Categories:Time
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://gitlab.com/tmendes/BirthDayDroid/blob/HEAD/README.md
 Source Code:https://gitlab.com/tmendes/BirthDayDroid
 Issue Tracker:https://gitlab.com/tmendes/BirthDayDroid/issues
@@ -30,7 +30,37 @@ Build:20170615_VC12,12
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:20170615_VC12
-Current Version Code:12
+Build:20180602_VC20,20
+    commit=20180602_VC20
+    subdir=app
+    gradle=yes
+
+Build:20180612_VC21,21
+    commit=20180612_VC21
+    subdir=app
+    gradle=yes
+
+Build:20180620_VC22,22
+    commit=20180620_VC22
+    subdir=app
+    gradle=yes
+
+Build:20180718_VC23,23
+    commit=20180718_VC23
+    subdir=app
+    gradle=yes
+
+Build:20180801_VC24,24
+    commit=20180801_VC24
+    subdir=app
+    gradle=yes
+
+Build:20180802_VC25,25
+    commit=20180802_VC25
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:20180802_VC25
+Current Version Code:25

@@ -1,5 +1,5 @@
 Categories:Games,System
-License:GPL-3.0+
+License:GPL-3.0-or-later
 Author Name:Boris Timofeev
 Author Email:btimofeev@emunix.org
 Web Site:https://github.com/btimofeev/UniPatcher/blob/HEAD/README.md
@@ -57,7 +57,15 @@ Build:0.14.2,140200
     scanignore=app/src/test,app/src/main/cpp/xdelta3/xdelta3/examples
     ndk=r15b
 
-Auto Update Mode:None
+Build:0.15,150000
+    commit=v0.15
+    subdir=app
+    submodules=yes
+    gradle=free
+    scanignore=app/src/test,app/src/main/cpp/xdelta3/xdelta3/examples
+    ndk=r16b
+
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:0.15
 Current Version Code:150000

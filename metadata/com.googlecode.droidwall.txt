@@ -1,5 +1,5 @@
 Categories:Security,Internet
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://code.google.com/p/droidwall
 Source Code:https://droidwall.googlecode.com/svn/tags/v1.5.7
 Issue Tracker:
@@ -42,6 +42,6 @@ Build:1.5.7,157
         mv libs/armeabi/iptables ../../res/raw/iptables_armv5
 
 Auto Update Mode:None
-Update Check Mode:Tags
+Update Check Mode:Static
 Current Version:1.5.7
 Current Version Code:157

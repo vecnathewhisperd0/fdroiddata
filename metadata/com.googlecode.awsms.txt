@@ -1,5 +1,5 @@
 Categories:Phone & SMS
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:http://ermetesms.it
 Source Code:https://github.com/adepasquale/esms
 Issue Tracker:https://github.com/adepasquale/esms/issues
@@ -28,6 +28,6 @@ Build:2.0.5,25
     prebuild=echo "source.dir=src;../core/src" >> project.properties
 
 Auto Update Mode:None
-Update Check Mode:RepoManifest
+Update Check Mode:Static
 Current Version:2.0.5
 Current Version Code:25

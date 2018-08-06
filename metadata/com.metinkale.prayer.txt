@@ -3,8 +3,8 @@ License:Apache-2.0
 Author Name:metinkale38
 Author Email:metinkale38@gmail.com
 Web Site:
-Source Code:https://github.com/metinkale38/namaz-vakti-android
-Issue Tracker:https://github.com/metinkale38/namaz-vakti-android/issues
+Source Code:https://github.com/metinkale38/prayer-times-android
+Issue Tracker:https://github.com/metinkale38/prayer-times-android/issues
 Donate:https://paypal.me/metinkale38
 
 Name:Prayer Times (Islamic Tools)
@@ -36,7 +36,7 @@ Features:
 .
 
 Repo Type:git
-Repo:https://github.com/metinkale38/namaz-vakti-android.git
+Repo:https://github.com/metinkale38/prayer-times-android.git
 
 Build:3.6 F-Droid,139
     commit=f601f1431a6d2394c889ac0d81f2c4e7fdca7678
@@ -205,6 +205,33 @@ Build:3.6.6,191
     prebuild=cd .. && \
         bash fdroidPrep.sh && \
         sed -i -e '/om.google.android.gms:play-services/d' app/build.gradle
+
+Build:3.7,192
+    disable=compile error in pray-times library
+    commit=fdroid-v3.7
+    subdir=app
+    submodules=yes
+    gradle=fdroid
+    forceversion=yes
+    prebuild=cd .. && \
+        bash fdroidPrep.sh && \
+        sed -i -e '/om.google.android.gms:play-services/d' app/build.gradle
+
+Build:3.7,193
+    commit=fdroid-v3.7
+    subdir=app
+    submodules=yes
+    gradle=fdroid
+    forceversion=yes
+    prebuild=cd .. && \
+        bash fdroidPrep.sh && \
+        sed -i -e '/om.google.android.gms:play-services/d' app/build.gradle
+
+Maintainer Notes:
+Error reported upstream: https://github.com/metinkale38/PrayTimes-Java/issues/1
+
+Also need to fill in bogus bintray user/api-key/gpg-passphrase in library's build.gradle file.
+.
 
 Auto Update Mode:Version fdroid-v%v
 Update Check Mode:Tags

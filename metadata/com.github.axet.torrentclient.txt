@@ -1,5 +1,5 @@
 Categories:Internet
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://gitlab.com/axet/android-torrent-client
 Source Code:https://gitlab.com/axet/android-torrent-client/tree/HEAD
 Issue Tracker:https://gitlab.com/axet/android-torrent-client/issues
@@ -307,7 +307,180 @@ Build:3.4.93,581
     gradle=yes
     prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
 
+Build:3.4.96,584
+    commit=torrentclient-3.4.96
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.98,586
+    commit=torrentclient-3.4.98
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.105,593
+    commit=torrentclient-3.4.105
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.106,594
+    commit=torrentclient-3.4.106
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.107,595
+    commit=torrentclient-3.4.107
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.108,596
+    commit=torrentclient-3.4.108
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.111,599
+    commit=torrentclient-3.4.111
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.116,604
+    commit=torrentclient-3.4.116
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.117,605
+    commit=torrentclient-3.4.117
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.120,608
+    commit=torrentclient-3.4.120
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.122,610
+    commit=torrentclient-3.4.122
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.123,611
+    commit=torrentclient-3.4.123
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.124,612
+    commit=torrentclient-3.4.124
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.126,614
+    commit=torrentclient-3.4.126
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.128,616
+    commit=torrentclient-3.4.128
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.4.132,620
+    commit=torrentclient-3.4.132
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle && \
+        sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+    ndk=r16b
+
+Build:3.4.136,624
+    commit=torrentclient-3.4.136
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle && \
+        sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+    ndk=r16b
+
+Build:3.4.137,625
+    disable=error: cannot find symbol Storage.isConnectedWifi
+    commit=torrentclient-3.4.137
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle && \
+        sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+    ndk=r16b
+
+Build:3.4.138,626
+    commit=torrentclient-3.4.138
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle && \
+        sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+    ndk=r16b
+
+Build:3.4.139,627
+    commit=torrentclient-3.4.139
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle && \
+        sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+    ndk=r16b
+
+Build:3.4.141,629
+    commit=torrentclient-3.4.141
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
+Build:3.4.142,630
+    commit=torrentclient-3.4.142
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
+Build:3.4.147,635
+    commit=torrentclient-3.4.147
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
+Build:3.4.155,643
+    commit=torrentclient-3.4.155
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
+Build:3.4.156,644
+    commit=torrentclient-3.4.156
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
+Build:3.4.157,645
+    commit=torrentclient-3.4.157
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
 Auto Update Mode:Version torrentclient-%v
 Update Check Mode:Tags
-Current Version:3.4.93
-Current Version Code:581
+Current Version:3.4.157
+Current Version Code:645
