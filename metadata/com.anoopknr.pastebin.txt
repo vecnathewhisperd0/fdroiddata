@@ -1,0 +1,25 @@
+Categories:Development
+License:GPL-3.0-only
+Web Site:
+Source Code:https://gitlab.com/anoopknr/pastebin
+Issue Tracker:https://gitlab.com/anoopknr/pastebin/issues
+
+Auto Name:PasteBin
+Summary:Client application for Ubuntu pastebin
+Description:
+PasteBin is an Android base client application for Ubuntu pastebin. You can save
+your code and share.
+.
+
+Repo Type:git
+Repo:https://gitlab.com/anoopknr/pastebin
+
+Build:1.0,1
+    commit=1.0
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:1.0
+Current Version Code:1
