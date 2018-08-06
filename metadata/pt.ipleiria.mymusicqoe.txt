@@ -16,11 +16,11 @@ Repo Type:git
 Repo:https://github.com/albertolalanda/new-ultrasonic-fork-for-MyMusicQoE
 
 Build:1.0.2,3
-    commit=c7e8bf641f682cb7ecb23f93d7f0e68c57687142
+    commit=1.0.2
     subdir=ultrasonic
     gradle=yes
 
-Auto Update Mode:Version %v
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:1.0.2
 Current Version Code:3
