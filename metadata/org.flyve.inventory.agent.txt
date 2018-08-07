@@ -30,8 +30,13 @@ or Rudder.
 Repo Type:git
 Repo:https://github.com/flyve-mdm/android-inventory-agent.git
 
-Build:1.0.0,39161
+Build:0.5.0,37960
     commit=0.5.0
+    subdir=app
+    gradle=yes
+
+Build:1.0.0,39161
+    commit=v1.0.0
     subdir=app
     gradle=yes
 
