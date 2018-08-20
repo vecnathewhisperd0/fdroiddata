@@ -22,6 +22,10 @@ Builds:
     gradle:
       - yes
 
+MaintainerNotes: Disabled for now as it's not working and needs to be renamed to be
+    distinguished from org.gateshipone.malp.
+
+ArchivePolicy: 0 versions
 AutoUpdateMode: Version %c
 UpdateCheckMode: Tags
 CurrentVersion: 0.9.0
