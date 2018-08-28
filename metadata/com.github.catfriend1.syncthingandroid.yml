@@ -43,7 +43,7 @@ Builds:
     preassemble:
       - buildNative
 
-AutoUpdateMode: Version v%
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[a-z0-9.]*$
 CurrentVersion: 0.14.50.rc2.5
 CurrentVersionCode: 4153
