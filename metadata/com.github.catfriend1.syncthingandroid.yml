@@ -36,10 +36,11 @@ Builds:
     gradle:
       - yes
     output: app/build/outputs/apk/release/app-release-unsigned.apk
-    rm: syncthing/src/github.com/syncthing/syncthing/lib/model/testdata
+    rm:
+      - syncthing/src/github.com/syncthing/syncthing/lib/model/testdata
     prebuild: sed -i -e '/signingConfig/d' app/build.gradle
     ndk: r15c
-    preassemble: 
+    preassemble:
       - buildNative
 
 AutoUpdateMode: Version v%
