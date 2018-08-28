@@ -13,13 +13,13 @@ trustworthy and decentralized. Your data is your data alone and you deserve to
 choose where it is stored, if it is shared with some third party and how it's
 transmitted over the Internet.
 Major enhancements in this fork are:
-- UI explains why syncthing is running or not running according to the run
+* UI explains why syncthing is running or not running according to the run
 conditions set in preferences.
-- A welcome wizard guiding you through initial setup on first launch or if
+* A welcome wizard guiding you through initial setup on first launch or if
 mandatory prerequisites are missing like for example the storage permission.
-- Run condition bugs are fixed.
-- "Battery eater" problem is fixed.
-- Android 8+ support is on it's way.
+* Run condition bugs are fixed.
+* "Battery eater" problem is fixed.
+* Android 8+ support is on it's way.
 .
 
 Repo Type:git
