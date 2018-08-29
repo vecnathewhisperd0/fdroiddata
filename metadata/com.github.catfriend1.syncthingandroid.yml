@@ -31,8 +31,9 @@ Builds:
     commit: v0.14.50.rc2.5
     submodules: true
     sudo: |-
-        apt-get install -y golang-1.9-go/testing
-        ln -s /usr/lib/go-1.9/bin/go /usr/bin/go
+        curl -sL -o ~/gimme https://raw.githubusercontent.com/travis-ci/gimme/master/gimme
+        chmod +x ~/gimme
+        eval "$(~/gimme 1.9.5)"
     gradle:
       - yes
     output: app/build/outputs/apk/release/app-release-unsigned.apk
