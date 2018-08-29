@@ -66,14 +66,14 @@ RepoType: git
 Repo: https://github.com/M66B/open-source-email
 
 Builds:
-  - versionName: '0.28'
-    versionCode: 28
-    commit: '0.28'
+  - versionName: '0.32'
+    versionCode: 32
+    commit: '0.32'
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.28'
-CurrentVersionCode: 28
+CurrentVersion: '0.32'
+CurrentVersionCode: 32
