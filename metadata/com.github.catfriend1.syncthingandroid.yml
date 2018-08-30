@@ -9,11 +9,8 @@ Changelog: https://github.com/Catfriend1/syncthing-android/releases
 AutoName: Syncthing-Fork (Catfriend1)
 Summary: File synchronization
 Description: |-
-    Syncthing replaces proprietary sync and cloud services with something open,
-    trustworthy and decentralized. Your data is your data alone and you deserve to
-    choose where it is stored, if it is shared with some third party and how it's
-    transmitted over the Internet.
-    Major enhancements in this fork are:
+    This is a fork of [[com.nutomic.syncthingandroid]] that brings major
+    enhancements like:
     * UI explains why syncthing is running or not running according to the run
     conditions set in preferences.
     * A welcome wizard guiding you through initial setup on first launch or if
@@ -21,6 +18,10 @@ Description: |-
     * Run condition bugs are fixed.
     * "Battery eater" problem is fixed.
     * Android 8+ support is on it's way.
+    Syncthing replaces proprietary sync and cloud services with something open,
+    trustworthy and decentralized. Your data is your data alone and you deserve to
+    choose where it is stored, if it is shared with some third party and how it's
+    transmitted over the Internet.
 
 RepoType: git
 Repo: https://github.com/Catfriend1/syncthing-android.git
