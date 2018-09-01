@@ -1,8 +1,10 @@
 Categories:
-  - None
+  - Multimedia
 License: Apache-2.0
 SourceCode: https://github.com/ianmcxa/Soft-Sound
 IssueTracker: https://github.com/ianmcxa/Soft-Sound/issues
+
+AutoName: Soft Sound
 
 RepoType: git
 Repo: https://github.com/ianmcxa/Soft-Sound
@@ -17,3 +19,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
