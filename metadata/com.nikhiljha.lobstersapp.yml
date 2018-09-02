@@ -5,16 +5,20 @@ WebSite: https://gitlab.com/nikhiljha/lobsters-app
 SourceCode: https://gitlab.com/nikhiljha/lobsters-app/tree/HEAD
 IssueTracker: https://gitlab.com/nikhiljha/lobsters-app/issues
 
+AutoName: lobsters_app
+
 RepoType: git
 Repo: https://gitlab.com/nikhiljha/lobsters-app.git
 
 Builds:
-  - versionCode: 1
-    versionName: 0.0.1
-    srclibs: flutter@beta
-    build: export PATH=$$flutter$$/bin:$PATH && flutter build apk
+  - versionName: 0.0.1
+    versionCode: 1
+    commit: v0.0.1
     output: build/app/outputs/apk/release/app-release.apk
-    commit: '7530e47370237465c2e84842cddfb44557e534a8'
+    srclibs:
+      - flutter@beta
+    build: |-
+        export PATH=$$flutter$$/bin:$PATH && flutter build apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
