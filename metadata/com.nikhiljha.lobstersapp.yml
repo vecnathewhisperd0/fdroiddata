@@ -11,7 +11,7 @@ RepoType: git
 Repo: https://gitlab.com/nikhiljha/lobsters-app.git
 
 Builds:
-  - versionName: v0.0.3
+  - versionName: 0.0.3
     versionCode: 3
     commit: v0.0.3
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
