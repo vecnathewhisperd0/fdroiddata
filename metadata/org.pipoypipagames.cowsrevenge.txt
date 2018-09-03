@@ -12,7 +12,7 @@ Repo Type:git
 Repo:https://github.com/Dariasteam/Cows-Revenge.git
 
 Build:1.0.5,9
-    commit=2aed35573403096a37845796307a076ac76b8c88
+    commit=2231e3a0e551f36f69a5e785d6734d97f46910a0
     sudo=apt-get install -y -t jessie-backports clang
     output=cows_revenge.apk
     srclibs=Godot@7cb027d0718bda02dac3b7d570bc359ca32921e5
