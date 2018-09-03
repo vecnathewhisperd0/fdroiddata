@@ -11,17 +11,18 @@ RepoType: git
 Repo: https://gitlab.com/nikhiljha/lobsters-app.git
 
 Builds:
-  - versionName: v0.0.2
-    versionCode: 2
-    commit: v0.0.2
+  - versionName: v0.0.3
+    versionCode: 3
+    commit: v0.0.3
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
       - flutter@dev
-    prebuild: rm -fr ios
-    build: |-
-        export PATH=$$flutter$$/bin:$PATH && flutter build apk --flavor fdroid
+    rm:
+      - ios
+    prebuild: $$flutter$$/bin/flutter pub get
+    build: $$flutter$$/bin/flutter build apk --flavor fdroid
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.2
-CurrentVersionCode: 2
+CurrentVersion: 0.0.3
+CurrentVersionCode: 3
