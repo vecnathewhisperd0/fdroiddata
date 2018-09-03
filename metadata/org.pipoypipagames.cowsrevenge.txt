@@ -11,8 +11,8 @@ Auto Name:Cow's Revenge
 Repo Type:git
 Repo:https://github.com/Dariasteam/Cows-Revenge.git
 
-Build:1.0.5,9
-    commit=2231e3a0e551f36f69a5e785d6734d97f46910a0
+Build:1.0.4,6
+    commit=a53801e19f35c5656307da909e5f6a7b3719654a
     sudo=apt-get install -y -t jessie-backports clang
     output=cows_revenge.apk
     srclibs=Godot@7cb027d0718bda02dac3b7d570bc359ca32921e5
@@ -32,8 +32,8 @@ Build:1.0.5,9
         cd ../cows_revenge && \
         ../godot/bin/godot_server.server.opt.tools.64 -export Android ../cows_revenge.apk
 
-Build:1.0.4,6
-    commit=a53801e19f35c5656307da909e5f6a7b3719654a
+Build:1.0.5,9
+    commit=2231e3a0e551f36f69a5e785d6734d97f46910a0
     sudo=apt-get install -y -t jessie-backports clang
     output=cows_revenge.apk
     srclibs=Godot@7cb027d0718bda02dac3b7d570bc359ca32921e5
