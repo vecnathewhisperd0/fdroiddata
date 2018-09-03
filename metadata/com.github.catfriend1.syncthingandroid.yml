@@ -33,17 +33,17 @@ Builds:
     submodules: true
     sudo: |-
         apt-get install -yy gcc gccgo-6
-		ln -s /usr/bin/go-6 /usr/bin/go
-		export GOROOT_BOOTSTRAP=/usr
-		go version
-		git clone https://go.googlesource.com/go ~/go
-		cd ~/go
-		git checkout go1.9.7
-		cd ~/go/src
-		./all.bash
-		rm /usr/bin/go
-		export PATH=/root/go/bin:${PATH}
-		go version
+        ln -s /usr/bin/go-6 /usr/bin/go
+        export GOROOT_BOOTSTRAP=/usr
+        go version
+        git clone https://go.googlesource.com/go ~/go
+        cd ~/go
+        git checkout go1.9.7
+        cd ~/go/src
+        ./all.bash
+        rm /usr/bin/go
+        export PATH=/root/go/bin:${PATH}
+        go version
     gradle:
       - yes
     output: app/build/outputs/apk/release/app-release-unsigned.apk
