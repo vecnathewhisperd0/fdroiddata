@@ -5,7 +5,8 @@ WebSite: https://gitlab.com/nikhiljha/lobsters-app
 SourceCode: https://gitlab.com/nikhiljha/lobsters-app/tree/HEAD
 IssueTracker: https://gitlab.com/nikhiljha/lobsters-app/issues
 
-AutoName: lobsters_app
+Name: Lobsters App
+Summary: An app for lobste.rs
 
 RepoType: git
 Repo: https://gitlab.com/nikhiljha/lobsters-app.git
@@ -22,7 +23,7 @@ Builds:
     prebuild: $$flutter$$/bin/flutter pub get
     build: $$flutter$$/bin/flutter build apk --flavor fdroid
 
-AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
+AutoUpdateMode: None
+UpdateCheckMode: None
 CurrentVersion: 0.0.3
 CurrentVersionCode: 3
