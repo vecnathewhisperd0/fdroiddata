@@ -7,13 +7,6 @@ FlattrID:2887057
 
 Auto Name:MyOwnNotes
 Summary:Notes management for ownCloud
-Description:
-Create, edit, delete and sync your notes with ownCloud.
-
-In order to use this app you will need:
-
-* [[com.owncloud.android]]
-.
 
 Repo Type:git
 Repo:https://github.com/aykit/MyOwnNotes.git

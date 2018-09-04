@@ -1,0 +1,19 @@
+
+Interact with your slideshow presentation from your Android device.
+
+Features:
+
+* Slide previews
+* Speaker notes
+* Play/Pause presentation
+* Set timers
+
+To set up the app with your computer, follow this guide:
+[https://wiki.documentfoundation.org/Development/Impress/RemoteHowTo
+RemoteHowTo]
+
+This build does not include the proprietary google play services library, and
+thus lacks wearable support.
+.
+
+

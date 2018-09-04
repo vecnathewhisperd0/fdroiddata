@@ -6,12 +6,6 @@ Issue Tracker:https://github.com/jcarolus/android-chess/issues
 
 Auto Name:Chess
 Summary:Chess program and FICS client
-Description:
-Play chess against your Android or online (FICS). Featuring 2000 practice
-positions, 500 puzzles, UCI engine support, Chess 960 and more. It's also
-possible to set up a position on the board, save and edit games, navigate
-through history and import/export via e-mail or clipboard.
-.
 
 Repo Type:git
 Repo:https://github.com/jcarolus/android-chess.git

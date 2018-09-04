@@ -8,17 +8,6 @@ Issue Tracker:https://github.com/WeAreFairphone/android_packages_apps_MyContacts
 Name:My Contacts (legacy)
 Auto Name:My Contacts
 Summary:Quickly access your contacts
-Description:
-''''DEPRECATION NOTICE'''
-
-The app's development continues in [[community.fairphone.mycontacts]], no
-further updates will be available. The old app will be moved to the archive.
-
-Recent Contacts lets you see your recently and most called contacts in one
-overview, and it lets you make direct phone calls straight from the widget
-itself without launching the dialer app first. As with any widget, if you don’t
-like using it, it can easily be removed.
-.
 
 Repo Type:git
 Repo:https://github.com/WeAreFairphone/android_packages_apps_MyContactsWidget

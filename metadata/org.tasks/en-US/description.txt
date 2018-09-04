@@ -1,0 +1,13 @@
+
+This app is built on the same code as the original Astrid app but differs in
+several ways:
+
+* No Astrid.com synchronization
+* No sharing or assigning tasks
+* No iOS or web interface
+* Third party apps need to update their code to support Tasks
+
+Tasks is not affiliated with Yahoo! or Todoroo.
+.
+
+

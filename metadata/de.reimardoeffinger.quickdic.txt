@@ -7,13 +7,6 @@ Changelog:https://github.com/rdoeffinger/Dictionary/releases
 
 Auto Name:QuickDic
 Summary:Offline translation dictionary
-Description:
-Resurrection of [[com.hughes.android.dictionary]] to a new maintainer. Uses data
-from Wiktionary and Beolingus to generate dictionary files that can be used
-offline. These can be downloaded from within the app. These can also be
-generated automatically, though documentation for the process is currently
-missing.
-.
 
 Repo Type:git
 Repo:https://github.com/rdoeffinger/Dictionary.git

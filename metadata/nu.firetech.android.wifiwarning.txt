@@ -6,10 +6,6 @@ Issue Tracker:https://github.com/firetech/wifiwarning/issues
 
 Auto Name:WiFi Warning
 Summary:Notify when WiFi is enabled and disconnected
-Description:
-Remind yourself if you forget to disable WiFi when you go out. The notification
-can be configured to be persistent or dismissed with a swipe.
-.
 
 Repo Type:git
 Repo:https://github.com/firetech/wifiwarning

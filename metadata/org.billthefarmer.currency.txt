@@ -7,17 +7,6 @@ Changelog:https://github.com/billthefarmer/currency/releases
 
 Auto Name:Currency
 Summary:Currency conversion
-Description:
-Simple currency conversion.
-
-* Currency rates from the European Central Bank
-
-* 32 international currencies
-
-* Currency rates updated daily
-
-* Last rate update retained for use offline
-.
 
 Repo Type:git
 Repo:https://github.com/billthefarmer/currency

@@ -9,28 +9,6 @@ LiberapayID:46438
 
 Auto Name:Notes
 Summary:View and edit notes on Nextcloud
-Description:
-Companion app to Nextcloud Notes.
-
-Features
-
-* List, create, edit, share, search and delete notes
-* Share text and links as new note into the app
-* Mark notes as favorite
-* Bulk delete
-* Render MarkDown (using RxMarkdown)
-* English, German, Russian, Armenian, French and Serbian UI
-
-Requirements
-
-* Nextcloud instance running
-* Nextcloud Notes app enabled
-
-Alternatives
-
-If you dislike this app and you are looking for alternatives: Have a look at
-[[org.aykit.MyOwnNotes]].
-.
 
 Repo Type:git
 Repo:https://github.com/stefan-niedermann/nextcloud-notes.git
@@ -150,7 +128,19 @@ Build:0.18.0,30
     submodules=yes
     gradle=yes
 
+Build:0.20.0,32
+    commit=v0.20.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.21.0,33
+    commit=v0.21.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.18.0
-Current Version Code:30
+Current Version:0.21.0
+Current Version Code:33

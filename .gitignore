@@ -17,6 +17,8 @@
 !/build/extlib/
 /build/.fdroidvcs-*
 /stats/publishsigkeys.jar
+/metadata/com.app2go.sudokufree*
+
 
 # used in fdroidserver's ./jenkins-test
 keystore.jks

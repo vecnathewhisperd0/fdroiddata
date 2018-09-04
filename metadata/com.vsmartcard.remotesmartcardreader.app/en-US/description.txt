@@ -1,0 +1,8 @@
+
+Allow a host computer to use the smartphone's NFC hardware as contact-less
+smartcard reader. On the host computer a special smart card driver, vpcd, must
+be installed. The app establishes a connection to vpcd over the network when a
+contact-less card is detected.
+.
+
+

@@ -1,0 +1,8 @@
+
+Clock for games like chess. It uses [https://en.wikipedia.org/wiki/Time_control
+Fischer-After time control] method. To use, you should provide time for each
+player as initial time and delay time. After each move the delay time will be
+added to the remaining time of the player.
+.
+
+

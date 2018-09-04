@@ -1,0 +1,7 @@
+
+Stock Android dialer does not support dialing SIP numbers directly; the only way
+to do it is to add a contact or run am start -a android.intent.action.CALL
+sip:... in terminal. SIP Caller allows dialing SIP numbers directly.
+.
+
+
