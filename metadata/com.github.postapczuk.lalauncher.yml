@@ -25,7 +25,7 @@ Repo: https://github.com/postapczuk/Light-Android-Launcher
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: 91b87b637ef500f6fe989dc1a1d5717d9dd0d4cc
+    commit: '1.0'
     subdir: LaLauncher
     gradle:
       - yes
