@@ -39,7 +39,7 @@ Builds:
         mkdir -p ~/gccgo_objdir
         cd ~/gccgo_objdir
         ~/gccgo/configure --prefix=/opt/gccgo --enable-languages=c,c++,go --disable-multilib
-        make
+        make -j$(nproc)
         make install
         # ToDo
         go version
