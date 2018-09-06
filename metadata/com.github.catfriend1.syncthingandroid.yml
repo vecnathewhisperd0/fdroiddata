@@ -41,12 +41,14 @@ Builds:
         ~/gccgo/configure --prefix=/opt/gccgo --enable-languages=c,c++,go --disable-multilib
         make -j$(nproc)
         make install
-        # ToDo
+        export LD_LIBRARY_PATH=/opt/gccgo/lib64
+        ln -s /opt/gccgo/bin/go /usr/bin/go
         go version
         git clone https://go.googlesource.com/go ~/go
         cd ~/go
         git checkout go1.9.7
         cd ~/go/src
+        export GOROOT_BOOTSTRAP=/usr
         ./all.bash
         rm /usr/bin/go
         export PATH=/root/go/bin:${PATH}
