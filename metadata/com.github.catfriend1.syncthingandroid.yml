@@ -32,9 +32,16 @@ Builds:
     commit: v0.14.50.rc2.5
     submodules: true
     sudo: |-
-        apt-get install -yy gcc gccgo-6
-        ln -s /usr/bin/go-6 /usr/bin/go
-        export GOROOT_BOOTSTRAP=/usr
+        apt-get install -yy flex g++ gcc make subversion
+        svn checkout -q svn://gcc.gnu.org/svn/gcc/branches/gccgo ~/gccgo
+        cd ~/gccgo
+        ./contrib/download_prerequisites
+        mkdir -p ~/gccgo_objdir
+        cd ~/gccgo_objdir
+        ~/gccgo/configure --prefix=/opt/gccgo --enable-languages=c,c++,go --disable-multilib
+        make
+        make install
+        # ToDo
         go version
         git clone https://go.googlesource.com/go ~/go
         cd ~/go
