@@ -1,4 +1,4 @@
-Categories:Internet,Development
+Categories:Internet
 License:GPL-3.0-only
 Web Site:https://gitlab.com/anoopknr/pastebin
 Source Code:https://gitlab.com/anoopknr/pastebin/tree/HEAD
@@ -10,13 +10,6 @@ Description:
 Client application for Ubuntu pastebin, a web application where you can paste
 snippets of text, usually source code or log files, for public viewing. Pastes
 made to pastebin are usually only saved for a short period of time.
-
-Features:
-
-* Code sharing made simple.
-* Log facility.
-* Simple UI.
-* Opensouce app for opensource service.
 .
 
 Repo Type:git
