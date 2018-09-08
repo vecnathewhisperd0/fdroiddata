@@ -31,8 +31,9 @@ Build:0.0.3,3
 Build:0.0.7,7
     commit=v0.0.7
     submodules=yes
+    rm=android/libs
     gradle=yes
-    output=android/build/outputs/apk/android-release-unsigned.apk
+    subdir=android
     scanignore=android/assets/dict/en.bin,android/libs
 
 Auto Update Mode:Version v%v
