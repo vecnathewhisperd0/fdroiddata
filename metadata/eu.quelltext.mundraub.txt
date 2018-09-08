@@ -1,0 +1,73 @@
+AntiFeatures:NonFreeNet,Tracking
+Categories:Internet,Science & Education,Sports & Health
+License:GPL-3.0-only
+Author Name:Nicco Kunzmann
+Author Email:niccokunzmann@rambler.ru
+Web Site:https://github.com/niccokunzmann/mundraub-android
+Source Code:https://github.com/niccokunzmann/mundraub-android
+Issue Tracker:https://github.com/niccokunzmann/mundraub-android/issues
+
+Auto Name:Mundraub
+
+Repo Type:git
+Repo:https://github.com/niccokunzmann/mundraub-android.git
+
+Build:1.0,1
+    commit=v1.0
+    subdir=app
+    gradle=yes
+
+Build:1.8,9
+    commit=v1.8
+    subdir=app
+    gradle=yes
+
+Build:1.13,14
+    commit=v1.13
+    subdir=app
+    gradle=yes
+
+Build:1.18,19
+    commit=v1.18
+    subdir=app
+    gradle=yes
+
+Build:1.22,23
+    commit=v1.22
+    subdir=app
+    gradle=yes
+
+Build:1.26,27
+    commit=v1.26
+    subdir=app
+    gradle=yes
+
+Build:1.27,28
+    commit=v1.27
+    subdir=app
+    gradle=yes
+
+Build:1.30,31
+    commit=v1.30
+    subdir=app
+    gradle=yes
+
+Build:1.36,37
+    commit=v1.36
+    subdir=app
+    gradle=yes
+
+Build:1.43,44
+    commit=v1.43
+    subdir=app
+    gradle=yes
+
+Build:1.47,48
+    commit=v1.47
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:1.47
+Current Version Code:48

@@ -20,7 +20,17 @@ Build:1.07,1
     subdir=app
     gradle=yes
 
+Build:1.21,4
+    commit=1.21
+    subdir=app
+    gradle=yes
+
+Build:1.22,5
+    commit=1.22
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.07
-Current Version Code:1
+Current Version:1.22
+Current Version Code:5

@@ -3,6 +3,7 @@ License:Apache-2.0
 Web Site:https://thealaskalinuxuser.wordpress.com/
 Source Code:https://gitlab.com/alaskalinuxuser/app_justnotes
 Issue Tracker:https://gitlab.com/alaskalinuxuser/app_justnotes/issues
+Changelog:https://gitlab.com/alaskalinuxuser/app_justnotes/tags
 
 Auto Name:Just Notes
 Summary:Take notes with import and export features
@@ -66,7 +67,12 @@ Build:1.9,9
     subdir=app
     gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
+Build:2.0,10
+    commit=2.0
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
 Current Version:2.0
 Current Version Code:10

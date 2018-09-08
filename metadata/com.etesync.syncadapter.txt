@@ -170,13 +170,31 @@ Build:0.20.4,29
     submodules=yes
     gradle=yes
 
+Build:0.21.0,30
+    commit=v0.21.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.21.1,31
+    commit=v0.21.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.21.2,32
+    commit=v0.21.2
+    subdir=app
+    submodules=yes
+    gradle=yes
+
 Maintainer Notes:
 Summary and Description are maintained by upstream using fastlane in
 the source repo:
 https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
 .
 
-Auto Update Mode:Version %v
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.20.4
-Current Version Code:29
+Current Version:0.21.2
+Current Version Code:32

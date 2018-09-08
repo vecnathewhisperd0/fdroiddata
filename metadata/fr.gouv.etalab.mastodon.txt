@@ -3,6 +3,7 @@ License:GPL-3.0-only
 Web Site:https://tom79.bitbucket.io/
 Source Code:https://gitlab.com/tom79/mastalab
 Issue Tracker:https://gitlab.com/tom79/mastalab/issues
+Changelog:https://gitlab.com/tom79/mastalab/tags
 LiberapayID:23077
 
 Auto Name:Mastalab
@@ -318,7 +319,42 @@ Build:1.9.0,123
     prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
         sed -i -e '/playstoreImplementation/d' build.gradle
 
+Build:1.10.1,125
+    commit=1.10.1
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.10.3,127
+    commit=1.10.3
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.10.4,129
+    commit=1.10.4
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.10.5,130
+    commit=1.10.5
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.11.0,132
+    commit=1.11.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]+$
-Current Version:1.9.0
-Current Version Code:123
+Current Version:1.11.0
+Current Version Code:132
