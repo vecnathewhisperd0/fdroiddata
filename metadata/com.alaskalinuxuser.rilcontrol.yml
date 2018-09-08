@@ -23,8 +23,8 @@ Repo: https://gitlab.com/alaskalinuxuser/app_ril_control
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    subdir: app
     commit: '1.0'
+    subdir: app
     gradle:
       - yes
 
