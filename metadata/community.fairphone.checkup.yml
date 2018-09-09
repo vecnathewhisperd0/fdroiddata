@@ -27,14 +27,12 @@ Repo: https://github.com/WeAreFairphone/FP2-Checkup
 Builds:
   - versionName: 2.1.8
     versionCode: 20108
-    commit: 8971ce36d0c9885be317dede16a2aef75795e73e
+    commit: 2.1.8
     subdir: app
     gradle:
       - yes
-    prebuild: |-
-        sed -i -e '/play-services-appindexing/d' build.gradle
 
-AutoUpdateMode: None
-UpdateCheckMode: RepoManifest
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
 CurrentVersion: 2.1.8
 CurrentVersionCode: 20108
