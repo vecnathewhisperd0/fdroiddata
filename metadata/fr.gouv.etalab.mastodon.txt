@@ -1,14 +1,14 @@
 Categories:Internet
-License: GPL-3.0-only
-Web Site: https://mastalab.app/
-Source Code: https://gitlab.com/tom79/mastalab
-Issue Tracker: https://gitlab.com/tom79/mastalab/issues
-Changelog: https://gitlab.com/tom79/mastalab/tags
-Donate: https://liberapay.com/tom79/donate
+License:GPL-3.0-only
+Web Site:https://mastalab.app/
+Source Code:https://gitlab.com/tom79/mastalab
+Issue Tracker:https://gitlab.com/tom79/mastalab/issues
+Changelog:https://gitlab.com/tom79/mastalab/tags
+Donate:https://liberapay.com/tom79/donate
 LiberapayID:23077
 
-AutoName: Mastalab
-Summary: Multi-account client for Mastodon
+AutoName:Mastalab
+Summary:Multi-account client for Mastodon
 Description:
 Mastalab allows you to manage several accounts and to switch from one to another
 by a simple click. You can start to compose messages and finish them later by a
