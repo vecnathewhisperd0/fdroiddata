@@ -1,0 +1,24 @@
+Categories:Internet
+License:MIT
+Web Site:https://rocket.chat
+Source Code:https://github.com/RocketChat/Rocket.Chat.Android
+Issue Tracker:https://github.com/RocketChat/Rocket.Chat.Android/issues
+
+Summary:Team Communication tool
+Description:
+Rocket.Chat is free, unlimited and open source. Replace email, HipChat & Slack
+with the ultimate team chat software solution.
+
+The offical Android app can connect to any number of Rocket.Chat instances.
+.
+
+Repo Type:git
+Repo:https://github.com/RocketChat/Rocket.Chat.Android.git
+
+Build:2.5.1,2035
+    commit=v2.5.1
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
