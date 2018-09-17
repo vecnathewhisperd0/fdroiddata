@@ -21,10 +21,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: |-
-        sed -i -e 's/1.0.0/2.3.2/' ../build.gradle && \
-        sed -i -e 's/2.2.1/3.3/' ../gradle/wrapper/gradle-wrapper.properties && \
-        sed -i -e 's/21.1.2/25.0.2/' build.gradle
 
 AutoUpdateMode: None
 UpdateCheckMode: None
