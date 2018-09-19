@@ -1,9 +1,9 @@
 Categories:Time
 License:GPL-3.0-or-later
-Web Site:https://github.com/arminha/worldclockwidget/blob/HEAD/README.rst
-Source Code:https://github.com/arminha/worldclockwidget
-Issue Tracker:https://github.com/arminha/worldclockwidget/issues
-Changelog:https://github.com/arminha/worldclockwidget/blob/HEAD/CHANGES.rst
+Web Site:https://gitlab.com/bisasda/worldclockwidget/blob/master/README.rst
+Source Code:https://gitlab.com/bisasda/worldclockwidget
+Issue Tracker:https://gitlab.com/bisasda/worldclockwidget/issues
+Changelog:https://gitlab.com/bisasda/worldclockwidget/blob/master/CHANGES.rst
 
 Auto Name:World Clock & Weather
 Summary:Display local time and weather conditions
@@ -14,8 +14,8 @@ only.
 
 '''Features:'''
 
-* Light weight application. Require less than 1 mb free space.
-* Detect your city automatically (upcoming).
+* Light weight application.
+* Detect your city automatically
 * Show local time and weather conditions in more than 4000 places.
 * Add your own places: Add a place in the same time zone and change its name and coordinates to your desired location to show the actual weather condition there!
 * A compact clock widget, displaying the local time in your favorite locations.
@@ -25,7 +25,7 @@ only.
 .
 
 Repo Type:git
-Repo:https://github.com/arminha/worldclockwidget
+Repo:https://gitlab.com/bisasda/worldclockwidget/
 
 Build:1.6.2,34
     commit=1.6.2
