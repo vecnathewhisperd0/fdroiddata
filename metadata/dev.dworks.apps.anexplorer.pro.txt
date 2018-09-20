@@ -42,8 +42,11 @@ Build:3.9,64
 Maintainer Notes:
 The app has a free and a pro flavors.
 The free flavor contains proprietary libraries (crashlytics and firebase-ads) but the pro flavor does not.
+Moved to the archive because of https://github.com/1hakr/AnExplorer/issues/97
+Could be moved back to the main repo after a new release that remove this suspicious connections
 .
 
+Archive Policy:0 versions
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:3.9
