@@ -678,7 +678,6 @@ Build:0.8.13,81300
         find . -name *.aar -exec truncate -s 0 {} \;
     build=pushd $$olmsdk$$/android && \
         echo ndk.dir=$$NDK$$ > local.properties && \
-        rm gradle.properties && \
         gradle assembleRelease && \
         popd && \
         cp $$olmsdk$$/android/olm-sdk/build/outputs/aar/olm-sdk-release-2.3.0.aar libs/olm-sdk.aar && \
@@ -712,8 +711,8 @@ Build:0.8.13,81300
         popd && \
         cp $$matrixsdk$$/matrix-sdk/build/outputs/aar/matrix-sdk-release-*.aar libs/matrix-sdk.aar
 
-Build:0.8.14,81400
-    commit=v0.8.14
+Build:0.8.15,81500
+    commit=v0.8.15
     subdir=vector
     sudo=curl -Lo node.tar.xz https://nodejs.org/dist/v8.11.4/node-v8.11.4-linux-x64.tar.xz && \
         echo "85ea7cbb5bf624e130585bfe3946e99c85ce5cb84c2aee474038bdbe912f908c node.tar.xz" | sha256sum -c - && \
@@ -721,7 +720,7 @@ Build:0.8.14,81400
         cp -a node-v8.11.4-linux-x64/. /usr/local/ && \
         npm install -g react-native-cli
     gradle=appfdroid
-    srclibs=matrixsdk@v0.9.8,olmsdk@2.3.0,jitsi-meet@c109199e060faa05440c6971f0683e8eb4d81167
+    srclibs=matrixsdk@v0.9.9,olmsdk@2.3.0,jitsi-meet@c109199e060faa05440c6971f0683e8eb4d81167
     prebuild=sed -i -e '/com.google.firebase/d' build.gradle && \
         sed -i -e '/com.google.gms.google-services/d' build.gradle && \
         find . -name *.aar -exec truncate -s 0 {} \;
@@ -762,6 +761,7 @@ Build:0.8.14,81400
         cp $$matrixsdk$$/matrix-sdk/build/outputs/aar/matrix-sdk-release-*.aar libs/matrix-sdk.aar
 
 Maintainer Notes:
+TODO: update ndk version to latest for next build!
 Upstream puts their library aars inside the repo, we need build them our self. We truncate instead of deleting them such that the initial gradle clean is successful.
 jitsi-meet needs react-native which we get via npm. This pulls in a few prebuilt binaries for now :-/.
 We also need to provide an up to date version of npm and nodejs, neither of which can be found in debian jessie, so we download the upstream provided nodejs bundle which includes npm.
@@ -772,5 +772,5 @@ Currently pinned jitsi-lib version needs a few hacks to still build from source:
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:0.8.14
-Current Version Code:81400
+Current Version:0.8.15
+Current Version Code:81500

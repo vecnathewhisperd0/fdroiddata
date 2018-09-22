@@ -44,7 +44,8 @@ more information.
 
 There is a simulation mode available in the application. The Flight director is
 used to select a waypoint and altitude and the simulator will generate the GPS
-movements to navigate to the selected waypoint. The speed is constant at 192kt.
+movements to navigate to the selected waypoint. The speed is set at the typical
+cruise for the currently selected aircraft.
 
 '''Primary Flight Display'''
 
@@ -98,7 +99,12 @@ Build:1.7,21
     subdir=mfd
     gradle=yes
 
+Build:2.0,22
+    commit=DMAP_2.0
+    subdir=mfd
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:Tags ^DMAP
-Current Version:1.7
-Current Version Code:21
+Current Version:2.0
+Current Version Code:22

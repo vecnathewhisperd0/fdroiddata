@@ -712,7 +712,19 @@ Build:2.9.1.4,332
     gradle=acra
     rm=tests
 
+Build:2.9.2,336
+    commit=r336
+    subdir=myExpenses
+    gradle=acra
+    rm=tests
+
+Build:2.9.4,341
+    commit=r341
+    subdir=myExpenses
+    gradle=acra,conscript
+    rm=tests
+
 Auto Update Mode:Version r%c
 Update Check Mode:Tags
-Current Version:2.9.1.4
-Current Version Code:332
+Current Version:2.9.4
+Current Version Code:341
