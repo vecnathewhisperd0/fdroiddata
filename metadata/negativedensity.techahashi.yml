@@ -24,11 +24,5 @@ Builds:
     gradle:
       - yes
 
-  - versionName: '7'
-    versionCode: 7
-    commit: b6a3cea6ce6cb4c7623f456bf5f2b58cd2f59d8a
-    gradle:
-      - yes
-
-AutoUpdateMode: None
-UpdateCheckMode: None
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags ^[0-9]+\.[0-9]+\.[0-9]+$
