@@ -31,15 +31,15 @@ Build:1.2.0,11
     subdir=app
     submodules=yes
     gradle=foss
-    prebuild=sed -i -e '/maven.fabric.io/d' ../build.gradle ../CommonUtils/build.gradle
-    
+    prebuild=sed -i -e '/maven.fabric.io/d' ../build.gradle ../CommonUtils/build.gradl
+
 Build:1.2.2,12
     commit=v1.2.2
     subdir=app
     submodules=yes
     gradle=foss
     prebuild=sed -i -e '/maven.fabric.io/d' ../build.gradle ../CommonUtils/build.gradle
-    
+
 Build:1.2.3,13
     commit=v1.2.3
     subdir=app
