@@ -12,12 +12,6 @@ Open Source and free Launcher for Android based on OpenLauncher.
 Repo Type:git
 Repo:https://github.com/otakuhqz/ZimLX
 
-Build:0.3.0,242
-    commit=v0.3.0
-    subdir=app
-    gradle=flavorDefault
-    prebuild=sed -i -e '/debuggable/d' build.gradle
-
 Build:0.4.2,1980
     commit=v0.4.3
     subdir=app
