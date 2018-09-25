@@ -18,9 +18,17 @@ Build:0.3.0,242
     gradle=flavorDefault
     prebuild=sed -i -e '/debuggable/d' build.gradle
 
+Build:0.4.2,1980
+    commit=v0.4.3
+    subdir=app
+    gradle=flavorDefault
+    prebuild=sed -i -e '/debuggable/d' build.gradle
+
 Maintainer Notes:
 Update checks don't work because the version name and code are stored in a separate version.properties file.
 .
 
-Auto Update Mode:Version v%v
+Auto Update Mode:None
 Update Check Mode:None
+Current Version:0.4.2
+Current Version Code:1980
