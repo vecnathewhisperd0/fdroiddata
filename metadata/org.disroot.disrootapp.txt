@@ -20,11 +20,11 @@ Repo Type:git
 Repo:https://git.fosscommunity.in/disroot/disapp
 
 Build:0.9.1,6
-    commit=cb0e7c4400b660933518806ec9cebf0dc38db7ff
+    commit=v0.9.1
     subdir=app
     gradle=yes
 
 Auto Update Mode:Version v%v
-Update Check Mode:RepoManifest
+Update Check Mode:Tags
 Current Version:0.9.1
 Current Version Code:6

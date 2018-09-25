@@ -23,11 +23,11 @@ Repo Type:git
 Repo:https://framagit.org/disroot/AndHub
 
 Build:0.8.8,38
-    commit=cf53fbf02341eba2a1e631099a2eefae7d901584
+    commit=v0.8.8
     subdir=app
     gradle=yes
 
 Auto Update Mode:Version v%v
-Update Check Mode:RepoManifest
+Update Check Mode:Tags
 Current Version:0.8.8
 Current Version Code:38
