@@ -274,7 +274,7 @@ Build:5.10.4,51004
     gradle=yes
     output=app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
     ndk=r17b
-    
+
 Maintainer Notes:
 Cannot use AUM/UCM because version code and version name are dynamic.
 .
