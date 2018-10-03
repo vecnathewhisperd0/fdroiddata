@@ -99,7 +99,7 @@ Build:1.3.3,24
     subdir=mobile
     gradle=yes
 
-Auto Update Mode:%v
+Auto Update Mode:Version %v
 Update Check Mode:Tags
 Current Version:1.3.3
 Current Version Code:24
