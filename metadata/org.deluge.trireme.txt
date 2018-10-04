@@ -41,7 +41,8 @@ Build:0.9.1,7
     commit=v0.9.1
     output=build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs=flutter@beta
-    prebuild=sed -i -e 's|git@github.com:|https://github.com/|' pubspec.lock pubspec.yaml && flutter upgrade
+    prebuild=sed -i -e 's|git@github.com:|https://github.com/|' pubspec.lock pubspec.yaml && \
+    	flutter upgrade
     build=export PATH=$$flutter$$/bin:$PATH && \
         flutter config --no-analytics && \
         flutter build apk --flavor fdroid
