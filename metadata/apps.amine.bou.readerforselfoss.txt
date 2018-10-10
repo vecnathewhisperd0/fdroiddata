@@ -35,6 +35,42 @@ Build:1618082151-github,1618082151
     gradle=githubConfig
     gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
 
+Build:1618092531-github,1618092531
+    commit=v1618092531
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1618092581-github,1618092581
+    commit=v1618092581
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1618092641-github,1618092641
+    commit=v1618092641
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1618092681-github,1618092681
+    commit=v1618092681
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1618092731-github,1618092731
+    commit=v1618092731
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1618102801-github,1618102801
+    commit=v1618102801
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
 Maintainer Notes:
 Version code and name are dynamically generated from the Git tag.
 
@@ -44,5 +80,5 @@ The Gradle properties are added to avoid a Gradle error but they are only used i
 Auto Update Mode:Version v%c
 Update Check Mode:HTTP
 Update Check Data:https://www.amine-bou.fr/version.txt|versionCode=(.*)|.|versionName=(.*)
-Current Version:1618082151-github
-Current Version Code:1618082151
+Current Version:1618102801-github
+Current Version Code:1618102801

@@ -19,7 +19,7 @@ Design principles:
 
 * Be as beautiful and easy to use as possible without sacrificing security or privacy
 * Rely on existing, well established protocols
-* Do not require (nor support) a Google Account or specifically Google Cloud Messaging (GCM) / Firebase Cloud Messaging (FCM)
+* Do not require a Google Account or specifically Google Cloud Messaging (GCM)
 * Require as few permissions as possible
 
 Features:
@@ -1052,7 +1052,19 @@ Build:2.2.8+fcr,280
     commit=2.2.8
     gradle=freeCompat
 
+Build:2.2.9+fcr,283
+    commit=2.2.9
+    gradle=freeCompat
+
+Build:2.3.0+fcr,290
+    commit=2.3.0
+    gradle=freeCompat
+
+Build:2.3.1+fcr,293
+    commit=2.3.1
+    gradle=freeCompat
+
 Auto Update Mode:Version %v+fcr
 Update Check Mode:Tags ^[0-9.]+$
-Current Version:2.2.8+fcr
-Current Version Code:280
+Current Version:2.3.1+fcr
+Current Version Code:293

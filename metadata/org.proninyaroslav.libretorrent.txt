@@ -3,6 +3,8 @@ License:GPL-3.0-only
 Web Site:
 Source Code:https://gitlab.com/proninyaroslav/libretorrent
 Issue Tracker:https://gitlab.com/proninyaroslav/libretorrent/issues
+Changelog:https://gitlab.com/proninyaroslav/libretorrent/blob/HEAD/NEWS
+Donate:https://gitlab.com/proninyaroslav/libretorrent#donation
 
 Auto Name:LibreTorrent
 Summary:Manage, download and share files
@@ -25,6 +27,11 @@ Implemented features:
 * Ability to download sequentially
 * Material Design
 * Tablet optimized UI
+* Scheduling
+* RSS manager
+* Android TV support
+* Ability to create torrents
+* And more
 .
 
 Repo Type:git
@@ -75,10 +82,7 @@ Build:1.8,9
     commit=1.8
     subdir=app
     gradle=yes
-
-Maintainer Notes:
-Push 1.0 to archive due to https://github.com/proninyaroslav/libretorrent/issues/4.
-.
+    output=build/outputs/apk/release/app-universal-release-unsigned.apk
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags

@@ -151,17 +151,27 @@ Build:2.7.2,85
     subdir=app
     gradle=prod
 
-Build:2.8.0,87
-    commit=v2.8.0
-    subdir=app
-    gradle=prod
-
 Build:2.8.1,88
     commit=v2.8.1
     subdir=app
     gradle=prod
 
+Build:2.8.2,89
+    commit=v2.8.2
+    subdir=app
+    gradle=prod
+
+Build:2.8.3,90
+    commit=v2.8.3
+    subdir=app
+    gradle=prod
+
+Build:2.8.4,91
+    commit=v2.8.4
+    subdir=app
+    gradle=prod
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.8.1
-Current Version Code:88
+Current Version:2.8.4
+Current Version Code:91

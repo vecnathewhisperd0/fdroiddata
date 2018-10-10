@@ -949,7 +949,15 @@ Build:6.29,369
     scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
     ndk=r17b
 
+Build:6.30,370
+    commit=v6.30
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.4.1" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    ndk=r17b
+
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:6.30
-Current Version Code:370
+Current Version:6.31
+Current Version Code:371

@@ -197,7 +197,77 @@ Build:3.2.6,64
     subdir=app
     gradle=yes
 
+Build:4.0.0,65
+    commit=v4.0.0
+    subdir=app
+    gradle=yes
+
+Build:4.0.1,66
+    commit=v4.0.1
+    subdir=app
+    gradle=yes
+
+Build:4.0.2,67
+    commit=v4.0.2
+    subdir=app
+    gradle=yes
+
+Build:4.0.3,68
+    commit=v4.0.3
+    subdir=app
+    gradle=yes
+
+Build:4.1.1,70
+    commit=v4.1.1
+    subdir=app
+    gradle=yes
+
+Build:4.1.2,71
+    commit=v4.1.2
+    subdir=app
+    gradle=yes
+
+Build:4.1.4,73
+    commit=v4.1.4
+    subdir=app
+    gradle=yes
+
+Build:4.1.5,74
+    commit=v4.1.5
+    subdir=app
+    gradle=yes
+
+Build:4.1.6,75
+    commit=v4.1.6
+    subdir=app
+    gradle=yes
+
+Build:4.2.0,76
+    commit=v4.2.0
+    subdir=app
+    gradle=yes
+
+Build:4.2.1,77
+    commit=v4.2.1
+    subdir=app
+    gradle=yes
+
+Build:4.2.3,79
+    commit=v4.2.3
+    subdir=app
+    gradle=yes
+
+Build:4.2.5,81
+    commit=v4.2.5
+    subdir=app
+    gradle=yes
+
+Build:4.2.6,82
+    commit=v4.2.6
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.2.6
-Current Version Code:64
+Current Version:4.2.6
+Current Version Code:82
