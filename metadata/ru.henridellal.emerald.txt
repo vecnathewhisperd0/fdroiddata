@@ -82,7 +82,8 @@ Build:0.5.6.2,35
 
 Build:0.6.0,36
     commit=v0.6.0
-    target=android-26
+    subdir=app
+    gradle=yes
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
