@@ -1,0 +1,20 @@
+Categories: Multimedia
+License: Apache-2.0
+SourceCode: https://github.com/uheai/Quoting-Stars
+IssueTracker: https://github.com/uheai/Quoting-Stars/issues
+
+Summary: Quoting Stars - App for Silent Communications 2017
+
+RepoType: git
+Repo: https://github.com/uheai/Quoting-Stars
+
+Builds:
+  - versionName: 1.0.8
+    versionCode: 8
+    commit: 42f79a2c85e09518c5d682ec33e7bd7b877c8d01
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
