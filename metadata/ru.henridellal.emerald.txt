@@ -80,7 +80,17 @@ Build:0.5.6.2,35
     commit=v0.5.6.2
     target=android-26
 
+Build:0.6.0,36
+    commit=ad88f18b55f793c565b9676524d6f0be695a8ac7
+    subdir=app
+    gradle=yes
+
+Build:0.6.0.1,37
+    commit=v0.6.0.1
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.5.6.2
-Current Version Code:35
+Current Version:0.6.0.1
+Current Version Code:37

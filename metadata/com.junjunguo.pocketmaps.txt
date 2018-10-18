@@ -37,8 +37,18 @@ Build:2.0,10
     subdir=PocketMaps/app
     gradle=yes
 
+Build:2.3,13
+    commit=2.3
+    subdir=PocketMaps/app
+    gradle=yes
+
+Build:2.5,15
+    commit=2.5
+    subdir=PocketMaps/app
+    gradle=yes
+
 Archive Policy:2 versions
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.0
-Current Version Code:10
+Current Version:2.5
+Current Version Code:15

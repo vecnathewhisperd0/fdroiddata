@@ -70,7 +70,21 @@ Builds:
     gradle:
       - productionFdroid
 
+  - versionName: 1.22.1-fdroid
+    versionCode: 1220128
+    commit: 1.22.1
+    subdir: app
+    gradle:
+      - productionFdroid
+
+  - versionName: 1.22.2-fdroid
+    versionCode: 1220229
+    commit: 1.22.2
+    subdir: app
+    gradle:
+      - productionFdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.22.0-fdroid
-CurrentVersionCode: 1220027
+CurrentVersion: 1.22.2-fdroid
+CurrentVersionCode: 1220229

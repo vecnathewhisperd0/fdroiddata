@@ -1,6 +1,6 @@
 Categories:Internet
 License:GPL-3.0-only
-Web Site:https://tom79.bitbucket.io/
+Web Site:https://mastalab.app/
 Source Code:https://gitlab.com/tom79/mastalab
 Issue Tracker:https://gitlab.com/tom79/mastalab/issues
 Changelog:https://gitlab.com/tom79/mastalab/tags
@@ -16,7 +16,7 @@ to a system of push notifications when new content is available or when
 receiving a notification on an account. Numerous features and settings
 parameters will allow to tailor the behavior of the app with what you need.
 
-Features include:
+'''Features'''
 
 * Multi-account management
 * Timelines (Federated / Local / Home)
@@ -354,7 +354,98 @@ Build:1.11.0,132
     prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
         sed -i -e '/playstoreImplementation/d' build.gradle
 
+Build:1.12.2,136
+    commit=1.12.2
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.13.0,138
+    commit=1.13.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.13.1,139
+    commit=1.13.1
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.13.3,141
+    commit=1.13.3
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.13.4,142
+    commit=1.13.4
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.13.6,144
+    commit=1.13.6
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.14.0,145
+    commit=1.14.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.14.2,147
+    commit=1.14.2
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.14.3,148
+    commit=1.14.3
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.15.1,150
+    commit=1.15.1
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.15.2,151
+    commit=1.15.2
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.15.4,153
+    commit=1.15.4
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.16.0,155
+    commit=1.16.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]+$
-Current Version:1.11.0
-Current Version Code:132
+Current Version:1.16.0
+Current Version Code:155

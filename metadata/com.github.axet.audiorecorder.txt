@@ -3,7 +3,6 @@ License:GPL-3.0-only
 Web Site:https://gitlab.com/axet/android-audio-recorder
 Source Code:https://gitlab.com/axet/android-audio-recorder/tree/HEAD
 Issue Tracker:https://gitlab.com/axet/android-audio-recorder/issues
-Changelog:https://gitlab.com/axet/android-audio-recorder/tags
 
 Auto Name:Audio Recorder
 Summary:Record audio files
@@ -384,7 +383,31 @@ Build:3.2.19,277
     gradle=yes
     prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
 
+Build:3.2.20,278
+    commit=audiorecorder-3.2.20
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.21,279
+    commit=audiorecorder-3.2.21
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.22,280
+    commit=audiorecorder-3.2.22
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.23,281
+    commit=audiorecorder-3.2.23
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
 Auto Update Mode:Version audiorecorder-%v
 Update Check Mode:Tags
-Current Version:3.2.19
-Current Version Code:277
+Current Version:3.2.23
+Current Version Code:281

@@ -21,6 +21,8 @@ Wi-Fi and/or mobile connection.
 * save your battery
 * increase your privacy
 
+NetGuard is the first free and open source no-root firewall for Android.
+
 '''Features'''
 
 * Simple to use
@@ -35,8 +37,10 @@ Wi-Fi and/or mobile connection.
 * Optionally allow when screen on
 * Optionally block when roaming
 * Optionally block system applications
+* Optionally forward ports, also to external addresses
 * Optionally notify when an application accesses the internet
 * Optionally record network usage per application per address
+* Optionally [https://github.com/M66B/NetGuard/blob/master/ADBLOCKING.md block ads using a hosts file]
 * Material design theme with light and dark theme
 
 '''PRO features:'''
@@ -57,6 +61,9 @@ NetGuard in your language on [https://crowdin.com/project/netguard/ Crowdin]
 
 All required permissions are described
 [https://github.com/M66B/NetGuard/blob/master/FAQ.md#FAQ42 here]
+
+Get answers to frequently asked questions
+[https://github.com/M66B/NetGuard/blob/master/FAQ.md here]
 .
 
 Repo Type:git
@@ -579,7 +586,27 @@ Build:2.206,2018082301
     subdir=app
     gradle=yes
 
+Build:2.207,2018091101
+    commit=2.207
+    subdir=app
+    gradle=yes
+
+Build:2.209,2018100201
+    commit=2.209
+    subdir=app
+    gradle=yes
+
+Build:2.212,2018100703
+    commit=2.212
+    subdir=app
+    gradle=yes
+
+Build:2.213,2018101201
+    commit=2.213
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]+$
-Current Version:2.206
-Current Version Code:2018082301
+Current Version:2.213
+Current Version Code:2018101201

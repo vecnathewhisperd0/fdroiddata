@@ -135,7 +135,23 @@ Build:4.3.0,30
     subdir=app
     gradle=yes
 
+Build:4.4.0,31
+    commit=4.4.0
+    subdir=app
+    gradle=yes
+
+Build:4.5.0,32
+    commit=4.5.0
+    subdir=app
+    gradle=yes
+
+Build:5.0.0,33
+    disable=MainActivity.kt: (315, 43): Type mismatch
+    commit=5.0.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:4.3.0
-Current Version Code:30
+Current Version:5.0.0
+Current Version Code:33
