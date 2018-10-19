@@ -1,8 +1,8 @@
 Disabled:SVN source code repo gives a 503, can't be cloned
 Categories:Games
 License:GPL-3.0-or-later
-Web Site:http://www.kirit.com/Missile%20intercept
-Source Code:http://www.kirit.com/Missile%20intercept
+Web Site:https://www.kirit.com/Missile%20intercept
+Source Code:https://svn.felspar.com/public/m-intercept/trunk/
 Issue Tracker:
 
 Auto Name:Missile intercept
@@ -13,7 +13,7 @@ incoming enemy missiles.
 .
 
 Repo Type:git-svn
-Repo:http://svn.felspar.com/public/m-intercept;trunk=trunk;tags=tags
+Repo:https://svn.felspar.com/public/m-intercept/trunk/
 
 Build:0.5.1,6
     commit=40186
