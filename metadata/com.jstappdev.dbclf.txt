@@ -30,12 +30,12 @@ Pause08, Smashicons, Freepik from www.flaticon.com.
 Repo Type:git
 Repo:https://github.com/j05t/dbclf
 
-Build:28,58
-    commit=v1.0.2
+Build:32,63
+    commit=v1.0.3
     gradle=yes
     output=gradleBuild/outputs/apk/release/com.jstappdev.dbclf-release-unsigned.apk
 
-Auto Update Mode:None
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:28
-Current Version Code:58
+Current Version:32
+Current Version Code:63
