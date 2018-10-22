@@ -19,9 +19,6 @@ available.
 
 Requires Root:yes
 
-Repo Type:git
-Repo:https://github.com/squarrel/WrongPinShutdown
-
 Build:1.0,1
     commit=33ee07dae4831c56987cd44b35a69ad8931ddcf0
 
