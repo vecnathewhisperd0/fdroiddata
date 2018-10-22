@@ -18,12 +18,12 @@ Repo: https://github.com/juha-h/baresip-studio
 Builds:
   - versionName: 3.0.5
     versionCode: 26
-    commit: 0f03d724959fea2e0a423bde88943c86643ad405
+    commit: v3.0.5
     subdir: app
     gradle:
       - yes
     srclibs:
-      - libbaresip-android@80edfb2a2fb177d2692483b532ee73f00d506b56
+      - libbaresip-android@v1.0.0
     rm:
       - distribution/*/lib/armeabi-v7a/*.a
     build: |-
@@ -35,7 +35,7 @@ Builds:
         popd
     ndk: r18b
 
-AutoUpdateMode: None
-UpdateCheckMode: RepoManifest
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
 CurrentVersion: 3.0.5
 CurrentVersionCode: 26
