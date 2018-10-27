@@ -24,7 +24,6 @@ Description: |-
     * Disable WiFi and mobile data completely during Doze
     * Enable Doze mode on devices where OEM has disabled it
     * No root mode so you can enjoy the core benefits without rooting your device
-    * Free, no ads and open source
 
 RepoType: git
 Repo: https://github.com/theblixguy/ForceDoze
