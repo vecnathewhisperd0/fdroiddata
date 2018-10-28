@@ -25,12 +25,12 @@ Repo: https://gitlab.com/sultanahamer/OpenContacts.git
 Builds:
   - versionName: '4.0'
     versionCode: 4
-    commit: 'v4.0'
+    commit: v4.0
     subdir: app
     gradle:
       - yes
 
-AutoUpdateMode: Version %v
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: '4.0'
 CurrentVersionCode: 4
