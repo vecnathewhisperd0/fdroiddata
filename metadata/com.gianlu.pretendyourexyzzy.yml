@@ -13,7 +13,7 @@ Builds:
     versionCode: 62
     commit: v2.6.9
     subdir: app
-    submodules: yes
+    submodules: true
     gradle:
       - foss
     prebuild: |-
