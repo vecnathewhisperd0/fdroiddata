@@ -19,7 +19,7 @@ Repo:https://github.com/Dariasteam/TowerJumper.git
 
 Build:1.0,5
     commit=105e962694f48a041df66755268b5e5e0ec48e20
-    sudo=apt-get install -y -t jessie-backports clang
+    sudo=apt-get install -y clang
     output=tower_jumper.apk
     srclibs=Godot@7cb027d0718bda02dac3b7d570bc359ca32921e5
     prebuild=mkdir tower_jumper && \
