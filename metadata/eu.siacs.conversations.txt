@@ -1056,7 +1056,27 @@ Build:2.2.9+fcr,283
     commit=2.2.9
     gradle=freeCompat
 
+Build:2.3.0+fcr,290
+    commit=2.3.0
+    gradle=freeCompat
+
+Build:2.3.1+fcr,293
+    commit=2.3.1
+    gradle=freeCompat
+
+Build:2.3.2+fcr,294
+    commit=2.3.2
+    gradle=freeCompat
+
+Build:2.3.4+fcr,296
+    commit=2.3.4
+    gradle=freeCompat
+
+Build:2.3.5+fcr,297
+    commit=2.3.5
+    gradle=freeCompat
+
 Auto Update Mode:Version %v+fcr
 Update Check Mode:Tags ^[0-9.]+$
-Current Version:2.2.9+fcr
-Current Version Code:283
+Current Version:2.3.5+fcr
+Current Version Code:297

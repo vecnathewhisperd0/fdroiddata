@@ -1439,11 +1439,186 @@ Build:20180903,20180903
     rm=user_manual,gplay.gradle
     scandelete=src/androidTest
 
+Build:20180905,20180905
+    commit=dev-20180905
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20180908,20180908
+    commit=dev-20180908
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20180911,20180911
+    commit=dev-20180911
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20180912,20180912
+    commit=dev-20180912
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20180913,20180913
+    commit=dev-20180913
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20180914,20180914
+    commit=dev-20180914
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20180915,20180915
+    commit=dev-20180915
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20180920,20180920
+    commit=dev-20180920
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20180924,20180924
+    commit=dev-20180924
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20180927,20180927
+    commit=dev-20180927
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181009,20181009
+    commit=dev-20181009
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181013,20181013
+    commit=dev-20181013
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181016,20181016
+    commit=dev-20181016
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181018,20181018
+    commit=dev-20181018
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181020,20181020
+    commit=dev-20181020
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181024,20181024
+    commit=dev-20181024
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181025,20181025
+    commit=dev-20181025
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181026,20181026
+    commit=dev-20181026
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181027,20181027
+    commit=dev-20181027
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181028,20181028
+    commit=dev-20181028
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181030,20181030
+    commit=dev-20181030
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181031,20181031
+    commit=dev-20181031
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181101,20181101
+    commit=dev-20181101
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181102,20181102
+    commit=dev-20181102
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181103,20181103
+    commit=dev-20181103
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
 Maintainer Notes:
 Tags get removed. See https://github.com/nextcloud/android/issues/969.
 .
 
 Auto Update Mode:Version dev-%c
 Update Check Mode:Tags ^dev
-Current Version:20180903
-Current Version Code:20180903
+Current Version:20181103
+Current Version Code:20181103

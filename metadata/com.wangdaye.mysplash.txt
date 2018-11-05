@@ -1,8 +1,9 @@
 Categories:Multimedia
 License:LGPL-3.0-only
-Web Site:https://github.com/WangDaYeeeeee/Mysplash/blob/HEAD/README.md
+Web Site:
 Source Code:https://github.com/WangDaYeeeeee/Mysplash
 Issue Tracker:https://github.com/WangDaYeeeeee/Mysplash/issues
+Changelog:https://github.com/WangDaYeeeeee/Mysplash/releases
 
 Auto Name:Mysplash
 Summary:View stream of high resolution images
@@ -200,7 +201,7 @@ Build:3.3.3,333
 Build:3.3.9,339
     commit=3.3.9
     subdir=app
-    patch=3.3.9-ru_locale.patch
+    patch=3.3.9-de_locale.patch,3.3.9-ru_locale.patch
     gradle=yes
     rm=app/src/main/res/resource/values-ru/arrays.xml,app/src/main/res/resource/values-ru/strings.xml
     prebuild=git checkout a307d32e325b8f33022f28975fac9253d1de705d -- ../gradle.properties

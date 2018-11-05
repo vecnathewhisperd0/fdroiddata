@@ -1,7 +1,7 @@
 Categories:Reading
 License:GPL-3.0-or-later
 Author Name:Paul Hill
-Web Site:https://github.com/zikalify/StoicReading
+Web Site:
 Source Code:https://github.com/zikalify/StoicReading
 Issue Tracker:https://github.com/zikalify/StoicReading/issues
 
@@ -51,7 +51,32 @@ Build:0.8.7,12
     subdir=app
     gradle=yes
 
+Build:0.9.0,15
+    commit=0.9.0
+    subdir=app
+    gradle=yes
+
+Build:0.9.4,19
+    commit=0.9.4
+    subdir=app
+    gradle=yes
+
+Build:0.9.6,21
+    commit=0.9.6
+    subdir=app
+    gradle=yes
+
+Build:0.9.8,23
+    commit=0.9.8
+    subdir=app
+    gradle=yes
+
+Build:0.9.10,25
+    commit=0.9.10
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]+$
-Current Version:0.8.7
-Current Version Code:12
+Current Version:0.9.10
+Current Version Code:25

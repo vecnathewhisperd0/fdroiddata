@@ -5,6 +5,7 @@ AuthorName: PeterCxy
 AuthorEmail: peter@typeblog.net
 SourceCode: https://git.angry.im/PeterCxy/Shelter
 IssueTracker: https://git.angry.im/PeterCxy/Shelter/issues
+Changelog: https://git.angry.im/PeterCxy/Shelter/releases
 
 AutoName: Shelter
 Summary: Isolate your Big Brother Apps / Multiple Accounts
@@ -59,7 +60,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.1'
+    versionCode: 5
+    commit: '1.1'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.2'
+    versionCode: 7
+    commit: '1.2'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.3'
+    versionCode: 9
+    commit: a4a4bdd6a5218272ccf791bdfede6df7c4ca8cd6
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.0'
-CurrentVersionCode: 3
+CurrentVersion: '1.3'
+CurrentVersionCode: 9

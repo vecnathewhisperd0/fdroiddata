@@ -110,7 +110,17 @@ Build:4.1.0,30
     subdir=app
     gradle=yes
 
+Build:4.2.0,31
+    commit=4.2.0
+    subdir=app
+    gradle=yes
+
+Build:5.0.0,32
+    commit=5.0.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:4.1.0
-Current Version Code:30
+Current Version:5.0.0
+Current Version Code:32
