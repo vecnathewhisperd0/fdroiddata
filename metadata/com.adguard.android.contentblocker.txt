@@ -28,7 +28,32 @@ Build:2.2.1,21002201
     subdir=adguard_cb
     gradle=samsung_api21,prodBackend
 
+Build:2.2.2,21002202
+    commit=v2.2.2
+    subdir=adguard_cb
+    gradle=samsung_api21,prodBackend
+
+Build:2.2.3,21002203
+    commit=v2.2.3
+    subdir=adguard_cb
+    gradle=samsung_api21,prodBackend
+
+Build:2.2.4,21002204
+    commit=v2.2.4
+    subdir=adguard_cb
+    gradle=samsung_api21,prodBackend
+
+Build:2.2.5,21002205
+    commit=v2.2.5
+    subdir=adguard_cb
+    gradle=samsung_api21,prodBackend
+
+Build:2.2.6,21002206
+    commit=v2.2.6
+    subdir=adguard_cb
+    gradle=samsung_api21,prodBackend
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.2.1
-Current Version Code:21002201
+Current Version:2.2.6
+Current Version Code:21002206
