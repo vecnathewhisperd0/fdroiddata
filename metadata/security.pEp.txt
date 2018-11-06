@@ -74,7 +74,7 @@ Build:1.0.209.withoutKeysync,19
     ndk=r14b
 
 Build:1.0.213.withoutKeysync,23
-    commit=2eca9020cac84c1ca0fd189ce2127d450e8a9147
+    commit=v1.0.213
     subdir=k9mail
     gradle=WithoutkeysyncPlayStore
     srclibs=pEpJNIAdapter@441,pEpEngine@3104,yml2@2.5.8
@@ -95,7 +95,7 @@ Build:1.0.213.withoutKeysync,23
         sed -i 's:-fcompound-names:-fcompound-names -fnative-types:' $$pEpEngine$$/asn.1/Makefile
     ndk=r18b
 
-Auto Update Mode:Version v%v
+Auto Update Mode:None
 Update Check Mode:Tags
 Current Version:1.0.213
 Current Version Code:23
