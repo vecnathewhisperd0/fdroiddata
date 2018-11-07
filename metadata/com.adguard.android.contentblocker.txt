@@ -18,7 +18,6 @@ The app does not require root access.
 Repo Type:git
 Repo:https://github.com/AdguardTeam/ContentBlocker.git
 
-
 Build:2.2.6,21002206
     commit=v2.2.6
     subdir=adguard_cb
