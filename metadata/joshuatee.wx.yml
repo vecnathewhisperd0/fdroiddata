@@ -49,7 +49,7 @@ Repo: https://gitlab.com/joshua.tee/wx.git
 Builds:
   - versionName: '55039'
     versionCode: 55039
-    commit: d7c0fe95b19fd7652b39b769e1e5cb666eb4d001
+    commit: '55039'
     subdir: app
     gradle:
       - yes
@@ -64,7 +64,7 @@ MaintainerNotes: |-
     https://catalog.data.gov/dataset (license: https://www.usa.gov/government-works)
     https://www.nohrsc.noaa.gov/gisdatasets/ (license: https://www.weather.gov/disclaimer)
 
-AutoUpdateMode: None
-UpdateCheckMode: RepoManifest
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
 CurrentVersion: '55039'
 CurrentVersionCode: 55039
