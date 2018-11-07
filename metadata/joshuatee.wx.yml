@@ -1,3 +1,5 @@
+AntiFeatures:
+  - NonFreeNet
 Categories:
   - Science & Education
 License: GPL-3.0-only
@@ -5,8 +7,7 @@ SourceCode: https://gitlab.com/joshua.tee/wx
 IssueTracker: https://gitlab.com/joshua.tee/wx/issues
 Changelog: https://drive.google.com/drive/folders/0B9OogdTO1kXqcVJwekpwemFwSXM
 
-Summary: An advanced weather application that is geared towards storm chasers, meteorologists,
-    and weather enthusiasts
+Summary: Weather app geared towards storm chasers, meteorologists, and weather enthusiasts
 Description: |-
     NWS ( National Weather Service ) data is optimized for mobile format and provided for divisions not normally covered together in the mobile space: SPC, WPC, NHC, OPC, etc. Level 3 and Level 2 Nexrad radar ( single, dual, quad pane ) are provided and displayed using the mobile variant of OpenGL. This weather app is not affiliated with NOAA or the National Weather Service.
 
@@ -38,7 +39,7 @@ Description: |-
     * US MPD
     * NHC Atlantic and EPAC advisories
 
-     NOTE about Canada: Canadian locations can be added under Settings -> Location -> "plus" symbol but you need to access the options under the sub-menu. You can also use the main search bar at the top but for now you must use a suggested location and can't add an arbitrary location.
+    NOTE about Canada: Canadian locations can be added under Settings -> Location -> "plus" symbol but you need to access the options under the sub-menu. You can also use the main search bar at the top but for now you must use a suggested location and can't add an arbitrary location.
 
 RepoType: git
 Repo: https://gitlab.com/joshua.tee/wx.git
