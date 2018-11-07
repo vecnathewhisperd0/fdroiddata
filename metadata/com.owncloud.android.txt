@@ -332,7 +332,6 @@ Build:2.9.0,20900000
     commit=oc-android-2.9.0
     submodules=yes
     gradle=yes
-    srclibs=TouchImageView@v1.2.0
     rm=libs/disklrucache*,owncloud-android-library/libs,user_manual
 
 Maintainer Notes:
