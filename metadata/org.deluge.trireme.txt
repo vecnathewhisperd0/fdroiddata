@@ -19,6 +19,24 @@ This app will act as a client.
 Repo Type:git
 Repo:https://github.com/teal77/trireme.git
 
+Build:0.8.1,5
+    commit=v0.8.1
+    output=build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs=flutter@beta
+    prebuild=sed -i -e 's|git@github.com:|https://github.com/|' pubspec.lock pubspec.yaml
+    build=export PATH=$$flutter$$/bin:$PATH && \
+        flutter config --no-analytics && \
+        flutter build apk --flavor fdroid
+
+Build:0.9,6
+    commit=v0.9
+    output=build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs=flutter@beta
+    prebuild=sed -i -e 's|git@github.com:|https://github.com/|' pubspec.lock pubspec.yaml
+    build=export PATH=$$flutter$$/bin:$PATH && \
+        flutter config --no-analytics && \
+        flutter build apk --flavor fdroid
+
 Build:0.9.1,7
     commit=v0.9.1
     output=build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
@@ -27,7 +45,13 @@ Build:0.9.1,7
     build=$$flutter$$/bin/flutter config --no-analytics && \
         $$flutter$$/bin/flutter build apk --flavor fdroid
 
-Auto Update Mode:None
-Update Check Mode:None
+Maintainer Notes:
+Builds will fail when the srclib ref of flutter and the version with which
+upstream has been built with differ.
+In that case we need to manually give the correct ref to srclib.
+.
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
 Current Version:0.9.1
 Current Version Code:7
