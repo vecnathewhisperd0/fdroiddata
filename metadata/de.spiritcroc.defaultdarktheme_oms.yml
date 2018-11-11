@@ -1,0 +1,21 @@
+Categories:
+  - System
+License: GPL-3.0-only
+SourceCode: https://github.com/SpiritCroc/DefaultDarkTheme-oms
+IssueTracker: https://github.com/SpiritCroc/DefaultDarkTheme-oms/issues
+
+RepoType: git
+Repo: https://github.com/SpiritCroc/DefaultDarkTheme-oms
+
+Builds:
+  - versionName: '7.7'
+    versionCode: 50
+    commit: v7.7
+    subdir: app
+    gradle:
+      - yes
+    prebuild: |-
+        sed -i -e 's/generate_type3/\.\.\/generate_type3/' build.gradle
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
