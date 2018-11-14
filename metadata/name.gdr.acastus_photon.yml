@@ -22,7 +22,7 @@ Repo: https://github.com/gjedeer/Acastus
 Builds:
   - versionName: '1.14'
     versionCode: 16
-    commit: 1.14
+    commit: '1.14'
     subdir: app
     gradle:
       - yes
