@@ -19,7 +19,6 @@ Description: |-
 RepoType: git
 Repo: https://github.com/gjedeer/Acastus
 
-<<<<<<< HEAD
 Builds:
   - versionName: '1.14'
     versionCode: 16
@@ -28,7 +27,5 @@ Builds:
     gradle:
       - yes
 
-=======
->>>>>>> b210a4eaea886a17fd10de65b1772b0253ed0fc9
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
