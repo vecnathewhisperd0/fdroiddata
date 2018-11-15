@@ -1,0 +1,29 @@
+Categories:Money
+License:GPL-3.0-only
+Web Site:https://github.com/AndreAle94/moneywallet
+Source Code:https://github.com/AndreAle94/moneywallet
+Issue Tracker:https://github.com/AndreAle94/moneywallet/issues
+Bitcoin:1J3APoaFT2jcqRzpb8bEt2rwUn3mDpWE5U
+
+Auto Name:MoneyWallet
+Summary:MoneyWallet - Expense Manager
+Description:
+MoneyWallet is an advanced expense manager that allows you to track your
+expenses and plan budgets. You can organize data using custom categories,
+events, places and people. The user interface is in material design, clear,
+simple and extremely customizable. It fits on all devices. It's simply your best
+expense manager.
+.
+
+Repo Type:git
+Repo:https://github.com/AndreAle94/moneywallet.git
+
+Build:4.0.2,55
+    commit=91465e542453b98db3a78724bc32100bff121e1e
+    subdir=app
+    gradle=floss
+
+Auto Update Mode:None
+Update Check Mode:None
+Current Version:4.0.2
+Current Version Code:55
