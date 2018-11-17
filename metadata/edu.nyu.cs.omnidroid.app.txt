@@ -11,13 +11,15 @@ Omnidroid is an automated event/action manager that allows users to automate
 system functionality based on incoming application intents. It also provides a
 general plug-in framework that allows any compatible application events to
 trigger any other applications actions. An intuitive user interface allows the
-user to control what events cause what actions to occur.
+user to control what events cause what actions to occur. This app isn't
+maintained anymore, there is a fork named [[libretasks.app]].
 .
 
 Build:0.2.1,6
     commit=release-0.2.1
     subdir=omnidroid
 
+Archive Policy:0 versions
 Auto Update Mode:None
 Update Check Mode:Static
 Current Version:0.2.1
