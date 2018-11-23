@@ -1,0 +1,27 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Connectivity
+  - Money
+License: MIT
+WebSite: https://www.pigrid.com
+SourceCode: https://github.com/blocklink-it/pigrid-companion-app
+IssueTracker: https://github.com/blocklink-it/pigrid-companion-app/issues
+
+AutoName: PiGrid Companion
+
+RepoType: git
+Repo: https://github.com/blocklink-it/pigrid-companion-app
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
