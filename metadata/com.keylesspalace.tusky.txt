@@ -132,7 +132,7 @@ Build:3.1,49
     commit=v3.1
     subdir=app
     gradle=blue
-    
+
 Build:4.0,51
     commit=v4.0
     subdir=app
