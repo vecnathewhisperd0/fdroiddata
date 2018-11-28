@@ -36,8 +36,6 @@ Builds:
       - yes
     rm:
       - assets/*
-      - app/src/main/*.png
-      - app/src/main/play
     ndk: r18b
 
 AutoUpdateMode: Version %v
