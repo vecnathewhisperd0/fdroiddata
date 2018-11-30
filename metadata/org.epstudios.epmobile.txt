@@ -1,5 +1,5 @@
 Categories:Sports & Health
-License:GPL-3.0
+License:GPL-3.0-only
 Web Site:https://www.epstudiossoftware.com/ep-mobile
 Source Code:https://github.com/mannd/epmobile
 Issue Tracker:https://github.com/mannd/epmobile/issues
@@ -104,16 +104,29 @@ Build:2.16,50
     gradle=yes
 
 Build:2.17,51
-    commit=v2.17
+    disable=Could not find com.android.tools.build:gradle:3.0.1
+    commit=2.17
     subdir=app
     gradle=yes
 
 Build:2.17.1,52
-    commit=v2.17.1
+    disable=Could not find com.android.tools.build:gradle:3.0.1
+    commit=2.17.1
     subdir=app
     gradle=yes
 
-Auto Update Mode:Version v%v
+Build:2.18,54
+    disable=Could not find com.android.tools.build:gradle:3.0.1
+    commit=2.18
+    subdir=app
+    gradle=yes
+
+Build:2.20,56
+    commit=2.20
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.17.1
-Current Version Code:52
+Current Version:2.20
+Current Version Code:56
