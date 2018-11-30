@@ -36,7 +36,6 @@ Builds:
       - yes
     rm:
       - assets/*
-    ndk: r18b
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
