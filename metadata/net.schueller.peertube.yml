@@ -7,6 +7,8 @@ IssueTracker: https://github.com/sschueller/peertube-android/issues
 Description: PeerTube is a federated (ActivityPub) video streaming platform using
     P2P (WebTorrent) directly in the web browser.
 
+Summary: PeerTube player
+
 RepoType: git
 Repo: https://github.com/sschueller/peertube-android
 
@@ -18,5 +20,5 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: None
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
