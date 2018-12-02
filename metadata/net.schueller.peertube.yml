@@ -11,9 +11,9 @@ RepoType: git
 Repo: https://github.com/sschueller/peertube-android
 
 Builds:
-  - versionName: 1.0.3
-    versionCode: 103
-    commit: v1.0.3
+  - versionName: 1.0.5
+    versionCode: 105
+    commit: v1.0.5
     subdir: app
     gradle:
       - yes
