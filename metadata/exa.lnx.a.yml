@@ -35,7 +35,7 @@ Description: |-
     '''Note:'''
 
     * This app requires [[com.termux]] to work, please install it
-    * About device requiremens: Android Version: At least Android Lollipop; Architecture: armv7, arm64, x86, x86_64
+    * About device requirements: Android Version: At least Android Lollipop; Architecture: armv7, arm64, x86, x86_64
     * For any suggestion or issue, please open an issue on Github.
 
 RepoType: git
