@@ -18,7 +18,8 @@ RepoType: git
 Repo: https://github.com/Dariasteam/TowerJumper.git
 
 Builds:
-  - versionCode: 5
+  - versionName: '1.0'
+    versionCode: 5
     commit: 105e962694f48a041df66755268b5e5e0ec48e20
     sudo: apt-get install -y clang
     output: tower_jumper.apk
