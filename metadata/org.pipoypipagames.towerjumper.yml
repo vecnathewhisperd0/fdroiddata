@@ -25,12 +25,10 @@ Builds:
     output: tower_jumper.apk
     srclibs:
       - Godot@7cb027d0718bda02dac3b7d570bc359ca32921e5
-    prebuild: |
-        mkdir tower_jumper && \
-        bash -O extglob -c "mv !(tower_jumper) tower_jumper" && \
-        cp -R $$Godot$$ godot
+    prebuild: |-
+        mkdir tower_jumper && \ bash -O extglob -c "mv !(tower_jumper) tower_jumper" && \ cp -R $$Godot$$ godot
     target: android-19
-    build: |-
+    build: |
         cd godot && \ scons -j `nproc` platform=server target=release_debug use_llvm=yes unix_global_settings_path=".." tools=yes && \ export ANDROID_NDK_ROOT=$$NDK$$ && \ scons -j `nproc` use_llvm=yes p=android target=release && \ pushd platform/android/java/ && \ gradle assembleRelease && \ popd && \ mkdir -p ../templates/ && \ cp bin/android_release.apk ../templates && \ cd ../tower_jumper && \ ../godot/bin/godot_server.server.opt.tools.64 -export Android ../tower_jumper.apk
 
 AutoUpdateMode: None
