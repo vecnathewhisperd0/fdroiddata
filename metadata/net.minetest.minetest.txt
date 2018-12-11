@@ -76,7 +76,6 @@ Build:0.4.16.17,17
         cp -R $$MinetestGame$$ ../../games/minetest_game
     build=printf "%s\n%s" "ndk.dir = $$NDK$$" "sdk.dir = $$SDK$$" > local.properties && \
         make release
-    ndk=r18b
 
 Build:0.4.17.21,21
     commit=86e29ae5860f197b87d85e755475a445cb65b04c
