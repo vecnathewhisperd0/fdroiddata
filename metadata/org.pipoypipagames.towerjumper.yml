@@ -26,7 +26,9 @@ Builds:
     srclibs:
       - Godot@f2a42e1ae535013d712a224680c10ee9019f0172
     prebuild: |-
-        mkdir tower_jumper && \bash -O extglob -c "mv !(tower_jumper) tower_jumper" && \cp -R $$Godot$$ godot
+        mkdir tower_jumper && \
+        bash -O extglob -c "mv !(tower_jumper) tower_jumper" && \
+        cp -R $$Godot$$ godot
     build: |
         cd godot && \
         scons -j `nproc` platform=server target=release_debug use_llvm=yes unix_global_settings_path=".." tools=yes && \
