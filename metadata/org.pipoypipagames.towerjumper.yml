@@ -1,7 +1,7 @@
 Categories:
   - Games
 License: GPL-3.0-only
-AuthorName: "['Daniel Darias', 'Yanara Aristiguieta']"
+AuthorName: Daniel Darias & Yanara Aristiguieta
 WebSite: https://pipoypipagames.itch.io
 SourceCode: https://github.com/Dariasteam/TowerJumper
 IssueTracker: https://github.com/Dariasteam/TowerJumper/issues
@@ -27,7 +27,6 @@ Builds:
       - Godot@f2a42e1ae535013d712a224680c10ee9019f0172
     prebuild: |-
         mkdir tower_jumper && \bash -O extglob -c "mv !(tower_jumper) tower_jumper" && \cp -R $$Godot$$ godot
-    target: android-19
     build: |
         cd godot && \
         scons -j `nproc` platform=server target=release_debug use_llvm=yes unix_global_settings_path=".." tools=yes && \
