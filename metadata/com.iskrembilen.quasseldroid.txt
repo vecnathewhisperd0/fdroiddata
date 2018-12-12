@@ -1,10 +1,10 @@
 Categories:Internet
 License:GPL-3.0-only
-Web Site:http://quasseldroid.iskrembilen.com
-Source Code:https://github.com/sandsmark/QuasselDroid
-Issue Tracker:https://github.com/sandsmark/QuasselDroid/issues
+Web Site:
+Source Code:https://git.kuschku.de/justJanne/QuasselDroid-ng
+Issue Tracker:https://git.kuschku.de/justJanne/QuasselDroid-ng/issues
 
-Auto Name:Quasseldroid
+Name:Quasseldroid
 Summary:Client for Quassel IRC
 Description:
 Quassel is a distributed, decentralized IRC client. This app is a pure Java
@@ -18,7 +18,7 @@ REQUIRES A QUASSEL CORE – DOES NOT WORK AS STANDALONE IRC CLIENT!
 .
 
 Repo Type:git
-Repo:https://github.com/sandsmark/QuasselDroid.git
+Repo:https://git.kuschku.de/justJanne/QuasselDroid-ng.git
 
 Build:0.9.8,84
     commit=v0.9.8
@@ -72,7 +72,13 @@ Build:0.11.7,160
     subdir=QuasselDroid
     gradle=yes
 
-Auto Update Mode:Version v%v
-Update Check Mode:Tags
+Build:v0.5.0,853
+    commit=v0.5.0
+    subdir=app
+    gradle=yes
+    scandelete=buildSrc/build/,buildSrc/.gradle/
+
+Auto Update Mode:None
+Update Check Mode:None
 Current Version:0.11.7
 Current Version Code:160
