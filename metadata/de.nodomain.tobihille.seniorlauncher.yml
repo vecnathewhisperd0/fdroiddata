@@ -10,9 +10,10 @@ Repo: https://github.com/tobihille/SeniorLauncher.git
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: '616da55f4bbd8e67d38a68abfe0dd07e323cdc97'
+    commit: 'ef2d20b41e06115048b4bd9ac1235579c486d185'
     gradle:
       - yes
-
+    subdir: app
+    
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
