@@ -11,9 +11,9 @@ Builds:
   - versionName: '1.0'
     versionCode: 1
     commit: '1.0'
+    subdir: app
     gradle:
       - yes
-    subdir: app
     
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
