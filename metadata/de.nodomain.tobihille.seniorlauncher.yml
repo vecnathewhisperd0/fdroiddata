@@ -16,11 +16,11 @@ Description: |-
     * In image-mode the gallery can be opened
     * Calling the ambulance is added on top of the list in the call-screen.
     * Language: English and German. (911 and 112 for calling the ambulance is translated of course)
-    
+
     Why is MMS used for images?
     * Because it is available everywhere and every phone has an app installed that can use it
     * Because it is the only way (that I found out) to direct the user right to the newest images
-    
+
     I recommend the use of [[com.moez.QKSMS]] as a SMS/MMS app because it
     copies all images automatically to the gallery and because it's free.
 
@@ -34,7 +34,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: '1.0'
