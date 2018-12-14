@@ -1,0 +1,24 @@
+AntiFeatures:Ads
+Categories:Games
+License:GPLv3
+Web Site:
+Source Code:https://github.com/VelbazhdSoftwareLLC/DiceOverflow
+Issue Tracker:https://github.com/VelbazhdSoftwareLLC/DiceOverflow/issues
+
+Auto Name:DiceOverflow
+Summary:Board Game
+Description:
+Dice Overflow is a simple board logical game developed as master thesis in New
+Bulgarian University. The game is mix between dice and Color Overflow game.
+.
+
+Repo Type:git
+Repo:https://github.com/VelbazhdSoftwareLLC/DiceOverflow
+
+Build:1.0,1
+    commit=cfc1b5ff979754c65a802aebbaf877bfd402560a
+
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:1.0
+Current Version Code:1
