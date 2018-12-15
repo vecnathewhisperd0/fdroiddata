@@ -80,11 +80,11 @@ Build:0.4.16.17,17
 Build:0.4.17.21,21
     commit=86e29ae5860f197b87d85e755475a445cb65b04c
     subdir=build/android
-    patch=Makefile.patch
     output=build/outputs/apk/Minetest-release-unsigned.apk
     srclibs=MinetestGame@d6a66860af6fc39957d8e947824b9c56c3686b8e
     prebuild=sed -i -e 's/\.\/gradlew/gradle/g' Makefile && \
-        cp -R $$MinetestGame$$ ../../games/minetest_game
+        cp -R $$MinetestGame$$ ../../games/minetest_game && \
+        sed -i -e '/patch -p1 < \${ANDR_ROOT}\/patches\/irrlicht-texturehack\.patch || exit 1; \\/a \\t\tdos2unix ${ANDR_ROOT}/deps/irrlicht/source/Irrlicht/CEGLManager.cpp || exit 1; \\' Makefile
     build=printf "%s\n%s" "ndk.dir = $$NDK$$" "sdk.dir = $$SDK$$" > local.properties && \
         make release
     ndk=r16b
