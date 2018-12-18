@@ -95,7 +95,7 @@ Build:4.6,39
     gradle=yes
 
 Build:4.7,40
-    commit=v4.6
+    commit=v4.7
     gradle=yes
 
 Auto Update Mode:Version v%v
