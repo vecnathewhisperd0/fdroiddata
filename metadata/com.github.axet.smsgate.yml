@@ -1,5 +1,3 @@
-AntiFeatures:
-  - NonFreeNet
 Categories:
   - System
 License: GPL-3.0-only
@@ -7,18 +5,19 @@ WebSite: https://gitlab.com/axet/android-sms-gate
 SourceCode: https://gitlab.com/axet/android-sms-gate/tree/HEAD
 IssueTracker: https://gitlab.com/axet/android-sms-gate/issues
 
-Summary: Backup all SMS to an IMAP (Gmail) or local folder
+AutoName: SMS Gate
+Summary: Backup all your SMS to an IMAP server or a local folder
 Description: |-
-    You should be able to control all data produced by phone and be able to
-    collect it all into one place (cloud / p2p or local). SMS Gate app backup all
-    SMS from Android/INCOMING folder to the Imap/INBOX folder (or Gmail) and
-    allows you to reply to the SMS using standard reply e-mail mecanics.
+    You should be able to control all data produced by your phone and be able to
+    collect it all into one place (cloud / p2p or local).
 
-    Control your phone SMS's trougth the web page. All application communications
-    protected by Bitcoin Wallet P2P encryption, requires API11+ for ElipticCurve
-    encryption.
+    SMS Gate app backups all your SMS from Android/INCOMING folder to the
+    IMAP/INBOX folder of Gmail or your provider of choice (you can setup one in
+    Settings). Once uploaded to an IMAP server you can even reply to the SMS
+    using standard reply e-mail mecanics.
 
-    https://axet.gitlab.io/android-sms-gate/
+    Saving to a local folder allows you to backup it using an app like
+    [[com.nutomic.syncthingandroid]].
 
 RepoType: git
 Repo: https://gitlab.com/axet/android-sms-gate.git
@@ -26,7 +25,7 @@ Repo: https://gitlab.com/axet/android-sms-gate.git
 Builds:
   - versionName: 1.9.7
     versionCode: 216
-    commit: 475c9f0bae44b5fb5232a219af5d78e9aa89e8bc
+    commit: smsgate-1.9.7
     subdir: app
     gradle:
       - yes
