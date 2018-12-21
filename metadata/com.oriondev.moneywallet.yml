@@ -25,9 +25,9 @@ Builds:
     gradle:
       - floss
 
-  - versionName: 4.0.3.5
-    versionCode: 61
-    commit: v4.0.3.5
+  - versionName: 4.0.3.6
+    versionCode: 62
+    commit: v4.0.3.6
     subdir: app
     gradle:
       - floss
