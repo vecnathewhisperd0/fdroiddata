@@ -45,7 +45,7 @@ Builds:
     commit: '2.8'
     subdir: app
     gradle:
-      - yes      
+      - yes
 
   - versionName: '2.9'
     versionCode: 29
