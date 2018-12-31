@@ -1,20 +1,23 @@
 Categories:
   - Multimedia
 License: AGPL-3.0-only
+AuthorName: Stefan Schueller
 SourceCode: https://github.com/sschueller/peertube-android
 IssueTracker: https://github.com/sschueller/peertube-android/issues
+Changelog: https://raw.githubusercontent.com/sschueller/peertube-android/master/CHANGELOG.md
 
+AutoName: PeerTube
 Summary: PeerTube player
 Description: PeerTube is a federated (ActivityPub) video streaming platform using
-    P2P (WebTorrent) directly in the web browser.
+    P2P (WebTorrent) directly in the web browser. For more information, please visit https://joinpeertube.org/ for more information and a list of servers.
 
 RepoType: git
 Repo: https://github.com/sschueller/peertube-android
 
 Builds:
-  - versionName: 1.0.5
-    versionCode: 105
-    commit: v1.0.5
+  - versionName: 1.0.17
+    versionCode: 1017
+    commit: v1.0.17
     subdir: app
     gradle:
       - yes
