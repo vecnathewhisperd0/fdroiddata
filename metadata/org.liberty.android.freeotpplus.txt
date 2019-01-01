@@ -33,6 +33,10 @@ Build:1.0,1
     commit=f0750937d9bca0b32f6fdcb80989e2e738ad7854
     subdir=app
     gradle=yes
+Build:1.2,3
+    commit=cdf7b49b4a43d90c466f9c3670a126bdde9cfb4d
+    subdir=app
+    gradle=yes
 
 Auto Update Mode:None
 Update Check Mode:None
