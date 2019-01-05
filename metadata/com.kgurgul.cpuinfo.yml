@@ -31,7 +31,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-      
+
   - versionName: 4.2.0
     versionCode: 40200
     commit: 4.2.0
