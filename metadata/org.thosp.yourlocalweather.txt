@@ -1,3 +1,4 @@
+AntiFeatures:NonFreeNet
 Categories:Internet
 License:GPL-3.0-or-later
 Web Site:
@@ -267,7 +268,117 @@ Build:4.2.6,82
     subdir=app
     gradle=yes
 
+Build:4.3.1,84
+    commit=v4.3.1
+    subdir=app
+    gradle=yes
+
+Build:4.3.3,86
+    commit=v4.3.3
+    subdir=app
+    gradle=yes
+
+Build:4.3.4,87
+    commit=v4.3.4
+    subdir=app
+    gradle=yes
+
+Build:4.4.0,88
+    commit=v4.4.0
+    subdir=app
+    gradle=yes
+
+Build:4.4.2,90
+    commit=v4.4.2
+    subdir=app
+    gradle=yes
+
+Build:4.4.3,91
+    commit=v4.4.3
+    subdir=app
+    gradle=yes
+
+Build:4.4.4,92
+    commit=v4.4.4
+    subdir=app
+    gradle=yes
+
+Build:4.4.5,93
+    commit=v4.4.5
+    subdir=app
+    gradle=yes
+
+Build:4.4.6,94
+    commit=v4.4.6
+    subdir=app
+    gradle=yes
+
+Build:4.4.8,96
+    commit=v4.4.8
+    subdir=app
+    gradle=yes
+
+Build:4.4.9,97
+    commit=v4.4.9
+    subdir=app
+    gradle=yes
+
+Build:4.4.10,98
+    commit=v4.4.10
+    subdir=app
+    gradle=yes
+
+Build:4.4.11,99
+    commit=v4.4.11
+    subdir=app
+    gradle=yes
+
+Build:4.4.12,100
+    commit=v4.4.12
+    subdir=app
+    gradle=yes
+
+Build:4.5.0,101
+    commit=v4.5.0
+    subdir=app
+    gradle=yes
+
+Build:4.5.1,102
+    commit=v4.5.1
+    subdir=app
+    gradle=yes
+
+Build:4.5.2,103
+    commit=v4.5.2
+    subdir=app
+    gradle=yes
+
+Build:4.5.3,104
+    commit=v4.5.3
+    subdir=app
+    gradle=yes
+
+Build:4.6.0,105
+    commit=v4.6.0
+    subdir=app
+    gradle=yes
+
+Build:4.6.1,106
+    commit=v4.6.1
+    subdir=app
+    gradle=yes
+
+Build:4.6.2,107
+    commit=v4.6.2
+    subdir=app
+    gradle=yes
+
+Build:4.6.3,108
+    commit=v4.6.3
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:4.2.6
-Current Version Code:82
+Current Version:4.6.3
+Current Version Code:108

@@ -1,8 +1,9 @@
 Categories:Internet
 License:MIT
-Web Site:https://github.com/SafeSlingerProject/SafeSlinger-Android/blob/HEAD/README.md
+Web Site:
 Source Code:https://github.com/SafeSlingerProject/SafeSlinger-Android
 Issue Tracker:https://github.com/SafeSlingerProject/SafeSlinger-Android/issues
+Changelog:https://github.com/SafeSlingerProject/SafeSlinger-Android/releases
 
 Auto Name:SafeSlinger Exchange for Security Developers
 Summary:Developer demo for public key exchanges
@@ -35,5 +36,3 @@ Maintainer Notes:
 
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.0
-Current Version Code:1

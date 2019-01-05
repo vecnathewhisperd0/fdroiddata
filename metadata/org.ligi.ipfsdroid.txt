@@ -1,6 +1,6 @@
 Categories:System
 License:GPL-3.0-only
-Web Site:https://github.com/ligi/IPFSDroid/blob/HEAD/README.md
+Web Site:
 Source Code:https://github.com/ligi/IPFSDroid
 Issue Tracker:https://github.com/ligi/IPFSDroid/issues
 
@@ -42,7 +42,13 @@ Build:0.10,10
     subdir=app
     gradle=yes
 
+Build:0.12,12
+    disable=prebuilt binaries in app/src/main/assets
+    commit=0.12
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.10
-Current Version Code:10
+Current Version:0.12
+Current Version Code:12

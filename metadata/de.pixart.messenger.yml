@@ -30,7 +30,37 @@ Builds:
     gradle:
       - standard
 
+  - versionName: 2.1.1
+    versionCode: 243
+    commit: 2.1.1
+    gradle:
+      - standard
+
+  - versionName: 2.1.2
+    versionCode: 244
+    commit: 2.1.2
+    gradle:
+      - standard
+
+  - versionName: 2.1.3
+    versionCode: 246
+    commit: 2.1.3
+    gradle:
+      - standard
+
+  - versionName: 2.1.4
+    versionCode: 247
+    commit: 2.1.4
+    gradle:
+      - standard
+
+  - versionName: 2.1.5
+    versionCode: 250
+    commit: 2.1.5
+    gradle:
+      - standard
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: 2.1.0
-CurrentVersionCode: 238
+CurrentVersion: 2.1.5
+CurrentVersionCode: 250

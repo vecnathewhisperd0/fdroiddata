@@ -4,6 +4,7 @@ License:Apache-2.0
 Web Site:https://www.mediawiki.org/wiki/Wikimedia_Apps
 Source Code:https://github.com/wikimedia/apps-android-wikipedia
 Issue Tracker:https://phabricator.wikimedia.org/project/profile/489/
+Changelog:https://www.mediawiki.org/wiki/Mobile/Release_history#Wikipedia_Android_app
 Donate:https://donate.wikimedia.org
 
 Auto Name:Wikipedia
@@ -318,6 +319,62 @@ Build:r/2.7.239-r-2018-07-31,239
     forceversion=yes
     prebuild=sed -i -e 's/enable true/enable false/' -e '/defaultConfig {/a ndk{abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"}' build.gradle
 
+Build:r/2.7.260-r-2018-10-19,260
+    commit=r/2.7.260-r-2018-10-19
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+    prebuild=sed -i -e 's/enable true/enable false/' -e '/defaultConfig {/a ndk{abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"}' build.gradle
+
+Build:r/2.7.261-r-2018-10-23,261
+    commit=r/2.7.261-r-2018-10-23
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+    prebuild=sed -i -e 's/enable true/enable false/' -e '/defaultConfig {/a ndk{abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"}' build.gradle
+
+Build:r/2.7.262-r-2018-10-24,262
+    commit=r/2.7.262-r-2018-10-24
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+    prebuild=sed -i -e 's/enable true/enable false/' -e '/defaultConfig {/a ndk{abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"}' build.gradle
+
+Build:r/2.7.263-r-2018-10-29,263
+    commit=r/2.7.263-r-2018-10-29
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+    prebuild=sed -i -e 's/enable true/enable false/' -e '/defaultConfig {/a ndk{abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"}' build.gradle
+
+Build:r/2.7.265-r-2018-11-19,265
+    commit=r/2.7.265-r-2018-11-19
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+    prebuild=sed -i -e 's/enable true/enable false/' -e '/defaultConfig {/a ndk{abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"}' build.gradle
+
+Build:r/2.7.266-r-2018-11-26,266
+    commit=r/2.7.266-r-2018-11-26
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+    prebuild=sed -i -e 's/enable true/enable false/' -e '/defaultConfig {/a ndk{abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"}' build.gradle
+
+Build:r/2.7.268-r-2018-12-07,268
+    commit=r/2.7.268-r-2018-12-07
+    subdir=app
+    init=sed -i '/sonatype/d' ../build.gradle
+    gradle=fdroid
+    forceversion=yes
+    prebuild=sed -i -e 's/enable true/enable false/' -e '/defaultConfig {/a ndk{abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"}' build.gradle
+
 Maintainer Notes:
 * versionname is timebased and generated on build; force it. Also remove the timestamp.
 * we disable gradle abi splits because using the universal apk is easier for us for now.
@@ -329,5 +386,5 @@ https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^r
-Current Version:r/2.7.239-r-2018-07-31
-Current Version Code:239
+Current Version:r/2.7.268-r-2018-12-07
+Current Version Code:268

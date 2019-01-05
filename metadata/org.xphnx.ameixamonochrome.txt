@@ -1,6 +1,6 @@
 Categories:Theming
 License:GPL-3.0-only
-Web Site:https://gitlab.com/xphnx/ameixa-monochrome/blob/HEAD/README.md
+Web Site:
 Source Code:https://gitlab.com/xphnx/ameixa-monochrome
 Issue Tracker:https://gitlab.com/xphnx/ameixa-monochrome/issues
 
@@ -43,15 +43,38 @@ Build:4.0.3,403
     commit=v4.0.3
     subdir=app
     gradle=yes
-    prebuild=sed -i -e 's/4.10/4.9/' ../gradle/wrapper/gradle-wrapper.properties
 
 Build:4.0.4,404
     commit=v4.0.4
     subdir=app
     gradle=yes
-    prebuild=sed -i -e 's/4.10/4.9/' ../gradle/wrapper/gradle-wrapper.properties
+
+Build:4.0.5,405
+    commit=v4.0.5
+    subdir=app
+    gradle=yes
+
+Build:4.0.6,406
+    commit=v4.0.6
+    subdir=app
+    gradle=yes
+
+Build:4.1.0,410
+    commit=v4.1.0
+    subdir=app
+    gradle=yes
+
+Build:4.1.1,411
+    commit=v4.1.1
+    subdir=app
+    gradle=yes
+
+Build:4.1.2,412
+    commit=v4.1.2
+    subdir=app
+    gradle=yes
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:4.0.4
-Current Version Code:404
+Current Version:4.1.2
+Current Version Code:412

@@ -8,9 +8,6 @@ Changelog:https://github.com/syncthing/syncthing-lite/releases
 Auto Name:Syncthing Lite
 Summary:File synchronization
 Description:
-Note: The app is a currently unmaintained experiment, for a proper client use
-[[com.nutomic.syncthingandroid]].
-
 This project is an app, that works as a client for a Syncthing share (accessing
 Syncthing devices in the same way a client-server file sharing app accesses its
 proprietary server).
@@ -36,7 +33,62 @@ Build:0.2.1,9
     subdir=app
     gradle=yes
 
+Build:0.3.0,10
+    commit=0.3.0
+    subdir=app
+    gradle=yes
+
+Build:0.3.1,11
+    commit=0.3.1
+    subdir=app
+    gradle=yes
+
+Build:0.3.2,12
+    commit=0.3.2
+    subdir=app
+    gradle=yes
+
+Build:0.3.4,14
+    commit=0.3.4
+    subdir=app
+    gradle=yes
+
+Build:0.3.5,15
+    commit=0.3.5
+    subdir=app
+    gradle=yes
+
+Build:0.3.6,16
+    commit=0.3.6
+    subdir=app
+    gradle=yes
+
+Build:0.3.7,17
+    commit=0.3.7
+    subdir=app
+    gradle=yes
+
+Build:0.3.8,18
+    commit=0.3.8
+    subdir=app
+    gradle=yes
+
+Build:0.3.9,19
+    commit=0.3.9
+    subdir=app
+    gradle=yes
+
+Build:0.3.10,20
+    commit=0.3.10
+    subdir=app
+    gradle=yes
+
+Build:0.3.11,21
+    commit=0.3.11
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]*$
-Current Version:0.2.1
-Current Version Code:9
+Current Version:0.3.11
+Current Version Code:21

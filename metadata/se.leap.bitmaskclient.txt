@@ -3,7 +3,7 @@ License:GPL-3.0-only
 Web Site:https://bitmask.net
 Source Code:https://0xacab.org/leap/bitmask_android
 Issue Tracker:https://0xacab.org/leap/bitmask_android/issues
-Changelog:https://0xacab.org/leap/bitmask_android/blob/master/CHANGELOG
+Changelog:https://0xacab.org/leap/bitmask_android/blob/HEAD/CHANGELOG
 Donate:https://leap.se/en/about-us/donate
 Bitcoin:1Fze6GLjoxFnwAGNreYLK8ktFdGJdPRxeY
 
@@ -24,7 +24,7 @@ censorship and surveillance.
 .
 
 Repo Type:git
-Repo:https://0xacab.org/leap/bitmask_android.git
+Repo:https://0xacab.org/leap/bitmask_android
 
 Build:0.9.7,131
     commit=0.9.7
@@ -45,7 +45,19 @@ Build:0.9.8,134
         ./build_deps.sh
     ndk=r16b
 
+Build:0.9.9,136
+    commit=0.9.9
+    subdir=app
+    submodules=yes
+    gradle=normalProduction
+    rm=ics-openvpn/main/src/main/cpp/mbedtls/tests
+    prebuild=sed -i -e 's|./gradlew|gradle|' ../build_deps.sh
+    build=cd .. && \
+        ./cleanProject.sh && \
+        ./build_deps.sh
+    ndk=r16b
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]+$
-Current Version:0.9.8
-Current Version Code:134
+Current Version:0.9.9
+Current Version Code:136

@@ -3,6 +3,7 @@ License:GPL-3.0-only
 Web Site:https://www.netguard.me
 Source Code:https://github.com/M66B/NetGuard
 Issue Tracker:https://forum.xda-developers.com/android/apps-games/app-netguard-root-firewall-t3233012
+Changelog:https://github.com/M66B/NetGuard/releases
 Donate:https://www.netguard.me
 Bitcoin:13vtPytVVqCwojmohAqsK61Tk4yGXSWpJK
 
@@ -606,7 +607,27 @@ Build:2.213,2018101201
     subdir=app
     gradle=yes
 
+Build:2.215,2018101702
+    commit=2.215
+    subdir=app
+    gradle=yes
+
+Build:2.216,2018102001
+    commit=2.216
+    subdir=app
+    gradle=yes
+
+Build:2.217,2018111701
+    commit=2.217
+    subdir=app
+    gradle=yes
+
+Build:2.218,2018120701
+    commit=2.218
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]+$
-Current Version:2.213
-Current Version Code:2018101201
+Current Version:2.218
+Current Version Code:2018120701

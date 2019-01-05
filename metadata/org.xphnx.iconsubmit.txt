@@ -1,9 +1,9 @@
 Categories:Theming
 License:GPL-3.0-only
-Web Site:https://xphnx.github.io/fento-suite
+Web Site:
 Source Code:https://gitlab.com/xphnx/icon-request-tool
 Issue Tracker:https://gitlab.com/xphnx/icon-request-tool/issues
-Changelog:https://gitlab.com/xphnx/icon-request-tool/blob/HEAD/CHANGELOG.md
+Changelog:https://gitlab.com/xphnx/icon-request-tool/raw/HEAD/CHANGELOG.md
 
 Auto Name:Turtl
 Summary:Request missing icons in your icon pack
@@ -51,7 +51,13 @@ Build:2.0,8
     gradle=yes
     prebuild=sed -i -e '/minifyEnabled/d' build.gradle
 
+Build:2.1,9
+    commit=v2.1
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/minifyEnabled/d' build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.0
-Current Version Code:8
+Current Version:2.1
+Current Version Code:9

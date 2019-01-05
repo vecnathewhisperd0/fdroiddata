@@ -2,7 +2,7 @@ Categories:Navigation,Games
 License:MIT
 Author Name:JonathanMM
 Author Email:passegares@nocle.fr
-Author Web Site:http://nocle.fr
+Author Web Site:https://nocle.fr
 Web Site:
 Source Code:https://framagit.org/JonathanMM/passegares
 Issue Tracker:https://framagit.org/JonathanMM/passegares/issues
@@ -14,10 +14,11 @@ PasseGares est une nouvelle forme pour découvrir de nouveaux horizons
 ferroviaires de façon ludique. Voyager de gare en gare afin de remplir votre
 visa de tampons. Le but ultime ? Visiter toutes les gares du monde !
 
-Contient actuellement l'ensemble des transports d'Île-de-France et de Lille
-Métropôle, ainsi que toutes les gares de France métropolitaine continentale.
-Vous voulez avoir l'application pour votre agglomération ? Envoyez nous votre
-demande par e-mail et elle fera peut-être partie des mises à jour ;)
+Contient actuellement l'ensemble des transports d'Île-de-France, ainsi que Lille
+Métropôle, Reims, Besançon, Dijon, Montpellier, Toulouse, Le Mans, Nantes et
+Angers, ainsi que toutes les gares de France métropolitaine continentale. Vous
+voulez avoir l'application pour votre agglomération ? Envoyez nous votre demande
+par e-mail et elle fera peut-être partie  des mises à jour ;)
 
 L'application est amie de votre vie privée, aucune information sur les gares
 tamponnées ne sort de votre appareil :)
@@ -118,7 +119,22 @@ Build:1.3.5,155
     subdir=app
     gradle=yes
 
+Build:1.3.6,156
+    commit=v1.3.6
+    subdir=app
+    gradle=yes
+
+Build:1.3.7,157
+    commit=v1.3.7
+    subdir=app
+    gradle=yes
+
+Build:1.3.8,158
+    commit=v1.3.8
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.3.5
-Current Version Code:155
+Current Version:1.3.8
+Current Version Code:158

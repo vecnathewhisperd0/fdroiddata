@@ -1,6 +1,6 @@
 Categories:Theming,Multimedia
 License:GPL-3.0-only
-Web Site:https://github.com/dkanada/frost/blob/HEAD/README.md
+Web Site:
 Source Code:https://github.com/dkanada/frost
 Issue Tracker:https://github.com/dkanada/frost/issues
 Changelog:https://github.com/dkanada/frost/blob/HEAD/CHANGELOG.md
@@ -86,7 +86,17 @@ Build:1.4.3,25
     subdir=app
     gradle=yes
 
+Build:1.4.4,26
+    commit=v1.4.4
+    subdir=app
+    gradle=yes
+
+Build:1.4.5,27
+    commit=v1.4.5
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.4.3
-Current Version Code:25
+Current Version:1.4.5
+Current Version Code:27

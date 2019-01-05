@@ -25,13 +25,24 @@ Repo:https://github.com/gryphius/androdns.git
 Binaries:https://github.com/gryphius/androdns/releases/download/v%v/androdns.apk
 
 Build:1.4,6
-    disable=verification fails
     commit=v1.4
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/jcenter()/jcenter()\n maven { url 'https:\/\/maven.google.com' }/" ../build.gradle
+
+Build:1.5,15
+    commit=v1.5
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/jcenter()/jcenter()\n maven { url 'https:\/\/maven.google.com' }/" ../build.gradle
+
+Build:1.5.1,16
+    commit=v1.5.1
     subdir=app
     gradle=yes
     prebuild=sed -i -e "s/jcenter()/jcenter()\n maven { url 'https:\/\/maven.google.com' }/" ../build.gradle
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.4
-Current Version Code:6
+Current Version:1.5.1
+Current Version Code:16

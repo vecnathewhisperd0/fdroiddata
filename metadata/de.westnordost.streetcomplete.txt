@@ -2,7 +2,7 @@ Categories:Navigation
 License:GPL-3.0-only
 Author Name:Tobias Zwick
 Author Email:osm@westnordost.de
-Web Site:https://github.com/westnordost/StreetComplete
+Web Site:https://github.com/westnordost/StreetComplete/wiki
 Source Code:https://github.com/westnordost/StreetComplete
 Issue Tracker:https://github.com/westnordost/StreetComplete/issues
 Changelog:https://github.com/westnordost/StreetComplete/releases
@@ -236,8 +236,23 @@ Build:8.2,803
     subdir=app
     gradle=yes
 
+Build:8.3,804
+    commit=v8.3
+    subdir=app
+    gradle=yes
+
+Build:8.4,805
+    commit=v8.4
+    subdir=app
+    gradle=yes
+
+Build:9.0,901
+    commit=v9.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Update Check Ignore:(alpha|beta|rc|RC)
-Current Version:8.2
-Current Version Code:803
+Current Version:9.0
+Current Version Code:901

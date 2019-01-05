@@ -4,6 +4,7 @@ Author Name:Andreas Schildbach
 Web Site:https://oeffi.schildbach.de
 Source Code:https://gitlab.com/oeffi/oeffi
 Issue Tracker:
+Changelog:https://gitlab.com/oeffi/oeffi/raw/HEAD/oeffi/CHANGES
 Bitcoin:1PW21MuBgPnjfUQriwK7TnRADFotEhdysr
 
 Auto Name:Öffi
@@ -56,6 +57,41 @@ Build:10.0.3-aosp,613
 
 Build:10.1.4-aosp,618
     commit=v10.1.4
+    subdir=oeffi
+    submodules=yes
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.4.1" }' >> ../build.gradle
+
+Build:10.3.4-aosp,626
+    commit=v10.3.4
+    subdir=oeffi
+    submodules=yes
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.4.1" }' >> ../build.gradle
+
+Build:10.3.6-aosp,628
+    commit=v10.3.6
+    subdir=oeffi
+    submodules=yes
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.4.1" }' >> ../build.gradle
+
+Build:10.4.2-aosp,634
+    commit=v10.4.2
+    subdir=oeffi
+    submodules=yes
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.4.1" }' >> ../build.gradle
+
+Build:10.4.5-aosp,637
+    commit=v10.4.5
+    subdir=oeffi
+    submodules=yes
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.4.1" }' >> ../build.gradle
+
+Build:10.4.7-aosp,639
+    commit=v10.4.7
     subdir=oeffi
     submodules=yes
     gradle=yes

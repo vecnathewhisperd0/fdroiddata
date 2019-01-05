@@ -6,6 +6,7 @@ Author Email:apps@openhabfoundation.org
 Web Site:https://www.openhab.org/
 Source Code:https://github.com/openhab/openhab-android
 Issue Tracker:https://github.com/openhab/openhab-android/issues
+Changelog:https://github.com/openhab/openhab-android/releases
 Donate:https://www.paypal.me/openHABFoundation
 
 
@@ -150,11 +151,83 @@ Build:2.3.3-beta,85
     gradle=foss,beta
     prebuild=sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d -e '/google-services/d' build.gradle
 
+Build:2.3.6-beta,86
+    commit=2.3.6-beta-fdroid
+    subdir=mobile
+    gradle=foss,beta
+    prebuild=sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d -e '/google-services/d' build.gradle
+
+Build:2.3.7-beta,87
+    commit=2.3.7-beta-fdroid
+    subdir=mobile
+    gradle=foss,beta
+    prebuild=sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d -e '/google-services/d' build.gradle
+
+Build:2.3.8-beta,88
+    commit=2.3.8-beta-fdroid
+    subdir=mobile
+    gradle=foss,beta
+    prebuild=sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d -e '/google-services/d' build.gradle
+
+Build:2.3.9-beta,89
+    commit=2.3.9-beta-fdroid
+    subdir=mobile
+    gradle=foss,beta
+    prebuild=sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d -e '/google-services/d' build.gradle
+
+Build:2.3.10-beta,90
+    commit=2.3.10-beta-fdroid
+    subdir=mobile
+    gradle=foss,beta
+    prebuild=sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d -e '/google-services/d' build.gradle
+
+Build:2.4.1-beta,92
+    commit=2.4.1-beta-fdroid
+    subdir=mobile
+    gradle=foss,beta
+    prebuild=sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d -e '/google-services/d' build.gradle
+
+Build:2.4.2-beta,93
+    commit=2.4.2-beta-fdroid
+    subdir=mobile
+    gradle=foss,beta
+    prebuild=sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d -e '/google-services/d' build.gradle
+
+Build:2.4.3-beta,94
+    commit=2.4.3-beta-fdroid
+    subdir=mobile
+    gradle=foss,beta
+    prebuild=sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d -e '/google-services/d' build.gradle
+
+Build:2.5.1-beta,96
+    commit=2.5.1-beta-fdroid
+    subdir=mobile
+    gradle=foss,beta
+    prebuild=sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d -e '/google-services/d' build.gradle
+
+Build:2.5.2-beta,97
+    commit=2.5.2-beta-fdroid
+    subdir=mobile
+    gradle=foss,beta
+    prebuild=sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d -e '/google-services/d' build.gradle
+
+Build:2.5.3-beta,98
+    commit=2.5.3-beta-fdroid
+    subdir=mobile
+    gradle=foss,beta
+    prebuild=sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d -e '/google-services/d' build.gradle
+
+Build:2.5.4-beta,99
+    commit=2.5.4-beta-fdroid
+    subdir=mobile
+    gradle=foss,beta
+    prebuild=sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d -e '/google-services/d' build.gradle
+
 Maintainer Notes:
 Replace the fabric.io maven with mavencentral instead of deleting it to not trigger fdroid/fdroidserver#463.
 .
 
 Auto Update Mode:Version %v-fdroid
 Update Check Mode:Tags ^[0-9.]+-beta-fdroid$
-Current Version:2.3.3-beta
-Current Version Code:85
+Current Version:2.5.4-beta
+Current Version Code:99
