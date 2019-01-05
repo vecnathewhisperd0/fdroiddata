@@ -18,9 +18,9 @@ RepoType: git
 Repo: https://github.com/Dariasteam/TowerJumper.git
 
 Builds:
-  - versionName: 1.0.6
-    versionCode: 11
-    commit: v0.17
+  - versionName: 1.0.5
+    versionCode: 10
+    commit: v0.14
     sudo: apt-get install -y clang
     output: tower_jumper.apk
     srclibs:
@@ -43,10 +43,9 @@ Builds:
       - cd ../tower_jumper
       - ../godot/bin/godot_server.server.opt.tools.64 -export Android ../tower_jumper.apk
 
-
-  - versionName: 1.0.5
-    versionCode: 10
-    commit: v0.14
+  - versionName: 1.0.6
+    versionCode: 11
+    commit: v0.18
     sudo: apt-get install -y clang
     output: tower_jumper.apk
     srclibs:
