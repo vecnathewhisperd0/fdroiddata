@@ -10,14 +10,14 @@ Auto Name:Oversec
 Repo Type:git
 Repo:https://github.com/oversecio/oversec.git
 
-Build:1.5.4,1005004
-    commit=1.5.4
+Build:1.5.5,1005005
+    commit=1.5.5
     submodules=yes
     gradle=oversec
+    prebuild=echo 'ext { fdroidVersionCode = $$VERCODE$$; fdroidVersionName = "$$VERSION$$" }' > app/fdroidVersionCode.gradle
     output=app/build/outputs/apk/oversec/release/app-oversec-release-unsigned-$$VERCODE$$.apk
-    gradleprops=fdroidVersionName=1.5.4
 
 Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.5.4
-Current Version Code:1005004
+Current Version:1.5.5
+Current Version Code:1005005
