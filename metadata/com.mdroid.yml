@@ -43,10 +43,8 @@ Builds:
         | sha256sum -c -
       - tar xJf node.tar.xz
       - cp -a node-v10.13.0-linux-x64/. /usr/local/
-    init:
-      - pushd ../../
-      - npm install
-      - popd
+      - npm -g install yarn
+    init: yarn install
     gradle:
       - yes
     rm:
