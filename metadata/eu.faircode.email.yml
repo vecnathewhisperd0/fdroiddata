@@ -46,6 +46,8 @@ Description: |-
     * Account/identity colors
     * Notifications per account
     * Notifications with message preview (requires Android 7 Nougat or later)
+    * Snooze messages
+    * Send messages after selected time
     * Reply templates
     * Search on server
     * Keyword management
@@ -60,16 +62,13 @@ Description: |-
 
     '''Secure'''
     * No data storage on third party servers
-    * Allow encrypted connections only
-    * Accept valid security certificates only
-    * Authentication required
     * Safe message view (styling, scripting and unsafe HTML removed)
     * Confirm opening links, images and attachments
     * No special permissions required
     * No advertisements
     * No analytics and no tracking
     * No [https://developer.android.com/guide/topics/data/backup Google backup]
-    * FairEmail is an original work, not a clone
+    * FairEmail is an original work, not a fork or a clone
 
     '''Efficient'''
     * [https://en.wikipedia.org/wiki/IMAP_IDLE IMAP IDLE] (push messages) supported
@@ -577,7 +576,23 @@ Builds:
     gradle:
       - full
 
+  - versionName: '1.267'
+    versionCode: 267
+    commit: '1.267'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.269'
+    versionCode: 269
+    commit: '1.269'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.265'
-CurrentVersionCode: 265
+CurrentVersion: '1.269'
+CurrentVersionCode: 269
