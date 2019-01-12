@@ -49,7 +49,6 @@ Builds:
       - yes
     rm:
       - node_modules/react-native-fast-image/ios/
-      - node_modules/react-native-search-filter/example/
     prebuild: truncate -s 0 ../../node_modules/react-native/local-cli/server/util/external/xsel
     scanignore:
       - android/build.gradle
