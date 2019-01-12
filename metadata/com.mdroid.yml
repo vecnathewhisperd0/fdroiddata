@@ -38,11 +38,11 @@ Builds:
     commit: v0.5.4
     subdir: android/app
     sudo:
-      - curl -Lo node.tar.xz https://nodejs.org/dist/v10.13.0/node-v10.13.0-linux-x64.tar.xz
-      - echo "0dc6dba645550b66f8f00541a428c29da7c3cde32fb7eda2eb626a9db3bbf08d node.tar.xz"
+      - curl -Lo node.tar.xz https://nodejs.org/dist/v10.15.0/node-v10.15.0-linux-x64.tar.xz
+      - echo "4ee8503c1133797777880ebf75dcf6ae3f9b894c66fd2d5da507e407064c13b5 node.tar.xz"
         | sha256sum -c -
       - tar xJf node.tar.xz
-      - cp -a node-v10.13.0-linux-x64/. /usr/local/
+      - cp -a node-v10.15.0-linux-x64/. /usr/local/
       - npm -g install yarn
     init: yarn install
     gradle:
