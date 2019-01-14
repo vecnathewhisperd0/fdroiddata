@@ -38,6 +38,7 @@ Description: |-
     * Offline storage and operations
     * Battery friendly
     * Low data usage
+    * Small (~4 MB)
     * Material design
 
     '''Pro features'''
@@ -45,7 +46,9 @@ Description: |-
     * Dark/black theme
     * Account/identity colors
     * Notifications per account
-    * Notifications with message preview
+    * Notifications with message preview (requires Android 7 Nougat or later)
+    * Snooze messages
+    * Send messages after selected time
     * Reply templates
     * Search on server
     * Keyword management
@@ -53,29 +56,27 @@ Description: |-
     * Export settings
 
     '''Simple'''
+    * Quick setup
     * Easy navigation
     * No unnecessary settings
     * No bells and whistles
 
     '''Secure'''
-    * Allow encrypted connections only
-    * Accept valid security certificates only
-    * Authentication required
+    * No data storage on third party servers
     * Safe message view (styling, scripting and unsafe HTML removed)
     * Confirm opening links, images and attachments
     * No special permissions required
     * No advertisements
     * No analytics and no tracking
     * No [https://developer.android.com/guide/topics/data/backup Google backup]
+    * FairEmail is an original work, not a fork or a clone
 
     '''Efficient'''
     * [https://en.wikipedia.org/wiki/IMAP_IDLE IMAP IDLE] (push messages) supported
     * Built with latest development tools and libraries
     * Android 5 Lollipop or later required
     * FairEmail will work properly on devices without any Google service installed.
-
-    Note: FairEmail might occasionally crash on Motorola/Lenovo devices with
-    Android 7 Nougat or earlier because of a [https://issuetracker.google.com/issues/63377371 bug in Android].
+    * Individual message notifications are available on Android 7 Nougat and later only because earlier Android versions do not support notification grouping.
 
     See [https://github.com/M66B/open-source-email/blob/master/FAQ.md here] for a list of often asked questions.
 
@@ -560,7 +561,39 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.262'
+    versionCode: 262
+    commit: '1.262'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.265'
+    versionCode: 265
+    commit: '1.265'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.267'
+    versionCode: 267
+    commit: '1.267'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.269'
+    versionCode: 269
+    commit: '1.269'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.253'
-CurrentVersionCode: 253
+CurrentVersion: '1.269'
+CurrentVersionCode: 269

@@ -123,12 +123,6 @@ Build:2.0.4,104
     gradle=fdroid,freedom
     prebuild=sed -i -e '14,16d' -e '/google-services/d' -e '/io.fabric./d' ../build.gradle
 
-Build:2.0.6,106
-    commit=2.0.6
-    subdir=mobile
-    gradle=fdroid,freedom
-    prebuild=sed -i -e '14,16d' -e '/google-services/d' -e '/io.fabric./d' ../build.gradle
-
 Build:2.0.7,107
     commit=2.0.7
     subdir=mobile
@@ -147,7 +141,13 @@ Build:2.1.1,109
     gradle=fdroid,freedom
     prebuild=sed -i -e '14,16d' -e '/google-services/d' -e '/io.fabric./d' ../build.gradle
 
+Build:2.1.3,112
+    commit=2.1.3
+    subdir=mobile
+    gradle=fdroid,freedom
+    prebuild=sed -i -e '14,16d' -e '/google-services/d' -e '/io.fabric./d' ../build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.1.1
-Current Version Code:109
+Current Version:2.1.3
+Current Version Code:112

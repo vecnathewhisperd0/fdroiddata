@@ -3,6 +3,7 @@ Categories:
 License: GPL-3.0-only
 SourceCode: https://github.com/tobihille/SeniorLauncher
 IssueTracker: https://github.com/tobihille/SeniorLauncher/issues
+Changelog: https://github.com/tobihille/SeniorLauncher/releases
 
 AutoName: Senior Launcher
 Summary: A launcher app intended for oldies
@@ -56,7 +57,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.7'
+    versionCode: 7000
+    commit: '1.7'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.6'
-CurrentVersionCode: 6000
+CurrentVersion: '1.7'
+CurrentVersionCode: 7000

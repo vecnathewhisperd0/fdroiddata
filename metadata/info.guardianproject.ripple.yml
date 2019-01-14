@@ -39,5 +39,22 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
+  - versionName: 0.2.3
+    versionCode: 87
+    disable: build fails due to badly formated .fdroid.yml in source
+    commit: 0.2.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.4
+    versionCode: 104
+    commit: 0.2.4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 0.2.4
+CurrentVersionCode: 104

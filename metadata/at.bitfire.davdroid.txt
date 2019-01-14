@@ -1,5 +1,6 @@
 Categories:Internet
 License:GPL-3.0-only
+Author Name:bitfire web engineering
 Web Site:https://www.davx5.com/
 Source Code:https://www.davx5.com/source
 Issue Tracker:https://www.davx5.com/forums
@@ -811,7 +812,19 @@ Build:2.1-ose,257
     submodules=yes
     gradle=standard
 
+Build:2.2.1-ose,262
+    commit=v2.2.1-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.2.2-ose,263
+    commit=v2.2.2-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags ^v[0-9.]+-ose$
-Current Version:2.1-ose
-Current Version Code:257
+Current Version:2.2.2-ose
+Current Version Code:263

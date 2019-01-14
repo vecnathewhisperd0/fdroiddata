@@ -10,10 +10,6 @@ LiberapayID: '1302739'
 Bitcoin: 1J2bbhJYksSjeynGGhuSPN9aTEaxiGm4nR
 
 AutoName: G-Droid
-Summary: An alternative client app to browse the F-Droid repository
-Description: |-
-    G-Droid is a client application to browse the F-Droid repository. It has a
-    slighly different approach of UI design to the F-Droid client.
 
 RepoType: git
 Repo: https://gitlab.com/gdroid/gdroidclient.git
@@ -138,7 +134,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.5.3
+    versionCode: 5003
+    commit: v0.5.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.6.1
+    versionCode: 6001
+    commit: v0.6.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.6.2
+    versionCode: 6002
+    commit: v0.6.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.5.2
-CurrentVersionCode: 5002
+CurrentVersion: 0.6.2
+CurrentVersionCode: 6002
