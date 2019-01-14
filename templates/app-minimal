@@ -6,13 +6,13 @@ SourceCode:
 IssueTracker:
 
 Summary:
-Description: |
+Description: |-
 
 RepoType:
 Repo:
 
 Build:
-    commit=
+    commit:
 
 UpdateCheckMode:
 
