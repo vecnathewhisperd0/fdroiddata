@@ -5,8 +5,9 @@ SourceCode: https://github.com/JavaCafe01/PdfViewer
 IssueTracker: https://github.com/JavaCafe01/PdfViewer/issues
 
 AutoName: Pdf Viewer Plus
-Summary: A simple pdf viewer
-Description: A pdf viewer with the ability to read pdfs from storage, and share them.
+Summary: A colorful pdf viewer.
+Description: The default pdf viewer lacks support and color. Pdf Viewer Plus brings
+    you a backed open-source community and a variety of themes.
 
 RepoType: git
 Repo: https://github.com/JavaCafe01/PdfViewer
@@ -15,6 +16,13 @@ Builds:
   - versionName: '2.4'
     versionCode: 15
     commit: v2.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.5'
+    versionCode: 16
+    commit: v2.5
     subdir: app
     gradle:
       - yes
