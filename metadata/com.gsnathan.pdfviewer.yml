@@ -5,7 +5,7 @@ SourceCode: https://github.com/JavaCafe01/PdfViewer
 IssueTracker: https://github.com/JavaCafe01/PdfViewer/issues
 
 AutoName: Pdf Viewer Plus
-Summary: A colorful pdf viewer.
+Summary: A colorful pdf viewer
 Description: The default pdf viewer lacks support and color. Pdf Viewer Plus brings
     you a backed open-source community and a variety of themes.
 
@@ -29,5 +29,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '2.4'
-CurrentVersionCode: 15
+CurrentVersion: '2.5'
+CurrentVersionCode: 16
