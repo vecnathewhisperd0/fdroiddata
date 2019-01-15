@@ -11,8 +11,8 @@ Description: |-
 RepoType:
 Repo:
 
-Build:
-    commit:
+Builds:
+ - commit:
 
 UpdateCheckMode:
 
