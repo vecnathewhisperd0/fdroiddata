@@ -14,7 +14,7 @@ Repo: https://gitlab.com/timelimit.io/opentimelimit-android.git
 Builds:
   - versionName: 0.1.0
     versionCode: 1
-    commit: 750d9ffb601d9a070b2db088fa9eb03e9eb7ae65
+    commit: release-0.1.0
     subdir: app
     gradle:
       - yes
