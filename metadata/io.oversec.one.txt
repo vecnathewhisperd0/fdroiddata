@@ -31,7 +31,7 @@ Build:1.5.7,1005007
     output=app/build/outputs/apk/oversec/release/app-oversec-release-unsigned-$$VERCODE$$.apk
     prebuild=echo 'ext  { fdroidVersionCode = $$VERCODE$$; fdroidVersionName = "$$VERSION$$";  }' > app/fdroidVersionCode.gradle
 
-Build:1.5.7,1005008
+Build:1.5.8,1005008
     commit=1.5.8
     submodules=yes
     gradle=oversec
