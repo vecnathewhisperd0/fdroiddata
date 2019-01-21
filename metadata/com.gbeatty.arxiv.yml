@@ -4,7 +4,7 @@ Categories:
 License: MIT
 SourceCode: https://github.com/GarrettBeatty/arXiv-eXplorer
 IssueTracker: https://github.com/GarrettBeatty/arXiv-eXplorer/issues
-
+Bitcoin: 1BmqSrEkvqBLZ1AGaaCJb73bzRkijKDgPN
 AutoName: arXiv eXplorer
 
 RepoType: git
@@ -16,7 +16,7 @@ Builds:
     commit: v3.5.7
     subdir: app
     gradle:
-      - yes
+      - fdroid
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
