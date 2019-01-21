@@ -1,0 +1,25 @@
+Categories:
+  - Multimedia
+License: Apache-2.0
+SourceCode: https://github.com/iamSahdeep/Bop
+IssueTracker: https://github.com/iamSahdeep/Bop/issues
+Changelog: https://github.com/iamSahdeep/Bop/blob/HEAD/changelog.md
+Donate: https://www.paypal.me/sahdeep
+
+AutoName: Bop-MusicPlayer
+
+RepoType: git
+Repo: https://github.com/iamSahdeep/Bop
+
+Builds:
+  - versionName: '0.5'
+    versionCode: 5
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '0.5'
+CurrentVersionCode: 5
