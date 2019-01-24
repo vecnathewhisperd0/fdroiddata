@@ -366,6 +366,7 @@ Build:0.100.0,537
     commit=v0.100.0
     submodules=yes
     gradle=fat
+    prebuild=sed -i -e '/applicationIdSuffix/d' build.gradle
     build=$$NDK$$/ndk-build -j `nproc` && \
         gradle
     ndk=r14b
