@@ -18,14 +18,14 @@ RepoType: git
 Repo: https://github.com/sduduzog/slim-launcher
 
 Builds:
-  - versionName: 2.1.1
-    versionCode: 20
-    commit: v2.1.2
+  - versionName: 2.2.5
+    versionCode: 27
+    commit: v2.2.5
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.1.2
-CurrentVersionCode: 21
+CurrentVersion: 2.2.5
+CurrentVersionCode: 27
