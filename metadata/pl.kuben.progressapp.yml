@@ -36,7 +36,7 @@ Builds:
       - yes
     output: app/build/outputs/apk/release/app-release-unsigned.apk
 
-AutoUpdateMode: None
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 0.5.1
 CurrentVersionCode: 4
