@@ -5,26 +5,13 @@ License: GPL-3.0-or-later
 SourceCode: https://github.com/niccokunzmann/bhagavad-gita-android/
 IssueTracker: https://github.com/niccokunzmann/bhagavad-gita-android/issues
 
-Summary: The Bhagavad Gita
-Description: |-
-    Bhagavad Gita, also known as the Gita - "The Song of God" is a practical guide to one's life that guides one to re-organise their life, achieve inner peace and approach the Supreme (the Ultimate Reality). It is a 700-verse text in Sanskrit which comprises chapters 23 through 40 in the Bhishma-Parva section of the Mahabharata.
-
-    The Bhagavad Gita is a dialogue between Arjuna, a supernaturally gifted warrior and his guide and charioteer Lord Krishna on the battlefield of Kurukshetra. As both armies stand ready for the battle, the mighty warrior Arjuna, on observing the warriors on both sides becomes overwhelmed with grief and compassion due to the fear of losing his relatives and friends and the consequent sins attributed to killing his own relatives. So, he surrenders to Lord Krishna, seeking a solution. Thus, follows the wisdom of the Bhagavad Gita. Over 18 chapters, the Bhagavad Gita packs an intense analysis of life, emotions and ambitions, discussion of various types of yoga, including Jnana, Bhakti, Karma and Raja, the difference between Self and the material body as well as the revelation of the Ultimate Purpose of Life.
-
-    Features:
-
-    * Complete Text in English and Sanskrit with transliteration.
-    * View chapters and verses
-    * Plain interface
-    * Maximum compatibility with all Android versions
-
 RepoType: git
 Repo: https://github.com/niccokunzmann/bhagavad-gita-android.git
 
 Builds:
-  - versionName: '1.0'
-    versionCode: 1
-    commit: v1.0
+  - versionName: '1.3'
+    versionCode: 4
+    commit: v1.3
     subdir: app
     gradle:
       - yes
