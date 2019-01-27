@@ -9,14 +9,14 @@ RepoType: git
 Repo: https://github.com/niccokunzmann/bhagavad-gita-android.git
 
 Builds:
-  - versionName: '1.3'
-    versionCode: 4
-    commit: v1.3
+  - versionName: '1.4'
+    versionCode: 5
+    commit: v1.4
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.3'
-CurrentVersionCode: 4
+CurrentVersion: '1.4'
+CurrentVersionCode: 5
