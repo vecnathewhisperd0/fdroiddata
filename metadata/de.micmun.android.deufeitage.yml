@@ -11,13 +11,9 @@ Summary: Find the German public holidays per state and year
 Description: |-
     Find the date of a public holiday for this or another year.
 
-    * Choose a german state
+    * Choose a German state
     * Choose a year between this year-4 and this year+4
-    * Every holiday can be touched to show a short description of the holiday
-    * Completely free
-    * Open source
-
-    I'm the original author, so I support the inclusion.
+    * Every holiday can be touched to show a short description
 
 RepoType: git
 Repo: https://github.com/MicMun/DeuFeiTage.git
