@@ -1,0 +1,36 @@
+Categories:
+  - Reading
+License: AGPL-3.0-only
+
+AutoName: KOReader
+Summary: An ebook reader application supporting PDF, DjVu, EPUB, FB2
+Description: KOReader is a document viewer application, originally created for Kindle
+    e-ink readers.
+
+RepoType: git
+Repo: https://github.com/koreader/koreader.git
+
+Builds:
+  - versionName: v2019.03.1
+    versionCode: 6623
+    commit: v2019.03.1
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: v2019.03.1
+CurrentVersionCode: 6623
