@@ -1375,8 +1375,7 @@ Builds:
     subdir: vector
     sudo:
       - apt-get update
-      - apt-get install -y g++
-      - apt-get install -y -t stretch-backports npm
+      - apt-get install -y --no-install-recommends g++ -t stretch-backports npm
       - npm install -g react-native-cli
     gradle:
       - appfdroid
