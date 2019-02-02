@@ -1381,7 +1381,7 @@ Builds:
     gradle:
       - appfdroid
     srclibs:
-      - matrixsdk@v0.9.15
+      - matrixsdk@v0.9.16
       - olmsdk@3.0.0
       - jitsi-meet@c109199e060faa05440c6971f0683e8eb4d81167
     prebuild:
