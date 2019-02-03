@@ -31,10 +31,10 @@ Repo: https://gitlab.com/JakubNeukirch/progress-tracker.git
 Builds:
   - versionName: 0.5.1
     versionCode: 4
-    commit: a893953149842afbbf8c5a05cb9532e23699733c
+    commit: 0.5.1
+    subdir: app/
     gradle:
       - yes
-    output: app/build/outputs/apk/release/app-release-unsigned.apk
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
