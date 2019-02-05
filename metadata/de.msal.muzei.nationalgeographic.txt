@@ -43,7 +43,12 @@ Build:1.2.0,9
     subdir=muzei-nationalgeographic
     gradle=yes
 
+Build:2 (2.1.0),20100
+    commit=67aac2b2c5f08026aef6628bdfbf04e3c7a8a1eb
+    subdir=muzei-nationalgeographic
+    gradle=yes
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest
-Current Version:1.2.0
-Current Version Code:9
+Current Version:2 (2.1.0)
+Current Version Code:20100
