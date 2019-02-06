@@ -20,7 +20,7 @@ Build:2.2.1,2020100
     commit=v2.2.1
     subdir=app
     gradle=yes
-    
+
 Build:2.2.2,2020200
     commit=v2.2.2
     subdir=app
