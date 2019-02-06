@@ -25,12 +25,12 @@ Repo: https://github.com/fei0316/snapstreak-alarm
 Builds:
   - versionName: 1.0.1-release
     versionCode: 11
-    commit: 8024b6794075df964b7448065d28bbec41256a15
+    commit: 1.0.1
     subdir: app
     gradle:
       - free
 
-AutoUpdateMode: Version +-release %v
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 1.0.1
 CurrentVersionCode: 11
