@@ -23,14 +23,14 @@ RepoType: git
 Repo: https://github.com/fei0316/snapstreak-alarm
 
 Builds:
-  - versionName: 1.0.1-release
-    versionCode: 11
-    commit: 1.0.1
+  - versionName: 1.1.1
+    versionCode: 13
+    commit: 1.1.1
     subdir: app
     gradle:
       - free
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.1
-CurrentVersionCode: 11
+CurrentVersion: 1.1.1
+CurrentVersionCode: 13
