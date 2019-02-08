@@ -41,7 +41,7 @@ Builds:
     commit: 0.5.2
     subdir: app/
     gradle:
-      - -yes
+      - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
