@@ -29,13 +29,13 @@ Builds:
     subdir: app
     gradle:
       - foss
-      
+
   - versionName: 1.4.73_foss
     versionCode: 136
     commit: v1.4.73
     subdir: app
     gradle:
-      - foss      
+      - foss
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
