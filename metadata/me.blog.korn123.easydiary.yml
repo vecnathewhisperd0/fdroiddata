@@ -37,7 +37,7 @@ Builds:
     gradle:
       - foss
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
+AutoUpdateMode: None
+UpdateCheckMode: None
 CurrentVersion: 1.4.73_foss
 CurrentVersionCode: 136
