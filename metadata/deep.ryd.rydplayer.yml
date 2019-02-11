@@ -101,7 +101,6 @@ Builds:
     prebuild:
       - export flutter=$(realpath $$flutter$$)
       - echo "flutter.sdk=$flutter" >> local.properties
-      - sed -i -e '/jcenter/a\        maven { url "https://jitpack.io" }' build.gradle
       - cd ..
       - $flutter/bin/flutter config --no-analytics
       - $flutter/bin/flutter packages get
