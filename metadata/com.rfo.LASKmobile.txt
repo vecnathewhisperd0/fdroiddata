@@ -1,0 +1,17 @@
+Categories:Writing
+License:GPL-3.0-only
+Web Site:https://codeberg.org/ibinshoid/LASKmobile/wiki
+Source Code:https://codeberg.org/ibinshoid/LASKmobile
+Issue Tracker:https://codeberg.org/ibinshoid/LASKmobile/issues
+
+
+Repo Type:git
+Repo:https://codeberg.org/ibinshoid/LASKmobile
+
+Build:0.7.0,500
+    commit=dd268d7
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:None
+Update Check Mode:None
