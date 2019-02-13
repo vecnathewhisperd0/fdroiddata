@@ -118,13 +118,6 @@ Builds:
 
   - versionName: 1.0.26
     versionCode: 1026
-    commit: v1.0.26
-    subdir: app
-    gradle:
-      - yes
-
-  - versionName: 1.0.26
-    versionCode: 1026
     commit: 1.0.26-beta
     subdir: app
     gradle:
