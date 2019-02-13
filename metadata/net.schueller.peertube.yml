@@ -132,3 +132,5 @@ Builds:
 
 AutoUpdateMode: Version +-beta %v
 UpdateCheckMode: Tags
+CurrentVersion: 1.0.26
+CurrentVersionCode: 1026
