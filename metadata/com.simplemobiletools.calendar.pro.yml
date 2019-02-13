@@ -1,0 +1,80 @@
+Categories:
+  - Multimedia
+License: Apache-2.0
+AuthorName: Tibor Kaputa
+AuthorEmail: hello@simplemobiletools.com
+WebSite: https://simplemobiletools.github.io
+SourceCode: https://github.com/SimpleMobileTools/Simple-Calendar
+IssueTracker: https://github.com/SimpleMobileTools/Simple-Calendar/issues
+Changelog: https://github.com/SimpleMobileTools/Simple-Calendar/blob/HEAD/CHANGELOG.md
+Donate: https://simplemobiletools.github.io/donate
+Bitcoin: 19Hc8A7sWGud8sP19VXDC5a5j28UyJfpyJ
+Litecoin: LYACbHTKaM9ZubKQGxJ4NRyVy1gHUuztRP
+
+Name: Simple Calendar Pro
+AutoName: Calendar
+
+RepoType: git
+Repo: https://github.com/SimpleMobileTools/Simple-Calendar
+
+Builds:
+  - versionName: 6.0.1
+    versionCode: 136
+    commit: v6.0.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.1.0
+    versionCode: 137
+    commit: 6.1.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.1.1
+    versionCode: 138
+    commit: 6.1.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.1.2
+    versionCode: 139
+    commit: 6.1.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.2.0
+    versionCode: 140
+    commit: 6.2.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.2.1
+    versionCode: 141
+    commit: 6.2.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.2.2
+    versionCode: 142
+    commit: 6.2.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 6.2.2
+CurrentVersionCode: 142

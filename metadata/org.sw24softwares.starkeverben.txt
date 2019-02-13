@@ -3,6 +3,7 @@ License:GPL-3.0-only
 Web Site:https://sw24softwares.github.io
 Source Code:https://github.com/Sw24Softwares/StarkeVerben
 Issue Tracker:https://github.com/Sw24Softwares/StarkeVerben/issues
+Changelog:https://github.com/Sw24Softwares/StarkeVerben/releases
 
 Auto Name:Starke Verben
 
@@ -54,7 +55,17 @@ Build:3.1.2,12
     subdir=app
     gradle=yes
 
+Build:3.2.0,13
+    commit=v3.2.0
+    subdir=app
+    gradle=yes
+
+Build:3.2.1,14
+    commit=v3.2.1
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.1.2
-Current Version Code:12
+Current Version:3.2.1
+Current Version Code:14

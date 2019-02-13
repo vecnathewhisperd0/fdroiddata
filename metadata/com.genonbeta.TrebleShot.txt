@@ -191,7 +191,27 @@ Build:1.2.7.7,85
     subdir=app
     gradle=fossReliant
 
+Build:1.2.8,88
+    commit=1.2.8
+    subdir=app
+    gradle=fossReliant
+
+Build:1.2.8.1,89
+    commit=1.2.8.1
+    subdir=app
+    gradle=fossReliant
+
+Build:1.2.8.2,90
+    commit=1.2.8.2
+    subdir=app
+    gradle=fossReliant
+
+Build:1.2.8.3,91
+    commit=1.2.8.3
+    subdir=app
+    gradle=fossReliant
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9\.]*$
-Current Version:1.2.7.7
-Current Version Code:85
+Current Version:1.2.8.3
+Current Version Code:91

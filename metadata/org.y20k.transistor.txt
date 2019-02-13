@@ -4,6 +4,7 @@ Author Name:y20k
 Web Site:http://www.y20k.org/transistor/
 Source Code:https://github.com/y20k/transistor
 Issue Tracker:https://github.com/y20k/transistor/issues
+Changelog:https://github.com/y20k/transistor/releases
 
 Auto Name:Transistor
 Summary:Listen to radio streams
@@ -261,7 +262,22 @@ Build:3.0.12,62
     subdir=app
     gradle=yes
 
+Build:3.1.0,64
+    commit=v3.1.0
+    subdir=app
+    gradle=yes
+
+Build:3.1.1,65
+    commit=v3.1.1
+    subdir=app
+    gradle=yes
+
+Build:3.1.2,66
+    commit=v3.1.2
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.0.12
-Current Version Code:62
+Current Version:3.1.2
+Current Version Code:66

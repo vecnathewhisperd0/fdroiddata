@@ -5,7 +5,7 @@ Source Code:https://github.com/tube42/drumon
 Issue Tracker:https://github.com/tube42/drumon/issues
 
 Auto Name:Drum On!
-Summary:Use you smartphone as a virtual drum
+Summary:Use your smartphone as a virtual drum
 Description:
 Simple and minimalist drum app that can, for example, be used to accompany
 guitar or bass players.
@@ -89,7 +89,28 @@ Build:0.2.7,27
     output=android/build/outputs/apk/android-release-unsigned.apk
     scanignore=android/libs
 
+Build:0.2.8,28
+    commit=v0.2.8
+    submodules=yes
+    gradle=yes
+    output=android/build/outputs/apk/android-release-unsigned.apk
+    scanignore=android/libs
+
+Build:0.2.9,29
+    commit=v0.2.9
+    submodules=yes
+    gradle=yes
+    output=android/build/outputs/apk/android-release-unsigned.apk
+    scanignore=android/libs
+
+Build:0.3.0,30
+    commit=v0.3.0
+    subdir=android
+    submodules=yes
+    gradle=yes
+    scandelete=android/libs
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.2.7
-Current Version Code:27
+Current Version:0.3.0
+Current Version Code:30

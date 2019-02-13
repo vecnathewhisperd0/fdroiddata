@@ -83,6 +83,134 @@ Build:1718113121-github,1718113121
     gradle=githubConfig
     gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
 
+Build:1718113152-github,1718113152
+    commit=v1718113152
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1718113171-github,1718113171
+    commit=v1718113171
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1718113212-github,1718113212
+    commit=v1718113212
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1718113251-github,1718113251
+    commit=v1718113251
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1718113271-github,1718113271
+    commit=v1718113271
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1718113281-github,1718113281
+    commit=v1718113281
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1718113321-github,1718113321
+    commit=v1718113321
+    subdir=app
+    gradle=githubConfig
+    prebuild=sed -i -e "s/git for-each-ref refs\/tags --sort=-authordate --format='%(refname:short)' --count=1/git describe --contains $(git rev-parse HEAD)/" build.gradle
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1718113331-github,1718113331
+    commit=v1718113331
+    subdir=app
+    gradle=githubConfig
+    prebuild=sed -i -e "s/git for-each-ref refs\/tags --sort=-authordate --format='%(refname:short)' --count=1/git describe --contains $(git rev-parse HEAD)/" build.gradle
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1718123431-github,1718123431
+    commit=v1718123431
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1718123441-github,1718123441
+    commit=v1718123441
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1718123471-github,1718123471
+    commit=v1718123471
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1719010021-github,1719010021
+    commit=v1719010021
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1719010051-github,1719010051
+    commit=v1719010051
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1719010061-github,1719010061
+    commit=v1719010061
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1719010092-github,1719010092
+    commit=v1719010092
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1719010101-github,1719010101
+    commit=v1719010101
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1719010131-github,1719010131
+    commit=v1719010131
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1719010141-github,1719010141
+    commit=v1719010141
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1719010151-github,1719010151
+    commit=v1719010151
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1719010271-github,1719010271
+    commit=v1719010271
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
+Build:1719010301-github,1719010301
+    commit=v1719010301
+    subdir=app
+    gradle=githubConfig
+    gradleprops=appLoginUrl="URL",appLoginUsername="LOGIN",appLoginPassword="PASS"
+
 Maintainer Notes:
 Version code and name are dynamically generated from the Git tag.
 
@@ -92,5 +220,5 @@ The Gradle properties are added to avoid a Gradle error but they are only used i
 Auto Update Mode:Version v%c
 Update Check Mode:HTTP
 Update Check Data:https://www.amine-bou.fr/version.txt|versionCode=(.*)|.|versionName=(.*)
-Current Version:1718113121-github
-Current Version Code:1718113121
+Current Version:1719010301-github
+Current Version Code:1719010301

@@ -3,6 +3,7 @@ AntiFeatures:
 Categories:
   - Navigation
 License: MIT
+WebSite: https://github.com/project-travel-mate/Travel-Mate/wiki
 SourceCode: https://github.com/project-travel-mate/Travel-Mate
 IssueTracker: https://github.com/project-travel-mate/Travel-Mate/issues
 
@@ -32,8 +33,7 @@ Builds:
     subdir: Android/app/
     gradle:
       - yes
-    prebuild: |-
-        sed -i -e '/repo.commonsware.com.s3.amazonaws.com/d' build.gradle
+    prebuild: sed -i -e '/repo.commonsware.com.s3.amazonaws.com/d' build.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags

@@ -1,9 +1,12 @@
 Categories:Multimedia
 License:GPL-3.0-only
-Web Site:https://vanilla-music.github.io
+Author Name:Kanedias
+Author Email:kanedias@keemail.me
+Web Site:
 Source Code:https://github.com/vanilla-music/vanilla-music-cover-fetch
 Issue Tracker:https://github.com/vanilla-music/vanilla-music-cover-fetch/issues
 Donate:https://www.patreon.com/kanedias
+LiberapayID:27922
 
 Auto Name:Vanilla Cover Fetch
 Summary:Vanilla Music player Cover Fetch plugin
@@ -82,7 +85,30 @@ Build:1.4.2,10
     submodules=yes
     gradle=yes
 
+Build:1.4.3,11
+    commit=1.4.3
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.4.4,12
+    commit=1.4.4
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.4.5,13
+    commit=1.4.5
+    subdir=app
+    gradle=yes
+
+Maintainer Notes:
+- This app doesn't have default activity, this is normal
+- This app requires [[ch.blinkenlights.android.vanilla]]
+.
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.4.2
-Current Version Code:10
+Update Check Ignore:beta
+Current Version:1.4.5
+Current Version Code:13

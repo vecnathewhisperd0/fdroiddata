@@ -4,6 +4,7 @@ Author Name:y20k
 Web Site:http://www.y20k.org/trackbook/
 Source Code:https://github.com/y20k/trackbook
 Issue Tracker:https://github.com/y20k/trackbook/issues
+Changelog:https://github.com/y20k/trackbook/releases
 
 Auto Name:Trackbook
 Summary:Record your movement
@@ -143,12 +144,17 @@ Build:1.1.11,27
     subdir=app
     gradle=yes
 
-Build:1.1.12,28
-    commit=v1.1.12
+Build:1.1.13,29
+    commit=v1.1.13
+    subdir=app
+    gradle=yes
+
+Build:1.1.14,30
+    commit=v1.1.14
     subdir=app
     gradle=yes
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.1.12
-Current Version Code:28
+Current Version:1.1.14
+Current Version Code:30

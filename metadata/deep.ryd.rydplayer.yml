@@ -65,7 +65,33 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 0.2.2-beta
-CurrentVersionCode: 17
+  - versionName: 0.2.3-beta
+    versionCode: 23
+    commit: v0.2.3-beta
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.2
+    versionCode: 34
+    commit: v1.0.2
+    subdir: android
+    gradle:
+      - yes
+    output: ../build/app/outputs/apk/release/app-release-unsigned.apk
+    srclibs:
+      - flutter@v1.0.0
+    prebuild:
+      - export flutter=$(realpath $$flutter$$)
+      - echo "flutter.sdk=$flutter" >> local.properties
+      - sed -i -e '/jcenter/a\        maven { url "https://jitpack.io" }' build.gradle
+      - cd ..
+      - $flutter/bin/flutter config --no-analytics
+      - $flutter/bin/flutter packages get
+
+MaintainerNotes: Dynamic version name, so no UCM can be used.
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 1.0.2
+CurrentVersionCode: 34

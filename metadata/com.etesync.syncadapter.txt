@@ -224,6 +224,60 @@ Build:0.22.2,39
     submodules=yes
     gradle=yes
 
+Build:0.22.3,40
+    commit=v0.22.3
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.22.4,41
+    commit=v0.22.4
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.22.5,42
+    commit=v0.22.5
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:0.22.6,43
+    commit=v0.22.6
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.0.0,50
+    commit=v1.0.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.0.1,51
+    commit=v1.0.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.0.2,52
+    commit=v1.0.2
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.0.3,53
+    commit=v1.0.3
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.0.4,54
+    commit=v1.0.4
+    subdir=app
+    submodules=yes
+    gradle=yes
+
 Maintainer Notes:
 Summary and Description are maintained by upstream using fastlane in
 the source repo:
@@ -232,5 +286,5 @@ https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.22.2
-Current Version Code:39
+Current Version:1.0.4
+Current Version Code:54

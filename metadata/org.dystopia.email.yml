@@ -6,6 +6,7 @@ SourceCode: https://framagit.org/dystopia-project/simple-email
 IssueTracker: https://framagit.org/dystopia-project/simple-email/issues
 Changelog: https://framagit.org/dystopia-project/simple-email/blob/HEAD/CHANGELOG.md
 
+Name: SimpleEmail
 AutoName: Email
 Summary: Simple and minimalistic email app
 Description: |-
@@ -60,7 +61,55 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.1.0
+    versionCode: 110
+    commit: v1.1.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.1.1
+    versionCode: 111
+    commit: v1.1.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.1.2
+    versionCode: 112
+    commit: v1.1.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.2.0
+    versionCode: 113
+    commit: v1.2.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.2.1
+    versionCode: 114
+    commit: v1.2.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.3.0
+    versionCode: 115
+    commit: v1.3.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v.*\d$
-CurrentVersion: 1.0.0
-CurrentVersionCode: 100
+CurrentVersion: 1.3.0
+CurrentVersionCode: 115

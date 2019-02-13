@@ -10,6 +10,9 @@ Changelog:https://github.com/flyve-mdm/android-mdm-agent/raw/HEAD/CHANGELOG.md
 Auto Name:Flyve MDM Agent
 Summary:Manage and secure effectively your mobile devices and applications
 Description:
+Note: Since version 2.0.0-rc.7 the open-source version of this app has a new ID,
+hence you need to uninstall this one and install [[org.flyve.mdm.agent.mqtt]].
+
 Flyve MDM is an award winning mobile device management software that enables
 organizations manage their entire mobile fleet with ease. Give your IT security
 team a broader visibility to proactively work on security weaknesses and manage
@@ -62,7 +65,21 @@ Build:2.0.0-rc.5,2618
     sudo=apt-get install -y jq
     gradle=yes
 
-Auto Update Mode:Version %v
+Build:2.0.0-rc.6,3085
+    commit=2.0.0-rc.6
+    subdir=app
+    sudo=apt-get install -y jq
+    gradle=yes
+
+Maintainer Notes:
+Includes Firebase libraries since 2.0.0-rc.7. There is a Firebase-free flavor
+("mqtt"), but it adds a suffix to the application ID, so it basically
+introduces a new app.
+.
+
+Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:2.0.0-rc.5
-Current Version Code:2618
+Current Version:2.0.0-rc.7
+Current Version Code:3238
+
+No Source Since:2.0.0-rc.7

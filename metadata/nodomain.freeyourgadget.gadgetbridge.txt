@@ -1,9 +1,9 @@
 Categories:Connectivity,System,Navigation
 License:AGPL-3.0-only
 Web Site:https://gadgetbridge.org
-Source Code:https://github.com/Freeyourgadget/Gadgetbridge
+Source Code:https://codeberg.org/Freeyourgadget/Gadgetbridge
 Issue Tracker:https://github.com/Freeyourgadget/Gadgetbridge/issues
-Changelog:https://github.com/Freeyourgadget/Gadgetbridge/blob/HEAD/CHANGELOG.md
+Changelog:https://codeberg.org/Freeyourgadget/Gadgetbridge/src/branch/master/CHANGELOG.md
 LiberapayID:11276
 
 Auto Name:Gadgetbridge
@@ -23,11 +23,12 @@ You can get notifications on your wrist and (depending on the device):
 
 Gadgetbridge is under active development, for an up to date list of supported
 devices and an overview of current features, please refer to the
-[https://github.com/Freeyourgadget/Gadgetbridge/blob/HEAD/README.md README].
+[https://codeberg.org/Freeyourgadget/Gadgetbridge/src/branch/master/README.md
+README].
 .
 
 Repo Type:git
-Repo:https://github.com/Freeyourgadget/Gadgetbridge.git
+Repo:https://codeberg.org/Freeyourgadget/Gadgetbridge.git
 
 Build:0.1.0,1
     commit=0.1.0
@@ -699,7 +700,32 @@ Build:0.31.1,140
     subdir=app
     gradle=yes
 
+Build:0.31.2,141
+    commit=0.31.2
+    subdir=app
+    gradle=yes
+
+Build:0.31.3,142
+    commit=0.31.3
+    subdir=app
+    gradle=yes
+
+Build:0.32.0,143
+    commit=0.32.0
+    subdir=app
+    gradle=yes
+
+Build:0.32.1,144
+    commit=0.32.1
+    subdir=app
+    gradle=yes
+
+Build:0.32.2,145
+    commit=0.32.2
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.31.1
-Current Version Code:140
+Current Version:0.32.2
+Current Version Code:145

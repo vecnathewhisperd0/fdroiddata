@@ -4,7 +4,6 @@ Web Site:https://tuskyapp.github.io/
 Source Code:https://github.com/tuskyapp/Tusky
 Issue Tracker:https://github.com/tuskyapp/Tusky/issues
 Changelog:https://github.com/tuskyapp/Tusky/releases
-LiberapayID:23062
 
 Auto Name:Tusky
 Summary:Material Design Mastodon Client
@@ -133,8 +132,22 @@ Build:3.1,49
     subdir=app
     gradle=blue
 
-Auto Update Mode:Version v%v
-Update Check Mode:Tags ^v[0-9\\.]+$
+Build:4.0,51
+    commit=v4.0
+    subdir=app
+    gradle=blue
+
+Build:4.1,52
+    commit=v4.1
+    subdir=app
+    gradle=blue
+
+Maintainer Notes:
+Remove AUM as versionName gets an extra erroneous `-` added
+.
+
+Auto Update Mode:None
+Update Check Mode:None
 Update Check Ignore:beta
-Current Version:3.1
-Current Version Code:49
+Current Version:4.1
+Current Version Code:52

@@ -71,7 +71,27 @@ Build:8.4.5,72
     subdir=app
     gradle=yes
 
+Build:8.4.7,74
+    commit=8.4.7
+    subdir=app
+    gradle=yes
+
+Build:8.5.2,79
+    commit=8.5.2
+    subdir=app
+    gradle=yes
+
+Build:8.5.3,80
+    commit=8.5.3
+    subdir=app
+    gradle=yes
+
+Build:8.5.6,83
+    commit=8.5.6
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:8.4.5
-Current Version Code:72
+Current Version:8.5.6
+Current Version Code:83

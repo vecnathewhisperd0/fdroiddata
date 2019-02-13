@@ -1,10 +1,10 @@
 Categories:
   - System
-License: GPL-3.0-only
+License: GPL-3.0-or-later
 SourceCode: https://gitlab.com/SuperFreezZ/SuperFreezZ
 IssueTracker: https://gitlab.com/SuperFreezZ/SuperFreezZ/issues
 
-AutoName: SuperFreezZ App stopper
+AutoName: SuperFreezZ
 
 RepoType: git
 Repo: https://gitlab.com/SuperFreezZ/SuperFreezZ.git
@@ -16,7 +16,37 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.0.2-alpha
+    versionCode: 2
+    commit: v0.0.2-alpha
+    gradle:
+      - yes
+
+  - versionName: 0.0.3-alpha
+    versionCode: 3
+    commit: v0.0.3-alpha
+    gradle:
+      - yes
+
+  - versionName: 0.0.5-alpha
+    versionCode: 5
+    commit: v0.0.5-alpha
+    gradle:
+      - yes
+
+  - versionName: 0.0.6-alpha
+    versionCode: 6
+    commit: v0.0.6-alpha
+    gradle:
+      - yes
+
+  - versionName: 0.0.7-alpha
+    versionCode: 7
+    commit: v0.0.7-alpha
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.1-alpha
-CurrentVersionCode: 1
+CurrentVersion: 0.0.7-alpha
+CurrentVersionCode: 7

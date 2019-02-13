@@ -5,6 +5,7 @@ Author Name:HexEdit, DriffeX, NitroOxid
 Web Site:
 Source Code:https://github.com/hexedit/amazfit-face-replacer
 Issue Tracker:https://github.com/hexedit/amazfit-face-replacer/issues
+Changelog:https://github.com/hexedit/amazfit-face-replacer/releases
 
 Auto Name:AFReplacer
 Summary:Replace Amazfit Bip watchfaces in Mi Fit
@@ -37,7 +38,12 @@ Build:0.4.0,13
     subdir=app
     gradle=yes
 
+Build:0.4.1,14
+    commit=v0.4.1
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.4.0
-Current Version Code:13
+Current Version:0.4.1
+Current Version Code:14

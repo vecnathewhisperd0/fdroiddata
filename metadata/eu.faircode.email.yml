@@ -13,8 +13,9 @@ AutoName: FairEmail
 Summary: Privacy friendly email app
 Description: |-
     This email app might be for you if your current email app:
-    * takes long to receive or show messages
+    * takes long to receive or to show messages
     * can manage only one email address
+    * cannot handle a large number of messages
     * cannot show conversations
     * cannot work offline
     * looks outdated
@@ -28,7 +29,7 @@ Description: |-
     This app starts a foreground service with a low priority status bar
     notification to make sure you'll never miss new email.
 
-    '''Features'''
+    '''Main features'''
     * 100 % open source
     * Multiple accounts (inboxes)
     * Multiple identities (outboxes)
@@ -36,44 +37,47 @@ Description: |-
     * Flat [https://en.wikipedia.org/wiki/Conversation_threading conversation threading]
     * Two way synchronization
     * Offline storage and operations
+    * Move across accounts
     * Battery friendly
     * Low data usage
-    * Folder management
+    * Small (~5.5 MB)
     * Material design
 
     '''Pro features'''
-    * Signatures
-    * Dark/black theme
-    * Account colors
-    * Multiple select
+    * Account/identity colors
+    * Notifications per account
+    * Notifications with message details (requires Android 7 Nougat or later)
+    * Snooze messages
+    * Send messages after selected time
     * Reply templates
-    * Sort on time, unread or starred
-    * Search on server
-    * Preview sender/subject/photo in new message notifications
+    * Filter rules
+    * Search on device or server
+    * Keyword management
     * Encryption/decryption ([https://www.openpgp.org OpenPGP])
     * Export settings
 
     '''Simple'''
+    * Quick setup
     * Easy navigation
     * No unnecessary settings
     * No bells and whistles
 
     '''Secure'''
-    * Allow encrypted connections only
-    * Accept valid security certificates only
-    * Authentication required
+    * No data storage on third party servers
     * Safe message view (styling, scripting and unsafe HTML removed)
+    * Confirm opening links, images and attachments
     * No special permissions required
     * No advertisements
     * No analytics and no tracking
+    * No [https://developer.android.com/guide/topics/data/backup Google backup]
+    * FairEmail is an original work, not a fork or a clone
 
     '''Efficient'''
     * [https://en.wikipedia.org/wiki/IMAP_IDLE IMAP IDLE] (push messages) supported
     * Built with latest development tools and libraries
-    * Android 6 Marshmallow or later required
-
-    Note: FairEmail might occasionally crash on Motorola/Lenovo devices with
-    Android 7 Nougat or earlier because of a [https://issuetracker.google.com/issues/63377371 bug in Android].
+    * Android 5 Lollipop or later required
+    * FairEmail will work properly on devices without any Google service installed.
+    * Individual message notifications are available on Android 7 Nougat and later only because earlier Android versions do not support notification grouping.
 
     See [https://github.com/M66B/open-source-email/blob/master/FAQ.md here] for a list of often asked questions.
 
@@ -310,7 +314,393 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.150'
+    versionCode: 150
+    commit: '1.150'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.153'
+    versionCode: 153
+    commit: '1.153'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.157'
+    versionCode: 157
+    commit: '1.157'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.158'
+    versionCode: 158
+    commit: '1.158'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.159'
+    versionCode: 159
+    commit: '1.159'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.163'
+    versionCode: 163
+    commit: '1.163'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.166'
+    versionCode: 166
+    commit: '1.166'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.171'
+    versionCode: 171
+    commit: '1.171'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.173'
+    versionCode: 173
+    commit: '1.173'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.177'
+    versionCode: 177
+    commit: '1.177'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.179'
+    versionCode: 179
+    commit: '1.179'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.184'
+    versionCode: 184
+    commit: '1.184'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.186'
+    versionCode: 186
+    commit: '1.186'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.191'
+    versionCode: 191
+    commit: '1.191'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.196'
+    versionCode: 196
+    commit: '1.196'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.201'
+    versionCode: 201
+    commit: '1.201'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.205'
+    versionCode: 205
+    commit: '1.205'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.212'
+    versionCode: 212
+    commit: '1.212'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.214'
+    versionCode: 214
+    commit: '1.214'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.216'
+    versionCode: 216
+    commit: '1.216'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.222'
+    versionCode: 222
+    commit: '1.222'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.225'
+    versionCode: 225
+    commit: '1.225'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.227'
+    versionCode: 227
+    commit: '1.227'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.233'
+    versionCode: 233
+    commit: '1.233'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.237'
+    versionCode: 237
+    commit: '1.237'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.240'
+    versionCode: 240
+    commit: '1.240'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.242'
+    versionCode: 242
+    commit: '1.242'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.248'
+    versionCode: 248
+    commit: '1.248'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.250'
+    versionCode: 250
+    commit: '1.250'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.252'
+    versionCode: 252
+    commit: '1.252'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.253'
+    versionCode: 253
+    commit: '1.253'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.262'
+    versionCode: 262
+    commit: '1.262'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.265'
+    versionCode: 265
+    commit: '1.265'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.267'
+    versionCode: 267
+    commit: '1.267'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.269'
+    versionCode: 269
+    commit: '1.269'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.274'
+    versionCode: 274
+    commit: '1.274'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.278'
+    versionCode: 278
+    commit: '1.278'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.301'
+    versionCode: 301
+    commit: '1.301'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.303'
+    versionCode: 303
+    commit: '1.303'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.310'
+    versionCode: 310
+    commit: '1.310'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.312'
+    versionCode: 312
+    commit: '1.312'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.317'
+    versionCode: 317
+    commit: '1.317'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.321'
+    versionCode: 321
+    commit: '1.321'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.325'
+    versionCode: 325
+    commit: '1.325'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.326'
+    versionCode: 326
+    commit: '1.326'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.327'
+    versionCode: 327
+    commit: '1.327'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.328'
+    versionCode: 328
+    commit: '1.328'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.148'
-CurrentVersionCode: 148
+CurrentVersion: '1.328'
+CurrentVersionCode: 328
