@@ -4,7 +4,7 @@ License: AGPL-3.0-only
 AuthorName: Stefan Schueller
 SourceCode: https://github.com/sschueller/peertube-android
 IssueTracker: https://github.com/sschueller/peertube-android/issues
-Changelog: https://raw.githubusercontent.com/sschueller/peertube-android/master/CHANGELOG.md
+Changelog: https://raw.githubusercontent.com/sschueller/peertube-android/HEAD/CHANGELOG.md
 
 AutoName: PeerTube
 Summary: a PeerTube player
