@@ -1,10 +1,7 @@
-Disabled: Non-free dependencies, have never been able to build a version
-AntiFeatures:
-  - UpstreamNonFree
 Categories:
   - Money
-License: GPL-2.0-only
-WebSite: http://www.codelathe.com/mmex
+License: GPL-3.0-or-later
+WebSite: http://android.moneymanagerex.org/
 SourceCode: https://github.com/moneymanagerex/android-money-manager-ex
 IssueTracker: https://github.com/moneymanagerex/android-money-manager-ex/issues
 
@@ -24,21 +21,21 @@ Description: |-
     * Security, application lock/unlock
     * Repeating transactions
     * Charts
-    * Supported languages: English, Italian, Portoguese, Spanish and Russian
+    * Supported languages: English, Italian, Portuguese, Spanish and Russian
 
 RepoType: git
 Repo: https://github.com/moneymanagerex/android-money-manager-ex
 
 Builds:
-  - versionName: 2.15.2
-    versionCode: 687
-    disable: third party maven repo, jar
-    commit: 2.15.2
+  - versionName: 2019.02.14.994-release
+    versionCode: 994
+    commit: 2019.02.14.994
+    subdir: app/
     gradle:
       - yes
+    prebuild: sed -i -e '/maven.cloudrail.com/d' ../build.gradle
 
-ArchivePolicy: 0 versions
 AutoUpdateMode: None
-UpdateCheckMode: None
-CurrentVersion: 2016.11.01.944
-CurrentVersionCode: 944
+UpdateCheckMode: Tags
+CurrentVersion: 2019.02.14.994
+CurrentVersionCode: 994
