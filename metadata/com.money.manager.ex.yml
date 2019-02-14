@@ -30,11 +30,10 @@ Repo: https://github.com/moneymanagerex/android-money-manager-ex
 Builds:
   - versionName: 2019.02.14.994-release
     versionCode: 994
-    commit: 2019.02.14.994
+    commit: 2019.02.14.994-1
     subdir: app/
     gradle:
       - yes
-    prebuild: sed -i -e '/maven.cloudrail.com/d' ../build.gradle
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
