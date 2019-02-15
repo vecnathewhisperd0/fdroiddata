@@ -13,7 +13,7 @@ Description: Status is a status bar replacement that draws an overlay on top of 
     panel is still shown.
 
 RepoType: git
-Repo: https://github.com/TheAndroidMaster/Status
+Repo: https://github.com/fennifith/Status
 
 Builds:
   - versionName: 3.8-beta5
