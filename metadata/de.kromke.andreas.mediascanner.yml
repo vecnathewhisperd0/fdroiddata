@@ -21,7 +21,7 @@ Builds:
     versionCode: 3
     commit: v1.1
     subdir: app
-    ndk: r17c
+    ndk: r18b
     gradle:
       - yes
 
