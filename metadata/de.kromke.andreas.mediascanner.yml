@@ -21,9 +21,9 @@ Builds:
     versionCode: 3
     commit: v1.1
     subdir: app
-    ndk: r18b
     gradle:
       - yes
+    ndk: r18b
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
