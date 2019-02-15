@@ -9,7 +9,7 @@ IssueTracker: https://github.com/bitcraze/crazyflie-android-client/issues
 Changelog: https://github.com/bitcraze/crazyflie-android-client/releases
 
 Summary: Control your Crazyflie quadcopter from your mobile device
-Description: |4-
+Description: |-
 
     Connect to Crazyflie 2.0 using Bluetooth low energy and both the original
     Crazyflie and Crazyflie 2.0 using the USB Crazyradio dongle connected with
@@ -61,8 +61,9 @@ Description: |4-
     It's nearly impossible to brick the Crazyflie. In case of any problems during flashing, you can always try again or use the PC client to re-flash.
 
     Permissions:
-    • Photo/Media/Files: This is required to save the firmware files on the device.
-    • Bluetooth connection information: This is required for connecting to Crazyflie 2.0 over Bluetooth.
+    * Photo/Media/Files: This is required to save the firmware files on the device.
+    * Bluetooth connection information: This is required for connecting to Crazyflie 2.0 over Bluetooth.
+    * Location: This is required for Bluetooth LE scanning since Android 6.0.
 
 RepoType: git
 Repo: https://github.com/bitcraze/crazyflie-android-client.git
