@@ -70,7 +70,7 @@ Repo: https://github.com/bitcraze/crazyflie-android-client.git
 Builds:
   - versionName: 0.7.2
     versionCode: 18
-    commit: v0.7.2
+    commit: v0.7.2_fdroid
     gradle:
       - yes
 
