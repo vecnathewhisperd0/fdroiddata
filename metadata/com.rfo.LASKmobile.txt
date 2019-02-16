@@ -9,7 +9,7 @@ Repo Type:git
 Repo:https://codeberg.org/ibinshoid/LASKmobile
 
 Build:0.7.0,500
-    commit=dd268d7
+    commit=06bf62211d
     subdir=app
     gradle=yes
 
