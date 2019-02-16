@@ -8,11 +8,12 @@ IssueTracker: https://github.com/mwarning/trigger/issues
 AutoName: Trigger
 Summary: Open a door over WiFi or the Internet
 Description: |
-    Call a HTTPS link to open/close a doors and request its status.
+    Lock/Unlock multiple doors and request the status.
 
     '''Features:'''
 
     * Manage multiple doors
+    * Uses HTTPS queries
     * Auto-select door setup by WiFi SSID
     * Show error messages
     * English/German
@@ -48,7 +49,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.4.0
+    versionCode: 140
+    commit: v1.4.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.3.1
-CurrentVersionCode: 131
+CurrentVersion: 1.4.0
+CurrentVersionCode: 140
