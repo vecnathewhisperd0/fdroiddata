@@ -7,9 +7,9 @@ Changelog: https://gitlab.com/thgoebel/spartathlon/tree/HEAD/CHANGELOG.md
 Categories:
  - Sports & Health
 AutoName: Spartathlon
-Summary: View info about the Spartathlon ultra distance race
+Summary: View info about the Spartathlon foot race
 Description: |-
-    App to help athletes, supporters and volunteers during the ultra distance race Spartathlon.
+    This app aims to help athletes, supporters and volunteers during the ultra distance race Spartathlon.
 
     Features:
 
@@ -26,9 +26,13 @@ Builds:
   - versionName: 0.2.0
     versionCode: 1
     commit: v0.2.0
-    subdir: android/app
-    gradle:
-      - yes
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@v1.0.0
+    rm:
+      - ios
+    prebuild: $$flutter$$/bin/flutter pub get
+    build: $$flutter$$/bin/flutter build apk --flavor fdroid
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
