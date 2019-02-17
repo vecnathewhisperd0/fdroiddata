@@ -6,7 +6,7 @@ SourceCode: https://github.com/sschueller/peertube-android
 IssueTracker: https://github.com/sschueller/peertube-android/issues
 Changelog: https://raw.githubusercontent.com/sschueller/peertube-android/HEAD/CHANGELOG.md
 
-AutoName: PeerTube
+AutoName: Thorium
 Summary: a PeerTube player
 Description: |
     PeerTube is a federated video streaming platform that is community-owned and ad-free, with no vendor lock-in. This client allows you to watch and browse videos on a server of your choice in the PeerTube network.
@@ -119,12 +119,19 @@ Builds:
 
   - versionName: 1.0.26
     versionCode: 1026
-    commit: 1.0.26-beta
+    commit: 1.0.26
+    subdir: app
+    gradle:
+      - yes
+      -
+  - versionName: 1.0.27
+    versionCode: 1027
+    commit: 1.0.27
     subdir: app
     gradle:
       - yes
 
-AutoUpdateMode: Version +-beta %v
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: 1.0.26
 CurrentVersionCode: 1026
