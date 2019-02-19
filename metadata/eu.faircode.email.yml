@@ -49,6 +49,7 @@ Description: |-
     * Notifications with message details (requires Android 7 Nougat or later)
     * Snooze messages
     * Send messages after selected time
+    * Synchronization schedules
     * Reply templates
     * Filter rules
     * Search on device or server
@@ -700,7 +701,43 @@ Builds:
       - full
     prebuild: sed -i -e '/keystoreProperties/d' build.gradle
 
+  - versionName: '1.330'
+    versionCode: 330
+    commit: '1.330'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.331'
+    versionCode: 331
+    commit: '1.331'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.333'
+    versionCode: 333
+    commit: '1.333'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.335'
+    versionCode: 335
+    commit: '1.335'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.328'
-CurrentVersionCode: 328
+CurrentVersion: '1.335'
+CurrentVersionCode: 335

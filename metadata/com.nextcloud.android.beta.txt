@@ -1775,13 +1775,6 @@ Build:20190205,20190205
     rm=user_manual,gplay.gradle
     scandelete=src/androidTest
 
-Build:20190206,20190206
-    commit=dev-20190206
-    submodules=yes
-    gradle=versionDev
-    rm=user_manual,gplay.gradle
-    scandelete=src/androidTest
-
 Build:20190207,20190207
     commit=dev-20190207
     submodules=yes
@@ -1803,8 +1796,15 @@ Build:20190209,20190209
     rm=user_manual,gplay.gradle
     scandelete=src/androidTest
 
-Build:20190213,20190213
-    commit=dev-20190213
+Build:20190215,20190215
+    commit=dev-20190215
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190216,20190216
+    commit=dev-20190216
     submodules=yes
     gradle=versionDev
     rm=user_manual,gplay.gradle
@@ -1816,5 +1816,5 @@ Tags get removed. See https://github.com/nextcloud/android/issues/969.
 
 Auto Update Mode:Version dev-%c
 Update Check Mode:Tags ^dev
-Current Version:20190213
-Current Version Code:20190213
+Current Version:20190216
+Current Version Code:20190216
