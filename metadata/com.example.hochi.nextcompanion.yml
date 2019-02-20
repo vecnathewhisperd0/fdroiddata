@@ -20,7 +20,7 @@ Description: |-
     all areas. Also, the app has no support for flexzones.
 
 RepoType: git
-Repo: https://github.com/h0ch1/next-companion
+Repo: https://github.com/h0chi/next-companion
 
 Builds:
   - versionName: 0.1.1
