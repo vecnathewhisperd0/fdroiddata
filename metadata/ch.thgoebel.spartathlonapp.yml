@@ -1,11 +1,11 @@
+Categories:
+ - Sports & Health
 License: GPL-3.0-or-later
 WebSite: https://gitlab.com/thgoebel/spartathlon
 SourceCode: https://gitlab.com/thgoebel/spartathlon/tree/HEAD
 IssueTracker: https://gitlab.com/thgoebel/spartathlon/issues
 Changelog: https://gitlab.com/thgoebel/spartathlon/tree/HEAD/CHANGELOG.md
 
-Categories:
- - Sports & Health
 AutoName: Spartathlon
 Summary: View info about the Spartathlon foot race
 Description: |-
@@ -34,7 +34,8 @@ Builds:
     prebuild: $$flutter$$/bin/flutter pub get
     build: $$flutter$$/bin/flutter build apk --flavor fdroid
 
-AutoUpdateMode: None
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
+UpdateCheckIgnore: (alpha|beta|rc|RC|dev)
 CurrentVersion: 0.2.0
 CurrentVersionCode: 1
