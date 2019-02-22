@@ -147,6 +147,11 @@ Build:5.0,54
     subdir=app
     gradle=blue
 
+Build:5.1,55
+    commit=v5.1
+    subdir=app
+    gradle=blue
+
 Maintainer Notes:
 Remove AUM as versionName gets an extra erroneous `-` added
 .
