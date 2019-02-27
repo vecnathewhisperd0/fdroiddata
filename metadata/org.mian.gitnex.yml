@@ -52,9 +52,9 @@ RepoType: git
 Repo: https://gitlab.com/mmarif4u/gitnex.git
 
 Builds:
-  - versionName: 1.0-rc1
+  - versionName: 1.0-rc2
     versionCode: 12
-    commit: 1.0-rc1
+    commit: 1.0-rc2
     subdir: app
     gradle:
       - yes
