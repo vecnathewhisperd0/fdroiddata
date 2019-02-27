@@ -31,8 +31,9 @@ Builds:
       - flutter@v1.0.0
     rm:
       - ios
-    prebuild: $$flutter$$/bin/flutter pub get
-    build: $$flutter$$/bin/flutter build apk --flavor fdroid
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor fdroid
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
