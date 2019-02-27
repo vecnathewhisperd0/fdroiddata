@@ -28,7 +28,7 @@ Builds:
     commit: v0.3.0
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
-      - flutter@v1.2.1
+      - flutter@v1.0.0
     rm:
       - ios
     build:
