@@ -5,10 +5,9 @@ Source Code:https://gitlab.com/gxworks/Dib2Qm/tree/HEAD
 Issue Tracker:https://gitlab.com/gxworks/Dib2Qm/issues
 
 Auto Name:Dib2Qm
-Summary:Messenger for secured chats and groups, via e-mail server,
-end-to-end encrypted.
+Summary:Messenger for secured chats and groups
 Description:
-Messenger that works via e-mail server.
+Messenger that works via e-mail server, end-to-end encrypted.
 
 Text messages are not only end-to-end encrypted, they also get stored
 on your device in an encrypted way. Images, attachments etc. can be
