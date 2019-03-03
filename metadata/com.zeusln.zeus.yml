@@ -28,9 +28,9 @@ RepoType: git
 Repo: https://github.com/ZeusLN/zeus.git
 
 Builds:
-  - versionName: v0.0.05
+  - versionName: v0.0.5
     versionCode: 5
-    commit: v0.0.05
+    commit: v0.0.5
     subdir: app
     gradle:
       - yes
