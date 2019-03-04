@@ -38,6 +38,7 @@ Description: |-
     * Comment on issues
     * Search issues in issues list
     * Create new issue with multiple assignees, labels, milestone, due date
+    * Create label
     * Repository information
     * Milestones list
     * Create new milestone
@@ -53,9 +54,9 @@ RepoType: git
 Repo: https://gitlab.com/mmarif4u/gitnex.git
 
 Builds:
-  - versionName: 1.0-rc2
-    versionCode: 12
-    commit: 1.0-rc2
+  - versionName: 1.0-rc4
+    versionCode: 17
+    commit: 1.0-rc4
     subdir: app
     gradle:
       - yes
