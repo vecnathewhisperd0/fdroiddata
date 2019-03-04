@@ -6,15 +6,16 @@ Issue Tracker:https://gitlab.com/tom79/mastalab/issues
 Changelog:https://gitlab.com/tom79/mastalab/tags
 LiberapayID:23077
 
-Auto Name:Mastalab
+Auto Name:Fedilab
 Summary:Multi-account client for Mastodon
 Description:
-Mastalab allows you to manage several accounts and to switch from one to another
-by a simple click. You can start to compose messages and finish them later by a
-mechanism of auto-recording, and these messages can be scheduled. Stay aware due
-to a system of push notifications when new content is available or when
-receiving a notification on an account. Numerous features and settings
-parameters will allow to tailor the behavior of the app with what you need.
+Fedilab allows you to manage several accounts (Mastodon/Pleroma/Peertube/GNU
+Social/Friendica) and to switch from one to another by a simple click. You can
+start to compose messages and finish them later by a mechanism of
+auto-recording, and these messages can be scheduled. Stay aware due to a system
+of push notifications when new content is available or when receiving a
+notification on an account. Numerous features and settings parameters will allow
+to tailor the behavior of the app with what you need.
 
 '''Features'''
 
@@ -676,7 +677,119 @@ Build:1.64.1,225
     prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
         sed -i -e '/playstoreImplementation/d' build.gradle
 
+Build:1.65.0,227
+    commit=1.65.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.65.1,228
+    commit=1.65.1
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.66.0,230
+    commit=1.66.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.66.1,231
+    commit=1.66.1
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.67.0,232
+    commit=1.67.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.67.1,233
+    commit=1.67.1
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.70.0,235
+    commit=1.70.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.71.0,236
+    commit=1.71.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.71.1,237
+    commit=1.71.1
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.72.0,239
+    commit=1.72.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.72.1,240
+    commit=1.72.1
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.73.0,241
+    commit=1.73.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.74.0,244
+    commit=1.74.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.74.1,245
+    commit=1.74.1
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.75.0,246
+    commit=1.75.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
+Build:1.76.0,247
+    commit=1.76.0
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle && \
+        sed -i -e '/playstoreImplementation/d' build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]+$
-Current Version:1.64.1
-Current Version Code:225
+Current Version:1.76.0
+Current Version Code:247

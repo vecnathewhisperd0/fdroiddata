@@ -7,7 +7,6 @@ SourceCode: https://github.com/RichyHBM/Monochromatic
 IssueTracker: https://github.com/RichyHBM/Monochromatic/issues
 
 AutoName: Monochromatic
-Summary: Enable the built-in black and white mode
 Description: |-
     This app makes use of the built-in black and white device feature to provide
     a blue-light filtered screen without the use of an overlay screen, to help
@@ -66,7 +65,49 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.6.2
+    versionCode: 11
+    commit: v0.6.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.6.3
+    versionCode: 12
+    commit: v0.6.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.6.4
+    versionCode: 13
+    commit: v0.6.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.0
+    versionCode: 14
+    commit: v0.7.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.1
+    versionCode: 15
+    commit: v0.7.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.1
+    versionCode: 17
+    commit: v0.8.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.6.1
-CurrentVersionCode: 10
+CurrentVersion: 0.8.1
+CurrentVersionCode: 17

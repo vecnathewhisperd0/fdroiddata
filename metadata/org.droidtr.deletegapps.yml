@@ -5,7 +5,6 @@ SourceCode: https://gitlab.com/parduscix/disable-delete-gapps
 IssueTracker: https://gitlab.com/parduscix/disable-delete-gapps/issues
 
 AutoName: /d/gapps
-Summary: Delete/disable GApps
 Description: |-
     This application is used to delete or disable gapps. It uses a regex to
     find GApps package
@@ -38,7 +37,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '4.0'
+    versionCode: 4
+    commit: '4.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '6.0'
+    versionCode: 6
+    commit: '6.0'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '2.0'
-CurrentVersionCode: 2
+CurrentVersion: '6.0'
+CurrentVersionCode: 6

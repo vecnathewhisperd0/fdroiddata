@@ -369,11 +369,65 @@ Build:3.4.1,30040190
     rm=user_manual,gplay.gradle
     scandelete=src/androidTest
 
+Build:3.4.2 RC2,30040252
+    disable=obsolete RC
+    commit=rc-3.4.2-02
+    submodules=yes
+    gradle=generic
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:3.4.2,30040290
+    commit=stable-3.4.2
+    submodules=yes
+    gradle=generic
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:3.5.0 RC1,30050051
+    disable=obsolete RC
+    commit=rc-3.5.0-01
+    submodules=yes
+    gradle=generic
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:3.5.0 RC2,30050052
+    disable=obsolete RC
+    commit=rc-3.5.0-02
+    submodules=yes
+    gradle=generic
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:3.5.0 RC3,30050053
+    disable=obsolete RC
+    commit=rc-3.5.0-03
+    submodules=yes
+    gradle=generic
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:3.5.0 RC4,30050054
+    disable=obsolete RC
+    commit=rc-3.5.0-04
+    submodules=yes
+    gradle=generic
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:3.5.0,30050090
+    commit=stable-3.5.0
+    submodules=yes
+    gradle=generic
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
 Maintainer Notes:
 Latest 3 stable version will be kept, RC versions will be directly outdated by either a new RC or by a stable version: 3.3.0 RC1 -> 3.3.0 RC2 -> 3.3.0 (stable)
 .
 
 Auto Update Mode:Version stable-%v
 Update Check Mode:Static
-Current Version:3.4.1
-Current Version Code:30040190
+Current Version:3.5.0
+Current Version Code:30050090

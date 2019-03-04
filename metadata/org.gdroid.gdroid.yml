@@ -5,6 +5,7 @@ AuthorName: Andreas Redmer
 AuthorEmail: ar-gdroid@abga.be
 SourceCode: https://gitlab.com/gdroid/gdroidclient/
 IssueTracker: https://gitlab.com/gdroid/gdroidclient/issues
+Translation: https://hosted.weblate.org/projects/g-droid/
 Changelog: https://gitlab.com/gdroid/gdroidclient/tags
 LiberapayID: '1302739'
 Bitcoin: 1J2bbhJYksSjeynGGhuSPN9aTEaxiGm4nR
@@ -155,7 +156,56 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.6.3
+    versionCode: 6003
+    commit: v0.6.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.0
+    versionCode: 7000
+    commit: v0.7.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.1
+    versionCode: 7001
+    commit: v0.7.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.2
+    versionCode: 7002
+    commit: v0.7.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.3
+    versionCode: 7003
+    commit: v0.7.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.0
+    versionCode: 8000
+    commit: v0.8.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.2
+    versionCode: 8002
+    commit: v0.8.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.6.2
-CurrentVersionCode: 6002
+CurrentVersion: 0.8.2
+CurrentVersionCode: 8002

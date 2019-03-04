@@ -4,11 +4,11 @@ Categories:
 License: Apache-2.0
 AuthorName: Tibor Kaputa
 AuthorEmail: hello@simplemobiletools.com
-WebSite: https://simplemobiletools.github.io
+WebSite: https://simplemobiletools.com
 SourceCode: https://github.com/SimpleMobileTools/Simple-Gallery
 IssueTracker: https://github.com/SimpleMobileTools/Simple-Gallery/issues
 Changelog: https://github.com/SimpleMobileTools/Simple-Gallery/blob/HEAD/CHANGELOG.md
-Donate: https://simplemobiletools.github.io/donate
+Donate: https://simplemobiletools.com/donate
 Bitcoin: 19Hc8A7sWGud8sP19VXDC5a5j28UyJfpyJ
 Litecoin: LYACbHTKaM9ZubKQGxJ4NRyVy1gHUuztRP
 
@@ -90,7 +90,80 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore/d' build.gradle
 
+  - versionName: 6.3.0
+    versionCode: 221
+    commit: 6.3.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.3.2
+    versionCode: 224
+    commit: 6.3.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.4.0
+    versionCode: 225
+    commit: 6.4.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.4.1
+    versionCode: 226
+    commit: 6.4.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.5.0
+    versionCode: 228
+    commit: 6.5.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.5.1
+    versionCode: 229
+    commit: 6.5.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.5.2
+    versionCode: 230
+    commit: 6.5.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.5.3
+    versionCode: 231
+    disable: missing commons lib from maven
+    commit: 6.5.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.5.4
+    versionCode: 232
+    commit: 6.5.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 6.2.2
-CurrentVersionCode: 220
+CurrentVersion: 6.5.4
+CurrentVersionCode: 232

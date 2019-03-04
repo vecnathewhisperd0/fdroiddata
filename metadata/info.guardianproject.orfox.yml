@@ -1,15 +1,18 @@
 Categories:
   - Internet
 License: MPL-2.0
+AuthorName: Guardian Project
+AuthorEmail: support@guardianproject.info
+AuthorWebSite: https://guardianproject.info
 WebSite: https://dev.guardianproject.info/projects/orfox-private-browser/
 SourceCode: https://github.com/guardianproject/Orfox
 IssueTracker: https://dev.guardianproject.info/projects/orfox-private-browser/issues
+Translation: https://www.transifex.com/otf/torproject/
 Donate: https://www.torproject.org/donate/donate.html
 LiberapayID: '33617'
 Bitcoin: 1Fi5xUHiAPRKxHvyUGVFGt9extBe8Srdbk
 
-Name: OrFox
-Summary: TOR Browser
+Name: Orfox
 Description: |-
     This is a new privacy-enhanced browser -- based on Mozilla Firefox, configured
     by default to work with Orbot: Tor for Android.
