@@ -23,7 +23,7 @@ Repo: https://gitlab.com/copoer/CBTAndroid.git
 
 Builds:
   - versionName: 0.0.4
-    versionCode: 3 
+    versionCode: 3
     commit: v0.0.4
     subdir: app
     gradle:
