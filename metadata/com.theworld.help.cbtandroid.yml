@@ -29,5 +29,5 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version v.%v
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
