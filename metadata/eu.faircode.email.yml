@@ -10,7 +10,6 @@ Donate: https://email.faircode.eu/pro/
 Bitcoin: 13nUbfsLUzK9Sr7ZJgDRHNR91BJMuDuJnf
 
 AutoName: FairEmail
-Summary: Privacy friendly email app
 Description: |-
     This email app might be for you if your current email app:
     * takes long to receive or to show messages
@@ -30,7 +29,7 @@ Description: |-
     notification to make sure you'll never miss new email.
 
     '''Main features'''
-    * 100 % open source
+    * 100 % [https://github.com/M66B/open-source-email/blob/master/LICENSE open source]
     * Multiple accounts (inboxes)
     * Multiple identities (outboxes)
     * Unified inbox
@@ -40,21 +39,21 @@ Description: |-
     * Move across accounts
     * Battery friendly
     * Low data usage
-    * Small (~5.5 MB)
+    * Small (~6 MB)
     * Material design
 
     '''Pro features'''
     * Account/identity colors
     * Notifications per account
     * Notifications with message details (requires Android 7 Nougat or later)
-    * Snooze messages
+    * Snooze messages ([https://github.com/M66B/open-source-email/blob/master/FAQ.md#user-content-faq67 instructions])
     * Send messages after selected time
-    * Synchronization schedules
+    * Synchronization schedules ([https://github.com/M66B/open-source-email/blob/master/FAQ.md#user-content-faq78 instructions])
     * Reply templates
-    * Filter rules
-    * Search on device or server
+    * Filter rules ([https://github.com/M66B/open-source-email/blob/master/FAQ.md#user-content-faq71 instructions])
+    * Search on device or server ([https://github.com/M66B/open-source-email/blob/master/FAQ.md#user-content-faq13 instructions])
     * Keyword management
-    * Encryption/decryption ([https://www.openpgp.org OpenPGP])
+    * Encryption/decryption ([https://www.openpgp.org OpenPGP])([https://github.com/M66B/open-source-email/blob/master/FAQ.md#user-content-faq12 instructions])
     * Export settings
 
     '''Simple'''
@@ -728,7 +727,97 @@ Builds:
       - full
     prebuild: sed -i -e '/keystoreProperties/d' build.gradle
 
+  - versionName: '1.335'
+    versionCode: 335
+    commit: '1.335'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.337'
+    versionCode: 337
+    commit: '1.337'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.338'
+    versionCode: 338
+    commit: '1.338'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.339'
+    versionCode: 339
+    commit: '1.339'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.340'
+    versionCode: 340
+    commit: '1.340'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.341'
+    versionCode: 341
+    commit: '1.341'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.344'
+    versionCode: 344
+    commit: '1.344'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.347'
+    versionCode: 347
+    commit: '1.347'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.353'
+    versionCode: 353
+    commit: '1.353'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.357'
+    versionCode: 357
+    commit: '1.357'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.333'
-CurrentVersionCode: 333
+CurrentVersion: '1.357'
+CurrentVersionCode: 357

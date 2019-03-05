@@ -6,7 +6,6 @@ SourceCode: https://github.com/yanus171/Flym
 IssueTracker: https://github.com/yanus171/Flym/issues
 
 AutoName: Handy News Reader
-Summary: RSS reader with full offline support fulltext articles with images
 Description: |
     '''Main functions:'''
 
@@ -68,7 +67,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.7.38
+    versionCode: 136
+    commit: 0.7.38
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.7.39
+    versionCode: 137
+    commit: 0.7.39
+    subdir: FlymFork
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.7.36
-CurrentVersionCode: 134
+CurrentVersion: 0.7.39
+CurrentVersionCode: 137

@@ -6,7 +6,6 @@ IssueTracker: https://git.kuschku.de/justJanne/QuasselDroid-ng/issues
 Donate: https://www.patreon.com/justjanne
 
 Name: Quasseldroid
-Summary: Client for Quassel IRC
 Description: |-
     Chat comfortably. Everywhere.
 
@@ -149,7 +148,16 @@ Builds:
     scandelete:
       - buildSrc
 
+  - versionName: v1.0.31
+    versionCode: 1120
+    commit: v1.0.31
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: v1.0.29
-CurrentVersionCode: 1117
+CurrentVersion: v1.0.31
+CurrentVersionCode: 1120

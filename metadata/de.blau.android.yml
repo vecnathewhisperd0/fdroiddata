@@ -7,7 +7,6 @@ IssueTracker: https://github.com/MarcusWolschon/osmeditor4android/issues
 Changelog: https://github.com/MarcusWolschon/osmeditor4android/blob/HEAD/CHANGELOG.txt
 
 AutoName: Vespucci
-Summary: OpenStreetMap editor
 Description: |-
     * Create and edit new Nodes and Ways
     * Append Nodes to existing Ways
@@ -607,7 +606,21 @@ Builds:
       - current
     prebuild: sed -i -e '/bintray/d' -e '/markdown/d' -e '/preset-utils/d' build.gradle
 
+  - versionName: 12.1.4.0
+    versionCode: 1004
+    commit: 12.1.4.0
+    gradle:
+      - current
+    prebuild: sed -i -e '/bintray/d' -e '/markdown/d' -e '/preset-utils/d' build.gradle
+
+  - versionName: 12.1.5.0
+    versionCode: 1005
+    commit: 12.1.5.0
+    gradle:
+      - current
+    prebuild: sed -i -e '/bintray/d' -e '/markdown/d' -e '/preset-utils/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9.]*$
-CurrentVersion: 12.1.3.0
-CurrentVersionCode: 1003
+CurrentVersion: 12.1.5.0
+CurrentVersionCode: 1005
