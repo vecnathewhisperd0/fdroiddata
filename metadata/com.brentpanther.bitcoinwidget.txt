@@ -204,7 +204,32 @@ Build:6.5.2,182
     subdir=bitcoin
     gradle=yes
 
+Build:6.6,190
+    commit=btc-6.6
+    subdir=bitcoin
+    gradle=yes
+
+Build:6.6.5,196
+    commit=btc-6.6.5
+    subdir=bitcoin
+    gradle=yes
+
+Build:6.7,197
+    commit=btc-6.7
+    subdir=bitcoin
+    gradle=yes
+
+Build:6.7.3,200
+    commit=btc-6.7.3
+    subdir=bitcoin
+    gradle=yes
+
+Build:6.7.4,201
+    commit=btc-6.7.4
+    subdir=bitcoin
+    gradle=yes
+
 Auto Update Mode:Version btc-%v
 Update Check Mode:Tags
-Current Version:6.5.2
-Current Version Code:182
+Current Version:6.7.4
+Current Version Code:201

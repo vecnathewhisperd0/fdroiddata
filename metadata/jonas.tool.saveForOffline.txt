@@ -1,6 +1,6 @@
 Categories:Internet
 License:GPL-2.0-or-later
-Web Site:https://github.com/JonasCz/save-for-offline/blob/HEAD/README.md
+Web Site:
 Source Code:https://github.com/JonasCz/save-for-offline
 Issue Tracker:https://github.com/JonasCz/save-for-offline/issues
 Changelog:https://github.com/JonasCz/save-for-offline/releases
@@ -8,6 +8,8 @@ Changelog:https://github.com/JonasCz/save-for-offline/releases
 Auto Name:Save For Offline
 Summary:Save websites locally
 Description:
+'''Note:''' this app is no longer maintained.
+
 Save webpages for offline reading. In your web browser select 'share', and then
 'Save For Offline'. Browse saved pages by thumbnail arranged in a grid or list.
 

@@ -11,7 +11,6 @@ Donate: https://lua.xprivacy.eu/
 Bitcoin: 1GePXhRPgLhwQmBwRHhX1nSCgvfnCY97Gg
 
 AutoName: XPrivacyLua
-Summary: Really simple to use privacy manager for Marshmallow (6.0) and later
 Description: |-
     '''XPosed Module''', get [[de.robv.android.xposed.installer]].
 
@@ -138,7 +137,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.23.22
+    versionCode: 123
+    commit: 1.23.22
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.23.23
+    versionCode: 124
+    commit: 1.23.23
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.24'
+    versionCode: 125
+    commit: '1.24'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.23.20
-CurrentVersionCode: 121
+CurrentVersion: '1.24'
+CurrentVersionCode: 125

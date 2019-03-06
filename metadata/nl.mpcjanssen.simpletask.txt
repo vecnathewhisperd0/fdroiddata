@@ -3,6 +3,7 @@ License:GPL-3.0-only
 Web Site:https://github.com/mpcjanssen/simpletask-android/blob/HEAD/app/src/main/assets/index.en.md
 Source Code:https://github.com/mpcjanssen/simpletask-android
 Issue Tracker:https://github.com/mpcjanssen/simpletask-android/issues
+Translation:https://hosted.weblate.org/projects/simpletask/
 Changelog:https://github.com/mpcjanssen/simpletask-android/blob/HEAD/app/src/main/assets/changelog.en.md
 
 Name:Simpletask
@@ -688,7 +689,27 @@ Build:10.2.0,3200
     subdir=app
     gradle=cloudless
 
+Build:10.2.3,3203
+    commit=10.2.3
+    subdir=app
+    gradle=cloudless
+
+Build:10.2.4,3204
+    commit=10.2.4
+    subdir=app
+    gradle=cloudless
+
+Build:10.2.7,3207
+    commit=10.2.7
+    subdir=app
+    gradle=cloudless
+
+Build:10.2.9,3210
+    commit=10.2.9
+    subdir=app
+    gradle=cloudless
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:10.2.0
-Current Version Code:3200
+Current Version:10.2.9
+Current Version Code:3210

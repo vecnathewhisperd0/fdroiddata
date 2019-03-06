@@ -3,6 +3,7 @@ License:GPL-3.0-only
 Web Site:https://gitlab.com/axet/android-torrent-client
 Source Code:https://gitlab.com/axet/android-torrent-client/tree/HEAD
 Issue Tracker:https://gitlab.com/axet/android-torrent-client/issues
+LiberapayID:1370123
 
 Auto Name:Torrent Client
 Summary:Download torrent files
@@ -487,7 +488,114 @@ Build:3.4.163,651
     prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
     ndk=r16b
 
+Build:3.4.165,653
+    commit=torrentclient-3.4.165
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
+Build:3.4.169,657
+    commit=torrentclient-3.4.169
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
+Build:3.4.177,665
+    commit=torrentclient-3.4.177
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
+Build:3.4.178,666
+    commit=torrentclient-3.4.178
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
+Build:3.4.181,669
+    disable=lintVitalRelease fails
+    commit=torrentclient-3.4.181
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
+Build:3.4.182,670
+    disable=lintVitalRelease fails
+    commit=torrentclient-3.4.182
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
+Build:3.4.185,673
+    commit=torrentclient-3.4.185
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' -e '43 a  lintOptions {abortOnError false}' build.gradle
+    ndk=r16b
+
+Build:3.4.190,677
+    commit=torrentclient-3.4.190
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' -e '43 a  lintOptions {abortOnError false}' build.gradle
+    ndk=r16b
+
+Build:3.4.191,678
+    commit=torrentclient-3.4.191
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' -e '43 a  lintOptions {abortOnError false}' build.gradle
+    ndk=r16b
+
+Build:3.4.192,679
+    commit=torrentclient-3.4.192
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' -e '43 a  lintOptions {abortOnError false}' build.gradle
+    ndk=r16b
+
+Build:3.4.193,680
+    commit=torrentclient-3.4.193
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' -e '43 a  lintOptions {abortOnError false}' build.gradle
+    ndk=r16b
+
+Build:3.4.195,682
+    commit=torrentclient-3.4.195
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' -e '43 a  lintOptions {abortOnError false}' build.gradle
+    ndk=r16b
+
+Build:3.4.197,684
+    commit=torrentclient-3.4.197
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' -e '43 a  lintOptions {abortOnError false}' build.gradle
+    ndk=r16b
+
+Build:3.4.206,693
+    commit=torrentclient-3.4.206
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
+Build:3.4.207,694
+    commit=torrentclient-3.4.207
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk=r16b
+
 Auto Update Mode:Version torrentclient-%v
 Update Check Mode:Tags
-Current Version:3.4.163
-Current Version Code:651
+Current Version:3.4.207
+Current Version Code:694

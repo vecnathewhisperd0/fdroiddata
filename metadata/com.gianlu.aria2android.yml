@@ -4,6 +4,7 @@ License: GPL-3.0-only
 SourceCode: https://github.com/devgianlu/Aria2Android
 IssueTracker: https://github.com/devgianlu/Aria2Android/issues
 Donate: https://www.paypal.me/devgianlu
+LiberapayID: '1381702'
 
 AutoName: Aria2Android
 
@@ -18,10 +19,127 @@ Builds:
     submodules: true
     gradle:
       - foss
-    prebuild: |-
-        sed -i -e "/maven.fabric.io/d" ../build.gradle ../CommonUtils/build.gradle
+    prebuild: sed -i -e "/maven.fabric.io/d" ../build.gradle ../CommonUtils/build.gradle
+
+  - versionName: 1.9.3
+    versionCode: 37
+    commit: v1.9.3
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e "/maven.fabric.io/d" ../build.gradle ../CommonUtils/build.gradle
+
+  - versionName: 1.9.4
+    versionCode: 38
+    commit: v1.9.4
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e "/maven.fabric.io/d" ../build.gradle ../CommonUtils/build.gradle
+
+  - versionName: 1.10.0
+    versionCode: 39
+    commit: v1.10.0
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 1.11.0
+    versionCode: 40
+    commit: v1.11.0
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 1.11.1
+    versionCode: 41
+    commit: v1.11.1
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.0.0
+    versionCode: 42
+    commit: v2.0.0
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.0.1
+    versionCode: 43
+    commit: v2.0.1
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.0.2
+    versionCode: 44
+    commit: v2.0.2
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.0.3
+    versionCode: 45
+    commit: v2.0.3
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.0.4
+    versionCode: 46
+    commit: v2.0.4
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.0.5
+    versionCode: 47
+    commit: v2.0.5
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.0.6
+    versionCode: 48
+    commit: v2.0.6
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.1
-CurrentVersionCode: 35
+CurrentVersion: 2.0.6
+CurrentVersionCode: 48

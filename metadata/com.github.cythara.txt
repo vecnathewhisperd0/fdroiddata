@@ -117,7 +117,18 @@ Build:2.8,19
     subdir=app
     gradle=yes
 
+Build:2.9,20
+    commit=v2.9
+    subdir=app
+    gradle=yes
+
+Build:3.0,21
+    commit=v3.0
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/5.2-rc-1-/5.1-/' ../gradle/wrapper/gradle-wrapper.properties
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.8
-Current Version Code:19
+Current Version:3.0
+Current Version Code:21

@@ -18,7 +18,15 @@ Build:1.1,2
     subdir=app
     gradle=yes
 
-Auto Update Mode:Version v%v
+Build:1.1.4,4
+    disable=includes Firebase, Crashlytics
+    commit=v1.1.4
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:1.1
-Current Version Code:2
+Current Version:1.1.4
+Current Version Code:4
+
+No Source Since:1.1.4

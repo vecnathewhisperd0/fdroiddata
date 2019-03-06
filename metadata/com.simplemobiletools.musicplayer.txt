@@ -2,11 +2,11 @@ Categories:Multimedia
 License:Apache-2.0
 Author Name:Tibor Kaputa
 Author Email:hello@simplemobiletools.com
-Web Site:https://simplemobiletools.github.io
+Web Site:https://simplemobiletools.com
 Source Code:https://github.com/SimpleMobileTools/Simple-Music-Player
 Issue Tracker:https://github.com/SimpleMobileTools/Simple-Music-Player/issues
 Changelog:https://github.com/SimpleMobileTools/Simple-Music-Player/blob/HEAD/CHANGELOG.md
-Donate:https://simplemobiletools.github.io/donate
+Donate:https://simplemobiletools.com/donate
 Bitcoin:19Hc8A7sWGud8sP19VXDC5a5j28UyJfpyJ
 Litecoin:LYACbHTKaM9ZubKQGxJ4NRyVy1gHUuztRP
 
@@ -205,7 +205,39 @@ Build:4.3.0,48
     subdir=app
     gradle=yes
 
+Build:4.3.1,49
+    commit=4.3.1
+    subdir=app
+    gradle=yes
+
+Build:5.0.0,50
+    disable=MusicService.kt: (413, 36): Unresolved reference: media
+    commit=5.0.0
+    subdir=app
+    gradle=yes
+
+Build:5.0.1,51
+    disable=MusicService.kt: (413, 36): Unresolved reference: media
+    commit=5.0.1
+    subdir=app
+    gradle=yes
+
+Build:5.0.2,52
+    commit=5.0.2
+    subdir=app
+    gradle=yes
+
+Build:5.0.3,53
+    commit=5.0.3
+    subdir=app
+    gradle=yes
+
+Build:5.1.0,54
+    commit=5.1.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:4.3.0
-Current Version Code:48
+Current Version:5.1.0
+Current Version Code:54

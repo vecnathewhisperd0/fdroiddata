@@ -3,6 +3,7 @@ License:GPL-3.0-only
 Web Site:
 Source Code:https://gitlab.com/axet/android-book-reader/tree/HEAD
 Issue Tracker:https://gitlab.com/axet/android-book-reader/issues
+LiberapayID:1370123
 
 Auto Name:Book Reader
 Summary:Simple book reader
@@ -323,7 +324,121 @@ Build:1.9.17,300
     gradle=yes
     prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
 
+Build:1.9.26,309
+    commit=bookreader-1.9.26
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.9.31,314
+    commit=bookreader-1.9.31
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.9.32,315
+    commit=bookreader-1.9.32
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.9.33,316
+    commit=bookreader-1.9.33
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.9.34,317
+    commit=bookreader-1.9.34
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.10.1,319
+    commit=bookreader-1.10.1
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.10.2,320
+    commit=bookreader-1.10.2
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.10.3,321
+    commit=bookreader-1.10.3
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.10.5,323
+    commit=bookreader-1.10.5
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.10.7,325
+    commit=bookreader-1.10.7
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.10.9,327
+    commit=bookreader-1.10.9
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.11.7,335
+    commit=bookreader-1.11.7
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.11.14,342
+    commit=bookreader-1.11.14
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.11.15,343
+    commit=bookreader-1.11.15
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.11.23,351
+    commit=bookreader-1.11.23
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.11.25,353
+    commit=bookreader-1.11.25
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.11.28,356
+    commit=bookreader-1.11.28
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.11.31,359
+    commit=bookreader-1.11.31
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:1.11.32,360
+    commit=bookreader-1.11.32
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
 Auto Update Mode:Version bookreader-%v
 Update Check Mode:Tags
-Current Version:1.9.17
-Current Version Code:300
+Current Version:1.11.32
+Current Version Code:360

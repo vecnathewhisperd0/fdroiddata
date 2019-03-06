@@ -189,11 +189,59 @@ Build:1.2.0,34
     submodules=yes
     gradle=FlavorDefault
 
+Build:1.3.0,39
+    commit=v1.3.0
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.4.0,40
+    commit=v1.4.0
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.5.0,42
+    commit=v1.5.0
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.5.1,43
+    commit=v1.5.1
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.6.0,45
+    commit=v1.6.0
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.6.2,47
+    commit=v1.6.2
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.6.3,48
+    commit=v1.6.3
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.6.4,50
+    commit=v1.6.4
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
 Maintainer Notes:
 Description and summary in git metadata submodule
 .
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.2.0
-Current Version Code:34
+Current Version:1.6.4
+Current Version Code:50

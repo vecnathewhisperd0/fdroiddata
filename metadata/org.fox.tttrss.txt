@@ -1,6 +1,6 @@
 Categories:Internet
 License:GPL-3.0-or-later
-Web Site:https://gitlab.com/derSchabi/tttrsss/blob/HEAD/README.md
+Web Site:
 Source Code:https://gitlab.com/derSchabi/tttrsss
 Issue Tracker:https://gitlab.com/derSchabi/tttrsss/issues
 Donate:https://www.patreon.com/cthulhoo
@@ -44,7 +44,13 @@ Build:1.249,483
     subdir=org.fox.ttrss
     gradle=yes
 
+Build:1.259,493
+    disable=unknown maven repos
+    commit=v1.259
+    subdir=org.fox.ttrss
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.249
-Current Version Code:483
+Current Version:1.259
+Current Version Code:493

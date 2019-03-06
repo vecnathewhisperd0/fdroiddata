@@ -1,6 +1,6 @@
 Categories:Internet,Reading
 License:GPL-3.0-only
-Web Site:https://gitlab.com/spacecowboy/Feeder
+Web Site:
 Source Code:https://gitlab.com/spacecowboy/Feeder
 Issue Tracker:https://gitlab.com/spacecowboy/Feeder/issues
 Changelog:https://gitlab.com/spacecowboy/Feeder/blob/HEAD/CHANGELOG.md
@@ -220,7 +220,79 @@ Build:1.6.8,36
     submodules=yes
     gradle=yes
 
+Build:1.7.0,37
+    commit=1.7.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.7.1,38
+    commit=1.7.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.0,39
+    commit=1.8.0
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.1,40
+    commit=1.8.1
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.2,41
+    commit=1.8.2
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.3,42
+    commit=1.8.3
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.4,43
+    commit=1.8.4
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.5,44
+    commit=1.8.5
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.6,45
+    commit=1.8.6
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.7,46
+    commit=1.8.7
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.8,47
+    commit=1.8.8
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.9,48
+    commit=1.8.9
+    subdir=app
+    submodules=yes
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.6.8
-Current Version Code:36
+Current Version:1.8.9
+Current Version Code:48

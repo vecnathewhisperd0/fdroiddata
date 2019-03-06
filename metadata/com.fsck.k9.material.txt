@@ -1,12 +1,14 @@
 Categories:Internet
 License:GPL-3.0-only
-Web Site:https://github.com/scoute-dich/K9-MailClient/blob/HEAD/README.md
+Web Site:
 Source Code:https://github.com/scoute-dich/K9-MailClient
 Issue Tracker:https://github.com/scoute-dich/K9-MailClient/issues
 
 Auto Name:K9 Material (unofficial)
 Summary:Send and receive mails
 Description:
+'''Note: Since 10/2017, this app is no longer maintained.'''
+
 This is a unofficial fork of the [[com.fsck.k9]] email client with a material
 design style instead of the normal one. It will be updated in tandem with the
 main repository.

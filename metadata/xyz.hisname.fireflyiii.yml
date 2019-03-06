@@ -1,0 +1,135 @@
+Categories:
+  - Money
+License: GPL-3.0-or-later
+AuthorName: Daniel Quah
+AuthorEmail: danielquah148@yahoo.com
+SourceCode: https://github.com/emansih/FireflyMobile
+IssueTracker: https://github.com/emansih/FireflyMobile/issues
+
+AutoName: Firefly III Mobile
+Description: Unofficial mobile client for Firefly III, a personal finances manager.
+
+RepoType: git
+Repo: https://github.com/emansih/FireflyMobile
+
+Builds:
+  - versionName: 0.1.4
+    versionCode: 13
+    commit: v0.1.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/gradle:3.3.0-alpha12/gradle:3.2.1/' ../build.gradle
+
+  - versionName: 1.0.0
+    versionCode: 14
+    commit: v1.0.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/gradle:3.3.0-alpha12/gradle:3.2.1/' ../build.gradle
+
+  - versionName: 1.0.2
+    versionCode: 16
+    commit: v1.0.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/gradle:3.3.0-alpha12/gradle:3.2.1/' ../build.gradle
+    scanignore:
+      - buildSrc
+
+  - versionName: 1.1.0
+    versionCode: 17
+    commit: v1.1.0
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+  - versionName: 1.1.1
+    versionCode: 18
+    commit: v1.1.1
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+  - versionName: 1.1.2
+    versionCode: 19
+    commit: v1.1.2
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+  - versionName: 1.2.1
+    versionCode: 21
+    commit: v1.2.1
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+  - versionName: 1.2.2
+    versionCode: 22
+    commit: v1.2.2
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+  - versionName: 1.2.3
+    versionCode: 23
+    commit: v1.2.3
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+  - versionName: 1.2.4
+    versionCode: 24
+    commit: v1.2.4
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+  - versionName: 1.2.5
+    versionCode: 25
+    commit: v1.2.5
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+  - versionName: 1.2.6
+    versionCode: 26
+    commit: v1.2.6
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+  - versionName: 1.2.7
+    versionCode: 27
+    commit: v1.2.7
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.2.7
+CurrentVersionCode: 27

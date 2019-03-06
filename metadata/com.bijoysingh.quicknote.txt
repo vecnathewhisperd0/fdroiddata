@@ -89,7 +89,25 @@ Build:4.5.4,62
     subdir=app
     gradle=yes
 
+Build:5.9.7,95
+    commit=v5.9.7
+    subdir=app
+    gradle=yes
+    rm=scarlet
+
+Build:6.6.3,111
+    commit=6.6.3
+    subdir=app
+    gradle=yes
+    rm=scarlet
+
+Build:6.9.5,123
+    commit=v6.9.5
+    subdir=app
+    gradle=yes
+    rm=scarlet
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:4.5.4
-Current Version Code:62
+Current Version:6.9.5
+Current Version Code:123

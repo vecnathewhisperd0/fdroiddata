@@ -227,7 +227,37 @@ Build:1.6.11,67
     subdir=Altcoin Prices
     gradle=fdroid
 
+Build:1.6.12,68
+    commit=1.6.12
+    subdir=Altcoin Prices
+    gradle=fdroid
+
+Build:1.6.16,72
+    commit=1.6.16
+    subdir=AltcoinPrices
+    gradle=fdroid
+
+Build:1.6.17,73
+    commit=1.6.17
+    subdir=AltcoinPrices
+    gradle=fdroid
+
+Build:1.6.18,74
+    commit=1.6.18
+    subdir=AltcoinPrices
+    gradle=fdroid
+
+Build:1.6.19,75
+    commit=1.6.19
+    subdir=AltcoinPrices
+    gradle=fdroid
+
+Build:1.6.20,76
+    commit=1.6.20
+    subdir=AltcoinPrices
+    gradle=fdroid
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.6.11
-Current Version Code:67
+Current Version:1.6.20
+Current Version Code:76

@@ -3,6 +3,7 @@ License:Apache-2.0
 Web Site:
 Source Code:https://github.com/kaputnikGo/PilferShushJammer
 Issue Tracker:https://github.com/kaputnikGo/PilferShushJammer/issues
+Changelog:https://github.com/kaputnikGo/PilferShushJammer/blob/HEAD/CHANGELOG.md
 
 Auto Name:PilferShush Jammer
 Summary:Block unwanted use of onboard microphone
@@ -44,7 +45,52 @@ Build:2.0.13,5
     subdir=app
     gradle=yes
 
+Build:2.1.1,6
+    commit=2.1.1
+    subdir=app
+    gradle=yes
+
+Build:2.2.1,7
+    commit=2.2.1
+    subdir=app
+    gradle=yes
+
+Build:2.2.2,8
+    commit=2.2.2
+    subdir=app
+    gradle=yes
+
+Build:2.2.2.3,9
+    commit=2.2.2.3
+    subdir=app
+    gradle=yes
+
+Build:2.2.5,12
+    commit=2.2.5
+    subdir=app
+    gradle=yes
+
+Build:3.0.1,14
+    commit=3.0.1
+    subdir=app
+    gradle=yes
+
+Build:3.0.2,15
+    commit=3.0.2
+    subdir=app
+    gradle=yes
+
+Build:3.0.3,16
+    commit=3.0.3
+    subdir=app
+    gradle=yes
+
+Build:3.1.0,17
+    commit=3.1.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.0.13
-Current Version Code:5
+Current Version:3.1.0
+Current Version Code:17

@@ -6,11 +6,6 @@ Issue Tracker:https://github.com/netmackan/ATimeTracker/issues
 Changelog:https://github.com/netmackan/ATimeTracker/releases
 
 Auto Name:A Time Tracker
-Summary:Time Tracker
-Description:
-Easily start/stop time tracking for any tasks. Offers summary report view and
-export.
-.
 
 Repo Type:git
 Repo:https://github.com/netmackan/ATimeTracker.git
@@ -35,7 +30,27 @@ Build:0.23,23
     commit=v0.23
     subdir=android-timetracker
 
-Auto Update Mode:None
+Build:0.50,50
+    commit=v0.50
+    subdir=android-timetracker/app
+    gradle=yes
+
+Build:0.51,51
+    commit=v0.51
+    subdir=android-timetracker/app
+    gradle=yes
+
+Build:0.51.1,5101
+    commit=v0.51.1
+    subdir=android-timetracker/app
+    gradle=yes
+
+Build:0.51.2,5102
+    commit=v0.51.2
+    subdir=android-timetracker/app
+    gradle=yes
+
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.23
-Current Version Code:23
+Current Version:0.51.2
+Current Version Code:5102

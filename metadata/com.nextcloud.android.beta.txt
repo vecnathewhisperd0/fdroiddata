@@ -1495,11 +1495,375 @@ Build:20180920,20180920
     rm=user_manual,gplay.gradle
     scandelete=src/androidTest
 
+Build:20180924,20180924
+    commit=dev-20180924
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20180927,20180927
+    commit=dev-20180927
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181009,20181009
+    commit=dev-20181009
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181013,20181013
+    commit=dev-20181013
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181016,20181016
+    commit=dev-20181016
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181018,20181018
+    commit=dev-20181018
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181020,20181020
+    commit=dev-20181020
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181024,20181024
+    commit=dev-20181024
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181025,20181025
+    commit=dev-20181025
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181026,20181026
+    commit=dev-20181026
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181027,20181027
+    commit=dev-20181027
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181028,20181028
+    commit=dev-20181028
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181030,20181030
+    commit=dev-20181030
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181031,20181031
+    commit=dev-20181031
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181101,20181101
+    commit=dev-20181101
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181102,20181102
+    commit=dev-20181102
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181103,20181103
+    commit=dev-20181103
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181106,20181106
+    commit=dev-20181106
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181107,20181107
+    commit=dev-20181107
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181204,20181204
+    commit=dev-20181204
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181206,20181206
+    commit=dev-20181206
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181211,20181211
+    commit=dev-20181211
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181212,20181212
+    commit=dev-20181212
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181214,20181214
+    commit=dev-20181214
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181216,20181216
+    commit=dev-20181216
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181218,20181218
+    commit=dev-20181218
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20181222,20181222
+    commit=dev-20181222
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190105,20190105
+    commit=dev-20190105
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190108,20190108
+    commit=dev-20190108
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190112,20190112
+    commit=dev-20190112
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190113,20190113
+    commit=dev-20190113
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190115,20190115
+    commit=dev-20190115
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190117,20190117
+    commit=dev-20190117
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190119,20190119
+    commit=dev-20190119
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190122,20190122
+    commit=dev-20190122
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190123,20190123
+    commit=dev-20190123
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190129,20190129
+    commit=dev-20190129
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190201,20190201
+    commit=dev-20190201
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190202,20190202
+    commit=dev-20190202
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190205,20190205
+    commit=dev-20190205
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190207,20190207
+    commit=dev-20190207
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190208,20190208
+    commit=dev-20190208
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190209,20190209
+    commit=dev-20190209
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190215,20190215
+    commit=dev-20190215
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190216,20190216
+    commit=dev-20190216
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190220,20190220
+    commit=dev-20190220
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190221,20190221
+    commit=dev-20190221
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190226,20190226
+    commit=dev-20190226
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190228,20190228
+    commit=dev-20190228
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190301,20190301
+    commit=dev-20190301
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190305,20190305
+    commit=dev-20190305
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
+Build:20190306,20190306
+    commit=dev-20190306
+    submodules=yes
+    gradle=versionDev
+    rm=user_manual,gplay.gradle
+    scandelete=src/androidTest
+
 Maintainer Notes:
 Tags get removed. See https://github.com/nextcloud/android/issues/969.
 .
 
 Auto Update Mode:Version dev-%c
 Update Check Mode:Tags ^dev
-Current Version:20180920
-Current Version Code:20180920
+Current Version:20190306
+Current Version Code:20190306
