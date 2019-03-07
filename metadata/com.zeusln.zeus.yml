@@ -2,7 +2,7 @@ Categories:
   - Money
 License: AGPL-3.0-only
 AuthorName: Evan Kaloudis
-WebSite: https://github.com/ZeusLN/zeus
+WebSite: https://zeusln.app
 SourceCode: https://github.com/ZeusLN/zeus/tree/HEAD
 IssueTracker: https://github.com/ZeusLN/zeus/issues
 Changelog: https://github.com/ZeusLN/zeus/releases
@@ -29,12 +29,24 @@ RepoType: git
 Repo: https://github.com/ZeusLN/zeus.git
 
 Builds:
-  - versionName: v0.0.5
-    versionCode: 5
-    commit: v0.0.5
-    subdir: app
+  - versionName: v0.0.6
+    versionCode: 6
+    commit: v0.0.6
+    subdir: android/app/
+    sudo:
+      - curl -Lo node.tar.xz https://nodejs.org/dist/v10.13.0/node-v10.13.0-linux-x64.tar.xz
+      - echo "0dc6dba645550b66f8f00541a428c29da7c3cde32fb7eda2eb626a9db3bbf08d node.tar.xz"
+        | sha256sum -c -
+      - tar xJf node.tar.xz
+      - cp -a node-v10.13.0-linux-x64/. /usr/local/
+    init: npm install
     gradle:
       - yes
+    scanignore:
+      - android/build.gradle
+    scandelete:
+      - node_modules/
+
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
