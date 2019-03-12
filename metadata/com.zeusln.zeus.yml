@@ -29,22 +29,21 @@ RepoType: git
 Repo: https://github.com/ZeusLN/zeus.git
 
 Builds:
-  - versionName: v0.0.6
+  - versionName: 0.0.6
     versionCode: 6
-    commit: v0.0.6
-    subdir: android/app
+    commit: d90c2b3
     sudo:
-      - curl -Lo node.tar.xz https://nodejs.org/dist/v10.13.0/node-v10.13.0-linux-x64.tar.xz
-      - echo "0dc6dba645550b66f8f00541a428c29da7c3cde32fb7eda2eb626a9db3bbf08d node.tar.xz"
-        | sha256sum -c -
-      - tar xJf node.tar.xz
-      - cp -a node-v10.13.0-linux-x64/. /usr/local/
-    init: npm install
-    gradle:
-      - yes
-    prebuild: sed -i -e 's/gradle-4.1/gradle-4.7/' gradle/wrapper/gradle-wrapper.properties
+      - apt-get update
+      - apt-get install -y --no-install-recommends -t stretch-backports npm
+    init:
+      - npm install
+    subdir: android/app
+    gradle: yes
+    prebuild:
+      - truncate -s 0 ../../node_modules/react-native/local-cli/server/util/external/xsel
     scanignore:
       - android/build.gradle
+      - node_modules/react-native-camera/android/build.gradle
     scandelete:
       - node_modules/
 
