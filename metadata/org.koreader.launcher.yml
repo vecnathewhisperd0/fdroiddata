@@ -1,11 +1,26 @@
 Categories:
   - Reading
 License: AGPL-3.0-only
+SourceCode: https://github.com/koreader/koreader
+IssueTracker: https://github.com/koreader/koreader/issues
+Changelog: https://github.com/koreader/koreader/releases
 
-AutoName: KOReader
 Summary: An ebook reader application supporting PDF, DjVu, EPUB, FB2
-Description: KOReader is a document viewer application, originally created for Kindle
-    e-ink readers.
+Description: |-
+    KOReader is a document viewer application, originally created for Kindle e-ink readers.
+
+    '''Main features'''
+
+    * supports multi-format documents
+    * use StarDict dictionaries / Wikipedia to lookup words
+    * highlights can be exported to Evernote cloud account
+    * highly customizable reader view and typesetting
+    * supports adding custom online OPDS catalogs
+    * calibre integration
+    * can share ebooks with other koreader devices wirelessly
+    * various optimizations for e-ink devices
+    * multi-lingual user interface
+    * online Over-The-Air software update
 
 RepoType: git
 Repo: https://github.com/koreader/koreader.git
