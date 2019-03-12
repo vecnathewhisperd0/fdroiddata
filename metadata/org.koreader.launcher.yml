@@ -20,7 +20,6 @@ Description: |-
     * can share ebooks with other koreader devices wirelessly
     * various optimizations for e-ink devices
     * multi-lingual user interface
-    * online Over-The-Air software update
 
 RepoType: git
 Repo: https://github.com/koreader/koreader.git
