@@ -29,7 +29,7 @@ Builds:
     commit: v2019.03.1
     submodules: true
     sudo:
-      - apt-get update
+      - apt-get update || apt-get update
       - apt-get install -y gcc-multilib luarocks p7zip-full
     output: koreader-android-*.apk
     rm:
