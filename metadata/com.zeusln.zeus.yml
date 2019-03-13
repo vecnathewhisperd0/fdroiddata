@@ -31,7 +31,7 @@ Repo: https://github.com/ZeusLN/zeus.git
 Builds:
   - versionName: 0.0.6
     versionCode: 6
-    commit: d90c2b3
+    commit: bf9088e
     subdir: android/app
     sudo:
       - apt-get update
@@ -42,9 +42,7 @@ Builds:
     prebuild: truncate -s 0 ../../node_modules/react-native/local-cli/server/util/external/xsel
     scanignore:
       - android/build.gradle
-      - node_modules/react-native-camera/android/build.gradle
-    scandelete:
-      - node_modules/
+      - node_modules
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
