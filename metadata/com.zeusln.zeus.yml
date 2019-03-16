@@ -29,6 +29,21 @@ RepoType: git
 Repo: https://github.com/ZeusLN/zeus.git
 
 Builds:
+  - versionName: 0.0.7
+    versionCode: 7
+    commit: 3430826
+    subdir: android/app
+    sudo:
+      - apt-get update
+      - apt-get install -y --no-install-recommends -t stretch-backports npm
+    init: npm install
+    gradle:
+      - yes
+    prebuild: truncate -s 0 ../../node_modules/react-native/local-cli/server/util/external/xsel
+    scanignore:
+      - android/build.gradle
+      - node_modules
+  
   - versionName: 0.0.6
     versionCode: 6
     commit: bf9088e
