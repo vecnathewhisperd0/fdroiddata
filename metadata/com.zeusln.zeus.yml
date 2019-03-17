@@ -31,7 +31,7 @@ Repo: https://github.com/ZeusLN/zeus.git
 Builds:
   - versionName: 0.0.7
     versionCode: 7
-    commit: 3430826
+    commit: '3430826'
     subdir: android/app
     sudo:
       - apt-get update
