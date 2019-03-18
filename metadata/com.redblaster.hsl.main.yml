@@ -24,7 +24,7 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Tags
-UpdateCheckMode: RepoManifest
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
 CurrentVersion: '1.6'
 CurrentVersionCode: 37
