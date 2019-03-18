@@ -43,17 +43,8 @@ Builds:
     scanignore:
       - android/build.gradle
       - node_modules/react-native-screens/android/build.gradle
-      - node_modules/react-native/local-cli/templates/HelloWorld/android/build.gradle
-      - node_modules/node-notifier/vendor/snoreToast/SnoreToast.exe
-      - node_modules/node-notifier/vendor/notifu/notifu64.exe
-      - node_modules/node-notifier/vendor/notifu/notifu.exe
-      - node_modules/node-notifier/vendor/terminal-notifier.app/Contents/MacOS/terminal-notifier
-      - node_modules/react-native/ReactAndroid/src/main/jni/third-party/jsc/jni/arm64-v8a/libjsc.so
-      - node_modules/react-native/ReactAndroid/src/main/jni/third-party/jsc/jni/arm64-v8a/libicu_common.so
-      - node_modules/react-native/ReactAndroid/src/main/jni/third-party/jsc/jni/x86_64/libjsc.so
-      - node_modules/react-native/ReactAndroid/src/main/jni/third-party/jsc/jni/x86_64/libicu_common.so
-      - node_modules/react-native/ReactAndroid/src/main/jniLibs/arm64-v8a/libicu_common.so
-      - node_modules/react-native/ReactAndroid/src/main/jniLibs/x86_64/libicu_common.so
+    scandelete:
+      - node_modules
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
