@@ -46,5 +46,5 @@ Builds:
     scandelete:
       - node_modules
 
-AutoUpdateMode: Version %v
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
