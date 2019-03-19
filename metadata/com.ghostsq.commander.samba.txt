@@ -122,7 +122,6 @@ Build:1.33b3,73
         install -D $$GhostCommander$$/gc.jar libs/gc.jar && \
         android update project -p . -t android-27 -n com.ghostsq.commander.samba
 
-
 Auto Update Mode:None
 Update Check Mode:RepoManifest
 Current Version:1.33b3
