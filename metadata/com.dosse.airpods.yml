@@ -22,14 +22,14 @@ RepoType: git
 Repo: https://github.com/adolfintel/OpenPods.git
 
 Builds:
-  - versionName: '0.1'
-    versionCode: 1
-    commit: Alpha1
+  - versionName: '0.3'
+    versionCode: 3
+    commit: 0.3
     subdir: OpenPods/app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.1'
-CurrentVersionCode: 1
+CurrentVersion: '0.3'
+CurrentVersionCode: 3
