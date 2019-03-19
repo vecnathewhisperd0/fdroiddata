@@ -24,7 +24,7 @@ Repo: https://github.com/adolfintel/OpenPods.git
 Builds:
   - versionName: '0.3'
     versionCode: 3
-    commit: 0.3
+    commit: '0.3'
     subdir: OpenPods/app
     gradle:
       - yes
