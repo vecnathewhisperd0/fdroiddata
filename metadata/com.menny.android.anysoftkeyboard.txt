@@ -281,8 +281,8 @@ Build:1.9.2445,5020
     ndk=r14b
     preassemble=:makeEnglishDictionary
 
-Build:1.9.2629,5204
-    commit=1.9-r6
+Build:1.10.364,5539
+    commit=1.10-r1
     subdir=app
     gradle=yes
     forceversion=yes
