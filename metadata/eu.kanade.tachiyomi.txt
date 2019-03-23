@@ -213,7 +213,7 @@ Build:0.8.1,39
     prebuild=sed -i -e '/play-services/d; /firebase/d' build.gradle && \
         sed -i -e '/google-services/d' ../build.gradle build.gradle && \
         sed -i -e '/https:\/\/dl.bintray.com\/inorichi\/maven/d' ../build.gradle && \
-        sed -i "/eu.kanade.storio:storio:1.13.0/c\compile group: 'android.arch.persistence', name: 'db', version: '1.0.0'; implementation 'com.github.paronos.storio:storio-common:3503176951@aar'; implementation 'com.github.paronos.storio:storio-sqlite:3503176951@aar'" build.gradle
+        sed -i "/eu.kanade.storio:storio:1.13.0/c\implementation 'android.arch.persistence:db:1.0.0'; implementation 'com.github.inorichi.storio:storio-common:8be19de@aar'; implementation 'com.github.inorichi.storio:storio-sqlite:8be19de@aar'" build.gradle
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
