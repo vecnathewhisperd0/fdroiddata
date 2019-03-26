@@ -1,0 +1,33 @@
+Categories:
+  - System
+License: GPL-3.0-or-later
+WebSite: https://landroid.app
+SourceCode: https://gitlab.com/blendergeek/landroid
+IssueTracker: https://gitlab.com/blendergeek/landroid/issues
+Changelog: https://gitlab.com/blendergeek/landroid/raw/HEAD/CHANGELOG.md
+
+AutoName: LAndroid
+
+RepoType: git
+Repo: https://gitlab.com/blendergeek/landroid.git
+
+Builds:
+  - versionName: 1.6-alpha1-blendergeek0
+    versionCode: 100600100
+    commit: 1.6-alpha1-blendergeek0
+    subdir: app
+    sudo: apt-get update; apt-get update; apt-get install -y disorderfs
+    init:
+      - cd ../..
+      - mv app.landroid.landroid app.landroid.landroid.build
+      - mkdir app.landroid.landroid
+      - disorderfs --sort-dirents=yes --reverse-dirents=no app.landroid.landroid.build
+        app.landroid.landroid
+    gradle:
+      - full
+
+ArchivePolicy: 12 versions
+AutoUpdateMode: None
+UpdateCheckMode: Static
+CurrentVersion: 1.4-blendergeek0
+CurrentVersionCode: 100600100
