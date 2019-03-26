@@ -1,6 +1,9 @@
 Categories:
   - Development
-License: GPL-3.0-only
+License: GPL-3.0-or-later
+AuthorName: Guardian Project
+AuthorEmail: support@guardianproject.info
+AuthorWebSite: https://guardianproject.info
 WebSite: https://github.com/guardianproject/lildebi/wiki
 SourceCode: https://github.com/guardianproject/lildebi
 IssueTracker: https://github.com/guardianproject/lildebi/issues
@@ -19,7 +22,7 @@ Description: |-
     ‘apt-get’ to install any package that is released for ARM processors. This
     includes things like a complete real shell, Tor, TraceRouteTCP,
     iwconfig/ipconfig, and other security and crypto tools. Works well with
-    [[jackpal.androidterm]]—just run `/debian/shell` to get a Debian shell.
+    https://f-droid.org/packages/jackpal.androidterm —just run `/debian/shell` to get a Debian shell.
 
     The aim of Lil’ Debi is to provide a transparent and tightly integrated Debian
     install on your Android device. It mounts all of your Android partitions in
@@ -140,6 +143,14 @@ Builds:
       - assets/gpgv
     build: make NDK_BASE=$$NDK$$ -C external assets
 
+  - versionName: 0.5.5
+    versionCode: 5500
+    commit: 0.5.5
+    submodules: true
+    scanignore:
+      - assets/gpgv
+    build: make NDK_BASE=$$NDK$$ -C external assets
+
 MaintainerNotes: |-
     It should be possible to build gpgv - see See info.guardianproject.gpg README
     to build using srclibs=GNUPG
@@ -151,6 +162,7 @@ MaintainerNotes: |-
     Use "Archive Policy" to ensure we always have at least one working 0.4 release
     ready.
 
+ArchivePolicy: 0 versions
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 0.5.4

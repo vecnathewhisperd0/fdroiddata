@@ -10,7 +10,6 @@ Donate: https://www.netguard.me
 Bitcoin: 13vtPytVVqCwojmohAqsK61Tk4yGXSWpJK
 
 AutoName: NetGuard
-Summary: Block network access
 Description: |-
     NetGuard provides simple and advanced ways to block access to the internet - no
     root required.
@@ -863,7 +862,39 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
 
+  - versionName: '2.225'
+    versionCode: 2019013101
+    commit: '2.225'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.226'
+    versionCode: 2019021701
+    commit: '2.226'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.228'
+    versionCode: 2019022702
+    commit: '2.228'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.229'
+    versionCode: 2019030702
+    commit: '2.229'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: '2.224'
-CurrentVersionCode: 2019012001
+CurrentVersion: '2.229'
+CurrentVersionCode: 2019030702

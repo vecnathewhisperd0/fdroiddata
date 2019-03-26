@@ -11,7 +11,6 @@ LiberapayID: '34225'
 Bitcoin: 1AeqNAcg85APAZj9BZfAjdFCC5zesqXp2B
 
 AutoName: Conversations
-Summary: A Jabber/XMPP chat client
 Description: |-
     Easy to use, reliable, battery friendly. With built-in support for images, group
     chats and e2e encryption.
@@ -1641,11 +1640,53 @@ Builds:
         \ \ \ \ \ \ \ abortOnError\ false' build.gradle
       - sed -i -e 's/4.10.3/4.10.2/' gradle/wrapper/gradle-wrapper.properties
 
+  - versionName: 2.4.0-beta+fcr
+    versionCode: 318
+    disable: beta
+    commit: 4c8b1eb4bc1c82b0f777726cbe57f176c67b4cb3
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.0-beta.2+fcr
+    versionCode: 319
+    disable: beta
+    commit: bd5b8aff784a750bdddd1e20379804e9ec0bd855
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.0+fcr
+    versionCode: 320
+    commit: 2.4.0
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.1+fcr
+    versionCode: 321
+    commit: 2.4.1
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.2+fcr
+    versionCode: 322
+    commit: 2.4.2
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
 MaintainerNotes: |-
     We go back to targetSdk 25 so users can disable the foreground service (and
     annoying notification) if they choose to.
 
 AutoUpdateMode: Version %v+fcr
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: 2.3.12+fcr
-CurrentVersionCode: 317
+CurrentVersion: 2.4.2+fcr
+CurrentVersionCode: 322

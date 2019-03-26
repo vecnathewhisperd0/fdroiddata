@@ -180,7 +180,23 @@ Build:1.39,139
     commit=v1.39
     gradle=yes
 
+Build:1.40,140
+    commit=v1.40
+    gradle=yes
+
+Build:1.41,141
+    commit=v1.41
+    gradle=yes
+
+Build:1.42,142
+    commit=v1.42
+    gradle=yes
+
+Build:1.43,143
+    commit=v1.43
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.39
-Current Version Code:139
+Current Version:1.43
+Current Version Code:143

@@ -6,7 +6,6 @@ IssueTracker: https://github.com/JavaCafe01/PdfViewer/issues
 Donate: https://www.paypal.me/gsnathan
 
 AutoName: Pdf Viewer Plus
-Summary: A simple PDF viewer
 Description: Pdf Viewer Plus is a smooth PDF viewer written in Java. It contains a
     simple user interface, multiple themes, and the ability to share a PDF.
 
@@ -43,6 +42,6 @@ Builds:
       - yes
 
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
+UpdateCheckMode: Tags ^v[0-9.]+$
 CurrentVersion: '2.7'
 CurrentVersionCode: 18

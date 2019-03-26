@@ -1,16 +1,21 @@
 Categories:
-  - Internet
   - Security
+  - Internet
 License: GPL-2.0-or-later
 SourceCode: https://github.com/mwarning/trigger
 IssueTracker: https://github.com/mwarning/trigger/issues
 
 AutoName: Trigger
-Summary: Open a door over WiFi or the Internet
 Description: |
-    Call a https link to open a door and request its status.
-    The request URL might be `https://example.com/door/?action=open&token=secret123` where action is one of `open`/`close`/`state`.
-    The reponse might be `LOCKED`, `UNLOCKED` or undefined.
+    Open/Close doors via HTTPS or SSH and show the door status.
+
+    '''Features:'''
+
+    * Add multiple doors
+    * Manage TLS certificates and ssh keys
+    * Auto-select door setup by WiFi SSID
+    * Show returned text as info message
+    * English/German translations
 
 RepoType: git
 Repo: https://github.com/mwarning/trigger
@@ -23,7 +28,49 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: None
+  - versionName: 1.3.0
+    versionCode: 130
+    commit: v1.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.1
+    versionCode: 131
+    commit: v1.3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.0
+    versionCode: 140
+    commit: v1.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.0
+    versionCode: 160
+    commit: v1.6.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.0
+    versionCode: 170
+    commit: v1.7.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.1
+    versionCode: 171
+    commit: v1.7.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.2.1
-CurrentVersionCode: 121
+CurrentVersion: 1.7.1
+CurrentVersionCode: 171

@@ -398,7 +398,37 @@ Build:4.6.9,114
     subdir=app
     gradle=yes
 
+Build:4.6.10,115
+    commit=v4.6.10
+    subdir=app
+    gradle=yes
+
+Build:4.6.11,116
+    commit=v4.6.11
+    subdir=app
+    gradle=yes
+
+Build:4.6.12,117
+    commit=v4.6.12
+    subdir=app
+    gradle=yes
+
+Build:4.6.13,118
+    commit=v4.6.13
+    subdir=app
+    gradle=yes
+
+Build:4.7.1,119
+    commit=v4.7.1
+    subdir=app
+    gradle=yes
+
+Build:4.7.2,120
+    commit=v4.7.2
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:4.6.9
-Current Version Code:114
+Current Version:4.7.2
+Current Version Code:120

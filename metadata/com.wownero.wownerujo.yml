@@ -6,7 +6,6 @@ SourceCode: https://github.com/wownero/wownerujo/
 IssueTracker: https://github.com/wownero/wownerujo//issues
 
 AutoName: Wownerujo
-Summary: Wownero wallet
 Description: |-
     Wownero is a fork of the cryptocurrency Monero with primary alterations.
 
@@ -105,7 +104,29 @@ Builds:
     build: ANDROID_NDK_ROOT=$$NDK$$ make
     ndk: r17b
 
+  - versionName: 2.5.0.3
+    versionCode: 1170
+    commit: v2.5.0.3
+    timeout: 14400
+    sudo: apt install -y g++ build-essential tofrodos
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/wownerujo-*_universal.apk
+    build: ANDROID_NDK_ROOT=$$NDK$$ make
+    ndk: r17b
+
+  - versionName: 2.5.0.4
+    versionCode: 1180
+    commit: v2.5.0.4
+    timeout: 14400
+    sudo: apt install -y g++ build-essential tofrodos
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/wownerujo-*_universal.apk
+    build: ANDROID_NDK_ROOT=$$NDK$$ make
+    ndk: r17b
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.0.0
-CurrentVersionCode: 1130
+CurrentVersion: 2.5.0.4
+CurrentVersionCode: 1180

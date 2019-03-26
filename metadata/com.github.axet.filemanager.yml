@@ -6,7 +6,6 @@ IssueTracker: https://gitlab.com/axet/android-file-manager/issues
 LiberapayID: '1370123'
 
 AutoName: File Manager
-Summary: File Manager with root browser
 Description: |-
     File Manager with two panels, smart copy/move dialogs, easy open/share
     files, multiple files sources including: root, SAF and direct files access.
@@ -64,7 +63,70 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.2.67
+    versionCode: 110
+    commit: filemanager-0.2.67
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.68
+    versionCode: 111
+    commit: filemanager-0.2.68
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.69
+    versionCode: 112
+    commit: filemanager-0.2.69
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.70
+    versionCode: 113
+    commit: filemanager-0.2.70
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.73
+    versionCode: 116
+    commit: filemanager-0.2.73
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.75
+    versionCode: 118
+    commit: filemanager-0.2.75
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.76
+    versionCode: 119
+    commit: filemanager-0.2.76
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.78
+    versionCode: 121
+    commit: filemanager-0.2.78
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.79
+    versionCode: 122
+    commit: filemanager-0.2.79
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version filemanager-%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2.64
-CurrentVersionCode: 107
+CurrentVersion: 0.2.79
+CurrentVersionCode: 122

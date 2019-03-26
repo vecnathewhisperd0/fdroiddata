@@ -6,7 +6,6 @@ SourceCode: https://gitlab.com/droidtr/org.droidtr.keyboard
 IssueTracker: https://gitlab.com/droidtr/org.droidtr.keyboard/issues
 
 AutoName: DroidTR keyboard
-Summary: DroidTR IME (Turkish F/Q keyboard)
 Description: |-
     Features:
     * Small size
@@ -66,7 +65,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '6.3'
+    versionCode: 40
+    commit: '6.3'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '6.4'
+    versionCode: 41
+    commit: '6.4'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '6.2'
-CurrentVersionCode: 39
+CurrentVersion: '6.4'
+CurrentVersionCode: 41

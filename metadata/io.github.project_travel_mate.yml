@@ -8,7 +8,6 @@ SourceCode: https://github.com/project-travel-mate/Travel-Mate
 IssueTracker: https://github.com/project-travel-mate/Travel-Mate/issues
 
 AutoName: Travel Mate
-Summary: A complete travel guide
 Description: |-
     Travel Mate is a must-have app for those interested in travel. The app provides users with various features from choosing the correct destination for making all the bookings and to easily organizing the trip.
 
@@ -30,6 +29,14 @@ Builds:
   - versionName: 5.5.0
     versionCode: 44
     commit: 5.5.0
+    subdir: Android/app/
+    gradle:
+      - yes
+    prebuild: sed -i -e '/repo.commonsware.com.s3.amazonaws.com/d' build.gradle
+
+  - versionName: 5.5.2
+    versionCode: 45
+    commit: 5.5.2
     subdir: Android/app/
     gradle:
       - yes
