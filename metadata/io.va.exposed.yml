@@ -35,6 +35,7 @@ Builds:
       - sed -i -e 's#https://maven.fabric.io/public#https://maven.google.com/#' -e
         '/io.fabric.tools/d' ../build.gradle
       - sed -i -e '/repositories/,+2d' -e '/io.fabric/d' build.gradle
+    ndk: r12b
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
