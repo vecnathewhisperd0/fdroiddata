@@ -771,7 +771,7 @@ Builds:
         | shasum -c -
       - tar xf go.tgz
       - PATH="$PWD/go/bin:$PATH" gradle buildNative
-    ndk: r19c
+    ndk: r19
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[a-z0-9.]*$
