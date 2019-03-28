@@ -24,7 +24,7 @@ Builds:
     commit: 8ab34cfb7cf155ecca2f7c22c453948bd4d71884
     gradle:
       - yes
-	    
+
   - versionName: '1.6'
     versionCode: 37
     commit: '1.6'
