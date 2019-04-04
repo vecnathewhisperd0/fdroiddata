@@ -16,7 +16,9 @@ Builds:
     versionCode: 100600100
     commit: 1.6-alpha1-blendergeek0
     subdir: app
-    sudo: apt-get update; apt-get update; apt-get install -y disorderfs
+    sudo: 
+      - apt-get update || apt-get update
+      - apt-get install -y disorderfs
     init:
       - cd ../..
       - mv app.landroid.landroid app.landroid.landroid.build
@@ -26,8 +28,7 @@ Builds:
     gradle:
       - full
 
-ArchivePolicy: 12 versions
 AutoUpdateMode: None
 UpdateCheckMode: Static
-CurrentVersion: 1.4-blendergeek0
+CurrentVersion: 1.6-alpha1-blendergeek0
 CurrentVersionCode: 100600100
