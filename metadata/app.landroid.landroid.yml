@@ -16,7 +16,7 @@ Builds:
     versionCode: 100600100
     commit: 1.6-alpha1-blendergeek0
     subdir: app
-    sudo: 
+    sudo:
       - apt-get update || apt-get update
       - apt-get install -y disorderfs
     init:
