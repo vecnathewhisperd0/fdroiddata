@@ -39,6 +39,7 @@ Builds:
       - chmod a+x ics-openvpn/gradlew
       - ./build_deps.sh
     ndk: r16b
+
   - versionName: 0.9.10
     versionCode: 137
     commit: 0.9.10
