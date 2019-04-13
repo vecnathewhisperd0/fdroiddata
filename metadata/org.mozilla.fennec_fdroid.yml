@@ -7440,7 +7440,7 @@ Builds:
       - make -C obj package AB_CD=multi
       - zip -d obj/dist/fennec-$$VERSION$$.multi.android-*-unsigned-unaligned.apk
         'META-INF/*.*'
-    ndk: r19b
+    ndk: r19c
 
   - versionName: 66.0.2
     versionCode: 660210
@@ -7486,7 +7486,7 @@ Builds:
       - make -C obj package AB_CD=multi
       - zip -d obj/dist/fennec-$$VERSION$$.multi.android-*-unsigned-unaligned.apk
         'META-INF/*.*'
-    ndk: r19b
+    ndk: r19c
 
   - versionName: 66.0.2
     versionCode: 660220
@@ -7532,7 +7532,7 @@ Builds:
       - make -C obj package AB_CD=multi
       - zip -d obj/dist/fennec-$$VERSION$$.multi.android-*-unsigned-unaligned.apk
         'META-INF/*.*'
-    ndk: r19b
+    ndk: r19c
 
 MaintainerNotes: |4-
 
