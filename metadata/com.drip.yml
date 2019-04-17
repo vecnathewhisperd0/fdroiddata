@@ -1,0 +1,43 @@
+Categories:
+  - Sports & Health
+License: GPL-3.0-only
+AuthorName: Bloody Health collective
+AuthorEmail: drip@mailbox.org
+WebSite: https://bloodyhealth.gitlab.io
+SourceCode: https://gitlab.com/bloodyhealth/drip/tree/HEAD
+IssueTracker: https://gitlab.com/bloodyhealth/drip/issues
+Changelog: https://gitlab.com/bloodyhealth/drip/blob/HEAD/CHANGELOG.md
+
+AutoName: drip
+Summary: Open-source, non-commercial and leaves your data on your phone
+Description: |-
+    drip is an open source menstrual cycle tracking app.
+
+    The app is all about:
+
+    - Your data, your choice. Everything stays on your device.
+    - Not another cute, pink app. drip is designed with gender inclusivity in mind.
+    - Your body is not a black box. drip is transparent in its calculations and encourages you to think for yourself.
+    - Based on science. drip detects your fertility using the symptothermal method.
+    - Track what you like. Just your period or fertility symptoms, and more.
+    - Open source. Contribute to the code, the documentation, translations and get involved with the community.
+    - Non-commercial. drip doesn’t sell your data, no ads.
+
+    More info on our website:
+    [https://bloodyhealth.gitlab.io/ Bloody Health]
+
+RepoType: git
+Repo: https://gitlab.com/bloodyhealth/drip.git
+
+Builds:
+  - versionName: 0.0.2
+    versionCode: 1
+    subdir: android/app
+    gradle:
+      - yes
+    target: '26'
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
