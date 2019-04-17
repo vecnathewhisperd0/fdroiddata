@@ -30,8 +30,9 @@ RepoType: git
 Repo: https://gitlab.com/bloodyhealth/drip.git
 
 Builds:
-  - versionName: 0.0.2
-    versionCode: 1
+  - versionName: '0.0.3'
+    versionCode: 3
+    commit: v0.0.3
     subdir: android/app
     gradle:
       - yes
@@ -39,5 +40,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: '1.0'
-CurrentVersionCode: 1
+CurrentVersion: 0.0.3
+CurrentVersionCode: 3
