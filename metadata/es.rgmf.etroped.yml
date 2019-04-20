@@ -1,0 +1,27 @@
+Categories:
+  - Sports & Health
+License: GPL-3.0-or-later
+AuthorName: rgmf@riseup.net
+WebSite: http://etroped.rgmf.es
+SourceCode: https://github.com/rgmf/etroped
+IssueTracker: https://github.com/rgmf/etroped/issues
+
+AutoName: Etroped Sport
+Summary: App for tracking your sports workouts (bike, running, trekking)
+Description: |
+    Etroped is an app for tracking your sports workouts with stats, OpenStreetMap track...
+    Record your routes and see all your stats, charts and tracks on OpenStreetMap map.
+
+RepoType: git
+Repo: https://github.com/rgmf/etroped
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: '9375064'
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
