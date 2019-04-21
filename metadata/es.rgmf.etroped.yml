@@ -18,7 +18,7 @@ Repo: https://github.com/rgmf/etroped
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: '9375064'
+    commit: '2f0e8bf962c050cbaeb92b4a8df1d9789e30e85d'
     subdir: app
     gradle:
       - yes
