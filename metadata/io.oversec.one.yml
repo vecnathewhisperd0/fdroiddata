@@ -92,7 +92,37 @@ Builds:
     gradleprops:
       - fdroid
 
+  - versionName: 1.5.13
+    versionCode: 1005013
+    commit: 1.5.13
+    submodules: true
+    gradle:
+      - oversec
+    output: app/build/outputs/apk/oversec/release/app-oversec-release-unsigned-$$VERCODE$$.apk
+    gradleprops:
+      - fdroid
+
+  - versionName: 1.5.14
+    versionCode: 1005014
+    commit: 1.5.14
+    submodules: true
+    gradle:
+      - oversec
+    output: app/build/outputs/apk/oversec/release/app-oversec-release-unsigned-$$VERCODE$$.apk
+    gradleprops:
+      - fdroid
+
+  - versionName: 1.5.15
+    versionCode: 1005015
+    commit: 1.5.15
+    submodules: true
+    gradle:
+      - oversec
+    output: app/build/outputs/apk/oversec/release/app-oversec-release-unsigned-$$VERCODE$$.apk
+    gradleprops:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.5.12
-CurrentVersionCode: 1005012
+CurrentVersion: 1.5.15
+CurrentVersionCode: 1005015

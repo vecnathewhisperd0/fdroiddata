@@ -11,7 +11,6 @@ Donate: https://github.com/RocketChat/Rocket.Chat#donate
 Bitcoin: ac2fa967efca7f6fc1201d46bdccb875
 
 AutoName: Rocket.Chat
-Summary: Team Communication Tool
 Description: |
     '''Note:''' This FOSS build variant currently lacks any push notification support.
 
@@ -130,7 +129,25 @@ Builds:
     gradleprops:
       - sdk_location=../../srclib/rocketchatsdk
 
+  - versionName: 3.3.0
+    versionCode: 2060
+    disable: unknown maven repo 'https://github.com/jitsi/jitsi-maven-repository/raw/master/releases'
+    commit: v3.3.0
+    subdir: app
+    gradle:
+      - foss
+    srclibs:
+      - rocketchatsdk@app-3.3.0
+    rm:
+      - app/gradle
+    prebuild:
+      - sed -i -e '/fabric/d; /com.google.gms/d' ../build.gradle build.gradle
+      - sed -i -e '/playImplementation/d' build.gradle
+      - sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
+    gradleprops:
+      - sdk_location=../../srclib/rocketchatsdk
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.2.0
-CurrentVersionCode: 2057
+CurrentVersion: 3.3.0
+CurrentVersionCode: 2060

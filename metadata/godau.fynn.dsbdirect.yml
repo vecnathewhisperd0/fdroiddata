@@ -1,0 +1,83 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+License: GPL-3.0-or-later
+AuthorName: Fynn Godau
+AuthorEmail: fynngodau@mailbox.org
+SourceCode: https://notabug.org/fynngodau/DSBDirect
+IssueTracker: https://notabug.org/fynngodau/DSBDirect/issues
+
+AutoName: DSBDirect
+Description: |-
+    This software can access Digital Black Boards (DSBs). It is optimized for Alexander-von-Humboldt-Gymnasium, but you can access other boards using the Reauthenticate button.
+
+    Use it as a replacement for the proprietary DSBmobile app. It loads a lot faster and doesn't make you click any buttons before you can see your plan.
+
+    * Displays entries in a nice, native list which you can filter (from Android 4.4, supported systems only)
+    * Alternativley displays the raw website or image.
+
+RepoType: git
+Repo: https://notabug.org/fynngodau/DSBDirect.git
+
+Builds:
+  - versionName: '1.3'
+    versionCode: 5
+    commit: release-1.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.1
+    versionCode: 6
+    commit: release-1.3.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '1.4'
+    versionCode: 7
+    commit: release-1.4
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '1.5'
+    versionCode: 8
+    commit: release-1.5
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '1.6'
+    versionCode: 9
+    commit: release-1.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '1.7'
+    versionCode: 11
+    commit: release-1.7
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '1.8'
+    versionCode: 12
+    commit: release-1.8
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.8.1
+    versionCode: 13
+    commit: release-1.8.1
+    subdir: app
+    gradle:
+      - fdroid
+
+AutoUpdateMode: Version release-%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.8.1
+CurrentVersionCode: 13

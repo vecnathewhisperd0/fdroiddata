@@ -8,7 +8,6 @@ IssueTracker: https://github.com/CypherpunkArmory/UserLAnd/issues
 Changelog: https://github.com/CypherpunkArmory/UserLAnd/releases
 
 AutoName: UserLAnd
-Summary: Easiest way to run GNU/Linux Distros on Android - no root required
 Description: |-
     UserLAnd provides the easiest way to run GNU/Linux Distros on Android.
 
@@ -125,7 +124,55 @@ Builds:
       - yes
     prebuild: echo "tracepotHttpsEndpoint=\"\"" >> tracepot.properties
 
+  - versionName: 2.3.7
+    versionCode: 51
+    commit: v2.3.7
+    subdir: app
+    gradle:
+      - yes
+    prebuild: echo "tracepotHttpsEndpoint=\"\"" >> tracepot.properties
+
+  - versionName: 2.3.8
+    versionCode: 52
+    commit: v2.3.8
+    subdir: app
+    gradle:
+      - yes
+    prebuild: echo "tracepotHttpsEndpoint=\"\"" >> tracepot.properties
+
+  - versionName: 2.4.0
+    versionCode: 53
+    commit: v2.4.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: echo "tracepotHttpsEndpoint=\"\"" >> tracepot.properties
+
+  - versionName: 2.5.3
+    versionCode: 57
+    commit: v2.5.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: echo "tracepotHttpsEndpoint=\"\"" >> tracepot.properties
+
+  - versionName: 2.5.4
+    versionCode: 58
+    commit: v2.5.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: echo "tracepotHttpsEndpoint=\"\"" >> tracepot.properties
+
+  - versionName: 2.5.5
+    versionCode: 59
+    commit: v2.5.5
+    subdir: app
+    gradle:
+      - yes
+    prebuild: echo "tracepotHttpsEndpoint=\"\"" >> tracepot.properties
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.3.4
-CurrentVersionCode: 48
+CurrentVersion: 2.5.5
+CurrentVersionCode: 59

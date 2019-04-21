@@ -6,7 +6,6 @@ IssueTracker: https://git.kuschku.de/justJanne/QuasselDroid-ng/issues
 Donate: https://www.patreon.com/justjanne
 
 Name: Quasseldroid
-Summary: Client for Quassel IRC
 Description: |-
     Chat comfortably. Everywhere.
 
@@ -149,7 +148,115 @@ Builds:
     scandelete:
       - buildSrc
 
+  - versionName: v1.0.31
+    versionCode: 1120
+    commit: v1.0.31
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.35
+    versionCode: 1131
+    commit: v1.0.35
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.37
+    versionCode: 1135
+    commit: v1.0.37
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.38
+    versionCode: 1136
+    commit: v1.0.38
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.39
+    versionCode: 1141
+    commit: v1.0.39
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.40
+    versionCode: 1145
+    commit: v1.0.40
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.41
+    versionCode: 1153
+    commit: v1.0.41
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.42
+    versionCode: 1155
+    commit: v1.0.42
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.43
+    versionCode: 1159
+    commit: v1.0.43
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.44
+    versionCode: 1171
+    commit: v1.0.44
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.0.45
+    versionCode: 1173
+    commit: v1.0.45
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: v1.1.0
+    versionCode: 1176
+    commit: v1.1.0
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: v1.0.29
-CurrentVersionCode: 1117
+CurrentVersion: v1.1.0
+CurrentVersionCode: 1176

@@ -58,7 +58,17 @@ Build:1.8.2,24
     subdir=ChromiumAutoUpdater/app
     gradle=yes
 
+Build:1.8.3,25
+    commit=1.8.3
+    subdir=ChromiumAutoUpdater/app
+    gradle=yes
+
+Build:1.8.4,26
+    commit=1.8.4
+    subdir=ChromiumAutoUpdater/app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.8.2
-Current Version Code:24
+Current Version:1.8.4
+Current Version Code:26

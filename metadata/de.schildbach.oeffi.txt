@@ -5,6 +5,7 @@ Web Site:https://oeffi.schildbach.de
 Source Code:https://gitlab.com/oeffi/oeffi
 Issue Tracker:
 Changelog:https://gitlab.com/oeffi/oeffi/raw/HEAD/oeffi/CHANGES
+Donate:https://oeffi.schildbach.de/donate.html
 Bitcoin:1PW21MuBgPnjfUQriwK7TnRADFotEhdysr
 
 Auto Name:Öffi
@@ -106,6 +107,13 @@ Build:10.4.11-aosp,643
 
 Build:10.5.1-aosp,645
     commit=v10.5.1
+    subdir=oeffi
+    submodules=yes
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.4.1" }' >> ../build.gradle
+
+Build:10.5.3-aosp,647
+    commit=v10.5.3
     subdir=oeffi
     submodules=yes
     gradle=yes

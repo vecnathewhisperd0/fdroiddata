@@ -3,6 +3,7 @@ License:MIT
 Web Site:https://github.com/tobykurien/WebApps/blob/HEAD/README.md
 Source Code:https://github.com/tobykurien/webapps
 Issue Tracker:https://github.com/tobykurien/webapps/issues
+Changelog:https://github.com/tobykurien/WebApps/releases
 
 Auto Name:WebApps
 Summary:Sandbox for webapps
@@ -153,7 +154,22 @@ Build:v2.18,25
     subdir=app
     gradle=yes
 
+Build:v2.19,26
+    commit=v2.19
+    subdir=app
+    gradle=yes
+
+Build:v2.20,27
+    commit=v2.20
+    subdir=app
+    gradle=yes
+
+Build:v2.22,29
+    commit=v2.22
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:v2.18
-Current Version Code:25
+Current Version:v2.22
+Current Version Code:29

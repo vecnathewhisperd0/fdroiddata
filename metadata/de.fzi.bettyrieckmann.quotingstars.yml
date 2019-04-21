@@ -5,10 +5,6 @@ SourceCode: https://github.com/uheai/Quoting-Stars
 IssueTracker: https://github.com/uheai/Quoting-Stars/issues
 
 AutoName: Quoting Stars
-Summary: App for Silent Communications 2017
-
-RepoType: git
-Repo: https://github.com/uheai/Quoting-Stars
 
 Builds:
   - versionName: 1.0.8
@@ -21,6 +17,7 @@ Builds:
 MaintainerNotes: |
     The git repo disappeared and is 404 Not Found.
 
+ArchivePolicy: 0 versions
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: 1.0.8

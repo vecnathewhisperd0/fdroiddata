@@ -6,18 +6,19 @@ SourceCode: https://github.com/fei0316/snapstreak-alarm
 IssueTracker: https://github.com/fei0316/snapstreak-alarm/issues
 
 AutoName: Streak Alarm
-Summary: Snapchat Streaks Reminder
 Description: |-
     Reminds you to keep streaks by firing notification at user-defined intervals.
     Only works if you have friends.
     This is my first app project!
 
     Features:
-    * Custom reminder interval from 1 to 11 hours
+    * Custom reminder interval from 1 to 22 hours
     * Notification stays until streaks are sent so you won't miss it
+    * Snooze reminder for custom amount of time
     * Mark streaks sent (also directly in notification)
     * Mark streaks sent some time earlier
     * Open Snapchat (also in notification)
+    * Automatically disable notifications if ignored for long time
     * Drop me an email if you have any suggestions!
 
 RepoType: git
@@ -31,7 +32,21 @@ Builds:
     gradle:
       - free
 
+  - versionName: 1.1.3
+    versionCode: 16
+    commit: 1.1.3
+    subdir: app
+    gradle:
+      - free
+
+  - versionName: 1.1.4
+    versionCode: 17
+    commit: 1.1.4
+    subdir: app
+    gradle:
+      - free
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.1
-CurrentVersionCode: 13
+CurrentVersion: 1.1.4
+CurrentVersionCode: 17

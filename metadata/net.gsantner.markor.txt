@@ -4,6 +4,7 @@ Author Name:Gregor Santner
 Web Site:https://gsantner.net/project/markor.html?source=fdroid
 Source Code:https://github.com/gsantner/markor
 Issue Tracker:https://github.com/gsantner/markor/issues
+Translation:https://crowdin.com/project/markor
 Changelog:https://github.com/gsantner/markor/blob/HEAD/CHANGELOG.md
 Donate:https://gsantner.net/supportme/?project=markor&source=fdroid
 LiberapayID:13079
@@ -225,11 +226,53 @@ Build:1.6.2,47
     submodules=yes
     gradle=FlavorDefault
 
+Build:1.6.3,48
+    commit=v1.6.3
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.6.4,50
+    commit=v1.6.4
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.7.0,54
+    commit=v1.7.0
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.7.1,57
+    commit=v1.7.1
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.7.2,58
+    commit=v1.7.2
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.7.3,62
+    commit=v1.7.3
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
+Build:1.7.5,67
+    commit=v1.7.5
+    subdir=app
+    submodules=yes
+    gradle=FlavorDefault
+
 Maintainer Notes:
 Description and summary in git metadata submodule
 .
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.6.2
-Current Version Code:47
+Current Version:1.7.5
+Current Version Code:67

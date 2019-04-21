@@ -3,6 +3,7 @@ License:GPL-3.0-only
 Web Site:http://kisslauncher.com
 Source Code:https://github.com/Neamar/KISS
 Issue Tracker:https://github.com/Neamar/KISS/issues
+Translation:https://hosted.weblate.org/projects/kiss/
 Changelog:https://github.com/Neamar/KISS/releases
 
 Auto Name:KISS launcher
@@ -360,7 +361,32 @@ Build:3.7.5,145
     gradle=yes
     prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle
 
+Build:3.7.6,146
+    commit=v3.7.6
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
+Build:3.7.8,148
+    commit=v3.7.8
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
+Build:3.7.9,149
+    commit=v3.7.9
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
+Build:3.7.10,150
+    disable=lintVitalRelease fails
+    commit=v3.7.10
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags ^v[0-9\.]+$
-Current Version:3.7.5
-Current Version Code:145
+Current Version:3.7.10
+Current Version Code:150
