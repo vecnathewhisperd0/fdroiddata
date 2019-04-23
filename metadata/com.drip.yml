@@ -30,15 +30,18 @@ RepoType: git
 Repo: https://gitlab.com/bloodyhealth/drip.git
 
 Builds:
-  - versionName: '0.0.3'
+  - versionName: 0.0.3
     versionCode: 3
-    commit: v0.0.3
+    commit: dd648da56f1c07b729e8a493df8f5f50db1c2af0
     subdir: android/app
+    sudo:
+      - apt-get update
+      - apt-get install -y g++ make
+    init: export ANDROID_NDK_HOME=$$NDK$$ && curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash && export NVM_DIR="/home/vagrant/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && nvm install 8 && nvm use 8 && npm install
     gradle:
       - yes
-    target: '26'
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.3
-CurrentVersionCode: 3
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
