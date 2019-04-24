@@ -36,10 +36,20 @@ Builds:
     subdir: android/app
     sudo:
       - apt-get update
-      - apt-get install -y g++ make
-    init: export ANDROID_NDK_HOME=$$NDK$$ && curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash && export NVM_DIR="/home/vagrant/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && nvm install 8 && nvm use 8 && npm install
+      - apt-get install --no-install-recommends -y g++ make
+      - curl -Lo node.tar.xz https://nodejs.org/dist/v8.11.4/node-v8.11.4-linux-x64.tar.xz
+      - echo "85ea7cbb5bf624e130585bfe3946e99c85ce5cb84c2aee474038bdbe912f908c node.tar.xz" | sha256sum -c -
+      - tar xJf node.tar.xz
+      - cp -a node-v8.11.4-linux-x64/. /usr/local/
+    init:
+      - export ANDROID_NDK_HOME=$$NDK$$
+      - npm install
     gradle:
       - yes
+    scandelete:
+      - node_modules
+    scanignore:
+          - android/build.gradle
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
