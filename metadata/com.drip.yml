@@ -46,6 +46,11 @@ Builds:
       - npm install
     gradle:
       - yes
+    prebuild:
+      - sed -i -e '/maven {/,+2d' ../../node_modules/react-native-document-picker/android/build.gradle
+      - sed -i -e '/maven {/,+3d' ../../node_modules/react-native-share/android/build.gradle
+      - sed -i -e '/maven {/,+3d' ../../node_modules/realm/android/build.gradle
+      - truncate -s 0 ../../node_modules/react-native/local-cli/server/util/external/xsel
     scandelete:
       - node_modules
     scanignore:
