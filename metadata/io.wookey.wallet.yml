@@ -1,0 +1,49 @@
+Categories:
+  - Money
+License: MIT
+WebSite: https://wallet.wookey.io
+SourceCode: https://github.com/WooKeyWallet/wookey-wallet-android-app
+IssueTracker: https://github.com/WooKeyWallet/wookey-wallet-android-app/issues
+
+Name: Wookey Wallet
+Description: |-
+    为隐私而生
+    WooKey Wallet
+    保护个人隐私，支持匿名币种，代码完全开源，注重用户体验
+
+RepoType: git
+Repo: https://github.com/WooKeyWallet/wookey-wallet-android-app
+
+Builds:
+  - versionName: 1.0.2
+    versionCode: 80
+    commit: v1.0.2
+    subdir: app
+    sudo: apt install wget curl vim git screen zip  build-essential cmake tofrodos
+        libtool-bin autoconf pkg-config -y
+    init:
+      - cd ..
+      - bash build.sh
+      - mkdir -p monero-libs/{monero,boost,openssl,libsodium}/lib/{arm64-v8a,armeabi-v7a}
+      - cp -a /tmp/monero-android-lib/external-libs/build/build/monero/arm/lib/* monero-libs/monero/lib/armeabi-v7a/
+      - cp -a /tmp/monero-android-lib/external-libs/build/build/monero/arm64/lib/*
+        monero-libs/monero/lib/arm64-v8a/
+      - cp -a /tmp/monero-android-lib/external-libs/build/build/boost/arm/lib/* monero-libs/boost/lib/armeabi-v7a/
+      - cp -a /tmp/monero-android-lib/external-libs/build/build/boost/arm64/lib/*
+        monero-libs/boost/lib/arm64-v8a/
+      - cp -a /tmp/monero-android-lib/external-libs/build/build/openssl/arm/lib/*
+        monero-libs/openssl/lib/armeabi-v7a/
+      - cp -a /tmp/monero-android-lib/external-libs/build/build/openssl/arm64/lib/*
+        monero-libs/openssl/lib/arm64-v8a/
+      - cp -a /tmp/monero-android-lib/external-libs/build/build/libsodium/arm/lib/*
+        monero-libs/libsodium/lib/armeabi-v7a/
+      - cp -a /tmp/monero-android-lib/external-libs/build/build/libsodium/arm64/lib/*
+        monero-libs/libsodium/lib/arm64-v8a/
+    gradle:
+      - yes
+    scanignore:
+      - monero-libs
+    ndk: r19c
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
