@@ -7,12 +7,12 @@ IssueTracker: https://github.com/WooKeyWallet/wookey-wallet-android-app/issues
 
 Name: Wookey Wallet
 Description: |-
+    WooKey Wallet
+
     为隐私而生
-    WooKey Wallet
     保护个人隐私，支持匿名币种，代码完全开源，注重用户体验
-    
+
     For Privacy
-    WooKey Wallet
     Less Privacy Collection; More Privacy Coins; Fully Open Source; Better User Experience
 
 RepoType: git
@@ -23,8 +23,8 @@ Builds:
     versionCode: 80
     commit: v1.0.2
     subdir: app
-    sudo: apt install wget curl vim git zip  build-essential cmake tofrodos
-        libtool-bin autoconf pkg-config -y
+    sudo: apt install wget curl vim git zip build-essential cmake tofrodos libtool-bin
+        autoconf pkg-config -y
     init:
       - cd ..
       - bash build.sh
