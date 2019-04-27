@@ -21,7 +21,7 @@ Repo: https://github.com/WooKeyWallet/wookey-wallet-android-app
 Builds:
   - versionName: 1.0.2
     versionCode: 80
-    commit: v1.0.2
+    commit: '05779e0'
     subdir: app
     sudo: apt install wget curl vim git zip build-essential cmake tofrodos libtool-bin
         autoconf pkg-config -y
