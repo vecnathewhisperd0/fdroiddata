@@ -27,7 +27,14 @@ Builds:
         autoconf pkg-config -y
     init:
       - cd ..
-      - bash build.sh
+      - export ROOT_PATH=`pwd`
+      - git clone https://github.com/WooKeyWallet/monero-android-lib.git /tmp/monero-android-lib
+        || echo "exists"
+      - cd /tmp/monero-android-lib/external-libs/
+      - find . -name "*.sh" -exec chmod +x {} \;
+      - mkdir -p build/src
+      - ANDROID_NDK_ROOT=$$NDK$$ make all
+      - cd $ROOT_PATH
       - mkdir -p monero-libs/{monero,boost,openssl,libsodium}/lib/{arm64-v8a,armeabi-v7a}
       - cp -a /tmp/monero-android-lib/external-libs/build/build/monero/arm/lib/* monero-libs/monero/lib/armeabi-v7a/
       - cp -a /tmp/monero-android-lib/external-libs/build/build/monero/arm64/lib/*
@@ -47,7 +54,7 @@ Builds:
       - yes
     scanignore:
       - monero-libs
-    ndk: r19c
+    ndk: r17c
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
