@@ -63,11 +63,10 @@ Builds:
     scanignore:
       - android/build.gradle
     ndk: r19c
-    MaintainerNotes: |-
+    
+MaintainerNotes: |-
     scanignore is used to allow the "node_modules/react-native/android" local Maven repository which contains the prebuilt react-native library which we get from npm.
-
     sed is used to remove some custom maven repos from dependencies because they bother the fdroid build
-
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
