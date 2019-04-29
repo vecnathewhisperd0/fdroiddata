@@ -32,13 +32,13 @@ Repo: https://gitlab.com/bloodyhealth/drip.git
 Builds:
   - versionName: 0.0.3
     versionCode: 3
-    commit: dd648da56f1c07b729e8a493df8f5f50db1c2af0
+    commit: d0f4ae510945df8e80321e3d70929817219fdd08
     subdir: android/app
     srclibs:
-      - NodejsMobile@nodejs-mobile-v0.1.7
+      - NodejsMobile@nodejs-mobile-v0.2.1
     sudo:
       - apt-get update
-      - apt-get install --no-install-recommends -y g++ make ninja-build
+      - apt-get install -y g++ make ninja-build g++-multilib
       - curl -Lo node.tar.xz https://nodejs.org/dist/v8.11.4/node-v8.11.4-linux-x64.tar.xz
       - echo "85ea7cbb5bf624e130585bfe3946e99c85ce5cb84c2aee474038bdbe912f908c node.tar.xz" | sha256sum -c -
       - tar xJf node.tar.xz
