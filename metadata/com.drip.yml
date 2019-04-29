@@ -30,9 +30,9 @@ RepoType: git
 Repo: https://gitlab.com/bloodyhealth/drip.git
 
 Builds:
-  - versionName: 0.0.3
-    versionCode: 3
-    commit: d0f4ae510945df8e80321e3d70929817219fdd08
+  - versionName: "0.1904.29-beta"
+    versionCode: 1
+    commit: c00684ebbb5b65f71a387ff541334b3912e91f51
     subdir: android/app
     srclibs:
       - NodejsMobile@nodejs-mobile-v0.2.1
