@@ -5,6 +5,7 @@ License: GPL-3.0-only
 WebSite: https://www.netguard.me
 SourceCode: https://github.com/M66B/NetGuard
 IssueTracker: https://forum.xda-developers.com/android/apps-games/app-netguard-root-firewall-t3233012
+Translation: https://crowdin.com/project/netguard
 Changelog: https://github.com/M66B/NetGuard/releases
 Donate: https://www.netguard.me
 Bitcoin: 13vtPytVVqCwojmohAqsK61Tk4yGXSWpJK
@@ -886,7 +887,55 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
 
+  - versionName: '2.229'
+    versionCode: 2019030702
+    commit: '2.229'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.231'
+    versionCode: 2019041702
+    commit: '2.231'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.233'
+    versionCode: 2019041902
+    commit: '2.233'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.234'
+    versionCode: 2019042201
+    commit: '2.234'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.236'
+    versionCode: 2019042302
+    commit: '2.236'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.237'
+    versionCode: 2019042801
+    commit: '2.237'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: '2.228'
-CurrentVersionCode: 2019022702
+CurrentVersion: '2.237'
+CurrentVersionCode: 2019042801

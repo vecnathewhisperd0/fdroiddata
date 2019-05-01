@@ -3,6 +3,7 @@ License:GPL-3.0-only
 Web Site:
 Source Code:https://gitlab.com/juanitobananas/wave-up/tree/HEAD
 Issue Tracker:https://gitlab.com/juanitobananas/wave-up/issues
+Translation:https://www.transifex.com/juanitobananas/waveup/
 Bitcoin:16DXeCxxKGvepYLehyHSr3M1nv1s1eUotZ
 
 Auto Name:WaveUp
@@ -390,7 +391,25 @@ Build:2.6.7,77
     submodules=yes
     gradle=standard
 
+Build:3.0.1-beta,80
+    commit=v3.0.1-beta
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:3.0.2,81
+    commit=v3.0.2
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:3.0.3,82
+    commit=v3.0.3
+    subdir=app
+    submodules=yes
+    gradle=standard
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.6.7
-Current Version Code:77
+Current Version:3.0.3
+Current Version Code:82

@@ -987,7 +987,39 @@ Build:6.35,375
     scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
     ndk=r17b
 
+Build:6.41,381
+    commit=v6.41-prod
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.4.1" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    ndk=r17b
+
+Build:7.02,402
+    commit=v7.02-prod
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.4.1" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    ndk=r17b
+
+Build:7.04,404
+    commit=v7.04-prod
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.4.1" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    ndk=r17b
+
+Build:7.06,406
+    commit=v7.06-prod
+    subdir=wallet
+    gradle=yes
+    prebuild=echo 'task wrapper(type: Wrapper) { gradleVersion = "3.4.1" }' >> ../build.gradle
+    scandelete=wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    ndk=r17b
+
 Auto Update Mode:None
 Update Check Mode:RepoManifest/prod
-Current Version:6.40
-Current Version Code:380
+Current Version:7.08
+Current Version Code:408

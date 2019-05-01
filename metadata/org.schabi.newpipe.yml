@@ -7,6 +7,7 @@ License: GPL-3.0-or-later
 WebSite: https://newpipe.schabi.org
 SourceCode: https://github.com/TeamNewPipe/NewPipe
 IssueTracker: https://github.com/TeamNewPipe/NewPipe/issues
+Translation: https://hosted.weblate.org/projects/newpipe/
 Changelog: https://github.com/TeamNewPipe/NewPipe/releases
 LiberapayID: '34969'
 Bitcoin: 16A9J59ahMRqkLSZjhYj33n9j3fMztFxnh
@@ -502,7 +503,15 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.16.1
+    versionCode: 730
+    commit: v0.16.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.16.0
-CurrentVersionCode: 720
+CurrentVersion: 0.16.1
+CurrentVersionCode: 730

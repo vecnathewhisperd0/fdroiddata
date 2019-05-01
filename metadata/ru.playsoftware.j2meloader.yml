@@ -4,6 +4,7 @@ License: Apache-2.0
 WebSite: https://github.com/nikita36078/J2ME-Loader/wiki
 SourceCode: https://github.com/nikita36078/J2ME-Loader
 IssueTracker: https://github.com/nikita36078/J2ME-Loader/blob/HEAD/README.md/issues
+Translation: https://crowdin.com/project/j2me-loader
 
 AutoName: J2ME Loader
 Description: |-
@@ -120,10 +121,32 @@ Builds:
       - app/src/main/java/javax/microedition/shell/MyClassLoader.java
     ndk: r16b
 
+  - versionName: 1.4.3
+    versionCode: 60
+    commit: 1.4.3
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/5.2-/5.1-/' ../gradle/wrapper/gradle-wrapper.properties
+    scanignore:
+      - app/src/main/java/javax/microedition/shell/MyClassLoader.java
+    ndk: r16b
+
+  - versionName: 1.4.4
+    versionCode: 61
+    commit: 1.4.4
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/5.2-/5.1-/' ../gradle/wrapper/gradle-wrapper.properties
+    scanignore:
+      - app/src/main/java/javax/microedition/shell/MyClassLoader.java
+    ndk: r16b
+
 MaintainerNotes: 'The class loader is needed for the main function of the app: load
     JARs.'
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.2
-CurrentVersionCode: 59
+CurrentVersion: 1.4.4
+CurrentVersionCode: 61

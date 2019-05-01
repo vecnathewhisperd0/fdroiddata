@@ -4,6 +4,7 @@ License:GPL-3.0-or-later
 Web Site:https://adguard.com/adguard-content-blocker/overview.html
 Source Code:https://github.com/AdguardTeam/ContentBlocker
 Issue Tracker:https://github.com/AdguardTeam/ContentBlocker/issues
+Translation:http://adguard.oneskyapp.com/collaboration/
 
 Auto Name:AdGuard Content Blocker
 Summary:Block advertisements
@@ -33,7 +34,12 @@ Build:2.2.6,21002206
     subdir=adguard_cb
     gradle=samsung_api21,prodBackend
 
+Build:2.3.7,21002307
+    commit=v2.3.7
+    subdir=adguard_cb
+    gradle=samsung_api21,prodBackend
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.2.6
-Current Version Code:21002206
+Current Version:2.3.7
+Current Version Code:21002307

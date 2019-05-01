@@ -35,7 +35,22 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.5'
+    versionCode: 5
+    commit: V1.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.6'
+    versionCode: 6
+    disable: 'Piano.java:153: error: cannot find symbol'
+    commit: V1.6
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version V%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.4'
-CurrentVersionCode: 4
+CurrentVersion: '1.6'
+CurrentVersionCode: 6

@@ -3,6 +3,7 @@ Categories:
 License: Apache-2.0
 SourceCode: https://github.com/goodtime-productivity/Goodtime
 IssueTracker: https://github.com/goodtime-productivity/Goodtime/issues
+Translation: https://crowdin.com/project/goodtime
 Changelog: https://github.com/goodtime-productivity/Goodtime/releases
 
 AutoName: Goodtime
@@ -56,7 +57,14 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 2.0.8
+    versionCode: 84
+    commit: 2.0.8
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.6
-CurrentVersionCode: 82
+CurrentVersion: 2.0.8
+CurrentVersionCode: 84

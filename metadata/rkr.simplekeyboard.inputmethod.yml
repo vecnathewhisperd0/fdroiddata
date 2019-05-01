@@ -3,6 +3,7 @@ Categories:
 License: Apache-2.0
 SourceCode: https://github.com/rkkr/simple-keyboard
 IssueTracker: https://github.com/rkkr/simple-keyboard/issues
+Translation: https://crowdin.com/project/simple-keyboard
 Changelog: https://github.com/rkkr/simple-keyboard/releases
 
 AutoName: Simple Keyboard
@@ -133,7 +134,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '3.7'
+    versionCode: 55
+    commit: '55'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.71'
+    versionCode: 56
+    commit: '56'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %c
 UpdateCheckMode: Tags
-CurrentVersion: '3.6'
-CurrentVersionCode: 54
+CurrentVersion: '3.71'
+CurrentVersionCode: 56

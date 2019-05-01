@@ -188,7 +188,23 @@ Build:1.41,141
     commit=v1.41
     gradle=yes
 
+Build:1.42,142
+    commit=v1.42
+    gradle=yes
+
+Build:1.43,143
+    commit=v1.43
+    gradle=yes
+
+Build:1.44,144
+    commit=v1.44
+    gradle=yes
+
+Build:1.45,145
+    commit=v1.45
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.41
-Current Version Code:141
+Current Version:1.45
+Current Version Code:145

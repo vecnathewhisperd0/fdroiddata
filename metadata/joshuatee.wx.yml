@@ -91,6 +91,61 @@ Builds:
       - app/src/main/res/raw/*
     ndk: r18b
 
+  - versionName: '55120'
+    versionCode: 55120
+    commit: '55120'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55127'
+    versionCode: 55127
+    commit: '55127'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55128'
+    versionCode: 55128
+    commit: '55128'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55148'
+    versionCode: 55148
+    commit: '55148'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55154'
+    versionCode: 55154
+    commit: '55154'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
 MaintainerNotes: |-
     res/raw are not executable files and they're from US GOVT so they should be very open:
     https://catalog.data.gov/dataset (license: https://www.usa.gov/government-works)
@@ -98,5 +153,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '55115'
-CurrentVersionCode: 55115
+CurrentVersion: '55154'
+CurrentVersionCode: 55154

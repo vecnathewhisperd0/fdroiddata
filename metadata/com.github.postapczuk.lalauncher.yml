@@ -63,7 +63,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.6'
+    versionCode: 7
+    commit: '1.6'
+    subdir: LaLauncher
+    gradle:
+      - yes
+
+  - versionName: 1.6.1
+    versionCode: 8
+    commit: 1.6.1
+    subdir: LaLauncher
+    gradle:
+      - yes
+
+  - versionName: 1.6.2
+    versionCode: 9
+    commit: 1.6.2
+    subdir: LaLauncher
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.5'
-CurrentVersionCode: 6
+CurrentVersion: 1.6.2
+CurrentVersionCode: 9
