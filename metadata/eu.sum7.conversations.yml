@@ -32,7 +32,7 @@ MaintainerNotes: |-
     We go back to targetSdk 25 so users can disable the foreground service (and
     annoying notification) if they choose to.
 
-AutoUpdateMode: Version %v-sum7
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9.]+-sum7$
 CurrentVersion: 2.5.1-sum7
 CurrentVersionCode: 327
