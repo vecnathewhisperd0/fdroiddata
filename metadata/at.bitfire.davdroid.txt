@@ -854,6 +854,12 @@ Build:2.4.0.1-ose,280
     submodules=yes
     gradle=standard
 
+Build:2.5-beta1-ose,285
+    commit=v2.5-beta1-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags ^v[0-9.]+-ose$
 Current Version:2.4.0.1-ose
