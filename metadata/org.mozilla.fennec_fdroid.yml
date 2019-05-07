@@ -7671,7 +7671,7 @@ Builds:
         'META-INF/*.*'
     ndk: r19c
 
-    - versionName: 66.0.5
+  - versionName: 66.0.5
     versionCode: 660500
     commit: FENNEC_66_0_5_RELEASE
     timeout: 28800
