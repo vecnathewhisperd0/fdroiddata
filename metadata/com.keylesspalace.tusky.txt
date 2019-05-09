@@ -160,7 +160,7 @@ Build:6.1,59
     commit=v6.1
     subdir=app
     gradle=blue
-    
+
 Build:7.0,6.0
     commit=v7.0
     subdir=app
