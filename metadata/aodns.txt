@@ -1,0 +1,25 @@
+Categories:Conectivity
+License:GPL-3.0+
+Web Site:http://javim.000webhostapp.com/aodns
+Source Code:https://gitlab.com/javipc/aodns
+Issue Tracker:https://gitlab.com/javipc/aodns/issues
+Donate:http://javim.000webhostapp.com/aodns
+
+Auto Name:Actualizador Open DNS
+Summary:Update your IP
+Description:
+Update your IP address on Open DNS server
+.
+
+Repo Type:git
+Repo:https://gitlab.com/javipc/aodns.git
+
+Build:0.1,1
+    commit=0.1
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:0.2
+Current Version Code:2
