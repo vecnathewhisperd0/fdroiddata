@@ -29,34 +29,19 @@ Description: |-
     This app is a fork of [https://github.com/WhatsApp/stickers WhatsApp/Stickers]
     It is not affiliated with WhatsApp or Twitch.
     No copyright infringement intended.
-    Links can be added like this:
 
 RepoType: git
 Repo: https://github.com/DoubleGremlin181/WhatsApp-Twitch-Stickers
 
 Builds:
-  - versionName: 3.1.1
-    versionCode: 311
-    commit: 6fb973f9f4c997c4ed0bda714b1fcfe6730aec24
+  - versionName: 5.0.2
+    versionCode: 502
+    commit: 5.0.2
     subdir: app
     gradle:
       - yes
 
-  - versionName: 4.0.1
-    versionCode: 401
-    commit: de68190b2e0e9777da2e5ea6c705729ab779871f
-    subdir: app
-    gradle:
-      - yes
-
-  - versionName: 5.0.1
-    versionCode: 501
-    commit: a7d183471d8b414f15e1b34f46a9863130790d63
-    subdir: app
-    gradle:
-      - yes
-
-AutoUpdateMode: None
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 5.0.1
-CurrentVersionCode: 501
+CurrentVersion: 5.0.2
+CurrentVersionCode: 502
