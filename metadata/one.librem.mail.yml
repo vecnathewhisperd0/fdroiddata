@@ -5,7 +5,7 @@ SourceCode: https://source.puri.sm/liberty/mail/android/tree/master
 IssueTracker: https://source.puri.sm/liberty/mail/android/issues
 Changelog: https://source.puri.sm/liberty/mail/android/blob/master/CHANGES.md
 
-AutoName: Librem Mail
+AutoName: K-9 Mail
 Summary: Email client with encryption for Librem One
 Description: |-
     * Email client with support for IMAP and POP3
@@ -25,7 +25,7 @@ Builds:
     gradle:
       - libremmail
 
-AutoUpdateMode: Version %v-release
+AutoUpdateMode: None
 UpdateCheckMode: Tags .*-release
 CurrentVersion: 0.1.1
-CurrentVersionCode: 0
+CurrentVersionCode: 1
