@@ -14,16 +14,19 @@ Description: |-
     * Encrypt and sign emails with Open Keychain
     * Multiple accounts
     * Fork of [https://github.com/k9mail/k-9 K-9 Mail]
+
 RepoType: git
 Repo: https://source.puri.sm/liberty/mail/android.git
+
 Builds:
-  - versionName: 0.1.1
-    versionCode: 1
-    commit: 0.1.1-release
+  - versionName: 0.1.2
+    versionCode: 100044
+    commit: 0.1.2_100044-release
     subdir: k9mail
-    gradle: libremmail
-AutoUpdateMode: Version %v-release
+    gradle:
+      - libremmail
+
+AutoUpdateMode: Version %v_%c-release
 UpdateCheckMode: Tags .*-release$
-UpdateCheckName: one.librem.mail
-CurrentVersion: '0.1.1'
-CurrentVersionCode: 1
+CurrentVersion: '0.1.2'
+CurrentVersionCode: 100044
