@@ -19,16 +19,16 @@ RepoType: git
 Repo: https://source.puri.sm/liberty/mail/android.git
 
 Builds:
-  - versionName: 1.0.3-RC1
-    versionCode: 1000301
-    commit: 1.0.3-release
+  - versionName: 1.0.0-RC1
+    versionCode: 1000001
+    commit: 1.0.0-release
     subdir: k9mail
     gradle:
       - libremmail
 
-AutoUpdateMode: Version %v-release
+AutoUpdateMode: None
 UpdateCheckMode: Tags .*-release$
 UpdateCheckIgnore: '5.600'
 UpdateCheckName: one.librem.mail
-CurrentVersion: 1.0.3-RC1
-CurrentVersionCode: 1000301
+CurrentVersion: 1.0.0-RC1
+CurrentVersionCode: 1000001
