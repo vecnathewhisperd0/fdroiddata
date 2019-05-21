@@ -27,8 +27,6 @@ Builds:
       - libremmail
 
 AutoUpdateMode: None
-UpdateCheckMode: Tags .*-release$
-UpdateCheckIgnore: '5.600'
-UpdateCheckName: one.librem.mail
+UpdateCheckMode: None
 CurrentVersion: 1.0.0-RC1
 CurrentVersionCode: 1000001
