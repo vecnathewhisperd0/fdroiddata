@@ -1,7 +1,8 @@
 Categories:
   - Internet
 License: Apache-2.0
-SourceCode: https://source.puri.sm/liberty/mail/android/tree/master
+WebSite: https://librem.one
+SourceCode: https://source.puri.sm/liberty/mail
 IssueTracker: https://source.puri.sm/liberty/mail/android/issues
 Changelog: https://source.puri.sm/liberty/mail/android/blob/master/CHANGES.md
 
@@ -13,19 +14,16 @@ Description: |-
     * Encrypt and sign emails with Open Keychain
     * Multiple accounts
     * Fork of [https://github.com/k9mail/k-9 K-9 Mail]
-
 RepoType: git
 Repo: https://source.puri.sm/liberty/mail/android.git
-
 Builds:
   - versionName: 0.1.1
     versionCode: 1
     commit: 0.1.1-release
     subdir: k9mail
-    gradle:
-      - libremmail
-
-AutoUpdateMode: None
-UpdateCheckMode: Tags .*-release
-CurrentVersion: 0.1.1
+    gradle: libremmail
+AutoUpdateMode: Version %v-release
+UpdateCheckMode: Tags .*-release$
+UpdateCheckName: one.librem.mail
+CurrentVersion: '0.1.1'
 CurrentVersionCode: 1
