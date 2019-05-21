@@ -18,9 +18,9 @@ RepoType: git
 Repo: https://gitlab.com/droidtr/termbin-client
 
 Builds:
-  - versionName: '1.0'
+  - versionName: '1.1'
     versionCode: 1
-    commit: 11c37071d01b0efc47121ff17a8657f0b35d933e
+    commit: '1.1'
     output: bin/app.ap_
     prebuild:
       - mkdir assets/
@@ -32,5 +32,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.0'
+CurrentVersion: '1.1'
 CurrentVersionCode: 1
