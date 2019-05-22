@@ -9,13 +9,6 @@ IssueTracker: https://source.puri.sm/liberty/mail/android/issues
 Changelog: https://source.puri.sm/liberty/mail/android/blob/master/CHANGES.md
 
 AutoName: Librem Mail
-Summary: Email client with encryption for Librem One
-Description: |-
-    * Email client with support for IMAP and POP3
-    * Tailored for [https://librem.one Librem One]
-    * Encrypt and sign emails with Open Keychain
-    * Multiple accounts
-    * Fork of [[com.fsck.k9]]
 
 RepoType: git
 Repo: https://source.puri.sm/liberty/mail/android.git
