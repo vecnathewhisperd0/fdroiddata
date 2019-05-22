@@ -1,5 +1,7 @@
 Categories:
   - Internet
+AuthorName: Purism SPC
+AuthorEmail: feedback@puri.sm
 License: Apache-2.0
 WebSite: https://librem.one
 SourceCode: https://source.puri.sm/liberty/mail
@@ -13,7 +15,7 @@ Description: |-
     * Tailored for [https://librem.one Librem One]
     * Encrypt and sign emails with Open Keychain
     * Multiple accounts
-    * Fork of [https://github.com/k9mail/k-9 K-9 Mail]
+    * Fork of [[com.fsck.k9]]
 
 RepoType: git
 Repo: https://source.puri.sm/liberty/mail/android.git
