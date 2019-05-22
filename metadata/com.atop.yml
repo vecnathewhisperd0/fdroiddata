@@ -23,17 +23,14 @@ Builds:
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y -t stretch-backports npm
-    init:
-      - npm install
-    prebuild:
-      - truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
+    init: npm install
+    prebuild: truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
     gradle:
       - yes
     scanignore:
       - android/build.gradle
     scandelete:
       - node_modules/
-
 
 AutoUpdateMode: None
 UpdateCheckMode: None
