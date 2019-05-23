@@ -1,0 +1,20 @@
+Categories:
+  - Internet
+License: GPL-3.0-or-later
+SourceCode: https://github.com/agnelvishal/Searx_Android
+IssueTracker: https://github.com/agnelvishal/Searx_Android/issues
+Donate: https://www.paypal.me/agnelv
+Bitcoin: 325oe18pc8npqHeBGozobnvWfXXe3pujXq
+
+RepoType: git
+Repo: https://github.com/agnelvishal/Searx_Android
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 4
+    commit: 'v1.0'
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
