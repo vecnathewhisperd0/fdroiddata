@@ -6,8 +6,7 @@ SourceCode: https://github.com/Jizzu/SimpleToDo
 IssueTracker: https://github.com/Jizzu/SimpleToDo/issues
 Changelog: https://github.com/Jizzu/SimpleToDo/releases
 
-AutoName: Simple ToDo
-Summary: To-Do / Task list with beautiful minimalistic design and reminders
+AutoName: To-Do
 Description: |-
     ''Simple ToDo'' will help manage your daily tasks and don't forget about
     important things!
@@ -32,7 +31,7 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version %v
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: '1.1'
 CurrentVersionCode: 5

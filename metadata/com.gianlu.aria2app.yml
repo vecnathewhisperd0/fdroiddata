@@ -6,6 +6,7 @@ License: GPL-3.0-only
 WebSite: https://gianlu.xyz/projects/Aria2App
 SourceCode: https://github.com/devgianlu/Aria2App
 IssueTracker: https://github.com/devgianlu/Aria2App/issues
+Changelog: https://github.com/devgianlu/Aria2App/releases
 Donate: https://www.paypal.me/devgianlu
 LiberapayID: '1381702'
 
@@ -105,7 +106,227 @@ Builds:
     prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
 
+  - versionName: 4.2.3
+    versionCode: 153
+    commit: v4.2.3
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.2.4
+    versionCode: 154
+    commit: v4.2.4
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.2.5
+    versionCode: 155
+    commit: v4.2.5
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.3.0-beta1
+    versionCode: 156
+    commit: v4.3.0-beta1
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.3.0-beta2
+    versionCode: 157
+    commit: v4.3.0-beta2
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.3.0-beta3
+    versionCode: 158
+    commit: v4.3.0-beta3
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.3.0
+    versionCode: 159
+    commit: v4.3.0
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.3.1
+    versionCode: 160
+    commit: v4.3.1
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.3.2
+    versionCode: 161
+    commit: v4.3.2
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.3.3
+    versionCode: 162
+    commit: v4.3.3
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.3.4
+    versionCode: 163
+    commit: v4.3.4
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.4.0
+    versionCode: 164
+    commit: v4.4.0
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.4.1
+    versionCode: 165
+    commit: v4.4.1
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.4.2
+    versionCode: 166
+    commit: v4.4.2
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 4.4.3
+    versionCode: 167
+    commit: v4.4.3
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.0.0-beta2
+    versionCode: 169
+    commit: v5.0.0-beta2
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.0.0
+    versionCode: 170
+    commit: v5.0.0
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.0.1
+    versionCode: 171
+    commit: v5.0.1
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.0.2
+    versionCode: 172
+    commit: v5.0.2
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.0.3
+    versionCode: 173
+    commit: v5.0.3
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.1.0
+    versionCode: 174
+    commit: v5.1.0
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.1.1
+    versionCode: 175
+    commit: v5.1.1
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 4.2.2
-CurrentVersionCode: 152
+CurrentVersion: 5.1.1
+CurrentVersionCode: 175

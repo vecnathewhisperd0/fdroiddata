@@ -88,7 +88,95 @@ Build:0.14,14
     prebuild=sed -i -e "s/, ':GoogleSync'//; /GoogleSync/d" ../settings.gradle && \
         sed -i -e '/googleImplementation/d' build.gradle
 
+Build:0.12.4,124
+    commit=v0.12.4
+    subdir=app/CarnetAndroid/app
+    submodules=yes
+    gradle=fdroid
+    prebuild=sed -i -e "s/, ':GoogleSync'//; /GoogleSync/d" ../settings.gradle && \
+        sed -i -e '/googleImplementation/d' build.gradle
+
+Build:0.12.5,125
+    commit=v0.12.5
+    subdir=app/CarnetAndroid/app
+    submodules=yes
+    gradle=fdroid
+    prebuild=sed -i -e "s/, ':GoogleSync'//; /GoogleSync/d" ../settings.gradle && \
+        sed -i -e '/googleImplementation/d' build.gradle
+
+Build:0.12.6,126
+    commit=v0.12.6
+    subdir=app/CarnetAndroid/app
+    submodules=yes
+    gradle=fdroid
+    prebuild=sed -i -e "s/, ':GoogleSync'//; /GoogleSync/d" ../settings.gradle && \
+        sed -i -e '/googleImplementation/d' build.gradle
+
+Build:0.12.7,127
+    commit=v0.12.7
+    subdir=app/CarnetAndroid/app
+    submodules=yes
+    gradle=fdroid
+    prebuild=sed -i -e "s/, ':GoogleSync'//; /GoogleSync/d" ../settings.gradle && \
+        sed -i -e '/googleImplementation/d' build.gradle
+
+Build:0.12.8,128
+    commit=v0.12.8
+    subdir=app/CarnetAndroid/app
+    submodules=yes
+    gradle=fdroid
+    prebuild=sed -i -e "s/, ':GoogleSync'//; /GoogleSync/d" ../settings.gradle && \
+        sed -i -e '/googleImplementation/d' build.gradle
+
+Build:0.13.0,130
+    commit=v0.13.0
+    subdir=app/CarnetAndroid/app
+    submodules=yes
+    gradle=fdroid
+    prebuild=sed -i -e "s/, ':GoogleSync'//; /GoogleSync/d" ../settings.gradle && \
+        sed -i -e '/googleImplementation/d' build.gradle
+
+Build:0.14.0,140
+    commit=v0.14.0
+    subdir=app/CarnetAndroid/app
+    submodules=yes
+    gradle=fdroid
+    prebuild=sed -i -e "s/, ':GoogleSync'//; /GoogleSync/d" ../settings.gradle && \
+        sed -i -e '/googleImplementation/d' build.gradle
+
+Build:0.14.1,141
+    commit=v0.14.1
+    subdir=app/CarnetAndroid/app
+    submodules=yes
+    gradle=fdroid
+    prebuild=sed -i -e "s/, ':GoogleSync'//; /GoogleSync/d" ../settings.gradle && \
+        sed -i -e '/googleImplementation/d' build.gradle
+
+Build:0.14.2,142
+    commit=v0.14.2
+    subdir=app/CarnetAndroid/app
+    submodules=yes
+    gradle=fdroid
+    prebuild=sed -i -e "s/, ':GoogleSync'//; /GoogleSync/d" ../settings.gradle && \
+        sed -i -e '/googleImplementation/d' build.gradle
+
+Build:0.15.0,150
+    commit=v0.15.0
+    subdir=app/CarnetAndroid/app
+    submodules=yes
+    gradle=fdroid
+    prebuild=sed -i -e "s/, ':GoogleSync'//; /GoogleSync/d" ../settings.gradle && \
+        sed -i -e '/googleImplementation/d' build.gradle
+
+Build:0.15.1,151
+    commit=v0.15.1
+    subdir=app/CarnetAndroid/app
+    submodules=yes
+    gradle=fdroid
+    prebuild=sed -i -e "s/, ':GoogleSync'//; /GoogleSync/d" ../settings.gradle && \
+        sed -i -e '/googleImplementation/d' build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.14
-Current Version Code:14
+Current Version:0.15.1
+Current Version Code:151

@@ -2,11 +2,11 @@ Categories:System
 License:Apache-2.0
 Author Name:Tibor Kaputa
 Author Email:hello@simplemobiletools.com
-Web Site:https://simplemobiletools.github.io/
+Web Site:https://simplemobiletools.com
 Source Code:https://github.com/SimpleMobileTools/Simple-Thank-You
 Issue Tracker:https://github.com/SimpleMobileTools/Simple-Thank-You/issues
 Changelog:https://github.com/SimpleMobileTools/Simple-Thank-You/blob/HEAD/CHANGELOG.md
-Donate:https://simplemobiletools.github.io/donate
+Donate:https://simplemobiletools.com/donate
 Bitcoin:19Hc8A7sWGud8sP19VXDC5a5j28UyJfpyJ
 Litecoin:LYACbHTKaM9ZubKQGxJ4NRyVy1gHUuztRP
 
@@ -46,13 +46,22 @@ Build:4.1.0,11
     gradle=yes
 
 Build:5.0.0,12
-    disable=ProGuard fails
     commit=5.0.0
     subdir=app
     gradle=yes
-    prebuild=sed -i -e '/keystore/d' build.gradle
+    prebuild=sed -i -e '/keystore/d' build.gradle && \
+        echo "android.enableJetifier=true" >> gradle.properties && \
+        echo "android.useAndroidX=true" >> gradle.properties
+
+Build:5.0.1,13
+    commit=5.0.1
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/keystore/d' build.gradle && \
+        echo "android.enableJetifier=true" >> gradle.properties && \
+        echo "android.useAndroidX=true" >> gradle.properties
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:5.0.0
-Current Version Code:12
+Current Version:5.0.1
+Current Version Code:13

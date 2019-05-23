@@ -3,6 +3,7 @@ License:GPL-3.0-or-later
 Web Site:http://www.asteroidos.org
 Source Code:https://github.com/AsteroidOS/AsteroidOSSync
 Issue Tracker:https://github.com/AsteroidOS/AsteroidOSSync/issues
+Translation:https://hosted.weblate.org/projects/asteroidos/
 
 Auto Name:AsteroidOS Sync
 Summary:Synchronize with your AsteroidOS smartwatch
@@ -69,7 +70,17 @@ Build:0.11,11
     subdir=app
     gradle=yes
 
+Build:0.12,12
+    commit=v0.12
+    subdir=app
+    gradle=yes
+
+Build:0.13,13
+    commit=v0.13
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.11
-Current Version Code:11
+Current Version:0.13
+Current Version Code:13

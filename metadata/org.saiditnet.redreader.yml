@@ -7,7 +7,6 @@ IssueTracker: https://github.com/libertysoft3/RedReader/issues
 Changelog: https://github.com/libertysoft3/RedReader/blob/HEAD/assets/changelog.txt
 
 AutoName: SaidIt
-Summary: Client for saidit.net
 Description: |-
     An official client for news site saidit.net. This app is a fork of
     QuantumBadger's RedReader.
@@ -34,7 +33,19 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.9.9.1
+    versionCode: 86
+    commit: saidit-v1.9.9.1
+    gradle:
+      - yes
+
+  - versionName: 1.9.9.2
+    versionCode: 87
+    commit: saidit-v1.9.9.2
+    gradle:
+      - yes
+
 AutoUpdateMode: Version saidit-v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.9
-CurrentVersionCode: 85
+CurrentVersion: 1.9.9.2
+CurrentVersionCode: 87

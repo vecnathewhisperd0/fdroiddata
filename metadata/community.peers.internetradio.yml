@@ -7,7 +7,6 @@ SourceCode: https://notabug.org/zplus/InternetRadio
 IssueTracker: https://notabug.org/zplus/InternetRadio/issues
 
 AutoName: Internet Radio
-Summary: Listen to Internet radio stations
 Description: |
     This is a small app to search Internet radio stations, and listen to them.
 
@@ -70,7 +69,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 4.1.0
+    versionCode: 8
+    commit: v4.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.1.2
+    versionCode: 9
+    commit: v4.1.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 4.0.0
-CurrentVersionCode: 7
+CurrentVersion: 4.1.2
+CurrentVersionCode: 9

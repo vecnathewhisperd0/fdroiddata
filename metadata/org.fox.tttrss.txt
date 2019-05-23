@@ -44,7 +44,13 @@ Build:1.249,483
     subdir=org.fox.ttrss
     gradle=yes
 
+Build:1.259,493
+    disable=unknown maven repos
+    commit=v1.259
+    subdir=org.fox.ttrss
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.249
-Current Version Code:483
+Current Version:1.259
+Current Version Code:493

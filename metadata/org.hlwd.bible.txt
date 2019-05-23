@@ -10,10 +10,11 @@ Auto Name:The Light
 Summary:Bible multi languages, free, offline, no advertising
 Description:
 Bible multi languages, free, offline, no advertising, completely in English,
-French, Italian, Spanish.
+French, Italian, Spanish, Portuguese.
 
-* King James Version, Segond, Diodati, Valera.
+* King James Version, Segond, Diodati, Valera, Almeida.
 * Easy to use with quick search and share, plans of reading, articles.
+* Also works on Android TV.
 .
 
 Repo Type:git
@@ -94,7 +95,17 @@ Build:3.8,20181216
     subdir=app
     gradle=yes
 
+Build:3.9,20190127
+    commit=v3.9
+    subdir=app
+    gradle=yes
+
+Build:3.10,20190511
+    commit=v3.10
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.8
-Current Version Code:20181216
+Current Version:3.10
+Current Version Code:20190511

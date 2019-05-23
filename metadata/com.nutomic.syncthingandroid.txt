@@ -3,6 +3,7 @@ License:MPL-2.0
 Web Site:https://syncthing.net
 Source Code:https://github.com/syncthing/syncthing-android
 Issue Tracker:https://github.com/syncthing/syncthing-android/issues
+Translation:https://www.transifex.com/syncthing/syncthing-android
 Changelog:https://github.com/syncthing/syncthing-android/releases
 Donate:https://syncthing.net/#donate
 
@@ -721,7 +722,70 @@ Build:0.10.15,4150
         PATH="$PWD/go/bin:$PATH" gradle buildNative
     ndk=r15c
 
+Build:0.10.17,4155
+    commit=0.10.17
+    submodules=yes
+    gradle=yes
+    output=app/build/outputs/apk/release/app-release-unsigned.apk
+    rm=syncthing/src/github.com/syncthing/syncthing/lib/model/testdata
+    prebuild=sed -i -e '/signingConfig/d' app/build.gradle
+    build=wget -O go.tgz https://dl.google.com/go/go1.9.7.linux-amd64.tar.gz && \
+        echo '88573008f4f6233b81f81d8ccf92234b4f67238df0f0ab173d75a302a1f3d6ee  go.tgz' | shasum -c - && \
+        tar xf go.tgz && \
+        PATH="$PWD/go/bin:$PATH" gradle buildNative
+    ndk=r15c
+
+Build:0.10.18,4160
+    disable=Wraps RC: https://github.com/syncthing/syncthing-android/issues/1286
+    commit=0.10.18
+    submodules=yes
+    gradle=yes
+    output=app/build/outputs/apk/release/app-release-unsigned.apk
+    rm=syncthing/src/github.com/syncthing/syncthing/lib/model/testdata
+    prebuild=sed -i -e '/signingConfig/d' app/build.gradle
+    build=wget -O go.tgz https://dl.google.com/go/go1.9.7.linux-amd64.tar.gz && \
+        echo '88573008f4f6233b81f81d8ccf92234b4f67238df0f0ab173d75a302a1f3d6ee  go.tgz' | shasum -c - && \
+        tar xf go.tgz && \
+        PATH="$PWD/go/bin:$PATH" gradle buildNative
+    ndk=r15c
+
+Build:0.10.19,4161
+    commit=0.10.19
+    submodules=yes
+    sudo=apt update || apt update && \
+        apt install -y -t testing golang-go
+    gradle=yes
+    output=app/build/outputs/apk/release/app-release-unsigned.apk
+    rm=syncthing/src/github.com/syncthing/syncthing/lib/model/testdata
+    prebuild=sed -i -e '/signingConfig/d' app/build.gradle
+    ndk=r15c
+    preassemble=buildNative
+
+Build:1.1.1,4164
+    commit=1.1.1
+    submodules=yes
+    sudo=apt update || apt update && \
+        apt install -y -t testing golang-go
+    gradle=yes
+    output=app/build/outputs/apk/release/app-release-unsigned.apk
+    rm=syncthing/src/github.com/syncthing/syncthing/lib/model/testdata
+    prebuild=sed -i -e '/signingConfig/d' app/build.gradle
+    ndk=r15c
+    preassemble=buildNative
+
+Build:1.1.2.1,4167
+    commit=1.1.2.1
+    submodules=yes
+    sudo=apt update || apt update && \
+        apt install -y -t testing golang-go
+    gradle=yes
+    output=app/build/outputs/apk/release/app-release-unsigned.apk
+    rm=syncthing/src/github.com/syncthing/syncthing/lib/model/testdata
+    prebuild=sed -i -e '/signingConfig/d' app/build.gradle
+    ndk=r15c
+    preassemble=buildNative
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9.]*$
-Current Version:0.10.15
-Current Version Code:4150
+Current Version:1.1.2.1
+Current Version Code:4167

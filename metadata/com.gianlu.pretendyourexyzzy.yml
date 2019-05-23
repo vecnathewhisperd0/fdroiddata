@@ -133,7 +133,77 @@ Builds:
     prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
 
+  - versionName: 2.8.6
+    versionCode: 75
+    commit: v2.8.6
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.8.8
+    versionCode: 77
+    commit: v2.8.8
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.8.9
+    versionCode: 78
+    commit: v2.8.9
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.8.10
+    versionCode: 79
+    commit: v2.8.10
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.8.11
+    versionCode: 80
+    commit: v2.8.11
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.8.12
+    versionCode: 81
+    commit: v2.8.12
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.8.13
+    versionCode: 82
+    commit: v2.8.13
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.8.5
-CurrentVersionCode: 74
+CurrentVersion: 2.8.13
+CurrentVersionCode: 82

@@ -1,0 +1,83 @@
+Categories:
+  - Connectivity
+License: MIT
+SourceCode: https://github.com/ostrya/PresencePublisher
+IssueTracker: https://github.com/ostrya/PresencePublisher/issues
+Changelog: https://github.com/ostrya/PresencePublisher/releases
+
+AutoName: Presence Publisher
+Description: |-
+    This app regularly publishes to a configurable MQTT topic whenever
+    connected to a given WiFi network. It can be used to integrate the presence
+    of your phone in home automation.
+
+    The app uses the built-in Android alarm manager, so notifications are sent
+    even if the phone is in stand-by.
+
+    '''Permissions'''
+    * ACCESS_COARSE_LOCATION: on Android 9+, necessary to retrieve SSID of
+    connected WiFi (you do not need to grant the permission in Android
+    6.0 - 8.1 for the app to work)
+    * ACCESS_NETWORK_STATE: necessary to register network change listener
+    * ACCESS_WIFI_STATE: necessary to retrieve SSID of connected WiFi
+    * INTERNET: only necessary if your MQTT server is not running locally
+    * FOREGROUND_SERVICE: necessary to send notifications
+    * RECEIVE_BOOT_COMPLETED: necessary to start service on start-up
+
+RepoType: git
+Repo: https://github.com/ostrya/PresencePublisher.git
+
+Builds:
+  - versionName: '1.1'
+    versionCode: 2
+    commit: v1.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.3'
+    versionCode: 4
+    commit: v1.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.1
+    versionCode: 5
+    commit: v1.3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.2
+    versionCode: 6
+    commit: v1.3.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.3
+    versionCode: 7
+    commit: v1.3.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.4'
+    versionCode: 8
+    commit: v1.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.1
+    versionCode: 9
+    commit: v1.4.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.4.1
+CurrentVersionCode: 9

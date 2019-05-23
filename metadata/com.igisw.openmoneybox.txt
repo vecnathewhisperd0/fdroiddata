@@ -1,9 +1,11 @@
 Categories:Money
 License:GPL-3.0-only
+Author Name:Igor Calì
+Author Email:igor.cali0@gmail.com
 Web Site:http://igisw-bilancio.sourceforge.net/
-Source Code:https://gitlab.com/igi0/openmoneybox/tree/HEAD
+Source Code:https://gitlab.com/igi0/openmoneybox
 Issue Tracker:https://gitlab.com/igi0/openmoneybox/issues
-Changelog:https://sourceforge.net/p/igisw-bilancio/wiki/Changelog_3.2.1_Android/
+Changelog:https://sourceforge.net/p/igisw-bilancio/wiki/Changelog_3.3.1_Android/
 Donate:http://igisw-bilancio.sourceforge.net/donation.html
 
 Auto Name:OpenMoneyBox
@@ -66,6 +68,16 @@ Build:3.2.2.10,27
     subdir=android/API26
     gradle=yes
 
+Build:3.3.1.1,28
+    commit=v3.3.1.1
+    subdir=android/API26
+    gradle=yes
+
+Build:3.3.1.2,29
+    commit=v3.3.1.2
+    subdir=android/API26
+    gradle=yes
+
 Maintainer Notes:
 Summary and Description have been moved to the new localizable text files:
 https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
@@ -73,5 +85,5 @@ https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.2.2.10
-Current Version Code:27
+Current Version:3.3.1.2
+Current Version Code:29

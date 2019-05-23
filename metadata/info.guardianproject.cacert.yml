@@ -1,6 +1,9 @@
 Categories:
   - Security
 License: GPL-3.0-only
+AuthorName: Guardian Project
+AuthorEmail: support@guardianproject.info
+AuthorWebSite: https://guardianproject.info
 WebSite: https://guardianproject.info/2011/09/05/cacertman-app-to-address-diginotar-other-bad-cas
 SourceCode: https://github.com/guardianproject/cacert
 IssueTracker: https://github.com/guardianproject/cacert/issues
@@ -56,6 +59,7 @@ Builds:
       - make
       - mv stores/debiancacerts.bks app/res/raw/cacerts.bks
 
+ArchivePolicy: 0 versions
 AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: 0.0.2-20110906

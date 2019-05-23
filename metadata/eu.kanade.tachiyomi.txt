@@ -206,7 +206,29 @@ Build:0.8.0,38
     gradle=fdroid
     prebuild=sed -i -e '/play-services/d' build.gradle
 
+Build:0.8.1,39
+    disable=unknown maven repo 'https://dl.bintray.com/inorichi/maven'
+    commit=v0.8.1
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/play-services/d; /firebase/d' build.gradle && \
+        sed -i -e '/google-services/d' ../build.gradle build.gradle
+
+Build:0.8.2,40
+    commit=v0.8.2
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/play-services/d; /firebase/d' build.gradle && \
+        sed -i -e '/google-services/d' ../build.gradle build.gradle
+
+Build:0.8.4,41
+    commit=v0.8.4
+    subdir=app
+    gradle=fdroid
+    prebuild=sed -i -e '/play-services/d; /firebase/d' build.gradle && \
+        sed -i -e '/google-services/d' ../build.gradle build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.8.0
-Current Version Code:38
+Current Version:0.8.4
+Current Version Code:41

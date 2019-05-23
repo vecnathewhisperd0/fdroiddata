@@ -262,7 +262,73 @@ Build:1.8.4,43
     submodules=yes
     gradle=yes
 
+Build:1.8.5,44
+    commit=1.8.5
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.6,45
+    commit=1.8.6
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.7,46
+    commit=1.8.7
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.8,47
+    commit=1.8.8
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.9,48
+    commit=1.8.9
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.10,49
+    commit=1.8.10
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.11,50
+    commit=1.8.11
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.12,51
+    commit=1.8.12
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.13,52
+    commit=1.8.13
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.14,53
+    commit=1.8.14
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.15,54
+    commit=1.8.15
+    subdir=app
+    submodules=yes
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.8.4
-Current Version Code:43
+Current Version:1.8.15
+Current Version Code:54

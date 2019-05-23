@@ -1,14 +1,17 @@
 Categories:
   - Security
 License: GPL-3.0-or-later
+AuthorName: Guardian Project
+AuthorEmail: support@guardianproject.info
+AuthorWebSite: https://guardianproject.info
 WebSite: https://guardianproject.info/tag/panic
 SourceCode: https://github.com/guardianproject/ripple
 IssueTracker: https://dev.guardianproject.info/projects/panic/issues
+Translation: https://hosted.weblate.org/projects/guardianproject/ripple/
 LiberapayID: '33617'
 Bitcoin: 1Fi5xUHiAPRKxHvyUGVFGt9extBe8Srdbk
 
 AutoName: Ripple
-Summary: Trigger apps to protect your privacy when in anxious or panic situations
 Description: |-
     Ripple is a "panic button" that can send it's trigger message to any app that is
     a "panic responder". Such apps can do things like lock, disguise themselves,
@@ -41,6 +44,7 @@ Builds:
 
   - versionName: 0.2.3
     versionCode: 87
+    disable: build fails due to badly formated .fdroid.yml in source
     commit: 0.2.3
     subdir: app
     gradle:

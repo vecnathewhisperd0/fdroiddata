@@ -5,6 +5,7 @@ Author Email:osm@westnordost.de
 Web Site:https://github.com/westnordost/StreetComplete/wiki
 Source Code:https://github.com/westnordost/StreetComplete
 Issue Tracker:https://github.com/westnordost/StreetComplete/issues
+Translation:https://poeditor.com/join/project/IE4GC127Ki
 Changelog:https://github.com/westnordost/StreetComplete/releases
 
 Auto Name:Street­Complete
@@ -251,8 +252,33 @@ Build:9.0,901
     subdir=app
     gradle=yes
 
+Build:10.0,1003
+    commit=v10.0
+    subdir=app
+    gradle=yes
+
+Build:10.1,1004
+    commit=v10.1
+    subdir=app
+    gradle=yes
+
+Build:10.2,1005
+    commit=v10.2
+    subdir=app
+    gradle=yes
+
+Build:11.0,1101
+    commit=v11.0
+    subdir=app
+    gradle=yes
+
+Build:12.0,1201
+    commit=v12.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Update Check Ignore:(alpha|beta|rc|RC)
-Current Version:9.0
-Current Version Code:901
+Current Version:12.0
+Current Version Code:1201

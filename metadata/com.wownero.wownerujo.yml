@@ -2,11 +2,10 @@ Categories:
   - Money
 License: Apache-2.0
 WebSite: https://wownero.org
-SourceCode: https://github.com/fuwa0529/wownerujo/
-IssueTracker: https://github.com/fuwa0529/wownerujo//issues
+SourceCode: https://github.com/wownero/wownerujo/
+IssueTracker: https://github.com/wownero/wownerujo//issues
 
 AutoName: Wownerujo
-Summary: Wownero wallet
 Description: |-
     Wownero is a fork of the cryptocurrency Monero with primary alterations.
 
@@ -19,11 +18,12 @@ Description: |-
     Unlike opposing forks.
 
 RepoType: git
-Repo: https://github.com/fuwa0529/wownerujo/
+Repo: https://github.com/wownero/wownerujo/
 
 Builds:
   - versionName: 1.5.10.6
     versionCode: 1060
+    disable: network hard forked
     commit: v1.5.10.6
     timeout: 14400
     sudo: apt install -y g++ build-essential tofrodos
@@ -35,6 +35,7 @@ Builds:
 
   - versionName: 1.6.3.0
     versionCode: 1070
+    disable: network hard forked
     commit: v1.6.3.0
     timeout: 14400
     sudo: apt install -y g++ build-essential tofrodos
@@ -46,6 +47,7 @@ Builds:
 
   - versionName: 1.6.4.0
     versionCode: 1080
+    disable: network hard forked
     commit: v1.6.4.0
     timeout: 14400
     sudo: apt install -y g++ build-essential tofrodos
@@ -57,6 +59,7 @@ Builds:
 
   - versionName: 2.3.0.1
     versionCode: 1100
+    disable: network hard forked
     commit: v2.3.0.1
     timeout: 14400
     sudo: apt install -y g++ build-essential tofrodos
@@ -68,6 +71,7 @@ Builds:
 
   - versionName: 2.3.0.2
     versionCode: 1110
+    disable: network hard forked
     commit: v2.3.0.2
     timeout: 14400
     sudo: apt install -y g++ build-essential tofrodos
@@ -79,6 +83,7 @@ Builds:
 
   - versionName: 2.3.1.0
     versionCode: 1120
+    disable: network hard forked
     commit: v2.3.1.0
     timeout: 14400
     sudo: apt install -y g++ build-essential tofrodos
@@ -99,7 +104,29 @@ Builds:
     build: ANDROID_NDK_ROOT=$$NDK$$ make
     ndk: r17b
 
+  - versionName: 2.5.0.3
+    versionCode: 1170
+    commit: v2.5.0.3
+    timeout: 14400
+    sudo: apt install -y g++ build-essential tofrodos
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/wownerujo-*_universal.apk
+    build: ANDROID_NDK_ROOT=$$NDK$$ make
+    ndk: r17b
+
+  - versionName: 2.5.0.4
+    versionCode: 1180
+    commit: v2.5.0.4
+    timeout: 14400
+    sudo: apt install -y g++ build-essential tofrodos
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/wownerujo-*_universal.apk
+    build: ANDROID_NDK_ROOT=$$NDK$$ make
+    ndk: r17b
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.0.0
-CurrentVersionCode: 1130
+CurrentVersion: 2.5.0.4
+CurrentVersionCode: 1180

@@ -1,13 +1,16 @@
 Categories:
   - Reading
 License: GPL-3.0-only
+AuthorName: Guardian Project
+AuthorEmail: support@guardianproject.info
+AuthorWebSite: https://guardianproject.info
 WebSite: https://dev.guardianproject.info/projects/secure-reader
 SourceCode: https://github.com/guardianproject/securereader
+Translation: https://www.transifex.com/otf/securereader/
 LiberapayID: '33617'
 Bitcoin: 1Fi5xUHiAPRKxHvyUGVFGt9extBe8Srdbk
 
 AutoName: Courier
-Summary: Privacy-aware RSS feed reader
 Description: A feed aggregator/reader focusing on privacy. It supports RSS and ATOM
     feeds.
 

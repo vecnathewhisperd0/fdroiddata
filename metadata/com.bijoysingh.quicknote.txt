@@ -5,7 +5,7 @@ Source Code:https://github.com/BijoySingh/Scarlet-Notes
 Issue Tracker:https://github.com/BijoySingh/Scarlet-Notes/issues
 Changelog:https://github.com/BijoySingh/Scarlet-Notes/releases
 
-Auto Name:Material Notes
+Auto Name:Scarlet Notes FD
 Summary:Quick and beautiful note-taking
 Description:
 Material Notes offers a simple no hassle interface for adding notes in a
@@ -95,11 +95,19 @@ Build:5.9.7,95
     gradle=yes
     rm=scarlet
 
-Maintainer Notes:
-Cannot use AUM/UCM because version code and version name are dynamic.
-.
+Build:6.6.3,111
+    commit=6.6.3
+    subdir=app
+    gradle=yes
+    rm=scarlet
 
-Auto Update Mode:None
-Update Check Mode:None
-Current Version:5.9.7
-Current Version Code:95
+Build:6.9.5,123
+    commit=v6.9.5
+    subdir=app
+    gradle=yes
+    rm=scarlet
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
+Current Version:6.9.5
+Current Version Code:123

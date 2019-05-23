@@ -1,6 +1,6 @@
 Categories:
   - System
-License: GPL-3.0-only
+License: GPL-3.0-or-later
 SourceCode: https://gitlab.com/SuperFreezZ/SuperFreezZ
 IssueTracker: https://gitlab.com/SuperFreezZ/SuperFreezZ/issues
 
@@ -40,7 +40,37 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.0.7-alpha
+    versionCode: 7
+    commit: v0.0.7-alpha
+    gradle:
+      - yes
+
+  - versionName: 0.0.8-alpha
+    versionCode: 8
+    commit: v0.0.8
+    gradle:
+      - yes
+
+  - versionName: 0.0.9-alpha
+    versionCode: 9
+    commit: v0.0.9-alpha
+    gradle:
+      - yes
+
+  - versionName: 0.0.10-alpha
+    versionCode: 10
+    commit: v0.0.10-alpha
+    gradle:
+      - yes
+
+  - versionName: '0.1'
+    versionCode: 11
+    commit: v0.1
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.6-alpha
-CurrentVersionCode: 6
+CurrentVersion: '0.1'
+CurrentVersionCode: 11

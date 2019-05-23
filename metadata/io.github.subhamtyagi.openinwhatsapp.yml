@@ -9,7 +9,6 @@ SourceCode: https://github.com/subhamtyagi/openinwa
 IssueTracker: https://github.com/subhamtyagi/openinwa/issues
 
 AutoName: Open In WhatsApp
-Summary: Open Chat in WhatsApp
 Description: |-
     Open chat in WhatsApp without saving phone number to your phonebook
 
@@ -34,7 +33,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.2'
+    versionCode: 3
+    commit: v1.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.1'
-CurrentVersionCode: 2
+CurrentVersion: '1.2'
+CurrentVersionCode: 3

@@ -8,7 +8,6 @@ IssueTracker: https://gitlab.com/joshua.tee/wx/issues
 Changelog: https://drive.google.com/drive/folders/0B9OogdTO1kXqcVJwekpwemFwSXM
 
 AutoName: wX
-Summary: Weather app geared towards storm chasers, meteorologists and weather enthusiasts
 Description: |-
     NWS ( National Weather Service ) data is optimized for mobile format and provided for divisions not normally covered together in the mobile space: SPC, WPC, NHC, OPC, etc. Level 3 and Level 2 Nexrad radar ( single, dual, quad pane ) are provided and displayed using the mobile variant of OpenGL. This weather app is not affiliated with NOAA or the National Weather Service.
 
@@ -59,6 +58,127 @@ Builds:
       - app/src/main/res/raw/*
     ndk: r18b
 
+  - versionName: '55103'
+    versionCode: 55103
+    commit: '55103'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55114'
+    versionCode: 55114
+    commit: '55114'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55115'
+    versionCode: 55115
+    commit: '55115'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55120'
+    versionCode: 55120
+    commit: '55120'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55127'
+    versionCode: 55127
+    commit: '55127'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55128'
+    versionCode: 55128
+    commit: '55128'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55148'
+    versionCode: 55148
+    commit: '55148'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55154'
+    versionCode: 55154
+    commit: '55154'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55158'
+    versionCode: 55158
+    commit: '55158'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55164'
+    versionCode: 55164
+    commit: '55164'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55175'
+    versionCode: 55175
+    commit: '55175'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
 MaintainerNotes: |-
     res/raw are not executable files and they're from US GOVT so they should be very open:
     https://catalog.data.gov/dataset (license: https://www.usa.gov/government-works)
@@ -66,5 +186,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '55039'
-CurrentVersionCode: 55039
+CurrentVersion: '55175'
+CurrentVersionCode: 55175

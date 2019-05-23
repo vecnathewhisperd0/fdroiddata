@@ -8,7 +8,6 @@ SourceCode: https://github.com/danvratil/FBEventSync
 IssueTracker: https://github.com/danvratil/FBEventSync/issues
 
 AutoName: Event Sync for Facebook
-Summary: Sync your Facebook Events into your calendar
 Description: |-
     '''Event Sync for Facebook''' is an app that will sync your Facebook events to
     your calendar. It will create five new calendars:
@@ -22,7 +21,7 @@ Description: |-
     You can configure reminders for events in each of those calendars
     independently. You can also configure how often the events should be synced.
 
-    Antifeatures:
+    AntiFeatures:
     * Tracking and NonFreeNet - You are required to log in to Facebook
 
 RepoType: git
@@ -71,7 +70,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.35'
+    versionCode: 39
+    commit: '0.35'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.36'
+    versionCode: 40
+    commit: '0.36'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.34'
-CurrentVersionCode: 38
+CurrentVersion: '0.36'
+CurrentVersionCode: 40

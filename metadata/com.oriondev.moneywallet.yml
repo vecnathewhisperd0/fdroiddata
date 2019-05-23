@@ -6,7 +6,6 @@ IssueTracker: https://github.com/AndreAle94/moneywallet/issues
 Bitcoin: 1J3APoaFT2jcqRzpb8bEt2rwUn3mDpWE5U
 
 AutoName: MoneyWallet
-Summary: Expense Manager
 Description: |-
     MoneyWallet is an advanced expense manager that allows you to track your
     expenses and plan budgets. You can organize your data using custom
@@ -49,7 +48,15 @@ Builds:
       - floss
       - osm
 
+  - versionName: 4.0.5
+    versionCode: 65
+    commit: v4.0.5
+    subdir: app
+    gradle:
+      - floss
+      - osm
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 4.0.4.1
-CurrentVersionCode: 64
+CurrentVersion: 4.0.5
+CurrentVersionCode: 65
