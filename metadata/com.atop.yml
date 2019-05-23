@@ -18,7 +18,7 @@ Repo: https://github.com/HassanHeydariNasab/atop-react-native.git
 Builds:
   - versionName: 1.0.0
     versionCode: 1
-    commit: 33b943b3eaf723f0c86ae3a823399598455e2ffa
+    commit: 11970db47e17a1eb9d7e66b3e409685f135e888e
     subdir: android/app
     sudo:
       - apt-get update || apt-get update
