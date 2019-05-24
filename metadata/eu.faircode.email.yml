@@ -53,6 +53,7 @@ Description: |-
     * Send messages after selected time
     * Synchronization scheduling ([https://github.com/M66B/open-source-email/blob/master/FAQ.md#user-content-faq78 instructions])
     * Reply templates
+    * Accept/decline calendar invitations
     * Filter rules ([https://github.com/M66B/open-source-email/blob/master/FAQ.md#user-content-faq71 instructions])
     * Search on device or server ([https://github.com/M66B/open-source-email/blob/master/FAQ.md#user-content-faq13 instructions])
     * Keyword management
@@ -1198,7 +1199,16 @@ Builds:
       - full
     prebuild: sed -i -e '/keystoreProperties/d' build.gradle
 
+  - versionName: '1.510'
+    versionCode: 510
+    commit: '1.510'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.501'
-CurrentVersionCode: 501
+CurrentVersion: '1.510'
+CurrentVersionCode: 510
