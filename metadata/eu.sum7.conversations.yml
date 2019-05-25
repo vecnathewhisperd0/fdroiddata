@@ -43,7 +43,7 @@ Builds:
 
 MaintainerNotes: |-
     We rename package on fork to work more smoothly (sharing button) - https://github.com/kriztan/Pix-Art-Messenger/issues/160,
-    but without in git repository to make it easyier for update to upstream (see .gitlab-ci.yml).
+    but without in git repository to make it easier for update to upstream (see .gitlab-ci.yml).
 
 AutoUpdateMode: Version %v-sum7
 UpdateCheckMode: Tags ^[0-9.]+
