@@ -42,7 +42,7 @@ Builds:
         s/eu.siacs./eu.sum7./" "{}" \;
 
 MaintainerNotes: |-
-    We rename package on fork to work more smoothy (sharing button) - https://github.com/kriztan/Pix-Art-Messenger/issues/160,
+    We rename package on fork to work more smoothly (sharing button) - https://github.com/kriztan/Pix-Art-Messenger/issues/160,
     but without in git repository to make it easyier for update to upstream (see .gitlab-ci.yml).
 
 AutoUpdateMode: Version %v-sum7
