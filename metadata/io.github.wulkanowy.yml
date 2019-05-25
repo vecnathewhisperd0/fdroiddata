@@ -1,0 +1,34 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Science & Education
+License: Apache-2.0
+AuthorName: wulkanowy
+AuthorEmail: wulkanowyinc@gmail.com
+WebSite: https://wulkanowy.github.io
+SourceCode: https://github.com/wulkanowy/wulkanowy
+IssueTracker: https://github.com/wulkanowy/wulkanowy/issues
+Changelog: https://github.com/wulkanowy/wulkanowy/releases
+Donate: https://www.paypal.me/wulkanowy
+
+AutoName: Wulkanowy
+Description: Client for the Polish school register VULCAN UONET+
+
+RepoType: git
+Repo: https://github.com/wulkanowy/wulkanowy
+
+Builds:
+  - versionName: 0.8.4
+    versionCode: 37
+    commit: 9447a153a98142015288ee20693a7aaa1baae3eb
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        ../build.gradle build.gradle
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.8.4
+CurrentVersionCode: 37
