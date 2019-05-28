@@ -222,6 +222,19 @@ Builds:
     scandelete:
       - module-shell/libraryProjects/root-commands/ExampleApp/libs/
 
+  - versionName: 0.5.7
+    versionCode: 2000502493
+    commit: 2a64a6128f219fb07124a52c3ac6160691978873
+    subdir: module-locationfine
+    submodules: true
+    sudo: apt-get install -y imagemagick libxml2-utils
+    init: make -C .. module-locationfine/Makefile
+    gradle:
+      - yes
+    rm:
+      - module-shell/libraryProjects/root-commands/ExampleApp
+    prebuild: make prebuild
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 0.5.5
