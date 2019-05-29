@@ -1,0 +1,14 @@
+Build:2019052801,166
+    commit=213b470d053b98bdcec8b14319777e41c6ccfde1
+    timeout=10800
+    subdir=client-android/ring-android/app
+    submodules=yes
+    gradle=noPush
+    rm=client-electron,client-gnome,client-ios,client-macosx,client-uwp,client-windows,docker,docs,lrc,packaging,scripts
+    build=cd ../.. && \
+        export ANDROID_NDK_ROOT="$ANDROID_NDK" && \
+        export ANDROID_ABI="armeabi-v7a arm64-v8a x86" && \
+        ./compile.sh --release --no-gradle
+    ndk=r19c
+Current Version:2019052801
+Current Version Code:166
