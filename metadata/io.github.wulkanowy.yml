@@ -12,7 +12,16 @@ Changelog: https://github.com/wulkanowy/wulkanowy/releases
 Donate: https://www.paypal.me/wulkanowy
 
 AutoName: Wulkanowy
-Description: Client for the Polish school register VULCAN UONET+
+Summary: Client for the Polish school register VULCAN UONET+
+Description: |-
+    * calculation of the weighted average
+    * percentage attendance preview
+    * lucky number
+    * preview of completed lessons
+    * dark theme
+    * no ads
+    * offline mode
+    * notifications
 
 RepoType: git
 Repo: https://github.com/wulkanowy/wulkanowy
