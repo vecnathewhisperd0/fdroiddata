@@ -12,7 +12,7 @@ Summary: Ein Helfer für das Schwarze Auge
 Description: |-
     Ein Helfer für das Schwarze Auge.
 
-    Funktionen wie:
+    '''HAUPTFUNKTIONEN:'''
     * Geldbeutel Manager 2.0
     * Kampfszenen und Wunden Manager 1.2
     * Würfeln der wichtigsten Würfel 1.0
@@ -29,7 +29,5 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
+AutoUpdateMode: Version %V
 UpdateCheckMode: Tags
-CurrentVersion: Erebor
-CurrentVersionCode: 49
