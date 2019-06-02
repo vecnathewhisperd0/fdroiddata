@@ -7,7 +7,7 @@ SourceCode: https://github.com/LuigiTheHunter/DSAAssistant/
 IssueTracker: https://github.com/LuigiTheHunter/DSAAssistant//issues
 Donate: https://www.paypal.me/proggenbuck
 
-Name: DSA Assistent
+AutoName: DSA Assistent
 Summary: Ein Helfer für das Schwarze Auge
 Description: |-
     Ein Helfer für das Schwarze Auge.
@@ -28,6 +28,9 @@ Builds:
     subdir: app
     gradle:
       - yes
+    prebuild: sed -i -e '/[tT]est/d' -e '/withoutimplement/,+2d' build.gradle
 
-AutoUpdateMode: Version v%v
+AutoUpdateMode: Version v%c
 UpdateCheckMode: Tags
+CurrentVersion: Erebor
+CurrentVersionCode: 49
