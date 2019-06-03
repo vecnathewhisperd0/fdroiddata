@@ -1,18 +1,19 @@
-Categories: 
+Categories:
   - Science & Education
 License: GPL-3.0-only
 SourceCode: https://github.com/palmcalc2019/PalmCalc
 IssueTracker: https://github.com/palmcalc2019/PalmCalc/issues
 
+AutoName: PalmCalc 2019+
 Summary: Retro scientific calculator & converters
-
 Description: |-
-  Multi-function Scientific calculator, with various converters built-in.
-  This is a fork of cybrosys's PalmCalc, which is no longer maintained.
+    Multi-function Scientific calculator, with various converters built-in.
+    This is a fork of cybrosys's PalmCalc, which is no longer maintained.
 
-  Mimics a traditional digital scientific calculator,
-  complete with 7-segment display font.
-  .
+    Mimics a traditional digital scientific calculator,
+    complete with 7-segment display font.
+    .
+
 RepoType: git
 Repo: https://github.com/palmcalc2019/PalmCalc
 
@@ -25,3 +26,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
+CurrentVersion: '3.0'
+CurrentVersionCode: 5
