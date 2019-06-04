@@ -18,13 +18,13 @@ RepoType: git
 Repo: https://github.com/palmcalc2019/PalmCalc
 
 Builds:
-  - versionName: '3.0'
-    versionCode: 5
+  - versionName: '3.0.1'
+    versionCode: 6
     commit: v3.0
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '3.0'
-CurrentVersionCode: 5
+CurrentVersion: '3.0.1'
+CurrentVersionCode: 6
