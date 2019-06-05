@@ -34,9 +34,11 @@ lint:
     - apt-get -qy update
     - apt-get -qy install --no-install-recommends exiftool
     - find metadata/ -name '*.jp*g' -o -name '*.png' | xargs exiftool -all=
-    - echo "these images have EXIF that must be stripped:"
-    - git --no-pager diff --stat
-    - git --no-pager diff --name-only --exit-code || export EXITVALUE=1
+    - git diff -s --exit-code || {
+          echo "these images have EXIF that must be stripped:";
+          git --no-pager diff --name-only;
+          export EXITVALUE=1;
+      }
     - ./tools/check-localized-metadata.py || export EXITVALUE=1
     - ./tools/check-keyalias-collision.py || export EXITVALUE=1
     - ./tools/check-metadata-summary-whitespace.py || export EXITVALUE=1
