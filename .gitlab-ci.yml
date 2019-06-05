@@ -29,6 +29,7 @@ lint:
           printf "\nThese are the formatting issues:\n";
           fdroid rewritemeta $CHANGED;
           git --no-pager diff --color=always;
+          git reset --hard;
       }
     - apt-get -qy update
     - apt-get -qy install --no-install-recommends exiftool
