@@ -18,14 +18,14 @@ RepoType: git
 Repo: https://github.com/jimmod/ShareToComputer
 
 Builds:
-  - versionName: v1.0.0
+  - versionName: 1.0.0
     versionCode: 1000
-    commit: f138222973aef3c147f1777fbf03083b41d8207f
+    commit: v1.0.0
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: v1.0.0
+CurrentVersion: 1.0.0
 CurrentVersionCode: 1000
