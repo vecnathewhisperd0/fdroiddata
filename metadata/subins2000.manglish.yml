@@ -2,40 +2,24 @@ Categories:
   - Reading
   - Science & Education
   - Writing
-License: GPL-3.0-or-later
+License: GPL-3.0-only
 WebSite: https://subinsb.com/manglish
 SourceCode: https://github.com/subins2000/manglish
 IssueTracker: https://github.com/subins2000/manglish/issues
 Donate: https://subinsb.com/donate
 
-AutoName: Manglish
-Summary: Translate malayalam text to manglish
-Description: |
-    Translate or convert malayalam text to manglish. Useful for people who can't read malayalam, but understands it.
-
-    "കേരളം" will be converted to "Keralam".
-
-    Features
-
-    * Fast, quick conversion
-    * Ability to select text in other apps, browsers and share to this app to convert
-    * No ads, bloatware
-    * As lightweight as possible
-
-    More about app : https://subinsb.com/manglish
-
 RepoType: git
 Repo: https://github.com/subins2000/manglish.git
 
 Builds:
-  - versionName: '1.0'
-    versionCode: 1
-    commit: c6e4296
+  - versionName: '3.0'
+    versionCode: 3
+    commit: 497020c
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: '1.0'
-CurrentVersionCode: 1
+CurrentVersion: '3.0'
+CurrentVersionCode: 3
