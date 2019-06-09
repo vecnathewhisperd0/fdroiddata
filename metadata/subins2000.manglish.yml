@@ -14,12 +14,12 @@ Repo: https://github.com/subins2000/manglish.git
 Builds:
   - versionName: '3.0'
     versionCode: 3
-    commit: 497020c
+    commit: '3.0'
     subdir: app
     gradle:
       - yes
 
-AutoUpdateMode: None
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: '3.0'
 CurrentVersionCode: 3
