@@ -1,0 +1,47 @@
+Categories:
+  - Development
+  - Money
+License: AGPL-3.0-or-later
+WebSite: https://globular.inbitcoin.it
+SourceCode: https://gitlab.com/inbitcoin/globular
+IssueTracker: https://gitlab.com/inbitcoin/globular/issues
+Changelog: https://gitlab.com/inbitcoin/globular/blob/HEAD/CHANGELOG.md
+Bitcoin: bc1qvh23ppfxwkkk706w2gufszmkljzkzjav38en8m
+
+AutoName: Globular
+Summary: Cross-implementation Lightning Network remote wallet
+Description: |-
+    Globular is the first cross-implementation LN remote wallet.
+
+    It connects to [https://gitlab.com/inbitcoin/lighter Lighter], a LN node wrapper, with macaroon authentication. Lighter is open source and can easily be self hosted.
+
+    At the moment, Globular offers:
+    * first time configuration procedure
+    * pin entry and session timeout
+    * on-chain and off-chain balances
+    * a transfers list: on-chain transactions and off-chain invoices and payments
+    * a transfer detail view
+    * payments over the LN
+    * creation and sharing of LN invoices
+    * showing and sharing the node's URI to ease opening of channels to the LN node
+    * a background service regularly checking the connection to Lighter and sending error messages through in-app and drawer notifications
+    * a settings view to change pin, and pin configuration, demo mode toggle and update of every Lighter connection parameter
+
+    The demo mode, available in settings, makes Globular connect to a testnet Lighter instance (keeping stored credentials untouched).
+
+RepoType: git
+Repo: git@gitlab.com:inbitcoin/globular.git
+
+Builds:
+  - versionName: 1.0.1
+    versionCode: 14
+    commit: 1.0.1
+    subdir: app
+    submodules: false
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v-fdroid
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.1
+CurrentVersionCode: 14
