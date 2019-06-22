@@ -5,8 +5,10 @@ SourceCode:https://gitlab.com/remmer.wilts/threads-server/tree/HEAD
 IssueTracker:https://gitlab.com/remmer.wilts/threads-server/issues
 
 
-Name:IPFS Lite
+AutoName:IPFS Lite
 Summary:Android IPFS Lite node
+Description: |-
+    TODO more detailed description
 
 RepoType:git
 Repo:https://gitlab.com/remmer.wilts/threads-server.git
