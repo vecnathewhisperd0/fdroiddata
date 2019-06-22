@@ -13,12 +13,12 @@ Repo:https://gitlab.com/remmer.wilts/threads-server.git
 
 
 Build:0.9.3,93
-    commit=0.9.3
+    commit=ec157c9c7059e2bde8904b75094de10b33c0c4b7
     subdir=app
     gradle=yes
 
 
-AutoUpdateMode: Version %v
+Auto Update Mode:None
 UpdateCheckMode: Tags
 Current Version:0.9.3
 Current Version Code:93
