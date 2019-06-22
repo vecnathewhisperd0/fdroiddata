@@ -10,7 +10,7 @@ RepoType: git
 Repo: https://gitlab.com/remmer.wilts/threads-server.git
 
 Builds:
-  - versionName: '0.9.3'
+  - versionName: 0.9.3
     versionCode: 93
     commit: 0.9.3
     subdir: app
@@ -19,5 +19,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.9.3'
+CurrentVersion: 0.9.3
 CurrentVersionCode: 93
