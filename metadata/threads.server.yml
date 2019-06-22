@@ -7,11 +7,6 @@ IssueTracker:https://gitlab.com/remmer.wilts/threads-server/issues
 
 Name:IPFS Lite
 Summary:Android IPFS Lite node
-Description: 
-This app is usefull for users who like to run an IPFS lite node on an android device
-.
-
-AuthorName:Remmer Wilts
 
 RepoType:git
 Repo:https://gitlab.com/remmer.wilts/threads-server.git
