@@ -11,17 +11,14 @@ Summary:Android IPFS Lite node
 RepoType:git
 Repo:https://gitlab.com/remmer.wilts/threads-server.git
 
-Builds:
-  - versionName: '0.9.3'
-    versionCode: 93
-    commit: 0.9.3
-    subdir: app
-    gradle:
-      - yes
+
+Build:0.9.3,93
+    commit=0.9.3
+    subdir=app
+    gradle=yes
 
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
-CurrentVersion:'0.9.3'
-CurrentVersionCode:93
-
+Auto Update Mode:None
+Update Check Mode:RepoManifest
+Current Version:0.9.3
+Current Version Code:93
