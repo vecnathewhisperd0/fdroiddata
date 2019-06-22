@@ -1,18 +1,13 @@
 Categories:
-	- System
-License:GPL-3.0-only
+  - System
+License: GPL-3.0-or-later
+SourceCode: https://gitlab.com/remmer.wilts/threads-server
+IssueTracker: https://gitlab.com/remmer.wilts/threads-server/issues
 
-WebSite:https://gitlab.com/remmer.wilts/threads-server
-SourceCode:https://gitlab.com/remmer.wilts/threads-server/tree/HEAD
-IssueTracker:https://gitlab.com/remmer.wilts/threads-server/issues
+AutoName: IPFS Lite
 
-AutoName:IPFS Lite
-Summary:Android IPFS Lite node
-
-
-Repo Type: git
+RepoType: git
 Repo: https://gitlab.com/remmer.wilts/threads-server.git
-
 
 Builds:
   - versionName: '0.9.3'
