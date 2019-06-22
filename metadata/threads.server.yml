@@ -12,6 +12,7 @@ Repo Type:git
 Repo:https://gitlab.com/remmer.wilts/threads-server.git
 
 Build:0.9.3,93
+  commit=ec157c9c
    subdir=app
    gradle=yes
 
