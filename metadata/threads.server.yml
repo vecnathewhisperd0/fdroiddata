@@ -1,26 +1,27 @@
-Categories:
-  - System
+Categories:System
 License:GPL-3.0-only
-WebSite: https://gitlab.com/remmer.wilts/threads-server
-SourceCode: https://gitlab.com/remmer.wilts/threads-server/tree/HEAD
-IssueTracker: https://gitlab.com/remmer.wilts/threads-server/issues
+WebSite:https://gitlab.com/remmer.wilts/threads-server
+SourceCode:https://gitlab.com/remmer.wilts/threads-server/tree/HEAD
+IssueTracker:https://gitlab.com/remmer.wilts/threads-server/issues
 
-Name: IPFS Lite
-Summary: Android IPFS Lite node
-Description: This app is usefull for users who like to run an IPFS lite node on an android device.
-AuthorName: Remmer Wilts
+Name:IPFS Lite
+Summary:Android IPFS Lite node
+Description: 
+This app is usefull for users who like to run an IPFS lite node on an android device
+.
 
-RepoType: git
-Repo: https://gitlab.com/remmer.wilts/threads-server.git
+AuthorName:Remmer Wilts
+
+RepoType:git
+Repo:https://gitlab.com/remmer.wilts/threads-server.git
 
 Builds:
-  - versionName: 0.9.3
-    versionCode: 93
-    subdir: app
-    gradle:
-      - yes
+  - versionName:0.9.3
+    versionCode:93
+    subdir:app
+    gradle:yes
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
-CurrentVersion: 0.9.3
-CurrentVersionCode: 93
+AutoUpdateMode:Version %v
+UpdateCheckMode:Tags
+CurrentVersion:0.9.3
+CurrentVersionCode:93
