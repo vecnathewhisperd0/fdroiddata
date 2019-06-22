@@ -18,7 +18,7 @@ Build:0.9.3,93
     gradle=yes
 
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
 Current Version:0.9.3
 Current Version Code:93
