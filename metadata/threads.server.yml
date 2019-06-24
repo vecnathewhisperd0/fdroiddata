@@ -1,0 +1,23 @@
+Categories:
+  - System
+License: GPL-3.0-or-later
+SourceCode: https://gitlab.com/remmer.wilts/threads-server
+IssueTracker: https://gitlab.com/remmer.wilts/threads-server/issues
+
+AutoName: IPFS Lite
+
+RepoType: git
+Repo: https://gitlab.com/remmer.wilts/threads-server.git
+
+Builds:
+  - versionName: 0.9.4
+    versionCode: 94
+    commit: 0.9.4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.9.4
+CurrentVersionCode: 94
