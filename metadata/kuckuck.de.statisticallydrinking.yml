@@ -1,0 +1,21 @@
+Categories:
+  - Sports & Health
+  - Games
+License: GPL-3.0-only
+SourceCode: https://github.com/JanUlrich/BeerpongTracker
+IssueTracker: https://github.com/JanUlrich/BeerpongTracker/issues
+
+RepoType: git
+Repo: https://github.com/JanUlrich/BeerpongTracker
+
+Builds:
+  - versionName: '2.1'
+    versionCode: 5
+    commit: 8f90384cb6f5f3cf125f409413daf67ead946f99
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: '2.1'
+CurrentVersionCode: 5
