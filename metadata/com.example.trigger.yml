@@ -7,13 +7,15 @@ IssueTracker: https://github.com/mwarning/trigger/issues
 
 AutoName: Trigger
 Description: |
-    Open/Close doors via HTTPS or SSH and show the door status.
+    Open/Close doors via HTTPS, SSH or Bluetooth.
 
     '''Features:'''
 
     * Add multiple doors
+    * Show door status
     * Manage TLS certificates and ssh keys
     * Auto-select door setup by WiFi SSID
+    * QR code import/export
     * Show returned text as info message
     * English/German translations
 
@@ -70,7 +72,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.8.0
+    versionCode: 180
+    commit: v1.8.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.7.1
-CurrentVersionCode: 171
+CurrentVersion: 1.8.0
+CurrentVersionCode: 180
