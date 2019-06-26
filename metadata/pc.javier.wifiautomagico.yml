@@ -1,0 +1,26 @@
+Categories:
+  - Connectivity
+License: GPL-3.0-or-later
+WebSite: https://javim.000webhostapp.com/wam
+SourceCode: https://gitlab.com/javipc/wifi-automagico.git
+IssueTracker: https://gitlab.com/javipc/wifi-automagico.git/issues
+Donate: https://javim.000webhostapp.com/donacion
+
+AutoName: WiFi Automagico
+Description: Connect to all open networks.
+
+RepoType: git
+Repo: https://gitlab.com/javipc/wifi-automagico.git
+
+Builds:
+  - versionName: '0.2'
+    versionCode: 2
+    commit: '0.2'
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '0.2'
+CurrentVersionCode: 2
