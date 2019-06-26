@@ -16,6 +16,7 @@ Description: |-
     It connects to [https://gitlab.com/inbitcoin/lighter Lighter], a LN node wrapper, with macaroon authentication. Lighter is open source and can easily be self hosted.
 
     At the moment, Globular offers:
+
     * first time configuration procedure
     * pin entry and session timeout
     * on-chain and off-chain balances
@@ -25,23 +26,22 @@ Description: |-
     * creation and sharing of LN invoices
     * showing and sharing the node's URI to ease opening of channels to the LN node
     * a background service regularly checking the connection to Lighter and sending error messages through in-app and drawer notifications
-    * a settings view to change pin, and pin configuration, demo mode toggle and update of every Lighter connection parameter
+    * a settings view to unlock Lighter, manage PIN, demo mode and every Lighter connection parameter
 
     The demo mode, available in settings, makes Globular connect to a testnet Lighter instance (keeping stored credentials untouched).
 
 RepoType: git
-Repo: git@gitlab.com:inbitcoin/globular.git
+Repo: https://gitlab.com/inbitcoin/lighter.git
 
 Builds:
   - versionName: 1.0.1
     versionCode: 14
     commit: 1.0.1
     subdir: app
-    submodules: false
     gradle:
       - yes
 
-AutoUpdateMode: Version %v-fdroid
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 1.0.1
 CurrentVersionCode: 14
