@@ -5,6 +5,27 @@ SourceCode: https://gitlab.com/remmer.wilts/threads-server
 IssueTracker: https://gitlab.com/remmer.wilts/threads-server/issues
 
 AutoName: IPFS Lite
+Summary: IPFS Lite node with modern UI to support standard use cases of IPFS
+Description: |
+
+  Support of the standart uses cases of IPFS (like cat, get, publish, etc).
+  Provide a modern UI to realize the use cases.
+  Possibility to customize the configuraton of the IPFS node.
+
+  Enhancements:
+  Enhance the pubsub feature of IPFS to automatically share files between two nodes.
+  (Precondition is that both nodes using this IPFS Lite application)
+  Integration of WebRTC via the pubsub feature of IPFS to support telephony between two nodes.
+  (Precondition is that both nodes using this IPFS Lite application)
+  Integration of IOTA to support faster node detection and to support a kind of offline modus
+  between nodes. (Precondition is that both nodes using this IPFS Lite application)
+
+  IPFS:
+  The InterPlanetary File System is a peer-to-peer (p2p) filesharing system
+  that aims to fundamentally change the way information is distributed
+  across & beyond the globe. IPFS consists of several innovations in
+  communication protocols and distributed systems that have been combined
+  to produce a file system like no other.
 
 RepoType: git
 Repo: https://gitlab.com/remmer.wilts/threads-server.git
