@@ -12,13 +12,11 @@ Description: |-
     Possibility to customize the configuraton of the IPFS node.
 
     '''Enhancements:'''
-
+    * Precondition is that both communicating nodes using this IPFS Lite application
     * Enhance the pubsub feature of IPFS to automatically share files between two nodes.
-    (Precondition is that both nodes using this IPFS Lite application)
     * Integration of WebRTC via the pubsub feature of IPFS to support telephony between two nodes.
-    (Precondition is that both nodes using this IPFS Lite application)
     * Integration of IOTA to support faster node detection and to support a kind of offline mode
-    between nodes. (Precondition is that both nodes using this IPFS Lite application)
+    between nodes.
 
     '''IPFS:'''
     The InterPlanetary File System is a peer-to-peer (p2p) filesharing system
