@@ -5,8 +5,6 @@ SourceCode: https://gitlab.com/remmer.wilts/threads-server
 IssueTracker: https://gitlab.com/remmer.wilts/threads-server/issues
 
 AutoName: IPFS Lite
-Summary: IPFS Lite node with modern UI to support standard use cases of IPFS
-
 Description: |-
   Support of the standart uses cases of IPFS (like cat, get, publish, etc).
   Provide a modern UI to realize the use cases.
