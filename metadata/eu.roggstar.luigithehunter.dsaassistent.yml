@@ -43,7 +43,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: sed -i -e '/[tT]est/d' -e '/withoutimplement/,+2d' build.gradle
 
 AutoUpdateMode: Version v%c
 UpdateCheckMode: Tags
