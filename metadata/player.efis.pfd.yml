@@ -10,20 +10,20 @@ Bitcoin: 1KKWRF25NwVgNdankr1vBphtkLbX766Ee1
 AutoName: Kwik EFIS
 Description: |-
     Kwik EFIS is a Glass Cockpit application designed to work on most Android
-    devices equipped with a GPS, gyroscope, accelerometer and a CPU with reasonable
-    performance.
+    devices. EFIS can optionally integrate with the Stratux ADS-B/AHRS to provide
+    real-time traffic and enhanced attitude information.
 
     '''Synthetic Vision'''
 
     Synthetic vision is built from the USGS 3 arc second Digital Elevation Model
     data. If enabled, it also allows for some terrain collision detection. The
-    required terrain data packages are available on F-Droid, see:
+    required terrain data packages are available via F-Droid, see:
 
-    * [https://f-droid.org/packages/player.efis.data.usa.can/ North America/Canada]
-    * [https://f-droid.org/packages/player.efis.data.eur.rus/ Europe/Russia]
-    * [https://f-droid.org/packages/player.efis.data.sah.jap/ Sahara/Northern Africa/India/Indonesia/Japan]
-    * [https://f-droid.org/packages/player.efis.data.zar.aus/ Southern Africa/Australia/New Zealand]
-    * [https://f-droid.org/packages/player.efis.data.pan.arg/ South America]
+    * [https://fossdroid.com/a/kwik-datapac-usacan.html North America/Canada]
+    * [https://fossdroid.com/a/kwik-datapac-eurrus.html Europe/Russia]
+    * [https://fossdroid.com/a/kwik-datapac-sahjap.html Sahara/Northern Africa/India/Indonesia/Japan]
+    * [https://fossdroid.com/a/kwik-datapac-zaraus.html Southern Africa/Australia/New Zealand]
+    * [https://fossdroid.com/a/kwik-datapac-panarg.html South America]
 
     '''Flight Director'''
 
@@ -47,7 +47,7 @@ Description: |-
 
     '''Digital moving Map'''
 
-    [https://f-droid.org/packages/player.efis.mfd/ Kwik DMAP] is a companion
+    [https://fossdroid.com/a/kwik-dmap.html Kwik DMAP] is a companion
     application to the EFIS. It provides situational awareness and navigation
     functionality.
 
@@ -197,7 +197,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '4.4'
+    versionCode: 27
+    commit: EFIS_4.4
+    subdir: pfd
+    gradle:
+      - yes
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags ^EFIS
-CurrentVersion: '4.3'
-CurrentVersionCode: 26
+CurrentVersion: '4.4'
+CurrentVersionCode: 27
