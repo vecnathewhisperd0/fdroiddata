@@ -32,7 +32,6 @@ Builds:
       - export ANDROID_NDK=$$NDK$$
       - export ANDROID_NDK_ROOT=$$NDK$$
       - export ANDROID_SDK_ROOT=$$SDK$$
-      # Downloading Qt 5.9.7 for android/gcc compiler
       - pushd qt/
       - for ms in qttranslations:e08e6b4db93a7b761d64d5bedbeaaf7c4c9e9f0b qttools:1afbf2026f8db7a55c5dca857c50469fdd24ca77
         qtsvg:d1287d3523773a4daf9c7af5c0c1137708614a68 qtquickcontrols2:445b1fb541479c6ad0fca349e8629549b7679ca5
@@ -48,16 +47,13 @@ Builds:
       - export CMAKE_LIB=$(pwd)/5.9.7/android_armv7/lib/cmake/
       - export QTPREFIX=$(pwd)/5.9.7/android_armv7
       - popd
-      # Patching GCompris to use Qt 5.9.7
       - sed -i '/set(QT_REQUIRED_VERSION 5.12.0)/d' ./CMakeLists.txt
       - sed -i '/android-extra-plugins/d' ./android/configAndroid.json.cmake
       - sed -i 's/gcompris",/gcompris"/g' ./android/configAndroid.json.cmake
-      # Patching Qt to use the selected version
       - sed -i '/QT_LICHECK/d' $QTPREFIX/mkspecs/qconfig.pri
       - sed -i 's/Enterprise/OpenSource/g' $QTPREFIX/mkspecs/qconfig.pri
       - echo "[Paths]" > $QTPREFIX/bin/qt.conf
       - echo "Prefix = $QTPREFIX" >> $QTPREFIX/bin/qt.conf
-      # Building
       - pushd android-build/
       - cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake -DQt5_DIR=$CMAKE_LIB/Qt5/
         -DQt5Core_DIR=$CMAKE_LIB/Qt5Core/ -DQt5Widgets_DIR=$CMAKE_LIB/Qt5Widgets -DQt5Qml_DIR=$CMAKE_LIB/Qt5Qml
@@ -65,8 +61,8 @@ Builds:
         -DQt5AndroidExtras_DIR=$CMAKE_LIB/Qt5AndroidExtras -DQt5Xml_DIR=$CMAKE_LIB/Qt5Xml
         -DQt5LinguistTools_DIR=$CMAKE_LIB/Qt5LinguistTools -DQt5XmlPatterns_DIR=$CMAKE_LIB/Qt5XmlPatterns
         -DQt5Quick_DIR=$CMAKE_LIB/Qt5Quick -DQt5Multimedia_DIR=$CMAKE_LIB/Qt5Multimedia
-        -DQt5Network_DIR=$CMAKE_LIB/Qt5Network -DACTIVATION_MODE=no -Wno-dev
-        -DCMAKE_ANDROID_API=16 -DCMAKE_ANDROID_NDK_TOOLCHAIN_VERSION=4.9 -DCMAKE_ANDROID_STL_TYPE=gnustl_shared
+        -DQt5Network_DIR=$CMAKE_LIB/Qt5Network -DACTIVATION_MODE=no -Wno-dev -DCMAKE_ANDROID_API=16
+        -DCMAKE_ANDROID_NDK_TOOLCHAIN_VERSION=4.9 -DCMAKE_ANDROID_STL_TYPE=gnustl_shared
         ../
       - make getSvnTranslations
       - rm -f ../po/gcompris_ast.po ../po/gcompris_ca@valencia.po
