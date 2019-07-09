@@ -1,0 +1,25 @@
+Categories:
+  - System
+License: MIT
+AuthorName: BM835
+AuthorEmail: support@bm835.space
+WebSite: https://bm835.space/PowerButton
+SourceCode: https://gitlab.com/BM835/powerbutton/tree/HEAD
+IssueTracker: https://githab.com/BM835/powerbutton/issues
+Changelog: https://gitlab.com/BM835/powerbutton/blob/master/CHANGELOG
+Donate: https://bm835.space/PowerButton/funding.html
+LiberapayID: '1591371'
+
+RepoType: git
+Repo: https://gitlab.com/BM835/powerbutton.git
+
+Builds:
+  - versionName: '2'
+    versionCode: 2
+    commit: v2
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
