@@ -6,7 +6,7 @@ License: GPL-3.0-only
 WebSite: https://lawnchair.info/
 SourceCode: https://github.com/LawnchairLauncher/Lawnchair-V1
 IssueTracker: https://github.com/LawnchairLauncher/Lawnchair-V1/issues
-Donation: https://www.paypal.me/deletescape
+Donate: https://www.paypal.me/deletescape
 
 Description: |-
     Features:
@@ -77,7 +77,7 @@ Builds:
         = "0"/' src/main/java/ch/deletescape/lawnchair/preferences/PreferenceFlags.kt
       - sed -i -e 's/android:defaultValue="1"/android:defaultValue="0"/' src/main/res/xml/launcher_theme_preferences.xml
     build:
-          - export TRAVIS=true
+      - export TRAVIS=true
       - export MAJOR_MINOR=1.2.0
       - export TRAVIS_BUILD_NUMBER=$$VERCODE$$
       - gradle assembleRelease
