@@ -25,8 +25,7 @@ Builds:
     commit: v4.5.1
     subdir: app
     gradle:
-      - yes
-    output: build/outputs/apk/noGoogleServices/release/app-noGoogleServices-release-unsigned.apk
+      - noGoogleServices
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
