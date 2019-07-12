@@ -1,9 +1,9 @@
 Categories:
   - Science & Education
 License: GPL-3.0-or-later
-WebSite: http://pari.math.u-bordeaux.fr/paridroid
-SourceCode: http://pari.math.u-bordeaux.fr/cgi-bin/gitweb.cgi?p=paridroid.git;a=summary
-IssueTracker: http://pari.math.u-bordeaux.fr/Bugs
+WebSite: https://pari.math.u-bordeaux.fr/paridroid
+SourceCode: https://pari.math.u-bordeaux.fr/cgi-bin/gitweb.cgi?p=paridroid.git
+IssueTracker: https://pari.math.u-bordeaux.fr/Bugs
 
 AutoName: PariDroid
 Description: |-
@@ -16,7 +16,7 @@ Description: |-
     numbers etc., and a lot of transcendental functions.
 
 RepoType: git
-Repo: http://pari.math.u-bordeaux.fr/git/paridroid.git
+Repo: https://pari.math.u-bordeaux.fr/git/paridroid.git
 
 Builds:
   - versionName: 2.7.2.1.3
