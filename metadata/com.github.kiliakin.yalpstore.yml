@@ -8,6 +8,7 @@ IssueTracker: https://github.com/kiliakin/YalpStore/issues
 Changelog: https://github.com/kiliakin/YalpStore/releases
 
 AutoName: Yalp Store (fork)
+Summary: Download apks from Google Play Store
 Description: |-
     This is a fork of the original app [[com.github.yeriomin.yalpstore]] which seems to be
     no longer being developed by its author.
@@ -27,7 +28,7 @@ Description: |-
     uninstall system apps. Yalp Store can be installed as a system app to gain
     background package installation permission. In ths case "Unknown sources"
     setting can be left off. You can let Yalp Store self-install as a system app, or
-    get the OTA zip from the [https://github.com/yeriomin/YalpStore/releases
+    get the OTA zip from the [https://github.com/kiliakin/YalpStore/releases
     releases page].
 
     The point of Yalp Store is to be small and independent from Google Services
@@ -52,6 +53,7 @@ Builds:
     subdir: app
     gradle:
       - yes
+    output: build/outputs/apk/legacy/release/app-legacy-release-unsigned.apk
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
