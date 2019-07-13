@@ -33,6 +33,6 @@ Builds:
       - $$flutter$$/bin/flutter build apk
 
 AutoUpdateMode: None
-UpdateCheckMode: RepoManifest
+UpdateCheckMode: Tags
 CurrentVersion: 1.0.0
 CurrentVersionCode: 1
