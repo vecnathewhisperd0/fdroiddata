@@ -1,3 +1,5 @@
+AntiFeatures:
+  - NonFreeNet
 Categories:
   - Reading
   - Science & Education
@@ -6,13 +8,12 @@ License: GPL-3.0-only
 SourceCode: https://github.com/ymakei/vegetarian_journal
 IssueTracker: https://github.com/ymakei/vegetarian_journal/issues
 Changelog: https://github.com/ymakei/vegetarian_journal/blob/HEAD/CHANGELOG.md
-LiberapayID: '1591670'
 
 AutoName: Газета VEGETARIAN
 Summary: Все доступные выпуски газеты "VEGETARIAN"
 Description: |-
     Приложение позволяет загрузить интересуемые выпуски газеты "VEGETARIAN" на устройства, открыть во внешнем приложении для чтения, и поделиться ссылкой на выпуск.
-    [http://vegjournal.com/issues]
+    [https://vegjournal.com/issues]
 
 RepoType: git
 Repo: https://github.com/ymakei/vegetarian_journal
@@ -32,7 +33,7 @@ Builds:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter build apk
 
-AutoUpdateMode: None
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: 1.0.0
 CurrentVersionCode: 1
