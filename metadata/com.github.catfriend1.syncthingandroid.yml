@@ -863,7 +863,7 @@ Builds:
       - tar xf go.tgz
       - PATH="$PWD/go/bin:$PATH" gradle buildNative
     ndk: r19c
-  
+
   - versionName: 1.2.0.8
     versionCode: 1020008
     commit: v1.2.0.8
