@@ -1,0 +1,30 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+License: GPL-3.0-only
+WebSite: https://allanwang.github.io/Frost-for-Facebook/
+SourceCode: https://github.com/adolfintel/Frost-for-Facebook
+IssueTracker: https://github.com/AllanWang/Frost-for-Facebook/issues
+Translation: https://crowdin.com/project/frost-for-facebook
+Changelog: https://raw.githubusercontent.com/adolfintel/Frost-for-Facebook/HEAD/docs/Changelog.md
+
+Name: DeFrost for Facebook
+
+RepoType: git
+Repo: https://github.com/adolfintel/Frost-for-Facebook
+
+Builds:
+  - versionName: 2.3.1-defrost
+    versionCode: 2030100
+    commit: v2.3.1-defrost
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 2.3.1-defrost
+CurrentVersionCode: 2030100
