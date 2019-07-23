@@ -16,7 +16,7 @@ RepoType: git
 Repo: https://gitlab.com/BM835/link-open.git
 
 Builds:
-  - versionName: 'v1.0'
+  - versionName: v1.0
     versionCode: 3
     commit: v1.0
     subdir: app
