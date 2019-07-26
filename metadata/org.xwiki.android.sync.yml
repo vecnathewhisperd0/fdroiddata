@@ -1,7 +1,10 @@
-Categories: Connectivity
+Categories:
+  - Connectivity
 License: LGPL-2.1-or-later
 SourceCode: https://github.com/xwiki-contrib/android-authenticator
 IssueTracker: https://github.com/xwiki-contrib/android-authenticator/issues
+
+AutoName: XWiki Authenticator
 
 RepoType: git
 Repo: https://github.com/xwiki-contrib/android-authenticator
@@ -16,3 +19,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
+CurrentVersion: '0.7'
+CurrentVersionCode: 38
