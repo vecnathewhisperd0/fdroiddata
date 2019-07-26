@@ -1,0 +1,18 @@
+Categories: Connectivity
+License: LGPL-2.1-or-later
+SourceCode: https://github.com/xwiki-contrib/android-authenticator
+IssueTracker: https://github.com/xwiki-contrib/android-authenticator/issues
+
+RepoType: git
+Repo: https://github.com/xwiki-contrib/android-authenticator
+
+Builds:
+  - versionName: '0.7'
+    versionCode: 38
+    commit: '?'
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
