@@ -8,8 +8,13 @@ IssueTracker: https://github.com/LuigiTheHunter/GetMiTokens/issues
 Donate: https://www.paypal.me/proggenbuck
 
 AutoName: GetMiTokens
-Summary: Summary
-Description: Description
+Summary: Get the tokens for your Xiaomi lights without a hassle
+Description: |-
+    With this app you can extract the tokens from the Yeelight app.
+
+    Please add bugs or feature requests as issues
+
+RequiresRoot: 'True'
 
 RepoType: git
 Repo: https://github.com/LuigiTheHunter/GetMiTokens
