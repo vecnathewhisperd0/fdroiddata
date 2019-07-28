@@ -1,0 +1,28 @@
+Categories:
+  - Development
+License: GPL-3.0-or-later
+AuthorName: Phil Roggenbuck
+AuthorEmail: ceo@roggstar.eu
+SourceCode: https://github.com/LuigiTheHunter/GetMiTokens
+IssueTracker: https://github.com/LuigiTheHunter/GetMiTokens/issues
+Donate: https://www.paypal.me/proggenbuck
+
+AutoName: GetMiTokens
+Summary: Summary
+Description: Description
+
+RepoType: git
+Repo: https://github.com/LuigiTheHunter/GetMiTokens
+
+Builds:
+  - versionName: Mimimi
+    versionCode: 1
+    commit: v1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%c
+UpdateCheckMode: Tags
+CurrentVersion: Mimimi
+CurrentVersionCode: 1
