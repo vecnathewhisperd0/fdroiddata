@@ -6,11 +6,18 @@ AuthorEmail: whyorean@gmail.com
 WebSite: https://auroraoss.com
 SourceCode: https://gitlab.com/AuroraOSS/auroradroid
 IssueTracker: https://gitlab.com/AuroraOSS/auroradroid/issues
+<<<<<<< HEAD
 Changelog: https://gitlab.com/AuroraOSS/auroradroid/blob/HEAD/CHANGELOG
 Donate: https://www.paypal.me/whyorean
 
 AutoName: Aurora Droid
 Summary: An alternative to the default F-Droid app
+=======
+Changelog: https://gitlab.com/AuroraOSS/auroradroid/blob/master/CHANGELOG
+Donate: https://www.paypal.me/whyorean
+
+Summary: An alternative to the default F-Droid app.
+>>>>>>> 8bfdf7c590... New app: Aurora Droid
 Description: |-
     An alternative to the default F-Droid app with an intuitive UI and
     multiple great features, such as
