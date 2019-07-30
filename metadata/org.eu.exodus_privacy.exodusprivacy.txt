@@ -30,7 +30,7 @@ Build:1.1.1,6
     commit=release-v1.1.1
     subdir=app
     gradle=yes
-    
+
 Build:1.2.0,7
     commit=release-v1.2.0
     subdir=app
