@@ -1,0 +1,39 @@
+Categories:
+  - Money
+License: GPL-3.0-or-later
+SourceCode: https://github.com/xuhcc/beancount-mobile
+IssueTracker: https://github.com/xuhcc/beancount-mobile/issues
+Changelog: https://github.com/xuhcc/beancount-mobile/blob/HEAD/CHANGELOG.md
+Bitcoin: 3GHkLq8jRgsfzaV8N6EjX7BaoMuLdEeu51
+
+Summary: Mobile app for Beancount plain-text accounting system
+Description: |-
+    Mobile app for [http://furius.ca/beancount/ Beancount] plain-text accounting system
+
+    Features:
+
+    * Add transactions
+    * Open accounts
+    * View beancount file as plain text
+    * Switch between files
+
+RepoType: git
+Repo: https://github.com/xuhcc/beancount-mobile
+
+Builds:
+  - versionName: 0.5.1
+    versionCode: 50100
+    commit: v0.5.1
+    sudo:
+      - apt update || apt update
+      - apt install -y -t stretch-backports npm
+      - npm install -g nativescript@5.4.2
+    build:
+      - npm install
+      - npm run build-unsigned
+    output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 0.5.1
+CurrentVersionCode: 50100
