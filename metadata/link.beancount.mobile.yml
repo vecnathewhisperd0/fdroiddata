@@ -28,10 +28,10 @@ Builds:
       - apt update || apt update
       - apt install -y -t stretch-backports npm
       - npm install -g nativescript@5.4.2
+    output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
     build:
       - npm install
       - npm run build-unsigned
-    output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
