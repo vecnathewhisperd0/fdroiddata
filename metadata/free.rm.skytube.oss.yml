@@ -225,6 +225,16 @@ Builds:
     rm:
       - app/libs/*.jar
 
+  - versionName: '2.961'
+    versionCode: 21
+    commit: v2.961
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
 MaintainerNotes: '* Current versions include app/libs/*.jar. Remove them.'
 
 AutoUpdateMode: Version v%v
