@@ -237,7 +237,7 @@ Builds:
 
 MaintainerNotes: '* Current versions include app/libs/*.jar. Remove them.'
 
-AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: '2.95'
-CurrentVersionCode: 19
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: '2.961'
+CurrentVersionCode: 21
