@@ -21,6 +21,8 @@ Description: |-
     Registration is not implemented at the moment, so to get an account,
     use [https://riot.im Riot] for now.
 
+    Also note that notifications are not implemented yet.
+
 RepoType: git
 Repo: https://git.pattle.im/pattle/app.git
 
