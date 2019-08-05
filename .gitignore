@@ -12,7 +12,7 @@
 .fdroid*
 *.apk
 *.jks
-!/metadata/security.pEp*
+/metadata/dump_*
 /stats/logs/
 /stats/data/
 /build/*/
