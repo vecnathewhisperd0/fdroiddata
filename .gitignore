@@ -12,8 +12,6 @@
 .fdroid*
 *.apk
 *.jks
-/metadata/dump_*
-/metadata/*
 !/metadata/security.pEp*
 /stats/logs/
 /stats/data/
