@@ -3,11 +3,11 @@ AntiFeatures:
 Categories:
   - Navigation
 License: MIT
+WebSite: https://github.com/project-travel-mate/Travel-Mate/wiki
 SourceCode: https://github.com/project-travel-mate/Travel-Mate
 IssueTracker: https://github.com/project-travel-mate/Travel-Mate/issues
 
 AutoName: Travel Mate
-Summary: A complete travel guide
 Description: |-
     Travel Mate is a must-have app for those interested in travel. The app provides users with various features from choosing the correct destination for making all the bookings and to easily organizing the trip.
 
@@ -32,8 +32,7 @@ Builds:
     subdir: Android/app/
     gradle:
       - yes
-    prebuild: |-
-        sed -i -e '/repo.commonsware.com.s3.amazonaws.com/d' build.gradle
+    prebuild: sed -i -e '/repo.commonsware.com.s3.amazonaws.com/d' build.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags

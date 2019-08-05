@@ -3,82 +3,17 @@ Categories:
 License: GPL-3.0-only
 AuthorName: Marcel Bokhorst (M66B)
 WebSite: https://email.faircode.eu/
-SourceCode: https://github.com/M66B/open-source-email
+SourceCode: https://github.com/M66B/FairEmail
 IssueTracker: https://forum.xda-developers.com/android/apps-games/source-email-t3824168
-Changelog: https://github.com/M66B/open-source-email/releases
+Translation: https://crowdin.com/project/open-source-email
+Changelog: https://github.com/M66B/FairEmail/releases
 Donate: https://email.faircode.eu/pro/
 Bitcoin: 13nUbfsLUzK9Sr7ZJgDRHNR91BJMuDuJnf
 
 AutoName: FairEmail
-Summary: Privacy friendly email app
-Description: |-
-    This email app might be for you if your current email app:
-    * takes long to receive or show messages
-    * can manage only one email address
-    * cannot show conversations
-    * cannot work offline
-    * looks outdated
-    * is not maintained
-    * stores your email on their servers
-    * is closed source, potentially violating your privacy
-
-    This app is minimalistic by design, so you can concentrate on reading and
-    writing messages.
-
-    This app starts a foreground service with a low priority status bar
-    notification to make sure you'll never miss new email.
-
-    '''Features'''
-    * 100 % open source
-    * Multiple accounts (inboxes)
-    * Multiple identities (outboxes)
-    * Unified inbox
-    * Flat [https://en.wikipedia.org/wiki/Conversation_threading conversation threading]
-    * Two way synchronization
-    * Offline storage and operations
-    * Battery friendly
-    * Low data usage
-    * Folder management
-    * Material design
-
-    '''Pro features'''
-    * Signatures
-    * Dark/black theme
-    * Account colors
-    * Multiple select
-    * Standard replies
-    * Sort on time, unread or starred
-    * Search on server
-    * Preview sender/subject in new messages status bar notification
-    * Encryption/decryption ([https://www.openpgp.org OpenPGP])
-    * Export settings
-
-    '''Simple'''
-    * Easy navigation
-    * No unnecessary settings
-    * No bells and whistles
-
-    '''Secure'''
-    * Allow encrypted connections only
-    * Accept valid security certificates only
-    * Authentication required
-    * Safe message view (styling, scripting and unsafe HTML removed)
-    * No special permissions required
-    * No advertisements
-    * No analytics and no tracking
-
-    '''Efficient'''
-    * [https://en.wikipedia.org/wiki/IMAP_IDLE IMAP IDLE] (push messages) supported
-    * Built with latest development tools and libraries
-    * Android 6 Marshmallow or later required
-
-    Note: FairEmail might occasionally crash on Motorola/Lenovo devices with
-    Android 7 Nougat or earlier because of a [https://issuetracker.google.com/issues/63377371 bug in Android].
-
-    See [https://github.com/M66B/open-source-email/blob/master/FAQ.md here] for a list of often asked questions.
 
 RepoType: git
-Repo: https://github.com/M66B/open-source-email
+Repo: https://github.com/M66B/FairEmail
 
 Builds:
   - versionName: '0.32'
@@ -286,7 +221,1227 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.138'
+    versionCode: 138
+    commit: '1.138'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.143'
+    versionCode: 143
+    commit: '1.143'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.148'
+    versionCode: 148
+    commit: '1.148'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.150'
+    versionCode: 150
+    commit: '1.150'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.153'
+    versionCode: 153
+    commit: '1.153'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.157'
+    versionCode: 157
+    commit: '1.157'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.158'
+    versionCode: 158
+    commit: '1.158'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.159'
+    versionCode: 159
+    commit: '1.159'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.163'
+    versionCode: 163
+    commit: '1.163'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.166'
+    versionCode: 166
+    commit: '1.166'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.171'
+    versionCode: 171
+    commit: '1.171'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.173'
+    versionCode: 173
+    commit: '1.173'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.177'
+    versionCode: 177
+    commit: '1.177'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.179'
+    versionCode: 179
+    commit: '1.179'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.184'
+    versionCode: 184
+    commit: '1.184'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.186'
+    versionCode: 186
+    commit: '1.186'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.191'
+    versionCode: 191
+    commit: '1.191'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.196'
+    versionCode: 196
+    commit: '1.196'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.201'
+    versionCode: 201
+    commit: '1.201'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.205'
+    versionCode: 205
+    commit: '1.205'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.212'
+    versionCode: 212
+    commit: '1.212'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.214'
+    versionCode: 214
+    commit: '1.214'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.216'
+    versionCode: 216
+    commit: '1.216'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.222'
+    versionCode: 222
+    commit: '1.222'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.225'
+    versionCode: 225
+    commit: '1.225'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.227'
+    versionCode: 227
+    commit: '1.227'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.233'
+    versionCode: 233
+    commit: '1.233'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.237'
+    versionCode: 237
+    commit: '1.237'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.240'
+    versionCode: 240
+    commit: '1.240'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.242'
+    versionCode: 242
+    commit: '1.242'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.248'
+    versionCode: 248
+    commit: '1.248'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.250'
+    versionCode: 250
+    commit: '1.250'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.252'
+    versionCode: 252
+    commit: '1.252'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.253'
+    versionCode: 253
+    commit: '1.253'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '1.262'
+    versionCode: 262
+    commit: '1.262'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.265'
+    versionCode: 265
+    commit: '1.265'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.267'
+    versionCode: 267
+    commit: '1.267'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.269'
+    versionCode: 269
+    commit: '1.269'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.274'
+    versionCode: 274
+    commit: '1.274'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.278'
+    versionCode: 278
+    commit: '1.278'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+
+  - versionName: '1.301'
+    versionCode: 301
+    commit: '1.301'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.303'
+    versionCode: 303
+    commit: '1.303'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.310'
+    versionCode: 310
+    commit: '1.310'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.312'
+    versionCode: 312
+    commit: '1.312'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.317'
+    versionCode: 317
+    commit: '1.317'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.321'
+    versionCode: 321
+    commit: '1.321'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.325'
+    versionCode: 325
+    commit: '1.325'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.326'
+    versionCode: 326
+    commit: '1.326'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.327'
+    versionCode: 327
+    commit: '1.327'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.328'
+    versionCode: 328
+    commit: '1.328'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.330'
+    versionCode: 330
+    commit: '1.330'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.331'
+    versionCode: 331
+    commit: '1.331'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.333'
+    versionCode: 333
+    commit: '1.333'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.335'
+    versionCode: 335
+    commit: '1.335'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.337'
+    versionCode: 337
+    commit: '1.337'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.338'
+    versionCode: 338
+    commit: '1.338'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.339'
+    versionCode: 339
+    commit: '1.339'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.340'
+    versionCode: 340
+    commit: '1.340'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.341'
+    versionCode: 341
+    commit: '1.341'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.344'
+    versionCode: 344
+    commit: '1.344'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.347'
+    versionCode: 347
+    commit: '1.347'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.353'
+    versionCode: 353
+    commit: '1.353'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.357'
+    versionCode: 357
+    commit: '1.357'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.358'
+    versionCode: 358
+    commit: '1.358'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.359'
+    versionCode: 359
+    commit: '1.359'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.362'
+    versionCode: 362
+    commit: '1.362'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.368'
+    versionCode: 368
+    commit: '1.368'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.376'
+    versionCode: 376
+    commit: '1.376'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.380'
+    versionCode: 380
+    commit: '1.380'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.381'
+    versionCode: 381
+    commit: '1.381'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.387'
+    versionCode: 387
+    commit: '1.387'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.391'
+    versionCode: 391
+    commit: '1.391'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.395'
+    versionCode: 395
+    commit: '1.395'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.399'
+    versionCode: 399
+    commit: '1.399'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.402'
+    versionCode: 402
+    commit: '1.402'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.408'
+    versionCode: 408
+    commit: '1.408'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.409'
+    versionCode: 409
+    commit: '1.409'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.416'
+    versionCode: 416
+    commit: '1.416'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.419'
+    versionCode: 419
+    commit: '1.419'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.425'
+    versionCode: 425
+    commit: '1.425'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.428'
+    versionCode: 428
+    commit: '1.428'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.430'
+    versionCode: 430
+    commit: '1.430'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.433'
+    versionCode: 433
+    commit: '1.433'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.438'
+    versionCode: 438
+    commit: '1.438'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.441'
+    versionCode: 441
+    commit: '1.441'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.442'
+    versionCode: 442
+    commit: '1.442'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.445'
+    versionCode: 445
+    commit: '1.445'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.446'
+    versionCode: 446
+    commit: '1.446'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.454'
+    versionCode: 454
+    commit: '1.454'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.457'
+    versionCode: 457
+    commit: '1.457'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.459'
+    versionCode: 459
+    commit: '1.459'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.461'
+    versionCode: 461
+    commit: '1.461'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.463'
+    versionCode: 463
+    commit: '1.463'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.464'
+    versionCode: 464
+    commit: '1.464'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.465'
+    versionCode: 465
+    commit: '1.465'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.466'
+    versionCode: 466
+    commit: '1.466'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.469'
+    versionCode: 469
+    commit: '1.469'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.470'
+    versionCode: 470
+    commit: '1.470'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.474'
+    versionCode: 474
+    commit: '1.474'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.481'
+    versionCode: 481
+    commit: '1.481'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.487'
+    versionCode: 487
+    commit: '1.487'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.491'
+    versionCode: 491
+    commit: '1.491'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.496'
+    versionCode: 496
+    commit: '1.496'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.500'
+    versionCode: 500
+    commit: '1.500'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.501'
+    versionCode: 501
+    commit: '1.501'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.510'
+    versionCode: 510
+    commit: '1.510'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.511'
+    versionCode: 511
+    commit: '1.511'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.521'
+    versionCode: 521
+    commit: '1.521'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.524'
+    versionCode: 524
+    commit: '1.524'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.525'
+    versionCode: 525
+    commit: '1.525'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.528'
+    versionCode: 528
+    commit: '1.528'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.530'
+    versionCode: 530
+    commit: '1.530'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.534'
+    versionCode: 534
+    commit: '1.534'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.539'
+    versionCode: 539
+    commit: '1.539'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.543'
+    versionCode: 543
+    commit: '1.543'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.545'
+    versionCode: 545
+    commit: '1.545'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.547'
+    versionCode: 547
+    commit: '1.547'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.550'
+    versionCode: 550
+    commit: '1.550'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.554'
+    versionCode: 554
+    commit: '1.554'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.566'
+    versionCode: 566
+    commit: '1.566'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.568'
+    versionCode: 568
+    commit: '1.568'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.571'
+    versionCode: 571
+    commit: '1.571'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.572'
+    versionCode: 572
+    commit: '1.572'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.574'
+    versionCode: 574
+    commit: '1.574'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.579'
+    versionCode: 579
+    commit: '1.579'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.586'
+    versionCode: 586
+    commit: '1.586'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.588'
+    versionCode: 588
+    commit: '1.588'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.592'
+    versionCode: 592
+    commit: '1.592'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.593'
+    versionCode: 593
+    commit: '1.593'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.596'
+    versionCode: 596
+    commit: '1.596'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.597'
+    versionCode: 597
+    commit: '1.597'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.601'
+    versionCode: 601
+    commit: '1.601'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.615'
+    versionCode: 615
+    commit: '1.615'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.622'
+    versionCode: 622
+    commit: '1.622'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.624'
+    versionCode: 624
+    commit: '1.624'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.625'
+    versionCode: 625
+    commit: '1.625'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.627'
+    versionCode: 627
+    commit: '1.627'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.628'
+    versionCode: 628
+    commit: '1.628'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.629'
+    versionCode: 629
+    commit: '1.629'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.633'
+    versionCode: 633
+    commit: '1.633'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.133'
-CurrentVersionCode: 133
+CurrentVersion: '1.633'
+CurrentVersionCode: 633

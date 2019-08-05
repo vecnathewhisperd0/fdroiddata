@@ -3,6 +3,7 @@ License:GPL-3.0-only
 Web Site:https://gitlab.com/axet/android-audio-recorder
 Source Code:https://gitlab.com/axet/android-audio-recorder/tree/HEAD
 Issue Tracker:https://gitlab.com/axet/android-audio-recorder/issues
+LiberapayID:1370123
 
 Auto Name:Audio Recorder
 Summary:Record audio files
@@ -419,7 +420,181 @@ Build:3.2.26,284
     gradle=yes
     prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
 
+Build:3.2.31,289
+    commit=audiorecorder-3.2.31
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.34,292
+    commit=audiorecorder-3.2.34
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.35,293
+    commit=audiorecorder-3.2.35
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.36,294
+    commit=audiorecorder-3.2.36
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.41,299
+    commit=audiorecorder-3.2.41
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.43,301
+    commit=audiorecorder-3.2.43
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.44,302
+    commit=audiorecorder-3.2.44
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.45,303
+    commit=audiorecorder-3.2.45
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.47,305
+    commit=audiorecorder-3.2.47
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.48,306
+    commit=audiorecorder-3.2.48
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.50,308
+    commit=audiorecorder-3.2.50
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.52,310
+    commit=audiorecorder-3.2.52
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.53,311
+    commit=audiorecorder-3.2.53
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.54,312
+    commit=audiorecorder-3.2.54
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.56,314
+    commit=audiorecorder-3.2.56
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.57,315
+    commit=audiorecorder-3.2.57
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.58,316
+    commit=audiorecorder-3.2.58
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.59,317
+    commit=audiorecorder-3.2.59
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.60,318
+    commit=audiorecorder-3.2.60
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.61,319
+    commit=audiorecorder-3.2.61
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.62,320
+    commit=audiorecorder-3.2.62
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.64,322
+    commit=audiorecorder-3.2.64
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.65,323
+    commit=audiorecorder-3.2.65
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.2.66,324
+    commit=audiorecorder-3.2.66
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.3.1,326
+    commit=audiorecorder-3.3.1
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.3.2,327
+    commit=audiorecorder-3.3.2
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.3.3,328
+    commit=audiorecorder-3.3.3
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.3.4,329
+    commit=audiorecorder-3.3.4
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+Build:3.3.5,330
+    commit=audiorecorder-3.3.5
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
 Auto Update Mode:Version audiorecorder-%v
 Update Check Mode:Tags
-Current Version:3.2.26
-Current Version Code:284
+Current Version:3.3.5
+Current Version Code:330

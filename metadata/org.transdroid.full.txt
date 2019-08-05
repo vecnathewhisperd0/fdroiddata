@@ -3,6 +3,7 @@ License:GPL-3.0-only
 Web Site:http://www.transdroid.org
 Source Code:https://github.com/erickok/transdroid
 Issue Tracker:https://github.com/erickok/transdroid/issues
+Changelog:https://github.com/erickok/transdroid/releases
 Donate:https://paypal.me/erickoknl
 
 Name:Transdroid
@@ -115,31 +116,21 @@ Build:2.5.10,230
         sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' src/main/res/values/bools.xml && \
         sed -i -e '/android {/alintOptions {\nabortOnError false\n}\n' build.gradle
 
-Build:2.5.11,231
-    commit=v2.5.11
-    subdir=app
+Build:2.5.14,234
+    commit=v2.5.14
     gradle=full
-    prebuild=sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' src/full/res/values/bools.xml && \
-        sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' src/main/res/values/bools.xml && \
-        sed -i -e '/android {/alintOptions {\nabortOnError false\n}\n' build.gradle
+    output=app/build/outputs/apk/full/release/app-full-release-unsigned.apk
+    prebuild=sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' app/src/*/res/values/bools.xml && \
+        sed -i -e '/lintOptions/a\        abortOnError false' app/build.gradle
 
-Build:2.5.12,232
-    commit=v2.5.12
-    subdir=app
+Build:2.5.15,235
+    commit=v2.5.15
     gradle=full
-    prebuild=sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' src/full/res/values/bools.xml && \
-        sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' src/main/res/values/bools.xml && \
-        sed -i -e '/android {/alintOptions {\nabortOnError false\n}\n' build.gradle
-
-Build:2.5.13,233
-    commit=v2.5.13
-    subdir=app
-    gradle=full
-    prebuild=sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' src/full/res/values/bools.xml && \
-        sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' src/main/res/values/bools.xml && \
-        sed -i -e '/android {/alintOptions {\nabortOnError false\n}\n' build.gradle
+    output=app/build/outputs/apk/full/release/app-full-release-unsigned.apk
+    prebuild=sed -i 's;<bool name="updatecheck_available">true</bool>;<bool name="updatecheck_available">false</bool>;' app/src/*/res/values/bools.xml && \
+        sed -i -e '/lintOptions/a\        abortOnError false' app/build.gradle
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:2.5.13
-Current Version Code:233
+Current Version:2.5.15
+Current Version Code:235

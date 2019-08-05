@@ -3,6 +3,7 @@ License:GPL-3.0-only
 Web Site:https://gitlab.com/axet/android-hourly-reminder
 Source Code:https://gitlab.com/axet/android-hourly-reminder/tree/HEAD
 Issue Tracker:https://gitlab.com/axet/android-hourly-reminder/issues
+LiberapayID:1370123
 
 Auto Name:Hourly Reminder
 Summary:Remind you about hours passed
@@ -337,7 +338,133 @@ Build:3.2.25,373
     gradle=yes
     prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
 
+Build:3.2.27,375
+    commit=hourlyreminder-3.2.27
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.2.30,378
+    commit=hourlyreminder-3.2.30
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.2.32,380
+    commit=hourlyreminder-3.2.32
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.2.36,384
+    commit=hourlyreminder-3.2.36
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.2.37,385
+    commit=hourlyreminder-3.2.37
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.2.38,386
+    commit=hourlyreminder-3.2.38
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.2.39,387
+    commit=hourlyreminder-3.2.39
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.2.41,389
+    commit=hourlyreminder-3.2.41
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.2.44,392
+    commit=hourlyreminder-3.2.44
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.2.45,393
+    commit=hourlyreminder-3.2.45
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.2.49,397
+    commit=hourlyreminder-3.2.49
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.2.51,399
+    commit=hourlyreminder-3.2.51
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.2.52,400
+    commit=hourlyreminder-3.2.52
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.2.54,402
+    commit=hourlyreminder-3.2.54
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.3.1,404
+    commit=hourlyreminder-3.3.1
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.3.2,405
+    commit=hourlyreminder-3.3.2
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.3.3,406
+    commit=hourlyreminder-3.3.3
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.3.4,407
+    commit=hourlyreminder-3.3.4
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.3.5,408
+    commit=hourlyreminder-3.3.5
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.3.6,409
+    commit=hourlyreminder-3.3.6
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+Build:3.3.7,410
+    commit=hourlyreminder-3.3.7
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
 Auto Update Mode:Version hourlyreminder-%v
 Update Check Mode:Tags
-Current Version:3.2.25
-Current Version Code:373
+Current Version:3.3.7
+Current Version Code:410

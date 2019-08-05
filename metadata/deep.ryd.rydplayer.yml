@@ -3,13 +3,12 @@ AntiFeatures:
 Categories:
   - Multimedia
 License: GPL-3.0-or-later
-WebSite: https://musicpiped.devsilver.me/
 SourceCode: https://github.com/deep-gaurav/MusicPiped
 IssueTracker: https://github.com/deep-gaurav/MusicPiped/issues
 Changelog: https://github.com/deep-gaurav/MusicPiped/releases
+Donate: https://www.buymeacoffee.com/deepgaurav
 
 AutoName: MusicPiped
-Summary: Materialistic music player that streams music from YouTube
 Description: |-
     MusicPiped is a full-featured music player that streams from YouTube
     instead of playing local files.
@@ -58,7 +57,182 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.2.2-beta
+    versionCode: 17
+    commit: v0.2.2-beta
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.3-beta
+    versionCode: 23
+    commit: v0.2.3-beta
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.2
+    versionCode: 34
+    commit: v1.0.2
+    subdir: android
+    gradle:
+      - yes
+    output: ../build/app/outputs/apk/release/app-release-unsigned.apk
+    srclibs:
+      - flutter@v1.0.0
+    prebuild:
+      - export flutter=$(realpath $$flutter$$)
+      - echo "flutter.sdk=$flutter" >> local.properties
+      - sed -i -e '/jcenter/a\        maven { url "https://jitpack.io" }' build.gradle
+      - cd ..
+      - $flutter/bin/flutter config --no-analytics
+      - $flutter/bin/flutter packages get
+
+  - versionName: 1.0.6
+    versionCode: 36
+    commit: v1.0.6
+    subdir: android
+    gradle:
+      - yes
+    output: ../build/app/outputs/apk/release/app-release-unsigned.apk
+    srclibs:
+      - flutter@v1.2.1
+    prebuild:
+      - flutter=$(realpath $$flutter$$/bin/flutter)
+      - cd ..
+      - $flutter config --no-analytics
+      - $flutter packages get
+
+  - versionName: 1.0.7
+    versionCode: 37
+    commit: v1.0.7
+    subdir: android
+    gradle:
+      - yes
+    output: ../build/app/outputs/apk/release/app-release-unsigned.apk
+    srclibs:
+      - flutter@v1.2.1
+    prebuild:
+      - flutter=$(realpath $$flutter$$/bin/flutter)
+      - cd ..
+      - $flutter config --no-analytics
+      - $flutter packages get
+
+  - versionName: '1.1'
+    versionCode: 39
+    commit: v1.1
+    subdir: android
+    gradle:
+      - yes
+    output: ../build/app/outputs/apk/release/app-release-unsigned.apk
+    srclibs:
+      - flutter@v1.3.10
+    prebuild:
+      - flutter=$(realpath $$flutter$$/bin/flutter)
+      - cd ..
+      - "sed -i -e 's/^version: 1.1$/version: 1.1.0/' pubspec.yaml"
+      - $flutter config --no-analytics
+      - $flutter packages get
+
+  - versionName: 1.1.2
+    versionCode: 40
+    commit: v1.1.2
+    subdir: android
+    gradle:
+      - yes
+    output: ../build/app/outputs/apk/release/app-release-unsigned.apk
+    srclibs:
+      - flutter@v1.3.10
+    prebuild:
+      - flutter=$(realpath $$flutter$$/bin/flutter)
+      - cd ..
+      - "sed -i -e 's/^version: 1.1$/version: 1.1.0/' pubspec.yaml"
+      - $flutter config --no-analytics
+      - $flutter packages get
+
+  - versionName: 1.1.3
+    versionCode: 41
+    commit: v1.1.3
+    subdir: android
+    gradle:
+      - yes
+    output: ../build/app/outputs/apk/release/app-release-unsigned.apk
+    srclibs:
+      - flutter@v1.3.10
+    prebuild:
+      - flutter=$(realpath $$flutter$$/bin/flutter)
+      - cd ..
+      - "sed -i -e 's/^version: 1.1$/version: 1.1.0/' pubspec.yaml"
+      - $flutter config --no-analytics
+      - $flutter packages get
+
+  - versionName: 1.1.4
+    versionCode: 42
+    commit: v1.1.4
+    subdir: android
+    gradle:
+      - yes
+    output: ../build/app/outputs/apk/release/app-release-unsigned.apk
+    srclibs:
+      - flutter@v1.3.10
+    prebuild:
+      - flutter=$(realpath $$flutter$$/bin/flutter)
+      - cd ..
+      - "sed -i -e 's/^version: 1.1$/version: 1.1.0/' pubspec.yaml"
+      - $flutter config --no-analytics
+      - $flutter packages get
+
+  - versionName: 1.1.5
+    versionCode: 43
+    commit: v1.1.5
+    subdir: android
+    gradle:
+      - yes
+    output: ../build/app/outputs/apk/release/app-release-unsigned.apk
+    srclibs:
+      - flutter@v1.3.10
+    prebuild:
+      - flutter=$(realpath $$flutter$$/bin/flutter)
+      - cd ..
+      - "sed -i -e 's/^version: 1.1$/version: 1.1.0/' pubspec.yaml"
+      - $flutter config --no-analytics
+      - $flutter packages get
+
+  - versionName: 1.2.0
+    versionCode: 44
+    commit: v1.2.0
+    subdir: android
+    gradle:
+      - yes
+    output: ../build/app/outputs/apk/release/app-release-unsigned.apk
+    srclibs:
+      - flutter@v1.3.10
+    prebuild:
+      - flutter=$(realpath $$flutter$$/bin/flutter)
+      - cd ..
+      - "sed -i -e 's/^version: 1.1$/version: 1.1.0/' pubspec.yaml"
+      - $flutter config --no-analytics
+      - $flutter packages get
+
+  - versionName: 2.0.5
+    versionCode: 55
+    commit: v2.0.5
+    subdir: android
+    gradle:
+      - yes
+    output: ../build/app/outputs/apk/release/app-release-unsigned.apk
+    srclibs:
+      - flutter@v1.3.10
+    prebuild:
+      - flutter=$(realpath $$flutter$$/bin/flutter)
+      - cd ..
+      - "sed -i -e 's/^version: 1.1$/version: 1.1.0/' pubspec.yaml"
+      - $flutter config --no-analytics
+      - $flutter packages get
+
+MaintainerNotes: Dynamic version name, so no UCM can be used.
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2.0-beta
-CurrentVersionCode: 14
+CurrentVersion: 2.0.5
+CurrentVersionCode: 55

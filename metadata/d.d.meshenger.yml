@@ -9,7 +9,6 @@ SourceCode: https://github.com/dakhnod/Meshenger
 IssueTracker: https://github.com/dakhnod/Meshenger/issues
 
 AutoName: Meshenger
-Summary: An Open-Source P2P Messenger
 Description: |
     This app allows voice- and videocommunication without any server or Internet access.  Simply scan each others contact QR-Code and call each other.  This works on most networks such as community networks or even company networks.
 
@@ -24,7 +23,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.1.0
+    versionCode: 2
+    commit: 1.1.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.0
-CurrentVersionCode: 1
+CurrentVersion: 1.1.0
+CurrentVersionCode: 2

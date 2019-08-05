@@ -2,8 +2,8 @@ AntiFeatures:NonFreeAdd
 Categories:Internet
 License:GPL-3.0-or-later
 Web Site:
-Source Code:https://gitlab.com/krt/ffupdater
-Issue Tracker:https://gitlab.com/krt/ffupdater/issues
+Source Code:https://notabug.org/Tobiwan/ffupdater
+Issue Tracker:https://notabug.org/Tobiwan/ffupdater/issues
 
 Auto Name:FFUpdater
 Summary:Download Firefox
@@ -16,7 +16,7 @@ This app is alpha quality.
 .
 
 Repo Type:git
-Repo:https://gitlab.com/krt/ffupdater
+Repo:https://notabug.org/Tobiwan/ffupdater.git
 
 Build:39.0,1
     commit=39.0
@@ -130,7 +130,22 @@ Build:57.0,22
     subdir=ffupdater
     gradle=yes
 
+Build:66.1,25
+    commit=66.1
+    subdir=ffupdater
+    gradle=yes
+
+Build:66.2,26
+    commit=66.2
+    subdir=ffupdater
+    gradle=yes
+
+Build:67.4,31
+    commit=67.4
+    subdir=ffupdater
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:57.0
-Current Version Code:22
+Current Version:67.4
+Current Version Code:31

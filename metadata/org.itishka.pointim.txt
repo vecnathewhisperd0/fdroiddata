@@ -4,6 +4,7 @@ License:GPL-3.0-only
 Web Site:
 Source Code:https://github.com/Tishka17/Point.im-Android
 Issue Tracker:https://github.com/Tishka17/Point.im-Android/issues
+Changelog:https://github.com/Tishka17/Point.im-Android/releases
 
 Auto Name:Point.im
 Summary:Point.im client
@@ -71,7 +72,14 @@ Build:2.16,30
     gradle=yes
     prebuild=echo -e 'imgurId="1f48b577414e505"\nimgurSecret=""' >> ../local.properties
 
+Build:2.18,32
+    commit=2.18
+    subdir=app
+    init=sed -i '/sonatype/d' build.gradle
+    gradle=yes
+    prebuild=echo -e 'imgurId="1f48b577414e505"\nimgurSecret=""' >> ../local.properties
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.16
-Current Version Code:30
+Current Version:2.18
+Current Version Code:32

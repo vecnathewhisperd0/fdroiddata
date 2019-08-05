@@ -2,11 +2,11 @@ Categories:Multimedia
 License:Apache-2.0
 Author Name:Tibor Kaputa
 Author Email:hello@simplemobiletools.com
-Web Site:https://simplemobiletools.github.io
+Web Site:https://simplemobiletools.com
 Source Code:https://github.com/SimpleMobileTools/Simple-Music-Player
 Issue Tracker:https://github.com/SimpleMobileTools/Simple-Music-Player/issues
 Changelog:https://github.com/SimpleMobileTools/Simple-Music-Player/blob/HEAD/CHANGELOG.md
-Donate:https://simplemobiletools.github.io/donate
+Donate:https://simplemobiletools.com/donate
 Bitcoin:19Hc8A7sWGud8sP19VXDC5a5j28UyJfpyJ
 Litecoin:LYACbHTKaM9ZubKQGxJ4NRyVy1gHUuztRP
 
@@ -232,7 +232,42 @@ Build:5.0.3,53
     subdir=app
     gradle=yes
 
+Build:5.1.0,54
+    commit=5.1.0
+    subdir=app
+    gradle=yes
+
+Build:5.1.1,55
+    commit=5.1.1
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/keystore/d' build.gradle
+
+Build:5.1.2,56
+    commit=5.1.2
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/keystore/d' build.gradle
+
+Build:5.1.3,57
+    commit=5.1.3
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/keystore/d' build.gradle
+
+Build:5.2.0,58
+    commit=5.2.0
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/keystore/d' build.gradle
+
+Build:5.2.1,59
+    commit=5.2.1
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/keystore/d' build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:5.0.3
-Current Version Code:53
+Current Version:5.2.1
+Current Version Code:59

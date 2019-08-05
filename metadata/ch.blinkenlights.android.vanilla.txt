@@ -214,7 +214,32 @@ Build:1.0.73,10730
     subdir=app
     gradle=yes
 
+Build:1.0.80,10800
+    commit=1.0.80
+    subdir=app
+    gradle=yes
+
+Build:1.0.80,10801
+    commit=1.0.80-p1
+    subdir=app
+    gradle=yes
+
+Build:1.0.81,10810
+    commit=1.0.81
+    subdir=app
+    gradle=yes
+
+Build:1.0.82,10820
+    commit=1.0.82
+    subdir=app
+    gradle=yes
+
+Build:1.0.83,10830
+    commit=1.0.83
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.0.73
-Current Version Code:10730
+Current Version:1.0.83
+Current Version Code:10830

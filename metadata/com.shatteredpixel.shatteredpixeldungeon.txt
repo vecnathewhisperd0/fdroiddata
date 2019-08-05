@@ -345,7 +345,82 @@ Build:0.7.0a,305
     scandelete=SPD-classes/src/main/jniLibs/
     preassemble=:SPD-classes:ndkBuild
 
+Build:0.7.0c,311
+    commit=v0.7.0c
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.7.1a,320
+    commit=v0.7.1a
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.7.1b,321
+    commit=v0.7.1b
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.7.1c,322
+    commit=v0.7.1c
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.7.1d,323
+    commit=v0.7.1d
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.7.2a,335
+    commit=v0.7.2a
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.7.2b,338
+    commit=v0.7.2b
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.7.2c,339
+    commit=v0.7.2c
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.7.2d,340
+    commit=v0.7.2d
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.7.3a,347
+    commit=v0.7.3a
+    subdir=core
+    gradle=yes
+    scandelete=SPD-classes/src/main/jniLibs/
+    preassemble=:SPD-classes:ndkBuild
+
+Build:0.7.4,356
+    commit=v0.7.4
+    subdir=core
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.7.0a
-Current Version Code:305
+Current Version:0.7.3a
+Current Version Code:347

@@ -1,0 +1,152 @@
+Categories:
+  - Multimedia
+License: AGPL-3.0-only
+AuthorName: Stefan Schueller
+SourceCode: https://github.com/sschueller/peertube-android
+IssueTracker: https://github.com/sschueller/peertube-android/issues
+Changelog: https://raw.githubusercontent.com/sschueller/peertube-android/HEAD/CHANGELOG.md
+LiberapayID: '1570567'
+Bitcoin: 1LoTXo728HzYTtyfbkaf5ewSRvu8ABTDPm
+
+AutoName: Thorium
+Description: |
+    PeerTube is a federated video streaming platform that is community-owned and ad-free, with no vendor lock-in. This client allows you to watch and browse videos on a server of your choice in the PeerTube network.
+
+    This client comes preconfigured with one PeerTube server managed by the application creator - not the PeerTube project itself, which lists more on http://instances.joinpeertube.org/ - to allow you to have a taste of what the client is capable of. Choose your server to tune your experience!
+
+    Please note this is app is in beta and is stil missing a lot of features.
+
+RepoType: git
+Repo: https://github.com/sschueller/peertube-android
+
+Builds:
+  - versionName: 1.0.5
+    versionCode: 105
+    commit: v1.0.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.6
+    versionCode: 106
+    commit: v1.0.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.9
+    versionCode: 109
+    commit: v1.0.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.10
+    versionCode: 1010
+    commit: v1.0.10
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.11
+    versionCode: 1011
+    commit: v1.0.11
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.12
+    versionCode: 1012
+    commit: v1.0.12
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.13
+    versionCode: 1013
+    commit: v1.0.13
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.15
+    versionCode: 1015
+    commit: v1.0.15
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.17
+    versionCode: 1017
+    commit: v1.0.17
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.19
+    versionCode: 1019
+    commit: v1.0.19
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.20
+    versionCode: 1020
+    commit: v1.0.20
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.23
+    versionCode: 1023
+    commit: v1.0.23
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.24
+    versionCode: 1024
+    commit: v1.0.24
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.25
+    versionCode: 1025
+    commit: v1.0.25
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.26
+    versionCode: 1026
+    commit: v1.0.26
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.27
+    versionCode: 1027
+    commit: v1.0.27
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.29
+    versionCode: 1029
+    commit: v1.0.29
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.30
+    versionCode: 1030
+    commit: v1.0.30
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.30
+CurrentVersionCode: 1030

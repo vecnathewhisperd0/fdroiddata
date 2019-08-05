@@ -3,11 +3,10 @@ Categories:
   - Internet
 License: GPL-3.0-or-later
 WebSite: https://peers.community
-SourceCode: https://notabug.org/metadb-apps/InternetRadio
-IssueTracker: https://notabug.org/metadb-apps/InternetRadio/issues
+SourceCode: https://notabug.org/zplus/InternetRadio
+IssueTracker: https://notabug.org/zplus/InternetRadio/issues
 
 AutoName: Internet Radio
-Summary: Listen to Internet radio stations
 Description: |
     This is a small app to search Internet radio stations, and listen to them.
 
@@ -15,11 +14,10 @@ Description: |
     * Remove the notification to stop the player
 
     The list of radio stations is maintained by [https://www.radio-browser.info
-    RadioBrowser], and the data is retrieved from [https://metadb.peers.community
-    MetaDB].
+    RadioBrowser], and the data is retrieved from [https://dokk.org/about DOKK].
 
 RepoType: git
-Repo: https://notabug.org/metadb-apps/InternetRadio.git
+Repo: https://notabug.org/zplus/InternetRadio.git
 
 Builds:
   - versionName: '1.0'
@@ -64,7 +62,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 4.0.0
+    versionCode: 7
+    commit: v4.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.1.0
+    versionCode: 8
+    commit: v4.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.1.2
+    versionCode: 9
+    commit: v4.1.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.1.1
-CurrentVersionCode: 6
+CurrentVersion: 4.1.2
+CurrentVersionCode: 9

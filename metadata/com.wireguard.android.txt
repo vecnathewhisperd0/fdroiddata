@@ -192,7 +192,63 @@ Build:0.0.20181103,443
     gradle=yes
     ndk=r16b
 
+Build:0.0.20181207,444
+    commit=0.0.20181207
+    subdir=app
+    submodules=yes
+    gradle=yes
+    ndk=r16b
+
+Build:0.0.20181210,445
+    commit=0.0.20181210
+    subdir=app
+    submodules=yes
+    gradle=yes
+    ndk=r16b
+
+Build:0.0.20181218,446
+    commit=0.0.20181218
+    subdir=app
+    submodules=yes
+    gradle=yes
+    ndk=r16b
+
+Build:0.0.20190215,447
+    commit=0.0.20190215
+    subdir=app
+    submodules=yes
+    gradle=yes
+    ndk=r16b
+
+Build:0.0.20190307,448
+    commit=0.0.20190307
+    subdir=app
+    submodules=yes
+    gradle=yes
+    ndk=r16b
+
+Build:0.0.20190319,449
+    commit=0.0.20190319
+    subdir=app
+    submodules=yes
+    gradle=yes
+    ndk=r16b
+
+Build:0.0.20190605,450
+    commit=0.0.20190605
+    subdir=app
+    submodules=yes
+    gradle=yes
+    ndk=r16b
+
+Build:0.0.20190708,451
+    commit=0.0.20190708
+    subdir=app
+    submodules=yes
+    gradle=yes
+    ndk=r16b
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.0.20181103
-Current Version Code:443
+Current Version:0.0.20190708
+Current Version Code:451

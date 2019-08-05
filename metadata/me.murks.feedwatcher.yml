@@ -1,0 +1,41 @@
+Categories:
+  - Internet
+  - Reading
+License: GPL-3.0-or-later
+AuthorName: Zouroboros
+SourceCode: https://github.com/zouroboros/feed-watcher
+IssueTracker: https://github.com/zouroboros/feed-watcher/issues
+
+AutoName: FeedWatcher
+
+RepoType: git
+Repo: https://github.com/zouroboros/feed-watcher
+
+Builds:
+  - versionName: 0.0.1-alpha
+    versionCode: 1
+    commit: 0.0.1-alpha
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.2-alpha
+    versionCode: 2
+    commit: 0.0.2-alpha
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.0.3-alpha
+    versionCode: 3
+    commit: 0.0.3-alpha
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.0.3-alpha
+CurrentVersionCode: 3

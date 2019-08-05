@@ -8,10 +8,8 @@ SourceCode: https://github.com/RocketChat/Rocket.Chat.Android
 IssueTracker: https://github.com/RocketChat/Rocket.Chat.Android/issues
 Changelog: https://github.com/RocketChat/Rocket.Chat.Android/releases
 Donate: https://github.com/RocketChat/Rocket.Chat#donate
-Bitcoin: ac2fa967efca7f6fc1201d46bdccb875
 
 AutoName: Rocket.Chat
-Summary: Team Communication Tool
 Description: |
     '''Note:''' This FOSS build variant currently lacks any push notification support.
 
@@ -68,8 +66,9 @@ Builds:
       - foss
     srclibs:
       - rocketchatsdk@app-2.6.0
-    prebuild: |-
-        sed -i -e '/fabric/d' -e '/crashlytics/,+3d' ../build.gradle build.gradle && sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
+    prebuild:
+      - sed -i -e '/fabric/d' -e '/crashlytics/,+3d' ../build.gradle build.gradle
+      - sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
     gradleprops:
       - sdk_location=../../srclib/rocketchatsdk
 
@@ -81,8 +80,9 @@ Builds:
       - foss
     srclibs:
       - rocketchatsdk@2eab588c27f7d5c48796f681f3b17f01fdb59967
-    prebuild: |-
-        sed -i -e '/fabric/d' -e '/crashlytics/,+3d' ../build.gradle build.gradle && sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
+    prebuild:
+      - sed -i -e '/fabric/d' -e '/crashlytics/,+3d' ../build.gradle build.gradle
+      - sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
     gradleprops:
       - sdk_location=../../srclib/rocketchatsdk
 
@@ -94,25 +94,130 @@ Builds:
       - foss
     srclibs:
       - rocketchatsdk@app-3.0.0
-    prebuild: |-
-        sed -i -e '/fabric/d' -e '/crashlytics/,+3d' ../build.gradle build.gradle && sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
+    prebuild:
+      - sed -i -e '/fabric/d' -e '/crashlytics/,+3d' ../build.gradle build.gradle
+      - sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
     gradleprops:
       - sdk_location=../../srclib/rocketchatsdk
 
-  - versionName: 3.1.0
-    versionCode: 2049
-    commit: 3.1.0
+  - versionName: 3.1.1
+    versionCode: 2050
+    commit: v3.1.1
     subdir: app
     gradle:
       - foss
     srclibs:
-      - rocketchatsdk@app-3.0.0
-    prebuild: |-
-        sed -i -e '/fabric/d' -e '/crashlytics/,+3d' ../build.gradle build.gradle && sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
+      - rocketchatsdk@app-3.1.0
+    prebuild:
+      - sed -i -e '/fabric/d' -e '/crashlytics/,+3d' ../build.gradle build.gradle
+      - sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
     gradleprops:
       - sdk_location=../../srclib/rocketchatsdk
 
-AutoUpdateMode: Version %v
+  - versionName: 3.2.0
+    versionCode: 2057
+    commit: v3.2.0
+    subdir: app
+    gradle:
+      - foss
+    srclibs:
+      - rocketchatsdk@app-3.2.0
+    prebuild:
+      - sed -i -e '/fabric/d' -e '/crashlytics/,+3d' ../build.gradle build.gradle
+      - sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
+    gradleprops:
+      - sdk_location=../../srclib/rocketchatsdk
+
+  - versionName: 3.3.0
+    versionCode: 2060
+    disable: unknown maven repo 'https://github.com/jitsi/jitsi-maven-repository/raw/master/releases'
+    commit: v3.3.0
+    subdir: app
+    gradle:
+      - foss
+    srclibs:
+      - rocketchatsdk@app-3.3.0
+    rm:
+      - app/gradle
+    prebuild:
+      - sed -i -e '/fabric/d; /com.google.gms/d' ../build.gradle build.gradle
+      - sed -i -e '/playImplementation/d' build.gradle
+      - sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
+    gradleprops:
+      - sdk_location=../../srclib/rocketchatsdk
+
+  - versionName: 3.3.1
+    versionCode: 2064
+    disable: unknown maven repo 'https://github.com/jitsi/jitsi-maven-repository/raw/master/releases'
+    commit: v3.3.1
+    subdir: app
+    gradle:
+      - foss
+    srclibs:
+      - rocketchatsdk@app-3.3.0
+    rm:
+      - app/gradle
+    prebuild:
+      - sed -i -e '/fabric/d; /com.google.gms/d' ../build.gradle build.gradle
+      - sed -i -e '/playImplementation/d' build.gradle
+      - sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
+    gradleprops:
+      - sdk_location=../../srclib/rocketchatsdk
+
+  - versionName: 3.4.1
+    versionCode: 2069
+    disable: unknown maven repo 'https://github.com/jitsi/jitsi-maven-repository/raw/master/releases'
+    commit: v3.4.1
+    subdir: app
+    gradle:
+      - foss
+    srclibs:
+      - rocketchatsdk@app-3.3.0
+    rm:
+      - app/gradle
+    prebuild:
+      - sed -i -e '/fabric/d; /com.google.gms/d' ../build.gradle build.gradle
+      - sed -i -e '/playImplementation/d' build.gradle
+      - sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
+    gradleprops:
+      - sdk_location=../../srclib/rocketchatsdk
+
+  - versionName: 3.4.2
+    versionCode: 2070
+    disable: unknown maven repo 'https://github.com/jitsi/jitsi-maven-repository/raw/master/releases'
+    commit: v3.4.2
+    subdir: app
+    gradle:
+      - foss
+    srclibs:
+      - rocketchatsdk@app-3.3.0
+    rm:
+      - app/gradle
+    prebuild:
+      - sed -i -e '/fabric/d; /com.google.gms/d' ../build.gradle build.gradle
+      - sed -i -e '/playImplementation/d' build.gradle
+      - sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
+    gradleprops:
+      - sdk_location=../../srclib/rocketchatsdk
+
+  - versionName: 3.5.0
+    versionCode: 2074
+    commit: v3.5.0
+    subdir: app
+    gradle:
+      - foss
+    srclibs:
+      - rocketchatsdk@app-3.3.0
+    rm:
+      - app/gradle
+    prebuild:
+      - sed -i -e '/fabric/d; /com.google.gms/d' ../build.gradle build.gradle
+      - sed -i -e '/playImplementation/d' build.gradle
+      - sed -i -e 's,./gradlew,gradle,g' build-sdk.sh
+    gradleprops:
+      - sdk_location=../../srclib/rocketchatsdk
+
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.1.0
-CurrentVersionCode: 2049
+CurrentVersion: 3.5.0
+CurrentVersionCode: 2074

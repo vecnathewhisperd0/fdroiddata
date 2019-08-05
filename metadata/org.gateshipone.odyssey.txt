@@ -137,7 +137,22 @@ Build:1.1.15,27
     subdir=app
     gradle=yes
 
+Build:1.1.16,28
+    commit=release-28
+    subdir=app
+    gradle=yes
+
+Build:1.1.17,29
+    commit=release-29
+    subdir=app
+    gradle=yes
+
+Build:1.1.18,30
+    commit=release-30
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version release-%c
 Update Check Mode:Tags
-Current Version:1.1.15
-Current Version Code:27
+Current Version:1.1.18
+Current Version Code:30

@@ -90,7 +90,15 @@ Build:4.5,38
     commit=v4.5
     gradle=yes
 
+Build:4.6,39
+    commit=v4.6
+    gradle=yes
+
+Build:4.7,40
+    commit=v4.7
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:4.5
-Current Version Code:38
+Current Version:4.7
+Current Version Code:40

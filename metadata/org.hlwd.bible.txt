@@ -4,15 +4,17 @@ Author Name:hotlittlewhitedog
 Web Site:https://gitlab.com/hotlittlewhitedog/BibleMultiTheLight/blob/HEAD/README.md
 Source Code:https://gitlab.com/hotlittlewhitedog/BibleMultiTheLight/tree/HEAD
 Issue Tracker:https://gitlab.com/hotlittlewhitedog/BibleMultiTheLight/issues
+Changelog:https://gitlab.com/hotlittlewhitedog/BibleMultiTheLight/blob/HEAD/CHANGELOG
 
 Auto Name:The Light
 Summary:Bible multi languages, free, offline, no advertising
 Description:
 Bible multi languages, free, offline, no advertising, completely in English,
-French, Italian, Spanish.
+French, Italian, Spanish, Portuguese.
 
-* King James Version, Segond, Diodati, Valera.
+* King James Version, Segond, Diodati, Valera, Almeida.
 * Easy to use with quick search and share, plans of reading, articles.
+* Also works on Android TV.
 .
 
 Repo Type:git
@@ -73,7 +75,62 @@ Build:3.4,20181014
     subdir=app
     gradle=yes
 
+Build:3.5,20181110
+    commit=v3.5
+    subdir=app
+    gradle=yes
+
+Build:3.6,20181118
+    commit=v3.6
+    subdir=app
+    gradle=yes
+
+Build:3.7,20181125
+    commit=v3.7
+    subdir=app
+    gradle=yes
+
+Build:3.8,20181216
+    commit=v3.8
+    subdir=app
+    gradle=yes
+
+Build:3.9,20190127
+    commit=v3.9
+    subdir=app
+    gradle=yes
+
+Build:3.10,20190511
+    commit=v3.10
+    subdir=app
+    gradle=yes
+
+Build:3.11,20190616
+    commit=v3.11
+    subdir=app
+    gradle=yes
+
+Build:3.12,20190623
+    commit=v3.12
+    subdir=app
+    gradle=yes
+
+Build:3.13,20190707
+    commit=v3.13
+    subdir=app
+    gradle=yes
+
+Build:3.14,20190717
+    commit=v3.14
+    subdir=app
+    gradle=yes
+
+Build:3.15,20190724
+    commit=v3.15
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.4
-Current Version Code:20181014
+Current Version:3.15
+Current Version Code:20190724

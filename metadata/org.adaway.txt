@@ -4,12 +4,11 @@ License:GPL-3.0-only
 Web Site:https://adaway.org/
 Source Code:https://github.com/AdAway/AdAway
 Issue Tracker:https://github.com/AdAway/AdAway/issues
-Changelog:https://github.com/AdAway/AdAway/raw/HEAD/CHANGELOG
-Donate:https://adaway.org/
+Changelog:https://github.com/AdAway/AdAway/raw/HEAD/CHANGELOG.md
+Donate:https://paypal.me/BruceBUJON
 FlattrID:369138
 
 Auto Name:AdAway
-Summary:Block advertisements
 Description:
 An ad blocker that uses the hosts file. The hosts file contains a list of
 mappings between hostnames and IP addresses. When an app requests an ad, that
@@ -18,7 +17,7 @@ web server to respond to blocked hostnames and to direct requests to the IP
 address of your choosing. You can download hosts files from the app but it is
 possible to use your own and to add certain sites to the white- and black-lists.
 
-Requires root: Yes. The hosts files is located in /system which is normally
+Requires root as the hosts files is located in /system which is normally
 read-only.
 .
 
@@ -275,7 +274,60 @@ Build:3.3,61
     buildjni=yes
     preassemble=renameExecutables
 
+Build:4.1.0,40100
+    disable=missing native libraries
+    commit=v4.1.0
+    subdir=app
+    gradle=yes
+    ndk=r18b
+
+Build:4.2.2,40202
+    commit=v4.2.2
+    subdir=app
+    gradle=yes
+    ndk=r18b
+
+Build:4.2.3,40203
+    commit=v4.2.3
+    subdir=app
+    gradle=yes
+    ndk=r18b
+
+Build:4.2.4,40204
+    commit=v4.2.4
+    subdir=app
+    gradle=yes
+    ndk=r18b
+
+Build:4.2.5,40205
+    disable=uses com.android.tools.build:gradle:3.5.0-beta03
+    commit=v4.2.5
+    subdir=app
+    gradle=yes
+    ndk=r18b
+
+Build:4.2.6,40206
+    commit=v4.2.6
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/gradle:3.5.0-beta03/gradle:3.4.1/' ../build.gradle
+    ndk=r18b
+
+Build:4.2.7,40207
+    commit=v4.2.7
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/gradle:3.5.0-beta03/gradle:3.4.1/' ../build.gradle
+    ndk=r18b
+
+Build:4.2.8,40208
+    commit=v4.2.8
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e 's/gradle:3.5.0-beta03/gradle:3.4.1/' ../build.gradle
+    ndk=r18b
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:3.3
-Current Version Code:61
+Current Version:4.2.8
+Current Version Code:40208

@@ -5,31 +5,42 @@ AuthorName: Adam Zamojski
 WebSite: https://zamojski.info/Features,Tower-Collector.html
 SourceCode: https://github.com/zamojski/TowerCollector
 IssueTracker: https://github.com/zamojski/TowerCollector/issues
+Translation: https://zamojski.oneskyapp.com/collaboration/
 Changelog: https://github.com/zamojski/TowerCollector/releases
 
 AutoName: Tower Collector
-Summary: Join the OpenCellID community and collect cell towers' locations from your
-    area
 Description: |-
-    This app collects GPS locations of GSM/UMTS/LTE/CDMA cell towers
-    and sends them to [https://opencellid.org/ OpenCellID.org] database. It is
-    designed to help map the extent of mobile phone network coverage. It is
-    also possible to collect measurements for private purposes and export them
-    to CSV or GPX files.
+    Tower Collector gives you opportunity to contribute in OpenCellID.org and
+    Mozilla Location Services projects by uploading GPS locations of
+    GSM/UMTS/LTE/CDMA cell towers from your area. The measurements help map
+    the extent of mobile phone network coverage. You can use the app to collect
+    data for personal purposes and export them to CSV or GPX files.
     Some features:
     * specially optimized GPS parameters to reduce battery drain
-    * upload to OpenCellID.org project
+    * upload to OpenCellID.org and Mozilla Location Services (MLS) projects
     * export to SD card as CSV or GPX
     * ad-free, forever!
 
     The OpenCellID.org project goal is to create a worldwide open source
     database of mobile cell locations. Tower Collector gives you opportunity to
-    contribute in OpenCellID project by uploading cell towers' locations from
+    contribute in OpenCellID project by uploading cell towers locations from
     your area. Collected data can be used to quickly locate devices without
     enabling GPS.
 
+    Mozilla Location Services (MLS) is an open source project, aiming to create
+    a worldwide database of wireless network infrastructure identifiers (cell
+    towers, WiFi access points, Bluetooth beacons) correlated with GPS
+    locations. Aggregated cell location set is available under the public
+    domain "Creative Commons (CC-0)" license.
+
     Please help me translate it to other languages, visit
     [http://i18n.zamojski.info/ i18n.zamojski.info]
+
+    This application does not collect, store or send any information which can
+    be used to directly identify user, device which is being used or any other
+    personal information.
+
+    BUG REPORTS AND FEATURE REQUEST VIA EMAIL OR GITHUB ISSUES PLEASE.
 
 RepoType: git
 Repo: https://github.com/zamojski/TowerCollector
@@ -84,7 +95,56 @@ Builds:
     gradle:
       - productionFdroid
 
+  - versionName: 2.0.0
+    versionCode: 2000031
+    commit: 2.0.0
+    subdir: app
+    gradle:
+      - productionFdroid
+
+  - versionName: 2.0.1
+    versionCode: 2000134
+    commit: 2.0.1
+    subdir: app
+    gradle:
+      - productionFdroid
+
+  - versionName: 2.0.2
+    versionCode: 2000235
+    commit: 2.0.2
+    subdir: app
+    gradle:
+      - productionFdroid
+
+  - versionName: 2.0.3
+    versionCode: 2000338
+    commit: 2.0.3
+    subdir: app
+    gradle:
+      - productionFdroid
+
+  - versionName: 2.0.4
+    versionCode: 2000439
+    commit: 2.0.4
+    subdir: app
+    gradle:
+      - productionFdroid
+
+  - versionName: 2.0.5
+    versionCode: 2000540
+    commit: 2.0.5
+    subdir: app
+    gradle:
+      - productionFdroid
+
+  - versionName: 2.0.6
+    versionCode: 2000641
+    commit: 2.0.6
+    subdir: app
+    gradle:
+      - productionFdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.22.2-fdroid
-CurrentVersionCode: 1220229
+CurrentVersion: 2.0.6
+CurrentVersionCode: 2000641

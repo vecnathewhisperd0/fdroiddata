@@ -3,6 +3,7 @@ License:LGPL-3.0-only
 Web Site:
 Source Code:https://github.com/konradrenner/kolabnotes-android
 Issue Tracker:https://github.com/konradrenner/kolabnotes-android/issues
+Changelog:https://github.com/konradrenner/kolabnotes-android/blob/HEAD/CHANGELOG.md#change-log
 
 Auto Name:Kolab Notes
 Summary:Write notes and sync them with Kolab
@@ -578,7 +579,19 @@ Build:3.1.3,98
     subdir=app
     gradle=yes
 
+Build:3.2.0,99
+    commit=3.2.0
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/jcenter()/i google()' ../build.gradle
+
+Build:3.2.1,100
+    commit=3.2.1
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/jcenter()/i google()' ../build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:3.1.3
-Current Version Code:98
+Current Version:3.2.1
+Current Version Code:100

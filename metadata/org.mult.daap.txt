@@ -1,8 +1,8 @@
 Categories:Multimedia
 License:GPL-2.0-or-later
 Web Site:
-Source Code:
-Issue Tracker:
+Source Code:https://github.com/chrismiceli/daap-client
+Issue Tracker:https://github.com/chrismiceli/daap-client/issues
 
 Auto Name:DAAP
 Summary:DAAP (Music/media sharing) Client
@@ -43,5 +43,3 @@ Auto Update Mode:None
 Update Check Mode:None
 Current Version:.9.7
 Current Version Code:46
-
-No Source Since:.9.8

@@ -8,12 +8,11 @@ Changelog:https://github.com/dmfs/opentasks/releases
 Auto Name:OpenTasks
 Summary:Keep track of your list of goals
 Description:
-A simple task manager app, allowing you to categorise your todo list by urgency,
-state, timeframe etc.
+A task manager app, allowing you to categorise your todo list by urgency, state,
+timeframe etc.
 
-Tasks can be synchronised with a CalDAV server using [[at.bitfire.davdroid]].
-
-Status: Beta.
+Tasks can be synchronised with a CalDAV server using, e.g.,
+[[at.bitfire.davdroid]].
 .
 
 Repo Type:git
@@ -118,11 +117,52 @@ Build:1.1.13,6880
     subdir=opentasks
     gradle=yes
 
+Build:1.1.15,7330
+    commit=1.1.15
+    subdir=opentasks
+    gradle=yes
+    prebuild=sed -i -e "s/, '--dirty'//" ../build.gradle
+
+Build:1.1.16,7350
+    commit=1.1.16
+    subdir=opentasks
+    gradle=yes
+    prebuild=sed -i -e "s/, '--dirty'//" ../build.gradle
+
+Build:1.1.17,7430
+    commit=1.1.17
+    subdir=opentasks
+    gradle=yes
+    prebuild=sed -i -e "s/, '--dirty'//" ../build.gradle
+
+Build:1.1.18,74998
+    commit=1.1.18
+    subdir=opentasks
+    gradle=yes
+    prebuild=sed -i -e "s/, '--dirty'//" ../build.gradle
+
+Build:1.1.19,75500
+    commit=1.1.19
+    subdir=opentasks
+    gradle=yes
+    prebuild=sed -i -e "s/, '--dirty'//" ../build.gradle && \
+        sed -i -e 's|refs/remotes/origin/master|refs/tags/$$VERSION$$|' build.gradle
+
+Build:1.1.20,76000
+    commit=1.1.20
+    subdir=opentasks
+    gradle=yes
+    prebuild=sed -i -e "s/, '--dirty'//" ../build.gradle && \
+        sed -i -e 's|refs/remotes/origin/master|refs/tags/$$VERSION$$|' build.gradle
+
 Maintainer Notes:
 Cannot use UCM/AUM because build.gradle calculates version code at run time.
+Instead, get the latest version name and code per HTTP,
+see https://github.com/dmfs/opentasks/issues/550 .
 .
 
-Auto Update Mode:None
-Update Check Mode:None
-Current Version:1.1.13
-Current Version Code:6880
+Auto Update Mode:Version %v
+Update Check Mode:HTTP
+Update Check Data:https://opentasks-app.appspot.com/v1/app/latest_version/|^(\d+),.*|.|^\d+,(.*)
+Current Version:1.1.20
+Current Version Code:76000

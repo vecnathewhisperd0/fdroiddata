@@ -87,7 +87,23 @@ Build:5.1.0,76
     commit=5.1.0
     gradle=yes
 
+Build:5.2.0,77
+    commit=5.2.0
+    gradle=yes
+
+Build:5.2.1,78
+    commit=5.2.1
+    gradle=yes
+
+Build:5.2.2,79
+    commit=5.2.2
+    gradle=yes
+
+Build:5.2.3,80
+    commit=5.2.3
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:5.1.0
-Current Version Code:76
+Current Version:5.2.3
+Current Version Code:80

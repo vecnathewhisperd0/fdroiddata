@@ -1,31 +1,19 @@
 Categories:Internet
 License:GPL-3.0-only
-Web Site:https://www.davdroid.com/
-Source Code:https://www.davdroid.com/source/
-Issue Tracker:https://davdroid.bitfire.at/forums/
+Author Name:bitfire web engineering
+Web Site:https://www.davx5.com/
+Source Code:https://www.davx5.com/source
+Issue Tracker:https://www.davx5.com/forums
 Changelog:https://forums.bitfire.at/category/4/davdroid?tag=announcement
-Donate:https://www.davdroid.com/donate/
+Donate:https://www.davx5.com/donate
 FlattrID:2100160
 LiberapayID:14101
 Bitcoin:1KSCy7RHztKuhW9fLLaUYqdwdC2iwbejZU
 
-Auto Name:DAVdroid
-Summary:Sync contacts, calendars and tasks with CalDAV/CardDAV
-Description:
-DAVdroid is a CalDAV/CardDAV management and synchronization app for Android.
-which integrates natively with Android calendar/contact apps.
-
-Use it with your own server or with a trusted hoster to keep your contacts,
-events and tasks under your control.
-
-For a comparison of server software, see the [https://wiki.debian.org/Groupware
-Debian wiki]. Examples (alphabetical order): [http://baikal-server.com/ Baïkal],
-[http://www.davical.org/ DAViCal], [https://nextcloud.com/ Nextcloud],
-[https://owncloud.org/ ownCloud], [http://radicale.org/ Radicale])
-.
+Auto Name:DAVx⁵
 
 Repo Type:git
-Repo:https://gitlab.com/bitfireAT/davdroid.git
+Repo:https://gitlab.com/bitfireAT/davx5-ose.git
 
 Build:0.3.2-alpha,5
     commit=v0.3.2-alpha
@@ -800,7 +788,103 @@ Build:2.0.4-ose,245
     submodules=yes
     gradle=standard
 
+Build:2.0.5-ose,248
+    commit=v2.0.5-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.0.6-ose,251
+    commit=v2.0.6-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.0.7-ose,254
+    commit=v2.0.7-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.1-ose,257
+    commit=v2.1-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.2.1-ose,262
+    commit=v2.2.1-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.2.2-ose,263
+    commit=v2.2.2-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.2.3.1-ose,267
+    commit=v2.2.3.1-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.4-beta1-ose,274
+    commit=v2.4-beta1-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.4-beta2-ose,275
+    commit=v2.4-beta2-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.4-ose,279
+    commit=v2.4-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.4.0.1-ose,280
+    commit=v2.4.0.1-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.5-beta2-ose,286
+    commit=v2.5-beta2-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.5-ose,288
+    commit=v2.5-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.5.1-ose,291
+    commit=v2.5.1-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.5.2-ose,293
+    commit=v2.5.2-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
+Build:2.5.3-ose,297
+    commit=v2.5.3-ose
+    subdir=app
+    submodules=yes
+    gradle=standard
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags ^v[0-9.]+-ose$
-Current Version:2.0.4-ose
-Current Version Code:245
+Current Version:2.5.3-ose
+Current Version Code:297

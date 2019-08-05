@@ -24,14 +24,41 @@ Repo Type:git
 Repo:https://github.com/gryphius/androdns.git
 Binaries:https://github.com/gryphius/androdns/releases/download/v%v/androdns.apk
 
-Build:1.4,6
-    disable=verification fails
-    commit=v1.4
+Build:1.5,15
+    commit=v1.5
     subdir=app
+    sudo=apt-get update || apt-get update && \
+        apt-get install -y disorderfs
+    init=cd ../.. && \
+        mv androdns.android.leetdreams.ch.androdns androdns.android.leetdreams.ch.androdns.build && \
+        mkdir androdns.android.leetdreams.ch.androdns && \
+        disorderfs --sort-dirents=yes --reverse-dirents=no androdns.android.leetdreams.ch.androdns.build androdns.android.leetdreams.ch.androdns
     gradle=yes
-    prebuild=sed -i -e "s/jcenter()/jcenter()\n maven { url 'https:\/\/maven.google.com' }/" ../build.gradle
+
+Build:1.5.1,16
+    commit=v1.5.1
+    subdir=app
+    sudo=apt-get update || apt-get update && \
+        apt-get install -y disorderfs
+    init=cd ../.. && \
+        mv androdns.android.leetdreams.ch.androdns androdns.android.leetdreams.ch.androdns.build && \
+        mkdir androdns.android.leetdreams.ch.androdns && \
+        disorderfs --sort-dirents=yes --reverse-dirents=no androdns.android.leetdreams.ch.androdns.build androdns.android.leetdreams.ch.androdns
+    gradle=yes
+
+Build:1.6beta1,17
+    disable=No binnary
+    commit=v1.6beta1
+    subdir=app
+    sudo=apt-get update || apt-get update && \
+        apt-get install -y disorderfs
+    init=cd ../.. && \
+        mv androdns.android.leetdreams.ch.androdns androdns.android.leetdreams.ch.androdns.build && \
+        mkdir androdns.android.leetdreams.ch.androdns && \
+        disorderfs --sort-dirents=yes --reverse-dirents=no androdns.android.leetdreams.ch.androdns.build androdns.android.leetdreams.ch.androdns
+    gradle=yes
 
 Auto Update Mode:Version v%v
-Update Check Mode:Tags
-Current Version:1.4
-Current Version Code:6
+Update Check Mode:Tags ^[0-9.]+$
+Current Version:1.5.1
+Current Version Code:16

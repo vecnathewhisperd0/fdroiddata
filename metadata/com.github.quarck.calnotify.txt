@@ -380,7 +380,37 @@ Build:4.0.11,3000011
     subdir=app
     gradle=yes
 
+Build:4.0.14,3000014
+    commit=Release_4.0.14
+    subdir=app
+    gradle=yes
+
+Build:4.0.16,3000016
+    commit=Release_4.0.16
+    subdir=app
+    gradle=yes
+
+Build:5.0.1,4000002
+    commit=Release_5.0.1
+    subdir=app
+    gradle=yes
+
+Build:5.0.2,4000003
+    commit=Release_5.0.2
+    subdir=app
+    gradle=yes
+
+Build:5.0.3,4000004
+    commit=Release_5.0.3
+    subdir=app
+    gradle=yes
+
+Build:5.0.4,4000005
+    commit=Release_5.0.4
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version Release_%v
 Update Check Mode:Tags ^Release
-Current Version:4.0.11
-Current Version Code:3000011
+Current Version:5.0.4
+Current Version Code:4000005

@@ -1,0 +1,60 @@
+Categories:
+  - Internet
+  - Reading
+License: GPL-3.0-or-later
+SourceCode: https://git.feneas.org/christophehenry/freshrss-android
+IssueTracker: https://git.feneas.org/christophehenry/freshrss-android/issues
+Changelog: https://git.feneas.org/christophehenry/freshrss-android/blob/develop/CHANGELOG.md
+
+AutoName: FreshRSS
+
+RepoType: git
+Repo: https://git.feneas.org/christophehenry/freshrss-android.git
+
+Builds:
+  - versionName: 1.0.1
+    versionCode: 4
+    commit: v1.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.0
+    versionCode: 5
+    commit: v1.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0-rc
+    versionCode: 6
+    commit: v1.2.0-rc
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0-rc2
+    versionCode: 7
+    commit: v1.2.0-rc2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0-rc3
+    versionCode: 8
+    commit: v1.2.0-rc3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0-rc4
+    versionCode: 9
+    commit: v1.2.0-rc4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.2.0-rc4
+CurrentVersionCode: 9

@@ -48,7 +48,48 @@ Build:0.18.0,157
     subdir=app
     gradle=yes
 
+Build:0.19.0,158
+    commit=0.19.0
+    subdir=app
+    gradle=yes
+
+Build:0.19.1,159
+    commit=0.19.1
+    subdir=app
+    gradle=yes
+
+Build:0.19.2,160
+    commit=0.19.2
+    subdir=app
+    gradle=yes
+
+Build:0.20.1,162
+    commit=0.20.1
+    subdir=app
+    gradle=yes
+
+Build:0.20.2,163
+    disable=Could not find com.github.kabouzeid:AndroidSlidingUpPanel:3.3.0-kmod3
+    commit=0.20.2
+    subdir=app
+    gradle=yes
+
+Build:0.21.1,165
+    commit=0.21.1
+    subdir=app
+    gradle=production
+
+Build:0.22.0,166
+    commit=0.22.0
+    subdir=app
+    gradle=fdroid
+
+Build:0.22.1,167
+    commit=0.22.1
+    subdir=app
+    gradle=fdroid
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:0.18.0
-Current Version Code:157
+Current Version:0.22.1
+Current Version Code:167

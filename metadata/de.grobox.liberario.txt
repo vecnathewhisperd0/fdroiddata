@@ -237,7 +237,31 @@ Build:2.0.2,111
     gradle=yes
     gradleprops=buildServer
 
+Build:2.0.3,112
+    commit=2.0.3
+    subdir=app
+    gradle=yes
+    gradleprops=buildServer
+
+Build:2.0.4,113
+    commit=2.0.4
+    subdir=app
+    gradle=yes
+    gradleprops=buildServer
+
+Build:2.0.5,114
+    commit=2.0.5
+    subdir=app
+    gradle=yes
+    gradleprops=buildServer
+
+Build:2.0.6,115
+    commit=2.0.6
+    subdir=app
+    gradle=yes
+    gradleprops=buildServer
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.0.2
-Current Version Code:111
+Current Version:2.0.6
+Current Version Code:115

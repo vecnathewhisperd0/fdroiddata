@@ -129,7 +129,33 @@ Build:3.0.4,305
     subdir=tourcount
     gradle=yes
 
+Build:3.0.4,306
+    disable=Unexpected version/version code in output; APK: '3.0.4' / '304',  Expected: '3.0.4' / '306'
+    commit=3.0.4
+    subdir=tourcount
+    gradle=yes
+
+Build:3.0.7,307
+    commit=3.0.7
+    subdir=tourcount
+    gradle=yes
+
+Build:3.0.8,308
+    commit=3.0.8
+    subdir=tourcount
+    gradle=yes
+
+Build:3.1.0,310
+    commit=3.1.0
+    subdir=tourcount
+    gradle=yes
+
+Build:3.1.1,311
+    commit=3.1.1
+    subdir=tourcount
+    gradle=yes
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:3.0.4
-Current Version Code:305
+Current Version:3.1.1
+Current Version Code:311

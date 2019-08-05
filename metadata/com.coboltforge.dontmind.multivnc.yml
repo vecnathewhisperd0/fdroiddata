@@ -1,0 +1,75 @@
+Categories:
+  - Connectivity
+  - Internet
+License: GPL-3.0-only
+SourceCode: https://github.com/bk138/multivnc
+IssueTracker: https://github.com/bk138/multivnc/issues
+LiberapayID: '1537855'
+
+AutoName: MultiVNC
+Description: |-
+    It includes the following features:
+
+    * Bonjour/ZeroConf service discovery that automatically detects supported VNC servers in your network.
+    * Virtual mouse button controls with haptic feedback.
+    * Two-finger swipe gesture recognition.
+    * A super fast touchpad mode for local use.
+    * Hardware-accelerated OpenGL drawing and zooming.
+    * Copy&paste to and from Android.
+    * Bookmarking of connections.
+
+    Versions 1.x.x are based on android-vnc-viewer, so do NOT support encryption nor connecting to OS X. Please hang on till 2.x.x is released!
+
+RepoType: git
+Repo: https://github.com/bk138/multivnc
+
+Builds:
+  - versionName: 1.7.5
+    versionCode: 48
+    commit: AndroidMultiVNC-1.7.5
+    subdir: android/app
+    gradle:
+      - yes
+    scanignore:
+      - contrib
+
+  - versionName: 1.7.6
+    versionCode: 49
+    commit: AndroidMultiVNC-1.7.6
+    subdir: android/app
+    gradle:
+      - yes
+    scanignore:
+      - contrib
+
+  - versionName: 1.7.7
+    versionCode: 50
+    commit: AndroidMultiVNC-1.7.7
+    subdir: android/app
+    gradle:
+      - yes
+    scanignore:
+      - contrib
+
+  - versionName: 1.7.8
+    versionCode: 51
+    commit: AndroidMultiVNC-1.7.8
+    subdir: android/app
+    gradle:
+      - yes
+    scanignore:
+      - contrib
+
+  - versionName: 1.7.9
+    versionCode: 52
+    commit: AndroidMultiVNC-1.7.9
+    subdir: android/app
+    gradle:
+      - yes
+    scanignore:
+      - contrib
+
+AutoUpdateMode: Version AndroidMultiVNC-%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.7.9
+CurrentVersionCode: 52
