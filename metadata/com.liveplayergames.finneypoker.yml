@@ -53,7 +53,7 @@ Builds:
       - yes
 
 MaintainerNotes: 2019-08-05 moving to archive as the app no longer seems to work,
-    see #1719
+    see issue 1719
 
 ArchivePolicy: 0 versions
 AutoUpdateMode: None
