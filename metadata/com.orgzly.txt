@@ -3,6 +3,7 @@ License:GPL-3.0-or-later
 Web Site:http://www.orgzly.com/
 Source Code:https://github.com/orgzly/orgzly-android
 Issue Tracker:https://github.com/orgzly/orgzly-android/issues
+Translation:https://crowdin.com/project/orgzly
 Changelog:http://www.orgzly.com/changelog
 
 Auto Name:Orgzly
@@ -127,7 +128,52 @@ Build:1.6.12,117
     subdir=app
     gradle=fdroid
 
+Build:1.7,126
+    commit=v1.7
+    subdir=app
+    gradle=fdroid
+
+Build:1.7.1,129
+    commit=v1.7.1
+    subdir=app
+    gradle=fdroid
+
+Build:1.7.2,133
+    commit=v1.7.2
+    subdir=app
+    gradle=fdroid
+
+Build:1.7.3,134
+    commit=v1.7.3
+    subdir=app
+    gradle=fdroid
+
+Build:1.7.4,136
+    commit=v1.7.4
+    subdir=app
+    gradle=fdroid
+
+Build:1.7.5,137
+    commit=v1.7.5
+    subdir=app
+    gradle=fdroid
+
+Build:1.7.6,138
+    commit=v1.7.6
+    subdir=app
+    gradle=fdroid
+
+Build:1.7.7,140
+    commit=v1.7.7
+    subdir=app
+    gradle=fdroid
+
+Build:1.7.8,141
+    commit=v1.7.8
+    subdir=app
+    gradle=fdroid
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags ^v[0-9\.]+$
-Current Version:1.6.12
-Current Version Code:117
+Current Version:1.7.8
+Current Version Code:141

@@ -1,6 +1,3 @@
-AntiFeatures:
-  - NonFreeAssets
-  - NonFreeNet
 Categories:
   - Navigation
 License: GPL-3.0-or-later
@@ -8,7 +5,6 @@ SourceCode: https://github.com/andreynovikov/trekarta
 IssueTracker: https://github.com/andreynovikov/trekarta/issues
 
 AutoName: Trekarta
-Summary: Simple, responsive map for your trek
 Description: Trekarta (former MapTrek) is designed for hiking, geocaching, off-roading,
     cycling, boating and all other outdoor activities. It uses offline maps so you
     do not need to have internet connection. You can easily import places and tracks
@@ -29,7 +25,16 @@ Builds:
       - world
     ndk: r18b
 
+  - versionName: '2019.07'
+    versionCode: 68
+    commit: '2019.07'
+    subdir: app/
+    gradle:
+      - full
+      - world
+    ndk: r18b
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '2019.01'
-CurrentVersionCode: 67
+CurrentVersion: '2019.07'
+CurrentVersionCode: 68

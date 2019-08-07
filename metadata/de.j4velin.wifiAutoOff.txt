@@ -221,7 +221,31 @@ Build:1.7.8,1780
     prebuild=touch key.properties && \
         sed -i -e '/playCompile/d' build.gradle
 
+Build:1.8,1800
+    commit=1.8
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.8.1,1810
+    commit=1.8.1
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.8.2,1820
+    commit=1.8.2
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
+Build:1.8.3,1830
+    commit=1.8.3
+    gradle=fdroid
+    prebuild=touch key.properties && \
+        sed -i -e '/playCompile/d' build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.7.8
-Current Version Code:1780
+Current Version:1.8.3
+Current Version Code:1830

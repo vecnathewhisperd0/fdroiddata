@@ -1,0 +1,150 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: M M Arif
+WebSite: https://gitnex.com
+SourceCode: https://gitea.com/mmarif/GitNex/src/branch/master
+IssueTracker: https://gitea.com/mmarif/GitNex/issues
+Changelog: https://gitea.com/mmarif/GitNex/src/branch/master/CHANGELOG.md
+LiberapayID: '1547671'
+
+AutoName: GitNex
+Description: |-
+    GitNex is an Android client for Gitea. Gitea is a community managed
+    fork of Gogs, lightweight code hosting solution written in Go.
+
+    Wiki:
+    [https://gitea.com/mmarif/GitNex/wiki Wiki]
+
+    Screenshots:
+    [https://gitea.com/mmarif/GitNex/src/branch/master/fastlane/metadata/android/en-US/images/phoneScreenshots Screenshots]
+
+    Release notes:
+    [https://gitea.com/mmarif/GitNex/releases Release-notes]
+
+    Features:
+
+    * My Repositories
+    * Repositories list
+    * Organizations list
+    * Create new repository
+    * Create new organization
+    * Search/filter repositories and organizations
+    * Profile view
+    * Repository stars, watchers, issues count
+    * Issues list
+    * Issue comments
+    * Comment on issues
+    * Search issues in issues list
+    * Create new issue with multiple assignees, labels, milestone, due date
+    * Create label
+    * Repository information
+    * Milestones list
+    * Create new milestone
+    * Branches list
+    * Releases with source download
+    * Collaborators view for repository
+    * Markdown support
+    * Emoji support
+    * Settings: Pretty and Normal time format, language change
+    * Option to access local non https installs
+
+RepoType: git
+Repo: https://gitea.com/mmarif/GitNex.git
+
+Builds:
+  - versionName: 1.0-rc4
+    versionCode: 17
+    commit: 1.0-rc4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0-rc6
+    versionCode: 19
+    commit: 1.0-rc6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.1
+    versionCode: 22
+    commit: 1.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.0-rc1
+    versionCode: 24
+    commit: 1.1.0-rc1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.0
+    versionCode: 26
+    commit: 1.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0-rc1
+    versionCode: 30
+    commit: 1.2.0-rc1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0-rc2
+    versionCode: 32
+    commit: 1.2.0-rc2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0
+    versionCode: 33
+    commit: 1.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.0-rc1
+    versionCode: 35
+    commit: 1.3.0-rc1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.0
+    versionCode: 38
+    commit: 1.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.1
+    versionCode: 39
+    commit: 1.3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.0
+    versionCode: 42
+    commit: 1.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.0
+    versionCode: 45
+    commit: 1.5.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.5.0
+CurrentVersionCode: 45

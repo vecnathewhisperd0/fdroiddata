@@ -7,7 +7,6 @@ IssueTracker: https://github.com/Ryosuke839/UnicodePad/issues
 Changelog: https://github.com/Ryosuke839/UnicodePad/releases
 
 AutoName: UnicodePad
-Summary: Input every character in Unicode
 Description: |-
     ''UnicodePad'' lets you input every character in Unicode. And input string can
     be copied to the clipboard or input directly by Mushroom. You can find out
@@ -29,7 +28,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.5.0
+    versionCode: 35
+    commit: v2.5.0
+    subdir: app/
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.0
-CurrentVersionCode: 34
+CurrentVersion: 2.5.0
+CurrentVersionCode: 35

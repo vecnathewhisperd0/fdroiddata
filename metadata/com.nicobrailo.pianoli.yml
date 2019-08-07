@@ -7,7 +7,6 @@ IssueTracker: https://github.com/nicolasbrailo/PianOli/issues
 Changelog: https://github.com/nicolasbrailo/PianOli/releases
 
 AutoName: PianOli
-Summary: Baby game to keep your device safe from random baby-taps
 Description: |-
     Have a baby curious about shiny tablets and phones? Use this app as a
     baby-game and, more importantly, to prevent random taps of a baby from
@@ -29,7 +28,36 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.4'
+    versionCode: 4
+    commit: V1.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.5'
+    versionCode: 5
+    commit: V1.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.6'
+    versionCode: 6
+    disable: 'Piano.java:153: error: cannot find symbol'
+    commit: V1.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.7'
+    versionCode: 7
+    commit: V1.7
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version V%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.1'
-CurrentVersionCode: 2
+CurrentVersion: '1.7'
+CurrentVersionCode: 7

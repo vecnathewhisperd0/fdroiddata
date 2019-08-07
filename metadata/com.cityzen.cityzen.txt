@@ -1,8 +1,9 @@
 Categories:Navigation
 License:MPL-2.0
 Web Site:http://www.cityzenapp.co/
-Source Code:https://github.com/CityZenApp/Android-Development
-Issue Tracker:https://github.com/CityZenApp/Android-Development/issues
+Source Code:https://github.com/CityZenApp/AndroidApp
+Issue Tracker:https://github.com/CityZenApp/AndroidApp/issues
+Changelog:https://github.com/CityZenApp/AndroidApp/releases
 Donate:https://github.com/CityZenApp/Funding/blob/HEAD/README.md
 
 Auto Name:CityZen
@@ -33,7 +34,17 @@ Build:1.1.1,10100199
     subdir=CityZenApp/app
     gradle=yes
 
+Build:1.2.0,10200099
+    commit=v1.2.0
+    subdir=CityZenApp/app
+    gradle=yes
+
+Build:1.2.1,10200199
+    commit=v1.2.1
+    subdir=CityZenApp/app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.1.1
-Current Version Code:10100199
+Current Version:1.2.1
+Current Version Code:10200199

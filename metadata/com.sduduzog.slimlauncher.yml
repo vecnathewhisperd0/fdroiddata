@@ -6,7 +6,6 @@ SourceCode: https://github.com/sduduzog/slim-launcher
 IssueTracker: https://github.com/sduduzog/slim-launcher/issues
 
 AutoName: Slim Launcher
-Summary: Minimalistic launcher
 Description: |-
     Slim launcher only allows you to use fewer apps on your phone. Giving you more time to enjoy life as it was intended. Also a perfect app for a minimalist lifestyle
 
@@ -35,7 +34,49 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.2.7
+    versionCode: 29
+    commit: v2.2.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.3.0-beta3
+    versionCode: 33
+    commit: v2.3.0-beta3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.3.1
+    versionCode: 36
+    commit: v2.3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.3.2
+    versionCode: 37
+    commit: v2.3.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.3.3
+    versionCode: 38
+    commit: v2.3.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.3.5
+    versionCode: 40
+    commit: v2.3.5
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.6
-CurrentVersionCode: 28
+CurrentVersion: 2.3.5
+CurrentVersionCode: 40

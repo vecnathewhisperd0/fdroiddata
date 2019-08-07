@@ -286,7 +286,77 @@ Build:1.8.8,47
     submodules=yes
     gradle=yes
 
+Build:1.8.9,48
+    commit=1.8.9
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.10,49
+    commit=1.8.10
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.11,50
+    commit=1.8.11
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.12,51
+    commit=1.8.12
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.13,52
+    commit=1.8.13
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.14,53
+    commit=1.8.14
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.15,54
+    commit=1.8.15
+    subdir=app
+    submodules=yes
+    gradle=yes
+
+Build:1.8.16,55
+    commit=1.8.16
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+Build:1.8.17,56
+    commit=1.8.17
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+Build:1.8.18,57
+    commit=1.8.18
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+Build:1.8.19,58
+    commit=1.8.19
+    subdir=app
+    submodules=yes
+    gradle=yes
+    prebuild=echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.8.8
-Current Version Code:47
+Current Version:1.8.19
+Current Version Code:58

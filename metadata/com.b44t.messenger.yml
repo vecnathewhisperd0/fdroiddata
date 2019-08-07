@@ -9,7 +9,6 @@ Donate: https://delta.chat/en/contribute
 Bitcoin: 18e3zwis2raitdZVhEhHHT7xG6oXsZte9L
 
 AutoName: Delta Chat
-Summary: Communicate instantly via e-mail
 Description: |-
     Delta Chat is a messaging app that is completely compatible with the existing
     e-mail infrastructure.
@@ -490,7 +489,107 @@ Builds:
     build: $$NDK$$/ndk-build -j `nproc`
     ndk: r14b
 
+  - versionName: 0.101.0
+    versionCode: 538
+    commit: v0.101.0
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.101.1
+    versionCode: 539
+    commit: v0.101.1
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.200.0
+    versionCode: 540
+    commit: v0.200.0
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.301.0
+    versionCode: 542
+    commit: v0.301.0
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.301.1
+    versionCode: 543
+    commit: v0.301.1
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.302.1
+    versionCode: 545
+    commit: v0.302.1
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.303.0
+    versionCode: 546
+    commit: v0.303.0
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.304.0
+    versionCode: 547
+    commit: v0.304.0
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.500.0
+    versionCode: 548
+    commit: v0.500.0
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.510.1
+    versionCode: 550
+    commit: v0.510.1
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.100.0
-CurrentVersionCode: 537
+CurrentVersion: 0.510.1
+CurrentVersionCode: 550

@@ -9,7 +9,6 @@ IssueTracker: https://github.com/SecUSo/privacy-friendly-wifi-manager/issues
 Changelog: https://github.com/SecUSo/privacy-friendly-wifi-manager/blob/HEAD/CHANGELOG.md
 
 AutoName: WiFi Manager
-Summary: Manages your device's WiFi based on your location
 Description: |-
     Privacy Friendly WiFi Manager helps you automatically turning on/off your
     Wi-Fi while you are not near a known WiFi network. The app keeps track of
@@ -43,7 +42,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.0.1
+    versionCode: 2
+    commit: v1.0.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.0'
-CurrentVersionCode: 1
+CurrentVersion: 1.0.1
+CurrentVersionCode: 2

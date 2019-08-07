@@ -44,7 +44,21 @@ Build:1.5.3,26
     prebuild=rm libs/gcm.jar && \
         sed -i -e '/google-services/d'  -e '/withFirebaseCompile/d' build.gradle
 
+Build:1.6.1,28
+    commit=1.6.1
+    subdir=app
+    gradle=noGCM
+    prebuild=sed -i -e '/com.google.gms/d' ../build.gradle build.gradle && \
+        sed -i -e '/withGCMImplementation/d' build.gradle
+
+Build:1.6.2,29
+    commit=1.6.2
+    subdir=app
+    gradle=noGCM
+    prebuild=sed -i -e '/com.google.gms/d' ../build.gradle build.gradle && \
+        sed -i -e '/withGCMImplementation/d' build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.5.3
-Current Version Code:26
+Current Version:1.6.2
+Current Version Code:29

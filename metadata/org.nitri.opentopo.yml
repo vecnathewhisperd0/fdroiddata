@@ -8,7 +8,6 @@ Donate: https://ko-fi.com/U7U372JJ
 
 Name: OpenTopoMap Viewer
 AutoName: OpenTopoMap
-Summary: OpenTopoMap viewer with GPX import
 Description: |-
     An online OpenTopoMap client with caching.
 
@@ -75,7 +74,42 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.5'
+    versionCode: 11
+    commit: '1.5'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.1
+    versionCode: 12
+    commit: 1.5.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.6'
+    versionCode: 13
+    commit: '1.6'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.1
+    versionCode: 14
+    commit: 1.6.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.7'
+    versionCode: 15
+    commit: '1.7'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.4'
-CurrentVersionCode: 10
+CurrentVersion: '1.7'
+CurrentVersionCode: 15

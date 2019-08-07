@@ -325,7 +325,42 @@ Build:0.66,66
     subdir=app
     gradle=yes
 
+Build:0.67,67
+    commit=v0.67
+    subdir=app
+    gradle=yes
+
+Build:0.68,68
+    commit=v0.68
+    subdir=app
+    gradle=yes
+
+Build:0.69,69
+    commit=v0.69
+    subdir=app
+    gradle=yes
+
+Build:0.70,70
+    commit=v0.70
+    subdir=app
+    gradle=yes
+
+Build:0.71,71
+    commit=v0.71
+    subdir=app
+    gradle=yes
+
+Build:0.72,72
+    commit=v0.72
+    subdir=app
+    gradle=yes
+
+Build:0.73,73
+    commit=v0.73
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.66
-Current Version Code:66
+Current Version:0.73
+Current Version Code:73

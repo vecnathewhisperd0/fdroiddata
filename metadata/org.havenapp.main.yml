@@ -2,9 +2,13 @@ Disabled: mystery maven repo https://github.com/FireZenk/maven-repo
 Categories:
   - Security
 License: GPL-3.0-or-later
+AuthorName: Guardian Project
+AuthorEmail: support@guardianproject.info
+AuthorWebSite: https://guardianproject.info
 WebSite: https://guardianproject.github.io/haven
 SourceCode: https://github.com/guardianproject/haven
 IssueTracker: https://github.com/guardianproject/haven/issues
+LiberapayID: '33617'
 Bitcoin: 1Fi5xUHiAPRKxHvyUGVFGt9extBe8Srdbk
 
 AutoName: Haven
@@ -101,7 +105,31 @@ Builds:
     scanignore:
       - docs/preso/lib/font/
 
+  - versionName: 0.2.0-beta-3
+    versionCode: 212
+    commit: 0.2.0-beta-3
+    gradle:
+      - yes
+    scanignore:
+      - docs/preso/lib/font/
+
+  - versionName: 0.2.0-beta-4
+    versionCode: 213
+    commit: 0.2.0-beta-4
+    gradle:
+      - yes
+    scanignore:
+      - docs/preso/lib/font/
+
+  - versionName: 0.2.0-beta-5-signed
+    versionCode: 214
+    commit: 0.2.0-beta-5-signed
+    gradle:
+      - yes
+    scanignore:
+      - docs/preso/lib/font/
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2.0-beta-1
-CurrentVersionCode: 211
+CurrentVersion: 0.2.0-beta-5-signed
+CurrentVersionCode: 214

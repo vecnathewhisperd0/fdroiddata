@@ -6,7 +6,6 @@ IssueTracker: https://github.com/wuan/bo-android/issues
 Changelog: https://github.com/wuan/bo-android/blob/HEAD/ChangeLog
 
 AutoName: Blitzortung Lightning Monitor
-Summary: Get an overview of the current thunderstorm situation
 Description: |-
     Simple to use map based application visualizing real time full area
     lightning data provided by the blitzortung.org lightning location network
@@ -82,7 +81,70 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.0.4
+    versionCode: 226
+    commit: 2.0.4_226
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.5
+    versionCode: 228
+    commit: 2.0.5_228
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.6
+    versionCode: 229
+    commit: 2.0.6_229
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.6
+    versionCode: 232
+    commit: 2.0.6_232
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.8
+    versionCode: 234
+    commit: 2.0.8_234
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.12
+    versionCode: 239
+    commit: 2.0.12_239
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.12
+    versionCode: 240
+    commit: 2.0.12_240
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.12
+    versionCode: 241
+    commit: 2.0.12_241
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.13
+    versionCode: 242
+    commit: 2.0.13_242
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v_%c
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.3
-CurrentVersionCode: 224
+CurrentVersion: 2.0.13
+CurrentVersionCode: 242

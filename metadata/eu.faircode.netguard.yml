@@ -5,12 +5,12 @@ License: GPL-3.0-only
 WebSite: https://www.netguard.me
 SourceCode: https://github.com/M66B/NetGuard
 IssueTracker: https://forum.xda-developers.com/android/apps-games/app-netguard-root-firewall-t3233012
+Translation: https://crowdin.com/project/netguard
 Changelog: https://github.com/M66B/NetGuard/releases
 Donate: https://www.netguard.me
 Bitcoin: 13vtPytVVqCwojmohAqsK61Tk4yGXSWpJK
 
 AutoName: NetGuard
-Summary: Block network access
 Description: |-
     NetGuard provides simple and advanced ways to block access to the internet - no
     root required.
@@ -871,7 +871,223 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
 
+  - versionName: '2.226'
+    versionCode: 2019021701
+    commit: '2.226'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.228'
+    versionCode: 2019022702
+    commit: '2.228'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.229'
+    versionCode: 2019030702
+    commit: '2.229'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.231'
+    versionCode: 2019041702
+    commit: '2.231'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.233'
+    versionCode: 2019041902
+    commit: '2.233'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.234'
+    versionCode: 2019042201
+    commit: '2.234'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.236'
+    versionCode: 2019042302
+    commit: '2.236'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.237'
+    versionCode: 2019042801
+    commit: '2.237'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.238'
+    versionCode: 2019043001
+    commit: '2.238'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.239'
+    versionCode: 2019050401
+    commit: '2.239'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.240'
+    versionCode: 2019050501
+    commit: '2.240'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.241'
+    versionCode: 2019050601
+    commit: '2.241'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.242'
+    versionCode: 2019050701
+    commit: '2.242'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.243'
+    versionCode: 2019050801
+    commit: '2.243'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.244'
+    versionCode: 2019051501
+    commit: '2.244'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.245'
+    versionCode: 2019051701
+    commit: '2.245'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.247'
+    versionCode: 2019052202
+    commit: '2.247'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.248'
+    versionCode: 2019052901
+    commit: '2.248'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.249'
+    versionCode: 2019060101
+    commit: '2.249'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.250'
+    versionCode: 2019060601
+    commit: '2.250'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.251'
+    versionCode: 2019062901
+    commit: '2.251'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.252'
+    versionCode: 2019070901
+    commit: '2.252'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.253'
+    versionCode: 2019071301
+    commit: '2.253'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.255'
+    versionCode: 2019072301
+    commit: '2.255'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.256'
+    versionCode: 2019072801
+    commit: '2.256'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.258'
+    versionCode: 2019080402
+    commit: '2.258'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.260'
+    versionCode: 2019080601
+    commit: '2.260'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: '2.225'
-CurrentVersionCode: 2019013101
+CurrentVersion: '2.260'
+CurrentVersionCode: 2019080601

@@ -4,8 +4,7 @@ License: Apache-2.0
 WebSite: https://support.google.com/accessibility/android/answer/6283677?hl=en
 SourceCode: https://github.com/google/talkback
 
-AutoName: TalkBack (legacy)
-Summary: Accessibility improvements
+Name: TalkBack (legacy)
 Description: |-
     TalkBack is an Accessibility Service that helps blind and vision-impaired users
     interact with their devices more easily.

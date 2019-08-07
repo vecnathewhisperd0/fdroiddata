@@ -4,6 +4,7 @@ Web Site:https://github.com/oliexdev/openScale/wiki
 Source Code:https://github.com/oliexdev/openScale
 Issue Tracker:https://github.com/oliexdev/openScale/issues
 Changelog:https://github.com/oliexdev/openScale/releases
+Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H5KSTQA6TKTE4&source=url
 
 Auto Name:openScale
 Summary:Weight and body metrics tracker, with support for Bluetooth scales
@@ -199,7 +200,32 @@ Build:1.9.3,40
     subdir=android_app/app
     gradle=yes
 
+Build:2.0,41
+    commit=v2.0
+    subdir=android_app/app
+    gradle=yes
+
+Build:2.0.1,42
+    commit=v2.0.1
+    subdir=android_app/app
+    gradle=yes
+
+Build:2.0.2,43
+    commit=v2.0.2
+    subdir=android_app/app
+    gradle=yes
+
+Build:2.0.3,44
+    commit=v2.0.3
+    subdir=android_app/app
+    gradle=yes
+
+Build:2.1.0,45
+    commit=v2.1.0
+    subdir=android_app/app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags ^v[0-9.]*$
-Current Version:1.9.3
-Current Version Code:40
+Current Version:2.1.0
+Current Version Code:45

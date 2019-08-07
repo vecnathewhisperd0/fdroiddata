@@ -5,13 +5,13 @@ AuthorName: Daniel Gultsch
 WebSite: https://conversations.im/
 SourceCode: https://github.com/siacs/Conversations
 IssueTracker: https://github.com/siacs/Conversations/issues
+Translation: https://www.transifex.com/siacs/conversations/
 Changelog: https://github.com/siacs/Conversations/blob/HEAD/CHANGELOG.md
 Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CW3SYT3KG5PDL
 LiberapayID: '34225'
 Bitcoin: 1AeqNAcg85APAZj9BZfAjdFCC5zesqXp2B
 
 AutoName: Conversations
-Summary: A Jabber/XMPP chat client
 Description: |-
     Easy to use, reliable, battery friendly. With built-in support for images, group
     chats and e2e encryption.
@@ -1641,11 +1641,109 @@ Builds:
         \ \ \ \ \ \ \ abortOnError\ false' build.gradle
       - sed -i -e 's/4.10.3/4.10.2/' gradle/wrapper/gradle-wrapper.properties
 
+  - versionName: 2.4.0-beta+fcr
+    versionCode: 318
+    disable: beta
+    commit: 4c8b1eb4bc1c82b0f777726cbe57f176c67b4cb3
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.0-beta.2+fcr
+    versionCode: 319
+    disable: beta
+    commit: bd5b8aff784a750bdddd1e20379804e9ec0bd855
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.0+fcr
+    versionCode: 320
+    commit: 2.4.0
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.1+fcr
+    versionCode: 321
+    commit: 2.4.1
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.2+fcr
+    versionCode: 322
+    commit: 2.4.2
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.3+fcr
+    versionCode: 323
+    commit: 2.4.3
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.0+fcr
+    versionCode: 326
+    commit: 2.5.0
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.1+fcr
+    versionCode: 327
+    commit: 2.5.1
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.2+fcr
+    versionCode: 329
+    commit: 2.5.2
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.3+fcr
+    versionCode: 330
+    commit: 2.5.3
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.4+fcr
+    versionCode: 333
+    commit: 2.5.4
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.5+fcr
+    versionCode: 334
+    commit: 2.5.5
+    gradle:
+      - conversationsFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
 MaintainerNotes: |-
     We go back to targetSdk 25 so users can disable the foreground service (and
     annoying notification) if they choose to.
 
-AutoUpdateMode: Version %v+fcr
+AutoUpdateMode: None
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: 2.3.12+fcr
-CurrentVersionCode: 317
+CurrentVersion: 2.5.5+fcr
+CurrentVersionCode: 334

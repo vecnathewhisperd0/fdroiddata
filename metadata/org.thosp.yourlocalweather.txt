@@ -6,7 +6,7 @@ Source Code:https://github.com/thuryn/your-local-weather
 Issue Tracker:https://github.com/thuryn/your-local-weather/issues
 Changelog:https://raw.githubusercontent.com/thuryn/your-local-weather/HEAD/CHANGELOG
 
-Auto Name:Your local weather
+Auto Name:Your forecast
 
 Repo Type:git
 Repo:https://github.com/thuryn/your-local-weather
@@ -403,7 +403,57 @@ Build:4.6.10,115
     subdir=app
     gradle=yes
 
+Build:4.6.11,116
+    commit=v4.6.11
+    subdir=app
+    gradle=yes
+
+Build:4.6.12,117
+    commit=v4.6.12
+    subdir=app
+    gradle=yes
+
+Build:4.6.13,118
+    commit=v4.6.13
+    subdir=app
+    gradle=yes
+
+Build:4.7.1,119
+    commit=v4.7.1
+    subdir=app
+    gradle=yes
+
+Build:4.7.2,120
+    commit=v4.7.2
+    subdir=app
+    gradle=yes
+
+Build:4.7.3,121
+    commit=v4.7.3
+    subdir=app
+    gradle=yes
+
+Build:4.7.4,122
+    commit=v4.7.4
+    subdir=app
+    gradle=yes
+
+Build:4.7.5,123
+    commit=v4.7.5
+    subdir=app
+    gradle=yes
+
+Build:4.7.6,124
+    commit=v4.7.6
+    subdir=app
+    gradle=yes
+
+Build:4.7.7,125
+    commit=v4.7.7
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:4.6.10
-Current Version Code:115
+Current Version:4.7.7
+Current Version Code:125

@@ -9,7 +9,6 @@ IssueTracker: https://github.com/vadret/android/issues
 Changelog: https://github.com/vadret/android/blob/HEAD/app/src/main/res/raw/changelog.md
 
 AutoName: Vädret
-Summary: Weather app for Sweden
 Description: |-
     Vädret means weather in Swedish and it is an open source weather app with
     open data from SMHI Open Data Meteorological Analysis licensed under CC-BY.
@@ -71,7 +70,25 @@ Builds:
     prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' -e '/signingConfigs/d'
         build.gradle ../build.gradle
 
+  - versionName: 1.0.0
+    versionCode: 13
+    commit: 1.0.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' -e '/signingConfigs/d'
+        build.gradle ../build.gradle
+
+  - versionName: 1.1.0
+    versionCode: 15
+    commit: 1.1.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' -e '/signingConfigs/d'
+        build.gradle ../build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.1.8
-CurrentVersionCode: 9
+CurrentVersion: 1.1.0
+CurrentVersionCode: 15

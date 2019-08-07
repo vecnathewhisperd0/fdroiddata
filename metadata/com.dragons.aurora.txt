@@ -10,14 +10,13 @@ Changelog:https://gitlab.com/AuroraOSS/AuroraStore/blob/HEAD/CHANGELOG
 Donate:https://www.paypal.me/whyorean
 
 Auto Name:Aurora Store
-Summary:Download apks from Google Play Store
 Description:
 Aurora Store is a fork of '''Yalp Store''' by '''Sergey Yeriomin'''  It lets you
 download apps '''directly''' from Google Play Store '''as apk files'''. It can
 search for '''updates''' of installed apps and lets you '''search''' for other
 apps.
 
-'''Aurora Store''' provides a '''Material UI'''  to Yalp Store.
+Aurora is continued as [[com.aurora.store]]
 .
 
 Repo Type:git
@@ -33,6 +32,7 @@ Build:2.0.5-β,210020005
     subdir=app
     gradle=yes
 
+Archive Policy:0 versions
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Current Version:2.0.5-β

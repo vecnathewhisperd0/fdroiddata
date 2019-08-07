@@ -1,11 +1,10 @@
 Categories:
   - Writing
 License: MIT
-SourceCode: https://github.com/negativedensity/techahashi
-IssueTracker: https://github.com/negativedensity/techahashi/issues
+SourceCode: https://github.com/andswitch/techahashi
+IssueTracker: https://github.com/andswitch/techahashi/issues
 
 AutoName: Techahashi
-Summary: Minimal presentation tool, Takahashi method with technical upgrades
 Description: |
     A fork of [[trikita.slide]].
 
@@ -15,7 +14,7 @@ Description: |
     formulas using MathJax.
 
 RepoType: git
-Repo: https://github.com/negativedensity/techahashi
+Repo: https://github.com/andswitch/techahashi
 
 Builds:
   - versionName: '6'
@@ -30,7 +29,13 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 7.0.1
+    versionCode: 70001
+    commit: 7.0.1
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9]+\.[0-9]+\.[0-9]+$
-CurrentVersion: 7.0.0
-CurrentVersionCode: 70000
+CurrentVersion: 7.0.1
+CurrentVersionCode: 70001

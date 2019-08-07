@@ -50,7 +50,13 @@ Build:2.2.1,16
     subdir=app
     gradle=yes
 
+Build:2.3.0,17
+    commit=b733443510d28c9a061e1f8e25bd1e37baad3749
+    subdir=app
+    gradle=yes
+    prebuild=sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:2.2.1
-Current Version Code:16
+Current Version:2.3.0
+Current Version Code:17

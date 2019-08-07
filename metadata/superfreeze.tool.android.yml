@@ -3,6 +3,8 @@ Categories:
 License: GPL-3.0-or-later
 SourceCode: https://gitlab.com/SuperFreezZ/SuperFreezZ
 IssueTracker: https://gitlab.com/SuperFreezZ/SuperFreezZ/issues
+Translation: https://hosted.weblate.org/projects/superfreezz/#languages
+LiberapayID: '1411159'
 
 AutoName: SuperFreezZ
 
@@ -46,7 +48,68 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.0.8-alpha
+    versionCode: 8
+    commit: v0.0.8
+    gradle:
+      - yes
+
+  - versionName: 0.0.9-alpha
+    versionCode: 9
+    commit: v0.0.9-alpha
+    gradle:
+      - yes
+
+  - versionName: 0.0.10-alpha
+    versionCode: 10
+    commit: v0.0.10-alpha
+    gradle:
+      - yes
+
+  - versionName: '0.1'
+    versionCode: 11
+    commit: v0.1
+    gradle:
+      - yes
+
+  - versionName: '0.2'
+    versionCode: 12
+    commit: v0.2
+    gradle:
+      - yes
+
+  - versionName: '0.3'
+    versionCode: 13
+    disable: lintVitalRelease fails
+    commit: v0.3
+    gradle:
+      - yes
+
+  - versionName: '0.4'
+    versionCode: 14
+    commit: v0.4
+    gradle:
+      - yes
+
+  - versionName: '0.5'
+    versionCode: 15
+    commit: v0.5
+    gradle:
+      - yes
+
+  - versionName: '0.6'
+    versionCode: 16
+    commit: v0.6
+    gradle:
+      - yes
+
+  - versionName: '0.7'
+    versionCode: 17
+    commit: v0.7
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.7-alpha
-CurrentVersionCode: 7
+CurrentVersion: '0.7'
+CurrentVersionCode: 17

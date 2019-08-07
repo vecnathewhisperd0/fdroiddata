@@ -4,11 +4,11 @@ Categories:
 License: Apache-2.0
 AuthorName: Tibor Kaputa
 AuthorEmail: hello@simplemobiletools.com
-WebSite: https://simplemobiletools.github.io
+WebSite: https://simplemobiletools.com
 SourceCode: https://github.com/SimpleMobileTools/Simple-Gallery
 IssueTracker: https://github.com/SimpleMobileTools/Simple-Gallery/issues
 Changelog: https://github.com/SimpleMobileTools/Simple-Gallery/blob/HEAD/CHANGELOG.md
-Donate: https://simplemobiletools.github.io/donate
+Donate: https://simplemobiletools.com/donate
 Bitcoin: 19Hc8A7sWGud8sP19VXDC5a5j28UyJfpyJ
 Litecoin: LYACbHTKaM9ZubKQGxJ4NRyVy1gHUuztRP
 
@@ -130,7 +130,168 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore/d' build.gradle
 
+  - versionName: 6.5.1
+    versionCode: 229
+    commit: 6.5.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.5.2
+    versionCode: 230
+    commit: 6.5.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.5.3
+    versionCode: 231
+    disable: missing commons lib from maven
+    commit: 6.5.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.5.4
+    versionCode: 232
+    commit: 6.5.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.5.5
+    versionCode: 233
+    commit: 6.5.5
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.6.0
+    versionCode: 234
+    commit: 6.6.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.6.1
+    versionCode: 235
+    commit: 6.6.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.6.3
+    versionCode: 241
+    commit: 6.6.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.6.4
+    versionCode: 243
+    commit: 6.6.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.7.0
+    versionCode: 244
+    commit: 6.7.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.7.2
+    versionCode: 246
+    commit: 6.7.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.7.5
+    versionCode: 249
+    commit: 6.7.5
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.7.7
+    versionCode: 251
+    commit: 6.7.7
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.7.9
+    versionCode: 253
+    commit: 6.7.9
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.8.0
+    versionCode: 254
+    commit: 6.8.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.8.1
+    versionCode: 255
+    commit: 6.8.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.8.2
+    versionCode: 256
+    commit: 6.8.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.8.3
+    versionCode: 257
+    commit: 6.8.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.8.4
+    versionCode: 258
+    commit: 6.8.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.9.1
+    versionCode: 260
+    commit: 6.9.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 6.5.0
-CurrentVersionCode: 228
+CurrentVersion: 6.9.1
+CurrentVersionCode: 260

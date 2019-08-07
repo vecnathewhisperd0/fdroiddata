@@ -7,12 +7,12 @@ License: GPL-3.0-or-later
 WebSite: https://newpipe.schabi.org
 SourceCode: https://github.com/TeamNewPipe/NewPipe
 IssueTracker: https://github.com/TeamNewPipe/NewPipe/issues
+Translation: https://hosted.weblate.org/projects/newpipe/
 Changelog: https://github.com/TeamNewPipe/NewPipe/releases
 LiberapayID: '34969'
 Bitcoin: 16A9J59ahMRqkLSZjhYj33n9j3fMztFxnh
 
 AutoName: NewPipe
-Summary: Lightweight YouTube frontend
 Description: |-
     Lightweight YouTube frontend that's supposed to be used without the proprietary
     YouTube-API or any of Google's (proprietary) play-services. NewPipe only parses
@@ -495,7 +495,31 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.16.0
+    versionCode: 720
+    commit: v0.16.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.16.1
+    versionCode: 730
+    commit: v0.16.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.16.2
+    versionCode: 740
+    commit: v0.16.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.15.1
-CurrentVersionCode: 71
+CurrentVersion: 0.16.2
+CurrentVersionCode: 740

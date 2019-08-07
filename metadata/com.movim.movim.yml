@@ -6,7 +6,6 @@ SourceCode: https://github.com/movim/movim_android
 IssueTracker: https://github.com/movim/movim_android/issues
 
 AutoName: Movim
-Summary: Decentralized Social Network
 Description: |-
     Client for [https://movim.eu Movim], a distributed social networking platform
     that tries to protect your privacy and comes with a set of interesting features,
@@ -74,7 +73,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.15.0.0
+    versionCode: 11
+    commit: v0.15.0.0
+    subdir: Movim
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.14.0.0
-CurrentVersionCode: 10
+CurrentVersion: 0.15.0.0
+CurrentVersionCode: 11

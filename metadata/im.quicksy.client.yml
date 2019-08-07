@@ -8,12 +8,13 @@ AuthorName: Daniel Gultsch
 WebSite: https://quicksy.im/
 SourceCode: https://github.com/siacs/Conversations
 IssueTracker: https://github.com/siacs/Conversations/issues
+Translation: https://www.transifex.com/siacs/conversations/
+Changelog: https://github.com/siacs/Conversations/blob/HEAD/CHANGELOG.md
 Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CW3SYT3KG5PDL
 LiberapayID: '34225'
 Bitcoin: 1AeqNAcg85APAZj9BZfAjdFCC5zesqXp2B
 
 AutoName: Quicksy
-Summary: Jabber/XMPP with Easy Entry and Easy Discovery
 Description: |-
     Quicksy is a spin off of the popular Jabber/XMPP client
     [[eu.siacs.conversations]] with automatic contact discovery.
@@ -107,7 +108,87 @@ Builds:
         \ \ \ \ \ \ \ abortOnError\ false' build.gradle
       - sed -i -e 's/4.10.3/4.10.2/' gradle/wrapper/gradle-wrapper.properties
 
-AutoUpdateMode: Version %v+fcr
+  - versionName: 2.4.0+fcr
+    versionCode: 320
+    commit: 2.4.0
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.1+fcr
+    versionCode: 321
+    commit: 2.4.1
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.2+fcr
+    versionCode: 322
+    commit: 2.4.2
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.4.3+fcr
+    versionCode: 323
+    commit: 2.4.3
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.0+fcr
+    versionCode: 326
+    commit: 2.5.0
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.1+fcr
+    versionCode: 327
+    commit: 2.5.1
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.2+fcr
+    versionCode: 329
+    commit: 2.5.2
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.3+fcr
+    versionCode: 330
+    commit: 2.5.3
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.4+fcr
+    versionCode: 333
+    commit: 2.5.4
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+  - versionName: 2.5.5+fcr
+    versionCode: 334
+    commit: 2.5.5
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e 's/targetSdkVersion 28/targetSdkVersion 25/' -e '/ExtraTranslation/a\
+        \ \ \ \ \ \ \ abortOnError\ false' build.gradle
+
+AutoUpdateMode: None
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: 2.3.12+fcr
-CurrentVersionCode: 317
+CurrentVersion: 2.5.5+fcr
+CurrentVersionCode: 334

@@ -1,11 +1,10 @@
 Categories:
   - System
 License: GPL-3.0-only
-SourceCode: https://gitlab.com/parduscix/disable-delete-gapps
-IssueTracker: https://gitlab.com/parduscix/disable-delete-gapps/issues
+SourceCode: https://gitlab.com/sulincix/disable-delete-gapps
+IssueTracker: https://gitlab.com/sulincix/disable-delete-gapps/issues
 
 AutoName: /d/gapps
-Summary: Delete/disable GApps
 Description: |-
     This application is used to delete or disable gapps. It uses a regex to
     find GApps package
@@ -28,7 +27,7 @@ Description: |-
 RequiresRoot: 'yes'
 
 RepoType: git
-Repo: https://gitlab.com/parduscix/disable-delete-gapps
+Repo: https://gitlab.com/sulincix/disable-delete-gapps
 
 Builds:
   - versionName: '2.0'
@@ -45,7 +44,49 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '6.0'
+    versionCode: 6
+    commit: '6.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '7.0'
+    versionCode: 7
+    commit: '7.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '8.0'
+    versionCode: 8
+    commit: '8.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '9.0'
+    versionCode: 9
+    commit: '9.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '10.0'
+    versionCode: 10
+    commit: '10.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '11.0'
+    versionCode: 11
+    commit: '11.0'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '4.0'
-CurrentVersionCode: 4
+CurrentVersion: '11.0'
+CurrentVersionCode: 11

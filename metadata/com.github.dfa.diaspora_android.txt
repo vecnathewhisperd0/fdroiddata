@@ -4,7 +4,7 @@ Web Site:https://diasp.org/people/48b78420923501341ef3782bcb452bd5
 Source Code:https://github.com/gsantner/dandelion
 Issue Tracker:https://github.com/gsantner/dandelion/issues
 Changelog:https://github.com/gsantner/dandelion/blob/HEAD/CHANGELOG.md
-Donate:https://github.com/gsantner/dandelion/blob/HEAD/README.md#maintainers
+Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TVV24QBGMN23C&source=self.gsantner.net%2Fcom.github.dfa.diaspora_android
 LiberapayID:13079
 Bitcoin:1B9ZyYdQoY9BxMe9dRUEKaZbJWsbQqfXU5
 Litecoin:LSC2NUiXmnsJiaRczq9AKceX6CEHQHP39w
@@ -183,11 +183,21 @@ Build:1.2.5,40
     subdir=app
     gradle=FlavorDefault
 
+Build:1.3.0,41
+    commit=v1.3.0
+    subdir=app
+    gradle=FlavorDefault
+
+Build:1.3.1,42
+    commit=v1.3.1
+    subdir=app
+    gradle=FlavorDefault
+
 Maintainer Notes:
 Description and summary in app git repository
 .
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.2.5
-Current Version Code:40
+Current Version:1.3.1
+Current Version Code:42

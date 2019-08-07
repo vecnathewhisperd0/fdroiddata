@@ -1,0 +1,42 @@
+Categories:
+  - Games
+License: GPL-3.0-or-later
+AuthorName: Phil Roggenbuck
+AuthorEmail: ceo@roggstar.eu
+SourceCode: https://github.com/LuigiTheHunter/DSAAssistant/
+IssueTracker: https://github.com/LuigiTheHunter/DSAAssistant//issues
+Donate: https://www.paypal.me/proggenbuck
+
+AutoName: DSA Assistent
+Description: |-
+    Ein Helfer für das Schwarze Auge.
+
+    '''HAUPTFUNKTIONEN:'''
+    * Geldbeutel Manager 2.0
+    * Kampfszenen und Wunden Manager 1.2
+    * Würfeln der wichtigsten Würfel 1.0
+    * GM Ini Manager 1.0
+
+RepoType: git
+Repo: https://github.com/LuigiTheHunter/DSAAssistant/
+
+Builds:
+  - versionName: Erebor
+    versionCode: 49
+    commit: v49
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/[tT]est/d' -e '/withoutimplement/,+2d' build.gradle
+
+  - versionName: Mister English
+    versionCode: 52
+    commit: v52
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%c
+UpdateCheckMode: Tags
+CurrentVersion: Mister English
+CurrentVersionCode: 52

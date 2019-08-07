@@ -3,11 +3,11 @@ Categories:
 License: Apache-2.0
 AuthorName: Tibor Kaputa
 AuthorEmail: hello@simplemobiletools.com
-WebSite: https://simplemobiletools.github.io
+WebSite: https://simplemobiletools.com
 SourceCode: https://github.com/SimpleMobileTools/Simple-Notes
 IssueTracker: https://github.com/SimpleMobileTools/Simple-Notes/issues
 Changelog: https://github.com/SimpleMobileTools/Simple-Notes/blob/HEAD/CHANGELOG.md
-Donate: https://simplemobiletools.github.io/donate
+Donate: https://simplemobiletools.com/donate
 Bitcoin: 19Hc8A7sWGud8sP19VXDC5a5j28UyJfpyJ
 Litecoin: LYACbHTKaM9ZubKQGxJ4NRyVy1gHUuztRP
 
@@ -58,7 +58,31 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore/d' build.gradle
 
+  - versionName: 6.1.3
+    versionCode: 60
+    commit: 6.1.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.1.4
+    versionCode: 61
+    commit: 6.1.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.1.6
+    versionCode: 63
+    commit: 6.1.6
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 6.1.2
-CurrentVersionCode: 59
+CurrentVersion: 6.1.6
+CurrentVersionCode: 63

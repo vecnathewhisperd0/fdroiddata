@@ -25,7 +25,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.2.2
+    versionCode: 4
+    commit: release-0.2.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.3
+    versionCode: 5
+    commit: release-0.2.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.1
+    versionCode: 50
+    commit: release-1.5.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2.1
-CurrentVersionCode: 3
+CurrentVersion: 1.5.1
+CurrentVersionCode: 50

@@ -7,7 +7,6 @@ IssueTracker: https://github.com/HenriDellal/emerald-dialer/issues
 Changelog: https://github.com/HenriDellal/emerald-dialer/releases
 
 AutoName: Emerald Dialer
-Summary: Make calls, view call log
 Description: |-
     Emerald Dialer is a lightweight dialer app.
 
@@ -45,7 +44,17 @@ Builds:
     commit: v1.0.5
     target: android-26
 
+  - versionName: 1.0.7
+    versionCode: 9
+    commit: v1.0.7
+    target: android-26
+
+  - versionName: 1.0.8
+    versionCode: 10
+    commit: v1.0.8
+    target: android-26
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.5
-CurrentVersionCode: 7
+CurrentVersion: 1.0.8
+CurrentVersionCode: 10

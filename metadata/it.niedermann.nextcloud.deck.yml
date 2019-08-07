@@ -1,0 +1,48 @@
+Categories:
+  - Internet
+License: GPL-3.0-or-later
+WebSite: https://github.com/stefan-niedermann/nextcloud-deck
+SourceCode: https://github.com/stefan-niedermann/nextcloud-deck
+IssueTracker: https://github.com/stefan-niedermann/nextcloud-deck/issues
+Changelog: https://github.com/stefan-niedermann/nextcloud-deck/tags
+Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W523CNHTD7ARQ&source=url
+LiberapayID: '46438'
+
+AutoName: Nextcloud Deck
+
+RepoType: git
+Repo: https://github.com/stefan-niedermann/nextcloud-deck.git
+
+Builds:
+  - versionName: 0.0.1
+    versionCode: 1
+    commit: 0.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.2
+    versionCode: 2
+    commit: 0.0.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.3
+    versionCode: 3
+    commit: 0.0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.4
+    versionCode: 4
+    commit: 0.0.4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.0.4
+CurrentVersionCode: 4
