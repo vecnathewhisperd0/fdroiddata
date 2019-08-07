@@ -28,7 +28,7 @@ Repo: https://github.com/beatbrot/ScreenshotAssistant.git
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: 9432b77871d21ba75524e68b81481ec3aa839e17
+    commit: v1.0
     subdir: app
     gradle:
       - yes
