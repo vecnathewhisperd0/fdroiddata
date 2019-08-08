@@ -15,8 +15,6 @@ Description: |-
     This app is ancient so it may not work on Android 4+ but you can get direct
     access to app activities with [[com.ideasfrombrain.search_based_launcher_v2]].
 
-RepoType: git
-
 Builds:
   - versionName: '0.5'
     versionCode: 5
