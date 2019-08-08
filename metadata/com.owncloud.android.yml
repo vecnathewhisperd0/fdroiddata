@@ -591,6 +591,16 @@ Builds:
     rm:
       - user_manual
 
+   - versionName: 2.12-beta.1
+    versionCode: 21100101
+    commit: oc-android-2.12-beta.1
+    subdir: owncloudApp
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - user_manual     
+
 AutoUpdateMode: Version oc-android-%v
 UpdateCheckMode: Tags ^oc-android-[0-9.]*$
 CurrentVersion: 2.11.1
