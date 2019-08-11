@@ -3,7 +3,6 @@ Categories:
 License: CC-BY-SA-4.0
 WebSite: https://plus.google.com/u/0/communities/117004088255020338497
 SourceCode: https://github.com/Papuh/PapuhWalls
-IssueTracker: https://github.com/Papuh/PapuhWalls/issues
 
 AutoName: Papuh
 Summary: Display live wallpapers
@@ -23,9 +22,6 @@ Description: |-
     * Full Muzei Live Wallpaper support
     * Full Behang support
 
-RepoType: git
-Repo: https://github.com/Papuh/PapuhWalls
-
 Builds:
   - versionName: 2.0.6
     versionCode: 10
@@ -38,3 +34,5 @@ AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
 CurrentVersion: 2.0.6
 CurrentVersionCode: 10
+
+NoSourceSince: 2.0.6
