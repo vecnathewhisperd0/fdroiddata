@@ -1,3 +1,5 @@
+AntiFeatures:
+  - Tracking
 Categories:
   - Games
 License: GPL-2.0-or-later
@@ -15,6 +17,10 @@ Description: The Battle for Wesnoth is a turn-based strategy game with a high fa
     itself... Defend your kingdom against the ravaging hordes of a foul necromancer...
     Or lead a straggly band of survivors across the blazing sands to confront an unseen
     evil.
+
+    Antifeatures: Tracking - "Send anonymous usage statistics" is enabled by default,
+    it connects to the Androids port developer owned server, it can be toggled off in
+    Settings->Startup Options.
 
 RepoType: git
 Repo: https://gitlab.com/f-droid-mirrors/empty
