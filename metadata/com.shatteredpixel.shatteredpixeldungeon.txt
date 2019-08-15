@@ -424,6 +424,7 @@ Build:0.7.4c,362
     commit=v0.7.4c
     subdir=android
     gradle=yes
+    scandelete=android/libs/*
 
 Auto Update Mode:Version v%v
 Update Check Mode:HTTP
