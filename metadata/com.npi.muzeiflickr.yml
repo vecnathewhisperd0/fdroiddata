@@ -1,0 +1,28 @@
+Disabled: Missing license, ticket pending
+Categories:
+  - Multimedia
+  - Theming
+SourceCode: https://github.com/PomepuyN/muzei-flickr
+IssueTracker: https://github.com/PomepuyN/muzei-flickr/issues
+
+Name: Flickr for Muzei
+AutoName: Muzei Flickr
+Summary: Flickr pictures for Muzei
+Description: Pictures from flickr.com for [[net.nurik.roman.muzei]].
+
+RepoType: git
+Repo: https://github.com/PomepuyN/muzei-flickr.git
+
+Builds:
+  - versionName: 2.0.3
+    versionCode: 20003
+    disable: missing license
+    commit: v2.0.3
+    subdir: MuzeiFlickr
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: 2.0.3
+CurrentVersionCode: 20003
