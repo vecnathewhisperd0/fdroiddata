@@ -197,7 +197,23 @@ Builds:
     gradle:
       - standard
 
+  - versionName: 1.4.2
+    versionCode: 29
+    commit: v1.4.2
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.4.3
+    versionCode: 30
+    commit: v1.4.3
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.1
-CurrentVersionCode: 28
+CurrentVersion: 1.4.3
+CurrentVersionCode: 30
