@@ -71,13 +71,13 @@ Builds:
       - buildSrc
 
   - versionName: 2.3.2
-  versionCode: 2030200
-  commit: v2.3.2
-  subdir: app
-  gradle:
-    - yes
-  scanignore:
-    - buildSrc
+    versionCode: 2030200
+    commit: v2.3.2
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
 
 AutoUpdateMode: None
 UpdateCheckMode: None
