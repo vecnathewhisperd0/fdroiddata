@@ -108,7 +108,7 @@ Builds:
 MaintainerNotes: |-
     - we use prebuild else fdroid scanner will detect the built libs as binaries on the second pass before running build, and we can't scanignore them (at start) since they don't exist yet, see https://gitlab.com/fdroid/fdroidserver/issues/635
     - we remove the buildtools and intermediary artefacts (several gigabytes) else they'll get pulled in the source tarball
-    - versionName is geenrated
+    - versionName is generated
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags .*[0-9]-nightly$
