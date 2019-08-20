@@ -21,13 +21,13 @@ RepoType: git
 Repo: https://github.com/xuhcc/beancount-mobile
 
 Builds:
-  - versionName: 0.6.0
-    versionCode: 60000
-    commit: v0.6.0
+  - versionName: 1.0.0
+    versionCode: 1000000
+    commit: v1.0.0
     sudo:
       - apt update || apt update
       - apt install -y -t stretch-backports npm
-      - npm install -g nativescript@6.0.2
+      - npm install -g nativescript@6.0.3
     output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
     build:
       - npm install
@@ -35,5 +35,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.6.0
-CurrentVersionCode: 60000
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1000000
