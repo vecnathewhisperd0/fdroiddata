@@ -4,8 +4,8 @@ Categories:
   - Money
 License: GPL-3.0-only
 AuthorWebSite: http://touch.facebook.com/profile.php?id=100393240038469
-SourceCode: https://github.com/dennischen/dailymoney2017
-IssueTracker: https://github.com/dennischen/dailymoney2017/issues
+SourceCode: https://github.com/dennischen/daily-money
+IssueTracker: https://github.com/dennischen/daily-money/issues
 
 AutoName: DailyMoney
 Summary: Finance manager
@@ -17,10 +17,7 @@ Description: |-
 
     The app has been built without the non-FOSS Google Analytics, so no usage
     statistics will be sent. Also the INTERNET permission has been removed as it
-    didn't seem to be needed for anything else.
-
-RepoType: git
-Repo: https://github.com/dennischen/dailymoney2017.git
+    didn’t seem to be needed for anything else.
 
 Builds:
   - versionName: 0.9.8-121107-freshly
@@ -44,6 +41,8 @@ Builds:
     subdir: app
     gradle:
       - yes
+
+MaintainerNotes: Removed RepoURL as it is unclear which one it went to.
 
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
