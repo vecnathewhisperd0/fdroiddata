@@ -15,9 +15,9 @@ RepoType: git
 Repo: http://galexander.org/git/simplesshd.git/
 
 Builds:
-  - versionName: '20'
-    versionCode: 20
-    commit: f95e97ede8e74c8f75b1ce1a687b5030a2bb9fa4
+  - versionName: '21'
+    versionCode: 21
+    commit: release_21
     subdir: app
     gradle:
       - yes
@@ -32,6 +32,6 @@ Builds:
     ndk: r19c
 
 AutoUpdateMode: None
-UpdateCheckMode: RepoManifest
-CurrentVersion: '20'
-CurrentVersionCode: 20
+UpdateCheckMode: Tags
+CurrentVersion: '21'
+CurrentVersionCode: 21
