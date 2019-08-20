@@ -12,7 +12,7 @@ Description: |-
     does not have any extra features such as dock mode or a world clock.
 
 RepoType: git
-Repo: https://github.com/yuriykulikov/AlarmClockAndroidStudio
+Repo: https://github.com/yuriykulikov/AlarmClock
 
 Builds:
   - versionName: 2.4.14
