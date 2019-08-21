@@ -67,7 +67,6 @@ Builds:
     gradle:
       - yes
 
-
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 1.50.33.5
