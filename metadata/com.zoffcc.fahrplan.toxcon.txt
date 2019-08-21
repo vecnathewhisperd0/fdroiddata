@@ -14,11 +14,14 @@ Build:1.0.0,10000
     subdir=app
     gradle=yes
 
-Maintainer Notes:
-Description and summary in app git repository
-.
+Build:1.0.3,10003
+    commit=1.0.3
+    subdir=app
+    gradle=yes
+    output=build/outputs/apk/toxcon2019/release/Fahrplan-*-toxcon2019-release-unsigned.apk
+    scanignore=buildSrc
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags ^[0-9].*
-Current Version:1.0.0
-Current Version Code:10000
+Current Version:1.0.3
+Current Version Code:10003
