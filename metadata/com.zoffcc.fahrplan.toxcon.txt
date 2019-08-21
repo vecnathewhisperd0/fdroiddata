@@ -17,8 +17,7 @@ Build:1.0.0,10000
 Build:1.0.3,10003
     commit=1.0.3
     subdir=app
-    gradle=yes
-    output=build/outputs/apk/toxcon2019/release/Fahrplan-*-toxcon2019-release-unsigned.apk
+    gradle=toxcon2019
     scanignore=buildSrc
 
 Auto Update Mode:Version %v
