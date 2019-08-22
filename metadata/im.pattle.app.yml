@@ -43,7 +43,7 @@ Builds:
     build: $$flutter$$/bin/flutter build apk --flavor fdroid -v --suppress-analytics
 
   - versionName: 0.11.0
-    versionCode: 700
+    versionCode: 666
     commit: v0.11.0
     output: build/app/outputs/apk/fdroid/release/pattle.apk
     srclibs:
@@ -58,5 +58,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://version.pattle.im/|\ ([0-9]+)|.|([0-9]+\.[0-9]+\.[0-9]+)
-CurrentVersion: 0.10.1
-CurrentVersionCode: 636
+CurrentVersion: 0.11.0
+CurrentVersionCode: 666
