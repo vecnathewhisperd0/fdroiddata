@@ -4,7 +4,6 @@ Categories:
 License: Apache-2.0
 WebSite: https://coinbase.com
 SourceCode: https://github.com/coinbase/coinbase-android
-IssueTracker: https://github.com/coinbase/coinbase-android/issues
 
 AutoName: Coinbase
 Summary: Coinbase client
@@ -16,9 +15,6 @@ Description: |-
     * View transaction history, details, and balance
     * See prices in BTC or your native currency
     * Support for multiple accounts
-
-RepoType: git
-Repo: https://github.com/coinbase/coinbase-android.git
 
 Builds:
   - versionName: 1.1.1
@@ -43,10 +39,11 @@ Builds:
       - consumer
 
 MaintainerNotes: |-
-    The merchant version hasn't been packaged yet
+    The merchant version hasn’t been packaged yet
 
     Upstream forgot about tags some time ago.
 
+NoSourceSince: 2.2
 AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: '0'
