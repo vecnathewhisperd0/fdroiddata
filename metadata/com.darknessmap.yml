@@ -1,0 +1,28 @@
+Categories:
+  - Navigation
+License: MIT
+WebSite: http://darknessmap.com
+SourceCode: https://github.com/ercanpinar/app-android
+IssueTracker: https://github.com/ercanpinar/app-android/issues
+
+AutoName: Darkness Map
+Summary: Crowd-sourced mapping
+Description: |-
+    Contribute to the Darkness map: a visualization of light levels in the city at
+    night.
+
+    Status: Beta.
+
+RepoType: git
+Repo: https://github.com/ercanpinar/app-android.git
+
+Builds:
+  - versionName: 0.2.0
+    versionCode: 1
+    commit: 15c0f378ae4a4
+    target: android-18
+
+AutoUpdateMode: None
+UpdateCheckMode: RepoManifest
+CurrentVersion: 0.2.0
+CurrentVersionCode: 1
