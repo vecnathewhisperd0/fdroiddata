@@ -2,16 +2,12 @@ Categories:
   - Reading
 License: GPL-3.0-only
 SourceCode: https://github.com/edwardoyarzun/diccionariochilenoandroid
-IssueTracker: https://github.com/edwardoyarzun/diccionariochilenoandroid/issues
 
 AutoName: Diccionario Chileno
 Summary: Chilean word dictionary
 Description: |-
     Diccionario con palabras y frases típicas utilizadas por los chilenos. Incluye
     mas de 500 palabras y su significado.
-
-RepoType: git
-Repo: https://github.com/edwardoyarzun/diccionariochilenoandroid.git
 
 Builds:
   - versionName: '1.0'
@@ -29,3 +25,5 @@ AutoUpdateMode: None
 UpdateCheckMode: Static
 CurrentVersion: '0'
 CurrentVersionCode: 0
+
+NoSourceSince: '2.0'
