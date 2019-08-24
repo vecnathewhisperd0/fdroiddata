@@ -11,9 +11,6 @@ Description: |-
     coordinates. It calculates prayer times, gives notifications and has a Qibla for
     showing the direction of Mecca.
 
-RepoType: git
-Repo: https://code.google.com/p/android-salat-times
-
 Builds:
   - versionName: '2.5'
     versionCode: 200
