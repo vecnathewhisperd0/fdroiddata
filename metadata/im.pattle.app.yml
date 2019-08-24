@@ -45,7 +45,7 @@ Builds:
   - versionName: 0.11.0
     versionCode: 666
     commit: v0.11.0
-    output: build/app/outputs/apk/fdroid/release/pattle.apk
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
       - flutter@stable
     prebuild:
