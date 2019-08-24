@@ -903,7 +903,18 @@ Builds:
         build.gradle
     build: $$MVN3$$ install -f $$android-vcard$$/pom.xml -Dmaven.test.skip=true
 
+  - versionName: 2.2.18
+    versionCode: 93
+    commit: 2.2.18
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/repositories/a\        mavenLocal()' ../build.gradle
+      - sed -i -e 's/versionCode 92/versionCode 93/' build.gradle
+      - sed -i -e 's/versionName "2\.2\.17"/versionName "2.2.18"/' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.17
-CurrentVersionCode: 92
+CurrentVersion: 2.2.18
+CurrentVersionCode: 93
