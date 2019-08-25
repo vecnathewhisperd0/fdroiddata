@@ -1,16 +1,11 @@
 Categories:
   - Internet
 License: Unlicense
-WebSite: http://gluegadget.com/hndroid
 SourceCode: https://github.com/amir/HNdroid
-IssueTracker: https://github.com/amir/HNdroid/issues
 
 AutoName: HNdroid
 Summary: Hacker News Client
 Description: Read and comment to stories posted on news.ycombinator.com
-
-RepoType: git
-Repo: https://github.com/amir/HNdroid.git
 
 Builds:
   - versionName: 0.2.1
@@ -29,3 +24,5 @@ AutoUpdateMode: None
 UpdateCheckMode: Static
 CurrentVersion: 0.2.1
 CurrentVersionCode: 3
+
+NoSourceSince: 0.2.1
