@@ -13,9 +13,6 @@ Description: |-
     This data can then either be used in interviews (DES) or being collected
     directly (ESM).
 
-RepoType: git
-Repo: https://github.com/nebulon42/beepme.git
-
 Builds:
   - versionName: 1.5.1
     versionCode: 18
@@ -51,3 +48,5 @@ AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 1.5.5
 CurrentVersionCode: 22
+
+NoSourceSince: 1.5.5
