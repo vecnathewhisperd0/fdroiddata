@@ -3,7 +3,6 @@ Categories:
 License: GPL-3.0-only
 WebSite: http://212.47.244.196/2017/03/14/privacy_policy/
 SourceCode: https://github.com/GeorgijK/swj
-IssueTracker: https://github.com/GeorgijK/swj/issues
 
 AutoName: SWJournal
 Summary: Track your workouts
@@ -22,9 +21,6 @@ Description: |-
     Additionally you can create report for chosen exercise with graph and some
     stats.
 
-RepoType: git
-Repo: https://github.com/GeorgijK/swj
-
 Builds:
   - versionName: '1.5'
     versionCode: 3
@@ -37,3 +33,5 @@ AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
 CurrentVersion: '1.5'
 CurrentVersionCode: 3
+
+NoSourceSince: '1.5'
