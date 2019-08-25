@@ -3,16 +3,12 @@ Categories:
 License: GPL-3.0-only
 WebSite: http://www.cdf.toronto.edu/~g4greg/
 SourceCode: https://github.com/GWlodarek/TorontoTransit
-IssueTracker: https://github.com/GWlodarek/TorontoTransit/issues
 
 AutoName: Toronto Transit
 Summary: Bus information for Toronto
 Description: |-
     Real-time bus arrival estimation application that assists you in your travels.
     It can use either data (WiFi/3G/4G) or SMS to get estimated bus arrival times.
-
-RepoType: git
-Repo: https://github.com/GWlodarek/TorontoTransit
 
 Builds:
   - versionName: 1.1.2
@@ -34,3 +30,5 @@ AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
 CurrentVersion: 1.1.2
 CurrentVersionCode: 9
+
+NoSourceSince: 1.1.2
