@@ -17,7 +17,8 @@ Builds:
     gradle:
       - foss
     prebuild:
-      - sed -i -e '/getTaskNames/,/}/c\return false' ../build.gradle
+      - awk 'd==0{m=0} /isGooglePlayFlavor()/{m=1} m==1&&/{/{d++} d==0{print} m==1&&/}/{d--}' build.gradle > build.tmp && mv build.tmp build.gradle
+      - awk 'd==0{m=0} /isGooglePlayFlavor()/{m=1} m==1&&/{/{d++} d==0{print} m==1&&/}/{d--}' ../build.gradle > ../build.tmp && mv ../build.tmp ../build.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
