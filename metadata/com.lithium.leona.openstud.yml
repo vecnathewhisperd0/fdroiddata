@@ -10,17 +10,21 @@ RepoType: git
 Repo: https://github.com/LithiumSR/openstud_client.git
 
 Builds:
-  - versionName: 1.25.4
-    versionCode: 160
-    commit: 1.25.4
+  - versionName: 1.25.5
+    versionCode: 161
+    commit: 1.25.5
     subdir: app
     gradle:
       - foss
     prebuild:
-      - sed -i -e '/getTaskNames/,+5d' -e '/getTaskNames/,+5d' build.gradle
-      - sed -i -e '/getTaskNames/,+6d' ../build.gradle
+      - awk 'd==0{m=0} /isGooglePlayFlavor()/{m=1} m==1&&/{/{d++} d==0{print} m==1&&/}/{d--}'
+        build.gradle > build.tmp
+      - mv build.tmp build.gradle
+      - awk 'd==0{m=0} /isGooglePlayFlavor()/{m=1} m==1&&/{/{d++} d==0{print} m==1&&/}/{d--}'
+        ../build.gradle > ../build.tmp
+      - mv ../build.tmp ../build.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.25.4
-CurrentVersionCode: 160
+CurrentVersion: 1.25.5
+CurrentVersionCode: 161
