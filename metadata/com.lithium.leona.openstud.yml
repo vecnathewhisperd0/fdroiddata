@@ -14,7 +14,9 @@ Builds:
     versionCode: 161
     commit: 1.25.5
     subdir: app
-    sudo: apt-get install -y gawk
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gawk
     gradle:
       - foss
     prebuild:
