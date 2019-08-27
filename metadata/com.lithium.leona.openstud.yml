@@ -14,13 +14,14 @@ Builds:
     versionCode: 161
     commit: 1.25.5
     subdir: app
+    sudo: apt-get install -y gawk
     gradle:
       - foss
     prebuild:
-      - awk 'd==0{m=0} /isGooglePlayFlavor()/{m=1} m==1&&/{/{d++} d==0{print} m==1&&/}/{d--}'
+      - gawk 'd==0{m=0} /isGooglePlayFlavor()/{m=1} m==1&&/{/{d++} d==0{print} m==1&&/}/{d--}'
         build.gradle > build.tmp
       - mv build.tmp build.gradle
-      - awk 'd==0{m=0} /isGooglePlayFlavor()/{m=1} m==1&&/{/{d++} d==0{print} m==1&&/}/{d--}'
+      - gawk 'd==0{m=0} /isGooglePlayFlavor()/{m=1} m==1&&/{/{d++} d==0{print} m==1&&/}/{d--}'
         ../build.gradle > ../build.tmp
       - mv ../build.tmp ../build.gradle
 
