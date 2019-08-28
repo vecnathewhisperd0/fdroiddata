@@ -75,7 +75,16 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.17.1
+    versionCode: 30
+    disable: 'PlaylistFragment.java:44: error: cannot find symbol'
+    commit: v0.17.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.16.2
-CurrentVersionCode: 20
+CurrentVersion: 0.17.1
+CurrentVersionCode: 30

@@ -44,7 +44,21 @@ Builds:
     gradle:
       - prod
 
+  - versionName: 0.2.6
+    versionCode: 9
+    commit: v0.2.6
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 0.2.7
+    versionCode: 10
+    commit: v0.2.7
+    subdir: app
+    gradle:
+      - prod
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2.4
-CurrentVersionCode: 7
+CurrentVersion: 0.2.7
+CurrentVersionCode: 10
