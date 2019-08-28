@@ -14,9 +14,6 @@ Description: |-
     app is also able to detect what the stock Music app ([[com.android.music]]) is
     playing, without a Scrobbler.
 
-RepoType: git
-Repo: https://code.google.com/p/jlyr
-
 Builds:
   - versionName: '1.0'
     versionCode: 1
