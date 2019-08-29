@@ -72,5 +72,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://version.pattle.im/|\ ([0-9]+)|.|([0-9]+\.[0-9]+\.[0-9]+)
-CurrentVersion: 0.11.2
-CurrentVersionCode: 671
+CurrentVersion: 0.12.0
+CurrentVersionCode: 677
