@@ -845,7 +845,7 @@ Builds:
       - ./build_boringssl.sh
       - popd
     ndk: r19c
-    
+
   - versionName: 5.10.0
     versionCode: 16840
     commit: v5.10.0
