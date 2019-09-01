@@ -2,7 +2,6 @@ Categories:
   - Games
 License: Apache-2.0
 SourceCode: https://github.com/JhilanAlkarawi/Swiss-Tournament
-IssueTracker: https://github.com/JhilanAlkarawi/Swiss-Tournament/issues
 
 AutoName: Swiss Chess Tournament
 Summary: Manage tournaments
@@ -19,9 +18,6 @@ Description: |-
     * handle Byes
     * one Bye for player per tournament
     * avoid rematch
-
-RepoType: git
-Repo: https://github.com/JhilanAlkarawi/Swiss-Tournament
 
 Builds:
   - versionName: '1.0'
@@ -46,3 +42,5 @@ AutoUpdateMode: None
 UpdateCheckMode: Static
 CurrentVersion: '0'
 CurrentVersionCode: 0
+
+NoSourceSince: '1.0'
