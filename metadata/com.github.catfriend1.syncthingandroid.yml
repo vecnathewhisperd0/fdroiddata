@@ -900,7 +900,7 @@ Builds:
       - PATH="$PWD/go/bin:$PATH" gradle buildNative
     ndk: r19c
 
-- versionName: 1.2.2.3
+  - versionName: 1.2.2.3
     versionCode: 1020203
     commit: v1.2.2.3
     submodules: true
