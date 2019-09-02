@@ -875,7 +875,7 @@ Builds:
     ndk: r20
 
   - versionName: 5.10.0
-    versionCode: 16843
+    versionCode: 16841
     commit: v5.10.0
     subdir: TMessagesProj
     submodules: true
@@ -883,7 +883,7 @@ Builds:
       - apt-get update || apt-get update
       - apt-get install -y ninja-build golang-go
     gradle:
-      - armv7_SDK23
+      - armv7
     rm:
       - TMessagesProj/jni/libwebp/swig/libwebp.jar
       - TMessagesProj/jni/ffmpeg/tests/ref/fate/sub-microdvd-remux
@@ -903,7 +903,7 @@ Builds:
     ndk: r20
 
   - versionName: 5.10.0
-    versionCode: 16844
+    versionCode: 16842
     commit: v5.10.0
     subdir: TMessagesProj
     submodules: true
@@ -911,7 +911,7 @@ Builds:
       - apt-get update || apt-get update
       - apt-get install -y ninja-build golang-go
     gradle:
-      - x86_SDK23
+      - x86
     rm:
       - TMessagesProj/jni/libwebp/swig/libwebp.jar
       - TMessagesProj/jni/ffmpeg/tests/ref/fate/sub-microdvd-remux
@@ -931,7 +931,7 @@ Builds:
     ndk: r20
 
   - versionName: 5.10.0
-    versionCode: 16847
+    versionCode: 16845
     commit: v5.10.0
     subdir: TMessagesProj
     submodules: true
@@ -939,7 +939,7 @@ Builds:
       - apt-get update || apt-get update
       - apt-get install -y ninja-build golang-go
     gradle:
-      - arm64_SDK23
+      - arm64
     rm:
       - TMessagesProj/jni/libwebp/swig/libwebp.jar
       - TMessagesProj/jni/ffmpeg/tests/ref/fate/sub-microdvd-remux
@@ -968,4 +968,4 @@ ArchivePolicy: 6 versions
 AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: 5.10.0
-CurrentVersionCode: 16847
+CurrentVersionCode: 16845
