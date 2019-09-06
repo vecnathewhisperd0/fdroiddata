@@ -916,7 +916,7 @@ Builds:
         | shasum -c -
       - tar xf go.tgz
       - PATH="$PWD/go/bin:$PATH" gradle buildNative
-    ndk: r20
+    ndk: r19c
 
 MaintainerNotes: |-
     The submodule in syncthing/src/github.com/syncthing/syncthing must be
