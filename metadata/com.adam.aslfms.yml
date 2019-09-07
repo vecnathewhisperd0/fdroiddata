@@ -1,9 +1,9 @@
 Categories:
   - Multimedia
-License: GPL-3.0-only
-SourceCode: https://github.com/tgwizard/sls
-IssueTracker: https://github.com/tgwizard/sls/issues
-Changelog: https://github.com/tgwizard/sls/blob/HEAD/app/src/main/assets/changelog.txt
+License: Apache-2.0
+SourceCode: https://github.com/simple-last-fm-scrobbler/sls
+IssueTracker: https://github.com/simple-last-fm-scrobbler/sls/issues
+Changelog: https://github.com/simple-last-fm-scrobbler/sls/blob/HEAD/app/src/main/assets/changelog.txt
 
 AutoName: Simple Last.fm Scrobbler
 Description: |-
@@ -18,7 +18,7 @@ Description: |-
     [http://www.last.fm/help/faq?category=Scrobbling#201 Last.fm's FAQ].
 
 RepoType: git
-Repo: https://github.com/tgwizard/sls.git
+Repo: https://github.com/simple-last-fm-scrobbler/sls.git
 
 Builds:
   - versionName: 1.4.3
