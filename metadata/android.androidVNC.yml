@@ -21,7 +21,12 @@ Builds:
     commit: '197'
     subdir: androidVNC
 
+  - versionName: 0.6.0
+    versionCode: 14
+    commit: 1887149a2ad655895559789dd60d4a91a1887149
+    subdir: androidVNC
+
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest/antlersoft
 CurrentVersion: 0.6.0
-CurrentVersionCode: 13
+CurrentVersionCode: 14
