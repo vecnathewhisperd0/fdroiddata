@@ -183,12 +183,12 @@ Build:4.1.6,401000006
         ./build.sh
     ndk=r18b
 
-Build:4.2.0,402000000
-    commit=4.2.0
+Build:4.2.1,402000001
+    commit=4.2.1
     subdir=app
     gradle=Community
     srclibs=rustup@1.18.3
-    rm=app/src/vpn/jniLibs
+    rm=app/src/tun-blocka/jniLibs
     prebuild=sed -i -e '/set -e/a\source $HOME/.cargo.env' ../boringtun/build.sh
     build=$$rustup$$/rustup-init.sh -y && \
         source $HOME/.cargo/env && \
@@ -207,5 +207,5 @@ Build:4.2.0,402000000
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:4.2.0
-Current Version Code:402000000
+Current Version:4.2.1
+Current Version Code:402000001
