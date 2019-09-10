@@ -8,8 +8,7 @@ IssueTracker: https://github.com/xloem/qrstream/issues
 
 AutoName: QRStream
 Description: |-
-    
-    NOTE: This app is no longer maintained.
+    '''NOTE:''' This app is no longer maintained.
     
     QRStream's intent is to provide for communication with a device without using
     the radios or USB port. This can be very useful in a handful of obscure
