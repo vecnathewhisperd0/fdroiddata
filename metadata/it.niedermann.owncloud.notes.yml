@@ -201,6 +201,7 @@ Builds:
     submodules: true
     gradle:
       - yes
+
   - versionName: 0.21.0
     versionCode: 33
     commit: v0.21.0
