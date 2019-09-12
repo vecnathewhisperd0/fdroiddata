@@ -9,17 +9,17 @@ AutoName: Pubsub
 Description: |-
     Android chat application which based on IPFS pubsub technology
 
-     '''Features:'''
-     * Join known chat rooms
-     * Create own chat rooms
-     * Share data and messages within the chat rooms
+    '''Features:'''
+    * Join known chat rooms
+    * Create own chat rooms
+    * Share data and messages within the chat rooms
 
-     '''IPFS:'''
-     The InterPlanetary File System is a peer-to-peer (p2p) filesharing system
-     that aims to fundamentally change the way information is distributed
-     across & beyond the globe. IPFS consists of several innovations in
-     communication protocols and distributed systems that have been combined
-     to produce a file system like no other.
+    '''IPFS:'''
+    The InterPlanetary File System is a peer-to-peer (p2p) filesharing system
+    that aims to fundamentally change the way information is distributed
+    across & beyond the globe. IPFS consists of several innovations in
+    communication protocols and distributed systems that have been combined
+    to produce a file system like no other.
 
 RepoType: git
 Repo: https://gitlab.com/remmer.wilts/threads-pubsub.git
