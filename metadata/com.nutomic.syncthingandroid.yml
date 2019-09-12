@@ -1239,7 +1239,7 @@ Builds:
     submodules: true
     sudo:
       - apt update || apt update
-      - apt install -y -t testing golang-go
+      - apt install -y -t testing golang-1.13-go
     gradle:
       - yes
     output: app/build/outputs/apk/release/app-release-unsigned.apk
