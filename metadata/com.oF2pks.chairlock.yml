@@ -1,14 +1,14 @@
 Categories:
   - System
 License: Apache-2.0
-SourceCode: https://bitbucket.org/oF2pks/chairlock/src/master/
+SourceCode: https://bitbucket.org/oF2pks/chairlock/src/HEAD/
 IssueTracker: https://forum.xda-developers.com/android/apps-games/appfoss4-1-chairlock-complete-t3956991
 
 AutoName: Chairlock
 Description: |-
     All existing permissions on a device are extracted from all installed
     packages (user /data, /system, /vendor), and reported with package-emitter
-    specs plus technical properties like translated description, ..., AppOp'
+    specs plus technical properties like translated description, ..., AppOp
     possible association (starred).
 
     Multi-additional sort options for all declared permissions:
@@ -16,19 +16,15 @@ Description: |-
     * System/User
     * Group
     * Name
-    * Package.
-    * Date installation.
+    * Package
+    * Date installation
     * UserId
     * Statistics (targeted + granted)
-    * PackageLabel & ProtectionLevel.
+    * PackageLabel & ProtectionLevel
 
-    Search option on:
+    Search option on: Name, Package, Description (short & long)
 
-    * Name
-    * Package
-    * Description (short & long)
-
-    Optional lists:.
+    Optional lists:
 
     * Duplicates
     * Misses
