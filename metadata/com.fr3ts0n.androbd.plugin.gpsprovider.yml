@@ -14,14 +14,16 @@ RepoType: git
 Repo: https://github.com/fr3ts0n/AndrOBD-Plugin.git
 
 Builds:
-  - versionName: V1.0.0
-    versionCode: 10000
+  - versionName: V1.0.3
+    versionCode: 10003
     commit: V1.0.3
     subdir: GpsProvider
+    submodules:
+      - yes
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: V1.0.0
-CurrentVersionCode: 10000
+CurrentVersion: V1.0.3
+CurrentVersionCode: 10003
