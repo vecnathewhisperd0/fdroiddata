@@ -19,7 +19,7 @@ Builds:
     commit: V1.0.3
     subdir: GpsProvider
     submodules:
-      - yes
+      - true
     gradle:
       - yes
 
