@@ -102,8 +102,57 @@ Builds:
     subdir: app
     gradle:
       - yes
+      
+  - versionName: 1.5.9
+    versionCode: 50
+    commit: v1.5.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.0
+    versionCode: 51
+    commit: v1.6.0
+    subdir: app
+    gradle:
+      - yes
+      
+  - versionName: 1.6.1
+    versionCode: 52
+    commit: v1.6.1
+    subdir: app
+    gradle:
+      - yes
+      
+  - versionName: 1.6.2
+    versionCode: 53
+    commit: v1.6.2
+    subdir: app
+    gradle:
+      - yes
+      
+  - versionName: 1.6.3
+    versionCode: 54
+    commit: v1.6.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.4
+    versionCode: 55
+    commit: v1.6.4
+    subdir: app
+    gradle:
+      - yes
+      
+  - versionName: 1.6.5
+    versionCode: 56
+    commit: v1.6.5
+    subdir: app
+    gradle:
+      - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.5.8
-CurrentVersionCode: 49
+CurrentVersion: 1.6.5
+CurrentVersionCode: 56
