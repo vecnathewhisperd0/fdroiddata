@@ -3,8 +3,8 @@ Categories:
 License: GPL-3.0-or-later
 AuthorName: Phil Roggenbuck
 AuthorEmail: ceo@roggstar.eu
-SourceCode: https://github.com/LuigiTheHunter/BatteryCalibrator
-IssueTracker: https://github.com/LuigiTheHunter/BatteryCalibrator/issues
+SourceCode: https://github.com/phrogg/BatteryCalibrator
+IssueTracker: https://github.com/phrogg/BatteryCalibrator/issues
 Donate: https://www.paypal.me/proggenbuck
 
 AutoName: BatteryCalibrate
@@ -32,7 +32,7 @@ Description: |-
 RequiresRoot: 'True'
 
 RepoType: git
-Repo: https://github.com/LuigiTheHunter/BatteryCalibrator/
+Repo: https://github.com/phrogg/BatteryCalibrator/
 
 Builds:
   - versionName: Charger
