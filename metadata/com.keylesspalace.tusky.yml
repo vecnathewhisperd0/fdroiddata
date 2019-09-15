@@ -251,7 +251,7 @@ Builds:
     gradle:
       - blue  
 
-- versionName: '9.0'
+  - versionName: '9.0'
     versionCode: 67
     commit: v9.0
     subdir: app
