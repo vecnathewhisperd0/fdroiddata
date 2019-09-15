@@ -18,29 +18,9 @@ RepoType: git
 Repo: https://github.com/Anuken/Mindustry.git
 
 Builds:
-  - versionName: 4-fdroid-89
-    versionCode: 89
-    commit: v89
-    subdir: android
-    gradle:
-      - yes
-    prebuild:
-      - echo "androidBuildCode=$(expr $$VERCODE$$ - 2)" > ../core/assets/version.properties
-      - echo "build=$$VERCODE$$" >> ../core/assets/version.properties
-      - echo "modifier=beta" >> ../core/assets/version.properties
-      - echo "type=fdroid" >> ../core/assets/version.properties
-      - echo "number=4" >> ../core/assets/version.properties
-    scanignore:
-      - core/assets/saves
-    scandelete:
-      - android/libs
-    gradleprops:
-      - buildversion=89
-      - versionType=fdroid
-
-  - versionName: 4-fdroid-92
-    versionCode: 92
-    commit: v92
+  - versionName: 4-fdroid-93
+    versionCode: 93
+    commit: v93
     subdir: android
     gradle:
       - yes
@@ -66,5 +46,5 @@ MaintainerNotes: |-
 AutoUpdateMode: Version v%c
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/Anuken/MindustryBuilds/master/version_fdroid.txt|versionCode=(.*)|.|versionName=(.*)
-CurrentVersion: 4-fdroid-92
-CurrentVersionCode: 92
+CurrentVersion: 4-fdroid-93
+CurrentVersionCode: 93
