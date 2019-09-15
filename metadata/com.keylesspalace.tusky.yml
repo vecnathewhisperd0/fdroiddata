@@ -249,7 +249,7 @@ Builds:
     commit: v8.1
     subdir: app
     gradle:
-      - blue  
+      - blue
 
   - versionName: '9.0'
     versionCode: 67
@@ -257,7 +257,7 @@ Builds:
     subdir: app
     gradle:
       - blue
-      
+
 MaintainerNotes: Remove AUM as versionName gets an extra erroneous `-` added
 
 AutoUpdateMode: None
