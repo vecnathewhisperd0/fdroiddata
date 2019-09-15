@@ -1,13 +1,15 @@
 Categories:
   - Development
 License: Apache-2.0
+AuthorName: Ilija Matoski
+AuthorEmail: ilijamt@gmail.com
+WebSite: https://matoski.com/project/adb-manager/
 SourceCode: https://github.com/ilijamt/android-adbm
 IssueTracker: https://github.com/ilijamt/android-adbm/issues
 Translation: https://crowdin.net/project/adbm
 Changelog: https://raw.github.com/ilijamt/android-adbm/HEAD/changelog.md
 
 AutoName: ADB Manager
-Summary: Manage Android Debug Bridge
 Description: |-
     * Easy control and access details from notification bar
     * Auto connect on saved WiFi networks
