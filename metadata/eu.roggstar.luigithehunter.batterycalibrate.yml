@@ -16,8 +16,8 @@ Repo: https://github.com/phrogg/BatteryCalibrator/
 
 Builds:
   - versionName: Charger
-    versionCode: 8
-    commit: v8
+    versionCode: 9
+    commit: v9
     subdir: app
     gradle:
       - yes
@@ -25,4 +25,4 @@ Builds:
 AutoUpdateMode: Version v%c
 UpdateCheckMode: Tags
 CurrentVersion: Charger
-CurrentVersionCode: 8
+CurrentVersionCode: 9
