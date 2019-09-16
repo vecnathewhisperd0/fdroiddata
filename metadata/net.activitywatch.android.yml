@@ -1,0 +1,28 @@
+Categories:
+  - Time
+License: MPL-2.0
+SourceCode: https://github.com/ActivityWatch/aw-android
+IssueTracker: https://github.com/ActivityWatch/aw-android/issues
+Donate: https://activitywatch.net/donate/
+LiberapayID: '1586504'
+
+Summary: Track how you spend your time on your devices. Simple (yet powerful), extensible,
+    no third parties.
+Description: ActivityWatch is an open source and cross-platform app that automatically
+    tracks how you spend your time in apps, on the web, and more.
+
+RepoType: git
+Repo: https://github.com/ActivityWatch/aw-android
+
+Builds:
+  - versionName: 0.4.13
+    versionCode: 21
+    commit: v0.4.13
+    submodules: true
+    gradle:
+      - yes
+    output: aw-android.apk
+    build: env RELEASE=true make aw-server-rust
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
