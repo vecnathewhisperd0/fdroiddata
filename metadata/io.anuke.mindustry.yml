@@ -50,10 +50,9 @@ Builds:
       - echo "modifier=beta" >> ../core/assets/version.properties
       - echo "type=fdroid" >> ../core/assets/version.properties
       - echo "number=4" >> ../core/assets/version.properties
-      - echo "buildversion=$$VERCODE$$" >> ../android/gradle.properties
-      - echo "versionType=fdroid" >> ../android/gradle.properties
-    scanignore:
-      - core/assets/saves
+      - echo "buildversion=$$VERCODE$$" >> gradle.properties
+      - echo "versionType=fdroid" >> gradle.properties
+      - grep archash ../gradle.properties >> gradle.properties
     scandelete:
       - android/libs
 
