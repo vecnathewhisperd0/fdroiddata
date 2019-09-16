@@ -6,8 +6,7 @@ IssueTracker: https://github.com/ActivityWatch/aw-android/issues
 Donate: https://activitywatch.net/donate/
 LiberapayID: '1586504'
 
-Summary: Track how you spend your time on your devices. Simple (yet powerful), extensible,
-    no third parties.
+Summary: Track how you spend your time on all your devices
 Description: ActivityWatch is an open source and cross-platform app that automatically
     tracks how you spend your time in apps, on the web, and more.
 
@@ -22,7 +21,7 @@ Builds:
     gradle:
       - yes
     output: aw-android.apk
-    build: env RELEASE=true make aw-server-rust
+    build: env RELEASE=true make aw-server-rust && make aw-webui
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
