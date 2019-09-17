@@ -30,14 +30,14 @@ RepoType: git
 Repo: https://gitlab.com/remmer.wilts/threads-server.git
 
 Builds:
-  - versionName: 0.9.4
-    versionCode: 94
-    commit: 0.9.4
+  - versionName: 1.0.4
+    versionCode: 104
+    commit: 1.0.4
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.9.4
-CurrentVersionCode: 94
+CurrentVersion: 1.0.4
+CurrentVersionCode: 104
