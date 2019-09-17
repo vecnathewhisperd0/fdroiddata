@@ -3272,9 +3272,430 @@ Builds:
     scandelete:
       - src/androidTest
 
+  - versionName: '20190604'
+    versionCode: 20190604
+    commit: dev-20190604
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190605'
+    versionCode: 20190605
+    commit: dev-20190605
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190612'
+    versionCode: 20190612
+    commit: dev-20190612
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190613'
+    versionCode: 20190613
+    disable: 'error: cannot find symbol GetRemoteUserInfoOperation'
+    commit: dev-20190613
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190615'
+    versionCode: 20190615
+    commit: dev-20190615
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190619'
+    versionCode: 20190619
+    commit: dev-20190619
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190621'
+    versionCode: 20190621
+    commit: dev-20190621
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190622'
+    versionCode: 20190622
+    commit: dev-20190622
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190701'
+    versionCode: 20190701
+    commit: dev-20190701
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190702'
+    versionCode: 20190702
+    commit: dev-20190702
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190704'
+    versionCode: 20190704
+    commit: dev-20190704
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190705'
+    versionCode: 20190705
+    commit: dev-20190705
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190710'
+    versionCode: 20190710
+    commit: dev-20190710
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190711'
+    versionCode: 20190711
+    commit: dev-20190711
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190713'
+    versionCode: 20190713
+    commit: dev-20190713
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190717'
+    versionCode: 20190717
+    commit: dev-20190717
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190720'
+    versionCode: 20190720
+    commit: dev-20190720
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190727'
+    versionCode: 20190727
+    commit: dev-20190727
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190730'
+    versionCode: 20190730
+    commit: dev-20190730
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190731'
+    versionCode: 20190731
+    commit: dev-20190731
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190802'
+    versionCode: 20190802
+    commit: dev-20190802
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190803'
+    versionCode: 20190803
+    commit: dev-20190803
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190806'
+    versionCode: 20190806
+    commit: dev-20190806
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190809'
+    versionCode: 20190809
+    commit: dev-20190809
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190810'
+    versionCode: 20190810
+    commit: dev-20190810
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190813'
+    versionCode: 20190813
+    commit: dev-20190813
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190820'
+    versionCode: 20190820
+    commit: dev-20190820
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190822'
+    versionCode: 20190822
+    commit: dev-20190822
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190824'
+    versionCode: 20190824
+    commit: dev-20190824
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190827'
+    versionCode: 20190827
+    commit: dev-20190827
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190828'
+    versionCode: 20190828
+    commit: dev-20190828
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190829'
+    versionCode: 20190829
+    commit: dev-20190829
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190904'
+    versionCode: 20190904
+    commit: dev-20190904
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190906'
+    versionCode: 20190906
+    commit: dev-20190906
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190911'
+    versionCode: 20190911
+    commit: dev-20190911
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
 MaintainerNotes: Tags get removed. See https://github.com/nextcloud/android/issues/969.
 
 AutoUpdateMode: Version dev-%c
 UpdateCheckMode: Tags ^dev
-CurrentVersion: '20190531'
-CurrentVersionCode: 20190531
+CurrentVersion: '20190911'
+CurrentVersionCode: 20190911

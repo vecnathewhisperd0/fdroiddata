@@ -282,8 +282,18 @@ Build:12.1,1202
     subdir=app
     gradle=yes
 
+Build:12.2,1203
+    commit=v12.2
+    subdir=app
+    gradle=yes
+
+Build:13.0,1301
+    commit=v13.0
+    subdir=app
+    gradle=yes
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
 Update Check Ignore:(alpha|beta|rc|RC)
-Current Version:12.1
-Current Version Code:1202
+Current Version:13.0
+Current Version Code:1301

@@ -12,7 +12,6 @@ Changelog: https://github.com/wulkanowy/wulkanowy/releases
 Donate: https://www.paypal.me/wulkanowy
 
 AutoName: Wulkanowy
-Summary: Client for the Polish school register VULCAN UONET+
 Description: |-
     * calculation of the weighted average
     * percentage attendance preview
@@ -27,9 +26,59 @@ RepoType: git
 Repo: https://github.com/wulkanowy/wulkanowy
 
 Builds:
-  - versionName: 0.8.4
-    versionCode: 37
-    commit: 8d64b9c24cef5b7c1499f79a9a91373c21f4080b
+  - versionName: 0.9.1
+    versionCode: 39
+    commit: 0.9.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        -e '/bintray.com\/mockito/d' ../build.gradle build.gradle
+
+  - versionName: 0.9.2
+    versionCode: 40
+    commit: 0.9.2
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        -e '/bintray.com\/mockito/d' ../build.gradle build.gradle
+
+  - versionName: 0.9.3
+    versionCode: 41
+    commit: 0.9.3
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        -e '/bintray.com\/mockito/d' ../build.gradle build.gradle
+
+  - versionName: 0.9.4
+    versionCode: 42
+    commit: 0.9.4
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        -e '/bintray.com\/mockito/d' ../build.gradle build.gradle
+
+  - versionName: 0.10.1
+    versionCode: 44
+    commit: 0.10.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        -e '/bintray.com\/mockito/d' ../build.gradle build.gradle
+
+  - versionName: 0.10.2
+    versionCode: 45
+    commit: 0.10.2
     subdir: app
     gradle:
       - fdroid
@@ -39,5 +88,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.8.4
-CurrentVersionCode: 37
+CurrentVersion: 0.10.2
+CurrentVersionCode: 45

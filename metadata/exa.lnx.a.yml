@@ -125,7 +125,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '5.75'
+    versionCode: 575
+    commit: v5.75
+    subdir: AnLinux-Adfree/app
+    gradle:
+      - yes
+
+  - versionName: '5.76'
+    versionCode: 576
+    commit: v5.76
+    subdir: AnLinux-Adfree/app
+    gradle:
+      - yes
+
+  - versionName: '5.80'
+    versionCode: 580
+    commit: v5.80
+    subdir: AnLinux-Adfree/app
+    gradle:
+      - yes
+
+  - versionName: '6.00'
+    versionCode: 600
+    commit: v6.00
+    subdir: AnLinux-Adfree/app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '5.70'
-CurrentVersionCode: 570
+CurrentVersion: '6.00'
+CurrentVersionCode: 600

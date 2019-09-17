@@ -6,7 +6,6 @@ IssueTracker: https://github.com/xavierfreyburger/tempus-romanum/issues
 Donate: https://www.paypal.me/XavierFreyburger
 
 AutoName: Tempus Romanum
-Summary: Latin date generator with a widget
 Description: |-
     Tempus Romanum provides a simple tool to generate dates in latin format.
 
@@ -30,7 +29,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '2.1'
+    versionCode: 21
+    commit: v2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.1
+    versionCode: 211
+    commit: v2.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.0
+    versionCode: 220
+    commit: v2.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.1
+    versionCode: 221
+    commit: v2.2.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '2.0'
-CurrentVersionCode: 20
+CurrentVersion: 2.2.1
+CurrentVersionCode: 221

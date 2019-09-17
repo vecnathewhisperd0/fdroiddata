@@ -217,7 +217,13 @@ Build:7.9.6,796
 Build:7.9.7,797
     commit=7.9.7
 
+Build:7.9.8,798
+    commit=7.9.8
+
+Build:7.9.9,799
+    commit=7.9.9
+
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:7.9.7
-Current Version Code:797
+Current Version:7.9.9
+Current Version Code:799

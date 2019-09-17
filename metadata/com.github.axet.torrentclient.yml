@@ -815,7 +815,61 @@ Builds:
     prebuild: sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
     ndk: r16b
 
+  - versionName: 3.4.210
+    versionCode: 697
+    commit: torrentclient-3.4.210
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk: r16b
+
+  - versionName: 3.4.211
+    versionCode: 698
+    commit: torrentclient-3.4.211
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk: r16b
+
+  - versionName: 3.4.212
+    versionCode: 699
+    commit: torrentclient-3.4.212
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk: r16b
+
+  - versionName: 3.4.213
+    versionCode: 700
+    commit: torrentclient-3.4.213
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk: r16b
+
+  - versionName: 3.4.214
+    versionCode: 701
+    commit: torrentclient-3.4.214
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk: r16b
+
+  - versionName: 3.4.215
+    versionCode: 702
+    commit: torrentclient-3.4.215
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+    ndk: r16b
+
 AutoUpdateMode: Version torrentclient-%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.4.209
-CurrentVersionCode: 696
+CurrentVersion: 3.4.215
+CurrentVersionCode: 702

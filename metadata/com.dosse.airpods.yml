@@ -58,7 +58,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.8'
+    versionCode: 8
+    commit: '0.8'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '0.9'
+    versionCode: 9
+    commit: '0.9'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '0.10'
+    versionCode: 10
+    commit: '0.10'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.7'
-CurrentVersionCode: 7
+CurrentVersion: '0.10'
+CurrentVersionCode: 10
