@@ -20,7 +20,7 @@ Description: |-
     * Viewing the optimal road between two users on a Google map
 
 RepoType: git
-Repo: https://gitorious.org/source-of-geosearch/code01.git
+Repo: https://git.code.sf.net/p/geosearch/code
 
 Builds:
   - versionName: '1.0'
