@@ -1,0 +1,29 @@
+Categories:
+  - Science & Education
+License: GPL-3.0-or-later
+WebSite: https://gitlab.com/dgoodmaniii/android_DozenalClock
+SourceCode: https://gitlab.com/dgoodmaniii/android_DozenalClock/tree/HEAD
+IssueTracker: https://gitlab.com/dgoodmaniii/android_DozenalClock/issues
+
+AutoName: Dozenal Clock
+Summary: A dozenal (duodecimal, or base twelve) clock and homescreen/lockscreen widget
+Description: Provides an app which displays the time in dozenal, updated every second,
+    in hours and four-digit Tims (10^-4 hours), along with the current Gregorian date.  Also
+    provides a homescreen/lockscreen widget, which displays both the dozenal time
+    with two-digit Tims (10^-2 hours) with the Gregorian date.
+
+RepoType: git
+Repo: https://gitlab.com/dgoodmaniii/android_DozenalClock.git
+
+Builds:
+  - versionName: '0.91'
+    versionCode: 1
+    commit: 7e387b1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%c
+UpdateCheckMode: Tags
+CurrentVersion: '0.91'
+CurrentVersionCode: 1
