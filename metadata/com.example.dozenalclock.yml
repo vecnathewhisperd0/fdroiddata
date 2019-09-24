@@ -16,7 +16,7 @@ RepoType: git
 Repo: https://gitlab.com/dgoodmaniii/android_DozenalClock.git
 
 Builds:
-  - versionName: '0.91'
+  - versionName: v0.91
     versionCode: 1
     commit: v0.91
     subdir: app
