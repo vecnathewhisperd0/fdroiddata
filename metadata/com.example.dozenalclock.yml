@@ -18,12 +18,12 @@ Repo: https://gitlab.com/dgoodmaniii/android_DozenalClock.git
 Builds:
   - versionName: '0.91'
     versionCode: 1
-    commit: 7e387b1
+    commit: v0.91
     subdir: app
     gradle:
       - yes
 
-AutoUpdateMode: Version v%c
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: '0.91'
 CurrentVersionCode: 1
