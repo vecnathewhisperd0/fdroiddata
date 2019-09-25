@@ -3,6 +3,7 @@ Categories:
 License: MIT
 SourceCode: https://github.com/markusfisch/BinaryEye
 IssueTracker: https://github.com/markusfisch/BinaryEye/issues
+Changelog: https://github.com/markusfisch/BinaryEye/blob/HEAD/CHANGELOG.md
 
 AutoName: Binary Eye
 Description: |-
@@ -94,7 +95,84 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.8.1
+    versionCode: 27
+    commit: 1.8.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.0
+    versionCode: 28
+    commit: 1.9.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.1
+    versionCode: 29
+    commit: 1.9.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.10.0
+    versionCode: 30
+    commit: 1.10.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.11.0
+    versionCode: 31
+    commit: 1.11.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.11.1
+    versionCode: 32
+    commit: 1.11.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.11.2
+    versionCode: 33
+    commit: 1.11.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.12.0
+    versionCode: 36
+    commit: 1.12.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.13.0
+    versionCode: 37
+    commit: 1.13.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.13.1
+    versionCode: 38
+    commit: 1.13.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.14.0
+    versionCode: 39
+    commit: 1.14.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.7.3
-CurrentVersionCode: 25
+CurrentVersion: 1.14.0
+CurrentVersionCode: 39

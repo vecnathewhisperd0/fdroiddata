@@ -41,7 +41,13 @@ Build:2.1.1,19
     prebuild=sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' -e '/RootShell/d' build.gradle && \
         cp -fR $$RootShell$$/src/main/java src/main/
 
-Auto Update Mode:Version %v
+Maintainer Notes:
+Includes Crashlytics.
+.
+
+Auto Update Mode:None
 Update Check Mode:Tags
-Current Version:2.1.1
-Current Version Code:19
+Current Version:2.1.2
+Current Version Code:20
+
+No Source Since:2.1.2

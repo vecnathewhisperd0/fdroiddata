@@ -276,7 +276,37 @@ Build:1.12.7,11270
     gradle=yes
     prebuild=sed -i -e '/javaMaxHeapSize/s/4g/2g/g' build.gradle
 
+Build:1.12.8,11280
+    commit=v1.12.8
+    gradle=yes
+    prebuild=sed -i -e '/javaMaxHeapSize/s/4g/2g/g' build.gradle
+
+Build:1.12.9,11291
+    commit=v1.12.9.1
+    gradle=yes
+    prebuild=sed -i -e '/javaMaxHeapSize/s/4g/2g/g' build.gradle
+
+Build:1.12.9,11292
+    commit=v1.12.9.2
+    gradle=yes
+    prebuild=sed -i -e '/javaMaxHeapSize/s/4g/2g/g' build.gradle
+
+Build:1.12.93,11293
+    commit=v1.12.93
+    gradle=yes
+    prebuild=sed -i -e '/javaMaxHeapSize/s/4g/2g/g' build.gradle
+
+Build:1.13,11300
+    commit=v1.13
+    gradle=yes
+    prebuild=sed -i -e '/javaMaxHeapSize/s/4g/2g/g' build.gradle
+
+Build:1.13.1,11310
+    commit=v1.13.1
+    gradle=yes
+    prebuild=sed -i -e '/javaMaxHeapSize/s/4g/2g/g' build.gradle
+
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.12.7
-Current Version Code:11270
+Current Version:1.13.1
+Current Version Code:11310

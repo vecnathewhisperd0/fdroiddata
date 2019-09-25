@@ -4,6 +4,7 @@ License: GPL-3.0-only
 WebSite: https://wallet.schildbach.de
 SourceCode: https://github.com/bitcoin-wallet/bitcoin-wallet
 IssueTracker: https://github.com/bitcoin-wallet/bitcoin-wallet/issues
+Translation: https://www.transifex.com/projects/p/bitcoin-wallet/
 Changelog: https://raw.github.com/bitcoin-wallet/bitcoin-wallet/prod/wallet/CHANGES
 Bitcoin: 1HkX6X8EakdsgAysL93oKrWiXGPbFiG1xV
 
@@ -1508,7 +1509,41 @@ Builds:
       - wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
     ndk: r17c
 
+  - versionName: '7.11'
+    versionCode: 411
+    commit: v7.11-prod
+    subdir: wallet
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"4.4.1\" }' >>\
+        \ ../build.gradle"
+    scandelete:
+      - wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+    ndk: r17c
+
+  - versionName: '7.15'
+    versionCode: 415
+    commit: v7.15-prod
+    subdir: wallet
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"4.4.1\" }' >>\
+        \ ../build.gradle"
+    scandelete:
+      - wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+  - versionName: '7.18'
+    versionCode: 418
+    commit: v7.18-prod
+    subdir: wallet
+    gradle:
+      - yes
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"4.4.1\" }' >>\
+        \ ../build.gradle"
+    scandelete:
+      - wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest/prod
-CurrentVersion: '7.10'
-CurrentVersionCode: 410
+CurrentVersion: '7.20'
+CurrentVersionCode: 420

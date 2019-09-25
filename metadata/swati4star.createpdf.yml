@@ -135,7 +135,11 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version %v
+MaintainerNotes: Depends on proprietary Aspose.Cells library since 8.6.3.
+
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 8.6.3
-CurrentVersionCode: 90
+CurrentVersion: 8.6.7
+CurrentVersionCode: 94
+
+NoSourceSince: 8.6.3

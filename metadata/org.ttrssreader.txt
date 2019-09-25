@@ -371,6 +371,24 @@ Build:1.93.3,1933
     gradle=fdroid
     prebuild=sed -i -e '/playCompile/d' build.gradle
 
+Build:1.94.1,1941
+    commit=v1.94.1
+    subdir=ttrssreader
+    gradle=fdroid
+    prebuild=sed -i -e '/playCompile/d' build.gradle
+
+Build:1.94.4,1944
+    commit=v1.94.4
+    subdir=ttrssreader
+    gradle=fdroid
+    prebuild=sed -i -e '/playCompile/d' build.gradle
+
+Build:1.94.5,1945
+    commit=v1.94.5
+    subdir=ttrssreader
+    gradle=fdroid
+    prebuild=sed -i -e '/playCompile/d' build.gradle
+
 Maintainer Notes:
 Upstream mistags often and retags, so never use tags directly.
 
@@ -384,5 +402,5 @@ Old Repo is:
 
 Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:1.93.3
-Current Version Code:1933
+Current Version:1.94.5
+Current Version Code:1945

@@ -250,7 +250,31 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.37'
+    versionCode: 137
+    commit: v1.37
+    gradle:
+      - yes
+
+  - versionName: '1.38'
+    versionCode: 138
+    commit: v1.38
+    gradle:
+      - yes
+
+  - versionName: '1.39'
+    versionCode: 139
+    commit: v1.39
+    gradle:
+      - yes
+
+  - versionName: '1.40'
+    versionCode: 140
+    commit: v1.40
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.36'
-CurrentVersionCode: 136
+CurrentVersion: '1.40'
+CurrentVersionCode: 140

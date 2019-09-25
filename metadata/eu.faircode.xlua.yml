@@ -158,7 +158,15 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.25'
+    versionCode: 126
+    commit: '1.25'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.24'
-CurrentVersionCode: 125
+CurrentVersion: '1.25'
+CurrentVersionCode: 126

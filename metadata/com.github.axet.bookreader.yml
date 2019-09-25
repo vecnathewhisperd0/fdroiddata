@@ -3,6 +3,7 @@ Categories:
 License: GPL-3.0-only
 SourceCode: https://gitlab.com/axet/android-book-reader/tree/HEAD
 IssueTracker: https://gitlab.com/axet/android-book-reader/issues
+Translation: https://gitlab.com/axet/android-book-reader/blob/HEAD/docs/HOWTO-Translate.md
 LiberapayID: '1370123'
 
 AutoName: Book Reader
@@ -577,7 +578,39 @@ Builds:
       - yes
     prebuild: sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
 
+  - versionName: 1.12.5
+    versionCode: 366
+    commit: bookreader-1.12.5
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+  - versionName: 1.12.7
+    versionCode: 368
+    commit: bookreader-1.12.7
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+  - versionName: 1.12.11
+    versionCode: 372
+    commit: bookreader-1.12.11
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
+  - versionName: 1.12.12
+    versionCode: 373
+    commit: bookreader-1.12.12
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+
 AutoUpdateMode: Version bookreader-%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.11.32
-CurrentVersionCode: 360
+CurrentVersion: 1.12.12
+CurrentVersionCode: 373

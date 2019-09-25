@@ -385,7 +385,55 @@ Builds:
       - free
     prebuild: sed -i -e '/playCompile/d' build.gradle
 
+  - versionName: '0.74'
+    versionCode: 84
+    commit: '0.74'
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
+  - versionName: '0.75'
+    versionCode: 85
+    commit: '0.75'
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
+  - versionName: '0.76'
+    versionCode: 86
+    commit: '0.76'
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
+  - versionName: '0.77'
+    versionCode: 87
+    commit: '0.77'
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
+  - versionName: '0.78'
+    versionCode: 88
+    commit: '0.78'
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
+  - versionName: '0.79'
+    versionCode: 89
+    commit: '0.79'
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.73'
-CurrentVersionCode: 83
+CurrentVersion: '0.79'
+CurrentVersionCode: 89

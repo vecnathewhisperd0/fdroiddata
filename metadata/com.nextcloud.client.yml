@@ -800,11 +800,150 @@ Builds:
     scandelete:
       - src/androidTest
 
+  - versionName: 3.7.0 RC1
+    versionCode: 30070051
+    disable: obsolete RC
+    commit: rc-3.7.0-01
+    submodules: true
+    gradle:
+      - generic
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: 3.7.0 RC2
+    versionCode: 30070052
+    disable: obsolete RC
+    commit: rc-3.7.0-02
+    submodules: true
+    gradle:
+      - generic
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: 3.7.0 RC3
+    versionCode: 30070053
+    disable: obsolete RC
+    commit: rc-3.7.0-03
+    submodules: true
+    gradle:
+      - generic
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: 3.7.0 RC4
+    versionCode: 30070054
+    disable: obsolete RC
+    commit: rc-3.7.0-04
+    submodules: true
+    gradle:
+      - generic
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: 3.7.0
+    versionCode: 30070090
+    commit: stable-3.7.0
+    submodules: true
+    gradle:
+      - generic
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: 3.7.1
+    versionCode: 30070190
+    commit: stable-3.7.1
+    submodules: true
+    gradle:
+      - generic
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: 3.7.2
+    versionCode: 30070290
+    commit: stable-3.7.2
+    submodules: true
+    gradle:
+      - generic
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: 3.8.0 RC2
+    versionCode: 30080052
+    disable: obsolete RC
+    commit: rc-3.8.0-02
+    submodules: true
+    gradle:
+      - generic
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: 3.8.0 RC3
+    versionCode: 30080053
+    disable: obsolete RC
+    commit: rc-3.8.0-03
+    submodules: true
+    gradle:
+      - generic
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: 3.8.0 RC5
+    versionCode: 30080055
+    disable: obsolete RC
+    commit: rc-3.8.0-05
+    submodules: true
+    gradle:
+      - generic
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: 3.8.0
+    versionCode: 30080090
+    commit: stable-3.8.0
+    submodules: true
+    gradle:
+      - generic
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
 MaintainerNotes: 'Latest 3 stable version will be kept, RC versions will be directly
     outdated by either a new RC or by a stable version: 3.3.0 RC1 -> 3.3.0 RC2 ->
     3.3.0 (stable)'
 
 AutoUpdateMode: Version stable-%v
 UpdateCheckMode: Static
-CurrentVersion: 3.6.2
-CurrentVersionCode: 30060290
+CurrentVersion: 3.8.0
+CurrentVersionCode: 30080090
