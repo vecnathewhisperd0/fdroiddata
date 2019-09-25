@@ -1,0 +1,21 @@
+Categories:
+ - Science & Education
+License: BSD-2-Clause
+SourceCode: https://github.com/SakiiCode/e-Pluto
+IssueTracker: https://github.com/SakiiCode/e-Pluto/issues
+
+RepoType: git
+Repo: https://github.com/SakiiCode/e-Pluto
+AutoName: e-Plútó
+Summary: Custom client for the Hungarian online tertiary education system
+
+Builds:
+  - versionName: 2.2.3
+    versionCode: 2034
+    commit: '?'
+    subdir: android/app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
