@@ -27,7 +27,7 @@ Builds:
     subdir: app
     gradle:
       - libremsocial
-  
+
 AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: 1.2.0
