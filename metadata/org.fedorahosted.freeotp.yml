@@ -19,7 +19,7 @@ Description: |-
     implementations of HOTP (RFC 4226) and TOTP (RFC 6238).
 
 RepoType: git
-Repo: git://git.fedorahosted.org/freeotp/android.git
+Repo: https://github.com/freeotp/freeotp-android
 
 Builds:
   - versionName: '1.3'
