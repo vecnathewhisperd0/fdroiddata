@@ -25,9 +25,9 @@ RepoType: git
 Repo: https://github.com/librespeed/speedtest-android.git
 
 Builds:
-  - versionName: demo-1.1.1
-    versionCode: 3
-    commit: demo-1.1.1
+  - versionName: demo-1.0
+    versionCode: 1
+    commit: demo-1.0
     subdir: Speedtest-Android/app
     gradle:
       - yes
@@ -37,9 +37,9 @@ Builds:
     subdir: Speedtest-Android/app
     gradle:
       - yes
-  - versionName: demo-1.0
-    versionCode: 1
-    commit: demo-1.0
+  - versionName: demo-1.1.1
+    versionCode: 3
+    commit: demo-1.1.1
     subdir: Speedtest-Android/app
     gradle:
       - yes
