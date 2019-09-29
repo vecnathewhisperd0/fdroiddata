@@ -571,11 +571,245 @@ Build:1.78,78
         sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
     scanignore=app/src/main/res/raw/tumangaonline
 
+Build:1.80,80
+    commit=1.80
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.81,81
+    commit=1.81
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.82,82
+    commit=1.82
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.83,83
+    commit=1.83
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.84,84
+    commit=1.84
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.86,86
+    commit=1.86
+    subdir=app
+    gradle=yes
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.89,89
+    commit=1.89
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.90,90
+    commit=1.90
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.91,91
+    commit=1.91
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.92,92
+    commit=1.92
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.93,93
+    commit=1.93
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.94,94
+    commit=1.94
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.95,95
+    commit=1.95
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.96,96
+    commit=1.96
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.97,97
+    commit=1.97
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.98,98
+    commit=1.98
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.99,99
+    commit=1.99
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.100,100
+    commit=1.100
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.101,101
+    commit=1.101
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.103,103
+    commit=1.103
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.104,104
+    commit=1.104
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.105,105
+    commit=1.105
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.106,106
+    commit=1.106
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.107,107
+    commit=1.107
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.108,108
+    commit=1.108
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
+Build:1.109,109
+    commit=1.109
+    subdir=app
+    gradle=fdroid
+    srclibs=RapidDecoder@7cdfca4
+    prebuild=cp -fR $$RapidDecoder$$/library/src/main/java/rapid src/main/java/ && \
+        sed -i -e '/rapid.decoder/d' -e '/githubImplementation/d' -e '/versionNameSuffix/d' build.gradle && \
+        sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g' ../build.gradle
+
 Maintainer Notes:
 RapidDecoder 0.3.0 is required, but this version is not tagged.
 .
 
 Auto Update Mode:Version %v
 Update Check Mode:Tags
-Current Version:1.78
-Current Version Code:78
+Current Version:1.109
+Current Version Code:109

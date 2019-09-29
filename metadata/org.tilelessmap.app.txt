@@ -1,12 +1,13 @@
 Categories:Navigation
-License:GPL-3.0
+License:GPL-3.0-only
 Author Name:Nicklas Avén
 Author Email:nicklas.aven@jordogskog.no
-Web Site:https://github.com/TilelessMap/TilelessMap
+Web Site:https://tilelessmap.org/
 Source Code:https://github.com/TilelessMap/TilelessMap
 Issue Tracker:https://github.com/TilelessMap/TilelessMap/issues
+Changelog:https://github.com/TilelessMap/TilelessMap/releases
 
-Name:TilelessMap
+Auto Name:TilelessMap
 
 Repo Type:git
 Repo:https://github.com/TilelessMap/TilelessMap
@@ -16,7 +17,17 @@ Build:0.1.2,1
     subdir=Android/app
     gradle=yes
 
-Auto Update Mode:None
+Build:0.1.4,3
+    commit=v0.1.4
+    subdir=Android/app
+    gradle=yes
+
+Build:0.1.5,4
+    commit=v0.1.5
+    subdir=Android/app
+    gradle=complete
+
+Auto Update Mode:Version v%v
 Update Check Mode:Tags
-Current Version:0.1.2
-Current Version Code:1
+Current Version:0.1.5
+Current Version Code:4

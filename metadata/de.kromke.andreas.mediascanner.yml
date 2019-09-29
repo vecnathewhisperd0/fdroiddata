@@ -1,0 +1,54 @@
+Categories:
+  - Multimedia
+License: GPL-3.0-only
+AuthorName: Andreas Kromke
+SourceCode: https://gitlab.com/AndreasK/mediascanner
+IssueTracker: https://gitlab.com/AndreasK/mediascanner/issues
+Changelog: https://gitlab.com/AndreasK/mediascanner/blob/HEAD/app/src/main/assets/version-history.txt
+
+AutoName: Classical Music Scanner
+Description: |-
+    Scans the device for local audio files and builds a database to be used by
+    Unpopular Music Player or Opus 1 Music Player. Contrary to the Android service it
+    knows about composers, works, movements, conductors etc.
+
+RepoType: git
+Repo: https://gitlab.com/AndreasK/mediascanner.git
+
+Builds:
+  - versionName: '1.1'
+    versionCode: 3
+    commit: v1.1
+    subdir: app
+    gradle:
+      - yes
+    ndk: r18b
+
+  - versionName: 1.2.2
+    versionCode: 8
+    commit: v1.2.2
+    subdir: app
+    gradle:
+      - yes
+    ndk: r18b
+
+  - versionName: 1.2.3
+    versionCode: 9
+    commit: v1.2.3
+    subdir: app
+    gradle:
+      - yes
+    ndk: r18b
+
+  - versionName: 1.2.4
+    versionCode: 10
+    commit: v1.2.4
+    subdir: app
+    gradle:
+      - yes
+    ndk: r18b
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.2.4
+CurrentVersionCode: 10

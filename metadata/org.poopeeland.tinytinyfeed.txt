@@ -3,6 +3,7 @@ License:Apache-2.0
 Web Site:
 Source Code:https://github.com/fistons/TinyTinyFeed
 Issue Tracker:https://github.com/fistons/TinyTinyFeed/issues
+Changelog:https://github.com/fistons/TinyTinyFeed#release-notes
 Donate:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TPHRD64MV2B5U
 
 Auto Name:Tiny Tiny Feed
@@ -28,11 +29,17 @@ Build:1.12,16
     gradle=yes
 
 Build:1.12.1,23
+    disable=Could not find org.jetbrains.trove4j:trove4j:20160824
     commit=V1.12.1
+    subdir=TinyTinyFeed
+    gradle=yes
+
+Build:1.12.2,24
+    commit=V1.12.2
     subdir=TinyTinyFeed
     gradle=yes
 
 Auto Update Mode:Version V%v
 Update Check Mode:Tags
-Current Version:1.12.1
-Current Version Code:23
+Current Version:1.12.2
+Current Version Code:24

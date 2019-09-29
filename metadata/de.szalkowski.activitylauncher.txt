@@ -24,7 +24,17 @@ Build:1.6.1,10
     subdir=ActivityLauncherApp
     gradle=yes
 
-Auto Update Mode:None
-Update Check Mode:RepoManifest
-Current Version:1.6.1
-Current Version Code:10
+Build:1.7.0,11
+    commit=1.7.0
+    subdir=ActivityLauncherApp
+    gradle=yes
+
+Build:1.8.0,12
+    commit=1.8.0
+    subdir=ActivityLauncherApp
+    gradle=yes
+
+Auto Update Mode:Version %v
+Update Check Mode:Tags
+Current Version:1.8.0
+Current Version Code:12
