@@ -67,8 +67,6 @@ Builds:
     scandelete:
       - .gradle
 
-#AutoUpdateMode: Version RELEASE-%v
-#UpdateCheckMode: Tags RELEASE-.*
 AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: '1.5'
