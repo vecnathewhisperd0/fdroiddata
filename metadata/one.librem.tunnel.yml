@@ -23,6 +23,8 @@ Builds:
       - normal
     rm:
       - main/src/main/cpp/mbedtls/tests
+    scanignore:
+      - .gradle
     ndk: r19c
 
 AutoUpdateMode: None
