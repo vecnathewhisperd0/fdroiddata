@@ -33,6 +33,7 @@ Builds:
       - $$flutter$$/bin/flutter build apk -t lib/env/fdroid.dart --flavor fdroid --release
 
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
+UpdateCheckMode: HTTP
+UpdateCheckData: https://authpass.app/data/fdroid-version.txt|versionCode=(.*)|.|versionName=(.*)
 CurrentVersion: 1.0.0
 CurrentVersionCode: 6
