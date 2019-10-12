@@ -5,7 +5,6 @@ SourceCode: https://github.com/w32blaster/helsinki-timetables
 IssueTracker: https://github.com/w32blaster/helsinki-timetables/issues
 
 AutoName: Helsinki Timetables
-Summary: Show timetables for public transport in Helsinki city and region
 Description: |-
     ''Helsinki Timetables'' provides Timetables of public transport for
     Helsinki city and regions, Finland. The app supports the following
@@ -24,7 +23,13 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: None
-UpdateCheckMode: RepoManifest
+  - versionName: '1.6'
+    versionCode: 37
+    commit: '1.6'
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
 CurrentVersion: '1.6'
 CurrentVersionCode: 37

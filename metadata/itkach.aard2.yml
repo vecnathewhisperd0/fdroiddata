@@ -6,7 +6,6 @@ SourceCode: https://github.com/itkach/aard2-android
 IssueTracker: https://github.com/itkach/aard2-android/issues
 
 AutoName: Aard 2
-Summary: Offline dictionary
 Description: |-
     Aard 2 for Android is a successor to [[aarddict.android]]. It comes with
     redesigned user interface, bookmarks, history and a better dictionary storage
@@ -26,16 +25,65 @@ Builds:
       - slobber@0.9
     rm:
       - libs/android-support-v13.jar
-    extlibs:
-      - android/android-support-v13.jar
     prebuild:
-      - sed -i -e '/simple-5.1.7.1.itkach.jar/d' build.gradle
       - mv $$slobj$$ .
       - mv $$slobber$$ .
-      - unzip slobber/libs/simple-5.1.7.1-sources.itkach.jar -d src/
+      - sed -i -e "s|files('libs/android-support-v13.jar')|'com.android.support:support-v13:19.1.0'|"
+        build.gradle
+      - sed -i -e '/simple-5.1.7.1.itkach.jar/d' {.,slobber}/build.gradle
+      - unzip slobber/libs/simple-5.1.7.1-sources.itkach.jar -d slobber/src/main/java/
       - rm -r slobber/libs/
+      - sed -i -e "s/includeFlat '/include ':/" settings.gradle
+
+  - versionName: '0.40'
+    versionCode: 40
+    commit: '0.40'
+    gradle:
+      - yes
+    srclibs:
+      - slobj@0.8
+      - slobber@0.9
+    prebuild:
+      - mv $$slobj$$ .
+      - mv $$slobber$$ .
+      - sed -i -e '/simple-5.1.7.1.itkach.jar/d' {.,slobber}/build.gradle
+      - unzip slobber/libs/simple-5.1.7.1-sources.itkach.jar -d slobber/src/main/java/
+      - rm -r slobber/libs/
+      - sed -i -e "s/includeFlat '/include ':/" settings.gradle
+
+  - versionName: '0.41'
+    versionCode: 41
+    commit: '0.41'
+    gradle:
+      - yes
+    srclibs:
+      - slobj@0.8
+      - slobber@0.9
+    prebuild:
+      - mv $$slobj$$ .
+      - mv $$slobber$$ .
+      - sed -i -e '/simple-5.1.7.1.itkach.jar/d' {.,slobber}/build.gradle
+      - unzip slobber/libs/simple-5.1.7.1-sources.itkach.jar -d slobber/src/main/java/
+      - rm -r slobber/libs/
+      - sed -i -e "s/includeFlat '/include ':/" settings.gradle
+
+  - versionName: '0.43'
+    versionCode: 43
+    commit: '0.43'
+    gradle:
+      - yes
+    srclibs:
+      - slobj@0.8
+      - slobber@0.9
+    prebuild:
+      - mv $$slobj$$ .
+      - mv $$slobber$$ .
+      - sed -i -e '/simple-5.1.7.1.itkach.jar/d' {.,slobber}/build.gradle
+      - unzip slobber/libs/simple-5.1.7.1-sources.itkach.jar -d slobber/src/main/java/
+      - rm -r slobber/libs/
+      - sed -i -e "s/includeFlat '/include ':/" settings.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.39'
-CurrentVersionCode: 39
+CurrentVersion: '0.43'
+CurrentVersionCode: 43

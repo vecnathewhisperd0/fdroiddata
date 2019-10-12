@@ -1,8 +1,12 @@
 Categories:
   - Internet
 License: MIT
+AuthorName: Gotify
+AuthorEmail: gotify@protonmail.com
+WebSite: https://gotify.net/
 SourceCode: https://github.com/gotify/android
 IssueTracker: https://github.com/gotify/android/issues
+Changelog: https://github.com/gotify/android/releases
 
 AutoName: Gotify
 Description: |-
@@ -49,7 +53,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.0.6
+    versionCode: 9
+    commit: v2.0.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.7
+    versionCode: 10
+    commit: v2.0.7
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
-CurrentVersion: 2.0.5
-CurrentVersionCode: 8
+CurrentVersion: 2.0.7
+CurrentVersionCode: 10

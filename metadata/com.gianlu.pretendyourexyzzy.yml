@@ -3,11 +3,15 @@ AntiFeatures:
 Categories:
   - Games
 License: GPL-3.0-only
+AuthorName: Gianlu
+AuthorEmail: altomanigianluca@gmail.com
+AuthorWebSite: https://gianlu.xyz/
 SourceCode: https://github.com/devgianlu/PretendYoureXyzzyAndroid
 IssueTracker: https://github.com/devgianlu/PretendYoureXyzzyAndroid/issues
+Translation: https://crowdin.com/project/pretend-youre-xyzzy-android
 Changelog: https://github.com/devgianlu/PretendYoureXyzzyAndroid/releases
 
-AutoName: Pretend You're Xyzzy
+AutoName: Pretend You’re Xyzzy
 
 RepoType: git
 Repo: https://github.com/devgianlu/PretendYoureXyzzyAndroid
@@ -173,7 +177,57 @@ Builds:
     prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
 
+  - versionName: 2.8.11
+    versionCode: 80
+    commit: v2.8.11
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.8.12
+    versionCode: 81
+    commit: v2.8.12
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.8.13
+    versionCode: 82
+    commit: v2.8.13
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.8.14
+    versionCode: 83
+    commit: v2.8.14
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 2.8.15
+    versionCode: 84
+    commit: v2.8.15
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.8.10
-CurrentVersionCode: 79
+CurrentVersion: 2.8.15
+CurrentVersionCode: 84

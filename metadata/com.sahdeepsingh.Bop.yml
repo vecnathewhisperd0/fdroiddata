@@ -1,6 +1,8 @@
 Categories:
   - Multimedia
 License: Apache-2.0
+AuthorName: Sahdeep Singh
+AuthorEmail: sahdeepsingh98@gmail.com
 SourceCode: https://github.com/iamSahdeep/Bop
 IssueTracker: https://github.com/iamSahdeep/Bop/issues
 Changelog: https://github.com/iamSahdeep/Bop/blob/HEAD/changelog.md
@@ -61,7 +63,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.2.1
+    versionCode: 13
+    commit: v1.2.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.2'
-CurrentVersionCode: 12
+CurrentVersion: 1.2.1
+CurrentVersionCode: 13

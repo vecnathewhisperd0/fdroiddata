@@ -1,6 +1,9 @@
 Categories:
   - Money
 License: GPL-3.0-or-later
+AuthorName: Damyan Ivanov
+AuthorEmail: dam+mole@ktnx.net
+WebSite: https://mole.ktnx.net/
 SourceCode: https://git.ktnx.net/?p=mobile-ledger.git
 Changelog: https://git.ktnx.net/?p=mobile-ledger.git;a=blob;f=CHANGES.md;hb=HEAD
 
@@ -31,7 +34,63 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.8.1
+    versionCode: 19
+    commit: v0.8.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.2
+    versionCode: 22
+    commit: v0.9.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.3
+    versionCode: 23
+    commit: v0.9.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.5
+    versionCode: 25
+    commit: v0.9.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.10.0
+    versionCode: 26
+    commit: v0.10.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.10.1
+    versionCode: 27
+    commit: v0.10.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.10.2
+    versionCode: 28
+    commit: v0.10.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.10.3
+    versionCode: 29
+    commit: v0.10.3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '0.8'
-CurrentVersionCode: 18
+CurrentVersion: 0.10.3
+CurrentVersionCode: 29

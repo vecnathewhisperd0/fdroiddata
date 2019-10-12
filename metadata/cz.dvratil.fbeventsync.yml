@@ -21,7 +21,7 @@ Description: |-
     You can configure reminders for events in each of those calendars
     independently. You can also configure how often the events should be synced.
 
-    Antifeatures:
+    AntiFeatures:
     * Tracking and NonFreeNet - You are required to log in to Facebook
 
 RepoType: git
@@ -84,7 +84,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.38'
+    versionCode: 42
+    commit: '0.38'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.39'
+    versionCode: 43
+    commit: '0.39'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
-CurrentVersion: '0.36'
-CurrentVersionCode: 40
+UpdateCheckMode: Tags ^[0-9.]+$
+CurrentVersion: '0.39'
+CurrentVersionCode: 43

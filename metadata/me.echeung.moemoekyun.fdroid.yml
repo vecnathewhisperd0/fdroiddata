@@ -4,6 +4,7 @@ License: MIT
 WebSite: https://listen.moe/
 SourceCode: https://github.com/LISTEN-moe/android-app
 IssueTracker: https://github.com/LISTEN-moe/android-app/issues
+Translation: https://crowdin.com/project/listenmoe-android-app
 Donate: https://www.patreon.com/odysseyradio
 
 AutoName: LISTEN.moe
@@ -156,9 +157,23 @@ Builds:
     gradle:
       - fdroid
 
-  - versionName: 5.0.0-alpha.2
-    versionCode: 72
-    commit: v5.0.0-alpha.2
+  - versionName: 5.0.0-rc.1
+    versionCode: 82
+    commit: v5.0.0-rc.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 5.0.0-rc.2
+    versionCode: 83
+    commit: v5.0.0-rc.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 5.0.0-rc.3
+    versionCode: 84
+    commit: v5.0.0-rc.3
     subdir: app
     gradle:
       - fdroid
@@ -166,5 +181,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckName: me.echeung.moemoekyun
-CurrentVersion: 3.3.2
-CurrentVersionCode: 69
+CurrentVersion: 5.0.0-rc.3
+CurrentVersionCode: 84

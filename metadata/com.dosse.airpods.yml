@@ -6,10 +6,10 @@ License: GPL-3.0-only
 WebSite: https://fdossena.com/?p=openPods/index.frag
 SourceCode: https://github.com/adolfintel/OpenPods
 IssueTracker: https://github.com/adolfintel/OpenPods/issues
+Changelog: https://github.com/adolfintel/OpenPods/releases
 Donate: https://paypal.me/sineisochronic
 
 AutoName: OpenPods
-Summary: Check the battery status of your AirPods
 Description: |-
     OpenPods lets you monitor the battery status of your AirPods on
     Android devices.
@@ -30,7 +30,63 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.4'
+    versionCode: 4
+    commit: '0.4'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '0.5'
+    versionCode: 5
+    commit: '0.5'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '0.6'
+    versionCode: 6
+    commit: '0.6'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '0.7'
+    versionCode: 7
+    commit: '0.7'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '0.8'
+    versionCode: 8
+    commit: '0.8'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '0.9'
+    versionCode: 9
+    commit: '0.9'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '0.10'
+    versionCode: 10
+    commit: '0.10'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '1.0'
+    versionCode: 11
+    commit: '1.0'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.3'
-CurrentVersionCode: 3
+CurrentVersion: '1.0'
+CurrentVersionCode: 11

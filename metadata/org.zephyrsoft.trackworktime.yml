@@ -7,7 +7,6 @@ IssueTracker: https://github.com/mathisdt/trackworktime/issues
 Changelog: https://zephyrsoft.org/trackworktime/history
 
 AutoName: Track Work Time
-Summary: Track your work time
 Description: |-
     It lets you categorize each recorded interval by a client/task and a free text.
     The list of clients/tasks can be edited to suit your needs.
@@ -137,14 +136,14 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 1.0.5-SNAPSHOT
+  - versionName: 1.0.5
     versionCode: 27
-    commit: v1.0.5-SNAPSHOT
+    commit: v1.0.5
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.4
-CurrentVersionCode: 26
+CurrentVersion: 1.0.5
+CurrentVersionCode: 27

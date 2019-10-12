@@ -9,7 +9,7 @@ Changelog: https://gitlab.com/tslocum/meditationassistant/blob/HEAD/CHANGELOG
 Donate: https://rocketnine.space/donate/
 LiberapayID: '968545'
 
-AutoName: Meditation Assistant Free
+AutoName: Meditation Assistant
 Description: |-
     This application assists with both timed (via duration or ending at a specific
     time) and untimed sessions, with numerous customizations, including
@@ -28,7 +28,7 @@ Description: |-
     minutes out of your schedule.
 
 RepoType: git
-Repo: https://gitlab.com/tslocum/meditationassistant
+Repo: https://gitlab.com/tslocum/meditationassistant.git
 
 Builds:
   - versionName: 1.2.7
@@ -337,8 +337,44 @@ Builds:
       - sed -i -e '/play-services/d' build.gradle
       - sed -i 's/4096m/1024m/' ../gradle.properties
 
+  - versionName: 1.5.4
+    versionCode: 154
+    commit: 1.5.4
+    subdir: MeditationAssistant
+    gradle:
+      - opensource
+    rm:
+      - MeditationAssistantWear
+    prebuild:
+      - sed -i -e '/play-services/d' build.gradle
+      - sed -i 's/4096m/1024m/' ../gradle.properties
+
+  - versionName: 1.5.5
+    versionCode: 155
+    commit: 1.5.5
+    subdir: MeditationAssistant
+    gradle:
+      - opensource
+    rm:
+      - MeditationAssistantWear
+    prebuild:
+      - sed -i -e '/play-services/d' build.gradle
+      - sed -i 's/4096m/1024m/' ../gradle.properties
+
+  - versionName: 1.5.6
+    versionCode: 156
+    commit: 1.5.6
+    subdir: MeditationAssistant
+    gradle:
+      - opensource
+    rm:
+      - MeditationAssistantWear
+    prebuild:
+      - sed -i -e '/play-services/d' build.gradle
+      - sed -i 's/4096m/1024m/' ../gradle.properties
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 UpdateCheckName: sh.ftp.rocketninelabs.meditationassistant
-CurrentVersion: 1.5.3
-CurrentVersionCode: 153
+CurrentVersion: 1.5.6
+CurrentVersionCode: 156

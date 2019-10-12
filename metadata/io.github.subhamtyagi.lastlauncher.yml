@@ -1,0 +1,31 @@
+Categories:
+  - System
+License: GPL-3.0-or-later
+AuthorName: SubhamTyagi
+SourceCode: https://github.com/SubhamTyagi/Last-Launcher
+IssueTracker: https://github.com/SubhamTyagi/Last-Launcher/issues
+
+AutoName: Last Launcher
+
+RepoType: git
+Repo: https://github.com/SubhamTyagi/Last-Launcher
+
+Builds:
+  - versionName: '0.1'
+    versionCode: 1
+    commit: v0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.2'
+    versionCode: 2
+    commit: v0.2
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '0.2'
+CurrentVersionCode: 2

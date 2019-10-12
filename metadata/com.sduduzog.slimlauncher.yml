@@ -41,7 +41,49 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.3.0-beta3
+    versionCode: 33
+    commit: v2.3.0-beta3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.3.1
+    versionCode: 36
+    commit: v2.3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.3.2
+    versionCode: 37
+    commit: v2.3.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.3.3
+    versionCode: 38
+    commit: v2.3.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.3.5
+    versionCode: 40
+    commit: v2.3.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.4.6
+    versionCode: 41
+    commit: v2.4.6
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.7
-CurrentVersionCode: 29
+CurrentVersion: 2.4.6
+CurrentVersionCode: 41

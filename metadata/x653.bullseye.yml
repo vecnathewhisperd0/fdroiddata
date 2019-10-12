@@ -5,18 +5,9 @@ SourceCode: https://gitlab.com/x653/bullseye
 IssueTracker: https://gitlab.com/x653/bullseye/issues
 
 AutoName: Bullseye
-Description: |-
-    Scoreboard for tournament dart x01
-
-    * one, two or three Player
-    * 301, 501, etc.
-    * dart calculator
-    * checkouts
-    * averages
-    * stylish design
 
 RepoType: git
-Repo: https://gitlab.com/x653/bullseye
+Repo: https://gitlab.com/x653/bullseye.git
 
 Builds:
   - versionName: '0.1'
@@ -40,7 +31,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.4'
+    versionCode: 4
+    commit: v0.4
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '0.3'
-CurrentVersionCode: 3
+CurrentVersion: '0.4'
+CurrentVersionCode: 4
