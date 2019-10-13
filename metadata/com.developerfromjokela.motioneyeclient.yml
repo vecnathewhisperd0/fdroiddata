@@ -11,7 +11,7 @@ Summary: Best MotionEye client, only using BACKEND
 RepoType: git
 Repo: https://github.com/developerfromjokela/motioneye-client
 LiberapayID: 1609200
-
+FlattrID: vjlrnn
 
 Builds:
   - versionName: 1.0.0-alp9
