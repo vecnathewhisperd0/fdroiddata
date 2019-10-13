@@ -14,7 +14,7 @@ Repo: https://github.com/developerfromjokela/motioneye-client
 Builds:
   - versionName: 1.0.0-alp9
     versionCode: 10000008
-    commit: ab0b22b391c5f5a67c1f5fc52338a9cecb7f72b3
+    commit: 1.0.0-alp9
     subdir: app
     gradle:
       - yes
