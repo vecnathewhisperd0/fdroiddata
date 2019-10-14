@@ -56,7 +56,7 @@ Builds:
     gradle:
       - yes
     srclibs:
-      - mini-matrixsdk@v0.9.30-no-webrtc
+      - mini-matrixsdk@v0.9.27-no-webrtc
       - olmsdk@3.0.0
     rm:
       - app/libs/*.aar
