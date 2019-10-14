@@ -75,6 +75,14 @@ Builds:
       - cp $$mini-matrixsdk$$/matrix-sdk/build/outputs/aar/matrix-sdk-release-*.aar
         libs/matrix-sdk-core.aar
     ndk: r17c
+    
+  - versionName: 0.0.14
+    versionCode: 14
+    commit: v0.0.14
+    subdir: app
+    gradle:
+      - yes
+
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
