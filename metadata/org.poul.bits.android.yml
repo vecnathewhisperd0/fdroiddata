@@ -27,7 +27,7 @@ Builds:
     gradle:
       - libre
 
-MaintainerNotes: No AUM read: https://gitlab.com/fdroid/fdroiddata/issues/1833
+MaintainerNotes: No AUM read here https://gitlab.com/fdroid/fdroiddata/issues/1833
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
