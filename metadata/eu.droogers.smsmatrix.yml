@@ -56,7 +56,7 @@ Builds:
     gradle:
       - yes
     srclibs:
-      - mini-matrixsdk@v0.9.14-no-webrtc
+      - mini-matrixsdk@v0.9.30-no-webrtc
       - olmsdk@3.0.0
     rm:
       - app/libs/*.aar
@@ -74,7 +74,7 @@ Builds:
       - popd
       - cp $$mini-matrixsdk$$/matrix-sdk/build/outputs/aar/matrix-sdk-release-*.aar
         libs/matrix-sdk.aar
-    ndk: r17b
+    ndk: r17c
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
