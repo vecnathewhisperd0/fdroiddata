@@ -5,13 +5,13 @@ SourceCode: https://github.com/developerfromjokela/motioneye-client
 IssueTracker: https://github.com/developerfromjokela/motioneye-client/issues
 Changelog: https://github.com/developerfromjokela/motioneye-client/commits/master
 Donate: https://www.paypal.me/developerfromjokela
+FlattrID: vjlrnn
+LiberapayID: '1609200'
 
 Summary: Best MotionEye client, only using BACKEND
 
 RepoType: git
 Repo: https://github.com/developerfromjokela/motioneye-client
-LiberapayID: 1609200
-FlattrID: vjlrnn
 
 Builds:
   - versionName: 1.0.0-alp9
