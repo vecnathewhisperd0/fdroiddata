@@ -48,7 +48,7 @@ Builds:
       - cp $$mini-matrixsdk$$/matrix-sdk/build/outputs/aar/matrix-sdk-release-*.aar
         libs/matrix-sdk.aar
     ndk: r17b
-    
+
   - versionName: 0.0.14
     versionCode: 14
     commit: v0.0.14
