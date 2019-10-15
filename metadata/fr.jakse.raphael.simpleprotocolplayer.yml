@@ -8,17 +8,6 @@ IssueTracker: https://gitlab.com/raphj/SimpleProtocolPlayer-ng/issues
 Changelog: https://gitlab.com/raphj/SimpleProtocolPlayer-ng/blob/HEAD/CHANGELOG.md
 
 AutoName: Simple Protocol Player NG
-Summary: Audio player for uncompressed PCM streams
-Description: |-
-    This media player plays uncompressed PCM data from a server over your local network.  This is meant to be used for streaming audio from a PC to your Android phone or tablet.  The focus has been latency and so all the options are intended for the user to be able to find a compromise between latency and quality.
-    As a rule of thumb, a low sample rate + mono + 50 ms or less of buffer time are the settings that are generally used.
-
-    Streaming from Ubuntu (or anything running PulseAudio):
-    The following web page describes how to configure PulseAudio for use with this player.  http://kaytat.com/blog/?page_id=301
-
-    Streaming from Windows:
-    Download the server from the following link and run it locally : https://github.com/kaytat/SimpleProtocolServer
-    The server has some options also to help tune the performance.
 
 RepoType: git
 Repo: https://gitlab.com/raphj/SimpleProtocolPlayer-ng.git
