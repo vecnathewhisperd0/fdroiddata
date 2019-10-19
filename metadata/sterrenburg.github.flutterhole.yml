@@ -78,7 +78,8 @@ Builds:
       - $$flutter$$/bin/flutter packages pub run flutter_launcher_icons:main
       - $$flutter$$/bin/flutter build apk
 
-AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
+AutoUpdateMode: None
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/sterrenburg/flutterhole/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 2.1.2-debug
 CurrentVersionCode: 477
