@@ -2,6 +2,7 @@ Categories:
   - Multimedia
 License: GPL-3.0-only
 AuthorName: Ivan D'Ortenzio
+AuthorEmail: enrico2588@gmail.com
 SourceCode: https://github.com/enricocid/Music-Player-GO
 IssueTracker: https://github.com/enricocid/Music-Player-GO/issues
 Changelog: https://github.com/enricocid/Music-Player-GO/releases
@@ -246,7 +247,16 @@ Builds:
     rm:
       - project/gradle
 
+  - versionName: 3.6.7.1
+    versionCode: 127
+    commit: v3.6.7.1
+    subdir: project/app
+    gradle:
+      - yes
+    rm:
+      - project/gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.6.6.2
-CurrentVersionCode: 125
+CurrentVersion: 3.6.7.1
+CurrentVersionCode: 127

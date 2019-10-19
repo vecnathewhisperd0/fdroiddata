@@ -1,8 +1,11 @@
 Categories:
   - System
 License: Apache-2.0
+AuthorName: Braden Farmer
+AuthorEmail: farmerbb+secondscreen@gmail.com
 SourceCode: https://github.com/farmerbb/SecondScreen
 IssueTracker: https://github.com/farmerbb/SecondScreen/issues
+Changelog: https://github.com/farmerbb/SecondScreen/releases
 
 Name: SecondScreen
 AutoName: ${appName}
@@ -64,7 +67,14 @@ Builds:
     gradle:
       - free
 
+  - versionName: '2.9'
+    versionCode: 181
+    commit: '181'
+    subdir: app
+    gradle:
+      - free
+
 AutoUpdateMode: Version %c
 UpdateCheckMode: Tags
-CurrentVersion: 2.8.2
-CurrentVersionCode: 180
+CurrentVersion: '2.9'
+CurrentVersionCode: 181

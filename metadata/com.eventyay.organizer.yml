@@ -10,16 +10,6 @@ IssueTracker: https://github.com/fossasia/open-event-organizer-android/issues
 Changelog: https://github.com/fossasia/open-event-organizer-android/releases
 
 AutoName: ${appName}
-Description: |-
-    Eventyay Organizer App provides event management features like:
-
-    * Event manager log in and sign up
-    * Manual attendee check in
-    * Attendee check in through QR code scan
-    * Basic event analytics
-    * Basic ticket management
-    * Event Detail
-    * Organizer Detail
 
 RepoType: git
 Repo: https://github.com/fossasia/open-event-organizer-android
@@ -84,7 +74,15 @@ Builds:
       - fdroid
     prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
 
+  - versionName: 1.7.0
+    versionCode: 17
+    commit: v1.7.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.6.0
-CurrentVersionCode: 16
+CurrentVersion: 1.7.0
+CurrentVersionCode: 17

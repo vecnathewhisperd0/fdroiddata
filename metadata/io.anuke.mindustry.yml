@@ -8,11 +8,6 @@ Translation: https://github.com/Anuken/Mindustry/blob/HEAD/TRANSLATING.md
 Changelog: https://github.com/Anuken/Mindustry/releases
 
 AutoName: Mindustry
-Description: |-
-    Mindustry is a sandbox tower defense game.
-    Players can create elaborate supply chains of conveyor belts
-    to feed ammo into their turrets, produce materials to use for building,
-    and defend their structures from waves of enemies.
 
 RepoType: git
 Repo: https://github.com/Anuken/Mindustry.git
@@ -56,9 +51,27 @@ Builds:
     scandelete:
       - android/libs
 
-  - versionName: 4-fdroid-94
-    versionCode: 94
-    commit: v94
+  - versionName: 4-fdroid-95
+    versionCode: 95
+    commit: v95
+    subdir: android
+    gradle:
+      - yes
+    prebuild:
+      - echo "androidBuildCode=$$VERCODE$$" > ../core/assets/version.properties
+      - echo "build=$$VERCODE$$" >> ../core/assets/version.properties
+      - echo "modifier=beta" >> ../core/assets/version.properties
+      - echo "type=fdroid" >> ../core/assets/version.properties
+      - echo "number=4" >> ../core/assets/version.properties
+      - echo "buildversion=$$VERCODE$$" >> gradle.properties
+      - echo "versionType=fdroid" >> gradle.properties
+      - grep archash ../gradle.properties >> gradle.properties
+    scandelete:
+      - android/libs
+
+  - versionName: 4-fdroid-96
+    versionCode: 96
+    commit: v96
     subdir: android
     gradle:
       - yes
@@ -83,5 +96,5 @@ MaintainerNotes: |-
 AutoUpdateMode: Version v%c
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/Anuken/MindustryBuilds/master/version_fdroid.txt|versionCode=(.*)|.|versionName=(.*)
-CurrentVersion: 4-fdroid-94
-CurrentVersionCode: 94
+CurrentVersion: 4-fdroid-96
+CurrentVersionCode: 96

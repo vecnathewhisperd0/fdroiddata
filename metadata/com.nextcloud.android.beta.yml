@@ -3693,9 +3693,141 @@ Builds:
     scandelete:
       - src/androidTest
 
+  - versionName: '20190926'
+    versionCode: 20190926
+    commit: dev-20190926
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190928'
+    versionCode: 20190928
+    commit: dev-20190928
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191002'
+    versionCode: 20191002
+    commit: dev-20191002
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191005'
+    versionCode: 20191005
+    commit: dev-20191005
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191008'
+    versionCode: 20191008
+    commit: dev-20191008
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191009'
+    versionCode: 20191009
+    commit: dev-20191009
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191010'
+    versionCode: 20191010
+    commit: dev-20191010
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191011'
+    versionCode: 20191011
+    commit: dev-20191011
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191012'
+    versionCode: 20191012
+    commit: dev-20191012
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191017'
+    versionCode: 20191017
+    commit: dev-20191017
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191018'
+    versionCode: 20191018
+    commit: dev-20191018
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
 MaintainerNotes: Tags get removed. See https://github.com/nextcloud/android/issues/969.
 
 AutoUpdateMode: Version dev-%c
 UpdateCheckMode: Tags ^dev
-CurrentVersion: '20190914'
-CurrentVersionCode: 20190914
+CurrentVersion: '20191018'
+CurrentVersionCode: 20191018

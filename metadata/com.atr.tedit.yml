@@ -1,7 +1,9 @@
 Categories:
   - Writing
 License: 0BSD
-WebSite: http://1337atr.weebly.com/tedit.html
+AuthorName: grizeldi’s publishing
+AuthorEmail: atr167@yahoo.com
+WebSite: https://1337atr.weebly.com/tedit.html
 SourceCode: https://github.com/ATryder/TEdit
 IssueTracker: https://github.com/ATryder/TEdit/issues
 Changelog: https://github.com/ATryder/TEdit/releases
@@ -72,7 +74,16 @@ Builds:
     prebuild: sed -i -e 's/constraint-layout:1.0.0-beta3/constraint-layout:1.0.2/'
         build.gradle
 
+  - versionName: 2.3.0
+    versionCode: 14
+    commit: 2.3.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/constraint-layout:1.0.0-beta3/constraint-layout:1.0.2/'
+        build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.1
-CurrentVersionCode: 13
+CurrentVersion: 2.3.0
+CurrentVersionCode: 14

@@ -6,6 +6,7 @@ License: GPL-3.0-only
 WebSite: https://pendulums.io/
 SourceCode: https://github.com/Swing-team/pendulums-web-client
 IssueTracker: https://github.com/Swing-team/pendulums-web-client/issues
+Donate: https://pendulums.io/donation.html
 
 AutoName: Pendulums
 Description: |-
@@ -39,7 +40,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.1.0
+    versionCode: 4
+    commit: v1.1.0
+    subdir: mobile-app/platforms/android/app/
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.1
-CurrentVersionCode: 3
+CurrentVersion: 1.1.0
+CurrentVersionCode: 4

@@ -1,7 +1,9 @@
 Categories:
   - System
 License: GPL-3.0-only
-WebSite: https://www.batterybot.info
+AuthorName: Darshan Computing, LLC
+AuthorEmail: support@batterybot.info
+WebSite: https://www.batterybot.info/
 SourceCode: https://github.com/darshan-/Battery-Indicator-Pro
 IssueTracker: https://github.com/darshan-/Battery-Indicator-Pro/issues
 Donate: https://github.com/darshan-/Battery-Indicator-Support/blob/HEAD/PackageDownload.md#support--donate
@@ -73,5 +75,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
-CurrentVersion: 11.0.3
-CurrentVersionCode: 26012
+CurrentVersion: 11.0.4-dev
+CurrentVersionCode: 26013
