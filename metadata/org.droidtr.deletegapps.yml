@@ -89,8 +89,9 @@ Builds:
   - versionName: '14.0'
     versionCode: 14
     commit: '14.0'
+    patch:
+      - manifest.patch
     output: bin/app.apk
-    patch: manifest.patch
     rm:
       - bin
     prebuild:
