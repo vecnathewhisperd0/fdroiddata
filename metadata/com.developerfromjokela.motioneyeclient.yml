@@ -8,6 +8,8 @@ Donate: https://www.paypal.me/developerfromjokela
 FlattrID: vjlrnn
 LiberapayID: '1609200'
 
+AutoName: motionEye Client
+
 RepoType: git
 Repo: https://github.com/developerfromjokela/motioneye-client
 
@@ -19,13 +21,12 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 1.0.0-alp10 
+  - versionName: 1.0.0-alp10
     versionCode: 10000009
     commit: 1.0.0-alp10
     subdir: app
     gradle:
       - yes
-
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
