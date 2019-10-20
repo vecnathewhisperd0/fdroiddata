@@ -51,7 +51,15 @@ Builds:
     preassemble:
       - :makeDictionary
 
+  - versionName: 4.0.634
+    versionCode: 2234
+    commit: 1e7ab8bc4a39d71ac67dbae9555850b087b7a289
+    gradle:
+      - yes
+    gradleprops: forceVersionBuildCount=1234
+    output: add_ons_apks/release/add-on--languages-czech-apk-2234.apk
+
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest/Czech
-CurrentVersion: 2.0.2
-CurrentVersionCode: 260
+CurrentVersion: 4.0.634
+CurrentVersionCode: 2234
