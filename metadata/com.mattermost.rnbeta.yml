@@ -305,9 +305,9 @@ Builds:
     scandelete:
       - node_modules
 
-  - versionName: 1.23.1
-    versionCode: 234
-    commit: v1.23.1
+  - versionName: 1.24.0
+    versionCode: 239
+    commit: v1.24.0
     subdir: android/app
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
@@ -322,8 +322,6 @@ Builds:
       - yes
     rm:
       - node_modules/react-native-notifications/android/src/main/java/com/wix/reactnativenotifications/gcm/
-      - node_modules/sc-uws/*.node
-      - node_modules/sc-uws/build/
       - node_modules/xdate/build/compiler.jar
       - node_modules/react-native-video/android-exoplayer/build/
       - node_modules/socketcluster/
@@ -361,5 +359,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.23.1
-CurrentVersionCode: 234
+CurrentVersion: 1.24.0
+CurrentVersionCode: 239
