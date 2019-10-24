@@ -24,8 +24,7 @@ Builds:
       - touch android/key.properties
       - echo 'android.applicationVariants.all { variant -> variant.outputs.all { output
         -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
-    build:
-      - $$flutter$$/bin/flutter build apk --suppress-analytics
+    build: $$flutter$$/bin/flutter build apk --suppress-analytics
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
