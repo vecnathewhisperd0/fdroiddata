@@ -3,7 +3,7 @@ AntiFeatures:
 Categories:
   - Development
 License: Apache-2.0
-WebSite: http://slapperwan.github.io/gh4a/
+WebSite: https://slapperwan.github.io/gh4a/
 SourceCode: https://github.com/slapperwan/gh4a
 IssueTracker: https://github.com/slapperwan/gh4a/issues
 Changelog: https://github.com/slapperwan/gh4a/releases
@@ -157,7 +157,7 @@ Builds:
     commit: v4.5.0
     subdir: app
     gradle:
-      - foss
+      - yes
     prebuild: sed -i -e '/fabric/d' -e '/playstoreImplementation(.*) {/,/}/d' -e s/ClientId/\'\"f0f32f2ee4a709ba3640\"\'/
         -e s/ClientSecret/\'\"f94cffda88486696c2762ad986bc0b8b830c9cff\"\'/ build.gradle
 

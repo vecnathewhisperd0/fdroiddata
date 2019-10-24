@@ -4,9 +4,9 @@ License: GPL-3.0-only
 WebSite: http://borcteam.bplaced.net/en/javainstaller.php
 SourceCode: https://github.com/julianwi/javainstaller
 IssueTracker: https://github.com/julianwi/javainstaller/issues
+Changelog: https://github.com/julianwi/javainstaller/releases
 
 AutoName: Java installer
-Summary: Install a full Java runtime
 Description: |-
     Install a full Java runtime on the phone. The app downloads the required files
     from a HTTP server unpacks them and copies them to the right directory.

@@ -1,9 +1,12 @@
 Categories:
   - Internet
 License: GPL-3.0-or-later
+AuthorName: Niedermann IT-Dienstleistungen
+AuthorWebSite: https://www.niedermann.it/
 WebSite: https://github.com/stefan-niedermann/nextcloud-deck
 SourceCode: https://github.com/stefan-niedermann/nextcloud-deck
 IssueTracker: https://github.com/stefan-niedermann/nextcloud-deck/issues
+Translation: https://www.transifex.com/nextcloud/nextcloud/android-deck/
 Changelog: https://github.com/stefan-niedermann/nextcloud-deck/tags
 Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W523CNHTD7ARQ&source=url
 LiberapayID: '46438'
@@ -49,7 +52,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.0.10
+    versionCode: 10
+    commit: 0.0.10
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.11
+    versionCode: 11
+    commit: 0.0.11
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.12
+    versionCode: 12
+    commit: 0.0.12
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.13
+    versionCode: 13
+    commit: 0.0.13
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.8
-CurrentVersionCode: 8
+CurrentVersion: 0.0.13
+CurrentVersionCode: 13

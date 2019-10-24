@@ -7,6 +7,7 @@ AuthorName: Fynn Godau
 AuthorEmail: fynngodau@mailbox.org
 SourceCode: https://notabug.org/fynngodau/DSBDirect
 IssueTracker: https://notabug.org/fynngodau/DSBDirect/issues
+Changelog: https://notabug.org/fynngodau/DSBDirect/releases
 
 AutoName: DSBDirect
 
@@ -112,21 +113,35 @@ Builds:
     gradle:
       - fdroid
 
-  - versionName: '2.3'
-    versionCode: 20
-    commit: release-2.3
+  - versionName: 2.4.1
+    versionCode: 22
+    commit: release-2.4.1
     subdir: app
     gradle:
       - fdroid
 
-  - versionName: '2.4'
-    versionCode: 21
-    commit: release-2.4
+  - versionName: '2.5'
+    versionCode: 23
+    commit: release-2.5
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.5.1
+    versionCode: 24
+    commit: release-2.5.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.5.2
+    versionCode: 25
+    commit: release-2.5.2
     subdir: app
     gradle:
       - fdroid
 
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: Tags
-CurrentVersion: '2.4'
-CurrentVersionCode: 21
+CurrentVersion: 2.5.2
+CurrentVersionCode: 25

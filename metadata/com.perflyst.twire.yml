@@ -34,7 +34,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.9.5
+    versionCode: 505
+    commit: v1.9.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.6
+    versionCode: 506
+    commit: v1.9.6
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.3
-CurrentVersionCode: 503
+CurrentVersion: 1.9.6
+CurrentVersionCode: 506

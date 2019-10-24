@@ -4,9 +4,12 @@ Categories:
   - Internet
   - Phone & SMS
 License: Apache-2.0
-WebSite: https://riot.im
+AuthorName: Vector Creations Limited
+AuthorEmail: android@riot.im
+WebSite: https://riot.im/
 SourceCode: https://github.com/vector-im/riot-android
 IssueTracker: https://github.com/vector-im/riot-android/issues
+Translation: https://translate.riot.im/projects/riot-android/
 Changelog: https://github.com/vector-im/riot-android/blob/HEAD/CHANGES.rst
 LiberapayID: '10794'
 Bitcoin: 1LxowEgsquZ3UPZ68wHf8v2MDZw82dVmAE
@@ -30,7 +33,7 @@ Description: |-
     * Instantly share messages, images, videos and files of any kind within groups of any size
     * Voice and video 1-1 and conference calling via WebRTC
     * End-to-end encryption using Olm (<a href="https://matrix.org/git/olm"></a>)
-    * See who's reading your messages with read receipts
+    * See who’s reading your messages with read receipts
     * Communicate with users anywhere in the Matrix.org ecosystem - not just Riot users!
     * Discover and invite users by email address
     * Participate in guest-accessible public rooms
@@ -1850,6 +1853,20 @@ Builds:
     scanignore:
       - build.gradle
 
+  - versionName: 0.9.8
+    versionCode: 10090800
+    commit: v0.9.8
+    subdir: vector
+    gradle:
+      - appfdroid
+    output: build/outputs/apk/appfdroid/release/vector-appfdroid-armeabi-v7a-release-unsigned.apk
+    prebuild:
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - echo "org.gradle.jvmargs=-Xmx4g" >> ../gradle.properties
+    scanignore:
+      - build.gradle
+
   - versionName: 0.9.4
     versionCode: 20090400
     commit: v0.9.4
@@ -1860,6 +1877,20 @@ Builds:
     prebuild:
       - sed -i -e '/com.google.firebase/,+5d' build.gradle
       - sed -i -e '/com.google.gms.google-services/d' build.gradle
+    scanignore:
+      - build.gradle
+
+  - versionName: 0.9.8
+    versionCode: 20090800
+    commit: v0.9.8
+    subdir: vector
+    gradle:
+      - appfdroid
+    output: build/outputs/apk/appfdroid/release/vector-appfdroid-arm64-v8a-release-unsigned.apk
+    prebuild:
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - echo "org.gradle.jvmargs=-Xmx4g" >> ../gradle.properties
     scanignore:
       - build.gradle
 
@@ -1876,6 +1907,20 @@ Builds:
     scanignore:
       - build.gradle
 
+  - versionName: 0.9.8
+    versionCode: 30090800
+    commit: v0.9.8
+    subdir: vector
+    gradle:
+      - appfdroid
+    output: build/outputs/apk/appfdroid/release/vector-appfdroid-x86-release-unsigned.apk
+    prebuild:
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - echo "org.gradle.jvmargs=-Xmx4g" >> ../gradle.properties
+    scanignore:
+      - build.gradle
+
   - versionName: 0.9.4
     versionCode: 40090400
     commit: v0.9.4
@@ -1889,11 +1934,25 @@ Builds:
     scanignore:
       - build.gradle
 
+  - versionName: 0.9.8
+    versionCode: 40090800
+    commit: v0.9.8
+    subdir: vector
+    gradle:
+      - appfdroid
+    output: build/outputs/apk/appfdroid/release/vector-appfdroid-x86_64-release-unsigned.apk
+    prebuild:
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - echo "org.gradle.jvmargs=-Xmx4g" >> ../gradle.properties
+    scanignore:
+      - build.gradle
+
 MaintainerNotes: Upstream builds and publishes a libre build of the jitsi sdk. The
     sdk build and riot use that sdk. The maven repo can be re=created by using ./build_jitsi_libs.sh
 
-ArchivePolicy: 6 versions
+ArchivePolicy: 10 versions
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 0.9.4
-CurrentVersionCode: 40090400
+CurrentVersion: 0.9.8
+CurrentVersionCode: 40090800

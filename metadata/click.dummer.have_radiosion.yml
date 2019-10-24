@@ -10,6 +10,8 @@ Changelog: https://github.com/no-go/HaveRadiosion/releases
 
 AutoName: HaveRadiosion
 Description: |-
+    '''NOTE:''' This app is no longer maintained, its repo was archived.
+
     This app plays internet radio streams. The app is a fork of the WebRadio
     app - but with a changed editor, a focus on rock music and a comic
     music visualization. The design of the app has been renewed and some
@@ -50,7 +52,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '2.8'
+    versionCode: 28
+    commit: v2.8
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '2.7'
-CurrentVersionCode: 27
+CurrentVersion: '2.8'
+CurrentVersionCode: 28

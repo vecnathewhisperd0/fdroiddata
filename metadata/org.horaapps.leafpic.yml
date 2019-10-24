@@ -8,6 +8,8 @@ Changelog: https://gitlab.com/HoraApps/LeafPic/blob/dev/CHANGELOG.md
 
 AutoName: LeafPic
 Description: |-
+    Note: This app is no longer developed, [[com.alienpants.leafpicrevived]] is a fork that continues development.
+
     Advanced replacement for the default image gallery.
 
     ''LeafPic'' is a fluid, material-designed alternative gallery. It doesn't miss
@@ -15,7 +17,7 @@ Description: |-
     useful features.
 
 RepoType: git
-Repo: https://gitlab.com/HoraApps/LeafPic
+Repo: https://gitlab.com/HoraApps/LeafPic.git
 
 Builds:
   - versionName: v0.5.2

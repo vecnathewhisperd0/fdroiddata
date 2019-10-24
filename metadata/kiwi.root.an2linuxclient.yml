@@ -1,6 +1,8 @@
 Categories:
   - Connectivity
 License: GPL-3.0-only
+AuthorName: rootkiwi
+AuthorEmail: an2linux@root.kiwi
 SourceCode: https://github.com/rootkiwi/an2linuxclient
 IssueTracker: https://github.com/rootkiwi/an2linuxclient/issues
 
@@ -102,7 +104,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.10.0
+    versionCode: 15
+    commit: v0.10.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.9.2
-CurrentVersionCode: 14
+CurrentVersion: 0.10.0
+CurrentVersionCode: 15

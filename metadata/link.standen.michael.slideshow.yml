@@ -1,12 +1,15 @@
 Categories:
   - Multimedia
 License: MIT
+AuthorName: Michael Standen
+AuthorEmail: michael@standen.link
+AuthorWebSite: https://michael.standen.link/
 SourceCode: https://github.com/ScreamingHawk/android-slideshow
 IssueTracker: https://github.com/ScreamingHawk/android-slideshow/issues
+Translation: https://github.com/ScreamingHawk/android-slideshow/blob/HEAD/CONTRIBUTING.md#can-i-translate-the-app
 Donate: https://beerpay.io/ScreamingHawk/android-slideshow
 
 AutoName: Slideshow
-Summary: View a slideshow of your images
 Description: |-
     Slideshow is a simple way to view your favourite photos with ease. Navigate
     through your files and start a slideshow with a single tap.
@@ -195,7 +198,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.8.1
+    versionCode: 50
+    commit: v2.8.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.7.0
-CurrentVersionCode: 48
+CurrentVersion: 2.8.1
+CurrentVersionCode: 50

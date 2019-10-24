@@ -1,8 +1,12 @@
 Categories:
   - Multimedia
 License: Apache-2.0
+AuthorName: The SLS Team (Adam Renberg and others)
+AuthorEmail: simple.last.fm.scrobbler@gmail.com
+WebSite: https://simple-last-fm-scrobbler.github.io/sls
 SourceCode: https://github.com/simple-last-fm-scrobbler/sls
 IssueTracker: https://github.com/simple-last-fm-scrobbler/sls/issues
+Translation: https://os0hucc.oneskyapp.com/collaboration/project/344237
 Changelog: https://github.com/simple-last-fm-scrobbler/sls/blob/HEAD/app/src/main/assets/changelog.txt
 
 AutoName: Simple Scrobbler
@@ -124,7 +128,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.7.0
+    versionCode: 61
+    commit: v1.7.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.6.7
-CurrentVersionCode: 58
+CurrentVersion: 1.7.0
+CurrentVersionCode: 61

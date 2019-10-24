@@ -5,6 +5,7 @@ License: GPL-3.0-only
 WebSite: https://nextcloud.com/talk/
 SourceCode: https://github.com/nextcloud/talk-android
 IssueTracker: https://github.com/nextcloud/talk-android/issues
+Translation: https://www.transifex.com/nextcloud/public/
 Changelog: https://github.com/nextcloud/talk-android/releases
 Donate: https://www.bountysource.com/teams/nextcloud
 
@@ -305,6 +306,7 @@ Builds:
 
   - versionName: 6.0.0beta3
     versionCode: 91
+    disable: no beta
     commit: v6.0.0beta3
     subdir: app
     gradle:
@@ -379,10 +381,30 @@ Builds:
       - app/gplay.gradle
     prebuild: sed -i -e '/work-firebase/d' build.gradle
 
+  - versionName: 7.0.5
+    versionCode: 119
+    commit: v7.0.5
+    subdir: app
+    gradle:
+      - generic
+    rm:
+      - app/gplay.gradle
+    prebuild: sed -i -e '/work-firebase/d' build.gradle
+
+  - versionName: 7.0.6
+    versionCode: 120
+    commit: 7.0.6
+    subdir: app
+    gradle:
+      - generic
+    rm:
+      - app/gplay.gradle
+    prebuild: sed -i -e '/work-firebase/d' build.gradle
+
 MaintainerNotes: https://github.com/nextcloud/talk-android/issues/534.
 
 ArchivePolicy: 5 versions
-AutoUpdateMode: None
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^v[0-9]+\.[0-9]+\.[0-9]+$
-CurrentVersion: 6.1.6
-CurrentVersionCode: 108
+CurrentVersion: 7.0.6
+CurrentVersionCode: 120

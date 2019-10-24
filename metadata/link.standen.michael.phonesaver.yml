@@ -1,12 +1,15 @@
 Categories:
   - System
 License: MIT
+AuthorName: Michael Standen
+AuthorEmail: michael@standen.link
+AuthorWebSite: https://michael.standen.link/
 SourceCode: https://github.com/ScreamingHawk/phone-saver
 IssueTracker: https://github.com/ScreamingHawk/phone-saver/issues
+Translation: https://github.com/ScreamingHawk/phone-saver/blob/HEAD/CONTRIBUTING.md#can-i-translate-the-app
 Donate: https://beerpay.io/ScreamingHawk/phone-saver
 
 AutoName: Phone Saver
-Summary: Save files via Share menu
 Description: |-
     Ever hit that share button and really wanted to just store the file on your
     phone? That meme that you send to your friends that would be great in your
@@ -177,7 +180,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 5.2.1
+    versionCode: 37
+    commit: v5.2.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 5.2.0
-CurrentVersionCode: 36
+CurrentVersion: 5.2.1
+CurrentVersionCode: 37

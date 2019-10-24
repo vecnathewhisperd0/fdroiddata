@@ -43,7 +43,31 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v63-beta
+    versionCode: 63
+    commit: v63-beta
+    gradle:
+      - yes
+
+  - versionName: v64-beta
+    versionCode: 64
+    commit: v64-beta
+    gradle:
+      - yes
+
+  - versionName: v65-beta
+    versionCode: 65
+    commit: v65-beta
+    gradle:
+      - yes
+
+  - versionName: v66-beta
+    versionCode: 66
+    commit: v66-beta
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v62-beta
-CurrentVersionCode: 62
+CurrentVersion: v66-beta
+CurrentVersionCode: 66

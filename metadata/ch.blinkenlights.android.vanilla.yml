@@ -1,10 +1,12 @@
 Categories:
   - Multimedia
 License: GPL-3.0-only
-WebSite: http://vanillamusic.io/
+WebSite: https://vanilla-music.github.io/
 SourceCode: https://github.com/vanilla-music/vanilla
 IssueTracker: https://github.com/vanilla-music/vanilla/issues
+Translation: https://www.transifex.com/projects/p/vanilla-music-1/
 Changelog: https://cdn.rawgit.com/vanilla-music/vanilla/HEAD/app/src/main/assets/about.html
+Bitcoin: 1adrianERDJusC4c8whyT81zAuiENEqub
 
 AutoName: Vanilla Music
 Description: |-
@@ -316,7 +318,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.0.84
+    versionCode: 10840
+    commit: 1.0.84
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.83
-CurrentVersionCode: 10830
+CurrentVersion: 1.0.84
+CurrentVersionCode: 10840

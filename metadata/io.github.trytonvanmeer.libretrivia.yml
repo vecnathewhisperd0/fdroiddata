@@ -1,7 +1,7 @@
 Categories:
   - Games
 License: GPL-3.0-or-later
-WebSite: https://tryton-vanmeer.github.io/projects/LibreTrivia
+WebSite: https://github.com/tryton-vanmeer/LibreTrivia
 SourceCode: https://github.com/tryton-vanmeer/LibreTrivia
 IssueTracker: https://github.com/tryton-vanmeer/LibreTrivia/issues
 Changelog: https://github.com/tryton-vanmeer/LibreTrivia/releases
@@ -26,7 +26,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.3'
+    versionCode: 3
+    commit: v0.3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2.3
-CurrentVersionCode: 2
+CurrentVersion: '0.3'
+CurrentVersionCode: 3

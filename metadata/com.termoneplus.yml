@@ -16,7 +16,7 @@ Description: |-
     This application is a clone of Jack Palevich's [[jackpal.androidterm]].
 
 RepoType: git
-Repo: https://gitlab.com/termapps/termoneplus
+Repo: https://gitlab.com/termapps/termoneplus.git
 
 Builds:
   - versionName: 3.0.0
@@ -43,7 +43,31 @@ Builds:
       - yes
     ndk: r17c
 
+  - versionName: 3.2.0
+    versionCode: 320
+    commit: v3.2.0
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.2.3
+    versionCode: 323
+    commit: v3.2.3
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.2.4
+    versionCode: 324
+    commit: v3.2.4
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.1.1
-CurrentVersionCode: 311
+CurrentVersion: 3.2.4
+CurrentVersionCode: 324

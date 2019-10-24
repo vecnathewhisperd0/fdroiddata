@@ -1,6 +1,8 @@
 Categories:
   - System
 License: Apache-2.0
+AuthorName: Benny Kok
+AuthorEmail: itechbenny@gmail.com
 SourceCode: https://github.com/OpenLauncherTeam/openlauncher
 IssueTracker: https://github.com/OpenLauncherTeam/openlauncher/issues
 Changelog: https://github.com/OpenLauncherTeam/openlauncher/blob/HEAD/CHANGELOG.md
@@ -192,9 +194,14 @@ Builds:
       - FlavorDefault
     prebuild: sed -i -e "82 idisable 'ExtraTranslation'" build.gradle
 
-MaintainerNotes: checkupdates currently broken
+  - versionName: 0.7.0
+    versionCode: 38
+    commit: v0.7.0
+    subdir: app
+    gradle:
+      - FlavorDefault
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.6.1
-CurrentVersionCode: 37
+CurrentVersion: 0.7.0
+CurrentVersionCode: 38

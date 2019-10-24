@@ -2,35 +2,16 @@ Categories:
   - Writing
   - Internet
 License: GPL-3.0-or-later
-WebSite: http://www.niedermann.it
+AuthorName: Niedermann IT-Dienstleistungen
+AuthorWebSite: https://www.niedermann.it/
 SourceCode: https://github.com/stefan-niedermann/nextcloud-notes
 IssueTracker: https://github.com/stefan-niedermann/nextcloud-notes/issues
+Translation: https://www.transifex.com/nextcloud/nextcloud/android-notes/
 Changelog: https://github.com/stefan-niedermann/nextcloud-notes/releases
 Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K7HVLE6J7SXXA
 LiberapayID: '46438'
 
 AutoName: Notes
-Description: |-
-    Companion app to Nextcloud Notes.
-
-    Features
-
-    * List, create, edit, share, search and delete notes
-    * Share text and links as new note into the app
-    * Mark notes as favorite
-    * Bulk delete
-    * Render MarkDown (using RxMarkdown)
-    * English, German, Russian, Armenian, French and Serbian UI
-
-    Requirements
-
-    * Nextcloud instance running
-    * Nextcloud Notes app enabled
-
-    Alternatives
-
-    If you dislike this app and you are looking for alternatives: Have a look at
-    [[org.aykit.MyOwnNotes]].
 
 RepoType: git
 Repo: https://github.com/stefan-niedermann/nextcloud-notes.git
@@ -290,7 +271,23 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.0.0
+    versionCode: 48
+    commit: v1.0.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.0.1
+    versionCode: 49
+    commit: v1.0.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.27.1
-CurrentVersionCode: 47
+CurrentVersion: 1.0.1
+CurrentVersionCode: 49

@@ -27,7 +27,7 @@ Description: |-
 RequiresRoot: 'yes'
 
 RepoType: git
-Repo: https://gitlab.com/sulincix/disable-delete-gapps
+Repo: https://gitlab.com/sulincix/disable-delete-gapps.git
 
 Builds:
   - versionName: '2.0'
@@ -86,7 +86,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '14.0'
+    versionCode: 14
+    commit: '14.0'
+    output: bin/app.apk
+    rm:
+      - bin
+    prebuild:
+      - sed -i -e 's|~/Android/Sdk|$$SDK$$|' -e 's/ sign//' Makefile
+      - android update sdk --no-ui --filter android-28
+    build:
+      - JAVA_HOME=$(file /etc/alternatives/javac | cut -d " " -f 5|cut -d "/" -f 1-5)
+        make
+      - mv bin/app.ap_ bin/app.apk
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '11.0'
-CurrentVersionCode: 11
+CurrentVersion: '14.0'
+CurrentVersionCode: 14

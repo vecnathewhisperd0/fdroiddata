@@ -1,11 +1,13 @@
 Categories:
   - Multimedia
 License: GPL-3.0-or-later
-WebSite: http://josep-portella.com/en/software/magia-dni
+AuthorName: Josep Portella Florit
+AuthorEmail: hello@josep-portella.com
+AuthorWebSite: https://josep-portella.com/en/
+WebSite: https://josep-portella.com/en/software/magia-dni
 SourceCode: https://git.savannah.gnu.org/cgit/magiadni.git
 
 AutoName: MagiaDNI
-Summary: OCR reader for Spanish id cards
 Description: |-
     Magia DNI uses the device's camera to read the OCR data on Spanish identity
     cards, calculates its check digit and displays it. It is mostly of interest to

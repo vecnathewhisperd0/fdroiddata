@@ -2,6 +2,7 @@ Categories:
   - System
   - Multimedia
 License: GPL-3.0-only
+AuthorEmail: cuzi-android@openmail.cc
 SourceCode: https://github.com/cvzi/ScreenshotTile
 IssueTracker: https://github.com/cvzi/ScreenshotTile/issues
 Changelog: https://github.com/cvzi/ScreenshotTile/blob/HEAD/CHANGELOG.md
@@ -16,7 +17,7 @@ Description: |-
 
     This is a fork of [https://github.com/ipcjs/ScreenshotTile ScreenshotTile]
     but does not require root. If you have root access, you should use the
-    original app, it's faster and more reliant than this fork.
+    original app, it’s faster and more reliant than this fork.
 
 RepoType: git
 Repo: https://github.com/cvzi/ScreenshotTile
@@ -141,7 +142,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.6.1
+    versionCode: 21
+    commit: v1.6.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.6.0
-CurrentVersionCode: 20
+CurrentVersion: 1.6.1
+CurrentVersionCode: 21
