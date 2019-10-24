@@ -1,9 +1,12 @@
 Categories:
   - Writing
 License: GPL-3.0-only
-WebSite: http://jamesfrost.me/simpleDo/simple-do.htm
+AuthorName: James Frost
+AuthorEmail: hello@jamesfrost.me
+AuthorWebSite: https://jamesfrost.me/
 SourceCode: https://github.com/JamesFrost/SimpleDo
 IssueTracker: https://github.com/JamesFrost/SimpleDo/issues
+Changelog: https://github.com/JamesFrost/SimpleDo/releases
 
 AutoName: SimpleDo
 Description: Simple todo list manager with emphasis on minimalism.
