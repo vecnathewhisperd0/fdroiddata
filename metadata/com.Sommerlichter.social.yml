@@ -6,10 +6,19 @@ IssueTracker: https://git.koyu.space/koyu/koyuspace-app/issues
 Changelog: https://git.koyu.space/koyu/koyuspace-app/releases
 LiberapayID: '28700'
 
+AutoName: koyu.space
+
 RepoType: git
 Repo: https://git.koyu.space/koyu/koyuspace-app
 
 Builds:
+  - versionName: 1.2.0.1
+    versionCode: 1201
+    commit: v1.2.0.1
+    subdir: app
+    gradle:
+      - yes
+
   - versionName: 1.2.0.1
     versionCode: 1201
     commit: v1.2.0.1
