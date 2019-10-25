@@ -14,9 +14,9 @@ RepoType: git
 Repo: https://source.puri.sm/liberty/social/multi.git
 
 Builds:
-  - versionName: 0.0.7
-    versionCode: 700
-    commit: 0.0.7
+  - versionName: 0.0.9
+    versionCode: 900
+    commit: 0.0.9
     output: build/app/outputs/apk/release/app-release.apk
     srclibs:
       - flutter@stable
@@ -28,5 +28,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.7
-CurrentVersionCode: 700
+CurrentVersion: 0.0.9
+CurrentVersionCode: 900
