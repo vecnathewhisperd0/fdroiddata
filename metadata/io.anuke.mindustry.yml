@@ -87,8 +87,8 @@ Builds:
     scandelete:
       - android/libs
 
-  - versionName: 4-fdroid-97
-    versionCode: 97
+  - versionName: 5-fdroid-98
+    versionCode: 98
     commit: v97
     subdir: android
     gradle:
@@ -98,12 +98,12 @@ Builds:
       - echo "build=$$VERCODE$$" >> ../core/assets/version.properties
       - echo "modifier=beta" >> ../core/assets/version.properties
       - echo "type=fdroid" >> ../core/assets/version.properties
-      - echo "number=4" >> ../core/assets/version.properties
       - echo "buildversion=$$VERCODE$$" >> gradle.properties
       - echo "versionType=fdroid" >> gradle.properties
       - grep archash ../gradle.properties >> gradle.properties
     scandelete:
       - android/libs
+
 
 MaintainerNotes: |-
     libgdx.so and libgdx-freetype.so binaries are extracted from
@@ -114,5 +114,5 @@ MaintainerNotes: |-
 AutoUpdateMode: Version v%c
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/Anuken/MindustryBuilds/master/version_fdroid.txt|versionCode=(.*)|.|versionName=(.*)
-CurrentVersion: 4-fdroid-97
-CurrentVersionCode: 97
+CurrentVersion: 5-fdroid-98
+CurrentVersionCode: 98
