@@ -89,7 +89,7 @@ Builds:
 
   - versionName: 5-fdroid-98
     versionCode: 98
-    commit: v97
+    commit: v98
     subdir: android
     gradle:
       - yes
