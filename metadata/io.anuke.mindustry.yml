@@ -104,7 +104,6 @@ Builds:
     scandelete:
       - android/libs
 
-
 MaintainerNotes: |-
     libgdx.so and libgdx-freetype.so binaries are extracted from
     com.badlogicgames.gdx:gdx-platform JARs that come from Maven Central.
