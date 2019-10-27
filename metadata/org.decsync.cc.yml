@@ -5,6 +5,7 @@ AuthorName: Aldo Gunsing
 AuthorEmail: dev@aldogunsing.nl
 SourceCode: https://github.com/39aldo39/DecSyncCC
 IssueTracker: https://github.com/39aldo39/DecSyncCC/issues
+Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4V96AFD3S4TPJ
 Bitcoin: 1JWYoV2MZyu8LYYHCur9jUJgGqE98m566z
 
 AutoName: DecSync CC
@@ -84,7 +85,15 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.1.7
+    versionCode: 10
+    commit: v1.1.7
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.6
-CurrentVersionCode: 9
+CurrentVersion: 1.1.7
+CurrentVersionCode: 10
