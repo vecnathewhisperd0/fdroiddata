@@ -12,9 +12,9 @@ RepoType: git
 Repo: https://git.koyu.space/koyu/koyuspace-app
 
 Builds:
-  - versionName: '1.2'
-    versionCode: 1200
-    commit: v1.2
+  - versionName: 1.2.0.1
+    versionCode: 1201
+    commit: v1.2.0.1
     subdir: app
     gradle:
       - yes
