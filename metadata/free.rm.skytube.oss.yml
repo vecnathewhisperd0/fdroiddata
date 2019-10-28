@@ -266,9 +266,9 @@ Builds:
     rm:
       - app/libs/*.jar
 
-  - versionName: '2.965'
-    versionCode: 25
-    commit: v2.965
+  - versionName: '2.966'
+    versionCode: 26
+    commit: v2.966
     subdir: app
     submodules: true
     gradle:
@@ -280,5 +280,5 @@ MaintainerNotes: '* Current versions include app/libs/*.jar. Remove them.'
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: '2.965'
-CurrentVersionCode: 25
+CurrentVersion: '2.966'
+CurrentVersionCode: 26
