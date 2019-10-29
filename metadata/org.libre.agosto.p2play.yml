@@ -22,7 +22,7 @@ Repo: https://gitlab.com/agosto182/p2play.git
 Builds:
   - versionName: '0.5'
     versionCode: 6
-    commit: 'v0.5'
+    commit: v0.5
     subdir: app
     gradle:
       - yes
