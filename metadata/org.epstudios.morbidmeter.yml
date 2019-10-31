@@ -58,7 +58,7 @@ Builds:
 
   - versionName: '2.9'
     versionCode: 18
-    commit: 2.9
+    commit: '2.9'
     subdir: morbidmeterandroid
     gradle:
       - yes
