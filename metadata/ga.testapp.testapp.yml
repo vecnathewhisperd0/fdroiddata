@@ -26,8 +26,6 @@ Builds:
         { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
     build:
       - $$flutter$$/bin/flutter config --no-analytics
-      - $$flutter$$/bin/flutter channel master
-      - $$flutter$$/bin/flutter upgrade --force
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter build apk
 
@@ -38,9 +36,3 @@ CurrentVersion: 1.9.2
 CurrentVersionCode: 23
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter build apk
-
-AutoUpdateMode: None
-UpdateCheckMode: HTTP
-UpdateCheckData: https://gitlab.com/testapp-system/testapp-flutter/raw/mobile/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 1.9.1
-CurrentVersionCode: 22
