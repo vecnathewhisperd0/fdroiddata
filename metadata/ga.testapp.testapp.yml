@@ -1,12 +1,18 @@
 Categories:
-  - Science & Education
+ - Science & Education
 License: EUPL-1.2
 SourceCode: https://gitlab.com/testapp-system/testapp-flutter
-IssueTracker: https://gitlab.com/groups/testapp-system/-/issues
+IssueTracker: https://gitlab.com/testapp-system/issues
+
+Website: https://testapp.ga/
+
 Donate: https://gitlab.com/testapp-system/testapp-frontend#support-development
 Bitcoin: 3NUiJXDCkyRTb9Tg7n63yK6Y7CexADtSEh
 
-AutoName: TestApp (Beta)
+
+AutoName: TestApp
+Description: |-
+    TestApp is an educational open-source project for writing class tests digitally on smartphones or computers. We offer easy-to-use class management, individual class tests and random practice tests. Students can register individually or a hole school/class can use TestApp.
 
 RepoType: git
 Repo: https://gitlab.com/testapp-system/testapp-flutter.git
@@ -22,23 +28,6 @@ Builds:
         { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
     build:
       - $$flutter$$/bin/flutter config --no-analytics
-      - $$flutter$$/bin/flutter channel master
-      - $$flutter$$/bin/flutter upgrade --force
-      - $$flutter$$/bin/flutter packages pub get
-      - $$flutter$$/bin/flutter build apk
-
-  - versionName: 1.9.2
-    versionCode: 23
-    commit: 1.9.2
-    output: build/app/outputs/apk/release/app-release.apk
-    srclibs:
-      - flutter@v1.10.14
-    prebuild: echo 'android.applicationVariants.all { variant -> variant.outputs.all
-        { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
-    build:
-      - $$flutter$$/bin/flutter config --no-analytics
-      - $$flutter$$/bin/flutter channel master
-      - $$flutter$$/bin/flutter upgrade --force
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter build apk
 
@@ -47,3 +36,12 @@ UpdateCheckMode: HTTP
 UpdateCheckData: https://gitlab.com/testapp-system/testapp-flutter/raw/mobile/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.9.2
 CurrentVersionCode: 23
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk
+
+
+AutoUpdateMode: Version
+UpdateCheckMode: HTTP
+UpdateCheckData: https://gitlab.com/testapp-system/testapp-flutter/raw/mobile/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 1.9.1
+CurrentVersionCode: 22
