@@ -546,7 +546,8 @@ Builds:
       - git submodule update --init --recursive
       - mkdir build-sdk
       - cd build-sdk
-      - cmake .. -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS="arm64" -DCMAKE_BUILD_TYPE=Release
+      - cmake .. -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS="arm64,
+        armv7, x86, x86_64" -DCMAKE_BUILD_TYPE=Release
       - cmake --build . --parallel $(nproc)
       - popd
       - cp $$linphone-sdk$$/build-sdk/linphone-sdk/bin/outputs/aar/linphone-sdk-android-release.aar
