@@ -32,7 +32,7 @@ Builds:
       - $$flutter$$/bin/flutter build apk
 
 
-AutoUpdateMode: Version
+AutoUpdateMode: None
 UpdateCheckMode: HTTP
 UpdateCheckData: https://gitlab.com/testapp-system/testapp-flutter/raw/mobile/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.9.1
