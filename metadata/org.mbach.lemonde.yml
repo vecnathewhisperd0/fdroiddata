@@ -108,7 +108,7 @@ Builds:
     prebuild:
       - sed -i -e 's/com.android.tools.build:gradle:3.2.0-alpha05/com.android.tools.build:gradle:3.1.2/g'
         ../build.gradle
-      - sed -i -e 's/gradle-4.10/gradle-5.4.1/' gradle/wrapper/gradle-wrapper.properties
+      - sed -i -e 's/gradle-4.10/gradle-5.6.2/' gradle/wrapper/gradle-wrapper.properties
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
