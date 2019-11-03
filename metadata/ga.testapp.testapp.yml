@@ -1,18 +1,16 @@
 Categories:
- - Science & Education
+  - Science & Education
 License: EUPL-1.2
-# Website: https://testapp.ga/
-
 SourceCode: https://gitlab.com/testapp-system/testapp-flutter
 IssueTracker: https://gitlab.com/testapp-system/issues
-
 Donate: https://gitlab.com/testapp-system/testapp-frontend#support-development
 Bitcoin: 3NUiJXDCkyRTb9Tg7n63yK6Y7CexADtSEh
 
-
 AutoName: TestApp
-Description: |-
-    TestApp is an educational open-source project for writing class tests digitally on smartphones or computers. We offer easy-to-use class management, individual class tests and random practice tests. Students can register individually or a hole school/class can use TestApp.
+Description: TestApp is an educational open-source project for writing class tests
+    digitally on smartphones or computers. We offer easy-to-use class management,
+    individual class tests and random practice tests. Students can register individually
+    or a hole school/class can use TestApp.
 
 RepoType: git
 Repo: https://gitlab.com/testapp-system/testapp-flutter.git
@@ -38,7 +36,6 @@ CurrentVersion: 1.9.2
 CurrentVersionCode: 23
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter build apk
-
 
 AutoUpdateMode: None
 UpdateCheckMode: HTTP
