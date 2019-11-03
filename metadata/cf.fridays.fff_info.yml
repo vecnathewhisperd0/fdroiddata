@@ -14,7 +14,6 @@ Repo: https://gitlab.com/jugendhackt/fff_info.git
 Builds:
   - versionName: 1.1.1
     versionCode: 5
-    commit: 905ffb0eaa382cf09bf2306f29f05418e3e82286
     output: build/app/outputs/apk/release/app-release.apk
     srclibs:
       - flutter@v1.10.14
