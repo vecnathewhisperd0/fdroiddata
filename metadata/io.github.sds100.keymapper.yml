@@ -17,13 +17,13 @@ License: GPL-3.0-only
 SourceCode: https://github.com/sds100/KeyMapper
 IssueTracker: https://github.com/sds100/KeyMapper/issues
 
-Changelog: https://github.com/sds100/KeyMapper/blob/master/CHANGELOG.md
+Changelog: https://github.com/sds100/KeyMapper/blob/HEAD/CHANGELOG.md
 # Donate: (web link)
 # FlattrID: (number)
 # LiberapayID: (number)
 # Bitcoin: (bitcoin address)
 
-Summary: Remap your keys! Fully customisable! Open source!
+Summary: Remaps the buttons on your device and other devices.
 Description: |-
     '''What can be remapped?'''
     ONLY HARDWARE buttons can be remapped.
@@ -133,7 +133,7 @@ Repo: https://github.com/sds100/KeyMapper
 
 # At least one for new apps
 Builds:
-  - versionName: '1.1.5'
+  - versionName: 1.1.5
     versionCode: 23
     commit: v1.1.5
     subdir: app
