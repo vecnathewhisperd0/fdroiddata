@@ -29,6 +29,6 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: HTTP
-UpdateCheckData: https://gitlab.com/jugendhackt/fff_info/raw/mobile/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+UpdateCheckData: https://gitlab.com/jugendhackt/fff_info/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.1.1
 CurrentVersionCode: 5
