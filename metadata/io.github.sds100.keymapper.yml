@@ -115,14 +115,14 @@ RepoType: git
 Repo: https://github.com/sds100/KeyMapper
 
 Builds:
-  - versionName: 1.1.5
-    versionCode: 23
-    commit: v1.1.5
+  - versionName: 1.1.6
+    versionCode: 24
+    commit: v1.1.6
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.5
-CurrentVersionCode: 23
+CurrentVersion: 1.1.6
+CurrentVersionCode: 24
