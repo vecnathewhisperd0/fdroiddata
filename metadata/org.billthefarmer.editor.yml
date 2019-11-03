@@ -2,6 +2,8 @@ Categories:
   - Writing
   - System
 License: GPL-3.0-only
+AuthorName: Bill Farmer
+AuthorWebSite: https://billthefarmer.github.io/
 SourceCode: https://github.com/billthefarmer/editor
 IssueTracker: https://github.com/billthefarmer/editor/issues
 Changelog: https://github.com/billthefarmer/editor/releases
@@ -286,7 +288,13 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.43'
+    versionCode: 143
+    commit: v1.43
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.42'
-CurrentVersionCode: 142
+CurrentVersion: '1.43'
+CurrentVersionCode: 143
