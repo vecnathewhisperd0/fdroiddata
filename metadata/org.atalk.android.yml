@@ -1,9 +1,12 @@
 Categories:
   - Internet
 License: Apache-2.0
-WebSite: http://atalk.sytes.net/
+AuthorName: Eng ChongMeng
+AuthorEmail: cmeng.gm@gmail.com
+WebSite: https://atalk.sytes.net/atalk/
 SourceCode: https://github.com/cmeng-git/atalk-android
 IssueTracker: https://github.com/cmeng-git/atalk-android/issues
+Translation: https://github.com/cmeng-git/atalk-android#feedback-and-contributions
 Changelog: https://github.com/cmeng-git/atalk-android/blob/HEAD/aTalk/ReleaseNotes.txt
 
 AutoName: aTalk
@@ -399,9 +402,9 @@ Builds:
       - mv jni/static_library_built/openssl/output/android/ jni/openssl/
     ndk: r15c
 
-  - versionName: 2.0.6
-    versionCode: 1106
-    commit: 2.0.6
+  - versionName: 2.1.0
+    versionCode: 1110
+    commit: 2.1.0
     subdir: aTalk/
     gradle:
       - fdroid
@@ -415,6 +418,8 @@ Builds:
       - aTalk/jni/openssl/android/
       - aTalk/jni/vpx/android/
     prebuild: sed -i -e "/clean.dependsOn 'ndkClean'/d" build.gradle
+    scanignore:
+      - aTalk/build.gradle
     build:
       - pushd $$fmj$$
       - ant
@@ -441,9 +446,9 @@ Builds:
       - mv jni/static_library_built/openssl/output/android/ jni/openssl/
     ndk: r15c
 
-  - versionName: 2.1.0
-    versionCode: 1110
-    commit: 2.1.0
+  - versionName: 2.1.1
+    versionCode: 1111
+    commit: 2.1.1
     subdir: aTalk/
     gradle:
       - fdroid
@@ -490,5 +495,5 @@ MaintainerNotes: scanignore is used to allow the local "third_party/m2" Gradle r
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.1.0
-CurrentVersionCode: 1110
+CurrentVersion: 2.1.1
+CurrentVersionCode: 1111

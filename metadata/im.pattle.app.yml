@@ -71,6 +71,7 @@ Builds:
 
   - versionName: 0.13.0
     versionCode: 684
+    disable: unbuildable
     commit: v0.13.0
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:

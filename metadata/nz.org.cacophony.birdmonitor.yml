@@ -1,6 +1,8 @@
 Categories:
   - Science & Education
 License: GPL-3.0-only
+AuthorName: The Cacophony Project
+AuthorEmail: coredev@cacophony.org.nz
 WebSite: https://cacophony.org.nz/
 SourceCode: https://github.com/TheCacophonyProject/bird-monitor
 IssueTracker: https://github.com/TheCacophonyProject/bird-monitor/issues
@@ -25,42 +27,15 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 1.7.0
-    versionCode: 150010700
-    commit: v1.7.0
-    subdir: app
-    gradle:
-      - yes
-
-  - versionName: 1.7.1
-    versionCode: 150010701
-    commit: v1.7.1
-    subdir: app
-    gradle:
-      - yes
-
-  - versionName: 1.7.2
-    versionCode: 150010702
-    commit: v1.7.2
-    subdir: app
-    gradle:
-      - yes
-
-  - versionName: 1.7.4
-    versionCode: 150010704
-    commit: v1.7.4
-    subdir: app
-    gradle:
-      - yes
-
   - versionName: 1.7.5
     versionCode: 150010705
+    disable: Firebase and Crashlytics
     commit: v1.7.5
     subdir: app
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
+AutoUpdateMode: None
+UpdateCheckMode: Tags .*[0-9]$
 CurrentVersion: 1.7.5
 CurrentVersionCode: 150010705

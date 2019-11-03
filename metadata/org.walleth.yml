@@ -447,9 +447,9 @@ Builds:
       - online
     prebuild: sed -i -e '/kotlin.bintray.com/d' ../build.gradle
 
-  - versionName: 0.46.5
-    versionCode: 465
-    commit: 0.46.5
+  - versionName: 0.46.6
+    versionCode: 466
+    commit: 0.46.6
     subdir: app
     gradle:
       - noGeth
@@ -457,9 +457,9 @@ Builds:
       - online
     prebuild: sed -i -e '/kotlin.bintray.com/d' ../build.gradle
 
-  - versionName: 0.46.6
-    versionCode: 466
-    commit: 0.46.6
+  - versionName: 0.46.8
+    versionCode: 468
+    commit: 0.46.8
     subdir: app
     gradle:
       - noGeth
@@ -474,5 +474,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.46.6
-CurrentVersionCode: 466
+CurrentVersion: 0.46.8
+CurrentVersionCode: 468
