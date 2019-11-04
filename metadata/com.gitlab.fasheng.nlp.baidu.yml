@@ -1,0 +1,29 @@
+AntiFeatures:
+  - NonFreeNet
+  - NonFreeAssets
+Categories:
+  - Navigation
+License: GPL-3.0-or-later
+SourceCode: https://gitlab.com/fasheng/baidu-nlp-backend
+IssueTracker: https://gitlab.com/fasheng/baidu-nlp-backend/issues
+
+AutoName: Baidu UnifiedNlp Backend
+Summary: UnifiedNlp location provider (Baidu)
+Description: |-
+    [[com.google.android.gms]] backend that uses
+    [http://lbsyun.baidu.com/index.php?title=android-locsdk Baidu Location API] to resolve locations.
+
+RepoType: git
+Repo: https://gitlab.com/fasheng/baidu-nlp-backend.git
+
+Builds:
+  - versionName: 0.1.3
+    versionCode: 24
+    commit: 0.1.3
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.1.3
+CurrentVersionCode: 24
