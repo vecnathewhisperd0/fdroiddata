@@ -18,5 +18,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurentVersion: '0.3'
-CurentVersionCode: 3
+CurrentVersion: '0.3'
+CurrentVersionCode: 3
