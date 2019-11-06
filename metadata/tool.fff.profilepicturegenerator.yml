@@ -1,5 +1,7 @@
 AntiFeatures:
   - NonFreeNet
+Categories:
+  - Internet
 License: GPL-3.0-or-later
 WebSite: https://gitlab.com/hocuri/fff-profile-picture-generator
 SourceCode: https://gitlab.com/hocuri/fff-profile-picture-generator/tree/HEAD
