@@ -18,8 +18,8 @@ Repo: https://github.com/pretix/pretixprint-android
 Builds:
   - versionName: 1.3.0
     versionCode: 8
-    commit: v1.3.0
-    subdir: pretixdroid/app
+    commit: 1.3.0
+    subdir: pretixprint/app
     submodules: true
     gradle:
       - yes
