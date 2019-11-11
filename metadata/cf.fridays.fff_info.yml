@@ -34,8 +34,8 @@ Builds:
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter build apk
 
-AutoUpdateMode: Version v%v
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 UpdateCheckData: https://gitlab.com/jugendhackt/fff_info/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 1.1.1
-CurrentVersionCode: 5
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
