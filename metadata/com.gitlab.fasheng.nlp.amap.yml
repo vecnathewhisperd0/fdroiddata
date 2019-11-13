@@ -1,0 +1,28 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Navigation
+License: GPL-3.0-or-later
+SourceCode: https://gitlab.com/fasheng/amap-nlp-backend
+IssueTracker: https://gitlab.com/fasheng/amap-nlp-backend/issues
+
+AutoName: AMap UnifiedNlp Backend
+Summary: UnifiedNlp location provider (AMap)
+Description: |-
+    [[com.google.android.gms]] backend that uses
+    [https://lbs.amap.com/api/android-location-sdk/locationsummary AMap Location API] to resolve locations.
+
+RepoType: git
+Repo: https://gitlab.com/fasheng/amap-nlp-backend.git
+
+Builds:
+  - versionName: 0.1.4
+    versionCode: 16
+    commit: 0.1.4
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.1.4
+CurrentVersionCode: 16
