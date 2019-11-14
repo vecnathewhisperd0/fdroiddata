@@ -34,7 +34,7 @@ Description: |-
     You can also install Jami on Windows, macOS, iOS and GNU/Linux.
 
 RepoType: git
-Repo: https://gerrit-ring.savoirfairelinux.com/ring-project
+Repo: https://review.jami.net/ring-project
 
 Builds:
   - versionName: 2.0.003
