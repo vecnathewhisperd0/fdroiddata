@@ -45,10 +45,9 @@ Builds:
     versionCode: 190400
     commit: android-19.4.1
     subdir: android/app
-    gradle:
-      - yes
     init:
-      - sed -E -i 's/^.*(fabric|com\.(crashlytics|google\.(firebase|android.gms))).*$//g' build.gradle
+      - sed -E -i 's/^.*(fabric|com\.(crashlytics|google\.(firebase|android.gms))).*$//g'
+        build.gradle
       - sed -E -i 's/^.*fabric.*$//g' ../build.gradle
       - sed -E -i 's/libreBuild =.*$/libreBuild = true/g' ../build.gradle
       - sed -E -i 's/^.*fabric.*$//g' ../../package.json
@@ -59,7 +58,8 @@ Builds:
       - npm install
       - truncate -s 0 ../../node_modules/react-native/node_modules/@react-native-community/cli/build/commands/server/external/xsel
       - sed -E -i 's/^.*google.*play.*services.*$//g' ../../node_modules/@react-native-community/google-signin/android/build.gradle
-
+    gradle:
+      - yes
     rm:
       - node_modules/node-sass/vendor
       - node_modules/hermes-engine
@@ -72,7 +72,6 @@ Builds:
       - node_modules/jetifier/lib/*.jar
       - node_modules/react-native/template
       - node_modules/react-native/ReactAndroid/src/main/third-party/java/buck-android-support/buck-android-support.jar
-
     scanignore:
       - images/dropboxLogo_square.png
       - android/build.gradle
