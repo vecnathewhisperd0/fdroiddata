@@ -51,7 +51,7 @@ Builds:
       - sed -E -i 's/^.*fabric.*$//g' ../build.gradle
       - sed -E -i 's/libreBuild =.*$/libreBuild = true/g' ../build.gradle
       - sed -E -i 's/^.*fabric.*$//g' ../../package.json
-      - sed -E -i 's/vcode =.*$/vcode = 190400/g' build.gradle
+      - sed -E -i 's/vcode =.*$/vcode = $$VERCODE$$/g' build.gradle
       - sed -i '/flow-bin/d' ../../package.json
       - sed -E -i 's/^.*libflacjs.*$//g' ../../package.json
       - export LIBRE_BUILD=true
