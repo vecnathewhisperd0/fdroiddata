@@ -45,6 +45,9 @@ Builds:
     versionCode: 190400
     commit: android-19.4.1
     subdir: android/app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm
     init:
       - sed -E -i 's/^.*(fabric|com\.(crashlytics|google\.(firebase|android.gms))).*$//g'
         build.gradle
