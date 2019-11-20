@@ -43,5 +43,3 @@ UpdateCheckMode: HTTP
 UpdateCheckData: https://gitlab.com/testapp-system/testapp-flutter/raw/mobile/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.9.2
 CurrentVersionCode: 23
-      - $$flutter$$/bin/flutter packages pub get
-      - $$flutter$$/bin/flutter build apk
