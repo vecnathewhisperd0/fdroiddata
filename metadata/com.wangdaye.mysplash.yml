@@ -371,9 +371,10 @@ Builds:
       - echo android.useAndroidX=true >> ../gradle.properties
       - echo android.enableJetifier=true >> ../gradle.properties
 
-  - versionName: 3.7.7
-    versionCode: 377
-    commit: 3.7.7
+  - versionName: 3.7.8
+    versionCode: 378
+    disable: fails to build
+    commit: 3.7.8
     subdir: app
     patch:
       - 3.6.9-ru_locale.patch
@@ -389,5 +390,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.7.7
-CurrentVersionCode: 377
+CurrentVersion: 3.7.8
+CurrentVersionCode: 378

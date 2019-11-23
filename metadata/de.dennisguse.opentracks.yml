@@ -1,14 +1,15 @@
 Categories:
   - Sports & Health
 License: Apache-2.0
-SourceCode: https://github.com/dennisguse/opentracks
-IssueTracker: https://github.com/dennisguse/opentracks/issues
+SourceCode: https://github.com/dennisguse/OpenTracks
+IssueTracker: https://github.com/dennisguse/OpenTracks/issues
+Changelog: https://github.com/dennisguse/opentracks/releases
 LiberapayID: '1594240'
 
 AutoName: OpenTracks
 
 RepoType: git
-Repo: https://github.com/dennisguse/opentracks
+Repo: https://github.com/dennisguse/OpenTracks
 
 Builds:
   - versionName: v3.0.1
@@ -41,7 +42,25 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v3.2.3
+    versionCode: 3101
+    commit: v3.2.3
+    gradle:
+      - yes
+
+  - versionName: v3.2.5
+    versionCode: 3123
+    commit: v3.2.5
+    gradle:
+      - yes
+
+  - versionName: v3.2.6
+    versionCode: 3137
+    commit: v3.2.6
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.2.2
-CurrentVersionCode: 3079
+CurrentVersion: v3.2.6
+CurrentVersionCode: 3137

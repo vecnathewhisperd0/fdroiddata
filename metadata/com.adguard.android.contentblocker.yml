@@ -54,23 +54,24 @@ Builds:
       - samsung_api21
       - prodBackend
 
-  - versionName: 2.5.2
-    versionCode: 22000003
-    commit: v2.5.2
+  - versionName: 2.5.5
+    versionCode: 22000006
+    disable: fails to build
+    commit: v2.5.5
     subdir: adguard_cb
     gradle:
       - samsung_api21
       - prodBackend
 
-  - versionName: 2.5.3
-    versionCode: 22000004
-    commit: v2.5.3
+  - versionName: 2.5.6
+    versionCode: 22000007
+    commit: v2.5.6
     subdir: adguard_cb
     gradle:
-      - samsung_api21
+      - prod
       - prodBackend
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.3
-CurrentVersionCode: 22000004
+CurrentVersion: 2.5.6
+CurrentVersionCode: 22000007

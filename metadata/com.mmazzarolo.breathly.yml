@@ -8,7 +8,6 @@ SourceCode: https://github.com/mmazzarolo/breathly-app
 IssueTracker: https://github.com/mmazzarolo/breathly-app/issues
 
 AutoName: Breathly
-Summary: A simple way to focus on your breathing
 Description: |-
     ''Breathly'' allows you to focus on your breathing. You can use Breathly
     for daily relaxation and breath training: just choose a breathing technique
@@ -57,10 +56,8 @@ Builds:
       - yes
     rm:
       - node_modules/@react-native-community/async-storage/packages/storage-legacy/android/build/
-      - node_modules/hermesvm/win64-bin/
       - node_modules/react-native/template/
       - node_modules/jetifier/lib/
-      - node_modules/hermesvm/android/*.aar
     prebuild:
       - truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
       - sed -i -e 's/enableSeparateBuildPerCPUArchitecture = true/enableSeparateBuildPerCPUArchitecture

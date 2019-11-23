@@ -5,7 +5,7 @@ AuthorName: Panecraft, Inc.
 AuthorEmail: takke30@gmail.com
 SourceCode: https://github.com/takke/DataStats
 IssueTracker: https://github.com/takke/DataStats/issues
-Changelog: https://github.com/takke/DataStats/blob/HEAD/ChangeLog.txt
+Changelog: https://github.com/takke/DataStats/blob/HEAD/ChangeLog.md
 
 AutoName: DataStats
 Description: Simple bandwidth consumption viewer with configurable polling options.
@@ -87,9 +87,16 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.7.0
+    versionCode: 25
+    commit: 1ae38bf512d5909e31796334632c6c26d66ed441
+    subdir: app
+    gradle:
+      - yes
+
 MaintainerNotes: Cannot use AUM/UCM because version code and version name are dynamic.
 
 AutoUpdateMode: None
 UpdateCheckMode: Static
-CurrentVersion: 2.4.1
-CurrentVersionCode: 20
+CurrentVersion: 2.7.0
+CurrentVersionCode: 25

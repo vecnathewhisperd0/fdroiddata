@@ -636,6 +636,39 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.9.1
+    versionCode: 91
+    disable: fails to build
+    commit: v1.9.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.9.2
+    versionCode: 92
+    commit: v1.9.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.9.3
+    versionCode: 93
+    commit: v1.9.3
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.9.4
+    versionCode: 94
+    commit: v1.9.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 MaintainerNotes: |-
     Summary and Description are maintained by upstream using fastlane in
     the source repo:
@@ -643,5 +676,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.0
-CurrentVersionCode: 90
+CurrentVersion: 1.9.4
+CurrentVersionCode: 94

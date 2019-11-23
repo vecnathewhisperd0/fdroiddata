@@ -3,6 +3,7 @@ Categories:
 License: GPL-3.0-only
 AuthorName: EP Studios
 AuthorEmail: mannd@epstudiossoftware.com
+AuthorWebSite: https://www.epstudiossoftware.com/
 SourceCode: https://github.com/mannd/morbidmeter-android
 IssueTracker: https://github.com/mannd/morbidmeter-android/issues
 
@@ -58,12 +59,19 @@ Builds:
 
   - versionName: '2.9'
     versionCode: 18
-    commit: v2.9
+    commit: '2.9'
     subdir: morbidmeterandroid
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
+  - versionName: '2.10'
+    versionCode: 19
+    commit: '2.10'
+    subdir: morbidmeterandroid
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '2.9'
-CurrentVersionCode: 18
+CurrentVersion: '2.10'
+CurrentVersionCode: 19

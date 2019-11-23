@@ -5,6 +5,7 @@ WebSite: https://handynewsreader.blogspot.com/
 SourceCode: https://github.com/yanus171/Handy-News-Reader
 IssueTracker: https://github.com/yanus171/Handy-News-Reader/issues
 Translation: https://crowdin.com/project/handy-news-reader
+Changelog: https://github.com/yanus171/Handy-News-Reader/releases
 
 AutoName: Handy News Reader
 Description: |
@@ -208,50 +209,36 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 0.9.10
-    versionCode: 172
-    disable: 'EntriesCursorAdapter.java:358: error: cannot access Fragment'
-    commit: v0.9.10
-    subdir: FlymFork
-    gradle:
-      - yes
-
-  - versionName: 0.9.12
-    versionCode: 174
-    commit: v0.9.12
-    subdir: FlymFork
-    gradle:
-      - yes
-
-  - versionName: 0.10.0
-    versionCode: 176
-    commit: v0.10.0
-    subdir: FlymFork
-    gradle:
-      - yes
-
-  - versionName: 0.10.5.beta
-    versionCode: 180
-    commit: v0.10.5.beta
-    subdir: FlymFork
-    gradle:
-      - yes
-
   - versionName: 0.10.7
     versionCode: 182
+    disable: fails to build
     commit: v0.10.7
     subdir: FlymFork
     gradle:
       - yes
 
-  - versionName: 0.10.10
-    versionCode: 185
-    commit: v0.10.10
+  - versionName: 0.11.1
+    versionCode: 187
+    commit: v0.11.1
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.11.3
+    versionCode: 188
+    commit: v0.11.3
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.11.5
+    versionCode: 189
+    commit: v0.11.5
     subdir: FlymFork
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 0.10.10
-CurrentVersionCode: 185
+UpdateCheckMode: Tags .*[0-9]$
+CurrentVersion: 0.11.5
+CurrentVersionCode: 189

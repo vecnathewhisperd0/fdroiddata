@@ -107,9 +107,10 @@ Builds:
       - popd
       - cp $$aefyr-android-filepicker$$/build/outputs/aar/filepicker-release.aar libs/filepicker-release.aar
 
-  - versionName: '2.5'
-    versionCode: 35
-    commit: '2.5'
+  - versionName: '2.10'
+    versionCode: 40
+    disable: fails to build
+    commit: '2.10'
     subdir: app
     gradle:
       - fdroid
@@ -126,9 +127,9 @@ Builds:
       - popd
       - cp $$aefyr-android-filepicker$$/build/outputs/aar/filepicker-release.aar libs/filepicker-release.aar
 
-  - versionName: '2.8'
-    versionCode: 38
-    commit: '2.8'
+  - versionName: '3.0'
+    versionCode: 41
+    commit: '3.0'
     subdir: app
     gradle:
       - fdroid
@@ -147,5 +148,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '2.8'
-CurrentVersionCode: 38
+CurrentVersion: '3.0'
+CurrentVersionCode: 41

@@ -47,7 +47,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.7.8
+    versionCode: 13
+    commit: v0.7.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.9
+    versionCode: 14
+    commit: v0.7.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.10
+    versionCode: 15
+    commit: v0.7.10
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.7.7
-CurrentVersionCode: 12
+CurrentVersion: 0.7.10
+CurrentVersionCode: 15

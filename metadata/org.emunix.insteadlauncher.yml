@@ -5,6 +5,7 @@ AuthorName: Boris Timofeev
 AuthorEmail: btimofeev@emunix.org
 SourceCode: https://github.com/btimofeev/instead-launcher-android/
 IssueTracker: https://github.com/btimofeev/instead-launcher-android/issues
+Changelog: https://github.com/btimofeev/instead-launcher-android/blob/HEAD/CHANGELOG.md
 Donate: https://www.paypal.me/btimofeev
 Bitcoin: 16coztryz7xbNNDNhhf98wuHmi3hEintsW
 
@@ -40,11 +41,21 @@ Builds:
     subdir: app
     gradle:
       - yes
-    ndk: r19c
+    ndk: r20
+    preassemble:
+      - downloadDependencies
+
+  - versionName: 0.8.1
+    versionCode: 801
+    commit: v0.8.1
+    subdir: app
+    gradle:
+      - yes
+    ndk: r20
     preassemble:
       - downloadDependencies
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '0.8'
-CurrentVersionCode: 800
+CurrentVersion: 0.8.1
+CurrentVersionCode: 801

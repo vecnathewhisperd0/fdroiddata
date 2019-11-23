@@ -369,7 +369,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 6.9.0
+    versionCode: 213
+    commit: btc-6.9.0
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 6.9.1
+    versionCode: 214
+    commit: btc-6.9.1
+    subdir: bitcoin
+    gradle:
+      - yes
+
 AutoUpdateMode: Version btc-%v
 UpdateCheckMode: Tags
-CurrentVersion: 6.8.8
-CurrentVersionCode: 212
+CurrentVersion: 6.9.1
+CurrentVersionCode: 214

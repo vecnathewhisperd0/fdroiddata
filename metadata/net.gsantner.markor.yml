@@ -2,6 +2,7 @@ Categories:
   - Writing
 License: Apache-2.0
 AuthorName: Gregor Santner
+AuthorWebSite: https://gsantner.net/
 WebSite: https://gsantner.net/project/markor.html?source=fdroid
 SourceCode: https://github.com/gsantner/markor
 IssueTracker: https://github.com/gsantner/markor/issues
@@ -519,7 +520,35 @@ Builds:
     gradle:
       - FlavorDefault
 
+  - versionName: 2.2.0
+    versionCode: 100
+    commit: v2.2.0
+    subdir: app
+    gradle:
+      - FlavorDefault
+
+  - versionName: 2.2.1
+    versionCode: 101
+    commit: v2.2.1
+    subdir: app
+    gradle:
+      - FlavorDefault
+
+  - versionName: 2.2.2
+    versionCode: 102
+    commit: v2.2.2
+    subdir: app
+    gradle:
+      - FlavorDefault
+
+  - versionName: 2.2.3
+    versionCode: 104
+    commit: v2.2.3
+    subdir: app
+    gradle:
+      - FlavorDefault
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.1.6
-CurrentVersionCode: 99
+CurrentVersion: 2.2.3
+CurrentVersionCode: 104

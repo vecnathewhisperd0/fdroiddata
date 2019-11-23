@@ -391,9 +391,19 @@ Builds:
       - app/gplay.gradle
     prebuild: sed -i -e '/work-firebase/d' build.gradle
 
-  - versionName: 7.0.6
-    versionCode: 120
-    commit: 7.0.6
+  - versionName: 7.0.7
+    versionCode: 121
+    commit: v7.0.7
+    subdir: app
+    gradle:
+      - generic
+    rm:
+      - app/gplay.gradle
+    prebuild: sed -i -e '/work-firebase/d' build.gradle
+
+  - versionName: 7.0.8
+    versionCode: 122
+    commit: v7.0.8
     subdir: app
     gradle:
       - generic
@@ -404,7 +414,7 @@ Builds:
 MaintainerNotes: https://github.com/nextcloud/talk-android/issues/534.
 
 ArchivePolicy: 5 versions
-AutoUpdateMode: Version %v
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9]+\.[0-9]+\.[0-9]+$
-CurrentVersion: 7.0.6
-CurrentVersionCode: 120
+CurrentVersion: 7.0.8
+CurrentVersionCode: 122

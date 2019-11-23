@@ -142,7 +142,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.5.2
+    versionCode: 91
+    commit: v1.5.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.3
+    versionCode: 95
+    commit: v1.6.3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.5.0
-CurrentVersionCode: 89
+CurrentVersion: 1.6.3
+CurrentVersionCode: 95

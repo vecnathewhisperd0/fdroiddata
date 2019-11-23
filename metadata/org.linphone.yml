@@ -1,7 +1,8 @@
 Categories:
   - Phone & SMS
 License: GPL-2.0-or-later
-WebSite: http://www.linphone.org
+AuthorName: Belledonne Communications
+WebSite: https://www.linphone.org/
 SourceCode: http://www.linphone.org/technical-corner/linphone/downloads
 IssueTracker: https://github.com/BelledonneCommunications/linphone-android/issues
 Changelog: https://github.com/BelledonneCommunications/linphone-android/blob/HEAD/CHANGELOG.md#change-log
@@ -515,9 +516,9 @@ Builds:
         linphone-sdk-android/
     ndk: r16b
 
-  - versionName: 4.2.0-alpha
-    versionCode: 4127
-    commit: 4.2.0-alpha
+  - versionName: 4.2.0-beta
+    versionCode: 4200
+    commit: 4.2.0-beta
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y --no-install-recommends cmake -t stretch-backports
@@ -526,7 +527,7 @@ Builds:
       - yes
     output: app/build/outputs/apk/release/linphone-android-release-*.apk
     srclibs:
-      - linphone-sdk@4.3.0-alpha
+      - linphone-sdk@4.3.0-beta
     rm:
       - app/src/main/java/org/linphone/firebase/Firebase*.java
       - app/google-services.json

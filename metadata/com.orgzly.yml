@@ -238,7 +238,29 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: '1.8'
+    versionCode: 147
+    disable: fails to build
+    commit: v1.8
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.8.1
+    versionCode: 148
+    commit: v1.8.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.8.2
+    versionCode: 150
+    commit: v1.8.2
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9\.]+$
-CurrentVersion: 1.7.9
-CurrentVersionCode: 145
+CurrentVersion: 1.8.2
+CurrentVersionCode: 150
