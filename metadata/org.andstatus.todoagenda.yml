@@ -26,7 +26,7 @@ Description: |-
     * Lock time zone when travelling to different time zones.
     * Turn off Widget or Day headers, event icons, Days from today, etc. and see only what you need.
     * Android 7.1+ supported. Supports Android tablets.
-    For the older devices please use "Todo Agenda for Android 4 - 7.0" app https://f-droid.org/en/packages/com.plusonelabs.calendar/
+    For the older devices please use "Todo Agenda for Android 4 - 7.0" app [[com.plusonelabs.calendar]]
 
 RepoType: git
 Repo: https://github.com/andstatus/todoagenda.git
