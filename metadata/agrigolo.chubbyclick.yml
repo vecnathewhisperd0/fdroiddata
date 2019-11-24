@@ -11,13 +11,6 @@ RepoType: git
 Repo: https://codeberg.org/agrigolo/chubby-click.git
 
 Builds:
-  - versionName: v1.3
-    versionCode: 6
-    commit: v1.3
-    subdir: app
-    gradle:
-      - yes
-
   - versionName: v1.5
     versionCode: 9
     commit: v1.5
@@ -25,7 +18,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v1.6
+    versionCode: 10
+    commit: v1.6
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v1.5
-CurrentVersionCode: 9
+CurrentVersion: v1.6
+CurrentVersionCode: 10
