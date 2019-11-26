@@ -24,11 +24,10 @@ Builds:
     sudo:
       - apt-get update
       - apt-get install -y protobuf-compiler python3-protobuf
-    prebuild:
-      - $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.10.2.4988404'
-    ndk: r20
     gradle:
       - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.10.2.4988404'
+    ndk: r20
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
