@@ -4,6 +4,7 @@ License: Apache-2.0
 WebSite: https://blitzortung.tryb.de/
 SourceCode: https://github.com/wuan/bo-android
 IssueTracker: https://github.com/wuan/bo-android/issues
+Translation: https://github.com/wuan/bo-android#translation-offers-are-welcome
 Changelog: https://github.com/wuan/bo-android/blob/HEAD/ChangeLog
 
 AutoName: Blitzortung Lightning Monitor
@@ -166,7 +167,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.0.16
+    versionCode: 248
+    commit: 2.0.16_248
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v_%c
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.15
-CurrentVersionCode: 247
+CurrentVersion: 2.0.16
+CurrentVersionCode: 248

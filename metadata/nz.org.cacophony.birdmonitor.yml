@@ -35,7 +35,8 @@ Builds:
     gradle:
       - yes
 
+ArchivePolicy: 0 versions
 AutoUpdateMode: None
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 1.7.5
-CurrentVersionCode: 150010705
+CurrentVersion: 1.7.8
+CurrentVersionCode: 150010708

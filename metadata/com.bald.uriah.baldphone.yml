@@ -84,7 +84,28 @@ Builds:
     gradle:
       - fDroid
 
+  - versionName: 11.8.0
+    versionCode: 91
+    commit: '91'
+    subdir: app
+    gradle:
+      - fDroid
+
+  - versionName: 11.9.0
+    versionCode: 92
+    commit: '92'
+    subdir: app
+    gradle:
+      - fDroid
+
+  - versionName: 11.9.1
+    versionCode: 93
+    commit: '93'
+    subdir: app
+    gradle:
+      - fDroid
+
 AutoUpdateMode: Version %c
 UpdateCheckMode: Tags
-CurrentVersion: 11.7.0
-CurrentVersionCode: 90
+CurrentVersion: 11.9.1
+CurrentVersionCode: 93

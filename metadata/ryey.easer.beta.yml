@@ -1,6 +1,8 @@
 Categories:
   - System
 License: GPL-3.0-or-later
+AuthorName: Rui Zhao
+AuthorWebSite: https://me.ryey.icu/
 WebSite: https://renyuneyun.github.io/Easer/en/
 SourceCode: https://github.com/renyuneyun/Easer
 IssueTracker: https://github.com/renyuneyun/Easer/issues
@@ -84,7 +86,21 @@ Builds:
     gradle:
       - beta
 
+  - versionName: 0.7.9
+    versionCode: 121999
+    commit: v0.7.9
+    subdir: app
+    gradle:
+      - beta
+
+  - versionName: 0.7.9.1-beta
+    versionCode: 122001
+    commit: v0.7.9.1-beta
+    subdir: app
+    gradle:
+      - beta
+
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags .*[0-9]-beta[0-9]*$
-CurrentVersion: 0.7.9-beta2
-CurrentVersionCode: 121002
+UpdateCheckMode: Tags
+CurrentVersion: 0.7.9.1-beta
+CurrentVersionCode: 122001
