@@ -5,7 +5,8 @@ SourceCode: https://github.com/andstatus/todoagenda
 IssueTracker: https://github.com/plusonelabs/calendar-widget/issues
 Changelog: https://github.com/andstatus/todoagenda/blob/HEAD/README.md#changelog
 
-AutoName: Todo Agenda for Android 4 - 7.0
+Name: Todo Agenda for Android 4 - 7.0
+AutoName: Todo Agenda
 Description: |-
     This is a legacy ToDo Agenda app (ex. "Calendar Widget") for Android v.4 - 7.0
     It is intended for users having older devices. For newer releases please use "Todo Agenda" app.
