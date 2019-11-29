@@ -5,6 +5,7 @@ WebSite: https://handynewsreader.blogspot.com/
 SourceCode: https://github.com/yanus171/Handy-News-Reader
 IssueTracker: https://github.com/yanus171/Handy-News-Reader/issues
 Translation: https://crowdin.com/project/handy-news-reader
+Changelog: https://github.com/yanus171/Handy-News-Reader/releases
 
 AutoName: Handy News Reader
 Description: |
@@ -210,12 +211,27 @@ Builds:
 
   - versionName: 0.10.7
     versionCode: 182
+    disable: fails to build
     commit: v0.10.7
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.11.1
+    versionCode: 187
+    commit: v0.11.1
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.11.5
+    versionCode: 189
+    commit: v0.11.5
     subdir: FlymFork
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.10.7
-CurrentVersionCode: 182
+CurrentVersion: 0.11.5
+CurrentVersionCode: 189

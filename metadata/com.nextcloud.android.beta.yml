@@ -3897,9 +3897,105 @@ Builds:
     scandelete:
       - src/androidTest
 
+  - versionName: '20191107'
+    versionCode: 20191107
+    commit: dev-20191107
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191108'
+    versionCode: 20191108
+    commit: dev-20191108
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191114'
+    versionCode: 20191114
+    commit: dev-20191114
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191116'
+    versionCode: 20191116
+    commit: dev-20191116
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191119'
+    versionCode: 20191119
+    commit: dev-20191119
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191121'
+    versionCode: 20191121
+    commit: dev-20191121
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191123'
+    versionCode: 20191123
+    commit: dev-20191123
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191127'
+    versionCode: 20191127
+    commit: dev-20191127
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
 MaintainerNotes: Tags get removed. See https://github.com/nextcloud/android/issues/969.
 
 AutoUpdateMode: Version dev-%c
 UpdateCheckMode: Tags ^dev
-CurrentVersion: '20191102'
-CurrentVersionCode: 20191102
+CurrentVersion: '20191127'
+CurrentVersionCode: 20191127

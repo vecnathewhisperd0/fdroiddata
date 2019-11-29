@@ -3,6 +3,7 @@ Categories:
 License: Apache-2.0
 SourceCode: https://github.com/dennisguse/OpenTracks
 IssueTracker: https://github.com/dennisguse/OpenTracks/issues
+Changelog: https://github.com/dennisguse/opentracks/releases
 LiberapayID: '1594240'
 
 AutoName: OpenTracks
@@ -47,7 +48,25 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v3.2.5
+    versionCode: 3123
+    commit: v3.2.5
+    gradle:
+      - yes
+
+  - versionName: v3.2.6
+    versionCode: 3137
+    commit: v3.2.6
+    gradle:
+      - yes
+
+  - versionName: v3.2.7
+    versionCode: 3149
+    commit: v3.2.7
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.2.3
-CurrentVersionCode: 3101
+CurrentVersion: v3.2.7
+CurrentVersionCode: 3149

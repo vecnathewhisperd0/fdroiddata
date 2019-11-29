@@ -44,12 +44,20 @@ Builds:
 
   - versionName: 1.2.0
     versionCode: 120
+    disable: fails to build
     commit: v1.2.0
     subdir: app
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
+  - versionName: 1.2.1
+    versionCode: 121
+    commit: 1.2.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.2.0
-CurrentVersionCode: 120
+CurrentVersion: 1.2.1
+CurrentVersionCode: 121
