@@ -22,7 +22,7 @@ Builds:
   - versionName: 1.0.1
     versionCode: 9
     commit: v1.0.1
-    subdir: pretixdroid/app
+    subdir: pretixscan/app
     submodules: true
     gradle:
       - yes
