@@ -5,14 +5,6 @@ SourceCode: https://github.com/nickdurante/Spider
 IssueTracker: https://github.com/nickdurante/Spider/issues
 
 AutoName: Spider
-Summary: SFTP client
-Description: |-
-    This application enables you to connect to your SFTP server using a password or a PEM private key.
-
-    It supports:
-    *  File browsing
-    *  File upload
-    *  File download
 
 RepoType: git
 Repo: https://github.com/nickdurante/Spider
