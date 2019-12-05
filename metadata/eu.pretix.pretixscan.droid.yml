@@ -26,6 +26,7 @@ Builds:
     submodules: true
     gradle:
       - yes
+    output: build/outputs/apk/pretix/release/app-pretix-release-unsigned.apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
