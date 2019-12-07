@@ -58,11 +58,12 @@ Builds:
     versionCode: 47
     commit: '0.46'
     subdir: app
+    gradle:
+      - legacy
     prebuild:
       - sed -i -e '/android.hardware.ram.low/d' src/main/AndroidManifest.xml
       - sed -i -e 's/versionCode 46/versionCode 47/' build.gradle
-    gradle:
-      - legacy
+
       
 AutoUpdateMode: None
 UpdateCheckMode: Tags
