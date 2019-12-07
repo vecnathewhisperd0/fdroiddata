@@ -63,7 +63,7 @@ Builds:
     prebuild:
       - sed -i -e '/android.hardware.ram.low/d' src/main/AndroidManifest.xml
       - sed -i -e 's/versionCode 46/versionCode 47/' build.gradle
-      
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: 0.46-legacy
