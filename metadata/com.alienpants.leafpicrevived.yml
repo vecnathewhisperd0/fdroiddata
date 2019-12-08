@@ -27,9 +27,9 @@ RepoType: git
 Repo: https://github.com/apcro/leafpicrevived
 
 Builds:
-  - versionName: v0.8.1
-    versionCode: 19
-    commit: ed9b5f20a3e0faf7066aa49db452cffd73f1ad7c
+  - versionName: v0.8.2
+    versionCode: 20
+    commit: c7b35e60bc97a4f83869fc6ab15e73f3f089cb59
     subdir: leafpicrevived
     gradle:
       - yes
@@ -41,5 +41,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: v0.8.1
-CurrentVersionCode: 19
+CurrentVersion: v0.8.2
+CurrentVersionCode: 20
