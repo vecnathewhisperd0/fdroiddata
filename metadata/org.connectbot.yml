@@ -155,7 +155,8 @@ Builds:
       - settings.patch
     gradle:
       - oss
-    prebuild: sed -i -e '/googleImplementation/d' -e 's/androidGitVersion.name()/"1.9.6"/' build.gradle
+    prebuild: sed -i -e '/googleImplementation/d' -e 's/androidGitVersion.name()/"1.9.6"/'
+        build.gradle
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
