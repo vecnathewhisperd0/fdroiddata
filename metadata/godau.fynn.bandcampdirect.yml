@@ -25,4 +25,4 @@ Builds:
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: Tags
 CurrentVersion: '0.1'
-CurrentVersionCode: 4
+CurrentVersionCode: 1
