@@ -9,14 +9,14 @@ RepoType: git
 Repo: https://gitlab.com/dibdib/dib2calc.git
 
 Builds:
-  - versionName: 0.12.34
-    versionCode: 1234
-    commit: v0.12.34
+  - versionName: 0.12.36
+    versionCode: 1236
+    commit: v0.12.36
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.12.34
-CurrentVersionCode: 1234
+CurrentVersion: 0.12.36
+CurrentVersionCode: 1236
