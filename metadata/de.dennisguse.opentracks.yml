@@ -78,7 +78,13 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v3.2.10
+    versionCode: 3195
+    commit: v3.2.10
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.2.9
-CurrentVersionCode: 3175
+CurrentVersion: v3.2.10
+CurrentVersionCode: 3195
