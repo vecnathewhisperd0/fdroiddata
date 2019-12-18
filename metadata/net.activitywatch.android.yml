@@ -12,6 +12,7 @@ Description: ActivityWatch is an open source and cross-platform app that automat
 
 RepoType: git
 Repo: https://github.com/ActivityWatch/aw-android
+Binaries: https://github.com/ActivityWatch/aw-android/releases/download/v%v/aw-android.apk
 
 Builds:
   - versionName: 0.4.13
@@ -21,7 +22,9 @@ Builds:
     gradle:
       - yes
     output: aw-android.apk
-    build: env RELEASE=true make aw-server-rust && make aw-webui
+    build:
+      - env RELEASE=true make aw-server-rust
+      - make aw-webui
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
