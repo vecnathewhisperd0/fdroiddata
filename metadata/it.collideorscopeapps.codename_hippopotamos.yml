@@ -9,14 +9,14 @@ RepoType: git
 Repo: https://github.com/collideorscopeapps/codename_hippopotamos
 
 Builds:
-  - versionName: 0.5.0-pre-alpha
-    versionCode: 1
-    commit: v0.5.0-pre-alpha
+  - versionName: 0.5.3-pre-alpha
+    versionCode: 4
+    commit: v0.5.3-pre-alpha
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.5.0-pre-alpha
-CurrentVersionCode: 1
+CurrentVersion: 0.5.3-pre-alpha
+CurrentVersionCode: 4
