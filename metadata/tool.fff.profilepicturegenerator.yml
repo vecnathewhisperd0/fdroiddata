@@ -1,0 +1,34 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+License: GPL-3.0-or-later
+WebSite: https://gitlab.com/hocuri/fff-profile-picture-generator
+SourceCode: https://gitlab.com/hocuri/fff-profile-picture-generator/tree/HEAD
+IssueTracker: https://gitlab.com/hocuri/fff-profile-picture-generator/issues
+Changelog: https://gitlab.com/hocuri/fff-profile-picture-generator/-/tags
+
+AutoName: Profilbildgenerator
+
+RepoType: git
+Repo: https://gitlab.com/hocuri/fff-profile-picture-generator.git
+
+Builds:
+  - versionName: '0.3'
+    versionCode: 3
+    commit: v0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.6'
+    versionCode: 6
+    commit: v0.6
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '0.6'
+CurrentVersionCode: 6

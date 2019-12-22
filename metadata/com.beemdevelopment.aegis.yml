@@ -1,0 +1,102 @@
+Categories:
+  - Security
+License: GPL-3.0-only
+AuthorName: Beem Development
+AuthorEmail: beemdevelopment@gmail.com
+SourceCode: https://github.com/beemdevelopment/Aegis
+IssueTracker: https://github.com/beemdevelopment/Aegis/issues
+
+AutoName: Aegis
+
+RepoType: git
+Repo: https://github.com/beemdevelopment/Aegis
+
+Builds:
+  - versionName: '0.2'
+    versionCode: 3
+    commit: v0.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.2
+    versionCode: 5
+    commit: v0.2.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.3'
+    versionCode: 6
+    commit: v0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.3.2
+    versionCode: 8
+    commit: v0.3.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.3.3
+    versionCode: 9
+    commit: v0.3.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.4'
+    versionCode: 10
+    commit: v0.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.1
+    versionCode: 11
+    commit: v0.4.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.2
+    versionCode: 12
+    commit: v0.4.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.3
+    versionCode: 14
+    commit: v0.4.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.0'
+    versionCode: 19
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.2
+    versionCode: 21
+    commit: v1.0.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.3
+    versionCode: 22
+    commit: v1.0.3
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags ^((?!alpha|beta).)*$
+CurrentVersion: 1.0.3
+CurrentVersionCode: 22

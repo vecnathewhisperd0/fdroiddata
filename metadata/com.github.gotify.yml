@@ -1,0 +1,87 @@
+Categories:
+  - Internet
+License: MIT
+AuthorName: Gotify
+AuthorEmail: gotify@protonmail.com
+WebSite: https://gotify.net/
+SourceCode: https://github.com/gotify/android
+IssueTracker: https://github.com/gotify/android/issues
+Changelog: https://github.com/gotify/android/releases
+
+AutoName: Gotify
+Description: |-
+    Gotify is a service for sending and receiving push notifications.
+    This app subscribes to [https://github.com/gotify/server gotify/server] and creates push notifications for incoming messages.
+    Note: A self-hosted [https://github.com/gotify/server gotify/server] is required for this app to work.
+
+RepoType: git
+Repo: https://github.com/gotify/android
+
+Builds:
+  - versionName: 2.0.1
+    versionCode: 4
+    commit: v2.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.2
+    versionCode: 5
+    commit: v2.0.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.3
+    versionCode: 6
+    commit: v2.0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.4
+    versionCode: 7
+    commit: v2.0.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.5
+    versionCode: 8
+    commit: v2.0.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.6
+    versionCode: 9
+    commit: v2.0.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.7
+    versionCode: 10
+    commit: v2.0.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.8
+    versionCode: 11
+    commit: v2.0.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.9
+    versionCode: 12
+    commit: v2.0.9
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
+CurrentVersion: 2.0.9
+CurrentVersionCode: 12

@@ -1,0 +1,32 @@
+Accéder à l'interface de commande Linux (shell) de votre Android. Libérez le Geek qui est en vous !
+
+Il s’agit d’une nouvelle version de l’application populaire « Android Terminal Emulator ». Le même programme, seulement renommé.
+
+Fonctionnalités principales
+
++ Émulation complète du terminal Linux.
+ + Multiples fenêtres.
+ + Raccourcis du launcher.
+ + Texte UTF-8 (arabe, chinois, grec, hébreu, japonais, coréen, russe, thaï, etc.)
+ + Totalement gratuit. Sans pubs, achats, fenêtres pop-up, rien.
+
+FAQ rapide :
+
++ Si vous avez du mal à entrer du texte, essayez d'installer le logiciel gratuit "Hacker's Keyboard IME". (Surtout si vous avez un appareil Samsung ou HTC.)
++ Cette application n'est pas un émulateur de jeu. 
++ Cette application ne vous aidera pas à rooter votre téléphone ou à changer son IMEI. 
++ Vous devez savoir (ou vouloir apprendre) comment utiliser la ligne de commande Linux pour utiliser cette application.
++ Vous pouvez installer un ensemble d'utilitaires en ligne de commande comme "Busy Box" ou "Debian chroot" afin d'ajouter des commandes au-delà des commandes intégrées dans votre appareil Android. 
++ Si vous obtenez une erreur -505 lorsque vous essayez d'installer cette application sous Android 5.0, cela signifie que certaines autres applications utilisent les mêmes droits. Vous devrez désinstaller l'autre application afin d'installer Terminal Emulator pour Android. (Les gens me disent que "jrummy's Toolbox Pro" cause ce problème.)
+
+Envie d’en savoir plus sur l’émulateur de terminal pour Android ?
+
+Rejoignez la communauté Google+ : #Android Terminal Emulator
+
+https://plus.google.com/u/0/communities/106164413936367578283
+
+Ou consultez le wiki de documentation :
+
+http://github.com/jackpal/Android-Terminal-Emulator/wiki
+
+Vous désirez ajouter ou améliorer une traduction de l'émulateur de terminal pour Android ? Allez sur https://github.com/jackpal/Android-Terminal-Emulator/wiki/Translating-to-Other-Languages et suivez les conseils.

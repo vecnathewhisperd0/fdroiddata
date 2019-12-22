@@ -1,0 +1,162 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+License: MIT
+AuthorName: Felix Schmid
+AuthorEmail: felix.schmid@flxrs.com
+SourceCode: https://github.com/flex3r/DankChat
+IssueTracker: https://github.com/flex3r/DankChat/issues
+
+AutoName: DankChat
+Description: Chat in multiple channels at once, regardless if the streamers are live
+    or offline, with FrankerFaceZ and BTTV emote support built-in!
+
+RepoType: git
+Repo: https://github.com/flex3r/DankChat
+
+Builds:
+  - versionName: 0.8.0
+    versionCode: 60
+    commit: v0.8.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.1
+    versionCode: 61
+    commit: v0.8.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.1
+    versionCode: 63
+    commit: v0.9.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.4
+    versionCode: 66
+    commit: v0.9.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.7
+    versionCode: 69
+    commit: v0.9.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.1
+    versionCode: 72
+    commit: v1.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.1
+    versionCode: 74
+    commit: v1.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.2
+    versionCode: 75
+    commit: v1.1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.4
+    versionCode: 77
+    commit: v1.1.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.5
+    versionCode: 78
+    commit: v1.1.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0
+    versionCode: 79
+    commit: v1.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.0
+    versionCode: 80
+    commit: v1.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.1
+    versionCode: 81
+    commit: v1.3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.0
+    versionCode: 82
+    commit: v1.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.2
+    versionCode: 84
+    commit: v1.4.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.4
+    versionCode: 86
+    commit: v1.4.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.5
+    versionCode: 87
+    commit: v1.4.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.0
+    versionCode: 89
+    commit: v1.5.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.2
+    versionCode: 91
+    commit: v1.5.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.3
+    versionCode: 95
+    commit: v1.6.3
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.6.3
+CurrentVersionCode: 95

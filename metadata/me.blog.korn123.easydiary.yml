@@ -1,0 +1,59 @@
+Categories:
+  - Writing
+License: Apache-2.0
+AuthorName: Awesome Application Factory
+AuthorEmail: hanjoongcho@gmail.com
+AuthorWebSite: https://aafactory.github.io/
+SourceCode: https://github.com/hanjoongcho/aaf-easydiary
+IssueTracker: https://github.com/hanjoongcho/aaf-easydiary/issues
+
+Description: |-
+    Features:
+
+    * Writing diary (voice & keypad)
+    * Diary search
+    * View & List Diary
+    * Edit your diary
+    * Diary backup and recovery
+    * View timetable diary creation status chart
+    * View a list of diaries in your calendar
+    * Lock diary
+    * Attach Photos
+    * Font Setting
+
+RepoType: git
+Repo: https://github.com/hanjoongcho/aaf-easydiary
+
+Builds:
+  - versionName: 1.4.72-beta_foss
+    versionCode: 135
+    commit: v1.4.72-beta
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.73_foss
+    versionCode: 136
+    commit: v1.4.73
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.89_foss
+    versionCode: 155
+    commit: v1.4.89
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.92_foss
+    versionCode: 158
+    commit: v1.4.92
+    subdir: app
+    gradle:
+      - foss
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 1.4.92_foss
+CurrentVersionCode: 158

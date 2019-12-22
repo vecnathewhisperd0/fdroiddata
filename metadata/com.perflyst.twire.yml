@@ -1,0 +1,54 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Multimedia
+  - Internet
+License: GPL-3.0-only
+SourceCode: https://github.com/Perflyst/Twire
+IssueTracker: https://github.com/Perflyst/Twire/issues
+Changelog: https://github.com/Perflyst/Twire/releases
+
+AutoName: Twire
+Description: |-
+    Twire is an open source, ad free Twitch browser and stream player for Android.
+    You can select multiple themes and also login with your twitch account.
+    You can also follow and unfollow streamers through the app.
+
+    Please note that the chat is only available if you login to your account.
+
+RepoType: git
+Repo: https://github.com/Perflyst/Twire.git
+
+Builds:
+  - versionName: 1.9.2
+    versionCode: 502
+    commit: v1.9.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.6
+    versionCode: 506
+    commit: v1.9.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.7
+    versionCode: 507
+    commit: v1.9.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.8
+    versionCode: 508
+    commit: v1.9.8
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.9.8
+CurrentVersionCode: 508
