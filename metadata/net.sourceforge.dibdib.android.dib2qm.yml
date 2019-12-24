@@ -11,6 +11,69 @@ RepoType: git
 Repo: https://gitlab.com/gxworks/Dib2Qm.git
 
 Builds:
+  - versionName: 0.17.30
+    versionCode: 1730
+    commit: 053a1382927fc042c987c08df18fa50830782229
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.17.40
+    versionCode: 1740
+    commit: v0.17.40
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.18.50
+    versionCode: 1850
+    commit: v0.18.50
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.18.54
+    versionCode: 1854
+    commit: v0.18.54
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.18.60
+    versionCode: 1860
+    commit: v0.18.60
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.20.20
+    versionCode: 2020
+    commit: v0.20.20
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.22.10
+    versionCode: 2210
+    commit: v0.22.10
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.22.20
+    versionCode: 2220
+    commit: v0.22.20
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.22.30
+    versionCode: 2230
+    commit: v0.22.30
+    subdir: app
+    gradle:
+      - yes
+
   - versionName: 0.22.32
     versionCode: 2232
     commit: v0.22.32
@@ -18,7 +81,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.22.34
+    versionCode: 2234
+    commit: v0.22.34
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.22.32
-CurrentVersionCode: 2232
+CurrentVersion: 0.22.34
+CurrentVersionCode: 2234
