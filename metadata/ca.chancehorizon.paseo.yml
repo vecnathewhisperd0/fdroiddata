@@ -1,0 +1,29 @@
+Categories:
+  - Sports & Health
+License: MIT
+WebSite: https://gitlab.com/pardomi/paseo
+SourceCode: https://gitlab.com/pardomi/paseo/tree/HEAD
+IssueTracker: https://gitlab.com/pardomi/paseo/issues
+
+AutoName: Paseo
+Summary: Paseo - step counting app
+Description: |-
+    Using an Android devices built-in step counter, Paseo
+    maintains a history of steps taken (while carrying the device)
+    and presents various summaries to the step taker.
+
+RepoType: git
+Repo: https://gitlab.com/pardomi/paseo.git
+
+Builds:
+  - versionName: 1.0.1
+    versionCode: 1
+    commit: v1.0.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.1
+CurrentVersionCode: 1
