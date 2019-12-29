@@ -607,7 +607,6 @@ Builds:
       - rustup target add i686-linux-android
       - rustup target add armv7-linux-androideabi
       - rustup target add x86_64-linux-android
-      #- $$NDK$$/ndk-build -j `nproc`
       - ./ndk-make.sh
     ndk: r20b
 
