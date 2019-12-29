@@ -597,7 +597,7 @@ Builds:
     gradle:
       - fat
     srclibs:
-      - rustup@1.10.2
+      - rustup@1.21.1
     prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
     build:
       - $$rustup$$/rustup-init.sh -y
