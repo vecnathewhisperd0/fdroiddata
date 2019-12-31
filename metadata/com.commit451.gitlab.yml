@@ -220,7 +220,8 @@ Builds:
       - yes
     prebuild:
       - sed -i -e '/fabric/d' -e '/services/d' ../build.gradle.kts
-      - sed -i -e '/firebaseEnabled/,+3d' -e '/fabric/d' -e '/google-services/d' -e '/signingConfigs.getByName/d' build.gradle.kts
+      - sed -i -e '/firebaseEnabled/,+3d' -e '/fabric/d' -e '/google-services/d' -e
+        '/signingConfigs.getByName/d' build.gradle.kts
     scanignore:
       - .gradle
       - buildSrc
