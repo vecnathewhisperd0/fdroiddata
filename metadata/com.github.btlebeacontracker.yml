@@ -1,0 +1,21 @@
+Categories:
+  - Connectivity
+  - Navigation
+  - Security
+License: GPL-3.0-or-later
+SourceCode: https://github.com/jbk123456/btlebeacontracker
+IssueTracker: https://github.com/jbk123456/btlebeacontracker/issues
+
+RepoType: git
+Repo: https://github.com/jbk123456/btlebeacontracker
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: '1.0'
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
