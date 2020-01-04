@@ -601,7 +601,7 @@ Builds:
     prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
     build:
       - cd jni/deltachat-core-rust
-      - $$rustup$$/rustup-init.sh -y
+      - ../../$$rustup$$/rustup-init.sh -y
       - source $HOME/.cargo/env
       - rustup default $(cat rust-toolchain)
       - rustup target add aarch64-linux-android
