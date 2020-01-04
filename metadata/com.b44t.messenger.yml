@@ -609,7 +609,7 @@ Builds:
       - rustup target add x86_64-linux-android
       - cd jni/deltachat-core-rust
       - ./ndk-make.sh
-      - cd ../..  # not sure if necessary
+      - cd ../..
     ndk: r20b
 
 AutoUpdateMode: Version v%v
