@@ -607,7 +607,9 @@ Builds:
       - rustup target add i686-linux-android
       - rustup target add armv7-linux-androideabi
       - rustup target add x86_64-linux-android
+      - cd jni/deltachat-core-rust
       - ./ndk-make.sh
+      - cd ../..  # not sure if necessary
     ndk: r20b
 
 AutoUpdateMode: Version v%v
