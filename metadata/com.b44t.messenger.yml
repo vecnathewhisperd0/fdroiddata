@@ -600,6 +600,7 @@ Builds:
       - rustup@1.21.1
     prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
     build:
+      - cd jni/deltachat-core-rust
       - $$rustup$$/rustup-init.sh -y
       - source $HOME/.cargo/env
       - rustup default $(cat deltachat-core-rust/rust-toolchain)
@@ -607,9 +608,8 @@ Builds:
       - rustup target add i686-linux-android
       - rustup target add armv7-linux-androideabi
       - rustup target add x86_64-linux-android
-      - cd jni/deltachat-core-rust
-      - ./ndk-make.sh
       - cd ../..
+      - ./ndk-make.sh
     ndk: r20b
 
 AutoUpdateMode: Version v%v
