@@ -6,7 +6,6 @@ WebSite: https://github.com/rgmf/etroped
 SourceCode: https://github.com/rgmf/etroped
 IssueTracker: https://github.com/rgmf/etroped/issues
 
-
 AutoName: Etroped
 
 RepoType: git
@@ -15,7 +14,7 @@ Repo: https://github.com/rgmf/etroped
 Builds:
   - versionName: 1.0.0
     versionCode: 1
-    commit: a8f10e6ed1c4703d61e1d2d5e8c550357400f230
+    commit: 769670b4558f6c99948589f43934afb00a3e07a3
     subdir: app
     gradle:
       - yes
