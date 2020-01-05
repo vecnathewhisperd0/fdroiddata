@@ -1,7 +1,9 @@
 Categories:
   - Science & Education
 License: MIT
-WebSite: https://github.com/OAndell/Riksdagskollen
+AuthorName: Oscar Andell
+AuthorEmail: oscar@andell.eu
+SourceCode: https://github.com/OAndell/Riksdagskollen
 IssueTracker: https://github.com/OAndell/Riksdagskollen/issues
 Changelog: https://github.com/OAndell/Riksdagskollen/releases
 
@@ -64,7 +66,67 @@ Builds:
       - sed -i -e '/io.fabric/d; /com.google.gms/d; /SafetyApiKey/d' build.gradle
       - sed -i -e '/playImplementation(.*) {/,/}/d; /playImplementation/d' build.gradle
 
+  - versionName: 2.11.0
+    versionCode: 23
+    commit: '2.11'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/com.google.gms/d; /io.fabric.tools/d' ../build.gradle
+      - sed -i -e 's|maven.fabric.io/public|maven.google.com|' ../build.gradle build.gradle
+      - sed -i -e '/io.fabric/d; /com.google.gms/d; /SafetyApiKey/d' build.gradle
+      - sed -i -e '/playImplementation(.*) {/,/}/d; /playImplementation/d' build.gradle
+
+  - versionName: 2.11.1
+    versionCode: 24
+    commit: 2.11.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/com.google.gms/d; /io.fabric.tools/d' ../build.gradle
+      - sed -i -e 's|maven.fabric.io/public|maven.google.com|' ../build.gradle build.gradle
+      - sed -i -e '/io.fabric/d; /com.google.gms/d; /SafetyApiKey/d' build.gradle
+      - sed -i -e '/playImplementation(.*) {/,/}/d; /playImplementation/d' build.gradle
+
+  - versionName: 2.11.3
+    versionCode: 26
+    commit: 2.11.3
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/com.google.gms/d; /io.fabric.tools/d' ../build.gradle
+      - sed -i -e 's|maven.fabric.io/public|maven.google.com|' ../build.gradle build.gradle
+      - sed -i -e '/io.fabric/d; /com.google.gms/d; /SafetyApiKey/d' build.gradle
+      - sed -i -e '/playImplementation(.*) {/,/}/d; /playImplementation/d' build.gradle
+
+  - versionName: 2.13.0
+    versionCode: 29
+    commit: 2.13.0-fdroid
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/com.google.gms/d; /io.fabric.tools/d' ../build.gradle
+      - sed -i -e 's|maven.fabric.io/public|maven.google.com|' ../build.gradle build.gradle
+      - sed -i -e '/io.fabric/d; /com.google.gms/d; /SafetyApiKey/d' build.gradle
+      - sed -i -e '/playImplementation(.*) {/,/}/d; /playImplementation/d' build.gradle
+
+  - versionName: 2.13.1
+    versionCode: 30
+    commit: 2.13.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/com.google.gms/d; /io.fabric.tools/d' ../build.gradle
+      - sed -i -e 's|maven.fabric.io/public|maven.google.com|' ../build.gradle build.gradle
+      - sed -i -e '/io.fabric/d; /com.google.gms/d; /SafetyApiKey/d' build.gradle
+      - sed -i -e '/playImplementation(.*) {/,/}/d; /playImplementation/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.10.1
-CurrentVersionCode: 22
+CurrentVersion: 2.13.1
+CurrentVersionCode: 30

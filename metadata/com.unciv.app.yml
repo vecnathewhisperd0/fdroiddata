@@ -1,0 +1,243 @@
+Categories:
+  - Games
+License: MPL-2.0
+AuthorName: Yair Morgenstern
+AuthorEmail: yairm210@hotmail.com
+SourceCode: https://github.com/yairm210/UnCiv
+IssueTracker: https://github.com/yairm210/UnCiv/issues
+
+AutoName: UnCiv
+Description: |-
+    A reimplementation of the most famous civilization-building game ever—fast,
+    small, no ads, free forever!
+
+    Build your civilization, research technologies, expand your cities and
+    defeat your foes!
+
+    Requests? Bugs? Todo list for the application is
+    https://github.com/yairm210/UnCiv/issues, every small help is welcome!
+
+    Questions? Comments? Just bored? Join us on https://discord.gg/bjrB4Xw.
+
+    Want to help translating the game into your language? Send me an email to
+    yairm210@hotmail.com.
+
+    Grok Java, Kotlin or C#? Join us at https://github.com/yairm210/UnCiv.
+
+    The world awaits! Will you build your civilization into an empire that will
+    stand the test of time?
+
+    Internet permissions required in order to download large font files,
+    especially for Chinese, which, if included by default, would more than
+    double (!) the app size.
+
+RepoType: git
+Repo: https://github.com/yairm210/UnCiv.git
+
+Builds:
+  - versionName: 3.0.6
+    versionCode: 299
+    commit: 3.0.6
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.1.0-patch1
+    versionCode: 301
+    commit: 3.1.0-patch1
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.1.1
+    versionCode: 303
+    commit: 3.1.1
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.1.2
+    versionCode: 304
+    commit: 3.1.2
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.1.5
+    versionCode: 308
+    commit: 3.1.5
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.1.6
+    versionCode: 309
+    commit: 3.1.6
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.1.8
+    versionCode: 313
+    commit: 3.1.8
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.1.11
+    versionCode: 316
+    commit: 3.1.11
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.1.13
+    versionCode: 319
+    commit: 9610f9f918bbc0afbd8a275bcbf47866abbcbce6
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.2.0-patch1
+    versionCode: 322
+    commit: 3.2.0-patch1
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.2.1-patch1
+    versionCode: 324
+    commit: 3.2.1-patch1
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.2.2
+    versionCode: 325
+    commit: 3.2.2
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.2.3
+    versionCode: 326
+    commit: 3.2.3
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.2.4
+    versionCode: 327
+    commit: 3.2.4
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.3.0
+    versionCode: 328
+    commit: 3.3.0
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+
+  - versionName: 3.3.5
+    versionCode: 336
+    commit: 3.3.5
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+      - desktop
+
+  - versionName: 3.3.8
+    versionCode: 341
+    commit: 3.3.8
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+      - desktop
+
+  - versionName: 3.4.4
+    versionCode: 353
+    commit: 3.4.4
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+
+  - versionName: 3.4.6
+    versionCode: 356
+    commit: 3.4.6
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+
+  - versionName: 3.4.7
+    versionCode: 357
+    commit: 3.4.7
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 3.4.7
+CurrentVersionCode: 357

@@ -3,9 +3,9 @@ Categories:
 License: AGPL-3.0-only
 SourceCode: https://github.com/koreader/koreader
 IssueTracker: https://github.com/koreader/koreader/issues
+Translation: https://www.transifex.com/projects/p/koreader/
 Changelog: https://github.com/koreader/koreader/releases
 
-Summary: An ebook reader application supporting PDF, DjVu, EPUB, FB2
 Description: |-
     KOReader is a document viewer application, originally created for Kindle e-ink readers.
 
@@ -62,6 +62,185 @@ Builds:
       - ANDROID_FLAVOR=fdroid ./kodev release android
     ndk: r15c
 
+  - versionName: v2019.05
+    versionCode: 6780
+    commit: v2019.05
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.06
+    versionCode: 6808
+    commit: v2019.06
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.07
+    versionCode: 6832
+    commit: v2019.07
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.08
+    versionCode: 6890
+    commit: v2019.08
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.09.2
+    versionCode: 6997
+    commit: v2019.09.2
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.09.3
+    versionCode: 6999
+    commit: v2019.09.3
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.10
+    versionCode: 7085
+    commit: v2019.10
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.11
+    versionCode: 7129
+    commit: v2019.11
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2019.12
+    versionCode: 7219
+    disable: Fetched in submodule path 'l10n', but it did not contain c848073a4c0c7a08b8a1c29f0686962a6e97af36
+    commit: v2019.12
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
 MaintainerNotes: The app is English-only for now, because it requires fetching the
     translations from Transifex (see [https://github.com/koreader/koreader/tree/master/l10n
     here]) and we can not do this without credentials.
@@ -69,5 +248,5 @@ MaintainerNotes: The app is English-only for now, because it requires fetching t
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://ota.koreader.rocks/koreader-android-fdroid-latest|(\d+)$|.|(v.*)
-CurrentVersion: v2019.04
-CurrentVersionCode: 6696
+CurrentVersion: v2019.12
+CurrentVersionCode: 7219

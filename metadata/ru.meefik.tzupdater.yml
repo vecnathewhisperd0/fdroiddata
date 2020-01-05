@@ -1,11 +1,13 @@
 Categories:
   - System
 License: GPL-3.0-or-later
+AuthorName: Anton Skshidlevsky
+AuthorWebSite: https://meefik.github.io/
 WebSite: https://github.com/meefik/tzupdater/wiki
 SourceCode: https://github.com/meefik/tzupdater
 IssueTracker: https://github.com/meefik/tzupdater/issues
 Changelog: https://github.com/meefik/tzupdater/blob/HEAD/CHANGELOG
-Donate: http://meefik.github.io/donate/
+Donate: https://meefik.github.io/donate/
 
 AutoName: Timezone Updater
 Description: |-
@@ -49,5 +51,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.0
-CurrentVersionCode: 20
+CurrentVersion: 1.2.0
+CurrentVersionCode: 21

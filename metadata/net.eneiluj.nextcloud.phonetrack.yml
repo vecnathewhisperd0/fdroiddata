@@ -13,7 +13,7 @@ LiberapayID: '1520530'
 AutoName: PhoneTrack
 
 RepoType: git
-Repo: https://gitlab.com/eneiluj/phonetrack-android
+Repo: https://gitlab.com/eneiluj/phonetrack-android.git
 
 Builds:
   - versionName: 0.0.1
@@ -88,7 +88,47 @@ Builds:
     gradle:
       - normal
 
+  - versionName: 0.0.11
+    versionCode: 11
+    commit: v0.0.11
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.12
+    versionCode: 12
+    commit: v0.0.12
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.13
+    versionCode: 13
+    commit: v0.0.13
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.15
+    versionCode: 15
+    commit: v0.0.15
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.16
+    versionCode: 16
+    commit: v0.0.16
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.10
-CurrentVersionCode: 10
+CurrentVersion: 0.0.16
+CurrentVersionCode: 16

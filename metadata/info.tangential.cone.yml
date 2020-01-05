@@ -1,11 +1,20 @@
 Categories:
   - Money
 License: GPL-3.0-only
+AuthorName: Brady Trainor
+AuthorEmail: cone@tangential.info
+WebSite: https://cone.tangential.info/
 SourceCode: https://github.com/bradyt/cone
 IssueTracker: https://github.com/bradyt/cone/issues
+Changelog: https://github.com/bradyt/cone/blob/HEAD/cone_android/CHANGELOG.md
+Donate: https://www.paypal.me/bradytrainor
+Bitcoin: 3AVZKz1EFhKzU2wuqZmJzjercKBakRmpAR
 
 AutoName: cone
 Description: |
+    Warning: the app occasionally does not save a transaction to file;
+    see https://github.com/bradyt/cone/issues/23
+
     Whereas ledger-cli is the original ledger app, and hledger, beancount
     and transity are a few of the number of ledger-likes, cone brings the
     data entry aspect to your mobile phone. We hope to add features to show
@@ -56,7 +65,185 @@ Builds:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter build apk
 
-AutoUpdateMode: None
-UpdateCheckMode: None
-CurrentVersion: 0.1.2
-CurrentVersionCode: 4
+  - versionName: 0.1.3
+    versionCode: 5
+    commit: v0.1.3
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.5.4
+    prebuild: echo 'android.applicationVariants.all { variant -> variant.outputs.all
+        { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 0.1.4
+    versionCode: 6
+    commit: v0.1.4
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.5.4
+    prebuild: echo 'android.applicationVariants.all { variant -> variant.outputs.all
+        { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 0.1.5
+    versionCode: 7
+    commit: v0.1.5
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.5.4
+    prebuild: echo 'android.applicationVariants.all { variant -> variant.outputs.all
+        { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 0.2.0
+    versionCode: 8
+    commit: v0.2.0
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.5.4
+    rm:
+      - ios
+    prebuild: echo 'android.applicationVariants.all { variant -> variant.outputs.all
+        { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 0.2.1
+    versionCode: 9
+    commit: v0.2.1
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@v1.7.8+hotfix.3
+    rm:
+      - ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor=fdroid
+
+  - versionName: 0.2.2
+    versionCode: 10
+    commit: v0.2.2
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@v1.7.8+hotfix.3
+    rm:
+      - ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor=fdroid
+
+  - versionName: 0.2.3
+    versionCode: 11
+    commit: v0.2.3
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@v1.7.8+hotfix.3
+    rm:
+      - ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor=fdroid
+
+  - versionName: 0.2.5
+    versionCode: 13
+    commit: v0.2.5
+    subdir: cone_android
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@v1.7.8+hotfix.4
+    rm:
+      - cone_android/ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor=fdroid
+
+  - versionName: 0.2.6
+    versionCode: 14
+    commit: v0.2.6
+    subdir: cone_android
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@v1.7.8+hotfix.4
+    rm:
+      - cone_android/ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor=fdroid
+
+  - versionName: 0.2.7
+    versionCode: 15
+    commit: v0.2.7
+    subdir: cone_android
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@v1.7.8+hotfix.4
+    rm:
+      - cone_android/ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor=fdroid
+
+  - versionName: 0.2.8
+    versionCode: 16
+    commit: v0.2.8
+    subdir: cone_android
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@v1.7.8+hotfix.4
+    rm:
+      - cone_android/ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor=fdroid
+
+  - versionName: 0.2.12
+    versionCode: 20
+    commit: v0.2.12
+    subdir: cone_android
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@v1.7.8+hotfix.4
+    rm:
+      - cone_android/ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor=fdroid
+
+  - versionName: 0.2.17
+    versionCode: 25
+    commit: v0.2.17
+    subdir: cone_android
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@v1.7.8+hotfix.4
+    rm:
+      - cone_android/ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor=fdroid
+
+  - versionName: 0.2.18
+    versionCode: 26
+    commit: v0.2.18
+    subdir: cone_android
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@v1.7.8+hotfix.4
+    rm:
+      - cone_android/ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor=fdroid
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+UpdateCheckIgnore: (alpha|beta|rc|RC|dev)
+CurrentVersion: 0.2.18
+CurrentVersionCode: 26

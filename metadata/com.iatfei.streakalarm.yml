@@ -2,8 +2,12 @@ Categories:
   - Time
   - Phone & SMS
 License: GPL-3.0-or-later
+AuthorName: Fei Kuan
+AuthorEmail: apps@iatfei.com
+AuthorWebSite: https://iatfei.com/
 SourceCode: https://github.com/fei0316/snapstreak-alarm
 IssueTracker: https://github.com/fei0316/snapstreak-alarm/issues
+Changelog: https://github.com/fei0316/snapstreak-alarm/releases
 
 AutoName: Streak Alarm
 Description: |-
@@ -13,7 +17,7 @@ Description: |-
 
     Features:
     * Custom reminder interval from 1 to 22 hours
-    * Notification stays until streaks are sent so you won't miss it
+    * Notification stays until streaks are sent so you won’t miss it
     * Snooze reminder for custom amount of time
     * Mark streaks sent (also directly in notification)
     * Mark streaks sent some time earlier
@@ -46,7 +50,35 @@ Builds:
     gradle:
       - free
 
+  - versionName: 1.1.6
+    versionCode: 19
+    commit: 1.1.6
+    subdir: app
+    gradle:
+      - free
+
+  - versionName: 1.1.7
+    versionCode: 20
+    commit: 1.1.7
+    subdir: app
+    gradle:
+      - free
+
+  - versionName: 1.1.8
+    versionCode: 21
+    commit: 1.1.8
+    subdir: app
+    gradle:
+      - free
+
+  - versionName: 1.2.1
+    versionCode: 22
+    commit: 1.2.1
+    subdir: app
+    gradle:
+      - free
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.4
-CurrentVersionCode: 17
+CurrentVersion: 1.2.1
+CurrentVersionCode: 22

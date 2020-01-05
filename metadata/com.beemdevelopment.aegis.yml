@@ -1,6 +1,8 @@
 Categories:
   - Security
 License: GPL-3.0-only
+AuthorName: Beem Development
+AuthorEmail: beemdevelopment@gmail.com
 SourceCode: https://github.com/beemdevelopment/Aegis
 IssueTracker: https://github.com/beemdevelopment/Aegis/issues
 
@@ -45,7 +47,63 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.4'
+    versionCode: 10
+    commit: v0.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.1
+    versionCode: 11
+    commit: v0.4.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.2
+    versionCode: 12
+    commit: v0.4.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.3
+    versionCode: 14
+    commit: v0.4.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.0'
+    versionCode: 19
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.2
+    versionCode: 21
+    commit: v1.0.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.3
+    versionCode: 22
+    commit: v1.0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.1'
+    versionCode: 24
+    commit: v1.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 0.3.3
-CurrentVersionCode: 9
+UpdateCheckMode: Tags ^((?!alpha|beta).)*$
+CurrentVersion: '1.1'
+CurrentVersionCode: 24

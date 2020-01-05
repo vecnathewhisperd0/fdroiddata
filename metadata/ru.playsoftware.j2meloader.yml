@@ -1,10 +1,13 @@
 Categories:
   - Games
 License: Apache-2.0
+AuthorName: Nikita Shakarun
+AuthorEmail: nikita36078@gmail.com
 WebSite: https://github.com/nikita36078/J2ME-Loader/wiki
 SourceCode: https://github.com/nikita36078/J2ME-Loader
 IssueTracker: https://github.com/nikita36078/J2ME-Loader/blob/HEAD/README.md/issues
 Translation: https://crowdin.com/project/j2me-loader
+Donate: https://www.paypal.me/nikita36078
 
 AutoName: J2ME Loader
 Description: |-
@@ -143,10 +146,120 @@ Builds:
       - app/src/main/java/javax/microedition/shell/MyClassLoader.java
     ndk: r16b
 
+  - versionName: 1.4.5
+    versionCode: 62
+    commit: 1.4.5
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/5.2-/5.1-/' ../gradle/wrapper/gradle-wrapper.properties
+    scanignore:
+      - app/src/main/java/javax/microedition/shell/MyClassLoader.java
+    ndk: r16b
+
+  - versionName: 1.4.6
+    versionCode: 63
+    commit: 1.4.6
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/5.2-/5.1-/' ../gradle/wrapper/gradle-wrapper.properties
+    scanignore:
+      - app/src/main/java/javax/microedition/shell/MyClassLoader.java
+    ndk: r16b
+
+  - versionName: 1.4.7
+    versionCode: 64
+    commit: 1.4.7
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/5.2-/5.1-/' ../gradle/wrapper/gradle-wrapper.properties
+    scanignore:
+      - app/src/main/java/javax/microedition/shell/MyClassLoader.java
+    ndk: r16b
+
+  - versionName: 1.4.9
+    versionCode: 66
+    commit: 1.4.9
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/5.2-/5.1-/' ../gradle/wrapper/gradle-wrapper.properties
+    scanignore:
+      - app/src/main/java/javax/microedition/shell/MyClassLoader.java
+    ndk: r16b
+
+  - versionName: 1.5.0
+    versionCode: 67
+    commit: 1.5.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/5.2-/5.1-/' ../gradle/wrapper/gradle-wrapper.properties
+    scanignore:
+      - app/src/main/java/javax/microedition/shell/MyClassLoader.java
+    ndk: r16b
+
+  - versionName: 1.5.1
+    versionCode: 68
+    commit: 1.5.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/5.2-/5.1-/' ../gradle/wrapper/gradle-wrapper.properties
+    scanignore:
+      - app/src/main/java/javax/microedition/shell/MyClassLoader.java
+    ndk: r16b
+
+  - versionName: 1.5.2
+    versionCode: 69
+    commit: 1.5.2
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/5.2-/5.1-/' ../gradle/wrapper/gradle-wrapper.properties
+    scanignore:
+      - app/src/main/java/javax/microedition/shell/MyClassLoader.java
+    ndk: r16b
+
+  - versionName: 1.5.3
+    versionCode: 70
+    commit: 1.5.3
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/5.2-/5.1-/' ../gradle/wrapper/gradle-wrapper.properties
+    scanignore:
+      - app/src/main/java/javax/microedition/shell/MyClassLoader.java
+    ndk: r16b
+
+  - versionName: 1.5.4
+    versionCode: 71
+    commit: 1.5.4
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/5.2-/5.1-/' ../gradle/wrapper/gradle-wrapper.properties
+    scanignore:
+      - app/src/main/java/javax/microedition/shell/MyClassLoader.java
+    ndk: r16b
+
+  - versionName: 1.5.5
+    versionCode: 72
+    commit: 1.5.5
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/5.2-/5.1-/' ../gradle/wrapper/gradle-wrapper.properties
+    scanignore:
+      - app/src/main/java/javax/microedition/shell/MyClassLoader.java
+    ndk: r16b
+
 MaintainerNotes: 'The class loader is needed for the main function of the app: load
     JARs.'
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.4
-CurrentVersionCode: 61
+CurrentVersion: 1.5.5
+CurrentVersionCode: 72

@@ -1,8 +1,10 @@
 Categories:
   - Science & Education
 License: Apache-2.0
+WebSite: https://blitzortung.tryb.de/
 SourceCode: https://github.com/wuan/bo-android
 IssueTracker: https://github.com/wuan/bo-android/issues
+Translation: https://github.com/wuan/bo-android#translation-offers-are-welcome
 Changelog: https://github.com/wuan/bo-android/blob/HEAD/ChangeLog
 
 AutoName: Blitzortung Lightning Monitor
@@ -88,7 +90,105 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.0.5
+    versionCode: 228
+    commit: 2.0.5_228
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.6
+    versionCode: 229
+    commit: 2.0.6_229
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.6
+    versionCode: 232
+    commit: 2.0.6_232
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.8
+    versionCode: 234
+    commit: 2.0.8_234
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.12
+    versionCode: 239
+    commit: 2.0.12_239
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.12
+    versionCode: 240
+    commit: 2.0.12_240
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.12
+    versionCode: 241
+    commit: 2.0.12_241
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.13
+    versionCode: 242
+    commit: 2.0.13_242
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.14
+    versionCode: 243
+    commit: 2.0.14_243
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.15
+    versionCode: 245
+    commit: 2.0.15_245
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.15
+    versionCode: 247
+    commit: 2.0.15_247
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.16
+    versionCode: 248
+    commit: 2.0.16_248
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.17
+    versionCode: 249
+    commit: 2.0.17_249
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.18
+    versionCode: 250
+    commit: 2.0.18_150
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v_%c
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.4
-CurrentVersionCode: 226
+CurrentVersion: 2.0.18
+CurrentVersionCode: 250

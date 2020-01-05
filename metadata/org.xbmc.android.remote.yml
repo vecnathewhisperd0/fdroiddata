@@ -1,11 +1,12 @@
 Categories:
   - Multimedia
 License: GPL-2.0-only
+AuthorName: freezy
+AuthorEmail: freezy@kodi.tv
 SourceCode: https://github.com/freezy/android-xbmcremote
 IssueTracker: https://github.com/freezy/android-xbmcremote/issues
 
 AutoName: XBMC Remote
-Summary: XBMC Media Center Remote Control
 Description: The official remote control for XBMC Media Center.
 
 RepoType: git

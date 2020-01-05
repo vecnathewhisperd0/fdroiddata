@@ -5,10 +5,10 @@ AuthorName: y20k
 WebSite: http://www.y20k.org/trackbook/
 SourceCode: https://github.com/y20k/trackbook
 IssueTracker: https://github.com/y20k/trackbook/issues
+Translation: https://hosted.weblate.org/projects/trackbook/strings/
 Changelog: https://github.com/y20k/trackbook/releases
 
 AutoName: Trackbook
-Summary: Record your movement
 Description: |-
     Trackbook is a bare bones app for recording your movements. Trackbook is great
     for hiking, vacation or workout. Once started it traces your movements on a map.
@@ -237,7 +237,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.2.2
+    versionCode: 36
+    commit: v1.2.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.2.0
-CurrentVersionCode: 34
+CurrentVersion: 1.2.2
+CurrentVersionCode: 36

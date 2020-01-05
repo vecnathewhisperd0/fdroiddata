@@ -1,11 +1,13 @@
 Categories:
   - Reading
 License: GPL-3.0-only
-WebSite: http://www.sirimangalo.org
+AuthorName: Yuttadhammo Bhikkhu
+AuthorEmail: yuttadhammo@gmail.com
+AuthorWebSite: https://yuttadhammo.sirimangalo.org/
+WebSite: https://www.sirimangalo.org/
 SourceCode: https://github.com/yuttadhammo/E-Tipitaka-for-Android
 
 AutoName: Android Tipitaka
-Summary: Pali Buddhist Tipitaka
 Description: |-
     A Roman-Pali version of the Theravada Buddhist canon with dictionaries and
     ability to import ATI English Dhamma site. There is ~15MB download required at
@@ -22,7 +24,7 @@ Builds:
 
   - versionName: '4.0'
     versionCode: 33
-    disable: Doesn't build at faf4bca2754fdb4b6a
+    disable: Doesn’t build at faf4bca2754fdb4b6a
     commit: faf4bca2754fdb4b6a
     target: android-15
 

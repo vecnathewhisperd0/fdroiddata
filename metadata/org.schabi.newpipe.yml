@@ -4,6 +4,8 @@ Categories:
   - Multimedia
   - Internet
 License: GPL-3.0-or-later
+AuthorName: Team NewPipe
+AuthorEmail: tnp@schabi.org
 WebSite: https://newpipe.schabi.org
 SourceCode: https://github.com/TeamNewPipe/NewPipe
 IssueTracker: https://github.com/TeamNewPipe/NewPipe/issues
@@ -511,7 +513,55 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.16.2
+    versionCode: 740
+    commit: v0.16.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.17.1
+    versionCode: 760
+    commit: v0.17.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.17.2
+    versionCode: 770
+    commit: v0.17.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.17.3
+    versionCode: 780
+    commit: v0.17.3
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.17.4
+    versionCode: 790
+    commit: v0.17.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.18.0
+    versionCode: 800
+    commit: v0.18.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.16.1
-CurrentVersionCode: 730
+CurrentVersion: 0.18.0
+CurrentVersionCode: 800

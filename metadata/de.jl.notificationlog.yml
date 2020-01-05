@@ -1,13 +1,13 @@
 Categories:
   - System
 License: GPL-3.0-or-later
-SourceCode: https://gitlab.com/notificationlog/notificationlog-android
-IssueTracker: https://gitlab.com/notificationlog/notificationlog-android/issues
+SourceCode: https://codeberg.org/jonas-l/notificationlog-android
+IssueTracker: https://codeberg.org/jonas-l/notificationlog-android/issues
 
 AutoName: NotificationLog
 
 RepoType: git
-Repo: https://gitlab.com/notificationlog/notificationlog-android
+Repo: https://codeberg.org/jonas-l/notificationlog-android.git
 
 Builds:
   - versionName: '1.1'
@@ -66,7 +66,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.10'
+    versionCode: 11
+    commit: release-1.10
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.11'
+    versionCode: 12
+    commit: release-1.11
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.9'
-CurrentVersionCode: 10
+CurrentVersion: '1.11'
+CurrentVersionCode: 12

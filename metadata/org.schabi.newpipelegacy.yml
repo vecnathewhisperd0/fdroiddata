@@ -4,7 +4,9 @@ Categories:
   - Multimedia
   - Internet
 License: GPL-3.0-or-later
-WebSite: https://newpipe.schabi.org
+AuthorName: Team NewPipe
+AuthorEmail: tnp@schabi.org
+WebSite: https://newpipe.schabi.org/
 SourceCode: https://github.com/TeamNewPipe/NewPipe-legacy
 IssueTracker: https://github.com/TeamNewPipe/NewPipe-legacy/issues
 Changelog: https://github.com/TeamNewPipe/NewPipe-legacy/releases
@@ -12,10 +14,9 @@ LiberapayID: '34969'
 Bitcoin: 16A9J59ahMRqkLSZjhYj33n9j3fMztFxnh
 
 AutoName: NewPipe Legacy
-Summary: Lightweight YouTube frontend for OS versions 4.x
 Description: |-
-    Lightweight YouTube frontend for Android 4.x that's supposed to be used
-    without the proprietary YouTube-API or any of Google's (proprietary)
+    Lightweight YouTube frontend for Android 4.x that’s supposed to be used
+    without the proprietary YouTube-API or any of Google’s (proprietary)
     play-services. NewPipe only parses the YouTube website in order to gain
     the information it needs.
 
@@ -68,7 +69,40 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.16.2
+    versionCode: 20
+    commit: v0.16.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.17.1
+    versionCode: 30
+    disable: 'PlaylistFragment.java:44: error: cannot find symbol'
+    commit: v0.17.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.18.0
+    versionCode: 40
+    commit: v0.18.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.18.1-rc.1
+    versionCode: 41
+    commit: v0.18.1-rc.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.16.1
-CurrentVersionCode: 10
+CurrentVersion: 0.18.1-rc.1
+CurrentVersionCode: 41

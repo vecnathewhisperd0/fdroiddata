@@ -1,6 +1,9 @@
 Categories:
   - System
 License: Apache-2.0
+AuthorName: Saul Henriquez
+AuthorEmail: saul_henriquez@hotmail.com
+AuthorWebSite: https://debsv.blogspot.com/
 SourceCode: https://github.com/otakuhqz/ZimLX
 IssueTracker: https://github.com/otakuhqz/ZimLX/issues
 Changelog: https://github.com/otakuhqz/ZimLX/releases
@@ -56,10 +59,24 @@ Builds:
       - flavorDefault
     prebuild: sed -i -e '/debuggable/d' build.gradle
 
+  - versionName: 0.6.2b
+    versionCode: 3010
+    commit: v0.6.2b
+    gradle:
+      - aosp
+      - zim
+    rm:
+      - ZimLX/libs
+      - quickstep/libs
+    prebuild:
+      - sed -i -e 's/android-Q/android-29/' build.gradle
+      - sed -i -e '/[Dd]ebuggable/d' build.gradle
+      - echo -e '\nandroid.injected.testOnly=false' >> gradle.properties
+
 MaintainerNotes: Update checks don't work because the version name and code are stored
     in a separate version.properties file.
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 0.4.4
-CurrentVersionCode: 2707
+CurrentVersion: 0.6.2b
+CurrentVersionCode: 3010

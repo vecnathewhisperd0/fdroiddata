@@ -551,7 +551,87 @@ Builds:
     rm:
       - user_manual
 
+  - versionName: 2.10.1
+    versionCode: 21001000
+    commit: oc-android-2.10.1
+    subdir: owncloudApp
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - user_manual
+
+  - versionName: 2.11.0-beta.1
+    versionCode: 21002000
+    commit: oc-android-2.11.0-beta.1
+    subdir: owncloudApp
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - user_manual
+
+  - versionName: 2.11.0
+    versionCode: 21100000
+    commit: oc-android-2.11.0
+    subdir: owncloudApp
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - user_manual
+
+  - versionName: 2.11.1
+    versionCode: 21100100
+    commit: oc-android-2.11.1
+    subdir: owncloudApp
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - user_manual
+
+  - versionName: '2.12'
+    versionCode: 21200000
+    commit: oc-android-2.12
+    subdir: owncloudApp
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - user_manual
+
+  - versionName: '2.13'
+    versionCode: 21300000
+    commit: oc-android-2.13
+    subdir: owncloudApp
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - user_manual
+
+  - versionName: 2.13.1
+    versionCode: 21300100
+    commit: oc-android-2.13.1
+    subdir: owncloudApp
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - user_manual
+
+  - versionName: 2.14.1
+    versionCode: 21400100
+    commit: oc-android-2.14.1
+    subdir: owncloudApp
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - user_manual
+
 AutoUpdateMode: Version oc-android-%v
 UpdateCheckMode: Tags ^oc-android-[0-9.]*$
-CurrentVersion: 2.10.0
-CurrentVersionCode: 21000000
+CurrentVersion: 2.14.1
+CurrentVersionCode: 21400100

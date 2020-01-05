@@ -1,0 +1,96 @@
+Categories:
+  - Sports & Health
+License: Apache-2.0
+SourceCode: https://github.com/OpenTracksApp/OpenTracks
+IssueTracker: https://github.com/OpenTracksApp/OpenTracks/issues
+Changelog: https://github.com/OpenTracksApp/opentracks/releases
+LiberapayID: '1594240'
+
+AutoName: ${applicationName}
+
+RepoType: git
+Repo: https://github.com/OpenTracksApp/OpenTracks
+
+Builds:
+  - versionName: v3.0.1
+    versionCode: 2947
+    commit: v3.0.1
+    gradle:
+      - yes
+
+  - versionName: v3.1.0
+    versionCode: 2991
+    commit: v3.1.0
+    gradle:
+      - yes
+
+  - versionName: v3.2.0
+    versionCode: 3054
+    commit: v3.2.0
+    gradle:
+      - yes
+
+  - versionName: v3.2.1
+    versionCode: 3063
+    commit: v3.2.1
+    gradle:
+      - yes
+
+  - versionName: v3.2.2
+    versionCode: 3079
+    commit: v3.2.2
+    gradle:
+      - yes
+
+  - versionName: v3.2.3
+    versionCode: 3101
+    commit: v3.2.3
+    gradle:
+      - yes
+
+  - versionName: v3.2.5
+    versionCode: 3123
+    commit: v3.2.5
+    gradle:
+      - yes
+
+  - versionName: v3.2.6
+    versionCode: 3137
+    commit: v3.2.6
+    gradle:
+      - yes
+
+  - versionName: v3.2.7
+    versionCode: 3149
+    commit: v3.2.7
+    gradle:
+      - yes
+
+  - versionName: v3.2.8
+    versionCode: 3162
+    commit: v3.2.8
+    gradle:
+      - yes
+
+  - versionName: v3.2.9
+    versionCode: 3175
+    commit: v3.2.9
+    gradle:
+      - yes
+
+  - versionName: v3.2.11
+    versionCode: 3213
+    commit: v3.2.11
+    gradle:
+      - yes
+
+  - versionName: v3.3.1
+    versionCode: 3251
+    commit: v3.3.1
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: v3.3.1
+CurrentVersionCode: 3251

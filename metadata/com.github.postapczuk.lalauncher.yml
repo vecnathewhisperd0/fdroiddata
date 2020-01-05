@@ -4,6 +4,7 @@ License: GPL-2.0-only
 WebSite: https://github.com/light-launcher/Light-Android-Launcher/blob/HEAD/README.md
 SourceCode: https://github.com/light-launcher/Light-Android-Launcher
 IssueTracker: https://github.com/light-launcher/Light-Android-Launcher/issues
+Changelog: https://github.com/light-launcher/Light-Android-Launcher/releases
 
 AutoName: Light Android Launcher
 Description: |-
@@ -84,7 +85,42 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.6.3
+    versionCode: 10
+    commit: 1.6.3
+    subdir: LaLauncher
+    gradle:
+      - yes
+
+  - versionName: 1.6.4
+    versionCode: 11
+    commit: 1.6.4
+    subdir: LaLauncher
+    gradle:
+      - yes
+
+  - versionName: 1.7.0
+    versionCode: 12
+    commit: 1.7.0
+    subdir: LaLauncher
+    gradle:
+      - yes
+
+  - versionName: 1.7.1
+    versionCode: 13
+    commit: 1.7.1
+    subdir: LaLauncher
+    gradle:
+      - yes
+
+  - versionName: 1.8.0
+    versionCode: 14
+    commit: 1.8.0
+    subdir: LaLauncher
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.6.2
-CurrentVersionCode: 9
+CurrentVersion: 1.8.0
+CurrentVersionCode: 14

@@ -3,6 +3,7 @@ Categories:
 License: MIT
 SourceCode: https://github.com/markusfisch/BinaryEye
 IssueTracker: https://github.com/markusfisch/BinaryEye/issues
+Changelog: https://github.com/markusfisch/BinaryEye/blob/HEAD/CHANGELOG.md
 
 AutoName: Binary Eye
 Description: |-
@@ -59,7 +60,175 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.6.0
+    versionCode: 21
+    commit: 1.6.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.0
+    versionCode: 22
+    commit: 1.7.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.1
+    versionCode: 23
+    commit: 1.7.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.2
+    versionCode: 24
+    commit: 1.7.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.3
+    versionCode: 25
+    commit: 1.7.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.8.1
+    versionCode: 27
+    commit: 1.8.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.0
+    versionCode: 28
+    commit: 1.9.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.1
+    versionCode: 29
+    commit: 1.9.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.10.0
+    versionCode: 30
+    commit: 1.10.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.11.0
+    versionCode: 31
+    commit: 1.11.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.11.1
+    versionCode: 32
+    commit: 1.11.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.11.2
+    versionCode: 33
+    commit: 1.11.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.12.0
+    versionCode: 36
+    commit: 1.12.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.13.0
+    versionCode: 37
+    commit: 1.13.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.13.1
+    versionCode: 38
+    commit: 1.13.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.14.0
+    versionCode: 39
+    commit: 1.14.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.15.0
+    versionCode: 40
+    commit: 1.15.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.16.0
+    versionCode: 43
+    commit: 1.16.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.17.0
+    versionCode: 44
+    commit: 1.17.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.17.1
+    versionCode: 45
+    commit: 1.17.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.18.0
+    versionCode: 46
+    commit: 1.18.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.19.0
+    versionCode: 48
+    commit: 1.19.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.20.1
+    versionCode: 50
+    commit: 1.20.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.21.0
+    versionCode: 51
+    commit: 1.21.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.5.1
-CurrentVersionCode: 20
+CurrentVersion: 1.21.0
+CurrentVersionCode: 51

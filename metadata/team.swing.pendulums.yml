@@ -1,13 +1,15 @@
+AntiFeatures:
+  - NonFreeNet
 Categories:
   - Time
 License: GPL-3.0-only
 WebSite: https://pendulums.io/
 SourceCode: https://github.com/Swing-team/pendulums-web-client
 IssueTracker: https://github.com/Swing-team/pendulums-web-client/issues
+Changelog: https://github.com/Swing-team/pendulums-web-client/releases
+Donate: https://pendulums.io/donation.html
 
 AutoName: Pendulums
-Summary: Manage and track your time more efficiently using a modern time tracking
-    tool
 Description: |-
     Easy to use and efficient time tracking tool.
 
@@ -39,7 +41,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.1.0
+    versionCode: 4
+    commit: v1.1.0
+    subdir: mobile-app/platforms/android/app/
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.1
-CurrentVersionCode: 3
+CurrentVersion: 1.1.0
+CurrentVersionCode: 4

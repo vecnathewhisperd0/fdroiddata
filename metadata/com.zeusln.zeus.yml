@@ -9,7 +9,6 @@ Changelog: https://github.com/ZeusLN/zeus/releases
 Bitcoin: 3Lbz4vdt15Fsa4wVD3Yk8uGf6ugKKY4zSc
 
 AutoName: Zeus
-Summary: Mobile Bitcoin app for Lightning Network Daemon (lnd)
 Description: |-
     Zeus is a mobile Bitcoin app for Lightning Network Daemon (lnd) node operators
 
@@ -63,7 +62,64 @@ Builds:
     scandelete:
       - node_modules
 
+  - versionName: 0.1.0
+    versionCode: 10
+    commit: v0.1.0
+    subdir: android/app
+    sudo:
+      - apt-get update
+      - apt-get install -y --no-install-recommends -t stretch-backports npm
+    init:
+      - npm install
+      - npm run patch-android-release
+    gradle:
+      - yes
+    prebuild: truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
+    scanignore:
+      - android/build.gradle
+      - node_modules/react-native-screens/android/build.gradle
+    scandelete:
+      - node_modules
+
+  - versionName: 0.1.1
+    versionCode: 11
+    commit: v0.1.1
+    subdir: android/app
+    sudo:
+      - apt-get update
+      - apt-get install -y --no-install-recommends -t stretch-backports npm
+    init:
+      - npm install
+      - npm run patch-android-release
+    gradle:
+      - yes
+    prebuild: truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
+    scanignore:
+      - android/build.gradle
+      - node_modules/react-native-screens/android/build.gradle
+    scandelete:
+      - node_modules
+
+  - versionName: 0.1.2
+    versionCode: 12
+    commit: v0.1.2
+    subdir: android/app
+    sudo:
+      - apt-get update
+      - apt-get install -y --no-install-recommends -t stretch-backports npm
+    init:
+      - npm install
+      - npm run patch-android-release
+    gradle:
+      - yes
+    prebuild: truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
+    scanignore:
+      - android/build.gradle
+      - node_modules/react-native-screens/android/build.gradle
+    scandelete:
+      - node_modules
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.8
-CurrentVersionCode: 8
+CurrentVersion: 0.1.2
+CurrentVersionCode: 12

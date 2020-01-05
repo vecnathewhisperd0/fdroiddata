@@ -16,7 +16,7 @@ Description: |-
     freifunk-karte.de
 
 RepoType: git
-Repo: https://gitlab.com/TheRMaverick/Freifunk-Karte
+Repo: https://gitlab.com/TheRMaverick/Freifunk-Karte.git
 
 Builds:
   - versionName: '1.4'
@@ -26,7 +26,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.5'
+    versionCode: 9
+    commit: '1.5'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.4'
-CurrentVersionCode: 7
+CurrentVersion: '1.5'
+CurrentVersionCode: 9

@@ -16,7 +16,7 @@ AutoName: LocationPrivacy
 
 RepoType: git
 Repo: https://github.com/guardianproject/LocationPrivacy.git
-Binaries: https://guardianproject.info/fdroid/repo/LocationPrivacy-0.3.apk
+Binaries: https://guardianproject.info/releases/LocationPrivacy-%v.apk
 
 Builds:
   - versionName: '0.1'
@@ -46,12 +46,15 @@ Builds:
   - versionName: 0.3.1
     versionCode: 31
     commit: 0.3.1
+    timeout: 2000
     subdir: app
+    sudo: apt-get -qy install --no-install-recommends -t stretch-backports diffoscope
+        apktool enjarify libstringtemplate4-java unzip xxd
     gradle:
       - yes
     prebuild: echo 'android.lintOptions.checkReleaseBuilds false' >> build.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.3.1
-CurrentVersionCode: 31
+CurrentVersion: '0.3'
+CurrentVersionCode: 30

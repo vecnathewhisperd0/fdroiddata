@@ -10,13 +10,14 @@ Bitcoin: 1KKWRF25NwVgNdankr1vBphtkLbX766Ee1
 AutoName: Kwik DMAP
 Description: |-
     Kwik Moving Map is a companion application to the EFIS. It provides  situational
-    awareness and and navigation functionality.
+    awareness and and navigation functionality. EFIS can optionally integrate with the
+    Stratux ADS-B/AHRS to provide real-time traffic overlay.
 
     '''Synthetic Vision'''
 
     Synthetic vision is built from the USGS 3 arc second Digital Elevation Model
     data. If enabled, it also allows for some terrain collision detection. The
-    required terrain data packages are available on F-Droid, see:
+    required terrain data packages are available via F-Droid, see:
 
     * [https://f-droid.org/packages/player.efis.data.usa.can/ North America/Canada]
     * [https://f-droid.org/packages/player.efis.data.eur.rus/ Europe/Russia]
@@ -51,12 +52,12 @@ Description: |-
 
     [https://f-droid.org/packages/player.efis.pfd/ Kwik EFIS] is a companion
     application to the moving map. It provides a Primary Flight Display
-    functionality.
+    instruments.
 
     '''Screenshots''' [http://members.iinet.net.au/~ninelima/efis/gallery.html]
 
 RepoType: git
-Repo: https://gitlab.com/ninelima/kwikEFIS
+Repo: https://gitlab.com/ninelima/kwikEFIS.git
 
 Builds:
   - versionName: '1.0'
@@ -143,7 +144,35 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: None
+  - versionName: '2.4'
+    versionCode: 26
+    commit: DMAP_2.4
+    subdir: mfd
+    gradle:
+      - yes
+
+  - versionName: '2.5'
+    versionCode: 27
+    commit: DMAP_2.5
+    subdir: mfd
+    gradle:
+      - yes
+
+  - versionName: '2.6'
+    versionCode: 28
+    commit: DMAP_2.6
+    subdir: mfd
+    gradle:
+      - yes
+
+  - versionName: '2.7'
+    versionCode: 29
+    commit: DMAP_2.7
+    subdir: mfd
+    gradle:
+      - yes
+
+AutoUpdateMode: Version DMAP_%v
 UpdateCheckMode: Tags ^DMAP
-CurrentVersion: '2.4'
-CurrentVersionCode: 26
+CurrentVersion: '2.7'
+CurrentVersionCode: 29
