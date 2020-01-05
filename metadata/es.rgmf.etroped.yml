@@ -1,0 +1,26 @@
+Categories:
+  - Sports & Health
+License: GPL-3.0-or-later
+AuthorName: rgmf@riseup.net
+WebSite: https://github.com/rgmf/etroped
+SourceCode: https://github.com/rgmf/etroped
+IssueTracker: https://github.com/rgmf/etroped/issues
+
+AutoName: Etroped
+
+RepoType: git
+Repo: https://github.com/rgmf/etroped
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: 769670b4558f6c99948589f43934afb00a3e07a3
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
+
