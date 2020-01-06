@@ -5,6 +5,8 @@ Categories:
 License: GPL-3.0-or-later
 SourceCode: https://github.com/jbk123456/btlebeacontracker
 IssueTracker: https://github.com/jbk123456/btlebeacontracker/issues
+Summary: Bluetooth 5 low energy beacon tracker
+Description: Register ble beacons (e.g. a galaxy watch, a keychain tracker, ...) with the app and get a notification or trigger an alarm if your beacon goes out of range. The app requires only course grained location and bluetooth 5 enabled.
 
 RepoType: git
 Repo: https://github.com/jbk123456/btlebeacontracker
