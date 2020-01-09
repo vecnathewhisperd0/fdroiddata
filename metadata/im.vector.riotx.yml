@@ -42,9 +42,9 @@ RepoType: git
 Repo: https://github.com/vector-im/riotx-android
 
 Builds:
-  - versionName: 0.11.0-dev
-    versionCode: 1100
-    commit: v0.11.0
+  - versionName: 0.12.0-dev
+    versionCode: 1200
+    commit: v0.12.0
     subdir: vector
     gradle:
       - fdroid
@@ -67,5 +67,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 0.11.0-dev
-CurrentVersionCode: 1100
+CurrentVersion: 0.12.0-dev
+CurrentVersionCode: 1200
