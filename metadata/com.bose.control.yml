@@ -1,0 +1,25 @@
+Categories:
+  - Connectivity
+License: MIT
+SourceCode: https://github.com/DavidVentura/Bose_QC35_Android
+IssueTracker: https://github.com/DavidVentura/Bose_QC35_Android/issues
+
+AutoName: Bose QC35 control
+Description: |-
+    Control for Bose QC35, useful to configure button modes and noise isolation level.
+
+RepoType: git
+Repo: https://github.com/DavidVentura/Bose_QC35_Android
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v0.0.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
