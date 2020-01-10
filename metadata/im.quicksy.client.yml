@@ -254,7 +254,7 @@ Builds:
         \ \ \ \ \ \ \ abortOnError\ false' build.gradle
 
   - versionName: 2.6.2+fcr
-    versionCode: 352
+    versionCode: 353
     commit: 2.6.2
     gradle:
       - quicksyFreeCompat
@@ -264,4 +264,4 @@ Builds:
 AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: 2.6.2+fcr
-CurrentVersionCode: 352
+CurrentVersionCode: 353
