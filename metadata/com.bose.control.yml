@@ -5,8 +5,8 @@ SourceCode: https://github.com/DavidVentura/Bose_QC35_Android
 IssueTracker: https://github.com/DavidVentura/Bose_QC35_Android/issues
 
 AutoName: Bose QC35 control
-Description: |-
-    Control for Bose QC35, useful to configure button modes and noise isolation level.
+Description: Control for Bose QC35, useful to configure button modes and noise isolation
+    level.
 
 RepoType: git
 Repo: https://github.com/DavidVentura/Bose_QC35_Android
