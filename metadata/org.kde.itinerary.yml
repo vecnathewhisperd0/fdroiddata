@@ -1,0 +1,325 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+  - Navigation
+License: GPL-2.0-or-later
+WebSite: https://kde.org
+SourceCode: https://invent.kde.org/kde/itinerary/
+IssueTracker: https://invent.kde.org/kde/itinerary/issues
+
+Summary: Travel Assistant
+Description: KDE Itinerary is an open-source, private-by-design travel assistant.
+    It manages train, flight, car, bus, hotel and event reservations and augments
+    it with live data.
+
+RepoType: git
+Repo: https://invent.kde.org/kde/itinerary/
+
+Builds:
+  - versionName: 0.0.1
+    versionCode: 1
+    commit: fdroid
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y g++ qttools5-dev-tools -t stretch-backports cmake
+    output: itinerary-app_build_apk-release-unsigned.apk
+    build:
+      - export ANDROID_ARCH=arm
+      - export ANDROID_ARCH_ABI=armeabi-v7a
+      - export ANDROID_NDK=$$NDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_HOME=$$SDK$$
+      - export QT_VERSION=5.13.2
+      - export KF5_VERSION=v5.66.0
+      - export KDEAPPS_VERSION=v19.12.1
+      - export BASE=$(pwd)
+      - export PREFIX=$HOME/install
+      - mkdir $PREFIX
+      - export QT=$HOME/qt
+      - mkdir $QT
+      - cd $PREFIX
+      - export OPENSSL_LIBS=-L$PREFIX'/lib -lssl -lcrypto'
+      - git clone --depth 1 https://github.com/openssl/openssl.git --branch OpenSSL_1_1_1b
+      - pushd openssl
+      - PATH=$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH ./Configure shared
+        android-arm -D__ANDROID_API__=21 --prefix=$PREFIX
+      - PATH=$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH make depend
+      - PATH=$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH make build_libs
+        SHLIB_VERSION_NUMBER= SHLIB_EXT=.so
+      - PATH=$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH make install_sw
+        SHLIB_VERSION_NUMBER= SHLIB_EXT=.so
+      - popd
+      - cd $QT
+      - git clone https://code.qt.io/qt/qtbase.git --single-branch --branch $QT_VERSION
+      - pushd qtbase
+      - ./configure -xplatform android-clang --disable-rpath -openssl-linked -nomake
+        tests -nomake examples -android-ndk $$NDK$$ -android-sdk $$SDK$$ -no-warnings-are-errors
+        -opensource -confirm-license -prefix $QT -I$PREFIX/include -optimize-size
+      - make -j$(nproc)
+      - make install
+      - popd
+      - git clone https://code.qt.io/qt/qtdeclarative.git --single-branch --branch=$QT_VERSION
+      - pushd qtdeclarative
+      - QMAKESPEC=android-clang $QT/bin/qmake .
+      - make -j$(nproc)
+      - make install
+      - popd
+      - git clone https://code.qt.io/qt/qtquickcontrols2.git --single-branch --branch=$QT_VERSION
+      - pushd qtquickcontrols2
+      - QMAKESPEC=android-clang $QT/bin/qmake .
+      - make -j$(nproc)
+      - make install
+      - popd
+      - git clone https://code.qt.io/qt/qtsvg.git --single-branch --branch=$QT_VERSION
+      - pushd qtsvg
+      - QMAKESPEC=android-clang $QT/bin/qmake .
+      - make -j$(nproc)
+      - make install
+      - popd
+      - git clone https://code.qt.io/qt/qtandroidextras.git --single-branch --branch=$QT_VERSION
+      - pushd qtandroidextras
+      - QMAKESPEC=android-clang $QT/bin/qmake .
+      - make -j$(nproc)
+      - make install
+      - popd
+      - git clone https://code.qt.io/qt/qtgraphicaleffects.git --single-branch --branch=$QT_VERSION
+      - pushd qtgraphicaleffects
+      - QMAKESPEC=android-clang $QT/bin/qmake .
+      - make -j$(nproc)
+      - make install
+      - popd
+      - git clone https://code.qt.io/qt/qtlocation.git --single-branch --branch=$QT_VERSION
+      - pushd qtlocation
+      - QMAKESPEC=android-clang $QT/bin/qmake .
+      - make -j$(nproc)
+      - make install
+      - popd
+      - cd $PREFIX
+      - git clone https://anongit.kde.org/extra-cmake-modules.git --single-branch
+        --branch=$KF5_VERSION
+      - mkdir -p build/extra-cmake-modules
+      - pushd build/extra-cmake-modules
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX  ../../extra-cmake-modules
+      - make
+      - make install
+      - popd
+      - git clone https://github.com/j-jorge/libintl-lite.git
+      - mkdir build/libintl-lite
+      - pushd build/libintl-lite
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_SYSTEM_NAME=Android -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a
+        -DCMAKE_BUILD_TYPE=Release ../../libintl-lite
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/kcodecs.git --single-branch --branch=$KF5_VERSION
+      - mkdir build/kcodecs
+      - pushd build/kcodecs
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DQt5LinguistTools_DIR=/usr/lib/x86_64-linux-gnu/cmake/Qt5LinguistTools
+        -DCMAKE_BUILD_TYPE=Release ../../kcodecs
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/kconfig.git --single-branch --branch=$KF5_VERSION
+      - mkdir build/kconfig
+      - pushd build/kconfig
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DQt5LinguistTools_DIR=/usr/lib/x86_64-linux-gnu/cmake/Qt5LinguistTools
+        -DCMAKE_BUILD_TYPE=Release ../../kconfig
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/kcoreaddons.git --single-branch --branch=$KF5_VERSION
+      - mkdir build/kcoreaddons
+      - pushd build/kcoreaddons
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DQt5LinguistTools_DIR=/usr/lib/x86_64-linux-gnu/cmake/Qt5LinguistTools
+        -DCMAKE_BUILD_TYPE=Release ../../kcoreaddons
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/ki18n.git --single-branch --branch=$KF5_VERSION
+      - mkdir build/ki18n
+      - pushd build/ki18n
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DCMAKE_BUILD_TYPE=Release
+        ../../ki18n
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/karchive.git --single-branch --branch=$KF5_VERSION
+      - mkdir build/karchive
+      - pushd build/karchive
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DCMAKE_BUILD_TYPE=Release
+        ../../karchive
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/kcontacts.git --single-branch --branch=$KF5_VERSION
+      - mkdir build/kcontacts
+      - pushd build/kcontacts
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DCMAKE_BUILD_TYPE=Release
+        ../../kcontacts
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/kmime.git --single-branch --branch=$KDEAPPS_VERSION
+      - mkdir build/kmime
+      - pushd build/kmime
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DCMAKE_BUILD_TYPE=Release
+        ../../kmime
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/kpkpass.git --single-branch --branch=$KDEAPPS_VERSION
+      - mkdir build/kpkpass
+      - pushd build/kpkpass
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DCMAKE_BUILD_TYPE=Release
+        ../../kpkpass
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/kwindowsystem.git --single-branch --branch=$KF5_VERSION
+      - mkdir build/kwindowsystem
+      - pushd build/kwindowsystem
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DQt5LinguistTools_DIR=/usr/lib/x86_64-linux-gnu/cmake/Qt5LinguistTools
+        -DCMAKE_BUILD_TYPE=Release ../../kwindowsystem
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/kholidays.git --single-branch --branch=$KF5_VERSION
+      - mkdir build/kholidays
+      - pushd build/kholidays
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DQt5LinguistTools_DIR=/usr/lib/x86_64-linux-gnu/cmake/Qt5LinguistTools
+        -DCMAKE_BUILD_TYPE=Release ../../kholidays
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/kirigami.git --single-branch --branch=$KF5_VERSION
+      - mkdir build/kirigami
+      - pushd build/kirigami
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DQt5LinguistTools_DIR=/usr/lib/x86_64-linux-gnu/cmake/Qt5LinguistTools
+        -DCMAKE_BUILD_TYPE=Release ../../kirigami
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/knotifications.git --single-branch --branch=$KF5_VERSION
+      - mkdir build/knotifications
+      - pushd build/knotifications
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DQt5LinguistTools_DIR=/usr/lib/x86_64-linux-gnu/cmake/Qt5LinguistTools
+        -DCMAKE_BUILD_TYPE=Release -DANDROID_SDK_ROOT=$$SDK$$  ../../knotifications
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/kpublictransport.git
+      - mkdir build/kpublictransport
+      - pushd build/kpublictransport
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DBUILD_TESTING=Off
+        -DCMAKE_BUILD_TYPE=Release ../../kpublictransport
+      - make
+      - make install
+      - popd
+      - git clone https://github.com/fukuchi/libqrencode.git --single-branch
+      - mkdir build/libqrencode
+      - pushd build/libqrencode
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DWITH_TOOLS=OFF
+        -DCMAKE_BUILD_TYPE=Release ../../libqrencode
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/prison.git --single-branch --branch=$KF5_VERSION
+      - mkdir build/prison
+      - pushd build/prison
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off  ../../prison -DCMAKE_BUILD_TYPE=Release
+      - make
+      - make install
+      - popd
+      - export toolchainPath=$PREFIX/android-arm-toolchain
+      - export ANDROID_NDK_TOOLCHAIN_PREFIX=arm-linux-androideabi
+      - python3 /ndk/build/tools/make_standalone_toolchain.py --install-dir=$toolchainPath
+        --api 21 --stl=libc++ --arch=arm
+      - git clone --depth 1 https://git.sv.nongnu.org/r/freetype/freetype2.git --single-branch
+        -b VER-2-10-1
+      - pushd freetype2
+      - export OLDPATH=$PATH
+      - export PATH=$toolchainPath/bin:$PATH
+      - export AR=$ANDROID_NDK_TOOLCHAIN_PREFIX-ar
+      - export AS=$ANDROID_NDK_TOOLCHAIN_PREFIX-clang
+      - export CC=$ANDROID_NDK_TOOLCHAIN_PREFIX-clang
+      - export CXX=$ANDROID_NDK_TOOLCHAIN_PREFIX-clang++
+      - export LD=$ANDROID_NDK_TOOLCHAIN_PREFIX-ld
+      - export STRIP=$ANDROID_NDK_TOOLCHAIN_PREFIX-strip
+      - export RANLIB=$ANDROID_NDK_TOOLCHAIN_PREFIX-ranlib
+      - export CFLAGS='-D__ANDROID_API__21 -std=gnu99'
+      - ./autogen.sh
+      - ./configure --prefix=$PREFIX --host=${ANDROID_NDK_TOOLCHAIN_PREFIX}
+      - make
+      - make install
+      - popd
+      - export PATH=$OLDPATH
+      - export AR=
+      - export AS=
+      - export CC=
+      - export CXX=
+      - export LD=
+      - export STRIP=
+      - export RANLIB=
+      - export CFLAGS=
+      - git clone git://anongit.freedesktop.org/poppler/poppler --single-branch --branch=poppler-0.84.0
+      - mkdir build/poppler
+      - pushd build/poppler
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DENABLE_DCTDECODER=unmaintained -DENABLE_LIBOPENJPEG=unmaintained
+        -DENABLE_CPP=OFF -DCMAKE_ANDROID_API=24 -DBUILD_QT5_TESTS=OFF -DENABLE_UTILS=OFF
+        -DENABLE_UNSTABLE_API_ABI_HEADERS=ON -DENABLE_UTILS=OFF -DCMAKE_BUILD_TYPE=Release
+        ../../poppler
+      - make
+      - make install
+      - popd
+      - git clone https://github.com/nu-book/zxing-cpp.git --single-branch
+      - mkdir build/zxing-cpp
+      - pushd build/zxing-cpp
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DCMAKE_BUILD_TYPE=Release
+        ../../zxing-cpp
+      - make
+      - make install
+      - popd
+      - git clone https://anongit.kde.org/kitinerary.git --single-branch --branch=$KDEAPPS_VERSION
+      - mkdir build/kitinerary
+      - pushd build/kitinerary
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_SYSTEM_NAME=Android
+        -DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a -DBUILD_TESTING=Off -DCMAKE_BUILD_TYPE=Release  ../../kitinerary
+      - make
+      - make install
+      - popd
+      - mkdir build/itinerary
+      - pushd build/itinerary
+      - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_PREFIX_PATH="$QT;$PREFIX" -DCMAKE_TOOLCHAIN_FILE=$PREFIX/share/ECM/toolchain/Android.cmake
+        -DQTANDROID_EXPORTED_TARGET=itinerary-app -DANDROID_APK_DIR=$BASE/android
+        -DCMAKE_BUILD_TYPE=Release $BASE
+      - make
+      - make install
+      - make create-apk ARGS="--release"
+      - popd
+      - cp build/itinerary/itinerary-app_build_apk//build/outputs/apk/release/itinerary-app_build_apk-release-unsigned.apk
+        $BASE
+    ndk: r18b
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 0.0.1
+CurrentVersionCode: 1
