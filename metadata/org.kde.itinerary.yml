@@ -19,7 +19,7 @@ Repo: https://invent.kde.org/kde/itinerary/
 Builds:
   - versionName: 0.0.1
     versionCode: 1
-    commit: fdroid
+    commit: fdroid-0.99
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y g++ qttools5-dev-tools -t stretch-backports cmake
