@@ -602,6 +602,9 @@ Builds:
     build:
       - cd jni/deltachat-core-rust
       - ../../$$rustup$$/rustup-init.sh -y
+      - export CC_armv7_linux_androideabi = $$NDK$$/armv7a-linux-androideabi18-clang/lib/
+      - ls -la
+      - ls -la $$NDK$$
       - source $HOME/.cargo/env
       - rustup default $(cat rust-toolchain)
       - rustup target add aarch64-linux-android
