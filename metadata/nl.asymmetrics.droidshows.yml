@@ -292,13 +292,13 @@ Builds:
 
   - versionName: 7.9.9c
     versionCode: 800
-    commit: 8.0.0
+    commit: 7.9.9c
 
-  - versionName: 7.9.9d
+  - versionName: 7.9.9e
     versionCode: 801
-    commit: 7.9.9d
+    commit: 7.9.9e
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 7.9.9d
+CurrentVersion: 7.9.9e
 CurrentVersionCode: 801
