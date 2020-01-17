@@ -12,13 +12,16 @@ Donate: https://sendto.mozilla.org/page/contribute/openwebfund
 
 Name: Fennec F-Droid
 Description: |-
-    Browser using the Gecko layout engine to render web pages, which implements
-    current and anticipated web standards.
+    Fennec F-Droid is the latest release of the Mozilla Firefox web browser for
+    Android. It uses the Gecko layout engine to render web pages, which
+    implements current and anticipated web standards. This browser is fast,
+    respects privacy, blocks thousands of online trackers and can sync your
+    Firefox account using client-side encryption.
 
-    Fennec F-Droid is based on the latest Firefox release. It's focused on removing
-    any proprietary bits found in official Mozilla's builds. There might still be
-    some binaries left and the app (or some builds) might get removed or re-pushed
-    anytime.
+    This build made by F-Droid focuses on removing proprietary parts or privacy
+    sensitive functionality from Mozilla's version such as crash reporter,
+    updater, tests and recommended by pocket. There might still be some binaries
+    left and the app (or some builds) might get removed or re-pushed anytime.
 
 RepoType: hg
 Repo: https://hg.mozilla.org/releases/mozilla-esr68/
