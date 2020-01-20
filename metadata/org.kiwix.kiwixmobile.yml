@@ -161,8 +161,10 @@ Builds:
     gradle:
       - yes
     output: build/outputs/apk/release/dev-universal-release.apk
-    rm:
-      - app/gradle
+    scanignore:
+      - buildSrc
+      - .gradle
+
 
 MaintainerNotes: |-
     For 2.2 and older repo: https://github.com/kiwix/kiwix-xulrunner
