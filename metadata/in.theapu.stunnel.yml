@@ -3,11 +3,11 @@ Categories:
   - Connectivity
   - Security
 License: GPL-3.0-or-later
-SourceCode: https://github.com/theapu/STunnel.git
-IssueTracker: https://github.com/theapu/STunnel.git/issues
+SourceCode: https://github.com/theapu/STunnel
+IssueTracker: https://github.com/theapu/STunnel/issues
 
 RepoType: git
-Repo: https://github.com/theapu/STunnel.git
+Repo: https://github.com/theapu/STunnel
 
 Builds:
   - versionName: '1.0'
