@@ -8,16 +8,18 @@ WebSite: https://open-archive.net
 SourceCode: https://github.com/OpenArchive/openarchive-android
 IssueTracker: https://github.com/OpenArchive/openarchive-android/issues
 
-AutoName: OpenArchive
+AutoName: OpenArchive Save
 Description: |
+    Save by OpenArchive enables you to safely preserve, organize, and share your mobile media.
+    Designed with and for newsrooms, human rights defenders, and archivists, Save keeps you in control of your mobile media at all times.
     Add metadata and Creative Commons licensing to your audiovisual
-    media and then send it to the Internet Archive via Tor. It offers
-    more agency over your media, while protecting civil liberties and
+    media and then send it to the Internet Archive or any WebDAV server via Tor.
+    It offers more agency over your media, while protecting civil liberties and
     increasing interoperability for those interested in finding it and
     reusing it in the future.
 
 RepoType: git
-Repo: https://github.com/OpenArchive/openarchive-android
+Repo: https://github.com/OpenArchive/Save-app-android
 
 Builds:
   - versionName: 0.0.16
@@ -36,6 +38,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.2.2-beta-7
+    versionCode: 20217
+    commit: 0.2.2-beta-7
+    subdir: app
+    submodules: no
+    gradle:
+      - yes
+
 MaintainerNotes: |
     Binaries are here:
     https://github.com/OpenArchive/openarchive/releases/download/%v/openarchive-%v.apk
@@ -43,5 +53,5 @@ MaintainerNotes: |
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.17-beta-8
-CurrentVersionCode: 1718
+CurrentVersion: 0.2.2-beta-7
+CurrentVersionCode: 20217
