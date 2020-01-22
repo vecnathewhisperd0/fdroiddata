@@ -9,10 +9,6 @@ Donate: https://activitywatch.net/donate/
 LiberapayID: '1586504'
 Bitcoin: 1NSxJs1wYUrRv53ZVH2DX9fquXdSPAdyYh
 
-Summary: Track how you spend your time on all your devices
-Description: ActivityWatch is an open source and cross-platform app that automatically
-    tracks how you spend your time in apps, on the web, and more.
-
 RepoType: git
 Repo: https://github.com/ActivityWatch/aw-android
 Binaries: https://github.com/ActivityWatch/aw-android/releases/download/v%v/aw-android.apk
