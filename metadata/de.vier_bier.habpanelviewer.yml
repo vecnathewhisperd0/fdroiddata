@@ -68,7 +68,8 @@ Builds:
     subdir: app
     gradle:
       - yes
-    rm: app/src/test
+    rm:
+      - app/src/test
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
