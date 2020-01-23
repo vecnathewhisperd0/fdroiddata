@@ -137,9 +137,9 @@ Builds:
       - grep archash ../gradle.properties >> gradle.properties
     scanignore:
       - android/src/mindustry/android/AndroidRhinoContext.java
+      - annotations/src/main/resources/DS_Store
     scandelete:
       - android/libs
-      - annotations/src/main/resources/DS_Store
 
 MaintainerNotes: |-
     libgdx.so and libgdx-freetype.so binaries are extracted from
