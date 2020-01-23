@@ -5,10 +5,10 @@ WebSite: https://bitbucket.org/oF2pks/kaltura-device-info-android
 SourceCode: https://bitbucket.org/oF2pks/kaltura-device-info-android/src
 IssueTracker: https://forum.xda-developers.com/android/apps-games/appfoss-googleserviceframework-gsf-t3849908
 
-AutoName: (F-Droid) kDI
+AutoName: Kaltura Device Info
 Description: |-
-    Re-branded KalturaDeviceInfo to provides GSF id (needed for Google
-    uncertified devices), checks about Widevine & media decoders plus detection
+    Re-branded KalturaDeviceInfo to provide GSF id (needed for Google
+    uncertified devices), check about Widevine & media decoders plus detect
     for Treble & a/b Seamless update (and others system IDs).
 
     This app is a basic json example that shows how much any app, with
