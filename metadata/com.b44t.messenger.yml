@@ -622,6 +622,7 @@ Builds:
       - echo 'linker = "$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android21-clang"'
         >> $HOME/.cargo/config
       - cd ../..
+      - sed -i -e 's/rm /rm -f /g' ndk-make.sh
       - ./ndk-make.sh
     ndk: r20b
 
