@@ -590,9 +590,9 @@ Builds:
     build: $$NDK$$/ndk-build -j `nproc`
     ndk: r14b
 
-  - versionName: 1.1.0
-    versionCode: 572
-    commit: 369f1c4fac89ee85e598b4f2f37bcbbc92f7feaa
+  - versionName: 1.0.3
+    versionCode: 571
+    commit: v1.0.3
     submodules: true
     gradle:
       - fat
@@ -627,5 +627,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9]+\.[0-9]+\.[0-9]+$
-CurrentVersion: 1.1.1
-CurrentVersionCode: 573
+CurrentVersion: 1.0.3
+CurrentVersionCode: 571
