@@ -316,7 +316,7 @@ Builds:
       - bash copy.sh
     ndk: r20b
 
-AutoUpdateMode: Version SnoopSnitch-%v
+AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: 2.0.10
 CurrentVersionCode: 39
