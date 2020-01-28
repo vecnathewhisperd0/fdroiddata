@@ -160,12 +160,12 @@ Builds:
     subdir: app
     gradle:
       - yes
-    gradleprops:
-      - disableSigning
     output: build/outputs/apk/release/dev-universal-release-unsigned.apk
     scanignore:
       - buildSrc
       - .gradle
+    gradleprops:
+      - disableSigning
 
 MaintainerNotes: |-
     For 2.2 and older repo: https://github.com/kiwix/kiwix-xulrunner
