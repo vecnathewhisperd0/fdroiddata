@@ -26,9 +26,9 @@ Description: |-
     distributions. Access the built-in help by long-pressing anywhere on the
     terminal and selecting the Help menu option to learn more.
 
-    Read help online: [https://termux.com/help]
+    Read help online: [https://wiki.termux.com/]
 
-    Google+ Community: [https://termux.com/community]
+    Reddit Community: [https://termux.com/community]
 
 RepoType: git
 Repo: https://github.com/termux/termux-app
@@ -543,7 +543,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.86'
+    versionCode: 86
+    commit: v0.86
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.88'
+    versionCode: 88
+    commit: v0.88
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '0.84'
-CurrentVersionCode: 84
+CurrentVersion: '0.88'
+CurrentVersionCode: 88

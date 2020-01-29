@@ -296,9 +296,29 @@ Builds:
     rm:
       - app/libs/*.jar
 
+  - versionName: '2.969'
+    versionCode: 29
+    commit: v2.969
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.970'
+    versionCode: 30
+    commit: v2.970
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
 MaintainerNotes: '* Current versions include app/libs/*.jar. Remove them.'
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: '2.968'
-CurrentVersionCode: 28
+CurrentVersion: '2.970'
+CurrentVersionCode: 30

@@ -90,7 +90,23 @@ Builds:
       - floss
       - osm
 
+  - versionName: 4.0.5.5
+    versionCode: 70
+    commit: v4.0.5.5
+    subdir: app
+    gradle:
+      - floss
+      - osm
+
+  - versionName: 4.0.5.6
+    versionCode: 71
+    commit: v4.0.5.6
+    subdir: app
+    gradle:
+      - floss
+      - osm
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 4.0.5.4
-CurrentVersionCode: 69
+CurrentVersion: 4.0.5.6
+CurrentVersionCode: 71

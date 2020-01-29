@@ -185,56 +185,6 @@ Builds:
     scandelete:
       - android/libs
 
-  - versionName: 3.3.0-patch1
-    versionCode: 329
-    commit: 3.3.0-patch1
-    subdir: android
-    gradle:
-      - yes
-    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
-    scandelete:
-      - android/libs
-
-  - versionName: 3.3.1
-    versionCode: 330
-    commit: 3.3.1
-    subdir: android
-    gradle:
-      - yes
-    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
-    scandelete:
-      - android/libs
-
-  - versionName: 3.3.2
-    versionCode: 332
-    commit: 3.3.2
-    subdir: android
-    gradle:
-      - yes
-    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
-    scandelete:
-      - android/libs
-
-  - versionName: 3.3.3
-    versionCode: 333
-    commit: 3.3.3
-    subdir: android
-    gradle:
-      - yes
-    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
-    scandelete:
-      - android/libs
-
-  - versionName: 3.3.4
-    versionCode: 334
-    commit: 3.3.4
-    subdir: android
-    gradle:
-      - yes
-    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
-    scandelete:
-      - android/libs
-
   - versionName: 3.3.5
     versionCode: 336
     commit: 3.3.5
@@ -244,8 +194,100 @@ Builds:
     prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
     scandelete:
       - android/libs
+      - desktop
+
+  - versionName: 3.3.8
+    versionCode: 341
+    commit: 3.3.8
+    subdir: android
+    gradle:
+      - yes
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    scandelete:
+      - android/libs
+      - desktop
+
+  - versionName: 3.4.4
+    versionCode: 353
+    commit: 3.4.4
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+
+  - versionName: 3.4.6
+    versionCode: 356
+    commit: 3.4.6
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+
+  - versionName: 3.4.7
+    versionCode: 357
+    commit: 3.4.7
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+
+  - versionName: 3.4.8
+    versionCode: 358
+    commit: 3.4.8
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+
+  - versionName: 3.5.0
+    versionCode: 360
+    commit: 3.5.0
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+
+  - versionName: 3.5.2
+    versionCode: 362
+    commit: 3.5.2
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+
+  - versionName: 3.5.3
+    versionCode: 363
+    commit: 3.5.3
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+
+  - versionName: 3.5.6
+    versionCode: 368
+    commit: 3.5.6
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.3.5
-CurrentVersionCode: 336
+CurrentVersion: 3.5.6
+CurrentVersionCode: 368

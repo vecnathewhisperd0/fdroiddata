@@ -132,7 +132,13 @@ Builds:
     gradle:
       - git
 
+  - versionName: 2.3.4
+    versionCode: 281
+    commit: 2.3.4
+    gradle:
+      - git
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9]+\.[0-9]+\.[0-9]+$
-CurrentVersion: 2.3.0-git
-CurrentVersionCode: 276
+CurrentVersion: 2.3.4
+CurrentVersionCode: 281

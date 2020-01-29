@@ -294,7 +294,11 @@ Builds:
     versionCode: 800
     commit: 8.0.0
 
+  - versionName: 7.9.10
+    versionCode: 70910
+    commit: 7.9.10
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 7.9.9c
-CurrentVersionCode: 800
+CurrentVersion: 7.9.10
+CurrentVersionCode: 70910
