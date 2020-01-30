@@ -17,9 +17,9 @@ Builds:
     commit: v1.2
     subdir: app
     submodules: true
-    ndk: r20b
     gradle:
       - yes
+    ndk: r20b
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
