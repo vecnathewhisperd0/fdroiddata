@@ -14,9 +14,9 @@ Builds:
   - versionName: '0.31'
     versionCode: 24
     commit: v0.31
-    output: app/build/outputs/apk/release/app-release-unsigned.apk
     gradle:
       - yes
+    output: app/build/outputs/apk/release/app-release-unsigned.apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
