@@ -5,16 +5,16 @@ Categories:
   - Security
 License: MIT
 AuthorName: NiciDieNase
+WebSite: https://github.com/NiciDieNase/chaosflix
 SourceCode: https://github.com/NiciDieNase/chaosflix
 IssueTracker: https://github.com/NiciDieNase/chaosflix/issues
-WebSite: https://github.com/NiciDieNase/chaosflix
 
 AutoName: ${label}
 Summary: client for media.ccc.de
 Description: |-
-  Chaosflix as a free Android client for media.ccc.de. It is available for Android
-  AndroidTV and Fire TV.
-  .
+    Chaosflix as a free Android client for media.ccc.de. It is available for Android
+    AndroidTV and Fire TV.
+    .
 
 RepoType: git
 Repo: https://github.com/NiciDieNase/chaosflix
@@ -33,8 +33,10 @@ Builds:
       - export VERSION_CODE_TOUCH=$(.circleci/getVersionCode.sh -t)
       - echo "versionCode=${VERSION_CODE_TOUCH}" >> gradle.properties
     novcheck: true
+
   - versionName: 0.6.0
     versionCode: 0
+    disable: not finished yet
     commit: develop
     gradle:
       - prodFree
@@ -46,7 +48,6 @@ Builds:
       - export VERSION_CODE_TOUCH=$(.circleci/getVersionCode.sh -t)
       - echo "versionCode=${VERSION_CODE_TOUCH}" >> gradle.properties
     novcheck: true
-    disable: not finished yet
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
