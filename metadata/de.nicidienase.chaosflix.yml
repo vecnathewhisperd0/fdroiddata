@@ -9,7 +9,7 @@ WebSite: https://github.com/NiciDieNase/chaosflix
 SourceCode: https://github.com/NiciDieNase/chaosflix
 IssueTracker: https://github.com/NiciDieNase/chaosflix/issues
 
-AutoName: ${label}
+AutoName: Chaosflix
 Summary: client for media.ccc.de
 Description: |-
     Chaosflix as a free Android client for media.ccc.de. It is available for Android
