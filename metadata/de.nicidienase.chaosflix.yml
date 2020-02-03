@@ -1,9 +1,20 @@
 Categories:
   - Multimedia
   - Internet
+  - Science & Education
+  - Security
 License: MIT
+AuthorName: NiciDieNase
 SourceCode: https://github.com/NiciDieNase/chaosflix
 IssueTracker: https://github.com/NiciDieNase/chaosflix/issues
+WebSite: https://github.com/NiciDieNase/chaosflix
+
+AutoName: ${label}
+Summary: client for media.ccc.de
+Description: |-
+  Chaosflix as a free Android client for media.ccc.de. It is available for Android
+  AndroidTV and Fire TV.
+  .
 
 RepoType: git
 Repo: https://github.com/NiciDieNase/chaosflix
