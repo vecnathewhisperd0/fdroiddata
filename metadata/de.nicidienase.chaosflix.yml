@@ -1,0 +1,24 @@
+Categories:
+  - Multimedia
+  - Internet
+License: MIT
+SourceCode: https://github.com/NiciDieNase/chaosflix
+IssueTracker: https://github.com/NiciDieNase/chaosflix/issues
+
+RepoType: git
+Repo: https://github.com/NiciDieNase/chaosflix
+
+Builds:
+  - versionName: 0.6.0
+    versionCode: 1
+    commit: develop
+    gradle:
+      - prodFree
+    output: touch/build/outputs/apk/prodFree/release/touch-prod-free-release-unsigned.apk
+    rm:
+      - leanback
+    prebuild:
+      - sed -i -e "s/, ':leanback'//" settings.gradle
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
