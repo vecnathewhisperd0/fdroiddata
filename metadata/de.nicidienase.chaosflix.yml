@@ -23,5 +23,5 @@ Builds:
       - echo "versionCode=${VERSION_CODE_TOUCH}" >> gradle.properties
     novcheck: true
 
-AutoUpdateMode: None
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
