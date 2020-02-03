@@ -565,7 +565,7 @@ Builds:
 
   - versionName: 4.2.1
     versionCode: 4215
-    commit: '4.2.1'
+    commit: 4.2.1
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y --no-install-recommends cmake -t stretch-backports
