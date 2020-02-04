@@ -20,9 +20,9 @@ RepoType: git
 Repo: https://github.com/NiciDieNase/chaosflix
 
 Builds:
-  - versionName: 0.5.5
-    versionCode: 0
-    commit: 0.5.5
+  - versionName: 0.5.6
+    versionCode: 0 # is replaced by VERSION_CODE_TOUCH (see below)
+    commit: 0.5.6
     gradle:
       - prodFree
     output: touch/build/outputs/apk/prodFree/release/touch-prod-free-release-unsigned.apk
@@ -31,11 +31,12 @@ Builds:
     prebuild:
       - sed -i -e "s/, ':leanback'//" settings.gradle
       - export VERSION_CODE_TOUCH=$(.circleci/getVersionCode.sh -t)
+      - sed -i -e '/appcenter/d' common/build.gradle
       - echo "versionCode=${VERSION_CODE_TOUCH}" >> gradle.properties
     novcheck: true
 
   - versionName: 0.6.0
-    versionCode: 0
+    versionCode: 0 # is replaced by VERSION_CODE_TOUCH (see below)
     disable: not finished yet
     commit: develop
     gradle:
@@ -51,4 +52,4 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.5.5
+CurrentVersion: 0.5.6
