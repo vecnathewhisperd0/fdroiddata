@@ -5,6 +5,7 @@ AuthorName: bitfire web engineering
 WebSite: https://www.davx5.com/
 SourceCode: https://www.davx5.com/source
 IssueTracker: https://www.davx5.com/forums
+Translation: https://www.transifex.com/bitfireAT/davx5/
 Changelog: https://forums.bitfire.at/category/4/davx?tag=announcement
 Donate: https://www.davx5.com/donate
 FlattrID: '2100160'
@@ -1242,7 +1243,23 @@ Builds:
     gradle:
       - standard
 
+  - versionName: 2.6.3-ose
+    versionCode: 328
+    commit: v2.6.3-ose
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 2.6.3.1-ose
+    versionCode: 329
+    commit: v2.6.3.1-ose
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9.]+-ose$
-CurrentVersion: 2.6.2-ose
-CurrentVersionCode: 321
+CurrentVersion: 2.6.3.1-ose
+CurrentVersionCode: 329

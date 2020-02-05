@@ -121,9 +121,9 @@ Builds:
     scandelete:
       - android/libs
 
-  - versionName: 5-fdroid-100
-    versionCode: 100
-    commit: v100
+  - versionName: 5-fdroid-102
+    versionCode: 102
+    commit: a797618f6c5f04b1665b6f2c6d82175b3e63099b
     subdir: android
     gradle:
       - yes
@@ -135,12 +135,14 @@ Builds:
       - echo "buildversion=$$VERCODE$$" >> gradle.properties
       - echo "versionType=fdroid" >> gradle.properties
       - grep archash ../gradle.properties >> gradle.properties
+    scanignore:
+      - android/src/mindustry/android/AndroidRhinoContext.java
     scandelete:
       - android/libs
 
-  - versionName: 5-fdroid-101
-    versionCode: 101
-    commit: v101
+  - versionName: 5-fdroid-103
+    versionCode: 103
+    commit: v103
     subdir: android
     gradle:
       - yes
@@ -152,6 +154,8 @@ Builds:
       - echo "buildversion=$$VERCODE$$" >> gradle.properties
       - echo "versionType=fdroid" >> gradle.properties
       - grep archash ../gradle.properties >> gradle.properties
+    scanignore:
+      - android/src/mindustry/android/AndroidRhinoContext.java
     scandelete:
       - android/libs
 
@@ -161,8 +165,12 @@ MaintainerNotes: |-
 
     The folder "assets/saves" contains savegames not executables.
 
+    android/src/mindustry/android/AndroidRhinoContext.java uses DexClassLoader 
+    together with Mozilla's Rhino to provide JavaScript automation to user mods
+    (https://mindustrygame.github.io/wiki/modding/) 
+
 AutoUpdateMode: Version v%c
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/Anuken/MindustryBuilds/master/version_fdroid.txt|versionCode=(.*)|.|versionName=(.*)
-CurrentVersion: 5-fdroid-101
-CurrentVersionCode: 101
+CurrentVersion: 5-fdroid-103
+CurrentVersionCode: 103

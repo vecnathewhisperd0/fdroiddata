@@ -78,7 +78,25 @@ Builds:
       - yes
     ndk: r17c
 
+  - versionName: 1.3.4
+    versionCode: 10
+    commit: v1.3.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: '1.4'
+    versionCode: 11
+    commit: v1.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r17c
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.3.32
-CurrentVersionCode: 9
+CurrentVersion: '1.4'
+CurrentVersionCode: 11

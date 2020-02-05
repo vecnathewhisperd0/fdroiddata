@@ -69,7 +69,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.2.6
+    versionCode: 8
+    commit: v0.2.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.7
+    versionCode: 9
+    commit: v0.2.7
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9.]*$
-CurrentVersion: 0.2.3
-CurrentVersionCode: 5
+CurrentVersion: 0.2.7
+CurrentVersionCode: 9

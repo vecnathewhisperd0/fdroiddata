@@ -22,7 +22,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.2'
+    versionCode: 12
+    commit: v1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.5'
+    versionCode: 14
+    commit: v1.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.6'
+    versionCode: 15
+    commit: v1.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.7'
+    versionCode: 16
+    commit: v1.7
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
-CurrentVersion: '1.1'
-CurrentVersionCode: 11
+CurrentVersion: '1.7'
+CurrentVersionCode: 16

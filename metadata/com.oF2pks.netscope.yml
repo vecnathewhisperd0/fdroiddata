@@ -4,6 +4,8 @@ License: GPL-3.0-only
 SourceCode: https://bitbucket.org/oF2pks/netscope
 IssueTracker: https://bitbucket.org/oF2pks/netscope/issues
 
+Disabled: The logo violates NetScape trademark.
+
 AutoName: Netscope
 Description: |-
     When you share a link with Netscope, it shows the URL and provides a list of Web browsers to open the link with. It has no launcher icon and uses no permissions.
@@ -28,7 +30,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.2-5
+    versionCode: 5
+    commit: v2.2-5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2-6
+    versionCode: 6
+    commit: v2.2-6
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2-4
-CurrentVersionCode: 4
+CurrentVersion: 2.2-6
+CurrentVersionCode: 6

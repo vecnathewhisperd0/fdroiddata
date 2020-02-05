@@ -1972,7 +1972,97 @@ Builds:
       - full
     prebuild: sed -i -e '/keystoreProperties/d' build.gradle
 
+  - versionName: '1.876'
+    versionCode: 876
+    commit: '1.876'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.880'
+    versionCode: 880
+    commit: '1.880'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.885'
+    versionCode: 885
+    commit: '1.885'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.889'
+    versionCode: 889
+    commit: '1.889'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.895'
+    versionCode: 895
+    commit: '1.895'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.907'
+    versionCode: 907
+    commit: '1.907'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.914'
+    versionCode: 914
+    commit: '1.914'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.928'
+    versionCode: 928
+    commit: '1.928'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.932'
+    versionCode: 932
+    commit: '1.932'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
+  - versionName: '1.941'
+    versionCode: 941
+    commit: '1.941'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.870'
-CurrentVersionCode: 870
+CurrentVersion: '1.941'
+CurrentVersionCode: 941

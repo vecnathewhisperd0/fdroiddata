@@ -475,6 +475,6 @@ MaintainerNotes: |-
     JCenter.
 
 AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
+UpdateCheckMode: Tags .*[0-9]$
 CurrentVersion: 0.47.2
 CurrentVersionCode: 472

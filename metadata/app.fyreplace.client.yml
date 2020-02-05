@@ -68,7 +68,71 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.6.2
+    versionCode: 6002
+    commit: v0.6.2
+    subdir: app
+    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
+  - versionName: 0.6.3
+    versionCode: 6003
+    commit: v0.6.3
+    subdir: app
+    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
+  - versionName: 0.6.4
+    versionCode: 6004
+    commit: v0.6.4
+    subdir: app
+    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
+  - versionName: 0.6.5
+    versionCode: 6005
+    commit: v0.6.5
+    subdir: app
+    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
+  - versionName: 0.6.6
+    versionCode: 6006
+    commit: v0.6.6
+    subdir: app
+    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
+  - versionName: 0.6.7
+    versionCode: 6007
+    commit: v0.6.7
+    subdir: app
+    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
+  - versionName: 0.6.8
+    versionCode: 6008
+    commit: v0.6.8
+    subdir: app
+    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
+  - versionName: 0.6.9
+    versionCode: 6009
+    commit: v0.6.9
+    subdir: app
+    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.5.5
-CurrentVersionCode: 5005
+CurrentVersion: 0.6.9
+CurrentVersionCode: 6009

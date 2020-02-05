@@ -5,13 +5,6 @@ SourceCode: https://github.com/domoritz/open-mensa-android
 IssueTracker: https://github.com/domoritz/open-mensa-android/issues
 
 AutoName: OpenMensa
-Description: |-
-    OpenMensa shows you what you can eat in the cafeteria or canteen at your
-    university. At the moment about 150 canteens in German speaking countries are
-    supported. In order to get today's meal plan, this app connects to the database
-    at [http://openmensa.org].
-
-    Status: BETA.
 
 RepoType: git
 Repo: https://github.com/domoritz/open-mensa-android.git
@@ -108,7 +101,19 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.0.0
+    versionCode: 22
+    commit: 1.0.0
+    gradle:
+      - yes
+
+  - versionName: 1.0.1
+    versionCode: 23
+    commit: 1.0.1
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.21'
-CurrentVersionCode: 21
+CurrentVersion: 1.0.1
+CurrentVersionCode: 23
