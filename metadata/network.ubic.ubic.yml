@@ -133,6 +133,10 @@ Builds:
       - distribution/
     build:
       - pushd $$openssl_for_ios_and_android$$
+      - ./build-openssl4android.sh android64
+      - popd
+      - mv $$openssl_for_ios_and_android$$/libs/x86_64/lib/*.a ../distribution/openssl/x86_64/lib/
+      - pushd $$openssl_for_ios_and_android$$
       - ./build-openssl4android.sh android
       - popd
       - mv $$openssl_for_ios_and_android$$/libs/armeabi/lib/*.a ../distribution/openssl/armeabi/lib/
