@@ -5,9 +5,9 @@ Categories:
 License: GPL-2.0-or-later
 AuthorName: Belledonne Communications
 WebSite: https://www.linphone.org/
-SourceCode: http://www.linphone.org/technical-corner/linphone/downloads
-IssueTracker: https://github.com/BelledonneCommunications/linphone-android/issues
-Changelog: https://github.com/BelledonneCommunications/linphone-android/blob/HEAD/CHANGELOG.md#change-log
+SourceCode: http://gitlab.linphone.org
+IssueTracker: https://gitlab.linphone.org/BC/public/linphone-android/issues
+Changelog: https://gitlab.linphone.org/BC/public/linphone-android/blob/HEAD/CHANGELOG.md
 
 AutoName: Linphone
 Description: |-
@@ -605,7 +605,7 @@ Builds:
 MaintainerNotes: Main repo for linphone-sdk is upstreams private Gitlab instance with
     submodules, should we switch the main Repo link too?
 
-AutoUpdateMode: None
+AutoUpdateMode: Version %v
 UpdateCheckMode: None
 CurrentVersion: 4.2.1
 CurrentVersionCode: 4215
