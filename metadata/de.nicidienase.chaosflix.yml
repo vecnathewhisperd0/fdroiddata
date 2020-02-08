@@ -9,13 +9,6 @@ WebSite: https://github.com/NiciDieNase/chaosflix
 SourceCode: https://github.com/NiciDieNase/chaosflix
 IssueTracker: https://github.com/NiciDieNase/chaosflix/issues
 
-AutoName: Chaosflix
-Summary: client for media.ccc.de
-Description: |-
-    Chaosflix as a free Android client for media.ccc.de. It is available for Android
-    AndroidTV and Fire TV.
-    .
-
 RepoType: git
 Repo: https://github.com/NiciDieNase/chaosflix
 
