@@ -14,7 +14,7 @@ Repo: https://github.com/NiciDieNase/chaosflix
 
 Builds:
   - versionName: 0.5.7
-    versionCode: 1
+    versionCode: 144
     commit: 0.5.7
     gradle:
       - prodFree
@@ -25,8 +25,7 @@ Builds:
       - sed -i -e "s/, ':leanback'//" settings.gradle
       - export VERSION_CODE_TOUCH=$(.circleci/getVersionCode.sh -t)
       - echo "versionCode=${VERSION_CODE_TOUCH}" >> gradle.properties
-    novcheck: true
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
+AutoUpdateMode: None
+UpdateCheckMode: None
 CurrentVersion: 0.5.7
