@@ -177,6 +177,9 @@ Builds:
   - versionName: 1.7.1
     versionCode: 25
     commit: 13e668a21f9680d6f310ed21c4fb58bccbde186e
+    subdir: app
+    gradle:
+      - yes
     srclibs:
       - libgdx@gdx-parent-1.9.10
     rm:
@@ -201,10 +204,8 @@ Builds:
       - popd
       - cp $$libgdx$$/dist/gdx.jar libs/gdx-1.9.10.jar
       - cp $$libgdx$$/dist/extensions/gdx-box2d/gdx-box2d.jar libs/gdx-box2d-1.9.10.jar
-      - cp -r $$libgdx$$/dist/extensions/gdx-box2d/{arm64-v8a,armeabi-v7a,x86,x86_64} src/main/jniLibs/
-    subdir: app
-    gradle:
-      - yes
+      - cp -r $$libgdx$$/dist/extensions/gdx-box2d/{arm64-v8a,armeabi-v7a,x86,x86_64}
+        src/main/jniLibs/
 
 MaintainerNotes: |-
     sed replaces needed as libgdx upstream currently don't provide a way to only build the android native bins only.
