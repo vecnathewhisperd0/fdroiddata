@@ -170,7 +170,7 @@ Builds:
 
   - versionName: 1.7.1
     versionCode: 25
-    commit: 13e668a21f9680d6f310ed21c4fb58bccbde186e
+    commit: e6f46aad12d01d2bc65b710bbb6854147af14faa
     subdir: app
     gradle:
       - yes
