@@ -13,6 +13,7 @@ Builds:
     versionCode: 12
     commit: 0.1.2
     timeout: 1200
+    gradle: yes
     subdir: app
 
 AutoUpdateMode: Version %v
