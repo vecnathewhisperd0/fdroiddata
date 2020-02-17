@@ -14,7 +14,7 @@ Builds:
     timeout: 1200
     subdir: app
     gradle:
-      - yes    
+      - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
