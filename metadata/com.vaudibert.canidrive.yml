@@ -1,0 +1,16 @@
+License: Apache-2.0
+SourceCode: https://github.com/VincentAudibert/CanIDrive
+IssueTracker: https://github.com/VincentAudibert/CanIDrive/issues
+
+RepoType: git
+Repo: https://github.com/VincentAudibert/CanIDrive
+
+Builds:
+  - versionName: 0.1.2
+    versionCode: 12
+    commit: 0.1.2
+    subdir: app
+    timeout: 1200
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
