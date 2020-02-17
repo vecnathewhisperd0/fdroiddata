@@ -1,3 +1,6 @@
+Categories:
+  - Sports & Health
+
 License: Apache-2.0
 SourceCode: https://github.com/VincentAudibert/CanIDrive
 IssueTracker: https://github.com/VincentAudibert/CanIDrive/issues
@@ -15,5 +18,3 @@ Builds:
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 
-Categories:
-  - Sports & Health
