@@ -9,8 +9,11 @@ Builds:
   - versionName: 0.1.2
     versionCode: 12
     commit: 0.1.2
-    subdir: app
     timeout: 1200
+    subdir: app
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
+
+Categories:
+  - Sports & Health
