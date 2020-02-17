@@ -12,5 +12,5 @@ Builds:
     subdir: app
     timeout: 1200
 
-AutoUpdateMode: Version
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
