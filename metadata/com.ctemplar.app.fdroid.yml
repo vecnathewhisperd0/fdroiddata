@@ -10,7 +10,7 @@ SourceCode: https://github.com/CTemplar/android/tree/fdroid
 IssueTracker: https://github.com/CTemplar/android/issues
 
 RepoType: git
-Repo: https://github.com/CTemplar/android
+Repo: https://github.com/CTemplar/android.git
 
 Builds:
   - versionName: 1.0.0
