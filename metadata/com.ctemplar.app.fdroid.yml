@@ -1,9 +1,7 @@
 AntiFeatures:
   - NonFreeNet
 Categories:
-  - Connectivity
-  - Security
-  - Writing
+  - Internet
 License: Apache-2.0
 WebSite: https://ctemplar.com
 SourceCode: https://github.com/CTemplar/android/tree/fdroid
