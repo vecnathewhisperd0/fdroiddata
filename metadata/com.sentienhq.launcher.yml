@@ -1,0 +1,35 @@
+Categories:
+  - Theming
+License: GPL-3.0-only
+WebSite: https://sentienhq.com/sentien-launcher/
+SourceCode: https://github.com/sentienhq/Sentien-Launcher
+IssueTracker: https://github.com/sentienhq/Sentien-Launcher/issues
+Changelog: https://github.com/sentienhq/Sentien-Launcher/releases
+
+AutoName: Sentien Launcher
+Description: |-
+  Designed with your digital wellbeing in mind. Combat the overwhelming clutter of
+  your home screen and give your attention span a break with the minimalist interface
+  of Sentien Launcher. Cut down on the compulsion to check your phone by searching for
+  the app you want and customizing your notifications.
+  Endorsements
+  “The happiness of your life depends upon the quality of your user interface. Dwell on the beauty of Android Launcher. Use Sentien.”
+  - Marcus "Gus" Aurelius (Roman Emperor)
+  Visit our [https://sentienhq.com/sentien-launcher/ Sentien Launcher page] to see more details.
+  Based on amazing [https://f-droid.org/packages/fr.neamar.kiss/ KISS Launcher]
+
+RepoType: git
+Repo: https://sentienhq.com/sentien-launcher/
+
+Builds:
+  - versionName: 3.11.4
+    versionCode: 165
+    commit: v3.11.4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags ^v[0-9\.]+$
+CurrentVersion: 3.11.4
+CurrentVersionCode: 165
