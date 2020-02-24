@@ -20,12 +20,13 @@ RepoType: git
 Repo: https://github.com/sentienhq/Sentien-Launcher
 
 Builds:
-    - versionName: 3.11.4
-      versionCode: 165
-      commit: v3.11.4
-      subdir: app
-      gradle:
-          - yes
+  - versionName: 3.11.4
+    versionCode: 165
+    commit: v3.11.4
+    subdir: app
+    gradle:
+      - yes
+
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9\.]+$
