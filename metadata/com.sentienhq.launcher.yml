@@ -1,5 +1,5 @@
 Categories:
-    - Theming
+  - Theming
 License: GPL-3.0-only
 WebSite: https://sentienhq.com/sentien-launcher/
 SourceCode: https://github.com/sentienhq/Sentien-Launcher
@@ -26,7 +26,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9\.]+$
