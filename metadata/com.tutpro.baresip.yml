@@ -1074,7 +1074,7 @@ Builds:
       - popd
     ndk: r20b
 
-- versionName: 17.1.0
+  - versionName: 17.1.0
     versionCode: 111
     commit: 17.1.0
     subdir: app
