@@ -90,8 +90,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i '/if (signingConfigs\.release\.keyAlias != null) {/,/}/d' build.gradle
+    prebuild: sed -i '/if (signingConfigs\.release\.keyAlias != null) {/,/}/d' build.gradle
 
 MaintainerNotes: |-
     Upstream tags it's releases, but ver and vercode are generated within gradle,
