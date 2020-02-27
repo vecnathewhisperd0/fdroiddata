@@ -189,6 +189,8 @@ Builds:
     subdir: app
     gradle:
       - yes
+    patch:
+      - gradle-keystore.patch
 
 AutoUpdateMode: None
 UpdateCheckMode: None
