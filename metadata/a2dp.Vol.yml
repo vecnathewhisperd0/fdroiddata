@@ -187,10 +187,10 @@ Builds:
     versionCode: 169
     commit: 2.13.0.4
     subdir: app
-    gradle:
-      - yes
     patch:
       - gradle-keystore.patch
+    gradle:
+      - yes
 
 AutoUpdateMode: None
 UpdateCheckMode: None
