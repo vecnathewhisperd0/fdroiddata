@@ -110,7 +110,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.1.2
+    versionCode: 26
+    commit: v1.1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.4
+    versionCode: 28
+    commit: v1.1.4
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^((?!alpha|beta).)*$
-CurrentVersion: 1.1.1
-CurrentVersionCode: 25
+CurrentVersion: 1.1.4
+CurrentVersionCode: 28

@@ -319,7 +319,43 @@ Builds:
     scanignore:
       - buildSrc
 
+  - versionName: 1.4.8
+    versionCode: 53
+    commit: v1.4.8
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+  - versionName: 2.0.0
+    versionCode: 54
+    commit: v2.0.0
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+  - versionName: 2.0.1
+    versionCode: 55
+    commit: v2.0.1
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
+  - versionName: 2.0.2
+    versionCode: 56
+    commit: v2.0.2
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.7
-CurrentVersionCode: 52
+CurrentVersion: 2.0.2
+CurrentVersionCode: 56

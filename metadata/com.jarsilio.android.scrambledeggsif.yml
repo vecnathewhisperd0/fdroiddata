@@ -4,6 +4,7 @@ License: GPL-3.0-only
 AuthorEmail: juam+scrambled@posteo.net
 SourceCode: https://gitlab.com/juanitobananas/scrambled-exif/tree/HEAD
 IssueTracker: https://gitlab.com/juanitobananas/scrambled-exif/issues
+Translation: https://www.transifex.com/juanitobananas/scrambled-exif/
 Changelog: https://gitlab.com/juanitobananas/scrambled-exif/blob/HEAD/CHANGELOG.md
 Bitcoin: 16DXeCxxKGvepYLehyHSr3M1nv1s1eUotZ
 
@@ -245,7 +246,15 @@ Builds:
     gradle:
       - standard
 
+  - versionName: 1.5.0-beta
+    versionCode: 36
+    commit: v1.5.0-beta
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 1.4.7
-CurrentVersionCode: 34
+UpdateCheckMode: Tags ^v[0-9.]+$
+CurrentVersion: 1.4.8
+CurrentVersionCode: 35

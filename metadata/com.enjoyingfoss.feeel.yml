@@ -26,6 +26,15 @@ Builds:
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter build apk
 
+  - versionName: '1.96'
+    versionCode: 8
+    commit: '1.96'
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/proguard-rules.pro
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: '1.990'

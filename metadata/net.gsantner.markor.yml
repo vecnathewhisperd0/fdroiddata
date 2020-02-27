@@ -562,7 +562,21 @@ Builds:
     gradle:
       - FlavorDefault
 
+  - versionName: 2.2.6
+    versionCode: 108
+    commit: v2.2.6
+    subdir: app
+    gradle:
+      - FlavorDefault
+
+  - versionName: 2.2.7
+    versionCode: 109
+    commit: v2.2.7
+    subdir: app
+    gradle:
+      - FlavorDefault
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.5
-CurrentVersionCode: 107
+CurrentVersion: 2.2.7
+CurrentVersionCode: 109

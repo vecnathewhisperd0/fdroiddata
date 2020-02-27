@@ -268,7 +268,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 6.0.2
+    versionCode: 46
+    commit: prim-ftpd-6.0.2
+    subdir: primitiveFTPd
+    gradle:
+      - yes
+
+  - versionName: '6.1'
+    versionCode: 47
+    commit: prim-ftpd-6.1
+    subdir: primitiveFTPd
+    gradle:
+      - yes
+
 AutoUpdateMode: Version prim-ftpd-%v
 UpdateCheckMode: Tags ^prim-ftpd-
-CurrentVersion: '5.17'
-CurrentVersionCode: 43
+CurrentVersion: '6.1'
+CurrentVersionCode: 47

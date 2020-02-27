@@ -8,6 +8,7 @@ SourceCode: https://github.com/westnordost/StreetComplete
 IssueTracker: https://github.com/westnordost/StreetComplete/issues
 Translation: https://poeditor.com/join/project/IE4GC127Ki
 Changelog: https://github.com/westnordost/StreetComplete/releases
+LiberapayID: '1625952'
 
 AutoName: Street­Complete
 Description: |-
@@ -420,8 +421,29 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '16.1'
+    versionCode: 1602
+    commit: v16.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '17.0'
+    versionCode: 1703
+    commit: v17.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '17.3'
+    versionCode: 1706
+    commit: v17.3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckIgnore: (alpha|beta|rc|RC)
-CurrentVersion: '16.0'
-CurrentVersionCode: 1601
+CurrentVersion: '17.3'
+CurrentVersionCode: 1706

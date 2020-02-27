@@ -116,7 +116,42 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 20200106_V32
+    versionCode: 32
+    commit: 20200106_V32
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 20200112_V33
+    versionCode: 33
+    commit: 20200112_V33
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 20200128_V40
+    versionCode: 40
+    commit: 20200128_V40
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 20200204_V41
+    versionCode: 41
+    commit: 20200204_V41
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 20200215_V42
+    versionCode: 42
+    commit: 20200215_V42
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 20191221_VC30
-CurrentVersionCode: 30
+CurrentVersion: 20200215_V42
+CurrentVersionCode: 42

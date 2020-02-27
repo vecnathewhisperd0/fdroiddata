@@ -1,14 +1,14 @@
 Categories:
   - Internet
 License: GPL-3.0-only
-AuthorName: Gianlu
+AuthorName: devgianlu
 AuthorEmail: altomanigianluca@gmail.com
 AuthorWebSite: https://gianlu.xyz/
 SourceCode: https://github.com/devgianlu/Aria2Android
 IssueTracker: https://github.com/devgianlu/Aria2Android/issues
 Translation: https://crowdin.com/project/aria2android
-Changelog: https://github.com/devgianlu/Aria2Android/releases
-Donate: https://www.paypal.me/devgianlu
+Changelog: https://github.com/devgianlu/Aria2Android/blob/HEAD/CHANGELOG.md
+Donate: https://gianlu.xyz/donate/
 LiberapayID: '1381702'
 Bitcoin: 18rrPNGgz8UkzUYgAnqVye83xEe5fB7XfY
 
@@ -246,27 +246,21 @@ Builds:
     prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
 
-  - versionName: 2.4.3
-    versionCode: 63
-    commit: v2.4.3
+  - versionName: 2.5.1
+    versionCode: 65
+    commit: v2.5.1
+    timeout: 14400
     subdir: app
     submodules: true
     gradle:
       - foss
     prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
-
-  - versionName: 2.5.0
-    versionCode: 64
-    commit: v2.5.0
-    subdir: app
-    submodules: true
-    gradle:
-      - foss
-    prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d' build.gradle ../build.gradle
-        ../CommonUtils/build.gradle
+    scandelete:
+      - aria2lib/src/main/jniLibs
+    ndk: r21
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.0
-CurrentVersionCode: 64
+CurrentVersion: 2.5.1
+CurrentVersionCode: 65

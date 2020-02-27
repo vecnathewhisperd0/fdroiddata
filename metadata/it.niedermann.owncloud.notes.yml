@@ -351,7 +351,71 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.4.4
+    versionCode: 67
+    commit: v2.4.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 2.4.6
+    versionCode: 69
+    commit: v2.4.6
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 2.4.8
+    versionCode: 71
+    commit: v2.4.8
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 2.8.0
+    versionCode: 75
+    commit: v2.8.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 2.9.0
+    versionCode: 77
+    commit: v2.9.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 2.10.0
+    versionCode: 78
+    commit: v2.10.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 2.10.1
+    versionCode: 79
+    commit: v2.10.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 2.10.3
+    versionCode: 81
+    commit: v2.10.3
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.1
-CurrentVersionCode: 64
+CurrentVersion: 2.10.3
+CurrentVersionCode: 81

@@ -1,11 +1,11 @@
 Categories:
   - Internet
 License: Apache-2.0
-WebSite: https://k9mail.github.io/
+WebSite: https://k9mail.app/
 SourceCode: https://github.com/k9mail/k-9
 IssueTracker: https://github.com/k9mail/k-9/issues
 Translation: https://www.transifex.com/projects/p/k9mail/
-Changelog: https://k9mail.github.io/k-9/changelog_5.6-MAINT_branch.xml
+Changelog: https://k9mail.app/k-9/changelog_5.6-MAINT_branch.xml
 LiberapayID: '34990'
 
 AutoName: K-9 Mail
@@ -504,11 +504,29 @@ Builds:
       - tools/android-studio/settings.jar
     prebuild: sed -i -e 's/6.0.1/5.6.4/' gradle/wrapper/gradle-wrapper.properties
 
+  - versionName: '5.704'
+    versionCode: 27004
+    commit: '5.704'
+    gradle:
+      - yes
+    output: app/k9mail/build/outputs/apk/release/k9mail-release-unsigned.apk
+    rm:
+      - tools/android-studio/settings.jar
+
+  - versionName: '5.705'
+    versionCode: 27005
+    commit: '5.705'
+    gradle:
+      - yes
+    output: app/k9mail/build/outputs/apk/release/k9mail-release-unsigned.apk
+    rm:
+      - tools/android-studio/settings.jar
+
 MaintainerNotes: |-
     Use output instead of subdir to make gradlew-fdroid correctly determine the gradle version to be used.
     It doesn't work when using subdir because we are two levels deep into the directory structure.
 
-ArchivePolicy: 5 versions
+ArchivePolicy: 7 versions
 AutoUpdateMode: Version %v
 UpdateCheckMode: RepoManifest/5.6-MAINT
 CurrentVersion: '5.600'

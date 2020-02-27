@@ -489,9 +489,9 @@ Builds:
       - cd -
       - cp $$AndBibleJSwordTweaks$$/jsword.jar libs/jsword.jar
 
-  - versionName: 3.2.333
-    versionCode: 333
-    commit: v3.2.333-fdroid
+  - versionName: 3.2.340
+    versionCode: 340
+    commit: v3.2.340-fdroid
     subdir: app
     sudo:
       - apt-get update || apt-get update
@@ -510,6 +510,6 @@ Builds:
       - cp $$AndBibleJSwordTweaks$$/jsword.jar libs/jsword.jar
 
 AutoUpdateMode: Version v%v-fdroid
-UpdateCheckMode: Tags
-CurrentVersion: 3.2.333
-CurrentVersionCode: 333
+UpdateCheckMode: Tags ^v\d+\.\d+\.\d+-fdroid$
+CurrentVersion: 3.2.340
+CurrentVersionCode: 340

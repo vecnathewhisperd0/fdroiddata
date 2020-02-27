@@ -189,7 +189,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 4.1.2
+    versionCode: 31
+    commit: 4.1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.2.0
+    versionCode: 32
+    commit: 4.2.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 4.1.0
-CurrentVersionCode: 29
+CurrentVersion: 4.2.0
+CurrentVersionCode: 32
