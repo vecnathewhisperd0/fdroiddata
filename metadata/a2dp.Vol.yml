@@ -183,7 +183,14 @@ Builds:
       - echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation'
         } }" >> build.gradle
 
+  - versionName: 2.13.0.4
+    versionCode: 169
+    commit: 2.13.0.4
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: None
-UpdateCheckMode: RepoManifest
+UpdateCheckMode: None
 CurrentVersion: 2.13.0.4
 CurrentVersionCode: 169
