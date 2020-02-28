@@ -1072,7 +1072,7 @@ Builds:
       - make download-sources
       - make install-all
       - popd
-    ndk: r20b
+    ndk: r21
 
   - versionName: 17.1.0
     versionCode: 111
