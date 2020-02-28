@@ -187,10 +187,9 @@ Builds:
     versionCode: 169
     commit: 2.13.0.4
     subdir: app
-    patch:
-      - gradle-keystore.patch
     gradle:
       - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
 
 AutoUpdateMode: None
 UpdateCheckMode: None
