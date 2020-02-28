@@ -10,7 +10,7 @@ Changelog: https://github.com/xbrowsersync/app/releases
 Name: xBrowserSync
 
 RepoType: git
-Repo: https://github.com/xbrowsersync/app
+Repo: https://github.com/xbrowsersync/app.git
 
 Builds:
   - versionName: 1.5.1
