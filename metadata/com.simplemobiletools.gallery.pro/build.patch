@@ -1,5 +1,5 @@
---- /home/strech/build.gradle	2020-03-01 00:28:22.000000000 +0200
-+++ build.gradle	2020-03-01 00:28:59.794875876 +0200
+--- a/app/build.gradle
++++ b/app/build.gradle
 @@ -3,12 +3,6 @@
  apply plugin: 'kotlin-android-extensions'
  apply plugin: 'kotlin-kapt'
