@@ -185,13 +185,13 @@ Builds:
 
   - versionName: 2.13.0.4
     versionCode: 169
-    commit: 8c4a14d84a20bfcdf2c4fa0c71a9a85ed42a5fc2
+    commit: 2.13.0.4
     subdir: app
     gradle:
       - yes
     prebuild: sed -i -e '/keystore/d' build.gradle
 
 AutoUpdateMode: Version %v
-UpdateCheckMode: RepoManifest
+UpdateCheckMode: Tags
 CurrentVersion: 2.13.0.4
 CurrentVersionCode: 169
