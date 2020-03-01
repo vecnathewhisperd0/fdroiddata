@@ -615,7 +615,7 @@ Builds:
       - yes
     output: app/build/outputs/apk/release/linphone-android-release-*.apk
     srclibs:
-      - linphone-sdk@4.3.0
+      - linphone-sdk@4.3.1
     rm:
       - app/src/main/java/org/linphone/firebase/Firebase*.java
       - app/google-services.json
