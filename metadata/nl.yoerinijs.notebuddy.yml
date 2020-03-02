@@ -84,7 +84,8 @@ Builds:
     subdir: app
     gradle:
       - fdroidConfig
-    prebuild: echo -e '\nandroid { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+    prebuild: echo -e '\nandroid { lintOptions { checkReleaseBuilds false } }' >>
+        build.gradle
 
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
