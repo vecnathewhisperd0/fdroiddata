@@ -1,0 +1,72 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+License: GPL-2.0-or-later
+SourceCode: https://github.com/Nekogram/Nekogram-FOSS
+IssueTracker: https://github.com/Nekogram/Nekogram-FOSS/issues
+Translation: https://neko.crowdin.com
+
+AutoName: Nekogram
+
+RepoType: git
+Repo: https://github.com/Nekogram/Nekogram-FOSS.git
+
+Builds:
+  - versionName: 5.15.0.3
+    versionCode: 18751
+    commit: 5.15.0.3_1875
+    subdir: TMessagesProj
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y ninja-build golang-go
+    gradle:
+      - armv7
+    rm:
+      - TMessagesProj/jni/libwebp/swig/libwebp.jar
+      - TMessagesProj/jni/ffmpeg/tests/ref/fate/sub-microdvd-remux
+    scandelete:
+      - TMessagesProj/jni
+    build:
+      - export NDK=$$NDK$$
+      - export NINJA_PATH=/usr/bin/ninja
+      - pushd jni
+      - ./build_ffmpeg_clang.sh
+      - ./patch_ffmpeg.sh
+      - ./patch_boringssl.sh
+      - ./build_boringssl.sh
+      - popd
+    ndk: r20b
+
+  - versionName: 5.15.0.3
+    versionCode: 18759
+    commit: 5.15.0.3_1875
+    subdir: TMessagesProj
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y ninja-build golang-go
+    gradle:
+      - afat
+    rm:
+      - TMessagesProj/jni/libwebp/swig/libwebp.jar
+      - TMessagesProj/jni/ffmpeg/tests/ref/fate/sub-microdvd-remux
+    scandelete:
+      - TMessagesProj/jni
+    build:
+      - export NDK=$$NDK$$
+      - export NINJA_PATH=/usr/bin/ninja
+      - pushd jni
+      - ./build_ffmpeg_clang.sh
+      - ./patch_ffmpeg.sh
+      - ./patch_boringssl.sh
+      - ./build_boringssl.sh
+      - popd
+    ndk: r20b
+
+ArchivePolicy: 8 versions
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 5.15.0.3
+CurrentVersionCode: 18759
