@@ -149,6 +149,7 @@ Builds:
 
   - versionName: '3.4'
     versionCode: 45
+    disable: unknown maven
     commit: '3.4'
     subdir: app
     patch:
