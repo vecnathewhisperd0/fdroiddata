@@ -290,5 +290,5 @@ AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/slartus/4pdaClient-plus/master/app/build.gradle|def
     appVersionCode = (.*)|.|def appVersionName = "(.*)"
-CurrentVersion: 3.5.5.6
+CurrentVersion: 3.5.6
 CurrentVersionCode: 636

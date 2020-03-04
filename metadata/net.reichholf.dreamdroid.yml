@@ -75,7 +75,7 @@ Builds:
 
   - versionName: 1.5.438
     versionCode: 438
-    disable: unknwon maven
+    disable: unknown maven
     commit: v1.5.438
     subdir: app
     gradle:
