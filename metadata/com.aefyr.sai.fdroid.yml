@@ -151,15 +151,15 @@ Builds:
     versionCode: 45
     commit: '3.4'
     subdir: app
+    patch:
+      - build.patch
     gradle:
       - fdroid
     srclibs:
       - aefyr-android-filepicker@d7d923f8f58f89c732f31059d74952d7dcefb288
     rm:
       - app/libs/filepicker-release.aar
-    prebuild:
-      - sed -i -e '/maven/,+2d' -e '/io.fabric/d' ../build.gradle
-      - sed -i -e '/io.fabric/d' build.gradle
+    prebuild: sed -i -e '/io.fabric/d' build.gradle
     build:
       - pushd $$aefyr-android-filepicker$$
       - gradle assembleRelease
