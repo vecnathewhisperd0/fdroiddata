@@ -147,10 +147,10 @@ Builds:
       - popd
       - cp $$aefyr-android-filepicker$$/build/outputs/aar/filepicker-release.aar libs/filepicker-release.aar
 
-  - versionName: '3.4'
-    versionCode: 45
+  - versionName: '3.7'
+    versionCode: 48
     disable: unknown maven
-    commit: '3.4'
+    commit: '3.7'
     subdir: app
     patch:
       - build.patch
@@ -169,5 +169,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '3.4'
-CurrentVersionCode: 45
+CurrentVersion: '3.7'
+CurrentVersionCode: 48
