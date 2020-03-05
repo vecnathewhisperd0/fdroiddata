@@ -74,7 +74,7 @@ Builds:
       - cd ../ics-openvpn
       - gradle main:externalNativeBuildCleanNoovpn3Release main:externalNativeBuildNoovpn3Release
     ndk: r20
-    
+
   - versionName: 1.0.3
     versionCode: 147
     commit: 1.0.3
