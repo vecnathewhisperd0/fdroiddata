@@ -1,0 +1,34 @@
+Categories:
+  - Multimedia
+License: GPL-3.0-only
+AuthorName: Andreas Kromke
+SourceCode: https://gitlab.com/AndreasK/opus1-music-player
+IssueTracker: https://gitlab.com/AndreasK/opus1-music-player/issues
+Changelog: https://gitlab.com/AndreasK/opus1-music-player/blob/HEAD/app/src/main/assets/version-history.txt
+
+AutoName: Opus 1 Music Player
+Description: |-
+    Advanced player and management application, especially designed
+    for classical music. Instead of "Artists" and "Songs" in pop(ular) music, this program uses the
+    metadata composer and grouping to organise the music in works (e.g. a symphony)
+    consisting of movements (parts of this work). The music collection can be
+    queried using filters and text search for composer, genre, work, performer, etc..
+
+    This program can be seen as a sophisticated feature upgrade to the Unpopular Music Player.
+
+RepoType: git
+Repo: https://gitlab.com/AndreasK/opus1-music-player.git
+
+Builds:
+  - versionName: '2.15'
+    versionCode: 55
+    commit: v2.15
+    subdir: app
+    gradle:
+      - yes
+    ndk: r18b
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '2.15'
+CurrentVersionCode: 55
