@@ -1,6 +1,8 @@
 Categories:
   - System
 License: Apache-2.0
+AuthorName: KG Soft
+AuthorEmail: kamgsoft@gmail.com
 SourceCode: https://github.com/kamgurgul/cpu-info
 IssueTracker: https://github.com/kamgurgul/cpu-info/issues
 Changelog: https://github.com/kamgurgul/cpu-info/releases
@@ -38,9 +40,37 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 4.3.0
+    versionCode: 40300
+    commit: 4.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.3.1
+    versionCode: 40301
+    commit: 4.3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.3.2
+    versionCode: 40302
+    commit: 4.3.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.3.3
+    versionCode: 40303
+    commit: 4.3.3
+    subdir: app
+    gradle:
+      - yes
+
 MaintainerNotes: We can't use auto update because version code and name are dynamic.
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 4.2.0
-CurrentVersionCode: 40200
+CurrentVersion: 4.3.3
+CurrentVersionCode: 40303

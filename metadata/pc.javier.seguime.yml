@@ -82,7 +82,99 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '2.0'
+    versionCode: 20
+    disable: 'Comandos.java:106: error: cannot find symbol'
+    commit: '2.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.1'
+    versionCode: 21
+    commit: '2.1'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.2'
+    versionCode: 22
+    commit: '2.2'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.3'
+    versionCode: 23
+    commit: '2.3'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.5'
+    versionCode: 25
+    commit: '2.5'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.6'
+    versionCode: 26
+    commit: '2.6'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.0'
+    versionCode: 30
+    commit: '3.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.1'
+    versionCode: 31
+    commit: '3.1'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.3'
+    versionCode: 33
+    commit: '3.3'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.4'
+    versionCode: 34
+    commit: '3.4'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.0'
+    versionCode: 40
+    commit: '4.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.2'
+    versionCode: 42
+    commit: '4.2'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.3'
+    versionCode: 43
+    commit: '4.3'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.6'
-CurrentVersionCode: 16
+CurrentVersion: '4.3'
+CurrentVersionCode: 43

@@ -1,8 +1,9 @@
 Categories:
   - System
 License: GPL-3.0-only
-SourceCode: https://gitlab.com/parduscix/disable-delete-gapps
-IssueTracker: https://gitlab.com/parduscix/disable-delete-gapps/issues
+AuthorName: Ali Rıza KESKİN
+SourceCode: https://gitlab.com/sulincix/disable-delete-gapps
+IssueTracker: https://gitlab.com/sulincix/disable-delete-gapps/issues
 
 AutoName: /d/gapps
 Description: |-
@@ -17,7 +18,7 @@ Description: |-
 
     It requires root to work.
 
-    Don't delete GApps on touchwiz (or similar) stock rom or your device might
+    Don’t delete GApps on touchwiz (or similar) stock rom or your device might
     not boot afterwards. You should try to disable GApps instead!
 
     To re-enable GApps, go to the *Settings › Apps* menu, and chose "restore apps
@@ -27,7 +28,7 @@ Description: |-
 RequiresRoot: 'yes'
 
 RepoType: git
-Repo: https://gitlab.com/parduscix/disable-delete-gapps
+Repo: https://gitlab.com/sulincix/disable-delete-gapps.git
 
 Builds:
   - versionName: '2.0'
@@ -79,7 +80,42 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '11.0'
+    versionCode: 11
+    commit: '11.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '14.0'
+    versionCode: 14
+    commit: '14.0'
+    output: bin/app.apk
+    rm:
+      - bin
+    prebuild:
+      - sed -i -e 's|~/Android/Sdk|$$SDK$$|' -e 's/ sign//' Makefile
+      - android update sdk --no-ui --filter android-28
+    build:
+      - JAVA_HOME=$(file /etc/alternatives/javac | cut -d " " -f 5|cut -d "/" -f 1-5)
+        make
+      - mv bin/app.ap_ bin/app.apk
+
+  - versionName: '15.0'
+    versionCode: 15
+    commit: '15.0'
+    output: bin/app.apk
+    rm:
+      - bin
+    prebuild:
+      - sed -i -e 's|~/Android/Sdk|$$SDK$$|' -e 's/ sign//' Makefile
+      - android update sdk --no-ui --filter android-28
+    build:
+      - JAVA_HOME=$(file /etc/alternatives/javac | cut -d " " -f 5|cut -d "/" -f 1-5)
+        make
+      - mv bin/app.ap_ bin/app.apk
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '10.0'
-CurrentVersionCode: 10
+CurrentVersion: '15.0'
+CurrentVersionCode: 15

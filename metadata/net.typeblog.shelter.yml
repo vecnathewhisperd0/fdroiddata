@@ -3,9 +3,10 @@ Categories:
 License: WTFPL
 AuthorName: PeterCxy
 AuthorEmail: peter@typeblog.net
-SourceCode: https://git.angry.im/PeterCxy/Shelter
-IssueTracker: https://git.angry.im/PeterCxy/Shelter/issues
-Changelog: https://git.angry.im/PeterCxy/Shelter/releases
+SourceCode: https://github.com/PeterCxy/Shelter
+IssueTracker: https://github.com/PeterCxy/Shelter/issues
+Changelog: https://github.com/PeterCxy/Shelter/releases
+Donate: https://www.patreon.com/PeterCxy
 
 AutoName: Shelter
 Description: |
@@ -49,7 +50,7 @@ Description: |
     A: You could file an issue on either the main repository at https://git.angry.im/PeterCxy/Shelter or the mirror repository at https://github.com/PeterCxy/Shelter. Please include your system information as well as a logcat if possible.
 
 RepoType: git
-Repo: https://git.angry.im/PeterCxy/Shelter.git
+Repo: https://github.com/PeterCxy/Shelter.git
 
 Builds:
   - versionName: '1.0'
@@ -94,7 +95,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.5'
+    versionCode: 13
+    commit: '1.5'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.1
-CurrentVersionCode: 12
+CurrentVersion: '1.5'
+CurrentVersionCode: 13

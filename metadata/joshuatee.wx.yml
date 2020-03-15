@@ -3,6 +3,7 @@ AntiFeatures:
 Categories:
   - Science & Education
 License: GPL-3.0-only
+AuthorName: Joshua Tee
 SourceCode: https://gitlab.com/joshua.tee/wx
 IssueTracker: https://gitlab.com/joshua.tee/wx/issues
 Changelog: https://drive.google.com/drive/folders/0B9OogdTO1kXqcVJwekpwemFwSXM
@@ -11,7 +12,7 @@ AutoName: wX
 Description: |-
     NWS ( National Weather Service ) data is optimized for mobile format and provided for divisions not normally covered together in the mobile space: SPC, WPC, NHC, OPC, etc. Level 3 and Level 2 Nexrad radar ( single, dual, quad pane ) are provided and displayed using the mobile variant of OpenGL. This weather app is not affiliated with NOAA or the National Weather Service.
 
-    If you *only* need current conditions and your local 7 day forecast then this app is probably more then you need although it will easily provide those 2 things as well. If you are looking for wasted screen real estate or fancy graphics this app is not for you. Given the depth of information covered there is a steep learning curve if you seek to use the program in it's entirety, help information is available and touched on below. Common weather acronyms are used throughout so you should be familiar with those as well. Currently United States locations are supported. Canada is also supported but is be considered in Beta for now.
+    If you *only* need current conditions and your local 7 day forecast then this app is probably more then you need although it will easily provide those 2 things as well. If you are looking for wasted screen real estate or fancy graphics this app is not for you. Given the depth of information covered there is a steep learning curve if you seek to use the program in it’s entirety, help information is available and touched on below. Common weather acronyms are used throughout so you should be familiar with those as well. Currently United States locations are supported. Canada is also supported but is be considered in Beta for now.
 
     HELP is available from the main menu and by tapping on any text in the settings activities.
 
@@ -39,7 +40,7 @@ Description: |-
     * US MPD
     * NHC Atlantic and EPAC advisories
 
-    NOTE about Canada: Canadian locations can be added under Settings -> Location -> "plus" symbol but you need to access the options under the sub-menu. You can also use the main search bar at the top but for now you must use a suggested location and can't add an arbitrary location.
+    NOTE about Canada: Canadian locations can be added under Settings -> Location -> "plus" symbol but you need to access the options under the sub-menu. You can also use the main search bar at the top but for now you must use a suggested location and can’t add an arbitrary location.
 
     See [https://docs.google.com/document/d/1OQrviP10XBvQZ7QKh5R4bsd72ZKffK5f0ISRuCaSk5k/edit here] for a list of often asked questions.
 
@@ -124,6 +125,248 @@ Builds:
       - app/src/main/res/raw/*
     ndk: r18b
 
+  - versionName: '55148'
+    versionCode: 55148
+    commit: '55148'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55154'
+    versionCode: 55154
+    commit: '55154'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55158'
+    versionCode: 55158
+    commit: '55158'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55164'
+    versionCode: 55164
+    commit: '55164'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55175'
+    versionCode: 55175
+    commit: '55175'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55217'
+    versionCode: 55217
+    commit: '55217'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55223'
+    versionCode: 55223
+    commit: '55223'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55236'
+    versionCode: 55236
+    commit: '55236'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55260'
+    versionCode: 55260
+    commit: '55260'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55265'
+    versionCode: 55265
+    commit: '55265'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55269'
+    versionCode: 55269
+    commit: '55269'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55272'
+    versionCode: 55272
+    commit: '55272'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55289'
+    versionCode: 55289
+    commit: '55289'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55291'
+    versionCode: 55291
+    commit: '55291'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55295'
+    versionCode: 55295
+    commit: '55295'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55306'
+    versionCode: 55306
+    commit: '55306'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55310'
+    versionCode: 55310
+    commit: '55310'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55341'
+    versionCode: 55341
+    commit: '55341'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55350'
+    versionCode: 55350
+    commit: '55350'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55358'
+    versionCode: 55358
+    commit: '55358'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55371'
+    versionCode: 55371
+    commit: '55371'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55377'
+    versionCode: 55377
+    commit: '55377'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
 MaintainerNotes: |-
     res/raw are not executable files and they're from US GOVT so they should be very open:
     https://catalog.data.gov/dataset (license: https://www.usa.gov/government-works)
@@ -131,5 +374,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '55128'
-CurrentVersionCode: 55128
+CurrentVersion: '55377'
+CurrentVersionCode: 55377

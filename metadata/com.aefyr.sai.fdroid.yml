@@ -1,0 +1,135 @@
+Categories:
+  - System
+License: GPL-3.0-only
+AuthorName: Aefyr
+SourceCode: https://github.com/Aefyr/SAI
+IssueTracker: https://github.com/Aefyr/SAI/issues
+Changelog: https://github.com/Aefyr/SAI/releases
+
+AutoName: SAI
+
+RepoType: git
+Repo: https://github.com/Aefyr/SAI
+
+Builds:
+  - versionName: '1.27'
+    versionCode: 28
+    commit: '1.27'
+    subdir: app
+    gradle:
+      - fdroid
+    srclibs:
+      - aefyr-android-filepicker@d7d923f8f58f89c732f31059d74952d7dcefb288
+    rm:
+      - app/libs/filepicker-release.aar
+    prebuild:
+      - sed -i -e '/maven/,+2d' -e '/io.fabric/d' ../build.gradle
+      - sed -i -e '/io.fabric/d' build.gradle
+    build:
+      - pushd $$aefyr-android-filepicker$$
+      - gradle assembleRelease
+      - popd
+      - cp $$aefyr-android-filepicker$$/build/outputs/aar/filepicker-release.aar libs/filepicker-release.aar
+
+  - versionName: '1.28'
+    versionCode: 29
+    commit: '1.28'
+    subdir: app
+    gradle:
+      - fdroid
+    srclibs:
+      - aefyr-android-filepicker@d7d923f8f58f89c732f31059d74952d7dcefb288
+    rm:
+      - app/libs/filepicker-release.aar
+    prebuild:
+      - sed -i -e '/maven/,+2d' -e '/io.fabric/d' ../build.gradle
+      - sed -i -e '/io.fabric/d' build.gradle
+    build:
+      - pushd $$aefyr-android-filepicker$$
+      - gradle assembleRelease
+      - popd
+      - cp $$aefyr-android-filepicker$$/build/outputs/aar/filepicker-release.aar libs/filepicker-release.aar
+
+  - versionName: '2.1'
+    versionCode: 31
+    commit: '2.1'
+    subdir: app
+    gradle:
+      - fdroid
+    srclibs:
+      - aefyr-android-filepicker@d7d923f8f58f89c732f31059d74952d7dcefb288
+    rm:
+      - app/libs/filepicker-release.aar
+    prebuild:
+      - sed -i -e '/maven/,+2d' -e '/io.fabric/d' ../build.gradle
+      - sed -i -e '/io.fabric/d' build.gradle
+    build:
+      - pushd $$aefyr-android-filepicker$$
+      - gradle assembleRelease
+      - popd
+      - cp $$aefyr-android-filepicker$$/build/outputs/aar/filepicker-release.aar libs/filepicker-release.aar
+
+  - versionName: '2.2'
+    versionCode: 32
+    commit: '2.2'
+    subdir: app
+    gradle:
+      - fdroid
+    srclibs:
+      - aefyr-android-filepicker@d7d923f8f58f89c732f31059d74952d7dcefb288
+    rm:
+      - app/libs/filepicker-release.aar
+    prebuild:
+      - sed -i -e '/maven/,+2d' -e '/io.fabric/d' ../build.gradle
+      - sed -i -e '/io.fabric/d' build.gradle
+    build:
+      - pushd $$aefyr-android-filepicker$$
+      - gradle assembleRelease
+      - popd
+      - cp $$aefyr-android-filepicker$$/build/outputs/aar/filepicker-release.aar libs/filepicker-release.aar
+
+  - versionName: '2.4'
+    versionCode: 34
+    commit: '2.4'
+    subdir: app
+    gradle:
+      - fdroid
+    srclibs:
+      - aefyr-android-filepicker@d7d923f8f58f89c732f31059d74952d7dcefb288
+    rm:
+      - app/libs/filepicker-release.aar
+    prebuild:
+      - sed -i -e '/maven/,+2d' -e '/io.fabric/d' ../build.gradle
+      - sed -i -e '/io.fabric/d' build.gradle
+    build:
+      - pushd $$aefyr-android-filepicker$$
+      - gradle assembleRelease
+      - popd
+      - cp $$aefyr-android-filepicker$$/build/outputs/aar/filepicker-release.aar libs/filepicker-release.aar
+
+  - versionName: '3.7'
+    versionCode: 48
+    disable: unknown maven
+    commit: '3.7'
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - fdroid
+    srclibs:
+      - aefyr-android-filepicker@d7d923f8f58f89c732f31059d74952d7dcefb288
+    rm:
+      - app/libs/filepicker-release.aar
+    prebuild: sed -i -e '/io.fabric/d' build.gradle
+    build:
+      - pushd $$aefyr-android-filepicker$$
+      - gradle assembleRelease
+      - popd
+      - cp $$aefyr-android-filepicker$$/build/outputs/aar/filepicker-release.aar libs/filepicker-release.aar
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: '3.7'
+CurrentVersionCode: 48
+
+NoSourceSince: '2.5'

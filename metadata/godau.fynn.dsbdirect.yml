@@ -7,15 +7,9 @@ AuthorName: Fynn Godau
 AuthorEmail: fynngodau@mailbox.org
 SourceCode: https://notabug.org/fynngodau/DSBDirect
 IssueTracker: https://notabug.org/fynngodau/DSBDirect/issues
+Changelog: https://notabug.org/fynngodau/DSBDirect/releases
 
-AutoName: DSBDirect
-Description: |-
-    This software can access Digital Black Boards (DSBs). It is optimized for Alexander-von-Humboldt-Gymnasium, but you can access other boards using the Reauthenticate button.
-
-    Use it as a replacement for the proprietary DSBmobile app. It loads a lot faster and doesn't make you click any buttons before you can see your plan.
-
-    * Displays entries in a nice, native list which you can filter (from Android 4.4, supported systems only)
-    * Alternativley displays the raw website or image.
+AutoName: ESBDirect
 
 RepoType: git
 Repo: https://notabug.org/fynngodau/DSBDirect.git
@@ -77,7 +71,98 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: '2.0'
+    versionCode: 14
+    commit: release-2.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.0.1
+    versionCode: 15
+    commit: release-2.0.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.0.2
+    versionCode: 16
+    commit: release-2.0.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.0.3
+    versionCode: 17
+    commit: release-2.0.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '2.1'
+    versionCode: 18
+    commit: release-2.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '2.2'
+    versionCode: 19
+    commit: release-2.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.5.1
+    versionCode: 24
+    commit: release-2.5.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.5.2
+    versionCode: 25
+    commit: release-2.5.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.5.3.1
+    versionCode: 27
+    commit: release-2.5.3.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.5.5
+    versionCode: 29
+    commit: release-2.5.5
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '2.6'
+    versionCode: 32
+    commit: release-2.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '3.0'
+    versionCode: 34
+    commit: release-3.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 3.0.1
+    versionCode: 35
+    commit: release-3.0.1
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.1
-CurrentVersionCode: 13
+CurrentVersion: 3.0.1
+CurrentVersionCode: 35

@@ -3,6 +3,9 @@ AntiFeatures:
 Categories:
   - Reading
 License: GPL-2.0-or-later
+AuthorName: Softcatalà
+AuthorEmail: jmas@softcatala.org
+AuthorWebSite: https://www.softcatala.org/
 SourceCode: https://github.com/Softcatala/TraductorSoftcatalaAndroid
 IssueTracker: https://github.com/Softcatala/TraductorSoftcatalaAndroid/issues
 
@@ -53,5 +56,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: '0.87'
-CurrentVersionCode: 32
+CurrentVersion: '0.91'
+CurrentVersionCode: 36

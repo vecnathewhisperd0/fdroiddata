@@ -13,7 +13,7 @@ LiberapayID: '1520530'
 AutoName: MoneyBuster
 
 RepoType: git
-Repo: https://gitlab.com/eneiluj/moneybuster
+Repo: https://gitlab.com/eneiluj/moneybuster.git
 
 Builds:
   - versionName: 0.0.4
@@ -40,7 +40,103 @@ Builds:
     gradle:
       - normal
 
+  - versionName: 0.0.7
+    versionCode: 7
+    commit: v0.0.7
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.8
+    versionCode: 8
+    commit: v0.0.8
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.9
+    versionCode: 9
+    commit: v0.0.9
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.10
+    versionCode: 10
+    commit: v0.0.10
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.11
+    versionCode: 11
+    commit: v0.0.11
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.12
+    versionCode: 12
+    commit: v0.0.12
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.13
+    versionCode: 13
+    commit: v0.0.13
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.14
+    versionCode: 14
+    commit: v0.0.14
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.15
+    versionCode: 15
+    commit: v0.0.15
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.16
+    versionCode: 16
+    commit: v0.0.16
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.17
+    versionCode: 17
+    commit: v0.0.17
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.18
+    versionCode: 18
+    commit: v0.0.18
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.6
-CurrentVersionCode: 6
+CurrentVersion: 0.0.18
+CurrentVersionCode: 18

@@ -4,6 +4,7 @@ License: GPL-3.0-or-later
 WebSite: https://delta.chat/
 SourceCode: https://github.com/deltachat/deltachat-android
 IssueTracker: https://github.com/deltachat/deltachat-android/issues
+Translation: https://www.transifex.com/delta-chat/delta-chat-app/
 Changelog: https://raw.githubusercontent.com/deltachat/deltachat-android/HEAD/CHANGELOG.md
 Donate: https://delta.chat/en/contribute
 Bitcoin: 18e3zwis2raitdZVhEhHHT7xG6oXsZte9L
@@ -529,7 +530,139 @@ Builds:
     build: $$NDK$$/ndk-build -j `nproc`
     ndk: r14b
 
+  - versionName: 0.301.1
+    versionCode: 543
+    commit: v0.301.1
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.302.1
+    versionCode: 545
+    commit: v0.302.1
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.303.0
+    versionCode: 546
+    commit: v0.303.0
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.304.0
+    versionCode: 547
+    commit: v0.304.0
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.500.0
+    versionCode: 548
+    commit: v0.500.0
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 0.510.1
+    versionCode: 550
+    commit: v0.510.1
+    submodules: true
+    gradle:
+      - fat
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build: $$NDK$$/ndk-build -j `nproc`
+    ndk: r14b
+
+  - versionName: 1.1.2
+    versionCode: 574
+    commit: v1.1.2
+    timeout: 20000
+    submodules: true
+    gradle:
+      - fat
+    srclibs:
+      - rustup@1.21.1
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build:
+      - cd jni/deltachat-core-rust
+      - ../../$$rustup$$/rustup-init.sh -y
+      - export PATH=$PATH:$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/
+      - source $HOME/.cargo/env
+      - rustup default $(cat rust-toolchain)
+      - rustup target add aarch64-linux-android
+      - echo "[target.aarch64-linux-android]" > $HOME/.cargo/config
+      - echo 'linker = "$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang"'
+        >> $HOME/.cargo/config
+      - rustup target add i686-linux-android
+      - echo "[target.i686-linux-android]" >> $HOME/.cargo/config
+      - echo 'linker = "$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/i686-linux-android18-clang"'
+        >> $HOME/.cargo/config
+      - rustup target add armv7-linux-androideabi
+      - echo "[target.armv7-linux-androideabi]" >> $HOME/.cargo/config
+      - echo 'linker = "$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi18-clang"'
+        >> $HOME/.cargo/config
+      - rustup target add x86_64-linux-android
+      - echo "[target.x86_64-linux-android]" >> $HOME/.cargo/config
+      - echo 'linker = "$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android21-clang"'
+        >> $HOME/.cargo/config
+      - cd ../..
+      - ./ndk-make.sh
+    ndk: r20b
+
+  - versionName: 1.2.1
+    versionCode: 576
+    commit: v1.2.1
+    timeout: 20000
+    submodules: true
+    gradle:
+      - fat
+    srclibs:
+      - rustup@1.21.1
+    prebuild: sed -i -e '/applicationIdSuffix/d' build.gradle
+    build:
+      - cd jni/deltachat-core-rust
+      - ../../$$rustup$$/rustup-init.sh -y
+      - export PATH=$PATH:$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/
+      - source $HOME/.cargo/env
+      - rustup default $(cat rust-toolchain)
+      - rustup target add aarch64-linux-android
+      - echo "[target.aarch64-linux-android]" > $HOME/.cargo/config
+      - echo 'linker = "$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang"'
+        >> $HOME/.cargo/config
+      - rustup target add i686-linux-android
+      - echo "[target.i686-linux-android]" >> $HOME/.cargo/config
+      - echo 'linker = "$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/i686-linux-android18-clang"'
+        >> $HOME/.cargo/config
+      - rustup target add armv7-linux-androideabi
+      - echo "[target.armv7-linux-androideabi]" >> $HOME/.cargo/config
+      - echo 'linker = "$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi18-clang"'
+        >> $HOME/.cargo/config
+      - rustup target add x86_64-linux-android
+      - echo "[target.x86_64-linux-android]" >> $HOME/.cargo/config
+      - echo 'linker = "$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android21-clang"'
+        >> $HOME/.cargo/config
+      - cd ../..
+      - ./ndk-make.sh
+    ndk: r20b
+
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 0.301.0
-CurrentVersionCode: 542
+UpdateCheckMode: Tags ^v[0-9]+\.[0-9]+\.[0-9]+$
+CurrentVersion: 1.2.1
+CurrentVersionCode: 576

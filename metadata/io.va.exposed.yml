@@ -1,3 +1,5 @@
+AntiFeatures:
+  - NonFreeAdd
 Categories:
   - System
 License: GPL-3.0-only
@@ -7,7 +9,6 @@ IssueTracker: https://github.com/android-hacker/VirtualXposed/issues
 Changelog: https://github.com/android-hacker/VirtualXposed/releases
 
 AutoName: VirtualXposed
-Summary: Use Xposed without root, unlock the bootloader or modify system image
 Description: |-
     VirtualXposed is a simple APP based on
     [https://github.com/asLody/VirtualApp VirtualApp] and
@@ -39,7 +40,34 @@ Builds:
 
   - versionName: 0.17.3
     versionCode: 173
+    disable: Could not find me.weishu.exposed:exposed-core:0.7.5
     commit: 0.17.3
+    subdir: VirtualApp/app/
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e 's#https://maven.fabric.io/public#https://maven.google.com/#' -e
+        '/io.fabric.tools/d' ../build.gradle
+      - sed -i -e '/repositories/,+2d' -e '/io.fabric/d' build.gradle
+    ndk: r12b
+
+  - versionName: 0.17.4
+    versionCode: 174
+    commit: 0.17.4
+    subdir: VirtualApp/app/
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e 's#https://maven.fabric.io/public#https://maven.google.com/#' -e
+        '/io.fabric.tools/d' ../build.gradle
+      - sed -i -e '/repositories/,+2d' -e '/io.fabric/d' build.gradle
+    ndk: r12b
+
+  - versionName: 0.18.1
+    versionCode: 181
+    commit: 0.18.1
     subdir: VirtualApp/app/
     submodules: true
     gradle:
@@ -52,5 +80,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.17.3
-CurrentVersionCode: 173
+CurrentVersion: 0.18.1
+CurrentVersionCode: 181

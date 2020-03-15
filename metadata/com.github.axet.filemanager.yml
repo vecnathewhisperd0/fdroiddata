@@ -3,7 +3,6 @@ Categories:
 License: GPL-3.0-only
 SourceCode: https://gitlab.com/axet/android-file-manager
 IssueTracker: https://gitlab.com/axet/android-file-manager/issues
-LiberapayID: '1370123'
 
 AutoName: File Manager
 Description: |-
@@ -18,7 +17,7 @@ Description: |-
     * root capabilities (enable in settings if your device is rooted)
 
 RepoType: git
-Repo: https://gitlab.com/axet/android-file-manager
+Repo: https://gitlab.com/axet/android-file-manager.git
 
 Builds:
   - versionName: 0.2.58
@@ -154,7 +153,82 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.2.94
+    versionCode: 137
+    commit: filemanager-0.2.94
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.95
+    versionCode: 138
+    commit: filemanager-0.2.95
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.3.0
+    versionCode: 139
+    commit: filemanager-0.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.3.1
+    versionCode: 140
+    commit: filemanager-0.3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.2
+    versionCode: 143
+    commit: filemanager-0.4.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.6
+    versionCode: 146
+    disable: fails to build
+    commit: filemanager-0.4.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.7
+    versionCode: 147
+    commit: filemanager-0.4.7
+    subdir: app
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.4.8
+    versionCode: 148
+    commit: filemanager-0.4.8
+    subdir: app
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.4.9
+    versionCode: 149
+    commit: filemanager-0.4.9
+    subdir: app
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.4.16
+    versionCode: 154
+    commit: filemanager-0.4.16
+    subdir: app
+    gradle:
+      - yes
+    ndk: r16b
+
 AutoUpdateMode: Version filemanager-%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2.92
-CurrentVersionCode: 135
+CurrentVersion: 0.4.16
+CurrentVersionCode: 154

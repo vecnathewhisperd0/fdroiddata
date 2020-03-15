@@ -3,9 +3,12 @@ AntiFeatures:
 Categories:
   - Internet
 License: Apache-2.0
+AuthorName: Niclas Kron
+AuthorEmail: niclas.kroon@gmail.com
 WebSite: https://vadret.github.io/android/
 SourceCode: https://github.com/vadret/android
 IssueTracker: https://github.com/vadret/android/issues
+Translation: https://crowdin.com/project/vadret
 Changelog: https://github.com/vadret/android/blob/HEAD/app/src/main/res/raw/changelog.md
 
 AutoName: Vädret
@@ -79,7 +82,70 @@ Builds:
     prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' -e '/signingConfigs/d'
         build.gradle ../build.gradle
 
+  - versionName: 1.1.0
+    versionCode: 15
+    commit: 1.1.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' -e '/signingConfigs/d'
+        build.gradle ../build.gradle
+
+  - versionName: 1.2.1
+    versionCode: 17
+    commit: 1.2.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' -e '/signingConfigs/d'
+        build.gradle ../build.gradle
+
+  - versionName: 1.2.2
+    versionCode: 18
+    commit: 1.2.2
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' -e '/signingConfigs/d'
+        build.gradle ../build.gradle
+
+  - versionName: 1.2.3
+    versionCode: 19
+    commit: 1.2.3
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' -e '/signingConfigs/d'
+        build.gradle ../build.gradle
+
+  - versionName: 1.2.4
+    versionCode: 20
+    commit: 1.2.4
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' -e '/signingConfigs/d'
+        build.gradle ../build.gradle
+
+  - versionName: 1.2.6
+    versionCode: 22
+    commit: 1.2.6
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' -e '/signingConfigs/d'
+        build.gradle ../build.gradle
+
+  - versionName: 1.2.7
+    versionCode: 23
+    commit: 1.2.7
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' -e '/signingConfigs/d'
+        build.gradle ../build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.0
-CurrentVersionCode: 13
+CurrentVersion: 1.2.7
+CurrentVersionCode: 23

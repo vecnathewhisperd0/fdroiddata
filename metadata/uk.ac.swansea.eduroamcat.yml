@@ -1,6 +1,9 @@
 Categories:
   - Internet
 License: Apache-2.0
+AuthorName: GÉANT
+AuthorEmail: support@swd.geant.org
+AuthorWebSite: https://www.geant.org/
 SourceCode: https://github.com/GEANT/CAT-Android
 IssueTracker: https://github.com/GEANT/CAT-Android/issues
 Changelog: https://github.com/GEANT/CAT-Android/releases
@@ -32,7 +35,15 @@ Builds:
     rm:
       - bin/dexedLibs/
 
+  - versionName: 1.2.14
+    versionCode: 59
+    commit: 1.2.14
+    gradle:
+      - yes
+    rm:
+      - bin/dexedLibs/
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.2.10
-CurrentVersionCode: 55
+CurrentVersion: 1.2.14
+CurrentVersionCode: 59

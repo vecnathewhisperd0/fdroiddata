@@ -88,7 +88,36 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '14.0'
+    versionCode: 14
+    commit: v14.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '15.0'
+    versionCode: 15
+    disable: lintVitalRelease fails
+    commit: v15.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '16.0'
+    versionCode: 16
+    commit: v16.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '17.0'
+    versionCode: 17
+    commit: v17.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '13.0'
-CurrentVersionCode: 13
+CurrentVersion: '17.0'
+CurrentVersionCode: 17

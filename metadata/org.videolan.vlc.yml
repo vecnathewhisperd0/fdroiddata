@@ -1,14 +1,14 @@
 Categories:
   - Multimedia
 License: GPL-3.0-only
-WebSite: http://www.videolan.org/vlc/download-android.html
+WebSite: https://www.videolan.org/vlc/download-android.html
 SourceCode: https://code.videolan.org/videolan/vlc-android
 IssueTracker: https://code.videolan.org/videolan/vlc-android/issues
+Translation: https://www.transifex.com/yaron/vlc-trans/dashboard/
 Changelog: https://code.videolan.org/videolan/vlc-android/blob/HEAD/NEWS
-Donate: http://www.videolan.org/contribute.html#money
+Donate: https://www.videolan.org/contribute.html#money
 
 AutoName: VLC
-Summary: Media player
 Description: |-
     Video and audio player that supports a wide range of formats, for both local and
     remote playback.
@@ -2847,6 +2847,451 @@ Builds:
       - ./compile.sh -a arm64-v8a -ml --release
     ndk: r18b
 
+  - versionName: 3.1.4
+    versionCode: 13010404
+    commit: 3.1.4
+    timeout: 10800
+    subdir: vlc-android
+    sudo:
+      - apt update || apt update
+      - apt install -y g++ ragel libltdl-dev
+    gradle:
+      - yes
+    output: build/outputs/apk/release/VLC-Android-$$VERSION$$-armeabi-v7a.apk
+    srclibs:
+      - VLC-3.0@828e0ce
+      - VLCmedialibrary@c4e3673
+    rm:
+      - java-libs/appcompat/libs
+      - java-libs/cardview/libs
+    prebuild:
+      - cp -a $$VLC-3.0$$ ../vlc
+      - cp -a $$VLCmedialibrary$$ ../medialibrary/medialibrary
+      - sed -i -e '/maven {/,/}/d' ../build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -E -e '/(debug|release|signedRelease)Implementation/d; s/devImplementation/implementation/'
+        build.gradle ../medialibrary/build.gradle
+    build:
+      - cd ..
+      - mkdir -p gradle/wrapper
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - sed -i -e 's/git am /git apply /' compile.sh
+      - ./compile.sh -a armeabi-v7a -ml --release
+    ndk: r18b
+
+  - versionName: 3.1.4
+    versionCode: 13010405
+    commit: 3.1.4
+    timeout: 10800
+    subdir: vlc-android
+    sudo:
+      - apt update || apt update
+      - apt install -y g++ ragel libltdl-dev
+    gradle:
+      - yes
+    output: build/outputs/apk/release/VLC-Android-$$VERSION$$-x86.apk
+    srclibs:
+      - VLC-3.0@828e0ce
+      - VLCmedialibrary@c4e3673
+    rm:
+      - java-libs/appcompat/libs
+      - java-libs/cardview/libs
+    prebuild:
+      - cp -a $$VLC-3.0$$ ../vlc
+      - cp -a $$VLCmedialibrary$$ ../medialibrary/medialibrary
+      - sed -i -e '/maven {/,/}/d' ../build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -E -e '/(debug|release|signedRelease)Implementation/d; s/devImplementation/implementation/'
+        build.gradle ../medialibrary/build.gradle
+    build:
+      - cd ..
+      - mkdir -p gradle/wrapper
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - sed -i -e 's/git am /git apply /' compile.sh
+      - ./compile.sh -a x86 -ml --release
+    ndk: r18b
+
+  - versionName: 3.1.4
+    versionCode: 13010407
+    commit: 3.1.4
+    timeout: 10800
+    subdir: vlc-android
+    sudo:
+      - apt update || apt update
+      - apt install -y g++ ragel libltdl-dev
+    gradle:
+      - yes
+    output: build/outputs/apk/release/VLC-Android-$$VERSION$$-arm64-v8a.apk
+    srclibs:
+      - VLC-3.0@828e0ce
+      - VLCmedialibrary@c4e3673
+    rm:
+      - java-libs/appcompat/libs
+      - java-libs/cardview/libs
+    prebuild:
+      - cp -a $$VLC-3.0$$ ../vlc
+      - cp -a $$VLCmedialibrary$$ ../medialibrary/medialibrary
+      - sed -i -e '/maven {/,/}/d' ../build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -E -e '/(debug|release|signedRelease)Implementation/d; s/devImplementation/implementation/'
+        build.gradle ../medialibrary/build.gradle
+    build:
+      - cd ..
+      - mkdir -p gradle/wrapper
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - sed -i -e 's/git am /git apply /' compile.sh
+      - ./compile.sh -a arm64-v8a -ml --release
+    ndk: r18b
+
+  - versionName: 3.1.6
+    versionCode: 13010604
+    commit: 3.1.6
+    timeout: 10800
+    subdir: vlc-android
+    sudo:
+      - apt update || apt update
+      - apt install -y g++ ragel libltdl-dev
+    gradle:
+      - yes
+    output: build/outputs/apk/release/VLC-Android-$$VERSION$$-armeabi-v7a.apk
+    srclibs:
+      - VLC-3.0@9434e46
+      - VLCmedialibrary@d473709
+    rm:
+      - java-libs/appcompat/libs
+      - java-libs/cardview/libs
+    prebuild:
+      - cp -a $$VLC-3.0$$ ../vlc
+      - cp -a $$VLCmedialibrary$$ ../medialibrary/medialibrary
+      - sed -i -e '/maven {/,/}/d' ../build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -E -e '/(debug|release|signedRelease)Implementation/d; s/devImplementation/implementation/'
+        build.gradle ../medialibrary/build.gradle
+    build:
+      - cd ..
+      - mkdir -p gradle/wrapper
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - sed -i -e 's/git am /git apply /' compile.sh
+      - ./compile.sh -a armeabi-v7a -ml --release
+    ndk: r18b
+
+  - versionName: 3.1.6
+    versionCode: 13010605
+    commit: 3.1.6
+    timeout: 10800
+    subdir: vlc-android
+    sudo:
+      - apt update || apt update
+      - apt install -y g++ ragel libltdl-dev
+    gradle:
+      - yes
+    output: build/outputs/apk/release/VLC-Android-$$VERSION$$-x86.apk
+    srclibs:
+      - VLC-3.0@9434e46
+      - VLCmedialibrary@d473709
+    rm:
+      - java-libs/appcompat/libs
+      - java-libs/cardview/libs
+    prebuild:
+      - cp -a $$VLC-3.0$$ ../vlc
+      - cp -a $$VLCmedialibrary$$ ../medialibrary/medialibrary
+      - sed -i -e '/maven {/,/}/d' ../build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -E -e '/(debug|release|signedRelease)Implementation/d; s/devImplementation/implementation/'
+        build.gradle ../medialibrary/build.gradle
+    build:
+      - cd ..
+      - mkdir -p gradle/wrapper
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - sed -i -e 's/git am /git apply /' compile.sh
+      - ./compile.sh -a x86 -ml --release
+    ndk: r18b
+
+  - versionName: 3.1.6
+    versionCode: 13010607
+    commit: 3.1.6
+    timeout: 10800
+    subdir: vlc-android
+    sudo:
+      - apt update || apt update
+      - apt install -y g++ ragel libltdl-dev
+    gradle:
+      - yes
+    output: build/outputs/apk/release/VLC-Android-$$VERSION$$-arm64-v8a.apk
+    srclibs:
+      - VLC-3.0@9434e46
+      - VLCmedialibrary@d473709
+    rm:
+      - java-libs/appcompat/libs
+      - java-libs/cardview/libs
+    prebuild:
+      - cp -a $$VLC-3.0$$ ../vlc
+      - cp -a $$VLCmedialibrary$$ ../medialibrary/medialibrary
+      - sed -i -e '/maven {/,/}/d' ../build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -E -e '/(debug|release|signedRelease)Implementation/d; s/devImplementation/implementation/'
+        build.gradle ../medialibrary/build.gradle
+    build:
+      - cd ..
+      - mkdir -p gradle/wrapper
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - sed -i -e 's/git am /git apply /' compile.sh
+      - ./compile.sh -a arm64-v8a -ml --release
+    ndk: r18b
+
+  - versionName: 3.1.7
+    versionCode: 13010704
+    commit: 3.1.7
+    timeout: 10800
+    subdir: vlc-android
+    sudo:
+      - apt update || apt update
+      - apt install -y g++ ragel libltdl-dev
+    gradle:
+      - yes
+    output: build/outputs/apk/release/VLC-Android-$$VERSION$$-armeabi-v7a.apk
+    srclibs:
+      - VLC-3.0@dedb3bd
+      - VLCmedialibrary@d473709
+    rm:
+      - java-libs/appcompat/libs
+      - java-libs/cardview/libs
+    prebuild:
+      - cp -a $$VLC-3.0$$ ../vlc
+      - cp -a $$VLCmedialibrary$$ ../medialibrary/medialibrary
+      - sed -i -e '/maven {/,/}/d' ../build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -E -e '/(debug|release|signedRelease)Implementation/d; s/devImplementation/implementation/'
+        build.gradle ../medialibrary/build.gradle
+    build:
+      - cd ..
+      - mkdir -p gradle/wrapper
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - sed -i -e 's/git am /git apply /' compile.sh
+      - ./compile.sh -a armeabi-v7a -ml --release
+    ndk: r18b
+
+  - versionName: 3.1.7
+    versionCode: 13010705
+    commit: 3.1.7
+    timeout: 10800
+    subdir: vlc-android
+    sudo:
+      - apt update || apt update
+      - apt install -y g++ ragel libltdl-dev
+    gradle:
+      - yes
+    output: build/outputs/apk/release/VLC-Android-$$VERSION$$-x86.apk
+    srclibs:
+      - VLC-3.0@dedb3bd
+      - VLCmedialibrary@d473709
+    rm:
+      - java-libs/appcompat/libs
+      - java-libs/cardview/libs
+    prebuild:
+      - cp -a $$VLC-3.0$$ ../vlc
+      - cp -a $$VLCmedialibrary$$ ../medialibrary/medialibrary
+      - sed -i -e '/maven {/,/}/d' ../build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -E -e '/(debug|release|signedRelease)Implementation/d; s/devImplementation/implementation/'
+        build.gradle ../medialibrary/build.gradle
+    build:
+      - cd ..
+      - mkdir -p gradle/wrapper
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - sed -i -e 's/git am /git apply /' compile.sh
+      - ./compile.sh -a x86 -ml --release
+    ndk: r18b
+
+  - versionName: 3.1.7
+    versionCode: 13010707
+    commit: 3.1.7
+    timeout: 10800
+    subdir: vlc-android
+    sudo:
+      - apt update || apt update
+      - apt install -y g++ ragel libltdl-dev
+    gradle:
+      - yes
+    output: build/outputs/apk/release/VLC-Android-$$VERSION$$-arm64-v8a.apk
+    srclibs:
+      - VLC-3.0@dedb3bd
+      - VLCmedialibrary@d473709
+    rm:
+      - java-libs/appcompat/libs
+      - java-libs/cardview/libs
+    prebuild:
+      - cp -a $$VLC-3.0$$ ../vlc
+      - cp -a $$VLCmedialibrary$$ ../medialibrary/medialibrary
+      - sed -i -e '/maven {/,/}/d' ../build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -E -e '/(debug|release|signedRelease)Implementation/d; s/devImplementation/implementation/'
+        build.gradle ../medialibrary/build.gradle
+    build:
+      - cd ..
+      - mkdir -p gradle/wrapper
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - sed -i -e 's/git am /git apply /' compile.sh
+      - ./compile.sh -a arm64-v8a -ml --release
+    ndk: r18b
+
+  - versionName: 3.2.7
+    versionCode: 13020714
+    commit: 3.2.7-1
+    timeout: 10800
+    subdir: vlc-android
+    sudo:
+      - apt update || apt update
+      - apt install -y g++ ragel libltdl-dev
+    output: build/outputs/apk/release/VLC-Android-$$VERSION$$-armeabi-v7a.apk
+    srclibs:
+      - VLC-3.0@b86899a
+      - VLCmedialibrary@099bd5f2
+    rm:
+      - java-libs/appcompat/libs
+      - java-libs/cardview/libs
+    prebuild:
+      - cp -a $$VLC-3.0$$ ../vlc
+      - cp -a $$VLCmedialibrary$$ ../medialibrary/medialibrary
+      - sed -i -e '/maven {/,/}/d' ../build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -E -e '/(debug|release|signedRelease)Implementation/d; s/devImplementation/implementation/'
+        build.gradle ../medialibrary/build.gradle
+      - cd ../vlc
+      - git apply ../libvlc/patches/vlc3/*.patch
+      - sed -i '/.libdsm:\ libdsm$/a \\tcd $< \&\& touch "config.rpath"' contrib/src/libdsm/rules.mak
+    build:
+      - cd ..
+      - export FD_TARGET_TUPLE="arm-linux-androideabi"
+      - export FD_TARGET_ARCH="armeabi-v7a"
+      - export GRADLE_VLC_SRC_DIRS="$(pwd)/vlc/build-android-${FD_TARGET_TUPLE}/ndk/libs"
+      - mkdir -p gradle/wrapper
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - ./compile.sh -a $FD_TARGET_ARCH -ml -b --release
+      - ./gradlew assembleRelease
+    ndk: r18b
+
+  - versionName: 3.2.7
+    versionCode: 13020715
+    commit: 3.2.7-1
+    timeout: 10800
+    subdir: vlc-android
+    sudo:
+      - apt update || apt update
+      - apt install -y g++ ragel libltdl-dev
+    output: build/outputs/apk/release/VLC-Android-$$VERSION$$-x86.apk
+    srclibs:
+      - VLC-3.0@b86899a
+      - VLCmedialibrary@099bd5f2
+    rm:
+      - java-libs/appcompat/libs
+      - java-libs/cardview/libs
+    prebuild:
+      - cp -a $$VLC-3.0$$ ../vlc
+      - cp -a $$VLCmedialibrary$$ ../medialibrary/medialibrary
+      - sed -i -e '/maven {/,/}/d' ../build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -E -e '/(debug|release|signedRelease)Implementation/d; s/devImplementation/implementation/'
+        build.gradle ../medialibrary/build.gradle
+      - cd ../vlc
+      - git apply ../libvlc/patches/vlc3/*.patch
+      - sed -i '/.libdsm:\ libdsm$/a \\tcd $< \&\& touch "config.rpath"' contrib/src/libdsm/rules.mak
+    build:
+      - cd ..
+      - export FD_TARGET_TUPLE="i686-linux-android"
+      - export FD_TARGET_ARCH="x86"
+      - export GRADLE_VLC_SRC_DIRS="$(pwd)/vlc/build-android-${FD_TARGET_TUPLE}/ndk/libs"
+      - mkdir -p gradle/wrapper
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - ./compile.sh -a $FD_TARGET_ARCH -ml -b --release
+      - ./gradlew assembleRelease
+    ndk: r18b
+
+  - versionName: 3.2.7
+    versionCode: 13020717
+    commit: 3.2.7-1
+    timeout: 10800
+    subdir: vlc-android
+    sudo:
+      - apt update || apt update
+      - apt install -y g++ ragel libltdl-dev
+    output: build/outputs/apk/release/VLC-Android-$$VERSION$$-arm64-v8a.apk
+    srclibs:
+      - VLC-3.0@b86899a
+      - VLCmedialibrary@099bd5f2
+    rm:
+      - java-libs/appcompat/libs
+      - java-libs/cardview/libs
+    prebuild:
+      - cp -a $$VLC-3.0$$ ../vlc
+      - cp -a $$VLCmedialibrary$$ ../medialibrary/medialibrary
+      - sed -i -e '/maven {/,/}/d' ../build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -E -e '/(debug|release|signedRelease)Implementation/d; s/devImplementation/implementation/'
+        build.gradle ../medialibrary/build.gradle
+      - cd ../vlc
+      - git apply ../libvlc/patches/vlc3/*.patch
+      - sed -i '/.libdsm:\ libdsm$/a \\tcd $< \&\& touch "config.rpath"' contrib/src/libdsm/rules.mak
+    build:
+      - cd ..
+      - export FD_TARGET_TUPLE="aarch64-linux-android"
+      - export FD_TARGET_ARCH="arm64-v8a"
+      - export GRADLE_VLC_SRC_DIRS="$(pwd)/vlc/build-android-${FD_TARGET_TUPLE}/ndk/libs"
+      - mkdir -p gradle/wrapper
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - ./compile.sh -a $FD_TARGET_ARCH -ml -b --release
+      - ./gradlew assembleRelease
+    ndk: r18b
+
+  - versionName: 3.2.7
+    versionCode: 13020718
+    commit: 3.2.7-1
+    timeout: 10800
+    subdir: vlc-android
+    sudo:
+      - apt update || apt update
+      - apt install -y g++ ragel libltdl-dev
+    output: build/outputs/apk/release/VLC-Android-$$VERSION$$-x86_64.apk
+    srclibs:
+      - VLC-3.0@b86899a
+      - VLCmedialibrary@099bd5f2
+    rm:
+      - java-libs/appcompat/libs
+      - java-libs/cardview/libs
+    prebuild:
+      - cp -a $$VLC-3.0$$ ../vlc
+      - cp -a $$VLCmedialibrary$$ ../medialibrary/medialibrary
+      - sed -i -e '/maven {/,/}/d' ../build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -E -e '/(debug|release|signedRelease)Implementation/d; s/devImplementation/implementation/'
+        build.gradle ../medialibrary/build.gradle
+      - cd ../vlc
+      - git apply ../libvlc/patches/vlc3/*.patch
+      - sed -i '/.libdsm:\ libdsm$/a \\tcd $< \&\& touch "config.rpath"' contrib/src/libdsm/rules.mak
+    build:
+      - cd ..
+      - export FD_TARGET_TUPLE="x86_64-linux-android"
+      - export FD_TARGET_ARCH="x86_64"
+      - export GRADLE_VLC_SRC_DIRS="$(pwd)/vlc/build-android-${FD_TARGET_TUPLE}/ndk/libs"
+      - mkdir -p gradle/wrapper
+      - echo 'gradle "$@"' > gradlew
+      - chmod a+x gradlew
+      - ./compile.sh -a $FD_TARGET_ARCH -ml -b --release
+      - ./gradlew assembleRelease
+    ndk: r18b
+
 MaintainerNotes: |-
     Instructions and dependencies: https://wiki.videolan.org/AndroidCompile
 
@@ -2869,8 +3314,18 @@ MaintainerNotes: |-
     * Build:2.0.6,12000627 armv8
     * Build:2.0.6,12000628 x86_64
 
+    Variables FD_TARGET_TUPLE, FD_TARGET_ARCH and abi in output apk name needs
+    to be changed per build.
+
+    * arm64-v7a: aarch64-linux-android
+    * armeabi-v7a: arm-linux-androideabi
+    * x86: x86-linux-android
+    * x86_64: x86_64-linux-android
+
+    Mips no longer supported since 3.2.6.
+
 ArchivePolicy: 9 versions
 AutoUpdateMode: None
 UpdateCheckMode: Static
-CurrentVersion: 3.1.2
-CurrentVersionCode: 13010217
+CurrentVersion: 3.2.7
+CurrentVersionCode: 13020718

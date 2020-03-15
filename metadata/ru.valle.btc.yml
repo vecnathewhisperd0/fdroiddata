@@ -1,6 +1,9 @@
 Categories:
   - Money
 License: MIT
+AuthorName: Valentin Konovalov
+AuthorEmail: valle.ketsujin@gmail.com
+AuthorWebSite: https://www.linkedin.com/in/vkonovalov
 SourceCode: https://github.com/ValleZ/Paper-Wallet
 IssueTracker: https://github.com/ValleZ/Paper-Wallet/issues
 
@@ -88,5 +91,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
-CurrentVersion: 3.0.0
-CurrentVersionCode: 300
+CurrentVersion: 3.1.1
+CurrentVersionCode: 311

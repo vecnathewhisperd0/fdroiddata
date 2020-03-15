@@ -1,9 +1,13 @@
 Categories:
   - Writing
 License: Apache-2.0
+AuthorName: Awesome Application Factory
+AuthorEmail: hanjoongcho@gmail.com
+AuthorWebSite: https://aafactory.github.io/
 SourceCode: https://github.com/hanjoongcho/aaf-easydiary
 IssueTracker: https://github.com/hanjoongcho/aaf-easydiary/issues
 
+AutoName: Easy Diary
 Description: |-
     Features:
 
@@ -36,7 +40,56 @@ Builds:
     gradle:
       - foss
 
-AutoUpdateMode: None
-UpdateCheckMode: None
-CurrentVersion: 1.4.73_foss
-CurrentVersionCode: 136
+  - versionName: 1.4.89_foss
+    versionCode: 155
+    commit: v1.4.89
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.92_foss
+    versionCode: 158
+    commit: v1.4.92
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.116
+    versionCode: 182
+    commit: v1.4.116
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.118
+    versionCode: 184
+    commit: v1.4.118
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.120
+    versionCode: 186
+    commit: v1.4.120
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.121
+    versionCode: 187
+    commit: v1.4.121
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.122
+    versionCode: 188
+    commit: v1.4.122
+    subdir: app
+    gradle:
+      - foss
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.4.122
+CurrentVersionCode: 188

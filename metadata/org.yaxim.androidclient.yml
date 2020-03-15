@@ -1,13 +1,16 @@
 Categories:
   - Internet
 License: GPL-2.0-only
-WebSite: https://yaxim.org
+AuthorName: Georg Lukas
+AuthorEmail: georg@op-co.de
+AuthorWebSite: https://op-co.de/blog/
+WebSite: https://yaxim.org/
 SourceCode: https://github.com/ge0rg/yaxim
 IssueTracker: https://github.com/pfleidi/yaxim/issues
+Translation: https://translations.launchpad.net/yaxim/master/+pots/yaxim/
 Changelog: https://raw.githubusercontent.com/ge0rg/yaxim/HEAD/ChangeLog
 
 AutoName: yaxim
-Summary: XMPP (Instant Messaging) client
 Description: |-
     Yet Another XMPP Instant Messenger. Why pay for SMS if you can have unlimited
     messaging on your data plan? yaxim aims at security, low overhead and keeping
@@ -160,5 +163,5 @@ MaintainerNotes: Legacy with lots of jars, which was allowed back when it was ad
 AutoUpdateMode: None
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/ge0rg/yaxim/master/AndroidManifest.xml|android:versionCode="([0-9]*)"|.|android:versionCode="([0-9]*)"
-CurrentVersion: '53'
-CurrentVersionCode: 53
+CurrentVersion: '61'
+CurrentVersionCode: 61

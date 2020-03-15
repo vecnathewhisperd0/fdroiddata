@@ -1,0 +1,79 @@
+Categories:
+  - Internet
+License: MPL-2.0
+AuthorName: CookieJar Apps
+AuthorEmail: support@cookiegames.co.uk
+SourceCode: https://github.com/CookieGamesOfficial/SmartCookieWeb
+IssueTracker: https://github.com/CookieGamesOfficial/SmartCookieWeb/issues
+Changelog: https://github.com/CookieGamesOfficial/SmartCookieWeb/releases
+
+AutoName: SmartCookieWeb
+Description: |-
+    ''Smart Cookie Secure Web Browser'' is a lightweight, basic and secure web
+    browser that uses less than 8MB of space.
+
+    There is an Incognito Mode which can be enabled and stops web trackers
+    completely. As well as this, the user agent (your web "fingerprint") is the
+    same as every other Smart Cookie user so websites can’t track you.
+
+    Smart Cookie is ad-free and always will be. There is also an ad blocker
+    included which is enabled by default.
+
+RepoType: git
+Repo: https://github.com/CookieGamesOfficial/SmartCookieWeb
+
+Builds:
+  - versionName: 4.5.1
+    versionCode: 34
+    commit: v4.5.1
+    subdir: app
+    gradle:
+      - noGoogleServices
+
+  - versionName: 6.4.3
+    versionCode: 67
+    commit: v6.4.3
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 6.6.0
+    versionCode: 70
+    disable: no such tag
+    commit: v6.6.0
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 7.0.2
+    versionCode: 72
+    commit: v7.0.2
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 7.2.2
+    versionCode: 79
+    commit: v7.2.2
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 7.2.3
+    versionCode: 80
+    commit: v7.2.3
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 7.3.0
+    versionCode: 82
+    commit: v7.3.0
+    subdir: app
+    gradle:
+      - scMain
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 7.3.0
+CurrentVersionCode: 82

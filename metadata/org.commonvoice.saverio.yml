@@ -1,0 +1,46 @@
+Categories:
+  - Science & Education
+License: GPL-3.0-only
+AuthorName: Saverio Morelli
+AuthorWebSite: https://saveriomorelli.com/
+SourceCode: https://github.com/Sav22999/common-voice-android
+IssueTracker: https://github.com/Sav22999/common-voice-android/issues
+
+AutoName: Common Voice
+
+RepoType: git
+Repo: https://github.com/Sav22999/common-voice-android
+
+Builds:
+  - versionName: 0.2.2b
+    versionCode: 73
+    commit: 0.2.2b
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.4b
+    versionCode: 76
+    commit: 0.2.4b
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.5b
+    versionCode: 77
+    commit: 0.2.5b
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.2.6b
+    versionCode: 78
+    commit: 0.2.6b
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.2.6b
+CurrentVersionCode: 78

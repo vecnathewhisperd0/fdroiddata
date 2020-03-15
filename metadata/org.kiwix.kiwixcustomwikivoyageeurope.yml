@@ -1,6 +1,9 @@
 Categories:
   - Reading
 License: GPL-3.0-only
+AuthorName: Kiwix
+AuthorEmail: contact+github@kiwix.org
+AuthorWebSite: https://kiwix.org/
 WebSite: https://www.wikivoyage.org/
 SourceCode: https://github.com/kiwix/kiwix-android
 IssueTracker: https://github.com/kiwix/kiwix-android/issues
@@ -51,6 +54,7 @@ MaintainerNotes: |-
     Upstream distributes the content file as an APK expansion file, but we include it in the APK.
     Because of this, we only build the armeabi arch because the content file is duplicated for each arch.
 
+ArchivePolicy: 0 versions
 AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: 2018-10

@@ -1,12 +1,22 @@
 Categories:
   - Internet
 License: Apache-2.0
+AuthorName: moko256.lab
+AuthorEmail: moko256.lab@gmail.com
 SourceCode: https://github.com/moko256/twitlatte
 IssueTracker: https://github.com/moko256/twitlatte/issues
+Changelog: https://github.com/moko256/twitlatte/blob/HEAD/CHANGELOG.md
 
 AutoName: twitlatte
-Description: SNS client specialized to read in chronorogical order. You can access
-    Twitter, Mastodon and Pleroma with API. ''Twitlatte'' supports multiple accounts.
+Description: |-
+    SNS client specialized to read in chronorogical order. You can access
+    Twitter, Mastodon and Pleroma with API. ''Twitlatte'' supports multiple
+    accounts.
+
+    '''NOTE:''' Twitter has
+    [https://github.com/moko256/twitlatte/issues/54#issuecomment-574955039
+    permanently suspended this app] – so it’s unlikely Twitlatte will be able
+    to support Twitter in the foreseeable future.
 
 RepoType: git
 Repo: https://github.com/moko256/twitlatte
@@ -161,7 +171,55 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.8.1
+    versionCode: 25
+    commit: v1.8.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.9.0
+    versionCode: 26
+    commit: v1.9.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.9.2
+    versionCode: 28
+    commit: v1.9.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.10.0
+    versionCode: 29
+    commit: v1.10.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.10.1
+    versionCode: 30
+    commit: v1.10.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.11.1
+    versionCode: 32
+    commit: v1.11.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.0
-CurrentVersionCode: 24
+CurrentVersion: 1.11.1
+CurrentVersionCode: 32

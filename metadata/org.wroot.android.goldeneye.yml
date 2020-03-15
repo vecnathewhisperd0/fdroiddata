@@ -1,12 +1,13 @@
 Categories:
   - Internet
 License: GPL-3.0-only
-WebSite: http://wroot.org/projects/goldeneye-4-android
+AuthorName: Jan Seidl
+AuthorWebSite: https://wroot.org/
+WebSite: https://wroot.org/projects/goldeneye-4-android/
 SourceCode: https://github.com/jseidl/GoldenEye-Mobile
 IssueTracker: https://github.com/jseidl/GoldenEye-Mobile/issues
 
 AutoName: GoldenEye
-Summary: Layer 7 HTTP DoS Test Tool
 Description: |-
     GoldenEye is a Layer 7 DoS Test Tool.
 

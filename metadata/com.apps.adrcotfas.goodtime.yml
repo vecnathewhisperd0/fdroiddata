@@ -1,13 +1,16 @@
 Categories:
   - Time
 License: Apache-2.0
+AuthorName: Adrian Cotfas
+AuthorEmail: goodtime-app@googlegroups.com
 SourceCode: https://github.com/goodtime-productivity/Goodtime
 IssueTracker: https://github.com/goodtime-productivity/Goodtime/issues
 Translation: https://crowdin.com/project/goodtime
 Changelog: https://github.com/goodtime-productivity/Goodtime/releases
+Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CH2SJKS6GXG6L
 
+Name: Goodtime - Minimalist Pomodoro Timer
 AutoName: Goodtime
-Summary: Productivity timer designed to keep you on track and free of distractions
 Description: |-
     A minimalist but powerful productivity timer designed to keep you focused
     and free of distractions.
@@ -64,7 +67,35 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 2.0.11
+    versionCode: 88
+    commit: 2.0.11
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.1
+    versionCode: 100
+    commit: 2.1.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.3
+    versionCode: 102
+    commit: 2.1.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.4
+    versionCode: 103
+    commit: 2.1.4
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.8
-CurrentVersionCode: 84
+CurrentVersion: 2.1.4
+CurrentVersionCode: 103

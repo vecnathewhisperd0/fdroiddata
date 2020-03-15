@@ -139,7 +139,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.0.30
+    versionCode: 1030
+    commit: v1.0.30
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.32
+    versionCode: 1032
+    commit: v1.0.32
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.29
-CurrentVersionCode: 1029
+CurrentVersion: 1.0.32
+CurrentVersionCode: 1032

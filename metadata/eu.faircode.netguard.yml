@@ -2,7 +2,8 @@ Categories:
   - Security
   - Internet
 License: GPL-3.0-only
-WebSite: https://www.netguard.me
+AuthorName: Marcel Bokhorst (M66B)
+WebSite: https://www.netguard.me/
 SourceCode: https://github.com/M66B/NetGuard
 IssueTracker: https://forum.xda-developers.com/android/apps-games/app-netguard-root-firewall-t3233012
 Translation: https://crowdin.com/project/netguard
@@ -911,7 +912,281 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
 
+  - versionName: '2.234'
+    versionCode: 2019042201
+    commit: '2.234'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.236'
+    versionCode: 2019042302
+    commit: '2.236'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.237'
+    versionCode: 2019042801
+    commit: '2.237'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.238'
+    versionCode: 2019043001
+    commit: '2.238'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.239'
+    versionCode: 2019050401
+    commit: '2.239'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.240'
+    versionCode: 2019050501
+    commit: '2.240'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.241'
+    versionCode: 2019050601
+    commit: '2.241'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.242'
+    versionCode: 2019050701
+    commit: '2.242'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.243'
+    versionCode: 2019050801
+    commit: '2.243'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.244'
+    versionCode: 2019051501
+    commit: '2.244'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.245'
+    versionCode: 2019051701
+    commit: '2.245'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.247'
+    versionCode: 2019052202
+    commit: '2.247'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.248'
+    versionCode: 2019052901
+    commit: '2.248'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.249'
+    versionCode: 2019060101
+    commit: '2.249'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.250'
+    versionCode: 2019060601
+    commit: '2.250'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.251'
+    versionCode: 2019062901
+    commit: '2.251'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.252'
+    versionCode: 2019070901
+    commit: '2.252'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.253'
+    versionCode: 2019071301
+    commit: '2.253'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.255'
+    versionCode: 2019072301
+    commit: '2.255'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.256'
+    versionCode: 2019072801
+    commit: '2.256'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.258'
+    versionCode: 2019080402
+    commit: '2.258'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.260'
+    versionCode: 2019080601
+    commit: '2.260'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.261'
+    versionCode: 2019081001
+    commit: '2.261'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.262'
+    versionCode: 2019082401
+    commit: '2.262'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.263'
+    versionCode: 2019090101
+    commit: '2.263'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.265'
+    versionCode: 2019090109
+    commit: '2.265'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.266'
+    versionCode: 2019091001
+    commit: '2.266'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.267'
+    versionCode: 2019101301
+    commit: '2.267'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.268'
+    versionCode: 2019102401
+    commit: '2.268'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.269'
+    versionCode: 2019102901
+    commit: '2.269'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.270'
+    versionCode: 2019122601
+    commit: '2.270'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.273'
+    versionCode: 2020011002
+    commit: '2.273'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.274'
+    versionCode: 2020021401
+    commit: '2.274'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: '2.233'
-CurrentVersionCode: 2019041902
+CurrentVersion: '2.274'
+CurrentVersionCode: 2020021401

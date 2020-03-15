@@ -38,7 +38,23 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.1.7
+    versionCode: 9
+    commit: v1.1.7
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/testImplementation/d' build.gradle
+
+  - versionName: 1.1.8
+    versionCode: 10
+    commit: v1.1.8
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/testImplementation/d' build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.6
-CurrentVersionCode: 8
+CurrentVersion: 1.1.8
+CurrentVersionCode: 10

@@ -1,6 +1,8 @@
 Categories:
   - Games
 License: LGPL-3.0-only
+AuthorName: João Neto
+AuthorEmail: joao.m.neto@gmail.com
 SourceCode: https://github.com/joaomneto/TitanCompanion
 IssueTracker: https://github.com/joaomneto/TitanCompanion/issues
 Changelog: https://github.com/joaomneto/TitanCompanion/releases
@@ -31,7 +33,49 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v61-beta
+    versionCode: 61
+    commit: v61-beta
+    gradle:
+      - yes
+
+  - versionName: v62-beta
+    versionCode: 62
+    commit: v62-beta
+    gradle:
+      - yes
+
+  - versionName: v63-beta
+    versionCode: 63
+    commit: v63-beta
+    gradle:
+      - yes
+
+  - versionName: v64-beta
+    versionCode: 64
+    commit: v64-beta
+    gradle:
+      - yes
+
+  - versionName: v65-beta
+    versionCode: 65
+    commit: v65-beta
+    gradle:
+      - yes
+
+  - versionName: v66-beta
+    versionCode: 66
+    commit: v66-beta
+    gradle:
+      - yes
+
+  - versionName: v67-beta
+    versionCode: 67
+    commit: v67-beta
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v60-beta
-CurrentVersionCode: 60
+CurrentVersion: v67-beta
+CurrentVersionCode: 67

@@ -4,7 +4,11 @@ Categories:
   - Internet
   - Phone & SMS
 License: Apache-2.0
+AuthorName: Harshad RJ
+AuthorEmail: hi.skeye@gmail.com
 SourceCode: https://github.com/LiMium/mini-vector-android
+IssueTracker: https://github.com/LiMium/mini-vector-android/issues
+Translation: https://translate.riot.im/projects/riot-android/
 Changelog: https://github.com/LiMium/mini-vector-android/blob/HEAD/CHANGES.rst
 
 AutoName: miniVector
@@ -430,7 +434,95 @@ Builds:
         libs/matrix-sdk.aar
     ndk: r17c
 
+  - versionName: 0.8.29b
+    versionCode: 82901
+    commit: miniv0.8.29b-fdroid
+    subdir: vector
+    gradle:
+      - appfdroid
+    srclibs:
+      - mini-matrixsdk@v0.9.20a-no-webrtc
+      - olmsdk@ec2695b9c945fa577c6fc4501d65a186208ecfed
+    prebuild:
+      - sed -i -e '/com.google.firebase/d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e '/jitsi-maven-repository/c\ url "https://maven.google.com"' ../build.gradle
+      - mkdir -p libs
+    build:
+      - pushd $$olmsdk$$/android
+      - echo ndk.dir=$$NDK$$ > local.properties
+      - gradle assembleRelease
+      - popd
+      - cp $$olmsdk$$/android/olm-sdk/build/outputs/aar/olm-sdk-release-*.aar libs/olm-sdk.aar
+      - mkdir -p $$mini-matrixsdk$$/matrix-sdk/libs
+      - cp $$olmsdk$$/android/olm-sdk/build/outputs/aar/olm-sdk-release-*.aar $$mini-matrixsdk$$/matrix-sdk/libs/olm-sdk.aar
+      - pushd $$mini-matrixsdk$$
+      - gradle clean assembleRelease
+      - popd
+      - cp $$mini-matrixsdk$$/matrix-sdk/build/outputs/aar/matrix-sdk-release-*.aar
+        libs/matrix-sdk.aar
+    ndk: r17c
+
+  - versionName: 0.9.1
+    versionCode: 90100
+    commit: miniv0.9.1-fdroid
+    subdir: vector
+    gradle:
+      - appfdroid
+    prebuild:
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+
+  - versionName: 0.9.3
+    versionCode: 90300
+    commit: miniv0.9.3-fdroid
+    subdir: vector
+    gradle:
+      - appfdroid
+    prebuild:
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e '/Jitsi repo/,+4d' ../build.gradle
+
+  - versionName: 0.9.4
+    versionCode: 90400
+    commit: miniv0.9.4
+    subdir: vector
+    gradle:
+      - appfdroid
+    rm:
+      - vector/libs/react-native-locale-detector.aar
+    prebuild:
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e '/Jitsi repo/,+5d' ../build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+
+  - versionName: 0.9.8
+    versionCode: 90800
+    commit: miniv0.9.8
+    subdir: vector
+    gradle:
+      - appfdroid
+    prebuild:
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e '/Jitsi repo/,+5d' ../build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+
+  - versionName: 0.9.9
+    versionCode: 90900
+    commit: 335a1665fc4cd3cc1e97da85ca8e7c43e3792a9f
+    subdir: vector
+    gradle:
+      - appfdroid
+    prebuild:
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e '/Jitsi repo/,+5d' ../build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 0.8.29
-CurrentVersionCode: 82900
+CurrentVersion: 0.9.9
+CurrentVersionCode: 90900

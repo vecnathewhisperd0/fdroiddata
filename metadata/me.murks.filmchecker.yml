@@ -4,6 +4,8 @@ Categories:
   - Multimedia
   - Connectivity
 License: MIT
+AuthorName: Zouroboros
+AuthorEmail: zouroboros@gmail.com
 SourceCode: https://github.com/zouroboros/filmchecker
 IssueTracker: https://github.com/zouroboros/filmchecker/issues
 
@@ -122,7 +124,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.0.2
+    versionCode: 18
+    commit: 2.0.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.3
+    versionCode: 19
+    commit: 2.0.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.4
+    versionCode: 20
+    commit: 2.0.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.5
+    versionCode: 21
+    commit: 2.0.5.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v.0
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.1
-CurrentVersionCode: 17
+CurrentVersion: 2.0.5
+CurrentVersionCode: 21

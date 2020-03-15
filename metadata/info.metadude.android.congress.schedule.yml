@@ -5,7 +5,32 @@ SourceCode: https://github.com/EventFahrplan/EventFahrplan
 IssueTracker: https://github.com/EventFahrplan/EventFahrplan/issues
 
 AutoName: 35C3 Schedule
-Description: Conference app for the 35C3 (35. Chaos Communication Congress)
+Description: |
+    Conference program app for the Chaos Communication Congress
+
+    [https://events.ccc.de/congress/2019]
+
+    '''Funktionen'''
+    * View program by day and rooms (side by side)
+    * Custom grid layout for smartphones (try landscape mode 🙃) and tablets
+    * Read detailed descriptions (speaker names, start time, room name, links, ...) of events
+    * Add events to favorites list
+    * Export favorites list
+    * Setup alarms for individual events
+    * Add events to your personal calendar
+    * Share a website link to an event with others
+    * Keep track of program changes
+    * Automatic program updates (configurable in settings)
+    * Supported languages: Dutch, English, French, German, Italian, Portuguese, Russian, Spanish (Event descriptions excluded)
+
+    💡 Questions regarding the content can only be answered by the
+    content team of the Congress. This app simply offers a way to
+    consume and personalize the conference schedule.
+
+    💣 Bug reports are very welcome. It would be awesome if you
+    can describe how to reproduce the particular error. The issue
+    tracker can be found here:
+    [https://github.com/EventFahrplan/EventFahrplan/issues]
 
 RepoType: git
 Repo: https://github.com/EventFahrplan/EventFahrplan.git
@@ -189,7 +214,77 @@ Builds:
     scandelete:
       - buildSrc
 
+  - versionName: 1.40.0
+    versionCode: 61
+    commit: v.1.40.0
+    subdir: app
+    gradle:
+      - ccc35c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.41.0
+    versionCode: 62
+    commit: v.1.41.0
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.41.1
+    versionCode: 63
+    commit: v.1.41.1
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.41.2
+    versionCode: 64
+    commit: v.1.41.2
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.41.3
+    versionCode: 65
+    commit: v.1.41.3
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.41.4
+    versionCode: 66
+    commit: v.1.41.4
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.41.5
+    versionCode: 67
+    commit: v.1.41.5
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+    scandelete:
+      - buildSrc
+
 AutoUpdateMode: Version v.%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.39.0
-CurrentVersionCode: 57
+CurrentVersion: 1.41.5
+CurrentVersionCode: 67

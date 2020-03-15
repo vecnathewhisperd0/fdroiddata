@@ -1,9 +1,12 @@
 Categories:
   - System
 License: GPL-3.0-or-later
+AuthorName: Rui Zhao
+AuthorWebSite: https://me.ryey.icu/
 WebSite: https://renyuneyun.github.io/Easer/en/
 SourceCode: https://github.com/renyuneyun/Easer
 IssueTracker: https://github.com/renyuneyun/Easer/issues
+Translation: https://hosted.weblate.org/projects/easer/
 Changelog: https://github.com/renyuneyun/Easer/blob/HEAD/CHANGELOG.md
 Donate: https://renyuneyun.github.io/Easer/en/DONATE
 LiberapayID: '27842'
@@ -16,7 +19,7 @@ Description: |-
     you, the user, could tell it what to do on what event (and even combine multiple
     events!). Routine actions no longer need to be taken manually.
 
-    This app was inspired by CyanogenMod's 'profile' mechanism and IFTTT. The
+    This app was inspired by CyanogenMod’s 'profile' mechanism and IFTTT. The
     original intuition was to automatically change the profile on certain time or
     specific WiFi connections, and it was expanded for more general use then (so
     Easer runs on any Android devices).
@@ -675,7 +678,141 @@ Builds:
     gradle:
       - main
 
+  - versionName: 0.7.4.1
+    versionCode: 103
+    commit: v0.7.4.1
+    subdir: app
+    gradle:
+      - main
+
+  - versionName: 0.7.4.2
+    versionCode: 104
+    commit: v0.7.4.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.5
+    versionCode: 105
+    commit: v0.7.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.6
+    versionCode: 106
+    commit: v0.7.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.6.1
+    versionCode: 107
+    commit: v0.7.6.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.6.2
+    versionCode: 108
+    commit: v0.7.6.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.7
+    versionCode: 109
+    commit: v0.7.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.7.1
+    versionCode: 110
+    commit: v0.7.7.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.7.2
+    versionCode: 111
+    commit: v0.7.7.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.7.4
+    versionCode: 113
+    commit: v0.7.7.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.7.5
+    versionCode: 114
+    commit: v0.7.7.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.7.6
+    versionCode: 115
+    commit: v0.7.7.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.7.7
+    versionCode: 116
+    commit: v0.7.7.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.8
+    versionCode: 117
+    commit: v0.7.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.8.1
+    versionCode: 118
+    commit: v0.7.8.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.7.8.3
+    versionCode: 120
+    commit: v0.7.8.3
+    subdir: app
+    gradle:
+      - stable
+
+  - versionName: 0.7.9
+    versionCode: 121
+    commit: v0.7.9
+    subdir: app
+    gradle:
+      - stable
+
+  - versionName: 0.7.9.1
+    versionCode: 122
+    commit: v0.7.9.1
+    subdir: app
+    gradle:
+      - stable
+
+  - versionName: '0.8'
+    versionCode: 123
+    commit: v0.8
+    subdir: app
+    gradle:
+      - stable
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.7.4
-CurrentVersionCode: 102
+UpdateCheckIgnore: beta
+CurrentVersion: '0.8'
+CurrentVersionCode: 123
