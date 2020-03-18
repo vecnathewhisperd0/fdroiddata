@@ -8,13 +8,13 @@ IssueTracker: https://github.com/ivpn/android-app/issues
 Summary: Privacy focused VPN service with WireGuard
 Description: |-
     IVPN is an audited, privacy focused VPN service that offers WireGuard, multi-hop
-    connections and built-in ad and tracker blocking. 
-    IVPN applications for all major platforms are open-source since February 2020. 
+    connections and built-in ad and tracker blocking.
+    IVPN applications for all major platforms are open-source since February 2020.
 
     Notable features:
     * Fast servers in 45 locations
     * Use on up to 7 devices (Pro plan)
-    * Split tunneling 
+    * Split tunneling
     * Kill switch
     * Set trusted networks and use custom DNS
     * Multi-hop connections for advanced privacy
