@@ -84,7 +84,7 @@ Builds:
     submodules: true
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
-      - flutter@beta
+      - flutter@v1.15.17
     rm:
       - authpass/ios
       - authpass/macos
