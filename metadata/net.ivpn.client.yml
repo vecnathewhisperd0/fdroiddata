@@ -1,3 +1,5 @@
+AntiFeatures:
+  - NonFreeNet
 Categories:
   - Security
 License: GPL-3.0-only
@@ -43,7 +45,7 @@ Repo: https://github.com/ivpn/android-app
 Builds:
   - versionName: '1.65'
     versionCode: 75
-    commit: 164c556bca4ca1d6cca476e6a18c82a3d2add0fb
+    commit: f249370d1e8bfdcca75f0c15cfc781b4c5a30700
     subdir: app
     init:
       - git submodule init
