@@ -9,20 +9,20 @@ IssueTracker: https://github.com/AdrienPoupa/AttestationCoronavirus/issues
 
 AutoName: Attestation Coronavirus
 Description: Generates the PDF attestation file required by the French government
-    to go out.
+    to go out. One has to print the documents. It is not an official application.
 
 RepoType: git
 Repo: https://github.com/AdrienPoupa/AttestationCoronavirus
 
 Builds:
-  - versionName: 0.0.2
-    versionCode: 2
-    commit: 0.0.2
+  - versionName: 0.0.3
+    versionCode: 3
+    commit: 0.0.3
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.2
-CurrentVersionCode: 2
+CurrentVersion: 0.0.3
+CurrentVersionCode: 3
