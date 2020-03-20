@@ -345,9 +345,9 @@ Builds:
       - app/src/main/res/raw/*
     ndk: r18b
 
-  - versionName: '55378'
-    versionCode: 55378
-    commit: '55378'
+  - versionName: '55379'
+    versionCode: 55379
+    commit: '55379'
     subdir: app
     gradle:
       - yes
@@ -363,5 +363,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '55378'
-CurrentVersionCode: 55378
+CurrentVersion: '55379'
+CurrentVersionCode: 55379

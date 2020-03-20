@@ -222,9 +222,9 @@ Builds:
       - ./link_to_mupdf_1.16.1.sh
     ndk: r17c
 
-  - versionName: 8.3.7-fdroid
-    versionCode: 3592
-    commit: 8.3.7
+  - versionName: 8.3.19-fdroid
+    versionCode: 3636
+    commit: 8.3.19
     subdir: app/
     sudo:
       - apt-get update || apt-get update
@@ -257,5 +257,5 @@ AutoUpdateMode: Version +-fdroid %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/foobnix/LibreraReader/master/app/build.gradle|\s+codeNumber
     = (\d+)|.|\s+versionNumber = "([^\"]+)"
-CurrentVersion: 8.3.7
-CurrentVersionCode: 3592
+CurrentVersion: 8.3.19
+CurrentVersionCode: 3636
