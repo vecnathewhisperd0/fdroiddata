@@ -91,6 +91,6 @@ Builds:
     ndk: r21
 
 AutoUpdateMode: None
-UpdateCheckMode: RepoManifest
+UpdateCheckMode: Tags
 CurrentVersion: 1.2.4
 CurrentVersionCode: 16
