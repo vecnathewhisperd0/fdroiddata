@@ -1416,6 +1416,7 @@ Builds:
 
   - versionName: '1.126'
     versionCode: 126
+    disable: fails to build
     commit: '1.126'
     subdir: app
     gradle:
