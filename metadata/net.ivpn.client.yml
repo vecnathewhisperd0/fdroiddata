@@ -55,5 +55,5 @@ Builds:
     gradle:
       - fdroidProduction
 
-AutoUpdateMode: None
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
