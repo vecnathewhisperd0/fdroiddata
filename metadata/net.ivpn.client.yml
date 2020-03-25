@@ -45,7 +45,7 @@ Repo: https://github.com/ivpn/android-app
 Builds:
   - versionName: '1.65'
     versionCode: 75
-    commit: f249370d1e8bfdcca75f0c15cfc781b4c5a30700
+    commit: v1.65
     subdir: app
     init:
       - git submodule init
