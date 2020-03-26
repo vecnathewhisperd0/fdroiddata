@@ -21,7 +21,7 @@ Builds:
     commit: '1.990'
     output: build/app/outputs/apk/release/app-release.apk
     srclibs:
-      - flutter@beta
+      - flutter@v1.15.17
     prebuild: echo 'android.applicationVariants.all { variant -> variant.outputs.all
         { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
     build:
