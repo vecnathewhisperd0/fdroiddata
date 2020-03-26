@@ -21,7 +21,7 @@ Builds:
     commit: '1.990'
     output: build/app/outputs/apk/release/app-release.apk
     srclibs:
-      - flutter@v1.14.6
+      - flutter@beta
     build:
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter build apk
