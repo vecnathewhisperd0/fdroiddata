@@ -4214,9 +4214,183 @@ Builds:
     scandelete:
       - src/androidTest
 
+  - versionName: '20200304'
+    versionCode: 20200304
+    commit: dev-20200304
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200306'
+    versionCode: 20200306
+    commit: dev-20200306
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200307'
+    versionCode: 20200307
+    commit: dev-20200307
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200310'
+    versionCode: 20200310
+    commit: dev-20200310
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200311'
+    versionCode: 20200311
+    commit: dev-20200311
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200312'
+    versionCode: 20200312
+    commit: dev-20200312
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200313'
+    versionCode: 20200313
+    commit: dev-20200313
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200318'
+    versionCode: 20200318
+    commit: dev-20200318
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200320'
+    versionCode: 20200320
+    commit: dev-20200320
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200324'
+    versionCode: 20200324
+    commit: dev-20200324
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
 MaintainerNotes: Tags get removed. See https://github.com/nextcloud/android/issues/969.
 
 AutoUpdateMode: Version dev-%c
 UpdateCheckMode: Tags ^dev
-CurrentVersion: '20200224'
-CurrentVersionCode: 20200224
+CurrentVersion: '20200324'
+CurrentVersionCode: 20200324

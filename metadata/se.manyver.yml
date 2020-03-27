@@ -1190,9 +1190,9 @@ Builds:
       - npm run build-android-assets
     ndk: r19c
 
-  - versionName: 0.2002.24-beta
-    versionCode: 81
-    commit: v0.2002.24-beta
+  - versionName: 0.2003.4-beta
+    versionCode: 82
+    commit: v0.2003.4-beta
     timeout: 30000
     subdir: android/app
     sudo:
@@ -1208,6 +1208,8 @@ Builds:
     init:
       - npm install --no-optional
       - truncate -s 0 ../../node_modules/react-native/node_modules/@react-native-community/cli/build/commands/server/external/xsel
+    patch:
+      - build.patch
     gradle:
       - indie
     srclibs:
@@ -1237,5 +1239,5 @@ MaintainerNotes: scanignore is used to allow the "node_modules/react-native/andr
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2002.24-beta
-CurrentVersionCode: 81
+CurrentVersion: 0.2003.4-beta
+CurrentVersionCode: 82

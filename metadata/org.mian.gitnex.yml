@@ -5,8 +5,9 @@ AuthorName: M M Arif
 WebSite: https://gitnex.com
 SourceCode: https://gitea.com/gitnex/GitNex/src/branch/master
 IssueTracker: https://gitea.com/gitnex/GitNex/issues
-Translation: https://hosted.weblate.org/projects/gitnex/
+Translation: https://crowdin.com/project/GitNex
 Changelog: https://gitea.com/gitnex/GitNex/src/branch/master/CHANGELOG.md
+Donate: https://www.patreon.com/mmarif
 LiberapayID: '1547671'
 
 AutoName: GitNex
@@ -208,7 +209,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.4.0
+    versionCode: 90
+    commit: 2.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.4.1
+    versionCode: 91
+    commit: 2.4.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.3.2
-CurrentVersionCode: 82
+CurrentVersion: 2.4.1
+CurrentVersionCode: 91

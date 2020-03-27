@@ -172,39 +172,26 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore/d' build.gradle
 
-  - versionName: 6.4.0
-    versionCode: 81
-    commit: 6.4.0
-    subdir: app
-    gradle:
-      - yes
-    prebuild: sed -i -e '/keystore/d' build.gradle
-
-  - versionName: 6.4.1
-    versionCode: 82
-    commit: 6.4.1
-    subdir: app
-    gradle:
-      - yes
-    prebuild: sed -i -e '/keystore/d' build.gradle
-
-  - versionName: 6.4.2
-    versionCode: 83
-    commit: 6.4.2
-    subdir: app
-    gradle:
-      - yes
-    prebuild: sed -i -e '/keystore/d' build.gradle
-
   - versionName: 6.5.0
     versionCode: 84
     commit: 6.5.0
     subdir: app
+    patch:
+      - build.patch
     gradle:
       - yes
-    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.5.3
+    versionCode: 87
+    commit: 6.5.3
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - yes
+    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 6.5.0
-CurrentVersionCode: 84
+CurrentVersion: 6.5.3
+CurrentVersionCode: 87

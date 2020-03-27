@@ -7,7 +7,6 @@ SourceCode: https://bitbucket.org/oF2pks/adbungfupermissionsetter/src/xda
 IssueTracker: https://bitbucket.org/oF2pks/adbungfupermissionsetter/issues?status=new&status=open
 
 AutoName: ADBungFu
-Summary: Superuser ADBcmd appOps freezer ^4 root ed :# su Magisk (aosp/opPerms)
 Description: |-
     appOps manager / ADB simulator for rooted devices ONLY (#su Magisk). '''USE WITH CAUTION.'''
 
@@ -51,7 +50,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 3.0-10
+    versionCode: 10
+    commit: v3.0-10
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.0-11
+    versionCode: 11
+    commit: v3.0-11
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.0-9
-CurrentVersionCode: 9
+CurrentVersion: 3.0-11
+CurrentVersionCode: 11

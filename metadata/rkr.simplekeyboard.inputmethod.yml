@@ -225,7 +225,15 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '3.19'
+    versionCode: 69
+    commit: '69'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+
 AutoUpdateMode: Version %c
 UpdateCheckMode: Tags
-CurrentVersion: '3.18'
-CurrentVersionCode: 68
+CurrentVersion: '3.19'
+CurrentVersionCode: 69
