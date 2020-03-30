@@ -1,5 +1,5 @@
---- /home/strech/build.gradle	2020-03-30 10:40:00.000000000 -0400
-+++ ./build.gradle	2020-03-30 10:45:37.772626364 -0400
+--- a/app/build.gradle
++++ b/app/build.gradle
 @@ -8,14 +8,9 @@
          flatDir {
              dirs 'libs'
