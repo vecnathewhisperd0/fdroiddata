@@ -577,6 +577,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.19.0
+    versionCode: 900
+    commit: v0.19.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
 CurrentVersion: 0.18.7
