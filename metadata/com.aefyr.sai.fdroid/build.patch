@@ -1,5 +1,5 @@
---- a/app/build.gradle
-+++ b/app/build.gradle
+--- a/build.gradle
++++ b/build.gradle
 @@ -8,14 +8,9 @@
          flatDir {
              dirs 'libs'
