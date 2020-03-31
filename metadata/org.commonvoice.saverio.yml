@@ -19,15 +19,14 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 0.2.6b
-    versionCode: 78
-    disable: fails to build
-    commit: 0.2.6b
+  - versionName: 0.2.8b
+    versionCode: 81
+    commit: 0.2.8b
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2.6b
-CurrentVersionCode: 78
+CurrentVersion: 0.2.8b
+CurrentVersionCode: 81
