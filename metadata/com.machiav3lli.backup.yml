@@ -7,19 +7,6 @@ IssueTracker: https://github.com/machiav3lli/oandbackupx/issues
 Changelog: https://github.com/machiav3lli/oandbackupx/blob/HEAD/changelog.md
 
 AutoName: OAndBackupX
-Description: |-
-    Fork of the infamous OAndBackup with the aim to bring the app to 2020, adding
-    support for the newest versions of android and update it's look.
-    Allows you to make and restore backups of the apps on your device.
-    OAndBackupX enables you to save app data to a user-accessible location. Both
-    backup / restore of single apps and of multiple apps are supported.
-
-    Requires a working busybox installation at the moment (often pre-installed on
-    custom roms).
-
-    Requires root: Cause it copies files from /data/data, /data/app and /system/app.
-
-    Status: Beta
 
 RequiresRoot: 'yes'
 
@@ -29,7 +16,7 @@ Repo: https://github.com/machiav3lli/oandbackupx
 Builds:
   - versionName: 0.2.7
     versionCode: 207
-    commit: 0.2.7
+    commit: cd9cf5b3d6a7e06c1b5b2285a68ec1b9d8b6ab6a
     gradle:
       - universal
     srclibs:
