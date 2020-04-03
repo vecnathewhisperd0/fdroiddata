@@ -16,6 +16,17 @@ AutoName: Voice Recorder
 RepoType: git
 Repo: https://github.com/SimpleMobileTools/Simple-Voice-Recorder
 
+Builds:
+  - versionName: 5.1.0
+    versionCode: 3
+    commit: 5.1.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 5.1.0
