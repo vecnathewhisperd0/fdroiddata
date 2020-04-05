@@ -1,8 +1,12 @@
 Categories:
   - Internet
 License: MIT
+AuthorName: Bernd Giesecke
+AuthorEmail: beegee@giesecke.tk
+AuthorWebSite: https://desire.giesecke.tk/
 SourceCode: https://gitlab.com/beegee1962/painlessmesh_android
 IssueTracker: https://gitlab.com/beegee1962/painlessmesh_android/issues
+Changelog: https://gitlab.com/beegee1962/painlessmesh_android/-/releases
 
 AutoName: painlessMesh
 Description: |-
@@ -18,7 +22,7 @@ Description: |-
     permission from the user to be able to scan for Wi-Fi networks.
 
 RepoType: git
-Repo: https://gitlab.com/beegee1962/painlessmesh_android
+Repo: https://gitlab.com/beegee1962/painlessmesh_android.git
 
 Builds:
   - versionName: '1.4'

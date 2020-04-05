@@ -10,6 +10,9 @@ AuthorName: Nicco Kunzmann
 AuthorEmail: niccokunzmann@rambler.ru
 SourceCode: https://github.com/niccokunzmann/mundraub-android
 IssueTracker: https://github.com/niccokunzmann/mundraub-android/issues
+Translation: https://www.transifex.com/mundraub-android/mundraub-android-app/
+Changelog: https://niccokunzmann.github.io/mundraub-android/docs/changelog/index.html
+LiberapayID: '1596018'
 
 AutoName: Fruit Radar
 
@@ -305,7 +308,126 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
+  - versionName: '1.176'
+    versionCode: 177
+    commit: v1.176
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.180'
+    versionCode: 181
+    commit: v1.180
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.187'
+    versionCode: 188
+    commit: v1.187
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.196'
+    versionCode: 197
+    commit: v1.196
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.197'
+    versionCode: 198
+    commit: v1.197
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.199'
+    versionCode: 200
+    commit: v1.199
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.200'
+    versionCode: 201
+    commit: v1.200
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.204
+    versionCode: 205
+    commit: v1.204
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.205
+    versionCode: 206
+    commit: v1.205
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.206
+    versionCode: 207
+    commit: v1.206
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.210
+    versionCode: 211
+    commit: v1.210
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.215
+    versionCode: 216
+    commit: v1.215
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.219
+    versionCode: 220
+    commit: v1.219
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.224
+    versionCode: 225
+    commit: v1.224
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.228
+    versionCode: 229
+    commit: v1.228
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.229
+    versionCode: 230
+    commit: v1.229
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.230
+    versionCode: 231
+    commit: v1.230
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.173'
-CurrentVersionCode: 174
+CurrentVersion: v1.230
+CurrentVersionCode: 231

@@ -3,7 +3,10 @@ AntiFeatures:
 Categories:
   - Writing
 License: BSD-3-Clause
-WebSite: http://www.google.com/intl/ja/ime/
+AuthorName: Google
+AuthorEmail: opensource@google.com
+AuthorWebSite: https://opensource.google/
+WebSite: https://www.google.com/intl/ja/ime/
 SourceCode: https://github.com/google/mozc
 IssueTracker: https://github.com/google/mozc/issues
 Changelog: https://github.com/google/mozc/blob/HEAD/docs/release_history.md

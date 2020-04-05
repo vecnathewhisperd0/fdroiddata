@@ -1,6 +1,8 @@
 Categories:
   - Multimedia
 License: GPL-3.0-only
+AuthorName: Bill Farmer
+AuthorWebSite: https://billthefarmer.github.io/
 WebSite: https://github.com/billthefarmer/accordion/wiki
 SourceCode: https://github.com/billthefarmer/accordion
 IssueTracker: https://github.com/billthefarmer/accordion/issues
@@ -155,7 +157,13 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.16'
+    versionCode: 116
+    commit: v1.16
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.15'
-CurrentVersionCode: 115
+CurrentVersion: '1.16'
+CurrentVersionCode: 116

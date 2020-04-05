@@ -1,6 +1,8 @@
 Categories:
   - Multimedia
 License: GPL-3.0-only
+AuthorName: Bill Farmer
+AuthorWebSite: https://billthefarmer.github.io/
 WebSite: https://github.com/billthefarmer/scope/wiki
 SourceCode: https://github.com/billthefarmer/scope
 IssueTracker: https://github.com/billthefarmer/scope/issues
@@ -152,7 +154,13 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.25'
+    versionCode: 125
+    commit: v1.25
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.24'
-CurrentVersionCode: 124
+CurrentVersion: '1.25'
+CurrentVersionCode: 125

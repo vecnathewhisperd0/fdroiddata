@@ -10,7 +10,6 @@ IssueTracker: https://github.com/fossasia/open-event-attendee-android/issues
 Changelog: https://github.com/fossasia/open-event-attendee-android/releases
 
 AutoName: Eventyay Attendee
-Description: Discover upcoming events near you and get personalized recommendations.
 
 RepoType: git
 Repo: https://github.com/fossasia/open-event-attendee-android
@@ -81,7 +80,31 @@ Builds:
       - fdroid
     prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
 
+  - versionName: 0.7.0
+    versionCode: 14
+    commit: v0.7.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
+
+  - versionName: 0.8.0
+    versionCode: 15
+    commit: v0.8.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
+
+  - versionName: 0.9.1
+    versionCode: 17
+    commit: v0.9.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.6.1
-CurrentVersionCode: 13
+CurrentVersion: 0.9.1
+CurrentVersionCode: 17

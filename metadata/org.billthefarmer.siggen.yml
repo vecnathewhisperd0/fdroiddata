@@ -1,6 +1,8 @@
 Categories:
   - Multimedia
 License: GPL-3.0-only
+AuthorName: Bill Farmer
+AuthorWebSite: https://billthefarmer.github.io/
 WebSite: https://github.com/billthefarmer/sig-gen/wiki
 SourceCode: https://github.com/billthefarmer/sig-gen
 IssueTracker: https://github.com/billthefarmer/sig-gen/issues
@@ -132,7 +134,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.21'
+    versionCode: 121
+    commit: v1.21
+    gradle:
+      - yes
+    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.20'
-CurrentVersionCode: 120
+CurrentVersion: '1.21'
+CurrentVersionCode: 121

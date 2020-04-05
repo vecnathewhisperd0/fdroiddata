@@ -146,7 +146,49 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '3.4'
+    versionCode: 34
+    commit: '3.4'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.0'
+    versionCode: 40
+    commit: '4.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.2'
+    versionCode: 42
+    commit: '4.2'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.3'
+    versionCode: 43
+    commit: '4.3'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.4'
+    versionCode: 44
+    commit: '4.4'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.5'
+    versionCode: 45
+    commit: '4.5'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '3.3'
-CurrentVersionCode: 33
+CurrentVersion: '4.5'
+CurrentVersionCode: 45

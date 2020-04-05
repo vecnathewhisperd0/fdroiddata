@@ -283,7 +283,169 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore/d' build.gradle
 
+  - versionName: 6.9.1
+    versionCode: 260
+    commit: 6.9.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.9.2
+    versionCode: 261
+    commit: 6.9.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.9.3
+    versionCode: 262
+    commit: 6.9.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.9.4
+    versionCode: 264
+    commit: 6.9.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.9.5
+    versionCode: 265
+    commit: 6.9.5
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.9.6
+    versionCode: 266
+    commit: 6.9.6
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.10.0
+    versionCode: 267
+    commit: 6.10.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.10.1
+    versionCode: 268
+    commit: 6.10.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.10.2
+    versionCode: 269
+    commit: 6.10.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.10.3
+    versionCode: 270
+    commit: 6.10.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.10.4
+    versionCode: 271
+    commit: 6.10.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.10.5
+    versionCode: 272
+    commit: 6.10.5
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.10.6
+    versionCode: 273
+    commit: 6.10.6
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.10.7
+    versionCode: 275
+    commit: 6.10.7
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.10.8
+    versionCode: 276
+    commit: 6.10.8
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.13.1
+    versionCode: 296
+    commit: 226374599de4f994d1d5b70931a7f21a6eb9f124
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - foss
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+
+  - versionName: 6.13.3
+    versionCode: 298
+    commit: 6.13.3
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - foss
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+
+  - versionName: 6.13.4
+    versionCode: 299
+    commit: 6.13.4
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - foss
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+
+  - versionName: 6.14.0
+    versionCode: 300
+    commit: 6.14.0
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - foss
+    prebuild:
+      - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 6.8.4
-CurrentVersionCode: 258
+CurrentVersion: 6.14.0
+CurrentVersionCode: 300

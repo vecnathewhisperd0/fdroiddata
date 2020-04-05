@@ -69,10 +69,70 @@ Builds:
     sudo:
       - apt-get update
       - apt-get install -y --no-install-recommends -t stretch-backports npm
-    init: npm install
+    init:
+      - npm install
+      - npm run patch-android-release
     gradle:
       - yes
-    prebuild: truncate -s 0 ../../node_modules/react-native/local-cli/server/util/external/xsel
+    prebuild: truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
+    scanignore:
+      - android/build.gradle
+      - node_modules/react-native-screens/android/build.gradle
+    scandelete:
+      - node_modules
+
+  - versionName: 0.1.1
+    versionCode: 11
+    commit: v0.1.1
+    subdir: android/app
+    sudo:
+      - apt-get update
+      - apt-get install -y --no-install-recommends -t stretch-backports npm
+    init:
+      - npm install
+      - npm run patch-android-release
+    gradle:
+      - yes
+    prebuild: truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
+    scanignore:
+      - android/build.gradle
+      - node_modules/react-native-screens/android/build.gradle
+    scandelete:
+      - node_modules
+
+  - versionName: 0.1.2
+    versionCode: 12
+    commit: v0.1.2
+    subdir: android/app
+    sudo:
+      - apt-get update
+      - apt-get install -y --no-install-recommends -t stretch-backports npm
+    init:
+      - npm install
+      - npm run patch-android-release
+    gradle:
+      - yes
+    prebuild: truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
+    scanignore:
+      - android/build.gradle
+      - node_modules/react-native-screens/android/build.gradle
+    scandelete:
+      - node_modules
+
+  - versionName: 0.2.1
+    versionCode: 15
+    disable: fails to build
+    commit: v0.2.1
+    subdir: android/app
+    sudo:
+      - apt-get update
+      - apt-get install -y --no-install-recommends -t stretch-backports npm
+    init:
+      - npm install
+      - npm run patch-android-release
+    gradle:
+      - yes
+    prebuild: truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
     scanignore:
       - android/build.gradle
       - node_modules/react-native-screens/android/build.gradle
@@ -80,6 +140,6 @@ Builds:
       - node_modules
 
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 0.1.0
-CurrentVersionCode: 10
+UpdateCheckMode: Tags .*[0-9]$
+CurrentVersion: 0.2.1
+CurrentVersionCode: 15

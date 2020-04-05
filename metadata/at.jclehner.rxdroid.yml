@@ -42,7 +42,13 @@ Builds:
       - popd
       - mv $$ShowCase-jclehner$$/library/build/libs/library.aar libs/ShowcaseView.aar
 
+  - versionName: 0.9.33.1
+    versionCode: 9331
+    commit: v0.9.33.1
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.9.32.2
-CurrentVersionCode: 9322
+CurrentVersion: 0.9.33.1
+CurrentVersionCode: 9331

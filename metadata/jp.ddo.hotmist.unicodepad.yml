@@ -2,6 +2,7 @@ Categories:
   - Writing
 License: Apache-2.0
 AuthorName: Ryosuke839
+AuthorEmail: ryosukem16@yahoo.co.jp
 SourceCode: https://github.com/Ryosuke839/UnicodePad
 IssueTracker: https://github.com/Ryosuke839/UnicodePad/issues
 Changelog: https://github.com/Ryosuke839/UnicodePad/releases
@@ -13,7 +14,7 @@ Description: |-
     where selected character is in list. By long clicking, larger character and
     code point will be shown. Favorite characters can be memorized.
 
-    If you can't see special characters, you have to get a font such as Noto font
+    If you can’t see special characters, you have to get a font such as Noto font
     and select it. You can download Noto fonts [https://www.google.com/get/noto/
     from Google].
 
@@ -35,7 +36,15 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
+  - versionName: 2.6.1
+    versionCode: 39
+    disable: non-FOSS libs
+    commit: v2.6.1
+    subdir: app/
+    gradle:
+      - yes
+
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.0
-CurrentVersionCode: 35
+CurrentVersion: 2.6.1
+CurrentVersionCode: 39

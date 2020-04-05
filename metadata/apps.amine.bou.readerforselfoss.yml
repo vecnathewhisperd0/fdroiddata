@@ -5,6 +5,7 @@ License: GPL-3.0-only
 SourceCode: https://github.com/aminecmi/ReaderforSelfoss
 IssueTracker: https://github.com/aminecmi/ReaderforSelfoss/issues
 Translation: https://crowdin.com/project/readerforselfoss
+Changelog: https://github.com/aminecmi/ReaderforSelfoss/blob/HEAD/CHANGELOG.md
 
 AutoName: Reader for Selfoss
 Description: |-
@@ -407,6 +408,17 @@ Builds:
       - appLoginUsername="LOGIN"
       - appLoginPassword="PASS"
 
+  - versionName: 1720020321-github
+    versionCode: 1720020321
+    commit: v1720020321
+    subdir: app
+    gradle:
+      - githubConfig
+    gradleprops:
+      - appLoginUrl="URL"
+      - appLoginUsername="LOGIN"
+      - appLoginPassword="PASS"
+
 MaintainerNotes: |-
     Version code and name are dynamically generated from the Git tag.
 
@@ -415,5 +427,5 @@ MaintainerNotes: |-
 AutoUpdateMode: Version v%c
 UpdateCheckMode: HTTP
 UpdateCheckData: https://www.amine-bou.fr/version.txt|versionCode=(.*)|.|versionName=(.*)
-CurrentVersion: 1719051372-github
-CurrentVersionCode: 1719051372
+CurrentVersion: 1720020321-github
+CurrentVersionCode: 1720020321

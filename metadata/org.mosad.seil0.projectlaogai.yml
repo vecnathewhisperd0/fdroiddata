@@ -1,6 +1,8 @@
 Categories:
   - Science & Education
 License: GPL-3.0-or-later
+AuthorName: Jannik Seiler
+AuthorWebSite: https://www.mosad.xyz/
 SourceCode: https://git.mosad.xyz/Seil0/ProjectLaogai
 IssueTracker: https://git.mosad.xyz/Seil0/ProjectLaogai/issues
 Changelog: https://git.mosad.xyz/Seil0/ProjectLaogai/releases
@@ -25,7 +27,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.5.0
+    versionCode: 14
+    commit: 0.5.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.5.1
+    versionCode: 15
+    commit: 0.5.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.4.1
-CurrentVersionCode: 13
+CurrentVersion: 0.5.1
+CurrentVersionCode: 15

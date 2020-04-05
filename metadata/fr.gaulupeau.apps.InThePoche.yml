@@ -5,8 +5,10 @@ License: GPL-3.0-only
 WebSite: https://www.wallabag.org
 SourceCode: https://github.com/wallabag/android-app
 IssueTracker: https://github.com/wallabag/android-app/issues
+Translation: https://hosted.weblate.org/projects/wallabag/android-app
 Changelog: https://github.com/wallabag/android-app/releases
 FlattrID: '1265480'
+LiberapayID: '291'
 
 AutoName: wallabag
 Description: |-
@@ -209,7 +211,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.2.3
+    versionCode: 213
+    commit: 2.2.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.4
+    versionCode: 214
+    commit: 2.2.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.3.0
+    versionCode: 219
+    commit: 2.3.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^v?[0-9.]*$
-CurrentVersion: 2.2.2
-CurrentVersionCode: 212
+CurrentVersion: 2.3.0
+CurrentVersionCode: 219

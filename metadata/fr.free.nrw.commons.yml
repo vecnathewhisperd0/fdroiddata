@@ -1,9 +1,13 @@
 Categories:
   - Internet
 License: Apache-2.0
+AuthorName: Wikimedia Foundation
+AuthorEmail: commons-app-android@googlegroups.com
 WebSite: https://commons-app.github.io/
 SourceCode: https://github.com/commons-app/apps-android-commons
 IssueTracker: https://github.com/commons-app/apps-android-commons/issues
+Translation: https://github.com/commons-app/documentation/blob/master/android/Translating-the-app.md
+Changelog: https://github.com/commons-app/apps-android-commons/blob/HEAD/CHANGELOG.md
 
 AutoName: Commons
 Description: |-
@@ -266,12 +270,40 @@ Builds:
 
   - versionName: 2.11.0
     versionCode: 475
-    commit: v2.11.0
+    commit: v2.11
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 2.12.0
+    versionCode: 508
+    commit: v2.12
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 2.12.1
+    versionCode: 542
+    commit: v2.12.1
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 2.12.2
+    versionCode: 549
+    commit: v2.12.2
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 2.12.3
+    versionCode: 561
+    commit: v2.12.3
     subdir: app
     gradle:
       - prod
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.11.0
-CurrentVersionCode: 475
+CurrentVersion: 2.12.3
+CurrentVersionCode: 561

@@ -1,8 +1,12 @@
 Categories:
   - Connectivity
 License: Apache-2.0
+AuthorName: FOSSASIA
+AuthorEmail: fossasia@googlegroups.com
+AuthorWebSite: https://fossasia.org/
 SourceCode: https://github.com/fossasia/badge-magic-android
 IssueTracker: https://github.com/fossasia/badge-magic-android/issues
+Changelog: https://github.com/fossasia/badge-magic-android/releases
 
 AutoName: Badge Magic
 Description: The Badge Magic Android app lets you create scrolling symbols and text
@@ -52,7 +56,33 @@ Builds:
       - yes
     prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
 
+  - versionName: 1.5.0
+    versionCode: 7
+    commit: v1.5.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
+
+  - versionName: 1.6.0
+    versionCode: 8
+    commit: v1.6.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
+
+  - versionName: 1.7.0
+    versionCode: 9
+    commit: v1.7.0
+    subdir: android
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/LOCAL_KEY/d' build.gradle
+      - echo -e '\n' 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.0
-CurrentVersionCode: 6
+CurrentVersion: 1.7.0
+CurrentVersionCode: 9

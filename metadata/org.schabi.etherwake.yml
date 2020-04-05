@@ -1,6 +1,7 @@
 Categories:
   - System
 License: GPL-3.0-or-later
+AuthorName: Christian Schabesberger
 SourceCode: https://gitlab.com/derSchabi/Etherwake-app
 IssueTracker: https://gitlab.com/derSchabi/Etherwake-app/issues
 
@@ -13,7 +14,7 @@ Description: |-
 RequiresRoot: 'yes'
 
 RepoType: git
-Repo: https://gitlab.com/derSchabi/Etherwake-app
+Repo: https://gitlab.com/derSchabi/Etherwake-app.git
 
 Builds:
   - versionName: '1.0'

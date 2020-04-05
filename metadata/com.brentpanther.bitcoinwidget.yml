@@ -1,7 +1,9 @@
 Categories:
   - Money
 License: MIT
-WebSite: http://www.brentpanther.com
+AuthorName: Brent Panther
+AuthorEmail: apps@brentpanther.com
+AuthorWebSite: https://www.brentpanther.com/
 SourceCode: https://github.com/hwki/SimpleBitcoinWidget
 IssueTracker: https://github.com/hwki/SimpleBitcoinWidget/issues
 Bitcoin: 15SHnY7HC5bTxzErHDPe7wHXj1HhtDKV7z
@@ -339,7 +341,98 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 6.8.4
+    versionCode: 208
+    commit: btc-6.8.4
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 6.8.5
+    versionCode: 209
+    commit: btc-6.8.5
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 6.8.7
+    versionCode: 211
+    commit: btc-6.8.7
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 6.8.8
+    versionCode: 212
+    commit: btc-6.8.8
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 6.9.0
+    versionCode: 213
+    commit: btc-6.9.0
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 6.9.1
+    versionCode: 214
+    commit: btc-6.9.1
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 6.9.2
+    versionCode: 215
+    commit: btc-6.9.2
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 6.9.3
+    versionCode: 216
+    commit: btc-6.9.3
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 6.9.5
+    versionCode: 218
+    commit: btc-6.9.5
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 6.9.6
+    versionCode: 219
+    commit: btc-6.9.6
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 6.9.7
+    versionCode: 220
+    commit: btc-6.9.7
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 6.9.8
+    versionCode: 221
+    commit: btc-6.9.8
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 6.9.9
+    versionCode: 222
+    commit: btc-6.9.9
+    subdir: bitcoin
+    gradle:
+      - yes
+
 AutoUpdateMode: Version btc-%v
 UpdateCheckMode: Tags
-CurrentVersion: 6.8.3
-CurrentVersionCode: 207
+CurrentVersion: 6.9.9
+CurrentVersionCode: 222

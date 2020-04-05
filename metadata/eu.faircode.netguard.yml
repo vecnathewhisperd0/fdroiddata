@@ -2,7 +2,8 @@ Categories:
   - Security
   - Internet
 License: GPL-3.0-only
-WebSite: https://www.netguard.me
+AuthorName: Marcel Bokhorst (M66B)
+WebSite: https://www.netguard.me/
 SourceCode: https://github.com/M66B/NetGuard
 IssueTracker: https://forum.xda-developers.com/android/apps-games/app-netguard-root-firewall-t3233012
 Translation: https://crowdin.com/project/netguard
@@ -1071,7 +1072,143 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
 
+  - versionName: '2.258'
+    versionCode: 2019080402
+    commit: '2.258'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.260'
+    versionCode: 2019080601
+    commit: '2.260'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.261'
+    versionCode: 2019081001
+    commit: '2.261'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+
+  - versionName: '2.262'
+    versionCode: 2019082401
+    commit: '2.262'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.263'
+    versionCode: 2019090101
+    commit: '2.263'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.265'
+    versionCode: 2019090109
+    commit: '2.265'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.266'
+    versionCode: 2019091001
+    commit: '2.266'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.267'
+    versionCode: 2019101301
+    commit: '2.267'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.268'
+    versionCode: 2019102401
+    commit: '2.268'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.269'
+    versionCode: 2019102901
+    commit: '2.269'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.270'
+    versionCode: 2019122601
+    commit: '2.270'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.273'
+    versionCode: 2020011002
+    commit: '2.273'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.274'
+    versionCode: 2020021401
+    commit: '2.274'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.275'
+    versionCode: 2020032001
+    commit: '2.275'
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    ndk: r21
+
+  - versionName: '2.276'
+    versionCode: 2020032201
+    commit: '2.276'
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    ndk: r21
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: '2.256'
-CurrentVersionCode: 2019072801
+CurrentVersion: '2.276'
+CurrentVersionCode: 2020032201

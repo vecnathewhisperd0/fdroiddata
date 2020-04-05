@@ -1,7 +1,10 @@
 Categories:
   - Games
 License: GPL-3.0-only
-WebSite: http://blokish.scoutant.org
+AuthorName: scoutant
+AuthorEmail: support@scoutant.org
+AuthorWebSite: https://scoutant.org/
+WebSite: https://blokish.scoutant.org/
 SourceCode: https://github.com/scoutant/blokish
 IssueTracker: https://github.com/scoutant/blokish/issues
 Changelog: https://github.com/scoutant/blokish/blob/HEAD/README.md#changelog
@@ -98,5 +101,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
-CurrentVersion: '3.3'
-CurrentVersionCode: 21
+CurrentVersion: '3.4'
+CurrentVersionCode: 22

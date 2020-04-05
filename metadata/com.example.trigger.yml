@@ -4,20 +4,9 @@ Categories:
 License: GPL-2.0-or-later
 SourceCode: https://github.com/mwarning/trigger
 IssueTracker: https://github.com/mwarning/trigger/issues
+Changelog: https://github.com/mwarning/trigger/releases
 
 AutoName: Trigger
-Description: |
-    Open/Close doors and show the door status.
-
-    '''Features:'''
-
-    * HTTPS, SSH, Bluetooth and MQTT support
-    * multiple door profiles
-    * auto select profile by SSID
-    * certificate/key file support
-    * QR code import/export
-    * JSON file import/export
-    * custom status images
 
 RepoType: git
 Repo: https://github.com/mwarning/trigger
@@ -102,21 +91,70 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 2.0.0
-    versionCode: 200
-    commit: v2.0.0
+  - versionName: 2.0.3
+    versionCode: 203
+    commit: v2.0.3
     subdir: app
     gradle:
       - yes
 
-  - versionName: 2.0.1
-    versionCode: 201
-    commit: v2.0.1
+  - versionName: 2.0.4
+    versionCode: 204
+    commit: v2.0.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.5
+    versionCode: 205
+    commit: v2.0.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.6
+    versionCode: 206
+    commit: v2.0.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0
+    versionCode: 210
+    commit: v2.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.1
+    versionCode: 211
+    commit: v2.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.0
+    versionCode: 220
+    commit: v2.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.1
+    versionCode: 221
+    commit: v2.2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.2
+    versionCode: 222
+    commit: v2.2.2
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.1
-CurrentVersionCode: 201
+CurrentVersion: 2.2.2
+CurrentVersionCode: 222

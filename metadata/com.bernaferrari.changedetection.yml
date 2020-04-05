@@ -1,6 +1,8 @@
 Categories:
   - Internet
 License: Apache-2.0
+AuthorName: Bernardo Ferrari
+AuthorEmail: bernaferrari2+cd@gmail.com
 SourceCode: https://github.com/bernaferrari/ChangeDetection
 IssueTracker: https://github.com/bernaferrari/ChangeDetection/issues
 
@@ -12,7 +14,7 @@ Description: |-
     * Teacher says grades will be published "soon", but no one knows what "soon" means and you are tired of reloading.
     * You are working with a server and wants to know the result from a request, periodically.
     * You are waiting for updates on an Exam, like if something was postponed or updated.
-    * You want to monitor the Dagger documentation to see when Thermosiphon's explanation improves.
+    * You want to monitor the Dagger documentation to see when Thermosiphon’s explanation improves.
 
 RepoType: git
 Repo: https://github.com/bernaferrari/ChangeDetection
@@ -25,7 +27,15 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '2.2'
+    versionCode: 32
+    commit: '2.2'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/5.1-rc-3/5.6/' ../gradle/wrapper/gradle-wrapper.properties
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '2.1'
-CurrentVersionCode: 30
+CurrentVersion: '2.2'
+CurrentVersionCode: 32

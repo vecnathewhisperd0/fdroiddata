@@ -1,10 +1,14 @@
 Categories:
   - Multimedia
 License: GPL-3.0-or-later
+AuthorName: Swati Garg
+AuthorEmail: swati4star@gmail.com
+AuthorWebSite: https://swati4star.github.io/
 WebSite: https://swati4star.github.io/Images-to-PDF
 SourceCode: https://github.com/Swati4star/Images-to-PDF
 IssueTracker: https://github.com/Swati4star/Images-to-PDF/issues
 Changelog: https://github.com/Swati4star/Images-to-PDF/releases
+Donate: https://www.buymeacoff.ee/WmJepqz6H
 
 AutoName: PDF Converter
 Description: |-
@@ -135,7 +139,11 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version %v
+MaintainerNotes: Depends on proprietary Aspose.Cells library since 8.6.3.
+
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 8.6.3
-CurrentVersionCode: 90
+CurrentVersion: 8.8.1
+CurrentVersionCode: 108
+
+NoSourceSince: 8.6.3

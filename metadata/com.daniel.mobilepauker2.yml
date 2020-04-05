@@ -3,6 +3,7 @@ Categories:
 License: GPL-3.0-only
 SourceCode: https://github.com/dfrits/MobilePauker2
 IssueTracker: https://github.com/dfrits/MobilePauker2/issues
+Changelog: https://github.com/dfrits/MobilePauker2/releases
 
 AutoName: Mobile Pauker ++
 Description: |-
@@ -39,7 +40,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.2.0
+    versionCode: 6
+    commit: v2.2.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.2
-CurrentVersionCode: 4
+CurrentVersion: 2.2.0
+CurrentVersionCode: 6

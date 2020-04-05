@@ -1,6 +1,8 @@
 Categories:
   - Games
 License: MIT
+AuthorName: gelakinetic
+AuthorEmail: mtg.familiar@gmail.com
 SourceCode: https://github.com/AEFeinstein/mtg-familiar
 IssueTracker: https://github.com/AEFeinstein/mtg-familiar/issues
 Changelog: https://github.com/AEFeinstein/mtg-familiar/releases
@@ -21,7 +23,7 @@ Description: |-
     IzzyOnDroid] hosts an
     [https://apt.izzysoft.de/fdroid/index/apk/com.gelakinetic.mtgfam APK with the
     API key]. This APK comes from the
-    [https://github.com/AEFeinstein/mtg-familiar/releases project's GitHub releases
+    [https://github.com/AEFeinstein/mtg-familiar/releases project’s GitHub releases
     page] and is the same APK as on Google Play.
 
     Switching between APKs from different repositories requires you to uninstall MTG
@@ -363,11 +365,47 @@ Builds:
     scanignore:
       - mobile/src/main/res/raw/datagz
 
+  - versionName: 3.6.1
+    versionCode: 67
+    commit: v3.6.1
+    subdir: mobile
+    gradle:
+      - yes
+    forceversion: true
+    rm:
+      - mobile/annotations.jar
+    scanignore:
+      - mobile/src/main/res/raw/datagz
+
+  - versionName: 3.6.2
+    versionCode: 68
+    commit: v3.6.2
+    subdir: mobile
+    gradle:
+      - yes
+    forceversion: true
+    rm:
+      - mobile/annotations.jar
+    scanignore:
+      - mobile/src/main/res/raw/datagz
+
+  - versionName: 3.6.4
+    versionCode: 70
+    commit: v3.6.4
+    subdir: mobile
+    gradle:
+      - yes
+    forceversion: true
+    rm:
+      - mobile/annotations.jar
+    scanignore:
+      - mobile/src/main/res/raw/datagz
+
 MaintainerNotes: |-
     Under mobile/src/main/res/raw/datagz is the apps card database.
     Cannot enable AUM because of fdroid/fdroidserver#144.
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.6.0
-CurrentVersionCode: 66
+CurrentVersion: 3.6.4
+CurrentVersionCode: 70

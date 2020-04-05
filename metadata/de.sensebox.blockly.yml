@@ -2,7 +2,8 @@ Categories:
   - Development
   - Science & Education
 License: GPL-2.0-or-later
-WebSite: https://sensebox.de
+AuthorWebSite: https://sensebox.de/
+WebSite: https://sensebox.github.io/blockly-app
 SourceCode: https://github.com/sensebox/blockly-app
 IssueTracker: https://github.com/sensebox/blockly-app/issues
 
@@ -35,9 +36,9 @@ Builds:
 
 MaintainerNotes: This is an Ionic 3 / Cordova app, built from source.
 
-AutoUpdateMode: Version v%v
+AutoUpdateMode: None
 UpdateCheckMode: HTTP
 UpdateCheckIgnore: alpha
-UpdateCheckData: https://raw.githubusercontent.com/sensebox/blockly-app/master/config.xml|version=\"([^\"]+)\"|https://raw.githubusercontent.com/sensebox/blockly-app/master/config.xml|android-versionCode=\"([^\"]+)\"
-CurrentVersion: 1.1.2
-CurrentVersionCode: 10102
+UpdateCheckData: https://raw.githubusercontent.com/sensebox/blockly-app/master/config.xml|android-versionCode=\"([^\"]+)\"|https://raw.githubusercontent.com/sensebox/blockly-app/master/config.xml|version=\"([^\"]+)\"
+CurrentVersion: 1.1.4
+CurrentVersionCode: 10104

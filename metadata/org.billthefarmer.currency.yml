@@ -1,6 +1,8 @@
 Categories:
   - Money
 License: GPL-3.0-only
+AuthorName: Bill Farmer
+AuthorWebSite: https://billthefarmer.github.io/
 SourceCode: https://github.com/billthefarmer/currency
 IssueTracker: https://github.com/billthefarmer/currency/issues
 Changelog: https://github.com/billthefarmer/currency/releases
@@ -10,11 +12,8 @@ Description: |-
     Simple currency conversion.
 
     * Currency rates from the European Central Bank
-
     * 32 international currencies
-
     * Currency rates updated daily
-
     * Last rate update retained for use offline
 
 RepoType: git
@@ -195,7 +194,31 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.28'
+    versionCode: 128
+    commit: v1.28
+    gradle:
+      - yes
+
+  - versionName: '1.29'
+    versionCode: 129
+    commit: v1.29
+    gradle:
+      - yes
+
+  - versionName: '1.30'
+    versionCode: 130
+    commit: v1.30
+    gradle:
+      - yes
+
+  - versionName: '1.31'
+    versionCode: 131
+    commit: v1.31
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.27'
-CurrentVersionCode: 127
+CurrentVersion: '1.31'
+CurrentVersionCode: 131

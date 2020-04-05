@@ -1,8 +1,11 @@
 Categories:
   - Connectivity
 License: Apache-2.0
+AuthorName: Mygod Studio
+AuthorEmail: contact-vpnhotspot@mygod.be
 SourceCode: https://github.com/Mygod/VPNHotspot
 IssueTracker: https://github.com/Mygod/VPNHotspot/issues
+Changelog: https://github.com/Mygod/VPNHotspot/releases
 Donate: https://mygod.be/donate/
 FlattrID: e0ggg2
 
@@ -10,16 +13,16 @@ AutoName: VPN Hotspot
 Description: |-
     This app is useful for:
 
-    * Connecting things that don't support VPN like Chromecasts behind corporate firewalls;
+    * Connecting things that don’t support VPN like Chromecasts behind corporate firewalls;
     * Set up gapps behind corporate firewalls;
-    * Connect to your mobile hotspot but you're not bothered to set up VPN on your device.
+    * Connect to your mobile hotspot but you’re not bothered to set up VPN on your device.
 
     Requires root to set up networking.
 
-    This app is designed to do only minimal changes to your system, so there's
+    This app is designed to do only minimal changes to your system, so there’s
     almost no chance you will brick your device and/or break your Internet using
-    this app under normal conditions. However there's also absolutely no guarantee
-    it won't.
+    this app under normal conditions. However there’s also absolutely no guarantee
+    it won’t.
 
 RequiresRoot: 'yes'
 
@@ -300,7 +303,90 @@ Builds:
       - sed -i -e '10,12d' -e '/google-services/d' -e '/io.fabric/d' ../build.gradle
       - sed -i -e '6,9d' build.gradle
 
-AutoUpdateMode: Version v%v
+  - versionName: 2.5.3
+    versionCode: 210
+    commit: v2.5.3
+    subdir: mobile
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '10,12d' -e '/google-services/d' -e '/io.fabric/d' ../build.gradle
+      - sed -i -e '6,9d' build.gradle
+
+  - versionName: 2.5.4
+    versionCode: 211
+    commit: v2.5.4
+    subdir: mobile
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '10,12d' -e '/google-services/d' -e '/io.fabric/d' ../build.gradle
+      - sed -i -e '6,9d' build.gradle
+
+  - versionName: 2.5.5
+    versionCode: 212
+    commit: v2.5.5
+    subdir: mobile
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '10,12d' -e '/google-services/d' -e '/io.fabric/d' ../build.gradle
+      - sed -i -e '6,9d' build.gradle
+
+  - versionName: 2.6.2
+    versionCode: 215
+    commit: v2.6.2
+    subdir: mobile
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '10,12d' -e '/google-services/d' -e '/io.fabric/d' ../build.gradle
+      - sed -i -e '6,9d' build.gradle
+
+  - versionName: 2.6.3
+    versionCode: 216
+    disable: unknown maven repo 'https://kotlin.bintray.com/kotlinx'
+    commit: v2.6.3
+    subdir: mobile
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '10,12d' -e '/google-services/d' -e '/io.fabric/d' ../build.gradle
+      - sed -i -e '6,9d' build.gradle
+
+  - versionName: 2.6.4
+    versionCode: 217
+    commit: v2.6.4
+    subdir: mobile
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '10,12d' -e '/google-services/d' -e '/io.fabric/d' ../build.gradle
+      - sed -i -e '6,9d' build.gradle
+
+  - versionName: 2.6.5
+    versionCode: 218
+    commit: v2.6.5
+    subdir: mobile
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '10,12d' -e '/google-services/d' -e '/io.fabric/d' ../build.gradle
+      - sed -i -e '6,9d' build.gradle
+
+  - versionName: 2.7.1
+    versionCode: 220
+    commit: v2.7.1
+    subdir: mobile
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '10,12d' -e '/google-services/d' -e '/io.fabric/d' ../build.gradle
+      - sed -i -e '6,9d' build.gradle
+
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.2
-CurrentVersionCode: 209
+CurrentVersion: 2.8.1
+CurrentVersionCode: 222
+
+NoSourceSince: 2.7.1

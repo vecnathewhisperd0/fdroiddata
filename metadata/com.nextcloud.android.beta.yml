@@ -4,6 +4,7 @@ License: GPL-2.0-only
 WebSite: https://nextcloud.com
 SourceCode: https://github.com/nextcloud/android
 IssueTracker: https://github.com/nextcloud/android/issues
+Translation: https://www.transifex.com/nextcloud/nextcloud/
 Changelog: https://github.com/nextcloud/android/commits
 Donate: https://www.bountysource.com/teams/nextcloud
 
@@ -3501,9 +3502,931 @@ Builds:
     scandelete:
       - src/androidTest
 
+  - versionName: '20190731'
+    versionCode: 20190731
+    commit: dev-20190731
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190802'
+    versionCode: 20190802
+    commit: dev-20190802
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190803'
+    versionCode: 20190803
+    commit: dev-20190803
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190806'
+    versionCode: 20190806
+    commit: dev-20190806
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190809'
+    versionCode: 20190809
+    commit: dev-20190809
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190810'
+    versionCode: 20190810
+    commit: dev-20190810
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190813'
+    versionCode: 20190813
+    commit: dev-20190813
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190820'
+    versionCode: 20190820
+    commit: dev-20190820
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190822'
+    versionCode: 20190822
+    commit: dev-20190822
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190824'
+    versionCode: 20190824
+    commit: dev-20190824
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190828'
+    versionCode: 20190828
+    commit: dev-20190828
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190829'
+    versionCode: 20190829
+    commit: dev-20190829
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190904'
+    versionCode: 20190904
+    commit: dev-20190904
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190906'
+    versionCode: 20190906
+    commit: dev-20190906
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190911'
+    versionCode: 20190911
+    commit: dev-20190911
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190914'
+    versionCode: 20190914
+    commit: dev-20190914
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190926'
+    versionCode: 20190926
+    commit: dev-20190926
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20190928'
+    versionCode: 20190928
+    commit: dev-20190928
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191002'
+    versionCode: 20191002
+    commit: dev-20191002
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191005'
+    versionCode: 20191005
+    commit: dev-20191005
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191008'
+    versionCode: 20191008
+    commit: dev-20191008
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191009'
+    versionCode: 20191009
+    commit: dev-20191009
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191010'
+    versionCode: 20191010
+    commit: dev-20191010
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191011'
+    versionCode: 20191011
+    commit: dev-20191011
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191012'
+    versionCode: 20191012
+    commit: dev-20191012
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191017'
+    versionCode: 20191017
+    commit: dev-20191017
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191018'
+    versionCode: 20191018
+    commit: dev-20191018
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191022'
+    versionCode: 20191022
+    commit: dev-20191022
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191024'
+    versionCode: 20191024
+    commit: dev-20191024
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191026'
+    versionCode: 20191026
+    commit: dev-20191026
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191029'
+    versionCode: 20191029
+    commit: dev-20191029
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191031'
+    versionCode: 20191031
+    commit: dev-20191031
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191102'
+    versionCode: 20191102
+    commit: dev-20191102
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191107'
+    versionCode: 20191107
+    commit: dev-20191107
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191108'
+    versionCode: 20191108
+    commit: dev-20191108
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191114'
+    versionCode: 20191114
+    commit: dev-20191114
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191116'
+    versionCode: 20191116
+    commit: dev-20191116
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191119'
+    versionCode: 20191119
+    commit: dev-20191119
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191121'
+    versionCode: 20191121
+    commit: dev-20191121
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191123'
+    versionCode: 20191123
+    commit: dev-20191123
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191127'
+    versionCode: 20191127
+    commit: dev-20191127
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191129'
+    versionCode: 20191129
+    commit: dev-20191129
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191203'
+    versionCode: 20191203
+    commit: dev-20191203
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191204'
+    versionCode: 20191204
+    commit: dev-20191204
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191206'
+    versionCode: 20191206
+    commit: dev-20191206
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191207'
+    versionCode: 20191207
+    commit: dev-20191207
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191214'
+    versionCode: 20191214
+    commit: dev-20191214
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191220'
+    versionCode: 20191220
+    commit: dev-20191220
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20191221'
+    versionCode: 20191221
+    commit: dev-20191221
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200108'
+    versionCode: 20200108
+    commit: dev-20200108
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200110'
+    versionCode: 20200110
+    commit: dev-20200110
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200118'
+    versionCode: 20200118
+    commit: dev-20200118
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200125'
+    versionCode: 20200125
+    commit: dev-20200125
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200130'
+    versionCode: 20200130
+    commit: dev-20200130
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200205'
+    versionCode: 20200205
+    commit: dev-20200205
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200208'
+    versionCode: 20200208
+    commit: dev-20200208
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200213'
+    versionCode: 20200213
+    commit: dev-20200213
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200224'
+    versionCode: 20200224
+    commit: dev-20200224
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200304'
+    versionCode: 20200304
+    commit: dev-20200304
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200306'
+    versionCode: 20200306
+    commit: dev-20200306
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200307'
+    versionCode: 20200307
+    commit: dev-20200307
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200310'
+    versionCode: 20200310
+    commit: dev-20200310
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200311'
+    versionCode: 20200311
+    commit: dev-20200311
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200312'
+    versionCode: 20200312
+    commit: dev-20200312
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200313'
+    versionCode: 20200313
+    commit: dev-20200313
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200318'
+    versionCode: 20200318
+    commit: dev-20200318
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200320'
+    versionCode: 20200320
+    commit: dev-20200320
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200324'
+    versionCode: 20200324
+    commit: dev-20200324
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200327'
+    versionCode: 20200327
+    commit: dev-20200327
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200331'
+    versionCode: 20200331
+    commit: dev-20200331
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+      - sed -i s"#dev_version_direct_download_enabled.*<#dev_version_direct_download_enabled\">true<#"
+        src/versionDev/res/values/setup.xml
+    scandelete:
+      - src/androidTest
+
 MaintainerNotes: Tags get removed. See https://github.com/nextcloud/android/issues/969.
 
 AutoUpdateMode: Version dev-%c
 UpdateCheckMode: Tags ^dev
-CurrentVersion: '20190730'
-CurrentVersionCode: 20190730
+CurrentVersion: '20200331'
+CurrentVersionCode: 20200331

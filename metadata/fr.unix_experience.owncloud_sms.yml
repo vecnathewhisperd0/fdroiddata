@@ -4,18 +4,19 @@ License: AGPL-3.0-only
 WebSite: https://github.com/nerzhul/ncsms-android/wiki
 SourceCode: https://github.com/nerzhul/ncsms-android
 IssueTracker: https://github.com/nerzhul/ncsms-android/issues
+Translation: https://www.transifex.com/nextcloud/nextcloud/android-sms/
 
 AutoName: Nextcloud SMS
 Description: |-
-    App to synchronize your SMS messages on a remote ownCloud instance and let you
+    App to synchronize your SMS messages on a remote Nextcloud instance and let you
     read your messages from it.
 
-    Sending SMS from ownCloud instance will coming in a future release.
+    Sending SMS from a Nextcloud instance will be coming in a future release.
 
     Application is fully compatible from Android 4.0 to 8.0
 
-    Note: This app needs an ownCloud installation running the
-    [http://apps.owncloud.com/content/show.php/ownCloud+SMS?content=167289 ocsms]
+    Note: This app needs a Nextcloud installation running the
+    [https://apps.nextcloud.com/apps/ocsms ocsms]
     app.
 
 RepoType: git

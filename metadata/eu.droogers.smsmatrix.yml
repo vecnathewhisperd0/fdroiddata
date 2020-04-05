@@ -49,7 +49,28 @@ Builds:
         libs/matrix-sdk.aar
     ndk: r17b
 
+  - versionName: 0.0.14
+    versionCode: 14
+    commit: v0.0.14
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.15
+    versionCode: 15
+    commit: v0.0.15
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.16
+    versionCode: 16
+    commit: v0.0.16
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.12
-CurrentVersionCode: 12
+CurrentVersion: 0.0.16
+CurrentVersionCode: 16

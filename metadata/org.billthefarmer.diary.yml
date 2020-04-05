@@ -1,6 +1,8 @@
 Categories:
   - Writing
 License: GPL-3.0-only
+AuthorName: Bill Farmer
+AuthorWebSite: https://billthefarmer.github.io/
 SourceCode: https://github.com/billthefarmer/diary
 IssueTracker: https://github.com/billthefarmer/diary/issues
 Changelog: https://github.com/billthefarmer/diary/releases
@@ -10,7 +12,7 @@ Description: |-
     Write down what you did, your ideas, your dreams... This application will help
     you keep it ordered by date like a traditional journal or personal diary.
 
-    What you write is saved on your device in plain text files, so it's easy to
+    What you write is saved on your device in plain text files, so it’s easy to
     backup and you can open the files with other applications.
 
     Includes basic functionality for browsing the old entries. Available in English,
@@ -323,7 +325,91 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.51'
+    versionCode: 151
+    commit: v1.51
+    gradle:
+      - yes
+
+  - versionName: '1.52'
+    versionCode: 152
+    commit: v1.52
+    gradle:
+      - yes
+
+  - versionName: '1.53'
+    versionCode: 153
+    commit: v1.53
+    gradle:
+      - yes
+
+  - versionName: '1.54'
+    versionCode: 154
+    commit: v1.54
+    gradle:
+      - yes
+
+  - versionName: '1.55'
+    versionCode: 155
+    commit: v1.55
+    gradle:
+      - yes
+
+  - versionName: '1.56'
+    versionCode: 156
+    commit: v1.56
+    gradle:
+      - yes
+
+  - versionName: '1.57'
+    versionCode: 157
+    commit: v1.57
+    gradle:
+      - yes
+
+  - versionName: '1.58'
+    versionCode: 158
+    commit: v1.58
+    gradle:
+      - yes
+
+  - versionName: '1.59'
+    versionCode: 159
+    commit: v1.59
+    gradle:
+      - yes
+
+  - versionName: '1.60'
+    versionCode: 160
+    commit: v1.60
+    gradle:
+      - yes
+
+  - versionName: '1.61'
+    versionCode: 161
+    commit: v1.61
+    gradle:
+      - yes
+
+  - versionName: '1.62'
+    versionCode: 162
+    commit: v1.62
+    gradle:
+      - yes
+
+  - versionName: '1.63'
+    versionCode: 163
+    commit: v1.63
+    gradle:
+      - yes
+
+  - versionName: '1.64'
+    versionCode: 164
+    commit: v1.64
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.50'
-CurrentVersionCode: 150
+CurrentVersion: '1.64'
+CurrentVersionCode: 164

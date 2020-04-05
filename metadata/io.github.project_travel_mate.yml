@@ -3,9 +3,13 @@ AntiFeatures:
 Categories:
   - Navigation
 License: MIT
+AuthorName: Swati Garg
+AuthorEmail: swati4star@gmail.com
 WebSite: https://github.com/project-travel-mate/Travel-Mate/wiki
 SourceCode: https://github.com/project-travel-mate/Travel-Mate
 IssueTracker: https://github.com/project-travel-mate/Travel-Mate/issues
+Changelog: https://github.com/project-travel-mate/Travel-Mate/releases
+Donate: https://www.buymeacoffee.com/qITGMWB
 
 AutoName: Travel Mate
 Description: |-
@@ -34,7 +38,15 @@ Builds:
       - yes
     prebuild: sed -i -e '/repo.commonsware.com.s3.amazonaws.com/d' build.gradle
 
+  - versionName: 5.6.2
+    versionCode: 49
+    commit: 5.6.2
+    subdir: Android/app/
+    gradle:
+      - yes
+    prebuild: sed -i -e '/repo.commonsware.com.s3.amazonaws.com/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 5.5.0
-CurrentVersionCode: 44
+CurrentVersion: 5.6.2
+CurrentVersionCode: 49

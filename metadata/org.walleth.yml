@@ -1,6 +1,8 @@
 Categories:
   - Money
 License: GPL-3.0-only
+AuthorName: WallΞTH
+AuthorEmail: walleth@walleth.org
 WebSite: https://walleth.org
 SourceCode: https://github.com/walleth/walleth
 IssueTracker: https://github.com/walleth/walleth/issues
@@ -407,12 +409,92 @@ Builds:
       - online
     prebuild: sed -i -e '/kotlin.bintray.com/d' ../build.gradle
 
+  - versionName: 0.46.1
+    versionCode: 461
+    commit: 0.46.1
+    subdir: app
+    gradle:
+      - noGeth
+      - forFDroid
+      - online
+    prebuild: sed -i -e '/kotlin.bintray.com/d' ../build.gradle
+
+  - versionName: 0.46.2
+    versionCode: 462
+    commit: 0.46.2
+    subdir: app
+    gradle:
+      - noGeth
+      - forFDroid
+      - online
+    prebuild: sed -i -e '/kotlin.bintray.com/d' ../build.gradle
+
+  - versionName: 0.46.3
+    versionCode: 463
+    commit: 0.46.3
+    subdir: app
+    gradle:
+      - noGeth
+      - forFDroid
+      - online
+    prebuild: sed -i -e '/kotlin.bintray.com/d' ../build.gradle
+
+  - versionName: 0.46.4
+    versionCode: 464
+    commit: 0.46.4
+    subdir: app
+    gradle:
+      - noGeth
+      - forFDroid
+      - online
+    prebuild: sed -i -e '/kotlin.bintray.com/d' ../build.gradle
+
+  - versionName: 0.46.8
+    versionCode: 468
+    commit: 0.46.8
+    subdir: app
+    gradle:
+      - noGeth
+      - forFDroid
+      - online
+    prebuild: sed -i -e '/kotlin.bintray.com/d' ../build.gradle
+
+  - versionName: 0.47.2
+    versionCode: 472
+    commit: 0.47.2
+    subdir: app
+    gradle:
+      - noGeth
+      - forFDroid
+      - online
+    prebuild: sed -i -e '/kotlin.bintray.com/d' ../build.gradle
+
+  - versionName: 0.48.0
+    versionCode: 480
+    commit: 0.48.0
+    subdir: app
+    gradle:
+      - noGeth
+      - forFDroid
+      - online
+    prebuild: sed -i -e '/kotlin.bintray.com/d' ../build.gradle
+
+  - versionName: 0.48.2
+    versionCode: 482
+    commit: 0.48.2
+    subdir: app
+    gradle:
+      - noGeth
+      - forFDroid
+      - online
+    prebuild: sed -i -e '/kotlin.bintray.com/d' ../build.gradle
+
 MaintainerNotes: |-
     We remove https://kotlin.bintray.com/kotlinx Maven repo from build.gradle
     because it isn't whitelisted while all needed artifacts are available via
     JCenter.
 
 AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
-CurrentVersion: 0.46.0
-CurrentVersionCode: 460
+UpdateCheckMode: Tags .*[0-9]$
+CurrentVersion: 0.48.2
+CurrentVersionCode: 482

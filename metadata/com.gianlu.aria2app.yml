@@ -3,12 +3,16 @@ AntiFeatures:
 Categories:
   - Internet
 License: GPL-3.0-only
-WebSite: https://gianlu.xyz/projects/Aria2App
+AuthorName: devgianlu
+AuthorEmail: altomanigianluca@gmail.com
+AuthorWebSite: https://gianlu.xyz/
 SourceCode: https://github.com/devgianlu/Aria2App
 IssueTracker: https://github.com/devgianlu/Aria2App/issues
-Changelog: https://github.com/devgianlu/Aria2App/releases
-Donate: https://www.paypal.me/devgianlu
+Translation: https://crowdin.com/project/aria2app
+Changelog: https://github.com/devgianlu/Aria2App/blob/HEAD/CHANGELOG.md
+Donate: https://gianlu.xyz/donate/
 LiberapayID: '1381702'
+Bitcoin: 18rrPNGgz8UkzUYgAnqVye83xEe5fB7XfY
 
 AutoName: Aria2App
 
@@ -386,7 +390,133 @@ Builds:
     prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
 
+  - versionName: 5.2.0
+    versionCode: 183
+    commit: v5.2.0
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.2.3
+    versionCode: 186
+    commit: v5.2.3
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.2.4
+    versionCode: 187
+    commit: v5.2.4
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.3.0
+    versionCode: 188
+    commit: v5.3.0
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.3.2
+    versionCode: 190
+    commit: v5.3.2
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.4.0
+    versionCode: 191
+    commit: v5.4.0
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.4.1
+    versionCode: 192
+    commit: v5.4.1
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.4.2
+    versionCode: 193
+    commit: v5.4.2
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.4.3
+    versionCode: 194
+    commit: v5.4.3
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.4.4
+    versionCode: 195
+    commit: v5.4.4
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.4.5
+    versionCode: 196
+    commit: v5.4.5
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+
+  - versionName: 5.6.6
+    versionCode: 205
+    commit: v5.6.6
+    timeout: 14400
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild:
+      - sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    scandelete:
+      - aria2lib/src/main/jniLibs
+    ndk: r21
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 5.1.8
-CurrentVersionCode: 182
+CurrentVersion: 5.6.6
+CurrentVersionCode: 205

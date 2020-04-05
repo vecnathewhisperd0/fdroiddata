@@ -2,11 +2,14 @@ Categories:
   - Security
   - Internet
 License: GPL-3.0-only
-WebSite: https://www.pep.security/
-SourceCode: https://download.pep.security/gitlist
-IssueTracker: https://gitlab.com/pep.security/fdroiddata/issues
+AuthorName: pEp Security S.A.
+AuthorEmail: support@pep.security
+AuthorWebSite: https://www.pep.security/
+WebSite: https://www.pep.security/en/android/index.html
+SourceCode: https://pep.foundation/dev/repos
 Changelog: https://www.pep.security/docs/release_notes_android.html
 
+Name: p≡p | Pretty Easy Privacy (pEp)
 AutoName: p≡p
 Description: |-
     p≡p is a cyber security solution which protects the confidentiality and

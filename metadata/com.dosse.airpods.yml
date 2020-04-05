@@ -65,7 +65,42 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.9'
+    versionCode: 9
+    commit: '0.9'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '0.10'
+    versionCode: 10
+    commit: '0.10'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '1.0'
+    versionCode: 11
+    commit: '1.0'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '1.2'
+    versionCode: 12
+    commit: 9450983100b361a0150df0f16565d9fdc6d3680e
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '1.3'
+    versionCode: 13
+    commit: '1.3'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.8'
-CurrentVersionCode: 8
+CurrentVersion: '1.3'
+CurrentVersionCode: 13

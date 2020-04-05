@@ -7,6 +7,7 @@ AuthorEmail: aat@bailu.ch
 WebSite: https://bailu.ch/aat
 SourceCode: https://github.com/bailuk/AAT
 IssueTracker: https://github.com/bailuk/AAT/issues
+Changelog: https://github.com/bailuk/AAT/releases
 Donate: https://bailu.ch/aat/donate.html
 Bitcoin: 3GK4KLiqKqGg5UQxdkkGXhhDZkdFFicy5T
 
@@ -176,7 +177,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v1.17
+    versionCode: 30
+    commit: v1.17
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.18
+    versionCode: 31
+    commit: v1.18
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v1.16.1
-CurrentVersionCode: 29
+CurrentVersion: v1.18
+CurrentVersionCode: 31

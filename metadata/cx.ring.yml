@@ -5,6 +5,7 @@ License: GPL-3.0-or-later
 WebSite: https://jami.net/
 SourceCode: https://git.jami.net/savoirfairelinux/ring-client-android
 IssueTracker: https://git.jami.net/savoirfairelinux/ring-client-android/issues
+Translation: https://www.transifex.com/savoirfairelinux/jami
 Changelog: https://git.jami.net/savoirfairelinux/ring-client-android/tree/master/ring-android/fastlane/metadata/android/en-US/changelogs
 
 AutoName: Ring
@@ -34,7 +35,7 @@ Description: |-
     You can also install Jami on Windows, macOS, iOS and GNU/Linux.
 
 RepoType: git
-Repo: https://gerrit-ring.savoirfairelinux.com/ring-project
+Repo: https://review.jami.net/ring-project
 
 Builds:
   - versionName: 2.0.003
@@ -869,6 +870,114 @@ Builds:
       - ./compile.sh --release --no-gradle
     ndk: r19c
 
+  - versionName: 20190824-01
+    versionCode: 189
+    commit: android/release_189
+    timeout: 10800
+    subdir: client-android/ring-android/app
+    submodules: true
+    gradle:
+      - noPush
+    rm:
+      - client-electron
+      - client-gnome
+      - client-ios
+      - client-macosx
+      - client-uwp
+      - client-windows
+      - docker
+      - docs
+      - lrc
+      - packaging
+      - scripts
+    build:
+      - cd ../..
+      - export ANDROID_NDK_ROOT="$ANDROID_NDK"
+      - export ANDROID_ABI="armeabi-v7a arm64-v8a x86"
+      - ./compile.sh --release --no-gradle
+    ndk: r20
+
+  - versionName: 20191122-01
+    versionCode: 201
+    commit: android/release_201
+    timeout: 10800
+    subdir: client-android/ring-android/app
+    submodules: true
+    gradle:
+      - noPush
+    rm:
+      - client-electron
+      - client-gnome
+      - client-ios
+      - client-macosx
+      - client-uwp
+      - client-windows
+      - docker
+      - docs
+      - lrc
+      - packaging
+      - scripts
+    build:
+      - cd ../..
+      - export ANDROID_NDK_ROOT="$ANDROID_NDK"
+      - export ANDROID_ABI="armeabi-v7a arm64-v8a x86"
+      - ./compile.sh --release --no-gradle
+    ndk: r20
+
+  - versionName: 20191208-01
+    versionCode: 205
+    commit: android/release_205
+    timeout: 10800
+    subdir: client-android/ring-android/app
+    submodules: true
+    gradle:
+      - noPush
+    rm:
+      - client-electron
+      - client-gnome
+      - client-ios
+      - client-macosx
+      - client-uwp
+      - client-windows
+      - docker
+      - docs
+      - lrc
+      - packaging
+      - scripts
+    build:
+      - cd ../..
+      - export ANDROID_NDK_ROOT="$ANDROID_NDK"
+      - export ANDROID_ABI="armeabi-v7a arm64-v8a x86"
+      - ./compile.sh --release --no-gradle
+    ndk: r20
+
+  - versionName: 20200107-01
+    versionCode: 210
+    commit: android/release_210
+    timeout: 10800
+    subdir: client-android/ring-android/app
+    submodules: true
+    gradle:
+      - noPush
+    rm:
+      - client-electron
+      - client-gnome
+      - client-ios
+      - client-macosx
+      - client-uwp
+      - client-windows
+      - docker
+      - docs
+      - lrc
+      - packaging
+      - scripts
+    build:
+      - cd ../..
+      - export ANDROID_NDK_ROOT="$ANDROID_NDK"
+      - export ANDROID_ABI="armeabi-v7a arm64-v8a x86"
+      - ./compile.sh --release --no-gradle
+    ndk: r20b
+
 MaintainerNotes: |-
     Ring has a lot of native dependencies, the source tarballs of these are all downloaded and build for all enabled architectures.
     Build failed with swig 2.0.12 from jessie but works with 3.0.10 from jessie-backports.
@@ -878,5 +987,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 20190602-01
-CurrentVersionCode: 169
+CurrentVersion: 20200107-01
+CurrentVersionCode: 210

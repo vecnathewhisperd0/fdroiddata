@@ -2,9 +2,12 @@ Categories:
   - Multimedia
   - Internet
 License: GPL-3.0-only
-WebSite: http://www.radio-browser.info
+AuthorName: segler.alex
+AuthorEmail: segler.alex@gmail.com
+WebSite: https://www.radio-browser.info/
 SourceCode: https://github.com/segler-alex/RadioDroid
 IssueTracker: https://github.com/segler-alex/RadioDroid/issues
+Changelog: https://github.com/segler-alex/RadioDroid/releases
 
 AutoName: RadioDroid
 Description: |-
@@ -20,7 +23,6 @@ Description: |-
     * Alarm clock
     * Record streams
     * Music Player Daemon support
-    * ChromeCast support
 
 RepoType: git
 Repo: https://github.com/segler-alex/RadioDroid
@@ -417,7 +419,47 @@ Builds:
       - free
     prebuild: sed -i -e '/playCompile/d' build.gradle
 
+  - versionName: '0.78'
+    versionCode: 88
+    commit: '0.78'
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
+  - versionName: '0.79'
+    versionCode: 89
+    commit: '0.79'
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
+  - versionName: '0.80'
+    versionCode: 90
+    commit: '0.80'
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
+  - versionName: '0.81'
+    versionCode: 91
+    commit: '0.81'
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
+  - versionName: '0.82'
+    versionCode: 92
+    commit: '0.82'
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.77'
-CurrentVersionCode: 87
+CurrentVersion: '0.82'
+CurrentVersionCode: 92

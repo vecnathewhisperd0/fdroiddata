@@ -1,8 +1,11 @@
 Categories:
   - Multimedia
 License: MIT
+AuthorName: Markus Fisch
+AuthorWebSite: https://markusfisch.de/
 SourceCode: https://github.com/markusfisch/BinaryEye
 IssueTracker: https://github.com/markusfisch/BinaryEye/issues
+Changelog: https://github.com/markusfisch/BinaryEye/blob/HEAD/CHANGELOG.md
 
 AutoName: Binary Eye
 Description: |-
@@ -143,7 +146,126 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.12.0
+    versionCode: 36
+    commit: 1.12.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.13.0
+    versionCode: 37
+    commit: 1.13.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.13.1
+    versionCode: 38
+    commit: 1.13.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.14.0
+    versionCode: 39
+    commit: 1.14.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.15.0
+    versionCode: 40
+    commit: 1.15.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.16.0
+    versionCode: 43
+    commit: 1.16.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.17.0
+    versionCode: 44
+    commit: 1.17.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.17.1
+    versionCode: 45
+    commit: 1.17.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.18.0
+    versionCode: 46
+    commit: 1.18.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.19.0
+    versionCode: 48
+    commit: 1.19.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.20.1
+    versionCode: 50
+    commit: 1.20.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.21.0
+    versionCode: 51
+    commit: 1.21.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.22.0
+    versionCode: 52
+    commit: 1.22.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.22.1
+    versionCode: 53
+    commit: 1.22.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.22.3
+    versionCode: 55
+    commit: 1.22.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.23.0
+    versionCode: 56
+    commit: 1.23.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.24.0
+    versionCode: 57
+    commit: 1.24.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.11.2
-CurrentVersionCode: 33
+CurrentVersion: 1.24.0
+CurrentVersionCode: 57

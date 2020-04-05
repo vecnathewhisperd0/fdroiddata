@@ -6,6 +6,7 @@ AuthorEmail: felix.weilbach@t-online.de
 WebSite: https://gitlab.com/flexw/splitbills
 SourceCode: https://gitlab.com/flexw/splitbills
 IssueTracker: https://gitlab.com/flexw/splitbills/issues
+Changelog: https://gitlab.com/flexw/splitbills/blob/HEAD/CHANGELOG.md
 
 AutoName: SplitBills
 Description: |
@@ -44,7 +45,63 @@ Builds:
     gradle:
       - prod
 
+  - versionName: 0.2.6
+    versionCode: 9
+    commit: v0.2.6
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 0.2.7
+    versionCode: 10
+    commit: v0.2.7
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 0.2.8
+    versionCode: 11
+    commit: v0.2.8
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 0.3.4
+    versionCode: 16
+    commit: v0.3.4
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 0.3.6
+    versionCode: 18
+    commit: v0.3.6
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 0.3.7
+    versionCode: 19
+    commit: v0.3.7
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 0.3.9
+    versionCode: 21
+    commit: v0.3.9
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 0.3.10
+    versionCode: 22
+    commit: v0.3.10
+    subdir: app
+    gradle:
+      - prod
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2.4
-CurrentVersionCode: 7
+CurrentVersion: 0.3.10
+CurrentVersionCode: 22

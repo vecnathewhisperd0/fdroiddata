@@ -1,6 +1,9 @@
 Categories:
   - Security
 License: Apache-2.0
+AuthorName: Shell Chen
+AuthorEmail: me@sorz.org
+AuthorWebSite: https://sorz.org/
 SourceCode: https://github.com/sorz/TinyKeePass
 IssueTracker: https://github.com/sorz/TinyKeePass/issues
 Changelog: https://github.com/sorz/TinyKeePass/releases
@@ -42,7 +45,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.3.7
+    versionCode: 13
+    commit: v0.3.7
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.3.6
-CurrentVersionCode: 12
+CurrentVersion: 0.3.7
+CurrentVersionCode: 13

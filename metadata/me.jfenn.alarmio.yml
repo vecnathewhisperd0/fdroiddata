@@ -1,9 +1,14 @@
 Categories:
   - Time
 License: Apache-2.0
+AuthorName: James Fenn
+AuthorEmail: dev@jfenn.me
+WebSite: https://jfenn.me/projects/alarmio/
 SourceCode: https://github.com/fennifith/Alarmio
 IssueTracker: https://github.com/fennifith/Alarmio/issues
 Changelog: https://github.com/fennifith/Alarmio/releases
+Donate: https://paypal.me/fennifith
+LiberapayID: '1566979'
 
 AutoName: Alarmio
 Description: |-
@@ -22,7 +27,21 @@ Builds:
     gradle:
       - oss
 
+  - versionName: 1.0.3
+    versionCode: 19
+    commit: 1.0.3
+    subdir: app
+    gradle:
+      - oss
+
+  - versionName: 1.0.4
+    versionCode: 20
+    commit: 1.0.4
+    subdir: app
+    gradle:
+      - oss
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.2
-CurrentVersionCode: 18
+CurrentVersion: 1.0.4
+CurrentVersionCode: 20

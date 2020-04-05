@@ -3,6 +3,7 @@ Categories:
 License: MIT
 SourceCode: https://github.com/xgouchet/Stanley
 IssueTracker: https://github.com/xgouchet/Stanley/issues
+Changelog: https://github.com/xgouchet/Stanley/blob/HEAD/CHANGELOG.md
 Donate: https://www.paypal.me/xaviergouchet
 
 AutoName: Stanley
@@ -38,7 +39,16 @@ Builds:
     scanignore:
       - buildSrc/build/
 
+  - versionName: '2.6'
+    versionCode: 18
+    commit: v2.6
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - buildSrc/build/
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '2.5'
-CurrentVersionCode: 17
+CurrentVersion: '2.6'
+CurrentVersionCode: 18

@@ -13,7 +13,7 @@ LiberapayID: '1520530'
 AutoName: MoneyBuster
 
 RepoType: git
-Repo: https://gitlab.com/eneiluj/moneybuster
+Repo: https://gitlab.com/eneiluj/moneybuster.git
 
 Builds:
   - versionName: 0.0.4
@@ -80,7 +80,79 @@ Builds:
     gradle:
       - normal
 
+  - versionName: 0.0.12
+    versionCode: 12
+    commit: v0.0.12
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.13
+    versionCode: 13
+    commit: v0.0.13
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.14
+    versionCode: 14
+    commit: v0.0.14
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.15
+    versionCode: 15
+    commit: v0.0.15
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.16
+    versionCode: 16
+    commit: v0.0.16
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.17
+    versionCode: 17
+    commit: v0.0.17
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.18
+    versionCode: 18
+    commit: v0.0.18
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.0.19
+    versionCode: 19
+    commit: v0.0.19
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
+  - versionName: 0.1.0
+    versionCode: 20
+    commit: v0.1.0
+    subdir: app
+    submodules: true
+    gradle:
+      - normal
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.11
-CurrentVersionCode: 11
+CurrentVersion: 0.1.0
+CurrentVersionCode: 20

@@ -1,0 +1,43 @@
+Categories:
+  - Writing
+License: GPL-3.0-only
+AuthorName: Bill Farmer
+AuthorWebSite: https://billthefarmer.github.io/
+SourceCode: https://github.com/billthefarmer/notes
+IssueTracker: https://github.com/billthefarmer/notes/issues
+Changelog: https://github.com/billthefarmer/notes/releases
+
+AutoName: Notes
+
+RepoType: git
+Repo: https://github.com/billthefarmer/notes
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    gradle:
+      - yes
+
+  - versionName: '1.01'
+    versionCode: 101
+    commit: v1.01
+    gradle:
+      - yes
+
+  - versionName: '1.02'
+    versionCode: 102
+    commit: v1.02
+    gradle:
+      - yes
+
+  - versionName: '1.03'
+    versionCode: 103
+    commit: v1.03
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.03'
+CurrentVersionCode: 103

@@ -1,3 +1,4 @@
+Disabled: The logo violates NetScape trademark.
 Categories:
   - System
 License: GPL-3.0-only
@@ -28,7 +29,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.2-5
+    versionCode: 5
+    commit: v2.2-5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2-6
+    versionCode: 6
+    commit: v2.2-6
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2-4
-CurrentVersionCode: 4
+CurrentVersion: 2.2-6
+CurrentVersionCode: 6
