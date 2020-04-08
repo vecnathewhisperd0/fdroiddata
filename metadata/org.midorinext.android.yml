@@ -37,6 +37,7 @@ Builds:
     subdir: app
     gradle:
       - yes
+    prebuild: sed -i -e '/minifyEnabled/d' -e '/debuggable/d' build.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
