@@ -1339,6 +1339,8 @@ Builds:
         > API_KEYS
     scandelete:
       - TMessagesProj/jni
+    scanignore:
+      - TMessagesProj/src/main/java/org/telegram/messenger/voip/TgVoip.java
     build:
       - export NDK=$$NDK$$
       - export NINJA_PATH=/usr/bin/ninja
@@ -1367,6 +1369,8 @@ Builds:
         > API_KEYS
     scandelete:
       - TMessagesProj/jni
+    scanignore:
+      - TMessagesProj/src/main/java/org/telegram/messenger/voip/TgVoip.java
     build:
       - export NDK=$$NDK$$
       - export NINJA_PATH=/usr/bin/ninja
