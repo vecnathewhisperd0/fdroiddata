@@ -99,9 +99,9 @@ Builds:
       - yes
     output: build/outputs/apk/release/app-universal-release-unsigned.apk
 
-  - versionName: 2.0
+  - versionName: '2.0'
     versionCode: 16
-    commit: 2.0
+    commit: '2.0'
     subdir: app
     gradle:
       - yes
@@ -109,5 +109,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0
+CurrentVersion: '2.0'
 CurrentVersionCode: 16
