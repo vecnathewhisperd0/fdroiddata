@@ -1,0 +1,27 @@
+Categories:
+  - Security
+  - System
+  - Internet
+License: GPL-3.0-or-later
+AuthorName: v1nc
+AuthorEmail: fdroid@reckendrees.systems
+SourceCode: https://github.com/v1nc/user.js-updater
+IssueTracker: https://github.com/v1nc/user.js-updater/issues
+Changelog: https://github.com/v1nc/user.js-updater/blob/master/CHANGELOG.md
+
+Summary: Update your user.js config without trouble
+Description: Update your user.js config for any gecko-view based browser without trouble
+
+RepoType: git
+Repo: https://github.com/v1nc/user.js-updater
+
+Builds:
+  - versionName: 1.3.3
+    versionCode: 6
+    commit: 5b5bd8b03c8925b726bb0cf04d6785e50092d844
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
