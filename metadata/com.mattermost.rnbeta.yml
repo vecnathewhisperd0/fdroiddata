@@ -360,9 +360,9 @@ Builds:
     scandelete:
       - node_modules
 
-  - versionName: 1.28.0
-    versionCode: 268
-    commit: v1.28.0
+  - versionName: 1.30.0
+    versionCode: 285
+    commit: v1.30.0
     subdir: android/app/
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
