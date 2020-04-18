@@ -2,14 +2,9 @@ Categories:
   - Games
 License: MIT
 AuthorName: Cristian Cucu
+AutoName: Planes Android
 SourceCode: https://github.com/xxxcucus/planes
 IssueTracker: https://github.com/xxxcucus/planes/issues
-
-AutoName: Planes Android
-Summary: Planes is a variant of the Battleships game
-Description: Position your planes on your game board and guess where the computer
-    has hidden its before it guesses where you have hidden yours
-
 RepoType: git
 Repo: https://github.com/xxxcucus/planes
 
