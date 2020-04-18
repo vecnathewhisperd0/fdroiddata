@@ -6,9 +6,6 @@ SourceCode: https://github.com/xxxcucus/planes
 IssueTracker: https://github.com/xxxcucus/planes/issues
 
 AutoName: Planes Android
-Summary: Planes is a variant of the Battleships game
-Description: Position your planes on your game board and guess where the computer
-    has hidden its before it guesses where you have hidden yours
 
 RepoType: git
 Repo: https://github.com/xxxcucus/planes
@@ -23,5 +20,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.3.1
-CurrentVersionCode: 4
+CurrentVersion: 0.3.2
+CurrentVersionCode: 5
