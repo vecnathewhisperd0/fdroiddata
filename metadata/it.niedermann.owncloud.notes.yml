@@ -431,9 +431,27 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 2.11.4
-    versionCode: 2011004
-    commit: v2.11.4
+  - versionName: 2.11.6
+    versionCode: 2011006
+    commit: v2.11.6
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+
+  - versionName: 2.11.7
+    versionCode: 2011007
+    commit: v2.11.7
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+
+  - versionName: 2.11.8
+    versionCode: 2011008
+    commit: v2.11.8
     subdir: app
     submodules: true
     gradle:
@@ -442,5 +460,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.11.4
-CurrentVersionCode: 2011004
+CurrentVersion: 2.11.8
+CurrentVersionCode: 2011008

@@ -8,7 +8,7 @@ Translation: https://crowdin.com/project/nitterizeme
 Changelog: https://framagit.org/tom79/nitterizeme/tags
 LiberapayID: '23077'
 
-AutoName: NitterizeMe
+AutoName: UntrackMe
 
 RepoType: git
 Repo: https://framagit.org/tom79/nitterizeme.git
@@ -68,7 +68,25 @@ Builds:
     rm:
       - apk
 
+  - versionName: 1.7.0
+    versionCode: 11
+    commit: 1.7.0
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - apk
+
+  - versionName: 1.7.1
+    versionCode: 12
+    commit: 1.7.1
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - apk
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.6.0
-CurrentVersionCode: 10
+CurrentVersion: 1.7.1
+CurrentVersionCode: 12
