@@ -34,9 +34,9 @@ RepoType: git
 Repo: https://github.com/OxfordHCC/tracker-control-android
 
 Builds:
-  - versionName: 2020.04.21-fdroid
-    versionCode: 2020042102
-    commit: '2020042102'
+  - versionName: 2020.04.22-fdroid
+    versionCode: 2020042201
+    commit: '2020042201'
     subdir: app
     gradle:
       - fdroid
@@ -44,5 +44,5 @@ Builds:
 
 AutoUpdateMode: Version %c
 UpdateCheckMode: Tags ^[0-9]+$
-CurrentVersion: 2020.04.21-fdroid
-CurrentVersionCode: 2020042102
+CurrentVersion: 2020.04.22-fdroid
+CurrentVersionCode: 2020042201
