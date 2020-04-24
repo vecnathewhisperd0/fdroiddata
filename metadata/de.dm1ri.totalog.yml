@@ -1,12 +1,12 @@
+Categories:
+  - Science & Education
 License: MIT
 SourceCode: https://github.com/hallogallo/totalog
 IssueTracker: https://github.com/hallogallo/totalog/issues
 
-AutoName: test
 Name: TOTALOG
+AutoName: test
 Description: Simple FLOSS Ham Radio logging app for small contests and portable operation.
-Categories:
-  - Science & Education
 
 RepoType: git
 Repo: https://github.com/hallogallo/totalog
@@ -14,7 +14,7 @@ Repo: https://github.com/hallogallo/totalog
 Builds:
   - versionName: 0.0.1
     versionCode: 1
-    commit: 590886701bb98d13ec20c76034fc54cc1abc73fc 
+    commit: 590886701bb98d13ec20c76034fc54cc1abc73fc
     subdir: platforms/android
     sudo:
       - apt-get update || apt-get update
