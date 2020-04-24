@@ -14,7 +14,7 @@ Repo: https://github.com/hallogallo/totalog
 Builds:
   - versionName: 0.0.1
     versionCode: 1
-    commit: af2fa37da3fdd2ea54028fc38ab7ba4ba799fe2f
+    commit: 679457fa22f6cc5cf137a4873dc41643ce9d9f6d 
     sudo:
       - apt-get update || apt-get update
       - apt-get install -t stretch-backports npm
@@ -24,8 +24,6 @@ Builds:
       - npm install
       - ionic cordova platform remove android
       - ionic cordova resources --cordova-res
-      - mkdir -p resources/android/xml/
-      - touch resources/android/xml/network_security_config.xml
       - ionic cordova platform add android
       - ionic cordova resources android --force
       - ionic cordova build --release android
