@@ -286,7 +286,23 @@ Builds:
     gradle:
       - standard
 
+  - versionName: 1.6.10
+    versionCode: 49
+    commit: v1.6.10
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.11
+    versionCode: 50
+    commit: v1.6.11
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9.]+$
-CurrentVersion: 1.6.8
-CurrentVersionCode: 47
+CurrentVersion: 1.6.11
+CurrentVersionCode: 50
