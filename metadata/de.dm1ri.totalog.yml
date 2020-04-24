@@ -7,14 +7,14 @@ IssueTracker: https://github.com/hallogallo/totalog/issues
 Name: TOTALOG
 AutoName: test
 Description: |-
-  Simple FLOSS Ham Radio logging app for small contests and portable operation.
+    Simple FLOSS Ham Radio logging app for small contests and portable operation.
 
-  Features include:
-  * logging QSOs
-  * edit logged QSOs afterwards
-  * archive and manage different QSO lists
-  * export and share QSO lists as cabrillo
-  * dark mode
+    Features include:
+    * logging QSOs
+    * edit logged QSOs afterwards
+    * archive and manage different QSO lists
+    * export and share QSO lists as cabrillo
+    * dark mode
 
 RepoType: git
 Repo: https://github.com/hallogallo/totalog
@@ -22,7 +22,7 @@ Repo: https://github.com/hallogallo/totalog
 Builds:
   - versionName: 0.0.1
     versionCode: 1
-    commit: 679457fa22f6cc5cf137a4873dc41643ce9d9f6d 
+    commit: 679457fa22f6cc5cf137a4873dc41643ce9d9f6d
     sudo:
       - apt-get update || apt-get update
       - apt-get install -t stretch-backports npm
