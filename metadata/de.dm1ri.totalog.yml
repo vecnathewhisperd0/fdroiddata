@@ -15,14 +15,17 @@ Builds:
   - versionName: 0.0.1
     versionCode: 1
     commit: 590886701bb98d13ec20c76034fc54cc1abc73fc
-    subdir: platforms/android
     sudo:
       - apt-get update || apt-get update
       - apt-get install -t stretch-backports npm
-      - npm install -g react-native-cli
+      - npm install -g @ionic/cli cordova cordova-res
     init: npm install
-    gradle:
-      - yes
+    build:
+      - ionic cordova platform remove android
+      - ionic cordova platform add android
+      - ionic cordova resources android --force
+      - ionic cordova build --release android
+    output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
