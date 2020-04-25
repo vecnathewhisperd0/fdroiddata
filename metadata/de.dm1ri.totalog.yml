@@ -22,7 +22,7 @@ Repo: https://github.com/hallogallo/totalog
 Builds:
   - versionName: 0.0.1
     versionCode: 1
-    commit: 679457fa22f6cc5cf137a4873dc41643ce9d9f6d
+    commit: v0.1.0
     sudo:
       - apt-get update || apt-get update
       - apt-get install -t stretch-backports npm
