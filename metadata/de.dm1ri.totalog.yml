@@ -21,7 +21,7 @@ Repo: https://github.com/hallogallo/totalog
 
 Builds:
   - versionName: 0.1.0
-    versionCode: 1
+    versionCode: 100
     commit: v0.1.0
     sudo:
       - apt-get update || apt-get update
