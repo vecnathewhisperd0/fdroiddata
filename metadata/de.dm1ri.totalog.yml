@@ -20,7 +20,7 @@ RepoType: git
 Repo: https://github.com/hallogallo/totalog
 
 Builds:
-  - versionName: 0.0.1
+  - versionName: 0.1.0
     versionCode: 1
     commit: v0.1.0
     sudo:
