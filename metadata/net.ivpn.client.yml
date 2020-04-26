@@ -27,7 +27,7 @@ Builds:
     prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r21
 
-  - versionName: 1.66
+  - versionName: '1.66'
     versionCode: 78
     commit: v1.66
     subdir: app
@@ -43,5 +43,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.66
+CurrentVersion: '1.66'
 CurrentVersionCode: 78
