@@ -37,7 +37,7 @@ Builds:
     commit: 10.5.0
     subdir: app
     gradle:
-      - webdav
+      - nextcloud
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
