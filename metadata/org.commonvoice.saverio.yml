@@ -40,7 +40,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.2.11b
+    versionCode: 85
+    commit: 0.2.11b
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0b
+    versionCode: 88
+    commit: 1.0b
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1b
+    versionCode: 90
+    commit: 1.1b
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.1
+    versionCode: 91
+    commit: 1.1.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2.10b
-CurrentVersionCode: 83
+CurrentVersion: 1.1.1
+CurrentVersionCode: 91

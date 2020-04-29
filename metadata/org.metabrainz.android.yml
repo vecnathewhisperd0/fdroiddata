@@ -7,6 +7,8 @@ IssueTracker: https://tickets.musicbrainz.org/browse/MOBILE
 Translation: https://www.transifex.com/musicbrainz/musicbrainz/android-app/
 Donate: https://metabrainz.org/donate
 
+AutoName: MusicBrainz
+
 RepoType: git
 Repo: https://github.com/metabrainz/musicbrainz-android/
 
@@ -20,3 +22,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
+CurrentVersion: '2.4'
+CurrentVersionCode: 27
