@@ -1283,7 +1283,6 @@ Builds:
     gradle:
       - standard
 
-
   - versionName: 3.0-ose2
     versionCode: 300000004
     commit: v3.0-ose2
