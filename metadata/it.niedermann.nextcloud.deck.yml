@@ -165,7 +165,21 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 1.0.0
+    versionCode: 1000000
+    commit: 1.0.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.0.1
+    versionCode: 1000001
+    commit: 1.0.1
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.6.0
-CurrentVersionCode: 6000
+CurrentVersion: 1.0.1
+CurrentVersionCode: 1000001
