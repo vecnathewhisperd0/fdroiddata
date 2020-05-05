@@ -50,7 +50,7 @@ Builds:
       - apt-get update || apt-get update
       - apt-get install -y -t stretch-backports npm
       - npm install -g cordova
-    output: platform/android/cordova/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
+    output: build/cordova/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
     prebuild:
       - npm install
       - pushd platform/android/cordova
@@ -70,8 +70,8 @@ Builds:
       - rm build/cordova/node_modules/cordova-android/spec/fixtures/org.test.plugins.dummyplugin/src/android/testaar2.aar
       - rm build/cordova/node_modules/cordova-android/spec/fixtures/org.test.plugins.dummyplugin/src/android/jniLibs/x86/libnative.so
     build:
-      - cd platform/android/cordova/platforms/android/app
-      - gradle assembleRelease
+      - cd build/cordova
+      - cordova build android --release
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
