@@ -41,8 +41,7 @@ Builds:
         >> oab-utils/.cargo/config
     ndk: r21
 
-ArchivePolicy: 3 versions
-AutoUpdateMode: Version %v
+AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: 0.9.9-universal
 CurrentVersionCode: 909
