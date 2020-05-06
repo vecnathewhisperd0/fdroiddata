@@ -14,9 +14,9 @@ RepoType: git
 Repo: https://github.com/machiav3lli/oandbackupx
 
 Builds:
-  - versionName: 0.9.8
-    versionCode: 908
-    commit: 0.9.8
+  - versionName: 0.9.9-universal
+    versionCode: 909
+    commit: 0.9.9
     gradle:
       - universal
     srclibs:
@@ -30,10 +30,6 @@ Builds:
       - rustup target add aarch64-linux-android
       - rustup target add i686-linux-android
       - rustup target add x86_64-linux-android
-      - $$NDK$$/build/tools/make_standalone_toolchain.py --api 18 --arch=arm --install-dir=arm
-      - $$NDK$$/build/tools/make_standalone_toolchain.py --api 21 --arch=arm64 --install-dir=arm64
-      - $$NDK$$/build/tools/make_standalone_toolchain.py --api 18 --arch=x86 --install-dir=x86
-      - $$NDK$$/build/tools/make_standalone_toolchain.py --api 21 --arch=x86_64 --install-dir=x86_64
       - mkdir oab-utils/.cargo
       - echo -e "[target.armv7-linux-androideabi]\n linker = \""$(realpath arm)"/bin/arm-linux-androideabi-clang\"\n"
         >> oab-utils/.cargo/config
@@ -48,5 +44,5 @@ Builds:
 ArchivePolicy: 3 versions
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.9.8
-CurrentVersionCode: 908
+CurrentVersion: 0.9.9-universal
+CurrentVersionCode: 909
