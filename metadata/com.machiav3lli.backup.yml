@@ -14,9 +14,9 @@ RepoType: git
 Repo: https://github.com/machiav3lli/oandbackupx
 
 Builds:
-  - versionName: 0.9.9-universal
-    versionCode: 909
-    commit: 0.9.9
+  - versionName: 0.9.10-universal
+    versionCode: 910
+    commit: 0.9.10
     gradle:
       - universal
     srclibs:
@@ -43,5 +43,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 0.9.9-universal
-CurrentVersionCode: 909
+CurrentVersion: 0.9.10-universal
+CurrentVersionCode: 910
