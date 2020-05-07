@@ -31,14 +31,11 @@ Builds:
       - rustup target add i686-linux-android
       - rustup target add x86_64-linux-android
       - mkdir oab-utils/.cargo
-      - echo -e "[target.armv7-linux-androideabi]\n linker = \""$(realpath arm)"/bin/arm-linux-androideabi-clang\"\n"
-        >> oab-utils/.cargo/config
-      - echo -e "[target.aarch64-linux-android]\n linker = \""$(realpath arm64)"/bin/aarch64-linux-android-clang\"\n"
-        >> oab-utils/.cargo/config
-      - echo -e "[target.i686-linux-android]\n linker = \""$(realpath x86)"/bin/i686-linux-android-clang\"\n"
-        >> oab-utils/.cargo/config
-      - echo -e "[target.x86_64-linux-android]\n linker = \""$(realpath x86_64)"/bin/x86_64-linux-android-clang\"\n"
-        >> oab-utils/.cargo/config
+      - export PATH=$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH
+      - echo -e "[target.armv7-linux-androideabi]\n linker = \"armv7a-linux-androideabi29-clang\"\n" >> oab-utils/.cargo/config
+      - echo -e "[target.aarch64-linux-android]\n linker = \"aarch64-linux-android29-clang\"\n" >> oab-utils/.cargo/config
+      - echo -e "[target.i686-linux-android]\n linker = \"i686-linux-android29-clang\"\n" >> oab-utils/.cargo/config
+      - echo -e "[target.x86_64-linux-android]\n linker = \"x86_64-linux-android29-clang\"\n" >> oab-utils/.cargo/config
     ndk: r21
 
 AutoUpdateMode: None
