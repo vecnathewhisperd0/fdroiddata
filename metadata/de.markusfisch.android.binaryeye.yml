@@ -272,7 +272,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.26.0
+    versionCode: 60
+    commit: 1.26.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.27.0
+    versionCode: 62
+    commit: 1.27.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.25.1
-CurrentVersionCode: 59
+CurrentVersion: 1.27.0
+CurrentVersionCode: 62

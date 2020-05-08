@@ -333,35 +333,33 @@ Builds:
         build.gradle
       - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
-  - versionName: 3.4.6
-    versionCode: 30406
-    commit: 3.4.6
+  - versionName: 3.4.8
+    versionCode: 30408
+    commit: 3.4.8
     subdir: app
     gradle:
-      - fabricfree
+      - firebasefree
     prebuild:
-      - sed -i -e '/fabric\.io/d; s|= uri("https://jitpack\.io")|"https://jitpack.io"|'
-        ../build.gradle
-      - sed -i -e '/io\.fabric/d; /com\.google\.gms/d' ../build.gradle build.gradle
-      - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
+      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
+      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
         build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+      - sed -i -e '/firebaseCrashlytics/,+2d' -e '/^android\.applicationVariants\.all
+        {/,/^}$/d' build.gradle
 
-  - versionName: 3.4.7
-    versionCode: 30407
-    commit: 3.4.7
+  - versionName: 3.4.9
+    versionCode: 30409
+    commit: 3.4.9
     subdir: app
     gradle:
-      - fabricfree
+      - firebasefree
     prebuild:
-      - sed -i -e '/fabric\.io/d; s|= uri("https://jitpack\.io")|"https://jitpack.io"|'
-        ../build.gradle
-      - sed -i -e '/io\.fabric/d; /com\.google\.gms/d' ../build.gradle build.gradle
-      - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
+      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
+      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
         build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+      - sed -i -e '/firebaseCrashlytics/,+2d' -e '/^android\.applicationVariants\.all
+        {/,/^}$/d' build.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.4.7
-CurrentVersionCode: 30407
+CurrentVersion: 3.4.9
+CurrentVersionCode: 30409

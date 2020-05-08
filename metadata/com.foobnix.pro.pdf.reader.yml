@@ -332,9 +332,9 @@ Builds:
       - ./link_to_mupdf_1.16.1.sh
     ndk: r21
 
-  - versionName: 8.3.40-fdroid
-    versionCode: 3730
-    commit: 8.3.40
+  - versionName: 8.3.45-fdroid
+    versionCode: 3772
+    commit: 8.3.45
     subdir: app/
     sudo:
       - apt-get update || apt-get update
@@ -358,9 +358,9 @@ Builds:
       - ./link_to_mupdf_1.16.1.sh
     ndk: r21
 
-  - versionName: 8.3.45-fdroid
-    versionCode: 3772
-    commit: 8.3.45
+  - versionName: 8.3.53-fdroid
+    versionCode: 3780
+    commit: 8.3.53
     subdir: app/
     sudo:
       - apt-get update || apt-get update
@@ -391,5 +391,5 @@ AutoUpdateMode: Version +-fdroid %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/foobnix/LibreraReader/master/app/build.gradle|\s+FDroidCodeNumber
     = (\d+)|.|\s+FDroidVersionNumber = "([^\"]+)"
-CurrentVersion: 8.3.45
-CurrentVersionCode: 3772
+CurrentVersion: 8.3.53
+CurrentVersionCode: 3780
