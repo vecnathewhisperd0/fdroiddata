@@ -25,8 +25,8 @@ RepoType: git
 Repo: https://gitlab.com/joshmcarthur/emote
 
 Builds:
-  - versionCode: 6008
-    versionName: 1.5.0
+  - versionName: 1.5.0
+    versionCode: 6008
     commit: v1.5.0+6008
     output: build/app/outputs/apk/release/app-release.apk
     srclibs:
