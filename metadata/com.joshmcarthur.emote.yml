@@ -38,3 +38,5 @@ Builds:
       - bash metadata/fdroid-scripts/build-release-unsigned.sh
     build: $$flutter$$/bin/flutter build apk
 
+AutoUpdateMode: None
+UpdateCheckMode: None
