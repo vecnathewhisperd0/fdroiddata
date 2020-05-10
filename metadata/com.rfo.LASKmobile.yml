@@ -21,10 +21,17 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.7.9
+    versionCode: 500
+    commit: v0.7.9
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 <<<<<<< HEAD
 =======
-CurrentVersion: 0.7.0
+CurrentVersion: 0.7.9
 CurrentVersionCode: 500
 >>>>>>> b1ff9038368e468db89870f85b9ad4c95fb7d45a
