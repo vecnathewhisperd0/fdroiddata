@@ -5,11 +5,8 @@ WebSite: https://codeberg.org/ibinshoid/LASKmobile/wiki
 SourceCode: https://codeberg.org/ibinshoid/LASKmobile
 IssueTracker: https://codeberg.org/ibinshoid/LASKmobile/issues
 
-<<<<<<< HEAD
-=======
 AutoName: LASKmobile
 
->>>>>>> b1ff9038368e468db89870f85b9ad4c95fb7d45a
 RepoType: git
 Repo: https://codeberg.org/ibinshoid/LASKmobile
 
@@ -30,8 +27,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-<<<<<<< HEAD
-=======
 CurrentVersion: 0.7.9
 CurrentVersionCode: 500
->>>>>>> b1ff9038368e468db89870f85b9ad4c95fb7d45a
