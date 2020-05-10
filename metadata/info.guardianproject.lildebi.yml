@@ -1,6 +1,9 @@
 Categories:
   - Development
-License: GPL-3.0-only
+License: GPL-3.0-or-later
+AuthorName: Guardian Project
+AuthorEmail: support@guardianproject.info
+AuthorWebSite: https://guardianproject.info
 WebSite: https://github.com/guardianproject/lildebi/wiki
 SourceCode: https://github.com/guardianproject/lildebi
 IssueTracker: https://github.com/guardianproject/lildebi/issues
@@ -10,6 +13,8 @@ Bitcoin: 1Fi5xUHiAPRKxHvyUGVFGt9extBe8Srdbk
 AutoName: Lil' Debi
 Summary: Run Debian on your phone
 Description: |-
+    '''NOTE:''' This app is no longer maintained, its repo was archived.
+
     Lil' Debi builds up a whole Debian chroot on your phone entirely using
     debootstrap. You choose the release, mirror, and size of the disk image, and
     away it goes. It could take up to an hour on a slow device.
@@ -19,7 +24,7 @@ Description: |-
     ‘apt-get’ to install any package that is released for ARM processors. This
     includes things like a complete real shell, Tor, TraceRouteTCP,
     iwconfig/ipconfig, and other security and crypto tools. Works well with
-    [[jackpal.androidterm]]—just run `/debian/shell` to get a Debian shell.
+    https://f-droid.org/packages/jackpal.androidterm —just run `/debian/shell` to get a Debian shell.
 
     The aim of Lil’ Debi is to provide a transparent and tightly integrated Debian
     install on your Android device. It mounts all of your Android partitions in
@@ -151,7 +156,8 @@ MaintainerNotes: |-
     Use "Archive Policy" to ensure we always have at least one working 0.4 release
     ready.
 
+ArchivePolicy: 0 versions
 AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
+UpdateCheckMode: None
 CurrentVersion: 0.5.4
 CurrentVersionCode: 5400

@@ -4,14 +4,15 @@ Categories:
   - System
   - Security
 License: GPL-3.0-only
+AuthorName: Marcel Bokhorst (M66B)
 SourceCode: https://github.com/M66B/XPrivacyLua
 IssueTracker: https://forum.xda-developers.com/xposed/modules/xprivacylua6-0-android-privacy-manager-t3730663
+Translation: https://crowdin.com/project/xprivacylua/
 Changelog: https://github.com/M66B/XPrivacyLua/releases
 Donate: https://lua.xprivacy.eu/
 Bitcoin: 1GePXhRPgLhwQmBwRHhX1nSCgvfnCY97Gg
 
 AutoName: XPrivacyLua
-Summary: Really simple to use privacy manager for Marshmallow (6.0) and later
 Description: |-
     '''XPosed Module''', get [[de.robv.android.xposed.installer]].
 
@@ -152,7 +153,38 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.24'
+    versionCode: 125
+    commit: '1.24'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.25'
+    versionCode: 126
+    commit: '1.25'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: '1.26'
+    versionCode: 127
+    commit: '1.26'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: '1.27'
+    versionCode: 128
+    commit: '1.27'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.23.23
-CurrentVersionCode: 124
+CurrentVersion: '1.27'
+CurrentVersionCode: 128

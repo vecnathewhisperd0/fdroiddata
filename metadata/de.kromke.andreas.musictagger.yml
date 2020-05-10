@@ -7,7 +7,6 @@ IssueTracker: https://gitlab.com/AndreasK/classical-music-tagger/issues
 Changelog: https://gitlab.com/AndreasK/classical-music-tagger/blob/HEAD/app/src/main/assets/version-history.txt
 
 AutoName: Classical Music Tagger
-Summary: A plain audio file metadata editor especially for classical music
 Description: |-
     While most Android applications not even know about composers, this one
     additionally handles works, movements, conductors etc.
@@ -27,7 +26,63 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: None
+  - versionName: 1.1.1
+    versionCode: 11
+    commit: v1.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.2
+    versionCode: 12
+    commit: v1.1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.2'
+    versionCode: 13
+    commit: v1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.1
+    versionCode: 14
+    commit: v1.2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.3'
+    versionCode: 15
+    commit: v1.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.1
+    versionCode: 16
+    commit: v1.3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.2
+    versionCode: 17
+    commit: v1.3.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.4'
+    versionCode: 18
+    commit: v1.4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.1'
-CurrentVersionCode: 10
+CurrentVersion: '1.4'
+CurrentVersionCode: 18

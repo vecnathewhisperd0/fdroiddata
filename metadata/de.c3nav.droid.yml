@@ -3,9 +3,9 @@ Categories:
 License: Apache-2.0
 SourceCode: https://github.com/c3nav/c3nav-android/
 IssueTracker: https://github.com/c3nav/c3nav-android/issues
+Changelog: https://github.com/c3nav/c3nav-android/releases
 
 AutoName: c3nav
-Summary: Navigation in C3 events
 Description: |-
     This is the official Android app for c3nav, the map & indoor navigation software
     at the Chaos Communication Congress which you can find at [https://c3nav.de
@@ -85,7 +85,22 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 4.1.0
+    versionCode: 14040100
+    commit: v4.1.0
+    subdir: CongressRoutePlanner/app
+    gradle:
+      - yes
+
+  - versionName: 4.1.1
+    versionCode: 14040101
+    commit: v4.1.1
+    subdir: CongressRoutePlanner/app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: '3.1'
-CurrentVersionCode: 7
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/c3nav/c3nav-android/master/current_version|^[^:]+:([^:]+)$|.|^([^:]+):[^:]+$
+CurrentVersion: 4.1.1
+CurrentVersionCode: 14040101

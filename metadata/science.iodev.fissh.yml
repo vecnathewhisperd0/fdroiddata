@@ -3,11 +3,11 @@ Categories:
 License: MIT
 AuthorName: IODev
 AuthorEmail: ioan@iodev.science
-WebSite: https://www.iodev.science
+WebSite: https://www.iodev.science/
 SourceCode: https://gitlab.com/ioanm/FiSSH-App
+IssueTracker: https://gitlab.com/ioanm/fissh-app/issues
 
 AutoName: FiSSH
-Summary: SSH authentication via Fingerprint scanning over network (TLS Sockets).
 Description: |-
     This Android app stores your SSH key phrase and sends it to your PC securely via the LAN when an authorized fingerprint is detected by the Android fingerprint scanner.
 
@@ -16,7 +16,7 @@ Description: |-
     * It is important to note that none of the FiSSH apps have access to private key file and that FiSSH uses TLS sockets with certificate validation to prevent man-in-the-middle attacks!
 
 RepoType: git
-Repo: https://gitlab.com/ioanm/FiSSH-App
+Repo: https://gitlab.com/ioanm/FiSSH-App.git
 
 Builds:
   - versionName: '2.5'

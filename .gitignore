@@ -1,11 +1,14 @@
 /config.py
 /unsigned/
 /repo/
+/repo
 /archive/
 /logs/
 /tmp/
 /builder/
 *~
+*.swp
+*.swo
 *.pyc
 .fdroid*
 *.apk

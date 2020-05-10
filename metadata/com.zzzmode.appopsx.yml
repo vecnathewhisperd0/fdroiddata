@@ -3,8 +3,8 @@ Categories:
 License: MIT
 SourceCode: https://github.com/8enet/AppOpsX
 IssueTracker: https://github.com/8enet/AppOpsX/issues
+Translation: https://crowdin.com/project/appopsx
 
-Summary: A front-end for the AppOpsService
 Description: AppOpsX is a front-end application for the Android AppOpsService. It
     allows you to restrict app permissions.
 

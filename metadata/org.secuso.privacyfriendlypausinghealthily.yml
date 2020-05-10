@@ -1,13 +1,15 @@
 Categories:
   - Sports & Health
 License: GPL-3.0-only
+AuthorName: SECUSO - Security Usability Society
+AuthorEmail: contact@secuso.org
+AuthorWebSite: https://secuso.aifb.kit.edu/english/
 WebSite: https://secuso.org/pfa
 SourceCode: https://github.com/SecUSo/privacy-friendly-pausing-healthily
 IssueTracker: https://github.com/SecUSo/privacy-friendly-pausing-healthily/issues
 Changelog: https://github.com/SecUSo/privacy-friendly-pausing-healthily/releases
 
 AutoName: Pausing Healthily
-Summary: Break reminder with helpful exercises
 Description: |-
     The application Privacy Friendly Pausing Healthily is an app that allows you to
     structure your work. It reminds you to take breaks during your work and offers

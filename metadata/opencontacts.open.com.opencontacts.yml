@@ -4,10 +4,10 @@ Categories:
 License: GPL-3.0-only
 SourceCode: https://gitlab.com/sultanahamer/OpenContacts/tree/HEAD
 IssueTracker: https://gitlab.com/sultanahamer/OpenContacts/issues
+Translation: https://crowdin.com/project/opencontacts
 Changelog: https://gitlab.com/sultanahamer/OpenContacts/blob/HEAD/CHANGELOG
 
 AutoName: OpenContacts
-Summary: Hide contacts away from apps stealing your contacts information
 Description: |
     Even though we are not having any problem sharing our mobile number with all third parties, people in our phone book might have. We should not be sharing their contact information online. So, keep your contacts safe in a different database.
     This app saves contacts in its own database seperate from android contacts. This way no other app would be able to access contacts.
@@ -82,7 +82,50 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '13.0'
+    versionCode: 13
+    commit: v13.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '14.0'
+    versionCode: 14
+    commit: v14.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '15.0'
+    versionCode: 15
+    disable: lintVitalRelease fails
+    commit: v15.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '16.0'
+    versionCode: 16
+    commit: v16.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '17.0'
+    versionCode: 17
+    commit: v17.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '18.0'
+    versionCode: 18
+    commit: v18.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '12.0'
-CurrentVersionCode: 12
+CurrentVersion: '18.0'
+CurrentVersionCode: 18

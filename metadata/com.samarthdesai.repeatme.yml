@@ -7,7 +7,6 @@ IssueTracker: https://github.com/SamarthDesai01/RepeatMe/issues
 Changelog: https://github.com/SamarthDesai01/RepeatMe/releases
 
 AutoName: Repeat Me
-Summary: Schedule custom, interval based reminders
 Description: |-
     ''Repeat Me'' is the cleanest, fastest, and most customize-able way to schedule
     notifications on your phone. With no ads or any questionable permissions,
@@ -39,7 +38,7 @@ Builds:
     commit: v1.2.5
     output: build/app/outputs/apk/release/app-release.apk
     srclibs:
-      - flutter@v0.2.11
+      - flutter@v1.2.1
     rm:
       - android/local.properties
     prebuild:

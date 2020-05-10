@@ -5,7 +5,6 @@ SourceCode: https://gitlab.com/halftough/webcom-reader
 IssueTracker: https://gitlab.com/halftough/webcom-reader/issues
 
 AutoName: Tinte Webcoms
-Summary: Reader for selected webcomics
 Description: |-
     ''Webcom Reader'' allows you to pick webcomics from supported titles and
     add them to your library. Marks read, download them to read offline.
@@ -22,7 +21,7 @@ Description: |-
     * [https://www.peppercarrot.com/ Pepper & Carrot]
 
 RepoType: git
-Repo: https://gitlab.com/halftough/webcom-reader
+Repo: https://gitlab.com/halftough/webcom-reader.git
 
 Builds:
   - versionName: 0.2.0

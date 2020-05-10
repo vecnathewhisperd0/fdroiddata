@@ -7,7 +7,6 @@ IssueTracker: https://github.com/DevLuuk/SleepyWifi/issues
 Changelog: https://github.com/DevLuuk/SleepyWifi/releases
 
 AutoName: SleepyWifi
-Summary: Disables the Wi-Fi when the phone is in sleep mode
 Description: |-
     This app brings back the 'turn Wi-Fi off when the phone is in sleepmode' option for Android 8.1.
     This app can also save your phone battery.
@@ -58,7 +57,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.7'
+    versionCode: 8
+    commit: v1.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.9'
+    versionCode: 10
+    commit: '1.9'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.5'
-CurrentVersionCode: 6
+CurrentVersion: '1.9'
+CurrentVersionCode: 10

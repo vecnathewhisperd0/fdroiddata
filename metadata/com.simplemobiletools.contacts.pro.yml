@@ -3,11 +3,11 @@ Categories:
 License: Apache-2.0
 AuthorName: Tibor Kaputa
 AuthorEmail: hello@simplemobiletools.com
-WebSite: https://simplemobiletools.github.io
+WebSite: https://simplemobiletools.com
 SourceCode: https://github.com/SimpleMobileTools/Simple-Contacts
 IssueTracker: https://github.com/SimpleMobileTools/Simple-Contacts/issues
 Changelog: https://github.com/SimpleMobileTools/Simple-Contacts/blob/HEAD/CHANGELOG.md
-Donate: https://simplemobiletools.github.io/donate
+Donate: https://simplemobiletools.com/donate
 Bitcoin: 19Hc8A7sWGud8sP19VXDC5a5j28UyJfpyJ
 Litecoin: LYACbHTKaM9ZubKQGxJ4NRyVy1gHUuztRP
 
@@ -66,7 +66,141 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore/d' build.gradle
 
+  - versionName: 6.3.1
+    versionCode: 42
+    commit: 6.3.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.3.2
+    versionCode: 43
+    commit: 6.3.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.3.3
+    versionCode: 44
+    commit: 6.3.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.3.4
+    versionCode: 45
+    commit: 6.3.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.3.5
+    versionCode: 46
+    commit: 6.3.5
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.4.1
+    versionCode: 48
+    commit: 6.4.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.4.2
+    versionCode: 50
+    commit: 6.4.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.4.4
+    versionCode: 52
+    commit: 6.4.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.5.0
+    versionCode: 53
+    commit: 6.5.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.5.1
+    versionCode: 54
+    commit: 6.5.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 6.5.2
+    versionCode: 55
+    commit: 6.5.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 6.6.0
+    versionCode: 56
+    commit: 6.6.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 6.7.0
+    versionCode: 57
+    commit: 6.7.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 6.8.0
+    versionCode: 59
+    commit: 6.8.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+
+  - versionName: 6.9.0
+    versionCode: 60
+    commit: 6.9.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+
+  - versionName: 6.10.2
+    versionCode: 63
+    commit: 6.10.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 6.3.0
-CurrentVersionCode: 41
+CurrentVersion: 6.10.2
+CurrentVersionCode: 63
