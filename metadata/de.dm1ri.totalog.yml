@@ -17,7 +17,7 @@ Builds:
     sudo:
       - apt-get update || apt-get update
       - apt-get install -t stretch-backports npm
-      - npm install -g @ionic/cli cordova cordova-res
+      - npm install -g @ionic/cli cordova
     output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
     build:
       - npm install
