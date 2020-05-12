@@ -8,6 +8,10 @@ SourceCode: https://github.com/beegee-tokyo/disaster-radio-android
 IssueTracker: https://github.com/beegee-tokyo/disaster-radio-android/issues
 
 AutoName: DisasterRadio
+Description: |-
+    A resilient communications network.
+
+    This app connects over BLE to a nearby LoRa node that runs the DisasterRadio firmware.
 
 RepoType: git
 Repo: https://github.com/beegee-tokyo/disaster-radio-android.git
