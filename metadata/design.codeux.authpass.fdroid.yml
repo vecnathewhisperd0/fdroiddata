@@ -4,6 +4,8 @@ License: Apache-2.0
 WebSite: https://authpass.app/
 SourceCode: https://github.com/authpass/authpass
 IssueTracker: https://github.com/authpass/authpass/issues
+Donate: https://github.com/sponsors/hpoul
+Bitcoin: 3NcBacCmJbYWpwxj6rWzpM7sx48etMrPtc
 
 AutoName: AuthPass Password Manager
 Description: |-
@@ -155,7 +157,7 @@ Builds:
     submodules: true
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
-      - flutter@1.17.0
+      - flutter@1.17.1
     rm:
       - authpass/ios
       - authpass/macos
