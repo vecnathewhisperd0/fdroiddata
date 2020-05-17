@@ -16,7 +16,7 @@ Builds:
     subdir: atox
     gradle:
       - yes
-    scanignore:
+    scandelete:
       - buildSrc/build/classes/kotlin/main/Libraries.class
       - buildSrc/build/classes/kotlin/main/BuildPlugin$Version.class
       - buildSrc/build/classes/kotlin/main/Version.class
