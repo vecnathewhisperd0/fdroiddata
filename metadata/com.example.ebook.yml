@@ -1,0 +1,34 @@
+Categories:
+  - Internet
+  - Reading
+  - Science & Education
+License: GPL-3.0-only
+SourceCode: https://github.com/carlzkarthik/Cbook
+
+Summary: App to download unlimited ebooks for free
+Description: |-
+    Cbook is free app to download unlimited ebook for free
+
+    Download ebooks from over 10+ categories
+
+    How to download
+
+    * Search for any ebook using book name, Author or ISBN
+    * Click on the one that you are looking for
+    * Then click Download, that's it
+
+RepoType: git
+Repo: https://github.com/carlzkarthik/CbooK
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: a483def52dd4ed7bf66362165dafcc3eb7db821f
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
