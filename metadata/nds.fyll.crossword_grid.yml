@@ -3,22 +3,13 @@ Categories:
 License: MIT
 SourceCode: https://bitbucket.org/Fyll-nds/crossword-grid
 
-Summary: An app for drawing and filling in a crossword grid
-Description: |-
-    An app for drawing and filling in crossword grids to avoiding having to
-    write on papers and the like.
-
-    Clues can be loaded into the app as an image (presumeably a photo or a
-    screenshot), and the grid, the answers you have filled in, and the image
-    containing the clues can be saved and loaded for later use.
-
 RepoType: git
 Repo: https://bitbucket.org/Fyll-nds/crossword-grid
 
 Builds:
   - versionName: 1.0.0
     versionCode: 1
-    commit: b031c41
+    commit: 1b74f16
     subdir: android/app
     gradle:
       - yes
