@@ -19,9 +19,6 @@ Description: |-
     * Search for any ebook using book name, Author or ISBN
     * Click on the one that you are looking for
     * Then click Download, that's it
-    Description of what the app does, starting on a new line. It should be as
-    objective as possible and wrapped at 80 chars (except links and list
-    items).
 
 RepoType: git
 Repo: https://github.com/carlzkarthik/CbooK
