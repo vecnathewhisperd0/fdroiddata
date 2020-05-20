@@ -595,14 +595,14 @@ Builds:
     output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
     ndk: r20b
 
-  - versionName: 5.52.6
-    versionCode: 55206
-    commit: 5.52.6
+  - versionName: 5.53.1
+    versionCode: 55301
+    commit: 5.53.1
     submodules: true
     gradle:
       - yes
     output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
-    ndk: r20b
+    ndk: r21
 
   - versionName: 5.53.1
     versionCode: 55301
