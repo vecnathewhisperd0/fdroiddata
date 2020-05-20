@@ -1,0 +1,24 @@
+Categories:
+  - Science & Education
+License: GPL-3.0-only
+SourceCode: https://github.com/Pawan0411/AWOL
+IssueTracker: https://github.com/Pawan0411/AWOL/issues
+
+AutoName: AWOL - ITER
+
+RepoType: git
+Repo: https://github.com/Pawan0411/AWOL
+
+Builds:
+  - versionName: '1.0.6'
+    versionCode: 8
+    commit: '1.0.6'
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0.6'
+CurrentVersionCode: 8
+
