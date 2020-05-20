@@ -6,6 +6,7 @@ License: GPL-3.0-only
 AuthorName: carlz karthik
 SourceCode: https://github.com/carlzkarthik/Cbook
 
+AutoName: CbooK
 Summary: App to download unlimited ebooks for free
 Description: |-
     Cbook is free app to download unlimited ebook for free
@@ -17,13 +18,12 @@ Description: |-
     * Search for any ebook using book name, Author or ISBN
     * Click on the one that you are looking for
     * Then click Download, that's it
-    
 
 RepoType: git
 Repo: https://github.com/carlzkarthik/CbooK
 
 Builds:
-  - versionName: 0.1
+  - versionName: '0.1'
     versionCode: 1
     commit: v0.1
     subdir: app
@@ -32,5 +32,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 'v0.1'
+CurrentVersion: v0.1
 CurrentVersionCode: 1
