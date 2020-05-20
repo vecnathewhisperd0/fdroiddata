@@ -19,6 +19,7 @@ Description: |-
     provides links to virustotal.com and androidobservatory.org to easily access the
     profiles of that APK. It will also let you export the signing certificate and
     generate ApkSignaturePin pin files for use with the TrustedIntents library.
+    TESTING TESTING 123!
 
 RepoType: git
 Repo: https://gitlab.com/guardianproject/checkey.git
