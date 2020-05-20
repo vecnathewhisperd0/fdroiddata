@@ -224,8 +224,8 @@ pages:
     - curl --silent https://gitlab.com/fdroid/gradle-plugins/repository/master/archive.tar.gz
         | tar -xz --directory=$GRADLE_USER_HOME/fdroid --strip-components=1
 
-    - git ls-remote https://gitlab.com/fdroid/issuebot.git master
-    - curl --silent https://gitlab.com/fdroid/issuebot/repository/master/archive.tar.gz
+    - git ls-remote https://gitlab.com/eighthave/issuebot.git master
+    - curl --silent https://gitlab.com/eighthave/issuebot/repository/master/archive.tar.gz
         | tar -xz --strip-components=1
     - pyvenv --system-site-packages --clear issuebot-env
     - . issuebot-env/bin/activate
