@@ -19,7 +19,7 @@ Description: |4-
 
     --
 
-    NOTE: The original LeafPic is abandonded:
+    NOTE: The original LeafPic is abandoned:
     https://gitlab.com/HoraApps/LeafPic/issues/605#note_155379129 This is a copy
     of the GitLab source code, updated to AndroidX, with some elements removed.
 
@@ -51,7 +51,7 @@ Builds:
       - sed -i -e 's/uz.shift:colorpicker:0.5@aar/com.github.DASAR:ShiftColorPicker:v0.5@aar/'
         build.gradle
 
-AutoUpdateMode: None
-UpdateCheckMode: None
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
 CurrentVersion: v0.8.2
 CurrentVersionCode: 20
