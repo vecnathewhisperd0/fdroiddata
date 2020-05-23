@@ -1,6 +1,6 @@
 Categories:
   - Internet
-License: GPL-3.0-only
+License: GPL-2.0-only
 SourceCode: https://github.com/juha-h/baresip-studio
 IssueTracker: https://github.com/juha-h/baresip-studio/issues
 Translation: https://hosted.weblate.org/projects/baresip/
@@ -29,7 +29,7 @@ Builds:
       - make download-sources
       - make install-all
       - popd
-    ndk: r21
+    ndk: r21b
 
 MaintainerNotes: make download-sources checks out master branches of several libraries;
     this can cause build failures.
