@@ -3166,9 +3166,9 @@ Builds:
       - cp $$icu50-2-1-patched$$/icu4j/icu4j.jar ../OsmAnd-java/libs/
     ndk: r17c
 
-  - versionName: 3.7.1
-    versionCode: 371
-    commit: v3.7.1
+  - versionName: 3.7.2
+    versionCode: 372
+    commit: v3.7.2
     subdir: android/OsmAnd
     submodules: true
     sudo:
