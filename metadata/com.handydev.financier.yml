@@ -30,14 +30,15 @@ RepoType: git
 Repo: https://github.com/handydevcom/financier
 
 Builds:
-  - versionName: 2.0.1
-    versionCode: 201
-    commit: 2.0.1
+  - versionName: 2.0.6
+    versionCode: 206
+    commit: 2.0.6_FDroid
     subdir: app
+    output: app/fdroid/release/Financier*.apk
     gradle:
-      - yes
+      - fdroid
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.1
-CurrentVersionCode: 201
+CurrentVersion: 2.0.6
+CurrentVersionCode: 206
