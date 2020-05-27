@@ -393,7 +393,6 @@ Builds:
     prebuild:
       - sed -i -e '/signingConfigs.getByName/d' -e 's/isEnable\ =\ true/isEnable\
         =\ false/' build.gradle.kts
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r19c
 
 MaintainerNotes: |-

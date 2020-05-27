@@ -178,7 +178,6 @@ Builds:
       - yes
     prebuild:
       - sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 6.9.0
     versionCode: 60
@@ -188,7 +187,6 @@ Builds:
       - yes
     prebuild:
       - sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 6.10.2
     versionCode: 63
@@ -198,7 +196,6 @@ Builds:
       - yes
     prebuild:
       - sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags

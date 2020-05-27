@@ -353,7 +353,6 @@ Builds:
       - yes
     prebuild:
       - sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     scanignore:
       - app/src/main/res/raw/*
     ndk: r18b
@@ -366,7 +365,6 @@ Builds:
       - yes
     prebuild:
       - sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     scanignore:
       - app/src/main/res/raw/*
     ndk: r18b
@@ -379,7 +377,6 @@ Builds:
       - yes
     prebuild:
       - sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     scanignore:
       - app/src/main/res/raw/*
     ndk: r18b

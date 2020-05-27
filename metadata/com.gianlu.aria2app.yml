@@ -511,7 +511,6 @@ Builds:
     prebuild:
       - sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     scandelete:
       - aria2lib/src/main/jniLibs
     ndk: r21
@@ -527,7 +526,6 @@ Builds:
     prebuild:
       - sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     scandelete:
       - aria2lib/src/main/jniLibs
     ndk: r21
@@ -543,7 +541,6 @@ Builds:
     prebuild:
       - sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     scandelete:
       - aria2lib/src/main/jniLibs
     ndk: r21
@@ -559,7 +556,6 @@ Builds:
     prebuild:
       - sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     scandelete:
       - aria2lib/src/main/jniLibs
     ndk: r21
@@ -575,7 +571,6 @@ Builds:
     prebuild:
       - sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     scandelete:
       - aria2lib/src/main/jniLibs
     ndk: r21b

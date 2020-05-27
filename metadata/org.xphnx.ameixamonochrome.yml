@@ -128,7 +128,6 @@ Builds:
     prebuild:
       - sed -i -e 's/applicationIdSuffix "monochrome"/applicationId "org.xphnx.ameixamonochrome"/'
         build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 4.2.2
     versionCode: 422
@@ -139,7 +138,6 @@ Builds:
     prebuild:
       - sed -i -e 's/applicationIdSuffix "monochrome"/applicationId "org.xphnx.ameixamonochrome"/'
         build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags

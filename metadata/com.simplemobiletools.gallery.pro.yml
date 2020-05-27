@@ -443,7 +443,6 @@ Builds:
       - foss
     prebuild:
       - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 6.14.1
     versionCode: 301
@@ -455,7 +454,6 @@ Builds:
       - foss
     prebuild:
       - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 6.14.2
     versionCode: 302
@@ -467,7 +465,6 @@ Builds:
       - foss
     prebuild:
       - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 6.14.3
     versionCode: 304
@@ -479,7 +476,6 @@ Builds:
       - foss
     prebuild:
       - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 6.14.6
     versionCode: 307
@@ -491,7 +487,6 @@ Builds:
       - foss
     prebuild:
       - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 6.14.8
     versionCode: 309
@@ -503,7 +498,6 @@ Builds:
       - foss
     prebuild:
       - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 6.14.9
     versionCode: 310
@@ -515,7 +509,6 @@ Builds:
       - foss
     prebuild:
       - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags

@@ -1194,7 +1194,6 @@ Builds:
       - yes
     prebuild:
       - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r21
 
   - versionName: '2.276'
@@ -1205,7 +1204,6 @@ Builds:
       - yes
     prebuild:
       - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r21
 
   - versionName: '2.279'
@@ -1216,7 +1214,6 @@ Builds:
       - yes
     prebuild:
       - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r21
 
   - versionName: '2.280'
@@ -1227,7 +1224,6 @@ Builds:
       - yes
     prebuild:
       - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r21
 
   - versionName: '2.281'
@@ -1238,7 +1234,6 @@ Builds:
       - yes
     prebuild:
       - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r21
 
 AutoUpdateMode: Version %v

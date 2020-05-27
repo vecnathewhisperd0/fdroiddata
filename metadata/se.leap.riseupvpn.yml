@@ -93,7 +93,6 @@ Builds:
       - shapeshifter/*.?ar
     prebuild:
       - sed -i -e "/^task updateSdkLicences/,/^}/d; /commandLine 'git'/d" build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     build:
       - cd ../go
       - curl -o go.tar.gz https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz

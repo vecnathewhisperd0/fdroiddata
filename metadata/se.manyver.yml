@@ -1220,7 +1220,6 @@ Builds:
       - e2e/apple-app-store-demo
     prebuild:
       - sed -i -e '/lifecycle/d' ../build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     scanignore:
       - android/build.gradle
     scandelete:
@@ -1265,7 +1264,6 @@ Builds:
       - e2e/apple-app-store-demo
     prebuild:
       - sed -i -e '/lifecycle/d' ../build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     scanignore:
       - android/build.gradle
     scandelete:
@@ -1310,7 +1308,6 @@ Builds:
       - e2e/apple-app-store-demo
     prebuild:
       - sed -i -e '/lifecycle/d' ../build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     scanignore:
       - android/build.gradle
     scandelete:
