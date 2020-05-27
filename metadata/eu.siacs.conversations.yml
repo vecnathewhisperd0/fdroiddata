@@ -1833,7 +1833,7 @@ Builds:
     ndk: r21b
 
   - versionName: 2.8.5+fcr
-    versionCode: 385
+    versionCode: 388
     commit: 2.8.5
     gradle:
       - conversationsFreeCompat
