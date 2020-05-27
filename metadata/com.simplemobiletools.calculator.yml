@@ -167,8 +167,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
 
   - versionName: 5.1.3
     versionCode: 33
@@ -176,8 +175,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags

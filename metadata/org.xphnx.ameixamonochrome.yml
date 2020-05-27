@@ -125,8 +125,7 @@ Builds:
     subdir: app
     gradle:
       - monochromatic
-    prebuild:
-      - sed -i -e 's/applicationIdSuffix "monochrome"/applicationId "org.xphnx.ameixamonochrome"/'
+    prebuild: sed -i -e 's/applicationIdSuffix "monochrome"/applicationId "org.xphnx.ameixamonochrome"/'
         build.gradle
 
   - versionName: 4.2.2
@@ -135,8 +134,7 @@ Builds:
     subdir: app
     gradle:
       - monochromatic
-    prebuild:
-      - sed -i -e 's/applicationIdSuffix "monochrome"/applicationId "org.xphnx.ameixamonochrome"/'
+    prebuild: sed -i -e 's/applicationIdSuffix "monochrome"/applicationId "org.xphnx.ameixamonochrome"/'
         build.gradle
 
 AutoUpdateMode: Version v%v

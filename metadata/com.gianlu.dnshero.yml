@@ -183,8 +183,7 @@ Builds:
     submodules: true
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/maven.fabric.io/d; /io.fabric/d; /com.crashlytics/d' ../build.gradle
+    prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d; /com.crashlytics/d' ../build.gradle
         ../CommonUtils/build.gradle build.gradle
 
   - versionName: 1.6.4
@@ -195,8 +194,7 @@ Builds:
     submodules: true
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/maven.fabric.io/d; /io.fabric/d; /com.crashlytics/d' ../build.gradle
+    prebuild: sed -i -e '/maven.fabric.io/d; /io.fabric/d; /com.crashlytics/d' ../build.gradle
         ../CommonUtils/build.gradle build.gradle
 
   - versionName: 1.6.5

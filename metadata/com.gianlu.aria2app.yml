@@ -508,8 +508,7 @@ Builds:
     submodules: true
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
     scandelete:
       - aria2lib/src/main/jniLibs
@@ -523,8 +522,7 @@ Builds:
     submodules: true
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
     scandelete:
       - aria2lib/src/main/jniLibs
@@ -538,8 +536,7 @@ Builds:
     submodules: true
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
     scandelete:
       - aria2lib/src/main/jniLibs
@@ -553,8 +550,7 @@ Builds:
     submodules: true
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
     scandelete:
       - aria2lib/src/main/jniLibs
@@ -568,8 +564,7 @@ Builds:
     submodules: true
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
     scandelete:
       - aria2lib/src/main/jniLibs

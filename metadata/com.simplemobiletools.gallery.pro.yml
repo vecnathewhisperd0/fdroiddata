@@ -441,8 +441,7 @@ Builds:
       - build.patch
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
 
   - versionName: 6.14.1
     versionCode: 301
@@ -452,8 +451,7 @@ Builds:
       - build.patch
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
 
   - versionName: 6.14.2
     versionCode: 302
@@ -463,8 +461,7 @@ Builds:
       - build.patch
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
 
   - versionName: 6.14.3
     versionCode: 304
@@ -474,8 +471,7 @@ Builds:
       - build.patch
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
 
   - versionName: 6.14.6
     versionCode: 307
@@ -485,8 +481,7 @@ Builds:
       - build.patch
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
 
   - versionName: 6.14.8
     versionCode: 309
@@ -496,8 +491,7 @@ Builds:
       - build.patch
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
 
   - versionName: 6.14.9
     versionCode: 310
@@ -507,8 +501,7 @@ Builds:
       - build.patch
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
