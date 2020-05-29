@@ -21,7 +21,9 @@ Builds:
       - universal
     srclibs:
       - rustup@1.21.1
-    prebuild: sed -i -e '/set -e/a\source $HOME/.cargo/env' build.sh
+    prebuild:
+      - sed -i -e '/set -e/a\source $HOME/.cargo/env' build.sh
+      - sed -i -e '/maven/,+2d' build.gradle
     build:
       - $$rustup$$/rustup-init.sh -y
       - source $HOME/.cargo/env
