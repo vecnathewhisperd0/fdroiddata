@@ -40,7 +40,7 @@ Builds:
         >> oab-utils/.cargo/config
       - echo -e "[target.x86_64-linux-android]\n linker = \"x86_64-linux-android29-clang\"\n"
         >> oab-utils/.cargo/config
-    ndk: r21
+    ndk: r21b
 
 AutoUpdateMode: None
 UpdateCheckMode: None
