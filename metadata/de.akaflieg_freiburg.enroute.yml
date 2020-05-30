@@ -1,0 +1,97 @@
+Categories:
+  - Navigation
+License: GPL-3.0-only
+AuthorName: Stefan Kebekus (not f-droid maintainer)
+AuthorEmail: stefan.kebekus@gmail.com
+WebSite: https://akaflieg-freiburg.github.io/enroute/
+SourceCode: https://github.com/Akaflieg-Freiburg/enroute
+
+Name: enroute flight navigation
+Summary: enroute is a free flight navigation app
+Description: |-
+    Enroute is a free flight navigation app for VFR pilots. Designed to be simple,
+    functional and elegant, it takes the stress out of your next flight. The program
+    has been written by flight enthusiasts, as a project of Akaflieg Freiburg, a
+    flight club based in Freiburg, Germany.
+    Enroute features a moving map, similar in style to the official ICAO maps.
+    Your current position and your flight path for the next five minutes are marked,
+    and so is your intended flight route. A simple tap on the display gives you all
+    the information about airspaces, airfields and navaids – complete with
+    frequencies, codes, elevations and runway information.
+    Our free aeronautical maps can be downloaded for offline use. In addition to
+    airspaces, airfields and navaids, selected maps also show traffic circuits as
+    well as flight procedures for control zones. The maps receive near-weekly
+    updates and cover large parts of the world.
+    Enroute supports basic flight planning. It allows you to quickly and easily
+    compute distances, courses and headings, and gives you an estimate for flight
+    time and fuel consumption. If the weather turns bad, the app will show you the
+    closest airfields for landing, complete with distances, directions, runway
+    information and frequencies.
+
+RepoType: git
+Repo: https://github.com/Akaflieg-Freiburg/enroute
+
+Builds:
+  - versionName: 1.7.0
+    versionCode: 170
+    commit: 8a4db594a661dc4c04e404c609fdd4de448350c1
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install --yes librsvg2-bin
+    patch:
+      - enroute_170.patch
+    prebuild:
+      - mkdir -p qt
+      - cd qt
+      - for ms in qtxmlpatterns:b4f850f51e1066f14b8dbe363ce7dfe4dc93a3c7 qtwebview:9189366475127ce5e3411846eacb5e9e56ea1adf
+        qtwebsockets:c2ded1b89ba64e8c8b8167a6db02032ebc64b7c8 qtwebchannel:37b1b0d29b7430b078e65f31cefad3eea3478670
+        qttranslations:802ffe2c402b1b37d68567a2b586601a622f5868 qttools:eb6379a4e65f2144df57501600ffeea44992edc5
+        qtsvg:4cc42594fc88d731efb88b0fd5e2e6f39a01c6b7 qtspeech:c4c7cbfc2e427b49bfbb23df786f9c1221285134
+        qtserialport:691aa44b9a19175033224af15aefae5563a1143d qtsensors:43f3558c2e7d9dc652b70b538e4158ada49358fb
+        qtscxml:d99f62839ad1948ebd97746197bf0c60630270e4 qtremoteobjects:9ae537bdfe96f4246317219829c0a7284511582c
+        qtquickcontrols2:dcd5de5ae3c1f4db15838f7ba27846aac35f0dc9 qtquickcontrols:aa5ec3089dc8702f0484e0f5a47f6147a64a6c17
+        qtmultimedia:c4e8ca06eb9e4a1f5b5a05aa52279ef1b6634a92 qtlocation:96fca46aa40886e8f79787c0e245503121ba2f06
+        qtimageformats:e05679d9c231a4babe1521419318ffcb36415c53 qtgraphicaleffects:fef9694cd7032422d6bc7ab1083acc6aecf49b3a
+        qtgamepad:ffe8e7a51430c135f15d53aec92e2c85fc1d0742 qtdeclarative:b54f639152daa6497201a4eabb29ef1296338c9d
+        qtconnectivity:2674d812528e903c317d28823493d7b6082277f8 qtbase:8556978c4f1d989fd2244566524dcbc738924309
+        qtandroidextras:42b255e07b0dec496eb316947216ec428ba5999e qt3d:64e99781a3a2cd4782c9d422eafe46a3186cc794;
+        do m=${ms%:*}; s=${ms#*:}; fn=5.15.0-0-202005140904${m}-Linux-RHEL_7_6-Clang-Android-Android_ANY-Multi.7z;
+        wget -q https://download.qt.io/online/qtsdkrepository/linux_x64/android/qt5_5150/qt.qt5.5150.android/$fn;
+        echo "$s  $fn" | sha1sum -c
+      - 7zr x $fn; done
+      - for ms in qtcharts:47169f338a20435453052a71786806041671792d; do m=${ms%:*};
+        s=${ms#*:}; fn=5.15.0-0-202005140904${m}-Linux-RHEL_7_6-Clang-Android-Android_ANY-Multi.7z;
+        wget -q https://download.qt.io/online/qtsdkrepository/linux_x64/android/qt5_5150/qt.qt5.5150.qtcharts.android//$fn;
+        echo "$s  $fn" | sha1sum -c
+      - 7zr x $fn; done
+      - export Qt5_DIR_ANDROID="$(pwd)/5.15.0/android"
+      - export QTDIR="$(pwd)/5.15.0/android"
+      - export PATH="$QTDIR/bin:$PATH"
+      - export CMAKE_PREFIX_PATH=$QTDIR/bin
+      - export CMAKE_PREFIX_PATH=$Qt5_DIR_ANDROID/lib/cmake/Qt5
+      - export QT_QMAKE_EXECUTABLE=$Qt5_DIR_ANDROID/bin/qmake
+      - cd ..
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - mkdir -p build-android-release
+      - cd build-android-release
+      - cmake .. -DANDROID_ABI:STRING=armeabi-v7a -DANDROID_BUILD_ABI_arm64-v8a:BOOL=ON
+        -DANDROID_BUILD_ABI_armeabi-v7a:BOOL=ON -DANDROID_BUILD_ABI_x86:BOOL=false
+        -DANDROID_BUILD_ABI_x86_64:BOOL=false -DANDROID_NATIVE_API_LEVEL:STRING=21
+        -DANDROID_NDK:PATH=$ANDROID_NDK_ROOT -DANDROID_SDK:PATH=$ANDROID_SDK_ROOT
+        -DANDROID_STL:STRING=c++_shared -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_CXX_COMPILER:STRING=$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+        -DCMAKE_CXX_FLAGS="-Werror -Wall -Wextra" -DCMAKE_C_COMPILER:STRING=$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+        -DCMAKE_FIND_ROOT_PATH:STRING=$Qt5_DIR_ANDROID -DCMAKE_PREFIX_PATH:STRING=$Qt5_DIR_ANDROID
+        -DCMAKE_TOOLCHAIN_FILE:PATH=$ANDROID_NDK_ROOT/build/cmake/android.toolchain.cmake
+      - cmake ..
+      - make -j8
+      - $Qt5_DIR_ANDROID/bin/androiddeployqt --input android_deployment_settings.json
+        --output android-build --release --apk de.akaflieg_freiburg.enroute_170.apk
+      - mv de.akaflieg_freiburg.enroute_170.apk ../../../unsigned/.
+    ndk: r21b
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 1.7.0
+CurrentVersionCode: 170
