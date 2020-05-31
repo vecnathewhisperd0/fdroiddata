@@ -351,9 +351,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
     scanignore:
       - app/src/main/res/raw/*
     ndk: r18b
@@ -364,9 +362,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
     scanignore:
       - app/src/main/res/raw/*
     ndk: r18b
@@ -377,9 +373,40 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55476'
+    versionCode: 55476
+    commit: '55476'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55483'
+    versionCode: 55483
+    commit: '55483'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
+    scanignore:
+      - app/src/main/res/raw/*
+    ndk: r18b
+
+  - versionName: '55485'
+    versionCode: 55485
+    commit: '55485'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's|def ndkDir = ".*"|def ndkDir = "$$NDK$$"|' build.gradle
     scanignore:
       - app/src/main/res/raw/*
     ndk: r18b
@@ -391,5 +418,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '55420'
-CurrentVersionCode: 55420
+CurrentVersion: '55485'
+CurrentVersionCode: 55485

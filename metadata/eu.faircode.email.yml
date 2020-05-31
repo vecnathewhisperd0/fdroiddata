@@ -2418,9 +2418,29 @@ Builds:
     prebuild: sed -i -e '/keystoreProperties/d' build.gradle
     ndk: r21
 
-  - versionName: '1.1172'
-    versionCode: 1172
-    commit: '1.1172'
+  - versionName: '1.1182'
+    versionCode: 1182
+    commit: '1.1182'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1185'
+    versionCode: 1185
+    commit: '1.1185'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1186'
+    versionCode: 1186
+    commit: '1.1186'
     subdir: app
     submodules: true
     gradle:
@@ -2430,5 +2450,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.1172'
-CurrentVersionCode: 1172
+CurrentVersion: '1.1186'
+CurrentVersionCode: 1186
