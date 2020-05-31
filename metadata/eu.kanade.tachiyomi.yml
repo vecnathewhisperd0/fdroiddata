@@ -15,7 +15,7 @@ Description: |-
 
     Features include:
 
-    * Online reading from sources like Batoto, KissManga, MangaFox, and more
+    * Online reading from sources like MangaDex, KissManga, MangaFox, and more
     * Local reading of downloaded manga
     * Configurable reader with multiple viewers, reading directions and other settings
     * MyAnimeList, AniList, and Kitsu support
@@ -331,7 +331,7 @@ Builds:
         android.app.AlertDialog.Builder(activity).setTitle(R.string.licenses).setView(webView).setPositiveButton(R.string.action_close,
         android.content.DialogInterface.OnClickListener { dialog, whichButton -> dialog.dismiss()
         }).show()/g' src/main/java/eu/kanade/tachiyomi/ui/more/AboutController.kt
-     scanignore:
+    scanignore:
        - buildSrc
     preassemble:
       - licenseFdroidReleaseReport
