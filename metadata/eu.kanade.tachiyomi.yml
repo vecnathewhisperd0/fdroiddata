@@ -332,7 +332,7 @@ Builds:
         android.content.DialogInterface.OnClickListener { dialog, whichButton -> dialog.dismiss()
         }).show()/g' src/main/java/eu/kanade/tachiyomi/ui/more/AboutController.kt
     scanignore:
-       - buildSrc
+      - buildSrc
     preassemble:
       - licenseFdroidReleaseReport
 
