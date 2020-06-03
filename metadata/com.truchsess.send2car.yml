@@ -1,0 +1,25 @@
+Categories:
+  - Navigation
+License: GPL-3.0-or-later
+SourceCode: https://github.com/ntruchsess/send2car
+IssueTracker: https://github.com/ntruchsess/send2car/issues
+Donate: https://truchsess.dyndns.org/donate/donate.html
+
+AutoName: Send2Car
+Summary: share geolocations to bmw cars
+
+RepoType: git
+Repo: https://github.com/ntruchsess/send2car
+
+Builds:
+  - versionName: '0.4'
+    versionCode: 8
+    commit: '0.4'
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/app-release-unsigned.apk
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '0.4'
+CurrentVersionCode: 8
