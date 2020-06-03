@@ -1,14 +1,14 @@
 Categories:
   - Multimedia
 License: GPL-3.0-only
-AuthorName: Guardian Project
+AuthorName: Open Archive
 AuthorEmail: support@guardianproject.info
-AuthorWebSite: https://guardianproject.info
+AuthorWebSite: https://open-archive.net
 WebSite: https://open-archive.net
-SourceCode: https://github.com/OpenArchive/openarchive-android
-IssueTracker: https://github.com/OpenArchive/openarchive-android/issues
+SourceCode: https://github.com/OpenArchive/Save-app-android
+IssueTracker: https://github.com/OpenArchive/Save-app-android/issues
 
-AutoName: OpenArchive Save
+AutoName: Save by OpenArchive
 Description: |
     Save by OpenArchive enables you to safely preserve, organize, and share your mobile media.
     Designed with and for newsrooms, human rights defenders, and archivists, Save keeps you in control of your mobile media at all times.
@@ -19,7 +19,7 @@ Description: |
     reusing it in the future.
 
 RepoType: git
-Repo: https://github.com/OpenArchive/Save-app-android
+Repo: https://github.com/OpenArchive/Save-app-android.git
 
 Builds:
   - versionName: 0.0.16
@@ -30,17 +30,9 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 0.0.17-alpha-1
-    versionCode: 17
-    commit: 0.0.17-alpha-1
-    subdir: app
-    submodules: true
-    gradle:
-      - yes
-
-  - versionName: 0.2.2-beta-7
-    versionCode: 20217
-    commit: 0.2.2-beta-7
+  - versionName: 0.2.3-BETA-3
+    versionCode: 20313
+    commit: 0.2.3-BETA-3
     subdir: app
     submodules: no
     gradle:
@@ -53,5 +45,5 @@ MaintainerNotes: |
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 0.2.2-beta-7
-CurrentVersionCode: 20217
+CurrentVersion: 0.2.3-BETA-3
+CurrentVersionCode: 20313
