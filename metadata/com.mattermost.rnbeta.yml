@@ -589,8 +589,7 @@ MaintainerNotes: |-
 
     scanignore is used to allow the "node_modules/react-native/android" local Maven repository.
 
-ArchivePolicy: 4 versions
-AutoUpdateMode: None
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: 1.31.2
 CurrentVersionCode: 296
