@@ -1,0 +1,46 @@
+Categories:
+  - Money
+License: GPL-3.0-or-later
+WebSite: https://doliscan.org
+SourceCode: https://framagit.org/doliscan/client-cordova
+IssueTracker: https://framagit.org/doliscan/client-cordova/-/issues
+Changelog: https://framagit.org/doliscan/client-cordova/-/blob/master/ChangeLog.md
+#Donate: https://liberapay.com/erics/
+LiberapayID: '4913'
+
+AutoName: DoliSCAN
+Summary: Take a picture of your reciepts then DoliSCAN make an expense report at the end of the month
+Description: |
+ You have to take a picture of your reciept day by day and DoliSCAN make the report at the end of
+ the month (in a beautifull PDF file with all pictures as one big zip file for your accounting manager)
+
+ This is an french-only app for the moment (contribs are welcome).
+
+RepoType: git
+Repo: https://framagit.org/doliscan/client-cordova
+
+Builds:
+  - versionName: 1.0.20
+    versionCode: 10020
+    commit: v1.0.20
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm
+      - npm install -g cordova
+    output: build/cordova/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
+    prebuild:
+      - ./prebuild-android.sh
+      - rm -rf node_modules/cordova-android/spec/fixtures/org.test.plugins.dummyplugin/src/android/jniLibs/x86/libnative.so
+      - rm -rf node_modules/jquery-ajax-native/test/native.bin
+    build:
+      - cordova build android --release
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.20
+CurrentVersionCode: 10020
+
+AuthorName: Eric Seigne (Projet AbulEdu / Cap-REL / VideoSub)
+AuthorEmail: eric.seigne@cap-rel.fr
+AuthorWebSite: https://cap-rel.fr/
+
