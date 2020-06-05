@@ -1227,7 +1227,7 @@ Builds:
       - popd
     ndk: r21b
 
-- versionName: 18.3.0
+  - versionName: 18.3.0
     versionCode: 127
     commit: 18.3.0
     subdir: app
