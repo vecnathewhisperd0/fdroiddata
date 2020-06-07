@@ -27,6 +27,159 @@ index 991cd11..54ea064 100644
  endif()
  
  
+diff --git a/fastlane/metadata/android/en-US/full_description.txt b/fastlane/metadata/android/en-US/full_description.txt
+new file mode 100644
+index 0000000..77b701e
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/full_description.txt
+@@ -0,0 +1,28 @@
++Enroute is a free flight navigation app for VFR pilots. Designed to be simple,
++functional and elegant, it takes the stress out of your next flight. The program
++has been written by flight enthusiasts, as a project of Akaflieg Freiburg, a
++flight club based in Freiburg, Germany.
++Enroute features a moving map, similar in style to the official ICAO maps.
++Your current position and your flight path for the next five minutes are marked,
++and so is your intended flight route. A simple tap on the display gives you all
++the information about airspaces, airfields and navaids – complete with
++frequencies, codes, elevations and runway information.
++Our free aeronautical maps can be downloaded for offline use. In addition to
++airspaces, airfields and navaids, selected maps also show traffic circuits as
++well as flight procedures for control zones. The maps receive near-weekly
++updates and cover large parts of the world.
++Enroute supports basic flight planning. It allows you to quickly and easily
++compute distances, courses and headings, and gives you an estimate for flight
++time and fuel consumption. If the weather turns bad, the app will show you the
++closest airfields for landing, complete with distances, directions, runway
++information and frequencies.
++The original author strongly supports the provision of the app via f-droid.
++However, this is an unofficial version of the app, which has not been tested
++by the original app author. It might differ from the official version, even if
++the version number agrees with that of the official app.
++Disclaimer: This free app is published in the hope that it might be useful as
++an aid to prudent navigation. It comes with no guarantees. It may not work as
++expected. The data does not come from official sources and might be incomplete,
++outdated or otherwise incorrect. This app is no substitute for proper flight
++preparation or good pilotage. Relying on it as a primary means of navigation
++is most likely illegal, most certainly stupid and potentially suicidal.
+diff --git a/fastlane/metadata/android/en-US/images/featureGraphic.png b/fastlane/metadata/android/en-US/images/featureGraphic.png
+new file mode 120000
+index 0000000..30876af
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/featureGraphic.png
+@@ -0,0 +1 @@
++../../../../../propaganda/Google-Play-Store/featureGraphic.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/images/icon.png b/fastlane/metadata/android/en-US/images/icon.png
+new file mode 120000
+index 0000000..02cee08
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/icon.png
+@@ -0,0 +1 @@
++../../../../../generatedSources/metadata/de.akaflieg_freiburg.enroute.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png b/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png
+new file mode 120000
+index 0000000..c324156
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png
+@@ -0,0 +1 @@
++../../../../../../propaganda/Google-Play-Store/phone-00-Flight.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/images/phoneScreenshots/10.png b/fastlane/metadata/android/en-US/images/phoneScreenshots/10.png
+new file mode 120000
+index 0000000..f94db88
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/phoneScreenshots/10.png
+@@ -0,0 +1 @@
++../../../../../../propaganda/Google-Play-Store/tab-13-Info.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/images/phoneScreenshots/11.png b/fastlane/metadata/android/en-US/images/phoneScreenshots/11.png
+new file mode 120000
+index 0000000..eb86bf3
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/phoneScreenshots/11.png
+@@ -0,0 +1 @@
++../../../../../../propaganda/Google-Play-Store/tab-14-Route.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/images/phoneScreenshots/12.png b/fastlane/metadata/android/en-US/images/phoneScreenshots/12.png
+new file mode 120000
+index 0000000..906d69b
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/phoneScreenshots/12.png
+@@ -0,0 +1 @@
++../../../../../../propaganda/Google-Play-Store/tab-15-NearAD.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png b/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png
+new file mode 120000
+index 0000000..8c94b0c
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png
+@@ -0,0 +1 @@
++../../../../../../propaganda/Google-Play-Store/phone-01-Map.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png b/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png
+new file mode 120000
+index 0000000..954c0fc
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png
+@@ -0,0 +1 @@
++../../../../../../propaganda/Google-Play-Store/phone-02-Map.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png b/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png
+new file mode 120000
+index 0000000..e497d7d
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png
+@@ -0,0 +1 @@
++../../../../../../propaganda/Google-Play-Store/phone-03-Info.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png b/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png
+new file mode 120000
+index 0000000..9eb66f3
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png
+@@ -0,0 +1 @@
++../../../../../../propaganda/Google-Play-Store/phone-04-Route.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png b/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png
+new file mode 120000
+index 0000000..2f6453e
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png
+@@ -0,0 +1 @@
++../../../../../../propaganda/Google-Play-Store/phone-06-Nearby-framed.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/images/phoneScreenshots/7.png b/fastlane/metadata/android/en-US/images/phoneScreenshots/7.png
+new file mode 120000
+index 0000000..233858e
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/phoneScreenshots/7.png
+@@ -0,0 +1 @@
++../../../../../../propaganda/Google-Play-Store/tab-10-Map.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/images/phoneScreenshots/8.png b/fastlane/metadata/android/en-US/images/phoneScreenshots/8.png
+new file mode 120000
+index 0000000..e378f3a
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/phoneScreenshots/8.png
+@@ -0,0 +1 @@
++../../../../../../propaganda/Google-Play-Store/tab-11-Map-Flight.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/images/phoneScreenshots/9.png b/fastlane/metadata/android/en-US/images/phoneScreenshots/9.png
+new file mode 120000
+index 0000000..76b15cf
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/images/phoneScreenshots/9.png
+@@ -0,0 +1 @@
++../../../../../../propaganda/Google-Play-Store/tab-12-CTR.png
+\ No newline at end of file
+diff --git a/fastlane/metadata/android/en-US/short_description.txt b/fastlane/metadata/android/en-US/short_description.txt
+new file mode 100644
+index 0000000..9bad7b2
+--- /dev/null
++++ b/fastlane/metadata/android/en-US/short_description.txt
+@@ -0,0 +1 @@
++enroute is a free flight navigation app for VFR pilots
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
 index df7974a..fb018ec 100644
 --- a/src/CMakeLists.txt
