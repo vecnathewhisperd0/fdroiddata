@@ -13,5 +13,15 @@ Description: |-
 RepoType: git
 Repo: https://github.com/famoser/Mensa
 
+Builds:
+  - versionName: 1.5
+    versionCode: 10
+    commit: v1.5    
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags
+CurrentVersion: '1.5'
+CurrentVersionCode: 10
