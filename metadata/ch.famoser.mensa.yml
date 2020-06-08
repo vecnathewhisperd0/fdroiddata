@@ -13,15 +13,5 @@ Description: |-
 RepoType: git
 Repo: https://github.com/famoser/Mensa
 
-Builds:
-  - versionName: 1.4.4
-    versionCode: 9
-    commit: b8c883bdaa3da4e42f86e437e8f754109cde8a0d
-    subdir: app
-    gradle:
-      - yes
-
 AutoUpdateMode: None
-UpdateCheckMode: RepoManifest
-CurrentVersion: 1.4.4
-CurrentVersionCode: 9
+UpdateCheckMode: Tags
