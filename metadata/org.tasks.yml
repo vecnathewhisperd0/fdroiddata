@@ -1497,8 +1497,6 @@ Builds:
       - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
         -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
         build.gradle.kts
-    scandelete:
-      - buildSrc
     gradleprops:
       - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
 
@@ -1514,8 +1512,6 @@ Builds:
       - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
         -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
         build.gradle.kts
-    scandelete:
-      - buildSrc
     gradleprops:
       - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
 
@@ -1531,8 +1527,6 @@ Builds:
       - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
         -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
         build.gradle.kts
-    scandelete:
-      - buildSrc
     gradleprops:
       - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
 
