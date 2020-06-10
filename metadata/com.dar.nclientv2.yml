@@ -52,28 +52,22 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 2.3.2
-    versionCode: 232
-    commit: 2.3.2
+  - versionName: 2.3.6
+    versionCode: 236
+    disable: requires Gradle 6.4-rc-4
+    commit: 2.3.6
     subdir: app
     gradle:
       - yes
 
-  - versionName: 2.3.4
-    versionCode: 234
-    commit: 2.3.4
-    subdir: app
-    gradle:
-      - yes
-
-  - versionName: 2.3.5
-    versionCode: 235
-    commit: 2.3.5
+  - versionName: 2.3.7
+    versionCode: 237
+    commit: 2.3.7
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.3.5
-CurrentVersionCode: 235
+CurrentVersion: 2.3.7
+CurrentVersionCode: 237

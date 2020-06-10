@@ -503,7 +503,31 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 2.13.0
+    versionCode: 2013000
+    commit: v2.13.0
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 2.13.3
+    versionCode: 2013003
+    commit: v2.13.3
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 2.14.0
+    versionCode: 2014000
+    commit: v2.14.0
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.12.2
-CurrentVersionCode: 2012002
+CurrentVersion: 2.14.0
+CurrentVersionCode: 2014000
