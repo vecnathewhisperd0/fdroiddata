@@ -1,0 +1,23 @@
+Categories:
+  - Reading
+License: MIT
+SourceCode: https://github.com/sirekanyan/knigopis
+IssueTracker: https://github.com/sirekanyan/knigopis/issues
+
+AutoName: Knigopis
+
+RepoType: git
+Repo: https://github.com/sirekanyan/knigopis
+
+Builds:
+  - versionName: 0.3.4
+    versionCode: 31
+    commit: 4e04e5e3c68b073c6bb72b77ea619d1cfa844794
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: 0.3.4
+CurrentVersionCode: 31
