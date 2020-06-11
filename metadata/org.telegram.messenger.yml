@@ -1470,7 +1470,7 @@ Builds:
       - ./patch_boringssl.sh
       - ./build_boringssl.sh
       - popd
-    ndk: r21
+    ndk: r21b
 
 MaintainerNotes: |-
     Summary and Description have been moved to the new localizable text files:
