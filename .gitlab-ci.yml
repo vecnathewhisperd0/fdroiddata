@@ -12,6 +12,7 @@ lint:
 
     - rm -rf fdroidserver
     - mkdir fdroidserver
+    - git ls-remote https://gitlab.com/fdroid/fdroidserver.git master
     - curl --silent https://gitlab.com/fdroid/fdroidserver/repository/master/archive.tar.gz
         | tar -xz --directory=fdroidserver --strip-components=1
     - export PATH="$PWD/fdroidserver:$PATH"
@@ -48,7 +49,6 @@ lint:
     - ./tools/check-metadata-summary-whitespace.py || export EXITVALUE=1
     - exit $EXITVALUE
 
-
 pages:
   image: registry.gitlab.com/fdroid/ci-images-client:latest
   tags:
@@ -76,6 +76,7 @@ pages:
          python3-venv
     - apt-get purge fdroidserver
     - test -d fdroidserver || mkdir fdroidserver
+    - git ls-remote https://gitlab.com/fdroid/fdroidserver.git master
     - curl --silent https://gitlab.com/fdroid/fdroidserver/repository/master/archive.tar.gz
         | tar -xz --directory=fdroidserver --strip-components=1
     - export PATH="`pwd`/fdroidserver:$PATH"
@@ -85,9 +86,11 @@ pages:
     - export GRADLE_USER_HOME=$PWD/.gradle
     - rm -rf $GRADLE_USER_HOME/fdroid
     - mkdir -p $GRADLE_USER_HOME/fdroid
+    - git ls-remote https://gitlab.com/fdroid/gradle-plugins.git master
     - curl --silent https://gitlab.com/fdroid/gradle-plugins/repository/master/archive.tar.gz
         | tar -xz --directory=$GRADLE_USER_HOME/fdroid --strip-components=1
 
+    - git ls-remote https://gitlab.com/eighthave/issuebot.git master
     - curl --silent https://gitlab.com/eighthave/issuebot/repository/master/archive.tar.gz
         | tar -xz --strip-components=1
     - pyvenv --system-site-packages --clear issuebot-env
