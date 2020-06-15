@@ -48,7 +48,84 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 11.0-fdroid
+    versionCode: 11
+    commit: v11.0-fdroid
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 12.5-fdroid
+    versionCode: 13
+    commit: v12.5-fdroid
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 12.7-fdroid
+    versionCode: 14
+    commit: v12.7-fdroid
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 13.0-fdroid
+    versionCode: 15
+    commit: v13.0-fdroid
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 13.7-fdroid
+    versionCode: 17
+    commit: v13.7-fdroid
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 15.0-fdroid
+    versionCode: 20
+    commit: v15.0-fdroid
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 15.4-fdroid
+    versionCode: 22
+    commit: v15.4-fdroid
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 15.8-fdroid
+    versionCode: 23
+    commit: v15.8-fdroid
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 15.9-fdroid
+    versionCode: 24
+    commit: v15.9-fdroid
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '16.3'
+    versionCode: 26
+    commit: v16.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '16.5'
+    versionCode: 27
+    commit: v16.5
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 10.0-fdroid
-CurrentVersionCode: 10
+CurrentVersion: '16.5'
+CurrentVersionCode: 27

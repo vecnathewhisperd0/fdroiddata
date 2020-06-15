@@ -1192,9 +1192,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
     ndk: r21
 
   - versionName: '2.276'
@@ -1203,9 +1201,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
     ndk: r21
 
   - versionName: '2.279'
@@ -1214,9 +1210,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
     ndk: r21
 
   - versionName: '2.280'
@@ -1225,12 +1219,37 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21
+
+  - versionName: '2.281'
+    versionCode: 2020051801
+    commit: '2.281'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21
+
+  - versionName: '2.282'
+    versionCode: 2020061201
+    commit: '2.282'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21
+
+  - versionName: '2.283'
+    versionCode: 2020061401
+    commit: '2.283'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
     ndk: r21
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: '2.280'
-CurrentVersionCode: 2020042401
+CurrentVersion: '2.283'
+CurrentVersionCode: 2020061401

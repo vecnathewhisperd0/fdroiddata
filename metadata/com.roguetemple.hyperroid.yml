@@ -114,7 +114,8 @@ Builds:
 
   - versionName: 11.3i
     versionCode: 11309
-    commit: v11.3i
+    disable: missing R.raw.palace, R.raw.caribbean, R.raw.ocean, R.raw.ivory
+    commit: v11.3l
     subdir: hyperroid/app
     sudo:
       - apt update || apt update
@@ -127,7 +128,7 @@ Builds:
       - pushd ..
       - bash copy.sh
       - popd
-    ndk: r17b
+    ndk: r17c
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags

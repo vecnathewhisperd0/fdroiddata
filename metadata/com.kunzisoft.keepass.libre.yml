@@ -125,7 +125,6 @@ Builds:
     subdir: app
     gradle:
       - libre
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r20b
 
   - versionName: 2.5beta30
@@ -134,7 +133,6 @@ Builds:
     subdir: app
     gradle:
       - libre
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r20b
 
   - versionName: 2.5RC1
@@ -143,7 +141,6 @@ Builds:
     subdir: app
     gradle:
       - libre
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r20b
 
   - versionName: 2.5RC2
@@ -152,10 +149,25 @@ Builds:
     subdir: app
     gradle:
       - libre
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    ndk: r20b
+
+  - versionName: '2.5'
+    versionCode: 33
+    commit: '2.5'
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: '2.6'
+    versionCode: 34
+    commit: '2.6'
+    subdir: app
+    gradle:
+      - libre
     ndk: r20b
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.5RC2
-CurrentVersionCode: 32
+CurrentVersion: '2.6'
+CurrentVersionCode: 34

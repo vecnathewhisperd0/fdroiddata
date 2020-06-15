@@ -190,7 +190,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 1.9.2
     versionCode: 138
@@ -198,9 +197,29 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+
+  - versionName: 1.9.4
+    versionCode: 140
+    commit: v1.9.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.5
+    versionCode: 141
+    commit: v1.9.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.6
+    versionCode: 142
+    commit: v1.9.6
+    subdir: app
+    gradle:
+      - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.2
-CurrentVersionCode: 138
+CurrentVersion: 1.9.6
+CurrentVersionCode: 142

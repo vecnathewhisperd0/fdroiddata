@@ -1413,9 +1413,17 @@ Builds:
       - sed -i -e 's@https://github.com/suckgamony/RapidDecoder/raw/master/repository@https://jitpack.io@g'
         ../build.gradle
 
+  - versionName: '1.132'
+    versionCode: 132
+    commit: '1.132'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/githubImplementation/d' build.gradle
+
 MaintainerNotes: We use the dev fork of RapidDecoder
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.129'
-CurrentVersionCode: 129
+CurrentVersion: '1.132'
+CurrentVersionCode: 132

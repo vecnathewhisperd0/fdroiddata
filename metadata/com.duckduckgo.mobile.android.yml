@@ -555,7 +555,6 @@ Builds:
     gradle:
       - yes
     output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r20b
 
   - versionName: 5.48.0
@@ -565,7 +564,6 @@ Builds:
     gradle:
       - yes
     output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r20b
 
   - versionName: 5.49.1
@@ -595,18 +593,28 @@ Builds:
     output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
     ndk: r20b
 
-  - versionName: 5.52.6
-    versionCode: 55206
-    commit: 5.52.6
+  - versionName: 5.53.1
+    versionCode: 55301
+    commit: 5.53.1
     submodules: true
     gradle:
       - yes
     output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
-    ndk: r20b
+    ndk: r21
+
+  - versionName: 5.55.1
+    versionCode: 55501
+    commit: 5.55.1
+    submodules: true
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
+    prebuild: sed -i -e 's/21.0.6113669/21.1.6352462/' app/build.gradle
+    ndk: r21b
 
 MaintainerNotes: Cannot use AUM/UCM because version code and version name are dynamic.
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 5.52.6
-CurrentVersionCode: 55206
+CurrentVersion: 5.55.1
+CurrentVersionCode: 55501

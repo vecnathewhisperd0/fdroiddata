@@ -3,7 +3,7 @@ Categories:
   - Security
 License: GPL-3.0-only
 AuthorName: Oxford HCC
-WebSite: https://hcc.cs.ox.ac.uk/
+WebSite: https://hcc.cs.ox.ac.uk/projects/#TrackerControl
 SourceCode: https://github.com/OxfordHCC/tracker-control-android
 IssueTracker: https://github.com/OxfordHCC/tracker-control-android/issues
 Changelog: https://github.com/OxfordHCC/tracker-control-android/releases
@@ -22,7 +22,40 @@ Builds:
       - fdroid
     ndk: r21
 
+  - versionName: 2020.05.08-fdroid
+    versionCode: 2020050802
+    commit: '2020050802'
+    subdir: app
+    gradle:
+      - fdroid
+    ndk: r21
+
+  - versionName: 2020.05.17-fdroid
+    versionCode: 2020051702
+    commit: '2020051702'
+    subdir: app
+    gradle:
+      - fdroid
+    ndk: r21
+
+  - versionName: 2020.05.21-fdroid
+    versionCode: 2020052102
+    commit: '2020052102'
+    subdir: app
+    gradle:
+      - fdroid
+    ndk: r21
+
+  - versionName: 2020.06.08-fdroid
+    versionCode: 2020060801
+    commit: '2020060801'
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/21.0.6113669/21.1.6352462/' app/build.gradle
+    ndk: r21b
+
 AutoUpdateMode: Version %c
 UpdateCheckMode: Tags ^[0-9]+$
-CurrentVersion: 2020.04.25-fdroid
-CurrentVersionCode: 2020042502
+CurrentVersion: 2020.06.08-fdroid
+CurrentVersionCode: 2020060801

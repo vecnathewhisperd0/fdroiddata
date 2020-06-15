@@ -7,6 +7,7 @@ AuthorWebSite: https://ogarcia.connectical.com/
 WebSite: https://opensudoku.moire.org/
 SourceCode: https://github.com/ogarcia/opensudoku
 IssueTracker: https://github.com/ogarcia/opensudoku/issues
+Changelog: https://github.com/ogarcia/opensudoku/releases
 
 AutoName: Open Sudoku
 Description: |-
@@ -88,7 +89,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 3.4.1
+    versionCode: 20200612
+    commit: 3.4.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.4.0
-CurrentVersionCode: 20200323
+CurrentVersion: 3.4.1
+CurrentVersionCode: 20200612

@@ -59,9 +59,10 @@ Builds:
       - pushd $$freemaplibProj$$
       - $$MVN3$$ install
 
-  - versionName: 0.5-final
-    versionCode: 6
-    commit: 0.5-final
+  - versionName: 0.5.3
+    versionCode: 9
+    disable: fails to build, missing srclib deps
+    commit: 0.5.3
     subdir: app
     gradle:
       - yes
@@ -86,5 +87,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.5-final
-CurrentVersionCode: 6
+CurrentVersion: 0.5.3
+CurrentVersionCode: 9

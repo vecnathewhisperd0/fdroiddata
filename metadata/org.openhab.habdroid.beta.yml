@@ -1444,10 +1444,80 @@ Builds:
     prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
         -e '/google-services/d' build.gradle
 
+  - versionName: 2.12.18-beta
+    versionCode: 286
+    commit: 2.12.18-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.12.19-beta
+    versionCode: 287
+    commit: 2.12.19-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.12.20-beta
+    versionCode: 288
+    commit: 2.12.20-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.12.21-beta
+    versionCode: 289
+    commit: 2.12.21-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.13.1-beta
+    versionCode: 291
+    commit: 2.13.1-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.13.2-beta
+    versionCode: 292
+    commit: 2.13.2-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.13.4-beta
+    versionCode: 293
+    commit: 2.13.4-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
 MaintainerNotes: Replace the fabric.io maven with mavencentral instead of deleting
     it to not trigger fdroid/fdroidserver#463.
 
 AutoUpdateMode: Version %v-fdroid
 UpdateCheckMode: Tags ^[0-9.]+-beta-fdroid$
-CurrentVersion: 2.12.16-beta
-CurrentVersionCode: 284
+CurrentVersion: 2.13.4-beta
+CurrentVersionCode: 293

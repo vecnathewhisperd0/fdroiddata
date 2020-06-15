@@ -43,6 +43,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.7'
+    versionCode: 8
+    disable: no tag
+    commit: v1.7
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: '1.6'

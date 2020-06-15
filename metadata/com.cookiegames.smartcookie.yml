@@ -102,7 +102,28 @@ Builds:
     gradle:
       - scMain
 
+  - versionName: 7.7.0
+    versionCode: 89
+    commit: v7.7.0
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 7.7.2
+    versionCode: 91
+    commit: v7.7.2
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 7.7.3
+    versionCode: 93
+    commit: v7.7.3
+    subdir: app
+    gradle:
+      - scMain
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 7.6.2
-CurrentVersionCode: 88
+CurrentVersion: 7.7.3
+CurrentVersionCode: 93

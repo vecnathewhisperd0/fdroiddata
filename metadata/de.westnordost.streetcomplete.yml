@@ -472,7 +472,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '19.1'
+    versionCode: 1903
+    commit: v19.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '19.2'
+    versionCode: 1904
+    commit: v19.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '20.0'
+    versionCode: 2002
+    commit: v20.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '20.1'
+    versionCode: 2003
+    commit: v20.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v\d+(\.\d+)?$
-CurrentVersion: '19.0'
-CurrentVersionCode: 1902
+CurrentVersion: '20.1'
+CurrentVersionCode: 2003
