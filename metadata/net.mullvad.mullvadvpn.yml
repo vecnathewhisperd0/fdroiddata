@@ -19,11 +19,11 @@ Builds:
   - versionName: 2020.5-beta2
     versionCode: 20050002
     commit: 2020.5-beta2
-    init: NDK_PATH="$$NDK$$" /home/vagrant/build/net.mullvad.mullvadvpn/android/fdroid-build/init.sh
+    init: NDK_PATH="$$NDK$$" android/fdroid-build/init.sh
     output: android/build/outputs/apk/fdroid/android-fdroid-unsigned.apk
     prebuild: rm -rf gui graphics windows
     build:
-      - NDK_PATH="$$NDK$$" source /home/vagrant/build/net.mullvad.mullvadvpn/android/fdroid-build/env.sh
+      - NDK_PATH="$$NDK$$" source android/fdroid-build/env.sh
       - ./build-apk.sh --fdroid
     ndk: r20b
 
