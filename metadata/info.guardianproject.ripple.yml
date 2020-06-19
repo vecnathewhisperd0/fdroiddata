@@ -59,7 +59,7 @@ Builds:
 
   - versionName: 0.2.5
     versionCode: 139
-    commit: 0.2.5
+    commit: c913ec3f4a7f80e668708acfd2cf1599ca066852
     subdir: app
     gradle:
       - yes
