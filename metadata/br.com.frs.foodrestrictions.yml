@@ -54,7 +54,6 @@ Builds:
     gradle:
       - yes
 
-
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
 CurrentVersion: 20180801_V3
