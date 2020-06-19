@@ -6,8 +6,10 @@ IssueTracker: https://github.com/itprojects/InboxPager/issues
 
 AutoName: Inbox Pager
 Description: |-
-    E-mail client that supports IMAP, POP and SMTP protocols using SSL/TLS. Features
-    include:
+    E-mail client for the Android platform.
+    Imap, pop, and smtp via SSL/TLS, with AES/PGP support.
+
+    Features:
 
     * Animate a smooth transition between visual contexts.
     * Automatically convert texts from their declared character encoding to UTF-8.
