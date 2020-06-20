@@ -28,7 +28,7 @@ RepoType: git
 Repo: https://github.com/procrastimax/BirthdayBuddy
 
 Builds:
-  - versionName: '1.2'
+  - versionName: 'v1.2'
     versionCode: 17
     commit: d45bcf80541a401a957fd6636cdc85ea4ac6ea6b
     subdir: app
