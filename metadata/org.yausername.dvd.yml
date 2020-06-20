@@ -1,0 +1,53 @@
+Categories:
+  - Internet
+  - Multimedia
+License: GPL-3.0-only
+AuthorName: yausername
+SourceCode: https://github.com/yausername/dvd
+IssueTracker: https://github.com/yausername/dvd/issues
+
+RepoType: git
+Repo: https://github.com/yausername/dvd
+
+Builds:
+  - versionName: 0.1.0
+    versionCode: 10001
+    commit: 0.1.0
+    subdir: app
+    gradle:
+      - yes
+    output: build/outputs/apk/release/app-x86-release-unsigned.apk
+    prebuild: sed -i 's/ versionCode .*/ versionCode $$VERCODE$$/' build.gradle
+
+  - versionName: 0.1.0
+    versionCode: 10002
+    commit: 0.1.0
+    subdir: app
+    gradle:
+      - yes
+    output: build/outputs/apk/release/app-x86_64-release-unsigned.apk
+    prebuild: sed -i 's/ versionCode .*/ versionCode $$VERCODE$$/' build.gradle
+
+  - versionName: 0.1.0
+    versionCode: 10003
+    commit: 0.1.0
+    subdir: app
+    gradle:
+      - yes
+    output: build/outputs/apk/release/app-armeabi-v7a-release-unsigned.apk
+    prebuild: sed -i 's/ versionCode .*/ versionCode $$VERCODE$$/' build.gradle
+
+  - versionName: 0.1.0
+    versionCode: 10004
+    commit: 0.1.0
+    subdir: app
+    gradle:
+      - yes
+    output: build/outputs/apk/release/app-arm64-v8a-release-unsigned.apk
+    prebuild: sed -i 's/ versionCode .*/ versionCode $$VERCODE$$/' build.gradle
+
+ArchivePolicy: 12 versions
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 0.1.0
+CurrentVersionCode: 10004
