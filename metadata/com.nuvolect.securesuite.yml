@@ -1,0 +1,31 @@
+Categories:
+  - Security
+  - System
+  - Phone & SMS
+License: GPL-3.0-only
+AuthorName: Nuvolect
+AuthorEmail: team@nuvolect.com
+WebSite: https://securesuite.org
+SourceCode: https://github.com/Nuvolect/SecureSuite-Android
+IssueTracker: https://github.com/Nuvolect/SecureSuite-Android/issues
+Donate: https://nuvolect.com/donate/
+Bitcoin: 3LG5bbP4yGSJjVVLb1Y5fAHW4zBp9FcKjs
+
+Name: SecureSuite
+Summary: A trustless contacts, calendar, files, password and webserver app
+
+RepoType: git
+Repo: https://github.com/Nuvolect/SecureSuite-Android
+
+Builds:
+  - versionName: 1.5.2
+    versionCode: 15203
+    commit: e9c76f89eec37b55e6b73a59f9a98b10bf7aed57
+    subdir: SecureSuite
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.5.2
+CurrentVersionCode: 15203
