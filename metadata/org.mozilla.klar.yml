@@ -734,7 +734,6 @@ Builds:
     antifeatures:
       - Tracking
 
-
   - versionName: 8.4.0
     versionCode: 242
     disable: many archives, needs cleanup
@@ -971,7 +970,6 @@ Builds:
     ndk: r20b
     antifeatures:
       - Tracking
-
 
 MaintainerNotes: |-
     Cannot use AUM/UCM because version code is not updated, see
