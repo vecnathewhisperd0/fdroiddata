@@ -59,8 +59,8 @@ Builds:
       - yes
     prebuild: sed -i -e 's/mavenCentral()/jcenter()/' build.gradle
 
-  - versionName: '2'
-    versionCode: 2
+  - versionName: '22'
+    versionCode: 22
     commit: v22
     gradle:
       - yes
