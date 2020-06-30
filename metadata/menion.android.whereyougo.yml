@@ -39,6 +39,7 @@ Builds:
       - export APP_VERSION="$$VERSION$$"
       - export APP_CODE=${APP_VERSION//./}
       - sed -i -e 's/versionCode .*/versionCode = '"$APP_CODE"'/g' build.gradle
+    ndk: r21d
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9\.]+$
