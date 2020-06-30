@@ -1,6 +1,8 @@
-License: Unknown
+License: MIT
 SourceCode: https://github.com/ritwikshanker/GoCoronaGo
 IssueTracker: https://github.com/ritwikshanker/GoCoronaGo/issues
+
+AutoName: Worldwide Corona Tracker
 
 RepoType: git
 Repo: https://github.com/ritwikshanker/GoCoronaGo
@@ -16,3 +18,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
+CurrentVersion: '2.0'
+CurrentVersionCode: 2
