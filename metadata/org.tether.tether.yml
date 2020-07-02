@@ -21,6 +21,9 @@ Builds:
     subdir: android/app
     gradle:
       - yes
+    prebuild:
+      - git submodule update --init --recursive
+
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
