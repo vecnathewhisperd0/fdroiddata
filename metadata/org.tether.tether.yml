@@ -17,7 +17,7 @@ Repo: https://github.com/syphon-org/syphon
 Builds:
   - versionName: 0.0.16
     versionCode: 6
-    commit: 4cc25649cc68247672ecb43d04fda2ed09e19b48
+    commit: b9abe41a2fabff0e2d4fa26a94ec6b647bd77496
     subdir: android/app
     gradle:
       - yes
