@@ -48,7 +48,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.4.6
+    versionCode: 4060
+    commit: v0.4.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.7
+    versionCode: 4070
+    commit: v0.4.7
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.4.5
-CurrentVersionCode: 4050
+CurrentVersion: 0.4.7
+CurrentVersionCode: 4070

@@ -6,6 +6,8 @@ AuthorEmail: ashutoshgngwr@gmail.com
 WebSite: https://ashutoshgngwr.github.io/noice
 SourceCode: https://github.com/ashutoshgngwr/noice
 IssueTracker: https://github.com/ashutoshgngwr/noice/issues
+Translation: https://github.com/ashutoshgngwr/noice/issues/200
+OpenCollective: noice
 
 AutoName: Noice
 
@@ -110,7 +112,15 @@ Builds:
       - yes
     prebuild: sed -i -e '/signingConfig/d' build.gradle
 
+  - versionName: 0.8.0
+    versionCode: 26
+    commit: 0.8.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.7.2
-CurrentVersionCode: 25
+CurrentVersion: 0.8.0
+CurrentVersionCode: 26

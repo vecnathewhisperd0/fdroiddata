@@ -7,7 +7,6 @@ lint:
       - schedules
       - pipelines
   before_script:
-    - ./tools/trigger-issuebot
     - printf "Package\x3a androguard fdroidserver python3-asn1crypto python3-ruamel.yaml\nPin\x3a release a=stretch-backports\nPin-Priority\x3a 500\n" > /etc/apt/preferences.d/debian-stretch-backports.pref
     - echo "deb http://deb.debian.org/debian/ stretch-backports main" > /etc/apt/sources.list.d/backports.list
     - apt-get update
@@ -59,6 +58,18 @@ lint:
     - ./tools/check-metadata-summary-whitespace.py || export EXITVALUE=1
     - exit $EXITVALUE
 
+trigger-issuebot:
+  image: alpine
+  only:
+    - branches
+  except:
+    - master@fdroid/fdroiddata
+  variables:
+    GIT_DEPTH: "1"
+  script:
+    - apk add --no-cache bash curl
+    - ./tools/trigger-issuebot
+
 checkupdates_trigger:
   only:
     refs:
@@ -94,12 +105,19 @@ checkupdates_runner:
     - touch config.py
     - git config --global user.email "fdroidci@bubu1.eu"
     - git config --global user.name "F-Droid checkupdates bot"
-    - url_host=`git remote get-url origin | sed -e "s/https:\/\/gitlab-ci-token:.*@//g"`
-    - git remote set-url origin "https://gitlab-ci-token:${CI_GIT_PUSH_TOKEN}@${url_host}"
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - cp "${GITLAB_KNOWN_HOSTS}" ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - eval $(ssh-agent -s)
+    - echo "${CHECKUPDATES_SSH_DEPLOY_KEY}" | tr -d '\r' | ssh-add -
+    - url_host=$(echo "${CI_REPOSITORY_URL}" | sed -e 's|https\?://gitlab-ci-token:.*@|ssh://git@|g')
+    - git remote set-url --push origin "${url_host}"
   script:
     - fdroid checkupdates --allow-dirty --auto --commit ${CHECKUPDATES_APPIDS}
     - git pull --rebase origin master
-    - git push origin HEAD:master
+    # when two jobs try to push at the same time they occasionally fail, so try one more time if it fails
+    - git push origin HEAD:master || (git pull --rebase origin master && git push origin HEAD:master)
 
 fdroid build:
   image: registry.gitlab.com/fdroid/ci-images-client:latest
@@ -111,8 +129,7 @@ fdroid build:
     when: always
     expire_in: 1 month
   only:
-    changes:
-      - metadata/*.yml
+    - branches
   except:
     - master@fdroid/fdroiddata
   cache:
@@ -120,7 +137,7 @@ fdroid build:
     paths:
       - .gradle
   script:
-    - git fetch https://gitlab.com/fdroid/fdroiddata;
+    - git fetch https://gitlab.com/fdroid/fdroiddata.git;
     - test -d build || mkdir build
     - for f in `git diff --name-only --diff-filter=d FETCH_HEAD...HEAD -- metadata/*.yml`; do
           git diff FETCH_HEAD...HEAD -- $f |grep -E '^\+ *(NoSourceSince|Disabled|disable):' && continue;
@@ -135,12 +152,11 @@ fdroid build:
     - curl --silent https://gitlab.com/fdroid/fdroidserver/repository/master/archive.tar.gz
           | tar -xz --directory=fdroidserver --strip-components=1
     - export PATH="`pwd`/fdroidserver:$PATH"
-    - export PYTHONPATH="`pwd`/fdroidserver"
+    - export PYTHONPATH="`pwd`/fdroidserver:$CI_PROJECT_DIR/tools"
     - export PYTHONUNBUFFERED=true
 
     - bash fdroidserver/buildserver/provision-apt-get-install http://deb.debian.org/debian
     - apt-get dist-upgrade
-    - apt-get install sudo # TODO REMOVE ME once merged https://gitlab.com/fdroid/fdroidserver/-/merge_requests/753
 
     # install fdroidserver from git, with deps from Debian, until fdroidserver
     # is stable enough to include all the things needed here
@@ -152,7 +168,13 @@ fdroid build:
     - apt-get purge fdroidserver
 
     - export GRADLE_USER_HOME=$PWD/.gradle
-    - fdroid build --verbose --on-server --latest --no-tarball --no-refresh  $CHANGED
+    # each `fdroid build --on-server` run expects sudo, then uninstalls it
+    - for build in `./tools/find-changed-builds.py`; do
+          set -x;
+          apt-get install sudo;
+          fdroid fetchsrclibs $build --verbose;
+          fdroid build --verbose --on-server --no-tarball $build;
+      done
 
 
 # issuebot needs secrets to run, so it has to run under the 'fdroid'
@@ -176,6 +198,9 @@ pages:
       - repo/index.xml
       - tmp/apkcache.json
     when: always
+  # needs lots of git history since it has to compare the merge request to current master
+  variables:
+    GIT_DEPTH: "5000"
   script:
     - apt-get update
     - apt-get dist-upgrade

@@ -2630,16 +2630,15 @@ Builds:
     gradle:
       - foss
     srclibs:
-      - CWACAdapter@v1.0.1
-      - Endless@v1.2.3
+      - CWACAdapterFork@v1.0.1
+      - EndlessFork@v1.2.3
     rm:
       - opacclient/opacapp/libs/*.jar
+      - tools/bcprov-jdk15on-146.jar
     prebuild:
-      - cp -fR $$CWACAdapter$$/src/com src/main/java/
-      - cp -fR $$Endless$$/src/com src/main/java/
+      - cp -fR $$CWACAdapterFork$$/src/com src/main/java/
+      - cp -fR $$EndlessFork$$/src/com src/main/java/
       - sed -i -e '/adapter/d' -e '/endless/d' build.gradle
-    scandelete:
-      - opacclient/buildSrc
     preassemble:
       - downloadJson
 
