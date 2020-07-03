@@ -23,12 +23,12 @@ Builds:
     versionCode: 6
     commit: e098739cc6d83b948c483ebc8f4cfa797cd54bb3
     subdir: android/app
+    submodules: true
     gradle:
       - yes
+    output: app/outputs/apk/release/app-release-unsigned.apk
     srclibs:
       - flutter@1.17.0
-    output: app/outputs/apk/release/app-release-unsigned.apk
-    submodules: true
     prebuild:
       - $$flutter$$/bin/flutter pub get
       - $$flutter$$/bin/flutter pub run build_runner build
