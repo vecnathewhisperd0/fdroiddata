@@ -32,7 +32,6 @@ Builds:
       - $$flutter$$/bin/flutter pub get
       - $$flutter$$/bin/flutter pub run build_runner build
       - $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.10.2.4988404'
-    output: ../../build/app/outputs/apk/release/app-release-unsigned.apk
     build: $$flutter$$/bin/flutter build apk --suppress-analytics
 
 AutoUpdateMode: None
