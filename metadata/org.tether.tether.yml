@@ -8,6 +8,10 @@ IssueTracker: https://github.com/syphon-org/syphon/issues
 AutoName: Syphon
 Summary: A privacy centric matrix client
 Description: |-
+    Please be aware Syphon is still in Open Alpha
+
+    Currently, E2EE only works for direct, one-on-one chats.
+
     Syphon aims to be built on the foundations of privacy, branding, and user experience
     in an effort to pull others away from proprietary chat and messenger clients to standard.
 
@@ -21,9 +25,11 @@ Builds:
     subdir: android/app
     gradle:
       - yes
-    prebuild:
+    prebuild: 
       - git submodule update --init --recursive
-
+      - flutter pub get
+      - flutter pub run build_runner build
+    output: ../../build/app/outputs/apk/release/app-release-unsigned.apk
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
