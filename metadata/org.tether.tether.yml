@@ -27,13 +27,13 @@ Builds:
       - yes
     srclibs:
       - flutter@1.17.0
-    prebuild: 
-      - git submodule update --init --recursive
+    output: app/outputs/apk/release/app-release-unsigned.apk
+    submodules: true
+    prebuild:
       - $$flutter$$/bin/flutter pub get
       - $$flutter$$/bin/flutter pub run build_runner build
       - $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.10.2.4988404'
     build: $$flutter$$/bin/flutter build apk --suppress-analytics
-    output: app/outputs/apk/release/app-release-unsigned.apk
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
