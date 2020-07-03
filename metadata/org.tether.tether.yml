@@ -21,7 +21,7 @@ Repo: https://github.com/syphon-org/syphon
 Builds:
   - versionName: 0.0.16
     versionCode: 6
-    commit: 4cc25649cc68247672ecb43d04fda2ed09e19b48
+    commit: e098739cc6d83b948c483ebc8f4cfa797cd54bb3
     subdir: android/app
     gradle:
       - yes
@@ -31,6 +31,7 @@ Builds:
       - git submodule update --init --recursive
       - $$flutter$$/bin/flutter pub get
       - $$flutter$$/bin/flutter pub run build_runner build
+      - $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.10.2.4988404'
     output: ../../build/app/outputs/apk/release/app-release-unsigned.apk
     build: $$flutter$$/bin/flutter build apk --suppress-analytics
 
