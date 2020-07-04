@@ -1,15 +1,14 @@
 Categories:
   - Multimedia
   - Sports & Health
+License: MIT
 AuthorName: Ritwik
 AuthorWebSite: https://ritwikshanker.github.io/GoCoronaGo/
-Description: |-
-  Your one place destination for Coronavirus stats! Made in India.
-License: MIT
 SourceCode: https://github.com/ritwikshanker/GoCoronaGo
 IssueTracker: https://github.com/ritwikshanker/GoCoronaGo/issues
 
 AutoName: Worldwide Corona Tracker
+Description: Your one place destination for Coronavirus stats! Made in India.
 
 RepoType: git
 Repo: https://github.com/ritwikshanker/GoCoronaGo
