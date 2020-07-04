@@ -37,7 +37,6 @@ Builds:
       - $$flutter$$/bin/flutter pub run build_runner build
       - $$flutter$$/bin/flutter build apk
 
-
 AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: 0.0.16
