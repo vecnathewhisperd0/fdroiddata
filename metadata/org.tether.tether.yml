@@ -22,6 +22,7 @@ Builds:
   - versionName: 0.0.16
     versionCode: 6
     commit: e098739cc6d83b948c483ebc8f4cfa797cd54bb3
+    subdir: android/app
     submodules: true
     gradle:
       - yes
