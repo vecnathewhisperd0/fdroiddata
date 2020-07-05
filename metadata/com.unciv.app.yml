@@ -427,7 +427,7 @@ Builds:
     rm:
       - desktop
     prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
-    
+
   - versionName: 3.9.8
     versionCode: 444
     commit: 3.9.8
