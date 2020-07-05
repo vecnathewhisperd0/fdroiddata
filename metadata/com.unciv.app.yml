@@ -436,7 +436,7 @@ Builds:
       - yes
     rm:
       - desktop
-    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
