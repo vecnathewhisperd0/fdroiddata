@@ -14,7 +14,7 @@ RepoType: git
 Repo: https://github.com/machiav3lli/oandbackupx
 
 Builds:
-  - versionName: 1.2.0
+  - versionName: 1.2.0-universal
     versionCode: 1200
     commit: 1.2.0
     gradle:
