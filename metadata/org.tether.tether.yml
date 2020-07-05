@@ -36,6 +36,7 @@ Builds:
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter pub run build_runner build
       - $$flutter$$/bin/flutter build apk
+    ndk: r21d
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
