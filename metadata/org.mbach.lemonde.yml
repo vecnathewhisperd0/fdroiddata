@@ -196,7 +196,7 @@ Builds:
       - node_modules/react-native-localize/android/build.gradle
       - node_modules/react-native-gesture-handler/android/lib/build.gradle
 
-  - versionName: '2.1.0'
+  - versionName: 2.1.0
     versionCode: 23
     commit: v2.1.0
     subdir: android/app
@@ -239,7 +239,7 @@ Builds:
       - node_modules/react-native-localize/android/build.gradle
       - node_modules/react-native-gesture-handler/android/lib/build.gradle
   
-AutoUpdateMode: Version v%v  
+AutoUpdateMode: Version v%v 
 UpdateCheckMode: Tags
-CurrentVersion: '2.1.0'
+CurrentVersion: 2.1.0
 CurrentVersionCode: 23
