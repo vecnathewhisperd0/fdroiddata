@@ -1,0 +1,53 @@
+Categories:
+  - Money
+License: Apache-2.0
+WebSite: https://polkawallet.io/
+SourceCode: https://github.com/polkawallet-io/polkawallet-flutter
+IssueTracker: https://github.com/polkawallet-io/polkawallet-flutter/issues
+
+Summary: Wallet for Polkadot Eco
+Description: |-
+    Polkawallet is aiming to provide a more convenient entrance of the polkadot
+    ecosystem for all the users of Polkadot/Kusama/Substrate-based-blockchains.
+
+    * Friendly UI.
+    * Secure local accounts storage.
+    * Intuitive Tokens management.
+    * Simplified staking & governance operations.
+    * Offline signature supported.
+
+RepoType: git
+Repo: https://github.com/polkawallet-io/polkawallet-flutter.git
+
+Builds:
+  - versionName: 0.8.2
+    versionCode: 821
+    commit: v0.8.2
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@stable
+    prebuild:
+      - apt-get install wget
+      - wget https://nodejs.org/dist/v12.18.2/node-v12.18.2-linux-x64.tar.xz
+      - tar -vxf node-v12.18.2-linux-x64.tar.xz
+      - wget https://github.com/yarnpkg/yarn/releases/download/v1.22.4/yarn-v1.22.4.tar.gz
+      - tar zvxf yarn-v1.22.4.tar.gz
+      - export PATH=$PATH:`pwd`/node-v12.18.2-linux-x64/bin:`pwd`/yarn-v1.22.4/bin
+      - cd ./lib/js_service_kusama
+      - yarn install
+      - yarn run build
+      - cd ../..
+      - cd ./lib/js_service_acala
+      - yarn install
+      - yarn run build
+      - cd ../..
+      - rm -rf node-v12.18.2-linux-x64/ yarn-v1.22.4/
+      - rm node-v12.18.2-linux-x64.tar.xz yarn-v1.22.4.tar.gz
+      - rm -rf lib/js_service_acala/node_modules/node-notifier/
+      - rm -rf lib/js_service_kusama/node_modules/node-notifier/
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor fdroid
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
