@@ -1261,7 +1261,7 @@ Builds:
       - popd
     ndk: r21d
 
-- versionName: 20.0.0
+  - versionName: 20.0.0
     versionCode: 130
     commit: 20.0.0
     subdir: app
