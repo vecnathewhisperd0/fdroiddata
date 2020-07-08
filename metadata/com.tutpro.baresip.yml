@@ -1283,5 +1283,5 @@ MaintainerNotes: make download-sources checks out master branches of several lib
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 19.0.0
+CurrentVersion: 20.0.0
 CurrentVersionCode: 128
