@@ -1,0 +1,25 @@
+Categories:
+  - Games
+License: GPL-3.0-or-later
+SourceCode: https://github.com/stathism27/Never-Have-I-Ever
+IssueTracker: https://github.com/stathism27/Never-Have-I-Ever/issues
+
+AutoName: Never Have I Ever
+Description: |-
+    Our favorite drinking game now available in Android
+
+    In need of translation
+
+RepoType: git
+Repo: https://github.com/stathism27/Never-Have-I-Ever
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
