@@ -44,7 +44,13 @@ Builds:
         >> oab-utils/.cargo/config
     ndk: r21b
 
-AutoUpdateMode: None
-UpdateCheckMode: None
-CurrentVersion: 1.2.0-universal
-CurrentVersionCode: 1200
+  - versionName: 2.0.0
+    versionCode: 2000
+    commit: 2.0.0
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 2.0.0
+CurrentVersionCode: 2000
