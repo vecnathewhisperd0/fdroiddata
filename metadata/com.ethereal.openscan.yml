@@ -1,0 +1,37 @@
+Categories:
+  - Multimedia
+License: MIT
+SourceCode: https://github.com/Ethereal-Developers-Inc/OpenScan
+IssueTracker: https://github.com/Ethereal-Developers-Inc/OpenScan/issues
+
+AutoName: OpenScan
+Description: |-
+    Document scanner app.
+
+    Features:
+    * Scan your Document, notes, business cards and save them as PDF
+    * Share the scanned document as PDF or JPEGs
+    * Preview the scanned document
+    * Simple Cropping Features
+
+RepoType: git
+Repo: https://github.com/Ethereal-Developers-Inc/OpenScan
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0.0
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@v1.7.9
+    rm:
+      - ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor=fdroid
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+UpdateCheckIgnore: (alpha|beta|rc|RC|dev)
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
