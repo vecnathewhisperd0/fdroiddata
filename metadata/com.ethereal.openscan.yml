@@ -1,6 +1,11 @@
-License: Unknown
+License: MIT
 SourceCode: https://github.com/Ethereal-Developers-Inc/OpenScan
 IssueTracker: https://github.com/Ethereal-Developers-Inc/OpenScan/issues
+
+Categories:
+  - Multimedia
+
+AutoName: OpenScan
 
 RepoType: git
 Repo: https://github.com/Ethereal-Developers-Inc/OpenScan
@@ -16,3 +21,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
