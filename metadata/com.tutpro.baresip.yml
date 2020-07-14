@@ -1282,6 +1282,6 @@ MaintainerNotes: make download-sources checks out master branches of several lib
     this can cause build failures.
 
 AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
+UpdateCheckMode: Tags ^[0-9.]+$
 CurrentVersion: 20.0.0
 CurrentVersionCode: 130
