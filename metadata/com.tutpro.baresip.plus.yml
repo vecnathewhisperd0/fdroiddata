@@ -152,7 +152,7 @@ Builds:
     ndk: r21d
 
 MaintainerNotes: make download-sources checks out master branches of several libraries;
-    this can cause build failures.
+    This can cause build failures.
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v.*[0-9]$
