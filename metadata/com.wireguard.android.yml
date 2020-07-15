@@ -363,7 +363,72 @@ Builds:
       - yes
     ndk: r16b
 
+  - versionName: 0.0.20191220
+    versionCode: 460
+    commit: 0.0.20191220
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.0.20200124
+    versionCode: 463
+    commit: 0.0.20200124
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.0.20200206
+    versionCode: 464
+    commit: 0.0.20200206
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 0.0.20200309
+    versionCode: 465
+    commit: 0.0.20200309
+    subdir: ui
+    submodules: true
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 1.0.20200329
+    versionCode: 470
+    commit: 1.0.20200329
+    subdir: ui
+    submodules: true
+    gradle:
+      - yes
+    ndk: r16b
+
+  - versionName: 1.0.20200401
+    versionCode: 472
+    commit: 1.0.20200401
+    subdir: ui
+    submodules: true
+    gradle:
+      - yes
+    ndk: r21
+
+  - versionName: 1.0.20200407
+    versionCode: 474
+    commit: 1.0.20200407
+    subdir: ui
+    submodules: true
+    gradle:
+      - yes
+    ndk: r21
+
 AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
-CurrentVersion: 0.0.20191120
-CurrentVersionCode: 459
+UpdateCheckMode: HTTP
+UpdateCheckData: https://git.zx2c4.com/wireguard-android/plain/version.gradle?ua=fdroid-update-check|wireguardVersionCode
+    = ([0-9]+)|.|wireguardVersionName = '([0-9.]+)'
+CurrentVersion: 1.0.20200407
+CurrentVersionCode: 474

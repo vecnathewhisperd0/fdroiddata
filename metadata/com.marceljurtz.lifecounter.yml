@@ -29,7 +29,14 @@ Builds:
       - yes
     prebuild: rename -v 'tr/[A-Z]/[a-z]/' src/main/res/drawable/*
 
-AutoUpdateMode: Version %c
+  - versionName: '2.0'
+    versionCode: 15
+    commit: 2.0.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '10'
-CurrentVersionCode: 10
+CurrentVersion: '2.0'
+CurrentVersionCode: 15

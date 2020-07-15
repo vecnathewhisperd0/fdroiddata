@@ -1,0 +1,33 @@
+Categories:
+  - Internet
+License: Apache-2.0
+AuthorName: Daniel Gultsch
+WebSite: https://ltt.rs
+SourceCode: https://github.com/inputmice/lttrs-android
+IssueTracker: https://github.com/inputmice/lttrs-android/issues
+
+AutoName: Ltt.rs
+
+RepoType: git
+Repo: https://github.com/inputmice/lttrs-android
+Binaries: https://download.ltt.rs/Ltt.rs-%v-release.apk
+
+Builds:
+  - versionName: 0.1.2
+    versionCode: 3
+    commit: 0.1.2
+    subdir: app
+    init:
+      - cd ../..
+      - mv rs.ltt.android rs.ltt.android_underlying
+      - mkdir rs.ltt.android
+      - disorderfs --sort-dirents=yes --reverse-dirents=no rs.ltt.android_underlying
+        rs.ltt.android
+      - cd rs.ltt.android
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.1.2
+CurrentVersionCode: 3

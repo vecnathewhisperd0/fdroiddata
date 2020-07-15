@@ -1,0 +1,113 @@
+Categories:
+  - Games
+License: GPL-3.0-only
+AuthorName: Lucas Nunes
+AuthorEmail: me@lucasnlm.dev
+SourceCode: https://github.com/lucasnlm/antimine-android
+IssueTracker: https://github.com/lucasnlm/antimine-android/issues
+Translation: https://crowdin.com/project/antimine-android
+
+RepoType: git
+Repo: https://github.com/lucasnlm/antimine-android
+
+Builds:
+  - versionName: 6.3.2
+    versionCode: 603021
+    commit: 6.3.2
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
+
+  - versionName: 7.0.1
+    versionCode: 700011
+    commit: 7.0.1
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
+
+  - versionName: 7.0.2
+    versionCode: 700021
+    commit: 7.0.2
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
+
+  - versionName: 7.1.0
+    versionCode: 701001
+    commit: 7.1.0
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
+
+  - versionName: 7.1.1
+    versionCode: 701011
+    commit: 7.1.1
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
+
+  - versionName: 7.1.4
+    versionCode: 701041
+    commit: 7.1.4
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
+
+  - versionName: 7.2.0
+    versionCode: 702001
+    commit: 7.2.0
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
+
+  - versionName: 7.2.1
+    versionCode: 702011
+    commit: 7.2.1
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
+
+  - versionName: 7.2.2
+    versionCode: 702021
+    commit: 7.2.2
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
+
+  - versionName: 7.2.3
+    versionCode: 702031
+    commit: 7.2.3
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
+
+  - versionName: 7.2.4
+    versionCode: 702041
+    commit: 7.2.4
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
+
+  - versionName: 7.2.6
+    versionCode: 702061
+    commit: 7.2.6
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 7.2.6
+CurrentVersionCode: 702061

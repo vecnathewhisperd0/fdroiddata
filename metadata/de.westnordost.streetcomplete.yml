@@ -8,6 +8,7 @@ SourceCode: https://github.com/westnordost/StreetComplete
 IssueTracker: https://github.com/westnordost/StreetComplete/issues
 Translation: https://poeditor.com/join/project/IE4GC127Ki
 Changelog: https://github.com/westnordost/StreetComplete/releases
+LiberapayID: '1625952'
 
 AutoName: Street­Complete
 Description: |-
@@ -413,8 +414,114 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '16.0'
+    versionCode: 1601
+    commit: v16.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '16.1'
+    versionCode: 1602
+    commit: v16.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '17.0'
+    versionCode: 1703
+    commit: v17.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '17.3'
+    versionCode: 1706
+    commit: v17.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 18.0-beta1
+    versionCode: 1800
+    disable: beta
+    commit: v18.0-beta1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '18.0'
+    versionCode: 1801
+    commit: v18.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 19.0-alpha1
+    versionCode: 1900
+    disable: beta
+    commit: v19.0-alpha1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '19.0'
+    versionCode: 1902
+    commit: v19.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '19.1'
+    versionCode: 1903
+    commit: v19.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '19.2'
+    versionCode: 1904
+    commit: v19.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '20.0'
+    versionCode: 2002
+    commit: v20.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '20.1'
+    versionCode: 2003
+    commit: v20.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '20.2'
+    versionCode: 2004
+    commit: v20.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '21.0'
+    versionCode: 2101
+    commit: v21.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '21.1'
+    versionCode: 2102
+    commit: v21.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-UpdateCheckIgnore: (alpha|beta|rc|RC)
-CurrentVersion: '15.0'
-CurrentVersionCode: 1501
+UpdateCheckMode: Tags ^v\d+(\.\d+)?$
+CurrentVersion: '21.1'
+CurrentVersionCode: 2102

@@ -74,7 +74,112 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.8.0
+    versionCode: 59
+    commit: release-1.8.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.0
+    versionCode: 60
+    commit: release-1.9.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.1
+    versionCode: 61
+    commit: release-1.9.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.1
+    versionCode: 64
+    commit: release-2.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.3
+    versionCode: 68
+    commit: release-2.2.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.4.0
+    versionCode: 70
+    commit: release-2.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.5.1
+    versionCode: 80
+    commit: release-2.5.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.6.0
+    versionCode: 81
+    commit: release-2.6.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.7.0
+    versionCode: 82
+    commit: release-2.7.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.7.2
+    versionCode: 84
+    commit: release-2.7.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.8.0
+    versionCode: 85
+    commit: release-2.8.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.8.1
+    versionCode: 86
+    commit: release-2.8.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.9.0
+    versionCode: 87
+    commit: release-2.9.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.0.0
+    versionCode: 88
+    commit: release-3.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.1.0
+    versionCode: 89
+    commit: release-3.1.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.7.4
-CurrentVersionCode: 58
+CurrentVersion: 3.1.0
+CurrentVersionCode: 89

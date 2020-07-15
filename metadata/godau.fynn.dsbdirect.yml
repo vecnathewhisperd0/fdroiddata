@@ -9,7 +9,7 @@ SourceCode: https://notabug.org/fynngodau/DSBDirect
 IssueTracker: https://notabug.org/fynngodau/DSBDirect/issues
 Changelog: https://notabug.org/fynngodau/DSBDirect/releases
 
-AutoName: DSBDirect
+AutoName: ESBDirect
 
 RepoType: git
 Repo: https://notabug.org/fynngodau/DSBDirect.git
@@ -141,7 +141,35 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: '2.6'
+    versionCode: 32
+    commit: release-2.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '3.0'
+    versionCode: 34
+    commit: release-3.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 3.0.1
+    versionCode: 35
+    commit: release-3.0.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '3.1'
+    versionCode: 36
+    commit: release-3.1
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.5
-CurrentVersionCode: 29
+CurrentVersion: '3.1'
+CurrentVersionCode: 36

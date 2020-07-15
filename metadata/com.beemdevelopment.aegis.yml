@@ -5,6 +5,7 @@ AuthorName: Beem Development
 AuthorEmail: beemdevelopment@gmail.com
 SourceCode: https://github.com/beemdevelopment/Aegis
 IssueTracker: https://github.com/beemdevelopment/Aegis/issues
+Changelog: https://github.com/beemdevelopment/Aegis/releases
 
 AutoName: Aegis
 
@@ -96,7 +97,49 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.1'
+    versionCode: 24
+    commit: v1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.1
+    versionCode: 25
+    commit: v1.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.2
+    versionCode: 26
+    commit: v1.1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.4
+    versionCode: 28
+    commit: v1.1.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.2'
+    versionCode: 35
+    commit: v1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.1
+    versionCode: 36
+    commit: v1.2.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^((?!alpha|beta).)*$
-CurrentVersion: 1.0.3
-CurrentVersionCode: 22
+CurrentVersion: 1.2.1
+CurrentVersionCode: 36

@@ -6,12 +6,6 @@ IssueTracker: https://gitlab.com/juanitobananas/drowser/issues
 Bitcoin: 16DXeCxxKGvepYLehyHSr3M1nv1s1eUotZ
 
 AutoName: Drowser
-Description: |-
-    Avoid rogue apps from running in the background with Drowser.
-
-    Drowser is a simple app that kills the selected apps when the screen turns off.
-
-    It requires root and uses it to kill the apps with an 'am force-stop <app-id>'. This is a ''very'' impolite way of stopping apps. These might (and will probably) misbehave. You might also lose data because of this. '''Beware!'''
 
 RequiresRoot: 'yes'
 
@@ -67,7 +61,23 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.12'
+    versionCode: 13
+    commit: v0.12
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: '0.14'
+    versionCode: 15
+    commit: v0.14
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: '0.11'
-CurrentVersionCode: 12
+UpdateCheckMode: Tags ^v[0-9.]+$
+CurrentVersion: '0.14'
+CurrentVersionCode: 15

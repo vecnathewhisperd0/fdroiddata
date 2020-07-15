@@ -512,11 +512,126 @@ Builds:
     commit: 1.8.26
     subdir: app
     submodules: true
+    patch:
+      - gradle-version.patch
+    gradle:
+      - yes
+    rm:
+      - rome/rome/src/site/resources/Fetcher/Releases/*
+      - rome/rome/src/site/resources/Modules/*
+      - rome/rome/src/site/resources/ROMEReleases/*
+    prebuild:
+      - echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+      - sed -i -e 's|http://repo.maven.apache.org|https://repo.maven.apache.org|'
+        ../rome/build.gradle
+
+  - versionName: 1.8.28
+    versionCode: 67
+    commit: 1.8.28
+    subdir: app
+    submodules: true
+    patch:
+      - gradle-version.patch
+    gradle:
+      - yes
+    rm:
+      - rome/rome/src/site/resources/Fetcher/Releases/*
+      - rome/rome/src/site/resources/Modules/*
+      - rome/rome/src/site/resources/ROMEReleases/*
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.8.29
+    versionCode: 68
+    commit: 1.8.29
+    subdir: app
+    submodules: true
+    patch:
+      - gradle-version.patch
+    gradle:
+      - yes
+    rm:
+      - rome/rome/src/site/resources/Fetcher/Releases/*
+      - rome/rome/src/site/resources/Modules/*
+      - rome/rome/src/site/resources/ROMEReleases/*
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.8.30
+    versionCode: 69
+    commit: 1.8.30
+    subdir: app
+    submodules: true
+    patch:
+      - gradle-version.patch
     gradle:
       - yes
     prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
 
+  - versionName: 1.9.0
+    versionCode: 70
+    commit: 1.9.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.9.1
+    versionCode: 71
+    commit: 1.9.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.9.2
+    versionCode: 72
+    commit: 1.9.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.9.3
+    versionCode: 73
+    commit: 1.9.3
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.9.4
+    versionCode: 74
+    commit: 1.9.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.9.5
+    versionCode: 75
+    commit: 1.9.5
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.9.6
+    versionCode: 76
+    commit: 1.9.6
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.26
-CurrentVersionCode: 65
+CurrentVersion: 1.9.6
+CurrentVersionCode: 76

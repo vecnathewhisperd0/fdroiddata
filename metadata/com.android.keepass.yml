@@ -380,7 +380,56 @@ Builds:
     rm:
       - app/libs
 
+  - versionName: 2.4.2
+    versionCode: 181
+    commit: v2.4.2
+    subdir: app
+    gradle:
+      - general
+    rm:
+      - app/libs
+
+  - versionName: 2.5.1
+    versionCode: 183
+    commit: v2.5.1
+    subdir: app
+    gradle:
+      - general
+    rm:
+      - app/libs
+    ndk: r21
+
+  - versionName: 2.5.8
+    versionCode: 191
+    commit: v2.5.8
+    subdir: app
+    gradle:
+      - general
+    rm:
+      - app/libs
+    ndk: r21
+
+  - versionName: 2.5.10
+    versionCode: 193
+    commit: v2.5.10
+    subdir: app
+    gradle:
+      - general
+    rm:
+      - app/libs
+    ndk: r21b
+
+  - versionName: 2.5.12
+    versionCode: 195
+    commit: v2.5.12
+    subdir: app
+    gradle:
+      - general
+    rm:
+      - app/libs
+    ndk: r21b
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.1
-CurrentVersionCode: 180
+CurrentVersion: 2.5.12
+CurrentVersionCode: 195

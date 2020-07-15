@@ -5,6 +5,7 @@ AuthorName: Mariano Alvarez
 AuthorEmail: malfer007@gmail.com
 WebSite: https://www.fgrim.com/msnake/
 SourceCode: https://gitlab.com/f-droid-mirrors/msnake
+IssueTracker: https://gitlab.com/f-droid-mirrors/msnake/-/issues
 
 AutoName: MSnake
 Description: |-
@@ -35,7 +36,7 @@ Builds:
     commit: v2.0
     target: android-8
 
-AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
+AutoUpdateMode: None
+UpdateCheckMode: None
 CurrentVersion: '2.0'
 CurrentVersionCode: 12

@@ -1,15 +1,15 @@
 Categories:
   - Sports & Health
 License: Apache-2.0
-SourceCode: https://github.com/dennisguse/OpenTracks
-IssueTracker: https://github.com/dennisguse/OpenTracks/issues
-Changelog: https://github.com/dennisguse/opentracks/releases
+SourceCode: https://github.com/OpenTracksApp/OpenTracks
+IssueTracker: https://github.com/OpenTracksApp/OpenTracks/issues
+Changelog: https://github.com/OpenTracksApp/opentracks/releases
 LiberapayID: '1594240'
 
-AutoName: OpenTracks
+AutoName: ${applicationName}
 
 RepoType: git
-Repo: https://github.com/dennisguse/OpenTracks
+Repo: https://github.com/OpenTracksApp/OpenTracks
 
 Builds:
   - versionName: v3.0.1
@@ -78,7 +78,79 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v3.2.11
+    versionCode: 3213
+    commit: v3.2.11
+    gradle:
+      - yes
+
+  - versionName: v3.3.1
+    versionCode: 3251
+    commit: v3.3.1
+    gradle:
+      - yes
+
+  - versionName: v3.3.2
+    versionCode: 3272
+    commit: v3.3.2
+    gradle:
+      - yes
+
+  - versionName: v3.4.0
+    versionCode: 3287
+    commit: v3.4.0
+    gradle:
+      - yes
+
+  - versionName: v3.5.0
+    versionCode: 3305
+    commit: v3.5.0
+    gradle:
+      - yes
+
+  - versionName: v3.6.2
+    versionCode: 3335
+    commit: v3.6.2
+    gradle:
+      - yes
+
+  - versionName: v3.7.1
+    versionCode: 3372
+    commit: v3.7.1
+    gradle:
+      - yes
+
+  - versionName: v3.7.2
+    versionCode: 3381
+    commit: v3.7.2
+    gradle:
+      - yes
+
+  - versionName: v3.7.3
+    versionCode: 3386
+    commit: v3.7.3
+    gradle:
+      - yes
+
+  - versionName: v3.7.4
+    versionCode: 3396
+    commit: v3.7.4
+    gradle:
+      - yes
+
+  - versionName: v3.7.5
+    versionCode: 3427
+    commit: v3.7.5
+    gradle:
+      - yes
+
+  - versionName: v3.7.6
+    versionCode: 3449
+    commit: v3.7.6
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.2.9
-CurrentVersionCode: 3175
+CurrentVersion: v3.7.6
+CurrentVersionCode: 3449

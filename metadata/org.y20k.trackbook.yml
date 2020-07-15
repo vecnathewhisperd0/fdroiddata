@@ -5,6 +5,7 @@ AuthorName: y20k
 WebSite: http://www.y20k.org/trackbook/
 SourceCode: https://github.com/y20k/trackbook
 IssueTracker: https://github.com/y20k/trackbook/issues
+Translation: https://hosted.weblate.org/projects/trackbook/strings/
 Changelog: https://github.com/y20k/trackbook/releases
 
 AutoName: Trackbook
@@ -243,7 +244,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.0.1
+    versionCode: 38
+    commit: v2.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.2
+    versionCode: 39
+    commit: v2.0.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.3
+    versionCode: 40
+    commit: v2.0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.4
+    versionCode: 41
+    commit: v2.0.4
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.2.2
-CurrentVersionCode: 36
+CurrentVersion: 2.0.4
+CurrentVersionCode: 41

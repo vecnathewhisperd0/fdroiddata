@@ -7,6 +7,7 @@ WebSite: https://laano.net/
 SourceCode: https://github.com/alexcustos/linkasanote
 IssueTracker: https://github.com/alexcustos/linkasanote/issues
 
+AutoName: LaaNo
 Description: |-
     LaaNo is an app which is designed to simplify the access to the information
     found on the Web and to give more power to manage it.
@@ -26,5 +27,14 @@ Builds:
     gradle:
       - prod
 
+  - versionName: 0.3.4
+    versionCode: 30499
+    commit: v0.3.4
+    subdir: app
+    gradle:
+      - prod
+
 AutoUpdateMode: None
-UpdateCheckMode: None
+UpdateCheckMode: Tags
+CurrentVersion: 0.3.4
+CurrentVersionCode: 30499

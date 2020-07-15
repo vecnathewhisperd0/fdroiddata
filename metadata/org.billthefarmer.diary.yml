@@ -379,7 +379,73 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.60'
+    versionCode: 160
+    commit: v1.60
+    gradle:
+      - yes
+
+  - versionName: '1.61'
+    versionCode: 161
+    commit: v1.61
+    gradle:
+      - yes
+
+  - versionName: '1.62'
+    versionCode: 162
+    commit: v1.62
+    gradle:
+      - yes
+
+  - versionName: '1.63'
+    versionCode: 163
+    commit: v1.63
+    gradle:
+      - yes
+
+  - versionName: '1.64'
+    versionCode: 164
+    commit: v1.64
+    gradle:
+      - yes
+
+  - versionName: '1.65'
+    versionCode: 165
+    commit: v1.65
+    gradle:
+      - yes
+
+  - versionName: '1.66'
+    versionCode: 166
+    commit: v1.66
+    gradle:
+      - yes
+
+  - versionName: '1.67'
+    versionCode: 167
+    commit: v1.67
+    gradle:
+      - yes
+
+  - versionName: '1.68'
+    versionCode: 168
+    commit: v1.68
+    gradle:
+      - yes
+
+  - versionName: '1.69'
+    versionCode: 169
+    commit: v1.69
+    gradle:
+      - yes
+
+  - versionName: '1.70'
+    versionCode: 170
+    commit: v1.70
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.59'
-CurrentVersionCode: 159
+CurrentVersion: '1.70'
+CurrentVersionCode: 170

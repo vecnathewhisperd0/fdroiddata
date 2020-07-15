@@ -6,7 +6,7 @@ SourceCode: https://github.com/scoute-dich/HHSMoodle
 IssueTracker: https://github.com/scoute-dich/HHSMoodle/issues
 Changelog: https://github.com/scoute-dich/HHSMoodle/blob/HEAD/CHANGELOG.md
 
-AutoName: HHS Moodle
+AutoName: FOSS Moodle
 Description: |-
     Interact with the Moodle instance of the [http://huebsch.karlsruhe.de/
     Heinrich-Huebsch-Schule] in Karlsruhe, Germany.
@@ -256,7 +256,42 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '5.0'
+    versionCode: 61
+    commit: v5.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5.1'
+    versionCode: 67
+    commit: v5.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5.2'
+    versionCode: 68
+    commit: v5.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5.3'
+    versionCode: 70
+    commit: v5.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 5.4.1
+    versionCode: 72
+    commit: v5.4.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '4.5'
-CurrentVersionCode: 57
+CurrentVersion: 5.4.1
+CurrentVersionCode: 72

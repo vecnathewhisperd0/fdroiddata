@@ -5,6 +5,7 @@ AuthorName: Torsten Grote
 WebSite: https://transportr.app/?utm_source=fdroid
 SourceCode: https://github.com/grote/Transportr
 IssueTracker: https://github.com/grote/Transportr/issues
+Translation: https://www.transifex.com/grobox/transportr/
 Changelog: https://github.com/grote/Transportr/releases
 Donate: https://transportr.app/donate/?utm_source=fdroid
 LiberapayID: '34751'
@@ -353,7 +354,16 @@ Builds:
     gradleprops:
       - buildServer
 
+  - versionName: 2.0.8
+    versionCode: 117
+    commit: 2.0.8
+    subdir: app
+    gradle:
+      - yes
+    gradleprops:
+      - buildServer
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.6
-CurrentVersionCode: 115
+CurrentVersion: 2.0.8
+CurrentVersionCode: 117

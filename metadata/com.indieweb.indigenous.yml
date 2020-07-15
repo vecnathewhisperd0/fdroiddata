@@ -107,7 +107,57 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: '0.52'
+    versionCode: 52
+    commit: '0.52'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.56'
+    versionCode: 56
+    disable: fails to build missing Mapbox key
+    commit: '0.56'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.57'
+    versionCode: 57
+    commit: '0.57'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.58'
+    versionCode: 58
+    commit: '0.58'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.59'
+    versionCode: 59
+    commit: '0.59'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.60'
+    versionCode: 60
+    commit: '0.60'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.62'
+    versionCode: 62
+    commit: '0.62'
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.50'
-CurrentVersionCode: 50
+CurrentVersion: '0.62'
+CurrentVersionCode: 62

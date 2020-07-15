@@ -3,6 +3,7 @@ Categories:
 License: Apache-2.0
 SourceCode: https://github.com/helloworld1/FreeOTPPlus
 IssueTracker: https://github.com/helloworld1/FreeOTPPlus/issues
+Changelog: https://github.com/helloworld1/FreeOTPPlus/releases
 
 AutoName: FreeOTP Plus
 Description: |-
@@ -76,7 +77,23 @@ Builds:
     scandelete:
       - .gradle
 
+  - versionName: '1.7'
+    versionCode: 8
+    commit: RELEASE-1.7
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - .gradle
+
+  - versionName: '1.8'
+    versionCode: 9
+    commit: RELEASE-1.8
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: '1.6'
-CurrentVersionCode: 7
+CurrentVersion: '1.8'
+CurrentVersionCode: 9

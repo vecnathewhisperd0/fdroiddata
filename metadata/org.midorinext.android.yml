@@ -1,0 +1,55 @@
+Categories:
+  - Internet
+License: LGPL-3.0-only
+WebSite: https://www.midori-browser.org/
+SourceCode: https://gitlab.com/midori-web/midori-android
+IssueTracker: https://github.com/midori-web/midori-android/issues
+Changelog: https://gitlab.com/midori-web/midori-android/-/tags
+
+AutoName: Midori Next
+Description: |-
+    Midori is a lightweight yet powerful web browser which runs just as well on little embedded
+    computers named for delicious pastries as it does on beefy machines with a core
+    temperature exceeding that of planet earth. And it looks good doing that, too.
+    Oh, and of course it's free software. And for Android.
+
+    '''Privacy out of the box'''
+    * Adblock filter list support
+    * Private browsing
+    * Manage cookies and scripts
+
+    '''Productivity features'''
+    * Opens many Tabs
+    * History Manage
+    * Download Manage
+    * Bookmark
+    * Dark Theme
+    * Share Content
+    * and much more
+
+RepoType: git
+Repo: https://gitlab.com/midori-web/midori-android
+
+Builds:
+  - versionName: 1.0.1-beta
+    versionCode: 2
+    disable: remove from repo
+    commit: 1.0.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/minifyEnabled/d' -e '/debuggable/d' build.gradle
+
+  - versionName: 1.0.4
+    versionCode: 4
+    disable: remove from repo
+    commit: 2938e458e5c7cf1fd05fd086050c1fbcf3d7432f
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/minifyEnabled/d' -e '/debuggable/d' build.gradle
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.4
+CurrentVersionCode: 4

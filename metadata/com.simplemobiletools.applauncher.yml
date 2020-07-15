@@ -179,7 +179,31 @@ Builds:
       - echo "android.enableJetifier=true" >> gradle.properties
       - echo "android.useAndroidX=true" >> gradle.properties
 
+  - versionName: 5.1.1
+    versionCode: 23
+    commit: 5.1.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.1.2
+    versionCode: 24
+    commit: 5.1.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.2.0
+    versionCode: 25
+    commit: 5.2.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 5.0.5
-CurrentVersionCode: 21
+CurrentVersion: 5.2.0
+CurrentVersionCode: 25

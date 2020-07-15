@@ -27,7 +27,15 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '2.2'
+    versionCode: 32
+    commit: '2.2'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/5.1-rc-3/5.6/' ../gradle/wrapper/gradle-wrapper.properties
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '2.1'
-CurrentVersionCode: 30
+CurrentVersion: '2.2'
+CurrentVersionCode: 32

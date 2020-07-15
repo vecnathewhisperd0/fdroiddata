@@ -1,0 +1,68 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+License: GPL-3.0-or-later
+SourceCode: https://github.com/SapuSeven/BetterUntis
+IssueTracker: https://github.com/SapuSeven/BetterUntis/issues
+Changelog: https://github.com/SapuSeven/BetterUntis/releases
+
+AutoName: BetterUntis
+
+RepoType: git
+Repo: https://github.com/SapuSeven/BetterUntis
+
+Builds:
+  - versionName: 3.0.2
+    versionCode: 13
+    commit: b97615cd3177b57975e5734bea41968300fedc45
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.1.1
+    versionCode: 15
+    commit: v3.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.2.1
+    versionCode: 17
+    commit: v3.2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.2.2
+    versionCode: 18
+    commit: v3.2.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.3.0
+    versionCode: 19
+    commit: v3.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.3.1
+    versionCode: 20
+    commit: v3.3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.3.2
+    versionCode: 22
+    commit: v3.3.2
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 3.3.2
+CurrentVersionCode: 22

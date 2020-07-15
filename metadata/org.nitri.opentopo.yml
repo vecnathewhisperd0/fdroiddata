@@ -111,7 +111,56 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.7.1
+    versionCode: 16
+    commit: 1.7.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.8'
+    versionCode: 18
+    commit: '1.8'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.9'
+    versionCode: 19
+    commit: '1.9'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.1
+    versionCode: 20
+    commit: 1.9.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.10'
+    versionCode: 21
+    commit: '1.10'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.10.1
+    versionCode: 22
+    commit: 1.10.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.11'
+    versionCode: 23
+    commit: '1.11'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.7'
-CurrentVersionCode: 15
+CurrentVersion: '1.11'
+CurrentVersionCode: 23

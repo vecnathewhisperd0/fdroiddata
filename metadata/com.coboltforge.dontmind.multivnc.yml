@@ -133,7 +133,61 @@ Builds:
     scanignore:
       - contrib
 
+  - versionName: 1.8.7
+    versionCode: 61
+    commit: AndroidMultiVNC-1.8.7
+    subdir: android/app
+    gradle:
+      - yes
+    scanignore:
+      - contrib
+
+  - versionName: 1.8.8
+    versionCode: 62
+    commit: AndroidMultiVNC-1.8.8
+    subdir: android/app
+    gradle:
+      - yes
+    scanignore:
+      - contrib
+
+  - versionName: 1.8.9
+    versionCode: 63
+    commit: AndroidMultiVNC-1.8.9
+    subdir: android/app
+    gradle:
+      - yes
+    scanignore:
+      - contrib
+
+  - versionName: 1.8.10
+    versionCode: 65
+    commit: AndroidMultiVNC-1.8.10
+    subdir: android/app
+    gradle:
+      - yes
+    scanignore:
+      - contrib
+
+  - versionName: 1.8.11
+    versionCode: 66
+    commit: AndroidMultiVNC-1.8.11
+    subdir: android/app
+    gradle:
+      - yes
+    scanignore:
+      - contrib
+
+  - versionName: 1.9.0
+    versionCode: 67
+    commit: AndroidMultiVNC-1.9.0
+    subdir: android/app
+    gradle:
+      - yes
+    scanignore:
+      - contrib
+
 AutoUpdateMode: Version AndroidMultiVNC-%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.6
-CurrentVersionCode: 60
+CurrentVersion: 1.9.0
+CurrentVersionCode: 67

@@ -6,6 +6,7 @@ AuthorEmail: support@tasks.org
 WebSite: https://tasks.org
 SourceCode: https://github.com/tasks/tasks
 IssueTracker: https://github.com/tasks/tasks/issues
+Translation: https://hosted.weblate.org/projects/tasks/
 Changelog: https://github.com/tasks/tasks/blob/HEAD/CHANGELOG.md
 Donate: https://tasks.org/donate
 FlattrID: '2308341'
@@ -13,16 +14,6 @@ LiberapayID: '42085'
 Bitcoin: 136mW34jW3cmZKhxuTDn3tHXMRwbbaRU8s
 
 AutoName: Tasks
-Description: |-
-    This app is built on the same code as the original Astrid app but differs in
-    several ways:
-
-    * No Astrid.com synchronization
-    * No sharing or assigning tasks
-    * No iOS or web interface
-    * Third party apps need to update their code to support Tasks
-
-    Tasks is not affiliated with Yahoo! or Todoroo.
 
 RepoType: git
 Repo: https://github.com/tasks/tasks.git
@@ -1151,10 +1142,443 @@ Builds:
     gradleprops:
       - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
 
+  - versionName: 7.3.2
+    versionCode: 633
+    commit: 7.3.2
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+      - .gradle
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 7.4.2
+    versionCode: 645
+    commit: 7.4.2
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+      - .gradle
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 7.6.1
+    versionCode: 651
+    commit: 7.6.1
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+      - .gradle
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '8.1'
+    versionCode: 674
+    commit: '8.1'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '8.2'
+    versionCode: 680
+    commit: '8.2'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 8.2.1
+    versionCode: 682
+    commit: 8.2.1
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '8.3'
+    versionCode: 685
+    commit: '8.3'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '8.4'
+    versionCode: 691
+    commit: '8.4'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '8.5'
+    versionCode: 700
+    commit: '8.5'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 8.6.1
+    versionCode: 707
+    commit: 8.6.1
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '8.7'
+    versionCode: 712
+    commit: '8.7'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 8.7.1
+    versionCode: 713
+    commit: 8.7.1
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '8.8'
+    versionCode: 719
+    commit: '8.8'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 8.9.1
+    versionCode: 728
+    commit: 8.9.1
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 8.9.2
+    versionCode: 729
+    commit: 8.9.2
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '8.10'
+    versionCode: 740
+    commit: '8.10'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '8.11'
+    versionCode: 746
+    commit: '8.11'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '9.0'
+    versionCode: 90002
+    commit: '9.0'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '9.1'
+    versionCode: 90100
+    commit: '9.1'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '9.2'
+    versionCode: 90202
+    commit: '9.2'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    scandelete:
+      - buildSrc
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '9.5'
+    versionCode: 90501
+    commit: '9.5'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
+      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
+        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
+        build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '9.6'
+    versionCode: 90602
+    commit: '9.6'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '9.7'
+    versionCode: 90700
+    commit: '9.7'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 9.7.1
+    versionCode: 90702
+    commit: 9.7.1
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 9.7.2
+    versionCode: 90703
+    commit: 9.7.2
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 9.7.3
+    versionCode: 90704
+    commit: 9.7.3
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
 MaintainerNotes: Upstream releases multiple version with changed vercode. Looks like
-    repushing tags..
+    repushing tags.
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 7.3.1
-CurrentVersionCode: 632
+CurrentVersion: 9.7.3
+CurrentVersionCode: 90704

@@ -5,7 +5,7 @@ Categories:
 License: AGPL-3.0-only
 WebSite: https://gadgetbridge.org/
 SourceCode: https://codeberg.org/Freeyourgadget/Gadgetbridge
-IssueTracker: https://github.com/Freeyourgadget/Gadgetbridge/issues
+IssueTracker: https://codeberg.org/Freeyourgadget/Gadgetbridge/issues
 Translation: https://hosted.weblate.org/projects/freeyourgadget/gadgetbridge
 Changelog: https://codeberg.org/Freeyourgadget/Gadgetbridge/src/branch/master/CHANGELOG.md
 LiberapayID: '11276'
@@ -1118,7 +1118,112 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.40.0
+    versionCode: 163
+    commit: 0.40.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.40.1
+    versionCode: 164
+    commit: 0.40.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.41.0
+    versionCode: 165
+    commit: 0.41.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.41.1
+    versionCode: 166
+    commit: 0.41.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.42.0
+    versionCode: 167
+    commit: 0.42.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.42.1
+    versionCode: 168
+    commit: 0.42.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.43.0
+    versionCode: 169
+    commit: 0.43.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.43.1
+    versionCode: 170
+    commit: 0.43.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.43.2
+    versionCode: 171
+    commit: 0.43.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.43.3
+    versionCode: 172
+    commit: 0.43.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.44.0
+    versionCode: 173
+    commit: 0.44.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.44.1
+    versionCode: 174
+    commit: 0.44.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.44.2
+    versionCode: 175
+    commit: 0.44.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.45.0
+    versionCode: 176
+    commit: 0.45.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.45.1
+    versionCode: 177
+    commit: 0.45.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.39.1
-CurrentVersionCode: 162
+CurrentVersion: 0.45.1
+CurrentVersionCode: 177

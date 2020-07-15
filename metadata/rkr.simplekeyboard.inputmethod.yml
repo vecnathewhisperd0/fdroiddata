@@ -204,7 +204,63 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '3.16'
+    versionCode: 66
+    commit: '66'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.17'
+    versionCode: 67
+    commit: '67'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.18'
+    versionCode: 68
+    commit: '68'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.19'
+    versionCode: 69
+    commit: '69'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.20'
+    versionCode: 70
+    commit: '70'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.21'
+    versionCode: 71
+    commit: '71'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.22'
+    versionCode: 72
+    commit: '72'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.23'
+    versionCode: 73
+    commit: '73'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %c
 UpdateCheckMode: Tags
-CurrentVersion: '3.14'
-CurrentVersionCode: 64
+CurrentVersion: '3.23'
+CurrentVersionCode: 73

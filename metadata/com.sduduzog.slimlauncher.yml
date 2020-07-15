@@ -83,7 +83,15 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.4.8
+    versionCode: 44
+    commit: v2.4.8
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/play\ {/,+11d' -e '/triplet/d' build.gradle.kts
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.6
-CurrentVersionCode: 41
+CurrentVersion: 2.4.8
+CurrentVersionCode: 44

@@ -178,8 +178,32 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 5.1.0
+    versionCode: 87
+    disable: gms code through exoplayer-cast plugin
+    commit: v5.1.0
+    subdir: app
+    gradle:
+      - fdroid
+    scandelete:
+      - .gradle
+
+  - versionName: 5.2.0
+    versionCode: 90
+    commit: v5.2.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 5.2.1
+    versionCode: 91
+    commit: v5.2.1
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckName: me.echeung.moemoekyun
-CurrentVersion: 5.0.0-rc.3
-CurrentVersionCode: 84
+CurrentVersion: 5.2.1
+CurrentVersionCode: 91

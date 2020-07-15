@@ -7,7 +7,8 @@ WebSite: https://www.stoutner.com/privacy-browser
 SourceCode: https://git.stoutner.com/?p=PrivacyBrowser.git;a=summary
 IssueTracker: https://redmine.stoutner.com/projects/privacy-browser/issues
 Changelog: https://www.stoutner.com/privacy-browser/changelog/
-Donate: https://www.stoutner.com/privacy-browser/contributors/
+Donate: https://www.stoutner.com/privacy-browser/donations/
+Liberapay: sorenstoutner
 Bitcoin: 1Jiooc5L238VnhiWtkdYEkwm7kRNWQspSC
 
 AutoName: Privacy Browser
@@ -354,6 +355,30 @@ Builds:
       - standard
     prebuild: sed -i -e '/firebase/d' build.gradle
 
+  - versionName: '3.3'
+    versionCode: 47
+    commit: v3.3
+    subdir: app
+    gradle:
+      - standard
+    prebuild: sed -i -e '/firebase/d' build.gradle
+
+  - versionName: '3.4'
+    versionCode: 48
+    commit: v3.4
+    subdir: app
+    gradle:
+      - standard
+    prebuild: sed -i -e '/firebase/d' build.gradle
+
+  - versionName: 3.4.1
+    versionCode: 49
+    commit: v3.4.1
+    subdir: app
+    gradle:
+      - standard
+    prebuild: sed -i -e '/firebase/d' build.gradle
+
 MaintainerNotes: |-
     Summary and Description are maintained by upstream using fastlane in
     the source repo:
@@ -361,5 +386,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '3.2'
-CurrentVersionCode: 46
+CurrentVersion: 3.4.1
+CurrentVersionCode: 49
