@@ -21,21 +21,14 @@ Builds:
     gradle:
       - withoutKey
 
-  - versionName: 0.43.0
-    versionCode: 4300
-    commit: v0.43.0
-    subdir: app
-    gradle:
-      - withoutKey
-
-  - versionName: 0.44.0
-    versionCode: 4400
-    commit: v0.44.0
+  - versionName: '0.31'
+    versionCode: 31
+    commit: v0.31
     subdir: app
     gradle:
       - withoutKey
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
-CurrentVersion: '0.34'
-CurrentVersionCode: 34
+CurrentVersion: '0.31'
+CurrentVersionCode: 31
