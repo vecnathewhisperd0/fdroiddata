@@ -28,7 +28,7 @@ Builds:
     gradle:
       - withoutKey
 
-AutoUpdateMode: None
+AutoUpdateMode: Version %v-fdroid
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
 CurrentVersion: '0.34'
 CurrentVersionCode: 34
