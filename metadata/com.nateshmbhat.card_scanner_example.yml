@@ -1,10 +1,10 @@
-License: GPL-3.0-only	
-SourceCode: https://github.com/nateshmbhat/card-scanner-flutter
-IssueTracker: https://github.com/nateshmbhat/card-scanner-flutter/issues
 Categories:
   - Development
   - Money
   - Security
+License: GPL-3.0-only	
+SourceCode: https://github.com/nateshmbhat/card-scanner-flutter
+IssueTracker: https://github.com/nateshmbhat/card-scanner-flutter/issues
 
 AutoName: card_scanner_example
 Description: Fast, Accurate and Secure Credit & Debit card scanning library for flutter.
