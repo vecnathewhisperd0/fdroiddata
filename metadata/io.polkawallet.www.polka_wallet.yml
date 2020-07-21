@@ -20,9 +20,9 @@ RepoType: git
 Repo: https://github.com/polkawallet-io/polkawallet-flutter.git
 
 Builds:
-  - versionName: 0.8.3
-    versionCode: 833
-    commit: v0.8.3
+  - versionName: 0.8.4
+    versionCode: 842
+    commit: v0.8.4
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
       - flutter@stable
@@ -41,15 +41,20 @@ Builds:
       - yarn install
       - yarn run build
       - cd ../..
+      - cd ./lib/js_service_laminar
+      - yarn install
+      - yarn run build
+      - cd ../..
       - rm -rf node-v12.18.2-linux-x64/ yarn-v1.22.4/
       - rm node-v12.18.2-linux-x64.tar.xz yarn-v1.22.4.tar.gz
       - rm -rf lib/js_service_acala/node_modules/node-notifier/
       - rm -rf lib/js_service_kusama/node_modules/node-notifier/
+      - rm -rf lib/js_service_laminar/node_modules/node-notifier/
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter build apk --flavor fdroid
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.8.3
-CurrentVersionCode: 833
+CurrentVersion: 0.8.4
+CurrentVersionCode: 842
