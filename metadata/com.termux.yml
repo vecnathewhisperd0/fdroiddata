@@ -571,7 +571,24 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.94'
+    versionCode: 94
+    commit: v0.94
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21
+
+  - versionName: '0.95'
+    versionCode: 95
+    commit: v0.95
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/21.2.6472646/21.3.6528147/' build.gradle
+    ndk: r21d
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '0.92'
-CurrentVersionCode: 92
+CurrentVersion: '0.95'
+CurrentVersionCode: 95

@@ -246,7 +246,57 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.13.0
+    versionCode: 202
+    disable: https://github.com/yanus171/Handy-News-Reader/issues/453
+    commit: v0.13.0
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.13.1
+    versionCode: 203
+    commit: v0.13.1
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.13.4
+    versionCode: 206
+    commit: v0.13.4
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.13.5
+    versionCode: 207
+    commit: v0.13.5
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.14.2
+    versionCode: 208
+    commit: v0.14.2
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.14.4
+    versionCode: 210
+    commit: v0.14.4
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.15.1
+    versionCode: 212
+    commit: v0.15.1
+    subdir: FlymFork
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.12.2
-CurrentVersionCode: 201
+CurrentVersion: 0.15.1
+CurrentVersionCode: 212

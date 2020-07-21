@@ -86,9 +86,10 @@ Builds:
       - mv $$openssl_for_ios_and_android$$/libs/x86/lib/*.a ../distribution/openssl/x86/lib/
     ndk: r14b
 
-  - versionName: '4.3'
-    versionCode: 12
-    commit: '4.3'
+  - versionName: '6.3'
+    versionCode: 17
+    disable: fails to build
+    commit: '6.3'
     subdir: app
     sudo:
       - apt-get update || apt-get update
@@ -121,5 +122,5 @@ MaintainerNotes: Upstream includes OpenSSL binaries so we have to rebuild them f
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '4.3'
-CurrentVersionCode: 12
+CurrentVersion: '6.3'
+CurrentVersionCode: 17

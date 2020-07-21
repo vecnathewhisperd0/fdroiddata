@@ -501,7 +501,25 @@ Builds:
       - yes
     ndk: r20
 
+  - versionName: 4.3.4
+    versionCode: 40304
+    commit: v4.3.4
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21
+
+  - versionName: 4.3.5
+    versionCode: 40305
+    commit: v4.3.5
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - Resources/symlink_hosts_to_data.zip
+    ndk: r21d
+
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 4.3.2
-CurrentVersionCode: 40302
+UpdateCheckMode: Tags .*[0-9]$
+CurrentVersion: 4.3.5
+CurrentVersionCode: 40305

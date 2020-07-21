@@ -95,7 +95,84 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 2.1.5
+    versionCode: 105
+    commit: 2.1.5
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.6
+    versionCode: 106
+    commit: 2.1.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.7
+    versionCode: 107
+    commit: 2.1.7
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.8
+    versionCode: 110
+    commit: 2.1.8
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.9
+    versionCode: 112
+    commit: 2.1.9
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.10
+    versionCode: 113
+    commit: 2.1.10
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.11
+    versionCode: 114
+    commit: 2.1.11
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.12
+    versionCode: 115
+    commit: 2.1.12
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.13
+    versionCode: 116
+    commit: 2.1.13
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.14
+    versionCode: 118
+    commit: 2.1.14
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.1.15
+    versionCode: 119
+    commit: 2.1.15
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.1.4
-CurrentVersionCode: 103
+CurrentVersion: 2.1.15
+CurrentVersionCode: 119

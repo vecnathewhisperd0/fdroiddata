@@ -399,16 +399,6 @@ Builds:
       - app/libs
     ndk: r21
 
-  - versionName: 2.5.7
-    versionCode: 190
-    commit: v2.5.7
-    subdir: app
-    gradle:
-      - general
-    rm:
-      - app/libs
-    ndk: r21
-
   - versionName: 2.5.8
     versionCode: 191
     commit: v2.5.8
@@ -419,7 +409,27 @@ Builds:
       - app/libs
     ndk: r21
 
+  - versionName: 2.5.10
+    versionCode: 193
+    commit: v2.5.10
+    subdir: app
+    gradle:
+      - general
+    rm:
+      - app/libs
+    ndk: r21b
+
+  - versionName: 2.5.12
+    versionCode: 195
+    commit: v2.5.12
+    subdir: app
+    gradle:
+      - general
+    rm:
+      - app/libs
+    ndk: r21b
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.8
-CurrentVersionCode: 191
+CurrentVersion: 2.5.12
+CurrentVersionCode: 195

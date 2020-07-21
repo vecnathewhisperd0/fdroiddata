@@ -692,7 +692,39 @@ Builds:
     gradle:
       - standard
 
+  - versionName: 3.2.2
+    versionCode: 106
+    commit: v3.2.2
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 3.2.3
+    versionCode: 107
+    commit: v3.2.3
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 3.2.4
+    versionCode: 108
+    commit: v3.2.4
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 3.2.5
+    versionCode: 109
+    commit: v3.2.5
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9.]+$
-CurrentVersion: 3.2.1
-CurrentVersionCode: 105
+CurrentVersion: 3.2.5
+CurrentVersionCode: 109

@@ -112,14 +112,28 @@ Builds:
     rm:
       - app/src/main/lib/material-intro-screen/material-intro-screen/build.gradle
 
-  - versionName: '0.15'
-    versionCode: 15
-    commit: v0.15
+  - versionName: '0.16'
+    versionCode: 16
+    commit: v0.16
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.17'
+    versionCode: 17
+    commit: v0.17
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.18'
+    versionCode: 18
+    commit: v0.18
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '0.15'
-CurrentVersionCode: 15
+CurrentVersion: '0.18'
+CurrentVersionCode: 18

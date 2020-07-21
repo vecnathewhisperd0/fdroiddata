@@ -1,5 +1,6 @@
 AntiFeatures:
   - NonFreeNet
+  - Tracking
 Categories:
   - Internet
 License: Apache-2.0
@@ -43,6 +44,11 @@ Description: |-
     Too many people believe you simply can’t expect privacy on the Internet. We’re
     fighting to change that, and have made it our mission to set a new standard of
     trust online. Install DuckDuckGo and take back your privacy!
+
+    Antifeatures:
+    * NonFreeNet - Uses DuckDuckGo as the exclusive search engine, for which the
+    source code is not available.
+    * Tracking - Every website hostname is sent to DuckDuckGo's favicon proxy servers.
 
 RepoType: git
 Repo: https://github.com/duckduckgo/Android
@@ -548,15 +554,6 @@ Builds:
     output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
     ndk: r20b
 
-  - versionName: 5.44.2
-    versionCode: 54402
-    commit: 5.44.2
-    submodules: true
-    gradle:
-      - yes
-    output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
-    ndk: r20b
-
   - versionName: 5.46.0
     versionCode: 54600
     commit: 5.46.0
@@ -566,9 +563,84 @@ Builds:
     output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
     ndk: r20b
 
+  - versionName: 5.48.0
+    versionCode: 54800
+    commit: 5.48.0
+    submodules: true
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
+    ndk: r20b
+
+  - versionName: 5.49.1
+    versionCode: 54901
+    commit: 5.49.1
+    submodules: true
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
+    ndk: r20b
+
+  - versionName: 5.50.1
+    versionCode: 55001
+    commit: 5.50.1
+    submodules: true
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
+    ndk: r20b
+
+  - versionName: 5.51.0
+    versionCode: 55100
+    commit: 5.51.0
+    submodules: true
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
+    ndk: r20b
+
+  - versionName: 5.53.1
+    versionCode: 55301
+    commit: 5.53.1
+    submodules: true
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
+    ndk: r21
+
+  - versionName: 5.55.1
+    versionCode: 55501
+    commit: 5.55.1
+    submodules: true
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
+    prebuild: sed -i -e 's/21.0.6113669/21.1.6352462/' app/build.gradle
+    ndk: r21b
+
+  - versionName: 5.55.1
+    versionCode: 55501
+    commit: 5.55.1
+    submodules: true
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
+    prebuild: sed -i -e 's/21.0.6113669/21.1.6352462/' app/build.gradle
+    ndk: r21b
+
+  - versionName: 5.56.0
+    versionCode: 55600
+    commit: 5.56.0
+    submodules: true
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
+    prebuild: sed -i -e 's/21.0.6113669/21.1.6352462/' app/build.gradle
+    ndk: r21b
+
 MaintainerNotes: Cannot use AUM/UCM because version code and version name are dynamic.
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 5.46.0
-CurrentVersionCode: 54600
+CurrentVersion: 5.56.0
+CurrentVersionCode: 55600

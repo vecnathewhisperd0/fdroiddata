@@ -83,7 +83,39 @@ Builds:
       - yes
     ndk: r17c
 
+  - versionName: 3.3.3
+    versionCode: 333
+    commit: v3.3.3
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.3.4
+    versionCode: 334
+    commit: v3.3.4
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.3.5
+    versionCode: 335
+    commit: v3.3.5
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.4.0
+    versionCode: 340
+    commit: v3.4.0
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.3.2
-CurrentVersionCode: 332
+CurrentVersion: 3.4.0
+CurrentVersionCode: 340

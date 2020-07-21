@@ -39,7 +39,34 @@ Builds:
       - yes
     ndk: r20b
 
+  - versionName: '2.0'
+    versionCode: 9
+    commit: v2.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r20b
+
+  - versionName: '2.1'
+    versionCode: 10
+    commit: v2.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r20b
+
+  - versionName: '2.2'
+    versionCode: 11
+    commit: v2.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r21b
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.6'
-CurrentVersionCode: 8
+CurrentVersion: '2.2'
+CurrentVersionCode: 11

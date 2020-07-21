@@ -906,9 +906,34 @@ Builds:
     gradleprops:
       - org.gradle.jvmargs=-Xmx1g
 
-MaintainerNotes: Cannot use AUM/UCM because version name and code are defined in buildSrc/src/main/kotlin/deps/Deps.kt.
+  - versionName: 5.0.1
+    versionCode: 3060341
+    commit: 5.0.1
+    subdir: app
+    gradle:
+      - opensource
+    prebuild:
+      - sed -i -e '/fabric/d' {..,.}/build.gradle.kts
+      - sed -i -e '/proprietaryImplementation.*{/,/}/d' ../crashreporting/build.gradle.kts
+      - sed -i -e '/lintOptions {/a\    isCheckReleaseBuilds = false' build.gradle.kts
+    scandelete:
+      - buildSrc
 
-AutoUpdateMode: None
-UpdateCheckMode: None
-CurrentVersion: 4.3.3
-CurrentVersionCode: 3060327
+  - versionName: 5.0.2
+    versionCode: 3060342
+    commit: 5.0.2
+    subdir: app
+    gradle:
+      - opensource
+    prebuild:
+      - sed -i -e '/fabric/d' {..,.}/build.gradle.kts
+      - sed -i -e '/proprietaryImplementation.*{/,/}/d' ../crashreporting/build.gradle.kts
+      - sed -i -e '/lintOptions {/a\    isCheckReleaseBuilds = false' build.gradle.kts
+    scandelete:
+      - buildSrc
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://github.com/PaulWoitaschek/Voice/raw/master/buildSrc/src/main/kotlin/deps/Deps.kt|versionCode\s*=\s*([0-9]+)|.|versionName\s*=\s*"(.+)"
+CurrentVersion: 5.0.2
+CurrentVersionCode: 3060342

@@ -158,7 +158,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 20200321_V45
+    versionCode: 45
+    commit: 20200321_V45
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 20200418_V47
+    versionCode: 47
+    commit: 20200418_V47
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2020524_V48
+    versionCode: 48
+    commit: 2020524_V48
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 20200719_V49
+    versionCode: 49
+    commit: 20200719_V49
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 20200307_V43
-CurrentVersionCode: 43
+CurrentVersion: 20200719_V49
+CurrentVersionCode: 49

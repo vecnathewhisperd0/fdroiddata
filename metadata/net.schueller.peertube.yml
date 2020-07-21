@@ -4,6 +4,7 @@ License: AGPL-3.0-only
 AuthorName: Stefan Schueller
 SourceCode: https://github.com/sschueller/peertube-android
 IssueTracker: https://github.com/sschueller/peertube-android/issues
+Translation: https://hosted.weblate.org/projects/peertube/
 Changelog: https://raw.githubusercontent.com/sschueller/peertube-android/HEAD/CHANGELOG.md
 LiberapayID: '1570567'
 Bitcoin: 1LoTXo728HzYTtyfbkaf5ewSRvu8ABTDPm
@@ -153,7 +154,70 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.0.34
+    versionCode: 1034
+    commit: v1.0.34
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.35
+    versionCode: 1035
+    commit: v1.0.35
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.36
+    versionCode: 1036
+    commit: v1.0.36
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.37
+    versionCode: 1037
+    commit: v1.0.37
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.41
+    versionCode: 1041
+    commit: v1.0.41
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.43
+    versionCode: 1043
+    commit: v1.0.43
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.44
+    versionCode: 1044
+    commit: v1.0.44
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.46
+    versionCode: 1046
+    commit: v1.0.46
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.47
+    versionCode: 1047
+    commit: v1.0.47
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.32
-CurrentVersionCode: 1032
+CurrentVersion: 1.0.47
+CurrentVersionCode: 1047

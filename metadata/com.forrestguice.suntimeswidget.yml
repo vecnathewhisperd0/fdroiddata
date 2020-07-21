@@ -390,7 +390,53 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.12.6
+    versionCode: 58
+    commit: v0.12.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.12.7
+    versionCode: 59
+    commit: v0.12.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.12.8
+    versionCode: 60
+    commit: v0.12.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.12.9
+    versionCode: 61
+    commit: v0.12.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.12.10
+    versionCode: 62
+    commit: v0.12.10
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.12.11
+    versionCode: 63
+    commit: v0.12.11
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - app/src/main/artwork/map/ne_10m_land.zip
+
+MaintainerNotes: ne_10m_land.zip is from naturalearthdata.com under Public Domain
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.12.5
-CurrentVersionCode: 57
+CurrentVersion: 0.12.11
+CurrentVersionCode: 63

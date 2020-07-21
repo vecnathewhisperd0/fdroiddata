@@ -44,7 +44,30 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.1.6
+    versionCode: 116
+    commit: 1.1.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0
+    versionCode: 120
+    commit: 1.2.0
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21
+
+  - versionName: 1.5.5
+    versionCode: 155
+    commit: 1.5.5
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.4
-CurrentVersionCode: 104
+CurrentVersion: 1.5.5
+CurrentVersionCode: 155
