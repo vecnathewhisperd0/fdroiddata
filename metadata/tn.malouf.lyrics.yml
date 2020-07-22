@@ -1,0 +1,30 @@
+Categories:
+  - Multimedia
+License: GPL-3.0-only
+AuthorName: Brahim
+AuthorEmail: brahim.pro@protonmail.com
+SourceCode: https://github.com/brahimlippe/Lyrics
+IssueTracker: https://github.com/brahimlippe/Lyrics/issues
+
+AutoName: كلمات
+Summary: Get the lyrics of your favourite songs
+Description: |
+    This app is still work in progress
+    Thanks for any feedback
+    Type the title of a song and get its lyrics
+
+RepoType: git
+Repo: https://github.com/brahimlippe/Lyrics
+
+Builds:
+  - versionName: Dhil
+    versionCode: 1
+    commit: v1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1'
+CurrentVersionCode: 1
