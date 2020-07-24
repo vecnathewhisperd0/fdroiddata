@@ -3,13 +3,15 @@ Categories:
 License: MIT
 SourceCode: https://bitbucket.org/Fyll-nds/crossword-grid
 
+# Description, Summary, Name, and Images are in the repo.
+
 RepoType: git
 Repo: https://bitbucket.org/Fyll-nds/crossword-grid
 
 Builds:
   - versionName: 1.0.0
     versionCode: 1
-    commit: 1b74f16
+    commit: ca75696
     subdir: android/app
     gradle:
       - yes
