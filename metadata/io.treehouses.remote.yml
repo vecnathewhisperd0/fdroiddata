@@ -1,0 +1,48 @@
+AntiFeatures:
+  - Tracking
+Categories:
+  - Connectivity
+License: AGPL-3.0-only
+AuthorName: treehouses
+AuthorWebSite: https://treehouses.io/
+SourceCode: https://github.com/treehouses/remote
+IssueTracker: https://github.com/treehouses/remote/issues
+
+AutoName: Treehouses Remote
+
+RepoType: git
+Repo: https://gitlab.com/treehouses/remote.git
+
+Builds:
+  - versionName: '4176'
+    versionCode: 4176
+    commit: fdroid-4176
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4246'
+    versionCode: 4246
+    commit: fdroid-4246
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4326'
+    versionCode: 4326
+    commit: fdroid-4326
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4356'
+    versionCode: 4356
+    commit: fdroid-4356
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version fdroid-%v
+UpdateCheckMode: Tags fdroid-[0-9]+
+CurrentVersion: '4356'
+CurrentVersionCode: 4356
