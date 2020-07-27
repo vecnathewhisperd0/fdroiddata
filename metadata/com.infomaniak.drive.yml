@@ -1,0 +1,36 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+License: GPL-2.0-only
+AuthorName: Infomaniak
+WebSite: https://www.infomaniak.com
+SourceCode: https://github.com/Infomaniak/android-infomaniak-drive
+IssueTracker: https://contact.infomaniak.com
+
+AutoName: kMeet
+
+RepoType: git
+Repo: https://github.com/Infomaniak/android-infomaniak-drive.git
+
+Builds:
+  - versionName: '3.13.0'
+    versionCode: 30130090
+    commit: 'ik-3.13.0'
+    submodules: true
+    gradle:
+      - generic
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+AutoUpdateMode: Version ik-%v
+UpdateCheckMode: Tags ^ik-[0-9]+\.[0-9]+\.[0-9]+$
+CurrentVersion: '3.13.0'
+CurrentVersionCode: 30130090
