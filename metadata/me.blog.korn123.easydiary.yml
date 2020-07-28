@@ -145,7 +145,49 @@ Builds:
     gradle:
       - foss
 
+  - versionName: 1.4.134
+    versionCode: 200
+    commit: v1.4.134
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.135
+    versionCode: 201
+    commit: v1.4.135
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.136
+    versionCode: 202
+    commit: v1.4.136
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.137
+    versionCode: 203
+    commit: v1.4.137
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.139
+    versionCode: 205
+    commit: v1.4.139
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.140
+    versionCode: 206
+    commit: v1.4.140
+    subdir: app
+    gradle:
+      - foss
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.133
-CurrentVersionCode: 199
+CurrentVersion: 1.4.140
+CurrentVersionCode: 206

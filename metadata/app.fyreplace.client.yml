@@ -272,11 +272,24 @@ Builds:
     versionCode: 8013
     commit: v0.8.13
     subdir: app
-    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
+  - versionName: 0.8.14
+    versionCode: 8014
+    commit: v0.8.14
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.15
+    versionCode: 8015
+    commit: v0.8.15
+    subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.8.13
-CurrentVersionCode: 8013
+CurrentVersion: 0.8.15
+CurrentVersionCode: 8015

@@ -97,7 +97,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '2.516'
+    versionCode: 516
+    commit: v2.516
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.517'
+    versionCode: 517
+    commit: v2.517
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.518'
+    versionCode: 518
+    commit: v2.518
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.519'
+    versionCode: 519
+    commit: v2.519
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '2.515'
-CurrentVersionCode: 515
+CurrentVersion: '2.519'
+CurrentVersionCode: 519

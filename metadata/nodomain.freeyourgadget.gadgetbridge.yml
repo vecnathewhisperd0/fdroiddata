@@ -1202,7 +1202,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.44.2
+    versionCode: 175
+    commit: 0.44.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.45.0
+    versionCode: 176
+    commit: 0.45.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.45.1
+    versionCode: 177
+    commit: 0.45.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.44.1
-CurrentVersionCode: 174
+CurrentVersion: 0.45.1
+CurrentVersionCode: 177

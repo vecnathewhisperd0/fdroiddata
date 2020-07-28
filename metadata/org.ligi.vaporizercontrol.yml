@@ -7,7 +7,7 @@ AuthorWebSite: https://ligi.de/
 SourceCode: https://github.com/ligi/VaporizerControl
 IssueTracker: https://github.com/ligi/VaporizerControl/issues
 
-AutoName: Vaporizer Control Crafty
+AutoName: Vaporizer Control
 Description: Control your vaporizer ( currently only crafty ) with this app.
 
 RepoType: git
@@ -65,18 +65,6 @@ Builds:
   - versionName: '1.8'
     versionCode: 18
     commit: '1.8'
-    subdir: mobile
-    gradle:
-      - yes
-    rm:
-      - wear
-    prebuild:
-      - sed -i -e '/android-sdk-manager/d' -e '/play-services/d' build.gradle
-      - echo "include ':mobile'" > ../settings.gradle
-
-  - versionName: '1.9'
-    versionCode: 19
-    commit: '1.9'
     subdir: mobile
     gradle:
       - yes
