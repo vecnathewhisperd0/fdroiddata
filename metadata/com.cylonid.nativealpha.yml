@@ -1,0 +1,35 @@
+Categories:
+  - Internet
+  - System
+License: AGPL-3.0-or-later
+SourceCode: https://github.com/cylonid/NativeAlphaForAndroid
+IssueTracker: https://github.com/cylonid/NativeAlphaForAndroid/issues
+Donate: https://paypal.me/cylonid
+
+Name: Native Alpha
+Summary: Shortcut Creator for Web Apps
+Description: |-
+    Description of what the app does, starting on a new line. It should be as
+    objective as possible and wrapped at 80 chars (except links and list
+    items).
+
+    A blank line means a line break, i.e. the end of a paragraph.
+
+    Bulleted lists can be used:
+
+    * Item 1
+    * Item 2
+
+RepoType: git
+Repo: https://github.com/cylonid/NativeAlphaForAndroid
+
+Builds:
+  - versionName: 0.82.1
+    versionCode: 1
+    commit: 8c818cdaf30878d595e1a3964b7de8bc50e5b411
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
