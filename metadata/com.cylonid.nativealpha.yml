@@ -7,18 +7,16 @@ IssueTracker: https://github.com/cylonid/NativeAlphaForAndroid/issues
 Donate: https://paypal.me/cylonid
 
 Name: Native Alpha
-Summary: Shortcut Creator for Web Apps
+Summary: Shortcut creator for Full screen Web Apps with custom settings
 Description: |-
-    Description of what the app does, starting on a new line. It should be as
-    objective as possible and wrapped at 80 chars (except links and list
-    items).
-
-    A blank line means a line break, i.e. the end of a paragraph.
-
-    Bulleted lists can be used:
-
-    * Item 1
-    * Item 2
+    Features
+    * Show any website in a borderless full-screen window using Android System WebView.
+    * Offers to create home screen shortcuts and retrieves icons in suitable resolution.
+    * Various settings (JavaScript, Cookies, Third-Party-Cookies, AdBlock) can be set for every web app individually
+    * Navigation with multi-touch gestures while browsing.
+    * Opt-in adblock using an AdBlock Plus custom webview.
+    * Less memory footprint and no privacy-invading app permissions in comparison to native apps
+    * Dark mode for Android 10+
 
 RepoType: git
 Repo: https://github.com/cylonid/NativeAlphaForAndroid
