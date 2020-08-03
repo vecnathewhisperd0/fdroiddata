@@ -1,0 +1,34 @@
+Categories:
+  - Internet
+  - Graphics
+License: GPL-3.0-or-later
+SourceCode: https://github.com/vauvenal5/yaga
+IssueTracker: https://github.com/vauvenal5/yaga/issues
+Changelog: https://github.com/vauvenal5/yaga/releases
+
+Name: Nextcloud Yaga
+AutoName: Yaga
+Description: |-
+    Nextcloud Yaga - A Nextcloud first gallery app for Android.
+
+    For details on the development state and currently implemented features, have a look on the Github page.
+
+RepoType: git
+Repo: https://github.com/vauvenal5/yaga.git
+
+Builds:
+  - versionName: 0.7.4
+    versionCode: 74
+    commit: v0.7.4
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@1.17.5
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk --flavor fdroid
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+UpdateCheckIgnore: (alpha|beta|rc|RC|dev)
+CurrentVersion: 0.7.4
+CurrentVersionCode: 74
