@@ -4,7 +4,7 @@ AntiFeatures:
 Categories:
   - Multimedia
 License: MIT
-WebSite: http://jadn.com/carcast
+WebSite: http://jadn.com/cc
 SourceCode: https://github.com/bherrmann7/Car-Cast
 IssueTracker: https://github.com/bherrmann7/Car-Cast/issues
 
@@ -14,9 +14,8 @@ Description: |-
     daily commute; it features big buttons, large text and remembers the last played
     location.
 
-    # Subscribe to podcasts by searching or adding feed urls (opml in next version)
-    # Download 1,2,3 etc. most recent podcasts for each feed
-    # Playback in car/gym (no network needed)
+    # Subscribe to podcasts by searching or adding feed urls (no opml yet)
+    # Download x most recent podcasts for each feed
 
     Admob was removed before building. Anti-feature: Tracking. Usage data is sent by
     default though it can be disabled in settings.
