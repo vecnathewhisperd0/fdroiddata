@@ -151,7 +151,56 @@ Builds:
     gradle:
       - scMain
 
+  - versionName: 7.9.3
+    versionCode: 98
+    commit: v7.9.3
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 7.10.1
+    versionCode: 100
+    commit: v7.10.1
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 7.11.0
+    versionCode: 102
+    commit: v7.11.0
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 7.12.0
+    versionCode: 103
+    commit: v7.12.0
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 7.13.0
+    versionCode: 104
+    commit: v7.13.0
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 7.14.0
+    versionCode: 105
+    commit: v7.14.0
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 7.14.1
+    versionCode: 106
+    commit: v7.14.1
+    subdir: app
+    gradle:
+      - scMain
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 7.9.2
-CurrentVersionCode: 97
+CurrentVersion: 7.14.1
+CurrentVersionCode: 106

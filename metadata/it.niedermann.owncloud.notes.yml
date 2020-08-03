@@ -575,7 +575,31 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 2.16.4
+    versionCode: 2016004
+    commit: v2.16.4
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 2.16.5
+    versionCode: 2016005
+    commit: v2.16.5
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 2.16.7
+    versionCode: 2016007
+    commit: v2.16.7
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.16.3
-CurrentVersionCode: 2016003
+CurrentVersion: 2.16.7
+CurrentVersionCode: 2016007

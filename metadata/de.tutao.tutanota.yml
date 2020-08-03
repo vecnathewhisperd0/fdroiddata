@@ -823,9 +823,9 @@ Builds:
       - npm install
       - node dist prod
 
-  - versionName: 3.75.1
-    versionCode: 375010
-    commit: tutanota-android-release-3.75.1
+  - versionName: 3.75.3
+    versionCode: 375030
+    commit: tutanota-android-release-3.75.3
     subdir: app-android/app
     sudo:
       - curl -Lo node.tar.xz https://nodejs.org/dist/v10.11.0/node-v10.11.0-linux-x64.tar.xz
@@ -835,14 +835,18 @@ Builds:
       - cp -a node-v10.11.0-linux-x64/. /usr/local/
     gradle:
       - yes
+    rm:
+      - app-ios
     prebuild:
       - cd ../..
-      - rm -rf app-ios
       - node fdroid-fix-deps
       - npm install
       - node dist prod
+    scandelete:
+      - node_modules/mithril/dist/archive/*/mithril.min.zip
+      - node_modules/semver/*.gz
 
 AutoUpdateMode: Version tutanota-android-release-%v
 UpdateCheckMode: Tags tutanota-android-release-*
-CurrentVersion: 3.75.1
-CurrentVersionCode: 375010
+CurrentVersion: 3.75.3
+CurrentVersionCode: 375030

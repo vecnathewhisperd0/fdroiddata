@@ -19,8 +19,6 @@ Description: |-
     * Copy&paste to and from Android.
     * Bookmarking of connections.
 
-    Versions 1.x.x are based on android-vnc-viewer, so do NOT support encryption nor connecting to OS X. Please hang on till 2.x.x is released!
-
 RepoType: git
 Repo: https://github.com/bk138/multivnc
 
@@ -169,16 +167,33 @@ Builds:
     scanignore:
       - contrib
 
-  - versionName: 1.8.11
-    versionCode: 66
-    commit: AndroidMultiVNC-1.8.11
+  - versionName: 1.9.0
+    versionCode: 67
+    commit: AndroidMultiVNC-1.9.0
     subdir: android/app
+    submodules: true
     gradle:
       - yes
+    prebuild: ../../prepareLibreSSL.sh
     scanignore:
       - contrib
+      - android/app/libs/
+    ndk: r21d
+
+  - versionName: 1.9.2
+    versionCode: 70
+    commit: AndroidMultiVNC-1.9.2
+    subdir: android/app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: ../../prepareLibreSSL.sh
+    scanignore:
+      - contrib
+      - android/app/libs/
+    ndk: r21d
 
 AutoUpdateMode: Version AndroidMultiVNC-%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.11
-CurrentVersionCode: 66
+CurrentVersion: 1.9.2
+CurrentVersionCode: 70

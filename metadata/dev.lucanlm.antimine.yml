@@ -83,25 +83,33 @@ Builds:
       - foss
     prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
 
-  - versionName: 7.2.3
-    versionCode: 702031
-    commit: 7.2.3
+  - versionName: 7.2.7
+    versionCode: 702071
+    commit: 7.2.7
     subdir: app
     gradle:
       - foss
     prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
 
-  - versionName: 7.2.4
-    versionCode: 702041
-    commit: 7.2.4
+  - versionName: 7.3.0
+    versionCode: 703001
+    commit: 7.3.0
     subdir: app
     gradle:
       - foss
     prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
 
-  - versionName: 7.2.6
-    versionCode: 702061
-    commit: 7.2.6
+  - versionName: 7.3.1
+    versionCode: 703011
+    commit: 7.3.1
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/play-services/d' ../proprietary/build.gradle ../wear/build.gradle
+
+  - versionName: 7.3.2
+    versionCode: 703021
+    commit: 7.3.2
     subdir: app
     gradle:
       - foss
@@ -109,5 +117,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 7.2.6
-CurrentVersionCode: 702061
+CurrentVersion: 7.3.2
+CurrentVersionCode: 703021
