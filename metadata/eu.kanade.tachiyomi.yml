@@ -331,8 +331,6 @@ Builds:
         android.app.AlertDialog.Builder(activity).setTitle(R.string.licenses).setView(webView).setPositiveButton(R.string.action_close,
         android.content.DialogInterface.OnClickListener { dialog, whichButton -> dialog.dismiss()
         }).show()/g' src/main/java/eu/kanade/tachiyomi/ui/more/AboutController.kt
-    scanignore:
-      - buildSrc
     preassemble:
       - licenseFdroidReleaseReport
 
