@@ -322,8 +322,6 @@ Builds:
     prebuild:
       - sed -i -e '/play-services/d; /firebase/d' build.gradle
       - sed -i -e '/google-services/d' -e '/oss-licenses/d' ../build.gradle.kts build.gradle
-    scanignore:
-      - buildSrc
 
   - versionName: 0.10.2
     versionCode: 48
@@ -334,8 +332,6 @@ Builds:
     prebuild:
       - sed -i -e '/play-services/d; /firebase/d' build.gradle
       - sed -i -e '/google-services/d' -e '/oss-licenses/d' ../build.gradle.kts build.gradle
-    scanignore:
-      - buildSrc
 
   - versionName: 0.10.3
     versionCode: 49
@@ -346,8 +342,6 @@ Builds:
     prebuild:
       - sed -i -e '/play-services/d; /firebase/d' build.gradle
       - sed -i -e '/google-services/d' -e '/oss-licenses/d' ../build.gradle.kts build.gradle
-    scanignore:
-      - buildSrc
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
