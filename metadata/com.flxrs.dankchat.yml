@@ -219,7 +219,55 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.9.10
+    versionCode: 145
+    commit: v1.9.10
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 1.9.11
+    versionCode: 146
+    commit: v1.9.11
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 1.9.12
+    versionCode: 147
+    commit: v1.9.12
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 1.9.13
+    versionCode: 148
+    commit: v1.9.13
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 1.9.15
+    versionCode: 150
+    commit: v1.9.15
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 1.9.18
+    versionCode: 153
+    commit: v1.9.18
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.6
-CurrentVersionCode: 142
+CurrentVersion: 1.9.18
+CurrentVersionCode: 153

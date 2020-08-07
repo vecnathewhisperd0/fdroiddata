@@ -18,7 +18,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.3.7
+    versionCode: 10
+    commit: 0.3.7
+    subdir: java/PlanesAndroid/app
+    gradle:
+      - yes
+
+  - versionName: 0.3.8
+    versionCode: 11
+    commit: 0.3.8
+    subdir: java/PlanesAndroid/app
+    gradle:
+      - yes
+
+  - versionName: 0.3.9
+    versionCode: 12
+    commit: 0.3.9
+    subdir: java/PlanesAndroid/app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.3.6
-CurrentVersionCode: 9
+CurrentVersion: 0.3.9
+CurrentVersionCode: 12

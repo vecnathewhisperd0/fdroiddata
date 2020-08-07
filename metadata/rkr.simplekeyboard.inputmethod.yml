@@ -239,7 +239,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '3.21'
+    versionCode: 71
+    commit: '71'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.22'
+    versionCode: 72
+    commit: '72'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.23'
+    versionCode: 73
+    commit: '73'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %c
 UpdateCheckMode: Tags
-CurrentVersion: '3.20'
-CurrentVersionCode: 70
+CurrentVersion: '3.23'
+CurrentVersionCode: 73

@@ -282,7 +282,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.15.1
+    versionCode: 212
+    commit: v0.15.1
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.15.5
+    versionCode: 215
+    commit: v0.15.5
+    subdir: FlymFork
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.14.2
-CurrentVersionCode: 208
+CurrentVersion: 0.15.5
+CurrentVersionCode: 215

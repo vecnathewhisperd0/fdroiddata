@@ -1,3 +1,5 @@
+AntiFeatures:
+  - NonFreeAssets
 Categories:
   - Multimedia
   - Internet
@@ -310,7 +312,19 @@ Builds:
     versionCode: 71001
     commit: 7.10.1
 
+  - versionName: 7.10.2
+    versionCode: 71002
+    commit: 7.10.2
+
+  - versionName: 7.11.0
+    versionCode: 71100
+    commit: 7.11.0
+    rm:
+      - icon/material-adaptive-render-icon.zip
+      - icon/material-render-actionbar.zip
+      - icon/material-render-icon.zip
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 7.10.1
-CurrentVersionCode: 71001
+CurrentVersion: 7.11.0
+CurrentVersionCode: 71100

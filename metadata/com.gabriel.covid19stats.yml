@@ -29,9 +29,9 @@ Builds:
       - $$flutter$$/bin/flutter config --no-analytics
     build: $$flutter$$/bin/flutter build apk
 
-  - versionName: 1.4.0
-    versionCode: 5
-    commit: v1.4.0
+  - versionName: 1.6.0
+    versionCode: 7
+    commit: v1.6
     output: build/app/outputs/apk/release/app-release.apk
     srclibs:
       - flutter@1.17.1
@@ -44,5 +44,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/GabrielTavernini/Covid19Stats/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 1.4.0
-CurrentVersionCode: 5
+CurrentVersion: 1.6.0
+CurrentVersionCode: 7

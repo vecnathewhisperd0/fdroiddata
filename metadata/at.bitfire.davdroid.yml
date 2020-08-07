@@ -1308,7 +1308,63 @@ Builds:
     gradle:
       - standard
 
+  - versionName: 3.1-ose
+    versionCode: 301000012
+    commit: v3.1-ose
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 3.1.1-ose
+    versionCode: 301010002
+    commit: v3.1.1-ose
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 3.2-ose
+    versionCode: 302000003
+    commit: v3.2-ose
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 3.2.1-ose
+    versionCode: 302010000
+    commit: v3.2.1-ose
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 3.2.1.1-ose
+    versionCode: 302010100
+    commit: v3.2.1.1-ose
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 3.2.1.3-ose
+    versionCode: 302010300
+    commit: v3.2.1.3-ose
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 3.2.1.4-ose
+    versionCode: 302010401
+    commit: v3.2.1.4-ose
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9.]+-ose[0-9]*$
-CurrentVersion: 3.0-ose2
-CurrentVersionCode: 300000004
+CurrentVersion: 3.2.1.4-ose
+CurrentVersionCode: 302010401
