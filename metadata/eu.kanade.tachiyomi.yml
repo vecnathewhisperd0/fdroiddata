@@ -314,25 +314,16 @@ Builds:
 
   - versionName: 0.9.2
     versionCode: 45
+    disable: non-foss oss-licenses
     commit: v0.9.2
     subdir: app
     gradle:
       - fdroid
     prebuild:
       - sed -i -e '/play-services/d; /firebase/d' build.gradle
-      - sed -i -e '/google-services/d' ../build.gradle.kts build.gradle
-      - sed -i 's/com.google.android.gms.oss-licenses-plugin/com.jaredsburrows.license/g'
-        build.gradle
-      - sed -i 's/com.google.android.gms:oss-licenses-plugin:[0-9.]*/com.jaredsburrows:gradle-license-plugin:0.8.80/g'
-        ../build.gradle.kts
-      - sed -i -e '/com.google.android.gms/d' src/main/java/eu/kanade/tachiyomi/ui/more/AboutController.kt
-      - sed -i 's/startActivity(Intent(activity, OssLicensesMenuActivity::class.java))/val
-        webView = android.webkit.WebView(activity); webView.loadUrl(\"file:\/\/\/android_asset\/open_source_licenses.html\");
-        android.app.AlertDialog.Builder(activity).setTitle(R.string.licenses).setView(webView).setPositiveButton(R.string.action_close,
-        android.content.DialogInterface.OnClickListener { dialog, whichButton -> dialog.dismiss()
-        }).show()/g' src/main/java/eu/kanade/tachiyomi/ui/more/AboutController.kt
-    preassemble:
-      - licenseFdroidReleaseReport
+      - sed -i -e '/google-services/d' -e '/oss-licenses/d' ../build.gradle.kts build.gradle
+    scanignore:
+      - buildSrc
 
   - versionName: 0.10.2
     versionCode: 48
