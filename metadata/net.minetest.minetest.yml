@@ -183,14 +183,14 @@ Builds:
       - make release
     ndk: r16b
 
-    versionName: 5.3.0.27
+  - versionName: 5.3.0.27
     versionCode: 27
     commit: 5.3.0
     subdir: build/android
     output: build/outputs/apk/release/Minetest-release-unsigned.apk
     srclibs:
       - MinetestGame@5.3.0
-    prebuild: 
+    prebuild:
       - sed -ie 's/\.\/gradlew/gradle/g' Makefile
       - cp -R $$MinetestGame$$ ../../games/minetest_game
     build:
