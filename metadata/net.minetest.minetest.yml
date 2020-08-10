@@ -183,8 +183,8 @@ Builds:
       - make release
     ndk: r16b
 
-  - versionName: 5.3.0.27
-    versionCode: 27
+  - versionName: 5.3.0.30
+    versionCode: 30
     commit: 5.3.0
     subdir: build/android
     output: build/outputs/apk/release/Minetest-release-unsigned.apk
@@ -200,5 +200,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 5.3.0.27
-CurrentVersionCode: 27
+CurrentVersion: 5.3.0.30
+CurrentVersionCode: 30
