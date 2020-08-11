@@ -200,6 +200,6 @@ Builds:
     ndk: r16b
 
 AutoUpdateMode: None
-UpdateCheckMode: Tags 
+UpdateCheckMode: None
 CurrentVersion: 5.3.0.30
 CurrentVersionCode: 30
