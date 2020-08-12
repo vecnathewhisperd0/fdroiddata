@@ -188,9 +188,10 @@ Builds:
     versionCode: 30
     commit: 5.3.0
     subdir: build/android
+    gradle:
+      - yes
     output: build/outputs/apk/release/Minetest-release-unsigned.apk
     ndk: r16b
-    gradle: yes
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
