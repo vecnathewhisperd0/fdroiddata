@@ -113,9 +113,9 @@ Builds:
     prebuild:
       - sed -i -e 's/\.\/gradlew/gradle/g' Makefile
       - cp -R $$MinetestGame$$ ../../games/minetest_game
-      - sed -i -e '/patch -p1 < \${ANDR_ROOT}\/patches\/irrlicht-texturehack\.patch
+      - sed -i -e /patch -p1 < \${ANDR_ROOT}\/patches\/irrlicht-texturehack\.patch
         || exit 1; \\/a \\t\tdos2unix ${ANDR_ROOT}/deps/irrlicht/source/Irrlicht/CEGLManager.cpp
-        || exit 1; \\' Makefile'
+        || exit 1; \\' Makefile
     build:
       - printf "%s\n%s" "ndk.dir = $$NDK$$" "sdk.dir = $$SDK$$" > local.properties
       - make release
