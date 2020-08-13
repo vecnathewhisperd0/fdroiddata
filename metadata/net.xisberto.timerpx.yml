@@ -14,7 +14,7 @@ Repo: https://gitlab.com/humbertofraga/timerx.git
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: 4ad988045f6af67fc271f94677676e9443c4a9d9
+    commit: 4aa930d12858b0ca108c89754022b95c73a5a60f
     subdir: app
     gradle:
       - yes
