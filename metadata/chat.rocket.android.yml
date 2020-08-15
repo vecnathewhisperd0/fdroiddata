@@ -4,9 +4,9 @@ License: MIT
 AuthorName: Rocket.Chat Team
 AuthorEmail: contact@rocket.chat
 WebSite: https://rocket.chat/
-SourceCode: https://github.com/RocketChat/Rocket.Chat.Android
-IssueTracker: https://github.com/RocketChat/Rocket.Chat.Android/issues
-Changelog: https://github.com/RocketChat/Rocket.Chat.Android/releases
+SourceCode: https://github.com/RocketChat/Rocket.Chat.ReactNative
+IssueTracker: https://github.com/RocketChat/Rocket.Chat.ReactNative/issues
+Changelog: https://github.com/RocketChat/Rocket.Chat.ReactNative/releases
 Donate: https://github.com/RocketChat/Rocket.Chat#donate
 
 AutoName: Rocket.Chat
@@ -55,7 +55,7 @@ Description: |
     * ONE-CLICK-DEPLOYMENT – See instructions on our GitHub repository: [https://github.com/RocketChat]
 
 RepoType: git
-Repo: https://github.com/RocketChat/Rocket.Chat.Android.git
+Repo: https://github.com/RocketChat/Rocket.Chat.ReactNative.git
 
 Builds:
   - versionName: 2.6.0
