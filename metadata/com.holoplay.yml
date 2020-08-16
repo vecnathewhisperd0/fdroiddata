@@ -1,0 +1,43 @@
+Categories:
+  - Multimedia
+License: MIT License
+SourceCode: https://github.com/stephane-r/HoloPlay
+IssueTracker: https://github.com/stephane-r/HoloPlay/issues
+Changelog: https://github.com/stephane-r/HoloPlay/releases
+
+AutoName: HoloPlay
+Description: |-
+  HoloPlay is a Youtube alternative app using Invidious API. You can add your Invidious token and save music to favoris or create your playlists.
+
+  Features :
+
+  - Search by video and playlist
+  - Live video
+  - Create your playlists
+  - Save on favoris
+  - Downloading video
+  - Background mode
+  - Offline
+  - Work on Android Auto
+  - Respect your privacy
+  - Open Source
+  - Cloud Syncing
+  - Dark Theme
+
+  HoloPlay is an open source project and can be found at https://github.com/stephane-r/HoloPlay and https://stephane-r.github.io/HoloPlay-LP/
+
+RepoType: git
+Repo: https://github.com/stephane-r/HoloPlay
+
+Builds:
+  - versionName: 1.8.5
+    versionCode: 6
+    commit: 1.8.5
+    subdir: android
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.8.5
+CurrentVersionCode: 6
