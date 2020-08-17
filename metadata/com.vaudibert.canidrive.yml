@@ -9,9 +9,9 @@ Repo: https://github.com/VincentAudibert/CanIDrive
 
 Builds:
   - versionName: 0.2.4
-    versionCode: 12
+    versionCode: 17
     commit: 0.2.4
-    timeout: 1200
+    timeout: 7200
     subdir: app
     gradle:
       - yes
