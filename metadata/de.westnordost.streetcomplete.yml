@@ -444,6 +444,7 @@ Builds:
 
   - versionName: 18.0-beta1
     versionCode: 1800
+    disable: beta
     commit: v18.0-beta1
     subdir: app
     gradle:
@@ -456,8 +457,106 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 19.0-alpha1
+    versionCode: 1900
+    disable: beta
+    commit: v19.0-alpha1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '19.0'
+    versionCode: 1902
+    commit: v19.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '19.1'
+    versionCode: 1903
+    commit: v19.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '19.2'
+    versionCode: 1904
+    commit: v19.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '20.0'
+    versionCode: 2002
+    commit: v20.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '20.1'
+    versionCode: 2003
+    commit: v20.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '20.2'
+    versionCode: 2004
+    commit: v20.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '21.0'
+    versionCode: 2101
+    commit: v21.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '21.1'
+    versionCode: 2102
+    commit: v21.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '21.2'
+    versionCode: 2103
+    commit: v21.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '22.0'
+    versionCode: 2201
+    commit: v22.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '22.1'
+    versionCode: 2202
+    commit: v22.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '22.2'
+    versionCode: 2203
+    commit: v22.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v22.3
+    versionCode: 2204
+    commit: vv22.3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-UpdateCheckIgnore: (alpha|beta|rc|RC)
-CurrentVersion: '18.0'
-CurrentVersionCode: 1801
+UpdateCheckMode: Tags ^v\d+(\.\d+)?$
+CurrentVersion: v22.3
+CurrentVersionCode: 2204

@@ -6,7 +6,7 @@ SourceCode: https://gitlab.com/fdroid/fdroidclient
 IssueTracker: https://gitlab.com/fdroid/fdroidclient/issues
 Translation: https://hosted.weblate.org/projects/f-droid/f-droid
 Changelog: https://gitlab.com/fdroid/fdroidclient/raw/HEAD/CHANGELOG.md
-Donate: https://f-droid.org/about
+Donate: https://f-droid.org/donate
 FlattrID: '343053'
 LiberapayID: '27859'
 Bitcoin: 15u8aAPK4jJ5N8wpWJ5gutAyyeHtKX5i18
@@ -1451,8 +1451,59 @@ Builds:
     gradle:
       - full
 
+  - versionName: '1.8'
+    versionCode: 1008050
+    commit: '1.8'
+    subdir: app
+    sudo: apt-get update; apt-get update; apt-get install -y disorderfs
+    init:
+      - cd ../..
+      - mv org.fdroid.fdroid org.fdroid.fdroid.build
+      - mkdir org.fdroid.fdroid
+      - disorderfs --sort-dirents=yes --reverse-dirents=no org.fdroid.fdroid.build
+        org.fdroid.fdroid
+    gradle:
+      - full
+    scanignore:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+
+  - versionName: '1.9'
+    versionCode: 1009000
+    commit: '1.9'
+    subdir: app
+    sudo: apt-get update; apt-get update; apt-get install -y disorderfs
+    init:
+      - cd ../..
+      - mv org.fdroid.fdroid org.fdroid.fdroid.build
+      - mkdir org.fdroid.fdroid
+      - disorderfs --sort-dirents=yes --reverse-dirents=no org.fdroid.fdroid.build
+        org.fdroid.fdroid
+    gradle:
+      - full
+    scanignore:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+
+  - versionName: 1.10-alpha0
+    versionCode: 1010000
+    commit: 1.10-alpha0
+    subdir: app
+    sudo: apt-get update; apt-get update; apt-get install -y disorderfs
+    init:
+      - cd ../..
+      - mv org.fdroid.fdroid org.fdroid.fdroid.build
+      - mkdir org.fdroid.fdroid
+      - disorderfs --sort-dirents=yes --reverse-dirents=no org.fdroid.fdroid.build
+        org.fdroid.fdroid
+    gradle:
+      - full
+    scanignore:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+
 ArchivePolicy: 12 versions
 AutoUpdateMode: None
 UpdateCheckMode: Static
-CurrentVersion: 1.7.1
-CurrentVersionCode: 1007051
+CurrentVersion: '1.9'
+CurrentVersionCode: 1009000

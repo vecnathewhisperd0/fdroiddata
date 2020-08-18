@@ -508,15 +508,97 @@ Builds:
     submodules: true
     gradle:
       - foss
-    prebuild:
-      - sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
         ../CommonUtils/build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     scandelete:
       - aria2lib/src/main/jniLibs
     ndk: r21
 
+  - versionName: 5.7.0
+    versionCode: 206
+    commit: v5.7.0
+    timeout: 14400
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+    scandelete:
+      - aria2lib/src/main/jniLibs
+    ndk: r21
+
+  - versionName: 5.7.1
+    versionCode: 207
+    commit: v5.7.1
+    timeout: 14400
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+    scandelete:
+      - aria2lib/src/main/jniLibs
+    ndk: r21
+
+  - versionName: 5.7.2
+    versionCode: 208
+    commit: v5.7.2
+    timeout: 14400
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+    scandelete:
+      - aria2lib/src/main/jniLibs
+    ndk: r21
+
+  - versionName: 5.7.3
+    versionCode: 209
+    commit: v5.7.3
+    timeout: 14400
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+    scandelete:
+      - aria2lib/src/main/jniLibs
+    ndk: r21b
+
+  - versionName: 5.8.0
+    versionCode: 210
+    commit: v5.8.0
+    timeout: 14400
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+    scandelete:
+      - aria2lib/src/main/jniLibs
+    ndk: r21d
+
+  - versionName: 5.8.1
+    versionCode: 211
+    commit: v5.8.1
+    timeout: 14400
+    subdir: app
+    submodules: true
+    gradle:
+      - foss
+    prebuild: sed -i -e '/maven.fabric.io/d' -e '/io.fabric/d' build.gradle ../build.gradle
+        ../CommonUtils/build.gradle
+    scandelete:
+      - aria2lib/src/main/jniLibs
+    ndk: r21d
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 5.6.6
-CurrentVersionCode: 205
+CurrentVersion: 5.8.1
+CurrentVersionCode: 211

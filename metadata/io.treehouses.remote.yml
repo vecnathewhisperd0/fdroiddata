@@ -1,0 +1,160 @@
+AntiFeatures:
+  - Tracking
+Categories:
+  - Connectivity
+License: AGPL-3.0-only
+AuthorName: treehouses
+AuthorWebSite: https://treehouses.io/
+SourceCode: https://github.com/treehouses/remote
+IssueTracker: https://github.com/treehouses/remote/issues
+
+AutoName: Treehouses Remote
+
+RepoType: git
+Repo: https://gitlab.com/treehouses/remote.git
+
+Builds:
+  - versionName: '4176'
+    versionCode: 4176
+    commit: fdroid-4176
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4246'
+    versionCode: 4246
+    commit: fdroid-4246
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4326'
+    versionCode: 4326
+    commit: fdroid-4326
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4356'
+    versionCode: 4356
+    commit: fdroid-4356
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4450'
+    versionCode: 4450
+    commit: fdroid-4450
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4490'
+    versionCode: 4490
+    commit: fdroid-4490
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4504'
+    versionCode: 4504
+    commit: fdroid-4504
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4561'
+    versionCode: 4561
+    commit: fdroid-4561
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4597'
+    versionCode: 4597
+    commit: fdroid-4597
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4661'
+    versionCode: 4661
+    commit: fdroid-4661
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4859'
+    versionCode: 4859
+    commit: fdroid-4859
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4936'
+    versionCode: 4936
+    commit: fdroid-4936
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4950'
+    versionCode: 4950
+    commit: fdroid-4950
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4954'
+    versionCode: 4954
+    commit: fdroid-4954
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4968'
+    versionCode: 4968
+    commit: fdroid-4968
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5034'
+    versionCode: 5034
+    commit: fdroid-5034
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5075'
+    versionCode: 5075
+    commit: fdroid-5075
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5093'
+    versionCode: 5093
+    commit: fdroid-5093
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5121'
+    versionCode: 5121
+    commit: fdroid-5121
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5136'
+    versionCode: 5136
+    commit: fdroid-5136
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version fdroid-%v
+UpdateCheckMode: Tags fdroid-[0-9]+
+CurrentVersion: '5136'
+CurrentVersionCode: 5136

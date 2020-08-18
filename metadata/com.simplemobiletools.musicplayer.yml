@@ -405,9 +405,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
 
   - versionName: 5.2.7
     versionCode: 65
@@ -415,11 +413,41 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.3.0
+    versionCode: 66
+    commit: 5.3.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.3.1
+    versionCode: 67
+    commit: 5.3.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.3.2
+    versionCode: 68
+    commit: 5.3.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.3.3
+    versionCode: 69
+    commit: 5.3.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 5.2.7
-CurrentVersionCode: 65
+CurrentVersion: 5.3.3
+CurrentVersionCode: 69

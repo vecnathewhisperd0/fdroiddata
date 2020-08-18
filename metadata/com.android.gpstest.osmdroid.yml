@@ -295,7 +295,55 @@ Builds:
       - osmdroid
     prebuild: sed -i -e '/theTask.dependsOn "askForPasswords"/d' build.gradle
 
+  - versionName: 3.6.4
+    versionCode: 18066
+    commit: v3.6.4
+    subdir: GPSTest
+    gradle:
+      - osmdroid
+    prebuild: sed -i -e '/theTask.dependsOn "askForPasswords"/d' build.gradle
+
+  - versionName: 3.7.0
+    versionCode: 18067
+    commit: v3.7.0
+    subdir: GPSTest
+    gradle:
+      - osmdroid
+    prebuild: sed -i -e '/theTask.dependsOn "askForPasswords"/d' build.gradle
+
+  - versionName: 3.7.1
+    versionCode: 18068
+    commit: v3.7.1
+    subdir: GPSTest
+    gradle:
+      - osmdroid
+    prebuild: sed -i -e '/theTask.dependsOn "askForPasswords"/d' build.gradle
+
+  - versionName: 3.7.2
+    versionCode: 18069
+    commit: v3.7.2
+    subdir: GPSTest
+    gradle:
+      - osmdroid
+    prebuild: sed -i -e '/theTask.dependsOn "askForPasswords"/d' build.gradle
+
+  - versionName: 3.7.3
+    versionCode: 18070
+    commit: v3.7.3
+    subdir: GPSTest
+    gradle:
+      - osmdroid
+    prebuild: sed -i -e '/theTask.dependsOn "askForPasswords"/d' build.gradle
+
+  - versionName: 3.7.4
+    versionCode: 18071
+    commit: v3.7.4
+    subdir: GPSTest
+    gradle:
+      - osmdroid
+    prebuild: sed -i -e '/theTask.dependsOn "askForPasswords"/d' build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.6.3
-CurrentVersionCode: 18065
+CurrentVersion: 3.7.4
+CurrentVersionCode: 18071

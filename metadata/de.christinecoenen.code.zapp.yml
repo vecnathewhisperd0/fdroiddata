@@ -272,7 +272,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 3.4.0
+    versionCode: 40
+    commit: v3.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.5.0-beta.1
+    versionCode: 41
+    commit: v3.5.0-beta.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.3.1
-CurrentVersionCode: 39
+CurrentVersion: 3.5.0-beta.1
+CurrentVersionCode: 41

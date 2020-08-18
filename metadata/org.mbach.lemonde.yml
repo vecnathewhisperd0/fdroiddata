@@ -8,7 +8,7 @@ IssueTracker: https://github.com/MBach/LeMondeRssReader/issues
 Changelog: https://github.com/MBach/LeMondeRssReader/releases
 Bitcoin: 39RBokXr4V9FPpuF7v1bM6PYcbgRRApp9W
 
-AutoName: LeMonde
+AutoName: LeMondeRssReader
 
 RepoType: git
 Repo: https://github.com/MBach/LeMondeRssReader.git
@@ -152,7 +152,7 @@ Builds:
         ../build.gradle
       - sed -i -e 's/gradle-4.10/gradle-5.6.2/' gradle/wrapper/gradle-wrapper.properties
 
-AutoUpdateMode: Version v%v
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: '1.21'
-CurrentVersionCode: 21
+CurrentVersion: 2.1.0
+CurrentVersionCode: 23

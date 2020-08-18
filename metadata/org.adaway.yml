@@ -11,16 +11,6 @@ Donate: https://paypal.me/BruceBUJON
 FlattrID: '369138'
 
 AutoName: AdAway
-Description: |-
-    An ad blocker that uses the hosts file. The hosts file contains a list of
-    mappings between hostnames and IP addresses. When an app requests an ad, that
-    request is directed to 127.0.0.1 which does nothing. There are options to run a
-    web server to respond to blocked hostnames and to direct requests to the IP
-    address of your choosing. You can download hosts files from the app but it is
-    possible to use your own and to add certain sites to the white- and black-lists.
-
-    Requires root as the hosts files is located in /system which is normally
-    read-only.
 
 RequiresRoot: 'yes'
 
@@ -501,7 +491,26 @@ Builds:
       - yes
     ndk: r20
 
+  - versionName: 4.3.4
+    versionCode: 40304
+    commit: v4.3.4
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21
+
+  - versionName: 4.3.6
+    versionCode: 40306
+    commit: v4.3.6
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    scanignore:
+      - Resources/symlink_hosts_to_data.zip
+    ndk: r21d
+
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 4.3.2
-CurrentVersionCode: 40302
+UpdateCheckMode: Tags .*[0-9]$
+CurrentVersion: 4.3.6
+CurrentVersionCode: 40306

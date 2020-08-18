@@ -7,7 +7,7 @@ WebSite: https://github.com/OpenTracksApp
 SourceCode: https://github.com/OpenTracksApp/OSMDashboard
 IssueTracker: https://github.com/OpenTracksApp/OSMDashboard/issues
 
-AutoName: OpenTracks - OSM Dashboard
+AutoName: OSM Dashboard for OpenTracks
 
 RepoType: git
 Repo: https://github.com/OpenTracksApp/OSMDashboard.git
@@ -48,7 +48,44 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.6.0
+    versionCode: 8
+    commit: v1.6.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0
+    versionCode: 9
+    commit: v2.0.0
+    gradle:
+      - yes
+
+  - versionName: 2.0.1
+    versionCode: 10
+    commit: v2.0.1
+    gradle:
+      - yes
+
+  - versionName: 2.1.0
+    versionCode: 11
+    commit: v2.1.0
+    gradle:
+      - yes
+
+  - versionName: 2.2.0
+    versionCode: 12
+    commit: v2.2.0
+    gradle:
+      - yes
+
+  - versionName: 2.3.0
+    versionCode: 13
+    commit: v2.3.0
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.5.0
-CurrentVersionCode: 7
+CurrentVersion: 2.3.0
+CurrentVersionCode: 13

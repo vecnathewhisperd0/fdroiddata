@@ -13,14 +13,14 @@ RepoType: git
 Repo: https://github.com/xbrowsersync/app.git
 
 Builds:
-  - versionName: 1.5.1
-    versionCode: 15101
-    commit: v1.5.1
+  - versionName: 1.5.2
+    versionCode: 15201
+    commit: d231fe657752e9f802f7168e339f4b962dce75d7
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y -t stretch-backports npm
       - npm install -g cordova
-    output: platform/android/cordova/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
+    output: build/cordova/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
     prebuild:
       - npm install
       - pushd platform/android/cordova
@@ -40,11 +40,11 @@ Builds:
       - rm build/cordova/node_modules/cordova-android/spec/fixtures/org.test.plugins.dummyplugin/src/android/testaar2.aar
       - rm build/cordova/node_modules/cordova-android/spec/fixtures/org.test.plugins.dummyplugin/src/android/jniLibs/x86/libnative.so
     build:
-      - cd platform/android/cordova/platforms/android/app
-      - gradle assembleRelease
+      - cd build/cordova
+      - cordova build android --release
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/xbrowsersync/app/master/platform/android/cordova/config.xml|android-versionCode="(\d+)"|.|version="(.*)"
-CurrentVersion: 1.5.1
-CurrentVersionCode: 15101
+CurrentVersion: 1.5.2
+CurrentVersionCode: 15201
