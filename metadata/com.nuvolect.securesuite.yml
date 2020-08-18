@@ -17,14 +17,14 @@ RepoType: git
 Repo: https://github.com/Nuvolect/SecureSuite-Android
 
 Builds:
-  - versionName: 1.5.4
-    versionCode: 15401
-    commit: v1.5.4
+  - versionName: 1.5.5
+    versionCode: 15501
+    commit: v1.5.5
     subdir: SecureSuite
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.5.4
+CurrentVersion: 1.5.5
 CurrentVersionCode: 15401
