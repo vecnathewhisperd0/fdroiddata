@@ -38,7 +38,12 @@ Builds:
     subdir: android/app
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y -t stretch-backports npm
+      - apt-get install -y make
+      - curl https://nodejs.org/dist/v14.8.0/node-v14.8.0.tar.gz
+      - echo "4bc595057f51ce04fdb25a5ef0cee2b7a567e7380806c281294727a4d9bfcfb0 node-v14.8.0-linux-x64.tar.gz" | sha256sum -c -
+      - tar xJf node-v14.8.0.tar.gz
+      - cp -a node-v10.18.1-linux-x64/. /usr/local/
+      - node -v
       - npm -g install yarn
     init: yarn install
     gradle:
