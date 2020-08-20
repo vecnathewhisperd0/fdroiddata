@@ -190,9 +190,9 @@ Builds:
     gradle:
       - yes
     output: app/build/outputs/apk/release/app-arm64-v8a-release-unsigned.apk
-    ndk: r16b
     scanignore:
       - build/android/native/deps/Android/*/*/*/*.a
+    ndk: r16b
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
