@@ -189,8 +189,10 @@ Builds:
     subdir: build/android
     gradle:
       - yes
-    output: build/outputs/apk/release/Minetest-release-unsigned.apk
+    output: app/build/outputs/apk/release/app-arm64-v8a-release-unsigned.apk
     ndk: r16b
+    scanignore:
+      - build/android/native/deps/Android/*/*/*/*.a
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
