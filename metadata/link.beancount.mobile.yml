@@ -28,12 +28,12 @@ Builds:
       - apt update || apt update
       - apt install -y -t stretch-backports npm
       - npm install -g nativescript@6.5.0
+    init: npm install
     output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
     rm:
       - node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/TNSWidgets
       - node_modules/proxy-lib/bin/win32/ia32/CredentialsManager.exe
       - node_modules/proxy-lib/bin/win32/x64/CredentialsManager.exe
-    prebuild: npm install
     build: npm run android-unsigned
 
 AutoUpdateMode: Version v%v
