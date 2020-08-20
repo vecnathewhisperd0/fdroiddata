@@ -1,6 +1,8 @@
 Categories:
   - Multimedia
 License: MIT License
+AuthorName: Stéphane Richin
+AuthorEmail: contact@stephane-richin.fr
 SourceCode: https://github.com/stephane-r/HoloPlay
 IssueTracker: https://github.com/stephane-r/HoloPlay/issues
 Changelog: https://github.com/stephane-r/HoloPlay/releases
@@ -30,14 +32,26 @@ RepoType: git
 Repo: https://github.com/stephane-r/HoloPlay
 
 Builds:
-  - versionName: 1.8.5
-    versionCode: 6
-    commit: 1.8.5
-    subdir: android
+  - versionName: 1.8.9
+    versionCode: 10
+    commit: 1.8.9
+    subdir: android/app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm
+      - npm -g install yarn
+    init: yarn install
     gradle:
       - yes
+    prebuild:
+      - truncate -s 0 node_modules/@react-native-community/cli/build/commands/server/external/xsel
+    scanignore:
+      - android/build.gradle
+      - node_modules/react-native-screens/android/build.gradle
+    scandelete:
+      - node_modules/
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.5
-CurrentVersionCode: 6
+CurrentVersion: 1.8.9
+CurrentVersionCode: 10
