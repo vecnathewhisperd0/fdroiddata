@@ -10,15 +10,20 @@ IssueTracker: https://github.com/thestr4ng3r/chiaki/issues
 Changelog: https://github.com//thestr4ng3r/chiaki/releases
 
 AutoName: Chiaki
-Description: PlayStation 4 Remote Play Client
+Summary: PlayStation 4 Remote Play Client
+Description:
+  Chiaki is a Free and Open Source Software Client for PlayStation 4 Remote Play
+  for Linux, FreeBSD, OpenBSD, Android, macOS, Windows and potentially even more
+  platforms. Everything necessary for a full streaming session, including the
+  initial registration and wakeup of the console, is supported.
 
 RepoType: git
 Repo: https://github.com/thestr4ng3r/chiaki
 
 Builds:
-  - versionName: 1.1.2
-    versionCode: 3
-    commit: v1.1.2
+  - versionName: 1.2.1
+    versionCode: 6
+    commit: v1.2.1
     subdir: android/app
     submodules: true
     sudo:
@@ -31,5 +36,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
-CurrentVersion: 1.1.2
-CurrentVersionCode: 3
+CurrentVersion: 1.2.1
+CurrentVersionCode: 6
