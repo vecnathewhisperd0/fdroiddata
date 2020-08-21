@@ -32,7 +32,7 @@ Builds:
     gradle:
       - yes
     prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.10.2.4988404'
-    ndk: r20
+    ndk: r20b
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
