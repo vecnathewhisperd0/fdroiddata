@@ -1,0 +1,42 @@
+Categories:
+  - Internet
+  - Security
+  - System
+License: MPL-2.0
+AuthorName: AriaLyy
+AuthorEmail: laoyuyu@laoyuyu.me
+SourceCode: https://github.com/AriaLyy/KeepassA/
+IssueTracker: https://github.com/AriaLyy/KeepassA/issues
+Donate: https://www.paypal.com/paypalme/arialyy
+Bitcoin: 1MY7P3fDCmY11vs5H6nB1RiQC5Y6JCufu
+
+AutoName: KeepassA
+Summary: KeepassA is a password management software
+Description: |-
+    And added many commonly used functions on the original basis:
+
+    1. Password automatic filling service based on android native framework
+    2. Fingerprint unlock, use fingerprint one key to unlock the database
+    3. Quick unlock, would you still worry about entering a long database password every time?
+    4. Dropbox synchronization, PC\Android\IOS Keepass database can be synchronized
+    5. Obtain the TOTP and OTP secondary verification codes. You can get the second verification code like Google Authenticator
+    6. Open history record, quickly find the last opened record
+    7. Shortcut, you can quickly open the function of searching and creating items on the mobile phone desktop
+
+RepoType: git
+Repo: https://github.com/AriaLyy/KeepassA.git
+
+Builds:
+  - versionName: '1.1'
+    versionCode: 19
+    commit: 7bf30ca1f950c06e43dbffa51cfcaf798617574d
+    subdir: app
+    gradle:
+      - fdroid
+    rm:
+      - NoFreeLib
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
+CurrentVersion: '1.1'
+CurrentVersionCode: 19
