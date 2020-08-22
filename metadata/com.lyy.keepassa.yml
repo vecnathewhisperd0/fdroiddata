@@ -29,7 +29,7 @@ Repo: https://github.com/AriaLyy/KeepassA.git
 Builds:
   - versionName: '1.1'
     versionCode: 19
-    commit: 7bf30ca1f950c06e43dbffa51cfcaf798617574d
+    commit: 8cbfce36f495e197ae46e7bbbb778e827d12668c
     subdir: app
     gradle:
       - fdroid
