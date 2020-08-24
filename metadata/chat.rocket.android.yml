@@ -150,9 +150,25 @@ Builds:
     gradleprops:
       - sdk_location=../../srclib/rocketchatsdk
 
+  - versionName: 4.11.0
+    versionCode: 2136
+    commit: b80d8a0
+    subdir: android/app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm
+    init: npm install
+    gradle:
+      - foss
+    prebuild: truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
+    scanignore:
+      - android/build.gradle
+    scandelete:
+      - node_modules
+
 MaintainerNotes: We reuse the LIBRE_BUILD jitsi sdk built by riot-android developers.
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 3.5.1
-CurrentVersionCode: 2077
+CurrentVersion: 4.11.0
+CurrentVersionCode: 2136
