@@ -1,0 +1,23 @@
+Categories:
+  - Multimedia
+  - System
+License: MIT
+AuthorName: waylander
+SourceCode: https://github.com/curly-brace/Strober
+IssueTracker: https://github.com/curly-brace/Strober/issues
+
+RepoType: git
+Repo: https://github.com/curly-brace/Strober
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: e2f7c6bfa20b47ea35ab48097ee808716355e148
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
