@@ -23,9 +23,9 @@ RepoType: git
 Repo: https://github.com/krlvm/PowerTunnel-Android
 
 Builds:
-  - versionName: '1.5.2'
-    versionCode: 12
-    commit: 88c823da1ddc13e793c78f978cedfbc6c4569b12
+  - versionName: '1.7.1'
+    versionCode: 15
+    commit: v1.7.1
     subdir: app
     gradle:
       - yes
@@ -33,5 +33,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.5.2'
-CurrentVersionCode: 12
+CurrentVersion: '1.7.1'
+CurrentVersionCode: 15
