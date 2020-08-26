@@ -5,7 +5,7 @@ WebSite: https://doliscan.org
 SourceCode: https://framagit.org/doliscan/client-cordova
 IssueTracker: https://framagit.org/doliscan/client-cordova/-/issues
 Changelog: https://framagit.org/doliscan/client-cordova/-/blob/master/ChangeLog.md
-#Donate: https://liberapay.com/erics/
+Donate: https://liberapay.com/erics/
 LiberapayID: '4913'
 
 AutoName: DoliSCAN
@@ -30,8 +30,9 @@ Builds:
     output: build/cordova/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
     prebuild:
       - ./prebuild-android.sh
-      - rm -rf node_modules/cordova-android/spec/fixtures/org.test.plugins.dummyplugin/src/android/jniLibs/x86/libnative.so
-      - rm -rf node_modules/jquery-ajax-native/test/native.bin
+    scandelete:
+      - node_modules/cordova-android/spec/fixtures/org.test.plugins.dummyplugin/src/android/jniLibs/x86/libnative.so
+      - node_modules/jquery-ajax-native/test/native.bin
     build:
       - cordova build android --release
 
