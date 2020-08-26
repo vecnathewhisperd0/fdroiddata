@@ -16,7 +16,6 @@ Description: |-
     * HTTPS fragmentation
     * Custom DNS servers with DoH support
 
-    Links can be added like this:
     [https://github.com/krlvm/PowerTunnel Version for PC]
 
 RepoType: git
@@ -29,7 +28,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    ndk: r21b
+    ndk: r21
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
