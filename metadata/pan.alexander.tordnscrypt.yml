@@ -1,0 +1,29 @@
+Categories:
+  - Internet
+  - Security
+License: GPL-3.0-or-later
+AuthorName: Oleksandr Garmatin
+AuthorEmail: invizible.soft@gmail.com
+SourceCode: https://github.com/Gedsh/InviZible
+IssueTracker: https://github.com/Gedsh/InviZible/issues
+Translation: https://poeditor.com/join/project/h6ulNL9gEd
+Changelog: https://github.com/Gedsh/InviZible/blob/HEAD/ChangeLog.md
+
+AutoName: InviZible Pro
+
+RepoType: git
+Repo: https://github.com/Gedsh/InviZible.git
+
+Builds:
+  - versionName: 1.0.2-beta
+    versionCode: 102
+    commit: v1.0.2-beta
+    subdir: tordnscrypt
+    gradle:
+      - fdroid
+    ndk: r21d
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.2-beta
+CurrentVersionCode: 102
