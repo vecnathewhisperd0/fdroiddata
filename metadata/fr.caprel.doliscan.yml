@@ -20,9 +20,9 @@ RepoType: git
 Repo: https://framagit.org/doliscan/client-cordova
 
 Builds:
-  - versionName: 1.0.20
-    versionCode: 10020
-    commit: v1.0.20
+  - versionName: 1.0.21
+    versionCode: 10021
+    commit: v1.0.21
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y -t stretch-backports npm
@@ -38,8 +38,8 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.20
-CurrentVersionCode: 10020
+CurrentVersion: 1.0.21
+CurrentVersionCode: 10021
 
 AuthorName: Eric Seigne (Projet AbulEdu / Cap-REL / VideoSub)
 AuthorEmail: eric.seigne@cap-rel.fr
