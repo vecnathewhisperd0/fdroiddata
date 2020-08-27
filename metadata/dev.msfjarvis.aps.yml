@@ -13,6 +13,7 @@ AutoName: Password Store
 
 RepoType: git
 Repo: https://github.com/android-password-store/Android-Password-Store
+Binaries: https://github.com/android-password-store/Android-Password-Store/releases/download/v%v/APS-free_v%v.apk
 
 Builds:
   - versionName: 1.8.1
@@ -124,5 +125,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v[0-9]+\.[0-9]+\.[0-9]+
-CurrentVersion: 1.11.2-free
-CurrentVersionCode: 11120
+CurrentVersion: 1.11.3
+CurrentVersionCode: 11130
