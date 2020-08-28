@@ -21,7 +21,7 @@ Builds:
     gradle:
       - withoutKey
 
-  - versionName: '0.40'
+  - versionName: '0.40.0'
     versionCode: 40
     commit: v0.40
     subdir: app
