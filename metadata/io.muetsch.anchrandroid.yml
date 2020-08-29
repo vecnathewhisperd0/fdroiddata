@@ -1,0 +1,34 @@
+Categories:
+  - Internet
+  - Development
+License: GPL-3.0-only
+AuthorName: Ferdinand Mütsch
+AuthorEmail: ferdinand@muetsch.io
+AuthorWebSite: https://muetsch.io
+WebSite: https://github.com/muety/anchr-android
+SourceCode: https://github.com/muety/anchr-android/tree/HEAD
+IssueTracker: https://github.com/muety/anchr-android/issues
+
+Name: Anchr for Android
+Description: This is the official Android app for the [https://anchr.io/ anchr.io]
+    bookmarks manager.
+
+RepoType: git
+Repo: https://github.com/muety/anchr-android.git
+
+Builds:
+  - versionName: 1.1.3
+    versionCode: 25
+    commit: 1.1.3
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@1.20.2
+    rm:
+      - ios
+    prebuild: $$flutter$$/bin/flutter pub get
+    build: $$flutter$$/bin/flutter build apk --flavor fdroid
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 1.1.3
+CurrentVersionCode: 25
