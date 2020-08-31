@@ -152,7 +152,7 @@ Builds:
 
   - versionName: 4.11.0
     versionCode: 2136
-    commit: b80d8a0
+    commit: <TBA> # update after v4.11.0 is released
     subdir: android/app
     sudo:
       - apt-get update || apt-get update
