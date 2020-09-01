@@ -22,7 +22,7 @@ Builds:
       - withoutKey
 
   - versionName: 0.41.0
-    versionCode: 40000
+    versionCode: 4100
     commit: v0.41.0
     subdir: app
     gradle:
