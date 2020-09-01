@@ -95,7 +95,7 @@ Builds:
         -DCMAKE_FIND_ROOT_PATH:STRING=$Qt5_DIR_ANDROID -DCMAKE_PREFIX_PATH:STRING=$Qt5_DIR_ANDROID
         -DCMAKE_TOOLCHAIN_FILE:PATH=$ANDROID_NDK_ROOT/build/cmake/android.toolchain.cmake
       - cmake ..
-      - make -j8
+      - make -j`nproc`
       - $Qt5_DIR_ANDROID/bin/androiddeployqt --input android_deployment_settings.json
         --output android-build --release --apk de.akaflieg_freiburg.enroute_170.apk
       - mv de.akaflieg_freiburg.enroute_170.apk ../../../unsigned/.
