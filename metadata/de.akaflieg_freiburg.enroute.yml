@@ -99,7 +99,7 @@ Builds:
       - $Qt5_DIR_ANDROID/bin/androiddeployqt --input android_deployment_settings.json
         --output android-build --release --apk de.akaflieg_freiburg.enroute_170.apk
       - mv de.akaflieg_freiburg.enroute_170.apk ../../../unsigned/.
-    ndk: r21b
+    ndk: r21d
 
 AutoUpdateMode: None
 UpdateCheckMode: None
