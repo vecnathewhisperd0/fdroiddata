@@ -9,24 +9,18 @@ index 01e00f3..61b43b0 100644
 +
  CMakeLists.txt.user
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 991cd11..54ea064 100644
+index 78e9478..fe29bea 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -42,11 +42,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
- 
+@@ -43,7 +43,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
  find_package(Doxygen)
- find_package(Git REQUIRED)
--find_package(Qt5 5.14 COMPONENTS Concurrent Core Gui LinguistTools Positioning Quick QuickWidgets Sql Svg REQUIRED)
-+find_package(Qt5 5.15 COMPONENTS Concurrent Core Gui LinguistTools Positioning Quick QuickWidgets Sql Svg REQUIRED)
+ find_package(Qt5 5.14 COMPONENTS Concurrent Core Gui LinguistTools Positioning Quick QuickWidgets Sql Svg REQUIRED)
  if( ANDROID )
--    find_package(Qt5 5.14 COMPONENTS AndroidExtras REQUIRED)
-+    find_package(Qt5 5.15 COMPONENTS AndroidExtras Concurrent Core Gui LinguistTools Positioning Quick QuickWidgets Sql Svg Qml Location QuickControls2 SerialPort Sensors QmlModels QuickShapes RemoteObjects QmlWorkerScript QuickTemplates2 QuickTest Test Multimedia MultimediaQuick REQUIRED)
- else()
--    find_package(Qt5 5.14 COMPONENTS Widgets REQUIRED)
-+    find_package(Qt5 5.15 COMPONENTS Widgets REQUIRED)
+-  find_package(Qt5 5.14 COMPONENTS AndroidExtras REQUIRED)
++  find_package(Qt5 5.14 COMPONENTS AndroidExtras Concurrent Core Gui LinguistTools Positioning Quick QuickWidgets Sql Svg Qml Location QuickControls2 SerialPort Sensors QmlModels QuickShapes RemoteObjects QmlWorkerScript QuickTemplates2 QuickTest Test Multimedia MultimediaQuick REQUIRED)
  endif()
  
- 
+ # Create target collecting all documentation
 diff --git a/fastlane/metadata/android/en-US/full_description.txt b/fastlane/metadata/android/en-US/full_description.txt
 new file mode 100644
 index 0000000..77b701e
