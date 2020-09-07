@@ -1,0 +1,19 @@
+Categories:
+  - Internet
+License: WTFPL
+SourceCode: https://github.com/iksteen/LinxShare
+IssueTracker: https://github.com/iksteen/LinxShare/issues
+
+RepoType: git
+Repo: https://github.com/iksteen/LinxShare
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: b20ff9880607bad54ebf4adfe6b3ff41fd07df98
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
