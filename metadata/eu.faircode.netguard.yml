@@ -1177,7 +1177,115 @@ Builds:
     prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
     ndk: r19c
 
+  - versionName: '2.274'
+    versionCode: 2020021401
+    commit: '2.274'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r19c
+
+  - versionName: '2.275'
+    versionCode: 2020032001
+    commit: '2.275'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21
+
+  - versionName: '2.276'
+    versionCode: 2020032201
+    commit: '2.276'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21
+
+  - versionName: '2.279'
+    versionCode: 2020041901
+    commit: '2.279'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21
+
+  - versionName: '2.280'
+    versionCode: 2020042401
+    commit: '2.280'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21
+
+  - versionName: '2.281'
+    versionCode: 2020051801
+    commit: '2.281'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21
+
+  - versionName: '2.283'
+    versionCode: 2020061401
+    commit: '2.283'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
+
+  - versionName: '2.284'
+    versionCode: 2020070801
+    commit: '2.284'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
+
+  - versionName: '2.285'
+    versionCode: 2020071701
+    commit: '2.285'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
+
+  - versionName: '2.286'
+    versionCode: 2020081601
+    commit: '2.286'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
+
+  - versionName: '2.287'
+    versionCode: 2020081801
+    commit: '2.287'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
+
+  - versionName: '2.288'
+    versionCode: 2020082601
+    commit: '2.288'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: '2.273'
-CurrentVersionCode: 2020011002
+CurrentVersion: '2.288'
+CurrentVersionCode: 2020082601

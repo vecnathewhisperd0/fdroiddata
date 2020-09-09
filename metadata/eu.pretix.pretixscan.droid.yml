@@ -48,14 +48,59 @@ Builds:
 
   - versionName: 1.2.5
     versionCode: 20
-    commit: 1.2.5
+    commit: v1.2.5
     subdir: pretixscan/app
     submodules: true
     gradle:
       - yes
     output: build/outputs/apk/pretix/release/app-pretix-release-unsigned.apk
 
-AutoUpdateMode: Version %v
+  - versionName: 1.4.0
+    versionCode: 22
+    commit: v1.4.0
+    subdir: pretixscan/app
+    submodules: true
+    gradle:
+      - yes
+    output: build/outputs/apk/pretix/release/app-pretix-release-unsigned.apk
+
+  - versionName: 1.4.1
+    versionCode: 23
+    commit: v1.4.1
+    subdir: pretixscan/app
+    submodules: true
+    gradle:
+      - yes
+    output: build/outputs/apk/pretix/release/app-pretix-release-unsigned.apk
+
+  - versionName: 1.4.2
+    versionCode: 25
+    commit: 1.4.2
+    subdir: pretixscan/app
+    submodules: true
+    gradle:
+      - yes
+    output: build/outputs/apk/pretix/release/app-pretix-release-unsigned.apk
+
+  - versionName: 1.5.0
+    versionCode: 26
+    commit: v1.5.0
+    subdir: pretixscan/app
+    submodules: true
+    gradle:
+      - yes
+    output: build/outputs/apk/pretix/release/app-pretix-release-unsigned.apk
+
+  - versionName: 1.5.1
+    versionCode: 27
+    commit: v1.5.1
+    subdir: pretixscan/app
+    submodules: true
+    gradle:
+      - yes
+    output: build/outputs/apk/pretix/release/app-pretix-release-unsigned.apk
+
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.2.5
-CurrentVersionCode: 20
+CurrentVersion: 1.5.1
+CurrentVersionCode: 27

@@ -1,0 +1,55 @@
+Categories:
+  - Phone & SMS
+License: GPL-3.0-only
+AuthorName: Adrien Poupa
+AuthorEmail: adrien@poupa.fr
+WebSite: https://adrien.poupa.fr
+SourceCode: https://github.com/AdrienPoupa/AttestationDeplacement
+IssueTracker: https://github.com/AdrienPoupa/AttestationDeplacement/issues
+
+AutoName: Attestation de déplacement
+
+RepoType: git
+Repo: https://github.com/AdrienPoupa/AttestationDeplacement
+
+Builds:
+  - versionName: 1.4.0
+    versionCode: 12
+    commit: 1.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.1
+    versionCode: 13
+    commit: 1.4.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.0
+    versionCode: 14
+    commit: 1.5.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.0
+    versionCode: 15
+    commit: 1.6.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.0
+    versionCode: 16
+    commit: 1.7.0
+    subdir: app
+    gradle:
+      - yes
+
+ArchivePolicy: 0 versions
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.7.0
+CurrentVersionCode: 16

@@ -427,7 +427,33 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v1.231
+    versionCode: 232
+    commit: v1.231
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.232
+    versionCode: 233
+    disable: app/libs/*.jar
+    commit: v1.232
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/libs/*.jar
+
+  - versionName: v1.233
+    versionCode: 234
+    commit: v1.233
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/libs/*.jar
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v1.230
-CurrentVersionCode: 231
+CurrentVersion: v1.233
+CurrentVersionCode: 234

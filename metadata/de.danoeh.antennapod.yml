@@ -1,16 +1,17 @@
 Categories:
   - Multimedia
 License: MIT
-WebSite: http://antennapod.org
-SourceCode: https://github.com/antennapod/AntennaPod
-IssueTracker: https://github.com/antennapod/AntennaPod/issues
+AuthorEmail: info@antennapod.org
+WebSite: https://antennapod.org
+SourceCode: https://github.com/AntennaPod/AntennaPod
+IssueTracker: https://github.com/AntennaPod/AntennaPod/issues
 Translation: https://www.transifex.com/antennapod/antennapod/
-Changelog: https://raw.githubusercontent.com/AntennaPod/AntennaPod/develop/CHANGELOG.md
+Changelog: https://github.com/AntennaPod/AntennaPod/blob/develop/CHANGELOG.md
 
 AutoName: AntennaPod
 
 RepoType: git
-Repo: https://github.com/danieloeh/AntennaPod.git
+Repo: https://github.com/AntennaPod/AntennaPod.git
 
 Builds:
   - versionName: 0.9.4.4
@@ -624,11 +625,41 @@ Builds:
     gradleprops:
       - freeBuild
 
+  - versionName: 1.8.1
+    versionCode: 1080195
+    commit: 1.8.1
+    subdir: app
+    init: sed -i '/playCompile/d' ../core/build.gradle
+    gradle:
+      - free
+    gradleprops:
+      - freeBuild
+
+  - versionName: 1.8.2
+    versionCode: 1080200
+    commit: 1.8.2
+    subdir: app
+    init: sed -i '/playCompile/d' ../core/build.gradle
+    gradle:
+      - free
+    gradleprops:
+      - freeBuild
+
+  - versionName: 1.8.3
+    versionCode: 1080300
+    commit: 1.8.3
+    subdir: app
+    init: sed -i '/playCompile/d' ../core/build.gradle
+    gradle:
+      - free
+    gradleprops:
+      - freeBuild
+
 MaintainerNotes: |-
     Summary and Description have been moved to the new localizable text files:
     https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
 
 AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
-CurrentVersion: 1.8.0
-CurrentVersionCode: 1080095
+UpdateCheckMode: Tags .*[0-9]$
+CurrentVersion: 1.8.3
+CurrentVersionCode: 1080300

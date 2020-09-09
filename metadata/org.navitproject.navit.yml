@@ -788,9 +788,10 @@ Builds:
     build: scripts/build_android.sh
     ndk: r12b
 
-  - versionName: v0.5.4
-    versionCode: 2001180336
-    commit: v0.5.4
+  - versionName: v0.5.5
+    versionCode: 2008082307
+    disable: fails to build
+    commit: v0.5.5
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y libprotobuf-c-dev protobuf-c-compiler
@@ -804,7 +805,7 @@ Builds:
       - $$SDK$$/tools/bin/sdkmanager "cmake;3.6.4111459"
       - sed -i -e '/gradlew/d' scripts/build_android.sh
     build: scripts/build_android.sh
-    ndk: r12b
+    ndk: r20b
 
 MaintainerNotes: |-
     Found JAR file at navit/android/libs/TTS_library_stub.jar, removed as of v0.5.3-442-g96d9c41.
@@ -813,5 +814,5 @@ MaintainerNotes: |-
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://download.navit-project.org/api/version.json|"version_code":.*"(.*)"|.|"version_name":.*\"(.*)\",
-CurrentVersion: v0.5.4
-CurrentVersionCode: 2001180336
+CurrentVersion: v0.5.5
+CurrentVersionCode: 2008082307

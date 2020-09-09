@@ -13,7 +13,7 @@ LiberapayID: '4971'
 Bitcoin: 1DSwXCk7Sob24sNsofywNoRQw2f5Qj5t2F
 Litecoin: LRmhvGbKNXFLTxyK8Q9zBxDXjBWm6Rzt34
 
-AutoName: KeePass DX
+AutoName: KeePassDX
 
 RepoType: git
 Repo: https://github.com/Kunzisoft/KeePassDX
@@ -119,7 +119,95 @@ Builds:
       - libre
     ndk: r20
 
+  - versionName: 2.5beta28
+    versionCode: 28
+    commit: 2.5beta28
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.5beta30
+    versionCode: 30
+    commit: 2.5beta30
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.5RC1
+    versionCode: 31
+    commit: 2.5RC1
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.5RC2
+    versionCode: 32
+    commit: 2.5RC2
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: '2.5'
+    versionCode: 33
+    commit: '2.5'
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: '2.6'
+    versionCode: 34
+    commit: '2.6'
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: '2.7'
+    versionCode: 35
+    commit: '2.7'
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: '2.8'
+    versionCode: 36
+    commit: '2.8'
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.8.1
+    versionCode: 37
+    commit: 2.8.1
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.8.2
+    versionCode: 38
+    commit: 2.8.2
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.8.3
+    versionCode: 39
+    commit: 2.8.3
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.0.0beta25
-CurrentVersionCode: 25
+CurrentVersion: 2.8.3
+CurrentVersionCode: 39

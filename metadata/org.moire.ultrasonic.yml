@@ -102,7 +102,49 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.7.0
+    versionCode: 72
+    commit: 2.7.0
+    subdir: ultrasonic
+    gradle:
+      - yes
+
+  - versionName: 2.8.0
+    versionCode: 73
+    commit: 2.8.0
+    subdir: ultrasonic
+    gradle:
+      - yes
+
+  - versionName: 2.9.0
+    versionCode: 74
+    commit: 2.9.0
+    subdir: ultrasonic
+    gradle:
+      - yes
+
+  - versionName: 2.10.0
+    versionCode: 75
+    commit: 2.10.0
+    subdir: ultrasonic
+    gradle:
+      - yes
+
+  - versionName: 2.11.0
+    versionCode: 76
+    commit: 2.11.0
+    subdir: ultrasonic
+    gradle:
+      - yes
+
+  - versionName: 2.11.2
+    versionCode: 78
+    commit: 2.11.2
+    subdir: ultrasonic
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.6.2
-CurrentVersionCode: 71
+CurrentVersion: 2.11.2
+CurrentVersionCode: 78

@@ -9,18 +9,6 @@ Changelog: https://github.com/Neamar/KISS/releases
 Donate: https://help.kisslauncher.com/donate/
 
 AutoName: KISS launcher
-Description: |-
-    KISS is a fast launcher for your Android.
-
-    Search through your apps, contacts and settings lightning fast. No more time
-    spent trying to find the app you want to launch: enter a few characters of the
-    name and hit enter. Need to call someone? Don't meddle with the call log, just
-    give three letters of their name and push the "phone" button.
-
-    KISS becomes smarter and smarter as you use it, pushing forward results you're
-    more likely to select.
-
-    Get ready to be amazed.
 
 RepoType: git
 Repo: https://github.com/Neamar/KISS
@@ -624,7 +612,79 @@ Builds:
       - yes
     prebuild: sed -i -e '/jcenter()/a\        google()' ../build.gradle
 
+  - versionName: 3.12.1
+    versionCode: 171
+    commit: v3.12.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
+  - versionName: 3.12.2
+    versionCode: 172
+    commit: v3.12.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
+  - versionName: 3.13.0
+    versionCode: 173
+    commit: v3.13.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
+  - versionName: 3.13.1
+    versionCode: 174
+    commit: v3.13.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
+  - versionName: 3.13.2
+    versionCode: 175
+    commit: v3.13.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
+  - versionName: 3.13.3
+    versionCode: 176
+    commit: v3.13.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
+  - versionName: 3.13.4
+    versionCode: 177
+    commit: v3.13.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
+  - versionName: 3.13.5
+    versionCode: 178
+    commit: v3.13.5
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
+  - versionName: 3.14.0
+    versionCode: 179
+    commit: v3.14.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/jcenter()/a\        google()' ../build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9\.]+$
-CurrentVersion: 3.11.9
-CurrentVersionCode: 169
+CurrentVersion: 3.14.0
+CurrentVersionCode: 179

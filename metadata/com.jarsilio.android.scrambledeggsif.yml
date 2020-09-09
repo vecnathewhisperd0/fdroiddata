@@ -246,7 +246,119 @@ Builds:
     gradle:
       - standard
 
+  - versionName: 1.5.0-beta
+    versionCode: 36
+    commit: v1.5.0-beta
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.4
+    versionCode: 41
+    commit: v1.6.4
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.6
+    versionCode: 43
+    commit: v1.6.6
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.7
+    versionCode: 46
+    commit: v1.6.7
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.8
+    versionCode: 47
+    commit: v1.6.8
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.10
+    versionCode: 49
+    commit: v1.6.10
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.11
+    versionCode: 50
+    commit: v1.6.11
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.12
+    versionCode: 51
+    commit: v1.6.12
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.13
+    versionCode: 52
+    commit: v1.6.13
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.14
+    versionCode: 53
+    commit: v1.6.14
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.15
+    versionCode: 54
+    commit: v1.6.15
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.16
+    versionCode: 55
+    commit: v1.6.16
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.17
+    versionCode: 56
+    commit: v1.6.17
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.6.18
+    versionCode: 57
+    commit: v1.6.18
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 1.4.7
-CurrentVersionCode: 34
+UpdateCheckMode: Tags ^v[0-9.]+$
+CurrentVersion: 1.6.18
+CurrentVersionCode: 57

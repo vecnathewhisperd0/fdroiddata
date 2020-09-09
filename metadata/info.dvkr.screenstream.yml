@@ -264,7 +264,125 @@ Builds:
       - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
         build.gradle
 
+  - versionName: 3.4.0
+    versionCode: 30400
+    commit: 3.4.0
+    subdir: app
+    gradle:
+      - fabricfree
+    prebuild:
+      - sed -i -e '/fabric\.io/d; s|= uri("https://jitpack\.io")|"https://jitpack.io"|'
+        ../build.gradle
+      - sed -i -e '/io\.fabric/d; /com\.google\.gms/d' ../build.gradle build.gradle
+      - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
+        build.gradle
+
+  - versionName: 3.4.2
+    versionCode: 30402
+    commit: 3.4.2
+    subdir: app
+    gradle:
+      - fabricfree
+    prebuild:
+      - sed -i -e '/fabric\.io/d; s|= uri("https://jitpack\.io")|"https://jitpack.io"|'
+        ../build.gradle
+      - sed -i -e '/io\.fabric/d; /com\.google\.gms/d' ../build.gradle build.gradle
+      - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
+        build.gradle
+
+  - versionName: 3.4.3
+    versionCode: 30403
+    commit: 3.4.3
+    subdir: app
+    gradle:
+      - fabricfree
+    prebuild:
+      - sed -i -e '/fabric\.io/d; s|= uri("https://jitpack\.io")|"https://jitpack.io"|'
+        ../build.gradle
+      - sed -i -e '/io\.fabric/d; /com\.google\.gms/d' ../build.gradle build.gradle
+      - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
+        build.gradle
+
+  - versionName: 3.4.4
+    versionCode: 30404
+    commit: 3.4.4
+    subdir: app
+    gradle:
+      - fabricfree
+    prebuild:
+      - sed -i -e '/fabric\.io/d; s|= uri("https://jitpack\.io")|"https://jitpack.io"|'
+        ../build.gradle
+      - sed -i -e '/io\.fabric/d; /com\.google\.gms/d' ../build.gradle build.gradle
+      - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
+        build.gradle
+
+  - versionName: 3.4.5
+    versionCode: 30405
+    commit: 3.4.5
+    subdir: app
+    gradle:
+      - fabricfree
+    prebuild:
+      - sed -i -e '/fabric\.io/d; s|= uri("https://jitpack\.io")|"https://jitpack.io"|'
+        ../build.gradle
+      - sed -i -e '/io\.fabric/d; /com\.google\.gms/d' ../build.gradle build.gradle
+      - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
+        build.gradle
+
+  - versionName: 3.4.8
+    versionCode: 30408
+    commit: 3.4.8
+    subdir: app
+    gradle:
+      - firebasefree
+    prebuild:
+      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
+      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
+        build.gradle
+      - sed -i -e '/firebaseCrashlytics/,+2d' -e '/^android\.applicationVariants\.all
+        {/,/^}$/d' build.gradle
+
+  - versionName: 3.4.9
+    versionCode: 30409
+    commit: 3.4.9
+    subdir: app
+    gradle:
+      - firebasefree
+    prebuild:
+      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
+      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
+        build.gradle
+      - sed -i -e '/firebaseCrashlytics/,+2d' -e '/^android\.applicationVariants\.all
+        {/,/^}$/d' build.gradle
+
+  - versionName: 3.4.12
+    versionCode: 30412
+    disable: no source for bottomsheets.aar see upstream issue 107
+    commit: 3.4.12
+    subdir: app
+    gradle:
+      - firebasefree
+    prebuild:
+      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
+      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
+        build.gradle
+      - sed -i -e '/firebaseCrashlytics/d' -e '/^android\.applicationVariants\.all
+        {/,/^}$/d' build.gradle
+
+  - versionName: 3.4.13
+    versionCode: 30413
+    commit: 3.4.13
+    subdir: app
+    gradle:
+      - firebasefree
+    prebuild:
+      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
+      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
+        build.gradle
+      - sed -i -e '/firebaseCrashlytics/d' -e '/^android\.applicationVariants\.all
+        {/,/^}$/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.3.2
-CurrentVersionCode: 30302
+CurrentVersion: 3.4.13
+CurrentVersionCode: 30413

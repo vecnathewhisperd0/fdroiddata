@@ -709,6 +709,86 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.10.0
+    versionCode: 100
+    commit: v1.10.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.10.2
+    versionCode: 102
+    commit: v1.10.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.11.2
+    versionCode: 105
+    commit: v1.11.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.11.3
+    versionCode: 106
+    commit: v1.11.3
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.12.0
+    versionCode: 107
+    commit: v1.12.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.13.0
+    versionCode: 108
+    commit: v1.13.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.14.0
+    versionCode: 109
+    commit: v1.14.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.15.1
+    versionCode: 111
+    commit: v1.15.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.16.0
+    versionCode: 112
+    commit: v1.16.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.16.2
+    versionCode: 114
+    commit: v1.16.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 MaintainerNotes: |-
     Summary and Description are maintained by upstream using fastlane in
     the source repo:
@@ -716,5 +796,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.9
-CurrentVersionCode: 99
+CurrentVersion: 1.16.2
+CurrentVersionCode: 114

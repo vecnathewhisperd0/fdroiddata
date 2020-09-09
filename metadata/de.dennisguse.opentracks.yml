@@ -4,9 +4,9 @@ License: Apache-2.0
 SourceCode: https://github.com/OpenTracksApp/OpenTracks
 IssueTracker: https://github.com/OpenTracksApp/OpenTracks/issues
 Changelog: https://github.com/OpenTracksApp/opentracks/releases
-LiberapayID: '1594240'
+Liberapay: OpenTracks
 
-AutoName: ${applicationName}
+AutoName: OpenTracks
 
 RepoType: git
 Repo: https://github.com/OpenTracksApp/OpenTracks
@@ -96,7 +96,109 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v3.4.0
+    versionCode: 3287
+    commit: v3.4.0
+    gradle:
+      - yes
+
+  - versionName: v3.5.0
+    versionCode: 3305
+    commit: v3.5.0
+    gradle:
+      - yes
+
+  - versionName: v3.6.2
+    versionCode: 3335
+    commit: v3.6.2
+    gradle:
+      - yes
+
+  - versionName: v3.7.1
+    versionCode: 3372
+    commit: v3.7.1
+    gradle:
+      - yes
+
+  - versionName: v3.7.2
+    versionCode: 3381
+    commit: v3.7.2
+    gradle:
+      - yes
+
+  - versionName: v3.7.3
+    versionCode: 3386
+    commit: v3.7.3
+    gradle:
+      - yes
+
+  - versionName: v3.7.4
+    versionCode: 3396
+    commit: v3.7.4
+    gradle:
+      - yes
+
+  - versionName: v3.7.5
+    versionCode: 3427
+    commit: v3.7.5
+    gradle:
+      - yes
+
+  - versionName: v3.7.6
+    versionCode: 3449
+    commit: v3.7.6
+    gradle:
+      - yes
+
+  - versionName: v3.8.0
+    versionCode: 3466
+    commit: v3.8.0
+    gradle:
+      - yes
+
+  - versionName: v3.8.1
+    versionCode: 3474
+    commit: v3.8.1
+    gradle:
+      - yes
+
+  - versionName: v3.9.0
+    versionCode: 3522
+    commit: v3.9.0
+    gradle:
+      - yes
+
+  - versionName: v3.9.1
+    versionCode: 3530
+    commit: v3.9.1
+    gradle:
+      - yes
+
+  - versionName: v3.9.2
+    versionCode: 3541
+    commit: v3.9.2
+    gradle:
+      - yes
+
+  - versionName: v3.9.3
+    versionCode: 3544
+    commit: v3.9.3
+    gradle:
+      - yes
+
+  - versionName: v3.9.4
+    versionCode: 3573
+    commit: v3.9.4
+    gradle:
+      - yes
+
+  - versionName: v3.9.5
+    versionCode: 3584
+    commit: v3.9.5
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.3.2
-CurrentVersionCode: 3272
+CurrentVersion: v3.9.5
+CurrentVersionCode: 3584

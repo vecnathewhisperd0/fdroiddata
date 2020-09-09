@@ -1,9 +1,11 @@
+AntiFeatures:
+  - NonFreeNet
 Categories:
   - Internet
   - Science & Education
 License: GPL-3.0-or-later
 AuthorName: Felix Hollederer
-AuthorEmail: GymWennApp@t-online.de
+AuthorEmail: GymWenApp@t-online.de
 WebSite: https://asdoi.gitlab.io/
 SourceCode: https://gitlab.com/asdoi/GymWen/tree/HEAD
 IssueTracker: https://gitlab.com/asdoi/GymWen/issues
@@ -43,7 +45,42 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.1.1
+    versionCode: 111
+    commit: v1.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.2
+    versionCode: 112
+    commit: v1.1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.1.3
+    versionCode: 113
+    commit: v1.1.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0
+    versionCode: 120
+    commit: v1.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.1
+    versionCode: 121
+    commit: v1.2.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.0
-CurrentVersionCode: 110
+CurrentVersion: 1.2.1
+CurrentVersionCode: 121
