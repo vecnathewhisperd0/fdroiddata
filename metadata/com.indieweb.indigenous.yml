@@ -157,7 +157,21 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: '0.63'
+    versionCode: 63
+    commit: '0.63'
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: '0.64'
+    versionCode: 64
+    commit: '0.64'
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.62'
-CurrentVersionCode: 62
+CurrentVersion: '0.64'
+CurrentVersionCode: 64

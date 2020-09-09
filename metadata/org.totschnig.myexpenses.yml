@@ -1378,8 +1378,18 @@ Builds:
 
   - versionName: 3.1.2.2
     versionCode: 416
-    disable: fdroidserver issue 771
+    disable: unknown maven for mokito
     commit: r416
+    subdir: myExpenses
+    gradle:
+      - conscript
+    rm:
+      - tests
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 3.1.3.1
+    versionCode: 422
+    commit: r422
     subdir: myExpenses
     gradle:
       - conscript
@@ -1391,5 +1401,5 @@ MaintainerNotes: '* Ads: https://github.com/mtotschnig/MyExpenses/tree/b4237aabf
 
 AutoUpdateMode: Version r%c
 UpdateCheckMode: Tags
-CurrentVersion: 3.1.2.2
-CurrentVersionCode: 416
+CurrentVersion: 3.1.3.1
+CurrentVersionCode: 422

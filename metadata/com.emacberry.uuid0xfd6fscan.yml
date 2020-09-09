@@ -1,0 +1,31 @@
+Categories:
+  - Connectivity
+License: GPL-3.0-or-later
+AuthorName: marq24
+SourceCode: https://github.com/marq24/UUID0xFD6FTracer
+IssueTracker: https://github.com/marq24/UUID0xFD6FTracer/issues
+
+AutoName: UUID 0xFD6F Scanner
+
+RepoType: git
+Repo: https://github.com/marq24/UUID0xFD6FTracer.git
+
+Builds:
+  - versionName: 0.9.1.6
+    versionCode: 916
+    commit: 0.9.1.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.1.7
+    versionCode: 917
+    commit: 0.9.1.7
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.9.1.7
+CurrentVersionCode: 917

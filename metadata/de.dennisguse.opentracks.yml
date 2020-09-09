@@ -4,9 +4,9 @@ License: Apache-2.0
 SourceCode: https://github.com/OpenTracksApp/OpenTracks
 IssueTracker: https://github.com/OpenTracksApp/OpenTracks/issues
 Changelog: https://github.com/OpenTracksApp/opentracks/releases
-LiberapayID: '1594240'
+Liberapay: OpenTracks
 
-AutoName: ${applicationName}
+AutoName: OpenTracks
 
 RepoType: git
 Repo: https://github.com/OpenTracksApp/OpenTracks
@@ -156,7 +156,49 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v3.8.1
+    versionCode: 3474
+    commit: v3.8.1
+    gradle:
+      - yes
+
+  - versionName: v3.9.0
+    versionCode: 3522
+    commit: v3.9.0
+    gradle:
+      - yes
+
+  - versionName: v3.9.1
+    versionCode: 3530
+    commit: v3.9.1
+    gradle:
+      - yes
+
+  - versionName: v3.9.2
+    versionCode: 3541
+    commit: v3.9.2
+    gradle:
+      - yes
+
+  - versionName: v3.9.3
+    versionCode: 3544
+    commit: v3.9.3
+    gradle:
+      - yes
+
+  - versionName: v3.9.4
+    versionCode: 3573
+    commit: v3.9.4
+    gradle:
+      - yes
+
+  - versionName: v3.9.5
+    versionCode: 3584
+    commit: v3.9.5
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.8.0
-CurrentVersionCode: 3466
+CurrentVersion: v3.9.5
+CurrentVersionCode: 3584

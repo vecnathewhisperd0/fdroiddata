@@ -251,9 +251,17 @@ Builds:
       - yes
     ndk: r21d
 
-  - versionName: 1.9.15
-    versionCode: 150
-    commit: v1.9.15
+  - versionName: 2.0.7
+    versionCode: 161
+    commit: v2.0.7
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 2.1.0
+    versionCode: 162
+    commit: v2.1.0
     subdir: app
     gradle:
       - yes
@@ -261,5 +269,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.15
-CurrentVersionCode: 150
+CurrentVersion: 2.1.0
+CurrentVersionCode: 162

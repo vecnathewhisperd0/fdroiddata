@@ -62,7 +62,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.3.3
+    versionCode: 9
+    commit: v1.3.3-fdroid
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.4
+    versionCode: 10
+    commit: v1.3.4-fdroid
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.5
+    versionCode: 11
+    commit: v1.3.5-fdroid
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v-fdroid
 UpdateCheckMode: Tags
-CurrentVersion: 1.3.1
-CurrentVersionCode: 8
+CurrentVersion: 1.3.5
+CurrentVersionCode: 11

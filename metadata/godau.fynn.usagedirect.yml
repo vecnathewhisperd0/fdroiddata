@@ -1,6 +1,6 @@
 Categories:
   - System
-License: Apache-2.0
+License: GPL-3.0-or-later
 AuthorName: Fynn Godau
 AuthorEmail: fynngodau@mailbox.org
 SourceCode: https://codeberg.org/fynngodau/usageDirect
@@ -33,7 +33,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.4'
+    versionCode: 4
+    commit: '0.4'
+    subdir: Application
+    gradle:
+      - yes
+
+  - versionName: 0.4.1
+    versionCode: 5
+    commit: 0.4.1
+    subdir: Application
+    gradle:
+      - yes
+
+  - versionName: '0.5'
+    versionCode: 6
+    commit: 014603b90aeedfdf2e9264be5cd31a67ee81b93b
+    subdir: Application
+    gradle:
+      - database
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.3'
-CurrentVersionCode: 3
+CurrentVersion: '0.5'
+CurrentVersionCode: 6

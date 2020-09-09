@@ -773,6 +773,22 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.16.0
+    versionCode: 112
+    commit: v1.16.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.16.2
+    versionCode: 114
+    commit: v1.16.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 MaintainerNotes: |-
     Summary and Description are maintained by upstream using fastlane in
     the source repo:
@@ -780,5 +796,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.15.1
-CurrentVersionCode: 111
+CurrentVersion: 1.16.2
+CurrentVersionCode: 114
