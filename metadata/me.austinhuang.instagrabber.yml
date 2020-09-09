@@ -4,7 +4,7 @@ Categories:
   - Internet
   - Multimedia
 License: GPL-3.0-or-later
-AuthorName: Austin Huang
+AuthorName: Austin Huang & Ammar Githam
 AuthorEmail: instagrabber@austinhuang.me
 AuthorWebSite: https://austinhuang.me
 WebSite: https://instagrabber.austinhuang.me
@@ -49,7 +49,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '18.3'
+    versionCode: 49
+    commit: v18.3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '18.2'
-CurrentVersionCode: 48
+CurrentVersion: '18.3'
+CurrentVersionCode: 49
