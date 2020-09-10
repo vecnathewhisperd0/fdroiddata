@@ -20,9 +20,9 @@ RepoType: git
 Repo: https://github.com/polkawallet-io/polkawallet-flutter.git
 
 Builds:
-  - versionName: 0.9.3
-    versionCode: 931
-    commit: v0.9.3
+  - versionName: 1.0.0
+    versionCode: 1005
+    commit: v1.0.0
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
       - flutter@stable
@@ -61,5 +61,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.9.3
-CurrentVersionCode: 931
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1005
