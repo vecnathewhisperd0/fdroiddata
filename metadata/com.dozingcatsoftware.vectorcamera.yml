@@ -125,8 +125,10 @@ Builds:
     gradle:
       - yes
 
-MaintainerNotes: Versions prior to 1.5.0 built native libraries from libvpx, as documented [https://github.com/dozingcat/VectorCamera/blob/fa48daf8dc080fd03eb9311c0342b81b41f345e8/README-libvpx.md
-    here]. 1.5.0 switched to Android's built-in video encoding libraries, so libvpx is no longer needed.
+MaintainerNotes: Versions prior to 1.5.0 built native libraries from libvpx, as documented
+    [https://github.com/dozingcat/VectorCamera/blob/fa48daf8dc080fd03eb9311c0342b81b41f345e8/README-libvpx.md
+    here]. 1.5.0 switched to Android's built-in video encoding libraries, so libvpx
+    is no longer needed.
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
