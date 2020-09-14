@@ -20,18 +20,14 @@ RepoType: git
 Repo: https://github.com/polkawallet-io/polkawallet-flutter.git
 
 Builds:
-  - versionName: 1.0.0
-    versionCode: 1005
-    commit: v1.0.0
-    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
-    srclibs:
-      - flutter@stable
-    prebuild:
-      - apt-get install wget
-      - wget https://nodejs.org/dist/v12.18.2/node-v12.18.2-linux-x64.tar.xz
-      - tar -vxf node-v12.18.2-linux-x64.tar.xz
-      - wget https://github.com/yarnpkg/yarn/releases/download/v1.22.4/yarn-v1.22.4.tar.gz
-      - tar zvxf yarn-v1.22.4.tar.gz
+  - versionName: 1.0.1
+    versionCode: 1015
+    commit: v1.0.1
+    init:
+      - curl -Lo node.tar.gz https://nodejs.org/dist/v12.18.2/node-v12.18.2-linux-x64.tar.xz
+      - tar -vxf node.tar.xz
+      - curl -Lo yarn.tar.gz https://github.com/yarnpkg/yarn/releases/download/v1.22.4/yarn-v1.22.4.tar.gz
+      - tar zvxf yarn.tar.gz
       - export PATH=$PATH:`pwd`/node-v12.18.2-linux-x64/bin:`pwd`/yarn-v1.22.4/bin
       - cd ./lib/js_service_kusama
       - yarn install
@@ -49,17 +45,23 @@ Builds:
       - yarn install
       - yarn run build
       - cd ../..
-      - rm -rf node-v12.18.2-linux-x64/ yarn-v1.22.4/
-      - rm node-v12.18.2-linux-x64.tar.xz yarn-v1.22.4.tar.gz
-      - rm -rf lib/js_service_acala/node_modules/node-notifier/
-      - rm -rf lib/js_service_kusama/node_modules/node-notifier/
-      - rm -rf lib/js_service_laminar/node_modules/node-notifier/
-      - rm -rf lib/js_as_extension/node_modules/node-notifier/
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@stable
+    rm:
+      - node-v12.18.2-linux-x64
+      - yarn-v1.22.4
+      - node.tar.xz
+      - yarn.tar.gz
+      - lib/js_service_acala/node_modules
+      - lib/js_service_kusama/node_modules
+      - lib/js_service_laminar/node_modles
+      - lib/js_as_extension/node_modules
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter build apk --flavor fdroid
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.0
-CurrentVersionCode: 1005
+CurrentVersion: 1.0.1
+CurrentVersionCode: 1015
