@@ -24,7 +24,7 @@ Builds:
     versionCode: 1015
     commit: v1.0.1
     init:
-      - curl -Lo node.tar.gz https://nodejs.org/dist/v12.18.2/node-v12.18.2-linux-x64.tar.xz
+      - curl -Lo node.tar.xz https://nodejs.org/dist/v12.18.2/node-v12.18.2-linux-x64.tar.xz
       - tar -vxf node.tar.xz
       - curl -Lo yarn.tar.gz https://github.com/yarnpkg/yarn/releases/download/v1.22.4/yarn-v1.22.4.tar.gz
       - tar zvxf yarn.tar.gz
