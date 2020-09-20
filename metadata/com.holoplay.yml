@@ -3,6 +3,7 @@ Categories:
 License: MIT License
 AuthorName: Stéphane Richin
 AuthorEmail: contact@stephane-richin.fr
+WebSite: https://holoplay.io
 SourceCode: https://github.com/stephane-r/HoloPlay
 IssueTracker: https://github.com/stephane-r/HoloPlay/issues
 Changelog: https://github.com/stephane-r/HoloPlay/releases
@@ -25,6 +26,7 @@ Description: |-
   - Open Source
   - Cloud Syncing
   - Dark Theme
+  - Internationalization with EN (default) and FR
 
   HoloPlay is an open source project and can be found at https://github.com/stephane-r/HoloPlay and https://stephane-r.github.io/HoloPlay-LP/
 
@@ -32,9 +34,9 @@ RepoType: git
 Repo: https://github.com/stephane-r/HoloPlay
 
 Builds:
-  - versionName: 1.8.9
-    versionCode: 10
-    commit: 1.8.9
+  - versionName: 1.8.18
+    versionCode: 17
+    commit: 1.8.18
     subdir: android/app
     sudo:
       - apt-get update || apt-get update
@@ -52,11 +54,24 @@ Builds:
       - truncate -s 0 node_modules/@react-native-community/cli/build/commands/server/external/xsel
     scanignore:
       - android/build.gradle
+      - node_modules/react-native-bootsplash/android/build.gradle
+      - node_modules/react-native-config/android/build.gradle
+      - node_modules/react-native-fs/android/build.gradle
+      - node_modules/react-native-gesture-handler/android/build.gradle
+      - node_modules/react-native-get-random-values/android/build.gradle
+      - node_modules/react-native-linear-gradient/android/build.gradle
+      - node_modules/react-native-music-control/android/build.gradle
+      - node_modules/react-native-quick-actions/android/build.gradle
+      - node_modules/react-native-reanimated/android/build.gradle
+      - node_modules/react-native-safe-area-context/android/build.gradle
       - node_modules/react-native-screens/android/build.gradle
+      - node_modules/react-native-svg/android/build.gradle
+      - node_modules/react-native-vector-icons/android/build.gradle
+      - node_modules/react-native-video/android/build.gradle
     scandelete:
       - node_modules/
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.9
-CurrentVersionCode: 10
+CurrentVersion: 1.8.18
+CurrentVersionCode: 17
