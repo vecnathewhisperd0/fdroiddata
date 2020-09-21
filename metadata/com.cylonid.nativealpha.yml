@@ -22,9 +22,9 @@ RepoType: git
 Repo: https://github.com/cylonid/NativeAlphaForAndroid
 
 Builds:
-  - versionName: 0.82.1
-    versionCode: 1
-    commit: 8c818cdaf30878d595e1a3964b7de8bc50e5b411
+  - versionName: 0.84
+    versionCode: 840
+    commit: 4ea8e61635dfaee790e44032abdf93fdb7750d15
     subdir: app
     gradle:
       - yes
