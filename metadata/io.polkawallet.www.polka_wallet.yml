@@ -25,10 +25,14 @@ Builds:
     commit: v1.0.1
     init:
       - curl -Lo node.tar.xz https://nodejs.org/dist/v12.18.2/node-v12.18.2-linux-x64.tar.xz
+      - echo "b8dc634798ee783482c2ae1755bd7dff09d83fa7bb037cdc370b601d0a5e5cbb node.tar.xz"
+        | sha256sum -c -
       - tar -vxf node.tar.xz
       - curl -Lo yarn.tar.gz https://github.com/yarnpkg/yarn/releases/download/v1.22.4/yarn-v1.22.4.tar.gz
+      - echo "bc5316aa110b2f564a71a3d6e235be55b98714660870c5b6b2d2d3f12587fb58  yarn.tar.gz"
+        | sha256sum -c -
       - tar zvxf yarn.tar.gz
-      - export PATH=$PATH:`pwd`/node-v12.18.2-linux-x64/bin:`pwd`/yarn-v1.22.4/bin
+      - export PATH=$PATH:$PWD/node-v12.18.2-linux-x64/bin:$PWD/yarn-v1.22.4/bin
       - cd ./lib/js_service_kusama
       - yarn install
       - yarn run build
