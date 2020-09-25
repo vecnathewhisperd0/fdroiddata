@@ -7,19 +7,18 @@ AuthorWebSite: https://rosuh.me/
 SourceCode: https://github.com/rosuH/EasyWatermark
 IssueTracker: https://github.com/rosuH/EasyWatermark/issues
 
-
 RepoType: git
 Repo: https://github.com/rosuH/EasyWatermark
 
 Builds:
-  - versionName: '1.0'
-    versionCode: 3
-    commit: '1.0'
+  - versionName: '1.1.2'
+    versionCode: 10102
+    commit: '1.1.2'
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.0'
-CurrentVersionCode: 3
+CurrentVersion: '1.1.2'
+CurrentVersionCode: 10102
