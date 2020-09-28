@@ -9,7 +9,9 @@ Donate: https://www.paypal.com/paypalme/levisapps?locale.x=en_US
 AutoName: File Encryption
 Summary: Encrypt and decrypt any file!
 Description: |-
-    File Encryption can encrypt any file with a password based encryption or create encrypted text files (AES 256-bit key) in which you can store passwords or other sensitive information.
+    File Encryption can:
+    * Encrypt any file with a password based encryption
+    * Create encrypted text files (AES 256-bit key) for storing passwords and other sensitive information
 
 RepoType: git
 Repo: https://github.com/levis-apps/FileEncryption.git
@@ -17,12 +19,12 @@ Repo: https://github.com/levis-apps/FileEncryption.git
 Builds:
   - versionName: '1.1'
     versionCode: 2
-    commit: '1.1'
+    commit: v1.1
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1
+CurrentVersion: '1.1'
 CurrentVersionCode: 2
