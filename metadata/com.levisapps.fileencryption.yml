@@ -11,9 +11,6 @@ Summary: Encrypt and decrypt any file!
 Description: |-
     File Encryption can encrypt any file with a password based encryption or create encrypted text files (AES 256-bit key) in which you can store passwords or other sensitive information.
 
-    Links can be added like this:
-    [https://github.com/org/project/raw/HEAD/res/raw/changelog.xml Changelog]
-
 RepoType: git
 Repo: https://github.com/levis-apps/FileEncryption.git
 
