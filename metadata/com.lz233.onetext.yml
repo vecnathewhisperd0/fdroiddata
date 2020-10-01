@@ -1,13 +1,11 @@
 Categories:
   - Reading
-License: LGPL-3.0
-
+License: LGPL-3.0-only
 SourceCode: https://github.com/lz233/OneText_For_Android
 IssueTracker: https://github.com/lz233/OneText_For_Android/issues
-
 Donate: https://lz233.ac.cn/
 
-Summary: OneText is a neat little application that can display some custom sentences through widgets on the launcher. 
+Summary: OneText can display some custom sentences on the launcher
 Description: |-
     OneText is a neat little application that can display some custom sentences through widgets on the launcher.
     You can also generate screenshots of sentences in the app and save or share them.
@@ -18,7 +16,7 @@ RepoType: git
 Repo: https://github.com/lz233/OneText_For_Android
 
 Builds:
-  - versionName: '1.82-と'
+  - versionName: 1.82-と
     versionCode: 20201001
     commit: '20201001'
     subdir: app
@@ -27,5 +25,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
-CurrentVersion: '1.82-と'
+CurrentVersion: 1.82-と
 CurrentVersionCode: 20201001
