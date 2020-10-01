@@ -20,7 +20,7 @@ Repo: https://github.com/lz233/OneText_For_Android
 Builds:
   - versionName: '1.82-と'
     versionCode: 20201001
-    commit: v1.82
+    commit: '20201001'
     subdir: app
     gradle:
       - yes
