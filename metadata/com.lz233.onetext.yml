@@ -25,7 +25,7 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version
+AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
 CurrentVersion: '1.82-と'
 CurrentVersionCode: 20201001
