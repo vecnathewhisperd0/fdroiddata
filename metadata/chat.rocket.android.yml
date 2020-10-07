@@ -152,11 +152,9 @@ Builds:
 
   - versionName: 4.11.0
     versionCode: 2137
-    commit: 4.11.0
+    commit: 14faee707ae7496dece551cf50ba4ca31b4a598f
     subdir: android/app
     sudo:
-      - apt-get update || apt-get update
-      - apt-get install -y -t stretch-backports npm
       - curl -Lo node.tar.xz https://nodejs.org/dist/v10.18.1/node-v10.18.1-linux-x64.tar.xz
       - echo "8cc40f45c2c62529b15e83a6bbe0ac1febf57af3c5720df68067c96c0fddbbdf node.tar.xz"
         | sha256sum -c -
@@ -185,6 +183,7 @@ Builds:
       - node_modules/react-native-vector-icons
       - node_modules/react-native-webview
       - node_modules/rn-root-view
+      - node_modules/@react-native-firebase
     scandelete:
       - node_modules
       - ios
