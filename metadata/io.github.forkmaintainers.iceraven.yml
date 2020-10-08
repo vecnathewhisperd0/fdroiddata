@@ -24,8 +24,8 @@ Builds:
         mercurial llvm-6.0
     output: app/build/outputs/apk/release/app-*-release-unsigned.apk
     srclibs:
-      - MozAndroidComponents@4b2aa66d5721bba4b0a07c6d2bd42c4d22e84531
-      - MozAndroidComponentsAS@v24.0.0
+      - MozAndroidComponents@v62.0.0
+      - MozAndroidComponentsAS@v56.0.0
       - MozAppServices@v63.0.0
       - MozBuild@77066dd2f4224f88d976404f947141a9fb5b8e97
       - MozFennec@FIREFOX_81_0_BUILD2
@@ -34,6 +34,7 @@ Builds:
       - pyenv@v1.2.20
       - rustup@1.22.1
     prebuild:
+      - sed -i -e 's/62\.0\.20201002143132/62.0.0/g' buildSrc/src/main/java/AndroidComponents.kt
       - sed -i -e 's/org.mozilla.fennec_fdroid.sharedID/org.mozilla.foo.sharedID/'
         app/build.gradle
       - sed -i -e 's/fennec_fdroid/fenix_fdroid/' $$MozBuild$$/prebuild.sh
@@ -45,6 +46,9 @@ Builds:
 MaintainerNotes: |-
     Android Components version:
     grep VERSION build/io.github.forkmaintainers.iceraven/buildSrc/src/main/java/AndroidComponents.kt
+
+    Android Components version for Application Services:
+    grep 'ext.android_components_version =' build/srclib/MozAppServices/build.gradle
 
     Application Services version:
     grep 'mozilla_appservices =' build/srclib/MozAndroidComponents/buildSrc/src/main/java/Dependencies.kt
