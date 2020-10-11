@@ -14,13 +14,6 @@ RepoType: git
 Repo: https://github.com/marv42/EbtNewNote
 
 Builds:
-  - versionName: '0.19'
-    versionCode: 19
-    commit: v0.19
-    subdir: app
-    gradle:
-      - withoutKey
-
   - versionName: 0.43.0
     versionCode: 4300
     commit: v0.43.0
@@ -35,7 +28,14 @@ Builds:
     gradle:
       - withoutKey
 
+  - versionName: 0.45.0
+    versionCode: 4500
+    commit: v0.45.0
+    subdir: app
+    gradle:
+      - withoutKey
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
-CurrentVersion: 0.44.0
-CurrentVersionCode: 4400
+CurrentVersion: 0.45.0
+CurrentVersionCode: 4500
