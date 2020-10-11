@@ -1452,9 +1452,9 @@ Builds:
       - npm run build-android-assets
     ndk: r21b
 
-  - versionName: 0.2009.28-beta-fdroid
-    versionCode: 91
-    commit: v0.2009.28-beta
+  - versionName: 0.2010.5-beta-fdroid
+    versionCode: 92
+    commit: v0.2010.5-beta
     timeout: 30000
     subdir: android/app
     sudo:
@@ -1505,5 +1505,5 @@ MaintainerNotes: scanignore is used to allow the "node_modules/react-native/andr
 
 AutoUpdateMode: Version +-fdroid v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2009.28-beta
-CurrentVersionCode: 91
+CurrentVersion: 0.2010.5-beta
+CurrentVersionCode: 92
