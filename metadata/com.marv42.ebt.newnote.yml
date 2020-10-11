@@ -35,14 +35,14 @@ Builds:
     gradle:
       - withoutKey
 
-  - versionName: 0.45.0
-    versionCode: 4500
-    commit: v0.45.0
+  - versionName: 0.46.0
+    versionCode: 4600
+    commit: v0.46.0
     subdir: app
     gradle:
       - withoutKey
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
-CurrentVersion: 0.45.0
-CurrentVersionCode: 4500
+CurrentVersion: 0.46.0
+CurrentVersionCode: 4600
