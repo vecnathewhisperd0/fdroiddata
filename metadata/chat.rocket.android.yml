@@ -152,7 +152,7 @@ Builds:
 
   - versionName: 4.11.0
     versionCode: 2137
-    commit: 85f79e7f09f52b3d3cd611bd1ccb1a61ffdee061
+    commit: e857aaf483addcea1ed17a9f14cb9531f931a173
     subdir: android/app
     sudo:
       - curl -Lo node.tar.xz https://nodejs.org/dist/v10.18.1/node-v10.18.1-linux-x64.tar.xz
