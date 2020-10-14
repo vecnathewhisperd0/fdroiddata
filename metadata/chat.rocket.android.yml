@@ -166,26 +166,27 @@ Builds:
       - foss
     scanignore:
       - android/build.gradle
-      - node_modules/jsc-android
-      - node_modules/react-native/android/com/facebook/react/react-native/*/
-      - node_modules/react-native-notifications
-      - node_modules/@react-native-community
-      - node_modules/bugsnag-react-native
-      - node_modules/react-native-appearance
-      - node_modules/react-native-bootsplash
-      - node_modules/react-native-device-info
-      - node_modules/react-native-jitsi-meet
-      - node_modules/react-native-localize
-      - node_modules/react-native-prompt-android
-      - node_modules/react-native-reanimated
-      - node_modules/react-native-safe-area-context
-      - node_modules/react-native-screens
-      - node_modules/react-native-vector-icons
-      - node_modules/react-native-webview
-      - node_modules/rn-root-view
-      - node_modules/@react-native-firebase
-    scandelete:
       - node_modules
+      # - node_modules/jsc-android
+      # - node_modules/react-native/android/com/facebook/react/react-native/*/
+      # - node_modules/react-native-notifications
+      # - node_modules/@react-native-community
+      # - node_modules/bugsnag-react-native
+      # - node_modules/react-native-appearance
+      # - node_modules/react-native-bootsplash
+      # - node_modules/react-native-device-info
+      # - node_modules/react-native-jitsi-meet
+      # - node_modules/react-native-localize
+      # - node_modules/react-native-prompt-android
+      # - node_modules/react-native-reanimated
+      # - node_modules/react-native-safe-area-context
+      # - node_modules/react-native-screens
+      # - node_modules/react-native-vector-icons
+      # - node_modules/react-native-webview
+      # - node_modules/rn-root-view
+      # - node_modules/@react-native-firebase
+    scandelete:
+      # - node_modules
       - ios
 
 AutoUpdateMode: None
