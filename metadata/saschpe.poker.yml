@@ -21,14 +21,14 @@ RepoType: git
 Repo: https://github.com/saschpe/PlanningPoker
 
 Builds:
-  - versionName: 1.2.7
-    versionCode: 170127
-    commit: 34409fc6252ab6a20bf36ccc3802b769afd58c88
+  - versionName: 1.3.5
+    versionCode: 170010305
+    commit: de968ac14361b66755d58d576ef1ee2172df895c
     subdir: mobile
     gradle:
       - yes
     prebuild:
-      - sed -i -e "s|, ':wear'||" ../settings.gradle
+      - sed -i -e "s|, ':wear'||" ../settings.gradle.kts
       - rm -rf ../wear
 
 MaintainerNotes: |-
@@ -37,5 +37,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
-CurrentVersion: 1.3.4
-CurrentVersionCode: 241010304
+CurrentVersion: 1.3.5
+CurrentVersionCode: 170010305
