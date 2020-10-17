@@ -24,7 +24,8 @@ Builds:
       - make
       - make clean
       - rsync -r --ignore-existing * ../src/main/jni/project/gnugo-3.8/
-    buildjni: [src/main/jni]
+    build:
+      - $$NDK$$/ndk-build
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
