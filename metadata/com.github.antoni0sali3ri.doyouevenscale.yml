@@ -1,0 +1,26 @@
+Categories:
+  - Science & Education
+  - Multimedia
+License: AGPL-3.0-or-later
+AuthorName: Antoni0 Sali3ri
+SourceCode: https://github.com/antoni0sali3ri/doyouevenscale
+IssueTracker: https://github.com/antoni0sali3ri/doyouevenscale/issues
+
+AutoName: Do you even scale
+Summary: View musical scales on a fretboard
+
+RepoType: git
+Repo: https://github.com/antoni0sali3ri/doyouevenscale
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: 1b4a1eb195e3dbcbef3dadd9a58bec7313a250f3
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags v[0-9]\.[0-9](\.[0-9])?$
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
