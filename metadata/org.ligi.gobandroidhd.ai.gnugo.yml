@@ -26,7 +26,7 @@ Builds:
       - rsync -r --ignore-existing * ../src/main/jni/project/gnugo-3.8/
     build:
       - $$NDK$$/ndk-build
-    ndk: r21d
+    ndk: r16b
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
