@@ -192,7 +192,6 @@ Builds:
       - node_modules/@react-native-community/datetimepicker/android/build.gradle
       - node_modules/@react-native-community/slider/android/build.gradle
       - node_modules/@react-native-community/viewpager/android/build.gradle
-
     scandelete:
       - node_modules/
       - ios/
