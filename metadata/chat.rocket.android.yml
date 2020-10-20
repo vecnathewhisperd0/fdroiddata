@@ -164,6 +164,8 @@ Builds:
     init: yarn install
     gradle:
       - foss
+    rm:
+      - node_modules/react-native-notifications/android/app/src/main/java/com/wix/reactnativenotifications/fcm/
     scanignore:
       - android/build.gradle
       - node_modules/jsc-android
