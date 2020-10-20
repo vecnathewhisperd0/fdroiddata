@@ -246,7 +246,87 @@ Builds:
         -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
         ../build.gradle build.gradle
 
+  - versionName: 0.20.0
+    versionCode: 64
+    commit: 0.20.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        ../build.gradle build.gradle
+
+  - versionName: 0.20.2
+    versionCode: 66
+    commit: 0.20.2
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        ../build.gradle build.gradle
+
+  - versionName: 0.20.3
+    versionCode: 67
+    commit: 0.20.3
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        ../build.gradle build.gradle
+
+  - versionName: 0.20.4
+    versionCode: 68
+    commit: 0.20.4
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        ../build.gradle build.gradle
+
+  - versionName: 0.20.5
+    versionCode: 69
+    commit: 0.20.5
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        ../build.gradle build.gradle
+
+  - versionName: 0.21.0
+    versionCode: 70
+    commit: 0.21.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        ../build.gradle build.gradle
+
+  - versionName: 0.21.2
+    versionCode: 72
+    commit: 0.21.2
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        ../build.gradle build.gradle
+
+  - versionName: 0.22.0
+    versionCode: 73
+    commit: 0.22.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/com.google.gms/d' -e '/com.google.firebase/d' -e '/io.fabric/d'
+        -e '/com.crashlytics/d' -e '/maven.fabric.io/d' -e '/kotlin.bintray.com/d'
+        ../build.gradle build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.19.0
-CurrentVersionCode: 63
+CurrentVersion: 0.22.0
+CurrentVersionCode: 73

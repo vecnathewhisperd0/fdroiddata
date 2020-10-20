@@ -1,7 +1,7 @@
 Categories:
   - Multimedia
 License: MIT
-WebSite: https://github.com/y20k/escapepod/wiki
+WebSite: http://www.y20k.org/escapepod/
 SourceCode: https://github.com/y20k/escapepod
 IssueTracker: https://github.com/y20k/escapepod/issues
 Translation: https://hosted.weblate.org/projects/escapepod/
@@ -125,7 +125,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.9.2
+    versionCode: 27
+    commit: v0.9.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.3
+    versionCode: 28
+    commit: v0.9.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.4
+    versionCode: 29
+    commit: v0.9.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.5
+    versionCode: 30
+    commit: v0.9.5
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.9.1
-CurrentVersionCode: 26
+CurrentVersion: 0.9.5
+CurrentVersionCode: 30

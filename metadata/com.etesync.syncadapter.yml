@@ -765,17 +765,25 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 1.15.0
-    versionCode: 110
-    commit: v1.15.0
+  - versionName: 1.15.1
+    versionCode: 111
+    commit: v1.15.1
     subdir: app
     submodules: true
     gradle:
       - yes
 
-  - versionName: 1.15.1
-    versionCode: 111
-    commit: v1.15.1
+  - versionName: 1.16.0
+    versionCode: 112
+    commit: v1.16.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.16.2
+    versionCode: 114
+    commit: v1.16.2
     subdir: app
     submodules: true
     gradle:
@@ -788,5 +796,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.15.1
-CurrentVersionCode: 111
+CurrentVersion: 1.16.2
+CurrentVersionCode: 114

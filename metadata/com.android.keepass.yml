@@ -429,7 +429,27 @@ Builds:
       - app/libs
     ndk: r21b
 
+  - versionName: 2.5.13
+    versionCode: 196
+    commit: v2.5.13
+    subdir: app
+    gradle:
+      - general
+    rm:
+      - app/libs
+    ndk: r21d
+
+  - versionName: 2.5.14
+    versionCode: 197
+    commit: v2.5.14
+    subdir: app
+    gradle:
+      - general
+    rm:
+      - app/libs
+    ndk: r21d
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.12
-CurrentVersionCode: 195
+CurrentVersion: 2.5.14
+CurrentVersionCode: 197

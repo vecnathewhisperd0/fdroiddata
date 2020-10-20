@@ -291,7 +291,64 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 1.9.1
+    versionCode: 1009001
+    disable: badly broken version
+    commit: 1.9.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.9.2
+    versionCode: 1009002
+    commit: 1.9.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.9.3
+    versionCode: 1009003
+    commit: 1.9.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.9.6
+    versionCode: 1009006
+    commit: 1.9.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.9.7
+    versionCode: 1009007
+    commit: 1.9.7
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.10.0
+    versionCode: 1010000
+    commit: 1.10.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.11.0
+    versionCode: 1011000
+    commit: 1.11.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.11.1
+    versionCode: 1011001
+    commit: 1.11.1
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.3
-CurrentVersionCode: 1008003
+CurrentVersion: 1.11.1
+CurrentVersionCode: 1011001

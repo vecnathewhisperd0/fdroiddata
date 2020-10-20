@@ -30,7 +30,17 @@ Builds:
     rm:
       - gradle/wrapper/gradle-wrapper.properties
 
+  - versionName: 0.2.2
+    versionCode: 5
+    disable: firebase
+    commit: v0.2.2
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - gradle/wrapper/gradle-wrapper.properties
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2.0
-CurrentVersionCode: 3
+CurrentVersion: 0.2.2
+CurrentVersionCode: 5
