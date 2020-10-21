@@ -7,10 +7,6 @@ IssueTracker: https://gitlab.com/AndreasK/safmediascanner/issues
 Changelog: https://gitlab.com/AndreasK/safmediascanner/blob/HEAD/app/src/main/assets/version-history.txt
 
 AutoName: SAF Media Scanner
-Description: |-
-    Scans SAF (Storage Access Framework) paths for audio files and builds a database
-    to be used by Unpopular Music Player or Opus 1 Music Player.
-    Contrary to the Android service it knows about composers, works, movements, conductors etc.
 
 RepoType: git
 Repo: https://gitlab.com/AndreasK/safmediascanner.git
