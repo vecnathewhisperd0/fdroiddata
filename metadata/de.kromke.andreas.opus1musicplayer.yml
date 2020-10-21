@@ -22,7 +22,7 @@ Repo: https://gitlab.com/AndreasK/opus1-music-player.git
 Builds:
   - versionName: '2.30'
     versionCode: 57
-    commit: v2.15
+    commit: 259bd0ed
     subdir: app
     gradle:
       - yes
