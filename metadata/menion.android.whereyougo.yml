@@ -43,6 +43,6 @@ Builds:
     ndk: r21d
 
 AutoUpdateMode: Version %v
-UpdateCheckMode: Tags ^[0-9\.]+$
+UpdateCheckMode: Tags
 CurrentVersion: 2020.04.07
 CurrentVersionCode: 20200407
