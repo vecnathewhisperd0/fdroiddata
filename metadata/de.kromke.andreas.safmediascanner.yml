@@ -16,7 +16,7 @@ RepoType: git
 Repo: https://gitlab.com/AndreasK/safmediascanner.git
 
 Builds:
-  - versionName: '1.1.1'
+  - versionName: 1.1.1
     versionCode: 3
     commit: 3bd0d357
     subdir: app
@@ -26,6 +26,6 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.1.1'
+CurrentVersion: 1.1.1
 CurrentVersionCode: 3
 
