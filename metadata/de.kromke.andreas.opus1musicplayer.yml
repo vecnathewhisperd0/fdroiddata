@@ -20,15 +20,15 @@ RepoType: git
 Repo: https://gitlab.com/AndreasK/opus1-music-player.git
 
 Builds:
-  - versionName: '2.15'
-    versionCode: 55
+  - versionName: '2.30'
+    versionCode: 57
     commit: v2.15
     subdir: app
     gradle:
       - yes
-    ndk: r18b
+    ndk: r21d
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '2.15'
-CurrentVersionCode: 55
+CurrentVersion: '2.30'
+CurrentVersionCode: 57
