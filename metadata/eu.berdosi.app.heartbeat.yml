@@ -1,0 +1,30 @@
+Categories:
+  - Sports & Health
+License: ISC
+SourceCode: https://github.com/berdosi/HeartBeat
+IssueTracker: https://github.com/berdosi/HeartBeat/issues
+Donate: https://paypal.me/BalintErdosi
+
+AutoName: HeartBeat
+Description: |-
+    Simple way to estimate the heart rate. Please do not use it for medical purposes !
+
+    This utility works by covering the flash as well as the device's camera with a finger, and waiting for 10 seconds. It works best when the person stays still, and the environment is dark.
+
+    The phone analyzes the amount of red captured by the camera, and attempts to calculate the heart rate based on the subtle changes it detects.
+
+RepoType: git
+Repo: https://github.com/berdosi/HeartBeat
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: a89bd73
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
