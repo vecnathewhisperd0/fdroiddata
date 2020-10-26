@@ -16,6 +16,60 @@ RepoType: git
 Repo: https://gitlab.com/enjoyingfoss/feeel.git
 
 Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/proguard-rules.pro
+
+  - versionName: '1.1'
+    versionCode: 2
+    commit: v1.1
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/proguard-rules.pro
+
+  - versionName: '1.9'
+    versionCode: 3
+    commit: v1.9
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/proguard-rules.pro
+
+  - versionName: '1.91'
+    versionCode: 4
+    commit: v1.91
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/proguard-rules.pro
+
+  - versionName: '1.94'
+    versionCode: 6
+    commit: '1.94'
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/proguard-rules.pro
+
+  - versionName: '1.96'
+    versionCode: 8
+    commit: '1.96'
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/proguard-rules.pro
+      
   - versionName: '1.990'
     versionCode: 9
     commit: '1.990'
@@ -33,3 +87,5 @@ AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: '1.990'
 CurrentVersionCode: 9
+
+
