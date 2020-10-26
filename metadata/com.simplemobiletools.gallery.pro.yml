@@ -543,7 +543,87 @@ Builds:
       - foss
     prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
 
+  - versionName: 6.15.3
+    versionCode: 315
+    commit: 6.15.3
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - foss
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+
+  - versionName: 6.15.5
+    versionCode: 317
+    commit: 6.15.5
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - foss
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+
+  - versionName: 6.15.6
+    versionCode: 318
+    commit: 6.15.6
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - foss
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+
+  - versionName: 6.16.0
+    versionCode: 319
+    commit: 6.16.0
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - foss
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+
+  - versionName: 6.16.1
+    versionCode: 320
+    commit: 6.16.1
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - foss
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+
+  - versionName: 6.16.2
+    versionCode: 321
+    commit: 6.16.2
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - foss
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+
+  - versionName: 6.16.3
+    versionCode: 322
+    commit: 6.16.3
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - foss
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+
+  - versionName: 6.16.4
+    versionCode: 323
+    commit: 6.16.4
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - foss
+    prebuild: sed -i -e '/(is_proprietary)/,+2d' ../build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 6.15.2
-CurrentVersionCode: 314
+CurrentVersion: 6.16.4
+CurrentVersionCode: 323

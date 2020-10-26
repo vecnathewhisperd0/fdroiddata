@@ -94,7 +94,47 @@ Builds:
       - yes
     prebuild: sed -i -e '/fabric/d' -e '/osborn/d' build.gradle ../build.gradle
 
+  - versionName: 1.12.5
+    versionCode: 153
+    commit: 1.12.5
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/fabric/d' -e '/osborn/d' build.gradle ../build.gradle
+
+  - versionName: 1.12.6
+    versionCode: 154
+    commit: 1.12.6
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/fabric/d' -e '/osborn/d' build.gradle ../build.gradle
+
+  - versionName: 1.12.6.1
+    versionCode: 155
+    commit: 1.12.6.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/fabric/d' -e '/osborn/d' build.gradle ../build.gradle
+
+  - versionName: 1.12.8
+    versionCode: 156
+    commit: 1.12.8
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/fabric/d' -e '/osborn/d' build.gradle ../build.gradle
+
+  - versionName: 1.12.9
+    versionCode: 157
+    commit: 1.12.9
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/fabric/d' -e '/osborn/d' build.gradle ../build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.12.1
-CurrentVersionCode: 152
+CurrentVersion: 1.12.9
+CurrentVersionCode: 157

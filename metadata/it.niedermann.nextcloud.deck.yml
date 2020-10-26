@@ -313,14 +313,42 @@ Builds:
     gradle:
       - fdroid
 
-  - versionName: 1.9.4
-    versionCode: 1009004
-    commit: 1.9.4
+  - versionName: 1.9.6
+    versionCode: 1009006
+    commit: 1.9.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.9.7
+    versionCode: 1009007
+    commit: 1.9.7
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.10.0
+    versionCode: 1010000
+    commit: 1.10.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.11.0
+    versionCode: 1011000
+    commit: 1.11.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.11.1
+    versionCode: 1011001
+    commit: 1.11.1
     subdir: app
     gradle:
       - fdroid
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.4
-CurrentVersionCode: 1009004
+CurrentVersion: 1.11.1
+CurrentVersionCode: 1011001

@@ -11,45 +11,6 @@ Donate: https://www.patreon.com/mmarif
 LiberapayID: '1547671'
 
 AutoName: GitNex
-Description: |-
-    GitNex is an Android client for Gitea. Gitea is a community managed
-    fork of Gogs, lightweight code hosting solution written in Go.
-
-    Wiki:
-    [https://codeberg.org/gitnex/GitNex/wiki Wiki]
-
-    Screenshots:
-    [https://codeberg.org/gitnex/GitNex/src/branch/master/fastlane/metadata/android/en-US/images/phoneScreenshots Screenshots]
-
-    Release notes:
-    [https://codeberg.org/gitnex/GitNex/releases Release-notes]
-
-    Features:
-
-    * My Repositories
-    * Repositories list
-    * Organizations list
-    * Create new repository
-    * Create new organization
-    * Search/filter repositories and organizations
-    * Profile view
-    * Repository stars, watchers, issues count
-    * Issues list
-    * Issue comments
-    * Comment on issues
-    * Search issues in issues list
-    * Create new issue with multiple assignees, labels, milestone, due date
-    * Create label
-    * Repository information
-    * Milestones list
-    * Create new milestone
-    * Branches list
-    * Releases with source download
-    * Collaborators view for repository
-    * Markdown support
-    * Emoji support
-    * Settings: Pretty and Normal time format, language change
-    * Option to access local non https installs
 
 RepoType: git
 Repo: https://codeberg.org/gitnex/GitNex.git
@@ -279,7 +240,56 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 3.1.0-rc1
+    versionCode: 307
+    commit: 3.1.0-rc1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.1.0-rc2
+    versionCode: 308
+    commit: 3.1.0-rc2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.1.0
+    versionCode: 310
+    commit: 3.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.1.1
+    versionCode: 311
+    commit: 3.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.1.2
+    versionCode: 312
+    commit: 3.1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.2.0
+    versionCode: 320
+    commit: 3.2.0
+    subdir: app
+    gradle:
+      - free
+
+  - versionName: 3.3.0-rc1
+    versionCode: 327
+    commit: 3.3.0-rc1
+    subdir: app
+    gradle:
+      - free
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.0.1
-CurrentVersionCode: 301
+CurrentVersion: 3.3.0-rc1
+CurrentVersionCode: 327

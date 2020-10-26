@@ -788,10 +788,10 @@ Builds:
     build: scripts/build_android.sh
     ndk: r12b
 
-  - versionName: v0.5.4-fdroid.3
-    versionCode: 2002120544
+  - versionName: v0.5.5
+    versionCode: 2008082307
     disable: fails to build
-    commit: v0.5.4-fdroid.3
+    commit: v0.5.5
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y libprotobuf-c-dev protobuf-c-compiler
@@ -814,5 +814,5 @@ MaintainerNotes: |-
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://download.navit-project.org/api/version.json|"version_code":.*"(.*)"|.|"version_name":.*\"(.*)\",
-CurrentVersion: v0.5.4-fdroid.3
-CurrentVersionCode: 2002120544
+CurrentVersion: v0.5.5
+CurrentVersionCode: 2008082307

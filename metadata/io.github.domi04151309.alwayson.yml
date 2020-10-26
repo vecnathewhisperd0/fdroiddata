@@ -97,7 +97,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 3.7.7
+    versionCode: 377
+    commit: 3.7.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.8.0
+    versionCode: 380
+    commit: 3.8.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.8.1
+    versionCode: 381
+    commit: 3.8.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.7.6
-CurrentVersionCode: 376
+CurrentVersion: 3.8.1
+CurrentVersionCode: 381

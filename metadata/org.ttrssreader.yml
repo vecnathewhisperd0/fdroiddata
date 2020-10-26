@@ -575,6 +575,38 @@ Builds:
       - fdroid
     prebuild: sed -i -e '/playCompile/d' build.gradle
 
+  - versionName: 1.95.7
+    versionCode: 1957
+    commit: v1.95.7_1957
+    subdir: ttrssreader
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
+  - versionName: 1.95.8
+    versionCode: 1958
+    commit: v1.95.8_1958
+    subdir: ttrssreader
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
+  - versionName: 1.96.0
+    versionCode: 1960
+    commit: v1.96.0_1960
+    subdir: ttrssreader
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
+  - versionName: 1.96.1
+    versionCode: 1961
+    commit: v1.96.1_1961
+    subdir: ttrssreader
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/playCompile/d' build.gradle
+
 MaintainerNotes: |-
     Upstream mistags often and retags, so never use tags directly.
 
@@ -587,5 +619,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version v%v_%c
 UpdateCheckMode: Tags
-CurrentVersion: 1.95.1
-CurrentVersionCode: 1953
+CurrentVersion: 1.96.1
+CurrentVersionCode: 1961

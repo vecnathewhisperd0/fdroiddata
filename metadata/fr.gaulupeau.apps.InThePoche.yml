@@ -219,12 +219,34 @@ Builds:
 
   - versionName: 2.4.0-beta.4
     versionCode: 223
+    disable: replaced
     commit: 2.4.0-beta.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.4.0-beta.6
+    versionCode: 225
+    commit: 2.4.0-beta.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.4.0
+    versionCode: 226
+    commit: 2.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.4.1
+    versionCode: 227
+    commit: 2.4.1
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^v?[0-9.]*$
-CurrentVersion: 2.3.0
-CurrentVersionCode: 219
+CurrentVersion: 2.4.1
+CurrentVersionCode: 227

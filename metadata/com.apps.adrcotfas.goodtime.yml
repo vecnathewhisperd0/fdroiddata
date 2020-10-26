@@ -179,7 +179,35 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 2.2.0
+    versionCode: 123
+    commit: 2.2.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.2.2
+    versionCode: 126
+    commit: 2.2.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.2.3
+    versionCode: 127
+    commit: 2.2.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 2.2.4
+    versionCode: 128
+    commit: 2.2.4
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.1.17
-CurrentVersionCode: 122
+CurrentVersion: 2.2.4
+CurrentVersionCode: 128

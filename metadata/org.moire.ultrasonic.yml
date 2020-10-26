@@ -7,7 +7,7 @@ IssueTracker: https://github.com/ultrasonic/ultrasonic/issues
 Translation: https://www.transifex.com/ultrasonic/ultrasonic/
 Changelog: https://github.com/ultrasonic/ultrasonic/releases
 
-AutoName: UltraSonic
+AutoName: Ultrasonic
 Description: |-
     Ultrasonic is a Subsonic client for Android. You can use Ultrasonic to connect
     to a Subsonic (or Subsonic-compatible) server and listen to music.
@@ -116,7 +116,63 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.9.0
+    versionCode: 74
+    commit: 2.9.0
+    subdir: ultrasonic
+    gradle:
+      - yes
+
+  - versionName: 2.10.0
+    versionCode: 75
+    commit: 2.10.0
+    subdir: ultrasonic
+    gradle:
+      - yes
+
+  - versionName: 2.11.0
+    versionCode: 76
+    commit: 2.11.0
+    subdir: ultrasonic
+    gradle:
+      - yes
+
+  - versionName: 2.11.2
+    versionCode: 78
+    commit: 2.11.2
+    subdir: ultrasonic
+    gradle:
+      - yes
+
+  - versionName: 2.12.0
+    versionCode: 79
+    commit: 2.12.0
+    subdir: ultrasonic
+    gradle:
+      - yes
+
+  - versionName: 2.13.0
+    versionCode: 80
+    commit: 2.13.0
+    subdir: ultrasonic
+    gradle:
+      - yes
+
+  - versionName: 2.14.0
+    versionCode: 81
+    commit: 2.14.0
+    subdir: ultrasonic
+    gradle:
+      - yes
+
+  - versionName: 2.15.0
+    versionCode: 82
+    commit: 2.15.0
+    subdir: ultrasonic
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.8.0
-CurrentVersionCode: 73
+CurrentVersion: 2.15.0
+CurrentVersionCode: 82

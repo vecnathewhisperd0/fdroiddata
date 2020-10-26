@@ -217,7 +217,55 @@ Builds:
       - yes
     prebuild: sed -i -e 's/6.5-milestone-1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
 
+  - versionName: 69.0.0
+    versionCode: 48
+    commit: 69.0.0
+    subdir: ffupdater
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.5-milestone-1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 69.0.2
+    versionCode: 50
+    commit: 69.0.2
+    subdir: ffupdater
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.5-milestone-1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 69.0.3
+    versionCode: 51
+    commit: 69.0.3
+    subdir: ffupdater
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.5-milestone-1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 69.0.4
+    versionCode: 52
+    commit: 69.0.4
+    subdir: ffupdater
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.5-milestone-1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 69.0.5
+    versionCode: 53
+    commit: 69.0.5
+    subdir: ffupdater
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.5-milestone-1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 70.0.0
+    versionCode: 54
+    commit: 70.0.0
+    subdir: ffupdater
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.5-milestone-1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 68.4.1
-CurrentVersionCode: 47
+CurrentVersion: 70.0.0
+CurrentVersionCode: 54

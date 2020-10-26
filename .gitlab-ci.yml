@@ -22,7 +22,7 @@ lint:
   script:
     # if this is a merge request fork, then only check relevant apps
     - if [ "$CI_PROJECT_NAMESPACE" != "fdroid" ]; then
-        git fetch https://gitlab.com/fdroid/fdroiddata;
+        git fetch https://gitlab.com/fdroid/fdroiddata.git;
         test -d build || mkdir build;
         files=`git diff --name-only --diff-filter=d FETCH_HEAD...HEAD`;
         for f in $files; do
@@ -76,15 +76,11 @@ checkupdates_trigger:
       - schedules
     variables:
       - $CHECKUPDATES == "true"
-  image: debian:buster-slim
+  image: archlinux:latest
   before_script:
-    - apt-get update
-    - apt-get install -qy --no-install-recommends parallel curl ca-certificates
+    - pacman -Sy --noconfirm parallel
   script:
-    - files=( metadata/*.yml )
-    - files=( ${files[@]#metadata/} )
-    - files=( ${files[@]%.yml} )
-    - parallel --verbose --delay 90 -N 340 'curl -X POST -F "token=$CI_JOB_TOKEN" -F "ref=master" -F "variables[CHECKUPDATES]=true" -F "variables[CHECKUPDATES_APPIDS]= {} " https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/trigger/pipeline' ":::" ${files[@]}
+    - parallel --verbose --delay 90 -X --jobs 10 'curl -X POST -F "token=$CI_JOB_TOKEN" -F "ref=master" -F "variables[CHECKUPDATES]=true" -F "variables[CHECKUPDATES_APPIDS]= {/.} " https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/trigger/pipeline' ":::" metadata/*.yml
 
 checkupdates_runner:
   image: registry.gitlab.com/fdroid/ci-images-checkupdates:latest

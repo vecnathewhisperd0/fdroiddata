@@ -4,7 +4,7 @@ Categories:
 License: GPL-3.0-only
 SourceCode: https://github.com/bk138/multivnc
 IssueTracker: https://github.com/bk138/multivnc/issues
-Changelog: https://github.com/bk138/multivnc/commits
+Changelog: https://raw.githubusercontent.com/bk138/multivnc/HEAD/android/ChangeLog.md
 LiberapayID: '1537855'
 
 AutoName: MultiVNC
@@ -193,7 +193,59 @@ Builds:
       - android/app/libs/
     ndk: r21d
 
+  - versionName: 1.9.3
+    versionCode: 71
+    commit: AndroidMultiVNC-1.9.3
+    subdir: android/app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: ../../prepareLibreSSL.sh
+    scanignore:
+      - contrib
+      - android/app/libs/
+    ndk: r21d
+
+  - versionName: 1.9.4
+    versionCode: 72
+    commit: AndroidMultiVNC-1.9.4
+    subdir: android/app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: ../../prepareLibreSSL.sh
+    scanignore:
+      - contrib
+      - android/app/libs/
+    ndk: r21d
+
+  - versionName: 1.9.5
+    versionCode: 73
+    commit: AndroidMultiVNC-1.9.5
+    subdir: android/app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: ../../prepareLibreSSL.sh
+    scanignore:
+      - contrib
+      - android/app/libs/
+    ndk: r21d
+
+  - versionName: 1.9.6
+    versionCode: 74
+    commit: AndroidMultiVNC-1.9.6
+    subdir: android/app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: ../../prepareLibreSSL.sh
+    scanignore:
+      - contrib
+      - android/app/libs/
+    ndk: r21d
+
 AutoUpdateMode: Version AndroidMultiVNC-%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.2
-CurrentVersionCode: 70
+CurrentVersion: 1.9.6
+CurrentVersionCode: 74
