@@ -1,11 +1,11 @@
 diff --git a/android/app/build.gradle b/android/app/build.gradle
-index ee86c2da2..5b6eef52f 100644
+index 6c68c6437..205bdf37d 100644
 --- a/android/app/build.gradle
 +++ b/android/app/build.gradle
-@@ -248,14 +248,14 @@ dependencies {
+@@ -247,14 +247,14 @@ dependencies {
+     implementation project(':watermelondb')
      implementation project(":reactnativekeyboardinput")
      implementation project(':@react-native-community_viewpager')
-     implementation project(':react-native-config-reader')
 -    playImplementation project(':reactnativenotifications')
 -    playImplementation project(':@react-native-firebase_app')
 -    playImplementation project(':@react-native-firebase_analytics')
@@ -40,10 +40,10 @@ index 8500050a4..060b6e38d 100644
  
          google()
 diff --git a/android/settings.gradle b/android/settings.gradle
-index 3b5b19e17..d8ee506c5 100644
+index ed2f78c10..da307983c 100644
 --- a/android/settings.gradle
 +++ b/android/settings.gradle
-@@ -4,18 +4,18 @@ includeUnimodulesProjects()
+@@ -4,17 +4,17 @@ includeUnimodulesProjects()
  rootProject.name = 'RocketChatRN'
  include ':watermelondb'
  project(':watermelondb').projectDir = new File(rootProject.projectDir, '../node_modules/@nozbe/watermelondb/native/android')
@@ -67,9 +67,8 @@ index 3b5b19e17..d8ee506c5 100644
 +// project(':@react-native-firebase_analytics').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/analytics/android')
 +// include ':@react-native-firebase_crashlytics'
 +// project(':@react-native-firebase_crashlytics').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/crashlytics/android')
- include ':react-native-config-reader'
- project(':react-native-config-reader').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-config-reader/android')
  apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+ include ':app'
 diff --git a/patches/react-native-jitsi-meet+2.3.1.patch b/patches/react-native-jitsi-meet+2.3.1.patch
 new file mode 100644
 index 000000000..e9c7ded42

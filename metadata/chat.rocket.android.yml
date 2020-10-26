@@ -152,7 +152,7 @@ Builds:
 
   - versionName: 4.11.0
     versionCode: 2137
-    commit: cd974fddc16e85f1d7e3aebd475f4066ec4f3076
+    commit: 16a1e05618fd6d4b581ff949e785282e5cf7aa23
     subdir: android/app
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
@@ -173,7 +173,6 @@ Builds:
       - android/build.gradle
       - node_modules/jsc-android
       - node_modules/hermes-engine
-      - node_modules/react-native-notifications
       - node_modules/react-native/android/com/facebook/react/react-native/*/
       - node_modules/bugsnag-react-native/android/build.gradle
       - node_modules/react-native-appearance/android/build.gradle
