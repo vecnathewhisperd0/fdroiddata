@@ -163,6 +163,8 @@ Builds:
       - cp -a node-v10.18.1-linux-x64/. /usr/local/
       - npm -g install yarn
     init: yarn install
+    patch:
+      - foss-build.patch
     gradle:
       - foss
     rm:

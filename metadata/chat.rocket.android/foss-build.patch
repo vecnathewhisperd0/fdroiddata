@@ -1,0 +1,91 @@
+diff --git a/android/app/build.gradle b/android/app/build.gradle
+index ee86c2da2..5b6eef52f 100644
+--- a/android/app/build.gradle
++++ b/android/app/build.gradle
+@@ -248,14 +248,14 @@ dependencies {
+     implementation project(":reactnativekeyboardinput")
+     implementation project(':@react-native-community_viewpager')
+     implementation project(':react-native-config-reader')
+-    playImplementation project(':reactnativenotifications')
+-    playImplementation project(':@react-native-firebase_app')
+-    playImplementation project(':@react-native-firebase_analytics')
+-    playImplementation project(':@react-native-firebase_crashlytics')
++    // playImplementation project(':reactnativenotifications')
++    // playImplementation project(':@react-native-firebase_app')
++    // playImplementation project(':@react-native-firebase_analytics')
++    // playImplementation project(':@react-native-firebase_crashlytics')
++    // playImplementation "com.google.firebase:firebase-messaging:18.0.0"
+     implementation fileTree(dir: "libs", include: ["*.jar"])
+     //noinspection GradleDynamicVersion
+     implementation "com.facebook.react:react-native:+"  // From node_modules
+-    playImplementation "com.google.firebase:firebase-messaging:18.0.0"
+     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
+       exclude group:'com.facebook.fbjni'
+diff --git a/android/build.gradle b/android/build.gradle
+index 8500050a4..060b6e38d 100644
+--- a/android/build.gradle
++++ b/android/build.gradle
+@@ -40,7 +40,11 @@ allprojects {
+             url("$rootDir/../node_modules/react-native/android")
+         }
+         maven {
+-            url "https://github.com/RocketChat/jitsi-maven-repository/raw/master/releases"
++            // Android JSC is installed from npm
++            url("$rootDir/../node_modules/jsc-android/dist")
++        }
++        maven {
++            url "https://github.com/RocketChat/jitsi-maven-repository/raw/2.10.3/releases"
+         }
+ 
+         google()
+diff --git a/android/settings.gradle b/android/settings.gradle
+index 3b5b19e17..d8ee506c5 100644
+--- a/android/settings.gradle
++++ b/android/settings.gradle
+@@ -4,18 +4,18 @@ includeUnimodulesProjects()
+ rootProject.name = 'RocketChatRN'
+ include ':watermelondb'
+ project(':watermelondb').projectDir = new File(rootProject.projectDir, '../node_modules/@nozbe/watermelondb/native/android')
+-include ':reactnativenotifications'
+-project(':reactnativenotifications').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-notifications/android/app')
+ include ':reactnativekeyboardinput'
+ project(':reactnativekeyboardinput').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-keyboard-input/lib/android')
+ include ':@react-native-community_viewpager'
+ project(':@react-native-community_viewpager').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/viewpager/android')
+-include ':@react-native-firebase_app'
+-project(':@react-native-firebase_app').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/app/android')
+-include ':@react-native-firebase_analytics'
+-project(':@react-native-firebase_analytics').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/analytics/android')
+-include ':@react-native-firebase_crashlytics'
+-project(':@react-native-firebase_crashlytics').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/crashlytics/android')
++// include ':reactnativenotifications'
++// project(':reactnativenotifications').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-notifications/android/app')
++// include ':@react-native-firebase_app'
++// project(':@react-native-firebase_app').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/app/android')
++// include ':@react-native-firebase_analytics'
++// project(':@react-native-firebase_analytics').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/analytics/android')
++// include ':@react-native-firebase_crashlytics'
++// project(':@react-native-firebase_crashlytics').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/crashlytics/android')
+ include ':react-native-config-reader'
+ project(':react-native-config-reader').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-config-reader/android')
+ apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+diff --git a/patches/react-native-jitsi-meet+2.3.1.patch b/patches/react-native-jitsi-meet+2.3.1.patch
+new file mode 100644
+index 000000000..e9c7ded42
+--- /dev/null
++++ b/patches/react-native-jitsi-meet+2.3.1.patch
+@@ -0,0 +1,13 @@
++diff --git a/node_modules/react-native-jitsi-meet/android/build.gradle b/node_modules/react-native-jitsi-meet/android/build.gradle
++index 1b5ac28..ab4fa58 100644
++--- a/node_modules/react-native-jitsi-meet/android/build.gradle
+++++ b/node_modules/react-native-jitsi-meet/android/build.gradle
++@@ -37,7 +37,7 @@ android {
++ 
++ repositories {
++   maven {
++-      url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
+++      url "https://github.com/jitsi/jitsi-maven-repository/raw/2.10.3/releases"
++   }
++   google()
++   mavenCentral()
