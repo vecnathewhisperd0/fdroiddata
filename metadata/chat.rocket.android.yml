@@ -173,6 +173,7 @@ Builds:
       - node_modules/hermes-engine
       - node_modules/react-native-notifications
       - node_modules/react-native/android/com/facebook/react/react-native/*/
+      - node_modules/bugsnag-react-native/android/build.gradle
       - node_modules/react-native-appearance/android/build.gradle
       - node_modules/react-native-bootsplash/android/build.gradle
       - node_modules/react-native-device-info/android/build.gradle
