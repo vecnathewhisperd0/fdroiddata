@@ -152,7 +152,7 @@ Builds:
 
   - versionName: 4.11.0
     versionCode: 2137
-    commit: f6ce3822d03bee344f91d50a15a43514e78753ba
+    commit: c57e4bd99bd41b65536ab47a344123b295a8da51
     subdir: android/app
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
