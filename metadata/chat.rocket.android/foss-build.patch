@@ -36,7 +36,7 @@ index 8500050a4..d30f05d5a 100644
 +            url("$rootDir/../node_modules/jsc-android/dist")
 +        }
 +        maven {
-+            url "https://github.com/jitsi/jitsi-maven-repository/raw/2.10.3/releases"
++            url "https://github.com/RocketChat/jitsi-maven-repository/raw/2.10.3/releases"
          }
  
          google()
@@ -87,7 +87,7 @@ index 000000000..e9c7ded42
 + repositories {
 +   maven {
 +-      url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
-++      url "https://github.com/jitsi/jitsi-maven-repository/raw/2.10.3/releases"
+++      url "https://github.com/RocketChat/jitsi-maven-repository/raw/2.10.3/releases"
 +   }
 +   google()
 +   mavenCentral()
