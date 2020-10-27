@@ -1,8 +1,8 @@
 diff --git a/android/app/build.gradle b/android/app/build.gradle
-index 6c68c6437..205bdf37d 100644
+index 6c68c6437..0b8847208 100644
 --- a/android/app/build.gradle
 +++ b/android/app/build.gradle
-@@ -247,14 +247,14 @@ dependencies {
+@@ -247,14 +247,15 @@ dependencies {
      implementation project(':watermelondb')
      implementation project(":reactnativekeyboardinput")
      implementation project(':@react-native-community_viewpager')
@@ -10,6 +10,7 @@ index 6c68c6437..205bdf37d 100644
 -    playImplementation project(':@react-native-firebase_app')
 -    playImplementation project(':@react-native-firebase_analytics')
 -    playImplementation project(':@react-native-firebase_crashlytics')
++    // playImplementation project(':bugsnag-react-native')
 +    // playImplementation project(':reactnativenotifications')
 +    // playImplementation project(':@react-native-firebase_app')
 +    // playImplementation project(':@react-native-firebase_analytics')
@@ -23,7 +24,7 @@ index 6c68c6437..205bdf37d 100644
      debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
        exclude group:'com.facebook.fbjni'
 diff --git a/android/build.gradle b/android/build.gradle
-index 8500050a4..060b6e38d 100644
+index 8500050a4..d30f05d5a 100644
 --- a/android/build.gradle
 +++ b/android/build.gradle
 @@ -40,7 +40,11 @@ allprojects {
@@ -35,15 +36,15 @@ index 8500050a4..060b6e38d 100644
 +            url("$rootDir/../node_modules/jsc-android/dist")
 +        }
 +        maven {
-+            url "https://github.com/RocketChat/jitsi-maven-repository/raw/2.10.3/releases"
++            url "https://github.com/jitsi/jitsi-maven-repository/raw/2.10.3/releases"
          }
  
          google()
 diff --git a/android/settings.gradle b/android/settings.gradle
-index ed2f78c10..da307983c 100644
+index ed2f78c10..f44afabe2 100644
 --- a/android/settings.gradle
 +++ b/android/settings.gradle
-@@ -4,17 +4,17 @@ includeUnimodulesProjects()
+@@ -4,17 +4,19 @@ includeUnimodulesProjects()
  rootProject.name = 'RocketChatRN'
  include ':watermelondb'
  project(':watermelondb').projectDir = new File(rootProject.projectDir, '../node_modules/@nozbe/watermelondb/native/android')
@@ -67,6 +68,8 @@ index ed2f78c10..da307983c 100644
 +// project(':@react-native-firebase_analytics').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/analytics/android')
 +// include ':@react-native-firebase_crashlytics'
 +// project(':@react-native-firebase_crashlytics').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-firebase/crashlytics/android')
++// include ':bugsnag-react-native'
++// project(':bugsnag-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/bugsnag-react-native/android')
  apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
  include ':app'
 diff --git a/patches/react-native-jitsi-meet+2.3.1.patch b/patches/react-native-jitsi-meet+2.3.1.patch
@@ -88,3 +91,19 @@ index 000000000..e9c7ded42
 +   }
 +   google()
 +   mavenCentral()
+diff --git a/react-native.config.js b/react-native.config.js
+index cbd0de1b6..56cbf0ff9 100644
+--- a/react-native.config.js
++++ b/react-native.config.js
+@@ -30,6 +30,11 @@ module.exports = {
+ 			platforms: {
+ 				android: null
+ 			}
++		},
++		'bugsnag-react-native': {
++			platforms: {
++				android: null
++			}
+ 		}
+ 	}
+ };
