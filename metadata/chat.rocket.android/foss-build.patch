@@ -112,3 +112,19 @@ index da1be54a9..38be41872 100644
  
  export { analytics };
  export const loggerConfig = bugsnag.config;
+diff --git a/react-native.config.js b/react-native.config.js
+index cbd0de1b6..56cbf0ff9 100644
+--- a/react-native.config.js
++++ b/react-native.config.js
+@@ -30,6 +30,11 @@ module.exports = {
+ 			platforms: {
+ 				android: null
+ 			}
++		},
++		'bugsnag-react-native': {
++			platforms: {
++				android: null
++			}
+ 		}
+ 	}
+ };
