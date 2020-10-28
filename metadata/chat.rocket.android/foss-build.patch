@@ -22,6 +22,23 @@ index 6c68c6437..02b26b63c 100644
      implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
      debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
        exclude group:'com.facebook.fbjni'
+diff --git a/android/build.gradle b/android/build.gradle
+index 27e7f0867..91b7c0a97 100644
+--- a/android/build.gradle
++++ b/android/build.gradle
+@@ -13,9 +13,9 @@ buildscript {
+         mavenLocal()
+         google()
+         jcenter()
+-        maven {
+-            url 'https://maven.fabric.io/public'
+-        }
++        // maven {
++        //     url 'https://maven.fabric.io/public'
++        // }
+     }
+ 
+     def taskRequests = getGradle().getStartParameter().getTaskRequests().toString().toLowerCase()
 diff --git a/android/settings.gradle b/android/settings.gradle
 index ed2f78c10..3ddc4b5ed 100644
 --- a/android/settings.gradle
