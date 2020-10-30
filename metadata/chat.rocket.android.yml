@@ -193,6 +193,8 @@ Builds:
     scandelete:
       - node_modules
 
+MaintainerNotes: We use a Github repo as a Maven repository for a LIBRE_BUILD jitsi sdk, since Jitsi don't expose the LIBRE_BUILD on their Maven repository.
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: 4.11.0
