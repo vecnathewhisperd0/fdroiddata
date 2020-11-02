@@ -1,0 +1,22 @@
+Categories:
+  - Games
+License: GPL-3.0-or-later
+SourceCode: https://github.com/jaredforrest/nonocross
+IssueTracker: https://github.com/jaredforrest/nonocross/issues
+Bitcoin: bc1q6ynqrxy3vrz6kh75q9ve5eff6wmrcy26de040z
+
+RepoType: git
+Repo: https://github.com/jaredforrest/nonocross
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: 61cd4815131141aeac7f955d85ed02ae9c945a2f
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
