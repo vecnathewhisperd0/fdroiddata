@@ -29,8 +29,6 @@ Description: |-
 RepoType: git
 Repo: https://github.com/andstatus/game2048.git
 
-Builds:
-
 AutoUpdateMode: Version %v-release
 UpdateCheckMode: Tags ^[0-9.]+-release$
 CurrentVersion: '0.07'
