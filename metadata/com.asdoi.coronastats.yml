@@ -11,6 +11,8 @@ SourceCode: https://gitlab.com/asdoi/coronastats
 IssueTracker: https://gitlab.com/asdoi/coronastats/issues
 Changelog: https://gitlab.com/asdoi/coronastats/-/releases
 
+AutoName: CoronaStatsDE
+
 RepoType: git
 Repo: https://gitlab.com/asdoi/coronastats.git
 
@@ -24,3 +26,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
