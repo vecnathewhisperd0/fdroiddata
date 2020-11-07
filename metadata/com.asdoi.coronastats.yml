@@ -1,0 +1,26 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+  - Science & Education
+  - Sports & Health
+License: MIT
+AuthorName: Asdoi
+AuthorEmail: asdoi@t-online.de
+SourceCode: https://gitlab.com/asdoi/coronastats
+IssueTracker: https://gitlab.com/asdoi/coronastats/issues
+Changelog: https://gitlab.com/asdoi/coronastats/-/releases
+
+RepoType: git
+Repo: https://gitlab.com/asdoi/coronastats.git
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
