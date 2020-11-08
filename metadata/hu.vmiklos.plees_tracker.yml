@@ -76,7 +76,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 7.0.1
+    versionCode: 12
+    commit: v7.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 7.0.2
+    versionCode: 13
+    commit: v7.0.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 7.0.3
+    versionCode: 14
+    commit: v7.0.3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 7.0.0
-CurrentVersionCode: 11
+CurrentVersion: 7.0.3
+CurrentVersionCode: 14

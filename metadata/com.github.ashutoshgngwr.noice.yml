@@ -7,7 +7,7 @@ WebSite: https://ashutoshgngwr.github.io/noice
 SourceCode: https://github.com/ashutoshgngwr/noice
 IssueTracker: https://github.com/ashutoshgngwr/noice/issues
 Translation: https://github.com/ashutoshgngwr/noice/issues/200
-Changelog: https://github.com/ashutoshgngwr/noice/blob/HEAD/CHANGELOG.md
+Changelog: https://ashutoshgngwr.github.io/noice/CHANGELOG
 OpenCollective: noice
 
 AutoName: Noice
@@ -153,7 +153,39 @@ Builds:
       - fdroid
     prebuild: sed -i -e '/signingConfig/d' build.gradle
 
+  - versionName: 0.10.1
+    versionCode: 31
+    commit: 0.10.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.11.0
+    versionCode: 32
+    commit: 0.11.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.11.1
+    versionCode: 33
+    commit: 0.11.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.12.0
+    versionCode: 34
+    commit: 0.12.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.10.0
-CurrentVersionCode: 30
+CurrentVersion: 0.12.0
+CurrentVersionCode: 34

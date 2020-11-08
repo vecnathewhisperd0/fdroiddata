@@ -355,10 +355,10 @@ Builds:
       - sed -i -e '/firebaseCrashlytics/,+2d' -e '/^android\.applicationVariants\.all
         {/,/^}$/d' build.gradle
 
-  - versionName: 3.4.12
-    versionCode: 30412
+  - versionName: 3.4.15
+    versionCode: 30415
     disable: no source for bottomsheets.aar see upstream issue 107
-    commit: 3.4.12
+    commit: 3.5.15
     subdir: app
     gradle:
       - firebasefree
@@ -369,9 +369,9 @@ Builds:
       - sed -i -e '/firebaseCrashlytics/d' -e '/^android\.applicationVariants\.all
         {/,/^}$/d' build.gradle
 
-  - versionName: 3.4.13
-    versionCode: 30413
-    commit: 3.4.13
+  - versionName: 3.5.0
+    versionCode: 30500
+    commit: 3.5.0
     subdir: app
     gradle:
       - firebasefree
@@ -384,5 +384,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.4.13
-CurrentVersionCode: 30413
+CurrentVersion: 3.5.0
+CurrentVersionCode: 30500

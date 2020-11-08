@@ -143,7 +143,21 @@ Builds:
 
   - versionName: 1.2.9
     versionCode: 10209
+    disable: verification fails
     commit: release-1.2.9
+    subdir: briar-android
+    gradle:
+      - official
+    rm:
+      - bramble-java
+      - briar-headless
+      - libs/gradle-witness.jar
+    prebuild: sed -i -e '/witness/d' ../*/build.gradle
+
+  - versionName: 1.2.10
+    versionCode: 10210
+    disable: verification fails
+    commit: release-1.2.10
     subdir: briar-android
     gradle:
       - official
@@ -156,5 +170,5 @@ Builds:
 ArchivePolicy: 3 versions
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: Tags ^release-
-CurrentVersion: 1.2.9
-CurrentVersionCode: 10209
+CurrentVersion: 1.2.10
+CurrentVersionCode: 10210

@@ -635,7 +635,29 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.20.0
+    versionCode: 954
+    commit: v0.20.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.20.1
+    versionCode: 955
+    commit: v0.20.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.20.2
+    versionCode: 956
+    disable: verification fails
+    commit: v0.20.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 0.19.8
-CurrentVersionCode: 953
+CurrentVersion: 0.20.2
+CurrentVersionCode: 956

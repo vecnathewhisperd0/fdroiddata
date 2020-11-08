@@ -10,7 +10,7 @@ Description: |
 
     [https://events.ccc.de/congress/2019]
 
-    '''Funktionen'''
+    '''Features'''
     * View program by day and rooms (side by side)
     * Custom grid layout for smartphones (try landscape mode 🙃) and tablets
     * Read detailed descriptions (speaker names, start time, room name, links, ...) of events
@@ -353,7 +353,17 @@ Builds:
       - cp local.properties gradle.properties
       - sed -i -e 's/6.6/6.5/' ../gradle/wrapper/gradle-wrapper.properties
 
+  - versionName: 1.46.0
+    versionCode: 75
+    commit: v.1.46.0
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/6.6.1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
 AutoUpdateMode: Version v.%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.45.2
-CurrentVersionCode: 74
+CurrentVersion: 1.46.0
+CurrentVersionCode: 75

@@ -3,9 +3,10 @@ Categories:
   - Navigation
 License: Apache-2.0
 AuthorName: OpenTracks Team
-WebSite: https://github.com/OpenTracksApp
+WebSite: https://OpenTracksApp.com
 SourceCode: https://github.com/OpenTracksApp/OSMDashboard
 IssueTracker: https://github.com/OpenTracksApp/OSMDashboard/issues
+Changelog: https://github.com/OpenTracksApp/OSMDashboard/releases
 
 AutoName: OSM Dashboard for OpenTracks
 
@@ -91,7 +92,37 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.4.1
+    versionCode: 15
+    commit: v2.4.1
+    gradle:
+      - yes
+
+  - versionName: 2.5.0
+    versionCode: 16
+    commit: v2.5.0
+    gradle:
+      - yes
+
+  - versionName: 2.6.0
+    versionCode: 17
+    commit: v2.6.0
+    gradle:
+      - full
+
+  - versionName: 2.6.1
+    versionCode: 18
+    commit: v2.6.1
+    gradle:
+      - full
+
+  - versionName: 2.7.0
+    versionCode: 19
+    commit: v2.7.0
+    gradle:
+      - full
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.0
-CurrentVersionCode: 14
+CurrentVersion: 2.7.0
+CurrentVersionCode: 19

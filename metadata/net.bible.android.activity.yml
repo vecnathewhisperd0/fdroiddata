@@ -2,7 +2,7 @@ Categories:
   - Reading
 License: GPL-3.0-or-later
 AuthorName: And Bible Open Source Project
-AuthorEmail: and-bible-support@googlegroups.com
+AuthorEmail: help.andbible@gmail.com
 WebSite: https://andbible.github.io/
 SourceCode: https://github.com/AndBible/and-bible
 IssueTracker: https://github.com/AndBible/and-bible/issues
@@ -729,7 +729,87 @@ Builds:
       - cd -
       - cp $$AndBibleJSwordTweaks$$/jsword.jar libs/jsword.jar
 
+  - versionName: 3.3.391
+    versionCode: 391
+    commit: v3.3.391-fdroid
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm g++ build-essential
+    gradle:
+      - yes
+    srclibs:
+      - AndBibleJSword@andbible-fdroid
+      - AndBibleJSwordTweaks@andbible-fdroid
+    rm:
+      - app/libs/*
+    build:
+      - cd $$AndBibleJSwordTweaks$$
+      - TARGET_DIR="." JSWORD_PATH=$$AndBibleJSword$$ gradle install
+      - cd -
+      - cp $$AndBibleJSwordTweaks$$/jsword.jar libs/jsword.jar
+
+  - versionName: 3.3.392
+    versionCode: 392
+    commit: v3.3.392-fdroid
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm g++ build-essential
+    gradle:
+      - yes
+
+  - versionName: 3.3.393
+    versionCode: 393
+    commit: v3.3.393-fdroid
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm g++ build-essential
+    gradle:
+      - yes
+
+  - versionName: 3.3.395
+    versionCode: 395
+    commit: v3.3.395-fdroid
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm g++ build-essential
+    gradle:
+      - yes
+
+  - versionName: 3.3.397
+    versionCode: 397
+    commit: v3.3.397-fdroid
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm g++ build-essential
+    gradle:
+      - yes
+
+  - versionName: 3.3.398
+    versionCode: 398
+    commit: v3.3.398-fdroid
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm g++ build-essential
+    gradle:
+      - yes
+
+  - versionName: 3.3.399
+    versionCode: 399
+    commit: v3.3.399-fdroid
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm g++ build-essential
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v-fdroid
 UpdateCheckMode: Tags ^v\d+\.\d+\.\d+-fdroid$
-CurrentVersion: 3.3.390
-CurrentVersionCode: 390
+CurrentVersion: 3.3.399
+CurrentVersionCode: 399

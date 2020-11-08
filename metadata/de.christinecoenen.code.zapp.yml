@@ -293,14 +293,21 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 3.5.1-beta.1
-    versionCode: 43
-    commit: v3.5.1-beta.1
+  - versionName: 3.5.1
+    versionCode: 45
+    commit: v3.5.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.6.0
+    versionCode: 46
+    commit: v3.6.0
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.5.1-beta.1
-CurrentVersionCode: 43
+CurrentVersion: 3.6.0
+CurrentVersionCode: 46

@@ -605,7 +605,23 @@ Builds:
       - yes
     ndk: r21d
 
+  - versionName: '0.101'
+    versionCode: 101
+    commit: v0.101
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: '0.102'
+    versionCode: 102
+    commit: v0.102
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '0.99'
-CurrentVersionCode: 99
+CurrentVersion: '0.102'
+CurrentVersionCode: 102

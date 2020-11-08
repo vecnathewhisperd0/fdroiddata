@@ -9,7 +9,6 @@ IssueTracker: https://github.com/tanujnotes/Olauncher/issues
 Donate: https://www.buymeacoffee.com/tanujnotes
 
 AutoName: Olauncher
-Summary: Minimal launcher app with daily new wallpaper
 Description: |-
     FEATURES
     * No ads
@@ -22,7 +21,7 @@ Description: |-
     * Swipe up to see all the apps and quick search
     * Swipe down for notification drawer
     * Long press home apps to change them
-    * Long press on empty space to open settings (important)
+    * '''Important''': Long press on empty space to open settings
     Once you open the settings, you'll see all the available options.
     So basically, swipe and long press anywhere and you'll be fine.
 
@@ -40,7 +39,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v1.2
+    versionCode: 12
+    commit: v1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.3
+    versionCode: 13
+    commit: v1.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v1.4
+    versionCode: 14
+    commit: v1.4
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v1.1
-CurrentVersionCode: 11
+CurrentVersion: v1.4
+CurrentVersionCode: 14

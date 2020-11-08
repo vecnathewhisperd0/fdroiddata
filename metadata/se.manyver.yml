@@ -1452,10 +1452,9 @@ Builds:
       - npm run build-android-assets
     ndk: r21b
 
-  - versionName: 0.2007.3-beta-fdroid
-    versionCode: 88
-    disable: fails to build
-    commit: v0.2007.3-beta
+  - versionName: 0.2010.5-beta-fdroid
+    versionCode: 92
+    commit: v0.2010.5-beta
     timeout: 30000
     subdir: android/app
     sudo:
@@ -1484,7 +1483,10 @@ Builds:
     prebuild: sed -i -e '/lifecycle/d' ../build.gradle
     scanignore:
       - android/build.gradle
+      - node_modules/@react-native-community/async-storage/android/build.gradle
       - node_modules/react-native-localize/android/build.gradle
+      - node_modules/react-native/android
+      - node_modules/jsc-android
     scandelete:
       - node_modules
     build:
@@ -1497,9 +1499,9 @@ Builds:
       - npm run build-android-assets
     ndk: r21d
 
-  - versionName: 0.2009.4-beta-fdroid-fdroid
-    versionCode: 89
-    commit: v0.2009.4-beta-fdroid
+  - versionName: 0.2011.5-beta-fdroid-fdroid
+    versionCode: 93
+    commit: v0.2011.5-beta-fdroid
     timeout: 30000
     subdir: android/app
     sudo:
@@ -1528,7 +1530,10 @@ Builds:
     prebuild: sed -i -e '/lifecycle/d' ../build.gradle
     scanignore:
       - android/build.gradle
+      - node_modules/@react-native-community/async-storage/android/build.gradle
       - node_modules/react-native-localize/android/build.gradle
+      - node_modules/react-native/android
+      - node_modules/jsc-android
     scandelete:
       - node_modules
     build:
@@ -1547,5 +1552,5 @@ MaintainerNotes: scanignore is used to allow the "node_modules/react-native/andr
 
 AutoUpdateMode: Version +-fdroid v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2009.4-beta-fdroid
-CurrentVersionCode: 89
+CurrentVersion: 0.2011.5-beta-fdroid
+CurrentVersionCode: 93

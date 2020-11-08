@@ -390,6 +390,76 @@ Builds:
         life/,+19d' buildscripts/build.sh
       - mkdir -p buildscripts/toolchain
       - ln -s -T $$NDK$$ buildscripts/toolchain/ndk
+      - ./buildscripts/build.sh --arch arm
+      - ./buildscripts/build.sh --arch arm64 --no-resources
+      - ./buildscripts/build.sh --arch x86 --no-resources
+      - ./buildscripts/build.sh --arch x86_64 --no-resources
+      - rm -fr ./buildscripts/build/*
+      - rm -fr ./buildscripts/prefix/*
+      - rm -fr ./buildscripts/symbols/*
+      - rm -fr ./buildscripts/toolchain/*
+    scanignore:
+      - app/src/main/assets
+      - app/src/main/jniLibs
+      - buildscripts/downloads/*
+    ndk: r20b
+
+  - versionName: 0.47.0-38-nightly
+    versionCode: 38
+    commit: 0.47.0-38-nightly
+    timeout: 30000
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y doxygen g++ pkgconf wget
+      - apt-get install -y -t stretch-backports-sloppy libarchive13
+      - apt-get install -y -t stretch-backports cmake
+    gradle:
+      - nightly
+    output: app/build/outputs/apk/nightly/release/omw_release_*.apk
+    prebuild:
+      - sed -i -e '/Unzip/,+5d' buildscripts/include/setup-ndk.sh
+      - sed -i -e 's/\ -Wl,-plugin-opt=-emulated-tls//' -e '/download-ndk/d' -e '/debugging\
+        life/,+19d' buildscripts/build.sh
+      - mkdir -p buildscripts/toolchain/ndk
+      - ln -s $$NDK$$/* buildscripts/toolchain/ndk/
+      - rm -fr buildscripts/toolchain/ndk/build
+      - cp -r $$NDK$$/build buildscripts/toolchain/ndk/
+      - sed -i 's/Oz/O2/g' buildscripts/toolchain/ndk/build/cmake/android.toolchain.cmake
+      - ./buildscripts/build.sh --arch arm --lto
+      - ./buildscripts/build.sh --arch arm64 --lto --no-resources
+      - ./buildscripts/build.sh --arch x86 --lto --no-resources
+      - ./buildscripts/build.sh --arch x86_64 --lto --no-resources
+      - rm -fr ./buildscripts/build/*
+      - rm -fr ./buildscripts/prefix/*
+      - rm -fr ./buildscripts/symbols/*
+      - rm -fr ./buildscripts/toolchain/*
+    scanignore:
+      - app/src/main/assets
+      - app/src/main/jniLibs
+      - buildscripts/downloads/*
+    ndk: r20b
+
+  - versionName: 0.47.0-39-nightly
+    versionCode: 39
+    commit: 0.47.0-39-nightly
+    timeout: 30000
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y doxygen g++ pkgconf wget
+      - apt-get install -y -t stretch-backports-sloppy libarchive13
+      - apt-get install -y -t stretch-backports cmake
+    gradle:
+      - nightly
+    output: app/build/outputs/apk/nightly/release/omw_release_*.apk
+    prebuild:
+      - sed -i -e '/Unzip/,+5d' buildscripts/include/setup-ndk.sh
+      - sed -i -e 's/\ -Wl,-plugin-opt=-emulated-tls//' -e '/download-ndk/d' -e '/debugging\
+        life/,+19d' buildscripts/build.sh
+      - mkdir -p buildscripts/toolchain/ndk
+      - ln -s $$NDK$$/* buildscripts/toolchain/ndk/
+      - rm -fr buildscripts/toolchain/ndk/build
+      - cp -r $$NDK$$/build buildscripts/toolchain/ndk/
+      - sed -i 's/Oz/O2/g' buildscripts/toolchain/ndk/build/cmake/android.toolchain.cmake
       - ./buildscripts/build.sh --arch arm --lto
       - ./buildscripts/build.sh --arch arm64 --lto --no-resources
       - ./buildscripts/build.sh --arch x86 --lto --no-resources
@@ -411,5 +481,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags .*[0-9]-nightly$
-CurrentVersion: 0.46.0-37-nightly
-CurrentVersionCode: 37
+CurrentVersion: 0.47.0-39-nightly
+CurrentVersionCode: 39

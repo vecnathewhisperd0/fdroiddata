@@ -4,33 +4,13 @@ License: MIT
 AuthorName: Waboodoo
 AuthorEmail: android@rmy.ch
 AuthorWebSite: https://www.rmy.ch/
+WebSite: https://http-shortcuts.rmy.ch
 SourceCode: https://github.com/Waboodoo/HTTP-Shortcuts
 IssueTracker: https://github.com/Waboodoo/HTTP-Shortcuts/issues
-Changelog: https://github.com/Waboodoo/HTTP-Shortcuts/releases
+Changelog: https://github.com/Waboodoo/HTTP-Shortcuts/blob/HEAD/CHANGELOG.md
+Donate: https://http-shortcuts.rmy.ch/support-me
 
 AutoName: HTTP Shortcuts
-Summary: Create home screen shortcuts that trigger arbitrary HTTP requests
-Description: |-
-    A simple app that allows you to create shortcuts that can be placed on your home screen.
-    Each shortcut, when clicked, triggers an HTTP request.
-
-    Features:
-    * HTTP and HTTPS
-    * GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS and TRACE
-    * Basic Authentication, Digest Authentication & Bearer Authentication
-    * Custom request headers
-    * Custom request body (text or from file)
-    * Upload files as form-data
-    * Option to accept all certificates (if you know what you're doing)
-    * Support for HTTP proxies
-    * Built-in icons, support for Ipack icons and custom icons
-    * Display response as a toast, window or dialog, or run silently
-    * Grouping into categories through tabs
-    * Value injection through variables (e.g., text, numbers, passwords, selections, colors, dates, …)
-    * Run arbitrary JavaScript before & after execution, including special actions (e.g., vibrate, show toast, parse and process response…),
-    * Import & Export in JSON or cURL format
-    * 3rd party integration (e.g. Tasker)
-    * Themes (with Dark Mode support)
 
 RepoType: git
 Repo: https://github.com/Waboodoo/HTTP-Shortcuts.git
@@ -60,7 +40,23 @@ Builds:
       - yes
     output: build/outputs/apk/release/app-universal-release.apk
 
+  - versionName: 1.37.0
+    versionCode: 1101370000
+    commit: v1.37.0
+    subdir: HTTPShortcuts/app
+    gradle:
+      - yes
+    output: build/outputs/apk/release/app-universal-release.apk
+
+  - versionName: 1.38.0
+    versionCode: 1101380000
+    commit: v1.38.0
+    subdir: HTTPShortcuts/app
+    gradle:
+      - yes
+    output: build/outputs/apk/release/app-universal-release.apk
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.36.0
-CurrentVersionCode: 1101360000
+CurrentVersion: 1.38.0
+CurrentVersionCode: 1101380000

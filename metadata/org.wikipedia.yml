@@ -661,6 +661,31 @@ Builds:
       - fdroid
     forceversion: true
 
+  - versionName: r/2.7.50332-r-2020-09-28
+    versionCode: 50332
+    commit: r/2.7.50332-r-2020-09-28
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+
+  - versionName: r/2.7.50333-r-2020-10-06
+    versionCode: 50333
+    commit: r/2.7.50333-r-2020-10-06
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+
+  - versionName: r/2.7.50334-r-2020-11-02
+    versionCode: 50334
+    commit: r/2.7.50334-r-2020-11-02
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
 MaintainerNotes: |-
     * whitelist app/build.gradle for microsoft appcenter SDK. It's actually open source but might
       pull in google dependencies. In this case it doesn't
@@ -671,5 +696,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^r
-CurrentVersion: r/2.7.50330-r-2020-08-04
-CurrentVersionCode: 50330
+CurrentVersion: r/2.7.50334-r-2020-11-02
+CurrentVersionCode: 50334

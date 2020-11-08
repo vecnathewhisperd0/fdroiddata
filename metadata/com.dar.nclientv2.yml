@@ -100,7 +100,55 @@ Builds:
       - yes
     prebuild: sed -i -e 's/6.4-rc-4-all/6.4-all/' -e '/Sha256Sum/d' ../gradle/wrapper/gradle-wrapper.properties
 
+  - versionName: 2.5.7
+    versionCode: 257
+    commit: 2.5.7
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.4-rc-4-all/6.4-all/' -e '/Sha256Sum/d' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 2.5.8
+    versionCode: 258
+    commit: 2.5.8
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.4-rc-4-all/6.4-all/' -e '/Sha256Sum/d' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 2.5.9
+    versionCode: 259
+    commit: 2.5.9
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.4-rc-4-all/6.4-all/' -e '/Sha256Sum/d' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 2.6.0
+    versionCode: 260
+    commit: 2.6.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.4-rc-4-all/6.4-all/' -e '/Sha256Sum/d' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 2.6.2
+    versionCode: 262
+    commit: 2.6.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.4-rc-4-all/6.4-all/' -e '/Sha256Sum/d' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 2.6.3
+    versionCode: 263
+    commit: 2.6.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.4-rc-4-all/6.4-all/' -e '/Sha256Sum/d' ../gradle/wrapper/gradle-wrapper.properties
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.6
-CurrentVersionCode: 256
+CurrentVersion: 2.6.3
+CurrentVersionCode: 263

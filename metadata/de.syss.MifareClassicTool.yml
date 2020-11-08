@@ -327,7 +327,57 @@ Builds:
       - logo
       - tools
 
+  - versionName: 3.0.3
+    versionCode: 53
+    commit: v3.0.3
+    subdir: Mifare Classic Tool/app
+    gradle:
+      - yes
+    rm:
+      - logo
+      - tools
+
+  - versionName: 3.1.0
+    versionCode: 54
+    commit: v3.1.0
+    subdir: Mifare Classic Tool/app
+    gradle:
+      - yes
+    rm:
+      - logo
+      - tools
+
+  - versionName: 3.1.1
+    versionCode: 55
+    commit: v3.1.1
+    subdir: Mifare Classic Tool/app
+    gradle:
+      - yes
+    rm:
+      - logo
+      - tools
+
+  - versionName: 3.1.2
+    versionCode: 56
+    commit: v3.1.2
+    subdir: Mifare Classic Tool/app
+    gradle:
+      - yes
+    rm:
+      - logo
+      - tools
+
+  - versionName: 3.2.0
+    versionCode: 57
+    commit: v3.2.0
+    subdir: Mifare Classic Tool/app
+    gradle:
+      - yes
+    rm:
+      - logo
+      - tools
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.0.2
-CurrentVersionCode: 52
+CurrentVersion: 3.2.0
+CurrentVersionCode: 57
