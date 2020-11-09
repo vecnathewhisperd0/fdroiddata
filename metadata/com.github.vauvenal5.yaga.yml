@@ -12,20 +12,21 @@ RepoType: git
 Repo: https://github.com/vauvenal5/yaga.git
 
 Builds:
-  - versionName: 0.14.6
-    versionCode: 146
-    commit: v0.14.6
+  - versionName: 0.15.7
+    versionCode: 157
+    commit: v0.15.7
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
-      - flutter@1.22.2
+      - flutter@1.22.3
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get
+      - $$flutter$$/bin/flutter pub run flutter_launcher_icons:main
       - $$flutter$$/bin/flutter pub run build_runner build --delete-conflicting-outputs
       - $$flutter$$/bin/flutter build apk --flavor fdroid
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckIgnore: (alpha|beta|rc|RC|dev)
-CurrentVersion: 0.14.6
-CurrentVersionCode: 146
+CurrentVersion: 0.15.7
+CurrentVersionCode: 157
