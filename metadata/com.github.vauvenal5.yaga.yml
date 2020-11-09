@@ -26,7 +26,7 @@ Builds:
       - $$flutter$$/bin/flutter build apk --flavor fdroid
 
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-UpdateCheckIgnore: (alpha|beta|rc|RC|dev)
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/vauvenal5/yaga/master/pubspec.yaml|version:\s\d+\.\d+\.\d+\+(\d+)|.|version:\s(\d+\.\d+\.\d+)\+\d+
 CurrentVersion: 0.15.7
 CurrentVersionCode: 157
