@@ -15,7 +15,7 @@ Builds:
   - versionName: 0.15.7
     versionCode: 157
     commit: v0.15.7
-    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    output: build/app/outputs/flutter-apk/app-fdroid-release.apk
     srclibs:
       - flutter@1.22.3
     build:
