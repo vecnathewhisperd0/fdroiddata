@@ -3388,7 +3388,29 @@ Builds:
     prebuild: sed -i -e '/keystoreProperties/d' build.gradle
     ndk: r21d
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
-CurrentVersion: '1.1362'
-CurrentVersionCode: 1362
+  - versionName: '1.1376'
+    versionCode: 1376
+    commit: '1.1376'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1382'
+    versionCode: 1382
+    commit: '1.1382'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+MaintainerNotes: Dynamic versionName and version code, so no autoupdates anymore.
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: '1.1382'
+CurrentVersionCode: 1382

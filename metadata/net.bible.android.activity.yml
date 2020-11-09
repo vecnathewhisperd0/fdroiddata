@@ -2,7 +2,7 @@ Categories:
   - Reading
 License: GPL-3.0-or-later
 AuthorName: And Bible Open Source Project
-AuthorEmail: and-bible-support@googlegroups.com
+AuthorEmail: help.andbible@gmail.com
 WebSite: https://andbible.github.io/
 SourceCode: https://github.com/AndBible/and-bible
 IssueTracker: https://github.com/AndBible/and-bible/issues
@@ -789,7 +789,27 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 3.3.398
+    versionCode: 398
+    commit: v3.3.398-fdroid
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm g++ build-essential
+    gradle:
+      - yes
+
+  - versionName: 3.3.399
+    versionCode: 399
+    commit: v3.3.399-fdroid
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm g++ build-essential
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v-fdroid
 UpdateCheckMode: Tags ^v\d+\.\d+\.\d+-fdroid$
-CurrentVersion: 3.3.397
-CurrentVersionCode: 397
+CurrentVersion: 3.3.399
+CurrentVersionCode: 399

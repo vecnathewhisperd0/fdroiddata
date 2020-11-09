@@ -56,8 +56,26 @@ Builds:
       - directVersion
       - productionServer
 
+  - versionName: 3.9.0
+    versionCode: 101
+    commit: release-3.9.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.0.0
+    versionCode: 102
+    commit: release-4.0.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: Tags
 UpdateCheckName: io.timelimit.android
-CurrentVersion: 3.8.0
-CurrentVersionCode: 100
+CurrentVersion: 4.0.0
+CurrentVersionCode: 102

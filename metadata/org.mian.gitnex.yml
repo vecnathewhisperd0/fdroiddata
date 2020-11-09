@@ -8,7 +8,6 @@ IssueTracker: https://codeberg.org/gitnex/GitNex/issues
 Translation: https://crowdin.com/project/GitNex
 Changelog: https://codeberg.org/gitnex/GitNex/src/branch/master/CHANGELOG.md
 Donate: https://www.patreon.com/mmarif
-LiberapayID: '1547671'
 
 AutoName: GitNex
 
@@ -289,7 +288,21 @@ Builds:
     gradle:
       - free
 
+  - versionName: 3.3.0-rc2
+    versionCode: 328
+    commit: 3.3.0-rc2
+    subdir: app
+    gradle:
+      - free
+
+  - versionName: 3.3.0-rc3
+    versionCode: 329
+    commit: 3.3.0-rc3
+    subdir: app
+    gradle:
+      - free
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.3.0-rc1
-CurrentVersionCode: 327
+CurrentVersion: 3.3.0-rc3
+CurrentVersionCode: 329
