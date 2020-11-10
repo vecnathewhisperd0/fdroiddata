@@ -167,9 +167,87 @@ Builds:
       - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
       - sed -i -e '/googleImplementation/d' build.gradle
 
-  - versionName: 8.2.2
-    versionCode: 802021
-    commit: 8.2.2
+  - versionName: 8.3.0
+    versionCode: 803001
+    commit: 8.3.0
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.3.2
+    versionCode: 803021
+    commit: 8.3.2
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.3.3
+    versionCode: 803031
+    commit: 8.3.3
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.3.4
+    versionCode: 803041
+    commit: 8.3.4
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.3.7
+    versionCode: 803071
+    commit: 8.3.7
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.3.8
+    versionCode: 803081
+    commit: 8.3.8
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.4.0
+    versionCode: 804001
+    commit: 8.4.0
     subdir: app
     gradle:
       - foss
@@ -182,5 +260,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 8.2.2
-CurrentVersionCode: 802021
+CurrentVersion: 8.4.0
+CurrentVersionCode: 804001

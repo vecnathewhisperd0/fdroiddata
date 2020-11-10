@@ -355,60 +355,32 @@ Builds:
       - sed -i -e '/firebaseCrashlytics/,+2d' -e '/^android\.applicationVariants\.all
         {/,/^}$/d' build.gradle
 
-  - versionName: 3.4.12
-    versionCode: 30412
-    disable: no source for bottomsheets.aar see upstream issue 107
-    commit: 3.4.12
+  - versionName: 3.5.0
+    versionCode: 30500
+    commit: 3.5.0
     subdir: app
     gradle:
       - firebasefree
+    srclibs:
+      - Material-Dialogs@3.3.0
+    rm:
+      - app/libs/bottomsheets-release.aar
     prebuild:
       - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
       - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
         build.gradle
       - sed -i -e '/firebaseCrashlytics/d' -e '/^android\.applicationVariants\.all
         {/,/^}$/d' build.gradle
-
-  - versionName: 3.4.13
-    versionCode: 30413
-    commit: 3.4.13
-    subdir: app
-    gradle:
-      - firebasefree
-    prebuild:
-      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
-      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
-        build.gradle
-      - sed -i -e '/firebaseCrashlytics/d' -e '/^android\.applicationVariants\.all
-        {/,/^}$/d' build.gradle
-
-  - versionName: 3.4.14
-    versionCode: 30414
-    commit: 3.4.14
-    subdir: app
-    gradle:
-      - firebasefree
-    prebuild:
-      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
-      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
-        build.gradle
-      - sed -i -e '/firebaseCrashlytics/d' -e '/^android\.applicationVariants\.all
-        {/,/^}$/d' build.gradle
-
-  - versionName: 3.4.15
-    versionCode: 30415
-    commit: 3.4.15
-    subdir: app
-    gradle:
-      - firebasefree
-    prebuild:
-      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
-      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
-        build.gradle
-      - sed -i -e '/firebaseCrashlytics/d' -e '/^android\.applicationVariants\.all
-        {/,/^}$/d' build.gradle
+      - pushd $$Material-Dialogs$$
+      - sed -i -e '241d' bottomsheets/src/main/java/com/afollestad/materialdialogs/bottomsheets/BottomSheet.kt
+    build:
+      - pushd $$Material-Dialogs$$
+      - gradle bottomsheets:assembleRelease
+      - popd
+      - cp $$Material-Dialogs$$/bottomsheets/build/outputs/aar/bottomsheets-release.aar
+        libs/
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.4.15
-CurrentVersionCode: 30415
+CurrentVersion: 3.5.0
+CurrentVersionCode: 30500

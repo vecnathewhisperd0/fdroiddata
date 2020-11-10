@@ -263,7 +263,42 @@ Builds:
     gradle:
       - scMain
 
-AutoUpdateMode: Version v%v
+  - versionName: 9.1.0
+    versionCode: 122
+    commit: v9.1.0
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 9.2.1
+    versionCode: 124
+    commit: v9.2.1
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 9.2.3
+    versionCode: 126
+    commit: v9.2.3
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 9.3.0
+    versionCode: 127
+    commit: v9.3.0
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 9.3.2
+    versionCode: 129
+    commit: v9.3.3
+    subdir: app
+    gradle:
+      - scMain
+
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 9.0.3
-CurrentVersionCode: 121
+CurrentVersion: 9.3.2
+CurrentVersionCode: 129

@@ -17,7 +17,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '3.0'
+    versionCode: 30
+    commit: '3.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.1'
+    versionCode: 31
+    commit: '3.1'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '2.0'
-CurrentVersionCode: 20
+CurrentVersion: '3.1'
+CurrentVersionCode: 31

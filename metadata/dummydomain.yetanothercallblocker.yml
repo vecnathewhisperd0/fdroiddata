@@ -3,11 +3,13 @@ AntiFeatures:
 Categories:
   - Phone & SMS
 License: AGPL-3.0-only
+AuthorName: Xynngh
 AuthorEmail: xynngh@protonmail.com
 WebSite: https://gitlab.com/xynngh/YetAnotherCallBlocker
 SourceCode: https://gitlab.com/xynngh/YetAnotherCallBlocker/tree/HEAD
 IssueTracker: https://gitlab.com/xynngh/YetAnotherCallBlocker/issues
 Translation: https://hosted.weblate.org/engage/yet-another-call-blocker/
+Changelog: https://gitlab.com/xynngh/YetAnotherCallBlocker/-/blob/master/CHANGELOG.md#changelog
 
 AutoName: Yet Another Call Blocker
 
@@ -148,7 +150,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.5.9
+    versionCode: 5090
+    commit: v0.5.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.5.10
+    versionCode: 5100
+    commit: v0.5.10
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.5.11
+    versionCode: 5110
+    commit: v0.5.11
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.5.8
-CurrentVersionCode: 5080
+CurrentVersion: 0.5.11
+CurrentVersionCode: 5110

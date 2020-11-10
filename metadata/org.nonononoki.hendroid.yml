@@ -118,7 +118,17 @@ Builds:
       - yes
     prebuild: sed -i -e '/fabric/d' -e '/osborn/d' build.gradle ../build.gradle
 
+  - versionName: 1.12.9
+    versionCode: 157
+    commit: 1.12.9
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/osborn/d' ../build.gradle
+      - sed -i -e '/fabric/d; /firebase/d;' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.12.6.1
-CurrentVersionCode: 155
+CurrentVersion: 1.12.9
+CurrentVersionCode: 157

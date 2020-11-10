@@ -285,12 +285,20 @@ Builds:
 
   - versionName: v3.41
     versionCode: 36
+    disable: JARs in app/libs
     commit: v3.41
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v3.50
+    versionCode: 37
+    commit: v3.50
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.41
-CurrentVersionCode: 36
+CurrentVersion: v3.50
+CurrentVersionCode: 37

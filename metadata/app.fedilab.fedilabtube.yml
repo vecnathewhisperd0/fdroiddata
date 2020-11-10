@@ -76,7 +76,49 @@ Builds:
     gradle:
       - fdroid_acad
 
+  - versionName: 1.4.1
+    versionCode: 16
+    commit: 1.4.1
+    subdir: app
+    gradle:
+      - fdroid_acad
+
+  - versionName: 1.4.2
+    versionCode: 17
+    commit: 1.4.2
+    subdir: app
+    gradle:
+      - fdroid_acad
+
+  - versionName: 1.5.0
+    versionCode: 19
+    commit: 1.5.0
+    subdir: app
+    gradle:
+      - fdroid_acad
+
+  - versionName: 1.5.1
+    versionCode: 20
+    commit: 1.5.1
+    subdir: app
+    gradle:
+      - fdroid_acad
+
+  - versionName: 1.5.2
+    versionCode: 21
+    commit: 1.5.2
+    subdir: app
+    gradle:
+      - fdroid_acad
+
+  - versionName: 1.6.0
+    versionCode: 24
+    commit: 1.6.0
+    subdir: app
+    gradle:
+      - fdroid_acad
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.0
-CurrentVersionCode: 15
+CurrentVersion: 1.6.0
+CurrentVersionCode: 24

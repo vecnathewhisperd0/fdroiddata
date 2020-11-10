@@ -228,7 +228,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 3.8.0
+    versionCode: 100
+    commit: release-3.8.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.9.0
+    versionCode: 101
+    commit: release-3.9.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.0.0
+    versionCode: 102
+    commit: release-4.0.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.7.1
-CurrentVersionCode: 99
+CurrentVersion: 4.0.0
+CurrentVersionCode: 102

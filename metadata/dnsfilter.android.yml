@@ -133,9 +133,9 @@ Builds:
       - material.io_icons.zip
       - personalDNSfilter_icon.zip
 
-  - versionName: 1.50.42.0
-    versionCode: 1504203
-    commit: 1.50.42.0
+  - versionName: 1.50.43.0
+    versionCode: 1504300
+    commit: 1.50.43.0
     subdir: app
     gradle:
       - yes
@@ -145,5 +145,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.50.42.0
-CurrentVersionCode: 1504203
+CurrentVersion: 1.50.43.0
+CurrentVersionCode: 1504300

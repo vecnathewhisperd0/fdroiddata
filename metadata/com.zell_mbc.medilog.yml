@@ -7,6 +7,7 @@ AuthorWebSite: https://zell-mbc.com/
 WebSite: https://zell-mbc.com/en/privacy/medilog
 SourceCode: https://gitlab.com/toz12/medilog
 IssueTracker: https://gitlab.com/toz12/medilog/-/issues
+Translation: https://weblate.bubu1.eu/projects/medilog/core/
 Changelog: https://gitlab.com/toz12/medilog/-/blob/master/ChangeLog.md
 Bitcoin: 1EUrRpjDAGgpS8J46tmsVWKbgNqAv7rWC7
 
@@ -65,13 +66,6 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 1.8.1
-    versionCode: 5311
-    commit: v1.8.1
-    subdir: app
-    gradle:
-      - yes
-
   - versionName: 1.8.1.1
     versionCode: 5313
     commit: v1.8.1.1
@@ -79,7 +73,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.8.1.2
+    versionCode: 5314
+    commit: v1.8.1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.0.3
+    versionCode: 5319
+    commit: v1.9.0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.1.0
+    versionCode: 5320
+    commit: v1.9.1.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.1.1
-CurrentVersionCode: 5313
+CurrentVersion: 1.9.1.0
+CurrentVersionCode: 5320

@@ -123,14 +123,39 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 2.2.0
-    versionCode: 30
-    commit: v2.2.0
+  - versionName: 2.2.1
+    versionCode: 31
+    disable: fails to build
+    commit: v2.2.1
     subdir: app
     gradle:
       - yes
 
+  - versionName: 2.2.3
+    versionCode: 33
+    commit: v2.2.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/signingConfig/d' build.gradle.kts
+
+  - versionName: 2.2.5
+    versionCode: 35
+    commit: v2.2.5
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/signingConfig/d' build.gradle.kts
+
+  - versionName: 2.2.6
+    versionCode: 36
+    commit: v2.2.6
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/signingConfig/d' build.gradle.kts
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.0
-CurrentVersionCode: 30
+CurrentVersion: 2.2.6
+CurrentVersionCode: 36
