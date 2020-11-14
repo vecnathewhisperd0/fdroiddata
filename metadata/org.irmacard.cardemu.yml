@@ -1,0 +1,47 @@
+Categories:
+  - System
+  - Security
+  - Internet
+License: Apache-2.0
+AuthorName: Privacy by Design foundation
+WebSite: https://irma.app
+SourceCode: https://github.com/privacybydesign/irmamobile
+IssueTracker: https://github.com/privacybydesign/irmamobile/issues
+
+RepoType: git
+Repo: https://github.com/privacybydesign/irmamobile
+
+Builds:
+  - versionName: 6.0.12
+    versionCode: 126
+    commit: v6.0.12
+    submodules: true
+    output: build/app/outputs/apk/beta/release/app-beta-release.apk
+    srclibs:
+      - flutter@1.22.1
+    rm:
+      - ios
+    prebuild: $$flutter$$/bin/flutter pub get
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.15.7.linux-amd64.tar.gz
+      - echo "0d142143794721bb63ce6c8a6180c4062bcf8ef4715e7d6d6609f3a8282629b3  go.tar.gz"
+        | sha256sum -c
+      - mkdir -p golang
+      - mkdir -p gopath
+      - tar -C golang -xzf go.tar.gz
+      - export GOPATH="$PWD/gopath"
+      - export GO_LANG="$PWD/golang/go/bin"
+      - export GO_COMPILED="$PWD/gopath/bin"
+      - export PATH="$GO_LANG:$GO_COMPILED:$PATH"
+      - ./golang/go/bin/go get golang.org/x/mobile/cmd/gomobile
+      - ./gopath/bin/gomobile init
+      - ./gopath/bin/gomobile bind -target android -o android/irmagobridge/irmagobridge.aar
+        github.com/privacybydesign/irmamobile/irmagobridge
+      - $$flutter$$/bin/flutter build apk --flavor beta --release
+    ndk: r21d
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://github.com/privacybydesign/irmamobile/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 6.0.12
+CurrentVersionCode: 126
