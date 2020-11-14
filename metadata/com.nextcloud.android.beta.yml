@@ -6,7 +6,7 @@ SourceCode: https://github.com/nextcloud/android
 IssueTracker: https://github.com/nextcloud/android/issues
 Translation: https://www.transifex.com/nextcloud/nextcloud/
 Changelog: https://github.com/nextcloud/android/commits
-Donate: https://www.bountysource.com/teams/nextcloud
+Donate: https://nextcloud.com/include/
 
 AutoName: Nextcloud
 Description: |-
@@ -5978,22 +5978,6 @@ Builds:
     scandelete:
       - src/androidTest
 
-  - versionName: '20201105'
-    versionCode: 20201105
-    commit: dev-20201105
-    submodules: true
-    gradle:
-      - versionDev
-    rm:
-      - user_manual
-      - gplay.gradle
-    prebuild:
-      - mkdir -p $HOME/.gradle
-      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
-        > $HOME/.gradle/gradle.properties
-    scandelete:
-      - src/androidTest
-
   - versionName: '20201106'
     versionCode: 20201106
     commit: dev-20201106
@@ -6042,9 +6026,57 @@ Builds:
     scandelete:
       - src/androidTest
 
+  - versionName: '20201110'
+    versionCode: 20201110
+    commit: dev-20201110
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201112'
+    versionCode: 20201112
+    commit: dev-20201112
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201114'
+    versionCode: 20201114
+    commit: dev-20201114
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
 MaintainerNotes: Tags get removed. See https://github.com/nextcloud/android/issues/969.
 
 AutoUpdateMode: Version dev-%c
 UpdateCheckMode: Tags ^dev
-CurrentVersion: '20201108'
-CurrentVersionCode: 20201108
+CurrentVersion: '20201114'
+CurrentVersionCode: 20201114

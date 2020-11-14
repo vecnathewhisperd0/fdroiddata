@@ -41,12 +41,20 @@ Builds:
 
   - versionName: '1.6'
     versionCode: 8
+    disable: fails to build, see upstream issue 49
     commit: v1.6
+    subdir: app
+    gradle:
+      - fDroid
+
+  - versionName: '1.7'
+    versionCode: 9
+    commit: v1.7
     subdir: app
     gradle:
       - fDroid
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.6'
-CurrentVersionCode: 8
+CurrentVersion: '1.7'
+CurrentVersionCode: 9
