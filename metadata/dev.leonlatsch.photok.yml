@@ -1,0 +1,28 @@
+Categories:
+  - Security
+License: Apache-2.0
+AuthorName: Leon Latsch
+AuthorEmail: dev.leonlatsch@gmail.com
+AuthorWebSite: https://leonlatsch.dev
+SourceCode: https://github.com/leonlatsch/Photok
+IssueTracker: https://github.com/leonlatsch/Photok/issues
+
+AutoName: Photok
+Description: |-
+    Photok is a free Photo-Safe. It stores your photos encrypted on your device and hides them from others.
+    It uses technologies like, AES-256 encryption standard or bcrypt, to keep your photos secure.
+    Photok is completely free, open source, and contains no ads.
+
+RepoType: git
+Repo: https://github.com/leonlatsch/Photok
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: v1.0.0
+    subdir: app
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
