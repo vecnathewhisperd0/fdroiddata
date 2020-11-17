@@ -11,14 +11,14 @@ RepoType: git
 Repo: https://github.com/K1rakishou/Kuroba-Experimental.git
 
 Builds:
-  - versionName: v0.2.10
-    versionCode: 210
-    commit: v0.2.10-release
+  - versionName: v0.3.1
+    versionCode: 301
+    commit: v0.3.1-release
     subdir: Kuroba/app
     gradle:
       - fdroid
 
 AutoUpdateMode: Version v%c-release
 UpdateCheckMode: Tags v\d+?\.\d{1,2}\.\d{1,2}-release$
-CurrentVersion: 0.2.10
-CurrentVersionCode: 210
+CurrentVersion: 0.3.1
+CurrentVersionCode: 301
