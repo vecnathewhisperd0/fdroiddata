@@ -8,10 +8,6 @@ SourceCode: https://github.com/leonlatsch/Photok
 IssueTracker: https://github.com/leonlatsch/Photok/issues
 
 AutoName: Photok
-Description: |-
-    Photok is a free Photo-Safe. It stores your photos encrypted on your device and hides them from others.
-    It uses technologies like, AES-256 encryption standard or bcrypt, to keep your photos secure.
-    Photok is completely free, open source, and contains no ads.
 
 RepoType: git
 Repo: https://github.com/leonlatsch/Photok
