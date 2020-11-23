@@ -72,7 +72,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.0.9-alpha
+    versionCode: 9
+    commit: 0.0.9-alpha
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.10-alpha
+    versionCode: 10
+    commit: 0.0.10-alpha
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.11-alpha
+    versionCode: 11
+    commit: 0.0.11-alpha
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.8-alpha
-CurrentVersionCode: 8
+CurrentVersion: 0.0.11-alpha
+CurrentVersionCode: 11

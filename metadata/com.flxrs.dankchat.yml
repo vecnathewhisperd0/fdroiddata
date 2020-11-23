@@ -340,7 +340,23 @@ Builds:
       - yes
     ndk: r21d
 
+  - versionName: 2.4.0
+    versionCode: 174
+    commit: v2.4.0
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 2.4.1
+    versionCode: 175
+    commit: v2.4.1
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.3.4
-CurrentVersionCode: 173
+CurrentVersion: 2.4.1
+CurrentVersionCode: 175

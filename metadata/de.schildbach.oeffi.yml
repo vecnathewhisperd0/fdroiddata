@@ -293,8 +293,23 @@ Builds:
 
   - versionName: 11.3.3-aosp
     versionCode: 682
-    disable: verification fails
     commit: v11.3.3
+    subdir: oeffi
+    submodules: true
+    init:
+      - cd ../..
+      - mv de.schildbach.oeffi de.schildbach.oeffi_underlying
+      - mkdir de.schildbach.oeffi
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.oeffi_underlying
+        de.schildbach.oeffi
+      - cd de.schildbach.oeffi/oeffi
+    gradle:
+      - aosp
+    prebuild: gradle :wrapper --gradle-version=4.4.1
+
+  - versionName: 11.3.6-aosp
+    versionCode: 685
+    commit: v11.3.6
     subdir: oeffi
     submodules: true
     init:
