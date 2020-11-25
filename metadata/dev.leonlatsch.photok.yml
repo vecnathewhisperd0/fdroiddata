@@ -6,6 +6,7 @@ AuthorEmail: dev.leonlatsch@gmail.com
 AuthorWebSite: https://leonlatsch.dev
 SourceCode: https://github.com/leonlatsch/Photok
 IssueTracker: https://github.com/leonlatsch/Photok/issues
+Changelog: https://github.com/leonlatsch/Photok/releases
 
 AutoName: Photok
 
@@ -20,7 +21,7 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
+AutoUpdateMode: Version v%
 UpdateCheckMode: Tags
 CurrentVersion: 1.0.2
 CurrentVersionCode: 3
