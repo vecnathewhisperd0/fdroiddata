@@ -18,7 +18,7 @@ Builds:
     gradle:
       - fdroid
 
-AutoUpdateMode: Version v%v-release
+AutoUpdateMode: Version %v-release
 UpdateCheckMode: Tags v\d+?\.\d{1,2}\.\d{1,2}-release$
 CurrentVersion: 0.3.3
 CurrentVersionCode: 303
