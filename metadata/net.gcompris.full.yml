@@ -135,6 +135,7 @@ Builds:
     submodules: true
     sudo:
       - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports-sloppy libarchive13
       - apt-get install --yes libncurses5 -t stretch-backports cmake
     output: android-build/android/GCompris-Android-release-armeabi-v7a-dl-$$VERSION$$.apk
     srclibs:
