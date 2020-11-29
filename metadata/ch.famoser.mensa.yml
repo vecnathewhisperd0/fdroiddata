@@ -6,9 +6,6 @@ SourceCode: https://github.com/famoser/Mensa
 IssueTracker: https://github.com/famoser/Mensa/issues
 
 AutoName: Mensa
-Description: |-
-    Daily menu of the canteens of ETH & UZH.
-    Tap on an interesting menu to see full details such as price / allergy information.
 
 RepoType: git
 Repo: https://github.com/famoser/Mensa
