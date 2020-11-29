@@ -1,0 +1,42 @@
+Categories:
+  - Security
+  - Science & Education
+  - Connectivity
+License: PublicDomain
+SourceCode: https://github.com/xloem/TXQRApp
+IssueTracker: https://github.com/xloem/TXQRApp/issues
+
+AutoName: TXQRApp
+
+RepoType: git
+Repo: https://github.com/xloem/TXQRApp
+
+Builds:
+  - versionName: 0.1.7
+    versionCode: 1000107
+    commit: 9423fa58fc26e7b2cad7e2d0318f2cefbfc6e962
+    sudo:
+      - apt-get update
+      - apt-get install -y build-essential libffi-dev libltdl-dev
+    output: bin/txqrapp-$$VERSION$$-release-unsigned.apk
+    srclibs:
+      - buildozer@586152c
+      - python-for-android@17b8f7961995f45d8dd8ee9986d821aaa1ef2f1a
+    prebuild:
+      - sed -iE "/^[# ]*android\.(ant|ndk|sdk)_path[ =]/d" buildozer.spec
+      - sed -iE "/^[# ]*android.accept_sdk_license[ =]+.*/d" buildozer.spec
+      - sed -iE "/^[# ]*android.skip_update[ =]+.*/d" buildozer.spec
+      - sed -iE "/^[# ]*p4a.source_dir[ =]+.*/d" buildozer.spec
+      - sed -i "s,\[app\],[app]\n\nandroid.sdk_path = $$SDK$$\nandroid.ndk_path =
+        $$NDK$$\np4a.source_dir = $$python-for-android$$\nandroid.accept_sdk_license
+        = False\nandroid.skip_update = True\nandroid.ant_path = /usr/bin/ant\n," buildozer.spec
+      - pip3 install --user --upgrade $$buildozer$$ Cython==0.28.6
+    build: PATH="$HOME/.local/bin:$PATH" buildozer android release
+    ndk: r17c
+
+AutoUpdateMode: Version %v-android-%c
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/xloem/TXQRApp/master/buildozer.spec|android.numeric_version
+    = (\d+)|.|version = ([0-9\.]+)
+CurrentVersion: 0.1.7
+CurrentVersionCode: 1000107
