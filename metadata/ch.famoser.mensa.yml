@@ -25,3 +25,5 @@ AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: '1.5'
 CurrentVersionCode: 10
+
+AntiFeatures: NonFreeNet
