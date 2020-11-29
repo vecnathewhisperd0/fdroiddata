@@ -12,14 +12,14 @@ RepoType: git
 Repo: https://github.com/ntruchsess/send2car
 
 Builds:
-  - versionName: '0.6'
-    versionCode: 10
-    commit: '0.6'
+  - versionName: '0.7'
+    versionCode: 11
+    commit: '0.7'
     gradle:
       - yes
     output: app/build/outputs/apk/release/app-release-unsigned.apk
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '0.6'
-CurrentVersionCode: 10
+CurrentVersion: '0.7'
+CurrentVersionCode: 11
