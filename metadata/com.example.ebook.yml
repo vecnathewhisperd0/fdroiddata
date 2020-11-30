@@ -26,12 +26,12 @@ Repo: https://github.com/carlzkarthik/CbooK
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: v0.1
+    commit: v1.0
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: v0.1
+CurrentVersion: v1.0
 CurrentVersionCode: 1
