@@ -7,11 +7,9 @@ AuthorEmail: darnell@andries.ca
 AuthorWebSite: https://andries.ca
 SourceCode: https://github.com/djandries/portknocker-android
 IssueTracker: https://github.com/djandries/portknocker-android/issues
-
 AutoName: Port Knocker
 RepoType: git
 Repo: https://github.com/djandries/portknocker-android
-
 Builds:
   - versionName: '1.0'
     versionCode: 1
@@ -19,7 +17,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-
 AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: '1.0'
