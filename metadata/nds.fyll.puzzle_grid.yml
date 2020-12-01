@@ -1,0 +1,33 @@
+Categories:
+  - Writing
+License: MIT
+SourceCode: https://bitbucket.org/Fyll-nds/puzzle-grid
+
+RepoType: git
+Repo: https://bitbucket.org/Fyll-nds/puzzle-grid
+
+Builds:
+  - versionName: 2.0.1
+    versionCode: 5
+    commit: f042d14
+    subdir: android/app
+    gradle:
+      - yes
+    output: ../../build/app/outputs/flutter-apk/app-fdroid-release.apk
+    srclibs:
+      - flutter@stable
+    prebuild:
+      - echo "flutter.sdk=$$flutter$$" >> ../local.properties
+      - sed -i 's=properties.getProperty("flutter.sdk")="app/"+properties.getProperty("flutter.sdk")=g'
+        ../settings.gradle
+    build:
+      - sed -i 's="app/"+properties.getProperty("flutter.sdk")=properties.getProperty("flutter.sdk")=g'
+        ../settings.gradle
+      - cd ../..
+      - flutter build apk --release --flavor fdroid
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://bitbucket.org/Fyll-nds/puzzle-grid/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 2.0.1
+CurrentVersionCode: 5
