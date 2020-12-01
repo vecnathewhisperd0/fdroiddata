@@ -16,7 +16,7 @@ Description: This app can connect to an FTP-server and navigate through its dire
     priority, you can't upload files yet. But you can add as many connections as you
     wish and there are several settings. Nevertheless, the most important feature
     is the dark background.
-    
+
 RepoType: git
 Repo: https://github.com/Ulf-vom-Mond/FTP_Gallery
 
