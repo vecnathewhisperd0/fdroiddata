@@ -125,10 +125,13 @@ fdroid build:
       - unsigned/
     when: always
     expire_in: 1 month
-  only:
-    - branches
-  except:
-    - master@fdroid/fdroiddata
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH && $CI_PROJECT_PATH != "fdroid/fdroiddata"
+      changes:
+        - metadata/*.yml
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_PROJECT_PATH != "fdroid/fdroiddata"
+      changes:
+        - metadata/*.yml
   cache:
     key: "$CI_JOB_NAME"
     paths:
@@ -137,7 +140,10 @@ fdroid build:
     - git fetch https://gitlab.com/fdroid/fdroiddata.git;
     - test -d build || mkdir build
     - for f in `git diff --name-only --diff-filter=d FETCH_HEAD...HEAD -- metadata/*.yml`; do
-          git diff FETCH_HEAD...HEAD -- $f |grep -E '^\+ *(NoSourceSince|Disabled|disable):' && continue;
+          diff=$(git diff FETCH_HEAD...HEAD -- $f);
+          echo "$diff";
+          test $(echo "$diff" | grep '^[+-] ' | grep -v '^+  *disable:' | wc -l) = 0 && continue;
+          echo "$diff" | grep -E '^\+ *(NoSourceSince|Disabled):' && continue;
           appid=`echo $f | sed -n -e 's,^metadata/\([^/][^/]*\)\.yml,\1,p'`;
           export CHANGED="$CHANGED $appid";
       done;
