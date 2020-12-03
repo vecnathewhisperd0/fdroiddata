@@ -1,6 +1,8 @@
 image: registry.gitlab.com/fdroid/ci-images-server:latest
 
 lint:
+  only:
+    - master@fdroid/fdroiddata
   except:
     refs:
       - triggers
@@ -126,8 +128,6 @@ fdroid build:
     when: always
     expire_in: 1 month
   only:
-    - branches
-  except:
     - master@fdroid/fdroiddata
   cache:
     key: "$CI_JOB_NAME"
@@ -187,6 +187,8 @@ pages:
   only:
     - triggers
     - web
+  tags:
+    - interactive web terminal
   artifacts:
     paths:
       - metadata/
@@ -230,7 +232,10 @@ pages:
     - pyvenv --system-site-packages --clear issuebot-env
     - . issuebot-env/bin/activate
     - pip3 install python-gitlab wheel pygithub
-    - ./issuebot.py
+    - export | grep CI_ > ci-env
+    - ./issuebot.py || true
+
+    - sleep 999999 # TODO DELETE ME
 
     # git_stats used to run here, redirect to new location
     - echo '<html><head><meta http-equiv="refresh" content="0;URL=https://fdroid.gitlab.io/"></head></html>'
