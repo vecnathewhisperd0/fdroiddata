@@ -1,0 +1,31 @@
+Categories:
+  - Reading
+License: GPL-3.0-only
+AuthorName: Quinn Casey
+SourceCode: https://github.com/qcasey/paperless_share
+IssueTracker: https://github.com/qcasey/paperless_share/issues
+
+Description: Paperless Share is an Android App to share your documents with your Paperless
+    server.
+
+RepoType: git
+Repo: https://github.com/qcasey/paperless_share
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: v1.0.1
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@1.22.4
+    build:
+      - export PATH=$$flutter$$/bin:$PATH
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter packages pub run flutter_launcher_icons:main
+      - $$flutter$$/bin/flutter build apk
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: v1.0.1
+CurrentVersionCode: 1
