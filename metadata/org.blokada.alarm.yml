@@ -547,6 +547,7 @@ Builds:
     versionCode: 409000000
     commit: 4.9.0
     subdir: android4/app
+    submodules: yes
     gradle:
       - Droid
     srclibs:
@@ -562,7 +563,6 @@ Builds:
       - rustup target add i686-linux-android
       - rustup target add x86_64-linux-android
       - cargo install cargo-ndk
-      - git submodule update --init --recursive
       - export NDK_STANDALONE=$$NDK$$
       - cd ./../..
       - ./build.boringtun.sh
