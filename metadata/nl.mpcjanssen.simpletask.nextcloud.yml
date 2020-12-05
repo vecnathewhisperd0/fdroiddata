@@ -17,14 +17,14 @@ RepoType: git
 Repo: https://github.com/mpcjanssen/simpletask-android.git
 
 Builds:
-  - versionName: 10.5.0
-    versionCode: 10005000
-    commit: 10.5.0
+  - versionName: 10.9.0
+    versionCode: 10009000
+    commit: 10.9.0
     subdir: app
     gradle:
       - nextcloud
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 10.5.0
-CurrentVersionCode: 10005000
+CurrentVersion: 10.9.0
+CurrentVersionCode: 10009000
