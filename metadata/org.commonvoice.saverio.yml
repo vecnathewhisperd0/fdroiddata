@@ -5,8 +5,11 @@ AuthorName: Saverio Morelli
 AuthorWebSite: https://saveriomorelli.com/
 SourceCode: https://github.com/Sav22999/common-voice-android
 IssueTracker: https://github.com/Sav22999/common-voice-android/issues
+Translation: https://crowdin.com/project/common-voice-android
+Changelog: https://github.com/Sav22999/common-voice-android/releases
+Donate: https://ko-fi.com/R5R31UQ8G
 
-AutoName: Common Voice
+AutoName: CV Android
 
 RepoType: git
 Repo: https://github.com/Sav22999/common-voice-android
@@ -103,7 +106,55 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '2.0'
+    versionCode: 113
+    commit: '2.0'
+    subdir: app
+    gradle:
+      - FD-GH
+    output: build/outputs/apk/FD-GH/release/app-FD-GH-release-unsigned.apk
+
+  - versionName: 2.0.1
+    versionCode: 114
+    commit: 2.0.1
+    subdir: app
+    gradle:
+      - FD-GH
+    output: build/outputs/apk/FD-GH/release/app-FD-GH-release-unsigned.apk
+
+  - versionName: 2.0.2
+    versionCode: 116
+    commit: 2.0.2
+    subdir: app
+    gradle:
+      - FD-GH
+    output: build/outputs/apk/FD-GH/release/app-FD-GH-release-unsigned.apk
+
+  - versionName: 2.0.3
+    versionCode: 117
+    commit: 2.0.3
+    subdir: app
+    gradle:
+      - FD-GH
+    output: build/outputs/apk/FD-GH/release/app-FD-GH-release-unsigned.apk
+
+  - versionName: 2.0.4
+    versionCode: 118
+    commit: 2.0.4
+    subdir: app
+    gradle:
+      - FD-GH
+    output: build/outputs/apk/FD-GH/release/app-FD-GH-release-unsigned.apk
+
+  - versionName: '2.1'
+    versionCode: 119
+    commit: '2.1'
+    subdir: app
+    gradle:
+      - FD-GH
+    output: build/outputs/apk/FD-GH/release/app-FD-GH-release-unsigned.apk
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.4
-CurrentVersionCode: 106
+CurrentVersion: '2.1'
+CurrentVersionCode: 119

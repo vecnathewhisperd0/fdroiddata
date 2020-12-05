@@ -152,7 +152,133 @@ Builds:
     gradle:
       - foss
 
+  - versionName: 1.4.135
+    versionCode: 201
+    commit: v1.4.135
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.136
+    versionCode: 202
+    commit: v1.4.136
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.137
+    versionCode: 203
+    commit: v1.4.137
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.139
+    versionCode: 205
+    commit: v1.4.139
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.140
+    versionCode: 206
+    commit: v1.4.140
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.141
+    versionCode: 207
+    commit: v1.4.141
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.142
+    versionCode: 208
+    commit: v1.4.142
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.143
+    versionCode: 209
+    commit: v1.4.143
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.144
+    versionCode: 210
+    commit: v1.4.144
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.145
+    versionCode: 211
+    commit: v1.4.145
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.146
+    versionCode: 212
+    commit: v1.4.146
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.148
+    versionCode: 214
+    commit: v1.4.148
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.149
+    versionCode: 215
+    commit: v1.4.149
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.150
+    versionCode: 216
+    commit: v1.4.150
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.151
+    versionCode: 217
+    commit: v1.4.151
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.152
+    versionCode: 218
+    commit: v1.4.152
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.153
+    versionCode: 219
+    commit: v1.4.153
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.154
+    versionCode: 220
+    commit: v1.4.154
+    subdir: app
+    gradle:
+      - foss
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.134
-CurrentVersionCode: 200
+CurrentVersion: 1.4.154
+CurrentVersionCode: 220

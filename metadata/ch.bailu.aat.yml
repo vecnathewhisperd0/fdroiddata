@@ -191,7 +191,15 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v1.19
+    versionCode: 32
+    commit: v1.19
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v1.18
-CurrentVersionCode: 31
+CurrentVersion: v1.19
+CurrentVersionCode: 32

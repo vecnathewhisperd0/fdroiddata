@@ -244,6 +244,22 @@ Builds:
       - yes
     prebuild: sed -i -e 's/maven { .*bintray.com.* }/jcenter()/' ../build.gradle
 
+  - versionName: 2.6.4
+    versionCode: 40
+    commit: 2.6.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/maven { .*bintray.com.* }/jcenter()/' ../build.gradle
+
+  - versionName: 2.6.6
+    versionCode: 42
+    commit: 2.6.6
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/maven { .*bintray.com.* }/jcenter()/' ../build.gradle
+
 MaintainerNotes: |-
     Upstream prefers custom Maven repos to JCenter due to security concerns, see
     https://gitlab.com/fdroid/fdroiddata/issues/1627. We can't afford the luxury
@@ -251,5 +267,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.6.3
-CurrentVersionCode: 39
+CurrentVersion: 2.6.6
+CurrentVersionCode: 42

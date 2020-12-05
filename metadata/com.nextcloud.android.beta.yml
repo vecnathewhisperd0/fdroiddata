@@ -6,7 +6,7 @@ SourceCode: https://github.com/nextcloud/android
 IssueTracker: https://github.com/nextcloud/android/issues
 Translation: https://www.transifex.com/nextcloud/nextcloud/
 Changelog: https://github.com/nextcloud/android/commits
-Donate: https://www.bountysource.com/teams/nextcloud
+Donate: https://nextcloud.com/include/
 
 AutoName: Nextcloud
 Description: |-
@@ -4842,9 +4842,1385 @@ Builds:
     scandelete:
       - src/androidTest
 
+  - versionName: '20200617'
+    versionCode: 20200617
+    commit: dev-20200617
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200618'
+    versionCode: 20200618
+    commit: dev-20200618
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200619'
+    versionCode: 20200619
+    commit: dev-20200619
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200620'
+    versionCode: 20200620
+    commit: dev-20200620
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200624'
+    versionCode: 20200624
+    commit: dev-20200624
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200625'
+    versionCode: 20200625
+    commit: dev-20200625
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200626'
+    versionCode: 20200626
+    commit: dev-20200626
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200627'
+    versionCode: 20200627
+    commit: dev-20200627
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200630'
+    versionCode: 20200630
+    commit: dev-20200630
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200701'
+    versionCode: 20200701
+    commit: dev-20200701
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200704'
+    versionCode: 20200704
+    commit: dev-20200704
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200705'
+    versionCode: 20200705
+    commit: dev-20200705
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200707'
+    versionCode: 20200707
+    commit: dev-20200707
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200708'
+    versionCode: 20200708
+    commit: dev-20200708
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200710'
+    versionCode: 20200710
+    commit: dev-20200710
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200711'
+    versionCode: 20200711
+    commit: dev-20200711
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200714'
+    versionCode: 20200714
+    commit: dev-20200714
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200717'
+    versionCode: 20200717
+    commit: dev-20200717
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200718'
+    versionCode: 20200718
+    commit: dev-20200718
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200721'
+    versionCode: 20200721
+    commit: dev-20200721
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200722'
+    versionCode: 20200722
+    commit: dev-20200722
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200723'
+    versionCode: 20200723
+    commit: dev-20200723
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200724'
+    versionCode: 20200724
+    commit: dev-20200724
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200730'
+    versionCode: 20200730
+    commit: dev-20200730
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200801'
+    versionCode: 20200801
+    commit: dev-20200801
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200804'
+    versionCode: 20200804
+    commit: dev-20200804
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200806'
+    versionCode: 20200806
+    commit: dev-20200806
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200807'
+    versionCode: 20200807
+    commit: dev-20200807
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200808'
+    versionCode: 20200808
+    commit: dev-20200808
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200809'
+    versionCode: 20200809
+    commit: dev-20200809
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200817'
+    versionCode: 20200817
+    commit: dev-20200817
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200820'
+    versionCode: 20200820
+    commit: dev-20200820
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200821'
+    versionCode: 20200821
+    commit: dev-20200821
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200827'
+    versionCode: 20200827
+    commit: dev-20200827
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200828'
+    versionCode: 20200828
+    commit: dev-20200828
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200829'
+    versionCode: 20200829
+    commit: dev-20200829
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200901'
+    versionCode: 20200901
+    commit: dev-20200901
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200903'
+    versionCode: 20200903
+    commit: dev-20200903
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200904'
+    versionCode: 20200904
+    commit: dev-20200904
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200905'
+    versionCode: 20200905
+    commit: dev-20200905
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200908'
+    versionCode: 20200908
+    commit: dev-20200908
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200911'
+    versionCode: 20200911
+    commit: dev-20200911
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200912'
+    versionCode: 20200912
+    commit: dev-20200912
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200913'
+    versionCode: 20200913
+    commit: dev-20200913
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200916'
+    versionCode: 20200916
+    commit: dev-20200916
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200918'
+    versionCode: 20200918
+    commit: dev-20200918
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200919'
+    versionCode: 20200919
+    commit: dev-20200919
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200922'
+    versionCode: 20200922
+    commit: dev-20200922
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200923'
+    versionCode: 20200923
+    commit: dev-20200923
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200925'
+    versionCode: 20200925
+    commit: dev-20200925
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20200927'
+    versionCode: 20200927
+    commit: dev-20200927
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201001'
+    versionCode: 20201001
+    commit: dev-20201001
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201003'
+    versionCode: 20201003
+    commit: dev-20201003
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201007'
+    versionCode: 20201007
+    commit: dev-20201007
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201008'
+    versionCode: 20201008
+    commit: dev-20201008
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201009'
+    versionCode: 20201009
+    commit: dev-20201009
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201013'
+    versionCode: 20201013
+    commit: dev-20201013
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201014'
+    versionCode: 20201014
+    commit: dev-20201014
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201016'
+    versionCode: 20201016
+    commit: dev-20201016
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201017'
+    versionCode: 20201017
+    commit: dev-20201017
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201020'
+    versionCode: 20201020
+    commit: dev-20201020
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201021'
+    versionCode: 20201021
+    commit: dev-20201021
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201022'
+    versionCode: 20201022
+    commit: dev-20201022
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201025'
+    versionCode: 20201025
+    commit: dev-20201025
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201026'
+    versionCode: 20201026
+    commit: dev-20201026
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201028'
+    versionCode: 20201028
+    commit: dev-20201028
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201029'
+    versionCode: 20201029
+    commit: dev-20201029
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201030'
+    versionCode: 20201030
+    commit: dev-20201030
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201101'
+    versionCode: 20201101
+    commit: dev-20201101
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201103'
+    versionCode: 20201103
+    commit: dev-20201103
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201104'
+    versionCode: 20201104
+    commit: dev-20201104
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201106'
+    versionCode: 20201106
+    commit: dev-20201106
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201107'
+    versionCode: 20201107
+    commit: dev-20201107
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201108'
+    versionCode: 20201108
+    commit: dev-20201108
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201110'
+    versionCode: 20201110
+    commit: dev-20201110
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201112'
+    versionCode: 20201112
+    commit: dev-20201112
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201114'
+    versionCode: 20201114
+    commit: dev-20201114
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201119'
+    versionCode: 20201119
+    commit: dev-20201119
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201120'
+    versionCode: 20201120
+    commit: dev-20201120
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201124'
+    versionCode: 20201124
+    commit: dev-20201124
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201125'
+    versionCode: 20201125
+    commit: dev-20201125
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201126'
+    versionCode: 20201126
+    commit: dev-20201126
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201127'
+    versionCode: 20201127
+    commit: dev-20201127
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201202'
+    versionCode: 20201202
+    commit: dev-20201202
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201203'
+    versionCode: 20201203
+    commit: dev-20201203
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
+  - versionName: '20201205'
+    versionCode: 20201205
+    commit: dev-20201205
+    submodules: true
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+      - gplay.gradle
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - src/androidTest
+
 MaintainerNotes: Tags get removed. See https://github.com/nextcloud/android/issues/969.
 
 AutoUpdateMode: Version dev-%c
 UpdateCheckMode: Tags ^dev
-CurrentVersion: '20200611'
-CurrentVersionCode: 20200611
+CurrentVersion: '20201205'
+CurrentVersionCode: 20201205

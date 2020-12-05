@@ -33,6 +33,7 @@ Builds:
     subdir: xwords4/android/XWords4
     buildjni:
       - yes
+    ndk: r12b
 
   - versionName: 4.4 beta 38
     versionCode: 30
@@ -40,6 +41,7 @@ Builds:
     subdir: xwords4/android/XWords4
     buildjni:
       - yes
+    ndk: r12b
 
   - versionName: 4.4 beta 39
     versionCode: 31
@@ -51,6 +53,7 @@ Builds:
     target: android-8
     buildjni:
       - yes
+    ndk: r12b
 
   - versionName: '4.4'
     versionCode: 50
@@ -65,6 +68,7 @@ Builds:
       - scripts/genvers.sh XWords4 xw4 > ant_out.txt
     buildjni:
       - yes
+    ndk: r12b
 
   - versionName: 4.4 beta 60
     versionCode: 52
@@ -78,6 +82,7 @@ Builds:
       - scripts/genvers.sh XWords4 xw4 > ant_out.txt
     buildjni:
       - yes
+    ndk: r12b
 
   - versionName: 4.4 beta 85
     versionCode: 77
@@ -90,6 +95,7 @@ Builds:
       - ./scripts/genvers.sh XWords4 xw4 true true
     buildjni:
       - yes
+    ndk: r12b
 
   - versionName: 4.4 beta 96
     versionCode: 89
@@ -309,8 +315,8 @@ Builds:
     commit: android_beta_145
     subdir: xwords4/android/app
     sudo:
-      - apt update || apt update
-      - apt install -y graphicsmagick-imagemagick-compat
+      - apt-get update || apt-get update
+      - apt-get install -y graphicsmagick-imagemagick-compat
     gradle:
       - Xw4fdroid
     prebuild: sed -i -e '/\/\/ rm-for-fdroid$/d' {..,.}/build.gradle
@@ -322,8 +328,8 @@ Builds:
     commit: android_beta_147
     subdir: xwords4/android/app
     sudo:
-      - apt update || apt update
-      - apt install -y graphicsmagick-imagemagick-compat
+      - apt-get update || apt-get update
+      - apt-get install -y graphicsmagick-imagemagick-compat
     gradle:
       - Xw4fdroid
     prebuild: sed -i -e '/\/\/ rm-for-fdroid$/d' {..,.}/build.gradle
@@ -335,8 +341,8 @@ Builds:
     commit: android_beta_148
     subdir: xwords4/android/app
     sudo:
-      - apt update || apt update
-      - apt install -y graphicsmagick-imagemagick-compat
+      - apt-get update || apt-get update
+      - apt-get install -y graphicsmagick-imagemagick-compat
     gradle:
       - Xw4fdroid
     prebuild:
@@ -350,8 +356,8 @@ Builds:
     commit: android_beta_149
     subdir: xwords4/android/app
     sudo:
-      - apt update || apt update
-      - apt install -y graphicsmagick-imagemagick-compat
+      - apt-get update || apt-get update
+      - apt-get install -y graphicsmagick-imagemagick-compat
     gradle:
       - Xw4fdroid
     prebuild:
@@ -365,8 +371,8 @@ Builds:
     commit: android_beta_153
     subdir: xwords4/android/app
     sudo:
-      - apt update || apt update
-      - apt install -y graphicsmagick-imagemagick-compat
+      - apt-get update || apt-get update
+      - apt-get install -y graphicsmagick-imagemagick-compat
     gradle:
       - Xw4fdroid
     prebuild:
@@ -380,8 +386,8 @@ Builds:
     commit: android_beta_154
     subdir: xwords4/android/app
     sudo:
-      - apt update || apt update
-      - apt install -y graphicsmagick-imagemagick-compat
+      - apt-get update || apt-get update
+      - apt-get install -y graphicsmagick-imagemagick-compat
     gradle:
       - Xw4fdroid
     prebuild:
@@ -395,8 +401,8 @@ Builds:
     commit: android_beta_159
     subdir: xwords4/android/app
     sudo:
-      - apt update || apt update
-      - apt install -y graphicsmagick-imagemagick-compat
+      - apt-get update || apt-get update
+      - apt-get install -y graphicsmagick-imagemagick-compat
     gradle:
       - Xw4fdroid
     prebuild:
@@ -406,7 +412,97 @@ Builds:
     gradleprops:
       - forFDroid
 
+  - versionName: 4.4.163
+    versionCode: 159
+    commit: android_beta_163
+    subdir: xwords4/android/app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y graphicsmagick-imagemagick-compat python3-lxml
+    gradle:
+      - Xw4fdroid
+    rm:
+      - xwords4/dawg/English/BasEnglish.dict.gz
+    prebuild:
+      - sed -i -e '/\/\/ rm-for-fdroid$/d' {..,.}/build.gradle
+      - sed -i -e '/com.google.gms/d' build.gradle
+    ndk: r21d
+    gradleprops:
+      - forFDroid
+
+  - versionName: 4.4.164
+    versionCode: 160
+    commit: android_beta_164
+    subdir: xwords4/android/app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y graphicsmagick-imagemagick-compat python3-lxml
+    gradle:
+      - Xw4fdroid
+    rm:
+      - xwords4/dawg/English/BasEnglish.dict.gz
+    prebuild:
+      - sed -i -e '/\/\/ rm-for-fdroid$/d' {..,.}/build.gradle
+      - sed -i -e '/com.google.gms/d' build.gradle
+    ndk: r21d
+    gradleprops:
+      - forFDroid
+
+  - versionName: 4.4.166
+    versionCode: 162
+    commit: android_beta_166
+    subdir: xwords4/android/app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y graphicsmagick-imagemagick-compat python3-lxml
+    gradle:
+      - Xw4fdroid
+    rm:
+      - xwords4/dawg/English/BasEnglish.dict.gz
+    prebuild:
+      - sed -i -e '/\/\/ rm-for-fdroid$/d' {..,.}/build.gradle
+      - sed -i -e '/com.google.gms/d' build.gradle
+    ndk: r21d
+    gradleprops:
+      - forFDroid
+
+  - versionName: 4.4.168
+    versionCode: 164
+    commit: android_beta_168
+    subdir: xwords4/android/app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y graphicsmagick-imagemagick-compat python3-lxml
+    gradle:
+      - Xw4fdroid
+    rm:
+      - xwords4/dawg/English/BasEnglish.dict.gz
+    prebuild:
+      - sed -i -e '/\/\/ rm-for-fdroid$/d' {..,.}/build.gradle
+      - sed -i -e '/com.google.gms/d' build.gradle
+    ndk: r21d
+    gradleprops:
+      - forFDroid
+
+  - versionName: 4.4.169
+    versionCode: 165
+    commit: android_beta_169
+    subdir: xwords4/android/app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y graphicsmagick-imagemagick-compat python3-lxml
+    gradle:
+      - Xw4fdroid
+    rm:
+      - xwords4/dawg/English/BasEnglish.dict.gz
+    prebuild:
+      - sed -i -e '/\/\/ rm-for-fdroid$/d' {..,.}/build.gradle
+      - sed -i -e '/com.google.gms/d' build.gradle
+    ndk: r21d
+    gradleprops:
+      - forFDroid
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags ^android
-CurrentVersion: 4.4.159
-CurrentVersionCode: 155
+CurrentVersion: 4.4.169
+CurrentVersionCode: 165

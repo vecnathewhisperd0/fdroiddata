@@ -541,9 +541,141 @@ Builds:
       - docs
     ndk: r21b
 
+  - versionName: 2.11.3
+    versionCode: 21103302
+    commit: v2.11.3
+    subdir: AnkiDroid
+    gradle:
+      - yes
+    rm:
+      - tools
+      - docs
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: 2.12.1
+    versionCode: 21201300
+    commit: v2.12.1
+    subdir: AnkiDroid
+    gradle:
+      - yes
+    rm:
+      - tools
+      - docs
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' -e '/splits\ {/,+30d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.13.0
+    versionCode: 21300300
+    commit: v2.13.0
+    subdir: AnkiDroid
+    gradle:
+      - yes
+    rm:
+      - tools
+      - docs
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' -e '/splits\ {/,+30d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.13.1
+    versionCode: 21300301
+    commit: v2.13.1
+    subdir: AnkiDroid
+    gradle:
+      - yes
+    rm:
+      - tools
+      - docs
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' -e '/splits\ {/,+30d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.13.2
+    versionCode: 21300302
+    commit: v2.13.2
+    subdir: AnkiDroid
+    gradle:
+      - yes
+    rm:
+      - tools
+      - docs
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' -e '/splits\ {/,+30d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.13.3
+    versionCode: 21300303
+    commit: v2.13.3
+    subdir: AnkiDroid
+    gradle:
+      - yes
+    rm:
+      - tools
+      - docs
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' -e '/splits\ {/,+30d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.13.4
+    versionCode: 21300304
+    commit: v2.13.4
+    subdir: AnkiDroid
+    gradle:
+      - yes
+    rm:
+      - tools
+      - docs
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' -e '/splits\ {/,+30d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.13.5
+    versionCode: 21300305
+    commit: v2.13.5
+    subdir: AnkiDroid
+    gradle:
+      - yes
+    rm:
+      - tools
+      - docs
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' -e '/splits\ {/,+30d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.14.0
+    versionCode: 21400300
+    commit: v2.14.0
+    subdir: AnkiDroid
+    gradle:
+      - yes
+    rm:
+      - tools
+      - docs
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' -e '/splits\ {/,+30d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.14.1
+    versionCode: 21401300
+    commit: v2.14.1
+    subdir: AnkiDroid
+    gradle:
+      - yes
+    rm:
+      - tools
+      - docs
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' -e '/splits\ {/,+30d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.14.2
+    versionCode: 21402300
+    commit: v2.14.2
+    subdir: AnkiDroid
+    gradle:
+      - yes
+    rm:
+      - tools
+      - docs
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' -e '/splits\ {/,+30d' build.gradle
+    ndk: r21d
+
 MaintainerNotes: Uses DexLoader to load custom decks and plugins (?).
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9.]*$
-CurrentVersion: 2.11.2
-CurrentVersionCode: 21102300
+CurrentVersion: 2.14.2
+CurrentVersionCode: 21402300

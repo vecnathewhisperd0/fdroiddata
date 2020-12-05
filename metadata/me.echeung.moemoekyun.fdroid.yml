@@ -195,8 +195,22 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 5.2.1
+    versionCode: 91
+    commit: v5.2.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 5.2.2
+    versionCode: 92
+    commit: v5.2.2
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckName: me.echeung.moemoekyun
-CurrentVersion: 5.2.0
-CurrentVersionCode: 90
+CurrentVersion: 5.2.2
+CurrentVersionCode: 92

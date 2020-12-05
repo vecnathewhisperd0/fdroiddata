@@ -133,7 +133,35 @@ Builds:
     gradle:
       - fDroid
 
+  - versionName: 12.1.2
+    versionCode: 98
+    commit: '98'
+    subdir: app
+    gradle:
+      - fDroid
+
+  - versionName: 12.1.4
+    versionCode: 100
+    commit: '100'
+    subdir: app
+    gradle:
+      - fDroid
+
+  - versionName: 12.1.5
+    versionCode: 101
+    commit: '101'
+    subdir: app
+    gradle:
+      - fDroid
+
+  - versionName: 13.0.0
+    versionCode: 102
+    commit: '102'
+    subdir: app
+    gradle:
+      - fDroid
+
 AutoUpdateMode: Version %c
 UpdateCheckMode: Tags
-CurrentVersion: 12.1.1
-CurrentVersionCode: 97
+CurrentVersion: 13.0.0
+CurrentVersionCode: 102

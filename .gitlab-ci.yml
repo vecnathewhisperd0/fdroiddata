@@ -1,22 +1,16 @@
-image: registry.gitlab.com/fdroid/ci-images-server:latest
 
 lint:
+  image: registry.gitlab.com/fdroid/ci-images-base
   except:
-    refs:
-      - triggers
-      - schedules
-      - piplines
-    variables:
-      - $CHECKUPDATES
+    - pipelines
+    - schedules
+    - triggers
   before_script:
-    - ./tools/trigger-issuebot
-    - printf "Package\x3a androguard fdroidserver python3-asn1crypto python3-ruamel.yaml\nPin\x3a release a=stretch-backports\nPin-Priority\x3a 500\n" > /etc/apt/preferences.d/debian-stretch-backports.pref
-    - echo "deb http://deb.debian.org/debian/ stretch-backports main" > /etc/apt/sources.list.d/backports.list
     - apt-get update
     - apt-get -qy dist-upgrade
-
     - rm -rf fdroidserver
     - mkdir fdroidserver
+    - git ls-remote https://gitlab.com/fdroid/fdroidserver.git master
     - curl --silent https://gitlab.com/fdroid/fdroidserver/repository/master/archive.tar.gz
         | tar -xz --directory=fdroidserver --strip-components=1
     - export PATH="$PWD/fdroidserver:$PATH"
@@ -24,7 +18,7 @@ lint:
   script:
     # if this is a merge request fork, then only check relevant apps
     - if [ "$CI_PROJECT_NAMESPACE" != "fdroid" ]; then
-        git fetch https://gitlab.com/fdroid/fdroiddata;
+        git fetch https://gitlab.com/fdroid/fdroiddata.git;
         test -d build || mkdir build;
         files=`git diff --name-only --diff-filter=d FETCH_HEAD...HEAD`;
         for f in $files; do
@@ -35,7 +29,8 @@ lint:
            fi;
         done;
         set -x;
-        apt-get install python3-colorama;
+        apt-get install python3-colorama yamllint;
+        for f in $files; do [[ $f == *'.yml' ]] && yamllint "$f"; done;
         ./tools/check-git-repo-availability.py $files;
         ./tools/audit-gradle.py $CHANGED;
         set +x;
@@ -60,21 +55,30 @@ lint:
     - ./tools/check-metadata-summary-whitespace.py || export EXITVALUE=1
     - exit $EXITVALUE
 
+trigger-issuebot:
+  image: alpine
+  except:
+    - master@fdroid/fdroiddata
+    - pipelines
+    - schedules
+    - triggers
+  variables:
+    GIT_DEPTH: "1"
+  script:
+    - apk add --no-cache bash curl
+    - ./tools/trigger-issuebot
+
 checkupdates_trigger:
   only:
     refs:
       - schedules
     variables:
       - $CHECKUPDATES == "true"
-  image: debian:buster-slim
+  image: archlinux:latest
   before_script:
-    - apt-get update
-    - apt-get install -qy --no-install-recommends parallel curl ca-certificates
+    - pacman -Sy --noconfirm parallel
   script:
-    - files=( metadata/*.yml )
-    - files=( ${files[@]#metadata/} )
-    - files=( ${files[@]%.yml} )
-    - parallel --verbose --delay 90 -N 340 'curl -X POST -F "token=$CI_JOB_TOKEN" -F "ref=master" -F "variables[CHECKUPDATES]=true" -F "variables[CHECKUPDATES_APPIDS]= {} " https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/trigger/pipeline' ":::" ${files[@]}
+    - parallel --verbose --delay 90 -X --jobs 10 'curl -X POST -F "token=$CI_JOB_TOKEN" -F "ref=master" -F "variables[CHECKUPDATES]=true" -F "variables[CHECKUPDATES_APPIDS]= {/.} " https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/trigger/pipeline' ":::" metadata/*.yml
 
 checkupdates_runner:
   image: registry.gitlab.com/fdroid/ci-images-checkupdates:latest
@@ -88,18 +92,26 @@ checkupdates_runner:
   before_script:
     - rm -rf fdroidserver
     - mkdir fdroidserver
+    - git ls-remote https://gitlab.com/fdroid/fdroidserver.git master
     - curl --silent https://gitlab.com/fdroid/fdroidserver/repository/master/archive.tar.gz
         | tar -xz --directory=fdroidserver --strip-components=1
     - export PATH="$PWD/fdroidserver:$PATH"
     - touch config.py
     - git config --global user.email "fdroidci@bubu1.eu"
     - git config --global user.name "F-Droid checkupdates bot"
-    - url_host=`git remote get-url origin | sed -e "s/https:\/\/gitlab-ci-token:.*@//g"`
-    - git remote set-url origin "https://gitlab-ci-token:${CI_GIT_PUSH_TOKEN}@${url_host}"
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - cp "${GITLAB_KNOWN_HOSTS}" ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - eval $(ssh-agent -s)
+    - echo "${CHECKUPDATES_SSH_DEPLOY_KEY}" | tr -d '\r' | ssh-add -
+    - url_host=$(echo "${CI_REPOSITORY_URL}" | sed -e 's|https\?://gitlab-ci-token:.*@|ssh://git@|g')
+    - git remote set-url --push origin "${url_host}"
   script:
     - fdroid checkupdates --allow-dirty --auto --commit ${CHECKUPDATES_APPIDS}
     - git pull --rebase origin master
-    - git push origin HEAD:master
+    # when two jobs try to push at the same time they occasionally fail, so try one more time if it fails
+    - git push origin HEAD:master || (git pull --rebase origin master && git push origin HEAD:master)
 
 fdroid build:
   image: registry.gitlab.com/fdroid/ci-images-client:latest
@@ -110,20 +122,23 @@ fdroid build:
       - unsigned/
     when: always
     expire_in: 1 month
-  only:
-    refs:
-      - merge_requests
-    changes:
-      - metadata/*.yml
+  except:
+    - master@fdroid/fdroiddata
+    - pipelines
+    - schedules
+    - triggers
   cache:
     key: "$CI_JOB_NAME"
     paths:
       - .gradle
   script:
-    - git fetch https://gitlab.com/fdroid/fdroiddata;
+    - git fetch https://gitlab.com/fdroid/fdroiddata.git;
     - test -d build || mkdir build
     - for f in `git diff --name-only --diff-filter=d FETCH_HEAD...HEAD -- metadata/*.yml`; do
-          git diff FETCH_HEAD...HEAD -- $f |grep -E '^\+ *(NoSourceSince|Disabled|disable):' && continue;
+          diff=$(git diff FETCH_HEAD...HEAD -- $f);
+          echo "$diff";
+          test $(echo "$diff" | grep '^[+-] ' | grep -v '^+  *disable:' | wc -l) = 0 && continue;
+          echo "$diff" | grep -E '^\+ *(NoSourceSince|Disabled):' && continue;
           appid=`echo $f | sed -n -e 's,^metadata/\([^/][^/]*\)\.yml,\1,p'`;
           export CHANGED="$CHANGED $appid";
       done;
@@ -131,15 +146,15 @@ fdroid build:
           || { echo "no packages need processing, exiting"; exit 0; }
 
     - test -d fdroidserver || mkdir fdroidserver
+    - git ls-remote https://gitlab.com/fdroid/fdroidserver.git master
     - curl --silent https://gitlab.com/fdroid/fdroidserver/repository/master/archive.tar.gz
           | tar -xz --directory=fdroidserver --strip-components=1
     - export PATH="`pwd`/fdroidserver:$PATH"
-    - export PYTHONPATH="`pwd`/fdroidserver"
+    - export PYTHONPATH="`pwd`/fdroidserver:$CI_PROJECT_DIR/tools"
     - export PYTHONUNBUFFERED=true
 
     - bash fdroidserver/buildserver/provision-apt-get-install http://deb.debian.org/debian
     - apt-get dist-upgrade
-    - apt-get install sudo # TODO REMOVE ME once merged https://gitlab.com/fdroid/fdroidserver/-/merge_requests/753
 
     # install fdroidserver from git, with deps from Debian, until fdroidserver
     # is stable enough to include all the things needed here
@@ -151,17 +166,30 @@ fdroid build:
     - apt-get purge fdroidserver
 
     - export GRADLE_USER_HOME=$PWD/.gradle
-    - fdroid build --verbose --on-server --latest --no-tarball --no-refresh  $CHANGED
+    # each `fdroid build --on-server` run expects sudo, then uninstalls it
+    - for build in `./tools/find-changed-builds.py`; do
+          set -x;
+          apt-get install sudo;
+          fdroid fetchsrclibs $build --verbose;
+          fdroid build --verbose --on-server --no-tarball $build;
+      done
 
 
+# issuebot needs secrets to run, so it has to run under the 'fdroid'
+# group, therefore needs the trigger without secrets, there would be
+# no support for virustotal, github downloads, exodus privacy checks,
+# etc.  That means it has to be triggered from the lint: job, which
+# runs in the fork's CI.
+#
+# This job has to be called 'pages' because it deploys the JSON API
+# to GitLab Pages.
 pages:
   image: registry.gitlab.com/fdroid/ci-images-client:latest
   only:
     - triggers
     - web
   except:
-    variables:
-      - $CHECKUPDATES
+    - master@fdroid/fdroiddata
   artifacts:
     paths:
       - metadata/
@@ -170,6 +198,9 @@ pages:
       - repo/index.xml
       - tmp/apkcache.json
     when: always
+  # needs lots of git history since it has to compare the merge request to current master
+  variables:
+    GIT_DEPTH: "5000"
   script:
     - apt-get update
     - apt-get dist-upgrade
@@ -182,6 +213,7 @@ pages:
          python3-venv
     - apt-get purge fdroidserver
     - test -d fdroidserver || mkdir fdroidserver
+    - git ls-remote https://gitlab.com/fdroid/fdroidserver.git master
     - curl --silent https://gitlab.com/fdroid/fdroidserver/repository/master/archive.tar.gz
         | tar -xz --directory=fdroidserver --strip-components=1
     - export PATH="`pwd`/fdroidserver:$PATH"
@@ -191,9 +223,11 @@ pages:
     - export GRADLE_USER_HOME=$PWD/.gradle
     - rm -rf $GRADLE_USER_HOME/fdroid
     - mkdir -p $GRADLE_USER_HOME/fdroid
+    - git ls-remote https://gitlab.com/fdroid/gradle-plugins.git master
     - curl --silent https://gitlab.com/fdroid/gradle-plugins/repository/master/archive.tar.gz
         | tar -xz --directory=$GRADLE_USER_HOME/fdroid --strip-components=1
 
+    - git ls-remote https://gitlab.com/fdroid/issuebot.git master
     - curl --silent https://gitlab.com/fdroid/issuebot/repository/master/archive.tar.gz
         | tar -xz --strip-components=1
     - pyvenv --system-site-packages --clear issuebot-env

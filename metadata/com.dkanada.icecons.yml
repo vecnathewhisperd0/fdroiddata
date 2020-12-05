@@ -9,7 +9,7 @@ Changelog: https://github.com/dkanada/frost/blob/HEAD/CHANGELOG.md
 AutoName: Frost
 Description: |-
     Frost is a monotone icon pack that supports Trebuchet, Kiss, Nova, and most
-    other popular launchers. It is based on [[ovh.ice.icecons]] and includes some
+    other popular launchers. It is based on https://f-droid.org/packages/ovh.ice.icecons and includes some
     nice wallpapers.
 
 RepoType: git
@@ -207,13 +207,26 @@ Builds:
 
   - versionName: 1.8.0
     versionCode: 39
-    disable: missing androidx setup
     commit: v1.8.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.8.1
+    versionCode: 40
+    commit: v1.8.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0
+    versionCode: 41
+    commit: v2.0.0
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.0
-CurrentVersionCode: 39
+CurrentVersion: 2.0.0
+CurrentVersionCode: 41

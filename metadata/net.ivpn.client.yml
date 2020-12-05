@@ -6,6 +6,7 @@ License: GPL-3.0-only
 WebSite: https://www.ivpn.net/
 SourceCode: https://github.com/ivpn/android-app
 IssueTracker: https://github.com/ivpn/android-app/issues
+Changelog: https://github.com/ivpn/android-app/releases
 
 AutoName: IVPN
 
@@ -52,7 +53,46 @@ Builds:
       - fdroidProduction
     ndk: r21
 
+  - versionName: '1.68'
+    versionCode: 82
+    commit: v1.68
+    subdir: app
+    init:
+      - git submodule init
+      - git submodule update
+      - rm -rf src/main/cpp/mbedtls/tests
+      - rm -rf src/main/cpp/openvpn3/test
+    gradle:
+      - fdroidProduction
+    ndk: r21d
+
+  - versionName: '2.0'
+    versionCode: 87
+    commit: v2.0
+    subdir: app
+    init:
+      - git submodule init
+      - git submodule update
+      - rm -rf src/main/cpp/mbedtls/tests
+      - rm -rf src/main/cpp/openvpn3/test
+    gradle:
+      - fdroidProduction
+    ndk: r21d
+
+  - versionName: 2.1.0
+    versionCode: 90
+    commit: v2.1.0
+    subdir: app
+    init:
+      - git submodule init
+      - git submodule update
+      - rm -rf src/main/cpp/mbedtls/tests
+      - rm -rf src/main/cpp/openvpn3/test
+    gradle:
+      - fdroidProduction
+    ndk: r21d
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.67'
-CurrentVersionCode: 79
+CurrentVersion: 2.1.0
+CurrentVersionCode: 90

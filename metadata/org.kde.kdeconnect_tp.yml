@@ -2,7 +2,7 @@ Categories:
   - System
 License: GPL-2.0-only
 WebSite: https://community.kde.org/KDE_Connect
-SourceCode: https://invent.kde.org/kde/kdeconnect-android
+SourceCode: https://invent.kde.org/network/kdeconnect-android
 IssueTracker: https://bugs.kde.org
 
 AutoName: KDE Connect
@@ -27,7 +27,7 @@ Description: |-
     people who contributed to it. Visit the website to grab the source code.
 
 RepoType: git
-Repo: https://anongit.kde.org/kdeconnect-android
+Repo: https://invent.kde.org/network/kdeconnect-android
 
 Builds:
   - versionName: 0.3.0
@@ -483,7 +483,21 @@ Builds:
       - yes
     prebuild: sed -i -e '/javaMaxHeapSize/s/4g/2g/g' build.gradle
 
+  - versionName: 1.15.0
+    versionCode: 11501
+    commit: v1.15.0
+    gradle:
+      - yes
+    prebuild: sed -i -e '/javaMaxHeapSize/s/4g/2g/g' build.gradle
+
+  - versionName: 1.15.1
+    versionCode: 11510
+    commit: v1.15.1
+    gradle:
+      - yes
+    prebuild: sed -i -e '/javaMaxHeapSize/s/4g/2g/g' build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.14.2
-CurrentVersionCode: 11421
+CurrentVersion: 1.15.1
+CurrentVersionCode: 11510

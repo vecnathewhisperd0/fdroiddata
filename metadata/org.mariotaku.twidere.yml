@@ -7,7 +7,7 @@ WebSite: https://twidere.mariotaku.org/
 SourceCode: https://github.com/TwidereProject/Twidere-Android
 IssueTracker: https://github.com/TwidereProject/Twidere-Android/issues
 Translation: http://crowdin.net/project/twidere
-Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mariotaku.lee%40gmail%2ecom&item_name=Donate%20to%20Twidere
+Donate: https://paypal.me/yisiliu2
 Bitcoin: 1FHAVAzge7cj1LfCTMfnLL49DgA3mVUCuW
 
 AutoName: Twidere
@@ -2160,9 +2160,29 @@ Builds:
       - sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle
       - sed -i -e '/^bintray/,$d' ../twidere.component.common/build.gradle
 
+  - versionName: 4.1.5
+    versionCode: 514
+    commit: 4.1.5
+    subdir: twidere
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle
+      - sed -i -e '/^bintray/,$d' ../twidere.component.common/build.gradle
+
+  - versionName: 4.1.6
+    versionCode: 515
+    commit: 4.1.6
+    subdir: twidere
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle
+      - sed -i -e '/^bintray/,$d' ../twidere.component.common/build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/TwidereProject/Twidere-Android/maintenance/build.gradle|projectVersionCode
     = (.*)|.|projectVersionName = '(.*)'
-CurrentVersion: 4.1.4
-CurrentVersionCode: 513
+CurrentVersion: 4.1.6
+CurrentVersionCode: 515

@@ -200,7 +200,31 @@ Builds:
       - yes
     prebuild: echo "android.useAndroidX=true" > ../gradle.properties
 
+  - versionName: 1.8.4
+    versionCode: 32
+    commit: v1.8.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: echo "android.useAndroidX=true" > ../gradle.properties
+
+  - versionName: 1.8.6
+    versionCode: 34
+    commit: v1.8.6
+    subdir: app
+    gradle:
+      - yes
+    prebuild: echo "android.useAndroidX=true" > ../gradle.properties
+
+  - versionName: 1.9.0
+    versionCode: 35
+    commit: v1.9.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: echo "android.useAndroidX=true" > ../gradle.properties
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.3
-CurrentVersionCode: 31
+CurrentVersion: 1.9.0
+CurrentVersionCode: 35

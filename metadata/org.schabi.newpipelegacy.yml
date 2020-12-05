@@ -9,6 +9,7 @@ AuthorEmail: tnp@schabi.org
 WebSite: https://newpipe.schabi.org/
 SourceCode: https://github.com/TeamNewPipe/NewPipe-legacy
 IssueTracker: https://github.com/TeamNewPipe/NewPipe-legacy/issues
+Translation: https://hosted.weblate.org/projects/newpipe/
 Changelog: https://github.com/TeamNewPipe/NewPipe-legacy/releases
 Donate: https://newpipe.schabi.org/donate
 LiberapayID: '34969'
@@ -103,7 +104,31 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.19.8
+    versionCode: 90
+    commit: v0.19.8
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.20.1
+    versionCode: 100
+    commit: v0.20.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.20.2
+    versionCode: 110
+    commit: v0.20.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.19.5
-CurrentVersionCode: 80
+CurrentVersion: 0.20.2
+CurrentVersionCode: 110

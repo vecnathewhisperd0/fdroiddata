@@ -620,7 +620,95 @@ Builds:
       - yes
     prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
 
+  - versionName: 1.9.6
+    versionCode: 76
+    commit: 1.9.6
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.9.7
+    versionCode: 77
+    commit: 1.9.7
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.9.8
+    versionCode: 78
+    commit: 1.9.8
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.9.9
+    versionCode: 79
+    commit: 1.9.9
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.0
+    versionCode: 80
+    commit: 1.10.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.1
+    versionCode: 81
+    commit: 1.10.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.2
+    versionCode: 82
+    commit: 1.10.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.4
+    versionCode: 84
+    commit: 1.10.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.5
-CurrentVersionCode: 75
+CurrentVersion: 1.10.4
+CurrentVersionCode: 84

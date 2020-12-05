@@ -89,7 +89,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.4.2
+    versionCode: 20
+    commit: v1.4.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.5'
+    versionCode: 21
+    commit: v1.5
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 1.4.1
-CurrentVersionCode: 19
+UpdateCheckMode: Tags ^v
+CurrentVersion: '1.5'
+CurrentVersionCode: 21

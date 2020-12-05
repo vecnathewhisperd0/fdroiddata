@@ -14,7 +14,7 @@ Donate: https://www.paypal.me/whyorean
 
 AutoName: Aurora Store
 Description: |-
-    This ''Aurora Store'' is a complete rewrite, replacing [[com.dragons.aurora]].
+    This ''Aurora Store'' is a complete rewrite, replacing https://f-droid.org/packages/com.dragons.aurora.
 
     Aurora Store is an alternate to Google's Play Store, with an elegant design,
     using Aurora you can download apps, update existing apps, search for apps,
@@ -171,7 +171,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 3.2.9
+    versionCode: 29
+    commit: 3.2.9
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.2.8
-CurrentVersionCode: 28
+CurrentVersion: 3.2.9
+CurrentVersionCode: 29

@@ -282,7 +282,42 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.8.15
+    versionCode: 8015
+    commit: v0.8.15
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.16
+    versionCode: 8016
+    commit: v0.8.16
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.17
+    versionCode: 8017
+    commit: v0.8.17
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.0
+    versionCode: 9000
+    commit: v0.9.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.1
+    versionCode: 9001
+    commit: v0.9.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.8.14
-CurrentVersionCode: 8014
+CurrentVersion: 0.9.1
+CurrentVersionCode: 9001

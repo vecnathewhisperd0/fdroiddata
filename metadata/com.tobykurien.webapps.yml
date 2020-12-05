@@ -21,7 +21,7 @@ Description: |-
     security, especially on untrusted networks. The app can also handle HTTPS links
     and open them in their own sandbox.
 
-    Based on [[com.tobykurien.google_news]].
+    Based on https://f-droid.org/packages/com.tobykurien.google_news.
 
 RepoType: git
 Repo: https://github.com/tobykurien/webapps
@@ -283,7 +283,36 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v3.41
+    versionCode: 36
+    disable: JARs in app/libs
+    commit: v3.41
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v3.50
+    versionCode: 37
+    commit: v3.50
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v4.0
+    versionCode: 38
+    commit: v4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v4.1
+    versionCode: 39
+    commit: v4.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.40
-CurrentVersionCode: 35
+CurrentVersion: v4.1
+CurrentVersionCode: 39

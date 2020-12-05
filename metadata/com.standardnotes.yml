@@ -170,10 +170,10 @@ Builds:
       - node_modules/
       - vendor/
 
-  - versionName: 3.0.21
-    versionCode: 3000210
+  - versionName: 3.0.22
+    versionCode: 3000221
     disable: fails to build
-    commit: 3.0.21
+    commit: 3.0.22
     subdir: android/app/
     submodules: true
     sudo:
@@ -195,7 +195,7 @@ Builds:
       - node_modules/
       - vendor/
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
-CurrentVersion: 3.0.21
-CurrentVersionCode: 3000210
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 3.0.22
+CurrentVersionCode: 3000221

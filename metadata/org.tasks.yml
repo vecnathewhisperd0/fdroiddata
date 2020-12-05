@@ -1508,10 +1508,205 @@ Builds:
     gradle:
       - generic
     prebuild:
-      - sed -i -e '/maven/d' -e '/com.google.gms/d' -e '/io.fabric.tools/d' ../build.gradle.kts
-      - sed -i -e '/io.fabric/d' -e '/googleplayImplementation(.*) {/,/}/d; /googleplayImplementation/d'
-        -e '/amazonImplementation/d' -e '/com.google.gms/d' -e '/signingConfig =/d'
-        build.gradle.kts
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '9.7'
+    versionCode: 90700
+    commit: '9.7'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 9.7.1
+    versionCode: 90702
+    commit: 9.7.1
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 9.7.2
+    versionCode: 90703
+    commit: 9.7.2
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 9.7.3
+    versionCode: 90704
+    commit: 9.7.3
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '10.0'
+    versionCode: 100010
+    commit: '10.0'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' -e '/firebaseCrashlytics {/,/}/d;' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 10.0.1
+    versionCode: 100011
+    commit: 10.0.1
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' -e '/firebaseCrashlytics {/,/}/d;' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 10.0.2
+    versionCode: 100012
+    commit: 10.0.2
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' -e '/firebaseCrashlytics {/,/}/d;' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 10.0.3
+    versionCode: 100014
+    commit: 10.0.3
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' -e '/firebaseCrashlytics {/,/}/d;' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '10.1'
+    versionCode: 100102
+    commit: '10.1'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' -e '/firebaseCrashlytics {/,/}/d;' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '10.2'
+    versionCode: 100200
+    commit: '10.2'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' -e '/firebaseCrashlytics {/,/}/d;' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '10.3'
+    versionCode: 100301
+    commit: '10.3'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' -e '/firebaseCrashlytics {/,/}/d;' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: '10.4'
+    versionCode: 100400
+    commit: '10.4'
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' -e '/firebaseCrashlytics {/,/}/d;' build.gradle.kts
+    gradleprops:
+      - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
+
+  - versionName: 10.4.1
+    versionCode: 100401
+    commit: 10.4.1
+    subdir: app
+    submodules: true
+    gradle:
+      - generic
+    prebuild:
+      - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
+      - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
+        {/,/}/d; /googleplayImplementation/d' -e '/com.google.gms/d' -e '/signingConfig
+        =/d' -e '/firebaseCrashlytics {/,/}/d;' build.gradle.kts
     gradleprops:
       - tasks_mapbox_key="pk.eyJ1IjoiYmFrZXJiYSIsImEiOiJjanUxZG51dDUwMGttNDlvN3p3cHZzaXB3In0.1UWYV5dhTKiw_MkHNkA1jA"
 
@@ -1520,5 +1715,5 @@ MaintainerNotes: Upstream releases multiple version with changed vercode. Looks 
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '9.6'
-CurrentVersionCode: 90602
+CurrentVersion: 10.4.1
+CurrentVersionCode: 100401

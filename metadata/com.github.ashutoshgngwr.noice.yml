@@ -6,6 +6,9 @@ AuthorEmail: ashutoshgngwr@gmail.com
 WebSite: https://ashutoshgngwr.github.io/noice
 SourceCode: https://github.com/ashutoshgngwr/noice
 IssueTracker: https://github.com/ashutoshgngwr/noice/issues
+Translation: https://github.com/ashutoshgngwr/noice/issues/200
+Changelog: https://ashutoshgngwr.github.io/noice/CHANGELOG
+OpenCollective: noice
 
 AutoName: Noice
 
@@ -110,7 +113,87 @@ Builds:
       - yes
     prebuild: sed -i -e '/signingConfig/d' build.gradle
 
+  - versionName: 0.8.0
+    versionCode: 26
+    commit: 0.8.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.8.1
+    versionCode: 27
+    commit: 0.8.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.9.0
+    versionCode: 28
+    commit: 0.9.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.9.1
+    versionCode: 29
+    commit: 0.9.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.10.0
+    versionCode: 30
+    commit: 0.10.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.10.1
+    versionCode: 31
+    commit: 0.10.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.11.0
+    versionCode: 32
+    commit: 0.11.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.11.1
+    versionCode: 33
+    commit: 0.11.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.12.0
+    versionCode: 34
+    commit: 0.12.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.13.0
+    versionCode: 35
+    commit: 0.13.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.7.2
-CurrentVersionCode: 25
+CurrentVersion: 0.13.0
+CurrentVersionCode: 35

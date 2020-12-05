@@ -51,7 +51,39 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore/d' build.gradle
 
+  - versionName: 1.12-55
+    versionCode: 55
+    commit: 1.12-55
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 1.12-56
+    versionCode: 56
+    commit: 1.12-56
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 1.12-57
+    versionCode: 57
+    commit: 1.12-57
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
+  - versionName: 1.12-58
+    versionCode: 58
+    commit: 1.12-58
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.12-54
-CurrentVersionCode: 54
+CurrentVersion: 1.12-58
+CurrentVersionCode: 58

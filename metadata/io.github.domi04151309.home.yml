@@ -28,7 +28,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.7.1
+    versionCode: 171
+    commit: 1.7.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.2
+    versionCode: 172
+    commit: 1.7.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.7.0
-CurrentVersionCode: 170
+CurrentVersion: 1.7.2
+CurrentVersionCode: 172

@@ -242,7 +242,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '2.40'
+    versionCode: 41
+    commit: v2.40
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.40.1
+    versionCode: 42
+    commit: v2.40.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.50'
+    versionCode: 43
+    commit: v2.50
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.50.1
+    versionCode: 44
+    commit: v2.50.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '2.30'
-CurrentVersionCode: 40
+CurrentVersion: 2.50.1
+CurrentVersionCode: 44

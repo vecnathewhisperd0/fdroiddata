@@ -5,7 +5,7 @@ WebSite: https://dev.guardianproject.info/projects/gibberbot
 SourceCode: https://github.com/guardianproject/ChatSecureAndroid
 IssueTracker: https://dev.guardianproject.info/projects/gibberbot/issues
 Translation: https://www.transifex.com/guardianproject/chatsecureandroid/
-LiberapayID: '33617'
+Liberapay: GuardianProject
 Bitcoin: 1Fi5xUHiAPRKxHvyUGVFGt9extBe8Srdbk
 
 AutoName: ChatSecure
@@ -19,7 +19,7 @@ Description: |-
 
     XMPP (Jabber) client that can do end-to-end encryption using the
     [http://en.wikipedia.org/wiki/Off-the-Record_Messaging Off-the-Record Messaging]
-    protocol and can anonymize your chats via the [[org.torproject.android]] app
+    protocol and can anonymize your chats via the https://f-droid.org/packages/org.torproject.android app
     (root not required).
 
     The app used to be called GibberBot.

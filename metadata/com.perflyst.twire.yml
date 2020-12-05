@@ -4,9 +4,9 @@ Categories:
   - Multimedia
   - Internet
 License: GPL-3.0-only
-SourceCode: https://github.com/Perflyst/Twire
-IssueTracker: https://github.com/Perflyst/Twire/issues
-Changelog: https://github.com/Perflyst/Twire/releases
+SourceCode: https://github.com/twireapp/Twire
+IssueTracker: https://github.com/twireapp/Twire/issues
+Changelog: https://github.com/twireapp/Twire/releases
 
 AutoName: Twire
 Description: |-
@@ -17,7 +17,7 @@ Description: |-
     Please note that the chat is only available if you login to your account.
 
 RepoType: git
-Repo: https://github.com/Perflyst/Twire.git
+Repo: https://github.com/twireapp/Twire.git
 
 Builds:
   - versionName: 1.9.2
@@ -104,7 +104,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '2.517'
+    versionCode: 517
+    commit: v2.517
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.518'
+    versionCode: 518
+    commit: v2.518
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.519'
+    versionCode: 519
+    commit: v2.519
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.9.0
+    versionCode: 520
+    commit: v2.9.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '2.516'
-CurrentVersionCode: 516
+CurrentVersion: 2.9.0
+CurrentVersionCode: 520

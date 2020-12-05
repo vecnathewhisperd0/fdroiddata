@@ -156,7 +156,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '3.0'
+    versionCode: 300
+    commit: '3.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.1'
+    versionCode: 301
+    commit: '3.1'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.2'
+    versionCode: 302
+    commit: '3.2'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.3'
+    versionCode: 303
+    commit: '3.3'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '2.8'
-CurrentVersionCode: 208
+CurrentVersion: '3.3'
+CurrentVersionCode: 303

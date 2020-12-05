@@ -10,7 +10,7 @@ Description: |
 
     [https://events.ccc.de/congress/2019]
 
-    '''Funktionen'''
+    '''Features'''
     * View program by day and rooms (side by side)
     * Custom grid layout for smartphones (try landscape mode 🙃) and tablets
     * Read detailed descriptions (speaker names, start time, room name, links, ...) of events
@@ -24,7 +24,6 @@ Description: |
     * Integration with the c3nav indoor navigation project [https://c3nav.de]
     * Integration with the Engelsystem project [https://engelsystem.de] - Online tool for coordinating helpers and shifts on large events
     * Integration with the Chaosflix [https://github.com/NiciDieNase/chaosflix] - Android app for [http://media.ccc.de], share Fahrplan favorites with Chaosflix to import them as bookmarks
-    * Supported languages: Dutch, English, French, German, Italian, Portuguese, Russian, Spanish (Event descriptions excluded)
 
     🔤 '''Supported languages'''
     (Event descriptions excluded)
@@ -33,9 +32,11 @@ Description: |
     * French
     * German
     * Italian
+    * Japanese
     * Portuguese
     * Russian
     * Spanish
+    * Swedish
 
     💡 Questions regarding the content can only be answered by the
     content team of the Congress. This app simply offers a way to
@@ -326,7 +327,55 @@ Builds:
       - ccc36c3
     prebuild: cp local.properties gradle.properties
 
+  - versionName: 1.44.0
+    versionCode: 71
+    commit: v.1.44.0
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild: cp local.properties gradle.properties
+
+  - versionName: 1.45.1
+    versionCode: 73
+    commit: v.1.45.1
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/6.5.1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 1.45.2
+    versionCode: 74
+    commit: v.1.45.2
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/6.6/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 1.46.0
+    versionCode: 75
+    commit: v.1.46.0
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/6.6.1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 1.47.0
+    versionCode: 76
+    commit: v.1.47.0
+    subdir: app
+    gradle:
+      - ccc36c3
+    prebuild:
+      - cp local.properties gradle.properties
+      - sed -i -e 's/6.6.1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
+
 AutoUpdateMode: Version v.%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.43.1
-CurrentVersionCode: 70
+CurrentVersion: 1.47.0
+CurrentVersionCode: 76

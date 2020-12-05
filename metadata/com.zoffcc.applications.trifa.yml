@@ -366,9 +366,154 @@ Builds:
     prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
     ndk: r13b
 
+  - versionName: 1.0.60
+    versionCode: 10060
+    commit: 1.0.60
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.61
+    versionCode: 10061
+    commit: 1.0.61
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.62
+    versionCode: 10062
+    commit: 1.0.62
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.64
+    versionCode: 10064
+    commit: 1.0.64
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.65
+    versionCode: 10065
+    commit: 1.0.65
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.66
+    versionCode: 10066
+    commit: 1.0.66
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.68
+    versionCode: 10068
+    disable: fails to build
+    commit: 1.0.68
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.69
+    versionCode: 10069
+    commit: 1.0.69
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.70
+    versionCode: 10070
+    commit: 1.0.70
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.72
+    versionCode: 10072
+    commit: 1.0.72
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.73
+    versionCode: 10073
+    commit: 1.0.73
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.75
+    versionCode: 10075
+    commit: 1.0.75
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.76
+    versionCode: 10076
+    commit: 1.0.76
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.77
+    versionCode: 10077
+    commit: 1.0.77
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.79
+    versionCode: 10079
+    commit: 1.0.79
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.80
+    versionCode: 10080
+    commit: 1.0.80
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
 MaintainerNotes: Description and summary in app git repository
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9].*
-CurrentVersion: 1.0.54
-CurrentVersionCode: 10054
+CurrentVersion: 1.0.80
+CurrentVersionCode: 10080
