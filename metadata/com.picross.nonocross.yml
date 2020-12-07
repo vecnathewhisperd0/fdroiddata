@@ -11,7 +11,7 @@ Repo: https://github.com/jaredforrest/nonocross
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: 61cd4815131141aeac7f955d85ed02ae9c945a2f
+    commit: '1.0'
     subdir: app
     gradle:
       - yes
