@@ -14,9 +14,9 @@ RepoType: git
 Repo: https://github.com/lowtraxx/TSVNC
 
 Builds:
-  - versionName: 0.7.0
-    versionCode: 15
-    commit: 6c0e16c520f36efd8d616025f1b23d30fb3f4b5e
+  - versionName: 0.7.2
+    versionCode: 17
+    commit: 0.7.2
     subdir: TSVNC
     gradle:
       - yes
