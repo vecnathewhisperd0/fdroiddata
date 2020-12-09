@@ -29,7 +29,10 @@ Builds:
     commit: 1.0.0-alpha05
     subdir: app
     gradle:
-      - yes
+      - fdroid
+    prebuild:
+      - sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle
+
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
