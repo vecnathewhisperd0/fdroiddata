@@ -6,21 +6,6 @@ SourceCode: https://gitlab.com/beoe/snowhow-freeride/tree/HEAD
 IssueTracker: https://gitlab.com/beoe/snowhow-freeride/issues
 
 AutoName: snowhow
-Description: |-
-    The SNOWHOW-Freeride App offers offline use of maps from the Alps. With an
-    adjustable layer you can check the incline (steepness) of the slopes.  The
-    slope incline is a key parameter for European decision making strategies in
-    wintery and avalanche prone terrain.
-
-    The SNOWHOW-Freeride App is no substitute for any other tools of
-    orientation and decision making and necessary safety gear.  Shown tracks
-    and map information are not recommendations for any terrain use.
-
-    '''Features:'''
-
-    * Color coding for incline
-    * Weather data and Avalanche Bulletin
-    * Download maps for the Alps region
 
 RepoType: git
 Repo: https://gitlab.com/beoe/snowhow-freeride.git
@@ -28,10 +13,19 @@ Repo: https://gitlab.com/beoe/snowhow-freeride.git
 Builds:
   - versionName: 2.0.17
     versionCode: 200017
-    commit: 1d3c5d569d96cfc5408149aa230e7000c425a272
+    commit: v2.0.17
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.19
+    versionCode: 200019
+    commit: v2.0.19
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
+CurrentVersion: 2.0.19
+CurrentVersionCode: 200019
