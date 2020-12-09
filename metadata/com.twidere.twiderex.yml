@@ -30,8 +30,7 @@ Builds:
     subdir: app
     gradle:
       - fdroid
-    prebuild:
-      - sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle
+    prebuild: sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle
 
 
 AutoUpdateMode: Version %v
