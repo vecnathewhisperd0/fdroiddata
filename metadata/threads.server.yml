@@ -99,7 +99,27 @@ Builds:
       - yes
     ndk: r21d
 
-AutoUpdateMode: Version %v
+  - versionName: 1.7.3
+    versionCode: 173
+    commit: 1.7.3
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 1.7.8
+    versionCode: 178
+    commit: 1.7.8
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+MaintainerNotes: Includes a prebuilt library (lite.aar) since 1.7.9.
+
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 1.6.1
-CurrentVersionCode: 161
+CurrentVersion: 2.0.0
+CurrentVersionCode: 200
+
+NoSourceSince: 1.7.9

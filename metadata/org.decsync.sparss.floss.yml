@@ -11,11 +11,11 @@ Bitcoin: 1JWYoV2MZyu8LYYHCur9jUJgGqE98m566z
 
 AutoName: spaRSS DecSync
 Description: |-
-    spaRSS DecSync is a fork of [[net.etuldan.sparss.floss]] which adds
+    spaRSS DecSync is a fork of https://f-droid.org/packages/net.etuldan.sparss.floss which adds
     synchronization using [https://github.com/39aldo39/DecSync DecSync]. To
     start synchronizing, all you have to do is synchronize the directory
     "DecSync" located in the primary external storage, using for example
-    [[com.nutomic.syncthingandroid]].
+    https://f-droid.org/packages/com.nutomic.syncthingandroid.
 
 RepoType: git
 Repo: https://github.com/39aldo39/spaRSS-DecSync
@@ -148,7 +148,14 @@ Builds:
     gradle:
       - floss
 
+  - versionName: 1.15.2
+    versionCode: 96
+    commit: v1.15.2
+    subdir: mobile
+    gradle:
+      - floss
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.15.1
-CurrentVersionCode: 95
+CurrentVersion: 1.15.2
+CurrentVersionCode: 96

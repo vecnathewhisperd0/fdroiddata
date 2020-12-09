@@ -9,7 +9,7 @@ Donate: https://solitairecg.sourceforge.io/donations.php
 
 AutoName: SolitaireCG
 Description: |-
-    SolitaireCG is an adaptation of Ken Magic's "[[com.kmagic.solitaire]]" for
+    SolitaireCG is an adaptation of Ken Magic's "https://f-droid.org/packages/com.kmagic.solitaire" for
     devices with few hardware buttons.
 
     Solitaire Card Games include Klondike (regular solitaire), Vegas, Spider, Golf,
@@ -112,7 +112,14 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: None
+  - versionName: '3.4'
+    versionCode: 734
+    commit: SolitaireCG-3.4
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version SolitaireCG-%v
 UpdateCheckMode: Tags
-CurrentVersion: '3.3'
-CurrentVersionCode: 730
+CurrentVersion: '3.4'
+CurrentVersionCode: 734

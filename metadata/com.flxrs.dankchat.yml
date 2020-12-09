@@ -251,17 +251,106 @@ Builds:
       - yes
     ndk: r21d
 
-  - versionName: 1.9.15
-    versionCode: 150
-    commit: v1.9.15
+  - versionName: 2.0.7
+    versionCode: 161
+    commit: v2.0.7
     subdir: app
     gradle:
       - yes
     ndk: r21d
 
-  - versionName: 1.9.18
-    versionCode: 153
-    commit: v1.9.18
+  - versionName: 2.1.0
+    versionCode: 162
+    commit: v2.1.0
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 2.2.1
+    versionCode: 164
+    commit: v2.2.1
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 2.2.2
+    versionCode: 165
+    commit: v2.2.2
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 2.2.4
+    versionCode: 167
+    commit: v2.2.4
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 2.2.5
+    versionCode: 168
+    commit: v2.2.5
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 2.3.0
+    versionCode: 169
+    disable: fails to build
+    commit: v2.3.0
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 2.3.1
+    versionCode: 170
+    commit: v2.3.1
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 2.3.2
+    versionCode: 171
+    commit: v2.3.2
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 2.3.3
+    versionCode: 172
+    commit: v2.3.3
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 2.3.4
+    versionCode: 173
+    commit: v2.3.4
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 2.4.0
+    versionCode: 174
+    commit: v2.4.0
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 2.4.1
+    versionCode: 175
+    commit: v2.4.1
     subdir: app
     gradle:
       - yes
@@ -269,5 +358,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.18
-CurrentVersionCode: 153
+CurrentVersion: 2.4.1
+CurrentVersionCode: 175

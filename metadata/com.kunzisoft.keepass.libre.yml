@@ -191,7 +191,85 @@ Builds:
       - libre
     ndk: r20b
 
+  - versionName: 2.8.2
+    versionCode: 38
+    commit: 2.8.2
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.8.3
+    versionCode: 39
+    commit: 2.8.3
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.8.5
+    versionCode: 41
+    commit: 2.8.5
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.8.6
+    versionCode: 42
+    disable: crashes see upstream 733
+    commit: 2.8.6
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: 2.8.7
+    versionCode: 43
+    commit: 2.8.7
+    subdir: app
+    gradle:
+      - libre
+    ndk: r20b
+
+  - versionName: '2.9'
+    versionCode: 44
+    commit: '2.9'
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+  - versionName: 2.9.1
+    versionCode: 45
+    commit: 2.9.1
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+  - versionName: 2.9.2
+    versionCode: 46
+    commit: 2.9.2
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+MaintainerNotes: |-
+    The file at `app/src/main/assets/publicsuffixes` is a version of the
+    [Public Suffix List](https://publicsuffix.org/) that has been sorted and
+    stripped of all comments. It is identified as a binary files because it
+    contains two 4-byte length fields, one right at the beginning, but is
+    otherwise plaintext.
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.8.1
-CurrentVersionCode: 37
+CurrentVersion: 2.9.2
+CurrentVersionCode: 46

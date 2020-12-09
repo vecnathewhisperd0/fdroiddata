@@ -11,7 +11,7 @@ LiberapayID: '34990'
 AutoName: K-9 Mail
 Description: |-
     E-mail client supporting multiple accounts, POP3, IMAP and Push IMAP. Can do
-    OpenPGP encryption if [[org.sufficientlysecure.keychain]] is installed. Settings
+    OpenPGP encryption if https://f-droid.org/packages/org.sufficientlysecure.keychain is installed. Settings
     and account configurations can be exported so that they can be imported easily
     if you are switching packages/signatures: a file manager will need to be already
     installed to achieve this.
@@ -630,6 +630,58 @@ Builds:
     output: app/k9mail/build/outputs/apk/release/k9mail-release-unsigned.apk
     rm:
       - tools/android-studio/settings.jar
+
+  - versionName: '5.718'
+    versionCode: 27018
+    commit: '5.718'
+    gradle:
+      - yes
+    output: app/k9mail/build/outputs/apk/release/k9mail-release-unsigned.apk
+    rm:
+      - tools/android-studio/settings.jar
+
+  - versionName: '5.719'
+    versionCode: 27019
+    disable: obsolte beta
+    commit: '5.719'
+    gradle:
+      - yes
+    output: app/k9mail/build/outputs/apk/release/k9mail-release-unsigned.apk
+    rm:
+      - tools/android-studio/settings.jar
+
+  - versionName: '5.720'
+    versionCode: 27020
+    disable: obsolte beta
+    commit: '5.720'
+    gradle:
+      - yes
+    output: app/k9mail/build/outputs/apk/release/k9mail-release-unsigned.apk
+    rm:
+      - tools/android-studio/settings.jar
+
+  - versionName: '5.721'
+    versionCode: 27021
+    commit: '5.721'
+    gradle:
+      - yes
+    output: app/k9mail/build/outputs/apk/release/k9mail-release-unsigned.apk
+    rm:
+      - tools/android-studio/settings.jar
+
+  - versionName: '5.722'
+    versionCode: 27022
+    commit: '5.722'
+    gradle:
+      - yes
+    output: app/k9mail/build/outputs/apk/release/k9mail-release-unsigned.apk
+
+  - versionName: '5.724'
+    versionCode: 27024
+    commit: '5.724'
+    gradle:
+      - yes
+    output: app/k9mail/build/outputs/apk/release/k9mail-release-unsigned.apk
 
 MaintainerNotes: |-
     Use output instead of subdir to make gradlew-fdroid correctly determine the gradle version to be used.

@@ -191,7 +191,42 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.4.0
+    versionCode: 33
+    commit: v2.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.5.0
+    versionCode: 34
+    commit: v2.5.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.5.2
+    versionCode: 36
+    commit: v2.5.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.5.3
+    versionCode: 37
+    commit: v2.5.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.5.4
+    versionCode: 38
+    commit: v2.5.4
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.3.7
-CurrentVersionCode: 32
+CurrentVersion: 2.5.4
+CurrentVersionCode: 38

@@ -1278,10 +1278,163 @@ Builds:
       - popd
     ndk: r21d
 
+  - versionName: 20.1.0
+    versionCode: 133
+    commit: 20.1.0
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - libbaresip-android@14.0
+    build:
+      - pushd $$libbaresip-android$$
+      - sed -i -e 's|/opt/Android/Sdk/ndk-bundle|$$NDK$$|' -e 's|/usr/src/baresip-studio|../../com.tutpro.baresip|'
+        Makefile
+      - make download-sources
+      - make install-all
+      - popd
+    ndk: r21d
+
+  - versionName: 21.1.0
+    versionCode: 136
+    commit: 21.1.0
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - libbaresip-android@15.0
+    build:
+      - pushd $$libbaresip-android$$
+      - sed -i -e 's|/opt/Android/Sdk/ndk-bundle|$$NDK$$|' -e 's|/usr/src/baresip-studio|../../com.tutpro.baresip|'
+        Makefile
+      - make download-sources
+      - make install-all
+      - popd
+    ndk: r21d
+
+  - versionName: 21.2.0
+    versionCode: 137
+    commit: 21.2.0
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - libbaresip-android@16.0
+    build:
+      - pushd $$libbaresip-android$$
+      - sed -i -e 's|/opt/Android/Sdk/ndk-bundle|$$NDK$$|' -e 's|/usr/src/baresip-studio|../../com.tutpro.baresip|'
+        Makefile
+      - make download-sources
+      - make install-all
+      - popd
+    ndk: r21d
+
+  - versionName: 22.0.0
+    versionCode: 138
+    commit: 22.0.0
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - libbaresip-android@16.0
+    build:
+      - pushd $$libbaresip-android$$
+      - sed -i -e 's|/opt/Android/Sdk/ndk-bundle|$$NDK$$|' -e 's|/usr/src/baresip-studio|../../com.tutpro.baresip|'
+        Makefile
+      - make download-sources
+      - make install-all
+      - popd
+    ndk: r21d
+
+  - versionName: 22.1.0
+    versionCode: 139
+    commit: 22.1.0
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - libbaresip-android@17.0
+    build:
+      - pushd $$libbaresip-android$$
+      - sed -i -e 's!$(shell ls -d -1 /opt/Android/ndk/\* | tail -1)!$$NDK$$!' -e
+        's|/usr/src/baresip-studio|../../com.tutpro.baresip|' Makefile
+      - make download-sources
+      - make install-all
+      - popd
+    ndk: r21d
+
+  - versionName: 23.0.0
+    versionCode: 140
+    commit: 23.0.0
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - libbaresip-android@17.0
+    build:
+      - pushd $$libbaresip-android$$
+      - sed -i -e 's!$(shell ls -d -1 /opt/Android/ndk/\* | tail -1)!$$NDK$$!' -e
+        's|/usr/src/baresip-studio|../../com.tutpro.baresip|' Makefile
+      - make download-sources
+      - make install-all
+      - popd
+    ndk: r21d
+
+  - versionName: 23.1.0
+    versionCode: 141
+    commit: 23.1.0
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - libbaresip-android@19.0
+    build:
+      - pushd $$libbaresip-android$$
+      - sed -i -e 's!$(shell ls -d -1 /opt/Android/ndk/\* | tail -1)!$$NDK$$!' -e
+        's|/usr/src/baresip-studio|../../com.tutpro.baresip|' Makefile
+      - make download-sources
+      - make install-all
+      - popd
+    ndk: r21d
+
+  - versionName: 23.2.0
+    versionCode: 142
+    commit: 23.2.0
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - libbaresip-android@19.0
+    build:
+      - pushd $$libbaresip-android$$
+      - sed -i -e 's!$(shell ls -d -1 /opt/Android/ndk/\* | tail -1)!$$NDK$$!' -e
+        's|/usr/src/baresip-studio|../../com.tutpro.baresip|' Makefile
+      - make download-sources
+      - make install-all
+      - popd
+    ndk: r21d
+
+  - versionName: 24.0.0
+    versionCode: 143
+    commit: 24.0.0
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - libbaresip-android@19.0
+    build:
+      - pushd $$libbaresip-android$$
+      - sed -i -e 's!$(shell ls -d -1 /opt/Android/ndk/\* | tail -1)!$$NDK$$!' -e
+        's|/usr/src/baresip-studio|../../com.tutpro.baresip|' Makefile
+      - make download-sources
+      - make install-all
+      - popd
+    ndk: r21d
+
 MaintainerNotes: make download-sources checks out master branches of several libraries;
     this can cause build failures.
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: 20.0.1
-CurrentVersionCode: 131
+CurrentVersion: 24.0.0
+CurrentVersionCode: 143

@@ -5,6 +5,7 @@ AuthorName: Evgeniy (aka zhenyolka)
 AuthorEmail: zhenyolka@gmail.com
 SourceCode: https://github.com/zhenyolka/DPITunnel
 IssueTracker: https://github.com/zhenyolka/DPITunnel/issues
+Changelog: https://github.com/zhenyolka/DPITunnel/releases
 
 AutoName: DPI Tunnel
 
@@ -66,7 +67,17 @@ Builds:
       - yes
     ndk: r21b
 
+  - versionName: '3.0'
+    versionCode: 12
+    commit: v3.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' build.gradle
+    ndk: r21d
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '2.2'
-CurrentVersionCode: 11
+CurrentVersion: '3.0'
+CurrentVersionCode: 12

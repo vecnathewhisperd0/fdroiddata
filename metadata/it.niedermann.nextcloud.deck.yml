@@ -8,7 +8,7 @@ SourceCode: https://github.com/stefan-niedermann/nextcloud-deck
 IssueTracker: https://github.com/stefan-niedermann/nextcloud-deck/issues
 Translation: https://www.transifex.com/nextcloud/nextcloud/android-deck/
 Changelog: https://github.com/stefan-niedermann/nextcloud-deck/tags
-Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W523CNHTD7ARQ&source=url
+Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZD39ZE7MGEGBL&source=url
 LiberapayID: '46438'
 
 AutoName: Nextcloud Deck
@@ -313,21 +313,63 @@ Builds:
     gradle:
       - fdroid
 
-  - versionName: 1.9.4
-    versionCode: 1009004
-    commit: 1.9.4
+  - versionName: 1.9.6
+    versionCode: 1009006
+    commit: 1.9.6
     subdir: app
     gradle:
       - fdroid
 
-  - versionName: 1.9.5
-    versionCode: 1009005
-    commit: 1.9.5
+  - versionName: 1.9.7
+    versionCode: 1009007
+    commit: 1.9.7
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.10.0
+    versionCode: 1010000
+    commit: 1.10.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.11.0
+    versionCode: 1011000
+    commit: 1.11.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.11.1
+    versionCode: 1011001
+    commit: 1.11.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.12.0
+    versionCode: 1012000
+    commit: 1.12.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.12.1
+    versionCode: 1012001
+    commit: 1.12.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.13.0
+    versionCode: 1013000
+    commit: 1.13.0
     subdir: app
     gradle:
       - fdroid
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.5
-CurrentVersionCode: 1009005
+CurrentVersion: 1.13.0
+CurrentVersionCode: 1013000

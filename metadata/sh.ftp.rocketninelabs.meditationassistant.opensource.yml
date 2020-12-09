@@ -9,8 +9,9 @@ SourceCode: https://gitlab.com/tslocum/meditationassistant
 IssueTracker: https://gitlab.com/tslocum/meditationassistant/issues
 Translation: https://medinet.rocketnine.space/translate/
 Changelog: https://gitlab.com/tslocum/meditationassistant/blob/HEAD/CHANGELOG
-Donate: https://rocketnine.space/donate/
+Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TEP9HT98XK7QA
 LiberapayID: '968545'
+Bitcoin: 3Aq6xnpdxSByUtKGrJNdte1sMzj3mADWaz
 
 AutoName: Meditation Assistant
 Description: |-
@@ -420,8 +421,28 @@ Builds:
       - sed -i -e '/play-services/d' build.gradle
       - sed -i 's/4096m/1024m/' ../gradle.properties
 
+  - versionName: 1.6.1
+    versionCode: 161
+    commit: 1.6.1
+    subdir: MeditationAssistant
+    gradle:
+      - opensource
+    prebuild:
+      - sed -i -e '/play-services/d' build.gradle
+      - sed -i 's/4096m/1024m/' ../gradle.properties
+
+  - versionName: 1.6.2
+    versionCode: 162
+    commit: 1.6.2
+    subdir: MeditationAssistant
+    gradle:
+      - opensource
+    prebuild:
+      - sed -i -e '/play-services/d' build.gradle
+      - sed -i 's/4096m/1024m/' ../gradle.properties
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 UpdateCheckName: sh.ftp.rocketninelabs.meditationassistant
-CurrentVersion: 1.6.0
-CurrentVersionCode: 160
+CurrentVersion: 1.6.2
+CurrentVersionCode: 162

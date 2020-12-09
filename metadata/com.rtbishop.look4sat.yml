@@ -20,7 +20,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.4.6
+    versionCode: 16
+    commit: v1.4.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.8
+    versionCode: 18
+    commit: v1.4.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0
+    versionCode: 200
+    commit: v2.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.1
+    versionCode: 201
+    commit: v2.0.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.5
-CurrentVersionCode: 15
+CurrentVersion: 2.0.1
+CurrentVersionCode: 201

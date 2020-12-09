@@ -64,7 +64,31 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.5.4
+    versionCode: 18
+    commit: 1.5.4
+    subdir: pretixprint/app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 2.0.0
+    versionCode: 19
+    commit: 2.0.0
+    subdir: pretixprint/app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 2.1.1
+    versionCode: 21
+    commit: 2.1.1
+    subdir: pretixprint/app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.5.3
-CurrentVersionCode: 16
+CurrentVersion: 2.1.1
+CurrentVersionCode: 21

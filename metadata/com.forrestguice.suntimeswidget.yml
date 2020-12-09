@@ -434,9 +434,63 @@ Builds:
     scanignore:
       - app/src/main/artwork/map/ne_10m_land.zip
 
+  - versionName: 0.13.0
+    versionCode: 64
+    commit: v0.13.0
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - app/src/main/artwork/map/ne_10m_land.zip
+
+  - versionName: 0.13.1
+    versionCode: 65
+    commit: v0.13.1
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - app/src/main/artwork/map/ne_10m_land.zip
+
+  - versionName: 0.13.2
+    versionCode: 66
+    commit: v0.13.2
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - app/src/main/artwork/map/ne_10m_land.zip
+
+  - versionName: 0.13.3
+    versionCode: 67
+    commit: v0.13.3
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - app/src/main/artwork/map/ne_10m_land.zip
+
+  - versionName: 0.13.4
+    versionCode: 68
+    commit: v0.13.4
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - app/src/main/artwork/map/ne_10m_land.zip
+
+  - versionName: 0.13.5
+    versionCode: 69
+    commit: v0.13.5
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - app/src/main/artwork/map/ne_10m_land.zip
+
 MaintainerNotes: ne_10m_land.zip is from naturalearthdata.com under Public Domain
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.12.11
-CurrentVersionCode: 63
+CurrentVersion: 0.13.5
+CurrentVersionCode: 69

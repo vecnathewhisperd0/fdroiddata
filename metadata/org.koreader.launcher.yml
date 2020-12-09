@@ -1,10 +1,12 @@
 Categories:
   - Reading
 License: AGPL-3.0-only
+WebSite: https://koreader.rocks/
 SourceCode: https://github.com/koreader/koreader
 IssueTracker: https://github.com/koreader/koreader/issues
 Translation: https://hosted.weblate.org/engage/koreader/
 Changelog: https://github.com/koreader/koreader/releases
+LiberapayID: '1628593'
 
 RepoType: git
 Repo: https://github.com/koreader/koreader.git
@@ -398,8 +400,140 @@ Builds:
       - ANDROID_FLAVOR=fdroid ./kodev release android
     ndk: r15c
 
+  - versionName: v2020.08
+    versionCode: 7617
+    commit: v2020.08
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.08.1
+    versionCode: 7629
+    commit: v2020.08.1
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.09
+    versionCode: 7706
+    commit: v2020.09
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.10
+    versionCode: 7763
+    commit: v2020.10
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.10.1
+    versionCode: 7768
+    commit: v2020.10.1
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
+  - versionName: v2020.11
+    versionCode: 7820
+    commit: v2020.11
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y gcc-multilib luarocks p7zip-full ragel
+    output: koreader-android-*.apk
+    rm:
+      - platform/ubuntu-touch/
+      - platform/win32/
+      - platform/kindle/wmctrl
+    prebuild: sed -i -e 's#./gradlew#gradle#' platform/android/luajit-launcher/Makefile
+    scandelete:
+      - base/thirdparty/
+      - base/spec/unit/data/
+    build:
+      - NDK=$$NDK$$
+      - SDK=$$SDK$$
+      - ANDROID_FLAVOR=fdroid ./kodev release android
+    ndk: r15c
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://ota.koreader.rocks/koreader-android-fdroid-latest|(\d+)$|.|(v.*)
-CurrentVersion: v2020.07.1
-CurrentVersionCode: 7562
+CurrentVersion: v2020.11
+CurrentVersionCode: 7820

@@ -17,7 +17,7 @@ Bitcoin: 3KAD8vew6tPZDjiUJNnZ3YUoUxrCEVNwFL
 AutoName: Quicksy
 Description: |-
     Quicksy is a spin off of the popular Jabber/XMPP client
-    [[eu.siacs.conversations]] with automatic contact discovery.
+    https://f-droid.org/packages/eu.siacs.conversations with automatic contact discovery.
 
     You sign up with your phone number and Quicksy will automatically—based on
     the phone numbers in your address book—suggest possible contacts to you.
@@ -390,7 +390,27 @@ Builds:
         '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
     ndk: r21d
 
+  - versionName: 2.9.0+fcr
+    versionCode: 398
+    commit: 2.9.0
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21d
+
+  - versionName: 2.9.1+fcr
+    versionCode: 401
+    commit: 2.9.1
+    gradle:
+      - quicksyFreeCompat
+    prebuild: sed -i -e '/ExtraTranslation/aabortOnError\ false' -e '/libwebrtc/d'
+        -e "/phonenumber/aimplementation 'org.webrtc:google-webrtc:1.0.30039'" -e
+        '/splits/,+5d' -e '/Variants.all/,+10d' build.gradle
+    ndk: r21d
+
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 2.8.10+fcr
-CurrentVersionCode: 397
+CurrentVersion: 2.9.1+fcr
+CurrentVersionCode: 401

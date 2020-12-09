@@ -265,7 +265,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '6.0'
+    versionCode: 38
+    commit: PRIM_6.0
+    subdir: pfd
+    gradle:
+      - yes
+
+  - versionName: '6.1'
+    versionCode: 39
+    commit: PRIM_6.1
+    subdir: pfd
+    gradle:
+      - yes
+
 AutoUpdateMode: Version PRIM_%v
 UpdateCheckMode: Tags ^PRIM
-CurrentVersion: '5.3'
-CurrentVersionCode: 37
+CurrentVersion: '6.1'
+CurrentVersionCode: 39

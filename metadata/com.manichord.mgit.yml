@@ -14,7 +14,7 @@ Donate: http://projects.sheimi.me/SGit
 AutoName: MGit
 Description: |-
     A git client and text editor, forked from no longer maintained
-    [[me.sheimi.sgit]].
+    https://f-droid.org/packages/me.sheimi.sgit.
 
     Antifeatures:
     * Tracking: You can't run the app unless you agree to send error and
@@ -106,7 +106,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.5.10
+    versionCode: 220
+    commit: v1.5.10
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.5.9
-CurrentVersionCode: 219
+CurrentVersion: 1.5.10
+CurrentVersionCode: 220

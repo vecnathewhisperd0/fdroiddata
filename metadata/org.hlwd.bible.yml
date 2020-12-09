@@ -258,7 +258,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '3.30'
+    versionCode: 20200826
+    commit: v3.30
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.31'
+    versionCode: 20201004
+    commit: v3.31
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.34'
+    versionCode: 20201207
+    commit: v3.34
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '3.29'
-CurrentVersionCode: 20200628
+CurrentVersion: '3.34'
+CurrentVersionCode: 20201207

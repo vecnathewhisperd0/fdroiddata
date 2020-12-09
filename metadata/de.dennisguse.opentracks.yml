@@ -1,12 +1,15 @@
 Categories:
   - Sports & Health
 License: Apache-2.0
+AuthorName: OpenTracks Team
+WebSite: https://OpenTracksApp.com
 SourceCode: https://github.com/OpenTracksApp/OpenTracks
 IssueTracker: https://github.com/OpenTracksApp/OpenTracks/issues
-Changelog: https://github.com/OpenTracksApp/opentracks/releases
-LiberapayID: '1594240'
+Changelog: https://github.com/OpenTracksApp/OpenTracks/releases
+Liberapay: OpenTracks
+Bitcoin: bc1qckpls3lpjlcpyxzm66hcy65hnesas9zgacy6yc
 
-AutoName: ${applicationName}
+AutoName: OpenTracks
 
 RepoType: git
 Repo: https://github.com/OpenTracksApp/OpenTracks
@@ -156,7 +159,91 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v3.8.1
+    versionCode: 3474
+    commit: v3.8.1
+    gradle:
+      - yes
+
+  - versionName: v3.9.0
+    versionCode: 3522
+    commit: v3.9.0
+    gradle:
+      - yes
+
+  - versionName: v3.9.1
+    versionCode: 3530
+    commit: v3.9.1
+    gradle:
+      - yes
+
+  - versionName: v3.9.2
+    versionCode: 3541
+    commit: v3.9.2
+    gradle:
+      - yes
+
+  - versionName: v3.9.3
+    versionCode: 3544
+    commit: v3.9.3
+    gradle:
+      - yes
+
+  - versionName: v3.9.4
+    versionCode: 3573
+    commit: v3.9.4
+    gradle:
+      - yes
+
+  - versionName: v3.9.5
+    versionCode: 3584
+    commit: v3.9.5
+    gradle:
+      - yes
+
+  - versionName: v3.10.0
+    versionCode: 3611
+    commit: v3.10.0
+    gradle:
+      - yes
+
+  - versionName: v3.11.0
+    versionCode: 3656
+    commit: v3.11.0
+    gradle:
+      - yes
+
+  - versionName: v3.11.1
+    versionCode: 3661
+    commit: v3.11.1
+    gradle:
+      - yes
+
+  - versionName: v3.12.0
+    versionCode: 3704
+    commit: v3.12.0
+    gradle:
+      - yes
+
+  - versionName: v3.13.0
+    versionCode: 3732
+    commit: v3.13.0
+    gradle:
+      - yes
+
+  - versionName: v3.13.1
+    versionCode: 3737
+    commit: v3.13.1
+    gradle:
+      - yes
+
+  - versionName: v3.13.2
+    versionCode: 3740
+    commit: v3.13.2
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.8.0
-CurrentVersionCode: 3466
+CurrentVersion: v3.13.2
+CurrentVersionCode: 3740

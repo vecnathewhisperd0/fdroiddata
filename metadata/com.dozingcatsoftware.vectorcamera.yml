@@ -122,10 +122,17 @@ Builds:
       - mv libvpx.a $DIR/src/main/cpp/libvpx_prebuilt_libs/x86_64/
     ndk: r15c
 
+  - versionName: 1.5.0
+    versionCode: 12
+    commit: v1.5.0
+    subdir: app
+    gradle:
+      - yes
+
 MaintainerNotes: The libvpx build is documented by upstream [https://github.com/dozingcat/VectorCamera/blob/master/README-libvpx.md
     here].
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.3
-CurrentVersionCode: 11
+CurrentVersion: 1.5.0
+CurrentVersionCode: 12

@@ -985,8 +985,8 @@ Builds:
     subdir: client-android/ring-android/app
     submodules: true
     sudo:
-      - apt update || apt update
-      - apt install -y -t testing swig
+      - apt-get update || apt-get update
+      - apt-get install -y -t testing swig
     gradle:
       - noPush
     rm:
@@ -1015,8 +1015,8 @@ Builds:
     subdir: client-android/ring-android/app
     submodules: true
     sudo:
-      - apt update || apt update
-      - apt install -y -t testing swig
+      - apt-get update || apt-get update
+      - apt-get install -y -t testing swig
     gradle:
       - noPush
     rm:
@@ -1045,8 +1045,40 @@ Builds:
     subdir: client-android/ring-android/app
     submodules: true
     sudo:
-      - apt update || apt update
-      - apt install -y -t testing swig
+      - apt-get update || apt-get update
+      - apt-get install -y -t testing swig
+    gradle:
+      - noPush
+    rm:
+      - client-electron
+      - client-gnome
+      - client-ios
+      - client-macosx
+      - client-uwp
+      - client-windows
+      - docker
+      - docs
+      - lrc
+      - packaging
+      - scripts
+    build:
+      - cd ../..
+      - export ANDROID_NDK_ROOT="$ANDROID_NDK"
+      - export ANDROID_ABI="armeabi-v7a arm64-v8a x86"
+      - ./compile.sh --release --no-gradle
+    ndk: r21d
+
+  - versionName: 20200810-01
+    versionCode: 255
+    commit: android/release_255
+    timeout: 10800
+    subdir: client-android/ring-android/app
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t testing swig
+      - apt-get install -y -t stretch-backports-sloppy libarchive13
+      - apt-get install -y -t stretch-backports cmake
     gradle:
       - noPush
     rm:
@@ -1077,5 +1109,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 20200710-01
-CurrentVersionCode: 251
+CurrentVersion: 20200810-01
+CurrentVersionCode: 255

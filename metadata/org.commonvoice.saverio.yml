@@ -5,6 +5,9 @@ AuthorName: Saverio Morelli
 AuthorWebSite: https://saveriomorelli.com/
 SourceCode: https://github.com/Sav22999/common-voice-android
 IssueTracker: https://github.com/Sav22999/common-voice-android/issues
+Translation: https://crowdin.com/project/common-voice-android
+Changelog: https://github.com/Sav22999/common-voice-android/releases
+Donate: https://ko-fi.com/R5R31UQ8G
 
 AutoName: CV Android
 
@@ -143,7 +146,15 @@ Builds:
       - FD-GH
     output: build/outputs/apk/FD-GH/release/app-FD-GH-release-unsigned.apk
 
+  - versionName: '2.1'
+    versionCode: 119
+    commit: '2.1'
+    subdir: app
+    gradle:
+      - FD-GH
+    output: build/outputs/apk/FD-GH/release/app-FD-GH-release-unsigned.apk
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.4
-CurrentVersionCode: 118
+CurrentVersion: '2.1'
+CurrentVersionCode: 119

@@ -1,7 +1,7 @@
 Categories:
   - Time
 License: MIT
-AuthorName: TwoPlus
+AuthorName: Prem Nirmal
 AuthorEmail: stockswidget@gmail.com
 SourceCode: https://github.com/premnirmal/StockTicker
 IssueTracker: https://github.com/premnirmal/StockTicker/issues
@@ -17,10 +17,11 @@ Description: |-
     * Scrollable, so you don’t have to worry about adding more widgets
     * Stocks are sorted by change in percent (descending), or you can rearrange them yourself
     * You can set custom refresh intervals and start/end times
-    * You can import and export your portfolio from a textfile
+    * You can import and export your portfolio from a json or textfile
     * Add multiple portfolios to multiple widgets
     * View recent news for your tracked symbols
     * View graphs for your tracked symbols
+    * Notification alerts for your followed symbols
 
 RepoType: git
 Repo: https://github.com/premnirmal/StockTicker
@@ -940,32 +941,126 @@ Builds:
       - sed -i -e '/dl.bintray.com\/lukaville/d' -e 's/com.nbsp:library:1.8/com.github.nbsp-team:MaterialFilePicker:7f3679fbbf/g'
         build.gradle
 
-  - versionName: 3.9.702
-    versionCode: 300900702
-    disable: DOS newlines
-    commit: '300900702'
+  - versionName: 3.9.713
+    versionCode: 300900713
+    commit: '300900713'
     subdir: app
     gradle:
       - purefoss
     prebuild:
-      - touch translate.properties
-      - sed -i -e '/fabric/d' -e '/crashlytics/,+2d' -e '/play-services/d' -e '/google-services/d'
-        build.gradle
-      - sed -i -e '/dl.bintray.com\/lukaville/d' -e 's/com.nbsp:library:1.8/com.github.nbsp-team:MaterialFilePicker:7f3679fbbf/g'
-        build.gradle
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
 
-  - versionName: 3.9.703
-    versionCode: 300900703
-    commit: '300900703'
+  - versionName: 3.9.715
+    versionCode: 300900715
+    commit: '300900715'
     subdir: app
     gradle:
       - purefoss
     prebuild:
-      - touch translate.properties
-      - sed -i -e '/fabric/d' -e '/crashlytics/,+2d' -e '/play-services/d' -e '/google-services/d'
-        build.gradle
-      - sed -i -e '/dl.bintray.com\/lukaville/d' -e 's/com.nbsp:library:1.8/com.github.nbsp-team:MaterialFilePicker:7f3679fbbf/g'
-        build.gradle
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.716
+    versionCode: 300900716
+    commit: '300900716'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.717
+    versionCode: 300900717
+    commit: '300900717'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.718
+    versionCode: 300900718
+    commit: '300900718'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.719
+    versionCode: 300900719
+    commit: '300900719'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.720
+    versionCode: 300900720
+    commit: '300900720'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.722
+    versionCode: 300900722
+    commit: '300900722'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.724
+    versionCode: 300900724
+    commit: '300900724'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.726
+    versionCode: 300900726
+    commit: '300900726'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.727
+    versionCode: 300900727
+    commit: '300900727'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
 
 MaintainerNotes: |-
     We replace com.nbsp:library from http://dl.bintray.com/lukaville/maven with
@@ -975,5 +1070,5 @@ MaintainerNotes: |-
 AutoUpdateMode: Version %c
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/premnirmal/StockTicker/master/app/version.properties|versionCode=(.*)|.|versionName=(.*)
-CurrentVersion: 3.9.703
-CurrentVersionCode: 300900703
+CurrentVersion: 3.9.727
+CurrentVersionCode: 300900727

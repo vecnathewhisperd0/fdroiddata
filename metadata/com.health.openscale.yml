@@ -310,7 +310,40 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.3.1
+    versionCode: 50
+    commit: v2.3.1
+    subdir: android_app/app
+    gradle:
+      - yes
+    rm:
+      - docs/raw_icons/launcher_design_proposal_ jbeguna04.zip
+      - docs/raw_icons/openScale_icons.zip
+      - docs/misc/DCode-v4.02a-build-4.02.0.9306.zip
+
+  - versionName: 2.3.2
+    versionCode: 51
+    commit: v2.3.2
+    subdir: android_app/app
+    gradle:
+      - yes
+    rm:
+      - docs/raw_icons/launcher_design_proposal_ jbeguna04.zip
+      - docs/raw_icons/openScale_icons.zip
+      - docs/misc/DCode-v4.02a-build-4.02.0.9306.zip
+
+  - versionName: 2.3.3
+    versionCode: 52
+    commit: v2.3.3
+    subdir: android_app/app
+    gradle:
+      - yes
+    rm:
+      - docs/raw_icons/launcher_design_proposal_ jbeguna04.zip
+      - docs/raw_icons/openScale_icons.zip
+      - docs/misc/DCode-v4.02a-build-4.02.0.9306.zip
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9.]*$
-CurrentVersion: 2.3.0
-CurrentVersionCode: 49
+CurrentVersion: 2.3.3
+CurrentVersionCode: 52

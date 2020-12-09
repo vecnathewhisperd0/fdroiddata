@@ -11,9 +11,6 @@ Description: |-
     /sdcard/quake3/baseq3. Touch controls do not work in this version, so you need
     hardware keys to play.
 
-RepoType: git-svn
-Repo: https://kwaak3.googlecode.com/svn/trunk
-
 Builds:
   - versionName: '1.0'
     versionCode: 1
@@ -29,8 +26,9 @@ Builds:
       - popd
     buildjni:
       - yes
+    ndk: r12b
 
 AutoUpdateMode: None
-UpdateCheckMode: Static
+UpdateCheckMode: None
 CurrentVersion: '1.0'
 CurrentVersionCode: 1
