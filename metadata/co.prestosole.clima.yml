@@ -1,12 +1,13 @@
 Categories:
   - Internet
 License: BSD-3-Clause
+AntiFeatures: NonFreeNet
 AuthorName: Yzan Alather
 AuthorEmail: yalather70@pm.me
 SourceCode: https://github.com/PrestoSole/clima
 IssueTracker: https://github.com/PrestoSole/clima/issues
 
-AutoName: clima
+AutoNNonFreeNet
 
 RepoType: git
 Repo: https://github.com/PrestoSole/clima
@@ -14,7 +15,7 @@ Repo: https://github.com/PrestoSole/clima
 Builds:
   - versionName: '1.1'
     versionCode: 11
-    commit: v1.0
+    commit: v1.1
     subdir: app
     gradle:
       - yes
