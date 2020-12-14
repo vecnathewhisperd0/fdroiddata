@@ -12,8 +12,8 @@ RepoType: git
 Repo: https://github.com/PrestoSole/clima
 
 Builds:
-  - versionName: '1.0'
-    versionCode: 1
+  - versionName: '1.1'
+    versionCode: 11
     commit: v1.0
     subdir: app
     gradle:
@@ -29,5 +29,5 @@ Builds:
 AutoUpdateMode: None
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/PrestoSole/clima/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: '1.0'
-CurrentVersionCode: 1
+CurrentVersion: '1.1'
+CurrentVersionCode: 11
