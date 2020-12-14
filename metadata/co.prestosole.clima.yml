@@ -6,10 +6,7 @@ AuthorEmail: yalather70@pm.me
 SourceCode: https://github.com/PrestoSole/clima
 IssueTracker: https://github.com/PrestoSole/clima/issues
 
-Name: Clima
 AutoName: clima
-Summary: A simple and fast weather app
-Description: A simple and fast weather app.
 
 RepoType: git
 Repo: https://github.com/PrestoSole/clima
@@ -29,7 +26,8 @@ Builds:
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter build apk
 
-AutoUpdateMode: None
-UpdateCheckMode: Tags
+AutoUpdateMode: Tags
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/PrestoSole/clima/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: '1.0'
 CurrentVersionCode: 1
