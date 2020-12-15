@@ -14,9 +14,9 @@ RepoType: git
 Repo: https://github.com/qcasey/paperless_share
 
 Builds:
-  - versionName: 1.0.4
-    versionCode: 1004
-    commit: v1.0.4
+  - versionName: 1.0.5
+    versionCode: 1005
+    commit: v1.0.5
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.22.4
@@ -30,5 +30,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/qcasey/paperless_share/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 1.0.4
-CurrentVersionCode: 1004
+CurrentVersion: 1.0.5
+CurrentVersionCode: 1005
