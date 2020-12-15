@@ -18,8 +18,7 @@ Builds:
     commit: v0.1
     subdir: android/app
     gradle:
-      - yes
-    output: build/app/outputs/apk/release/app-release.apk    
+      - yes 
     srclibs:
       - flutter@1.22.5 
     build:
