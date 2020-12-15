@@ -18,9 +18,9 @@ Builds:
     commit: v0.1
     subdir: android/app
     gradle:
-      - yes 
+      - yes
     srclibs:
-      - flutter@1.22.5 
+      - flutter@1.22.5
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter packages pub get
