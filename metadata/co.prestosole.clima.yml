@@ -7,14 +7,15 @@ AuthorName: Yzan Alather
 AuthorEmail: yalather70@pm.me
 SourceCode: https://github.com/PrestoSole/clima
 IssueTracker: https://github.com/PrestoSole/clima/issues
+ChangeLog: https://github.com/PrestoSole/clima/releases
 
 RepoType: git
 Repo: https://github.com/PrestoSole/clima
 
 Builds:
-  - versionName: '1.1'
-    versionCode: 11
-    commit: v1.1
+  - versionName: '1.0.0'
+    versionCode: 10
+    commit: v1.0.0
     subdir: android/app
     gradle:
       - yes
@@ -28,5 +29,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/PrestoSole/clima/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: '1.1'
-CurrentVersionCode: 11
+CurrentVersion: '1.0.0'
+CurrentVersionCode: 10
