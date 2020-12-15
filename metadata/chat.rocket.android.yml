@@ -239,7 +239,6 @@ Builds:
 
     - versionName: 4.13.0
       versionCode: 22007
-      # change this to a tag before merge
       commit: 5d4e820988d4f3676ba5fc1ccadb0e214a9437c0
       subdir: android/app
       sudo:
