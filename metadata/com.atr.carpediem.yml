@@ -1,0 +1,44 @@
+Categories:
+  - Games
+License: 0BSD
+AuthorName: Adam T. Ryder
+AuthorEmail: tryder@protonmail.com
+WebSite: https://1337atr.weebly.com/carpediem.html
+SourceCode: https://github.com/ATryder/CarpeDiem
+IssueTracker: https://github.com/ATryder/CarpeDiem/issues
+Changelog: https://github.com/ATryder/CarpeDiem/releases
+
+AutoName: Carpe Diem
+
+RepoType: git
+Repo: https://github.com/ATryder/CarpeDiem.git
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: 5b63fdf90b611081609dad084881895df4cf9778
+    output: carpediem.apk
+    srclibs:
+      - Godot@3.2.3-stable-0-31d0f8ad8d5cf50a310ee7e8ada4dcdb4510690b
+    prebuild:
+      - mkdir carpediem
+      - bash -O extglob -c "mv !(carpediem) carpediem"
+      - cp -R $$Godot$$ godot
+    build:
+      - cd godot
+      - scons -j `nproc` p=server unix_global_settings_path=".."
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - scons -j `nproc` p=android target=release
+      - pushd platform/android/java/
+      - gradle assembleRelease
+      - popd
+      - export HOME=$PWD
+      - mkdir -p ../templates/
+      - cp bin/android_release.apk ../templates
+      - cd ../carpediem
+      - ../godot/bin/godot_server.server.tools.* -export Android ../carpediem.apk
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
