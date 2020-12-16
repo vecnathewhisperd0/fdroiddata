@@ -1,0 +1,17 @@
+License: GPL-3.0
+SourceCode: https://github.com/tuyafeng/Watt
+IssueTracker: https://github.com/tuyafeng/Watt/issues
+
+RepoType: git
+Repo: https://github.com/tuyafeng/Watt
+
+Builds:
+  - versionName: 2.0.0
+    versionCode: 4
+    commit: master
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
