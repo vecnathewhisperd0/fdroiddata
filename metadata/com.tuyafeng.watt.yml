@@ -1,4 +1,9 @@
+Categories:
+  - System
+  - Security
 License: GPL-3.0-only
+AuthorName: tuyafeng
+AuthorEmail: lakor@foxmail.com
 SourceCode: https://github.com/tuyafeng/Watt
 IssueTracker: https://github.com/tuyafeng/Watt/issues
 
@@ -8,10 +13,10 @@ Repo: https://github.com/tuyafeng/Watt
 Builds:
   - versionName: 2.0.0
     versionCode: 4
-    commit: master
+    commit: v2.0.0
     subdir: app
     gradle:
       - yes
 
-AutoUpdateMode: None
-UpdateCheckMode: Tags
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags ^v.+[0-9]$
