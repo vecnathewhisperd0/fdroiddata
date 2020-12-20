@@ -7,6 +7,8 @@ AuthorEmail: lakor@foxmail.com
 SourceCode: https://github.com/tuyafeng/Watt
 IssueTracker: https://github.com/tuyafeng/Watt/issues
 
+AutoName: Watt
+
 RepoType: git
 Repo: https://github.com/tuyafeng/Watt
 
@@ -15,10 +17,11 @@ Builds:
     versionCode: 4
     commit: v2.0.0
     subdir: app
-    patch:
-      - build.patch
     gradle:
       - yes
+    prebuild: sed -i -e '/aliyun/d' build.gradle
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v.+[0-9]$
+CurrentVersion: 2.0.0
+CurrentVersionCode: 4
