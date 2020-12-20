@@ -19,7 +19,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: sed -i -e '/aliyun/d' build.gradle
+    prebuild: sed -i -e '/aliyun/d' ../build.gradle
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v.+[0-9]$
