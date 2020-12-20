@@ -8,6 +8,7 @@ get_merge_request_iid() {
 		echo $mr
 		return 0
 	    fi
+	    1>&2 printf '.'
 	done
     done
 }
@@ -17,6 +18,15 @@ s=$((4`printf "$CI_COMMIT_SHA" | wc -c`-10))
 e=$((s+`echo "$CI_SERVER_HOST" | wc -c`+18))
 issuebot=`cat .issuebot | cut -b${s}-${e}`
 project_id=36528
+
+if test -z $CI_API_V4_URL; then
+    echo CI_API_V4_URL is not set
+    exit 1
+elif test -z $CI_PIPELINE_ID; then
+    echo CI_PIPELINE_ID is not set
+    exit 1
+fi
+
 CI_MERGE_REQUEST_IID=`get_merge_request_iid`
 
 if test -z "$CI_MERGE_REQUEST_IID"; then
@@ -35,5 +45,5 @@ curl --silent --request POST \
      --form "variables[FROM_CI_PIPELINE_ID]=$CI_PIPELINE_ID" \
      --form "variables[FROM_CI_PROJECT_PATH]=$CI_PROJECT_PATH" \
      --form "variables[FROM_CI_PROJECT_URL]=$CI_PROJECT_URL" \
-     ${CI_API_V4_URL}/projects/${project_id}/trigger/pipeline > /dev/null \
+     ${CI_API_V4_URL}/projects/${project_id}/trigger/pipeline > logs/result.json \
     || echo "$0 failed to post to a merge request"

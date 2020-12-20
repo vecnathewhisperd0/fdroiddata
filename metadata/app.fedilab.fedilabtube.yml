@@ -125,7 +125,35 @@ Builds:
     gradle:
       - fdroid_acad
 
+  - versionName: 1.8.0
+    versionCode: 27
+    commit: 1.8.0
+    subdir: app
+    gradle:
+      - fdroid_acad
+
+  - versionName: 1.9.0
+    versionCode: 29
+    commit: 1.9.0
+    subdir: app
+    gradle:
+      - fdroid_acad
+
+  - versionName: 1.10.0
+    versionCode: 30
+    commit: 1.10.0
+    subdir: app
+    gradle:
+      - fdroid_acad
+
+  - versionName: 1.10.1
+    versionCode: 31
+    commit: 1.10.1
+    subdir: app
+    gradle:
+      - fdroid_acad
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.7.0
-CurrentVersionCode: 25
+CurrentVersion: 1.10.1
+CurrentVersionCode: 31

@@ -27,13 +27,13 @@ Builds:
       - $$flutter$$/bin/flutter pub run build_runner build
       - $$flutter$$/bin/flutter build apk
 
-  - versionName: 0.0.6
-    versionCode: 6
-    disable: beta
-    commit: 0.0.6
+  - versionName: 0.0.8
+    versionCode: 8
+    disable: Unexpected version/version code in output
+    commit: 0.0.8
     output: build/app/outputs/apk/release/app-release.apk
     srclibs:
-      - flutter@1.17.3
+      - flutter@1.22.5
     prebuild: echo 'android.applicationVariants.all { variant -> variant.outputs.all
         { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
     build:
@@ -49,5 +49,5 @@ MaintainerNotes: |-
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://github.com/bauerj/paperless_app/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 0.0.6
-CurrentVersionCode: 6
+CurrentVersion: 0.0.8
+CurrentVersionCode: 8

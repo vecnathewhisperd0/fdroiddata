@@ -80,14 +80,13 @@ Description: |-
     * and many more
 
     Please see
-    [https://github.com/oliexdev/openScale/wiki/Supported-scales-in-openScale
-    Wikipage] for the full list and the level of support for each scale.
+    <a href="https://github.com/oliexdev/openScale/wiki/Supported-scales-in-openScale">Wikipage</a> for the full list and the level of support for each scale.
 
     ====Support====
 
     If you find a bug, have an idea on how to improve openScale or have a question,
     please visit the openScale project page on
-    [https://github.com/oliexdev/openScale GitHub]
+    <a href="https://github.com/oliexdev/openScale">GitHub</a>
 
 RepoType: git
 Repo: https://github.com/oliexdev/openScale
@@ -332,7 +331,40 @@ Builds:
       - docs/raw_icons/openScale_icons.zip
       - docs/misc/DCode-v4.02a-build-4.02.0.9306.zip
 
+  - versionName: 2.3.3
+    versionCode: 52
+    commit: v2.3.3
+    subdir: android_app/app
+    gradle:
+      - yes
+    rm:
+      - docs/raw_icons/launcher_design_proposal_ jbeguna04.zip
+      - docs/raw_icons/openScale_icons.zip
+      - docs/misc/DCode-v4.02a-build-4.02.0.9306.zip
+
+  - versionName: 2.3.4
+    versionCode: 53
+    commit: v2.3.4
+    subdir: android_app/app
+    gradle:
+      - yes
+    rm:
+      - docs/raw_icons/launcher_design_proposal_ jbeguna04.zip
+      - docs/raw_icons/openScale_icons.zip
+      - docs/misc/DCode-v4.02a-build-4.02.0.9306.zip
+
+  - versionName: 2.3.5
+    versionCode: 54
+    commit: v2.3.5
+    subdir: android_app/app
+    gradle:
+      - yes
+    rm:
+      - docs/raw_icons/launcher_design_proposal_ jbeguna04.zip
+      - docs/raw_icons/openScale_icons.zip
+      - docs/misc/DCode-v4.02a-build-4.02.0.9306.zip
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9.]*$
-CurrentVersion: 2.3.2
-CurrentVersionCode: 51
+CurrentVersion: 2.3.5
+CurrentVersionCode: 54

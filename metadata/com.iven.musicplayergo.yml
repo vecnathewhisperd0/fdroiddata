@@ -418,7 +418,52 @@ Builds:
     rm:
       - project/gradle
 
+  - versionName: 4.3.2
+    versionCode: 154
+    commit: v4.3.2
+    subdir: project/app
+    gradle:
+      - yes
+    rm:
+      - project/gradle
+
+  - versionName: 4.3.3
+    versionCode: 155
+    commit: v4.3.3
+    subdir: project/app
+    gradle:
+      - yes
+    rm:
+      - project/gradle
+
+  - versionName: 4.3.4
+    versionCode: 156
+    commit: v4.3.4
+    subdir: project/app
+    gradle:
+      - yes
+    rm:
+      - project/gradle
+
+  - versionName: 4.3.5
+    versionCode: 157
+    commit: v4.3.5
+    subdir: project/app
+    gradle:
+      - yes
+    rm:
+      - project/gradle
+
+  - versionName: 4.3.7
+    versionCode: 159
+    commit: v4.3.7
+    subdir: project/app
+    gradle:
+      - yes
+    rm:
+      - project/gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 4.3.1
-CurrentVersionCode: 153
+CurrentVersion: 4.3.7
+CurrentVersionCode: 159

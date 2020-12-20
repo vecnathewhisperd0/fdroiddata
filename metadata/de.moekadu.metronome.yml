@@ -109,6 +109,6 @@ Builds:
       - yes
 
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags .*[0-9]$
+UpdateCheckMode: Tags ^v[0-9.]*$
 CurrentVersion: 2.3.0
 CurrentVersionCode: 28

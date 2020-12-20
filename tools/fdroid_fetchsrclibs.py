@@ -26,13 +26,13 @@ def main():
     options = parser.parse_args()
     common.options = options
     pkgs = common.read_pkg_args(options.appid, True)
-    allapps = metadata.read_metadata(xref=False)
+    allapps = metadata.read_metadata(pkgs)
     apps = common.read_app_args(options.appid, allapps, True)
     srclib_dir = os.path.join('build', 'srclib')
     os.makedirs(srclib_dir, exist_ok=True)
     srclibpaths = []
     for appid, app in apps.items():
-        for build in app.builds:
+        for build in app.get('Builds', []):
             for lib in build.srclibs:
                 srclibpaths.append(common.getsrclib(lib, srclib_dir, build=build))
     print('Set up srclibs:')

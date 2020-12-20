@@ -176,6 +176,7 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
+UpdateCheckIgnore: (alpha|beta|rc)
 UpdateCheckData: https://raw.githubusercontent.com/agateau/pixelwheels/master/version.properties|VERSION_CODE=(.*)|.|VERSION=(.*)
 CurrentVersion: 0.17.0
 CurrentVersionCode: 17

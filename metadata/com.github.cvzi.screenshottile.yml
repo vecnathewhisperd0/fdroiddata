@@ -15,7 +15,7 @@ Description: |-
     then grant the permissions to record screen captures and save images to
     the internal storage.
 
-    This is a fork of [https://github.com/ipcjs/ScreenshotTile ScreenshotTile]
+    This is a fork of <a href="https://github.com/ipcjs/ScreenshotTile">ScreenshotTile</a>
     but does not require root. If you have root access, you should use the
     original app, it’s faster and more reliant than this fork.
 
@@ -224,7 +224,23 @@ Builds:
       - yes
     prebuild: echo "android.useAndroidX=true" > ../gradle.properties
 
+  - versionName: 1.10.0
+    versionCode: 36
+    commit: v1.10.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: echo "android.useAndroidX=true" > ../gradle.properties
+
+  - versionName: 1.11.0
+    versionCode: 37
+    commit: v1.11.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: echo "android.useAndroidX=true" > ../gradle.properties
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.0
-CurrentVersionCode: 35
+CurrentVersion: 1.11.0
+CurrentVersionCode: 37

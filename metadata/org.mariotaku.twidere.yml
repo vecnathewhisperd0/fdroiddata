@@ -32,7 +32,7 @@ Description: |-
     If you want a StatusNet account press the button at the top of the account setup
     page. Set an appropriate REST API url and choose basic authentication. Searches
     will go to Twitter by default. For general info about the StatusNet API see
-    [http://status.net/wiki/Twitter-compatible_API their wiki].
+    <a href="http://status.net/wiki/Twitter-compatible_API">their wiki</a>.
 
     You can donate via PayPal here, with the same address being used for AliPay
     donations.
@@ -2160,9 +2160,29 @@ Builds:
       - sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle
       - sed -i -e '/^bintray/,$d' ../twidere.component.common/build.gradle
 
+  - versionName: 4.1.5
+    versionCode: 514
+    commit: 4.1.5
+    subdir: twidere
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle
+      - sed -i -e '/^bintray/,$d' ../twidere.component.common/build.gradle
+
+  - versionName: 4.1.6
+    versionCode: 515
+    commit: 4.1.6
+    subdir: twidere
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/START Non-FOSS component/,/END Non-FOSS component/d' build.gradle
+      - sed -i -e '/^bintray/,$d' ../twidere.component.common/build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/TwidereProject/Twidere-Android/maintenance/build.gradle|projectVersionCode
     = (.*)|.|projectVersionName = '(.*)'
-CurrentVersion: 4.1.4
-CurrentVersionCode: 513
+CurrentVersion: 4.1.6
+CurrentVersionCode: 515
