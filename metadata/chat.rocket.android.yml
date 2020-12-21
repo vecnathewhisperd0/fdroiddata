@@ -9,7 +9,7 @@ IssueTracker: https://github.com/RocketChat/Rocket.Chat.ReactNative/issues
 Changelog: https://github.com/RocketChat/Rocket.Chat.ReactNative/releases
 Donate: https://github.com/RocketChat/Rocket.Chat#donate
 
-AutoName: Rocket.Chat Experimental
+AutoName: Rocket.Chat
 Description: |
     '''Note:''' This FOSS build variant currently lacks any push notification support.
 
@@ -238,8 +238,8 @@ Builds:
       - node_modules
 
   - versionName: 4.13.0
-    versionCode: 22007
-    commit: 4.13.0-rc.0
+    versionCode: 22081
+    commit: 4.13.0
     subdir: android/app
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
@@ -253,7 +253,7 @@ Builds:
     patch:
       - foss-build-3.patch
     gradle:
-      - foss
+      - fossOfficial
     rm:
       - ios
     prebuild: sed -E -i 's/VERSIONCODE*/$$VERCODE$$/' build.gradle
@@ -287,4 +287,4 @@ MaintainerNotes: We use a Github repo as a Maven repository for a LIBRE_BUILD Ji
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags \d+\.\d+\.\d+
 CurrentVersion: 4.13.0
-CurrentVersionCode: 22007
+CurrentVersionCode: 22081
