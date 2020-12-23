@@ -12,12 +12,12 @@ RepoType: git
 Repo: https://github.com/vauvenal5/yaga.git
 
 Builds:
-  - versionName: 0.15.7
-    versionCode: 157
-    commit: v0.15.7
+  - versionName: 0.15.10
+    versionCode: 1510
+    commit: v0.15.10
     output: build/app/outputs/flutter-apk/app-fdroid-release.apk
     srclibs:
-      - flutter@1.22.3
+      - flutter@1.22.5
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get
@@ -28,5 +28,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/vauvenal5/yaga/master/pubspec.yaml|version:\s\d+\.\d+\.\d+\+(\d+)|.|version:\s(\d+\.\d+\.\d+)\+\d+
-CurrentVersion: 0.15.7
-CurrentVersionCode: 157
+CurrentVersion: 0.15.10
+CurrentVersionCode: 1510
