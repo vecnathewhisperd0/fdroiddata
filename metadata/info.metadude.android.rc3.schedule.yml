@@ -57,8 +57,7 @@ Builds:
     subdir: app
     gradle:
       - rc3
-    prebuild:
-      - cp local.properties gradle.properties
+    prebuild: cp local.properties gradle.properties
 
 AutoUpdateMode: Version v.%v
 UpdateCheckMode: Tags
