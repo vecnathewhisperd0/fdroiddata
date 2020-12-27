@@ -1395,10 +1395,10 @@ Builds:
       - mv jni/static_library_built/openssl/output/android/ jni/openssl/
     ndk: r15c
 
-  - versionName: 2.4.4
-    versionCode: 1144
+  - versionName: 2.4.5
+    versionCode: 1145
     disable: fails to build
-    commit: 2.4.4
+    commit: 2.4.5
     subdir: aTalk/
     gradle:
       - fdroid
@@ -1448,5 +1448,5 @@ MaintainerNotes: scanignore is used to allow the local "third_party/m2" Gradle r
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.4
-CurrentVersionCode: 1144
+CurrentVersion: 2.4.5
+CurrentVersionCode: 1145
