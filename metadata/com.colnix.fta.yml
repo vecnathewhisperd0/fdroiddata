@@ -14,6 +14,7 @@ Repo: https://gitlab.com/colnix/fta.git
 Builds:
   - versionName: 2.1.0
     versionCode: 22
+    disable: fails to build
     commit: 2.1.0
     subdir: app
     sudo:
@@ -24,5 +25,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 2.1.0
-CurrentVersionCode: 22
+CurrentVersion: 2.2.0
+CurrentVersionCode: 23

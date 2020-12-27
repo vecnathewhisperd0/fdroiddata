@@ -3,7 +3,8 @@ Categories:
 License: Apache-2.0
 SourceCode: https://codeberg.org/corona-contact-tracing-germany/cwa-android
 IssueTracker: https://codeberg.org/corona-contact-tracing-germany/cwa-android/issues
-Liberapay: microG
+Changelog: https://codeberg.org/corona-contact-tracing-germany/cwa-android/src/branch/main/CHANGELOG.md
+Liberapay: CCTG
 
 RepoType: git
 Repo: https://codeberg.org/corona-contact-tracing-germany/cwa-android.git
@@ -23,11 +24,57 @@ Builds:
       - protobuf/build
     ndk: r21d
 
-MaintainerNotes: default_app_config.bin can be viewed with `protoc --decode de.rki.coronawarnapp.server.protocols.internal.ApplicationConfiguration
-    Server-Protocol-Buffer/src/main/proto/internal/app_config.proto --proto_path Server-Protocol-Buffer/src/main/proto/
-    < Corona-Warn-App/src/main/assets/default_app_config.bin`
+  - versionName: 1.9.1.4
+    versionCode: 1090104
+    commit: v1.9.1.4
+    subdir: Corona-Warn-App
+    gradle:
+      - device
+    prebuild: sed -i -e 's/21.2.6472646/21.3.6528147/' build.gradle
+    scanignore:
+      - Corona-Warn-App/src/main/assets/default_app_config.bin
+      - Corona-Warn-App/src/main/assets/default_app_config_android.bin
+    scandelete:
+      - protobuf/build
+    ndk: r21d
+
+  - versionName: 1.9.1.5
+    versionCode: 1090105
+    commit: v1.9.1.5
+    subdir: Corona-Warn-App
+    gradle:
+      - device
+    prebuild: sed -i -e 's/21.2.6472646/21.3.6528147/' build.gradle
+    scanignore:
+      - Corona-Warn-App/src/main/assets/default_app_config.bin
+      - Corona-Warn-App/src/main/assets/default_app_config_android.bin
+    scandelete:
+      - protobuf/build
+    ndk: r21d
+
+  - versionName: 1.9.1.6
+    versionCode: 1090106
+    commit: v1.9.1.6
+    subdir: Corona-Warn-App
+    gradle:
+      - device
+    prebuild: sed -i -e 's/21.2.6472646/21.3.6528147/' build.gradle
+    scanignore:
+      - Corona-Warn-App/src/main/assets/default_app_config.bin
+      - Corona-Warn-App/src/main/assets/default_app_config_android.bin
+    scandelete:
+      - protobuf/build
+    ndk: r21d
+
+MaintainerNotes: |-
+    scanignored are some protobuf encoded config files, view them with:
+    protoc --decode de.rki.coronawarnapp.server.protocols.internal.ApplicationConfiguration Server-Protocol-Buffer/src/main/proto/internal/app_config.proto \
+    --proto_path Server-Protocol-Buffer/src/main/proto/ < Corona-Warn-App/src/main/assets/default_app_config.bin && \
+    protoc --decode de.rki.coronawarnapp.server.protocols.internal.v2.ApplicationConfigurationAndroid \
+    Server-Protocol-Buffer/src/main/proto/internal/v2/app_config_android.proto --proto_path \
+    Server-Protocol-Buffer/src/main/proto/ < Corona-Warn-App/src/main/assets/default_app_config_android.bin
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.7.1.2
-CurrentVersionCode: 1070102
+CurrentVersion: 1.9.1.6
+CurrentVersionCode: 1090106

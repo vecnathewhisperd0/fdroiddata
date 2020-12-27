@@ -26,7 +26,7 @@ Description: |-
     * Lock time zone when travelling to different time zones.
     * Turn off Widget or Day headers, event icons, Days from today, etc. and see only what you need.
     * Android 7.0+ supported. Supports Android tablets.
-    For the older devices please use [https://f-droid.org/en/packages/com.plusonelabs.calendar/ Todo Agenda for Android 4 - 7.0] app.
+    For the older devices please use <a href="https://f-droid.org/en/packages/com.plusonelabs.calendar/">Todo Agenda for Android 4 - 7.0</a> app.
 
 RepoType: git
 Repo: https://github.com/andstatus/todoagenda.git
@@ -81,6 +81,20 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 4.3.2
+    versionCode: 690
+    commit: 4.3.2-release
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.4.0
+    versionCode: 691
+    commit: 4.4.0-release
+    subdir: app
+    gradle:
+      - yes
+
 MaintainerNotes: |-
     Since v.4.1 upstream reverted to static versionName and versionCode,
     at least till F-Droid starts supporting this,
@@ -88,5 +102,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version %v-release
 UpdateCheckMode: Tags ^[0-9.]+-release$
-CurrentVersion: 4.3.1
-CurrentVersionCode: 689
+CurrentVersion: 4.4.0
+CurrentVersionCode: 691
