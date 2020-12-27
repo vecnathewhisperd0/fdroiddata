@@ -12,14 +12,14 @@ RepoType: git
 Repo: https://gitlab.com/humbertofraga/timerx.git
 
 Builds:
-  - versionName: '1.0'
-    versionCode: 1
-    commit: 2926a745ff1c85629f59c3211df245cf5823445f
+  - versionName: '1.1'
+    versionCode: 3
+    commit: v1.1
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.0'
-CurrentVersionCode: 1
+CurrentVersion: '1.1'
+CurrentVersionCode: 3
