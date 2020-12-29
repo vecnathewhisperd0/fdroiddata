@@ -22,6 +22,7 @@ Builds:
     subdir: android/app
     gradle:
       - yes
+    output: ../../build/app/outputs/apk/foss/release/app-foss-release.apk
     srclibs:
       - flutter@stable
     prebuild:
@@ -30,6 +31,7 @@ Builds:
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter update-packages
       - $$flutter$$/bin/flutter build apk --release --flavor foss --verbose
 
 AutoUpdateMode: Version v%v
