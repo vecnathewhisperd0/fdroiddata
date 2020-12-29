@@ -20,7 +20,6 @@ Builds:
     versionCode: 39
     commit: v1.4.5
     subdir: android/app
-    submodules: true
     gradle:
       - yes
 
