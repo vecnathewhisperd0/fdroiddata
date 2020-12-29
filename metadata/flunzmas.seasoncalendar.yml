@@ -19,15 +19,13 @@ Builds:
   - versionName: 1.4.5
     versionCode: 39
     commit: v1.4.5
-    subdir: android/app
-    gradle:
-      - yes
     srclibs:
       - flutter@stable
-    prebuild:
+    prebuild: echo 'android.applicationVariants.all { variant -> variant.outputs.all { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter packages pub get
-    build: $$flutter$$/bin/flutter build apk --release --flavor foss --verbose
+      - $$flutter$$/bin/flutter build apk --release --flavor foss --verbose
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
