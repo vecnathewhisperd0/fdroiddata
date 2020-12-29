@@ -22,6 +22,12 @@ Builds:
     subdir: android/app
     gradle:
       - yes
+    srclibs:
+      - flutter@stable
+    prebuild:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+    build: $$flutter$$/bin/flutter build apk --release --flavor foss --verbose
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
