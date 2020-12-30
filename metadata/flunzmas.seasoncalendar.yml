@@ -22,7 +22,7 @@ Builds:
     subdir: android/app
     gradle:
       - yes
-    output: ../../build/app/outputs/apk/foss/release/app-foss-release.apk
+    output: ../../build/app/outputs/flutter-apk/app-foss-release.apk
     srclibs:
       - flutter@stable
     prebuild:
