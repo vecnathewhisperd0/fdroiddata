@@ -55,7 +55,7 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: None
-UpdateCheckMode: Tags
+AutoUpdateMode: Version alarmclock-%v
+UpdateCheckMode: Tags .*[0-9]$
 CurrentVersion: '2.10'
 CurrentVersionCode: 24
