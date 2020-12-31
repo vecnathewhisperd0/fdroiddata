@@ -4,8 +4,6 @@ License: GPL-3.0-or-later
 SourceCode: https://github.com/infinyte7/Anki-Occlusion
 IssueTracker: https://github.com/infinyte7/Anki-Occlusion/issues
 
-AuthorName: Mani
-
 RepoType: git
 Repo: https://github.com/infinyte7/Anki-Occlusion
 
@@ -19,5 +17,3 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-
-Donate: https://www.patreon.com/kr_mani
