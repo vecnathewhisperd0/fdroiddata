@@ -1,8 +1,12 @@
 Categories:
   - Science & Education
 License: GPL-3.0-or-later
+AuthorName: Mani
 SourceCode: https://github.com/infinyte7/Anki-Occlusion
 IssueTracker: https://github.com/infinyte7/Anki-Occlusion/issues
+Donate: https://www.patreon.com/kr_mani
+
+AutoName: Anki Image Occlusion
 
 RepoType: git
 Repo: https://github.com/infinyte7/Anki-Occlusion
@@ -15,5 +19,6 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: None
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
+CurrentVersion: 1.3.8
