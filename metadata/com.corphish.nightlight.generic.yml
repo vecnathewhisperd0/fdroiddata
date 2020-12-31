@@ -66,15 +66,6 @@ Builds:
     prebuild: sed -i -e '/io.fabric/d' -e '/fabric.io/d' -e '/genericImplementation(.*)
         {/,/}/d' -e '/donateImplementation(.*) {/,/}/d' ../build.gradle build.gradle
 
-  - versionName: 2.5.0
-    versionCode: 51
-    commit: d6896ea68fb8da18fc02ffe9cf4df3fdbc31c29c
-    subdir: app
-    gradle:
-      - foss
-    prebuild: sed -i -e '/io.fabric/d' -e '/fabric.io/d' -e '/genericImplementation(.*)
-        {/,/}/d' -e '/donateImplementation(.*) {/,/}/d' ../build.gradle build.gradle
-
   - versionName: 3.0.0
     versionCode: 66
     commit: 3.0.0
