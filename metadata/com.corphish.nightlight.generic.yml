@@ -75,7 +75,16 @@ Builds:
     prebuild: sed -i -e '/io.fabric/d' -e '/fabric.io/d' -e '/genericImplementation(.*)
         {/,/}/d' -e '/donateImplementation(.*) {/,/}/d' ../build.gradle build.gradle
 
-AutoUpdateMode: None
-UpdateCheckMode: None
-CurrentVersion: 2.5.0
-CurrentVersionCode: 51
+  - versionName: 3.0.0
+    versionCode: 66
+    commit: 3.0.0
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e '/io.fabric/d' -e '/fabric.io/d' -e '/genericImplementation(.*)
+        {/,/}/d' ../build.gradle build.gradle
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 3.0.0
+CurrentVersionCode: 66
