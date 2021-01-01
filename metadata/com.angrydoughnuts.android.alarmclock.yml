@@ -55,6 +55,16 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '2.10'
+    versionCode: 24
+    commit: alarmclock-2.10
+    subdir: android/alarmclock/klock
+    patch:
+      - gradle-11.patch
+    gradle:
+      - yes
+
+
 AutoUpdateMode: Version alarmclock-%v
 UpdateCheckMode: Tags .*[0-9]$
 CurrentVersion: '2.10'
