@@ -59,8 +59,6 @@ Builds:
     versionCode: 24
     commit: alarmclock-2.10
     subdir: android/alarmclock/klock
-    patch:
-      - gradle-11.patch
     gradle:
       - yes
 
