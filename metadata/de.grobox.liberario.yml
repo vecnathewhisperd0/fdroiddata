@@ -384,6 +384,7 @@ Builds:
 
   - versionName: 2.1.1
     versionCode: 119
+    disable: upstream issue, app crashes on some phones https://github.com/grote/Transportr/issues/739
     commit: 2.1.1
     subdir: app
     gradle:
