@@ -137,6 +137,7 @@ Builds:
       - apt-get update || apt-get update
       - apt-get install -y -t stretch-backports-sloppy libarchive13
       - apt-get install --yes libncurses5 -t stretch-backports cmake
+      - apt-get install -y libgl1-mesa-dev g++ zlib1g-dev
     output: android-build/android/GCompris-Android-release-armeabi-v7a-dl-$$VERSION$$.apk
     srclibs:
       - extra-cmake-modules@v5.63.0
