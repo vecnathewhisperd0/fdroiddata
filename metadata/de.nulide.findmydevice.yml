@@ -7,12 +7,8 @@ SourceCode: https://gitlab.com/Nulide/findmydevice
 IssueTracker: https://gitlab.com/Nulide/findmydevice/-/issues
 LiberapayID: '1741517'
 
-AutoName: FindMyDevice
-
 RepoType: git
 Repo: https://gitlab.com/Nulide/findmydevice
-
-Builds:
 
 AutoUpdateMode: Version v%v%v
 UpdateCheckMode: Tags
