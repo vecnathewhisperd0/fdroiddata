@@ -15,18 +15,11 @@ Builds:
     versionCode: 9
     commit: v2.0.5
     subdir: android/app
-    gradle:
-      - yes
     output: ../../build/app/outputs/flutter-apk/app-fdroid-release.apk
     srclibs:
       - flutter@1.22.2
-    prebuild:
-      - echo "flutter.sdk=$$flutter$$" >> ../local.properties
-      - sed -i 's=properties.getProperty("flutter.sdk")="app/"+properties.getProperty("flutter.sdk")=g'
-        ../settings.gradle
+    prebuild: echo "flutter.sdk=$$flutter$$" >> ../local.properties
     build:
-      - sed -i 's="app/"+properties.getProperty("flutter.sdk")=properties.getProperty("flutter.sdk")=g'
-        ../settings.gradle
       - cd ../..
       - flutter build apk --release --flavor fdroid
 
