@@ -18,7 +18,7 @@ Builds:
     subdir: app
     sudo:
       - apt-get update || apt-get update
-      - apt install -y inkscape
+      - apt install -y inkscape dbus-user-session
     gradle:
       - yes
 
