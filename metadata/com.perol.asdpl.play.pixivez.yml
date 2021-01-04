@@ -1,0 +1,30 @@
+Categories:
+  - Internet
+  - Graphics
+  - Multimedia
+License: MIT
+AuthorName: Ultranity
+AuthorEmail: zjy1095429904@sina.com
+AuthorWebSite: https://ultranity.github.io/
+WebSite: https://ultranity.github.io/Pix-EzViewer/
+SourceCode: https://github.com/ultranity/Pix-EzViewer
+IssueTracker: https://github.com/ultranity/Pix-EzViewer/issues
+Changelog: https://github.com/ultranity/Pix-EzViewer/releases
+
+AutoName: Pix-EzViewer
+
+RepoType: git
+Repo: https://github.com/ultranity/Pix-EzViewer
+
+Builds:
+  - versionName: 1.7.4R
+    versionCode: 107
+    commit: 1.7.4R
+    subdir: app
+    gradle:
+      - libre
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.7.4R
+CurrentVersionCode: 107
