@@ -15,14 +15,14 @@ RepoType: git
 Repo: https://gitlab.metager.de/open-source/app-en.git
 
 Builds:
-  - versionName: 4.2.1
-    versionCode: 40201
-    commit: 4.2.1
+  - versionName: 4.2.2
+    versionCode: 40202
+    commit: 4.2.2
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 4.2.1
-CurrentVersionCode: 40201
+CurrentVersion: 4.2.2
+CurrentVersionCode: 40202
