@@ -51,9 +51,11 @@ Builds:
   - versionName: '1.31'
     versionCode: 31
     commit: '1.31'
+    subdir: demo
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y git qemu-user-static gperf flex bison pkg-config build-essential cmake meson texinfo doxygen libltdl-dev
+      - apt-get install -y git qemu-user-static gperf flex bison pkg-config build-essential 
+        cmake meson texinfo doxygen libltdl-dev
     prebuild:
       - git clone https://github.com/nwrkbiz/static-build
       - cd ./static-build
@@ -66,7 +68,14 @@ Builds:
       - make
       - cd ./unused_packages/009_flwm/
       - make
-    subdir: demo
+      - cd ../../../../
+      - cp -rf ./static-build/3rdParty/linux_mips64el_musl/bin/flwm ./demo/src/main/jniLibs/mips64/libwm.so
+      - cp -rf ./static-build/3rdParty/linux_mipsel_musl/bin/flwm ./demo/src/main/jniLibs/mips/libwm.so
+      - cp -rf ./static-build/3rdParty/linux_aarch64_musl/bin/flwm ./demo/src/main/jniLibs/arm64-v8a/libwm.so
+      - cp -rf ./static-build/3rdParty/linux_armhf_musl/bin/flwm ./demo/src/main/jniLibs/armeabi/libwm.so
+      - cp -rf ./static-build/3rdParty/linux_armhf_musl/bin/flwm ./demo/src/main/jniLibs/armeabi-v7a/libwm.so
+      - cp -rf ./static-build/3rdParty/linux_i686_musl/bin/flwm ./demo/src/main/jniLibs/x86/libwm.so
+      - cp -rf ./static-build/3rdParty/linux_x86_64_musl/bin/flwm ./demo/src/main/jniLibs/x86_64/libwm.so
     gradle:
       - yes
 
