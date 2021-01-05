@@ -79,6 +79,13 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 3.1.5
+    versionCode: 293
+    commit: 3.1.5
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/yellowbluesky/PixivforMuzei3/master/gradle.properties|app\.version\.code=(\d+)|.|app\.version\.name=([\d.]+)
