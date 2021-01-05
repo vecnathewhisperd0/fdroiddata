@@ -43,15 +43,17 @@ Repo: https://github.com/Akaflieg-Freiburg/enroute
 
 Builds:
   - versionName: 1.7.0
-    versionCode: 170
+    versionCode: 107000
     commit: 1.7.0
     submodules: true
     sudo:
       - apt-get update || apt-get update
       - apt-get install --yes librsvg2-bin
+    scanignore:
+      - 3rdParty/android_openssl
     patch:
       - enroute_170.patch
-    prebuild:
+    build:
       - mkdir -p qt
       - cd qt
       - for ms in qtxmlpatterns:bf8d9118abf0dc97289d065f5d404fda748344b7 qtwebview:55ecbb4f43a1a6518c38c71bc59b0c9db80072d4
@@ -85,6 +87,7 @@ Builds:
       - export ANDROID_NDK_ROOT=$$NDK$$
       - export ANDROID_SDK_ROOT=$$SDK$$
       - mkdir -p build-android-release
+      - androidCompileSdkVersion="28.0.3"
       - cd build-android-release
       - cmake .. -DANDROID_ABI:STRING=armeabi-v7a -DANDROID_BUILD_ABI_arm64-v8a:BOOL=ON
         -DANDROID_BUILD_ABI_armeabi-v7a:BOOL=ON -DANDROID_BUILD_ABI_x86:BOOL=false
@@ -97,11 +100,11 @@ Builds:
       - cmake ..
       - make -j`nproc`
       - $Qt5_DIR_ANDROID/bin/androiddeployqt --input android_deployment_settings.json
-        --output android-build --release --apk de.akaflieg_freiburg.enroute_170.apk
-      - mv de.akaflieg_freiburg.enroute_170.apk ../../../unsigned/.
+        --output android-build --release
+    output: build-android-release/android-build/build/outputs/apk/release/android-build-release-unsigned.apk
     ndk: r21d
 
 AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: 1.7.0
-CurrentVersionCode: 170
+CurrentVersionCode: 107000
