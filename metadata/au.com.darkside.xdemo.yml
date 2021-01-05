@@ -54,8 +54,10 @@ Builds:
     subdir: demo
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y git qemu-user-static gperf flex bison pkg-config build-essential 
+      - apt-get install -y git qemu-user-static gperf flex bison pkg-config build-essential
         cmake meson texinfo doxygen libltdl-dev
+    gradle:
+      - yes
     prebuild:
       - git clone https://github.com/nwrkbiz/static-build
       - cd ./static-build
@@ -76,8 +78,6 @@ Builds:
       - cp -rf ./static-build/3rdParty/linux_armhf_musl/bin/flwm ./demo/src/main/jniLibs/armeabi-v7a/libwm.so
       - cp -rf ./static-build/3rdParty/linux_i686_musl/bin/flwm ./demo/src/main/jniLibs/x86/libwm.so
       - cp -rf ./static-build/3rdParty/linux_x86_64_musl/bin/flwm ./demo/src/main/jniLibs/x86_64/libwm.so
-    gradle:
-      - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
