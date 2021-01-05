@@ -9,6 +9,8 @@ IssueTracker: https://github.com/Domi04151309/BatteryTool/issues
 
 AutoName: Battery Tool
 
+RequiresRoot: 'yes'
+
 RepoType: git
 Repo: https://github.com/Domi04151309/BatteryTool
 
