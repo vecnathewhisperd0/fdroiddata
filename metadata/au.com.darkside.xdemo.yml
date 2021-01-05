@@ -48,7 +48,29 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.31'
+    versionCode: 31
+    commit: '1.31'
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y git qemu-user-static gperf flex bison pkg-config build-essential cmake meson texinfo doxygen libltdl-dev
+    prebuild:
+      - git clone https://github.com/nwrkbiz/static-build
+      - cd ./static-build
+      - ln -s ./build_settings/linux_mips64el_musl.mk
+      - ln -s ./build_settings/linux_mipsel_musl.mk
+      - ln -s ./build_settings/linux_armhf_musl.mk
+      - ln -s ./build_settings/linux_aarch64_musl.mk
+      - ln -s ./build_settings/linux_x86_64_musl.mk
+      - ln -s ./build_settings/linux_i686_musl.mk
+      - make
+      - cd ./unused_packages/009_flwm/
+      - make
+    subdir: demo
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.30'
-CurrentVersionCode: 30
+CurrentVersion: '1.31'
+CurrentVersionCode: 31
