@@ -58,6 +58,14 @@ Builds:
         cmake meson texinfo doxygen libltdl-dev
     gradle:
       - yes
+    init:
+      - rm -rf ./demo/src/main/jniLibs/mips64/libwm.so
+      - rm -rf ./demo/src/main/jniLibs/mips/libwm.so
+      - rm -rf ./demo/src/main/jniLibs/arm64-v8a/libwm.so
+      - rm -rf ./demo/src/main/jniLibs/armeabi/libwm.so
+      - rm -rf ./demo/src/main/jniLibs/armeabi-v7a/libwm.so
+      - rm -rf ./demo/src/main/jniLibs/x86/libwm.so
+      - rm -rf ./demo/src/main/jniLibs/x86_64/libwm.so
     prebuild:
       - git clone https://github.com/nwrkbiz/static-build
       - cd ./static-build
@@ -67,6 +75,9 @@ Builds:
       - ln -s ./build_settings/linux_aarch64_musl.mk
       - ln -s ./build_settings/linux_x86_64_musl.mk
       - ln -s ./build_settings/linux_i686_musl.mk
+      - cd ..
+    build:
+      - cd ./static-build
       - make
       - cd ./unused_packages/009_flwm/
       - make
