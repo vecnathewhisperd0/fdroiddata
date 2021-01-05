@@ -10,8 +10,7 @@ Changelog: https://github.com/martykan/forecastie/releases
 
 AutoName: Forecastie
 Description: |-
-    Show weather information. Data is gathered from [http://openweathermap.org/
-    OpenWeatherMap], via their public API.
+    Show weather information. Data is gathered from <a href="http://openweathermap.org/">OpenWeatherMap</a>, via their public API.
 
     Features:
 
@@ -400,7 +399,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.17.1
+    versionCode: 62
+    commit: v1.17.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.17.2
+    versionCode: 63
+    commit: v1.17.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.17'
-CurrentVersionCode: 61
+CurrentVersion: 1.17.2
+CurrentVersionCode: 63

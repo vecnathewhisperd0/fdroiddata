@@ -30,7 +30,7 @@ Description: |-
 
 
     Help and instructions are available on device and on the
-    [https://vespucci.io/ Vespucci website].
+    <a href="https://vespucci.io/">Vespucci website</a>.
 
 RepoType: git
 Repo: https://github.com/MarcusWolschon/osmeditor4android
@@ -936,4 +936,4 @@ Builds:
 AutoUpdateMode: None
 UpdateCheckMode: Tags ^[0-9]+\.[0-9]+\.[0-9]+\.0$
 CurrentVersion: Unknown
-CurrentVersionCode: 1509
+CurrentVersionCode: 1607

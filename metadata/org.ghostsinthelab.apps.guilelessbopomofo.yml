@@ -1,0 +1,35 @@
+Categories:
+  - System
+  - Writing
+License: GPL-2.0-or-later
+AuthorName: Hui-Hong You
+AuthorEmail: hiroshiyui@gmail.com
+AuthorWebSite: https://ghostsinthelab.org/
+SourceCode: https://github.com/hiroshiyui/GuilelessBopomofo
+IssueTracker: https://github.com/hiroshiyui/GuilelessBopomofo/issues
+Donate: https://paypal.me/hiroshiyui
+
+AutoName: Guileless Bopomofo
+
+RepoType: git
+Repo: https://github.com/hiroshiyui/GuilelessBopomofo.git
+
+Builds:
+  - versionName: 1.1.4
+    versionCode: 16
+    commit: 1.1.4
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y libsqlite3-dev
+    gradle:
+      - yes
+    scanignore:
+      - app/libs/libchewing/
+    ndk: r21d
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.1.4
+CurrentVersionCode: 16

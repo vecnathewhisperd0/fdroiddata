@@ -3,6 +3,7 @@ Categories:
 License: Apache-2.0
 SourceCode: https://github.com/EventFahrplan/EventFahrplan
 IssueTracker: https://github.com/EventFahrplan/EventFahrplan/issues
+Liberapay: EventFahrplan
 
 AutoName: 36C3 Schedule
 Description: |
@@ -375,7 +376,7 @@ Builds:
       - cp local.properties gradle.properties
       - sed -i -e 's/6.6.1/6.5/' ../gradle/wrapper/gradle-wrapper.properties
 
-AutoUpdateMode: Version v.%v
-UpdateCheckMode: Tags
+AutoUpdateMode: None
+UpdateCheckMode: None
 CurrentVersion: 1.47.0
 CurrentVersionCode: 76

@@ -3508,9 +3508,89 @@ Builds:
     prebuild: sed -i -e '/keystoreProperties/d' build.gradle
     ndk: r21d
 
-  - versionName: '1.1416'
-    versionCode: 1416
-    commit: '1.1416'
+  - versionName: '1.1417'
+    versionCode: 1417
+    commit: '1.1417'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1420'
+    versionCode: 1420
+    commit: '1.1420'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1424'
+    versionCode: 1424
+    commit: '1.1424'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1426'
+    versionCode: 1426
+    commit: '1.1426'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1429'
+    versionCode: 1429
+    commit: '1.1429'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1431'
+    versionCode: 1431
+    commit: '1.1431'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1437'
+    versionCode: 1437
+    commit: '1.1437'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1439'
+    versionCode: 1439
+    commit: '1.1439'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1442'
+    versionCode: 1442
+    commit: '1.1442'
     subdir: app
     submodules: true
     gradle:
@@ -3522,5 +3602,5 @@ MaintainerNotes: Dynamic versionName and version code, so no autoupdates anymore
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: '1.1416'
-CurrentVersionCode: 1416
+CurrentVersion: '1.1442'
+CurrentVersionCode: 1442

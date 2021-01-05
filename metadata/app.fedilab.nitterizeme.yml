@@ -194,7 +194,25 @@ Builds:
     rm:
       - apk
 
+  - versionName: 1.17.0
+    versionCode: 28
+    commit: 1.17.0
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
+  - versionName: 1.17.1
+    versionCode: 29
+    commit: 1.17.1
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.16.0
-CurrentVersionCode: 27
+CurrentVersion: 1.17.1
+CurrentVersionCode: 29

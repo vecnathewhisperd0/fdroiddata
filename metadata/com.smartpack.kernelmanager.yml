@@ -1,0 +1,62 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - System
+License: GPL-3.0-or-later
+AuthorName: sunilpaulmathew
+AuthorEmail: sunil.kde@gmail.com
+AuthorWebSite: https://smartpack.github.io/
+WebSite: https://smartpack.github.io/spkm/
+SourceCode: https://github.com/SmartPack/SmartPack-Kernel-Manager
+IssueTracker: https://github.com/SmartPack/SmartPack-Kernel-Manager/issues
+Changelog: https://github.com/SmartPack/SmartPack-Kernel-Manager/releases
+Donate: https://www.paypal.me/menacherry/
+
+AutoName: SmartPack-Kernel Manager
+
+RepoType: git
+Repo: https://github.com/SmartPack/SmartPack-Kernel-Manager
+
+Builds:
+  - versionName: '14.8'
+    versionCode: 148
+    commit: v14.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '15.2'
+    versionCode: 152
+    commit: v15.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '15.4'
+    versionCode: 154
+    commit: v15.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '15.5'
+    versionCode: 155
+    commit: v15.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '15.6'
+    versionCode: 156
+    commit: v15.6
+    subdir: app
+    gradle:
+      - yes
+
+MaintainerNotes: app seems to have internal auto-updater (hence NonFreeNet+NonFreeAdd
+    until disabled)
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '15.6'
+CurrentVersionCode: 156

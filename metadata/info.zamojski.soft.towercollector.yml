@@ -34,7 +34,7 @@ Description: |-
     domain "Creative Commons (CC-0)" license.
 
     Please help me translate it to other languages, visit
-    [http://i18n.zamojski.info/ i18n.zamojski.info]
+    <a href="http://i18n.zamojski.info/">i18n.zamojski.info</a>
 
     This application does not collect, store or send any information which can
     be used to directly identify user, device which is being used or any other
@@ -249,7 +249,35 @@ Builds:
     gradle:
       - productionFdroid
 
+  - versionName: 2.6.1
+    versionCode: 2060170
+    commit: 2.6.1
+    subdir: app
+    gradle:
+      - productionFdroid
+
+  - versionName: 2.7.0
+    versionCode: 2070071
+    commit: 2.7.0
+    subdir: app
+    gradle:
+      - productionFdroid
+
+  - versionName: 2.7.1
+    versionCode: 2070172
+    commit: 2.7.1
+    subdir: app
+    gradle:
+      - productionFdroid
+
+  - versionName: 2.7.2
+    versionCode: 2070273
+    commit: 2.7.2
+    subdir: app
+    gradle:
+      - productionFdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.6.0
-CurrentVersionCode: 2060069
+CurrentVersion: 2.7.2
+CurrentVersionCode: 2070273

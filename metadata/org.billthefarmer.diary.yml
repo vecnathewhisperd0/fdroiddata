@@ -445,7 +445,19 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.71'
+    versionCode: 171
+    commit: v1.71
+    gradle:
+      - yes
+
+  - versionName: '1.72'
+    versionCode: 172
+    commit: v1.72
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.70'
-CurrentVersionCode: 170
+CurrentVersion: '1.72'
+CurrentVersionCode: 172

@@ -5,6 +5,7 @@ AuthorName: CorruptedArk
 SourceCode: https://github.com/CorruptedArk/open-chaos-chess
 IssueTracker: https://github.com/CorruptedArk/open-chaos-chess/issues
 Changelog: https://github.com/CorruptedArk/open-chaos-chess/releases
+Liberapay: CorruptedArk
 
 AutoName: Open Chaos Chess
 
@@ -82,7 +83,42 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.7.3
+    versionCode: 36
+    commit: v1.7.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.4
+    versionCode: 37
+    commit: v1.7.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.5
+    versionCode: 38
+    commit: v1.7.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.6
+    versionCode: 39
+    commit: v1.7.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.7
+    versionCode: 40
+    commit: v1.7.7
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.7.0
-CurrentVersionCode: 33
+CurrentVersion: 1.7.7
+CurrentVersionCode: 40

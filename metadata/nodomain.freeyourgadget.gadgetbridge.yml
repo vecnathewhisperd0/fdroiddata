@@ -26,8 +26,7 @@ Description: |-
 
     Gadgetbridge is under active development, for an up to date list of supported
     devices and an overview of current features, please refer to the
-    [https://codeberg.org/Freeyourgadget/Gadgetbridge/src/branch/master/README.md
-    README].
+    <a href="https://codeberg.org/Freeyourgadget/Gadgetbridge/src/branch/master/README.md">README</a>.
 
 RepoType: git
 Repo: https://codeberg.org/Freeyourgadget/Gadgetbridge.git
@@ -1272,7 +1271,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.51.0
+    versionCode: 185
+    commit: 0.51.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.50.0
-CurrentVersionCode: 184
+CurrentVersion: 0.51.0
+CurrentVersionCode: 185

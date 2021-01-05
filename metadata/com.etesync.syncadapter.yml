@@ -853,6 +853,30 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.2.1
+    versionCode: 20201
+    commit: v2.2.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 2.2.2
+    versionCode: 20202
+    commit: v2.2.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 2.2.3
+    versionCode: 20203
+    commit: v2.2.3
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 MaintainerNotes: |-
     Summary and Description are maintained by upstream using fastlane in
     the source repo:
@@ -860,5 +884,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.0
-CurrentVersionCode: 20200
+CurrentVersion: 2.2.3
+CurrentVersionCode: 20203

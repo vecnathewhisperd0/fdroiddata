@@ -1029,9 +1029,99 @@ Builds:
       - desktop
     prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
 
+  - versionName: 3.11.18
+    versionCode: 507
+    commit: 3.11.18
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.11.18-patch1
+    versionCode: 508
+    commit: 3.11.18-patch1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.11.19
+    versionCode: 509
+    commit: 3.11.19
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.0
+    versionCode: 510
+    commit: 3.12.0
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.2-patch1
+    versionCode: 513
+    commit: 3.12.2-patch1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.3
+    versionCode: 514
+    commit: 3.12.3
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.4
+    versionCode: 515
+    commit: 3.12.4
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.5
+    versionCode: 516
+    commit: 3.12.5
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.6
+    versionCode: 517
+    commit: 3.12.6
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/yairm210/Unciv/master/buildSrc/src/main/kotlin/BuildConfig.kt|appCodeNumber
     = (.*)|.|appVersion = "(.*)"
-CurrentVersion: 3.11.17-patch1
-CurrentVersionCode: 506
+CurrentVersion: 3.12.6
+CurrentVersionCode: 517
