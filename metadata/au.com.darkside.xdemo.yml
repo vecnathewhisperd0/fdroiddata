@@ -56,8 +56,6 @@ Builds:
       - apt-get update || apt-get update
       - apt-get install -y git qemu-user-static gperf flex bison pkg-config build-essential
         cmake meson texinfo doxygen libltdl-dev
-    gradle:
-      - yes
     init:
       - rm -rf ./demo/src/main/jniLibs/mips64/libwm.so
       - rm -rf ./demo/src/main/jniLibs/mips/libwm.so
@@ -66,6 +64,8 @@ Builds:
       - rm -rf ./demo/src/main/jniLibs/armeabi-v7a/libwm.so
       - rm -rf ./demo/src/main/jniLibs/x86/libwm.so
       - rm -rf ./demo/src/main/jniLibs/x86_64/libwm.so
+    gradle:
+      - yes
     prebuild:
       - git clone https://github.com/nwrkbiz/static-build
       - cd ./static-build
