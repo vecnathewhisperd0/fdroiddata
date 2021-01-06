@@ -79,7 +79,9 @@ Builds:
     build:
       - cd ./static-build
       - make
-      - cd ./unused_packages/009_flwm/
+      - cd ./unused_packages/
+      - ln -s ../packages/GENERAL.mk
+      - cd ./009_flwm/
       - make
       - cd ../../../../
       - cp -rf ./static-build/3rdParty/linux_mips64el_musl/bin/flwm ./src/main/jniLibs/mips64/libwm.so
