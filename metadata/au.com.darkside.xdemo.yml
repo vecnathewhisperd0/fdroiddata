@@ -57,6 +57,7 @@ Builds:
       - apt-get update || apt-get update
       - apt-get install -y git qemu-user-static gperf flex bison pkg-config build-essential
         cmake meson texinfo doxygen libltdl-dev
+    timeout: 14400
     init:
       - rm -rf ./src/main/jniLibs/mips64/libwm.so
       - rm -rf ./src/main/jniLibs/mips/libwm.so
