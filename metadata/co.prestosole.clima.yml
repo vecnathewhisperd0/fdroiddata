@@ -5,16 +5,13 @@ Categories:
 License: BSD-3-Clause
 AuthorName: Yzan Alather
 AuthorEmail: yalather70@protonmail.com
-SourceCode: https://github.com/PrestoSole/clima
-IssueTracker: https://github.com/PrestoSole/clima/issues
+SourceCode: https://github.com/CentaurusApps/clima
+IssueTracker: https://github.com/CentaurusApps/clima/pulls
 
-<<<<<<< HEAD
-=======
 AutoName: Clima
 
->>>>>>> dd3d05178a73403b7343071f340d4e580681fed9
 RepoType: git
-Repo: https://github.com/PrestoSole/clima
+Repo: https://github.com/CentaurusApps/clima
 
 Builds:
   - versionName: '1.0'
