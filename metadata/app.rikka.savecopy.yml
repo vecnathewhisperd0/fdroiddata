@@ -1,0 +1,45 @@
+License: Unknown
+AuthorName: "['Rikka', 'vvb2060']"
+SourceCode: https://github.com/RikkaApps/SaveCopy
+IssueTracker: https://github.com/RikkaApps/SaveCopy/issues
+Categories:
+  - System
+
+AutoName: Save Copy
+Summary: Save files from bad apps which only allow users to open files.
+Description:
+  <p>One of the biggest changes of Android 11 is that all apps targeting 30 can
+  only access its' private folder. Google Play will force new/updated apps to
+  upgrade their target API one year later, so apps must make changes.</p>
+  <p>However, the problem is, some app does not do this correctly. For example,
+  some chat apps, save <strong>files users received from other users</strong> to
+  their <strong>private folder</strong> (<code>Android/data</code>) and does not
+  provide options to copy/move these files. In Android 11, no one except the app
+  itself can access those files, so users have to open those apps every time.
+  This is very inconvenient and unreasonable. At least those apps allow the user
+  to open files with other apps. So we have a chance.</p> <p>This app does a
+  very simple thing, handle <code>ACTION_VIEW</code>, and save the file to the
+  <code>Download</code> folder.</p>
+
+RepoType: git
+Repo: https://github.com/RikkaApps/SaveCopy
+
+Builds:
+  - versionName: 1.3.1
+    versionCode: 29
+    commit: 3adb90e66ff22f2f957271215c6bd927e7c5878d
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      sed -i -e "s/rootProject.ext.versionCode/$$VERCODE$$/g" -e
+      "s/rootProject.ext.versionName/'$$VERSION$$'/g" build.gradle
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: HTTP
+UpdateCheckData:
+  https://github.com/RikkaApps/SaveCopy|<strong>(\d+)</strong>\n\s*<span
+  aria-label="Commits on
+  master"|https://github.com/RikkaApps/SaveCopy/releases/latest|/tag/(v[\d.]+)"
+CurrentVersion: v1.3.1
+CurrentVersionCode: 29
