@@ -14,10 +14,6 @@ RepoType: git
 Repo: https://github.com/CentaurusApps/clima
 
 Builds:
-  - versionName: '1.0'
-    versionCode: 3
-    commit: v1.0
-  
   - versionName: '1.1'
     versionCode: 4
     commit: v1.1
