@@ -75,6 +75,17 @@ Builds:
       - ln -s ./build_settings/linux_aarch64_musl.mk
       - ln -s ./build_settings/linux_x86_64_musl.mk
       - ln -s ./build_settings/linux_i686_musl.mk
+      - rm -rf ./packages/009_mathgl
+      - rm -rf ./packages/008_sdl2
+      - rm -rf ./packages/008_doxygen
+      - rm -rf ./packages/006_avahi
+      - rm -rf ./packages/005_opencv
+      - rm -rf ./packages/005_dlib
+      - rm -rf ./packages/003_mlpack
+      - rm -rf ./packages/003_libssh
+      - rm -rf ./packages/002_sndfile
+      - rm -rf ./packages/000_leveldb
+      - rm -rf ./packages/000_googletest
       - cd ..
     build:
       - cd ./static-build
