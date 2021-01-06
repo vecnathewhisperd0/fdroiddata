@@ -44,7 +44,7 @@ Description: |-
     * Optionally forward ports, also to external addresses
     * Optionally notify when an application accesses the internet
     * Optionally record network usage per application per address
-    * Optionally [https://github.com/M66B/NetGuard/blob/master/ADBLOCKING.md block ads using a hosts file]
+    * Optionally <a href="https://github.com/M66B/NetGuard/blob/master/ADBLOCKING.md">block ads using a hosts file</a>
     * Material design theme with light and dark theme
 
     '''PRO features:'''
@@ -61,13 +61,13 @@ Description: |-
     marcel+netguard@faircode.eu
 
     If you like to help people less fluent in English, you can help translate
-    NetGuard in your language on [https://crowdin.com/project/netguard/ Crowdin]
+    NetGuard in your language on <a href="https://crowdin.com/project/netguard/">Crowdin</a>
 
     All required permissions are described
-    [https://github.com/M66B/NetGuard/blob/master/FAQ.md#FAQ42 here]
+    <a href="https://github.com/M66B/NetGuard/blob/master/FAQ.md#FAQ42">here</a>
 
     Get answers to frequently asked questions
-    [https://github.com/M66B/NetGuard/blob/master/FAQ.md here]
+    <a href="https://github.com/M66B/NetGuard/blob/master/FAQ.md">here</a>
 
 RepoType: git
 Repo: https://github.com/M66B/NetGuard
@@ -1192,9 +1192,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
     ndk: r21
 
   - versionName: '2.276'
@@ -1203,9 +1201,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
     ndk: r21
 
   - versionName: '2.279'
@@ -1214,12 +1210,100 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
     ndk: r21
+
+  - versionName: '2.280'
+    versionCode: 2020042401
+    commit: '2.280'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21
+
+  - versionName: '2.281'
+    versionCode: 2020051801
+    commit: '2.281'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21
+
+  - versionName: '2.283'
+    versionCode: 2020061401
+    commit: '2.283'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
+
+  - versionName: '2.284'
+    versionCode: 2020070801
+    commit: '2.284'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
+
+  - versionName: '2.285'
+    versionCode: 2020071701
+    commit: '2.285'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
+
+  - versionName: '2.286'
+    versionCode: 2020081601
+    commit: '2.286'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
+
+  - versionName: '2.287'
+    versionCode: 2020081801
+    commit: '2.287'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
+
+  - versionName: '2.288'
+    versionCode: 2020082601
+    commit: '2.288'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
+
+  - versionName: '2.289'
+    versionCode: 2020100301
+    commit: '2.289'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
+
+  - versionName: '2.290'
+    versionCode: 2020120301
+    commit: '2.290'
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore/d' -e '/signingConfigs/d' build.gradle
+    ndk: r21d
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: '2.279'
-CurrentVersionCode: 2020041901
+CurrentVersion: '2.290'
+CurrentVersionCode: 2020120301

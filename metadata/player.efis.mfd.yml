@@ -1,7 +1,7 @@
 Categories:
   - Navigation
 License: Apache-2.0
-WebSite: http://members.iinet.net.au/~ninelima/efis/
+WebSite: http://ninelima.org/efis/
 SourceCode: https://gitlab.com/ninelima/kwikEFIS
 IssueTracker: https://gitlab.com/ninelima/kwikEFIS/issues
 Changelog: https://gitlab.com/ninelima/kwikEFIS/blob/HEAD/CHANGELOG.md
@@ -9,9 +9,9 @@ Bitcoin: 1KKWRF25NwVgNdankr1vBphtkLbX766Ee1
 
 AutoName: Kwik DMAP
 Description: |-
-    Kwik Moving Map is a companion application to the EFIS. It provides  situational
-    awareness and and navigation functionality. EFIS can optionally integrate with the
-    Stratux ADS-B/AHRS to provide real-time traffic overlay.
+    Kwik Moving Map is a companion application to the EFIS. It provides situational
+    awareness and navigation functionality. All Kwik applications can optionally
+    integrate with the Stratux ADS-B/AHRS to provide real-time traffic overlay.
 
     '''Synthetic Vision'''
 
@@ -19,11 +19,11 @@ Description: |-
     data. If enabled, it also allows for some terrain collision detection. The
     required terrain data packages are available via F-Droid, see:
 
-    * [[player.efis.data.usa.can]]
-    * [[player.efis.data.eur.rus]]
-    * [[player.efis.data.sah.jap]]
-    * [[player.efis.data.zar.aus]]
-    * [[player.efis.data.pan.arg]]
+    * <a href="https://f-droid.org/en/packages/player.efis.data.usa.can/">North America, Canada</a>
+    * <a href="https://f-droid.org/en/packages/player.efis.data.eur.rus/">Europe, Russia</a>
+    * <a href="https://f-droid.org/en/packages/player.efis.data.sah.jap/">Sahara / North Africa, India / Indonesia, Japan</a>
+    * <a href="https://f-droid.org/en/packages/player.efis.data.eur.rus/">Southern Africa, Australia / New Zealand</a>
+    * <a href="https://f-droid.org/en/packages/player.efis.data.pan.arg/">South America</a>
 
     '''Airspace'''
 
@@ -38,7 +38,7 @@ Description: |-
     '''ADS-B/AHRS'''
 
     In addition to the internal sensors, a low cost Stratux ADS-B/AHRS can be
-    selected as the input source. See [http://www.stratux.me/ Stratux ADS-B] for
+    selected as the input source. See <a href="http://www.stratux.me/">Stratux ADS-B</a> for
     more information.
 
     '''Simulator'''
@@ -50,15 +50,15 @@ Description: |-
 
     '''Companion Applications'''
 
-    [[player.efis.pfd]] is the primary flight display
+    <a href="https://f-droid.org/en/packages/player.efis.pfd/">Kwik EFIS</a> is the primary flight display
     application of the EFIS. It provides a modern attitude and flight
     instrument display.
 
-    [[player.efis.cfd]] is a composite flight display
+    <a href="https://f-droid.org/en/packages/player.efis.cfd/">Kwik COMP</a> is a composite flight display
     application combining the moving map and the primary flight display. It provides
     both displays on a single device.
 
-    [http://members.iinet.net.au/~ninelima/efis/gallery.html '''Screenshots''']
+    <a href="http://ninelima.org/efis/installation.html">Help</a>
 
 RepoType: git
 Repo: https://gitlab.com/ninelima/kwikEFIS.git
@@ -197,7 +197,42 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '5.1'
+    versionCode: 35
+    commit: DMAP_5.1
+    subdir: mfd
+    gradle:
+      - yes
+
+  - versionName: '5.2'
+    versionCode: 36
+    commit: DMAP_5.2
+    subdir: mfd
+    gradle:
+      - yes
+
+  - versionName: '5.3'
+    versionCode: 37
+    commit: DMAP_5.3
+    subdir: mfd
+    gradle:
+      - yes
+
+  - versionName: '6.0'
+    versionCode: 38
+    commit: DMAP_6.0
+    subdir: mfd
+    gradle:
+      - yes
+
+  - versionName: '6.1'
+    versionCode: 39
+    commit: DMAP_6.1
+    subdir: mfd
+    gradle:
+      - yes
+
 AutoUpdateMode: Version DMAP_%v
 UpdateCheckMode: Tags ^DMAP
-CurrentVersion: '5.0'
-CurrentVersionCode: 34
+CurrentVersion: '6.1'
+CurrentVersionCode: 39

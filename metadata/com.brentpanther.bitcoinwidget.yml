@@ -439,7 +439,56 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 7.1.2
+    versionCode: 240
+    commit: btc-7.1.2
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: '7.2'
+    versionCode: 242
+    commit: btc-7.2
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 7.2.1
+    versionCode: 244
+    commit: btc-7.2.1
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: '7.3'
+    versionCode: 250
+    commit: btc-7.3
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 7.3.2
+    versionCode: 254
+    commit: btc-7.3.2
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 7.3.3
+    versionCode: 255
+    commit: btc-7.3.3
+    subdir: bitcoin
+    gradle:
+      - yes
+
+  - versionName: 7.3.4
+    versionCode: 256
+    commit: btc-7.3.4
+    subdir: bitcoin
+    gradle:
+      - yes
+
 AutoUpdateMode: Version btc-%v
 UpdateCheckMode: Tags
-CurrentVersion: 6.9.10
-CurrentVersionCode: 223
+CurrentVersion: 7.3.4
+CurrentVersionCode: 256

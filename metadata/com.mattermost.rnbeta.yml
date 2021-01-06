@@ -306,9 +306,9 @@ Builds:
     scandelete:
       - node_modules
 
-  - versionName: 1.28.0
-    versionCode: 268
-    commit: v1.28.0
+  - versionName: 1.31.2
+    versionCode: 296
+    commit: v1.31.2
     subdir: android/app/
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
@@ -319,6 +319,7 @@ Builds:
     init:
       - sed -i -e '/react-native-youtube/d' ../../package.json build.gradle ../settings.gradle
         ../../app/components/post_body_additional_content/post_body_additional_content.js
+      - rm ../../patches/react-native-youtube+2.0.0.patch
       - make -C ../.. pre-run
     gradle:
       - yes
@@ -360,9 +361,10 @@ Builds:
     scandelete:
       - node_modules
 
-  - versionName: 1.30.0
-    versionCode: 285
-    commit: v1.30.0
+  - versionName: 1.32.2
+    versionCode: 307
+    disable: fails to build
+    commit: v1.32.2
     subdir: android/app/
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
@@ -373,11 +375,12 @@ Builds:
     init:
       - sed -i -e '/react-native-youtube/d' ../../package.json build.gradle ../settings.gradle
         ../../app/components/post_body_additional_content/post_body_additional_content.js
+      - rm ../../patches/react-native-youtube*
       - make -C ../.. pre-run
     gradle:
       - yes
     rm:
-      - node_modules/react-native-notifications/android/app/src/main/java/com/wix/reactnativenotifications/gcm/
+      - node_modules/react-native-notifications/android/app/src/main/java/com/wix/reactnativenotifications/fcm/
       - node_modules/xdate/build/compiler.jar
       - node_modules/socketcluster/
       - node_modules/shaka-player/third_party/closure/compiler.jar
@@ -424,5 +427,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 1.30.0
-CurrentVersionCode: 285
+CurrentVersion: 1.38.1
+CurrentVersionCode: 338

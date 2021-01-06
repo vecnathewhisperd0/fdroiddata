@@ -25,7 +25,28 @@ Builds:
       - yes
     output: app/build/outputs/apk/release/app-release-unsigned.apk
 
+  - versionName: '0.41'
+    versionCode: 27
+    commit: v0.41
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/app-release-unsigned.apk
+
+  - versionName: '0.42'
+    versionCode: 28
+    commit: v0.42
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/app-release-unsigned.apk
+
+  - versionName: '0.50'
+    versionCode: 29
+    commit: v0.50
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/app-release-unsigned.apk
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '0.40'
-CurrentVersionCode: 26
+CurrentVersion: '0.50'
+CurrentVersionCode: 29

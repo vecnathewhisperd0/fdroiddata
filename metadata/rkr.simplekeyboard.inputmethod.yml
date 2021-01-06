@@ -231,9 +231,57 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+
+  - versionName: '3.20'
+    versionCode: 70
+    commit: '70'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.21'
+    versionCode: 71
+    commit: '71'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.22'
+    versionCode: 72
+    commit: '72'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.23'
+    versionCode: 73
+    commit: '73'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.24'
+    versionCode: 74
+    commit: '74'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.0'
+    versionCode: 75
+    commit: '75'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.1'
+    versionCode: 76
+    commit: '76'
+    subdir: app
+    gradle:
+      - yes
 
 AutoUpdateMode: Version %c
 UpdateCheckMode: Tags
-CurrentVersion: '3.19'
-CurrentVersionCode: 69
+CurrentVersion: '4.1'
+CurrentVersionCode: 76

@@ -4,6 +4,7 @@ License: GPL-2.0-only
 WebSite: http://ics-openvpn.blinkt.de/
 SourceCode: https://github.com/schwabe/ics-openvpn
 IssueTracker: https://github.com/schwabe/ics-openvpn/issues
+Translation: https://crowdin.com/project/ics-openvpn
 
 AutoName: OpenVPN for Android
 Description: |-
@@ -20,6 +21,7 @@ Builds:
     commit: unknown - see disabled
     buildjni:
       - yes
+    ndk: r12b
 
   - versionName: 0.5.22
     versionCode: 49
@@ -27,6 +29,7 @@ Builds:
     commit: unknown - see disabled
     buildjni:
       - yes
+    ndk: r12b
 
   - versionName: 0.5.24
     versionCode: 51
@@ -334,8 +337,8 @@ Builds:
     subdir: main
     submodules: true
     sudo:
-      - apt update
-      - apt install -y swig/jessie-backports
+      - apt-get update || apt-get update
+      - apt-get install -y swig/jessie-backports
     gradle:
       - normal
     rm:
@@ -390,17 +393,60 @@ Builds:
       - main/src/main/cpp/mbedtls/tests
       - main/src/main/cpp/mbedtls/crypto/tests
       - main/src/main/cpp/openvpn3/test/unittests
-    prebuild:
-      - sed -i -e '/signingConfigs.getByName/d' -e 's/isEnable\ =\ true/isEnable\
+    prebuild: sed -i -e '/signingConfigs.getByName/d' -e 's/isEnable\ =\ true/isEnable\
         =\ false/' build.gradle.kts
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    ndk: r19c
+
+  - versionName: 0.7.17a
+    versionCode: 171
+    commit: v0.7.17a
+    subdir: main
+    submodules: true
+    gradle:
+      - ui
+    rm:
+      - main/src/main/cpp/mbedtls/programs/fuzz
+      - main/src/main/cpp/mbedtls/tests
+      - main/src/main/cpp/openvpn3/test/unittests
+    prebuild: sed -i -e '/signingConfigs.getByName/d' -e 's/isEnable\ =\ true/isEnable\
+        =\ false/' build.gradle.kts
+    ndk: r19c
+
+  - versionName: 0.7.18
+    versionCode: 172
+    commit: v0.7.18
+    subdir: main
+    submodules: true
+    gradle:
+      - ui
+    rm:
+      - main/src/main/cpp/mbedtls/programs/fuzz
+      - main/src/main/cpp/mbedtls/tests
+      - main/src/main/cpp/openvpn3/test/unittests
+    prebuild: sed -i -e '/signingConfigs.getByName/d' -e 's/isEnable\ =\ true/isEnable\
+        =\ false/' build.gradle.kts
+    ndk: r19c
+
+  - versionName: 0.7.21
+    versionCode: 175
+    commit: v0.7.21
+    subdir: main
+    submodules: true
+    gradle:
+      - ui
+    rm:
+      - main/src/main/cpp/mbedtls/programs/fuzz
+      - main/src/main/cpp/mbedtls/tests
+      - main/src/main/cpp/openvpn3/test/unittests
+    prebuild: sed -i -e '/signingConfigs.getByName/d' -e 's/isEnable\ =\ true/isEnable\
+        =\ false/' build.gradle.kts
     ndk: r19c
 
 MaintainerNotes: |-
     Build instructions:
     https://github.com/schwabe/ics-openvpn/blob/master/.travis.yml
 
-AutoUpdateMode: Version v%V
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.7.15
-CurrentVersionCode: 168
+CurrentVersion: 0.7.21
+CurrentVersionCode: 175

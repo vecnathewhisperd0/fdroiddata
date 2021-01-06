@@ -265,7 +265,56 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.0.4
+    versionCode: 41
+    commit: v2.0.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.5
+    versionCode: 42
+    commit: v2.0.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.6
+    versionCode: 43
+    commit: v2.0.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.7
+    versionCode: 44
+    commit: v2.0.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.8
+    versionCode: 45
+    commit: v2.0.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.9
+    versionCode: 46
+    commit: v2.0.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.10
+    versionCode: 47
+    commit: v2.0.10
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.3
-CurrentVersionCode: 40
+CurrentVersion: 2.0.10
+CurrentVersionCode: 47

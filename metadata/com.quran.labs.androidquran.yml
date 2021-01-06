@@ -10,9 +10,9 @@ Description: |-
     A simple (madani based) qu'ran app for android. You are prompted to download the
     data at startup.
 
-    Translation, tafsir and Arabic data come from [http://tanzil.net tanzil] and
+    Translation, tafsir and Arabic data come from <a href="http://tanzil.net">tanzil</a> and
     King Saud University. Audio from Every Ayah. Images from
-    [https://github.com/quran/quran.com-images quran images project].
+    <a href="https://github.com/quran/quran.com-images">quran images project</a>.
 
 RepoType: git
 Repo: https://github.com/ahmedre/quran_android.git
@@ -44,5 +44,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 3.0.1
-CurrentVersionCode: 3010
+CurrentVersion: 3.0.4
+CurrentVersionCode: 3041

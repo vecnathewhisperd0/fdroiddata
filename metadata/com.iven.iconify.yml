@@ -50,7 +50,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.8.5
+    versionCode: 43
+    commit: v1.8.5
+    subdir: project/app
+    gradle:
+      - yes
+
+  - versionName: 1.8.6
+    versionCode: 44
+    commit: v1.8.6
+    subdir: project/app
+    gradle:
+      - yes
+
+  - versionName: 1.8.7
+    versionCode: 45
+    commit: v1.8.7
+    subdir: project/app
+    gradle:
+      - yes
+
+  - versionName: 1.8.8
+    versionCode: 46
+    commit: v1.8.8
+    subdir: project/app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.4
-CurrentVersionCode: 42
+CurrentVersion: 1.8.8
+CurrentVersionCode: 46

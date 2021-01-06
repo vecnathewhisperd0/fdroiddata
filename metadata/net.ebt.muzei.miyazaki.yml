@@ -10,8 +10,8 @@ Changelog: https://github.com/eboudrant/net.ebt.muzei.miyazaki/releases
 
 AutoName: Muzei Ghibli
 Description: |-
-    Show the pictures from [https://imgur.com/a/rX8ws Studio Ghibli] in
-    [[net.nurik.roman.muzei]].
+    Show the pictures from <a href="https://imgur.com/a/rX8ws">Studio Ghibli</a> in
+    https://f-droid.org/packages/net.nurik.roman.muzei.
 
 RepoType: git
 Repo: https://github.com/eboudrant/net.ebt.muzei.miyazaki
@@ -61,5 +61,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: '3.0'
-CurrentVersionCode: 301
+CurrentVersion: '3.2'
+CurrentVersionCode: 321

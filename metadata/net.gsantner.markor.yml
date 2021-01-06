@@ -583,7 +583,63 @@ Builds:
     gradle:
       - FlavorDefault
 
+  - versionName: 2.2.9
+    versionCode: 112
+    commit: v2.2.9
+    subdir: app
+    gradle:
+      - FlavorDefault
+
+  - versionName: 2.2.10
+    versionCode: 113
+    commit: v2.2.10
+    subdir: app
+    gradle:
+      - FlavorDefault
+
+  - versionName: 2.3.1
+    versionCode: 115
+    commit: v2.3.1
+    subdir: app
+    gradle:
+      - FlavorDefault
+
+  - versionName: 2.3.2
+    versionCode: 116
+    commit: v2.3.2
+    subdir: app
+    gradle:
+      - FlavorDefault
+
+  - versionName: 2.3.3
+    versionCode: 117
+    commit: v2.3.3
+    subdir: app
+    gradle:
+      - FlavorDefault
+
+  - versionName: 2.4.0
+    versionCode: 119
+    commit: v2.4.0
+    subdir: app
+    gradle:
+      - FlavorDefault
+
+  - versionName: 2.4.1
+    versionCode: 120
+    commit: v2.4.1
+    subdir: app
+    gradle:
+      - FlavorDefault
+
+  - versionName: 2.5.0
+    versionCode: 121
+    commit: v2.5.0
+    subdir: app
+    gradle:
+      - FlavorDefault
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.8
-CurrentVersionCode: 111
+CurrentVersion: 2.5.0
+CurrentVersionCode: 121

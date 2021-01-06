@@ -367,12 +367,152 @@ Builds:
       - touch android/key.properties
       - echo 'android.applicationVariants.all { variant -> variant.outputs.all { output
         -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.8.6
+    versionCode: 136
+    disable: fails to build
+    commit: 1.8.6
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.12.13+hotfix.5
+    prebuild:
+      - touch android/key.properties
+      - echo 'android.applicationVariants.all { variant -> variant.outputs.all { output
+        -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.8.7
+    versionCode: 138
+    commit: 1.8.7
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.12.13+hotfix.5
+    prebuild:
+      - touch android/key.properties
+      - echo 'android.applicationVariants.all { variant -> variant.outputs.all { output
+        -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.8.8
+    versionCode: 139
+    commit: 1.8.8
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.12.13+hotfix.5
+    prebuild:
+      - touch android/key.properties
+      - echo 'android.applicationVariants.all { variant -> variant.outputs.all { output
+        -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.8.9
+    versionCode: 141
+    commit: 1.8.9
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.12.13+hotfix.5
+    prebuild:
+      - touch android/key.properties
+      - echo 'android.applicationVariants.all { variant -> variant.outputs.all { output
+        -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.9.1
+    versionCode: 144
+    commit: 1.9.1
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.12.13+hotfix.5
+    prebuild:
+      - touch android/key.properties
+      - echo 'android.applicationVariants.all { variant -> variant.outputs.all { output
+        -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.9.2
+    versionCode: 148
+    commit: 1.9.2
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.12.13+hotfix.5
+    prebuild:
+      - touch android/key.properties
+      - echo 'android.applicationVariants.all { variant -> variant.outputs.all { output
+        -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.9.3
+    versionCode: 149
+    commit: 1.9.3
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.12.13+hotfix.5
+    prebuild:
+      - touch android/key.properties
+      - echo 'android.applicationVariants.all { variant -> variant.outputs.all { output
+        -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.9.4
+    versionCode: 151
+    commit: 1.9.4
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.12.13+hotfix.5
+    prebuild:
+      - touch android/key.properties
+      - echo 'android.applicationVariants.all { variant -> variant.outputs.all { output
+        -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.9.5
+    versionCode: 153
+    commit: 1.9.5
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.12.13+hotfix.5
+    prebuild:
+      - touch android/key.properties
+      - echo 'android.applicationVariants.all { variant -> variant.outputs.all { output
+        -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.9.6
+    versionCode: 155
+    commit: 1.9.6
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.12.13+hotfix.5
+    prebuild:
+      - touch android/key.properties
+      - echo 'android.applicationVariants.all { variant -> variant.outputs.all { output
+        -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter build apk
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.5
-CurrentVersionCode: 134
+CurrentVersion: 1.9.6
+CurrentVersionCode: 155

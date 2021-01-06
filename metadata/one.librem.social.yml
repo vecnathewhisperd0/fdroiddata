@@ -6,7 +6,7 @@ AuthorEmail: feedback@puri.sm
 WebSite: https://librem.one
 SourceCode: https://source.puri.sm/liberty/social/android
 IssueTracker: https://source.puri.sm/liberty/social/android/issues
-Changelog: https://source.puri.sm/liberty/social/android/blob/master/CHANGES.md
+Changelog: https://source.puri.sm/liberty/social/android/blob/master/CHANGELOG.md
 
 AutoName: Librem Social
 
@@ -35,7 +35,14 @@ Builds:
     gradle:
       - blue
 
+  - versionName: 1.4.0
+    versionCode: 1040000
+    commit: 1.4.0
+    subdir: app
+    gradle:
+      - blue
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.3.0
-CurrentVersionCode: 1030000
+CurrentVersion: 1.4.0
+CurrentVersionCode: 1040000

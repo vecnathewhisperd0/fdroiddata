@@ -2328,7 +2328,1279 @@ Builds:
     prebuild: sed -i -e '/keystoreProperties/d' build.gradle
     ndk: r21
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
-CurrentVersion: '1.1117'
-CurrentVersionCode: 1117
+  - versionName: '1.1127'
+    versionCode: 1127
+    commit: '1.1127'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21
+
+  - versionName: '1.1129'
+    versionCode: 1129
+    commit: '1.1129'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21
+
+  - versionName: '1.1143'
+    versionCode: 1143
+    commit: '1.1143'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21
+
+  - versionName: '1.1153'
+    versionCode: 1153
+    commit: '1.1153'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21
+
+  - versionName: '1.1155'
+    versionCode: 1155
+    commit: '1.1155'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21
+
+  - versionName: '1.1157'
+    versionCode: 1157
+    commit: '1.1157'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21
+
+  - versionName: '1.1158'
+    versionCode: 1158
+    commit: '1.1158'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21
+
+  - versionName: '1.1160'
+    versionCode: 1160
+    commit: '1.1160'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21
+
+  - versionName: '1.1166'
+    versionCode: 1166
+    commit: '1.1166'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21
+
+  - versionName: '1.1182'
+    versionCode: 1182
+    commit: '1.1182'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1185'
+    versionCode: 1185
+    commit: '1.1185'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1186'
+    versionCode: 1186
+    commit: '1.1186'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1188'
+    versionCode: 1188
+    commit: '1.1188'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1189'
+    versionCode: 1189
+    commit: '1.1189'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1192'
+    versionCode: 1192
+    commit: '1.1192'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1193'
+    versionCode: 1193
+    commit: '1.1193'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1195'
+    versionCode: 1195
+    commit: '1.1195'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1196'
+    versionCode: 1196
+    commit: '1.1196'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1197'
+    versionCode: 1197
+    commit: '1.1197'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1199'
+    versionCode: 1199
+    commit: '1.1199'
+    subdir: app
+    submodules: true
+    gradle:
+      - full
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1201'
+    versionCode: 1201
+    commit: '1.1201'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1202'
+    versionCode: 1202
+    commit: '1.1202'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1203'
+    versionCode: 1203
+    commit: '1.1203'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1204'
+    versionCode: 1204
+    commit: '1.1204'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1205'
+    versionCode: 1205
+    commit: '1.1205'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21b
+
+  - versionName: '1.1214'
+    versionCode: 1214
+    commit: '1.1214'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1215'
+    versionCode: 1215
+    commit: '1.1215'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1216'
+    versionCode: 1216
+    commit: '1.1216'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1217'
+    versionCode: 1217
+    commit: '1.1217'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1218'
+    versionCode: 1218
+    commit: '1.1218'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1219'
+    versionCode: 1219
+    commit: '1.1219'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1220'
+    versionCode: 1220
+    commit: '1.1220'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1221'
+    versionCode: 1221
+    commit: '1.1221'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1234'
+    versionCode: 1234
+    commit: '1.1234'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1236'
+    versionCode: 1236
+    commit: '1.1236'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1237'
+    versionCode: 1237
+    commit: '1.1237'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1241'
+    versionCode: 1241
+    commit: '1.1241'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1245'
+    versionCode: 1245
+    commit: '1.1245'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1246'
+    versionCode: 1246
+    commit: '1.1246'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1247'
+    versionCode: 1247
+    commit: '1.1247'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1248'
+    versionCode: 1248
+    commit: '1.1248'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1251'
+    versionCode: 1251
+    commit: '1.1251'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1252'
+    versionCode: 1252
+    commit: '1.1252'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1255'
+    versionCode: 1255
+    commit: '1.1255'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1257'
+    versionCode: 1257
+    commit: '1.1257'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1260'
+    versionCode: 1260
+    commit: '1.1260'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1262'
+    versionCode: 1262
+    commit: '1.1262'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1265'
+    versionCode: 1265
+    commit: '1.1265'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1266'
+    versionCode: 1266
+    commit: '1.1266'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1268'
+    versionCode: 1268
+    commit: '1.1268'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1271'
+    versionCode: 1271
+    commit: '1.1271'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1272'
+    versionCode: 1272
+    commit: '1.1272'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1273'
+    versionCode: 1273
+    commit: '1.1273'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1275'
+    versionCode: 1275
+    commit: '1.1275'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1276'
+    versionCode: 1276
+    commit: '1.1276'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1279'
+    versionCode: 1279
+    commit: '1.1279'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1280'
+    versionCode: 1280
+    commit: '1.1280'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1282'
+    versionCode: 1282
+    commit: '1.1282'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1283'
+    versionCode: 1283
+    commit: '1.1283'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1285'
+    versionCode: 1285
+    commit: '1.1285'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1286'
+    versionCode: 1286
+    commit: '1.1286'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1287'
+    versionCode: 1287
+    commit: '1.1287'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1288'
+    versionCode: 1288
+    commit: '1.1288'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1290'
+    versionCode: 1290
+    commit: '1.1290'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1292'
+    versionCode: 1292
+    commit: '1.1292'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1294'
+    versionCode: 1294
+    commit: '1.1294'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1295'
+    versionCode: 1295
+    commit: '1.1295'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1297'
+    versionCode: 1297
+    commit: '1.1297'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1298'
+    versionCode: 1298
+    commit: '1.1298'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1299'
+    versionCode: 1299
+    commit: '1.1299'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1301'
+    versionCode: 1301
+    commit: '1.1301'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1303'
+    versionCode: 1303
+    commit: '1.1303'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1305'
+    versionCode: 1305
+    commit: '1.1305'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1307'
+    versionCode: 1307
+    commit: '1.1307'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1309'
+    versionCode: 1309
+    commit: '1.1309'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1311'
+    versionCode: 1311
+    commit: '1.1311'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1314'
+    versionCode: 1314
+    commit: '1.1314'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1315'
+    versionCode: 1315
+    commit: '1.1315'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1316'
+    versionCode: 1316
+    commit: '1.1316'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1317'
+    versionCode: 1317
+    commit: '1.1317'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1319'
+    versionCode: 1319
+    commit: '1.1319'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1321'
+    versionCode: 1321
+    commit: '1.1321'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1323'
+    versionCode: 1323
+    commit: '1.1323'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1326'
+    versionCode: 1326
+    commit: '1.1326'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1328'
+    versionCode: 1328
+    commit: '1.1328'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1331'
+    versionCode: 1331
+    commit: '1.1331'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1334'
+    versionCode: 1334
+    commit: '1.1334'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1336'
+    versionCode: 1336
+    commit: '1.1336'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1337'
+    versionCode: 1337
+    commit: '1.1337'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1339'
+    versionCode: 1339
+    commit: '1.1339'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1340'
+    versionCode: 1340
+    commit: '1.1340'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1341'
+    versionCode: 1341
+    commit: '1.1341'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1344'
+    versionCode: 1344
+    commit: '1.1344'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1345'
+    versionCode: 1345
+    commit: '1.1345'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1346'
+    versionCode: 1346
+    commit: '1.1346'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1347'
+    versionCode: 1347
+    commit: '1.1347'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1349'
+    versionCode: 1349
+    commit: '1.1349'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1350'
+    versionCode: 1350
+    commit: '1.1350'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1352'
+    versionCode: 1352
+    commit: '1.1352'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1354'
+    versionCode: 1354
+    commit: '1.1354'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1355'
+    versionCode: 1355
+    commit: '1.1355'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1356'
+    versionCode: 1356
+    commit: '1.1356'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1357'
+    versionCode: 1357
+    commit: '1.1357'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1358'
+    versionCode: 1358
+    commit: '1.1358'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1361'
+    versionCode: 1361
+    commit: '1.1361'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1362'
+    versionCode: 1362
+    commit: '1.1362'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1376'
+    versionCode: 1376
+    commit: '1.1376'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1385'
+    versionCode: 1385
+    commit: '1.1385'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1390'
+    versionCode: 1390
+    commit: '1.1390'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1393'
+    versionCode: 1393
+    commit: '1.1393'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1400'
+    versionCode: 1400
+    commit: '1.1400'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1401'
+    versionCode: 1401
+    commit: '1.1401'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1403'
+    versionCode: 1403
+    commit: '1.1403'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1407'
+    versionCode: 1407
+    commit: '1.1407'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1408'
+    versionCode: 1408
+    commit: '1.1408'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1409'
+    versionCode: 1409
+    commit: '1.1409'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1410'
+    versionCode: 1410
+    commit: '1.1410'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1412'
+    versionCode: 1412
+    commit: '1.1412'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1417'
+    versionCode: 1417
+    commit: '1.1417'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1420'
+    versionCode: 1420
+    commit: '1.1420'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1424'
+    versionCode: 1424
+    commit: '1.1424'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1426'
+    versionCode: 1426
+    commit: '1.1426'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1429'
+    versionCode: 1429
+    commit: '1.1429'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1431'
+    versionCode: 1431
+    commit: '1.1431'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1437'
+    versionCode: 1437
+    commit: '1.1437'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1439'
+    versionCode: 1439
+    commit: '1.1439'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1442'
+    versionCode: 1442
+    commit: '1.1442'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+MaintainerNotes: Dynamic versionName and version code, so no autoupdates anymore.
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: '1.1442'
+CurrentVersionCode: 1442

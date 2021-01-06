@@ -12,7 +12,7 @@ Changelog: https://github.com/SecUSo/privacy-friendly-sudoku/blob/HEAD/CHANGELOG
 AutoName: Sudoku
 Description: |-
     Play the Sudoku logic puzzle. The app belongs to the group of Privacy Friendly
-    Apps developed at the [https://secuso.org/ SECUSO research group] of Technische
+    Apps developed at the <a href="https://secuso.org/">SECUSO research group</a> of Technische
     Universitaet Darmstadt. It does not require any permission and relinquishes
     advertisement and tracking mechanisms.
 
@@ -86,7 +86,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.2.1
+    versionCode: 8
+    commit: v2.2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.0.0
+    versionCode: 9
+    commit: v3.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.0.1
+    versionCode: 10
+    commit: v3.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.0.2
+    versionCode: 11
+    commit: v3.0.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.0
-CurrentVersionCode: 7
+CurrentVersion: 3.0.2
+CurrentVersionCode: 11

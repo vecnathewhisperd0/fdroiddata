@@ -4,19 +4,20 @@ License: BSD-3-Clause
 AuthorName: Charles Combes
 AuthorEmail: brodeur.levrai@gmail.com
 WebSite: https://github.com/brodeurlv/fastnfitness
+SourceCode: https://github.com/brodeurlv/fastnfitness
 IssueTracker: https://github.com/brodeurlv/fastnfitness/issues
 Changelog: https://github.com/brodeurlv/fastnfitness/blob/HEAD/CHANGELOG.md
 
 AutoName: Fast N Fitness
 Description: |-
-    Fast N Fitness allows you to track your workout quickly and easily. It is
+    Fast N Fitness allows you to track your workouts quickly and easily. It is
     highly customizable and supports cardio and power lifting workouts.
 
-    You can create as many machine as you want with the name you want. Multiple
+    You can create as many machines as you want with the names you want. Multiple
     graphics will show your progress and your body evolution.
 
-    Don’t leave the app to get your music. A music player is integrated with
-    the app.
+    Don’t leave the app to get your music; a music player is integrated into
+    the app!
 
 RepoType: git
 Repo: https://github.com/brodeurlv/fastnfitness
@@ -93,7 +94,56 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.19.0
+    versionCode: 44
+    commit: 0.19.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.19.0.1
+    versionCode: 45
+    commit: 0.19.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.19.1
+    versionCode: 46
+    commit: 0.19.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.19.2
+    versionCode: 47
+    commit: 0.19.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.19.3
+    versionCode: 48
+    commit: 0.19.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.19.3.1
+    versionCode: 49
+    commit: 0.19.3.1bis
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.19.4
+    versionCode: 50
+    commit: 0.19.4
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.18.11
-CurrentVersionCode: 43
+CurrentVersion: 0.19.4
+CurrentVersionCode: 50

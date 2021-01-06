@@ -303,7 +303,35 @@ Builds:
     gradle:
       - prod
 
+  - versionName: '2.13'
+    versionCode: 709
+    commit: v2.13
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 2.13.1
+    versionCode: 775
+    commit: v2.13.1
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 2.13.2
+    versionCode: 791
+    commit: v2.13.2
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 3.0.0
+    versionCode: 876
+    commit: v3.0.0
+    subdir: app
+    gradle:
+      - prod
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.12.3
-CurrentVersionCode: 561
+CurrentVersion: 3.0.0
+CurrentVersionCode: 876

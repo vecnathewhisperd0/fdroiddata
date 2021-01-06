@@ -1,14 +1,14 @@
 Categories:
   - Internet
 License: GPL-3.0-only
-AuthorName: Keyless Palace
+AuthorName: Team Tusky
 AuthorEmail: tusky@connyduck.at
 WebSite: https://tusky.app/
 SourceCode: https://github.com/tuskyapp/Tusky
 IssueTracker: https://github.com/tuskyapp/Tusky/issues
 Translation: https://weblate.tusky.app/projects/tusky/
 Changelog: https://github.com/tuskyapp/Tusky/releases
-Donate: https://opencollective.com/tusky
+OpenCollective: tusky
 
 AutoName: Tusky
 
@@ -281,9 +281,65 @@ Builds:
     gradle:
       - blue
 
+  - versionName: 11.0 beta 1
+    versionCode: 71
+    commit: v11.0-beta.1
+    subdir: app
+    gradle:
+      - blue
+
+  - versionName: '11.0'
+    versionCode: 72
+    commit: v11.0
+    subdir: app
+    gradle:
+      - blue
+
+  - versionName: 12.0 beta 1
+    versionCode: 73
+    commit: v12.0-beta.1
+    subdir: app
+    gradle:
+      - blue
+
+  - versionName: '12.0'
+    versionCode: 74
+    commit: v12.0
+    subdir: app
+    gradle:
+      - blue
+
+  - versionName: '12.1'
+    versionCode: 75
+    commit: v12.1
+    subdir: app
+    gradle:
+      - blue
+
+  - versionName: 13.0 beta 1
+    versionCode: 76
+    commit: v13.0-beta.1
+    subdir: app
+    gradle:
+      - blue
+
+  - versionName: '13.0'
+    versionCode: 77
+    commit: v13.0
+    subdir: app
+    gradle:
+      - blue
+
+  - versionName: '13.1'
+    versionCode: 78
+    commit: v13.1
+    subdir: app
+    gradle:
+      - blue
+
 MaintainerNotes: Remove AUM as versionName gets an extra erroneous `-` added
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: '10.0'
-CurrentVersionCode: 70
+CurrentVersion: '13.1'
+CurrentVersionCode: 78

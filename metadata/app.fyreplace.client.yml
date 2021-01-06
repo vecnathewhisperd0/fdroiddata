@@ -228,7 +228,96 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.8.7
+    versionCode: 8007
+    commit: v0.8.7
+    subdir: app
+    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
+  - versionName: 0.8.8
+    versionCode: 8008
+    commit: v0.8.8
+    subdir: app
+    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
+  - versionName: 0.8.9
+    versionCode: 8009
+    commit: v0.8.9
+    subdir: app
+    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
+  - versionName: 0.8.10
+    versionCode: 8010
+    commit: v0.8.10
+    subdir: app
+    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
+  - versionName: 0.8.12
+    versionCode: 8012
+    commit: v0.8.12
+    subdir: app
+    init: sed -i='' 's/gradle-.*-all/gradle-5.6.4-all/' ../gradle/wrapper/gradle-wrapper.properties
+    gradle:
+      - yes
+
+  - versionName: 0.8.13
+    versionCode: 8013
+    commit: v0.8.13
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.14
+    versionCode: 8014
+    commit: v0.8.14
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.15
+    versionCode: 8015
+    commit: v0.8.15
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.16
+    versionCode: 8016
+    commit: v0.8.16
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.17
+    versionCode: 8017
+    commit: v0.8.17
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.0
+    versionCode: 9000
+    commit: v0.9.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.9.1
+    versionCode: 9001
+    commit: v0.9.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.8.6
-CurrentVersionCode: 8006
+CurrentVersion: 0.9.1
+CurrentVersionCode: 9001

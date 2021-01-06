@@ -52,7 +52,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.2.0
+    versionCode: 26010200
+    commit: v1.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.0
+    versionCode: 26010400
+    commit: v1.4.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.2
-CurrentVersionCode: 26010102
+CurrentVersion: 1.4.0
+CurrentVersionCode: 26010400

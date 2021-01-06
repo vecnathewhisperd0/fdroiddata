@@ -9,7 +9,7 @@ IssueTracker: https://github.com/OSRSHelper/OSRSHelper/issues
 
 AutoName: OSRS Helper
 Description: |-
-    View stats of your [http://oldschool.runescape.com/ OldSchool Runescape]
+    View stats of your <a href="http://oldschool.runescape.com/">OldSchool Runescape</a>
     character.
 
     Do you sometimes feel the urgent need to look up your total level or your daily
@@ -97,5 +97,5 @@ MaintainerNotes: Contains crashlytics since at least 1.6.2.
 
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
-CurrentVersion: 2.0.12
-CurrentVersionCode: 42
+CurrentVersion: 3.0.3
+CurrentVersionCode: 48

@@ -20,14 +20,13 @@ Description: |-
 
     * collect data from the device sensors
     * control music playing on your android device
-    * see the weather (no additional app needed on LineageOS or Omnirom, on other ROMS [[ru.gelin.android.weather.notification]] is needed)
-    * get directions (e.g. by using [[net.osmand.plus]])
+    * see the weather (no additional app needed on LineageOS or Omnirom, on other ROMS https://f-droid.org/packages/ru.gelin.android.weather.notification is needed)
+    * get directions (e.g. by using https://f-droid.org/packages/net.osmand.plus)
     * sync the workouts GPS tracks with phone (e.g. using the embedded GPS of Amazfit bip)
 
     Gadgetbridge is under active development, for an up to date list of supported
     devices and an overview of current features, please refer to the
-    [https://codeberg.org/Freeyourgadget/Gadgetbridge/src/branch/master/README.md
-    README].
+    <a href="https://codeberg.org/Freeyourgadget/Gadgetbridge/src/branch/master/README.md">README</a>.
 
 RepoType: git
 Repo: https://codeberg.org/Freeyourgadget/Gadgetbridge.git
@@ -1188,7 +1187,98 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.44.0
+    versionCode: 173
+    commit: 0.44.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.44.1
+    versionCode: 174
+    commit: 0.44.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.44.2
+    versionCode: 175
+    commit: 0.44.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.45.0
+    versionCode: 176
+    commit: 0.45.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.45.1
+    versionCode: 177
+    commit: 0.45.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.46.0
+    versionCode: 178
+    commit: 0.46.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.47.0
+    versionCode: 179
+    commit: 0.47.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.47.1
+    versionCode: 180
+    commit: 0.47.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.47.2
+    versionCode: 181
+    commit: 0.47.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.48.0
+    versionCode: 182
+    commit: 0.48.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.49.0
+    versionCode: 183
+    commit: 0.49.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.50.0
+    versionCode: 184
+    commit: 0.50.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.51.0
+    versionCode: 185
+    commit: 0.51.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.43.3
-CurrentVersionCode: 172
+CurrentVersion: 0.51.0
+CurrentVersionCode: 185

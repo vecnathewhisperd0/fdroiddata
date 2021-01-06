@@ -5,6 +5,7 @@ AuthorName: Evgeniy (aka zhenyolka)
 AuthorEmail: zhenyolka@gmail.com
 SourceCode: https://github.com/zhenyolka/DPITunnel
 IssueTracker: https://github.com/zhenyolka/DPITunnel/issues
+Changelog: https://github.com/zhenyolka/DPITunnel/releases
 
 AutoName: DPI Tunnel
 
@@ -37,7 +38,6 @@ Builds:
     submodules: true
     gradle:
       - yes
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r20b
 
   - versionName: '2.0'
@@ -47,10 +47,53 @@ Builds:
     submodules: true
     gradle:
       - yes
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
     ndk: r20b
+
+  - versionName: '2.1'
+    versionCode: 10
+    commit: v2.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r20b
+
+  - versionName: '2.2'
+    versionCode: 11
+    commit: v2.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r21b
+
+  - versionName: '3.0'
+    versionCode: 12
+    commit: v3.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/21.1.6352462/21.3.6528147/' build.gradle
+    ndk: r21d
+
+  - versionName: '4.0'
+    versionCode: 13
+    disable: 'ninja: error: libcrypto.a, needed by libdpi-bypass.so, missing and no
+        known rule to make it'
+    commit: v4.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - app/src/main/cpp/openssl/*/lib
+    prebuild:
+      - sed -i -e 's/21.1.6352462/21.3.6528147/' build.gradle
+      - sed -i -e '/kotlin-eap/d' build.gradle ../build.gradle
+    ndk: r21d
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '2.0'
-CurrentVersionCode: 9
+CurrentVersion: '4.0'
+CurrentVersionCode: 13

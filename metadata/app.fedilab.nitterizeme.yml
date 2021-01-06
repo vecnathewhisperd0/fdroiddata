@@ -8,7 +8,7 @@ Translation: https://crowdin.com/project/nitterizeme
 Changelog: https://framagit.org/tom79/nitterizeme/tags
 LiberapayID: '23077'
 
-AutoName: UntrackMe
+AutoName: UntrackMe Lite
 
 RepoType: git
 Repo: https://framagit.org/tom79/nitterizeme.git
@@ -95,7 +95,124 @@ Builds:
     rm:
       - apk
 
+  - versionName: 1.9.0-beta-1
+    versionCode: 15
+    commit: 1.9.0-beta-1
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - apk
+
+  - versionName: 1.9.1
+    versionCode: 17
+    commit: 1.9.1
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
+  - versionName: 1.10.0
+    versionCode: 19
+    commit: 1.10.0
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
+  - versionName: 1.11.0
+    versionCode: 20
+    commit: 1.11.0
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
+  - versionName: 1.12.0
+    versionCode: 21
+    commit: 1.12.0
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
+  - versionName: 1.13.0
+    versionCode: 22
+    commit: 1.13.0
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
+  - versionName: 1.14.0
+    versionCode: 23
+    commit: 1.14.0
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
+  - versionName: 1.15.0
+    versionCode: 24
+    commit: 1.15.0
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
+  - versionName: 1.15.1
+    versionCode: 25
+    commit: 1.15.1
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
+  - versionName: 1.15.2
+    versionCode: 26
+    commit: 1.15.2
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
+  - versionName: 1.16.0
+    versionCode: 27
+    commit: 1.16.0
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
+  - versionName: 1.17.0
+    versionCode: 28
+    commit: 1.17.0
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
+  - versionName: 1.17.1
+    versionCode: 29
+    commit: 1.17.1
+    subdir: app
+    gradle:
+      - fullLinks
+    rm:
+      - apk
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.0
-CurrentVersionCode: 13
+CurrentVersion: 1.17.1
+CurrentVersionCode: 29

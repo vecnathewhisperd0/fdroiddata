@@ -54,7 +54,47 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.4.4
+    versionCode: 27
+    commit: fdroid-v0.4.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.5.1
+    versionCode: 29
+    commit: fdroid-v0.4.5.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/oss.jfrog.org/d' ../build.gradle
+    scanignore:
+      - app/src/main/assets/dictionaries/*.db.gz
+    ndk: r21d
+
+  - versionName: 0.4.5.2
+    versionCode: 30
+    commit: fdroid-v0.4.5.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/oss.jfrog.org/d' ../build.gradle
+    scanignore:
+      - app/src/main/assets/dictionaries/*.db.gz
+    ndk: r21d
+
+  - versionName: 0.4.6
+    versionCode: 31
+    commit: fdroid-v0.4.6
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/oss.jfrog.org/d' ../build.gradle
+    scanignore:
+      - app/src/main/assets/dictionaries/*.db.gz
+    ndk: r21d
+
 AutoUpdateMode: Version fdroid-v%v
 UpdateCheckMode: Tags ^fdroid-v
-CurrentVersion: 0.4.2
-CurrentVersionCode: 25
+CurrentVersion: 0.4.6
+CurrentVersionCode: 31

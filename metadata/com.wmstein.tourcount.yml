@@ -243,7 +243,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 3.2.2
+    versionCode: 322
+    commit: 3.2.2
+    subdir: tourcount
+    gradle:
+      - yes
+
+  - versionName: 3.2.3
+    versionCode: 323
+    commit: 3.2.3
+    subdir: tourcount
+    gradle:
+      - yes
+
+  - versionName: 3.2.4
+    versionCode: 324
+    commit: 3.2.4
+    subdir: tourcount
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.2.1
-CurrentVersionCode: 321
+CurrentVersion: 3.2.4
+CurrentVersionCode: 324

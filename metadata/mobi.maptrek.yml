@@ -80,9 +80,18 @@ Builds:
     gradle:
       - full
       - world
-    ndk: r18b
+    ndk: r21
+
+  - versionName: '2020.09'
+    versionCode: 78
+    commit: '2020.09'
+    subdir: app/
+    gradle:
+      - full
+      - world
+    ndk: r21d
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '2020.04'
-CurrentVersionCode: 77
+CurrentVersion: '2020.09'
+CurrentVersionCode: 78

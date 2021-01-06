@@ -594,7 +594,77 @@ Builds:
       - yes
     prebuild: echo -e '\n' 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
 
-AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.19.2
-CurrentVersionCode: 920
+  - versionName: 0.19.3
+    versionCode: 930
+    commit: v0.19.3
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: echo -e '\n' 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 0.19.4
+    versionCode: 940
+    commit: v0.19.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: echo -e '\n' 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 0.19.5
+    versionCode: 950
+    commit: v0.19.5
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: echo -e '\n' 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 0.19.6
+    versionCode: 951
+    commit: v0.19.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.19.8
+    versionCode: 953
+    commit: v0.19.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.20.0
+    versionCode: 954
+    commit: v0.20.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.20.1
+    versionCode: 955
+    commit: v0.20.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.20.5
+    versionCode: 959
+    disable: verification is broken, see fdroid/fdroidserver#797
+    commit: v0.20.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.20.6
+    versionCode: 960
+    commit: v0.20.6
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 0.20.6
+CurrentVersionCode: 960

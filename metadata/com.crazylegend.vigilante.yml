@@ -1,0 +1,48 @@
+Categories:
+  - Security
+License: GPL-3.0-only
+AuthorName: FunkyMuse
+AuthorWebSite: https://www.funkymuse.dev/
+SourceCode: https://github.com/FunkyMuse/Vigilante
+IssueTracker: https://github.com/FunkyMuse/Vigilante/issues
+Changelog: https://github.com/FunkyMuse/Vigilante/releases
+Donate: https://patreon.com/funkymuse
+
+AutoName: Vigilante
+
+RepoType: git
+Repo: https://github.com/FunkyMuse/Vigilante
+
+Builds:
+  - versionName: 1.0.5
+    versionCode: 4
+    commit: 1.0.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.6
+    versionCode: 5
+    commit: 1.0.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.7
+    versionCode: 6
+    commit: 1.0.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.8
+    versionCode: 7
+    commit: 1.0.8
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.8
+CurrentVersionCode: 7

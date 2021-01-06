@@ -289,7 +289,6 @@ Builds:
       - sed -i -e '/io\.fabric/d; /com\.google\.gms/d' ../build.gradle build.gradle
       - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
         build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 3.4.3
     versionCode: 30403
@@ -303,7 +302,6 @@ Builds:
       - sed -i -e '/io\.fabric/d; /com\.google\.gms/d' ../build.gradle build.gradle
       - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
         build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 3.4.4
     versionCode: 30404
@@ -317,7 +315,6 @@ Builds:
       - sed -i -e '/io\.fabric/d; /com\.google\.gms/d' ../build.gradle build.gradle
       - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
         build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 3.4.5
     versionCode: 30405
@@ -331,37 +328,134 @@ Builds:
       - sed -i -e '/io\.fabric/d; /com\.google\.gms/d' ../build.gradle build.gradle
       - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
         build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
-  - versionName: 3.4.6
-    versionCode: 30406
-    commit: 3.4.6
+  - versionName: 3.4.8
+    versionCode: 30408
+    commit: 3.4.8
     subdir: app
     gradle:
-      - fabricfree
+      - firebasefree
     prebuild:
-      - sed -i -e '/fabric\.io/d; s|= uri("https://jitpack\.io")|"https://jitpack.io"|'
-        ../build.gradle
-      - sed -i -e '/io\.fabric/d; /com\.google\.gms/d' ../build.gradle build.gradle
-      - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
+      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
+      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
         build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+      - sed -i -e '/firebaseCrashlytics/,+2d' -e '/^android\.applicationVariants\.all
+        {/,/^}$/d' build.gradle
 
-  - versionName: 3.4.7
-    versionCode: 30407
-    commit: 3.4.7
+  - versionName: 3.4.9
+    versionCode: 30409
+    commit: 3.4.9
     subdir: app
     gradle:
-      - fabricfree
+      - firebasefree
     prebuild:
-      - sed -i -e '/fabric\.io/d; s|= uri("https://jitpack\.io")|"https://jitpack.io"|'
-        ../build.gradle
-      - sed -i -e '/io\.fabric/d; /com\.google\.gms/d' ../build.gradle build.gradle
-      - sed -i -e '/releaseImplementation/d; /^android\.applicationVariants\.all {/,/^}$/d'
+      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
+      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
         build.gradle
-      - sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+      - sed -i -e '/firebaseCrashlytics/,+2d' -e '/^android\.applicationVariants\.all
+        {/,/^}$/d' build.gradle
+
+  - versionName: 3.5.0
+    versionCode: 30500
+    commit: 3.5.0
+    subdir: app
+    gradle:
+      - firebasefree
+    srclibs:
+      - Material-Dialogs@3.3.0
+    rm:
+      - app/libs/bottomsheets-release.aar
+    prebuild:
+      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
+      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
+        build.gradle
+      - sed -i -e '/firebaseCrashlytics/d' -e '/^android\.applicationVariants\.all
+        {/,/^}$/d' build.gradle
+      - pushd $$Material-Dialogs$$
+      - sed -i -e '241d' bottomsheets/src/main/java/com/afollestad/materialdialogs/bottomsheets/BottomSheet.kt
+    build:
+      - pushd $$Material-Dialogs$$
+      - gradle bottomsheets:assembleRelease
+      - popd
+      - cp $$Material-Dialogs$$/bottomsheets/build/outputs/aar/bottomsheets-release.aar
+        libs/
+
+  - versionName: 3.5.1
+    versionCode: 30501
+    commit: 3.5.1
+    subdir: app
+    gradle:
+      - firebasefree
+    srclibs:
+      - Material-Dialogs@3.3.0
+    rm:
+      - app/libs/bottomsheets-release.aar
+    prebuild:
+      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
+      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
+        build.gradle
+      - sed -i -e '/firebaseCrashlytics/d' -e '/^android\.applicationVariants\.all
+        {/,/^}$/d' build.gradle
+      - pushd $$Material-Dialogs$$
+      - sed -i -e '241d' bottomsheets/src/main/java/com/afollestad/materialdialogs/bottomsheets/BottomSheet.kt
+    build:
+      - pushd $$Material-Dialogs$$
+      - gradle bottomsheets:assembleRelease
+      - popd
+      - cp $$Material-Dialogs$$/bottomsheets/build/outputs/aar/bottomsheets-release.aar
+        libs/
+
+  - versionName: 3.5.2
+    versionCode: 30502
+    commit: 3.5.2
+    subdir: app
+    gradle:
+      - firebasefree
+    srclibs:
+      - Material-Dialogs@3.3.0
+    rm:
+      - app/libs/bottomsheets-release.aar
+    prebuild:
+      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
+      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
+        build.gradle
+      - sed -i -e '/firebaseCrashlytics/d' -e '/^android\.applicationVariants\.all
+        {/,/^}$/d' build.gradle
+      - pushd $$Material-Dialogs$$
+      - sed -i -e '241d' bottomsheets/src/main/java/com/afollestad/materialdialogs/bottomsheets/BottomSheet.kt
+    build:
+      - pushd $$Material-Dialogs$$
+      - gradle bottomsheets:assembleRelease
+      - popd
+      - cp $$Material-Dialogs$$/bottomsheets/build/outputs/aar/bottomsheets-release.aar
+        libs/
+
+  - versionName: 3.5.3
+    versionCode: 30503
+    commit: 3.5.3
+    subdir: app
+    gradle:
+      - firebasefree
+    srclibs:
+      - Material-Dialogs@3.3.0
+    rm:
+      - app/libs/bottomsheets-release.aar
+    prebuild:
+      - sed -i -e 's|= uri("https://jitpack\.io")|"https://jitpack.io"|' ../build.gradle
+      - sed -i -e '/com\.google\.firebase/d; /com\.google\.gms/d' ../build.gradle
+        build.gradle
+      - sed -i -e '/firebaseCrashlytics/d' -e '/^android\.applicationVariants\.all
+        {/,/^}$/d' build.gradle
+      - pushd $$Material-Dialogs$$
+      - sed -i -e '241d' bottomsheets/src/main/java/com/afollestad/materialdialogs/bottomsheets/BottomSheet.kt
+    build:
+      - pushd $$Material-Dialogs$$
+      - gradle bottomsheets:assembleRelease
+      - popd
+      - cp $$Material-Dialogs$$/bottomsheets/build/outputs/aar/bottomsheets-release.aar
+        libs/
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.4.7
-CurrentVersionCode: 30407
+CurrentVersion: 3.5.3
+CurrentVersionCode: 30503

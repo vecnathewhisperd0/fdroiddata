@@ -7,7 +7,7 @@ Changelog: https://github.com/rdoeffinger/Dictionary/releases
 
 AutoName: QuickDic
 Description: |-
-    Resurrection of [[com.hughes.android.dictionary]] to a new maintainer. Uses data
+    Resurrection of https://f-droid.org/packages/com.hughes.android.dictionary to a new maintainer. Uses data
     from Wiktionary and Beolingus to generate dictionary files that can be used
     offline. These can be downloaded from within the app. These can also be
     generated automatically, though documentation for the process is currently
@@ -238,7 +238,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 5.5.4
+    versionCode: 109
+    commit: v5.5.4
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 5.5.5
+    versionCode: 110
+    commit: v5.5.5
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 5.5.6
+    versionCode: 111
+    commit: v5.5.6
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 5.5.7
+    versionCode: 112
+    commit: v5.5.7
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9.]*$
-CurrentVersion: 5.5.1
-CurrentVersionCode: 106
+CurrentVersion: 5.5.7
+CurrentVersionCode: 112

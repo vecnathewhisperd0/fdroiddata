@@ -8,6 +8,9 @@ SourceCode: https://github.com/AdrienPoupa/AttestationCoronavirus
 IssueTracker: https://github.com/AdrienPoupa/AttestationCoronavirus/issues
 
 AutoName: Attestation Coronavirus
+Description: |-
+    This application moved to
+    https://f-droid.org/packages/com.poupa.attestationdeplacement
 
 RepoType: git
 Repo: https://github.com/AdrienPoupa/AttestationCoronavirus
@@ -19,7 +22,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 0.0.4
     versionCode: 4
@@ -27,7 +29,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 1.0.1
     versionCode: 6
@@ -35,7 +36,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 1.1.0
     versionCode: 8
@@ -43,9 +43,9 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
+ArchivePolicy: 0 versions
+AutoUpdateMode: None
+UpdateCheckMode: None
 CurrentVersion: 1.1.0
 CurrentVersionCode: 8

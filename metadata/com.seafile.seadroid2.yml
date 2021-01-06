@@ -12,7 +12,7 @@ Description: |-
     invite other team members. Team members can then maintain file libraries
     together and collaborate around them.
 
-    You can try the [https://seacloud.cc/demo demo], sign up for an account at the
+    You can try the <a href="https://seacloud.cc/demo">demo</a>, sign up for an account at the
     website, or since the server-side is also free-as-in-freedom, it can be
     installed on any server and configured to work with the app.
 
@@ -1008,7 +1008,82 @@ Builds:
         build.gradle
     build: $$MVN3$$ install -f $$android-vcard$$/pom.xml -Dmaven.test.skip=true
 
+  - versionName: 2.2.26
+    versionCode: 101
+    commit: 2.2.26
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - android-vcard@android-vcard-1.4
+    prebuild:
+      - find $$android-vcard$$ -name '*.jar' -delete
+      - sed -i -e '/repositories/a\        mavenLocal()' ../build.gradle
+      - sed -i -e 's/implementation fileTree.*/implementation "com.googlecode.android-vcard:android-vcard:1.4"/'
+        build.gradle
+    build: $$MVN3$$ install -f $$android-vcard$$/pom.xml -Dmaven.test.skip=true
+
+  - versionName: 2.2.27
+    versionCode: 102
+    commit: 2.2.27
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - android-vcard@android-vcard-1.4
+    prebuild:
+      - find $$android-vcard$$ -name '*.jar' -delete
+      - sed -i -e '/repositories/a\        mavenLocal()' ../build.gradle
+      - sed -i -e 's/implementation fileTree.*/implementation "com.googlecode.android-vcard:android-vcard:1.4"/'
+        build.gradle
+    build: $$MVN3$$ install -f $$android-vcard$$/pom.xml -Dmaven.test.skip=true
+
+  - versionName: 2.2.28
+    versionCode: 103
+    commit: 2.2.28
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - android-vcard@android-vcard-1.4
+    prebuild:
+      - find $$android-vcard$$ -name '*.jar' -delete
+      - sed -i -e '/repositories/a\        mavenLocal()' ../build.gradle
+      - sed -i -e 's/implementation fileTree.*/implementation "com.googlecode.android-vcard:android-vcard:1.4"/'
+        build.gradle
+    build: $$MVN3$$ install -f $$android-vcard$$/pom.xml -Dmaven.test.skip=true
+
+  - versionName: 2.2.30
+    versionCode: 105
+    commit: 2.2.30
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - android-vcard@android-vcard-1.4
+    prebuild:
+      - find $$android-vcard$$ -name '*.jar' -delete
+      - sed -i -e '/repositories/a\        mavenLocal()' ../build.gradle
+      - sed -i -e 's/implementation fileTree.*/implementation "com.googlecode.android-vcard:android-vcard:1.4"/'
+        build.gradle
+    build: $$MVN3$$ install -f $$android-vcard$$/pom.xml -Dmaven.test.skip=true
+
+  - versionName: 2.2.31
+    versionCode: 106
+    commit: 2.2.31
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - android-vcard@android-vcard-1.4
+    prebuild:
+      - find $$android-vcard$$ -name '*.jar' -delete
+      - sed -i -e '/repositories/a\        mavenLocal()' ../build.gradle
+      - sed -i -e 's/implementation fileTree.*/implementation "com.googlecode.android-vcard:android-vcard:1.4"/'
+        build.gradle
+    build: $$MVN3$$ install -f $$android-vcard$$/pom.xml -Dmaven.test.skip=true
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.25
-CurrentVersionCode: 100
+CurrentVersion: 2.2.31
+CurrentVersionCode: 106

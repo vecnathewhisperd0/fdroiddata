@@ -13,13 +13,13 @@ Description: |-
     routing and rendering of the displayed map. It’s even possible to use multiple
     maps at a time. While Navit supports all major platforms, there is a fork
     specializing on an easy-to-use, Android-only solution:
-    [[com.zoffcc.applications.zanavi]].
+    https://f-droid.org/packages/com.zoffcc.applications.zanavi.
 
     The routing engine not only calculates an optimal route to your destination, but
     also generates directions and even speaks to you.
 
     Navit currently speaks 27 languages. You can help translating via the web-based
-    [http://translations.launchpad.net/navit/trunk/+pots/navit translation page].
+    <a href="http://translations.launchpad.net/navit/trunk/+pots/navit">translation page</a>.
 
 RepoType: git
 Repo: https://github.com/navit-gps/navit
@@ -788,47 +788,10 @@ Builds:
     build: scripts/build_android.sh
     ndk: r12b
 
-  - versionName: v0.5.4
-    versionCode: 2001180336
+  - versionName: v0.5.5
+    versionCode: 2008082307
     disable: fails to build
-    commit: v0.5.4
-    sudo:
-      - apt-get update || apt-get update
-      - apt-get install -y libprotobuf-c-dev protobuf-c-compiler
-    gradle:
-      - yes
-    output: navit/android/build/outputs/apk/release/android-release-unsigned.apk
-    rm:
-      - navit/support/espeak/espeak-data/*
-    prebuild:
-      - echo '<project name="Navit"><target name="clean"/></project>' > build.xml
-      - $$SDK$$/tools/bin/sdkmanager "cmake;3.6.4111459"
-      - sed -i -e '/gradlew/d' scripts/build_android.sh
-    build: scripts/build_android.sh
-    ndk: r12b
-
-  - versionName: v0.5.4-fdroid.1
-    versionCode: 2002100212
-    disable: fails to build
-    commit: v0.5.4-fdroid.1
-    sudo:
-      - apt-get update || apt-get update
-      - apt-get install -y libprotobuf-c-dev protobuf-c-compiler
-    gradle:
-      - yes
-    output: navit/android/build/outputs/apk/release/android-release-unsigned.apk
-    rm:
-      - navit/support/espeak/espeak-data/*
-    prebuild:
-      - echo '<project name="Navit"><target name="clean"/></project>' > build.xml
-      - $$SDK$$/tools/bin/sdkmanager "cmake;3.6.4111459"
-      - sed -i -e '/gradlew/d' scripts/build_android.sh
-    build: scripts/build_android.sh
-    ndk: r12b
-
-  - versionName: v0.5.4-fdroid.3
-    versionCode: 2002120544
-    commit: v0.5.4-fdroid.3
+    commit: v0.5.5
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y libprotobuf-c-dev protobuf-c-compiler
@@ -851,5 +814,5 @@ MaintainerNotes: |-
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://download.navit-project.org/api/version.json|"version_code":.*"(.*)"|.|"version_name":.*\"(.*)\",
-CurrentVersion: v0.5.4-fdroid.3
-CurrentVersionCode: 2002120544
+CurrentVersion: v0.5.5
+CurrentVersionCode: 2008082307
