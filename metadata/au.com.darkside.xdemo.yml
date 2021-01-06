@@ -96,7 +96,7 @@ Builds:
       - ln -s ../packages/GENERAL.mk
       - cd ./009_flwm/
       - make
-      - cd ../../../../
+      - cd ../../../
       - cp -rf ./static-build/3rdParty/linux_mips64el_musl/bin/flwm ./src/main/jniLibs/mips64/libwm.so
       - cp -rf ./static-build/3rdParty/linux_mipsel_musl/bin/flwm ./src/main/jniLibs/mips/libwm.so
       - cp -rf ./static-build/3rdParty/linux_aarch64_musl/bin/flwm ./src/main/jniLibs/arm64-v8a/libwm.so
