@@ -114,7 +114,7 @@ Builds:
     scanignore:
       - tools/build
 
-AutoUpdateMode: None
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 1.9.7 - RC1
 CurrentVersionCode: 1524
