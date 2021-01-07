@@ -1,0 +1,25 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: Case Nelson
+SourceCode: https://github.com/snoe/deedum
+IssueTracker: https://github.com/snoe/deedum/issues
+
+AutoName: deedum
+
+RepoType: git
+Repo: https://github.com/snoe/deedum
+
+Builds:
+  - versionName: 2020.1230.2319
+    versionCode: 13
+    commit: 2020.1230.2319+13
+    subdir: android/app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v+%c
+UpdateCheckMode: Tags
+UpdateCheckData: https://github.com/snoe/deedum/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 2020.0701.0550
+CurrentVersionCode: 13
