@@ -17,6 +17,10 @@ Builds:
     subdir: android/app
     gradle:
       - yes
+    srclibs:
+      - flutter@v1.6.0
+    build:
+      - $$flutter$$/bin/flutter build apk
 
 AutoUpdateMode: Version v%v+%c
 UpdateCheckMode: Tags
