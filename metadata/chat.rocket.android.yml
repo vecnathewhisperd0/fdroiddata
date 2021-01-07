@@ -237,9 +237,9 @@ Builds:
     scandelete:
       - node_modules
 
-  - versionName: 4.13.0
-    versionCode: 22081
-    commit: 4.13.0
+  - versionName: 4.13.1
+    versionCode: 22189
+    commit: 4.13.1
     subdir: android/app
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
@@ -253,7 +253,7 @@ Builds:
     patch:
       - foss-build-3.patch
     gradle:
-      - fossOfficial
+      - officialFoss
     rm:
       - ios
     prebuild: sed -E -i 's/VERSIONCODE*/$$VERCODE$$/' build.gradle
@@ -286,5 +286,5 @@ MaintainerNotes: We use a Github repo as a Maven repository for a LIBRE_BUILD Ji
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags \d+\.\d+\.\d+
-CurrentVersion: 4.13.0
-CurrentVersionCode: 22081
+CurrentVersion: 4.13.1
+CurrentVersionCode: 22189
