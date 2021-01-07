@@ -18,9 +18,10 @@ Builds:
     gradle:
       - yes
     srclibs:
-      - flutter@v1.6.0
+      - flutter@v1.22.5
     build:
-      - $$flutter$$/bin/flutter build apk
+      - flutter_dir=$(realpath $$flutter$$/bin)
+      - export PATH=$flutter_dir:$PATH
 
 AutoUpdateMode: Version v%v+%c
 UpdateCheckMode: Tags
