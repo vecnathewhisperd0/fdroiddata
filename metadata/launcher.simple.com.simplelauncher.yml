@@ -1,0 +1,24 @@
+Categories:
+  - System
+License: GPL-2.0-only
+AuthorName: Collin
+SourceCode: https://github.com/Collinux/minimalist-launcher
+IssueTracker: https://github.com/Collinux/minimalist-launcher/issues
+
+AutoName: Min Launcher
+
+RepoType: git
+Repo: https://github.com/Collinux/minimalist-launcher
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: '1.0'
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
