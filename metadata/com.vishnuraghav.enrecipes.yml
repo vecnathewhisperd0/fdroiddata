@@ -27,6 +27,7 @@ Builds:
         | sha256sum -c -
       - tar xzf node.tar.gz
       - cp -a node-v0.10.23-linux-x64/. /usr/local/
+      - npm -g install npm@latest
       - npm -g install nativescript
     output: platforms/android/app/build/outputs/apk/debug/app-debug.apk
     prebuild: npm install
