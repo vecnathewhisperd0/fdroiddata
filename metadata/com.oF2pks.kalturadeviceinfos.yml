@@ -11,10 +11,10 @@ Description: |-
     uncertified devices), checks about Widevine & media decoders plus detection
     for Treble & a/b Seamless update (and others system IDs).
 
-    The primary goal of this DeviceInfo app is to help purchasing devices by 
-    asking seller to send json to buyer (or run it directly in shops for 
-    powered-on devices when connected to wifi... or via bluetooth), and to 
-    provide straight full anonymous reports for rom developers (especially 
+    The primary goal of this DeviceInfo app is to help purchasing devices by
+    asking seller to send json to buyer (or run it directly in shops for
+    powered-on devices when connected to wifi... or via bluetooth), and to
+    provide straight full anonymous reports for rom developers (especially
     for project Treble); without any misses concerning deep defined characteristics.
 
     This app is a basic json example that shows how much any app, with
