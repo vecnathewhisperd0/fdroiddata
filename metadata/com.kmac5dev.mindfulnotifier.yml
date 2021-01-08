@@ -6,7 +6,7 @@ SourceCode: https://github.com/kmac/mindfulnotifier
 IssueTracker: https://github.com/kmac/mindfulnotifier/issues
 
 AutoName: Mindful Notifier
-Summary: A mindfulness bell with configurable text notifications, scheduling, and sound
+Summary: A mindfulness bell with configurable text notifications, schedules, and sound
 Description: |
     Mindful Notifier is a simple mindfulness-based app which displays a
     notification reminder at user-configurable intervals. It is another
