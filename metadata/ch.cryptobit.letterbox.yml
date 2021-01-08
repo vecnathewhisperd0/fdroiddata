@@ -11,14 +11,14 @@ RepoType: git
 Repo: https://gitlab.com/muelli/letterbox.git
 
 Builds:
-  - versionName: 0.0.2
+  - versionName: 0.0.3
     versionCode: 1
-    commit: v0.0.2
+    commit: v0.0.3
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.2
+CurrentVersion: 0.0.3
 CurrentVersionCode: 1
