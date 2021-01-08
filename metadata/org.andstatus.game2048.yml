@@ -52,7 +52,8 @@ Builds:
     versionCode: 17
     commit: 1.7-release
     subdir: game2048-android
-    rm: doc
+    rm:
+      - doc
     gradle:
       - yes
 
