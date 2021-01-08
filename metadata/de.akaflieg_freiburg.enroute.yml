@@ -54,8 +54,9 @@ Builds:
     patch:
       - enroute_170.patch
     build:
-      - mkdir -p qt
-      - cd qt
+      - cd ..
+      - mkdir -p Qt
+      - cd Qt
       - for ms in qtxmlpatterns:bf8d9118abf0dc97289d065f5d404fda748344b7 qtwebview:55ecbb4f43a1a6518c38c71bc59b0c9db80072d4
         qtwebsockets:273f828f7c732489bd5eeb1479ab85d74ed6ee58 qtwebchannel:ac8eaf9e416206e46cde51995394b8107904cc79
         qttranslations:60ce0c8f20f0f293fc263aa14970a4407a814307 qttools:1a018d98eac0f40e52a3d82a5bd62049e5059d3b
@@ -79,11 +80,12 @@ Builds:
       - 7zr x $fn; done
       - export Qt5_DIR_ANDROID="$(pwd)/5.14.2/android"
       - export QTDIR="$(pwd)/5.14.2/android"
+      - cd ..
+      - cd de.akaflieg_freiburg.enroute
       - export PATH="$QTDIR/bin:$PATH"
       - export CMAKE_PREFIX_PATH=$QTDIR/bin
       - export CMAKE_PREFIX_PATH=$Qt5_DIR_ANDROID/lib/cmake/Qt5
       - export QT_QMAKE_EXECUTABLE=$Qt5_DIR_ANDROID/bin/qmake
-      - cd ..
       - export ANDROID_NDK_ROOT=$$NDK$$
       - export ANDROID_SDK_ROOT=$$SDK$$
       - mkdir -p build-android-release
