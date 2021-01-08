@@ -15,8 +15,8 @@ Description: |
 
     The reminders are taken from a configurable list, and are chosen
     at random at each interval. The reminder interval can either
-    be periodic (in intervals aligned to the top of the hour, down 
-    to a 15 minute granularity) or random (between a selected range 
+    be periodic (in intervals aligned to the top of the hour, down
+    to a 15 minute granularity) or random (between a selected range
     of minutes).
 
     Some default reminders are provided as examples. You can add,
