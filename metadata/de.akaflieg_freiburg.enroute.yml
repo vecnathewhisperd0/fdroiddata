@@ -49,10 +49,11 @@ Builds:
     sudo:
       - apt-get update || apt-get update
       - apt-get install --yes librsvg2-bin
-    scanignore:
-      - 3rdParty/android_openssl
     patch:
       - enroute_170.patch
+    output: build-android-release/android-build/build/outputs/apk/release/android-build-release-unsigned.apk
+    scanignore:
+      - 3rdParty/android_openssl
     build:
       - cd ..
       - mkdir -p Qt
@@ -103,9 +104,7 @@ Builds:
       - make -j`nproc`
       - $Qt5_DIR_ANDROID/bin/androiddeployqt --input android_deployment_settings.json
         --output android-build --release
-    output: build-android-release/android-build/build/outputs/apk/release/android-build-release-unsigned.apk
     ndk: r21d
-
 
   - versionName: 2.1.1
     versionCode: 201010
@@ -114,10 +113,11 @@ Builds:
     sudo:
       - apt-get update || apt-get update
       - apt-get install --yes librsvg2-bin
-    scanignore:
-      - 3rdParty/android_openssl
     patch:
       - enroute_211.patch
+    output: build-android-release/android-build/build/outputs/apk/release/android-build-release-unsigned.apk
+    scanignore:
+      - 3rdParty/android_openssl
     build:
       - cd ..
       - mkdir -p Qt
@@ -156,7 +156,6 @@ Builds:
       - export CMAKE_PREFIX_PATH=$QTDIR/bin
       - export CMAKE_PREFIX_PATH=$Qt5_DIR_ANDROID/lib/cmake/Qt5
       - export QT_QMAKE_EXECUTABLE=$Qt5_DIR_ANDROID/bin/qmake
-
       - export ANDROID_NDK_ROOT=$$NDK$$
       - export ANDROID_SDK_ROOT=$$SDK$$
       - mkdir -p build-android-release
@@ -174,9 +173,7 @@ Builds:
       - make -j`nproc`
       - $Qt5_DIR_ANDROID/bin/androiddeployqt --input android_deployment_settings.json
         --output android-build --release --apk de.akaflieg_freiburg.enroute_211.apk
-    output: build-android-release/android-build/build/outputs/apk/release/android-build-release-unsigned.apk
     ndk: r21d
-
 
 AutoUpdateMode: None
 UpdateCheckMode: None
