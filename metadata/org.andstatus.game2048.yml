@@ -52,10 +52,10 @@ Builds:
     versionCode: 17
     commit: 1.7-release
     subdir: game2048-android
-    rm:
-      - doc
     gradle:
       - yes
+    rm:
+      - doc
 
 AutoUpdateMode: Version %v-release
 UpdateCheckMode: Tags ^[0-9.]+-release$
