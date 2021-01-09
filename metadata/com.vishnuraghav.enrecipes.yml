@@ -38,7 +38,10 @@ Builds:
       - node_modules
       - app/fonts
       - platforms/android
-    build: ns build android --bundle --env.uglify
+    build:
+      - ns prepare android
+      - sed -i 's/\(signingConfig[[:space:]]\)signingConfigs\.release/\1null/' platforms/android/app/build.gradle
+      - ns build android --release --bundle --env.uglify --key-store-path /dev/null --key-store-alias NULL --key-store-password NULL --key-store-alias-password NULL
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
