@@ -548,7 +548,17 @@ Builds:
       - Resources/symlink_hosts_to_data.zip
     ndk: r21d
 
+  - versionName: 5.2.1
+    versionCode: 50201
+    commit: v5.2.1
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - Resources/symlink_hosts_to_data.zip
+    ndk: r22
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 5.1.0
-CurrentVersionCode: 50100
+CurrentVersion: 5.2.1
+CurrentVersionCode: 50201
