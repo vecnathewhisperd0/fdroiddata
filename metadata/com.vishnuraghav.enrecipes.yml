@@ -35,7 +35,7 @@ Builds:
     scanignore:
       - node_modules
       - app/fonts
-    build: ns build android --bundle --env.uglify
+    build: ns build android --bundle --env.uglify || (ns clean && ns build android --bundle --env.uglify)
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
