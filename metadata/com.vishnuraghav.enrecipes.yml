@@ -37,8 +37,7 @@ Builds:
     scanignore:
       - node_modules
       - app/fonts
-      - platforms/android/app/libs/runtime-libs
-      - platforms/android/build-tools
+      - platforms/android
     build: ns build android --bundle --env.uglify
 
 AutoUpdateMode: Version v%v
