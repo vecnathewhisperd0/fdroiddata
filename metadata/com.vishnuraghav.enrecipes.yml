@@ -30,8 +30,8 @@ Builds:
       - npm -g install nativescript
     init:
       - $$SDK$$/tools/bin/sdkmanager "platforms;android-30" "build-tools;30.0.3" > /dev/null
-      - ns clean
       - npm install --unsafe-perm
+      - ns install
     output: platforms/android/app/build/outputs/apk/debug/app-debug.apk
     scanignore:
       - node_modules
