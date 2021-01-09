@@ -38,6 +38,7 @@ Builds:
       - node_modules
       - app/fonts
       - platforms/android
+      - platforms/android/gradle/wrapper/gradle-wrapper.jar
     build: ns build android --bundle --env.uglify
 
 AutoUpdateMode: Version v%v
