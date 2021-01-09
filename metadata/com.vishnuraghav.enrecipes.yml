@@ -28,6 +28,7 @@ Builds:
       - tar xzf node.tar.gz
       - cp -a node-v10.23.1-linux-x64/. /usr/local/
       - npm -g install nativescript
+      - sdkmanager "platforms;android-30" "build-tools;30.0.3"
     init: npm install --unsafe-perm
     scanignore:
       - node_modules
