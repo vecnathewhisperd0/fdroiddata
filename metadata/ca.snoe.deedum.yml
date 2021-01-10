@@ -15,8 +15,6 @@ Builds:
     versionCode: 13
     commit: 2020.1230.2319+13
     subdir: android/app
-    gradle:
-      - yes
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.22.5
