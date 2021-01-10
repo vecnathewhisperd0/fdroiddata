@@ -85,7 +85,6 @@ Builds:
     subdir: app
     gradle:
       - prod
-    output: build/outputs/apk/prod/release/app-prod-release-unsigned.apk
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
