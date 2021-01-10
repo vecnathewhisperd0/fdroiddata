@@ -19,6 +19,7 @@ Builds:
       - yes
     srclibs:
       - flutter@1.22.5
+    prebuild: echo "flutter.sdk=$$flutter$$" >> ../local.properties
     build:
       - flutter_dir=$(realpath $$flutter$$/bin)
       - export PATH=$flutter_dir:$PATH
