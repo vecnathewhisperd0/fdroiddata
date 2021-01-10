@@ -1,0 +1,56 @@
+From e46866187d1dcdcd90cfd6d511a7fd204583bcb8 Mon Sep 17 00:00:00 2001
+From: cloudbank <sabine.g.vogel@gmail.com>
+Date: Thu, 26 Mar 2020 17:32:24 -0700
+Subject: [PATCH] Update android, build tools to 29, RULES_JVM_EXTERNAL_TAG and
+ RULES_JVM_EXTERNAL_SHA to buidl with latest bazel
+
+---
+ WORKSPACE                                        | 8 ++++----
+ java/com/google/android/apps/authenticator/BUILD | 2 --
+ 2 files changed, 4 insertions(+), 6 deletions(-)
+
+diff --git a/WORKSPACE b/WORKSPACE
+index b82aca3..a5a6101 100644
+--- a/WORKSPACE
++++ b/WORKSPACE
+@@ -15,16 +15,16 @@
+ # Set the path to your local SDK installation, or use the ANDROID_HOME environment variable.
+ android_sdk_repository(
+     name = "androidsdk",
+-    api_level = 28,
++    api_level = 29,
+     # path = "/path/to/sdk",
+-    build_tools_version = "28.0.3"
++    build_tools_version = "29.0.3"
+ )
+ 
+ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+ 
+ # Load external Maven Rules
+-RULES_JVM_EXTERNAL_TAG = "1.1"
+-RULES_JVM_EXTERNAL_SHA = "ade316ec98ba0769bb1189b345d9877de99dd1b1e82f5a649d6ccbcb8da51c1f"
++RULES_JVM_EXTERNAL_TAG = "3.0"
++RULES_JVM_EXTERNAL_SHA = "62133c125bf4109dfd9d2af64830208356ce4ef8b165a6ef15bbff7460b35c3a"
+ 
+ http_archive(
+     name = "rules_jvm_external",
+diff --git a/java/com/google/android/apps/authenticator/BUILD b/java/com/google/android/apps/authenticator/BUILD
+index 82fb7d2..642f56c 100644
+--- a/java/com/google/android/apps/authenticator/BUILD
++++ b/java/com/google/android/apps/authenticator/BUILD
+@@ -65,7 +65,6 @@ android_library(
+ # Production APK
+ android_binary(
+     name = "authenticator",
+-    aapt_version = "aapt",
+     custom_package = "com.google.android.apps.authenticator2",
+     manifest = "AndroidManifest.xml",
+     proguard_specs = [
+@@ -83,7 +82,6 @@ android_binary(
+ [android_binary(
+     name = "authenticator_multidex-%s" % dex_mode,
+     testonly = 1,
+-    aapt_version = "aapt",
+     custom_package = "com.google.android.apps.authenticator2",
+     dex_shards = 25,
+     manifest = "AndroidManifest.xml",

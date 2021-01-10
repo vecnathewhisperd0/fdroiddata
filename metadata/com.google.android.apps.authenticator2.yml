@@ -8,10 +8,6 @@ Changelog: https://github.com/google/google-authenticator-android/blob/HEAD/Chan
 
 AutoName: Authenticator
 Description: |-
-    '''N.B''' According to a "disclaimer" on the website, the Current Version of the
-    Android app is now proprietary and it isn't clear whether the source code
-    repository will be getting any more updates.
-
     This can be used with non-Google apps that support it , but the most common use
     will be to login to Google or other accounts in a web browser. You will probably
     need https://f-droid.org/packages/com.google.zxing.client.android to be installed, though for some
@@ -43,13 +39,59 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '5.00'
+    versionCode: 5000000
+    commit: 8509dca15f42825dbe560af1c13d7660542eb233
+    sudo:
+      - apt-get update
+      - sudo apt-get install -y build-essential openjdk-11-jdk python zip unzip
+    patch:
+      - 0001-Update-android-build-tools-to-29-RULES_JVM_EXTERNAL_.patch
+    output: bazel-bin/java/com/google/android/apps/authenticator/authenticator_unsigned.apk
+    prebuild:
+      - pushd $HOME
+      - curl -Lo bazel-3.7.0-dist.zip https://github.com/bazelbuild/bazel/releases/download/3.7.0/bazel-3.7.0-dist.zip
+      - curl -Lo bazel-3.7.0-dist.zip.sig https://github.com/bazelbuild/bazel/releases/download/3.7.0/bazel-3.7.0-dist.zip.sig
+      - curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor > bazel.gpg
+      - gpg --keyring ./bazel.gpg --verify bazel-3.7.0-dist.zip.sig bazel-3.7.0-dist.zip
+      - unzip -q bazel-3.7.0-dist.zip -d bazel-dist
+      - cd bazel-dist
+      - env EXTRA_BAZEL_ARGS="--host_javabase=@local_jdk//:jdk" bash ./compile.sh
+      - popd
+      - yes | $$SDK$$/tools/bin/sdkmanager --licenses > /dev/null
+      - $$SDK$$/tools/bin/sdkmanager 'platforms;android-29' > /dev/null
+      - $$SDK$$/tools/bin/sdkmanager 'build-tools;29.0.3' > /dev/null
+    build: $HOME/bazel-dist/output/bazel build //java/com/google/android/apps/authenticator
+        --compilation_mode=opt
+
+  - versionName: 5.00.1
+    versionCode: 5000001
+    disable: builds faster, because skips building bazel build system and uses binary
+        from bazel APT repository
+    commit: 8509dca15f42825dbe560af1c13d7660542eb233
+    sudo:
+      - apt-get update
+      - apt-get install -y curl gnupg apt-transport-https
+      - curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor > /etc/apt/trusted.gpg.d/bazel.gpg
+      - echo 'deb [arch=amd64] https://storage.googleapis.com/bazel-apt stable jdk1.8'
+        > /etc/apt/sources.list.d/bazel.list
+      - apt-get update
+      - apt-get install -y bazel=3.7.0
+    patch:
+      - 0001-Update-android-build-tools-to-29-RULES_JVM_EXTERNAL_.patch
+    output: bazel-bin/java/com/google/android/apps/authenticator/authenticator_unsigned.apk
+    prebuild:
+      - yes | $$SDK$$/tools/bin/sdkmanager --licenses > /dev/null
+      - $$SDK$$/tools/bin/sdkmanager 'platforms;android-29' > /dev/null
+      - $$SDK$$/tools/bin/sdkmanager 'build-tools;29.0.3' > /dev/null
+    build: bazel build //java/com/google/android/apps/authenticator --compilation_mode=opt
+
 MaintainerNotes: |-
-    While the repo was switched and upgraded to gradle, version is still 2.21 while
-    playstore has 2.49.
+    * This is FOSS variant from same developer. Developer may provide releases that will not have proprietary equivalent, and vice versa.
+    * Does not builds with bazel>=1.0.0 until commit e46866187d1dcdcd90cfd6d511a7fd204583bcb8. This commit is extracted to patch and used for building older versions.
+    * UpdateCheckMode is None, since builds are done in a directory different to where the AndroidManifest.xml is.
 
 AutoUpdateMode: None
-UpdateCheckMode: RepoManifest
+UpdateCheckMode: None
 CurrentVersion: '5.00'
 CurrentVersionCode: 5000000
-
-NoSourceSince: '2.22'
