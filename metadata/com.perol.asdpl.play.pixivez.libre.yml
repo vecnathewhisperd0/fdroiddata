@@ -17,9 +17,9 @@ RepoType: git
 Repo: https://github.com/ultranity/Pix-EzViewer
 
 Builds:
-  - versionName: 1.7.4R
-    versionCode: 107
-    commit: 1.7.4R
+  - versionName: 1.7.6R
+    versionCode: 109
+    commit: 1.7.6R
     subdir: app
     gradle:
       - libre
@@ -27,5 +27,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.7.4R
-CurrentVersionCode: 107
+CurrentVersion: 1.7.6R
+CurrentVersionCode: 109
