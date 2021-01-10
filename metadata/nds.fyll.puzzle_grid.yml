@@ -19,9 +19,7 @@ Builds:
     srclibs:
       - flutter@1.22.2
     prebuild: echo "flutter.sdk=$$flutter$$" >> ../local.properties
-    build:
-      - cd ../..
-      - flutter build apk --release --flavor fdroid
+    build: $$flutter$$/bin/flutter build apk --release --flavor fdroid
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
