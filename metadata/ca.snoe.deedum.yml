@@ -17,6 +17,7 @@ Builds:
     subdir: android/app
     gradle:
       - yes
+    output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.22.5
     prebuild: echo "flutter.sdk=$$flutter$$" >> ../local.properties
