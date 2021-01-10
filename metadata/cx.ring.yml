@@ -9,30 +9,6 @@ Translation: https://www.transifex.com/savoirfairelinux/jami
 Changelog: https://git.jami.net/savoirfairelinux/ring-client-android/tree/master/ring-android/fastlane/metadata/android/en-US/changelogs
 
 AutoName: Ring
-Description: |-
-    Jami (formerly Ring and SFLphone) is a free distributed multimedia communication
-    software. It is developed by Savoir-faire Linux with the help of a global
-    community of users and contributors. Savoir-faire Linux is a Canadian company
-    specialized in Linux and free software.
-
-    Jami allows to make audio or video calls, and to send messages, safely and
-    freely, in confidence. Jami is a Free and open source software that requires no
-    central server.
-
-    What can you do with Jami:
-
-    * send text messages
-    * make audio calls
-    * make video calls
-    * send files
-    * use your existing SIP account
-
-    There are plenty of ways to help us, check out: <a
-    href="https://jami.net/contribute"></a>.
-
-    Jami is inspired by a Swahili word that means "community".
-
-    You can also install Jami on Windows, macOS, iOS and GNU/Linux.
 
 RepoType: git
 Repo: https://review.jami.net/ring-project
