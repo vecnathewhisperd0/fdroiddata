@@ -18,7 +18,7 @@ Builds:
     gradle:
       - yes
     srclibs:
-      - flutter@v1.22.5
+      - flutter@1.22.5
     build:
       - flutter_dir=$(realpath $$flutter$$/bin)
       - export PATH=$flutter_dir:$PATH
