@@ -86,7 +86,6 @@ Builds:
       - rm -rf ./packages/000_leveldb
       - rm -rf ./packages/000_googletest
       - rm -rf ./packages/000_lapack
-      - rm -rf ./packages/000_expat
       - rm -rf ./packages/000_alsa
       - cd ..
     scandelete:
