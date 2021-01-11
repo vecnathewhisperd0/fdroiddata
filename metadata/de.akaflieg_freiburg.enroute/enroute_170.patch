@@ -1,5 +1,5 @@
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index fd60c62..a80d779 100644
+index fd60c62..1de7f2f 100644
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
 @@ -97,9 +97,9 @@ if( ANDROID )
@@ -15,3 +15,26 @@ index fd60c62..a80d779 100644
      configure_file(android/res/drawable/splash.xml android/res/drawable/splash.xml COPYONLY)
      configure_file(android/res/values/apptheme.xml android/res/values/apptheme.xml COPYONLY)
      configure_file(android/res/values/apptheme.xml android/res/values/apptheme.xml COPYONLY)
+@@ -142,14 +142,14 @@ if( ANDROID )
+ 
+     # The android target depends on our own copy of openssl
+     set(ANDROID_EXTRA_LIBS
+-        ${openssl_SOURCE_DIR}/arm/libcrypto_1_1.so
+-        ${openssl_SOURCE_DIR}/arm/libssl_1_1.so
+-        ${openssl_SOURCE_DIR}/arm64/libcrypto_1_1.so
+-        ${openssl_SOURCE_DIR}/arm64/libssl_1_1.so
+-        ${openssl_SOURCE_DIR}/x86/libcrypto_1_1.so
+-        ${openssl_SOURCE_DIR}/x86/libssl_1_1.so
+-        ${openssl_SOURCE_DIR}/x86_64/libcrypto_1_1.so
+-        ${openssl_SOURCE_DIR}/x86_64/libssl_1_1.so
++        ${CMAKE_SOURCE_DIR}/libs/arm/libcrypto_1_1.so
++        ${CMAKE_SOURCE_DIR}/libs/arm/libssl_1_1.so
++        ${CMAKE_SOURCE_DIR}/libs/arm64/libcrypto_1_1.so
++        ${CMAKE_SOURCE_DIR}/libs/arm64/libssl_1_1.so
++        ${CMAKE_SOURCE_DIR}/libs/x86/libcrypto_1_1.so
++        ${CMAKE_SOURCE_DIR}/libs/x86/libssl_1_1.so
++        ${CMAKE_SOURCE_DIR}/libs/x86_64/libcrypto_1_1.so
++        ${CMAKE_SOURCE_DIR}/libs/x86_64/libssl_1_1.so
+         CACHE INTERNAL ""
+         )
+ 

@@ -52,10 +52,13 @@ Builds:
     patch:
       - enroute_170.patch
     output: build-android-release/android-build/build/outputs/apk/release/android-build-release-unsigned.apk
-    scanignore:
+    scandelete:
       - 3rdParty/android_openssl
+    srclibs:
+      - OpenSSL@OpenSSL_1_1_1g
     build:
       - cd ..
+      - rm -rf Qt
       - mkdir -p Qt
       - cd Qt
       - for ms in qtxmlpatterns:bf8d9118abf0dc97289d065f5d404fda748344b7 qtwebview:55ecbb4f43a1a6518c38c71bc59b0c9db80072d4
@@ -89,6 +92,48 @@ Builds:
       - export QT_QMAKE_EXECUTABLE=$Qt5_DIR_ANDROID/bin/qmake
       - export ANDROID_NDK_ROOT=$$NDK$$
       - export ANDROID_SDK_ROOT=$$SDK$$
+
+      #build OpenSSL
+      - mkdir libs
+      - cd libs
+      - mkdir arm arm64 x86 x86_64
+      - cd ../../srclib/OpenSSL
+      - export PATH=$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin:$ANDROID_NDK_ROOT/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin:$PATH
+
+      - git clean -dffx
+      - ./Configure shared android-arm64 -D__ANDROID_API__=21
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - llvm-strip --strip-all libcrypto_1_1.so
+      - llvm-strip --strip-all libssl_1_1.so
+      - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm64/.
+      - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm64/.
+
+      - git clean -dffx
+      - ./Configure shared android-arm -D__ANDROID_API__=16
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - llvm-strip --strip-all libcrypto_1_1.so
+      - llvm-strip --strip-all libssl_1_1.so
+      - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm/.
+      - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm/.
+
+      - git clean -dffx
+      - ./Configure shared android-x86 -D__ANDROID_API__=16
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - llvm-strip --strip-all libcrypto_1_1.so
+      - llvm-strip --strip-all libssl_1_1.so
+      - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86/.
+      - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86/.
+
+      - git clean -dffx
+      - ./Configure shared android-x86_64 -D__ANDROID_API__=21
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - llvm-strip --strip-all libcrypto_1_1.so
+      - llvm-strip --strip-all libssl_1_1.so
+      - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86_64/.
+      - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86_64/.
+
+      - cd ../../de.akaflieg_freiburg.enroute
+
       - mkdir -p build-android-release
       - androidCompileSdkVersion="28.0.3"
       - cd build-android-release
@@ -116,10 +161,13 @@ Builds:
     patch:
       - enroute_211.patch
     output: build-android-release/android-build/build/outputs/apk/release/android-build-release-unsigned.apk
-    scanignore:
+    scandelete:
       - 3rdParty/android_openssl
+    srclibs:
+      - OpenSSL@OpenSSL_1_1_1g
     build:
       - cd ..
+      - rm -rf Qt
       - mkdir -p Qt
       - cd Qt
       - for ms in qtxmlpatterns:b6fa178b828389fa3eaf1ea5aa6f721b9a5b4569 qtwebview:78da1dcb01fd79f13ed96cba4887345615c572c4
@@ -158,6 +206,48 @@ Builds:
       - export QT_QMAKE_EXECUTABLE=$Qt5_DIR_ANDROID/bin/qmake
       - export ANDROID_NDK_ROOT=$$NDK$$
       - export ANDROID_SDK_ROOT=$$SDK$$
+
+      #build OpenSSL
+      - mkdir libs
+      - cd libs
+      - mkdir arm arm64 x86 x86_64
+      - cd ../../srclib/OpenSSL
+      - export PATH=$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin:$ANDROID_NDK_ROOT/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin:$PATH
+
+      - git clean -dffx
+      - ./Configure shared android-arm64 -D__ANDROID_API__=21
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - llvm-strip --strip-all libcrypto_1_1.so
+      - llvm-strip --strip-all libssl_1_1.so
+      - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm64/.
+      - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm64/.
+
+      - git clean -dffx
+      - ./Configure shared android-arm -D__ANDROID_API__=16
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - llvm-strip --strip-all libcrypto_1_1.so
+      - llvm-strip --strip-all libssl_1_1.so
+      - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm/.
+      - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm/.
+
+      - git clean -dffx
+      - ./Configure shared android-x86 -D__ANDROID_API__=16
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - llvm-strip --strip-all libcrypto_1_1.so
+      - llvm-strip --strip-all libssl_1_1.so
+      - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86/.
+      - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86/.
+
+      - git clean -dffx
+      - ./Configure shared android-x86_64 -D__ANDROID_API__=21
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - llvm-strip --strip-all libcrypto_1_1.so
+      - llvm-strip --strip-all libssl_1_1.so
+      - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86_64/.
+      - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86_64/.
+
+      - cd ../../de.akaflieg_freiburg.enroute
+
       - mkdir -p build-android-release
       - androidCompileSdkVersion="28.0.3"
       - cd build-android-release
