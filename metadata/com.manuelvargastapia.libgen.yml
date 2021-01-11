@@ -28,8 +28,7 @@ Builds:
       - $$flutter$$/bin/flutter clean
       - $$flutter$$/bin/flutter build apk --dart-define=LIBGEN_API_URL=https://libgen-mobile-api.herokuapp.com
         --flavor fdroid
-
-Builds:
+        
   - versionName: 1.0.6
     versionCode: 4
     commit: v1.0.6+4
@@ -53,6 +52,6 @@ MaintainerNotes: |-
     [https://github.com/manuelvargastapia/libgen_api Repo]
 
 AutoUpdateMode: None
-UpdateCheckMode: Tags
+UpdateCheckMode: None
 CurrentVersion: 1.0.6
 CurrentVersionCode: 4
