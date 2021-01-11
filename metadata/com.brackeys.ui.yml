@@ -1,0 +1,25 @@
+Categories:
+  - Development
+License: Apache-2.0
+AuthorName: massivemadness
+SourceCode: https://github.com/massivemadness/Brackeys-IDE
+IssueTracker: https://github.com/massivemadness/Brackeys-IDE/issues
+Changelog: https://github.com/massivemadness/Brackeys-IDE/releases
+
+Description: Brackeys IDE is a fast and free multi-language code editor for Android.
+
+RepoType: git
+Repo: https://github.com/massivemadness/Brackeys-IDE
+
+Builds:
+  - versionName: 2020.3.1
+    versionCode: 10002
+    commit: 2020.3.1
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/app-release-unsigned.apk
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: 2020.3.1
+CurrentVersionCode: 10002
