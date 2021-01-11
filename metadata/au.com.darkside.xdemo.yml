@@ -90,9 +90,9 @@ Builds:
       - rm -rf ./packages/000_alsa
       - cd ..
     scandelete:
-      - demo/src/main/jniLibs/mips64/libwm.so demo/src/main/jniLibs/mips/libwm.so
-        demo/src/main/jniLibs/arm64-v8a/libwm.so demo/src/main/jniLibs/armeabi/libwm.so
-        demo/src/main/jniLibs/armeabi-v7a/libwm.so demo/src/main/jniLibs/x86/libwm.so
+      - demo/src/main/jniLibs/mips64/libwm.so, demo/src/main/jniLibs/mips/libwm.so,
+        demo/src/main/jniLibs/arm64-v8a/libwm.so, demo/src/main/jniLibs/armeabi/libwm.so,
+        demo/src/main/jniLibs/armeabi-v7a/libwm.so, demo/src/main/jniLibs/x86/libwm.so,
         demo/src/main/jniLibs/x86_64/libwm.so
     build:
       - cd ./static-build
