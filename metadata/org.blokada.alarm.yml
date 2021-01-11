@@ -543,11 +543,11 @@ Builds:
       - ./build.sh
     ndk: r20b
 
-  - versionName: 4.9.0
-    versionCode: 409000000
-    commit: 4.9.0
+  - versionName: 4.10.0
+    versionCode: 410000000
+    commit: 4.10.0
     subdir: android4/app
-    submodules: true
+    submodules: yes
     gradle:
       - Droid
     srclibs:
@@ -562,13 +562,13 @@ Builds:
       - rustup target add aarch64-linux-android
       - rustup target add i686-linux-android
       - rustup target add x86_64-linux-android
-      - cargo install cargo-ndk
+      - cargo install cargo-ndk --version 1.0.0
       - export NDK_STANDALONE=$$NDK$$
       - cd ./../..
       - ./build.boringtun.sh
     ndk: r21d
 
-AutoUpdateMode: None
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 4.9.0
-CurrentVersionCode: 409000000
+CurrentVersion: 4.10.0
+CurrentVersionCode: 410000000
