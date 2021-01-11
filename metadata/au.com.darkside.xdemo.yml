@@ -73,13 +73,27 @@ Builds:
       - rm -rf ./packages/003_mlpack
       - rm -rf ./packages/003_libssh
       - rm -rf ./packages/002_sndfile
+      - rm -rf ./packages/002_libselinux
+      - rm -rf ./packages/002_libevent
+      - rm -rf ./packages/002_ensmallen
+      - rm -rf ./packages/002_boost
+      - rm -rf ./packages/002_ao
+      - rm -rf ./packages/002_alsa-utils
+      - rm -rf ./packages/001_openssl
+      - rm -rf ./packages/001_ncurses
+      - rm -rf ./packages/001_gsl
+      - rm -rf ./packages/001_armadillo
       - rm -rf ./packages/000_leveldb
       - rm -rf ./packages/000_googletest
+      - rm -rf ./packages/000_lapack
+      - rm -rf ./packages/000_expat
+      - rm -rf ./packages/000_alsa
       - cd ..
     scandelete:
-      - ./demo/src/main/jniLibs/mips64/libwm.so ./demo/src/main/jniLibs/mips/libwm.so ./demo/src/main/jniLibs/arm64-v8a/libwm.so
-        ./demo/src/main/jniLibs/armeabi/libwm.so ./demo/src/main/jniLibs/armeabi-v7a/libwm.so
-        ./demo/src/main/jniLibs/x86/libwm.so ./demo/src/main/jniLibs/x86_64/libwm.so
+      - demo/src/main/jniLibs/mips64/libwm.so demo/src/main/jniLibs/mips/libwm.so
+        demo/src/main/jniLibs/arm64-v8a/libwm.so demo/src/main/jniLibs/armeabi/libwm.so
+        demo/src/main/jniLibs/armeabi-v7a/libwm.so demo/src/main/jniLibs/x86/libwm.so
+        demo/src/main/jniLibs/x86_64/libwm.so
     build:
       - cd ./static-build
       - make
