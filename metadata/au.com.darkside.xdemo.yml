@@ -63,12 +63,7 @@ Builds:
     prebuild:
       - git clone https://github.com/nwrkbiz/static-build
       - cd ./static-build
-      - ln -s ./build_settings/linux_mips64el_musl.mk
-      - ln -s ./build_settings/linux_mipsel_musl.mk
-      - ln -s ./build_settings/linux_armhf_musl.mk
       - ln -s ./build_settings/linux_aarch64_musl.mk
-      - ln -s ./build_settings/linux_x86_64_musl.mk
-      - ln -s ./build_settings/linux_i686_musl.mk
       - rm -rf ./packages/009_mathgl
       - rm -rf ./packages/008_sdl2
       - rm -rf ./packages/008_doxygen
@@ -82,9 +77,9 @@ Builds:
       - rm -rf ./packages/000_googletest
       - cd ..
     scandelete:
-      - ./src/main/jniLibs/mips64/libwm.so ./src/main/jniLibs/mips/libwm.so ./src/main/jniLibs/arm64-v8a/libwm.so
-        ./src/main/jniLibs/armeabi/libwm.so ./src/main/jniLibs/armeabi-v7a/libwm.so
-        ./src/main/jniLibs/x86/libwm.so ./src/main/jniLibs/x86_64/libwm.so
+      - ./demo/src/main/jniLibs/mips64/libwm.so ./demo/src/main/jniLibs/mips/libwm.so ./demo/src/main/jniLibs/arm64-v8a/libwm.so
+        ./demo/src/main/jniLibs/armeabi/libwm.so ./demo/src/main/jniLibs/armeabi-v7a/libwm.so
+        ./demo/src/main/jniLibs/x86/libwm.so ./demo/src/main/jniLibs/x86_64/libwm.so
     build:
       - cd ./static-build
       - make
@@ -93,13 +88,7 @@ Builds:
       - cd ./009_flwm/
       - make
       - cd ../../../
-      - cp -rf ./static-build/3rdParty/linux_mips64el_musl/bin/flwm ./src/main/jniLibs/mips64/libwm.so
-      - cp -rf ./static-build/3rdParty/linux_mipsel_musl/bin/flwm ./src/main/jniLibs/mips/libwm.so
       - cp -rf ./static-build/3rdParty/linux_aarch64_musl/bin/flwm ./src/main/jniLibs/arm64-v8a/libwm.so
-      - cp -rf ./static-build/3rdParty/linux_armhf_musl/bin/flwm ./src/main/jniLibs/armeabi/libwm.so
-      - cp -rf ./static-build/3rdParty/linux_armhf_musl/bin/flwm ./src/main/jniLibs/armeabi-v7a/libwm.so
-      - cp -rf ./static-build/3rdParty/linux_i686_musl/bin/flwm ./src/main/jniLibs/x86/libwm.so
-      - cp -rf ./static-build/3rdParty/linux_x86_64_musl/bin/flwm ./src/main/jniLibs/x86_64/libwm.so
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
