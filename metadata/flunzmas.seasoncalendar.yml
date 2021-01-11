@@ -16,24 +16,6 @@ RepoType: git
 Repo: https://github.com/Flunzmas/seasoncalendar
 
 Builds:
-  - versionName: 1.4.5
-    versionCode: 39
-    commit: v1.4.5
-    subdir: android/app
-    gradle:
-      - yes
-    output: ../../build/app/outputs/flutter-apk/app-foss-release.apk
-    srclibs:
-      - flutter@stable
-    prebuild:
-      - export flutter=$(realpath $$flutter$$)
-      - echo "flutter.sdk=$flutter" >> ../local.properties
-    build:
-      - $$flutter$$/bin/flutter config --no-analytics
-      - $$flutter$$/bin/flutter packages pub get
-      - $$flutter$$/bin/flutter update-packages
-      - $$flutter$$/bin/flutter build apk --release --flavor foss --verbose
-
   - versionName: 1.4.6
     versionCode: 40
     commit: v1.4.6
@@ -42,7 +24,7 @@ Builds:
       - yes
     output: ../../build/app/outputs/flutter-apk/app-foss-release.apk
     srclibs:
-      - flutter@stable
+      - flutter@1.22.5
     prebuild:
       - export flutter=$(realpath $$flutter$$)
       - echo "flutter.sdk=$flutter" >> ../local.properties
@@ -51,6 +33,7 @@ Builds:
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter update-packages
       - $$flutter$$/bin/flutter build apk --release --flavor foss --verbose
+    ndk: r21d
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
