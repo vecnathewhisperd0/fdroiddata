@@ -27,6 +27,6 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/marchellodev/sharik/master/pubspec.yaml|versionCode:\s(.+)|.|version:\s(.+)
+UpdateCheckData: https://raw.githubusercontent.com/marchellodev/sharik/master/android/app/build.gradle|versionCode\s(\d+)|.|versionName\s\'(.+)\'
 CurrentVersion: 2.5.0
 CurrentVersionCode: 6
