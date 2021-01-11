@@ -82,13 +82,9 @@ Builds:
       - rm -rf ./packages/000_googletest
       - cd ..
     scandelete:
-      ./src/main/jniLibs/mips64/libwm.so
-      ./src/main/jniLibs/mips/libwm.so
-      ./src/main/jniLibs/arm64-v8a/libwm.so
-      ./src/main/jniLibs/armeabi/libwm.so
-      ./src/main/jniLibs/armeabi-v7a/libwm.so
-      ./src/main/jniLibs/x86/libwm.so
-      ./src/main/jniLibs/x86_64/libwm.so
+      - ./src/main/jniLibs/mips64/libwm.so ./src/main/jniLibs/mips/libwm.so ./src/main/jniLibs/arm64-v8a/libwm.so
+        ./src/main/jniLibs/armeabi/libwm.so ./src/main/jniLibs/armeabi-v7a/libwm.so
+        ./src/main/jniLibs/x86/libwm.so ./src/main/jniLibs/x86_64/libwm.so
     build:
       - cd ./static-build
       - make
