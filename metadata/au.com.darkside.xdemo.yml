@@ -6,6 +6,7 @@ AuthorWebSite: http://page.nwrk.biz/giri
 SourceCode: https://github.com/nwrkbiz/android-xserver
 IssueTracker: https://github.com/nwrkbiz/android-xserver/issues
 Changelog: https://github.com/nwrkbiz/android-xserver/releases
+Donate: https://paypal.me/girinwrk
 
 AutoName: X Server
 
@@ -51,9 +52,61 @@ Builds:
   - versionName: '1.31'
     versionCode: 31
     commit: '1.31'
+    timeout: 14400
     subdir: demo
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y git qemu-user-static gperf flex bison pkg-config build-essential
+        cmake meson texinfo doxygen libltdl-dev
     gradle:
       - yes
+    prebuild:
+      - git clone https://github.com/nwrkbiz/static-build
+      - cd ./static-build
+      - ln -s ./build_settings/linux_mips64el_musl.mk
+      - rm -rf ./packages/009_mathgl
+      - rm -rf ./packages/008_sdl2
+      - rm -rf ./packages/008_doxygen
+      - rm -rf ./packages/006_avahi
+      - rm -rf ./packages/005_opencv
+      - rm -rf ./packages/005_harfbuzz
+      - rm -rf ./packages/005_dlib
+      - rm -rf ./packages/003_mlpack
+      - rm -rf ./packages/003_libssh
+      - rm -rf ./packages/003_mqtt_cpp
+      - rm -rf ./packages/002_sndfile
+      - rm -rf ./packages/002_libselinux
+      - rm -rf ./packages/002_libevent
+      - rm -rf ./packages/002_ensmallen
+      - rm -rf ./packages/002_boost
+      - rm -rf ./packages/002_ao
+      - rm -rf ./packages/002_alsa-utils
+      - rm -rf ./packages/001_openssl
+      - rm -rf ./packages/001_ncurses
+      - rm -rf ./packages/001_supportlib
+      - rm -rf ./packages/001_gsl
+      - rm -rf ./packages/001_armadillo
+      - rm -rf ./packages/001_harfbuzz_part
+      - rm -rf ./packages/000_libffi
+      - rm -rf ./packages/000_tinyxml2
+      - rm -rf ./packages/000_libdaemon
+      - rm -rf ./packages/000_leveldb
+      - rm -rf ./packages/000_googletest
+      - rm -rf ./packages/000_lapack
+      - rm -rf ./packages/000_alsa
+      - cd ..
+    scandelete:
+      - demo/src/main/jniLibs
+    build:
+      - cd ./static-build
+      - make
+      - cd ./unused_packages/
+      - ln -s ../packages/GENERAL.mk
+      - cd ./009_flwm/
+      - make
+      - cd ../../../
+      - mkdir -p ./src/main/jniLibs/mips64/
+      - cp -rf ./static-build/3rdParty/linux_mips64el_musl/bin/flwm ./src/main/jniLibs/mips64/libwm.so
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
