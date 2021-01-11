@@ -17,6 +17,7 @@ Builds:
     versionCode: 200206
     commit: 2.0.4
     subdir: app
+    patch: gradle.patch
     gradle:
       - yes
 

@@ -1,0 +1,36 @@
+--- a/build.gradle	2021-01-11 21:43:32.000000000 +0100
++++ b/build.gradle	2021-01-11 21:50:33.951275512 +0100
+@@ -69,14 +69,8 @@
+     }
+ 
+     repositories {
+-        if (project.hasProperty('repositoryMirrors')) {
+-            repositoryMirrors.split(',').each { mirror ->
+-                maven { url mirror }
+-            }
+-        } else {
+-            google()
+-            jcenter()
+-        }
++        google()
++        jcenter()
+     }
+ 
+     dependencies {
+@@ -88,14 +82,8 @@
+ 
+ allprojects {
+     repositories {
+-        if (project.hasProperty('repositoryMirrors')) {
+-            repositoryMirrors.split(',').each { mirror ->
+-                maven { url mirror }
+-            }
+-        } else {
+-            google()
+-            jcenter()
+-        }
++        google()
++        jcenter()
+     }
+ }
+ 
