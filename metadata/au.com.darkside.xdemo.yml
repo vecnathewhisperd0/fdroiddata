@@ -90,10 +90,7 @@ Builds:
       - rm -rf ./packages/000_alsa
       - cd ..
     scandelete:
-      - demo/src/main/jniLibs/mips64/libwm.so, demo/src/main/jniLibs/mips/libwm.so,
-        demo/src/main/jniLibs/arm64-v8a/libwm.so, demo/src/main/jniLibs/armeabi/libwm.so,
-        demo/src/main/jniLibs/armeabi-v7a/libwm.so, demo/src/main/jniLibs/x86/libwm.so,
-        demo/src/main/jniLibs/x86_64/libwm.so
+      - demo/src/main/jniLibs
     build:
       - cd ./static-build
       - make
@@ -102,6 +99,7 @@ Builds:
       - cd ./009_flwm/
       - make
       - cd ../../../
+      - mkdir -p ./src/main/jniLibs/arm64-v8a/
       - cp -rf ./static-build/3rdParty/linux_aarch64_musl/bin/flwm ./src/main/jniLibs/arm64-v8a/libwm.so
 
 AutoUpdateMode: Version %v
