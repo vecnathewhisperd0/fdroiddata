@@ -86,6 +86,6 @@ Builds:
     prebuild: sed -i -e 's/\r//' ../gradle/wrapper/gradle-wrapper.properties
 
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: '1.295'
-CurrentVersionCode: 529
+UpdateCheckMode: RepoManifest
+CurrentVersion: '1.280'
+CurrentVersionCode: 514
