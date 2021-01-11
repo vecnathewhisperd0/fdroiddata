@@ -58,7 +58,7 @@ Builds:
       - apt-get update || apt-get update
       - apt-get install -y git qemu-user-static gperf flex bison pkg-config build-essential
         cmake meson texinfo doxygen libltdl-dev
-    init:
+    scandelete:
       - rm -rf ./src/main/jniLibs/mips64/libwm.so
       - rm -rf ./src/main/jniLibs/mips/libwm.so
       - rm -rf ./src/main/jniLibs/arm64-v8a/libwm.so
