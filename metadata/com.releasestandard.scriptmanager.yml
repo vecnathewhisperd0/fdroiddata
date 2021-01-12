@@ -22,8 +22,6 @@ Description: |-
     Then click play to launch the script.
     Check the result by long press then View log.
 
-RequiresRoot: 'no'
-
 RepoType: git
 Repo: https://github.com/ReleaseStandard/ScriptManager
 
