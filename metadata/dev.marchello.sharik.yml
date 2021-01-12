@@ -26,7 +26,6 @@ Builds:
       - $$flutter$$/bin/flutter build apk
 
 AutoUpdateMode: Version v%v
-UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/marchellodev/sharik/master/android/app/build.gradle|versionCode\s(\d+)|.|versionName\s\'(.+)\'
+UpdateCheckMode: None
 CurrentVersion: '2.5'
 CurrentVersionCode: 10
