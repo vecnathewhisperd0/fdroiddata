@@ -67,6 +67,10 @@ Builds:
       - node_modules/nativescript-feedback/platforms/android/nativescript_feedback.aar
       - node_modules/@nativescript/android/framework/build-tools/dts-generator.jar
       - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-regular.aar
+      - node_modules/bplist-parser/test/utf16_chinese.plist
+      - node_modules/nativescript-ui-calendar/platforms/ios/TNSCalendar.framework/TNSCalendar
+      - node_modules/nativescript-couchbase-plugin/platforms/android/include.gradle
+      - node_modules/nativescript-vibrate/platforms/android/nativescript_vibrate.aar
     build:
       - ns prepare android
       - sed -i 's/\(signingConfig[[:space:]]\)signingConfigs\.release/\1null/' platforms/android/app/build.gradle
