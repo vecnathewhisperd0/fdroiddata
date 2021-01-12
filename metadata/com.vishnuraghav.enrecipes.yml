@@ -36,9 +36,37 @@ Builds:
       - ns install
     output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
     scanignore:
-      - node_modules
-      - app/fonts
-      - platforms/android
+      - node_modules/nativescript-ui-listview/platforms/android/TNSListView-release.aar
+      - node_modules/nativescript-ui-calendar/platforms/android/TNSCalendar-release.aar
+      - node_modules/@nativescript/core/platforms/android/widgets-release.aar
+      - node_modules/@nativescript/android/framework/build-tools/static-binding-generator.jar
+      - node_modules/@nativescript/android/framework/build-tools/android-metadata-generator.jar
+      - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-optimized.aar
+      - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-optimized-with-inspector.aar
+      - node_modules/nativescript-ui-sidedrawer/platforms/android/TNSSideDrawer-release.aar
+      - platforms/android/build-tools/static-binding-generator.jar
+      - platforms/android/build-tools/dts-generator.jar
+      - platforms/android/build-tools/android-metadata-generator.jar
+      - platforms/android/app/libs/runtime-libs/nativescript-regular.aar
+      - platforms/android/app/libs/runtime-libs/nativescript-optimized.aar
+      - platforms/android/app/libs/runtime-libs/nativescript-optimized-with-inspector.aar
+    scandelete:
+      - node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework/TNSCore
+      - node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework/TNSListView
+      - node_modules/proxy-lib/bin/win32/ia32/CredentialsManager.exe
+      - node_modules/proxy-lib/bin/win32/x64/CredentialsManager.exe
+      - node_modules/@nativescript/core/platforms/ios/TNSWidgets.framework/TNSWidgets
+      - node_modules/nativescript-ui-sidedrawer/platforms/ios/TNSSideDrawer.framework/TNSSideDrawer
+      - node_modules/@nativescript/core/platforms/ios/TNSWidgets.framework.dSYM.zip
+      - node_modules/nativescript-couchbase-plugin/platforms/android/fancycouchbase-release.aar
+      - node_modules/nativescript-plugin-filepicker/platforms/android/nativescript_plugin_filepicker.aar
+      - node_modules/nativescript-imagecropper/platforms/android/nativescript_imagecropper.aar
+      - node_modules/@nativescript-community/ui-material-button/platforms/android/ui_material_button.aar
+      - node_modules/@nativescript-community/ui-material-core/platforms/android/ui_material_core.aar
+      - node_modules/@nativescript-community/text/platforms/android/text.aar
+      - node_modules/nativescript-feedback/platforms/android/nativescript_feedback.aar
+      - node_modules/@nativescript/android/framework/build-tools/dts-generator.jar
+      - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-regular.aar
     build:
       - ns prepare android
       - sed -i 's/\(signingConfig[[:space:]]\)signingConfigs\.release/\1null/' platforms/android/app/build.gradle
