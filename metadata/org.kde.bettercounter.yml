@@ -14,11 +14,12 @@ RepoType: git
 Repo: https://github.com/albertvaka/bettercounter
 
 Builds:
-  - versionName: '1.0'
-    versionCode: 1
-    commit: v1.0
+  - versionName: '1.6'
+    versionCode: 10600
+    commit: v1.6
     gradle:
       - yes
+    output: build/outputs/apk/release/app-release-unsigned.apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
