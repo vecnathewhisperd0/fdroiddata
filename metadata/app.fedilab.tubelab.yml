@@ -140,6 +140,8 @@ Builds:
     subdir: app
     gradle:
       - fdroid_full
+    rm:
+      - torrentStream/libs/jlibtorrent-*.jar
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
