@@ -54,6 +54,8 @@ Builds:
     subdir: demo
     gradle:
       - yes
+    rm:
+      - demo/src/main/jniLibs/
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
