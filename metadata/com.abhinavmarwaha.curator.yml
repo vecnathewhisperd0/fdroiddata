@@ -18,12 +18,12 @@ RepoType: git
 Repo: https://github.com/abhinavmarwaha/curator
 
 Builds:
-  - versionName: 0.9.1
-    versionCode: 3
-    commit: v0.9.1
+  - versionName: 0.1.1
+    versionCode: 1
+    commit: v0.1.1
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
-      - flutter@1.22.5
+      - flutter@1.17.1
     prebuild: sed -i -e 's|git@github.com:|https://github.com/|' pubspec.lock pubspec.yaml
     build:
       - export PATH=$$flutter$$/bin:$PATH
@@ -32,12 +32,12 @@ Builds:
       - flutter config --no-analytics
       - flutter build apk --flavor fdroid
 
-  - versionName: 0.1.1
-    versionCode: 1
-    commit: v0.1.1
+  - versionName: 0.9.1
+    versionCode: 3
+    commit: v0.9.1
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
-      - flutter@1.17.1
+      - flutter@1.22.5
     prebuild: sed -i -e 's|git@github.com:|https://github.com/|' pubspec.lock pubspec.yaml
     build:
       - export PATH=$$flutter$$/bin:$PATH
