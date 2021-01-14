@@ -6,25 +6,22 @@ SourceCode: https://github.com/Secure-File-Manager/Secure-File-Manager
 IssueTracker: https://github.com/Secure-File-Manager/Secure-File-Manager/issues
 Changelog: https://github.com/Secure-File-Manager/Secure-File-Manager/blob/HEAD/CHANGELOG.md
 
-Summary: Secure File Manager is file manager for keeping your files in
-    safe
-Description: Secure File Manager is file manager for keeping your files
-    in safe
+Summary: Secure File Manager is file manager for keeping your files in safe
+Description: Secure File Manager is file manager for keeping your files in safe
 
 RepoType: git
 Repo: https://github.com/Secure-File-Manager/Secure-File-Manager
 
 Builds:
-  - versionName: '0.1.0 beta'
+  - versionName: 0.1.0 beta
     versionCode: 1
-    commit: 'v0.1.0-beta'
+    commit: v0.1.0-beta
     subdir: app
     gradle:
       - yes
-
+    ndk: r22
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-
-CurrentVersion: '0.1.0 beta'
+CurrentVersion: 0.1.0 beta
 CurrentVersionCode: 1
