@@ -17,14 +17,14 @@ RepoType: git
 Repo: https://gitlab.com/gardenappl/mitch.git
 
 Builds:
-  - versionName: 1.2.4
-    versionCode: 15
-    commit: v1.2.4
+  - versionName: 1.2.5
+    versionCode: 16
+    commit: v1.2.5
     subdir: app
     gradle:
       - fdroid
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.2.4
-CurrentVersionCode: 15
+CurrentVersion: 1.2.5
+CurrentVersionCode: 16
