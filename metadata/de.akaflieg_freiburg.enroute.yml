@@ -49,6 +49,7 @@ Builds:
     sudo:
       - apt-get update || apt-get update
       - apt-get install --yes librsvg2-bin
+      - apt-get -t stretch-backports install cmake
     patch:
       - enroute_224.patch
     output: build-android-release/android-build/build/outputs/apk/release/android-build-release-unsigned.apk
