@@ -103,7 +103,6 @@ Builds:
       - mkdir arm arm64 x86 x86_64
       - cd ../../srclib/OpenSSL
       - export PATH=$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin:$ANDROID_NDK_ROOT/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin:$PATH
-      - git clean -dffx
       - ./Configure shared android-arm64 -D__ANDROID_API__=21
       - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
       - llvm-strip --strip-all libcrypto_1_1.so
