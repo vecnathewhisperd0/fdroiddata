@@ -1,0 +1,26 @@
+Categories:
+  - Internet
+License: Apache-2.0
+AuthorName: Northeastern University Wehe Project
+AuthorEmail: wehe@ccs.neu.edu
+WebSite: https://wehe.meddle.mobi/
+SourceCode: https://github.com/NEU-SNS/wehe-android
+IssueTracker: https://github.com/NEU-SNS/wehe-android/issues
+
+AutoName: Wehe
+
+RepoType: git
+Repo: https://github.com/NEU-SNS/wehe-android
+
+Builds:
+  - versionName: '3.60'
+    versionCode: 43
+    commit: e2e30def9e49839882593d0f0e3acce90449468c
+    subdir: wehe
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: '3.60'
+CurrentVersionCode: 43
