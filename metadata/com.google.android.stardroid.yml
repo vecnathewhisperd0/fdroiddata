@@ -96,9 +96,9 @@ Builds:
     scanignore:
       - tools/build
 
-  - versionName: 1.9.6 - RC2
-    versionCode: 1519
-    commit: 6c5e604a571dc7f337c68568c4045246f107b6ca
+  - versionName: 1.9.6 - RC6
+    versionCode: 1523
+    commit: f312c2667542f7355a2c1a3309058d2e33a2797c
     subdir: app
     gradle:
       - Fdroid
@@ -114,7 +114,7 @@ Builds:
     scanignore:
       - tools/build
 
-AutoUpdateMode: Version %v
+AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: 1.9.7 - RC1
 CurrentVersionCode: 1524
