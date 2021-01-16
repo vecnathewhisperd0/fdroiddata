@@ -15,7 +15,7 @@ Repo: https://github.com/NEU-SNS/wehe-android
 Builds:
   - versionName: '3.60'
     versionCode: 43
-    commit: e2e30def9e49839882593d0f0e3acce90449468c
+    commit: e08c019e36604590697460c7ae70ab54087a7091
     subdir: wehe
     gradle:
       - yes
