@@ -14,9 +14,11 @@ RepoType: git
 Repo: https://github.com/NEU-SNS/wehe-android
 
 Builds:
+<<<<<<< HEAD
   - versionName: '3.7.1'
     versionCode: 46
     commit: v3.7.1
+>>>>>>> update app version
     subdir: wehe
     gradle:
       - yes
