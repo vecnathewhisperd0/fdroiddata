@@ -7,6 +7,8 @@ IssueTracker: https://github.com/kaaholst/android-squeezer/issues
 Translation: https://github.com/kaaholst/android-squeezer/wiki/Translating-Squeezer
 Changelog: https://github.com/kaaholst/android-squeezer/blob/HEAD/NEWS
 
+AutoName: Squeezer
+
 RepoType: git
 Repo: https://github.com/kaaholst/android-squeezer
 
@@ -21,3 +23,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
+CurrentVersion: 2.2.1
+CurrentVersionCode: 89
