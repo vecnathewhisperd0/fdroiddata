@@ -35,14 +35,14 @@ RepoType: git
 Repo: https://gitlab.com/BeowuIf/weather.git
 
 Builds:
-  - versionName: '2.00'
-    versionCode: 21
-    commit: '2.00'
+  - versionName: '2.01'
+    versionCode: 22
+    commit: '2.01'
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '2.00'
-CurrentVersionCode: 21
+CurrentVersion: '2.01'
+CurrentVersionCode: 22
