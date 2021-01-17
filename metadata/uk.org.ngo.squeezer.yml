@@ -14,7 +14,7 @@ Repo: https://github.com/kaaholst/android-squeezer
 
 Builds:
   - versionName: 2.2.2
-    versionCode: 89
+    versionCode: 90
     commit: '2.2.2'
     subdir: Squeezer
     gradle:
