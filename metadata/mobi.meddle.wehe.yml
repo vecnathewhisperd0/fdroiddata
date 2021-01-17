@@ -15,12 +15,12 @@ Repo: https://github.com/NEU-SNS/wehe-android
 Builds:
   - versionName: '3.60'
     versionCode: 43
-    commit: 9926ca430d72479cf9ded5465004ed7d35ad6774
+    commit: v3.60
     subdir: wehe
     gradle:
       - yes
 
-AutoUpdateMode: None
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: '3.60'
 CurrentVersionCode: 43
