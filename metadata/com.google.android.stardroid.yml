@@ -105,6 +105,12 @@ Builds:
     prebuild:
       - sed -i -e '/gms/d' ../build.gradle
       - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - cd ..
+      - gradle :tools:installDist
+      - cd tools
+      - sed -i -e 's#CLASSPATH=#CLASSPATH=$APP_HOME/lib/:#g' build/install/datagen/bin/datagen
+      - ./generate.sh
+      - ./binary.sh
     scanignore:
       - tools/build
 
@@ -117,14 +123,6 @@ Builds:
     prebuild:
       - sed -i -e '/gms/d' ../build.gradle
       - sed -i -e '/com.google.gms.google-services/d' build.gradle
-      - cd ..
-      - gradle :tools:installDist
-      - cd tools
-      - sed -i -e 's#CLASSPATH=#CLASSPATH=$APP_HOME/lib/:#g' build/install/datagen/bin/datagen
-      - ./generate.sh
-      - ./binary.sh
-    scanignore:
-      - tools/build
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
