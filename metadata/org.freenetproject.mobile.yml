@@ -7,49 +7,18 @@ WebSite: https://freenet-mobile.github.io/app
 SourceCode: https://github.com/freenet-mobile/app
 IssueTracker: https://github.com/freenet-mobile/app/issues
 
-Summary: Access Freenet from the palm of your hand
-Description: |-
-    Freenet is a peer-to-peer platform for censorship-resistant communication and publishing.
-
-    # Features
-
-    * Simple and intuitive interface for controlling the node: start and stop with a single tap.
-
-    * Runs in background for better performance to access content.
-
-
-    # FAQ
-
-    - Will there ever be an iOS version? Is it even possible?
-
-    Apparently it's technically possible. We're not sure we'll focus our efforts on it right now.
-
-    - Wouldn't that be a huge battery drain? What about data-plan?
-
-    The app is pre-configured to keep battery and network data usage to a minimum. You can configure the app to avoid data-plan use as well.
-
-    - Can I use the app on my everyday phone?
-
-    Yes, you can. Configure it to "preserve data", so it only connects on Wifi and "preserve battery" to run only when charging.
-
-    - Does it run on my Android X, Y, Z phone?
-
-    The application runs on Android Lollipop 5.1 and above. So any modern phone should work.
-
-    - What can I do with it?
-
-    You can access and create content on Freenet. Access FMS Archive to see what the Freenet community is talking about.
-
 RepoType: git
 Repo: https://github.com/freenet-mobile/app
 
 Builds:
-  - versionName: 0.2.0
-    versionCode: 261
-    commit: 48b2912
+  - versionName: 0.2.1
+    versionCode: 291
+    commit: v0.2.1-beta
     subdir: app
     gradle:
       - yes
 
-AutoUpdateMode: None
-UpdateCheckMode: Tags
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags v\d+\.\d+\.\d+(.*)?
+CurrentVersion: 0.2.1
+CurrentVersionCode: 291
