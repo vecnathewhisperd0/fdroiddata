@@ -18,7 +18,7 @@ Builds:
     versionCode: 2
     commit: v2.0.0
     srclibs:
-      - flutter@1.26.0
+      - flutter@1.22.5
     prebuild:
       - rm -fr ios
       - echo "flutter.sdk=$$flutter$$" >> ../local.properties
