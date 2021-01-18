@@ -1,0 +1,32 @@
+Categories:
+  - Development
+  - Money
+  - Security
+License: GPL-3.0-only
+SourceCode: https://github.com/nateshmbhat/card-scanner-flutter
+IssueTracker: https://github.com/nateshmbhat/card-scanner-flutter/issues
+AuthorName: Natesh M Bhat
+
+AutoName: card_scanner_example
+Description: Fast, Accurate and Secure Credit & Debit card scanning library for flutter.
+
+RepoType: git
+Repo: https://github.com/nateshmbhat/card-scanner-flutter
+
+Builds:
+  - versionName: Unknown
+    versionCode: 0
+    commit: a4349a1964970743a3507289077061ee014ee4d0
+    subdir: example
+    gradle:
+      - yes
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@stable
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
