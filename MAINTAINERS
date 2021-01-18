@@ -1,0 +1,33 @@
+# Syntax 
+#
+# U:    @username for gitlab.com
+# E:    (optional) 'Firstname Lastname <email>'
+# A:    appid
+# A:    another appid
+#
+# Notes:
+# Users listed here effectively gain commit access to the following files:
+#  - metadata/appid.yml
+#  - metadata/appid/*
+#
+# Users which have their email address listed should get email notifications of 
+# build failures once these are set up.
+
+U: @Tobias_Groza
+A: org.schabi.newpipe
+
+U: @ConnyDuck
+A: com.keylesspalace.tusky
+
+U: @cketti
+A: com.fsck.k9
+
+U: @tobiasKaminsky
+A: com.nextcloud.client
+A: com.nextcloud.android.beta
+
+U: @thermatk
+A: org.telegram.messenger
+
+U: @ByteHamster
+A: de.danoeh.antennapod
