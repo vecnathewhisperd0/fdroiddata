@@ -1,0 +1,60 @@
+Categories:
+  - Science & Education
+  - Sports & Health
+License: GPL-2.0-or-later
+AuthorName: Bytesolotl
+AuthorEmail: bytesolotl.dev@gmail.com
+WebSite: https://statscov-19-cd31f.firebaseapp.com/
+SourceCode: https://github.com/jerilMJ/statscov-19
+IssueTracker: https://github.com/jerilMJ/statscov-19/issues
+Changelog: https://github.com/jerilMJ/statscov-19/blob/HEAD/CHANGELOG.md
+Bitcoin: 13bgx7CwSr8geB5cDPyZbhPDzpAP3LSuqG
+
+AutoName: StatsCOV-19
+Description: |-
+    StatsCOV-19 is a COVID-19 data visualization app that provides the
+    data collected by the Johns Hopkins University Center for Systems Science
+    and Engineering (JHU CSSE) (https://github.com/CSSEGISandData/COVID-19) in
+    a user-friendly and easy-to-view manner.
+
+    '''Features:'''
+
+    * View reports of any country individually
+    * Compare multiple reports together
+    * View the latest global report
+    * See how the pandemic spread on the map
+    * View status offline once downloaded (from cached data)
+    * Pin the reports you want to access them quicker
+    * No special permissions required
+
+RepoType: git
+Repo: https://github.com/jerilMJ/statscov-19
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: v1.0.0
+    output: app/build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@1.17.1
+    prebuild:
+      - cd app
+      - rm -f android/local.properties
+      - rm -rf ios
+      - echo 'android.applicationVariants.all { variant -> variant.outputs.all { output
+        -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+      - ../$$flutter$$/bin/flutter packages pub get
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - cd app
+      - ../$$flutter$$/bin/flutter clean
+      - ../$$flutter$$/bin/flutter build apk --release
+
+MaintainerNotes: |-
+    I am currently trying to improve the app performance and perform bug-fixes
+    as I go along with the help of the issue-tracker on github and the app page.
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
