@@ -1,0 +1,42 @@
+Categories:
+  - Science & Education
+  - Sports & Health
+License: AGPL-3.0-only
+SourceCode: https://gitlab.com/joshmcarthur/emote
+IssueTracker: https://gitlab.com/joshmcarthur/emote/issues
+
+AutoName: emote
+Summary: Emotional check-ins for positive mental health
+Description: |-
+    Emote is a simple tool for maintaining a record of emotions throughout
+    your day. Over time, keeping such a log can help to identify trends and
+    triggers that cause emotions that may affect your overall mental health.
+
+    Permissions are kept to an absolute minimum, and all data is securely
+    stored locally on your device. There is no outbound internet permissions
+    requested, and notifications are set up and triggered locally, not using
+    a cloud service.
+
+    To help maintain a history of your Emote checkins, this app is compatible
+    with the Android backup service - if enabled, your Emote checkins will
+    be backed up along with the rest of your application data.
+
+RepoType: git
+Repo: https://gitlab.com/joshmcarthur/emote
+
+Builds:
+  - versionName: 1.5.0
+    versionCode: 6008
+    commit: v1.5.0+6008
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.12.13+hotfix.6
+    rm:
+      - ios
+    prebuild:
+      - $$flutter$$/bin/flutter pub get
+      - bash metadata/fdroid-scripts/build-release-unsigned.sh
+    build: $$flutter$$/bin/flutter build apk
+
+AutoUpdateMode: None
+UpdateCheckMode: None
