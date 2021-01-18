@@ -16,10 +16,10 @@ Builds:
     subdir: app
     gradle:
       - yes
+    prebuild: sed -i 's/ versionCode .*/ versionCode $$VERCODE$$/' build.gradle
     gradleprops:
       - noSplits
       - ABI_FILTERS=x86
-    prebuild: sed -i 's/ versionCode .*/ versionCode $$VERCODE$$/' build.gradle
 
   - versionName: 0.1.2
     versionCode: 10202
@@ -27,10 +27,10 @@ Builds:
     subdir: app
     gradle:
       - yes
+    prebuild: sed -i 's/ versionCode .*/ versionCode $$VERCODE$$/' build.gradle
     gradleprops:
       - noSplits
       - ABI_FILTERS=x86_64
-    prebuild: sed -i 's/ versionCode .*/ versionCode $$VERCODE$$/' build.gradle
 
   - versionName: 0.1.2
     versionCode: 10203
@@ -38,10 +38,10 @@ Builds:
     subdir: app
     gradle:
       - yes
+    prebuild: sed -i 's/ versionCode .*/ versionCode $$VERCODE$$/' build.gradle
     gradleprops:
       - noSplits
       - ABI_FILTERS=armeabi-v7a
-    prebuild: sed -i 's/ versionCode .*/ versionCode $$VERCODE$$/' build.gradle
 
   - versionName: 0.1.2
     versionCode: 10204
@@ -49,15 +49,15 @@ Builds:
     subdir: app
     gradle:
       - yes
+    prebuild: sed -i 's/ versionCode .*/ versionCode $$VERCODE$$/' build.gradle
     gradleprops:
       - noSplits
       - ABI_FILTERS=arm64-v8a
-    prebuild: sed -i 's/ versionCode .*/ versionCode $$VERCODE$$/' build.gradle
 
 MaintainerNotes: |-
-  * For every release 4 versions are built, one for each architecture.
-  * versionCode is updated in build.grade as prebuild step to differentiate each architecture version.
-  * versionCode must follow x86 < x86_64 < armeabi-v7a < arm64-v8a.
+    * For every release 4 versions are built, one for each architecture.
+    * versionCode is updated in build.grade as prebuild step to differentiate each architecture version.
+    * versionCode must follow x86 < x86_64 < armeabi-v7a < arm64-v8a.
 
 ArchivePolicy: 12 versions
 AutoUpdateMode: None
