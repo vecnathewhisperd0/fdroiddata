@@ -4,16 +4,16 @@ License: GPL-3.0-or-later
 AuthorName: sunilpaulmathew
 AuthorEmail: sunil.kde@gmail.com
 AuthorWebSite: https://smartpack.github.io/
-WebSite: https://smartpack.github.io/scriptmanager/
-SourceCode: https://github.com/SmartPack/ScriptManager/
-IssueTracker: https://github.com/SmartPack/ScriptManager/issues/
-Changelog: https://github.com/SmartPack/ScriptManager/blob/master/change-logs.md/
-Donate: https://smartpack.github.io/donation/
+WebSite: https://smartpack.github.io/scriptmanager
+SourceCode: https://github.com/SmartPack/ScriptManager
+IssueTracker: https://github.com/SmartPack/ScriptManager/issues
+Changelog: https://github.com/SmartPack/ScriptManager/blob/master/change-logs.md
+Donate: https://smartpack.github.io/donation
 
 AutoName: Script Manager
 
 RepoType: git
-Repo: https://smartpack.github.io/scriptmanager/
+Repo: https://github.com/SmartPack/ScriptManager
 
 Builds:
   - versionName: v4.4
