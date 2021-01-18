@@ -14,7 +14,7 @@ Repo: https://github.com/kaaholst/android-squeezer
 
 Builds:
   - versionName: 2.2.2
-    versionCode: 90
+    versionCode: 91
     commit: '2.2.2'
     subdir: Squeezer
     gradle:
@@ -23,4 +23,4 @@ Builds:
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 2.2.2
-CurrentVersionCode: 90
+CurrentVersionCode: 91
