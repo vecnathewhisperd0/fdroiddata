@@ -18,14 +18,14 @@ Builds:
     versionCode: 2
     commit: v2.0.0
     srclibs:
-      - flutter@1.22.5
+      - flutter@1.26.0-1.0.pre
     prebuild:
       - rm -fr ios
       - echo "flutter.sdk=$$flutter$$" >> ../local.properties
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter packages pub get
-      - $$flutter$$/bin/flutter build apk --flavor fdroid
+      - $$flutter$$/bin/flutter build apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
