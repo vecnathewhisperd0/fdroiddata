@@ -13,6 +13,29 @@ RepoType: git
 Repo: https://github.com/kaaholst/android-squeezer
 
 Builds:
+  - versionName: '0.9'
+    versionCode: 12
+    commit: '0.9'
+    srclibs:
+      - NoAnalytics@158a4a
+    rm:
+      - libs/libGoogleAnalytics.jar
+    prebuild:
+      - echo "android.library.reference.1=$$NoAnalytics$$" >> project.properties
+      - rm -rf market
+
+  - versionName: 0.9.1
+    versionCode: 13
+    commit: 0.9.1
+    srclibs:
+      - NoAnalytics@158a4a
+    rm:
+      - libs/libGoogleAnalytics.jar
+    prebuild:
+      - echo "android.library.reference.1=$$NoAnalytics$$" >> project.properties
+      - rm -rf market
+      - sed -i '/proguard/d' project.properties
+
   - versionName: 2.2.2
     versionCode: 91
     commit: 2.2.2
