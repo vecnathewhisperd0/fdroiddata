@@ -47,7 +47,14 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: None
-UpdateCheckMode: RepoManifest
+  - versionName: 20180801_V3
+    versionCode: 3
+    commit: 20180801_V3
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
 CurrentVersion: 20180801_V3
 CurrentVersionCode: 3
