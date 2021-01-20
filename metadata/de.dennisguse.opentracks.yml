@@ -1,10 +1,13 @@
 Categories:
   - Sports & Health
 License: Apache-2.0
+AuthorName: OpenTracks Team
+WebSite: https://OpenTracksApp.com
 SourceCode: https://github.com/OpenTracksApp/OpenTracks
 IssueTracker: https://github.com/OpenTracksApp/OpenTracks/issues
-Changelog: https://github.com/OpenTracksApp/opentracks/releases
+Changelog: https://github.com/OpenTracksApp/OpenTracks/releases
 Liberapay: OpenTracks
+Bitcoin: bc1qckpls3lpjlcpyxzm66hcy65hnesas9zgacy6yc
 
 AutoName: OpenTracks
 
@@ -204,7 +207,55 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v3.11.0
+    versionCode: 3656
+    commit: v3.11.0
+    gradle:
+      - yes
+
+  - versionName: v3.11.1
+    versionCode: 3661
+    commit: v3.11.1
+    gradle:
+      - yes
+
+  - versionName: v3.12.0
+    versionCode: 3704
+    commit: v3.12.0
+    gradle:
+      - yes
+
+  - versionName: v3.13.0
+    versionCode: 3732
+    commit: v3.13.0
+    gradle:
+      - yes
+
+  - versionName: v3.13.1
+    versionCode: 3737
+    commit: v3.13.1
+    gradle:
+      - yes
+
+  - versionName: v3.13.2
+    versionCode: 3740
+    commit: v3.13.2
+    gradle:
+      - yes
+
+  - versionName: v3.14.0
+    versionCode: 3761
+    commit: v3.14.0
+    gradle:
+      - yes
+
+  - versionName: v3.14.1
+    versionCode: 3799
+    commit: v3.14.1
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.10.0
-CurrentVersionCode: 3611
+CurrentVersion: v3.14.1
+CurrentVersionCode: 3799

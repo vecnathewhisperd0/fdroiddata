@@ -15,7 +15,7 @@ Description: |-
     are more accurate methods, like measuring the basal body temperature.
 
     If you have any further questions or want to help translating the app, please
-    [http://arnowelzel.de/wiki/en/arno contact upstream].
+    <a href="http://arnowelzel.de/wiki/en/arno">contact upstream</a>.
 
 RepoType: git
 Repo: https://github.com/arnowelzel/periodical.git
@@ -307,7 +307,56 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.50'
+    versionCode: 80
+    commit: '1.50'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.51'
+    versionCode: 81
+    commit: '1.51'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.52'
+    versionCode: 82
+    commit: '1.52'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.61'
+    versionCode: 85
+    commit: '1.61'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.63'
+    versionCode: 87
+    commit: '1.63'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.64'
+    versionCode: 88
+    commit: '1.64'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.65'
+    versionCode: 89
+    commit: '1.65'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.49'
-CurrentVersionCode: 79
+CurrentVersion: '1.65'
+CurrentVersionCode: 89

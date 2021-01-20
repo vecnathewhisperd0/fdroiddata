@@ -366,7 +366,20 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.15'
+    versionCode: 95
+    commit: v1.15
+    gradle:
+      - yes
+
+  - versionName: '1.16'
+    versionCode: 96
+    commit: v1.16
+    gradle:
+      - yes
+    ndk: r21d
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.14'
-CurrentVersionCode: 94
+CurrentVersion: '1.16'
+CurrentVersionCode: 96

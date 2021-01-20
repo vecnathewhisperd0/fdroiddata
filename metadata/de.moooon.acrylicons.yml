@@ -1,0 +1,43 @@
+AntiFeatures:
+  - NonFreeAssets
+Categories:
+  - Theming
+License: CC0-1.0
+AuthorName: Sylvia van Os & Mondstern
+SourceCode: https://codeberg.org/mondstern/AndroidAcrylicIconPack
+IssueTracker: https://codeberg.org/mondstern/AndroidAcrylicIconPack/issues
+Changelog: https://codeberg.org/mondstern/AndroidAcrylicIconPack/src/branch/main/ChangeLog.md
+
+AutoName: Mondstern Acrylic Icons
+
+RepoType: git
+Repo: https://codeberg.org/mondstern/AndroidAcrylicIconPack
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.0'
+    versionCode: 2
+    commit: v2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.0'
+    versionCode: 3
+    commit: v3.0
+    subdir: app
+    gradle:
+      - yes
+
+MaintainerNotes: Actual icons are under CC-BY-NC-ND 4.0, see https://codeberg.org/mondstern/AndroidAcrylicIconPack#mondstern-acrylic-icons
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '3.0'
+CurrentVersionCode: 3

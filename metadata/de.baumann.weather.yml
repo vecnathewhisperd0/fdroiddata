@@ -17,7 +17,7 @@ Description: |-
     * search and save other locations as bookmarks
     * usefull weather informations (satelitt, rain radar, topic of the day, ...)
 
-    [https://github.com/scoute-dich/Weather/blob/master/SCREENSHOTS.md Screenshots]
+    <a href="https://github.com/scoute-dich/Weather/blob/master/SCREENSHOTS.md">Screenshots</a>
 
 RepoType: git
 Repo: https://github.com/scoute-dich/Weather
@@ -242,7 +242,16 @@ Builds:
     prebuild: sed -i -e "/legacy/aimplementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'"
         build.gradle
 
+  - versionName: '5.1'
+    versionCode: 63
+    commit: v5.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "/legacy/aimplementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'"
+        build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 5.0.1
-CurrentVersionCode: 62
+CurrentVersion: '5.1'
+CurrentVersionCode: 63

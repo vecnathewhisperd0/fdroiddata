@@ -27,8 +27,7 @@ Description: |-
     Discover nearby stations and show upcoming departures including the delays (if
     there are any).
 
-    [https://github.com/grote/Transportr/blob/master/README.md#screenshots
-    Screenshots]
+    <a href="https://github.com/grote/Transportr/blob/master/README.md#screenshots">Screenshots</a>
 
 RepoType: git
 Repo: https://github.com/grote/Transportr.git
@@ -383,7 +382,28 @@ Builds:
     gradleprops:
       - buildServer
 
+  - versionName: 2.1.1
+    versionCode: 119
+    disable: upstream issue, app crashes on some phones https://github.com/grote/Transportr/issues/739
+    commit: 2.1.1
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - gradlewitnessakwizgran@3119debde6c8aadebebcb0a7eb16dbb2e40c4046
+    rm:
+      - app/libs/gradle-witness.jar
+    prebuild:
+      - pushd $$gradlewitnessakwizgran$$
+      - gradle build
+      - popd
+      - mv $$gradlewitnessakwizgran$$/build/libs/gradlewitnessakwizgran.jar libs/gradle-witness.jar
+    scanignore:
+      - app/libs/gradle-witness.jar
+    gradleprops:
+      - buildServer
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.1.0
-CurrentVersionCode: 118
+CurrentVersion: 2.1.1
+CurrentVersionCode: 119

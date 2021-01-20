@@ -6,7 +6,6 @@ SourceCode: https://gitea.com/theoden8/sudaku
 IssueTracker: https://gitea.com/theoden8/sudaku/issues
 
 AutoName: Sudaku
-Summary: Solve sudoku by creating rules
 Description: Invent the rules on the go to solve hardest sudoku puzzles.
 
 RepoType: git
@@ -26,6 +25,30 @@ Builds:
 
   - versionName: 0.0.3
     versionCode: 4
+    disable: version not updated, repo down
+    commit: v0.0.3
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@stable
+    prebuild:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+    build: $$flutter$$/bin/flutter build apk --flavor fdroid --verbose
+
+  - versionName: 0.0.3
+    versionCode: 5
+    disable: version not updated
+    commit: v0.0.3
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@stable
+    prebuild:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+    build: $$flutter$$/bin/flutter build apk --flavor fdroid --verbose
+
+  - versionName: 0.0.3
+    versionCode: 6
     commit: v0.0.3
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
@@ -39,4 +62,4 @@ AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://gitea.com/theoden8/sudaku/raw/branch/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 0.0.3
-CurrentVersionCode: 4
+CurrentVersionCode: 6

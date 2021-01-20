@@ -129,7 +129,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '6.2'
+    versionCode: 18
+    commit: v6.2
+    subdir: InboxPager
+    gradle:
+      - yes
+
+  - versionName: '6.3'
+    versionCode: 19
+    commit: v6.3
+    subdir: InboxPager
+    gradle:
+      - yes
+
+  - versionName: '6.4'
+    versionCode: 20
+    commit: v6.4
+    subdir: InboxPager
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '6.1'
-CurrentVersionCode: 17
+CurrentVersion: '6.4'
+CurrentVersionCode: 20

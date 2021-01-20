@@ -2,33 +2,15 @@ Categories:
   - Internet
   - Reading
 License: GPL-3.0-only
+AuthorName: Space Cowboy
+AuthorWebSite: https://cowboyprogrammer.org
 SourceCode: https://gitlab.com/spacecowboy/Feeder
 IssueTracker: https://gitlab.com/spacecowboy/Feeder/issues
+Translation: https://crowdin.com/project/feeder
 Changelog: https://gitlab.com/spacecowboy/Feeder/blob/HEAD/CHANGELOG.md
 Bitcoin: 1PdmeeGxB2iktvmtkGqwUNmYq7L9tnxjwE
 
 AutoName: Feeder
-Description: |-
-    Are you sick of bloated non-free readers that steal your personal information?
-    Are you tired of convoluted syncing setups requiring hours of server
-    configuration? Are you fed up with having to create accounts everywhere?
-
-    Try Feeder instead!
-
-    Feeder is a fully free/libre feed reader. It supports all common feed formats,
-    including JSONFeed. It doesn't track you. It doesn't require any setup. It
-    doesn't even need you to create an account! Just setup your feeds, or import
-    them from your old reader via OPML, then get on with syncing and reading.
-
-    '''Features'''
-
-    * Parses HTML and displays it in a native TextView
-    * Offline reading
-    * Background synchronization
-    * Notifications
-    * OPML Import/Export
-    * Handy access to enclosure links
-    * Material design
 
 RepoType: git
 Repo: https://gitlab.com/spacecowboy/Feeder.git
@@ -664,7 +646,106 @@ Builds:
       - graphics
     prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
 
+  - versionName: 1.10.0
+    versionCode: 80
+    commit: 1.10.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.1
+    versionCode: 81
+    commit: 1.10.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.2
+    versionCode: 82
+    commit: 1.10.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.4
+    versionCode: 84
+    commit: 1.10.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.5
+    versionCode: 85
+    commit: 1.10.5
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.6
+    versionCode: 86
+    commit: 1.10.6
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.7
+    versionCode: 87
+    commit: 1.10.7
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.8
+    versionCode: 88
+    commit: 1.10.8
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.9
+    versionCode: 89
+    commit: 1.10.9
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.9
-CurrentVersionCode: 79
+CurrentVersion: 1.10.9
+CurrentVersionCode: 89

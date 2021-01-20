@@ -14,7 +14,7 @@ AutoName: WireGuard
 Description: |-
     WireGuard is a next generation secure network tunnel protocol. This application
     allows users to connect to WireGuard tunnels. More information may be found on
-    the [https://www.wireguard.com project webpage].
+    the <a href="https://www.wireguard.com">project webpage</a>.
 
     If your device has a custom kernel containing the WireGuard module, then the
     module will be used for superior battery life and performance. Otherwise a
@@ -453,17 +453,8 @@ Builds:
       - yes
     ndk: r21d
 
-  - versionName: 1.0.20200922
-    versionCode: 479
-    commit: 1.0.20200922
-    subdir: ui
-    submodules: true
-    gradle:
-      - yes
-    ndk: r21d
-
   - versionName: 1.0.20200923
-    versionCode: 480
+    versionCode: 481
     commit: 1.0.20200923
     subdir: ui
     submodules: true
@@ -471,9 +462,38 @@ Builds:
       - yes
     ndk: r21d
 
+  - versionName: 1.0.20200927
+    versionCode: 482
+    commit: 1.0.20200927
+    subdir: ui
+    submodules: true
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: 1.0.20201216
+    versionCode: 484
+    commit: 1.0.20201216
+    subdir: ui
+    submodules: true
+    gradle:
+      - yes
+    prebuild: sed -i -e '/api\.bintray\.com/d' ../tunnel/publish.gradle
+    ndk: r21d
+
+  - versionName: 1.0.20201224
+    versionCode: 485
+    commit: 1.0.20201224
+    subdir: ui
+    submodules: true
+    gradle:
+      - yes
+    prebuild: sed -i -e '/api\.bintray\.com/d' ../tunnel/publish.gradle
+    ndk: r21d
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://git.zx2c4.com/wireguard-android/plain/version.gradle?ua=fdroid-update-check|wireguardVersionCode
     = ([0-9]+)|.|wireguardVersionName = '([0-9.]+)'
-CurrentVersion: 1.0.20200923
-CurrentVersionCode: 480
+CurrentVersion: 1.0.20201224
+CurrentVersionCode: 485

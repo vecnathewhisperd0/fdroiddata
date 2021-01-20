@@ -62,7 +62,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.10.1
+    versionCode: 101001
+    commit: v1.10.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.10.3
+    versionCode: 101003
+    commit: v1.10.3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v
-CurrentVersion: 1.9.0
-CurrentVersionCode: 10900
+CurrentVersion: 1.10.3
+CurrentVersionCode: 101003

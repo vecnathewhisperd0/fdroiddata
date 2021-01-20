@@ -239,7 +239,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.4.1
+    versionCode: 227
+    commit: 2.4.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.4.2
+    versionCode: 228
+    commit: 2.4.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^v?[0-9.]*$
-CurrentVersion: 2.4.0
-CurrentVersionCode: 226
+CurrentVersion: 2.4.2
+CurrentVersionCode: 228

@@ -253,7 +253,52 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 6.8.0
+    versionCode: 95
+    commit: 6.8.0
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - yes
+
+  - versionName: 6.8.1
+    versionCode: 96
+    commit: 6.8.1
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - yes
+
+  - versionName: 6.8.2
+    versionCode: 97
+    commit: 6.8.2
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - yes
+
+  - versionName: 6.8.3
+    versionCode: 98
+    commit: 6.8.3
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - yes
+
+  - versionName: 6.8.4
+    versionCode: 99
+    commit: 6.8.4
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 6.7.4
-CurrentVersionCode: 94
+CurrentVersion: 6.8.4
+CurrentVersionCode: 99

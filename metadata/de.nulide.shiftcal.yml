@@ -3,6 +3,7 @@ Categories:
 License: GPL-3.0-only
 SourceCode: https://gitlab.com/Nulide/ShiftCal
 IssueTracker: https://gitlab.com/Nulide/ShiftCal/-/issues
+LiberapayID: '1741517'
 
 AutoName: ShiftCal
 
@@ -52,7 +53,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.6.1
+    versionCode: 8
+    commit: v1.6.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.6'
-CurrentVersionCode: 7
+CurrentVersion: 1.6.1
+CurrentVersionCode: 8

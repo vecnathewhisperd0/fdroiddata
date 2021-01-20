@@ -22,7 +22,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.2.0
+    versionCode: 24
+    commit: 1.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.1
+    versionCode: 25
+    commit: 1.2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.2
+    versionCode: 26
+    commit: 1.2.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.2
-CurrentVersionCode: 23
+CurrentVersion: 1.2.2
+CurrentVersionCode: 26

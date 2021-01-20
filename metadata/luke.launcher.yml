@@ -26,9 +26,23 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.0.20
+    versionCode: 10020
+    commit: v1.0.20
+    subdir: platforms/android/app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0
+    versionCode: 20000
+    commit: v2.0.0
+    subdir: platforms/android/app
+    gradle:
+      - yes
+
 MaintainerNotes: This is a Cordova app, built from source.
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v.*[0-9]$
-CurrentVersion: 1.0.19
-CurrentVersionCode: 10019
+CurrentVersion: 2.0.0
+CurrentVersionCode: 20000
