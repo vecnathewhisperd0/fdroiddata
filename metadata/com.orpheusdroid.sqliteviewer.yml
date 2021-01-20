@@ -10,6 +10,8 @@ Donate: https://paypal.me/vijaichander
 Bitcoin: 1Cbf61y8XNx3BLWvoZB71x4XgBKB7r8BuB
 
 AutoName: SQLiteViewer
+MaintainerNotes: |-
+    Tracking: see fdroiddata#2244
 Description: |-
     SQLiteViewer allows to view and export as csv SQLite databases used by android
     apps or any SQLite databases with ease and simplicity.
