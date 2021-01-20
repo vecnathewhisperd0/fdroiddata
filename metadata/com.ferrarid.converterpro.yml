@@ -39,5 +39,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://github.com/ferraridamiano/ConverterNOW/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 2.4.1
-CurrentVersionCode: 23
+CurrentVersion: 2.4.2
+CurrentVersionCode: 24
