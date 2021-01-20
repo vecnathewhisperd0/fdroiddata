@@ -11,9 +11,9 @@ RepoType: git
 Repo: https://github.com/kmac/mindfulnotifier
 
 Builds:
-  - versionName: 1.0.4
-    versionCode: 5
-    commit: v1.0.4
+  - versionName: 1.0.5
+    versionCode: 6
+    commit: v1.0.5
     output: build/app/outputs/apk/release/app-release.apk
     srclibs:
       - flutter@1.22.5
@@ -27,5 +27,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://github.com/kmac/mindfulnotifier/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 1.0.4
-CurrentVersionCode: 5
+CurrentVersion: 1.0.5
+CurrentVersionCode: 6
