@@ -11,6 +11,7 @@ AutoName: Just Another Workout Timer
 
 RepoType: git
 Repo: https://github.com/blockbasti/just_another_workout_timer
+
 Builds:
   - versionName: 1.0.1
     versionCode: 1
