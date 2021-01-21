@@ -173,8 +173,8 @@ Builds:
     output: build/outputs/apk/FD-GH/release/app-FD-GH-release-unsigned.apk
 
   - versionName: 2.2.2
-    disable: non foss play core see upstream issue 139
     versionCode: 130
+    disable: non foss play core see upstream issue 139
     commit: 2.2.2
     subdir: app
     gradle:
