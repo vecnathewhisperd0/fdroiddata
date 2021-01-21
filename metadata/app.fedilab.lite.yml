@@ -11,7 +11,7 @@ LiberapayID: tom79
 AutoName: Fedilab Lite
 
 RepoType: git
-Repo: https://codeberg.org/tom79/Fedilab_Lite.git
+Repo: https://framagit.org/tom79/fedilab.git
 
 Builds:
   - versionName: 2.20.0
