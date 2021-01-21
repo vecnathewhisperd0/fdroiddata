@@ -1,3 +1,5 @@
+AntiFeatures:
+  - NonFreeNet
 Categories:
   - Internet
 License: GPL-3.0-only
@@ -17,15 +19,15 @@ Description: |-
     Development is focussed on Twitter and that service is the only one officially
     supported.
 
-    You can donate via PayPal and Bitcoin/Ethereum here.
+    You can donate via PayPal and Bitcoin here.
 
 RepoType: git
 Repo: https://github.com/TwidereProject/TwidereX-Android
 
 Builds:
-  - versionName: 1.0.0-alpha08
-    versionCode: 8
-    commit: 1.0.0-alpha08
+  - versionName: 1.0.2
+    versionCode: 11
+    commit: 1.0.2
     subdir: app
     gradle:
       - fdroid
@@ -33,5 +35,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.0-alpha08
-CurrentVersionCode: 8
+CurrentVersion: 1.0.2
+CurrentVersionCode: 11
