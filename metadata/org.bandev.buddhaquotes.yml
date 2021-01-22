@@ -62,7 +62,7 @@ Builds:
     subdir: app
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -t stretch-backports androguard openjdk-11-jdk-headless openjdk-11-jre-headless
+      - apt-get install -t stretch-backports openjdk-11-jdk-headless openjdk-11-jre-headless
     gradle:
       - yes
 
