@@ -5,7 +5,7 @@ AuthorName: Emmanuel
 SourceCode: https://github.com/EmmanuelMess/DeadlinesApp
 
 RepoType: git
-Repo: https://github.com/EmmanuelMess/DeadlinesApp
+Repo: https://github.com/EmmanuelMess/DeadlinesApp.git
 
 Builds:
   - versionName: 1.0.1
