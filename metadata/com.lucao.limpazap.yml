@@ -15,7 +15,7 @@ Builds:
   - versionName: 2.2.0
     versionCode: 8
     commit: v1.0
-    output: build/app/outputs/apk/release/app-release-unsigned.apk
+    output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.22.5
     prebuild: echo "flutter.sdk=$$flutter$$" >> ../local.properties
