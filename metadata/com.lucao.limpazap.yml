@@ -22,10 +22,11 @@ Builds:
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter packages pub run flutter_launcher_icons:main
       - $$flutter$$/bin/flutter build apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/lucasew/limpazap//master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 2.2.0
-CurrentVersionCode: 8
+CurrentVersion: 2.2.1
+CurrentVersionCode: 9
