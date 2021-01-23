@@ -1,6 +1,6 @@
 Categories:
- - Security
- - Internet
+  - Security
+  - Internet
 License: GPL-3.0-or-later
 AuthorName: Emanuele Faranda
 AuthorEmail: black.silver@hotmail.it
@@ -18,7 +18,8 @@ Builds:
     submodules: true
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y build-essential libpcap-dev autogen libjson-c-dev libnuma-dev libpcre2-dev
+      - apt-get install -y build-essential libpcap-dev autogen libjson-c-dev libnuma-dev
+        libpcre2-dev
     gradle:
       - yes
 
