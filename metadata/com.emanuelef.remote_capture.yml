@@ -1,0 +1,25 @@
+Categories:
+ - Security
+ - Internet
+License: GPL-3.0-or-later
+AuthorName: Emanuele Faranda
+AuthorEmail: black.silver@hotmail.it
+WebSite: https://emanuele-f.github.io/PCAPdroid
+SourceCode: https://github.com/emanuele-f/PCAPdroid
+IssueTracker: https://github.com/emanuele-f/PCAPdroid/issues
+
+RepoType: git
+Repo: https://github.com/emanuele-f/PCAPdroid.git
+
+Builds:
+  - versionName: '1.2.10'
+    versionCode: 13
+    commit: v1.2.10
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.2.10'
+CurrentVersionCode: 13
