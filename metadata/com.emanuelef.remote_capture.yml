@@ -15,8 +15,11 @@ Builds:
   - versionName: 1.2.10
     versionCode: 13
     commit: v1.2.10
-    submodules: yes
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y build-essential libpcap-dev autogen libjson-c-dev libnuma-dev libgcrypt20-dev libpcre2-dev
     subdir: app
+    submodules: true
     gradle:
       - yes
 
