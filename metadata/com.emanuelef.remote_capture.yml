@@ -15,6 +15,7 @@ Builds:
   - versionName: '1.2.10'
     versionCode: 13
     commit: v1.2.10
+    submodules: yes
     subdir: app
     gradle:
       - yes
