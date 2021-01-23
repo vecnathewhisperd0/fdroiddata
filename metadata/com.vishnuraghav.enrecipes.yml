@@ -63,6 +63,7 @@ Builds:
       - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-regular.aar
       - node_modules/nativescript-couchbase-plugin/platforms/android/include.gradle
       - node_modules/nativescript-vibrate/platforms/android/nativescript_vibrate.aar
+      - node_modules/@nativescript-community/ui-material-snackbar/platforms/android/ui_material_snackbar.aar
     build:
       - ns prepare android
       - sed -i 's/\(signingConfig[[:space:]]\)signingConfigs\.release/\1null/' platforms/android/app/build.gradle
