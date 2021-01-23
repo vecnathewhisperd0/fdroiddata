@@ -15,7 +15,6 @@ Builds:
   - versionName: 1.2.10
     versionCode: 13
     commit: v1.2.10
-    subdir: app
     submodules: true
     sudo:
       - apt-get update || apt-get update
