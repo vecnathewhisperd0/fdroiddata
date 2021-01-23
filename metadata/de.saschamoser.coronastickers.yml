@@ -1,0 +1,26 @@
+AntiFeatures:
+  - NonFreeDep
+  - NonFreeNet
+Categories:
+  - Theming
+License: MIT
+AuthorName: Sascha Moser
+AuthorWebSite: https://mightful-noobs.de
+SourceCode: https://github.com/xopez/Corona-Stickers
+IssueTracker: https://github.com/xopez/Corona-Stickers/issues
+
+RepoType: git
+Repo: https://github.com/xopez/Corona-Stickers.git
+
+Builds:
+  - versionName: 1.4.0
+    versionCode: 1
+    commit: 1.4.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.4.0
+CurrentVersionCode: 1
