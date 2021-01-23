@@ -1,0 +1,32 @@
+Categories:
+  - Reading
+License: GPL-3.0-or-later
+AuthorName: KweeksNews Network
+AuthorEmail: redaksi@kweeksnews.com
+WebSite: https://kweeksnews.com/
+SourceCode: https://github.com/KweeksNews/kweeksnews_app
+IssueTracker: https://github.com/KweeksNews/kweeksnews_app/issues
+
+AutoName: KweeksNews
+
+RepoType: git
+Repo: https://github.com/KweeksNews/kweeksnews_app.git
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: v1.0.0
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@stable
+    prebuild: sed -i -e 's/signingConfig signingConfigs.release//' android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/KweeksNews/kweeksnews_app/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
