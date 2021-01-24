@@ -17,9 +17,15 @@ Builds:
     versionCode: 170
     commit: v1.11.4
     subdir: app
+    sudo:
+      - apt update || apt update
+      - apt install -y -t testing golang-go
     gradle:
       - oss
     output: build/outputs/apk/oss/release/app-oss-universal-release-unsigned.apk
+    ndk: r21d
+    preassemble:
+      - rclone:buildNative
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
