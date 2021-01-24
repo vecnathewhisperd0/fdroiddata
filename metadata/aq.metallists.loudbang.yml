@@ -13,7 +13,7 @@ RepoType: git
 Repo: https://github.com/TheMetallists/LoudBang
 
 Builds:
-  - versionName: 0.41
+  - versionName: '0.41'
     versionCode: 41
     commit: v0.41
     subdir: app
@@ -22,5 +22,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.41
+CurrentVersion: '0.41'
 CurrentVersionCode: 41
