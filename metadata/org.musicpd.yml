@@ -243,7 +243,8 @@ Builds:
     commit: v0.22.1
     sudo:
       - apt-get update || apt-get update
-      - apt-get install linux-compiler-gcc-7-x86 g++-7 imagemagick-6.q16 meson -t testing
+      - apt-get install linux-compiler-gcc-7-x86 g++-7 imagemagick-6.q16 meson -t
+        testing
     output: output/android/android/apk/mpd-unsigned.apk
     prebuild: mkdir -p output/android/android/classes/
     scandelete:
