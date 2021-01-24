@@ -1,0 +1,31 @@
+Categories:
+  - Sports & Health
+License: GPL-3.0-or-later
+AuthorName: Enjoying FOSS
+AuthorEmail: contact.mirek@protonmail.com
+WebSite: https://gitlab.com/enjoyingfoss/feeel-legacy
+SourceCode: https://gitlab.com/enjoyingfoss/feeel-legacy
+IssueTracker: https://gitlab.com/enjoyingfoss/feeel-legacy/issues
+Translation: https://www.transifex.com/enjoying-foss/feeel-legacy/
+Changelog: https://gitlab.com/enjoyingfoss/feeel-legacy/tags
+LiberapayID: '30709'
+
+AutoName: Feeel Legacy
+
+RepoType: git
+Repo: https://gitlab.com/enjoyingfoss/feeel-legacy.git
+
+Builds:
+  - versionName: '1.97'
+    versionCode: 9
+    commit: '1.97'
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/proguard-rules.pro
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '1.97'
+CurrentVersionCode: 9
