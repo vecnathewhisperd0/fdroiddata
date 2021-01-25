@@ -237,9 +237,9 @@ Builds:
     scandelete:
       - node_modules
 
-  - versionName: 4.13.1
-    versionCode: 22189
-    commit: 4.13.1
+  - versionName: 4.14.0
+    versionCode: 22702
+    commit: 4.14.0
     subdir: android/app
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
@@ -286,5 +286,5 @@ MaintainerNotes: We use a Github repo as a Maven repository for a LIBRE_BUILD Ji
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags \d+\.\d+\.\d+
-CurrentVersion: 4.13.1
-CurrentVersionCode: 22189
+CurrentVersion: 4.14.0
+CurrentVersionCode: 22702
