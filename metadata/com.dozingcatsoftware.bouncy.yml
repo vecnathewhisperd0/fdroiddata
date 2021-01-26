@@ -241,7 +241,7 @@ Builds:
     gradle:
       - yes
     srclibs:
-      - libgdx@gdx-parent-1.9.13
+      - libgdx@gdx-parent-1.9.11
     rm:
       - app/src/main/jniLibs/*
       - app/libs/*
