@@ -256,7 +256,6 @@ Builds:
       - sed -i 's@armeabi\s@ @g' extensions/gdx-box2d/gdx-box2d/jni/Application.mk
       - popd
     build:
-      - ant -v
       - cc -v
       - clang -v
       - export NDK_HOME=$$NDK$$
