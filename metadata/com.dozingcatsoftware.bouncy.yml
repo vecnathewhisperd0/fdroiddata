@@ -261,7 +261,7 @@ Builds:
       - pushd $$libgdx$$
       - pwd
       - env | grep NDK
-      - ant -f build.xml -Dbuild-natives=true gdx-box2d
+      - ant -v -f build.xml -Dbuild-natives=true gdx-box2d
       - popd
       - cp $$libgdx$$/dist/gdx.jar libs/gdx-1.9.13.jar
       - cp $$libgdx$$/dist/extensions/gdx-box2d/gdx-box2d.jar libs/gdx-box2d-1.9.13.jar
