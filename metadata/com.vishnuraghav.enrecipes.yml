@@ -30,8 +30,7 @@ Builds:
       - cp -a node-v10.23.1-linux-x64/. /usr/local/
       - npm -g install nativescript
     init:
-      - $$SDK$$/tools/bin/sdkmanager "platforms;android-30" "build-tools;30.0.3" >
-        /dev/null
+      - $$SDK$$/tools/bin/sdkmanager "platforms;android-30" "build-tools;30.0.3"
       - npm install --unsafe-perm
       - ns install
     output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
