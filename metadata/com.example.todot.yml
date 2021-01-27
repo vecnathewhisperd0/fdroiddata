@@ -1,0 +1,35 @@
+Categories:
+  - Writing
+License: GPL-3.0-only
+SourceCode: https://github.com/stbuccia/TooDoot
+Donate: https://paypal.me/stbuccia?locale.x=it_IT
+
+Summary: An elegant todo.txt app
+Description: |-
+    TooDoot is an android task manager application that help you organize and manage your days. TooDoot save your task in a todo.txt file, so is very simple for you to sunchronize your tasks!
+
+    Features
+
+    * Insert, edit and remove your tasks
+    * Set date, time, description, priority, contexts, tags
+    * Get graphic statistics about your tasks completed
+    * Search tasks
+    * Get notification about task to-do today
+    * Load todo.txt file
+
+RepoType: git
+Repo: https://github.com/stbuccia/TooDoot
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+    output: toodoot.apk
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: Static
+CurrentVersionCode: 1
