@@ -223,6 +223,7 @@ Builds:
       - sed -i 's@armeabi\s@ @g' extensions/gdx-box2d/gdx-box2d/jni/Application.mk
       - popd
     build:
+      - echo hello
       - export NDK_HOME=$$NDK$$
       - pushd $$libgdx$$
       - pwd
