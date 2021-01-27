@@ -257,7 +257,6 @@ Builds:
       - popd
     build:
       - cc -v
-      - clang -v
       - export NDK_HOME=$$NDK$$
       - pushd $$libgdx$$
       - pwd
