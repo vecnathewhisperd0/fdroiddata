@@ -11,6 +11,12 @@ RepoType: git
 Repo: https://github.com/rosuH/EasyWatermark
 
 Builds:
+  - versionName: 1.0
+    versionCode: 3
+    commit: 1.0
+    subdir: app
+    gradle:
+      - yes
   - versionName: 1.1.2
     versionCode: 10102
     commit: 1.1.2
