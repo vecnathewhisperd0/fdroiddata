@@ -24,6 +24,9 @@ Builds:
     subdir: android/routerKeygen
     gradle:
       - noGapps
+    prebuild:
+      - sed -i "s/gapps = \(.*\)/project.ext.set('gapps', \1)/" build.gradle
+      - sed -i "s/if (gapps)/if (project.ext.get('gapps'))/" build.gradle
     rm:
       - android/mm-ad-sdk/mm-ad-sdk.aar
 
