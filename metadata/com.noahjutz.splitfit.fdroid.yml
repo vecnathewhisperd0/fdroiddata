@@ -19,9 +19,9 @@ Builds:
     commit: v0.1.0-alpha6
     subdir: app
     sudo:
-     - apt-get update || apt-get update
-     - apt-get install -y openjdk-11-jdk
-     - update-alternatives --auto java
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
     gradle:
       - fdroid
 
