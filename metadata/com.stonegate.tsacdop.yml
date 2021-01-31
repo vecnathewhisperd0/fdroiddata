@@ -2,7 +2,7 @@ Categories:
   - Multimedia
 License: GPL-3.0-or-later
 AuthorName: stonegate
-AuthorEmail: tsacdop@gmail.com
+AuthorEmail: tsacdop.app@gmail.com
 WebSite: https://tsacdop.stonegate.me
 SourceCode: https://github.com/stonega/tsacdop
 IssueTracker: https://github.com/stonega/tsacdop/issues
@@ -10,22 +10,21 @@ Donate: https://www.buymeacoffee.com/stonegate
 Liberapay: stonegate
 Bitcoin: 1PbByzEbvzvXf1qn9eMtmqW9h8ABd2z7tW
 
-Name: Tsacdop
 AutoName: tsacdop
-Description: Enjoy podcasts with Tsacdop, Tsacdop is a podcast player developed with
-    Flutter, a clean, simply beautiful and friendly app, which is also free and open
-    source.
 
 RepoType: git
 Repo: https://github.com/stonega/tsacdop
 
 Builds:
-  - versionName: 0.5.6
-    versionCode: 44
-    commit: c40be932dbeaa4a2027737a0dc322ab132678e6e
+  - versionName: 0.5.7
+    versionCode: 45
+    commit: v0.5.7
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release-unsigned.apk
     srclibs:
-      - flutter@stable
+      - flutter@1.22.6
+    rm:
+      - ios
+      - test
     prebuild:
       - touch lib/.env.dart
       - echo "final environment = {'apiKey':''};" >> lib/.env.dart
@@ -36,5 +35,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.5.6
-CurrentVersionCode: 44
+CurrentVersion: 0.5.7
+CurrentVersionCode: 45
