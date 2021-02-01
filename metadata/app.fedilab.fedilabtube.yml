@@ -163,6 +163,7 @@ Builds:
   - versionName: 1.12.1
     versionCode: 37
     commit: 1.12.1
+    disable: download of prebuild JARs
     subdir: app
     gradle:
       - fdroid_peertube_apps_educ
@@ -172,6 +173,7 @@ Builds:
   - versionName: 1.13.0
     versionCode: 38
     commit: 1.13.0
+    disable: download of prebuild JARs
     subdir: app
     gradle:
       - fdroid_peertube_apps_educ
@@ -181,6 +183,7 @@ Builds:
   - versionName: 1.13.1
     versionCode: 39
     commit: 1.13.1
+    disable: download of prebuild JARs
     subdir: app
     gradle:
       - fdroid_peertube_apps_educ
