@@ -101,7 +101,7 @@ Builds:
 
   - versionName: '3.4'
     versionCode: 22
-    commit: 3.4
+    commit: '3.4'
     subdir: app
     gradle:
       - yes
