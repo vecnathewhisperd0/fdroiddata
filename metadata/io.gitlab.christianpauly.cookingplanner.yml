@@ -1,0 +1,29 @@
+Categories:
+  - Sports & Health
+License: AGPL-3.0-only
+AuthorName: Christian Pauly
+AuthorWebSite: https://krillefear.gitlab.io
+SourceCode: https://gitlab.com/KrilleFear/cooking_planner
+IssueTracker: https://gitlab.com/KrilleFear/cooking_planner/-/issues
+
+AutoName: Cooking Planner
+
+RepoType: git
+Repo: https://gitlab.com/KrilleFear/cooking_planner.git
+
+Builds:
+  - versionName: 1.1.0
+    versionCode: 7
+    commit: release-1.1.0
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@1.25.0-8.3.pre
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+AutoUpdateMode: Version release-%v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://gitlab.com/ChristianPauly/cooking_planner/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 1.1.0
+CurrentVersionCode: 7
