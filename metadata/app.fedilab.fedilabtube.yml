@@ -190,7 +190,7 @@ Builds:
     rm:
       - torrentStream/libs/jlibtorrent-*.jar
 
-AutoUpdateMode: Version %v
+AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: 1.13.1
 CurrentVersionCode: 39
