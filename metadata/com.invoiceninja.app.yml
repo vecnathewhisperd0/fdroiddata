@@ -1,0 +1,35 @@
+Categories:
+ - Money 
+License: AAL
+AuthorName: Invoice Ninja
+AuthorEmail: contact@invoiceninja.com
+AuthorWebSite: https://www.invoiceninja.com/
+WebSite: https://www.invoiceninja.org/
+SourceCode: https://github.com/invoiceninja/flutter-client
+IssueTracker: https://github.com/invoiceninja/flutter-client/issues
+
+AutoName: Invoice Ninja
+
+RepoType: git
+Repo: https://github.com/invoiceninja/flutter-client
+
+Builds:
+  - versionName: 5.0.34
+    versionCode: 34
+    commit: v5.0.34
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@1.25.0-8.3.pre
+    prebuild:
+      - cd android/app
+      - rm build.gradle.prod
+      - mv build.gradle.dev build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/invoiceninja/flutter-client/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 5.0.34
+CurrentVersionCode: 34
