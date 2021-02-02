@@ -107,6 +107,6 @@ Builds:
       - yes
 
 AutoUpdateMode: None
-UpdateCheckMode: RepoManifest
+UpdateCheckMode: Tags
 CurrentVersion: '3.4'
 CurrentVersionCode: 22
