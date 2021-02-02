@@ -11,7 +11,7 @@ Repo: https://github.com/siggel/coordinatejoker.git
 Builds:
   - versionName: 1.2.25
     versionCode: 25
-    commit: 1.2.25
+    commit: 1.2.26
     subdir: app
     gradle:
       - yes
