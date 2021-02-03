@@ -17,11 +17,11 @@ Builds:
   - versionName: 2020.3.1
     versionCode: 10002
     commit: 2020.3.1
+    subdir: app
     patch:
       - remove_playcore.patch
     gradle:
       - yes
-    output: app/build/outputs/apk/release/app-release-unsigned.apk
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
