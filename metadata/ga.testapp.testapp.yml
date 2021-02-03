@@ -105,7 +105,6 @@ Builds:
       - $$flutter$$/bin/flutter build apk
 
 AutoUpdateMode: Version %v
-UpdateCheckMode: HTTP
-UpdateCheckData: https://testapp.ga/pubspec|version:\s.+\+(\d+)|.|version:\s(.+)\+
+UpdateCheckMode: Tags
 CurrentVersion: 4.0.2
 CurrentVersionCode: 57
