@@ -3,6 +3,7 @@ Categories:
 License: EUPL-1.2
 SourceCode: https://gitlab.com/TheOneWithTheBraid/xournalpp_mobile
 IssueTracker: https://gitlab.com/TheOneWithTheBraid/xournalpp_mobile/-/issues
+Donate: https://buymeacoff.ee/braid
 Bitcoin: 3NUiJXDCkyRTb9Tg7n63yK6Y7CexADtSEh
 
 AutoName: Xournal++
@@ -24,7 +25,20 @@ Builds:
       - $$flutter$$/bin/flutter pub get
       - $$flutter$$/bin/flutter build apk
 
+  - versionName: 1.1.10
+    versionCode: 26
+    commit: 1.1.10
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@1.26.0-17.1.pre
+    prebuild: echo 'android.applicationVariants.all { variant -> variant.outputs.all
+        { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter pub get
+      - $$flutter$$/bin/flutter build apk
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.6
-CurrentVersionCode: 22
+CurrentVersion: 1.1.10
+CurrentVersionCode: 26
