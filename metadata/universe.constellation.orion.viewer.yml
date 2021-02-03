@@ -16,7 +16,7 @@ Repo: https://github.com/max-kammerer/orion-viewer
 Builds:
   - versionName: 0.81.2
     versionCode: 198
-    commit: 0.81.2
+    commit: 0.81.2_fdroid
     subdir: orion-viewer
     gradle:
       - yes
