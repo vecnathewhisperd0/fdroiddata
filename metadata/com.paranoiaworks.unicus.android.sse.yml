@@ -12,6 +12,7 @@ Changelog: https://paranoiaworks.mobi/sse/ssechangelog.htm
 RepoType: git
 Repo: https://gitlab.com/paranoia-works/secret-space-encryptor-for-android.git
 
+Binaries: https://paranoiaworks.mobi/sse/misc/SecretSpaceEncryptorF_%v.apk
 Builds:
   - versionName: 2.3.3
     versionCode: 102
@@ -19,7 +20,6 @@ Builds:
     subdir: MainApp
     gradle:
       - yes
-    Binaries: https://paranoiaworks.mobi/sse/misc/SecretSpaceEncryptorF_%v.apk
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
