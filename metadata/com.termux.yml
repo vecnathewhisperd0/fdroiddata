@@ -639,7 +639,16 @@ Builds:
 
   - versionName: '0.105'
     versionCode: 105
+    disable: crash on start upstream issue 1896
     commit: v0.105
+    subdir: app
+    gradle:
+      - yes
+    ndk: r22
+
+  - versionName: '0.106'
+    versionCode: 106
+    commit: v0.106
     subdir: app
     gradle:
       - yes
@@ -647,5 +656,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '0.105'
-CurrentVersionCode: 105
+CurrentVersion: '0.106'
+CurrentVersionCode: 106

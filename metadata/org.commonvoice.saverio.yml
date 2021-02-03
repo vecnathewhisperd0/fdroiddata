@@ -156,6 +156,7 @@ Builds:
 
   - versionName: '2.2'
     versionCode: 126
+    disable: non foss play core see upstream issue 139
     commit: '2.2'
     subdir: app
     gradle:
@@ -164,7 +165,16 @@ Builds:
 
   - versionName: 2.2.1
     versionCode: 128
+    disable: non foss play core see upstream issue 139
     commit: 2.2.1
+    subdir: app
+    gradle:
+      - FD-GH
+    output: build/outputs/apk/FD-GH/release/app-FD-GH-release-unsigned.apk
+
+  - versionName: 2.2.2
+    versionCode: 131
+    commit: 2.2.2-131
     subdir: app
     gradle:
       - FD-GH
@@ -172,5 +182,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.1
-CurrentVersionCode: 128
+CurrentVersion: 2.2.2
+CurrentVersionCode: 131

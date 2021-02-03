@@ -1,0 +1,51 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Games
+  - Internet
+License: GPL-3.0-only
+AuthorName: gardenapple
+AuthorEmail: gardenapple@posteo.net
+WebSite: https://gardenapple.itch.io/mitch
+SourceCode: https://gitlab.com/gardenappl/mitch
+IssueTracker: https://gitlab.com/gardenappl/mitch/issues
+Changelog: https://gardenapple.itch.io/mitch/devlog
+
+AutoName: Mitch
+
+RepoType: git
+Repo: https://gitlab.com/gardenappl/mitch.git
+
+Builds:
+  - versionName: 1.2.5
+    versionCode: 16
+    commit: v1.2.5
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.2.6
+    versionCode: 18
+    commit: v1.2.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.2.7
+    versionCode: 19
+    commit: v1.2.7
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.2.8
+    versionCode: 20
+    commit: v1.2.8
+    subdir: app
+    gradle:
+      - fdroid
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.2.8
+CurrentVersionCode: 20

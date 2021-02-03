@@ -1395,10 +1395,10 @@ Builds:
       - mv jni/static_library_built/openssl/output/android/ jni/openssl/
     ndk: r15c
 
-  - versionName: 2.4.6
-    versionCode: 1146
-    disable: fails to build
-    commit: 2.4.6
+  - versionName: 2.4.7
+    versionCode: 1147
+    disable: fails to build see upstream issue 170
+    commit: 2.4.7
     subdir: aTalk/
     gradle:
       - fdroid
@@ -1446,7 +1446,7 @@ Builds:
 MaintainerNotes: scanignore is used to allow the local "third_party/m2" Gradle repository
     (which is populated by libraries we build).
 
-AutoUpdateMode: Version %v
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.6
-CurrentVersionCode: 1146
+CurrentVersion: 2.5.0
+CurrentVersionCode: 1150

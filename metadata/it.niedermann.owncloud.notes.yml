@@ -639,7 +639,39 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 3.0.1
+    versionCode: 3000001
+    commit: v3.0.1
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 3.1.0
+    versionCode: 3001000
+    commit: v3.1.0
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 3.1.1
+    versionCode: 3001001
+    commit: v3.1.1
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 3.1.2
+    versionCode: 3001002
+    commit: v3.1.2
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.0.0
-CurrentVersionCode: 3000000
+CurrentVersion: 3.1.2
+CurrentVersionCode: 3001002
