@@ -130,7 +130,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.0.9
+    versionCode: 209
+    commit: 2.0.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0
+    versionCode: 210
+    commit: 2.1.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.8
-CurrentVersionCode: 208
+CurrentVersion: 2.1.0
+CurrentVersionCode: 210

@@ -152,7 +152,23 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.1.0
+    versionCode: 36
+    commit: v1.1.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.1.1
+    versionCode: 38
+    commit: v1.1.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.6
-CurrentVersionCode: 28
+CurrentVersion: 1.1.1
+CurrentVersionCode: 38
