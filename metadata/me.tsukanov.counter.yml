@@ -62,6 +62,7 @@ Builds:
   - versionName: '22'
     versionCode: 22
     commit: v22
+    subdir: app/
     gradle:
       - yes
     prebuild: sed -i -e 's/mavenCentral()/jcenter()/' build.gradle
