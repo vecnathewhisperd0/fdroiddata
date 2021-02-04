@@ -20,6 +20,13 @@ Builds:
     init: yarn install
     gradle:
       - yes
+    scanignore:
+      - android/build.gradle
+      - node_modules/react-native-screens/android/build.gradle
+      - node_modules/@react-navigation/native/node_modules/react-native-screens/android/build.gradle
+      - node_modules/react-native-music-control/android/build.gradle
+      - node_modules/react-native/template/android/build.gradle
+      - node_modules/react-native-gesture-handler/android/lib/build.gradle
     scandelete:
       - node_modules
 
