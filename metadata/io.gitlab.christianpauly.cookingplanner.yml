@@ -24,6 +24,6 @@ Builds:
 
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: HTTP
-UpdateCheckData: https://gitlab.com/ChristianPauly/cooking_planner/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+UpdateCheckData: https://gitlab.com/KrilleFear/cooking_planner/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.1.0
 CurrentVersionCode: 7
