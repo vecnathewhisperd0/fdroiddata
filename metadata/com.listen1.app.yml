@@ -9,7 +9,7 @@ RepoType: git
 Repo: https://github.com/listen1/listen1_mobile.git
 
 Builds:
-  - versionName: 1.0
+  - versionName: '1.0'
     versionCode: 1
     commit: v0.8.0
     subdir: android/app
@@ -17,9 +17,11 @@ Builds:
       - apt-get update || apt-get update
       - apt-get install -y --no-install-recommends -t stretch-backports npm
       - npm -g install yarn
-    init: yarn install
     gradle:
       - yes
+    prebuild:
+      - yarn install
+      - truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
     scanignore:
       - android/build.gradle
       - node_modules/react-native-screens/android/build.gradle
@@ -32,5 +34,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 1.0
+CurrentVersion: '1.0'
 CurrentVersionCode: 1
