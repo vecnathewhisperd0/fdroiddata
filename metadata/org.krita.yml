@@ -38,6 +38,8 @@ Builds:
       - apt install -y build-essential
       - apt install -y -t stretch-backports-sloppy libarchive13
       - apt install -y -t stretch-backports cmake
+    patch:
+      - remove_billing.patch
     output: build/krita_build_apk/build/outputs/apk/release/krita_build_apk-release-unsigned.apk
     scanignore:
       - plugins/extensions/pykrita/plugin/krita/sceditor/rope.zip
@@ -63,7 +65,7 @@ Builds:
       - ${SUBDIR}/androidbuild.sh --src=${BUILD_ROOT} --build-type=Release --build-root=${BUILD_ROOT}/build
         -p=kf5
       - git reset --hard $$COMMIT$$
-      - git apply $HOME/metadata/org.krita/remove_billing.patch
+      - git apply remove_billing_actual.patch
       - ${SUBDIR}/androidbuild.sh --src=${BUILD_ROOT} --build-type=Release --build-root=${BUILD_ROOT}/build
         -p=krita-bin
       - ${SUBDIR}/androidbuild.sh --src=${BUILD_ROOT} --build-type=Release --build-root=${BUILD_ROOT}/build
@@ -81,6 +83,8 @@ Builds:
       - apt install -y build-essential
       - apt install -y -t stretch-backports-sloppy libarchive13
       - apt install -y -t stretch-backports cmake
+    patch:
+      - remove_billing.patch
     output: build/krita_build_apk/build/outputs/apk/release/krita_build_apk-release-unsigned.apk
     scanignore:
       - plugins/extensions/pykrita/plugin/krita/sceditor/rope.zip
@@ -106,7 +110,7 @@ Builds:
       - ${SUBDIR}/androidbuild.sh --src=${BUILD_ROOT} --build-type=Release --build-root=${BUILD_ROOT}/build
         -p=kf5
       - git reset --hard $$COMMIT$$
-      - git apply $HOME/metadata/org.krita/remove_billing.patch
+      - git apply remove_billing_actual.patch
       - ${SUBDIR}/androidbuild.sh --src=${BUILD_ROOT} --build-type=Release --build-root=${BUILD_ROOT}/build
         -p=krita-bin
       - ${SUBDIR}/androidbuild.sh --src=${BUILD_ROOT} --build-type=Release --build-root=${BUILD_ROOT}/build
@@ -124,6 +128,8 @@ Builds:
       - apt install -y build-essential
       - apt install -y -t stretch-backports-sloppy libarchive13
       - apt install -y -t stretch-backports cmake
+    patch:
+      - remove_billing.patch
     output: build/krita_build_apk/build/outputs/apk/release/krita_build_apk-release-unsigned.apk
     scanignore:
       - plugins/extensions/pykrita/plugin/krita/sceditor/rope.zip
@@ -149,7 +155,7 @@ Builds:
       - ${SUBDIR}/androidbuild.sh --src=${BUILD_ROOT} --build-type=Release --build-root=${BUILD_ROOT}/build
         -p=kf5
       - git reset --hard $$COMMIT$$
-      - git apply $HOME/metadata/org.krita/remove_billing.patch
+      - git apply remove_billing_actual.patch
       - ${SUBDIR}/androidbuild.sh --src=${BUILD_ROOT} --build-type=Release --build-root=${BUILD_ROOT}/build
         -p=krita-bin
       - ${SUBDIR}/androidbuild.sh --src=${BUILD_ROOT} --build-type=Release --build-root=${BUILD_ROOT}/build
@@ -167,6 +173,8 @@ Builds:
       - apt install -y build-essential
       - apt install -y -t stretch-backports-sloppy libarchive13
       - apt install -y -t stretch-backports cmake
+    patch:
+      - remove_billing.patch
     output: build/krita_build_apk/build/outputs/apk/release/krita_build_apk-release-unsigned.apk
     scanignore:
       - plugins/extensions/pykrita/plugin/krita/sceditor/rope.zip
@@ -192,7 +200,7 @@ Builds:
       - ${SUBDIR}/androidbuild.sh --src=${BUILD_ROOT} --build-type=Release --build-root=${BUILD_ROOT}/build
         -p=kf5
       - git reset --hard $$COMMIT$$
-      - git apply $HOME/metadata/org.krita/remove_billing.patch
+      - git apply remove_billing_actual.patch
       - ${SUBDIR}/androidbuild.sh --src=${BUILD_ROOT} --build-type=Release --build-root=${BUILD_ROOT}/build
         -p=krita-bin
       - ${SUBDIR}/androidbuild.sh --src=${BUILD_ROOT} --build-type=Release --build-root=${BUILD_ROOT}/build
@@ -203,6 +211,8 @@ MaintainerNotes: |-
     - Dependencies are built using different commit than the app itself.
     - All google play donation code was added in 5e323fb7, remove_billing.patch is based on that commit.
     - Compilation fails unless only SDK versions 21 and are present in SDK, so we're removing them.
+    - Patch at metadata/org.krita/remove_billing.patch actually creates another patch in project's
+    - Root dir since otherwise fdroid lint fails with unused file.
     - New versions and exact commits for deps and app itself can be found on KDE jenkins:
     - https://binary-factory.kde.org/job/Krita_Release_Android_arm64-v8a_Build
     - https://binary-factory.kde.org/job/Krita_Android_arm64-v8a_Dependency_Build
