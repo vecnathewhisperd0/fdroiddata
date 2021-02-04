@@ -14,14 +14,13 @@ Name: GoOutWithDuck
 RepoType: git
 Repo: https://github.com/headuck/GoOutWithDuck
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
-
 Builds:
   - versionName: 0.1.0
     versionCode: 100
-    commit: 35dc86760598ec4b98b7b6f8b8f209a63565f51d
+    commit: 0.1.0
     subdir: app
     gradle:
       - yes
 
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
