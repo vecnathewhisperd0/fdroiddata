@@ -8,7 +8,7 @@ SourceCode: https://github.com/massivemadness/Brackeys-IDE
 IssueTracker: https://github.com/massivemadness/Brackeys-IDE/issues
 Changelog: https://github.com/massivemadness/Brackeys-IDE/releases
 
-Description: Brackeys IDE is a fast and free multi-language code editor for Android.
+AutoName: Brackeys IDE
 
 RepoType: git
 Repo: https://github.com/massivemadness/Brackeys-IDE
@@ -23,7 +23,7 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: None
-UpdateCheckMode: Tags
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags ^([0-9]+\.*)+$
 CurrentVersion: 2020.3.1
 CurrentVersionCode: 10002
