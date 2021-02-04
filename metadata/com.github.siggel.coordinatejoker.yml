@@ -9,9 +9,9 @@ RepoType: git
 Repo: https://github.com/siggel/coordinatejoker.git
 
 Builds:
-  - versionName: 1.2.25
-    versionCode: 25
-    commit: 1.2.26
+  - versionName: 1.2.27
+    versionCode: 27
+    commit: 1.2.27
     subdir: app
     gradle:
       - yes
