@@ -16,7 +16,7 @@ Repo: https://github.com/massivemadness/Brackeys-IDE
 Builds:
   - versionName: 2020.3.1
     versionCode: 10002
-    commit: 2020.3.1
+    commit: b058f65e73797e7bdf454c0baff87a3eeafc495a
     subdir: app
     patch:
       - remove_playcore.patch
