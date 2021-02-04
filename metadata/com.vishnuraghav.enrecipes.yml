@@ -30,23 +30,12 @@ Builds:
       - cp -a node-v10.23.1-linux-x64/. /usr/local/
       - npm -g install nativescript
     init:
-      - $$SDK$$/tools/bin/sdkmanager "platforms;android-30" "build-tools;30.0.3"
+      - $$SDK$$/tools/bin/sdkmanager "platforms;android-30" "build-tools;30.0.3" >
+        /dev/null
       - npm install --unsafe-perm
       - ns install
     output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
-    scanignore:
-      - node_modules/@nativescript/core/platforms/android/widgets-release.aar
-      - node_modules/@nativescript/android/framework/build-tools/static-binding-generator.jar
-      - node_modules/@nativescript/android/framework/build-tools/android-metadata-generator.jar
-      - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-optimized.aar
-      - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-optimized-with-inspector.aar
-      - platforms/android/build-tools/static-binding-generator.jar
-      - platforms/android/build-tools/dts-generator.jar
-      - platforms/android/build-tools/android-metadata-generator.jar
-      - platforms/android/app/libs/runtime-libs/nativescript-regular.aar
-      - platforms/android/app/libs/runtime-libs/nativescript-optimized.aar
-      - platforms/android/app/libs/runtime-libs/nativescript-optimized-with-inspector.aar
-    scandelete:
+    rm:
       - node_modules/proxy-lib/bin/win32/ia32/CredentialsManager.exe
       - node_modules/proxy-lib/bin/win32/x64/CredentialsManager.exe
       - node_modules/@nativescript/core/platforms/ios/TNSWidgets.framework/TNSWidgets
@@ -63,6 +52,18 @@ Builds:
       - node_modules/nativescript-couchbase-plugin/platforms/android/include.gradle
       - node_modules/nativescript-vibrate/platforms/android/nativescript_vibrate.aar
       - node_modules/@nativescript-community/ui-material-snackbar/platforms/android/ui_material_snackbar.aar
+    scanignore:
+      - node_modules/@nativescript/core/platforms/android/widgets-release.aar
+      - node_modules/@nativescript/android/framework/build-tools/static-binding-generator.jar
+      - node_modules/@nativescript/android/framework/build-tools/android-metadata-generator.jar
+      - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-optimized.aar
+      - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-optimized-with-inspector.aar
+      - platforms/android/build-tools/static-binding-generator.jar
+      - platforms/android/build-tools/dts-generator.jar
+      - platforms/android/build-tools/android-metadata-generator.jar
+      - platforms/android/app/libs/runtime-libs/nativescript-regular.aar
+      - platforms/android/app/libs/runtime-libs/nativescript-optimized.aar
+      - platforms/android/app/libs/runtime-libs/nativescript-optimized-with-inspector.aar
     build:
       - ns prepare android
       - sed -i 's/\(signingConfig[[:space:]]\)signingConfigs\.release/\1null/' platforms/android/app/build.gradle
