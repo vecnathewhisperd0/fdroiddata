@@ -568,12 +568,11 @@ Builds:
       - ./build.boringtun.sh
     ndk: r21d
 
-
   - versionName: 4.10.0
     versionCode: 410000000
     commit: 4.10.0
     subdir: android4/app
-    submodules: yes
+    submodules: true
     gradle:
       - Droid
     srclibs:
