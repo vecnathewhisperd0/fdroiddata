@@ -19,7 +19,7 @@ Builds:
       - flutter@1.25.0-8.3.pre
     build:
       - $$flutter$$/bin/flutter config --no-analytics
-      - sed -i 's/.in_app_review.//' pubspec.yaml
+      - sed -i 's/.*in_app_review.*//' pubspec.yaml
       - git apply ./fdroid.patch
       - $$flutter$$/bin/flutter build apk
 
