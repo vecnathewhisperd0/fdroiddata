@@ -14,7 +14,7 @@ Repo: https://github.com/krawieck/lemmur.git
 
 Builds:
   - versionName: 0.2.2
-    versionCode: 1 # waiting for upstream
+    versionCode: 10
     commit: v0.2.2
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
@@ -27,4 +27,4 @@ AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckData: https://raw.githubusercontent.com/krawieck/lemmur/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 0.2.2
-CurrentVersionCode: 1
+CurrentVersionCode: 10
