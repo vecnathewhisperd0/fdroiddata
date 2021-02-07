@@ -49,6 +49,7 @@ Builds:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: 1.0-beta6
@@ -64,6 +65,9 @@ AutoUpdateMode: v%v
 =======
 AutoUpdateMode: ^(Version .+|None)$
 >>>>>>> Put AutoUpdateMode as suggested by fdroidserver
+=======
+AutoUpdateMode: Version %v
+>>>>>>> Hopefully fixed version errors
 UpdateCheckMode: Tags
 <<<<<<< HEAD
 >>>>>>> Init repo
