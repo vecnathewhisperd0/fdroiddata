@@ -47,6 +47,7 @@ Builds:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: 1.0-beta6
@@ -56,6 +57,9 @@ AutoUpdateMode: None
 =======
 AutoU0pdateMode: v%v
 >>>>>>> Metadata fixes
+=======
+AutoUpdateMode: v%v
+>>>>>>> Fixed typo
 UpdateCheckMode: Tags
 <<<<<<< HEAD
 >>>>>>> Init repo
