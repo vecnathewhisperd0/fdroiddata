@@ -11,9 +11,9 @@ RepoType: git
 Repo: https://github.com/Andrewerr/NextcloudServices
 
 Builds:
-  - versionName: 'v1.0-beta2'
-    versionCode: 1
-    commit: v1.0-beta2
+  - versionName: 'v1.0-beta4'
+    versionCode: 4
+    commit: v1.0-beta4
     subdir: app
     gradle:
       - yes
