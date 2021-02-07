@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 Categories:
   - Connectivity
 License: GPL-3.0-only
@@ -8,70 +6,20 @@ IssueTracker: https://github.com/Andrewerr/NextcloudServices/issues
 Changelog: https://github.com/Andrewerr/NextcloudServices/releases
 
 AutoName: Nextcloud Services
-=======
-License: Unknown
-=======
-License: GPL-3.0-only
->>>>>>> Build
-SourceCode: https://github.com/Andrewerr/NextcloudServices
-IssueTracker: https://github.com/Andrewerr/NextcloudServices/issues
->>>>>>> Init repo
-
-Categories: 
-  - Connectivity
-
-AutoName: Nextcloud Services
 
 RepoType: git
 Repo: https://github.com/Andrewerr/NextcloudServices
 
 Builds:
-<<<<<<< HEAD
-<<<<<<< HEAD
   - versionName: 1.0-beta6
     versionCode: 6
     commit: v1.0-beta6
-=======
-  - versionName: '1.0'
-    versionCode: 1
-    commit: 668aebe4546f4cd5ba65331f43f32a113389b091
->>>>>>> Init repo
-=======
-  - versionName: 'v1.0-beta2'
-    versionCode: 1
-    commit: v1.0-beta2
->>>>>>> Metadata fixes
     subdir: app
     gradle:
       - yes
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: 1.0-beta6
 CurrentVersionCode: 6
-=======
-AutoUpdateMode: None
-=======
-AutoU0pdateMode: v%v
->>>>>>> Metadata fixes
-=======
-AutoUpdateMode: v%v
->>>>>>> Fixed typo
-=======
-AutoUpdateMode: ^(Version .+|None)$
->>>>>>> Put AutoUpdateMode as suggested by fdroidserver
-=======
-AutoUpdateMode: Version %v
->>>>>>> Hopefully fixed version errors
-UpdateCheckMode: Tags
-<<<<<<< HEAD
->>>>>>> Init repo
-=======
-CurrentVersion: '1.0'
-CurrentVersionCode: 1
->>>>>>> Build
+
