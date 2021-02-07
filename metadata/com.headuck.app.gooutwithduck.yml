@@ -9,7 +9,7 @@ WebSite: https://blog.headuck.com/
 SourceCode: https://github.com/headuck/GoOutWithDuck
 IssueTracker: https://github.com/headuck/GoOutWithDuck/issues
 
-Name: GoOutWithDuck
+AutoName: GoOutWithDuck
 
 RepoType: git
 Repo: https://github.com/headuck/GoOutWithDuck
@@ -24,3 +24,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
+CurrentVersion: 0.1.0
+CurrentVersionCode: 100
