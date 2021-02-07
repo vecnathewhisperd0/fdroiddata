@@ -17,7 +17,7 @@ Repo: https://github.com/stastnypremysl/Mines3D.git
 Builds:
   - versionName: 1.4.1
     versionCode: 6
-    commit: '1.4.1'
+    commit: 1.4.1
     subdir: app
     gradle:
       - yes
