@@ -117,7 +117,8 @@ Builds:
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter build apk
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
+AutoUpdateMode: Version %v+%c
+UpdateCheckMode: HTTP
+UpdateCheckData: https://gitlab.com/testapp-system/testapp-flutter/-/raw/mobile/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 4.2.6
 CurrentVersionCode: 66

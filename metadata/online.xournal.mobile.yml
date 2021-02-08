@@ -38,7 +38,8 @@ Builds:
       - $$flutter$$/bin/flutter pub get
       - $$flutter$$/bin/flutter build apk
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
+AutoUpdateMode: Version %v+%c
+UpdateCheckMode: HTTP
+UpdateCheckData: https://gitlab.com/TheOneWithTheBraid/xournalpp_mobile/-/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.1.10
 CurrentVersionCode: 26
