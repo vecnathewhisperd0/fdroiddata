@@ -35,6 +35,6 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/abhinavmarwaha/wrotto/main/version.txt|versionCode=(.*)|.|versionName=(.*)
+UpdateCheckData: https://raw.githubusercontent.com/abhinavmarwaha/wrotto-app/main/version.txt|versionCode=(.*)|.|versionName=(.*)
 CurrentVersion: 0.5.0
 CurrentVersionCode: 1
