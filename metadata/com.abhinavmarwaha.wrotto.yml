@@ -4,9 +4,9 @@ License: GPL-3.0-or-later
 AuthorName: Abhinav Marwaha
 AuthorEmail: abhinavmarwaha@protonmail.com
 AuthorWebSite: https://abhinavmarwaha.com
-SourceCode: https://github.com/abhinavmarwaha/wrotto
-IssueTracker: https://github.com/abhinavmarwaha/wrotto/issues
-Changelog: https://github.com/abhinavmarwaha/wrotto/releases
+SourceCode: https://github.com/abhinavmarwaha/wrotto-app
+IssueTracker: https://github.com/abhinavmarwaha/wrotto-app/issues
+Changelog: https://github.com/abhinavmarwaha/wrotto-app/releases
 Donate: https://www.buymeacoffee.com/abhinavmarwaha
 Liberapay: abhinavmarwaha
 Bitcoin: 35Tzo8hTsggF2YENmBUc4ZiMjCKNYjgmHH
@@ -14,7 +14,7 @@ Bitcoin: 35Tzo8hTsggF2YENmBUc4ZiMjCKNYjgmHH
 AutoName: Wrotto
 
 RepoType: git
-Repo: https://github.com/abhinavmarwaha/wrotto
+Repo: https://github.com/abhinavmarwaha/wrotto-app
 
 Builds:
   - versionName: 0.5.0
