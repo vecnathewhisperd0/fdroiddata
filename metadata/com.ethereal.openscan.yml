@@ -1,0 +1,61 @@
+Categories: 
+  - Multimedia
+License: BSD-3-Clause 
+
+SourceCode: https://github.com/Ethereal-Developers-Inc/OpenScan
+IssueTracker: https://github.com/Ethereal-Developers-Inc/OpenScan/issues
+
+Changelog: https://github.com/Ethereal-Developers-Inc/OpenScan/releases
+
+Summary: Open source document scanner app
+Description: |-
+    Our open source document scanner app will enable you to scan anything (official documents, notes, photos, business cards, etc.) and convert it into a PDF file and share it via any messaging app that allows it.
+
+    Why use this app?
+        Sometimes, you require to scan several documents and share them in this fast-paced professional world. Maybe, you want to scan and store your receipts and billing information for filing taxes. In this day and age, we look for not only ease of use in technology, but also apps which respect our data privacy and apps which doesn't force ads on our screen every other second. 
+
+    We bring you OpenScan, an app which respects your privacy coupled with comprehensive and beautiful user interface and a flawless user experience.
+
+    We differentiate our self from the rest of the apps in the market by
+    * Open Sourcing our app
+    * Respecting your data privacy
+
+    KEY FEATURES
+    * Scan your documents, notes, business cards.
+    * Simple and powerful cropping features.
+    * Share as PDF/JPGs.
+
+Repo: https://github.com/Ethereal-Developers-Inc/OpenScan
+
+Builds:
+  - versionName: '2.0'
+    versionCode: 2
+    commit: v2.0
+    output: https://github.com/Ethereal-Developers-Inc/OpenScan/releases/download/v2.0.0/app-release.apk
+    srclibs:
+      - flutter@1.22.5
+    prebuild:
+      - rm -fr ios
+      - echo "flutter.sdk=$$flutter$$" >> ../local.properties
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk --flavor fdroid
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    output: https://github.com/Ethereal-Developers-Inc/OpenScan/releases/download/v1.0.0/app-release.apk
+    srclibs:
+      - flutter@1.22.5
+    prebuild:
+      - rm -fr ios
+      - echo "flutter.sdk=$$flutter$$" >> ../local.properties
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk --flavor fdroid
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 2.0.0
+CurrentVersionCode: 2
