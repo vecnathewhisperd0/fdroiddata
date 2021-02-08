@@ -18,8 +18,8 @@ Builds:
     versionCode: 102
     commit: 2.3.3
     subdir: MainApp
-    init:
-      - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
+    sudo:
+      - /opt/android-sdk/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
       - echo $ANDROID_NDK
     gradle:
       - yes
