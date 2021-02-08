@@ -20,7 +20,7 @@ Builds:
     subdir: MainApp
     init:
       - /opt/android-sdk/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
-      - echo $ANDROID_NDK
+      - ANDROID_NDK=/opt/android-sdk/ndk/21.3.6528147
     gradle:
       - yes
 
