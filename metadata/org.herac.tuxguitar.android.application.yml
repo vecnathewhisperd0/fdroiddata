@@ -32,11 +32,10 @@ Builds:
   - versionName: SNAPSHOT
     versionCode: 1
     commit: d3746f98
+    init: svn checkout -r 1821 svn://svn.code.sf.net/p/tuxguitar/code/trunk/ .
+    output: build-scripts/tuxguitar-android/apk/build/outputs/apk/release/tuxguitar-android-SNAPSHOT-release-unsigned.apk
     srclibs:
       - mididriver@v1.20
-    init: svn checkout -r 1821 svn://svn.code.sf.net/p/tuxguitar/code/trunk/ .
-    scandelete: .
-    scanignore: TuxGuitar-android/src/org/herac/tuxguitar/android/resource/TGResourceLoaderImpl.java
     prebuild:
       - find . -iname "*.jar" -o -iname "*.zip" -o -iname "*.so" -exec rm {} \;
       - rm -rf TuxGuitar-android-gdrive
@@ -44,6 +43,10 @@ Builds:
       - rm -rf TuxGuitar-android-gdrive-plugin
       - git apply $HOME/metadata/org.herac.tuxguitar.android.application/remove_gdrive.patch
       - sed -i -e "s/^\s*versionCode.*/        versionCode $$VERCODE$$/" build-scripts/tuxguitar-android/apk/build.gradle
+    scanignore:
+      - TuxGuitar-android/src/org/herac/tuxguitar/android/resource/TGResourceLoaderImpl.java
+    scandelete:
+      - .
     build:
       - export BUILD_DIR=$(pwd)
       - cd $$mididriver$$
@@ -52,7 +55,6 @@ Builds:
       - cp -r * ${BUILD_DIR}/TuxGuitar-android-midimaster/libs
       - cd ${BUILD_DIR}/build-scripts/tuxguitar-android/apk
       - gradle assembleRelease
-    output: build-scripts/tuxguitar-android/apk/build/outputs/apk/release/tuxguitar-android-SNAPSHOT-release-unsigned.apk
     ndk: r21d
 
 MaintainerNotes: |-
