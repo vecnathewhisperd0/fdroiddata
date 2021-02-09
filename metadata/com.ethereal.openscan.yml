@@ -17,8 +17,7 @@ Builds:
       - flutter@1.22.5
     rm:
       - ios
-    prebuild:
-      - echo "flutter.sdk=$$flutter$$" >> ../local.properties
+    prebuild: echo "flutter.sdk=$$flutter$$" >> ../local.properties
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter packages pub get
