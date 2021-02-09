@@ -603,7 +603,7 @@ Builds:
 
   - versionName: 20.6.2
     versionCode: 206020
-    commit: 488ddf983622c7f79b1d5c9cb2f4323069587ad4
+    commit: android-20.6.2
     subdir: android/app
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
