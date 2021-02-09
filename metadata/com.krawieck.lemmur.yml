@@ -13,9 +13,9 @@ RepoType: git
 Repo: https://github.com/krawieck/lemmur.git
 
 Builds:
-  - versionName: 0.2.2
-    versionCode: 10
-    commit: v0.2.2
+  - versionName: 0.2.3
+    versionCode: 11
+    commit: v0.2.3
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.22.5
@@ -26,5 +26,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckData: https://raw.githubusercontent.com/krawieck/lemmur/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 0.2.2
-CurrentVersionCode: 10
+CurrentVersion: 0.2.3
+CurrentVersionCode: 11
