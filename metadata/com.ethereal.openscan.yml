@@ -15,8 +15,9 @@ Builds:
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.22.5
+    rm:
+      - ios
     prebuild:
-      - rm: ios
       - echo "flutter.sdk=$$flutter$$" >> ../local.properties
     build:
       - $$flutter$$/bin/flutter config --no-analytics
