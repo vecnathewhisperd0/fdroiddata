@@ -7,10 +7,11 @@ AuthorWebSite: https://tsacdop.stonegate.me
 WebSite: https://tsacdop.stonegate.me
 SourceCode: https://github.com/stonega/tsacdop
 IssueTracker: https://github.com/stonega/tsacdop/issues
-
 Donate: https://www.buymeacoffee.com/stonegate
 Liberapay: stonegate
 Bitcoin: 1PbByzEbvzvXf1qn9eMtmqW9h8ABd2z7tW
+
+AutoName: Tsacdop
 
 RepoType: git
 Repo: https://github.com/stonega/tsacdop
@@ -18,7 +19,7 @@ Repo: https://github.com/stonega/tsacdop
 Builds:
   - versionName: 0.5.8
     versionCode: 46
-    commit: v0.5.8-3
+    commit: v0.5.8-4
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release-unsigned.apk
     srclibs:
       - flutter@1.22.6
