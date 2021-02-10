@@ -12,14 +12,14 @@ RepoType: git
 Repo: https://github.com/infinyte7/Anki-Occlusion
 
 Builds:
-  - versionName: 1.4.1
-    versionCode: 14100
-    commit: v1.4.1
+  - versionName: 1.4.2
+    versionCode: 14200
+    commit: v1.4.2
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.1
-CurrentVersionCode: 14100
+CurrentVersion: 1.4.2
+CurrentVersionCode: 14200
