@@ -18,7 +18,7 @@ Repo: https://github.com/stonega/tsacdop
 Builds:
   - versionName: 0.5.8
     versionCode: 46
-    commit: v0.5.8
+    commit: v0.5.8-1
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release-unsigned.apk
     srclibs:
       - flutter@1.22.6
