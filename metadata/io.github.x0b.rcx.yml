@@ -17,14 +17,24 @@ Builds:
   - versionName: 1.11.4
     versionCode: 170
     commit: v1.11.4
-    subdir: app
-    sudo:
-      - apt update || apt update
-      - apt install -y -t testing golang-go
     gradle:
       - oss
-    output: build/outputs/apk/oss/release/app-oss-universal-release-unsigned.apk
-    ndk: r21d
+    output: app/build/outputs/apk/oss/release/app-oss-universal-release.apk
+    prebuild:
+      - wget -O go.tar.gz -q https://golang.org/dl/go1.15.8.linux-amd64.tar.gz
+      - tar -xf go.tar.gz -C /usr/local
+      - rm -rf go.tar.gz
+      - export PATH=$PATH:/usr/local/go/bin
+      - PATH=$PATH:/usr/local/go/bin
+      - export GOROOT=/usr/local/go
+      - GOROOT=/usr/local/go
+      - sed -i "27i    environment 'GO111MODULE', 'off'" rclone/build.gradle
+      - sed -i "27i    ignoreExitValue true" rclone/build.gradle
+      - sed -i -e 's/commandLine '\''go'\''/commandLine '\''\/usr\/local\/go\/bin\/go'\''/g'
+        rclone/build.gradle
+      - sed -i -e 's/'\''ndk-bundle'\'',/'\''ndk'\'', '\''20.1.5948944'\'',/g' rclone/build.gradle
+      - cat rclone/build.gradle
+    ndk: r20b
     preassemble:
       - rclone:buildNative
 
