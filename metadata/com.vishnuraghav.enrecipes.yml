@@ -59,8 +59,12 @@ Builds:
       - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-optimized-with-inspector.aar
     build:
       - ns prepare android
-      - cd platforms/android/app
-      - gradle "assembleRelease" "-PappPath=app" "-PappResourcesPath=app/resources"
+      - sed -i 's/\(signingConfig[[:space:]]\)signingConfigs\.release/\1null/' platforms/android/app/build.gradle
+      - ns build android --release --env.uglify --key-store-path /dev/null
+        --key-store-alias NULL --key-store-password NULL --key-store-alias-password
+        NULL || (cd platforms/android/app/build/outputs/apk/release
+      - echo "The following files were found:"
+      - find -maxdepth 1 -type f -name "*.apk")
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
