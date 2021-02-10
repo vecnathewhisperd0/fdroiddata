@@ -33,9 +33,6 @@ Builds:
       - $$SDK$$/tools/bin/sdkmanager "platforms;android-30" "build-tools;30.0.3" >
         /dev/null
       - npm install --unsafe-perm
-      - cd app
-    gradle:
-      - yes
     output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
     rm:
       - node_modules/proxy-lib/bin/win32/ia32/CredentialsManager.exe
@@ -67,12 +64,9 @@ Builds:
       - platforms/android/app/libs/runtime-libs/nativescript-optimized.aar
       - platforms/android/app/libs/runtime-libs/nativescript-optimized-with-inspector.aar
     build:
-      - pwd
       - ns prepare android
-      - cd ../platforms/android/app
-    gradleprops:
-      - appPath=app
-      - appResourcesPath=app/resources
+      - cd platforms/android/app
+      - gradle "assembleRelease" "-PappPath=app" "-PappResourcesPath=app/resources"
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
