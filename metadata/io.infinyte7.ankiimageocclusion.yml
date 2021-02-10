@@ -14,7 +14,7 @@ Repo: https://github.com/infinyte7/Anki-Occlusion
 Builds:
   - versionName: 1.4.0
     versionCode: 14000
-    commit: aaf8424834df9acb270d670099d18243a9a19b64
+    commit: 162f15a0d3f31bdbad3bd84e5ffa49a7ae21d711
     subdir: app
     gradle:
       - yes
