@@ -57,12 +57,6 @@ Builds:
       - node_modules/@nativescript/android/framework/build-tools/android-metadata-generator.jar
       - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-optimized.aar
       - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-optimized-with-inspector.aar
-      - platforms/android/build-tools/static-binding-generator.jar
-      - platforms/android/build-tools/dts-generator.jar
-      - platforms/android/build-tools/android-metadata-generator.jar
-      - platforms/android/app/libs/runtime-libs/nativescript-regular.aar
-      - platforms/android/app/libs/runtime-libs/nativescript-optimized.aar
-      - platforms/android/app/libs/runtime-libs/nativescript-optimized-with-inspector.aar
     build:
       - ns prepare android
       - cd platforms/android/app
