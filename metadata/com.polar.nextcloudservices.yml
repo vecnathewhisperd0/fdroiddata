@@ -1,9 +1,9 @@
+Categories:
+  - Connectivity
 License: GPL-3.0-only
 SourceCode: https://github.com/Andrewerr/NextcloudServices
 IssueTracker: https://github.com/Andrewerr/NextcloudServices/issues
-
-Categories: 
-  - Connectivity
+Changelog: https://github.com/Andrewerr/NextcloudServices/releases
 
 AutoName: Nextcloud Services
 
@@ -11,7 +11,7 @@ RepoType: git
 Repo: https://github.com/Andrewerr/NextcloudServices
 
 Builds:
-  - versionName: 'v1.0-beta4'
+  - versionName: 1.0-beta4
     versionCode: 4
     commit: v1.0-beta4
     subdir: app
