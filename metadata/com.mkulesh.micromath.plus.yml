@@ -163,7 +163,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.21.0
+    versionCode: 317
+    commit: v2.21.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.21.1
+    versionCode: 318
+    commit: v2.21.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.20.1
-CurrentVersionCode: 316
+CurrentVersion: 2.21.1
+CurrentVersionCode: 318

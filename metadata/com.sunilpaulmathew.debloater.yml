@@ -10,6 +10,7 @@ Changelog: https://github.com/sunilpaulmathew/De-Bloater/releases
 Donate: https://www.paypal.me/menacherry/
 
 AutoName: De-Bloater
+
 RepoType: git
 Repo: https://github.com/sunilpaulmathew/De-Bloater
 
@@ -21,7 +22,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v0.9
+    versionCode: 9
+    commit: v0.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v0.10
+    versionCode: 10
+    commit: v0.10
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v0.11
+    versionCode: 11
+    commit: v0.11
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v0.12
+    versionCode: 12
+    commit: v0.12
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v0.8
-CurrentVersionCode: 8
+CurrentVersion: v0.12
+CurrentVersionCode: 12

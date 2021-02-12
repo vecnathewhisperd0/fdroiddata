@@ -629,7 +629,40 @@ Builds:
       - yes
     ndk: r21d
 
+  - versionName: '0.104'
+    versionCode: 104
+    commit: v0.104
+    subdir: app
+    gradle:
+      - yes
+    ndk: r21d
+
+  - versionName: '0.105'
+    versionCode: 105
+    disable: crash on start upstream issue 1896
+    commit: v0.105
+    subdir: app
+    gradle:
+      - yes
+    ndk: r22
+
+  - versionName: '0.106'
+    versionCode: 106
+    commit: v0.106
+    subdir: app
+    gradle:
+      - yes
+    ndk: r22
+
+  - versionName: '0.107'
+    versionCode: 107
+    commit: v0.107
+    subdir: app
+    gradle:
+      - yes
+    ndk: r22
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '0.103'
-CurrentVersionCode: 103
+CurrentVersion: '0.107'
+CurrentVersionCode: 107

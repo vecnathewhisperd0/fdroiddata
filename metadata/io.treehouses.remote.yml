@@ -427,10 +427,58 @@ Builds:
       - yes
     output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
 
+  - versionName: '6054'
+    versionCode: 6054
+    commit: fdroid-6054
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    ndk: r21d
+
+  - versionName: '6055'
+    versionCode: 6055
+    commit: fdroid-6055
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    ndk: r21d
+
+  - versionName: '6056'
+    versionCode: 6056
+    commit: fdroid-6056
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    ndk: r21d
+
+  - versionName: '6059'
+    versionCode: 6059
+    commit: fdroid-6059
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    ndk: r21d
+
+  - versionName: '6061'
+    versionCode: 6061
+    commit: fdroid-6061
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    ndk: r21d
+
+  - versionName: '6062'
+    versionCode: 6062
+    commit: fdroid-6062
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    ndk: r21d
+
 MaintainerNotes: The root build.gradle contains custom code that uses relative paths.
     Thus we cannot apply subdir.
 
 AutoUpdateMode: Version fdroid-%v
 UpdateCheckMode: Tags fdroid-[0-9]+
-CurrentVersion: '6042'
-CurrentVersionCode: 6042
+CurrentVersion: '6062'
+CurrentVersionCode: 6062

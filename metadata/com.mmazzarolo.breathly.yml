@@ -67,10 +67,10 @@ Builds:
     scandelete:
       - node_modules/
 
-  - versionName: '1.8'
-    versionCode: 9
-    disable: fails to build nodejs too old
-    commit: android-1.8
+  - versionName: '1.9'
+    versionCode: 10
+    disable: fails to build
+    commit: android-1.9
     subdir: android/app
     sudo:
       - apt-get update || apt-get update
@@ -97,5 +97,5 @@ MaintainerNotes: scanignore is used to allow the local React Native and Android 
 
 AutoUpdateMode: Version android-%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.8'
-CurrentVersionCode: 9
+CurrentVersion: '1.9'
+CurrentVersionCode: 10

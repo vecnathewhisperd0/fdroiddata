@@ -1,6 +1,6 @@
 Categories:
   - Security
-License: GPL-3.0-only
+License: GPL-2.0-or-later
 WebSite: http://www.keepassdroid.com
 SourceCode: https://github.com/bpellin/keepassdroid
 IssueTracker: https://github.com/bpellin/keepassdroid/issues
@@ -470,7 +470,18 @@ Builds:
       - app/libs
     ndk: r21d
 
+  - versionName: 2.5.15
+    versionCode: 198
+    disable: temporary to force a rebuild
+    commit: v2.5.15
+    subdir: app
+    gradle:
+      - general
+    rm:
+      - app/libs
+    ndk: r21d
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.14
-CurrentVersionCode: 197
+CurrentVersion: 2.5.15
+CurrentVersionCode: 198

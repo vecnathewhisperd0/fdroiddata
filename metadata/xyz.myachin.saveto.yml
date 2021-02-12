@@ -1,0 +1,30 @@
+Categories:
+  - Navigation
+License: CDDL-1.0
+SourceCode: https://notabug.org/Umnik/SaveTo
+IssueTracker: https://notabug.org/Umnik/SaveTo/issues
+
+AutoName: Save to…
+
+RepoType: git
+Repo: https://notabug.org/Umnik/SaveTo.git
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: '1.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.3'
+    versionCode: 3
+    commit: '1.3'
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '1.3'
+CurrentVersionCode: 3
