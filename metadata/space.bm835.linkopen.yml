@@ -1,0 +1,29 @@
+Categories:
+  - System
+License: MIT
+AuthorName: BM835
+AuthorEmail: support@bm835.space
+WebSite: https://link-open.bm835.space/
+SourceCode: https://gitlab.com/BM835/link-open
+IssueTracker: https://gitlab.com/BM835/link-open/issues
+Changelog: https://gitlab.com/BM835/link-open/-/tags
+Donate: https://link-open.bm835.space/funding.html
+LiberapayID: '1591371'
+
+Summary: Get site name without open this link in browser
+
+RepoType: git
+Repo: https://gitlab.com/BM835/link-open.git
+
+Builds:
+  - versionName: v1.0
+    versionCode: 3
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 3
