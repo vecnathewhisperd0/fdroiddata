@@ -1,0 +1,28 @@
+Categories:
+  - Games
+License: GPL-3.0-or-later
+AuthorName: Ben Pike
+AuthorEmail: ben@pbsapproved.com
+SourceCode: https://github.com/pbsapproved/rpgdiceroller
+IssueTracker: https://github.com/pbsapproved/rpgdiceroller/issues
+
+AutoName: RPGDiceRoller
+Summary: Dice rolling app for tabletop RPG games
+Description: Roll the dice!
+
+RepoType: git
+Repo: https://github.com/pbsapproved/rpgdiceroller
+Binaries: https://github.com/pbsapproved/RPGDiceRoller/releases/download/v%v/rpgdiceroller-%v-signed.apk
+
+Builds:
+  - versionName: '1.02'
+    versionCode: 102
+    commit: v1.02
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.02'
+CurrentVersionCode: 102
