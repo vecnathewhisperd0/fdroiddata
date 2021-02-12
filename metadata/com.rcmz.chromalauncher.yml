@@ -1,0 +1,23 @@
+Categories:
+  - System
+  - Theming
+License: MIT
+SourceCode: https://gitlab.com/rcmz0/chroma-launcher
+IssueTracker: https://gitlab.com/rcmz0/chroma-launcher/issues
+
+Summary: Sorts apps by color
+Description: An launcher that put all your apps on single screen, sorted by color.
+
+RepoType: git
+Repo: https://gitlab.com/rcmz0/chroma-launcher.git
+
+Builds:
+  - versionName: '1.05'
+    versionCode: 5
+    commit: 9b74a5ae5d0f4c63060f776ec8a6ecca3257c40e
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
