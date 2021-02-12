@@ -19,21 +19,21 @@ Builds:
     commit: v1.11.4
     gradle:
       - oss
-    output: app/build/outputs/apk/oss/release/app-oss-universal-release.apk
-    prebuild:
-      - wget -O go.tar.gz -q https://golang.org/dl/go1.15.8.linux-amd64.tar.gz
-      - tar -xf go.tar.gz -C /usr/local
-      - rm -rf go.tar.gz
-      - export PATH=$PATH:/usr/local/go/bin
-      - PATH=$PATH:/usr/local/go/bin
-      - export GOROOT=/usr/local/go
-      - GOROOT=/usr/local/go
+    output: app/build/outputs/apk/oss/release/app-oss-universal-release-unsigned.apk
+    build:
+      - curl -o go.tar.gz https://dl.google.com/go/go1.15.8.linux-amd64.tar.gz
+      - echo 'd3379c32a90fdf9382166f8f48034c459a8cc433730bc9476d39d9082c94583b  go.tar.gz'
+        | sha256sum -c
+      - mkdir -p golang
+      - tar -C golang -xzf go.tar.gz
+      - export GOPATH="$PWD"
+      - export GOROOT="$PWD/golang/go"
+      - export PATH="$GOROOT/bin:$PATH"
       - sed -i "27i    environment 'GO111MODULE', 'off'" rclone/build.gradle
       - sed -i "27i    ignoreExitValue true" rclone/build.gradle
-      - sed -i -e 's/commandLine '\''go'\''/commandLine '\''\/usr\/local\/go\/bin\/go'\''/g'
+      - sed -i -e 's/commandLine '\''go'\''/commandLine '\''\/home\/vagrant\/build\/io.github.x0b.rcx\/golang\/go\/bin\/go'\''/g'
         rclone/build.gradle
-      - sed -i -e 's/'\''ndk-bundle'\'',/'\''ndk'\'', '\''20.1.5948944'\'',/g' rclone/build.gradle
-      - cat rclone/build.gradle
+      - sed -i -e 's/'\''ndk-bundle'\'',/'\''..\/android-ndk'\'', '\''r20b'\'',/g' rclone/build.gradle
     ndk: r20b
     preassemble:
       - rclone:buildNative
