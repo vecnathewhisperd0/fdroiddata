@@ -11,12 +11,12 @@ RepoType: git
 Repo: https://github.com/FredJul/Warmd
 
 Builds:
-  - versionName: 1.4.0
-    versionCode: 28
-    commit: v1.4.0-3
+  - versionName: 1.4.1
+    versionCode: 29
+    commit: v1.4.1
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
-      - flutter@1.25.0-8.3.pre
+      - flutter@1.26.0-17.5.pre
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - sed -i 's/.*in_app_review.*//' pubspec.yaml
@@ -26,5 +26,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/FredJul/Warmd/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 1.4.0
-CurrentVersionCode: 28
+CurrentVersion: 1.4.1
+CurrentVersionCode: 29
