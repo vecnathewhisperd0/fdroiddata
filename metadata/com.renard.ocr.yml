@@ -1,0 +1,50 @@
+Categories:
+  - Reading
+  - Writing
+License: Apache-2.0
+AuthorName: Renard Wellnitz
+AuthorEmail: Renard.Wellnitz@googlemail.com
+SourceCode: https://github.com/renard314/textfairy
+IssueTracker: https://github.com/renard314/textfairy/issues
+
+Summary: An android OCR App
+Description: |-
+    An android OCR app that allows to manage your documents,
+    extract text from images and photos and much more.
+
+    List of features:
+    * Extract text from images
+    * Edit, share, or export as PDF
+    * Works offline to protect your privacy
+    * Reads text out loud. (Text-to-speech, TTS)
+    * Recognizes printed text from more than 110 languages
+    * Scan documents with text in multiple languages
+    * Manage your scanned files (edit, join, delete)
+    * Automatically cleans up the image, corrects the viewpoint and straightens text lines
+    * Automatically detects text columns in complex documents
+
+    Please bear in mind that Text Fairy cannot read handwriting.
+
+RepoType: git
+Repo: https://github.com/renard314/textfairy
+
+Builds:
+  - versionName: 4.1.0
+    versionCode: 82
+    commit: f704e53f78055be667389d1ad8da5dd31c369f97
+    subdir: app
+    patch:
+      - fix_repos.patch
+    gradle:
+      - Develop
+    output: build/outputs/apk/develop/release/app-develop-universal-release-unsigned.apk
+    scanignore:
+      - tessdata
+    scandelete:
+      - .
+    ndk: r21d
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 4.1.0
+CurrentVersionCode: 82
