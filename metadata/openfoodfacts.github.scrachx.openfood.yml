@@ -427,9 +427,9 @@ Builds:
       - sed -i 's/\r$//' ../gradle/wrapper/gradle-wrapper.properties
       - sed -i '/javaMaxHeapSize/d' build.gradle.kts
 
-  - versionName: 3.6.7
-    versionCode: 432
-    commit: 3.6.7
+  - versionName: 3.6.8
+    versionCode: 433
+    commit: 3.6.8
     subdir: app
     gradle:
       - 'off'
@@ -439,5 +439,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 3.6.7
-CurrentVersionCode: 432
+CurrentVersion: 3.6.8
+CurrentVersionCode: 433
