@@ -32,7 +32,7 @@ Repo: https://github.com/emileb/Freedoom-for-Android
 Builds:
   - versionName: 0.4.3
     versionCode: 19
-    commit: 7099aa1b70fd6511411bce27469f4079313f1f67
+    commit: b6cd1025e73cdc57b01e026b7d79bf8580749e64
     subdir: doom
     submodules: true
     gradle:
