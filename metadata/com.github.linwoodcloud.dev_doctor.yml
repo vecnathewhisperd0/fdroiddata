@@ -17,7 +17,7 @@ Builds:
     commit: 1.0.0
     output: build/app/outputs/apk/release/app-release-unsigned.apk
     srclibs:
-      - flutter@1.22.5
+      - flutter@1.26.0-17.5.pre
     rm:
       - ios
       - web
