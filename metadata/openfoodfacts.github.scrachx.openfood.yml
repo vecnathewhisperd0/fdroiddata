@@ -427,7 +427,17 @@ Builds:
       - sed -i 's/\r$//' ../gradle/wrapper/gradle-wrapper.properties
       - sed -i '/javaMaxHeapSize/d' build.gradle.kts
 
+  - versionName: 3.6.6
+    versionCode: 431
+    commit: 3.6.6
+    subdir: app
+    gradle:
+      - 'off'
+    prebuild:
+      - sed -i 's/\r$//' ../gradle/wrapper/gradle-wrapper.properties
+      - sed -i '/javaMaxHeapSize/d' build.gradle.kts
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 3.6.3
+CurrentVersion: 3.6.6
 CurrentVersionCode: 431
