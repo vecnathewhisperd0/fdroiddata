@@ -429,7 +429,7 @@ Builds:
 
   - versionName: 3.6.7
     versionCode: 432
-    commit: 3.6.6
+    commit: 3.6.7
     subdir: app
     gradle:
       - 'off'
@@ -440,4 +440,4 @@ Builds:
 AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: 3.6.7
-CurrentVersionCode: 431
+CurrentVersionCode: 432
