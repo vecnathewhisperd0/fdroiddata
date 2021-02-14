@@ -2,7 +2,6 @@ Categories:
   - Development
   - Writing
 License: GPL-3.0-or-later
-
 SourceCode: https://github.com/Keidan/HexViewer/
 IssueTracker: https://github.com/Keidan/HexViewer/issues/
 
@@ -18,17 +17,16 @@ RepoType: git
 Repo: https://github.com/Keidan/HexViewer
 
 Builds:
-  - versionName: 1.5
+  - versionName: '1.5'
     versionCode: 6
     commit: 2ff48afae7f160eb9dd97cb86f15d8ceb2f0ee45
     subdir: app
     gradle:
       - yes
 
-MaintainerNotes: |-
-    AUM is disabled for now because there's no tags in the repo
+MaintainerNotes: AUM is disabled for now because there's no tags in the repo
 
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
-CurrentVersion: 1.5
+CurrentVersion: '1.5'
 CurrentVersionCode: 6
