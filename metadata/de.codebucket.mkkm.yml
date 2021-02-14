@@ -1,0 +1,40 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: David Sn
+AuthorWebSite: https://www.codebucket.de
+SourceCode: https://github.com/divadsn/mobileKKM
+IssueTracker: https://github.com/divadsn/mobileKKM/issues
+Changelog: https://github.com/divadsn/mobileKKM/releases
+Donate: https://www.paypal.me/divadsn
+
+Summary: Nieoficjalna aplikacja do obsługi mobilnej wersji KKM na urządzeniach mobilnych
+Description: |-
+    '''Konta Kart Krakowskich z systemu bilety.kkm.krakow.pl nie są obsługiwane przez tą aplikację, tylko konta zarejestrowane na m.kkm.krakow.pl!'''
+
+    Aplikacja umożliwia ulepszoną obsługę mobilnej Krakowskiej Karty Miejskiej (m.kkm.krakow.pl) na telefonie.
+
+    Dodatkowo oferuje automatyczne logowanie po uruchomieniu oraz w przyszłości możliwość tworzenia kopii zapasowej profilu w razie potrzeby lub awarii urządzenia.
+
+    mobileKKM jest '''niezależnie od KKM i MPK Kraków opracowaną''' aplikacją "open-source" z kodem zródłowym dostępnym na serwisie GitHub. Niektóre funkcje mogą być jeszcze niedostępne.
+
+RepoType: git
+Repo: https://github.com/divadsn/mobileKKM
+
+Builds:
+  - versionName: 1.2.0+17
+    versionCode: 17
+    commit: v1.2.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/versionCode/s/1/$$VERCODE$$/' build.gradle
+      - sed -i -e '/versionName/s/dev/$$VERSION$$/' build.gradle
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: 1.2.0+17
+CurrentVersionCode: 17
