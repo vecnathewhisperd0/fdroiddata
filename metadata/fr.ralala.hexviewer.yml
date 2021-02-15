@@ -5,13 +5,6 @@ License: GPL-3.0-or-later
 SourceCode: https://github.com/Keidan/HexViewer/
 IssueTracker: https://github.com/Keidan/HexViewer/issues/
 
-Summary: Hex viewer app
-Description: |-
-    This application offers the following features:
-
-    * Opening all files without a corresponding Android application.
-    * Display of the file in hexadecimal (or plain text) with the possibility to modify the content (in hexadecimal only).
-    * Saving the file on the smartphone/tablet.
 
 RepoType: git
 Repo: https://github.com/Keidan/HexViewer
