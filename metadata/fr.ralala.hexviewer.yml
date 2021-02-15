@@ -19,7 +19,7 @@ Repo: https://github.com/Keidan/HexViewer
 Builds:
   - versionName: '1.5'
     versionCode: 6
-    commit: 2ff48afae7f160eb9dd97cb86f15d8ceb2f0ee45
+    commit: 'v1.5'
     subdir: app
     gradle:
       - yes
