@@ -11,7 +11,7 @@ RepoType: git
 Repo: https://github.com/Keidan/HexViewer
 
 Builds:
-  - versionName: 1.5
+  - versionName: '1.5'
     versionCode: 6
     commit: v1.5
     subdir: app
@@ -20,5 +20,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.5
+CurrentVersion: '1.5'
 CurrentVersionCode: 6
