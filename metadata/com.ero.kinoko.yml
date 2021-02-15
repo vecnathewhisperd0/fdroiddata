@@ -17,12 +17,13 @@ Builds:
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
       - flutter@1.22.4
-    prebuild: rm -fr ios
+    rm:
+      - ios
     build:
       - export PATH=$$flutter$$/bin:$PATH
       - flutter build apk --flavor fdroid
 
-AutoUpdateMode: None
-UpdateCheckMode: None
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
 CurrentVersion: 1.2.0
 CurrentVersionCode: 21
