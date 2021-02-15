@@ -5,6 +5,7 @@ License: GPL-3.0-or-later
 SourceCode: https://github.com/Keidan/HexViewer/
 IssueTracker: https://github.com/Keidan/HexViewer/issues/
 
+AutoName: HexViewer
 
 RepoType: git
 Repo: https://github.com/Keidan/HexViewer
@@ -16,8 +17,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-
-MaintainerNotes: AUM is disabled for now because there's no tags in the repo
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
