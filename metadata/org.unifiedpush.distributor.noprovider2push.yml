@@ -1,0 +1,25 @@
+Categories:
+  - Connectivity
+  - System
+License: Apache2
+AuthorName: NoProvider2Push
+WebSite: https://github.com/NoProvider2Push/android
+SourceCode: https://github.com/NoProvider2Push/android
+IssueTracker: https://github.com/NoProvider2Push/android/issues
+Changelog: https://github.com/NoProvider2Push/android/releases
+
+Name: NoProvider2Push
+Summary: UP-distributor without provider
+Description: NoProvider2Push is a UnifiedPush distributor able to provide push notifications
+    without a push provider. For this, it needs a static address even with the roaming.
+    It is achievable with a custom network such as a VPN (eg. wireguard) or the yggdrasil
+    network.
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 3
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
+CurrentVersion: 1.0.0
+CurrentVersionCode: 3
