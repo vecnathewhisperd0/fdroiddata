@@ -1,0 +1,28 @@
+Categories:
+  - Graphics
+  - Reading
+License: MIT
+SourceCode: https://github.com/gsioteam/kinoko
+IssueTracker: https://github.com/gsioteam/kinoko/issues
+
+Summary: Awsome manga reader
+
+RepoType: git
+Repo: https://github.com/gsioteam/kinoko.git
+
+Builds:
+  - versionName: 1.2.0
+    versionCode: 21
+    commit: 7283b9d9f916d9db9656f307a7b1336eac109eff
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@1.22.4
+    prebuild: rm -fr ios
+    build:
+      - export PATH=$$flutter$$/bin:$PATH
+      - flutter build apk --flavor fdroid
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 1.2.0
+CurrentVersionCode: 21
