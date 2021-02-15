@@ -1,0 +1,23 @@
+Categories:
+  - Connectivity
+License: GPL-3.0-or-later
+SourceCode: https://gitlab.com/remmer.wilts/moin
+IssueTracker: https://gitlab.com/remmer.wilts/moin/issues
+
+AutoName: moin
+
+RepoType: git
+Repo: https://gitlab.com/remmer.wilts/moin.git
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 100
+    commit: 1.0.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 100
