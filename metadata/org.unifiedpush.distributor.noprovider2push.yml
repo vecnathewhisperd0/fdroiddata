@@ -15,11 +15,14 @@ Description: NoProvider2Push is a UnifiedPush distributor able to provide push n
     It is achievable with a custom network such as a VPN (eg. wireguard) or the yggdrasil
     network.
 
+RepoType: git
+Repo: https://github.com/NoProvider2Push/android.git
+
 Builds:
   - versionName: 1.0.0
     versionCode: 3
 
-AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags \d+\.\d+(\.\d+)?
 CurrentVersion: 1.0.0
 CurrentVersionCode: 3
