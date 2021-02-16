@@ -18,11 +18,9 @@ Builds:
     versionCode: 102
     commit: 2.3.3
     subdir: MainApp
-    init:
-      - /opt/android-sdk/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
-      - ANDROID_NDK=/opt/android-sdk/ndk/21.3.6528147
     gradle:
       - yes
+    ndk: r21d
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
