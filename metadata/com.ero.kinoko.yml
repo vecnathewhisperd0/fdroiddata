@@ -11,9 +11,9 @@ RepoType: git
 Repo: https://github.com/gsioteam/kinoko.git
 
 Builds:
-  - versionName: 1.2.0
-    versionCode: 21
-    commit: a8ab1e8553b24df23a6bed217db29c63436d9aec
+  - versionName: 1.2.1
+    versionCode: 22
+    commit: ff98ce68447f929a21e4fb0b1215b83b2e33bc6b
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
       - flutter@1.22.4
@@ -25,5 +25,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
-CurrentVersion: 1.2.0
-CurrentVersionCode: 21
+CurrentVersion: 1.2.1
+CurrentVersionCode: 22
