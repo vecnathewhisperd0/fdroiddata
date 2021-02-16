@@ -16,17 +16,17 @@ RepoType: git
 Repo: https://github.com/EasyRPG/buildscripts
 
 Builds:
-  - versionName: '1.0'
-    versionCode: 1
+  - versionName: 0.6.2.3
+    versionCode: 6699
     commit: f8a23ba
     subdir: android
     sudo:
       - apt update || apt update
       - apt -y install g++
-    output: Player/builds/android/app/build/outputs/apk/release/app-release-unsigned.apk
+    output: Player/builds/android/app/build/outputs/apk/app-release-unsigned.apk
     prebuild:
-      - export LIBLCF_COMMIT=fe26dc1
-      - export PLAYER_COMMIT=8ee5e9e
+      - export LIBLCF_COMMIT=0.6.2
+      - export PLAYER_COMMIT=0.6.2.3
       - export TIMIDITY_COMMIT=1bfb06f
       - sed -i -e '/Installing Android SDK/,/Preparing libraries/d' 1_download_library.sh
       - sed -i -e '/if \[ -d liblcf/,/fi/d' 4_build_liblcf.sh
@@ -42,6 +42,11 @@ Builds:
       - cd Player/builds/android/app/src/main
       - git clone https://github.com/Ghabry/timidity_gus.git assets/timidity
       - git -C assets/timidity checkout $TIMIDITY_COMMIT
+      - cd ../../
+      - export VER_NAME=$(git describe | cut -d - -f -2)
+      - export VER_CODE=$(git rev-list HEAD --count)
+      - sed -i -e "/defaultConfig/a \ \ \ \ \ \ \ \ versionCode $VER_CODE" build.gradle
+      - sed -i -e "/defaultConfig/a \ \ \ \ \ \ \ \ versionName \'$VER_NAME\'" build.gradle
     scandelete:
       - .
     build:
@@ -53,7 +58,11 @@ Builds:
       - ./5_build_android_port.sh
     ndk: r15c
 
+MaintainerNotes: |-
+    Upstream patches versionCode and versionName on their CI
+    based on "Player" repo, we do the same here.
+
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: '1.0'
-CurrentVersionCode: 1
+CurrentVersion: 0.6.2.3
+CurrentVersionCode: 6699
