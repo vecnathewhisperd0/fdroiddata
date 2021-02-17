@@ -8,7 +8,11 @@ SourceCode: https://github.com/renard314/textfairy
 IssueTracker: https://github.com/renard314/textfairy/issues
 
 Summary: An OCR App
-Description: |-
+Description: |4-
+
+    Note: newer versions of this app are not distributed
+    under a FOSS license and not available on F-Droid.
+
     An android OCR app that allows to manage your documents,
     extract text from images and photos and much more.
 
@@ -31,20 +35,35 @@ Repo: https://github.com/renard314/textfairy
 Builds:
   - versionName: 4.1.0
     versionCode: 82
-    commit: f704e53f78055be667389d1ad8da5dd31c369f97
+    commit: version_410
     subdir: app
-    patch:
-      - fix_repos.patch
     gradle:
       - Develop
     output: build/outputs/apk/develop/release/app-develop-universal-release-unsigned.apk
+    prebuild:
+      - sed -i 's/minifyEnabled true/minifyEnabled false/' build.gradle
+      - sed -i 's/shrinkResources true/shrinkResources false/' build.gradle
+      - sed -i 's/com\.viewpagerindicator:library:2\.4\.1@aar/fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar/'
+        build.gradle
+      - sed -i '/dl\.bintray\.com\/populov\/maven/d' ../build.gradle
+      - sed -i 's/http:\/\/oss\.sonatype\.org\/content\/repositories\/snapshots/https:\/\/oss.sonatype.org\/content\/repositories\/snapshots\//'
+        ../build.gradle
+      - rm -rf ../test-images
     scanignore:
       - tessdata
     scandelete:
       - .
     ndk: r21d
 
+MaintainerNotes: |-
+    F-Droid scanner complains about sonatype repo because it misses a / at the end.
+    Minified version of this app crashes when entering OCR activity so we disable proguard.
+    Newer versions are not available since the app is now proprietary.
+    https://github.com/renard314/textfairy/issues/208#issuecomment-780400083
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 4.1.0
 CurrentVersionCode: 82
+
+NoSourceSince: 4.1.0
