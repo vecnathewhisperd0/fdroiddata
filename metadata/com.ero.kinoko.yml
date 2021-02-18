@@ -22,6 +22,7 @@ Builds:
     build:
       - export PATH=$$flutter$$/bin:$PATH
       - flutter build apk --flavor fdroid
+
   - versionName: 1.2.2
     versionCode: 23
     commit: 9a0f73505f8c3bbe87d5bb08d523888c64f7ea5e
