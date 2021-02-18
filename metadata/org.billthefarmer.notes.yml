@@ -61,7 +61,43 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.08'
+    versionCode: 108
+    commit: v1.08
+    gradle:
+      - yes
+
+  - versionName: '1.09'
+    versionCode: 109
+    commit: v1.09
+    gradle:
+      - yes
+
+  - versionName: '1.10'
+    versionCode: 110
+    commit: v1.10
+    gradle:
+      - yes
+
+  - versionName: '1.11'
+    versionCode: 111
+    commit: v1.11
+    gradle:
+      - yes
+
+  - versionName: '1.12'
+    versionCode: 112
+    commit: v1.12
+    gradle:
+      - yes
+
+  - versionName: '1.13'
+    versionCode: 113
+    commit: v1.13
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.07'
-CurrentVersionCode: 107
+CurrentVersion: '1.13'
+CurrentVersionCode: 113

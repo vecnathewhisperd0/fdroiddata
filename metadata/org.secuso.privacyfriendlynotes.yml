@@ -20,7 +20,7 @@ Description: |-
     * sketch notes
 
     The app belongs to the group of Privacy Friendly Apps developed at the
-    [https://secuso.org/ SECUSO research group] of Technische Universitaet
+    <a href="https://secuso.org/">SECUSO research group</a> of Technische Universitaet
     Darmstadt. It does not require any permission and relinquishes advertisement and
     tracking mechanisms.
 
@@ -42,7 +42,15 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.0.2
+    versionCode: 3
+    commit: v1.0.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.1
-CurrentVersionCode: 2
+CurrentVersion: 1.0.2
+CurrentVersionCode: 3

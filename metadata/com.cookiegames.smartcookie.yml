@@ -270,7 +270,92 @@ Builds:
     gradle:
       - scMain
 
+  - versionName: 9.2.1
+    versionCode: 124
+    commit: v9.2.1
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 9.2.3
+    versionCode: 126
+    commit: v9.2.3
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 9.3.0
+    versionCode: 127
+    commit: v9.3.0
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 9.3.2
+    versionCode: 129
+    commit: v9.3.3
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 10.0.1
+    versionCode: 132
+    commit: v10.0.1
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 11.0.0
+    versionCode: 134
+    commit: v11.0.0
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 11.0.1
+    versionCode: 135
+    commit: v11.0.1
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 11.0.2
+    versionCode: 137
+    commit: v11.0.2
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 11.0.3
+    versionCode: 138
+    disable: missing com.mindorks.android:prdownloader
+    commit: v11.0.3
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 12.0.0
+    versionCode: 139
+    commit: v12.0.0
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 12.0.1
+    versionCode: 140
+    commit: v12.0.1
+    subdir: app
+    gradle:
+      - scMain
+
+  - versionName: 12.1.1
+    versionCode: 142
+    commit: v12.1.1
+    subdir: app
+    gradle:
+      - scMain
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 9.1.0
-CurrentVersionCode: 122
+CurrentVersion: 12.1.1
+CurrentVersionCode: 142

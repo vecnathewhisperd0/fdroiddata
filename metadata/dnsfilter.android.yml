@@ -133,9 +133,39 @@ Builds:
       - material.io_icons.zip
       - personalDNSfilter_icon.zip
 
-  - versionName: 1.50.42.4
-    versionCode: 1504204
-    commit: 1.50.42.4
+  - versionName: 1.50.43.0
+    versionCode: 1504300
+    commit: 1.50.43.0
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - material.io_icons.zip
+      - personalDNSfilter_icon.zip
+
+  - versionName: 1.50.44.0
+    versionCode: 1504400
+    commit: 1.50.44.0
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - material.io_icons.zip
+      - personalDNSfilter_icon.zip
+
+  - versionName: 1.50.45.0
+    versionCode: 1504500
+    commit: 1.50.45.0
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - material.io_icons.zip
+      - personalDNSfilter_icon.zip
+
+  - versionName: 1.50.46.0
+    versionCode: 1504600
+    commit: 1.50.46.0
     subdir: app
     gradle:
       - yes
@@ -145,5 +175,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.50.42.4
-CurrentVersionCode: 1504204
+CurrentVersion: 1.50.46.0
+CurrentVersionCode: 1504600

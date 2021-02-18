@@ -180,7 +180,202 @@ Builds:
       - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
       - sed -i -e "/':proprietary'/d" build.gradle
 
+  - versionName: 8.3.2
+    versionCode: 803021
+    commit: 8.3.2
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.3.3
+    versionCode: 803031
+    commit: 8.3.3
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.3.4
+    versionCode: 803041
+    commit: 8.3.4
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.3.7
+    versionCode: 803071
+    commit: 8.3.7
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.3.8
+    versionCode: 803081
+    commit: 8.3.8
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.4.0
+    versionCode: 804001
+    commit: 8.4.0
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.4.3
+    versionCode: 804031
+    commit: 8.4.3
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.5.0
+    versionCode: 805001
+    commit: 8.5.0
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.5.1
+    versionCode: 805011
+    commit: 8.5.1
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.5.2
+    versionCode: 805021
+    commit: 8.5.2
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.7.0
+    versionCode: 807001
+    commit: 8.7.0
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.7.2
+    versionCode: 807021
+    commit: 8.7.2
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.7.3
+    versionCode: 807031
+    commit: 8.7.3
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 8.8.0
+    versionCode: 808001
+    commit: 8.8.0
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 9.0.0
+    versionCode: 900001
+    commit: 9.0.0
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 8.3.0
-CurrentVersionCode: 803001
+CurrentVersion: 9.0.0
+CurrentVersionCode: 900001

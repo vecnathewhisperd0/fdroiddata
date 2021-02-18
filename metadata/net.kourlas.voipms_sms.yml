@@ -11,13 +11,6 @@ IssueTracker: https://github.com/michaelkourlas/voipms-sms-client/issues
 Changelog: https://github.com/michaelkourlas/voipms-sms-client/blob/HEAD/CHANGES.md
 
 AutoName: VoIP.ms SMS
-Description: |-
-    Allows you to send and receive SMS messages using your VoIP.ms account. The
-    application’s features include:
-
-    * The ability to send, receive, and delete texts;
-    * Conversation-based organization (all texts to and from a particular phone number are grouped together) and
-    * Synchronization with device contacts, including the contact’s name and photo.
 
 RepoType: git
 Repo: https://github.com/michaelkourlas/voipms-sms-client
@@ -117,7 +110,34 @@ Builds:
     prebuild: sed -i -e '/google-services/d' -e '/fabric/d' -e '/whenTaskAdded/,+6d'
         build.gradle ../build.gradle
 
+  - versionName: 0.6.10-fdroid
+    versionCode: 128
+    commit: v0.6.10
+    subdir: voipms-sms
+    gradle:
+      - fdroidFull
+    prebuild: sed -i -e '/google-services/d' -e '/fabric/d' -e '/whenTaskAdded/,+6d'
+        build.gradle ../build.gradle
+
+  - versionName: 0.6.13-fdroid
+    versionCode: 133
+    commit: v0.6.13
+    subdir: voipms-sms
+    gradle:
+      - fdroidFull
+    prebuild: sed -i -e '/google-services/d' -e '/fabric/d' -e '/whenTaskAdded/,+6d'
+        build.gradle ../build.gradle
+
+  - versionName: 0.6.14-fdroid
+    versionCode: 134
+    commit: v0.6.14
+    subdir: voipms-sms
+    gradle:
+      - fdroidFull
+    prebuild: sed -i -e '/google-services/d' -e '/fabric/d' -e '/whenTaskAdded/,+6d'
+        build.gradle ../build.gradle
+
 AutoUpdateMode: Version +-fdroid v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.6.9
-CurrentVersionCode: 127
+CurrentVersion: 0.6.14
+CurrentVersionCode: 134

@@ -11,7 +11,7 @@ Description: |-
     Ameixa is a Material Design inspired icon theme aiming to provide a
     consistent and minimalistic look to your device. This theme supports
     mainly FLOSS apps icons. There is also a black and white version
-    available [[org.xphnx.ameixamonochrome]].
+    available https://f-droid.org/packages/org.xphnx.ameixamonochrome.
 
     Suported launchers:
 
@@ -210,7 +210,21 @@ Builds:
     gradle:
       - chromatic
 
+  - versionName: 4.5.1
+    versionCode: 451
+    commit: v4.5.1
+    subdir: app
+    gradle:
+      - chromatic
+
+  - versionName: 4.6.0
+    versionCode: 460
+    commit: v4.6.0
+    subdir: app
+    gradle:
+      - chromatic
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 4.4.0
-CurrentVersionCode: 440
+CurrentVersion: 4.6.0
+CurrentVersionCode: 460

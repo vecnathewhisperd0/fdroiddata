@@ -50,7 +50,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.4.6
+    versionCode: 155
+    commit: 0.4.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.4.7
+    versionCode: 156
+    commit: 0.4.7
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.4.5
-CurrentVersionCode: 151
+CurrentVersion: 0.4.7
+CurrentVersionCode: 156

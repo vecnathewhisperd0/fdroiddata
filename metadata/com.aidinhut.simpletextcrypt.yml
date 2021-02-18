@@ -58,6 +58,7 @@ Builds:
 
   - versionName: '4.3'
     versionCode: 11
+    disable: fails to build
     commit: v4.3
     subdir: app
     gradle:

@@ -4,6 +4,7 @@ License: AGPL-3.0-only
 AuthorName: Antonios Hazim
 SourceCode: https://github.com/machiav3lli/oandbackupx
 IssueTracker: https://github.com/machiav3lli/oandbackupx/issues
+Translation: https://hosted.weblate.org/engage/oandbackupx/
 Changelog: https://github.com/machiav3lli/oandbackupx/blob/HEAD/CHANGELOG.md
 
 AutoName: OAndBackupX
@@ -72,7 +73,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 4.0.0
+    versionCode: 4000
+    commit: 4.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 5.0.0
+    versionCode: 5000
+    commit: 5.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 5.0.1
+    versionCode: 5001
+    commit: 5.0.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 3.2.0
-CurrentVersionCode: 3200
+CurrentVersion: 5.0.1
+CurrentVersionCode: 5001

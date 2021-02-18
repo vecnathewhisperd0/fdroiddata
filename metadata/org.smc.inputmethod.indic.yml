@@ -217,7 +217,7 @@ Builds:
     rm:
       - dictionaries/
       - dictionaries-indic/
-      - java/jniLibs/
+      - java/jniLibs/*
     prebuild:
       - sed -i '/include "armeabi-v7a", "arm64-v8a"/c\include "armeabi-v7a"' build.gradle
       - sed -i '/exclude "x86", "x86_64"/c\exclude "arm64-v8a", "x86", "x86_64"' build.gradle
@@ -236,7 +236,7 @@ Builds:
     rm:
       - dictionaries/
       - dictionaries-indic/
-      - java/jniLibs/
+      - java/jniLibs/*
     prebuild:
       - sed -i '/include "armeabi-v7a", "arm64-v8a"/c\include "arm64-v8a"' build.gradle
       - sed -i '/exclude "x86", "x86_64"/c\exclude "armeabi-v7a", "x86", "x86_64"'
@@ -252,5 +252,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: '3.2'
-CurrentVersionCode: 52
+CurrentVersion: 3.3-beta1
+CurrentVersionCode: 60

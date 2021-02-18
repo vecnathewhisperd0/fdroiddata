@@ -6,6 +6,8 @@ AuthorWebSite: https://fedilab.app/
 SourceCode: https://framagit.org/tom79/fedilab-tube
 IssueTracker: https://framagit.org/tom79/fedilab-tube/issues
 Translation: https://crowdin.com/project/tubelab
+Changelog: https://framagit.org/tom79/fedilab-tube/tags
+Liberapay: tom79
 
 AutoName: TubeLab
 
@@ -62,7 +64,100 @@ Builds:
     gradle:
       - fdroid_full
 
-AutoUpdateMode: Version %v
+  - versionName: 1.5.1
+    versionCode: 20
+    commit: 1.5.1
+    subdir: app
+    gradle:
+      - fdroid_full
+
+  - versionName: 1.5.2
+    versionCode: 21
+    commit: 1.5.2
+    subdir: app
+    gradle:
+      - fdroid_full
+
+  - versionName: 1.6.0
+    versionCode: 24
+    commit: 1.6.0
+    subdir: app
+    gradle:
+      - fdroid_full
+
+  - versionName: 1.7.0
+    versionCode: 25
+    commit: 1.7.0
+    subdir: app
+    gradle:
+      - fdroid_full
+
+  - versionName: 1.8.0
+    versionCode: 27
+    commit: 1.8.0
+    subdir: app
+    gradle:
+      - fdroid_full
+
+  - versionName: 1.9.0
+    versionCode: 29
+    commit: 1.9.0
+    subdir: app
+    gradle:
+      - fdroid_full
+
+  - versionName: 1.10.0
+    versionCode: 30
+    commit: 1.10.0
+    subdir: app
+    gradle:
+      - fdroid_full
+
+  - versionName: 1.10.1
+    versionCode: 31
+    commit: 1.10.1
+    subdir: app
+    gradle:
+      - fdroid_full
+
+  - versionName: 1.10.2
+    versionCode: 33
+    commit: 1.10.2
+    subdir: app
+    gradle:
+      - fdroid_full
+
+  - versionName: 1.12.1
+    versionCode: 37
+    disable: download of prebuild JARs
+    commit: 1.12.1
+    subdir: app
+    gradle:
+      - fdroid_full
+    rm:
+      - torrentStream/libs/jlibtorrent-*.jar
+
+  - versionName: 1.13.0
+    versionCode: 38
+    disable: download of prebuild JARs
+    commit: 1.13.0
+    subdir: app
+    gradle:
+      - fdroid_full
+    rm:
+      - torrentStream/libs/jlibtorrent-*.jar
+
+  - versionName: 1.13.1
+    versionCode: 39
+    disable: download of prebuild JARs
+    commit: 1.13.1
+    subdir: app
+    gradle:
+      - fdroid_full
+    rm:
+      - torrentStream/libs/jlibtorrent-*.jar
+
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 1.5.0
-CurrentVersionCode: 19
+CurrentVersion: 1.13.1
+CurrentVersionCode: 39

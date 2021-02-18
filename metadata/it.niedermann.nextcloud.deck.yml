@@ -8,7 +8,7 @@ SourceCode: https://github.com/stefan-niedermann/nextcloud-deck
 IssueTracker: https://github.com/stefan-niedermann/nextcloud-deck/issues
 Translation: https://www.transifex.com/nextcloud/nextcloud/android-deck/
 Changelog: https://github.com/stefan-niedermann/nextcloud-deck/tags
-Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W523CNHTD7ARQ&source=url
+Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZD39ZE7MGEGBL&source=url
 LiberapayID: '46438'
 
 AutoName: Nextcloud Deck
@@ -348,7 +348,98 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 1.12.0
+    versionCode: 1012000
+    commit: 1.12.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.12.1
+    versionCode: 1012001
+    commit: 1.12.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.13.0
+    versionCode: 1013000
+    commit: 1.13.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.13.1
+    versionCode: 1013001
+    commit: 1.13.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.13.3
+    versionCode: 1013003
+    commit: 1.13.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.13.4
+    versionCode: 1013004
+    commit: 1.13.4
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.13.5
+    versionCode: 1013005
+    commit: 1.13.5
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.13.6
+    versionCode: 1013006
+    commit: 1.13.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.14.0
+    versionCode: 1014000
+    commit: 1.14.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.14.1
+    versionCode: 1014001
+    commit: 1.14.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.14.3
+    versionCode: 1014003
+    commit: 1.14.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.14.4
+    versionCode: 1014004
+    commit: 1.14.4
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.14.5
+    versionCode: 1014005
+    commit: 1.14.5
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.11.1
-CurrentVersionCode: 1011001
+CurrentVersion: 1.14.5
+CurrentVersionCode: 1014005
