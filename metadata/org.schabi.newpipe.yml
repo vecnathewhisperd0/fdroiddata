@@ -19,7 +19,6 @@ AutoName: NewPipe
 
 RepoType: git
 Repo: https://github.com/TeamNewPipe/NewPipe
-
 Binaries: https://github.com/TeamNewPipe/NewPipe/releases/download/v%v/NewPipe_v%v.apk
 
 Builds:
