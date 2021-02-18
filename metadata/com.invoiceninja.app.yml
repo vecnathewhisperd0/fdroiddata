@@ -19,19 +19,19 @@ Builds:
     commit: v5.0.42
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
-      - flutter@1.25.0-8.3.pre
-    prebuild:
-      - cp lib/.env.dart.example lib/.env.dart
-      - cp android/app/build.gradle.dev android/app/build.gradle
-      - cp android/build.gradle.foss android/build.gradle
-      - cp lib/ui/auth/login_vm.dart.foss lib/ui/auth/login_vm.dart
-      - cp lib/ui/app/upgrade_dialog.dart.foss lib/ui/app/upgrade_dialog.dart
+      - flutter@1.27.0-4.0.pre
     rm:
       - ios
       - linux
       - macos
       - web
       - windows
+    prebuild:
+      - cp lib/.env.dart.example lib/.env.dart
+      - cp android/app/build.gradle.dev android/app/build.gradle
+      - cp android/build.gradle.foss android/build.gradle
+      - cp lib/ui/auth/login_vm.dart.foss lib/ui/auth/login_vm.dart
+      - cp lib/ui/app/upgrade_dialog.dart.foss lib/ui/app/upgrade_dialog.dart
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter build apk
