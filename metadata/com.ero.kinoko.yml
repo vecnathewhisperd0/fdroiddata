@@ -22,8 +22,19 @@ Builds:
     build:
       - export PATH=$$flutter$$/bin:$PATH
       - flutter build apk --flavor fdroid
+  - versionName: 1.2.2
+    versionCode: 23
+    commit: 9a0f73505f8c3bbe87d5bb08d523888c64f7ea5e
+    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    srclibs:
+      - flutter@1.22.4
+    rm:
+      - ios
+    build:
+      - export PATH=$$flutter$$/bin:$PATH
+      - flutter build apk --flavor fdroid
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
-CurrentVersion: 1.2.1
-CurrentVersionCode: 22
+CurrentVersion: 1.2.2
+CurrentVersionCode: 23
