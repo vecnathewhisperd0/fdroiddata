@@ -7,25 +7,26 @@ IssueTracker: https://github.com/Secure-File-Manager/Secure-File-Manager/issues
 Changelog: https://github.com/Secure-File-Manager/Secure-File-Manager/blob/HEAD/CHANGELOG.md
 
 Summary: Secure File Manager is file manager for keeping your files in safe
-Description: Secure File Manager is file manager for keeping your files in safe
+Description: |-
+    File manager for keeping your files in safe.
+
+    Features
+    * hiding files
+    * encrypting files
+    * create or extract encrypted Zip files
+    * lock app with password or biometric authentication (optional)
+    * disable screenshots (optional)
+    * disabling thumbnails (optional)
+    * clear cached thumbnails
+    * set destination for creating media files (photo / video)
+    * checksum (MD5, SHA1, SHA256, SHA512)
+
+    Permissions clarification: https://github.com/Secure-File-Manager/Secure-File-Manager/wiki/Frequently-Asked-Questions#why-the-app-needs-specific-permission
 
 RepoType: git
 Repo: https://github.com/Secure-File-Manager/Secure-File-Manager
 
 Builds:
-  - versionName: 0.1.0 beta
-    versionCode: 1
-    commit: v0.1.0-beta
-    subdir: app
-    gradle:
-      - yes
-
-  - versionName: 0.1.1 beta
-    versionCode: 2
-    commit: v0.1.1-beta
-    subdir: app
-    gradle:
-      - yes
 
   - versionName: 0.1.2 beta
     versionCode: 3
