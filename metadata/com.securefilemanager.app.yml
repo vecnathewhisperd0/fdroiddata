@@ -27,7 +27,6 @@ RepoType: git
 Repo: https://github.com/Secure-File-Manager/Secure-File-Manager
 
 Builds:
-
   - versionName: 0.1.2 beta
     versionCode: 3
     commit: v0.1.2-beta
