@@ -1,0 +1,26 @@
+Categories:
+  - Multimedia
+License: Apache-2.0
+AuthorName: artxdev
+AuthorWebSite: https://songtube.github.io/
+SourceCode: https://github.com/SongTube/SongTube-App
+IssueTracker: https://github.com/SongTube/SongTube-App/issues
+Changelog: https://github.com/SongTube/SongTube-App/blob/master/changelog.md
+
+AutoName: Songtube
+
+RepoType: git
+Repo: https://github.com/SongTube/SongTube-App
+
+Builds:
+  - versionName: 5.6.0
+    versionCode: 
+    commit: 5.6.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 5.6.0
+CurrentVersionCode: 
