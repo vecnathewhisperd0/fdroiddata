@@ -14,7 +14,7 @@ Repo: https://github.com/SongTube/SongTube-App
 
 Builds:
   - versionName: 5.6.0
-    versionCode: 
+    versionCode: 5
     commit: 5.6.0
     subdir: app
     gradle:
@@ -23,4 +23,4 @@ Builds:
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 5.6.0
-CurrentVersionCode: 
+CurrentVersionCode: 5
