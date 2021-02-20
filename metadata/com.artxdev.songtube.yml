@@ -13,7 +13,7 @@ RepoType: git
 Repo: https://github.com/SongTube/SongTube-App
 
 Builds:
-  - versionName: 5.6.0
+  - versionName: 5.6.0+8
     versionCode: 8
     commit: 5.6.0+8
     subdir: app
@@ -26,5 +26,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 5.6.0
+CurrentVersion: 5.6.0+8
 CurrentVersionCode: 8
