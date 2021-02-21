@@ -19,6 +19,7 @@ Builds:
     versionCode: 100
     commit: 0.1.0
     subdir: app
+    disable: Disable to avoid abuse
     gradle:
       - yes
 
@@ -26,10 +27,12 @@ Builds:
     versionCode: 101
     commit: 0.1.1
     subdir: app
+    submodules: yes
+    disable: Disable to avoid abuse
     gradle:
       - yes
 
-AutoUpdateMode: Version %v
+AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: 0.1.1
 CurrentVersionCode: 101
