@@ -1,8 +1,11 @@
 Categories:
   - Reading
 License: MIT
+AuthorName: Joshua Cerdenia
+AuthorWebSite: http://cerdenia.com
 SourceCode: https://github.com/joshuacerdenia/NiceFeed
 IssueTracker: https://github.com/joshuacerdenia/NiceFeed/issues
+Changelog: https://github.com/joshuacerdenia/NiceFeed/releases
 Donate: https://www.paypal.com/paypalme/joshuacerdenia
 
 RepoType: git
@@ -16,7 +19,7 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Tags
-UpdateCheckMode: Version v%v
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
 CurrentVersion: 1.0.0-beta05.4
 CurrentVersionCode: 14
