@@ -17,18 +17,18 @@ Repo: https://github.com/headuck/GoOutWithDuck
 Builds:
   - versionName: 0.1.0
     versionCode: 100
+    disable: Disable to avoid abuse
     commit: 0.1.0
     subdir: app
-    disable: Disable to avoid abuse
     gradle:
       - yes
 
   - versionName: 0.1.1
     versionCode: 101
+    disable: Disable to avoid abuse
     commit: 0.1.1
     subdir: app
-    submodules: yes
-    disable: Disable to avoid abuse
+    submodules: true
     gradle:
       - yes
 
