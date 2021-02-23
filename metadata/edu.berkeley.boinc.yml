@@ -37,11 +37,28 @@ Builds:
     output: app/build/outputs/apk/release/app-release-unsigned.apk
     prebuild:
       - cd ..
+      - rm ../clientgui/res/MacPkgIcon.zip
+      - rm ../clientgui/res/MacCEPkgIcon.zip
+      - rm ../clientgui/res/MacGRPkgIcon.zip
+      - rm ../clientgui/res/MacPTPPkgIcon.zip
+      - rm ../clientscr/BOINCSaver_MacOS10_6_7.zip
+      - rm ../clientscr/progress/simt
+      - rm ../clientscr/progress/win/x64/boincscr.exe
+      - rm ../clientscr/progress/win/x86/boincscr.exe
       - ./buildAndroidBOINC-CI.sh --silent --ci --arch arm
       - ./buildAndroidBOINC-CI.sh --silent --ci --arch arm64
       - ./buildAndroidBOINC-CI.sh --silent --ci --arch x86
       - ./buildAndroidBOINC-CI.sh --silent --ci --arch x86_64
       - cd BOINC
+    scanignore:
+      - android/BOINC/app/src/main/assets/
+    scandelete:
+      - lib
+      - api
+      - client
+      - samples
+      - 3rdParty
+      - stage
 
 AutoUpdateMode: None
 UpdateCheckMode: Static
