@@ -15,6 +15,7 @@ Builds:
     subdir: app
     gradle:
       - yes
+    output: production/release/app-production-release.apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
