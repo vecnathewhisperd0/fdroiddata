@@ -42,16 +42,6 @@ Builds:
       - ./buildAndroidBOINC-CI.sh --silent --ci --arch x86
       - ./buildAndroidBOINC-CI.sh --silent --ci --arch x86_64
       - cd BOINC
-    scanignore:
-      - 3rdParty
-      - android
-      - lib
-      - api
-      - client
-      - stage
-      - samples
-      - clientscr
-      - clientgui/res
 
 AutoUpdateMode: None
 UpdateCheckMode: Static
