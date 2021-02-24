@@ -48,9 +48,9 @@ RepoType: git
 Repo: https://github.com/andstatus/game2048.git
 
 Builds:
-  - versionName: 1.9.4
-    versionCode: 19
-    commit: 1.9.4-release
+  - versionName: 1.10.10
+    versionCode: 27
+    commit: 1.10.10-release
     subdir: game2048-android
     gradle:
       - yes
