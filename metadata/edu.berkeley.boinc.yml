@@ -28,37 +28,29 @@ Builds:
   - versionName: 7.16.16
     versionCode: 71616
     commit: client_release/7.16/7.16.16
-    subdir: android/BOINC/
-    patch:
-      - fix-version.patch
-      - remove-xiaomi.patch
+    subdir: android/BOINC/app
     gradle:
       - yes
-    output: app/build/outputs/apk/release/app-release-unsigned.apk
+    rm:
+      - clientgui/res/*.zip
+      - clientscr/*.zip
+      - clientscr/progress/simt
+      - clientscr/progress/win/
+      - samples/example_app/bin/
     prebuild:
-      - cd ..
-      - rm ../clientgui/res/MacPkgIcon.zip
-      - rm ../clientgui/res/MacCEPkgIcon.zip
-      - rm ../clientgui/res/MacGRPkgIcon.zip
-      - rm ../clientgui/res/MacPTPPkgIcon.zip
-      - rm ../clientscr/BOINCSaver_MacOS10_6_7.zip
-      - rm ../clientscr/progress/simt
-      - rm ../clientscr/progress/win/x64/boincscr.exe
-      - rm ../clientscr/progress/win/x86/boincscr.exe
+      - sed -i -e 's/versionCode .*/versionCode $$VERCODE$$/' build.gradle
+      - sed -i -e 's/versionName .*/versionName "$$VERSION$$"/' build.gradle
+      - sed -i -e '/xiaomi_.* {/,/}/d' build.gradle
+      - sed -i -e '/NDK_ROOT/d' ../../buildAndroidBOINC-CI.sh
+    build:
+      - cd ../..
+      - export CREATED_NDK_FOLDER=yes
+      - export NDK_ROOT=$$NDK$$
       - ./buildAndroidBOINC-CI.sh --silent --ci --arch arm
       - ./buildAndroidBOINC-CI.sh --silent --ci --arch arm64
       - ./buildAndroidBOINC-CI.sh --silent --ci --arch x86
       - ./buildAndroidBOINC-CI.sh --silent --ci --arch x86_64
-      - cd BOINC
-    scanignore:
-      - android/BOINC/app/src/main/assets/
-    scandelete:
-      - lib
-      - api
-      - client
-      - samples
-      - 3rdParty
-      - stage
+    ndk: r21d
 
 AutoUpdateMode: None
 UpdateCheckMode: Static
