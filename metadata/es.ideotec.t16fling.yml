@@ -13,7 +13,7 @@ Repo: https://gitlab.com/ideotec/t16fling.git
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: c951f8cc8db4d75eea050bbdcb06ace3801097b5
+    commit: v1.0
     subdir: app
     gradle:
       - yes
