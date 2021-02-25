@@ -1,0 +1,44 @@
+AntiFeatures:
+  - NonFreeNet
+  - UpstreamNonFree
+Categories:
+  - Internet
+License: GPL-3.0-or-later
+WebSite: https://github.com/NekoX-Dev/NekoX
+SourceCode: https://github.com/NekoX-Dev/NekoX
+IssueTracker: https://github.com/NekoX-Dev/NekoX/issues
+Translation: https://nekox.crowdin.com/nekox
+AutoName: NekogramX
+
+RepoType: git
+Repo: https://github.com/NekoX-Dev/NekoX
+
+Builds:
+  - versionName: 7.5.0-rc01
+    versionCode: 202
+    commit: v7.5.0-rc01
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+    gradle:
+      - fullReleaseNoGcm
+    scandelete:
+      - TMessagesProj/jni
+      - build.gradle
+    prebuild:
+      - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
+      - echo "sdk.dir=$$SDK$$" > local.properties
+      - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> local.properties
+    build:
+      - export NDK=$$NDK$$
+      - ./run init action boringssl
+      - ./run init action shadowsocks
+      - ./run init libs
+      - ./run libs update
+    ndk: r21d
+
+ArchivePolicy: 6 versions
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 7.5.0-rc01
+CurrentVersionCode: 202
