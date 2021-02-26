@@ -19,7 +19,8 @@ Builds:
     submodules: true
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y bison gcc make curl ninja-build golang/testing
+      - apt-get install -y bison gcc make curl ninja-build
+      - wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.15.8
     srclibs:
       - rustup@1.23.1
     gradle:
@@ -43,6 +44,8 @@ Builds:
     build:
       - export NDK=$$NDK$$
       - cd ..
+      - export GOROOT=/opt/go
+      - export GOPATH=$HOME/projects/go
       - ./run init libs
       - ./run libs shadowsocks
       - ./run libs ssr
