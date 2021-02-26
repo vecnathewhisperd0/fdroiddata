@@ -29,10 +29,11 @@ Builds:
       - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
       - echo "sdk.dir=$$SDK$$" > local.properties
       - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> local.properties
-    build:
       - export NDK=$$NDK$$
       - ./run init action boringssl
       - ./run init action shadowsocks
+    build:
+      - export NDK=$$NDK$$
       - ./run init libs
       - ./run libs shadowsocks
       - ./run libs ssr
