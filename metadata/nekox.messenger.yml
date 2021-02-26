@@ -42,11 +42,10 @@ Builds:
       - rustup target install armv7-linux-androideabi aarch64-linux-android i686-linux-android x86_64-linux-android
       - wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.15.8
     build:
-      - export NDK=$$NDK$$
-      - export
       - cd ..
       - source $HOME/.bashrc
       - ./run init libs
+      - sed -i -e 's,./gradlew,gradle,g' bin/libs/*.sh
       - ./run libs shadowsocks
       - ./run libs ssr
       - ./run libs v2ray
