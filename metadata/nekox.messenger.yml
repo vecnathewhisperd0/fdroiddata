@@ -27,7 +27,6 @@ Builds:
     scandelete:
       - TMessagesProj
       - ssr-libev
-      - build.gradle
     subdir: TMessagesProj
     prebuild:
       - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
