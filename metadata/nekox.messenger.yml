@@ -32,6 +32,7 @@ Builds:
       - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> local.properties
       - export NDK=$$NDK$$
       - ./run init action shadowsocks
+      - export RUST_ANDROID_GRADLE_CARGO_COMMAND="$HOME/.cargo/bin/cargo"
     build:
       - export NDK=$$NDK$$
       - ./run init libs
