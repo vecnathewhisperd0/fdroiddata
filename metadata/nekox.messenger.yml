@@ -21,7 +21,7 @@ Builds:
     sudo:
       - apt-get update || apt-get update
     gradle:
-      - fullReleaseFoss
+      - fullFoss
     scandelete:
       - TMessagesProj
       - build.gradle
