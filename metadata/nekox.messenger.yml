@@ -9,7 +9,6 @@ SourceCode: https://github.com/NekoX-Dev/NekoX
 IssueTracker: https://github.com/NekoX-Dev/NekoX/issues
 Translation: https://nekox.crowdin.com/nekox
 AutoName: Nekogram X
-
 RepoType: git
 Repo: https://github.com/NekoX-Dev/NekoX
 
@@ -28,17 +27,18 @@ Builds:
     scandelete:
       - TMessagesProj
       - build.gradle
+    subdir: TMessagesProj
     prebuild:
       - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
-      - echo "sdk.dir=$$SDK$$" > local.properties
-      - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> local.properties
+      - echo "sdk.dir=$$SDK$$" >> ../local.properties
+      - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> ../local.properties
       - export NDK=$$NDK$$
-      - echo "rust.rustcCommand=$HOME/.cargo/bin/rustc" >> local.properties
-      - echo "rust.cargoCommand=$HOME/.cargo/bin/cargo" >> local.properties
-      - echo "rust.pythonCommand=/usr/bin/python3" >> local.properties
+      - echo "rust.rustcCommand=$HOME/.cargo/bin/rustc" >> ../local.properties
+      - echo "rust.cargoCommand=$HOME/.cargo/bin/cargo" >> ../local.properties
+      - echo "rust.pythonCommand=/usr/bin/python3" >> ../local.properties
       - $$rustup$$/rustup-init.sh -y
       - source $HOME/.cargo/env
-      - cd ss-rust/src/main/rust/shadowsocks-rust
+      - cd ../ss-rust/src/main/rust/shadowsocks-rust
       - rustup target install armv7-linux-androideabi aarch64-linux-android i686-linux-android x86_64-linux-android
     build:
       - export NDK=$$NDK$$
