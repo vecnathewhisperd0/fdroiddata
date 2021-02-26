@@ -46,6 +46,7 @@ Builds:
       - cd ..
       - export GOROOT=/opt/go
       - export GOPATH=$HOME/projects/go
+      - export PATH="$PATH:$GOROOT/bin"
       - ./run init libs
       - ./run libs shadowsocks
       - ./run libs ssr
