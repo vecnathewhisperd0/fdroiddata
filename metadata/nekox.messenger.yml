@@ -8,15 +8,15 @@ WebSite: https://github.com/NekoX-Dev/NekoX
 SourceCode: https://github.com/NekoX-Dev/NekoX
 IssueTracker: https://github.com/NekoX-Dev/NekoX/issues
 Translation: https://nekox.crowdin.com/nekox
-AutoName: NekogramX
+AutoName: Nekogram X
 
 RepoType: git
 Repo: https://github.com/NekoX-Dev/NekoX
 
 Builds:
-  - versionName: 7.5.0-rc01
-    versionCode: 202
-    commit: v7.5.0-rc01
+  - versionName: 7.5.0-rc03
+    versionCode: 206
+    commit: v7.5.0-rc03
     submodules: true
     sudo:
       - apt-get update || apt-get update
@@ -34,10 +34,12 @@ Builds:
       - ./run init action boringssl
       - ./run init action shadowsocks
       - ./run init libs
-      - ./run libs update
+      - ./run libs shadowsocks
+      - ./run libs ssr
+      - ./run libs v2ray
 
 ArchivePolicy: 6 versions
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 7.5.0-rc01
-CurrentVersionCode: 202
+CurrentVersion: 7.5.0-rc03
+CurrentVersionCode: 206
