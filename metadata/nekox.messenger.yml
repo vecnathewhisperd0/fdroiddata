@@ -33,9 +33,9 @@ Builds:
       - echo "sdk.dir=$$SDK$$" > local.properties
       - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> local.properties
       - export NDK=$$NDK$$
-      - echo "rust.rustcCommand=$HOME/.cargo/bin/rustc" >> ../local.properties
-      - echo "rust.cargoCommand=$HOME/.cargo/bin/cargo" >> ../local.properties
-      - echo "rust.pythonCommand=/usr/bin/python3" >> ../local.properties
+      - echo "rust.rustcCommand=$HOME/.cargo/bin/rustc" >> local.properties
+      - echo "rust.cargoCommand=$HOME/.cargo/bin/cargo" >> local.properties
+      - echo "rust.pythonCommand=/usr/bin/python3" >> local.properties
       - $$rustup$$/rustup-init.sh -y
       - source $HOME/.cargo/env
       - cd ss-rust/src/main/rust/shadowsocks-rust
