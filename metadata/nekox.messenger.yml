@@ -35,7 +35,6 @@ Builds:
       - ./run init action shadowsocks
       - ./run init libs
       - ./run libs update
-    ndk: r21d
 
 ArchivePolicy: 6 versions
 AutoUpdateMode: None
