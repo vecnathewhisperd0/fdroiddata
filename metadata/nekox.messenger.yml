@@ -26,6 +26,7 @@ Builds:
       - fullFoss
     scandelete:
       - TMessagesProj
+      - ssr-libev
       - build.gradle
     subdir: TMessagesProj
     prebuild:
