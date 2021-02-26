@@ -43,7 +43,9 @@ Builds:
       - wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.15.8
     build:
       - export NDK=$$NDK$$
+      - export
       - cd ..
+      - source $HOME/.bashrc
       - ./run init libs
       - ./run libs shadowsocks
       - ./run libs ssr
