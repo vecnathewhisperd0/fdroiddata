@@ -20,7 +20,6 @@ Builds:
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y bison gcc make curl ninja-build
-      - wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.15.8
     srclibs:
       - rustup@1.23.1
     gradle:
@@ -41,12 +40,10 @@ Builds:
       - source $HOME/.cargo/env
       - cd ../ss-rust/src/main/rust/shadowsocks-rust
       - rustup target install armv7-linux-androideabi aarch64-linux-android i686-linux-android x86_64-linux-android
+      - wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.15.8
     build:
       - export NDK=$$NDK$$
       - cd ..
-      - export GOROOT=/opt/go
-      - export GOPATH=$HOME/projects/go
-      - export PATH="$PATH:$GOROOT/bin"
       - ./run init libs
       - ./run libs shadowsocks
       - ./run libs ssr
