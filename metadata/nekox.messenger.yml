@@ -16,14 +16,14 @@ Repo: https://github.com/NekoX-Dev/NekoX
 Builds:
   - versionName: 7.5.0-rc03
     versionCode: 206
-    commit: v7.5.0-rc03
+    commit: dev
     submodules: true
     sudo:
       - apt-get update || apt-get update
     gradle:
-      - fullReleaseNoGcm
+      - fullReleaseFoss
     scandelete:
-      - TMessagesProj/jni
+      - TMessagesProj
       - build.gradle
     prebuild:
       - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
