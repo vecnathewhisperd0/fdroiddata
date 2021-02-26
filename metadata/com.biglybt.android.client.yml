@@ -193,12 +193,12 @@ Builds:
     commit: v1.3.1.6
     subdir: app
     submodules: true
+    gradle:
+      - CoreFlavorFossFlavor
     rm:
       - core/uis/lib
       - core/core/lib
       - core/.mvn
-    gradle:
-      - CoreFlavorFossFlavor
     prebuild:
       - sed -i -e '/googleFlavorImplementation/d; /dexcount/d' build.gradle
       - sed -i -e '/google-services/d' ../build.gradle
