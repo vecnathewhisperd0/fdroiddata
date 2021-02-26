@@ -42,6 +42,7 @@ Builds:
       - rustup target install armv7-linux-androideabi aarch64-linux-android i686-linux-android x86_64-linux-android
     build:
       - export NDK=$$NDK$$
+      - cd ..
       - ./run init libs
       - ./run libs shadowsocks
       - ./run libs ssr
