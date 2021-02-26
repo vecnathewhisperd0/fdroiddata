@@ -19,7 +19,7 @@ Builds:
     submodules: true
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y bison gcc make curl ninja-build
+      - apt-get install -y bison gcc make curl ninja-build golang/testing
     srclibs:
       - rustup@1.23.1
     gradle:
