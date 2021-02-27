@@ -1513,7 +1513,7 @@ Builds:
 
   - versionName: 3.2.4.1
     versionCode: 465
-    commit: r464
+    commit: ecae2092dd36994fcacbbbbfcaf597d92214169b
     subdir: myExpenses
     output: build/outputs/universal_apk/conscriptExternRelease/myExpenses-conscript-extern-release-universal-unsigned.apk
     rm:
