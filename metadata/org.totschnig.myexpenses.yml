@@ -1511,7 +1511,7 @@ Builds:
     build: gradle :myExpenses:packageConscriptExternReleaseUniversalApk
 
   - versionName: 3.2.4.1
-    versionCode: 464
+    versionCode: 465
     commit: r464
     subdir: myExpenses
     output: build/outputs/universal_apk/conscriptExternRelease/myExpenses-conscript-extern-release-universal-unsigned.apk
@@ -1526,4 +1526,4 @@ MaintainerNotes: '* Ads: https://github.com/mtotschnig/MyExpenses/tree/b4237aabf
 AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: 3.2.4.1
-CurrentVersionCode: 464
+CurrentVersionCode: 465
