@@ -10,14 +10,14 @@ RepoType: git
 Repo: https://gitlab.com/remmer.wilts/thor.git
 
 Builds:
-  - versionName: 0.6.6
-    versionCode: 66
-    commit: 0.6.6
+  - versionName: 0.6.7
+    versionCode: 67
+    commit: 0.6.7
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.6.6
-CurrentVersionCode: 66
+CurrentVersion: 0.6.7
+CurrentVersionCode: 67
