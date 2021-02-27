@@ -43,9 +43,9 @@ Builds:
       - wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.15.8
     build:
       - cd ..
+      - sed -i -e 's,./gradlew,gradle,g' bin/libs/*.sh
       - source $HOME/.bashrc
       - ./run init libs
-      - sed -i -e 's,./gradlew,gradle,g' bin/libs/*.sh
       - ./run libs shadowsocks
       - ./run libs ssr
       - ./run libs v2ray
