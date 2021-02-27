@@ -28,7 +28,14 @@ Builds:
     gradle:
       - liteLicCheckNoneNoinetNofsml
 
+  - versionName: 2.0.0.237
+    versionCode: 237
+    commit: 8a0c0d3
+    subdir: app
+    gradle:
+      - liteLicCheckNoneNoinetNofsml
+
 AutoUpdateMode: Version release-lite-%c
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.0.224
-CurrentVersionCode: 224
+CurrentVersion: 2.0.0.237
+CurrentVersionCode: 237
