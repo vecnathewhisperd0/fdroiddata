@@ -31,7 +31,6 @@ Builds:
     prebuild:
       - $$rustup$$/rustup-init.sh -y
       - source $HOME/.cargo/env
-
       - wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash -s -- --version 1.15.8
 
       - sed -i -e /play:core/d build.gradle
@@ -40,8 +39,8 @@ Builds:
 
       - cd ..
       
-      # TODO: Replace with "ndk: r21d"
-      - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147"
+      # TODO: Replace with "ndk: r21d" for real fdroid server
+      - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
       - echo "sdk.dir=$$SDK$$" >> local.properties
       - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> local.properties
 
