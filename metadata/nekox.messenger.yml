@@ -38,6 +38,7 @@ Builds:
       - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
       - echo "sdk.dir=$$SDK$$" >> ../local.properties
       - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> ../local.properties
+      - echo "IGNORE_X86=true" >> ../local.properties
       - export NDK=$$NDK$$
       - echo "rust.rustcCommand=$HOME/.cargo/bin/rustc" >> ../local.properties
       - echo "rust.cargoCommand=$HOME/.cargo/bin/cargo" >> ../local.properties
