@@ -53,9 +53,9 @@ Builds:
     subdir: TMessagesProj
     prebuild:
       - pushd ..
+      - $$rustup$$/rustup-init.sh -y
       # TODO: Replace with "ndk: r21d" for real fdroid server
       - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
-      - $$rustup$$/rustup-init.sh -y
       - ./run fdroid prebuild
     build:
       - pushd ..
