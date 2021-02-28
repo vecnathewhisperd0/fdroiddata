@@ -29,9 +29,6 @@ Builds:
       - ssr-libev
     subdir: TMessagesProj
     prebuild:
-      - ls ..
-      - ls 
-      - cat build.gradle
       - sed -i -e /play:core/d build.gradle
       - sed -i -e /firebase/d build.gradle
       - sed -i -e /gms/d build.gradle
