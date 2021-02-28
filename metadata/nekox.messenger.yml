@@ -17,7 +17,7 @@ Builds:
     versionCode: 206
     commit: dev
     submodules: true
-    sudo:
+    init:
       - pushd ..
       - ./run fdroid init
     srclibs:
@@ -44,7 +44,7 @@ Builds:
     versionCode: 205
     commit: dev
     submodules: true
-    sudo:
+    init:
       - pushd ..
       - ./run fdroid init
     srclibs:
