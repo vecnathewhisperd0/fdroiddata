@@ -17,9 +17,8 @@ Builds:
     versionCode: 206
     commit: dev
     submodules: true
-    init:
-      - pushd ..
-      - ./run fdroid init
+    sudo: 
+      - apt-get install -y ninja-build
     srclibs:
       - rustup@1.23.1
     gradle: fullFdroidArm64
@@ -40,9 +39,8 @@ Builds:
     versionCode: 205
     commit: dev
     submodules: true
-    init:
-      - pushd ..
-      - ./run fdroid init
+    sudo: 
+      - apt-get install -y ninja-build
     srclibs:
       - rustup@1.23.1
     gradle: fullFdroidArm
