@@ -1,0 +1,77 @@
+Categories:
+  - Connectivity
+  - Development
+  - Internet
+  - Multimedia
+  - System
+
+License: MIT
+WebSite: https://platypush.tech
+SourceCode: https://git.platypush.tech/platypush/platypush-app
+IssueTracker: https://git.platypush.tech/platypush/platypush-app/-/issues
+Changelog: https://git.platypush.tech/platypush/platypush-app/-/blob/master/CHANGELOG.md
+
+AuthorName: Fabio Manganiello
+AuthorEmail: info@fabiomanganiello.com
+AuthorWebSite: https://fabiomanganiello.com
+Donate: https://paypal.me/fabiomanganiello
+Bitcoin: bitcoincash:qzp9dewccrpvcxljw6f99auseh4gqm7szy3tejqp8pbitcoincash:qzp9dewccrpvcxljw6f99auseh4gqm7szy3tejqp8p
+
+Summary: Control your Platypush instances from Android.
+Description: |-
+    This app provides an easy way to access your
+    [Platypush](https://platypush.tech) devices and instances. The app scans for
+    Platypush web services running on your network and offers a way to control
+    integrations (lights, switches, music and media library and playback, cameras
+    etc.) through the responsive web interface provided by the services.
+
+    Features:
+
+    * Automatic scan of devices on your network through Zeroconf/Bonjour.
+    * Manual connection to devices not found on your network.
+
+    [Changelog](https://git.platypush.tech/platypush/platypush-app/-/blob/master/CHANGELOG.md)
+
+RepoType: git
+Repo: https://git.platypush.tech/platypush/platypush-app
+
+Builds:
+  - versionName: '1.0.0'
+    versionCode: 1
+    commit: 247caba7
+    gradle:
+      - no
+    output: dist/platypush.apk
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y -t stretch-backports npm
+    build:
+      - mkdir -p "$PWD/npm"
+      - npm config set prefix "$PWD/npm"
+      - export PATH="$PATH:$PWD/npm/bin"
+      - npm install -g androidjs
+      - npm install
+      - npm run build:release
+
+MaintainerNotes: |-
+    This is an Android JS based app.
+
+    Install ependencies:
+
+        - sudo apt-get install -y npm
+        - npm install -g androidjs
+        - npm install
+
+    Building the app in debug mode:
+
+        - npm run build
+
+    Building the app in release mode:
+
+        - npm run build:release
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://git.platypush.tech/platypush/platypush-app/-/raw/master/package.json|\"version-code\":\s*([0-9]+)|.|\"version\":\s*\"([^\"]+)\"
+CurrentVersion: 1.0.0
+CurrentVersionCode: 10000
