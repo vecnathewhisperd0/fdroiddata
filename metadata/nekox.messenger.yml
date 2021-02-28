@@ -21,9 +21,47 @@ Builds:
       - apt-get install -y ninja-build
     srclibs:
       - rustup@1.23.1
-    gradle:
-      - fullFdroidArm
-      - fullFdroidArm64
+    gradle: fullFdroidArm
+    scandelete:
+      - TMessagesProj
+      - ssr-libev
+    subdir: TMessagesProj
+    prebuild:
+      - sed -i -e /play:core/d build.gradle
+      - sed -i -e /firebase/d build.gradle
+      - sed -i -e /gms/d build.gradle
+
+      - cd ..
+      
+      # TODO: Replace with "ndk: r21d" for real fdroid server
+      - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
+      - echo "sdk.dir=$$SDK$$" >> local.properties
+      - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> local.properties
+
+      - $$rustup$$/rustup-init.sh -y
+      - source $HOME/.cargo/env
+      - cd ss-rust/src/main/rust/shadowsocks-rust
+      - rustup target install armv7-linux-androideabi aarch64-linux-android i686-linux-android x86_64-linux-android
+      - echo "rust.rustcCommand=$HOME/.cargo/bin/rustc" >> local.properties
+      - echo "rust.cargoCommand=$HOME/.cargo/bin/cargo" >> local.properties
+      - echo "rust.pythonCommand=/usr/bin/python3" >> local.properties
+
+      - wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash -s -- --version 1.15.8
+    build:
+      - source $HOME/.bashrc
+      - cd ..
+      - ./run init libs
+      - ./run libs v2ray
+    output: build/outputs/apk/full/*/*.apk
+  - versionName: 7.5.0-rc03
+    versionCode: 206
+    commit: dev
+    submodules: true
+    sudo:
+      - apt-get install -y ninja-build
+    srclibs:
+      - rustup@1.23.1
+    gradle: fullFdroidArm64
     scandelete:
       - TMessagesProj
       - ssr-libev
