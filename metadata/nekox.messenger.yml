@@ -45,8 +45,8 @@ Builds:
       - rustup target install armv7-linux-androideabi aarch64-linux-android i686-linux-android x86_64-linux-android
       - wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.15.8
     build:
+      - cat build.gradle
       - cd ..
-      - cat TMessagesProj/build.gradle
       - sed -i -e 's,./gradlew,gradle,g' bin/libs/*.sh
       - source $HOME/.bashrc
       - ./run init libs
