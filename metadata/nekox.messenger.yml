@@ -29,9 +29,6 @@ Builds:
       - ssr-libev
     subdir: TMessagesProj
     prebuild:
-      - git fetch origin dev
-      - git reset origin/dev --hard
-      - git clean -fdx
       - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
       - echo "sdk.dir=$$SDK$$" >> ../local.properties
       - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> ../local.properties
@@ -44,6 +41,9 @@ Builds:
       - cd ../ss-rust/src/main/rust/shadowsocks-rust
       - rustup target install armv7-linux-androideabi aarch64-linux-android i686-linux-android x86_64-linux-android
       - wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.15.8
+      - sed -i -e /play:core/d build.gradle
+      - sed -i -e /firebase/d build.gradle
+      - sed -i -e /gms/d build.gradle
     build:
       - cat build.gradle
       - cd ..
