@@ -29,6 +29,9 @@ Builds:
       - ssr-libev
     subdir: TMessagesProj
     prebuild:
+      - git fetch origin dev
+      - git reset origin/dev --hard
+      - git clean -fdx
       - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
       - echo "sdk.dir=$$SDK$$" >> ../local.properties
       - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> ../local.properties
