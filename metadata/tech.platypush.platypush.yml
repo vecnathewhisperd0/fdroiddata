@@ -38,7 +38,7 @@ Repo: https://git.platypush.tech/platypush/platypush-app
 Builds:
   - versionName: '1.0.0'
     versionCode: 1
-    commit: 247caba7
+    commit: 688ab220
     gradle:
       - no
     output: dist/platypush.apk
