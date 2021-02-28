@@ -14,9 +14,9 @@ RepoType: git
 Repo: https://github.com/invoiceninja/flutter-client
 
 Builds:
-  - versionName: 5.0.43
-    versionCode: 43
-    commit: v5.0.43
+  - versionName: 5.0.44
+    versionCode: 44
+    commit: v5.0.44
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.27.0-1.0.pre
@@ -29,6 +29,7 @@ Builds:
     prebuild:
       - cp lib/.env.dart.example lib/.env.dart
       - cp android/app/build.gradle.dev android/app/build.gradle
+      - cp android/app/src/main/AndroidManifest.foss.xml android/app/src/main/AndroidManifest.xml
       - cp android/build.gradle.foss android/build.gradle
       - cp lib/ui/auth/login_vm.dart.foss lib/ui/auth/login_vm.dart
       - cp lib/ui/app/upgrade_dialog.dart.foss lib/ui/app/upgrade_dialog.dart
@@ -41,5 +42,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/invoiceninja/flutter-client/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 5.0.43
-CurrentVersionCode: 43
+CurrentVersion: 5.0.44
+CurrentVersionCode: 44
