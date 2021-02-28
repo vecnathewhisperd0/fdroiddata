@@ -30,12 +30,9 @@ Builds:
     prebuild:
       - pushd ..
       - $$rustup$$/rustup-init.sh -y
-      - ./run fdroid prebuild
-      
       # TODO: Replace with "ndk: r21d" for real fdroid server
       - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
-      - echo "sdk.dir=$$SDK$$" >> local.properties
-      - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> local.properties
+      - ./run fdroid prebuild
     build:
       - pushd ..
       - ./run fdroid build
@@ -57,12 +54,9 @@ Builds:
     prebuild:
       - pushd ..
       - $$rustup$$/rustup-init.sh -y
-      - ./run fdroid prebuild
-      
       # TODO: Replace with "ndk: r21d" for real fdroid server
       - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
-      - echo "sdk.dir=$$SDK$$" >> local.properties
-      - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> local.properties
+      - ./run fdroid prebuild
     build:
       - pushd ..
       - ./run fdroid build
