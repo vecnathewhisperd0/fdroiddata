@@ -18,45 +18,50 @@ Builds:
     commit: dev
     submodules: true
     sudo:
-      - apt-get update || apt-get update
-      - apt-get install -y bison gcc make curl ninja-build
+      - apt-get install -y ninja-build
     srclibs:
       - rustup@1.23.1
     gradle:
-      - fullFoss
+      - fullFdroidArm
+      - fullFdroidArm64
     scandelete:
       - TMessagesProj
       - ssr-libev
     subdir: TMessagesProj
     prebuild:
+      - $$rustup$$/rustup-init.sh -y
+      - source $HOME/.cargo/env
+
+      - wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash -s -- --version 1.15.8
+
       - sed -i -e /play:core/d build.gradle
       - sed -i -e /firebase/d build.gradle
       - sed -i -e /gms/d build.gradle
-      - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
-      - echo "sdk.dir=$$SDK$$" >> ../local.properties
-      - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> ../local.properties
-      - echo "IGNORE_X86=true" >> ../local.properties
-      - export NDK=$$NDK$$
-      - echo "rust.rustcCommand=$HOME/.cargo/bin/rustc" >> ../local.properties
-      - echo "rust.cargoCommand=$HOME/.cargo/bin/cargo" >> ../local.properties
-      - echo "rust.pythonCommand=/usr/bin/python3" >> ../local.properties
-      - $$rustup$$/rustup-init.sh -y
-      - source $HOME/.cargo/env
-      - cd ../ss-rust/src/main/rust/shadowsocks-rust
-      - rustup target install armv7-linux-androideabi aarch64-linux-android i686-linux-android x86_64-linux-android
-      - wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.15.8
-    build:
-      - cat build.gradle
+
       - cd ..
-      - sed -i -e 's,./gradlew,gradle,g' bin/libs/*.sh
+      
+      # TODO: Replace with "ndk: r21d"
+      - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147"
+      - echo "sdk.dir=$$SDK$$" >> local.properties
+      - echo "ndk.dir=$$SDK$$/ndk/21.3.6528147" >> local.properties
+
+      - echo "rust.rustcCommand=$HOME/.cargo/bin/rustc" >> local.properties
+      - echo "rust.cargoCommand=$HOME/.cargo/bin/cargo" >> local.properties
+      - echo "rust.pythonCommand=/usr/bin/python3" >> local.properties
+
+      - cd ss-rust/src/main/rust/shadowsocks-rust
+      - rustup target install armv7-linux-androideabi aarch64-linux-android i686-linux-android x86_64-linux-android
+    build:
       - source $HOME/.bashrc
+      - cd ..
       - ./run init libs
       - ./run libs shadowsocks
       - ./run libs ssr
       - ./run libs v2ray
+    output: build/outputs/apk/full/*/*.apk
 
 ArchivePolicy: 6 versions
-AutoUpdateMode: None
-UpdateCheckMode: None
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
 CurrentVersion: 7.5.0-rc03
 CurrentVersionCode: 206
