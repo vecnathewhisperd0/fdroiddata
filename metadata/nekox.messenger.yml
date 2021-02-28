@@ -18,6 +18,7 @@ Builds:
     commit: dev
     submodules: true
     sudo:
+      - pushd ..
       - ./run fdroid init
     srclibs:
       - rustup@1.23.1
@@ -44,6 +45,7 @@ Builds:
     commit: dev
     submodules: true
     sudo:
+      - pushd ..
       - ./run fdroid init
     srclibs:
       - rustup@1.23.1
