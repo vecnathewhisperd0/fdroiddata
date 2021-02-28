@@ -4,20 +4,18 @@ Categories:
   - Internet
   - Multimedia
   - System
-
 License: MIT
+AuthorName: Fabio Manganiello
+AuthorEmail: info@fabiomanganiello.com
+AuthorWebSite: https://fabiomanganiello.com
 WebSite: https://platypush.tech
 SourceCode: https://git.platypush.tech/platypush/platypush-app
 IssueTracker: https://git.platypush.tech/platypush/platypush-app/-/issues
 Changelog: https://git.platypush.tech/platypush/platypush-app/-/blob/master/CHANGELOG.md
-
-AuthorName: Fabio Manganiello
-AuthorEmail: info@fabiomanganiello.com
-AuthorWebSite: https://fabiomanganiello.com
 Donate: https://paypal.me/fabiomanganiello
 Bitcoin: 1CtAwhvkKzbnjvSmbtar4Dad7QyFrPGHN8
 
-Summary: Control your Platypush instances from Android.
+Summary: Control your Platypush instances
 Description: |-
     This app provides an easy way to access your
     [Platypush](https://platypush.tech) devices and instances. The app scans for
@@ -36,15 +34,15 @@ RepoType: git
 Repo: https://git.platypush.tech/platypush/platypush-app
 
 Builds:
-  - versionName: '1.0.0'
+  - versionName: 1.0.0
     versionCode: 1
     commit: 688ab220
-    gradle:
-      - no
-    output: dist/platypush.apk
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y -t stretch-backports npm
+    gradle:
+      - no
+    output: dist/platypush.apk
     build:
       - mkdir -p "$PWD/npm"
       - npm config set prefix "$PWD/npm"
