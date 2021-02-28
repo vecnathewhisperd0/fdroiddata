@@ -46,6 +46,7 @@ Builds:
       - wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.15.8
     build:
       - cd ..
+      - cat TMessagesProj/build.gradle
       - sed -i -e 's,./gradlew,gradle,g' bin/libs/*.sh
       - source $HOME/.bashrc
       - ./run init libs
