@@ -1,25 +1,23 @@
 Categories:
   - Money
-License: BlueOak-1.0.0
+License: ISC
 SourceCode: https://github.com/joegruffins/dcraddrscanner
 IssueTracker: https://github.com/joegruffins/dcraddrscanner/issues
 
 AutoName: Decred Address Scanner
-Description: Scans Decred addresses for available funds and notifies of changes. Also
-    tracks ticket statuses.
 
 RepoType: git
 Repo: https://github.com/joegruffins/dcraddrscanner
 
 Builds:
-  - versionName: '1.06'
-    versionCode: 6
-    commit: 213a8987874173b8a5354f97e7669b7af05c15ce
+  - versionName: '1.07'
+    versionCode: 7
+    commit: ce61d4bc48b3d305cdf7a0525ec0e80d8e5636f4
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.06'
-CurrentVersionCode: 6
+CurrentVersion: '1.07'
+CurrentVersionCode: 7
