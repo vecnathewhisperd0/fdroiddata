@@ -19,8 +19,6 @@ Builds:
     submodules: true
     sudo: 
       - apt-get install -y ninja-build
-    srclibs:
-      - rustup@1.23.1
     gradle: fullFdroidArm64
     scandelete:
       - TMessagesProj
@@ -40,8 +38,6 @@ Builds:
     submodules: true
     sudo: 
       - apt-get install -y ninja-build
-    srclibs:
-      - rustup@1.23.1
     gradle: fullFdroidArm
     scandelete:
       - TMessagesProj
