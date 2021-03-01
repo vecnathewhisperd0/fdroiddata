@@ -46,6 +46,6 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/PrestoSole/clima/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+UpdateCheckData: https://raw.githubusercontent.com/CentaurusApps/clima/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: '1.2'
 CurrentVersionCode: 5
