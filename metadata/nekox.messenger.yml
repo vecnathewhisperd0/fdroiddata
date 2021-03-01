@@ -17,7 +17,7 @@ Repo: https://github.com/NekoX-Dev/NekoX
 Builds:
   - versionName: 7.5.0-rc04
     versionCode: 208
-    commit: 7.5.0-rc04
+    commit: v7.5.0-rc04
     subdir: TMessagesProj
     submodules: true
     sudo: apt-get install -y ninja-build
@@ -36,7 +36,7 @@ Builds:
 
   - versionName: 7.5.0-rc04
     versionCode: 209
-    commit: 7.5.0-rc04
+    commit: v7.5.0-rc04
     subdir: TMessagesProj
     submodules: true
     sudo: apt-get install -y ninja-build
@@ -54,7 +54,7 @@ Builds:
     ndk: r21d
 
 ArchivePolicy: 6 versions
-AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
+AutoUpdateMode: None
+UpdateCheckMode: None
 CurrentVersion: 7.5.0-rc04
 CurrentVersionCode: 209
