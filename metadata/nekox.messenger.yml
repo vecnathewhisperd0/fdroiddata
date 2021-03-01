@@ -8,47 +8,50 @@ WebSite: https://github.com/NekoX-Dev/NekoX
 SourceCode: https://github.com/NekoX-Dev/NekoX
 IssueTracker: https://github.com/NekoX-Dev/NekoX/issues
 Translation: https://hosted.weblate.org/engage/nekox/
+
 AutoName: Nekogram X
+
 RepoType: git
 Repo: https://github.com/NekoX-Dev/NekoX
 
 Builds:
   - versionName: 7.5.0-rc04
+    versionCode: 208
+    commit: 7.5.0-rc04
+    subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm
+    output: build/outputs/apk/full/*/*.apk
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - TMessagesProj
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21d
+
+  - versionName: 7.5.0-rc04
     versionCode: 209
     commit: 7.5.0-rc04
-    ndk: r21d
-    submodules: true
-    sudo:
-      - apt-get install -y ninja-build
-    gradle: fullFdroidArm64
-    scandelete:
-      - TMessagesProj
     subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm64
+    output: build/outputs/apk/full/*/*.apk
     prebuild:
       - pushd ..
       - ./run fdroid prebuild
-    build:
-      - pushd ..
-      - ./run fdroid build
-    output: build/outputs/apk/full/*/*.apk
-  - versionName: 7.5.0-rc04
-    versionCode: 208
-    ndk: r21d
-    commit: 7.5.0-rc04
-    submodules: true
-    sudo:
-      - apt-get install -y ninja-build
-    gradle: fullFdroidArm
     scandelete:
       - TMessagesProj
-    subdir: TMessagesProj
-    prebuild:
-      - pushd ..
-      - ./run fdroid prebuild
     build:
       - pushd ..
       - ./run fdroid build
-    output: build/outputs/apk/full/*/*.apk
+    ndk: r21d
 
 ArchivePolicy: 6 versions
 AutoUpdateMode: Version v%v
