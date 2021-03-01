@@ -49,8 +49,8 @@ Builds:
 
   - versionName: 1.2.5
     versionCode: 27
-    commit: 9eb7e7707ced1f1c7c65302dd00023bc5b189002
-    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
+    commit: d07a80ea2453c37a62350f1613651d3d06a95369
+    output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.27.0-8.0.pre
     rm:
