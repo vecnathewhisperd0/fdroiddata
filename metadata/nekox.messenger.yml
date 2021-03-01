@@ -7,17 +7,18 @@ License: GPL-3.0-or-later
 WebSite: https://github.com/NekoX-Dev/NekoX
 SourceCode: https://github.com/NekoX-Dev/NekoX
 IssueTracker: https://github.com/NekoX-Dev/NekoX/issues
-Translation: https://nekox.crowdin.com/nekox
+Translation: https://hosted.weblate.org/engage/nekox/
 AutoName: Nekogram X
 RepoType: git
 Repo: https://github.com/NekoX-Dev/NekoX
 
 Builds:
-  - versionName: 7.5.0-rc03
-    versionCode: 206
-    commit: dev
+  - versionName: 7.5.0-rc04
+    versionCode: 209
+    commit: 7.5.0-rc04
+    ndk: r21d
     submodules: true
-    sudo: 
+    sudo:
       - apt-get install -y ninja-build
     gradle: fullFdroidArm64
     scandelete:
@@ -25,18 +26,17 @@ Builds:
     subdir: TMessagesProj
     prebuild:
       - pushd ..
-      # TODO: Replace with "ndk: r21d" for real fdroid server
-      - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
       - ./run fdroid prebuild
     build:
       - pushd ..
       - ./run fdroid build
     output: build/outputs/apk/full/*/*.apk
-  - versionName: 7.5.0-rc03
-    versionCode: 205
-    commit: dev
+  - versionName: 7.5.0-rc04
+    versionCode: 208
+    ndk: r21d
+    commit: 7.5.0-rc04
     submodules: true
-    sudo: 
+    sudo:
       - apt-get install -y ninja-build
     gradle: fullFdroidArm
     scandelete:
@@ -44,8 +44,6 @@ Builds:
     subdir: TMessagesProj
     prebuild:
       - pushd ..
-      # TODO: Replace with "ndk: r21d" for real fdroid server
-      - $$SDK$$/tools/bin/sdkmanager "ndk;21.3.6528147" > /dev/null
       - ./run fdroid prebuild
     build:
       - pushd ..
@@ -55,5 +53,5 @@ Builds:
 ArchivePolicy: 6 versions
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 7.5.0-rc03
-CurrentVersionCode: 206
+CurrentVersion: 7.5.0-rc04
+CurrentVersionCode: 209
