@@ -46,6 +46,6 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/CentaurusApps/clima/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+UpdateCheckData: https://raw.githubusercontent.com/CentaurusApps/clima/master/packages/clima_ui/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: '1.1'
 CurrentVersionCode: 4
