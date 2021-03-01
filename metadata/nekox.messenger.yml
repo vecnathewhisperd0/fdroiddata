@@ -24,7 +24,6 @@ Builds:
     gradle: fullFdroidArm64
     scandelete:
       - TMessagesProj
-      - ssr-libev
     subdir: TMessagesProj
     prebuild:
       - pushd ..
@@ -46,7 +45,6 @@ Builds:
     gradle: fullFdroidArm
     scandelete:
       - TMessagesProj
-      - ssr-libev
     subdir: TMessagesProj
     prebuild:
       - pushd ..
