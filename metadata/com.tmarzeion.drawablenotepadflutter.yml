@@ -1,0 +1,30 @@
+Categories:
+  - Writing
+License: Apache-2.0
+AuthorName: Tomasz Marzeion
+AuthorEmail: marzeion.tomasz@gmail.com
+SourceCode: https://github.com/tmarzeion/flutter-drawable-notepad
+IssueTracker: https://github.com/tmarzeion/flutter-drawable-notepad/issues
+
+AutoName: Drawable Notepad 2
+
+RepoType: git
+Repo: https://github.com/tmarzeion/flutter-drawable-notepad
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: '1.0'
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@1.22.6
+    rm:
+      - ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
