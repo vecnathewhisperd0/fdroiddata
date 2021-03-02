@@ -57,7 +57,7 @@ Builds:
       - ios
     build:
       - export PATH=$$flutter$$/bin:$PATH
-      - flutter build apk --flavor fdroid
+      - flutter build apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
