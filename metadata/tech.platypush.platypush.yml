@@ -42,15 +42,15 @@ Builds:
       - apt-get install -y -t stretch-backports npm
     output: dist/platypush.apk
     build:
-      - mkdir -p "$PWD/npm"
-      - npm config set prefix "$PWD/npm"
-      - export PATH="$PWD/npm/bin:$PATH"
+      - mkdir -p /tmp/npm
+      - npm config set prefix /tmp/npm
+      - export PATH="/tmp/npm/bin:$PATH"
       - npm install -g androidjs-builder
-      - sed -i npm/lib/node_modules/androidjs-builder/modules/Html/ProgressBar.js
+      - sed -i /tmp/npm/lib/node_modules/androidjs-builder/modules/Html/ProgressBar.js
         -e 's/process.stdout.clearLine()/\/\/process.stdout.clearLine()/g'
-      - sed -i npm/lib/node_modules/androidjs-builder/modules/Html/ProgressBar.js
+      - sed -i /tmp/npm/lib/node_modules/androidjs-builder/modules/Html/ProgressBar.js
         -e 's/process.stdout.cursorTo(/\/\/process.stdout.cursorTo(/g'
-      - sed -i npm/lib/node_modules/androidjs-builder/modules/Html/ManifestBuilder.js
+      - sed -i /tmp/npm/lib/node_modules/androidjs-builder/modules/Html/ManifestBuilder.js
         -e 's/com\.androidjs\.//g'
       - npm install
       - androidjs build --release
