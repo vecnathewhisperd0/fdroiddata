@@ -19,14 +19,14 @@ RepoType: git
 Repo: https://github.com/Px3XjG6P/NetflixtoIMDb
 
 Builds:
-  - versionName: '1.0'
-    versionCode: 1
-    commit: v2
+  - versionName: 3
+    versionCode: 3
+    commit: 3
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.0'
-CurrentVersionCode: 1
+CurrentVersion: 3
+CurrentVersionCode: 3
