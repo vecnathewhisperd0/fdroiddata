@@ -33,7 +33,9 @@ Builds:
       - export SENTRY_ENVIRONMENT=fdroid
       - gradle assembleFreeTazUnminifiedRelease
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags .*[0-9]\.*[0-9]+$
+MaintainerNotes: Dynamic versionName and version code, so no autoupdates possible.
+
+AutoUpdateMode: None
+UpdateCheckMode: None
 CurrentVersion: 1.2.2
 CurrentVersionCode: 10202900
