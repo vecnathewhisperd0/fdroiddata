@@ -74,6 +74,6 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
-UpdateCheckData: https://git.platypush.tech/platypush/platypush-app/-/raw/master/package.json|\"version-code\":\s*([0-9]+)|.|\"version\":\s*\"([^\"]+)\"
+UpdateCheckData: https://git.platypush.tech/platypush/platypush-app/-/raw/master/package.json|"version-code":\s*(\d+)|.|"version":\s*"([\d.]+)"
 CurrentVersion: 1.0.0
 CurrentVersionCode: 1000032
