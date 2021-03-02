@@ -19,6 +19,12 @@ RepoType: git
 Repo: https://github.com/NoProvider2Push/android.git
 
 Builds:
+    - versionName: 1.1.0
+    versionCode: 4
+    commit: 1.1.0
+    subdir: app
+    gradle:
+      - yes
   - versionName: 1.0.1
     versionCode: 3
     commit: 1.0.1
@@ -28,5 +34,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags \d+\.\d+(\.\d+)?
-CurrentVersion: 1.0.1
-CurrentVersionCode: 3
+CurrentVersion: 1.1.0
+CurrentVersionCode: 4
