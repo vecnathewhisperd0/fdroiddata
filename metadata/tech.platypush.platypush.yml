@@ -42,21 +42,16 @@ Builds:
       - apt-get install -y -t stretch-backports npm
     output: dist/platypush.apk
     build:
-      # Configure the npm path
       - mkdir -p "$PWD/npm"
       - npm config set prefix "$PWD/npm"
       - export PATH="$PWD/npm/bin:$PATH"
-
-      # Install androidjs-builder
       - npm install -g androidjs-builder
-
-      # Some dirty workarounds to make sure that androidjs-builder doesn't fail while printing progress bars on a non-interactive
-      # terminal, and that the package name is not prefixed with a hardcoded com.androidjs.
-      - sed -i npm/lib/node_modules/androidjs-builder/modules/Html/ProgressBar.js -e 's/process.stdout.clearLine()/\/\/process.stdout.clearLine()/g'
-      - sed -i npm/lib/node_modules/androidjs-builder/modules/Html/ProgressBar.js -e 's/process.stdout.cursorTo(/\/\/process.stdout.cursorTo(/g'
-      - sed -i npm/lib/node_modules/androidjs-builder/modules/Html/ManifestBuilder.js -e 's/com\.androidjs\.//g'
-
-      # Build the app
+      - sed -i npm/lib/node_modules/androidjs-builder/modules/Html/ProgressBar.js
+        -e 's/process.stdout.clearLine()/\/\/process.stdout.clearLine()/g'
+      - sed -i npm/lib/node_modules/androidjs-builder/modules/Html/ProgressBar.js
+        -e 's/process.stdout.cursorTo(/\/\/process.stdout.cursorTo(/g'
+      - sed -i npm/lib/node_modules/androidjs-builder/modules/Html/ManifestBuilder.js
+        -e 's/com\.androidjs\.//g'
       - npm install
       - androidjs build --release
 
