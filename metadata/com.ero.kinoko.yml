@@ -11,42 +11,6 @@ RepoType: git
 Repo: https://github.com/gsioteam/kinoko.git
 
 Builds:
-  - versionName: 1.2.1
-    versionCode: 22
-    commit: ff98ce68447f929a21e4fb0b1215b83b2e33bc6b
-    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
-    srclibs:
-      - flutter@1.22.4
-    rm:
-      - ios
-    build:
-      - export PATH=$$flutter$$/bin:$PATH
-      - flutter build apk --flavor fdroid
-
-  - versionName: 1.2.2
-    versionCode: 23
-    commit: 9a0f73505f8c3bbe87d5bb08d523888c64f7ea5e
-    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
-    srclibs:
-      - flutter@1.22.4
-    rm:
-      - ios
-    build:
-      - export PATH=$$flutter$$/bin:$PATH
-      - flutter build apk --flavor fdroid
-
-  - versionName: 1.2.3
-    versionCode: 24
-    commit: 6f5542ed6f3c23e8bb08c91e8e43f9a27e20fd8a
-    output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
-    srclibs:
-      - flutter@1.22.4
-    rm:
-      - ios
-    build:
-      - export PATH=$$flutter$$/bin:$PATH
-      - flutter build apk --flavor fdroid
-
   - versionName: 1.2.5
     versionCode: 27
     commit: 867bf1492e687e6675f133bb2b755aa6f1a4dbe3
