@@ -14,29 +14,13 @@ IssueTracker: https://git.platypush.tech/platypush/platypush-app/-/issues
 Changelog: https://git.platypush.tech/platypush/platypush-app/-/blob/master/CHANGELOG.md
 Donate: https://paypal.me/fabiomanganiello
 Bitcoin: 1CtAwhvkKzbnjvSmbtar4Dad7QyFrPGHN8
-
-Summary: Control your Platypush instances
-Description: |-
-    This app provides an easy way to access your
-    [Platypush](https://platypush.tech) devices and instances. The app scans for
-    Platypush web services running on your network and offers a way to control
-    integrations (lights, switches, music and media library and playback, cameras
-    etc.) through the responsive web interface provided by the services.
-
-    Features:
-
-    * Automatic scan of devices on your network through Zeroconf/Bonjour.
-    * Manual connection to devices not found on your network.
-
-    [Changelog](https://git.platypush.tech/platypush/platypush-app/-/blob/master/CHANGELOG.md)
-
 RepoType: git
 Repo: https://git.platypush.tech/platypush/platypush-app
 
 Builds:
   - versionName: 1.0.0
     versionCode: 1000032
-    commit: bbe832b3
+    commit: v1.0.0
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y -t stretch-backports npm
