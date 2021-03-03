@@ -20,7 +20,7 @@ Repo: https://github.com/Px3XjG6P/NetflixtoIMDb
 
 Builds:
   - versionName: '3'
-    versionCode: '3'
+    versionCode: 3
     commit: '3'
     subdir: app
     gradle:
@@ -29,4 +29,4 @@ Builds:
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: '3'
-CurrentVersionCode: '3'
+CurrentVersionCode: 3
