@@ -138,6 +138,13 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.0.3
+    versionCode: 5329
+    commit: v2.0.3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: 2.0.1
