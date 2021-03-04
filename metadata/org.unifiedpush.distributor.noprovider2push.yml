@@ -19,15 +19,9 @@ RepoType: git
 Repo: https://github.com/NoProvider2Push/android.git
 
 Builds:
-    - versionName: 1.1.0
+  - versionName: 1.1.0
     versionCode: 4
     commit: 1.1.0
-    subdir: app
-    gradle:
-      - yes
-  - versionName: 1.0.1
-    versionCode: 3
-    commit: 1.0.1
     subdir: app
     gradle:
       - yes
