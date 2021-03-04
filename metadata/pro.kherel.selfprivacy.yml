@@ -18,7 +18,7 @@ Builds:
   - versionName: 0.1.1
     versionCode: 9
     commit: v.0.1.1
-    output: build/app/outputs/apk/release/app-release-unsigned.apk
+    output: build/app/outputs/apk/release/app-release.apk
     srclibs:
       - flutter@1.22.6
     rm:
@@ -27,7 +27,7 @@ Builds:
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter packages pub get
-      - $$flutter$$/bin/flutter build apk --flavor fdroid
+      - $$flutter$$/bin/flutter build apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
