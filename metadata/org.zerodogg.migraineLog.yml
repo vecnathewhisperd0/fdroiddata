@@ -1,0 +1,28 @@
+Categories:
+  - Sports & Health
+License: AGPL-3.0-or-later
+SourceCode: https://gitlab.com/zerodogg/org.zerodogg.migraineLog
+IssueTracker: https://gitlab.com/zerodogg/org.zerodogg.migraineLog/issues
+
+AutoName: MigraineLog
+Description: A simple migraine log
+
+RepoType: git
+Repo: https://gitlab.com/zerodogg/org.zerodogg.migraineLog.git
+
+Builds:
+  - versionName: 0.3.0
+    versionCode: 301
+    commit: 01f7b382d6c1fba4bd200354b5bc4bd6e2add01f
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@stable
+    prebuild:
+      - echo "sdk.dir=$$SDK$$" > android/local.properties
+      - echo "flutter.sdk=$$flutter_dir$$" >> android/local.properties
+    build:
+      - PATH=$flutter_dir:$PATH flutter pub get
+      - PATH=$flutter_dir:$PATH make setRelVariant fatapk BUILD_NO=301
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
