@@ -1,0 +1,27 @@
+Categories:
+  - Security
+License: GPL-2.0-or-later
+AuthorName: SelfPrivacy
+AuthorEmail: contact@selfprivacy.org
+WebSite: https://selfprivacy.org
+SourceCode: https://git.selfprivacy.org/kherel/selfprivacy.org.app
+
+AutoName: SelfPrivacy
+Summary: Digital privacy available to all of us
+Description: |
+    Self-hosted services without pain
+
+RepoType: git
+Repo: https://git.selfprivacy.org/kherel/selfprivacy.org.app.git
+
+Builds:
+  - versionName: 0.0.8
+    versionCode: 9
+    gradle:
+      - paid
+    build: wget https://fdroid.selfprivacy.org/selfprivacy.apk
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: 0.0.8
+CurrentVersionCode: 9
