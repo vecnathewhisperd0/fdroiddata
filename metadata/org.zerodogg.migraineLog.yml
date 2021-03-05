@@ -23,6 +23,7 @@ Builds:
       - echo "sdk.dir=$$SDK$$" > android/local.properties
       - echo "flutter.sdk=$$flutter_dir$$" >> android/local.properties
     build:
+      - $$flutter$$/bin/flutter config --no-analytics
       - PATH=$$flutter_dir$$:$PATH flutter pub get
       - PATH=$$flutter_dir$$:$PATH make setRelVariant fatapk BUILD_NO=301
 
