@@ -8,12 +8,6 @@ Donate: https://server47.de/donate.html
 Bitcoin: bc1qf9hqymh0qeunvkj95jrl9vtagjsmxuc7c7dle5
 
 AutoName: Autmation
-Description: |-
-    This program can help you automate stuff on your device.
-
-    Specify rules that are executed once a condition or a combination of them are met. One of many examples would be something like "Mute phone when I'm at work."
-
-    If you have questions, feature requests or you found a bug please send me an email.
 
 RepoType: git
 Repo: https://git.server47.de/jens/Automation.git
@@ -34,3 +28,6 @@ MaintainerNotes: We have to use scanignore because the build.gradle file contain
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
+
+CurrentVersion: 1.6.21
+CurrentVersionCode: 96
