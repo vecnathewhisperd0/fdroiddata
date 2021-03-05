@@ -1,0 +1,36 @@
+Categories:
+  - System
+License: GPL-3.0-or-later
+AuthorName: Jens Schröder
+AuthorEmail: android-development@gmx.de
+SourceCode: https://git.server47.de/jens/Automation
+Donate: https://server47.de/donate.html
+Bitcoin: bc1qf9hqymh0qeunvkj95jrl9vtagjsmxuc7c7dle5
+
+AutoName: Autmation
+Description: |-
+    This program can help you automate stuff on your device.
+
+    Specify rules that are executed once a condition or a combination of them are met. One of many examples would be something like "Mute phone when I'm at work."
+
+    If you have questions, feature requests or you found a bug please send me an email.
+
+RepoType: git
+Repo: https://git.server47.de/jens/Automation.git
+
+Builds:
+  - versionName: 1.6.21
+    versionCode: 96
+    commit: bb22bcee95e3c6cf6c9ba350e1fc7353da51d97b
+    subdir: app
+    gradle:
+      - fdroidFlavor
+    scanignore:
+      - app/build.gradle
+
+MaintainerNotes: We have to use scanignore because the build.gradle file contains
+    the terms firebase and play-services. (But the flavor we build does not actually
+    contain those.)
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
