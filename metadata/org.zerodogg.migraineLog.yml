@@ -24,7 +24,7 @@ Builds:
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get
-      - PATH=$$flutter_dir$$/bin:$PATH make setRelVariant fatapk BUILD_NO=$$VERCODE$$
+      - PATH=$$flutter_dir$$/bin:$$flutter_dir$$/bin/cache/dart-sdk/bin/:$PATH make setRelVariant fatapk BUILD_NO=$$VERCODE$$
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
