@@ -18,7 +18,7 @@ Builds:
     commit: v0.3.0
     output: build/app/outputs/apk/release/app-release.apk
     srclibs:
-      - flutter@stable
+      - flutter@1.22.6
     prebuild:
       - echo "sdk.dir=$$SDK$$" > android/local.properties
       - echo "flutter.sdk=$$flutter_dir$$" >> android/local.properties
