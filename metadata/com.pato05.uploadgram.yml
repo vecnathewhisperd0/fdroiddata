@@ -5,12 +5,17 @@ Categories:
 License: AGPL-3.0-only
 SourceCode: https://github.com/pato05/uploadgram-app
 IssueTracker: https://github.com/pato05/uploadgram-app/issues
+Changelog: https://github.com/pato05/uploadgram-app/releases
 
 AutoName: Uploadgram
-Description: Uploadgram frontend for Android (and web)
+Summary: The Uploadgram app lets you manage your uploads in an easy and intuitive way
+Description: Uploadgram is a file sharing service that uses the Telegram network as file storage.
+        Brought to you by Pato05 ([https://github.com/pato05 github.com/pato05]), Daniil Gentili ([https://daniil.it daniil.it]) and ShiSHcat ([https://shish.cat shish.cat])
+        
+        The app was created using the Flutter engine by Pato05, its source is available at https://github.com/pato05/uploadgram-app.
 
 RepoType: git
-Repo: https://github.com/pato05/uploadgram-app
+Repo: https://github.com/pato05/uploadgram-app.git
 
 Builds:
   - versionName: 1.0.0
