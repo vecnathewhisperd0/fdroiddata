@@ -1,3 +1,5 @@
+AntiFeatures:
+  - NonFreeNet
 Categories:
   - Multimedia
 License: MIT
@@ -9,9 +11,9 @@ RepoType: git
 Repo: https://github.com/listen1/listen1_mobile.git
 
 Builds:
-  - versionName: '1.0'
+  - versionName: 0.8.1
     versionCode: 1
-    commit: v0.8.0
+    commit: v0.8.1
     subdir: android/app
     sudo:
       - apt-get update || apt-get update
@@ -33,7 +35,7 @@ Builds:
     scandelete:
       - node_modules
 
-AutoUpdateMode: None
-UpdateCheckMode: None
-CurrentVersion: '1.0'
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 0.8.1
 CurrentVersionCode: 1
