@@ -1,0 +1,37 @@
+Categories:
+  - Development
+  - Science & Education
+License: MIT
+SourceCode: https://github.com/grburst/randoomer
+IssueTracker: https://github.com/grburst/randoomer/issues
+
+AutoName: Randoomer - Random Number Generator
+Description: |-
+    FOSS Random Number Generator on your Android device.
+    Use it for random decisions, when playing games and no dice
+    is available or in other situations where you just want to
+    get a random number.
+
+RepoType: git
+Repo: https://github.com/grburst/randoomer.git
+
+Builds:
+  - versionName: 1.0.5
+    versionCode: 5
+    commit: v1.0.5
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.12.13+hotfix.7
+    rm:
+      - ios
+    prebuild: echo 'android.applicationVariants.all { variant -> variant.outputs.all
+        { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.5
+CurrentVersionCode: 5
