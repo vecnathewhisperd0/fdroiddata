@@ -184,6 +184,7 @@ Builds:
 
 MaintainerNotes: App is unmaintained and archived, see GitHub repo.
 
+ArchivePolicy: 0 versions
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: '2.3'
