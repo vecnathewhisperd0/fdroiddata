@@ -12,9 +12,9 @@ RepoType: git
 Repo: https://gitlab.com/zerodogg/org.zerodogg.migraineLog.git
 
 Builds:
-  - versionName: 0.3.0
-    versionCode: 301
-    commit: v0.3.0
+  - versionName: 0.3.1
+    versionCode: 311
+    commit: v0.3.1
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.22.6
@@ -27,5 +27,8 @@ Builds:
       - PATH=$$flutter$$/bin:$$flutter$$/bin/cache/dart-sdk/bin/:$PATH make setRelVariant
         fatapk BUILD_NO=$$VERCODE$$
 
-AutoUpdateMode: None
-UpdateCheckMode: Tags
+AutoUpdateMode: Version v%v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://zerodogg.gitlab.io/org.zerodogg.migraineLog/latest.yml|versionCode:\s(\d+)|.|version:\s(.+)
+CurrentVersion: 0.3.1
+CurrentVersionCode: 311
