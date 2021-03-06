@@ -27,3 +27,5 @@ Builds:
 
 AutoUpdateMode: Version %v+%c
 UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 5
