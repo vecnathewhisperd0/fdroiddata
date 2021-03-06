@@ -17,10 +17,11 @@ Builds:
   - versionName: 0.81.2
     versionCode: 198
     commit: 0.81.2_fdroid
-    subdir: orion-viewer
     build:
       - gradle -b thirdparty_build.gradle downloadAndPatchDjvu downloadAndMakeMupdf
+      - cd orion-viewer
       - gradle assembleRelease
+    ndk: r20b
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
