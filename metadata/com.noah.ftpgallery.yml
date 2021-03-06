@@ -1,0 +1,34 @@
+Categories:
+  - Multimedia
+License: GPL-3.0-or-later
+AuthorName: Ulf_vom_Mond
+AuthorEmail: ulfvommond@gmail.com
+SourceCode: https://github.com/Ulf-vom-Mond/FTP_Gallery
+IssueTracker: https://github.com/Ulf-vom-Mond/FTP_Gallery/issues
+
+AutoName: FTP Gallery
+Summary: Retrieve files from an FTP-server and show them like in a gallery in-app
+Description: This app can connect to an FTP-server and navigate through its directories.
+    You can download any file and the app will show mediafiles (such as photos and
+    videos) like you are used to it from your phones native gallery. To make this
+    a smooth experience, the app will download the next media files while showing
+    you one, so if you switch left and right, it will load faster. As this is the
+    priority, you can't upload files yet. But you can add as many connections as you
+    wish and there are several settings. Nevertheless, the most important feature
+    is the dark background.
+
+RepoType: git
+Repo: https://github.com/Ulf-vom-Mond/FTP_Gallery
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: '1.0'
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
