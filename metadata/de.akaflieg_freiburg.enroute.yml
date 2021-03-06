@@ -47,12 +47,15 @@ Builds:
       - cp ../../../../../../propaganda/GooglePlay/phone-03-Info.png 4.png
       - cp ../../../../../../propaganda/GooglePlay/phone-04-Route.png 5.png
       - cp ../../../../../../propaganda/GooglePlay/phone-05-Nearby.png 6.png
-      - cp ../../../../../../propaganda/GooglePlay/tab-10-Map.png 7.png
-      - cp ../../../../../../propaganda/GooglePlay/tab-11-Map-Flight.png 8.png
-      - cp ../../../../../../propaganda/GooglePlay/tab-12-CTR.png 9.png
-      - cp ../../../../../../propaganda/GooglePlay/tab-13-Info.png 10.png
-      - cp ../../../../../../propaganda/GooglePlay/tab-14-Route.png 11.png
-      - cp ../../../../../../propaganda/GooglePlay/tab-15-NearAD.png 12.png
+      - cd ..
+      - mkdir sevenInchScreenshots
+      - cd sevenInchScreenshots
+      - cp ../../../../../../propaganda/GooglePlay/tab-10-Map.png 1.png
+      - cp ../../../../../../propaganda/GooglePlay/tab-11-Map-Flight.png 2.png
+      - cp ../../../../../../propaganda/GooglePlay/tab-12-CTR.png 3.png
+      - cp ../../../../../../propaganda/GooglePlay/tab-13-Info.png 4.png
+      - cp ../../../../../../propaganda/GooglePlay/tab-14-Route.png 5.png
+      - cp ../../../../../../propaganda/GooglePlay/tab-15-NearAD.png 6.png
       - cd ../../../../../..
       - cd ..
       - rm -rf Qt
