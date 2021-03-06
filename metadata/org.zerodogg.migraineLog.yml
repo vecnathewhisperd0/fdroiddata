@@ -15,7 +15,7 @@ Builds:
   - versionName: 0.3.0
     versionCode: 301
     commit: v0.3.0
-    output: build/app/outputs/apk/release/app-release.apk
+    output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.22.6
     prebuild:
