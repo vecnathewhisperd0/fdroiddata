@@ -48,8 +48,8 @@ Builds:
       - cp ../../../../../../propaganda/GooglePlay/phone-04-Route.png 5.png
       - cp ../../../../../../propaganda/GooglePlay/phone-05-Nearby.png 6.png
       - cd ..
-      - mkdir sevenInchScreenshots
-      - cd sevenInchScreenshots
+      - mkdir tenInchScreenshots
+      - cd tenInchScreenshots
       - cp ../../../../../../propaganda/GooglePlay/tab-10-Map.png 1.png
       - cp ../../../../../../propaganda/GooglePlay/tab-11-Map-Flight.png 2.png
       - cp ../../../../../../propaganda/GooglePlay/tab-12-CTR.png 3.png
