@@ -18,6 +18,10 @@ Builds:
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.22.6
+    rm:
+      - ios
+      - test
+      - scripts
     prebuild:
       - echo "sdk.dir=$$SDK$$" > android/local.properties
       - echo "flutter.sdk=$$flutter$$" >> android/local.properties
