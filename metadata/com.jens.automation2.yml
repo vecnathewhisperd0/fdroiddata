@@ -19,6 +19,10 @@ Builds:
     subdir: app
     gradle:
       - fdroidFlavor
+    prebuild:
+      - sed -i -e '/firebase/d' build.gradle
+      - sed -i -e '/play-services-location/d' build.gradle
+
 
 MaintainerNotes: We have to use scanignore because the build.gradle file contains
     the terms firebase and play-services. (But the flavor we build does not actually
