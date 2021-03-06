@@ -57,7 +57,7 @@ Builds:
     commit: v1.15.0+40
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
-      - flutter@1.26.0-17.6.pre
+      - flutter@2.0.0
     prebuild: touch android/key.properties
     build:
       - $$flutter$$/bin/flutter config --no-analytics
