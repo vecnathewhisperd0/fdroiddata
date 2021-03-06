@@ -10,7 +10,6 @@ AutoName: Neo2ExternalKeyboard
 RepoType: git
 Repo: https://github.com/Viatorus/neo2-external-keyboard.git
 
-
 Builds:
   - versionName: 1.0.0
     versionCode: 1
