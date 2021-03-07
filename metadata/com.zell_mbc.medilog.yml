@@ -125,12 +125,27 @@ Builds:
 
   - versionName: 2.0.0
     versionCode: 5326
+    disable: crashes upon app start
     commit: v2.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.1
+    versionCode: 5327
+    commit: v2.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.5
+    versionCode: 5331
+    commit: v2.0.5
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.0
-CurrentVersionCode: 5326
+CurrentVersion: 2.0.5
+CurrentVersionCode: 5331

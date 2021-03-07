@@ -711,15 +711,19 @@ Builds:
       - extern/bouncycastle/core/src/test
       - OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
 
-  - versionName: '5.6'
-    versionCode: 56000
-    commit: v5.6
+  - versionName: 5.6.2
+    versionCode: 56200
+    commit: v5.6.2
     subdir: OpenKeychain
     submodules: true
     gradle:
       - fdroid
-    scanignore:
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    scandelete:
+      - extern/bouncycastle/libs
+      - extern/bouncycastle/test
       - extern/bouncycastle/core/src/test
+      - extern/bouncycastle/pg/src/test
       - OpenKeychain/src/test/resources/OpenPGP-Haskell/tests
 
 MaintainerNotes: |-
@@ -729,5 +733,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9.]+$
-CurrentVersion: '5.6'
-CurrentVersionCode: 56000
+CurrentVersion: 5.6.2
+CurrentVersionCode: 56200

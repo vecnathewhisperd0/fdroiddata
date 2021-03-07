@@ -28,10 +28,12 @@ Builds:
       - apt-get install -y -t testing golang-go
     gradle:
       - fdroidArmv7a
+    prebuild: sed -i 's|^NDK=.*$|NDK=$$NDK$$|' libs/build
     scandelete:
       - tordnscrypt/libs/arm64-v8a
       - tordnscrypt/libs/armeabi-v7a
     build: libs/build
+    ndk: r21d
 
 AutoUpdateMode: Version +-stable v%v
 UpdateCheckMode: Tags
