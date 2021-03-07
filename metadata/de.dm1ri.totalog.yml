@@ -11,9 +11,9 @@ RepoType: git
 Repo: https://github.com/hallogallo/totalog
 
 Builds:
-  - versionName: 0.1.1
-    versionCode: 101
-    commit: v0.1.1
+  - versionName: 0.1.2
+    versionCode: 102
+    commit: v0.1.2
     sudo:
       - apt-get -y install -t stretch-backports gpg-agent
       - curl -sL https://deb.nodesource.com/setup_15.x | bash -
