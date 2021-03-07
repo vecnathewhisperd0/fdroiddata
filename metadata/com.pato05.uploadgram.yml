@@ -16,7 +16,7 @@ Repo: https://github.com/pato05/uploadgram-app.git
 Builds:
   - versionName: 1.0.0
     versionCode: 5
-    commit: 1.0.0-beta.5
+    commit: 1.0.0-beta+5
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@2.0.1
