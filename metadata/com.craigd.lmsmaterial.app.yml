@@ -8,10 +8,6 @@ Changelog: https://raw.githubusercontent.com/CDrummond/lms-material-app/HEAD/Cha
 Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2X2CTDUH27V9L&source=url
 
 AutoName: LMS
-Description: |-
-    Provides a webview wrapper for accessing a Logitech Media Server instance using
-    MaterialSkin. Reqires the MaterialSkin plugin to be installed on your LMS
-    instance.
 
 RepoType: git
 Repo: https://github.com/CDrummond/lms-material-app

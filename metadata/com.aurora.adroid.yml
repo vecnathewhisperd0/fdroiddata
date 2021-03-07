@@ -10,15 +10,6 @@ Changelog: https://gitlab.com/AuroraOSS/auroradroid/blob/HEAD/CHANGELOG
 Donate: https://www.paypal.me/whyorean
 
 AutoName: Aurora Droid
-Description: |-
-    An alternative to the default F-Droid app with an intuitive UI and
-    multiple great features, such as
-
-    * Many repos listed and can be enabled
-    * Beautiful design - Follows latest Material Design guidelines
-    * Powerful download manager - Pause, resume and retry downloading apps
-    * Previous releases - Enables downloading old releases
-    * Lists architectures (arm, arm64 ...) and minimal Android versions
 
 RepoType: git
 Repo: https://gitlab.com/AuroraOSS/auroradroid.git

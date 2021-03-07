@@ -7,23 +7,6 @@ Translation: https://www.transifex.com/nextcloud/nextcloud/
 Changelog: https://github.com/nextcloud/news-android/blob/HEAD/CHANGELOG.md
 
 AutoName: News
-Description: |-
-    The <a href="https://github.com/nextcloud/news-android">Nextcloud News Reader App</a> makes
-    it possible to synchronize feeds between Android and the Nextcloud/ownCloud News
-    App and let’s you read RSS feeds on the go.
-
-    '''Features:'''
-
-    * Offline reading
-    * Cache images offline
-    * Background synchronization
-    * Customizable Listview
-    * Mark as read while scrolling
-    * Dark/Light Theme
-    * Customizable font
-    * Widget
-    * Pull-To-Refresh
-    * and many more!
 
 RepoType: git
 Repo: https://github.com/nextcloud/news-android.git

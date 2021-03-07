@@ -9,11 +9,6 @@ IssueTracker: https://github.com/hwki/SimpleBitcoinWidget/issues
 Bitcoin: 15SHnY7HC5bTxzErHDPe7wHXj1HhtDKV7z
 
 AutoName: Simple Bitcoin Widget
-Description: |-
-    A clean and simple Bitcoin widget to show the current price from different
-    exchanges. Customizable refresh interval. Very light battery usage. Shows prices
-    for Bitcoin, Bitcoin Cash, Ethereum, Ethereum Classic, Litecoin, Iota, Ripple,
-    Dash, Monero, NEM, NEO, Cardano, Stellar, Nano, Bitcoin Gold, and Zcash.
 
 RepoType: git
 Repo: https://github.com/hwki/SimpleBitcoinWidget.git

@@ -7,31 +7,6 @@ SourceCode: https://github.com/corphish/NightLight
 IssueTracker: https://github.com/corphish/NightLight/issues
 
 AutoName: Night Light
-Description: |-
-    Night light is an open-source app which uses KCAL to adjust blue light intensity
-    of the display colors, so that viewing the screen at dark becomes pleasant for
-    the eyes, and help you fall asleep faster (this is what science have proven
-    so...).
-
-    ''Features''
-
-    * Uses KCAL to adjust blue light intensity.
-    * Easy to use color controls.
-    * Color intensities.
-    * Sophisticated automation.
-    * Create and apply profiles with one click.
-    * Tasker plugin integeration.
-    * Great UI.
-
-    ''Requirements''
-
-    * Kernel supporting KCAL.
-    * Root access.
-
-    ''Permissions''
-
-    * Location - It is used to determine sunset/sunrise times for your location. (Your location info isn't shared, your privacy is maintained)
-    * Internet - It is used to determine approximate location (when exact location is not available) to determine sunset/sunrise times for your location.
 
 RequiresRoot: 'yes'
 

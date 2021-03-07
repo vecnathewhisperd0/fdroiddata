@@ -10,13 +10,6 @@ Donate: https://paypal.me/saschahlusiak/3eur
 Bitcoin: bc1qdgm2zvlc6qzqh8qs44wv8l622tfrhvkjqn0fkl
 
 AutoName: Freebloks
-Description: |-
-    Strategy board game similar to the famous board game Blokus.
-
-    Try to place as many tiles on the board as possible, keeping in mind only two
-    simple rules: your tiles must touch a corner of one of your previously placed
-    tiles, but they must not share an edge. Can you play more tiles than your
-    opponents?
 
 RepoType: git
 Repo: https://github.com/shlusiak/Freebloks-Android.git

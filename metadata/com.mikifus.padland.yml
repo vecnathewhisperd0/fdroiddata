@@ -6,9 +6,6 @@ IssueTracker: https://github.com/mikifus/padland/issues
 Changelog: https://github.com/mikifus/padland/releases
 
 AutoName: Padland
-Description: |-
-    Padland is a tool to manage, share, remember and read collaborative documents
-    based on the Etherpad technology in Android.
 
 RepoType: git
 Repo: https://github.com/mikifus/padland.git

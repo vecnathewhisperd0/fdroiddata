@@ -6,18 +6,6 @@ IssueTracker: https://github.com/scoute-dich/Weather/issues
 Changelog: https://github.com/scoute-dich/Weather/blob/HEAD/CHANGELOG.md
 
 AutoName: FOSS Weather
-Description: |-
-    Show weather information from wetterdienst.de, meteoblue.com and the DWD.
-
-    Features:
-
-    * capture websites for offline use
-    * share screenshot of whole webview
-    * five predefined locations
-    * search and save other locations as bookmarks
-    * usefull weather informations (satelitt, rain radar, topic of the day, ...)
-
-    <a href="https://github.com/scoute-dich/Weather/blob/master/SCREENSHOTS.md">Screenshots</a>
 
 RepoType: git
 Repo: https://github.com/scoute-dich/Weather
