@@ -15,7 +15,7 @@ import yaml
 for f in glob.glob("metadata/*.yml"):
     with open(f) as fp:
         data = yaml.safe_load(fp)
-
+        
     if "Builds" not in data:
         continue
     if "Summary" not in data:
@@ -40,6 +40,8 @@ for f in glob.glob("metadata/*.yml"):
     if not repo_domain_search:
         continue
     repo_domain = repo_domain_search.group()
+
+    check_url = None
 
     if repo_domain == "github.com":
         check_url = (
