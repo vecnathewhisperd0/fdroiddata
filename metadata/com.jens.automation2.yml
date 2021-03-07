@@ -23,11 +23,6 @@ Builds:
       - sed -i -e '/firebase/d' build.gradle
       - sed -i -e '/play-services-location/d' build.gradle
 
-
-MaintainerNotes: We have to use scanignore because the build.gradle file contains
-    the terms firebase and play-services. (But the flavor we build does not actually
-    contain those.)
-
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: 1.6.21
