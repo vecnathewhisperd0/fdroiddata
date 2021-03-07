@@ -18,7 +18,7 @@ Builds:
       - cat /etc/apt/sources.list
       - apt-get -y install -t stretch-backports gpg-agent
       - apt-get -y install -t stretch-backports g++
-      - apt-get -y install -t stretch libvips⁻dev
+      - apt-get -y install libvips-dev
       - curl -sL https://deb.nodesource.com/setup_15.x | bash -
       - apt install -y nodejs
       - npm i npm@latest -g
