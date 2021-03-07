@@ -6,27 +6,19 @@ SourceCode: https://github.com/ailin-nemui/Primary
 IssueTracker: https://github.com/ailin-nemui/Primary/issues
 
 AutoName: Schule
-Description: |-
-    Primary is a slightly gamified educational application aimed at Primary
-    (Elementary) school-aged children, but of course adults who wish to sharpen
-    their skills will find it useful as well.  There are levels dealing with basic
-    math, sorting, clocks, spelling, with new subjects planned for
-    the future.
-
-    This is a German translation of the original App [[com.quaap.primary]]
 
 RepoType: git
 Repo: https://github.com/ailin-nemui/Primary
 
 Builds:
-  - versionName: 0.3.3.de1
+  - versionName: 0.3.3.de2
     versionCode: 331
-    commit: de_v0.3.3.de1
+    commit: de_v0.3.3.de2
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version de_v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.3.3.de1
+CurrentVersion: 0.3.3.de2
 CurrentVersionCode: 331
