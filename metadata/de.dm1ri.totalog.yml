@@ -15,7 +15,8 @@ Builds:
     versionCode: 102
     commit: v0.1.2
     sudo:
-      - apt-get -y install -t stretch-backports gpg-agent g++
+      - apt-get -y install -t stretch-backports gpg-agent
+      - apt-get -y install -t stretch-backports g++
       - curl -sL https://deb.nodesource.com/setup_15.x | bash -
       - apt install -y nodejs
       - npm i npm@latest -g
