@@ -3,8 +3,8 @@ AntiFeatures:
 Categories:
   - Reading
 License: Apache-2.0
-WebSite: https://code.google.com/p/npr-android-app
-SourceCode: https://code.google.com/p/npr-android-app/source
+WebSite: https://code.google.com/archive/p/npr-android-app
+SourceCode: https://code.google.com/archive/p/npr-android-app/source
 
 AutoName: NPR News
 Description: |-
@@ -30,7 +30,6 @@ Description: |-
     so you might want to disable GPS while using.
 
 RepoType: git
-Repo: https://code.google.com/p/npr-android-app
 
 Builds:
   - versionName: '2.4'
