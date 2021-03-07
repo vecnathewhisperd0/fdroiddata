@@ -15,7 +15,7 @@ Repo: https://git.server47.de/jens/Automation.git
 Builds:
   - versionName: 1.6.21
     versionCode: 96
-    commit: bb22bcee95e3c6cf6c9ba350e1fc7353da51d97b
+    commit: v1.6.21
     subdir: app
     gradle:
       - fdroidFlavor
