@@ -3,6 +3,7 @@ AntiFeatures:
 Categories:
   - Multimedia
 License: MIT
+WebSite: https://listen1.github.io/listen1
 SourceCode: https://github.com/listen1/listen1_mobile
 IssueTracker: https://github.com/listen1/listen1_mobile/issues
 Changelog: https://github.com/listen1/listen1_mobile/releases
@@ -21,6 +22,10 @@ Builds:
       - npm -g install yarn
     gradle:
       - yes
+    rm:
+      - .vscode
+      - __tests__
+      - ios
     prebuild:
       - yarn install
       - truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
