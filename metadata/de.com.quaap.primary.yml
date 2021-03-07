@@ -11,9 +11,9 @@ RepoType: git
 Repo: https://github.com/ailin-nemui/Primary
 
 Builds:
-  - versionName: 0.3.3.de2
+  - versionName: 0.3.3.de3
     versionCode: 331
-    commit: de_v0.3.3.de2
+    commit: de_v0.3.3.de3
     subdir: app
     gradle:
       - yes
