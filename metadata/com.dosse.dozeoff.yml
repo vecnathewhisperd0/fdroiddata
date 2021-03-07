@@ -1,7 +1,7 @@
 Categories:
   - Connectivity
   - System
-License: GPL-3.0-only
+License: GPL-3.0-or-later
 AuthorName: Federico Dossena
 AuthorEmail: info@fdossena.com
 AuthorWebSite: https://fdossena.com/
@@ -28,3 +28,4 @@ AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: '1.0'
 CurrentVersionCode: 1
+RequiresRoot: 'yes'
