@@ -62,7 +62,7 @@ for f in glob.glob("metadata/*.yml"):
 
     request = requests.get(check_url)
 
-    if request.status_code == 200:
+    if (request.status_code == 200) or (request.status_code == 302):
         print(f)
         with open(f, "w") as output:
             if "Description" in data:
