@@ -12,6 +12,7 @@ Changelog: https://github.com/adolfintel/DozeOff/releases
 Donate: https://paypal.me/sineisochronic
 
 AutoName: DozeOff
+RequiresRoot: 'yes'
 
 RepoType: git
 Repo: https://github.com/adolfintel/DozeOff.git
@@ -28,4 +29,3 @@ AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: '1.0'
 CurrentVersionCode: 1
-RequiresRoot: 'yes'
