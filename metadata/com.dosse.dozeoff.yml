@@ -15,6 +15,7 @@ AutoName: DozeOff
 RequiresRoot: 'yes'
 
 RepoType: git
+
 Repo: https://github.com/adolfintel/DozeOff.git
 
 Builds:
