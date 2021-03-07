@@ -15,7 +15,7 @@ Builds:
     versionCode: 101
     commit: v0.1.1
     sudo:
-      - apt-get -y install gpg-agent
+      - apt-get -y install -t stretch-backports gpg-agent
       - curl -sL https://deb.nodesource.com/setup_15.x | bash -
       - apt install -y nodejs
       - apt-get install -t stretch-backports npm
