@@ -44,9 +44,9 @@ for f in glob.glob("metadata/*.yml"):
     if repo_domain == "github.com":
         check_url = (
             repo.replace(".git", "")
-            + "/tree/"
+            + "/raw/"
             + latest_commit
-            + "/fastlane/metadata/android/en-US"
+            + "/fastlane/metadata/android/en-US/full_description.txt"
         )
 
     if repo_domain == "gitlab.com":
@@ -54,7 +54,7 @@ for f in glob.glob("metadata/*.yml"):
             repo.replace(".git", "")
             + "/-/raw/"
             + latest_commit
-            + "/fastlane/metadata/android/en-US"
+            + "/fastlane/metadata/android/en-US/full_description.txt"
         )
 
     if not check_url:
