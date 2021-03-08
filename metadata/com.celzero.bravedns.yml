@@ -1,0 +1,26 @@
+Categories:
+  - Internet
+  - Security
+  - Connectivity
+License: Apache-2.0
+WebSite: https://rethinkdns.com/
+SourceCode: https://github.com/celzero/rethink-app
+IssueTracker: https://github.com/celzero/rethink-app/issues
+
+AutoName: RethinkDNS
+
+RepoType: git
+Repo: https://github.com/celzero/rethink-app
+
+Builds:
+  - versionName: 0.5.3c
+    versionCode: 14
+    commit: v0.5.3c
+    subdir: app
+    gradle:
+      - fdroid
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 0.5.3c
+CurrentVersionCode: 14
