@@ -19,8 +19,16 @@ Builds:
       - export ANDROID_NDK_ROOT=$$NDK$$
       - bash ./fdroid-build.sh
     ndk: r21e
+  - versionName: 1.2.0
+    versionCode: 5
+    commit: v1.2.0
+    output: crocgui.apk
+    build:
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - bash ./fdroid-build.sh
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.2
-CurrentVersionCode: 3
+CurrentVersion: 1.2.0
+CurrentVersionCode: 5
