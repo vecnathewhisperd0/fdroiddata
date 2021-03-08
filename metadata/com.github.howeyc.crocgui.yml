@@ -18,7 +18,7 @@ Builds:
       - export ANDROID_SDK_ROOT=$$SDK$$
       - export ANDROID_NDK_ROOT=$$NDK$$
       - bash ./fdroid-build.sh
-    ndk: r21e
+
   - versionName: 1.2.0
     versionCode: 5
     commit: v1.2.0
