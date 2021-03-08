@@ -27,7 +27,7 @@ Builds:
     output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
     build:
       - npm install
-      - echo "henlo hooman"
+      - echo "henlo"
       - ionic cordova platform remove android
       - ionic cordova resources --cordova-res
       - ionic cordova platform add android
