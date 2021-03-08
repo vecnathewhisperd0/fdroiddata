@@ -7,38 +7,43 @@ If yes then remove description and summary from app metadata
 """
 
 import os
+import sys
 import re
 import glob
 import requests
 import yaml
 
-for f in glob.glob("metadata/*.yml"):
+
+def run(f):  # pylint: disable=too-many-return-statements,too-many-branches
+    """
+    Run the check and write to file specified as arg
+    """
     with open(f) as fp:
         data = yaml.safe_load(fp)
 
     if "Builds" not in data:
-        continue
+        return
     if "Summary" not in data:
         if "Description" not in data:
-            continue
+            return
     if "Description" not in data:
         if "Summary" not in data:
-            continue
+            return
 
     builds = data["Builds"]
     latest_build = builds[len(builds) - 1]
     if "commit" not in latest_build:
-        continue
+        return
     latest_commit = latest_build["commit"]
     if "Repo" not in data:
-        continue
+        return
     repo = data["Repo"]
     repo_domain_search = re.search(
         r"([a-z0-9A-Z]\.)*[a-z0-9-]+\.([a-z0-9]{2,24})+(\.co\.([a-z0-9]{2,24})|\.([a-z0-9]{2,24}))*",  # pylint: disable=line-too-long
         repo,
     )
     if not repo_domain_search:
-        continue
+        return
     repo_domain = repo_domain_search.group()
 
     check_url = None
@@ -60,7 +65,7 @@ for f in glob.glob("metadata/*.yml"):
         )
 
     if not check_url:
-        continue
+        return
 
     request = requests.get(check_url)
 
@@ -73,3 +78,10 @@ for f in glob.glob("metadata/*.yml"):
                 del data["Summary"]
             output.write(yaml.dump(data))
         os.system("fdroid rewritemeta " + f[9:][:-4])
+
+
+if len(sys.argv) == 1:
+    for file in glob.glob("metadata/*.yml"):
+        run(file)
+else:
+    run(sys.argv[1])
