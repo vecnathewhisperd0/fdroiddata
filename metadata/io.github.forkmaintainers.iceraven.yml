@@ -1,0 +1,66 @@
+AntiFeatures:
+  - NonFreeAdd
+  - Tracking
+  - UpstreamNonFree
+Categories:
+  - Internet
+License: MPL-2.0
+WebSite: https://github.com/fork-maintainers/iceraven-browser
+SourceCode: https://github.com/fork-maintainers/iceraven-browser
+IssueTracker: https://github.com/fork-maintainers/iceraven-browser/issues
+Changelog: https://github.com/fork-maintainers/iceraven-browser/releases
+
+RepoType: git
+Repo: https://github.com/fork-maintainers/iceraven-browser
+
+Builds:
+  - versionName: iceraven-1.2.1
+    versionCode: 1002001
+    commit: iceraven-1.2.1
+    timeout: 10800
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y g++ python-setuptools tcl gyp ninja-build libffi-dev libsqlite3-dev
+        mercurial llvm-6.0
+    output: app/build/outputs/apk/release/app-*-release-unsigned.apk
+    srclibs:
+      - MozAndroidComponents@v62.0.0
+      - MozAndroidComponentsAS@v56.0.0
+      - MozAppServices@v63.0.0
+      - MozBuild@77066dd2f4224f88d976404f947141a9fb5b8e97
+      - MozFennec@FIREFOX_81_0_BUILD2
+      - MozGlean@v32.4.1
+      - MozGleanAS@v21.3.0
+      - pyenv@v1.2.20
+      - rustup@1.22.1
+    prebuild:
+      - sed -i -e 's/62\.0\.20201002143132/62.0.0/g' buildSrc/src/main/java/AndroidComponents.kt
+      - sed -i -e 's/org.mozilla.fennec_fdroid.sharedID/org.mozilla.foo.sharedID/'
+        app/build.gradle
+      - sed -i -e 's/fennec_fdroid/fenix_fdroid/' $$MozBuild$$/prebuild.sh
+      - sed -i -e '/fenix-liberate.patch/d' $$MozBuild$$/prebuild.sh
+      - $$MozBuild$$/prebuild.sh $$VERSION$$ $$VERCODE$$
+    build: $$MozBuild$$/build.sh
+    ndk: r21d
+
+MaintainerNotes: |-
+    Glean version for Android Components for Application Services:
+    grep 'mozilla_glean ' build/srclib/MozAndroidComponentsAS/buildSrc/src/main/java/Dependencies.kt
+
+    Android Components version for Application Services:
+    grep 'ext.android_components_version =' build/srclib/MozAppServices/build.gradle
+
+    Application Services version:
+    grep 'mozilla_appservices =' build/srclib/MozAndroidComponents/buildSrc/src/main/java/Dependencies.kt
+
+    Glean version for Android Components:
+    grep 'mozilla_glean =' build/srclib/MozAndroidComponents/buildSrc/src/main/java/Dependencies.kt
+
+    GeckoView (MozFennec) version for Android Components (corresponsence to tags is obscure):
+    grep 'release_version =' build/srclib/MozAndroidComponents/buildSrc/src/main/java/Gecko.kt
+
+    Android Components version:
+    grep VERSION build/io.github.forkmaintainers.iceraven/buildSrc/src/main/java/AndroidComponents.kt
+
+AutoUpdateMode: None
+UpdateCheckMode: None
