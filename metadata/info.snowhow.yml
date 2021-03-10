@@ -1,0 +1,16 @@
+Categories:
+  - Sports & Health
+License: MIT
+WebSite: https://gitlab.com/beoe/snowhow-freeride
+SourceCode: https://gitlab.com/beoe/snowhow-freeride/tree/HEAD
+IssueTracker: https://gitlab.com/beoe/snowhow-freeride/issues
+
+AutoName: snowhow
+
+RepoType: git
+Repo: https://gitlab.com/beoe/snowhow-freeride.git
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 2.0.19
+CurrentVersionCode: 200019
