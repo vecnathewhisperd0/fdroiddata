@@ -3,10 +3,8 @@ Categories:
 License: MIT
 SourceCode: https://github.com/hallogallo/totalog
 IssueTracker: https://github.com/hallogallo/totalog/issues
-
-Name: TOTALOG
-AutoName: test
-
+Changelog: https://github.com/hallogallo/totalog/releases
+AuthorName: Miriam Hüpper
 RepoType: git
 Repo: https://github.com/hallogallo/totalog
 
@@ -35,4 +33,7 @@ Builds:
       - ionic cordova build --release android
 
 AutoUpdateMode: None
-UpdateCheckMode: Tags
+UpdateCheckMode: None
+
+CurrentVersion: 0.1.2
+CurrentVersionCode: 102
