@@ -1,10 +1,11 @@
 Categories:
   - Science & Education
 License: MIT
+AuthorName: Miriam Hüpper
 SourceCode: https://github.com/hallogallo/totalog
 IssueTracker: https://github.com/hallogallo/totalog/issues
 Changelog: https://github.com/hallogallo/totalog/releases
-AuthorName: Miriam Hüpper
+
 RepoType: git
 Repo: https://github.com/hallogallo/totalog
 
@@ -34,6 +35,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-
 CurrentVersion: 0.1.2
 CurrentVersionCode: 102
