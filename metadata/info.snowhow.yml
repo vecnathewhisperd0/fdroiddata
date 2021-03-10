@@ -1,0 +1,18 @@
+Categories:
+  - Sports & Health
+License: MIT
+SourceCode: https://gitlab.com/beoe/snowhow-freeride
+IssueTracker: https://gitlab.com/beoe/snowhow-freeride/issues
+
+RepoType: git
+Repo: https://gitlab.com/beoe/snowhow-freeride.git
+
+Builds:
+  - versionName: 2.0.20
+    versionCode: 200020
+    commit: 4d7dfea046fbfe703529c9f1056e1f752b91933e
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
