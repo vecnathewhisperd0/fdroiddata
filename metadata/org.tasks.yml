@@ -1522,6 +1522,7 @@ Builds:
     submodules: true
     gradle:
       - generic
+
     prebuild:
       - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
       - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
@@ -1952,6 +1953,7 @@ Builds:
 
   - versionName: '11.7'
     versionCode: 110701
+    disable: needs Java 11
     commit: '11.7'
     subdir: app
     submodules: true
