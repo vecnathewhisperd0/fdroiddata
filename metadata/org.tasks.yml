@@ -1522,7 +1522,6 @@ Builds:
     submodules: true
     gradle:
       - generic
-
     prebuild:
       - sed -i -e '/com.google.gms/d' -e '/firebase-crashlytics-gradle/d' ../build.gradle.kts
       - sed -i -e '/com.google.firebase.crashlytics/d' -e '/googleplayImplementation(.*)
