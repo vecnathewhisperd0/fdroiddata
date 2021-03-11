@@ -20,7 +20,7 @@ Builds:
     subdir: orion-viewer
     gradle:
       - yes
-    prebuild:
+    init:
       - cd ..
       - gradle -b thirdparty_build.gradle downloadAndPatchDjvu downloadAndMakeMupdf
     rm:
