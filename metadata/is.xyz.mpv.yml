@@ -13,7 +13,7 @@ Repo: https://github.com/mpv-android/mpv-android.git
 Builds:
   - versionName: 2021-03-10-release
     versionCode: 24
-    commit: mpv-android-2021-03-10
+    commit: mpv-android-2021-03-10-fastlane
     subdir: app
     sudo:
       - apt-get update || apt-get update
@@ -60,6 +60,6 @@ Builds:
     ndk: r22
 
 AutoUpdateMode: None
-UpdateCheckMode: Tags
+UpdateCheckMode: None
 CurrentVersion: 2021-03-10-release
 CurrentVersionCode: 24
