@@ -8,14 +8,14 @@ RepoType: git
 Repo: https://gitlab.com/beoe/snowhow-freeride.git
 
 Builds:
-  - versionName: 2.0.21
-    versionCode: 200021
-    commit: v2.0.21
+  - versionName: 2.0.22
+    versionCode: 200022
+    commit: v2.0.22
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.21
-CurrentVersionCode: 200021
+CurrentVersion: 2.0.22
+CurrentVersionCode: 200022
