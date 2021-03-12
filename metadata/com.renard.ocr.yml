@@ -1,3 +1,6 @@
+AntiFeatures:
+  - Tracking
+  - NonFreeNet
 Categories:
   - Reading
   - Writing
@@ -61,8 +64,8 @@ MaintainerNotes: |-
     Newer versions are not available since the app is now proprietary.
     https://github.com/renard314/textfairy/issues/208#issuecomment-780400083
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
+AutoUpdateMode: None
+UpdateCheckMode: None
 CurrentVersion: 4.1.0
 CurrentVersionCode: 82
 
