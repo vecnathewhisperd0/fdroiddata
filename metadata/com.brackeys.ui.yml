@@ -23,16 +23,6 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 2021.1.0
-    versionCode: 10003
-    disable: patch doesn't apply
-    commit: 2021.1.0
-    subdir: app
-    patch:
-      - remove_playcore_10002.patch
-    gradle:
-      - yes
-
   - versionName: 2021.1.1
     versionCode: 10004
     commit: 2021.1.1
