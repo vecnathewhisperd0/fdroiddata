@@ -32,6 +32,10 @@ Description: |4-
 
     Please bear in mind that Text Fairy cannot read handwriting.
 
+    Antifeatures:
+    * Tracking - app has usage data reporting turned on by default. It can be disabled in About->Privacy Policy.
+    * NonFreeNet - additional language packs are hosted on github and a youtube embed in help section that plays automatically.
+
 RepoType: git
 Repo: https://github.com/renard314/textfairy
 
