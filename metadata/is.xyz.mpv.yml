@@ -17,7 +17,7 @@ Builds:
     subdir: app
     sudo:
       - apt-get update || apt-get update
-      - apt-get install ninja-build
+      - apt-get install -y ninja-build
       - pip3 install wheel
       - pip3 install meson
     gradle:
