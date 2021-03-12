@@ -24,7 +24,7 @@ Builds:
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter build apk
 
-AutoUpdateMode: Version v%v
+AutoUpdateMode: Version v.%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://git.selfprivacy.org/kherel/selfprivacy.org.app/raw/branch/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 0.1.0
