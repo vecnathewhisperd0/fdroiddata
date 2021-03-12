@@ -12,7 +12,7 @@ Repo: https://git.selfprivacy.org/kherel/selfprivacy.org.app.git
 Builds:
   - versionName: 0.1.0
     versionCode: 1
-    commit: v.0.1.2
+    commit: v.0.1.0
     output: build/app/outputs/apk/release/app-release-unsigned.apk
     srclibs:
       - flutter@1.22.6
