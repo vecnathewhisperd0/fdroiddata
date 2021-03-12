@@ -33,7 +33,8 @@ Builds:
       - ionic cordova resources android --force
       - ionic cordova build --release android
 
-AutoUpdateMode: None
-UpdateCheckMode: None
+AutoUpdateMode: Version v%v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/hallogallo/totalog/master/config.xml|android-versionCode="(\d+)"|.|version="(.*)"
 CurrentVersion: 0.1.2
 CurrentVersionCode: 102
