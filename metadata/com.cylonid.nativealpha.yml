@@ -1,0 +1,23 @@
+Categories:
+  - Internet
+  - System
+License: AGPL-3.0-or-later
+SourceCode: https://github.com/cylonid/NativeAlphaForAndroid
+IssueTracker: https://github.com/cylonid/NativeAlphaForAndroid/issues
+Donate: https://paypal.me/cylonid
+
+Name: Native Alpha
+
+RepoType: git
+Repo: https://github.com/cylonid/NativeAlphaForAndroid
+
+Builds:
+  - versionName: '0.84'
+    versionCode: 840
+    commit: v0.84
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
