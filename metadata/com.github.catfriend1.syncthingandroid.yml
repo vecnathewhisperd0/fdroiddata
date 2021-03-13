@@ -1467,7 +1467,7 @@ Builds:
     rm:
       - syncthing/src/github.com/syncthing/syncthing/lib/model/testdata
     prebuild: sed -i -e '/signingConfig/d' app/build.gradle
-    ndk: r20b
+    ndk: r21e
     preassemble:
       - buildNative
 
