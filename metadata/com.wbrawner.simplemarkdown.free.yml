@@ -1,0 +1,23 @@
+Categories:
+  - Writing
+License: Apache-2.0
+AuthorName: William Brawner
+AuthorEmail: me@wbrawner.com
+AuthorWebSite: https://wbrawner.com
+SourceCode: https://github.com/wbrawner/SimpleMarkdown
+IssueTracker: https://github.com/wbrawner/SimpleMarkdown/issues
+
+RepoType: git
+Repo: https://github.com/wbrawner/SimpleMarkdown
+
+Builds:
+  - versionName: 0.8.12-free
+    versionCode: 34
+    commit: 89d957c2d05fb5f2ea34a2d68cbef4a9d8fabe15
+    subdir: app
+    gradle:
+      - free
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+UpdateCheckName: com.wbrawner.simplemarkdown
