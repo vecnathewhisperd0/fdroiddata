@@ -1,0 +1,24 @@
+Categories:
+  - Phone & SMS
+License: MIT
+AuthorName: Yardena Cohen
+SourceCode: https://github.com/yardenac/comaphone
+IssueTracker: https://github.com/yardenac/comaphone/issues
+
+AutoName: Coma Phone
+
+RepoType: git
+Repo: https://github.com/yardenac/comaphone
+
+Builds:
+  - versionName: 3.4.a
+    versionCode: 25
+    commit: v3.4.a
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 3.4.a
+CurrentVersionCode: 25
