@@ -282,6 +282,76 @@ Builds:
       - app/src/main/assets/publicsuffixes
     ndk: r21d
 
+  - versionName: 2.9.6
+    versionCode: 50
+    commit: 2.9.6
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+  - versionName: 2.9.7
+    versionCode: 51
+    commit: 2.9.7
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+  - versionName: 2.9.8
+    versionCode: 52
+    commit: 2.9.8
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+  - versionName: 2.9.10
+    versionCode: 54
+    commit: 2.9.10
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+  - versionName: 2.9.11
+    versionCode: 55
+    commit: 2.9.11
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+  - versionName: 2.9.12
+    versionCode: 56
+    commit: 2.9.12
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
+  - versionName: 2.9.13
+    versionCode: 57
+    commit: 2.9.13
+    subdir: app
+    gradle:
+      - libre
+    scanignore:
+      - app/src/main/assets/publicsuffixes
+    ndk: r21d
+
 MaintainerNotes: |-
     The file at `app/src/main/assets/publicsuffixes` is a version of the
     [Public Suffix List](https://publicsuffix.org/) that has been sorted and
@@ -291,5 +361,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.9.4
-CurrentVersionCode: 48
+CurrentVersion: 2.9.13
+CurrentVersionCode: 57

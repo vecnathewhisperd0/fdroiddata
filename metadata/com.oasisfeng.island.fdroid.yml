@@ -3,11 +3,10 @@ Categories:
   - Security
 License: Apache-2.0
 AuthorName: proletarius101
-AuthorEmail: proletarius101@protonmail.com
+WebSite: https://secure-system.gitlab.io/Insular/
 SourceCode: https://gitlab.com/secure-system/Insular
 IssueTracker: https://gitlab.com/secure-system/Insular/issues
 
-Summary: Isolate your Big Brother apps
 Description: |-
     Insular is a FLOSS fork of Island.
     With Insular, you can:<ul>
@@ -39,9 +38,10 @@ Builds:
     commit: v5.1.2-fdroid
     subdir: assembly
     gradle:
-      - completeFdroid
+      - complete
+      - fdroid
     srclibs:
-      - deagle@dev
+      - deagle@d4767d5e69074b03e641186fa9504be37f09c673
       - setupwizard@android10-mainline-release
     prebuild:
       - sed -i -e 's!..\/deagle!$$deagle$$!' -e 's!..\/setup-wizard!$$setupwizard$$!'
@@ -49,5 +49,169 @@ Builds:
       - sed -i -e 's!System.env.VERSION_CODE!\"$$VERCODE$$\"!' -e 's!System.env.VERSION_NAME!\"$$VERSION$$\"!'
         build.gradle
 
-AutoUpdateMode: Version %v-fdroid
-UpdateCheckMode: RepoManifest/dev-ci
+  - versionName: 5.1.2-42172be8
+    versionCode: 51465
+    commit: v5.1.2-42172be8
+    subdir: assembly
+    gradle:
+      - complete
+      - fdroid
+    srclibs:
+      - deagle@d4767d5e69074b03e641186fa9504be37f09c673
+      - setupwizard@android10-mainline-release
+    rm:
+      - assembly/google-services.json
+      - shared/src/main/res/xml/analytics_tracker.xml
+    prebuild: sed -i -e 's!..\/deagle!$$deagle$$!' -e 's!..\/setup-wizard!$$setupwizard$$!'
+        ../settings.gradle
+
+  - versionName: 5.1.2-87f1b7e9
+    versionCode: 51492
+    commit: v5.1.2-87f1b7e9
+    subdir: assembly
+    gradle:
+      - complete
+      - fdroid
+    srclibs:
+      - deagle@d4767d5e69074b03e641186fa9504be37f09c673
+      - setupwizard@android10-mainline-release
+    rm:
+      - assembly/google-services.json
+      - shared/src/main/res/xml/analytics_tracker.xml
+    prebuild: sed -i -e 's!..\/deagle!$$deagle$$!' -e 's!..\/setup-wizard!$$setupwizard$$!'
+        ../settings.gradle
+
+  - versionName: 5.1.2-a9e15f6f
+    versionCode: 51496
+    commit: v5.1.2-a9e15f6f
+    subdir: assembly
+    gradle:
+      - complete
+      - fdroid
+    srclibs:
+      - deagle@d4767d5e69074b03e641186fa9504be37f09c673
+      - setupwizard@android10-mainline-release
+    rm:
+      - assembly/google-services.json
+      - shared/src/main/res/xml/analytics_tracker.xml
+    prebuild: sed -i -e 's!..\/deagle!$$deagle$$!' -e 's!..\/setup-wizard!$$setupwizard$$!'
+        ../settings.gradle
+
+  - versionName: 5.1.2-01dd6170
+    versionCode: 51501
+    disable: This version can't get upgraded to other versions
+    commit: v5.1.2-01dd6170
+    subdir: assembly
+    gradle:
+      - complete
+      - fdroid
+    srclibs:
+      - deagle@d4767d5e69074b03e641186fa9504be37f09c673
+      - setupwizard@android10-mainline-release
+    rm:
+      - assembly/google-services.json
+      - shared/src/main/res/xml/analytics_tracker.xml
+    prebuild: sed -i -e 's!..\/deagle!$$deagle$$!' -e 's!..\/setup-wizard!$$setupwizard$$!'
+        ../settings.gradle
+
+  - versionName: 5.1.2-a3fe6196
+    versionCode: 51507
+    disable: This version can't get upgraded to other versions
+    commit: v5.1.2-a3fe6196
+    subdir: assembly
+    gradle:
+      - complete
+      - fdroid
+    srclibs:
+      - deagle@d4767d5e69074b03e641186fa9504be37f09c673
+      - setupwizard@android10-mainline-release
+    rm:
+      - assembly/google-services.json
+      - shared/src/main/res/xml/analytics_tracker.xml
+    prebuild: sed -i -e 's!..\/deagle!$$deagle$$!' -e 's!..\/setup-wizard!$$setupwizard$$!'
+        ../settings.gradle
+
+  - versionName: 5.1.2-f60c851c
+    versionCode: 51535
+    commit: v5.1.2-f60c851c
+    subdir: assembly
+    gradle:
+      - complete
+      - fdroid
+    srclibs:
+      - deagle@d4767d5e69074b03e641186fa9504be37f09c673
+      - setupwizard@android10-mainline-release
+    rm:
+      - assembly/google-services.json
+      - shared/src/main/res/xml/analytics_tracker.xml
+    prebuild: sed -i -e 's!..\/deagle!$$deagle$$!' -e 's!..\/setup-wizard!$$setupwizard$$!'
+        ../settings.gradle
+
+  - versionName: 5.1.2-d815bc83
+    versionCode: 51538
+    commit: v5.1.2-d815bc83
+    subdir: assembly
+    gradle:
+      - complete
+      - fdroid
+    srclibs:
+      - deagle@d4767d5e69074b03e641186fa9504be37f09c673
+      - setupwizard@android10-mainline-release
+    rm:
+      - assembly/google-services.json
+      - shared/src/main/res/xml/analytics_tracker.xml
+    prebuild: sed -i -e 's!..\/deagle!$$deagle$$!' -e 's!..\/setup-wizard!$$setupwizard$$!'
+        ../settings.gradle
+
+  - versionName: 5.1.3-689c8c20
+    versionCode: 51551
+    commit: v5.1.3-689c8c20
+    subdir: assembly
+    gradle:
+      - complete
+      - fdroid
+    srclibs:
+      - deagle@d4767d5e69074b03e641186fa9504be37f09c673
+      - setupwizard@android10-mainline-release
+    rm:
+      - assembly/google-services.json
+      - shared/src/main/res/xml/analytics_tracker.xml
+    prebuild: sed -i -e 's!..\/deagle!$$deagle$$!' -e 's!..\/setup-wizard!$$setupwizard$$!'
+        ../settings.gradle
+
+  - versionName: 5.1.3-42de5a1a
+    versionCode: 51557
+    commit: v5.1.3-42de5a1a
+    subdir: assembly
+    gradle:
+      - complete
+      - fdroid
+    srclibs:
+      - deagle@d4767d5e69074b03e641186fa9504be37f09c673
+      - setupwizard@android10-mainline-release
+    rm:
+      - assembly/google-services.json
+      - shared/src/main/res/xml/analytics_tracker.xml
+    prebuild: sed -i -e 's!..\/deagle!$$deagle$$!' -e 's!..\/setup-wizard!$$setupwizard$$!'
+        ../settings.gradle
+
+  - versionName: 5.1.3-6fcbe182
+    versionCode: 51560
+    commit: v5.1.3-6fcbe182
+    subdir: assembly
+    gradle:
+      - complete
+      - fdroid
+    srclibs:
+      - deagle@d4767d5e69074b03e641186fa9504be37f09c673
+      - setupwizard@android10-mainline-release
+    rm:
+      - assembly/google-services.json
+      - shared/src/main/res/xml/analytics_tracker.xml
+    prebuild: sed -i -e 's!..\/deagle!$$deagle$$!' -e 's!..\/setup-wizard!$$setupwizard$$!'
+        ../settings.gradle
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags v[\d.]+-\w+$
+CurrentVersion: 5.1.3-6fcbe182
+CurrentVersionCode: 51560

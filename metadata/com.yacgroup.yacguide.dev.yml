@@ -69,7 +69,21 @@ Builds:
     gradle:
       - dev
 
+  - versionName: '20210130'
+    versionCode: 20210130
+    commit: dev-20210130
+    subdir: app
+    gradle:
+      - dev
+
+  - versionName: '20210311'
+    versionCode: 20210311
+    commit: dev-20210311
+    subdir: app
+    gradle:
+      - dev
+
 AutoUpdateMode: Version dev-%c
 UpdateCheckMode: Tags ^dev
-CurrentVersion: '20201013'
-CurrentVersionCode: 20201013
+CurrentVersion: '20210311'
+CurrentVersionCode: 20210311

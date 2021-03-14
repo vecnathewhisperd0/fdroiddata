@@ -148,7 +148,6 @@ checkupdates_runner:
 
 fdroid build:
   image: registry.gitlab.com/fdroid/ci-images-client:latest
-  allow_failure: true
   artifacts:
     name: "${CI_PROJECT_PATH}_${CI_JOB_STAGE}_${CI_COMMIT_REF_NAME}_${CI_COMMIT_SHA}"
     paths:
@@ -183,7 +182,7 @@ fdroid build:
     - curl --silent https://gitlab.com/fdroid/fdroidserver/repository/master/archive.tar.gz
           | tar -xz --directory=fdroidserver --strip-components=1
     - export PATH="`pwd`/fdroidserver:$PATH"
-    - export PYTHONPATH="`pwd`/fdroidserver:$CI_PROJECT_DIR/tools"
+    - export PYTHONPATH="$CI_PROJECT_DIR/fdroidserver:$CI_PROJECT_DIR/fdroidserver/examples"
     - export PYTHONUNBUFFERED=true
 
     - bash fdroidserver/buildserver/setup-env-vars $ANDROID_HOME
@@ -211,8 +210,9 @@ fdroid build:
     - for build in `./tools/find-changed-builds.py`; do
           set -x;
           apt-get install sudo;
+          ./tools/setup-ndk-per-build.py $build /home/vagrant/android-ndk;
           fdroid fetchsrclibs $build --verbose;
-          fdroid build --verbose --on-server --no-tarball $build;
+          fdroid build --verbose --scan-binary --on-server --no-tarball $build;
       done
 
 
