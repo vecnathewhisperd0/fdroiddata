@@ -1,0 +1,23 @@
+Categories:
+  - Reading
+License: GPL-3.0-only
+SourceCode: https://github.com/fenimore/badreads
+IssueTracker: https://github.com/fenimore/badreads/issues
+
+AutoName: Badreads
+
+RepoType: git
+Repo: https://github.com/fenimore/badreads
+
+Builds:
+  - versionName: 0.0.1
+    versionCode: 1
+    commit: a05782c1057036b23dd5e08a947db3607f742536
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 0.0.1
+CurrentVersionCode: 1
