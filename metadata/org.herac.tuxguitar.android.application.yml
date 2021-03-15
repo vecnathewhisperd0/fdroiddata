@@ -1,3 +1,5 @@
+AntiFeatures:
+  - UpstreamNonFree
 Categories:
   - Multimedia
   - Writing
@@ -24,6 +26,10 @@ Description: |-
     * Repeat open, close and alternative endings
     * Time signature management
     * Tempo management
+
+    Note: this version of TuxGuitar is missing google
+    drive functionality as it depends on a proprietary
+    library.
 
 RepoType: git
 Repo: https://gitlab.com/f-droid-mirrors/empty.git
@@ -55,8 +61,9 @@ MaintainerNotes: |-
     Using a dummy repo because svn-type repos are deprecated
     And git-svn is incredibly slow.
 
-    Upstream doesn't have tags or any way to determine the release
-    versionCode is generated from build date, so we instead use our own.
+    Upstream doesn't have tags or any way to determine the release.
+
+    VersionCode is generated from build date, so we instead use our own.
 
 AutoUpdateMode: None
 UpdateCheckMode: None
