@@ -29,42 +29,36 @@ RepoType: git
 Repo: https://gitlab.com/f-droid-mirrors/empty.git
 
 Builds:
-  - versionName: SNAPSHOT
-    versionCode: 1
+  - versionName: fdroid_1821
+    versionCode: 1821
     commit: d3746f98
     init: svn checkout -r 1821 svn://svn.code.sf.net/p/tuxguitar/code/trunk/ .
     patch:
       - remove_gdrive.patch
-    output: build-scripts/tuxguitar-android/apk/build/outputs/apk/release/tuxguitar-android-SNAPSHOT-release-unsigned.apk
-    srclibs:
-      - mididriver@v1.20
+    output: build-scripts/tuxguitar-android/apk/build/outputs/apk/release/tuxguitar-android-fdroid_1821-release-unsigned.apk
     prebuild:
       - find . -iname "*.jar" -o -iname "*.zip" -o -iname "*.so" -exec rm {} \;
       - rm -rf TuxGuitar-android-gdrive
       - rm -rf TuxGuitar-android-gdrive-gdaa
       - rm -rf TuxGuitar-android-gdrive-plugin
-      - sed -i -e "s/^\s*versionCode.*/        versionCode $$VERCODE$$/" build-scripts/tuxguitar-android/apk/build.gradle
+      - sed -i "s/^\s*versionCode.*/        versionCode $$VERCODE$$/" build-scripts/tuxguitar-android/apk/build.gradle
+      - sed -i "s/SNAPSHOT/$$VERSION$$/g" build-scripts/tuxguitar-android/apk/build.gradle
     scanignore:
       - TuxGuitar-android/src/org/herac/tuxguitar/android/resource/TGResourceLoaderImpl.java
     scandelete:
       - .
     build:
-      - export BUILD_DIR=$(pwd)
-      - cd $$mididriver$$
+      - cd build-scripts/tuxguitar-android
       - gradle assembleRelease
-      - cd build/intermediates/merged_native_libs/release/out/lib
-      - cp -r * ${BUILD_DIR}/TuxGuitar-android-midimaster/libs
-      - cd ${BUILD_DIR}/build-scripts/tuxguitar-android/apk
-      - gradle assembleRelease
-    ndk: r21d
 
 MaintainerNotes: |-
     Using a dummy repo because svn-type repos are deprecated
     And git-svn is incredibly slow.
+
     Upstream doesn't have tags or any way to determine the release
-    versionCode is generated from build date, so we instead use our own
+    versionCode is generated from build date, so we instead use our own.
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: SNAPSHOT
-CurrentVersionCode: 1
+CurrentVersion: fdroid-1821
+CurrentVersionCode: 1821
