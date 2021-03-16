@@ -6,23 +6,24 @@ SourceCode: https://framagit.org/doliscan/client-cordova
 IssueTracker: https://framagit.org/doliscan/client-cordova/-/issues
 Changelog: https://framagit.org/doliscan/client-cordova/-/blob/master/ChangeLog.md
 Donate: https://liberapay.com/erics/
-LiberapayID: '4913'
+LiberapayID: "4913"
 
 AutoName: DoliSCAN
-Summary: Take a picture of your reciepts then DoliSCAN make an expense report at the end of the month
+Summary: Take a picture of your reciepts to make expense reports at the end of the month
 Description: |
- You have to take a picture of your reciept day by day and DoliSCAN make the report at the end of
- the month (in a beautifull PDF file with all pictures as one big zip file for your accounting manager)
+  You have to take a picture of your reciept day by day and DoliSCAN make the report at the end of the month (in a beautifull PDF file with all pictures as one big zip file for your accounting manager)
 
- This is an french-only app for the moment (contribs are welcome).
+  For the moment source code without sqlite depends is in special "nosqlite" branch, please clone this branch to build f-droid version.
+
+  This is an french-only app for the moment (contribs are welcome).
 
 RepoType: git
-Repo: https://framagit.org/doliscan/client-cordova
+Repo: https://framagit.org/doliscan/client-cordova/-/tree/nosqlite
 
 Builds:
-  - versionName: 1.0.21
-    versionCode: 10021
-    commit: v1.0.21
+  - versionName: 1.7.0
+    versionCode: 10700
+    commit: v1.7.0
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y -t stretch-backports npm
@@ -38,10 +39,9 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.21
-CurrentVersionCode: 10021
+CurrentVersion: 1.7.0
+CurrentVersionCode: 10700
 
 AuthorName: Eric Seigne (Projet AbulEdu / Cap-REL / VideoSub)
 AuthorEmail: eric.seigne@cap-rel.fr
 AuthorWebSite: https://cap-rel.fr/
-
