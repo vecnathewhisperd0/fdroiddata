@@ -73,7 +73,7 @@ Builds:
     build:
       - pushd ..
       - ./run fdroid build
-    ndk: r21d
+    ndk: r21e
 
   - versionName: 7.5.0-rc10
     versionCode: 227
@@ -93,7 +93,7 @@ Builds:
     build:
       - pushd ..
       - ./run fdroid build
-    ndk: r21d
+    ndk: r21e
 
 ArchivePolicy: 6 versions
 AutoUpdateMode: None
