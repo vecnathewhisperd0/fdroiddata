@@ -18,7 +18,7 @@ Description: |
   This is an french-only app for the moment (contribs are welcome).
 
 RepoType: git
-Repo: https://framagit.org/doliscan/client-cordova/-/tree/nosqlite
+Repo: https://framagit.org/doliscan/client-cordova/;tags=v1.7.0;branches=nosqlite
 
 Builds:
   - versionName: 1.7.0
