@@ -11,7 +11,6 @@ Builds:
   - versionName: 0.2.4
     versionCode: 17
     commit: 0.2.4
-    timeout: 7200
     subdir: app
     gradle:
       - yes
