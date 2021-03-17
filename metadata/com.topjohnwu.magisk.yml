@@ -30,7 +30,7 @@ Builds:
     submodules: true
     sudo:
       - apt-get update || apt-get update
-      - apt-get install g++
+      - apt-get install -y g++
     output: app/build/outputs/apk/release/app-release-unsigned.apk
     srclibs:
       - cpython@v3.9.1
@@ -51,7 +51,7 @@ Builds:
       - native/jni/external
       - tools
     build:
-      - ln -s /opt/gradle/bin/gradle ./gradlew
+      - ln -s `which gradle` ./gradlew
       - python3.9 ./build.py -rv stub
       - mv stub/build/outputs/apk/release/stub-release-unsigned.apk out/stub-release.apk
       - python3.9 ./build.py -rv binary
