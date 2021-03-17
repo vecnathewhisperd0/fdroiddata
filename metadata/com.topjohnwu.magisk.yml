@@ -38,6 +38,7 @@ Builds:
       - echo -e 'version=$$VERSION$$' > ./config.prop
       - sed -i -e '/buildTypes/,+11d' ./build.gradle.kts
       - sed -i -e '/android.ndkPath/d' -e '/ndk.dir/d' ./local.properties
+      - sed -i -e 's/stub-release/stub-release-unsigned/' ./build.py
       - mkdir -p /opt/android-sdk/ndk/
       - ln -s $$NDK$$ /opt/android-sdk/ndk/magisk
       - pushd $$cpython$$
@@ -52,10 +53,7 @@ Builds:
       - tools
     build:
       - ln -s `which gradle` ./gradlew
-      - python3.9 ./build.py -rv stub
-      - mv stub/build/outputs/apk/release/stub-release-unsigned.apk out/stub-release.apk
-      - python3.9 ./build.py -rv binary
-      - python3.9 ./build.py -rv app
+      - python3.9 ./build.py -rv all
     ndk: r21d
 
 AutoUpdateMode: Version %v
