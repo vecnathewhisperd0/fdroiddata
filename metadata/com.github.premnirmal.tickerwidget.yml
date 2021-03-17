@@ -1062,6 +1062,116 @@ Builds:
         {/,/^}/d' build.gradle
       - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
 
+  - versionName: 3.9.729
+    versionCode: 300900729
+    commit: '300900729'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.730
+    versionCode: 300900730
+    commit: '300900730'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.731
+    versionCode: 300900731
+    commit: '300900731'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.732
+    versionCode: 300900732
+    commit: '300900732'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.733
+    versionCode: 300900733
+    commit: '300900733'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.734
+    versionCode: 300900734
+    commit: '300900734'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.735
+    versionCode: 300900735
+    commit: '300900735'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.736
+    versionCode: 300900736
+    commit: '300900736'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.737
+    versionCode: 300900737
+    commit: '300900737'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
+  - versionName: 3.9.738
+    versionCode: 300900738
+    commit: '300900738'
+    subdir: app
+    gradle:
+      - purefoss
+    prebuild:
+      - sed -i -e '/google-services/d; /firebase/d; /dl.bintray.com/d; /android.applicationVariants.all
+        {/,/^}/d' build.gradle
+      - echo 'android { lintOptions { checkReleaseBuilds false } }' >> build.gradle
+
 MaintainerNotes: |-
     We replace com.nbsp:library from http://dl.bintray.com/lukaville/maven with
     com.github.nbsp-team:MaterialFilePicker from
@@ -1070,5 +1180,5 @@ MaintainerNotes: |-
 AutoUpdateMode: Version %c
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/premnirmal/StockTicker/master/app/version.properties|versionCode=(.*)|.|versionName=(.*)
-CurrentVersion: 3.9.727
-CurrentVersionCode: 300900727
+CurrentVersion: 3.9.738
+CurrentVersionCode: 300900738

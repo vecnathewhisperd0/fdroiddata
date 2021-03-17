@@ -1,4 +1,8 @@
 
+variables:
+  pip: pip3 --timeout 100 --retries 10
+
+
 lint:
   image: registry.gitlab.com/fdroid/ci-images-base
   except:
@@ -76,6 +80,27 @@ trigger-issuebot:
     - apk add --no-cache bash curl
     - ./tools/trigger-issuebot
 
+schedule-issuebot:
+  image: alpine
+  only:
+    variables:
+      - $SCHEDULE_ISSUEBOT
+  variables:
+    GIT_DEPTH: "1"
+  artifacts:
+    name: "${CI_PROJECT_PATH}_${CI_JOB_STAGE}_${CI_COMMIT_REF_NAME}_${CI_COMMIT_SHA}"
+    paths:
+      - logs/
+    when: always
+    expire_in: 1 week
+  script:
+    - mkdir logs
+    - export | grep -F CI_ | grep -vFi -e password -e token > logs/export.txt
+    - apk add --no-cache bash curl ca-certificates python3
+    - python3 -m ensurepip
+    - $pip install python-gitlab
+    - ./tools/schedule-issuebot.py
+
 checkupdates_trigger:
   only:
     refs:
@@ -123,7 +148,6 @@ checkupdates_runner:
 
 fdroid build:
   image: registry.gitlab.com/fdroid/ci-images-client:latest
-  allow_failure: true
   artifacts:
     name: "${CI_PROJECT_PATH}_${CI_JOB_STAGE}_${CI_COMMIT_REF_NAME}_${CI_COMMIT_SHA}"
     paths:
@@ -158,10 +182,18 @@ fdroid build:
     - curl --silent https://gitlab.com/fdroid/fdroidserver/repository/master/archive.tar.gz
           | tar -xz --directory=fdroidserver --strip-components=1
     - export PATH="`pwd`/fdroidserver:$PATH"
-    - export PYTHONPATH="`pwd`/fdroidserver:$CI_PROJECT_DIR/tools"
+    - export PYTHONPATH="$CI_PROJECT_DIR/fdroidserver:$CI_PROJECT_DIR/fdroidserver/examples"
     - export PYTHONUNBUFFERED=true
 
+    - bash fdroidserver/buildserver/setup-env-vars $ANDROID_HOME
+    - adduser --disabled-password --gecos "" vagrant
+    - ln -s $CI_PROJECT_DIR/fdroidserver /home/vagrant/fdroidserver
+    - mkdir -p /vagrant/cache
+    - wget -q https://services.gradle.org/distributions/gradle-5.6.2-bin.zip
+          --output-document=/vagrant/cache/gradle-5.6.2-bin.zip
+    - bash fdroidserver/buildserver/provision-gradle
     - bash fdroidserver/buildserver/provision-apt-get-install http://deb.debian.org/debian
+    - source /etc/profile.d/bsenv.sh
     - apt-get dist-upgrade
 
     # install fdroidserver from git, with deps from Debian, until fdroidserver
@@ -178,8 +210,9 @@ fdroid build:
     - for build in `./tools/find-changed-builds.py`; do
           set -x;
           apt-get install sudo;
+          ./tools/setup-ndk-per-build.py $build /home/vagrant/android-ndk;
           fdroid fetchsrclibs $build --verbose;
-          fdroid build --verbose --on-server --no-tarball $build;
+          fdroid build --verbose --scan-binary --on-server --no-tarball $build;
       done
 
 
@@ -201,12 +234,14 @@ pages:
     variables:
       - $FROM_CI_MERGE_REQUEST_IID
   artifacts:
+    name: "${CI_PROJECT_PATH}_${CI_JOB_STAGE}_${CI_JOB_ID}_${CI_COMMIT_REF_NAME}_${CI_COMMIT_SHA}"
     paths:
       - metadata/
       - public/
       - repo/index-v1.json
       - repo/index.xml
       - tmp/apkcache.json
+      - unsigned/
     when: always
   # needs lots of git history since it has to compare the merge request to current master
   variables:

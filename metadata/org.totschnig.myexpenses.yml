@@ -1,6 +1,5 @@
 AntiFeatures:
   - Ads
-  - NonFreeAdd
 Categories:
   - Money
 License: GPL-3.0-only
@@ -10,6 +9,7 @@ AuthorWebSite: https://michael.totschnig.org/
 WebSite: http://www.myexpenses.mobi
 SourceCode: https://github.com/mtotschnig/MyExpenses
 IssueTracker: https://github.com/mtotschnig/MyExpenses/issues
+Translation: https://www.transifex.com/projects/p/my-expenses
 Changelog: http://www.myexpenses.mobi/#versionlist
 Donate: http://www.myexpenses.mobi/#donate
 FlattrID: '1028216'
@@ -1478,9 +1478,75 @@ Builds:
     prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
     build: gradle :myExpenses:packageConscriptExternReleaseUniversalApk
 
+  - versionName: 3.2.1
+    versionCode: 448
+    commit: r448
+    subdir: myExpenses
+    output: build/outputs/universal_apk/conscriptExternRelease/myExpenses-conscript-extern-release-universal-unsigned.apk
+    rm:
+      - mlkit
+      - tests
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    build: gradle :myExpenses:packageConscriptExternReleaseUniversalApk
+
+  - versionName: 3.2.1.1
+    versionCode: 452
+    commit: r450
+    subdir: myExpenses
+    output: build/outputs/universal_apk/conscriptExternRelease/myExpenses-conscript-extern-release-universal-unsigned.apk
+    rm:
+      - mlkit
+      - tests
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    build: gradle :myExpenses:packageConscriptExternReleaseUniversalApk
+
+  - versionName: 3.2.3.1
+    versionCode: 458
+    commit: r458
+    subdir: myExpenses
+    output: build/outputs/universal_apk/conscriptExternRelease/myExpenses-conscript-extern-release-universal-unsigned.apk
+    rm:
+      - mlkit
+      - tests
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    build: gradle :myExpenses:packageConscriptExternReleaseUniversalApk
+
+  - versionName: 3.2.4.1
+    versionCode: 465
+    commit: ecae2092dd36994fcacbbbbfcaf597d92214169b
+    subdir: myExpenses
+    output: build/outputs/universal_apk/conscriptExternRelease/myExpenses-conscript-extern-release-universal-unsigned.apk
+    rm:
+      - mlkit
+      - tests
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    build: gradle :myExpenses:packageConscriptExternReleaseUniversalApk
+
+  - versionName: 3.2.4.2
+    versionCode: 466
+    commit: r466
+    subdir: myExpenses
+    output: build/outputs/universal_apk/conscriptExternRelease/myExpenses-conscript-extern-release-universal-unsigned.apk
+    rm:
+      - mlkit
+      - tests
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    build: gradle :myExpenses:packageConscriptExternReleaseUniversalApk
+
+  - versionName: 3.2.5
+    versionCode: 473
+    commit: f0fe85200ea216f6bdfec7c730f0960ee490a8ad
+    subdir: myExpenses
+    output: build/outputs/universal_apk/conscriptExternRelease/myExpenses-conscript-extern-release-universal-unsigned.apk
+    rm:
+      - mlkit
+      - tests
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+    build: gradle :myExpenses:packageConscriptExternReleaseUniversalApk
+
 MaintainerNotes: '* Ads: https://github.com/mtotschnig/MyExpenses/tree/b4237aabf8924614251d14fb18ce274ec0f934f7/myExpenses/src/main/java/org/totschnig/myexpenses/util/ads'
 
-AutoUpdateMode: Version r%c
-UpdateCheckMode: Tags
-CurrentVersion: 3.2.0
-CurrentVersionCode: 444
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 3.2.5
+CurrentVersionCode: 473

@@ -173,8 +173,63 @@ Builds:
       - .gitsecret/keys/random_seed
     prebuild: sed -r "s:29.0.1:29.0.2:" -i build.gradle
     ndk: r21d
-    antifeatures:
-      - Tracking
+
+  - versionName: 0.16.11
+    versionCode: 16111
+    commit: v0.16.11-fdroid
+    subdir: app
+    gradle:
+      - __32bit
+    rm:
+      - .gitsecret/keys/random_seed
+    prebuild: sed -r "s:29.0.1:29.0.2:" -i build.gradle
+    ndk: r21d
+
+  - versionName: 0.16.12
+    versionCode: 16121
+    commit: v0.16.12-fdroid
+    subdir: app
+    gradle:
+      - __32bit
+    rm:
+      - .gitsecret/keys/random_seed
+    prebuild: sed -r "s:29.0.1:29.0.2:" -i build.gradle
+    ndk: r21d
+
+  - versionName: 0.16.13
+    versionCode: 16131
+    disable: Runtime issues
+    commit: v0.16.13-fdroid
+    subdir: app
+    gradle:
+      - __32bit
+    rm:
+      - .gitsecret/keys/random_seed
+    prebuild: sed -r "s:29.0.1:29.0.2:" -i build.gradle
+    ndk: r21d
+
+  - versionName: 0.16.14
+    versionCode: 16141
+    disable: Runtime issues
+    commit: v0.16.14-fdroid
+    subdir: app
+    gradle:
+      - __32bit
+    rm:
+      - .gitsecret/keys/random_seed
+    prebuild: sed -r "s:29.0.1:29.0.2:" -i build.gradle
+    ndk: r21d
+
+  - versionName: 0.16.15
+    versionCode: 16151
+    commit: v0.16.15-fdroid
+    subdir: app
+    gradle:
+      - __32bit
+    rm:
+      - .gitsecret/keys/random_seed
+    prebuild: sed -r "s:29.0.1:29.0.2:" -i build.gradle
+    ndk: r21d
 
 MaintainerNotes: |-
     +0: - (upstream)
@@ -182,7 +237,7 @@ MaintainerNotes: |-
     +2: armv8
 
 AutoUpdateMode: Version v%v-fdroid
-UpdateCheckMode: Tags v\d+.\d+.\d+-fdroid
+UpdateCheckMode: Tags v\d+.\d+.\d+[a-z]?-fdroid
 VercodeOperation: '%c*10 + 1'
-CurrentVersion: 0.16.10
-CurrentVersionCode: 16101
+CurrentVersion: 0.16.15
+CurrentVersionCode: 16151

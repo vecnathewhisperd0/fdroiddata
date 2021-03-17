@@ -704,7 +704,95 @@ Builds:
       - sed -i -e '/credentials {/,/}/d; /maven {/,/}/d' ../android-bookreader-library/build.gradle
       - echo 'android {lintOptions {checkReleaseBuilds false}}' >> build.gradle
 
+  - versionName: 1.13.22
+    versionCode: 401
+    commit: bookreader-1.13.22
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+      - sed -i -e '/credentials {/,/}/d; /maven {/,/}/d' ../android-bookreader-library/build.gradle
+      - echo 'android {lintOptions {checkReleaseBuilds false}}' >> build.gradle
+
+  - versionName: 1.13.23
+    versionCode: 402
+    commit: bookreader-1.13.23
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+      - sed -i -e '/credentials {/,/}/d; /maven {/,/}/d' ../android-bookreader-library/build.gradle
+      - echo 'android {lintOptions {checkReleaseBuilds false}}' >> build.gradle
+
+  - versionName: 1.13.24
+    versionCode: 403
+    commit: bookreader-1.13.24
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+      - sed -i -e '/credentials {/,/}/d; /maven {/,/}/d' ../android-bookreader-library/build.gradle
+      - echo 'android {lintOptions {checkReleaseBuilds false}}' >> build.gradle
+
+  - versionName: 1.13.25
+    versionCode: 404
+    commit: bookreader-1.13.25
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+      - sed -i -e '/credentials {/,/}/d; /maven {/,/}/d' ../android-bookreader-library/build.gradle
+      - echo 'android {lintOptions {checkReleaseBuilds false}}' >> build.gradle
+
+  - versionName: 1.13.26
+    versionCode: 405
+    commit: bookreader-1.13.26
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+      - sed -i -e '/credentials {/,/}/d; /maven {/,/}/d' ../android-bookreader-library/build.gradle
+      - echo 'android {lintOptions {checkReleaseBuilds false}}' >> build.gradle
+
+  - versionName: 1.13.27
+    versionCode: 406
+    commit: bookreader-1.13.27
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+      - sed -i -e '/credentials {/,/}/d; /maven {/,/}/d' ../android-bookreader-library/build.gradle
+      - echo 'android {lintOptions {checkReleaseBuilds false}}' >> build.gradle
+
+  - versionName: 1.13.28
+    versionCode: 407
+    commit: bookreader-1.13.28
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+      - sed -i -e '/credentials {/,/}/d; /maven {/,/}/d' ../android-bookreader-library/build.gradle
+      - echo 'android {lintOptions {checkReleaseBuilds false}}' >> build.gradle
+
+  - versionName: 1.13.29
+    versionCode: 408
+    commit: bookreader-1.13.29
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/variant.outputs.each/,/}$/d; /enable true/d' build.gradle
+      - sed -i -e '/credentials {/,/}/d; /maven {/,/}/d' ../android-bookreader-library/build.gradle
+      - echo 'android {lintOptions {checkReleaseBuilds false}}' >> build.gradle
+
 AutoUpdateMode: Version bookreader-%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.13.21
-CurrentVersionCode: 400
+CurrentVersion: 1.13.29
+CurrentVersionCode: 408

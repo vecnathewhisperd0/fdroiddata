@@ -168,7 +168,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.0.0-alpha3
+    versionCode: 20002
+    commit: v2.0.0-alpha3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0-alpha4
+    versionCode: 20003
+    commit: v2.0.0-alpha4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0-alpha5
+    versionCode: 20004
+    commit: v2.0.0-alpha5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0-alpha6
+    versionCode: 20005
+    commit: v2.0.0-alpha6
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.0-alpha2
-CurrentVersionCode: 20001
+CurrentVersion: 2.0.0-alpha6
+CurrentVersionCode: 20005

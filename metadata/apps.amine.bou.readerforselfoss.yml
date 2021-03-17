@@ -419,6 +419,28 @@ Builds:
       - appLoginUsername="LOGIN"
       - appLoginPassword="PASS"
 
+  - versionName: 1720123583-github
+    versionCode: 1720123583
+    commit: v1720123583
+    subdir: app
+    gradle:
+      - githubConfig
+    gradleprops:
+      - appLoginUrl="URL"
+      - appLoginUsername="LOGIN"
+      - appLoginPassword="PASS"
+
+  - versionName: 1721010103-github
+    versionCode: 1721010103
+    commit: v1721010103
+    subdir: app
+    gradle:
+      - githubConfig
+    gradleprops:
+      - appLoginUrl="URL"
+      - appLoginUsername="LOGIN"
+      - appLoginPassword="PASS"
+
 MaintainerNotes: |-
     Version code and name are dynamically generated from the Git tag.
 
@@ -427,5 +449,5 @@ MaintainerNotes: |-
 AutoUpdateMode: Version v%c
 UpdateCheckMode: HTTP
 UpdateCheckData: https://www.amine-bou.fr/version.txt|versionCode=(.*)|.|versionName=(.*)
-CurrentVersion: 1720020321-github
-CurrentVersionCode: 1720020321
+CurrentVersion: 1721010103-github
+CurrentVersionCode: 1721010103
