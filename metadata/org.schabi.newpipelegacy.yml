@@ -6,49 +6,16 @@ Categories:
 License: GPL-3.0-or-later
 AuthorName: Team NewPipe
 AuthorEmail: tnp@schabi.org
-WebSite: https://newpipe.schabi.org/
+WebSite: https://newpipe.net
 SourceCode: https://github.com/TeamNewPipe/NewPipe-legacy
 IssueTracker: https://github.com/TeamNewPipe/NewPipe-legacy/issues
+Translation: https://hosted.weblate.org/projects/newpipe/
 Changelog: https://github.com/TeamNewPipe/NewPipe-legacy/releases
-Donate: https://newpipe.schabi.org/donate
+Donate: https://newpipe.net/donate
 LiberapayID: '34969'
 Bitcoin: 16A9J59ahMRqkLSZjhYj33n9j3fMztFxnh
 
 AutoName: NewPipe Legacy
-Description: |-
-    Lightweight YouTube frontend for Android 4.x that’s supposed to be used
-    without the proprietary YouTube-API or any of Google’s (proprietary)
-    play-services. NewPipe only parses the YouTube website in order to gain
-    the information it needs.
-
-    '''Features:'''
-
-    * Search videos
-    * Display general information about a video
-    * Watch YouTube videos
-    * Listen to YouTube videos
-    * Popup mode (floating player)
-    * Select the streaming player to watch the video with
-    * Download videos
-    * Download audio only
-    * Open a video in Kodi
-    * Show Next/Related videos
-    * Search YouTube in a specific language
-    * Watch/Block age restricted material
-    * Display general information about channels
-    * Search channels
-    * Watch videos from a channel
-    * Orbot/Tor support (not yet directly)
-    * 1080p/2k/4k support
-    * View history
-    * Subscribe to channels
-    * Search history
-    * Search/Watch Playlists
-    * Watch as queues Playlists
-    * Queuing videos
-    * Local playlists
-    * Subtitles
-    * Multi-service support (eg. SoundCloud)
 
 RepoType: git
 Repo: https://github.com/TeamNewPipe/NewPipe-legacy
@@ -111,7 +78,64 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.18.6
+    versionCode: 60
+    commit: v0.18.6
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.19.4
+    versionCode: 70
+    disable: DOS endlines in gradle.properties
+    commit: v0.19.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.19.5
+    versionCode: 80
+    disable: DOS endlines in gradle.properties
+    commit: v0.19.5
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.19.8
+    versionCode: 90
+    commit: v0.19.8
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.20.1
+    versionCode: 100
+    commit: v0.20.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.20.2
+    versionCode: 110
+    commit: v0.20.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.20.8
+    versionCode: 120
+    commit: v0.20.8
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.18.2
-CurrentVersionCode: 50
+CurrentVersion: 0.20.8
+CurrentVersionCode: 120

@@ -46,8 +46,50 @@ Builds:
     gradle:
       - official
 
+  - versionName: '1.6'
+    versionCode: 12
+    commit: v1.6
+    subdir: app
+    gradle:
+      - official
+
+  - versionName: 1.6.1
+    versionCode: 13
+    commit: v1.6.1
+    subdir: app
+    gradle:
+      - official
+
+  - versionName: '1.7'
+    versionCode: 16
+    commit: v1.7
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.7.1
+    versionCode: 17
+    commit: v1.7.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.7.2
+    versionCode: 18
+    commit: v1.7.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.7.3
+    versionCode: 19
+    commit: v1.7.3
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckIgnore: beta preview
-CurrentVersion: 1.5.3
-CurrentVersionCode: 11
+CurrentVersion: 1.7.3
+CurrentVersionCode: 19

@@ -20,10 +20,7 @@ Description: |-
 
     Variation 3 (Online):
 
-    * Use the "Search Online" feature (requires a free account at [http://www.bcaching.com bcaching])
-
-RepoType: git-svn
-Repo: https://opengpx.googlecode.com/svn/trunk
+    * Use the "Search Online" feature (requires a free account at <a href="http://www.bcaching.com">bcaching</a>)
 
 Builds:
   - versionName: 1.1.0
@@ -41,6 +38,6 @@ Builds:
     commit: '191'
 
 AutoUpdateMode: None
-UpdateCheckMode: Static
+UpdateCheckMode: None
 CurrentVersion: 1.2.0
 CurrentVersionCode: 250

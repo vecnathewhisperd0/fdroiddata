@@ -47,7 +47,14 @@ Builds:
       - yes
     output: gradleBuild/outputs/apk/release/com.jstappdev.dbclf-release-unsigned.apk
 
+  - versionName: '39'
+    versionCode: 85
+    commit: v1.0.6
+    gradle:
+      - yes
+    output: gradleBuild/outputs/apk/release/com.jstappdev.dbclf-release-unsigned.apk
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: '39'
-CurrentVersionCode: 85
+CurrentVersion: '44'
+CurrentVersionCode: 100

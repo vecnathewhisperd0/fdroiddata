@@ -1,6 +1,8 @@
 Categories:
   - Multimedia
 License: MIT
+AuthorName: Markus Fisch
+AuthorWebSite: https://markusfisch.de/
 SourceCode: https://github.com/markusfisch/BinaryEye
 IssueTracker: https://github.com/markusfisch/BinaryEye/issues
 Changelog: https://github.com/markusfisch/BinaryEye/blob/HEAD/CHANGELOG.md
@@ -228,7 +230,226 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.22.0
+    versionCode: 52
+    commit: 1.22.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.22.1
+    versionCode: 53
+    commit: 1.22.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.22.3
+    versionCode: 55
+    commit: 1.22.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.23.0
+    versionCode: 56
+    commit: 1.23.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.24.0
+    versionCode: 57
+    commit: 1.24.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.25.1
+    versionCode: 59
+    commit: 1.25.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.26.0
+    versionCode: 60
+    commit: 1.26.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.27.0
+    versionCode: 62
+    commit: 1.27.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.27.1
+    versionCode: 63
+    commit: 1.27.1
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.28.0
+    versionCode: 64
+    commit: 1.28.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.29.0
+    versionCode: 65
+    commit: 1.29.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.30.0
+    versionCode: 66
+    commit: 1.30.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.30.1
+    versionCode: 67
+    commit: 1.30.1
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.31.0
+    versionCode: 68
+    commit: 1.31.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.32.0
+    versionCode: 69
+    commit: 1.32.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.32.1
+    versionCode: 70
+    commit: 1.32.1
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.33.0
+    versionCode: 71
+    commit: 1.33.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.34.0
+    versionCode: 72
+    commit: 1.34.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.35.0
+    versionCode: 74
+    commit: 1.35.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.36.0
+    versionCode: 75
+    commit: 1.36.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.37.0
+    versionCode: 76
+    commit: 1.37.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.38.0
+    versionCode: 77
+    commit: 1.38.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.39.0
+    versionCode: 78
+    commit: 1.39.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
+  - versionName: 1.40.0
+    versionCode: 79
+    commit: 1.40.0
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends libc++1-7
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.21.0
-CurrentVersionCode: 51
+CurrentVersion: 1.40.0
+CurrentVersionCode: 79

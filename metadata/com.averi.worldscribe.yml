@@ -72,7 +72,55 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystorePropertiesFile/d' build.gradle
 
+  - versionName: 1.6.1
+    versionCode: 22
+    commit: 1.6.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystorePropertiesFile/d' build.gradle
+
+  - versionName: 1.6.1.a
+    versionCode: 23
+    commit: 1.6.1.a
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystorePropertiesFile/d' build.gradle
+
+  - versionName: 1.6.2
+    versionCode: 24
+    commit: 1.6.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystorePropertiesFile/d' build.gradle
+
+  - versionName: 1.6.3
+    versionCode: 25
+    commit: 1.6.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystorePropertiesFile/d' build.gradle
+
+  - versionName: 1.7.0
+    versionCode: 26
+    commit: 1.7.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystorePropertiesFile/d' build.gradle
+
+  - versionName: 1.7.1
+    versionCode: 27
+    commit: 1.7.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystorePropertiesFile/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.6.0
-CurrentVersionCode: 21
+CurrentVersion: 1.7.1
+CurrentVersionCode: 27

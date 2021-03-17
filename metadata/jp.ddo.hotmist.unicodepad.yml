@@ -15,8 +15,8 @@ Description: |-
     code point will be shown. Favorite characters can be memorized.
 
     If you can’t see special characters, you have to get a font such as Noto font
-    and select it. You can download Noto fonts [https://www.google.com/get/noto/
-    from Google].
+    and select it. You can download Noto fonts <a href="https://www.google.com/get/noto/
+    from">Google</a>.
 
 RepoType: git
 Repo: https://github.com/Ryosuke839/UnicodePad.git
@@ -36,7 +36,15 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
+  - versionName: 2.6.1
+    versionCode: 39
+    disable: non-FOSS libs
+    commit: v2.6.1
+    subdir: app/
+    gradle:
+      - yes
+
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.0
-CurrentVersionCode: 35
+CurrentVersion: 2.9.1
+CurrentVersionCode: 46

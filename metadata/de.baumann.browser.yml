@@ -8,7 +8,7 @@ Changelog: https://github.com/scoute-dich/browser/blob/HEAD/CHANGELOG.md
 AutoName: FOSS Browser
 Description: |-
     Simple browser based on Android's WebView. The base is
-    [https://github.com/mthli/Ninja Ninja]. The intention is to provide a simple and
+    <a href="https://github.com/mthli/Ninja">Ninja</a>. The intention is to provide a simple and
     light wight but powerful browser with a nice looking user interface.
 
     '''Some nice extra features:'''
@@ -505,7 +505,40 @@ Builds:
         } }" >> build.gradle
       - sed -i -e '/jitpack.de/d' ../build.gradle
 
+  - versionName: '7.0'
+    versionCode: 102
+    commit: v7.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation'
+        } }" >> build.gradle
+      - sed -i -e '/jitpack.de/d' ../build.gradle
+
+  - versionName: '7.1'
+    versionCode: 103
+    commit: v7.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation'
+        } }" >> build.gradle
+      - sed -i -e '/jitpack.de/d' ../build.gradle
+
+  - versionName: '7.2'
+    versionCode: 105
+    commit: v7.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - echo -e "android { lintOptions { disable 'MissingTranslation'\n\ndisable 'ExtraTranslation'
+        } }" >> build.gradle
+      - sed -i -e '/jitpack.de/d' ../build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '6.9'
-CurrentVersionCode: 101
+CurrentVersion: '7.2'
+CurrentVersionCode: 105

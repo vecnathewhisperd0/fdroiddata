@@ -95,6 +95,8 @@ to appear in our repository.
 
 * Check for CI errors once you have opened your Merge Request
 
+* Please don't commit directly onto your `master` branch. Use a new branch instead. This makes merging much more easy and the correct jobs in CI will run.
+
 
 ### After You Added Your App
 
@@ -110,7 +112,7 @@ to appear in our repository.
 - You may like to add [localization and screenshots], so users can have a glance
     at the app in pictures and in their preferred language.
 - You can advertise the download of your app in this app store using the
-    [official grafic][get-it-on-fdroid].
+    [official graphic][get-it-on-fdroid].
     <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" height="75">
 
     ```
