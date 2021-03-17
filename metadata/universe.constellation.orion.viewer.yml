@@ -23,10 +23,8 @@ Builds:
       - gradle -b thirdparty_build.gradle downloadAndPatchDjvu downloadAndMakeMupdf
     gradle:
       - yes
-    rm:
-      - nativeLibs/mupdf/thirdparty/lcms2/doc
-      - nativeLibs/mupdf/thirdparty/curl/tests
-      - nativeLibs/mupdf/build
+    scandelete:
+      - nativeLibs/mupdf
     ndk: r20b
 
 AutoUpdateMode: Version %v
