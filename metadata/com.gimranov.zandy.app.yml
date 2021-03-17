@@ -37,7 +37,7 @@ Builds:
     extlibs:
       - android/android-support-v4.jar
 
-  - versionName: 1.4.4
+  - versionName: 1.4.6.1
     versionCode: 1461
     commit: 1.4.6.1
     gradle:
