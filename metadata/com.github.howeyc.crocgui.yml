@@ -13,9 +13,9 @@ RepoType: git
 Repo: https://github.com/howeyc/crocgui.git
 
 Builds:
-  - versionName: 1.4.0
-    versionCode: 7
-    commit: v1.4.0
+  - versionName: 1.4.1
+    versionCode: 8
+    commit: v1.4.1
     output: crocgui.apk
     build:
       - export ANDROID_SDK_ROOT=$$SDK$$
@@ -25,5 +25,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.0
-CurrentVersionCode: 7
+CurrentVersion: 1.4.1
+CurrentVersionCode: 8
