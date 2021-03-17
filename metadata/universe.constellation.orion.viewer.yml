@@ -18,11 +18,11 @@ Builds:
     versionCode: 198
     commit: 0.81.2_fdroid
     subdir: orion-viewer
+    gradle:
+      - yes
     prebuild:
       - cd ..
       - gradle -b thirdparty_build.gradle downloadAndPatchDjvu downloadAndMakeMupdf
-    gradle:
-      - yes
     scandelete:
       - nativeLibs/mupdf
     ndk: r20b
