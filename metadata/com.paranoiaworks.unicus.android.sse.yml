@@ -20,7 +20,7 @@ Builds:
     subdir: MainApp
     gradle:
       - yes
-    ndk: r21d
+    ndk: r10e
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
