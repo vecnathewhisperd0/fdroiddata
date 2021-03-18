@@ -11,19 +11,19 @@ RepoType: git
 Repo: https://github.com/gsioteam/kinoko.git
 
 Builds:
-  - versionName: 1.2.5
-    versionCode: 27
-    commit: 867bf1492e687e6675f133bb2b755aa6f1a4dbe3
+  - versionName: 1.2.7
+    versionCode: 30
+    commit: v1.2.7
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.27.0-8.0.pre
     rm:
       - ios
     build:
-      - export PATH=$$flutter$$/bin:$PATH
-      - flutter build apk
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
-CurrentVersion: 1.2.5
-CurrentVersionCode: 27
+CurrentVersion: 1.2.7
+CurrentVersionCode: 30
