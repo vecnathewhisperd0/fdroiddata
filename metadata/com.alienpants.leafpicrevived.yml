@@ -52,7 +52,7 @@ Builds:
         build.gradle
 
   - versionName: v0.8.7
-    versionCode: 25
+    versionCode: 24
     commit: v0.8.7
     subdir: leafpicrevived
     gradle:
@@ -62,4 +62,4 @@ Builds:
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: v0.8.7
-CurrentVersionCode: 25
+CurrentVersionCode: 24
