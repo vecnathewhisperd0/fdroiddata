@@ -4,8 +4,8 @@ License: GPL-3.0-or-later
 SourceCode: https://gitlab.com/dboddie/weather-forecast
 
 Description: |-
-    This application downloads and displays weather forecasts from the yr.no
-    service.
+    This application downloads and displays weather forecasts from the
+    api.met.no service.
 
 RepoType: git
 Repo: https://gitlab.com/dboddie/weather-forecast
