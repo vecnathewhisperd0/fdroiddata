@@ -58,7 +58,7 @@ Builds:
       - app/src/main/java/io/github/muntashirakon/AppManager/scanner/DexClasses.java
     scandelete:
       - toybox
-    ndk: r21d
+    ndk: r21e
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v
