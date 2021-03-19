@@ -475,10 +475,67 @@ Builds:
     output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
     ndk: r21d
 
+  - versionName: '6066'
+    versionCode: 6066
+    commit: fdroid-6066
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    ndk: r21d
+
+  - versionName: '6068'
+    versionCode: 6068
+    commit: fdroid-6068
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    ndk: r21d
+
+  - versionName: '6069'
+    versionCode: 6069
+    commit: fdroid-6069
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    ndk: r21d
+
+  - versionName: '6070'
+    versionCode: 6070
+    commit: fdroid-6070
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    ndk: r21d
+
+  - versionName: '6071'
+    versionCode: 6071
+    commit: fdroid-6071
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    ndk: r21d
+
+  - versionName: '6072'
+    versionCode: 6072
+    commit: fdroid-6072
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    ndk: r21d
+
+  - versionName: '6076'
+    versionCode: 6076
+    commit: fdroid-6076
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    prebuild: sed -i -e 's/21.3.6528147/21.4.7075529/' app/build.gradle
+    ndk: r21e
+
 MaintainerNotes: The root build.gradle contains custom code that uses relative paths.
     Thus we cannot apply subdir.
 
 AutoUpdateMode: Version fdroid-%v
 UpdateCheckMode: Tags fdroid-[0-9]+
-CurrentVersion: '6062'
-CurrentVersionCode: 6062
+CurrentVersion: '6076'
+CurrentVersionCode: 6076

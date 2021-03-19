@@ -20,7 +20,22 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.1.2
+    versionCode: 3
+    commit: v0.1.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.0
+    versionCode: 4
+    commit: v1.0.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.1.1
-CurrentVersionCode: 2
+CurrentVersion: 1.0.0
+CurrentVersionCode: 4

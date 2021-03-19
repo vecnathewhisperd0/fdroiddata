@@ -3708,9 +3708,79 @@ Builds:
     prebuild: sed -i -e '/keystoreProperties/d' build.gradle
     ndk: r21d
 
+  - versionName: '1.1492'
+    versionCode: 1492
+    commit: '1.1492'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1515'
+    versionCode: 1515
+    commit: '1.1515'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1518'
+    versionCode: 1518
+    commit: '1.1518'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1520'
+    versionCode: 1520
+    commit: '1.1520'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1524'
+    versionCode: 1524
+    commit: '1.1524'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1525'
+    versionCode: 1525
+    commit: '1.1525'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21d
+
+  - versionName: '1.1530'
+    versionCode: 1530
+    commit: '1.1530'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21e
+
 MaintainerNotes: Dynamic versionName and version code, so no autoupdates anymore.
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: '1.1487'
-CurrentVersionCode: 1487
+CurrentVersion: '1.1530'
+CurrentVersionCode: 1530
