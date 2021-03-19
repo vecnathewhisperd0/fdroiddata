@@ -25,6 +25,13 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.2'
+    versionCode: 2
+    commit: v0.2.1a
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: '0.2'
