@@ -17,6 +17,7 @@ Builds:
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.27.0-8.0.pre
+    ndk: r21e
     rm:
       - ios
     build:
