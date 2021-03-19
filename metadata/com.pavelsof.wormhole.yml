@@ -14,16 +14,25 @@ Builds:
   - versionName: 0.2.0
     versionCode: 200
     commit: v0.2.0
+    srclibs:
+      - cpython@v3.7.7
     sudo:
       - apt-get update
       - apt-get install -y build-essential libffi-dev libltdl-dev
-    output: bin/wormhole-$$VERSION$$-release-unsigned.apk
+      - cd build/srclib/cpython
+      - ./configure
+      - make -j`nproc`
+      - make altinstall
+    output: bin/wormhole-$$VERSION$$-armeabi-v7a-release-unsigned.apk
     prebuild:
-      - sed -i "s,\[app\],[app]\n\nandroid.sdk_path = $$SDK$$\nandroid.ndk_path =
-        $$NDK$$\nandroid.accept_sdk_license = False\nandroid.skip_update =
-        True\nandroid.ant_path = /usr/bin/ant\n," buildozer.spec
-      - pip3 install --user -r requirements.txt
-    build: PATH="$HOME/.local/bin:$PATH" buildozer android release
+      - sed -r "s:#?android.sdk_path =.*:android.sdk_path = $$SDK$$:" -i buildozer.spec
+      - sed -r "s:#?android.ndk_path =.*:android.ndk_path = $$NDK$$:" -i buildozer.spec
+      - python3.7 -m venv venv
+      - source venv/bin/activate
+      - pip install -r requirements.txt
+    build:
+      - source venv/bin/activate
+      - buildozer android release
     ndk: r19c
 
 AutoUpdateMode: Version v%v
