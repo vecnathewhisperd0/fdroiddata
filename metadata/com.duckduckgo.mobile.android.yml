@@ -818,7 +818,7 @@ Builds:
     submodules: true
     gradle:
       - yes
-    output: app/build/outputs/apk/release/duckduckgo-$$VERSION$$-release-unsigned.apk
+    output: app/build/outputs/apk/fdroid/relese/duckduckgo-$$VERSION$$-fdroid-release-unsigned.apk
     prebuild: sed -i -e 's/21.0.6113669/21.3.6528147/' app/build.gradle
     ndk: r21d
 
