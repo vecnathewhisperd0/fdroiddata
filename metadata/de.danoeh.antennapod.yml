@@ -705,11 +705,19 @@ Builds:
     gradleprops:
       - freeBuild
 
+  - versionName: 2.1.4
+    versionCode: 2010495
+    commit: 2.1.4
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -r -e '/play(Api|Implementation)/d' build.gradle ../core/build.gradle
+
 MaintainerNotes: |-
     Summary and Description have been moved to the new localizable text files:
     https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 2.1.2
-CurrentVersionCode: 2010295
+CurrentVersion: 2.1.4
+CurrentVersionCode: 2010495

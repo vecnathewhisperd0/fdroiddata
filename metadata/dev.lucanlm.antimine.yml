@@ -6,7 +6,7 @@ AuthorEmail: me@lucasnlm.dev
 SourceCode: https://github.com/lucasnlm/antimine-android
 IssueTracker: https://github.com/lucasnlm/antimine-android/issues
 Translation: https://crowdin.com/project/antimine-android
-Donate: https://www.paypal.com/donate/?cmd=_donations&business=lucasnunesk%40gmail.com&currency_code=BRL&source=url&Z3JncnB0=
+Donate: https://www.paypal.com/donate/?hosted_button_id=49XX9XDNUV4SW
 Bitcoin: 1CG9cyRHkVMW3onjDmXVNzDawnX1ydSWiM
 
 RepoType: git
@@ -349,7 +349,85 @@ Builds:
       - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
       - sed -i -e "/':proprietary'/d" build.gradle
 
+  - versionName: 8.8.0
+    versionCode: 808001
+    commit: 8.8.0
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 9.0.0
+    versionCode: 900001
+    commit: 9.0.0
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 9.0.1
+    versionCode: 900011
+    commit: 9.0.1
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 9.0.3
+    versionCode: 900031
+    commit: 9.0.3
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 9.1.0
+    versionCode: 901001
+    commit: 9.1.0
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 9.1.1
+    versionCode: 901011
+    commit: 9.1.1
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 8.7.3
-CurrentVersionCode: 807031
+CurrentVersion: 9.1.1
+CurrentVersionCode: 901011

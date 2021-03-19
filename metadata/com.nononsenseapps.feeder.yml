@@ -767,7 +767,51 @@ Builds:
       - graphics
     prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
 
+  - versionName: 1.10.12
+    versionCode: 92
+    commit: 1.10.12
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.13
+    versionCode: 93
+    commit: 1.10.13
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.10.14
+    versionCode: 94
+    commit: 1.10.14
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 1.11.0
+    versionCode: 95
+    commit: 1.11.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    rm:
+      - graphics
+    prebuild: echo 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.10.11
-CurrentVersionCode: 91
+CurrentVersion: 1.11.0
+CurrentVersionCode: 95

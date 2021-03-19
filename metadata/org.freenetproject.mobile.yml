@@ -35,7 +35,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.3.0-beta
+    versionCode: 301
+    commit: v0.3.0-beta
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.3.1-beta
+    versionCode: 302
+    commit: v0.3.1-beta
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+\.\d+(.*)?
-CurrentVersion: 0.2.3-beta
-CurrentVersionCode: 300
+CurrentVersion: 0.3.1-beta
+CurrentVersionCode: 302

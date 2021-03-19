@@ -198,6 +198,7 @@ Builds:
 
   - versionName: 0.16.13
     versionCode: 16131
+    disable: Runtime issues
     commit: v0.16.13-fdroid
     subdir: app
     gradle:
@@ -209,6 +210,7 @@ Builds:
 
   - versionName: 0.16.14
     versionCode: 16141
+    disable: Runtime issues
     commit: v0.16.14-fdroid
     subdir: app
     gradle:
@@ -235,7 +237,7 @@ MaintainerNotes: |-
     +2: armv8
 
 AutoUpdateMode: Version v%v-fdroid
-UpdateCheckMode: Tags v\d+.\d+.\d+-fdroid
+UpdateCheckMode: Tags v\d+.\d+.\d+[a-z]?-fdroid
 VercodeOperation: '%c*10 + 1'
 CurrentVersion: 0.16.15
 CurrentVersionCode: 16151
