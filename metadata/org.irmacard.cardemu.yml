@@ -41,7 +41,7 @@ Builds:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get
       - $$flutter$$/bin/flutter build apk --flavor beta
-    ndk: r21d
+    ndk: r21e
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
