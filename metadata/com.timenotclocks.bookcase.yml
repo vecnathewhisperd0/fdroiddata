@@ -5,14 +5,6 @@ SourceCode: https://github.com/fenimore/badreads
 IssueTracker: https://github.com/fenimore/badreads/issues
 
 AutoName: Badreads
-Description: |-
-    Badreads is a book tracking Android application for logging books
-    you're reading, read, and want to read. Your library "shelves" (reading, read, and to read)
-    are stored locally on your phone. Use the search or barcode reader to look up
-    new book on OpenLibrary (https://openlibary.org) and add it to your library.
-    You can import and export your library from or to Open Library and Goodreads.
-
-    Badreads is unstable. I recommend backing up with an export before installing updates or changes.
 
 RepoType: git
 Repo: https://github.com/fenimore/badreads
@@ -20,12 +12,11 @@ Repo: https://github.com/fenimore/badreads
 Builds:
   - versionName: 0.0.3
     versionCode: 3
-    commit: 72b5068319295cd9442c28958930e443bef0b0a3
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.3
-CurrentVersionCode: 3
+CurrentVersion: 0.0.4
+CurrentVersionCode: 4
