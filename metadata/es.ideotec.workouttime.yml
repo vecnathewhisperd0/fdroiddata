@@ -19,6 +19,9 @@ Builds:
     output: build/app/outputs/apk/release/app-release-unsigned.apk
     srclibs:
       - flutter@2.0.2
+    rm:
+      - ios
+      - web
     prebuild: echo "flutter.sdk=$$flutter$$" >> ../local.properties
     build:
       - $$flutter$$/bin/flutter config --no-analytics
