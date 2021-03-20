@@ -33,7 +33,7 @@ Builds:
       - apt-get install -y g++
     output: app/build/outputs/apk/release/app-release-unsigned.apk
     srclibs:
-      - cpython@v3.9.1
+      - cpython@v3.9.2
     prebuild:
       - echo -e 'version=$$VERSION$$' > ./config.prop
       - sed -i -e '/buildTypes/,+11d' ./build.gradle.kts
