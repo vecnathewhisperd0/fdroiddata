@@ -1,3 +1,5 @@
+AntiFeatures:
+  - NonFreeAssets
 Categories:
   - System
   - Security
@@ -42,6 +44,8 @@ Builds:
       - $$flutter$$/bin/flutter pub get
       - $$flutter$$/bin/flutter build apk --flavor beta
     ndk: r21e
+
+MaintainerNotes: uses Sentry.io configured as opt-in
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
