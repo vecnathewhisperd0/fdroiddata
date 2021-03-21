@@ -31,7 +31,7 @@ Builds:
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y g++
-      - pushd $$cpython$$
+      - pushd build/srclib/cpython
       - ./configure
       - make -j`nproc`
       - make altinstall
