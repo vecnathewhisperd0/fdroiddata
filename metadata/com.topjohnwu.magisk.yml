@@ -31,6 +31,11 @@ Builds:
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y g++
+      - pushd $$cpython$$
+      - ./configure
+      - make -j`nproc`
+      - make altinstall
+      - popd
     output: app/build/outputs/apk/release/app-release-unsigned.apk
     srclibs:
       - cpython@v3.9.2
@@ -43,11 +48,6 @@ Builds:
       - sed -i -e 's/21d/21e/' -e 's/21.3.6528147/21.4.7075529/' ./gradle.properties
       - sed -i -e "s/op.join(ndk_root, 'magisk')/os.environ['ANDROID_NDK_HOME']/"
         ./build.py
-      - pushd $$cpython$$
-      - ./configure
-      - make -j`nproc`
-      - make altinstall
-      - popd
     scanignore:
       - app/shared/src/main/java/com/topjohnwu/magisk/utils/DynamicClassLoader.java
     scandelete:
