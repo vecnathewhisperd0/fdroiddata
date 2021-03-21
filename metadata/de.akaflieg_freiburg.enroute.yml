@@ -117,7 +117,7 @@ Builds:
       - make -j`nproc`
       - $Qt5_DIR_ANDROID/bin/androiddeployqt --input android_deployment_settings.json
         --output android-build --release --apk de.akaflieg_freiburg.enroute_211.apk
-    ndk: r21d
+    ndk: r21e
 
   - versionName: 2.3.1
     versionCode: 203010
@@ -252,7 +252,7 @@ Builds:
       - make -j`nproc`
       - $Qt5_DIR_ANDROID/bin/androiddeployqt --input android_deployment_settings.json
         --output android-build --release --apk de.akaflieg_freiburg.enroute_211.apk
-    ndk: r21d
+    ndk: r21e
 
 AutoUpdateMode: None
 UpdateCheckMode: None
