@@ -56,7 +56,7 @@ Builds:
       - mv stub/build/outputs/apk/release/stub-release-unsigned.apk out/stub-release.apk
       - python3.9 ./build.py -rv binary
       - python3.9 ./build.py -rv app
-    ndk: r21d
+    ndk: r21e
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
