@@ -37,10 +37,12 @@ Builds:
     prebuild:
       - echo -e 'version=$$VERSION$$' > ./config.prop
       - sed -i -e '/buildTypes/,+11d' ./build.gradle.kts
+      - sed -i -e 's/ndkPath.*/ndkPath = "${System.getenv("ANDROID_NDK_HOME")}"/'
+        ./build.gradle.kts
       - sed -i -e '/android.ndkPath/d' -e '/ndk.dir/d' ./local.properties
       - sed -i -e 's/21d/21e/' -e 's/21.3.6528147/21.4.7075529/' ./gradle.properties
-      - mkdir -p /opt/android-sdk/ndk/
-      - ln -s $$NDK$$ /opt/android-sdk/ndk/magisk
+      - sed -i -e "s/op.join(ndk_root, 'magisk')/os.environ['ANDROID_NDK_HOME']/"
+        ./build.py
       - pushd $$cpython$$
       - ./configure
       - make -j`nproc`
