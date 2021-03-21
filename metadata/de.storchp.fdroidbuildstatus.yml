@@ -5,6 +5,7 @@ AuthorName: Peter Storch
 WebSite: https://codeberg.org/pstorch/F-Droid_Build_Status
 SourceCode: https://codeberg.org/pstorch/F-Droid_Build_Status
 IssueTracker: https://codeberg.org/pstorch/F-Droid_Build_Status/issues
+Translation: https://weblate.bubu1.eu/projects/f-droid_build_status
 Changelog: https://codeberg.org/pstorch/F-Droid_Build_Status/releases
 
 AutoName: F-Droid Build Status
@@ -90,7 +91,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.11'
+    versionCode: 14
+    commit: '1.11'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.12'
+    versionCode: 15
+    commit: '1.12'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.10'
-CurrentVersionCode: 13
+CurrentVersion: '1.12'
+CurrentVersionCode: 15

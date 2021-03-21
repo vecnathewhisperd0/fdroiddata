@@ -191,7 +191,18 @@ Builds:
 
   - versionName: 1.14.0
     versionCode: 165
+    disable: unknown maven
     commit: 1.14.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/osborn/d' ../build.gradle
+      - sed -i -e '/fabric/d; /firebase/d;' build.gradle
+
+  - versionName: 1.14.3
+    versionCode: 166
+    commit: 1.14.3
     subdir: app
     gradle:
       - yes
@@ -201,5 +212,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.14.0
-CurrentVersionCode: 165
+CurrentVersion: 1.14.3
+CurrentVersionCode: 166

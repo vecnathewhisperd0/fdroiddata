@@ -176,7 +176,10 @@ Builds:
       - bramble-java
       - briar-headless
       - libs/gradle-witness.jar
-    prebuild: sed -i -e '/witness/d' ../*/build.gradle
+    prebuild:
+      - sed -i -e '/witness/d' ../*/build.gradle
+      - sed -i -e "/buildToolsVersion/apackagingOptions { doNotStrip '**/*.so' }"
+        build.gradle ../bramble-android/build.gradle
 
 ArchivePolicy: 3 versions
 AutoUpdateMode: Version release-%v

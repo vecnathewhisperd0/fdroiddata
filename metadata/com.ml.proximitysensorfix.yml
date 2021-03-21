@@ -28,19 +28,13 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 1.0.6
-    versionCode: 28
-    commit: 1.0.6
-    subdir: app
-    gradle:
-      - yes
-
   - versionName: 1.0.7
     versionCode: 29
     commit: 1.0.7
     subdir: app
     gradle:
       - yes
+    prebuild: sed -i -e '/keystore/d' build.gradle ../build.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags

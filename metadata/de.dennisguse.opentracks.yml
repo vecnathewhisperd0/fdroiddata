@@ -279,7 +279,19 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v3.15.3
+    versionCode: 3890
+    commit: v3.15.3
+    gradle:
+      - yes
+
+  - versionName: v3.15.4
+    versionCode: 3892
+    commit: v3.15.4
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.15.2
-CurrentVersionCode: 3875
+CurrentVersion: v3.15.4
+CurrentVersionCode: 3892

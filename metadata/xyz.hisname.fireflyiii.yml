@@ -521,7 +521,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 4.4.0
+    versionCode: 89
+    commit: v4.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.5.0
+    versionCode: 90
+    commit: v4.5.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 4.3.0
-CurrentVersionCode: 86
+CurrentVersion: 4.5.0
+CurrentVersionCode: 90
