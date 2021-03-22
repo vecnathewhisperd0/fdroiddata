@@ -29,6 +29,6 @@ Builds:
       - $$flutter$$/bin/flutter build apk
 
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 1.0.0
+UpdateCheckMode: HTTP
+UpdateCheckData: https://gitlab.com/ideotec/nextnotes/-/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersionCode: 1
