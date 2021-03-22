@@ -10,8 +10,9 @@ RepoType: git
 Repo: https://github.com/fenimore/badreads
 
 Builds:
-  - versionName: 0.0.3
-    versionCode: 3
+  - versionName: 0.0.4
+    versionCode: 4
+    commit: v0.0.4
     subdir: app
     gradle:
       - yes
