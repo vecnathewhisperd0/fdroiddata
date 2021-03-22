@@ -14,7 +14,6 @@ RepoType: git
 Repo: https://gitlab.com/bloodyhealth/drip.git
 
 Builds:
-
   - versionName: 0.1905.29-beta
     versionCode: 3
     commit: fdroid-release-1
