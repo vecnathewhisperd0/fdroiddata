@@ -15,13 +15,13 @@ Repo: https://gitlab.com/bloodyhealth/drip.git
 
 Builds:
 
-  - versionName: 1.2102.28
-    versionCode: 60
-    commit: Release-1.2102.28
+  - versionName: 0.1905.29-beta
+    versionCode: 3
+    commit: fdroid-release-1
     subdir: android/app
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y g++ ninja-build g++-multilib
+      - apt-get install -y g++ make ninja-build g++-multilib
       - curl -Lo node.tar.xz https://nodejs.org/dist/v10.18.1/node-v10.18.1-linux-x64.tar.xz
       - echo "8cc40f45c2c62529b15e83a6bbe0ac1febf57af3c5720df68067c96c0fddbbdf node.tar.xz"
         | sha256sum -c -
@@ -68,13 +68,13 @@ Builds:
       - popd
       - mv $$NodejsMobile$$/out_android/armeabi-v7a/libnode.so ../../node_modules/nodejs-mobile-react-native/android/libnode/bin/armeabi-v7a/libnode.so
 
-  - versionName: 0.1905.29-beta
-    versionCode: 3
-    commit: fdroid-release-1
+  - versionName: 1.2102.28
+    versionCode: 60
+    commit: Release-1.2102.28
     subdir: android/app
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y g++ make ninja-build g++-multilib
+      - apt-get install -y g++ ninja-build g++-multilib
       - curl -Lo node.tar.xz https://nodejs.org/dist/v10.18.1/node-v10.18.1-linux-x64.tar.xz
       - echo "8cc40f45c2c62529b15e83a6bbe0ac1febf57af3c5720df68067c96c0fddbbdf node.tar.xz"
         | sha256sum -c -
