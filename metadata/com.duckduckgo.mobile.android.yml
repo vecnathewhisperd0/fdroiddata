@@ -808,7 +808,7 @@ Builds:
     submodules: true
     gradle:
       - fdroid
-    output: app/build/outputs/apk/fdroid/relese/duckduckgo-$$VERSION$$-fdroid-release-unsigned.apk
+    output: app/build/outputs/apk/fdroid/release/duckduckgo-$$VERSION$$-fdroid-release-unsigned.apk
     rm:
       - app/src/play/res/raw/https_mobile_v2_bloom.bin
     prebuild: sed -i -e 's/21.0.6113669/21.4.7075529/' app/build.gradle
