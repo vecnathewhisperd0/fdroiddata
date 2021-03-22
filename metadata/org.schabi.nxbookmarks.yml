@@ -73,5 +73,6 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
+UpdateCheckName: org.bisw.nxbookmarks
 CurrentVersion: '1.13'
 CurrentVersionCode: 13
