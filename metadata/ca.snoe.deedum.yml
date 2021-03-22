@@ -23,8 +23,8 @@ Builds:
       - export PATH=$flutter_dir:$PATH
       - $$flutter$$/bin/flutter build apk
 
-AutoUpdateMode: Version v%v+%c
-UpdateCheckMode: Tags
-UpdateCheckData: https://github.com/snoe/deedum/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+AutoUpdateMode: Version %v+%c
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/snoe/deedum/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 2020.0701.0550
 CurrentVersionCode: 13
