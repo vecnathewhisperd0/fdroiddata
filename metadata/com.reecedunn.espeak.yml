@@ -15,7 +15,6 @@ Builds:
     subdir: android
     gradle:
       - yes
-    output: build/outputs/apk/release/espeak-release-unsigned.apk
     scanignore:
       - phsource/
     build:
@@ -25,7 +24,7 @@ Builds:
       - make espeakdata
     buildjni:
       - yes
-    ndk: r21d
+    ndk: r21e
 
 AutoUpdateMode: None
 UpdateCheckMode: None
