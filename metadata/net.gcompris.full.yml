@@ -210,7 +210,7 @@ Builds:
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y -t stretch-backports-sloppy libarchive13
-      - apt-get install --yes libncurses5 -t stretch-backports cmake
+      - apt-get install -y -t stretch-backports cmake libncurses5
       - apt-get install -y libgl1-mesa-dev g++ zlib1g-dev
     output: android-build/android/GCompris-Android-release-armeabi-v7a-dl-$$VERSION$$.apk
     srclibs:
@@ -222,10 +222,10 @@ Builds:
       - export ANDROID_NDK=$$NDK$$
       - export ANDROID_NDK_ROOT=$$NDK$$
       - export ANDROID_SDK_ROOT=$$SDK$$
-      - export QT_VERSION=5.12.9
+      - export QT_VERSION=5.12.10
       - export PREFIX=$(pwd)/qt/install/
       - export OPENSSL_LIBS=-L$PREFIX'/lib -lssl -lcrypto'
-      - git clone --depth 1 https://github.com/openssl/openssl.git --branch OpenSSL_1_1_1c
+      - git clone --depth 1 https://github.com/openssl/openssl.git --branch OpenSSL_1_1_1j
       - pushd openssl
       - PATH=$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH ./Configure shared
         android-arm -D__ANDROID_API__=21 --prefix=$PREFIX
