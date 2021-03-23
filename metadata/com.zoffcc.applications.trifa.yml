@@ -1,3 +1,5 @@
+AntiFeatures:
+  - NonFreeAssets
 Categories:
   - Internet
 License: GPL-2.0-only
@@ -484,9 +486,144 @@ Builds:
     prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
     ndk: r13b
 
-MaintainerNotes: Description and summary in app git repository
+  - versionName: 1.0.77
+    versionCode: 10077
+    commit: 1.0.77
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.79
+    versionCode: 10079
+    commit: 1.0.79
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.80
+    versionCode: 10080
+    commit: 1.0.80
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.81
+    versionCode: 10081
+    commit: 1.0.81
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.83
+    versionCode: 10083
+    commit: 1.0.83
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.84
+    versionCode: 10084
+    commit: 1.0.84
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.85
+    versionCode: 10085
+    commit: 1.0.85
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.86
+    versionCode: 10086
+    commit: 1.0.86
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.88
+    versionCode: 10088
+    commit: 1.0.88
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.89
+    versionCode: 10089
+    commit: 1.0.89
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.91
+    versionCode: 10091
+    commit: 1.0.91
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.92
+    versionCode: 10092
+    commit: 1.0.92
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.93
+    versionCode: 10093
+    commit: 1.0.93
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.94
+    versionCode: 10094
+    commit: 1.0.94
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+  - versionName: 1.0.95
+    versionCode: 10095
+    commit: 1.0.95
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
+    ndk: r13b
+
+MaintainerNotes: Includes proprietary emoji, see https://github.com/zoff99/ToxAndroidRefImpl/issues/139.
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9].*
-CurrentVersion: 1.0.76
-CurrentVersionCode: 10076
+CurrentVersion: 1.0.95
+CurrentVersionCode: 10095

@@ -4,16 +4,16 @@ Categories:
   - Multimedia
   - Internet
 License: GPL-3.0-only
-WebSite: https://skytube-app.com
-SourceCode: https://github.com/ram-on/SkyTube
-IssueTracker: https://github.com/ram-on/SkyTube/issues
-Translation: https://hosted.weblate.org/engage/skytube/?
-Changelog: https://github.com/ram-on/SkyTube/releases
+WebSite: https://skytube-app.com/
+SourceCode: https://github.com/SkyTubeTeam/SkyTube
+IssueTracker: https://github.com/SkyTubeTeam/SkyTube/issues
+Translation: https://hosted.weblate.org/engage/skytube/
+Changelog: https://github.com/SkyTubeTeam/SkyTube/releases
 
 AutoName: SkyTube
 
 RepoType: git
-Repo: https://github.com/ram-on/SkyTube
+Repo: https://github.com/SkyTubeTeam/SkyTube
 
 Builds:
   - versionName: 1.0 OSS
@@ -345,9 +345,39 @@ Builds:
     rm:
       - app/libs/*.jar
 
+  - versionName: '2.976'
+    versionCode: 36
+    commit: v2.976
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.977'
+    versionCode: 37
+    commit: v2.977
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
+  - versionName: '2.978'
+    versionCode: 38
+    commit: v2.978
+    subdir: app
+    submodules: true
+    gradle:
+      - oss
+    rm:
+      - app/libs/*.jar
+
 MaintainerNotes: '* Current versions include app/libs/*.jar. Remove them.'
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '2.975'
-CurrentVersionCode: 35
+CurrentVersion: '2.978'
+CurrentVersionCode: 38

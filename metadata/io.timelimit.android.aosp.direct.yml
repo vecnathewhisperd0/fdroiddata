@@ -74,8 +74,89 @@ Builds:
       - directVersion
       - productionServer
 
+  - versionName: 4.1.0
+    versionCode: 103
+    commit: release-4.1.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.2.0
+    versionCode: 104
+    commit: release-4.2.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.3.0
+    versionCode: 105
+    commit: release-4.3.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.3.2
+    versionCode: 107
+    commit: release-4.3.2
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.4.0
+    versionCode: 110
+    commit: release-4.4.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.6.0
+    versionCode: 130
+    commit: release-4.6.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.7.0
+    versionCode: 140
+    commit: release-4.7.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.8.0
+    versionCode: 150
+    commit: release-4.8.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.8.1
+    versionCode: 151
+    commit: release-4.8.1
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: Tags
 UpdateCheckName: io.timelimit.android
-CurrentVersion: 4.0.0
-CurrentVersionCode: 102
+CurrentVersion: 4.8.1
+CurrentVersionCode: 151

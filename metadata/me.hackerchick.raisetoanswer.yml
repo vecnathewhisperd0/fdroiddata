@@ -1,6 +1,7 @@
 Categories:
   - Phone & SMS
 License: MIT
+AuthorName: Sylvia van Os
 SourceCode: https://github.com/TheLastProject/RaiseToAnswer
 IssueTracker: https://github.com/TheLastProject/RaiseToAnswer/issues
 
@@ -87,7 +88,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '3.3'
+    versionCode: 24
+    commit: v3.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.4'
+    versionCode: 25
+    commit: v3.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.5'
+    versionCode: 26
+    commit: v3.5
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.2.4
-CurrentVersionCode: 22
+CurrentVersion: '3.5'
+CurrentVersionCode: 26

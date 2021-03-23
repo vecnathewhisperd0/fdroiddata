@@ -46,7 +46,43 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.53.0
+    versionCode: 17
+    commit: 0.53.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.54.0
+    versionCode: 18
+    disable: cannot find symbol TEXT_PAINT
+    commit: 0.54.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.54.1
+    versionCode: 19
+    commit: 0.54.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.55.0
+    versionCode: 20
+    commit: 0.55.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.55.1
+    versionCode: 21
+    commit: 0.55.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.52.3
-CurrentVersionCode: 16
+CurrentVersion: 0.55.1
+CurrentVersionCode: 21

@@ -2,13 +2,14 @@ Categories:
   - Sports & Health
 License: GPL-3.0-or-later
 AuthorName: Thomas Zell
-AuthorEmail: thomas@zell-mbc.com
+AuthorEmail: medilog@zell-mbc.com
 AuthorWebSite: https://zell-mbc.com/
 WebSite: https://zell-mbc.com/en/privacy/medilog
 SourceCode: https://gitlab.com/toz12/medilog
 IssueTracker: https://gitlab.com/toz12/medilog/-/issues
 Translation: https://weblate.bubu1.eu/projects/medilog/core/
 Changelog: https://gitlab.com/toz12/medilog/-/blob/master/ChangeLog.md
+Donate: https://www.paypal.com/paypalme/thomaszellmbc
 Bitcoin: 1EUrRpjDAGgpS8J46tmsVWKbgNqAv7rWC7
 
 AutoName: MediLog
@@ -94,7 +95,64 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.9.2
+    versionCode: 5321
+    commit: v1.9.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.3
+    versionCode: 5322
+    commit: v1.9.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.4
+    versionCode: 5323
+    commit: v1.9.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.9.5
+    versionCode: 5325
+    commit: v1.9.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0
+    versionCode: 5326
+    disable: crashes upon app start
+    commit: v2.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.1
+    versionCode: 5327
+    commit: v2.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.5
+    versionCode: 5331
+    commit: v2.0.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.6
+    versionCode: 5332
+    commit: v2.0.6
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.1.0
-CurrentVersionCode: 5320
+CurrentVersion: 2.0.6
+CurrentVersionCode: 5332

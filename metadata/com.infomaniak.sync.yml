@@ -55,6 +55,6 @@ Builds:
       - free
 
 AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
+UpdateCheckMode: Tags ^1
 CurrentVersion: 1.5.2
 CurrentVersionCode: 27

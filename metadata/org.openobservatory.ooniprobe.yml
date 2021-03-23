@@ -1,3 +1,5 @@
+AntiFeatures:
+  - Tracking
 Categories:
   - Internet
   - Security
@@ -54,11 +56,11 @@ Description: |-
     '''Free software'''
     All OONI Probe tests (including our NDT and DASH implementations), are based
     on free and open source software. You can find OONI software projects
-    [https://github.com/ooni on Github]. Curious to learn how OONI Probe tests
-    work? Learn more [https://ooni.io/nettest here].
+    <a href="https://github.com/ooni">on Github</a>. Curious to learn how OONI Probe tests
+    work? Learn more <a href="https://ooni.io/nettest">here</a>.
 
     To receive updates from the OONI-verse,
-    [https://twitter.com/OpenObservatory follow us on Twitter]
+    <a href="https://twitter.com/OpenObservatory">follow us on Twitter</a>
 
     Disclaimer: Running OONI Probe might be against the terms of service of your ISP
     or legally questionable in your country. By running OONI Probe, you will connect
@@ -67,7 +69,7 @@ Description: |-
     information. In addition, your use of OONI Probe will be clear to anyone who has
     access to your computer, and to anyone who can monitor your Internet connection
     (such as your employer, ISP or government). Learn more about potential risks
-    [https://ooni.torproject.org/about/risks here]
+    <a href="https://ooni.torproject.org/about/risks">here</a>
 
 RepoType: git
 Repo: https://github.com/ooni/probe-android
@@ -262,7 +264,88 @@ Builds:
         ../build.gradle build.gradle
     ndk: r21d
 
+  - versionName: 2.7.1
+    versionCode: 66
+    commit: v2.7.1
+    subdir: app
+    gradle:
+      - stableFdroid
+    prebuild: sed -i -e '/fabric/d' -e 's/21.0.6113669/21.3.6528147/' -e '/com.google.gms/d'
+        ../build.gradle build.gradle
+    ndk: r21d
+
+  - versionName: 2.8.0-beta.1
+    versionCode: 67
+    commit: v2.8.0-beta.1
+    subdir: app
+    gradle:
+      - stableFdroid
+    prebuild: sed -i -e '/fabric/d' -e 's/21.0.6113669/21.3.6528147/' -e '/com.google.gms/d'
+        ../build.gradle build.gradle
+    ndk: r21d
+
+  - versionName: 2.8.0
+    versionCode: 68
+    commit: v2.8.0
+    subdir: app
+    gradle:
+      - stableFdroid
+    prebuild: sed -i -e '/fabric/d' -e 's/21.0.6113669/21.3.6528147/' -e '/com.google.gms/d'
+        ../build.gradle build.gradle
+    ndk: r21d
+
+  - versionName: 2.9.0
+    versionCode: 69
+    disable: fails to build
+    commit: v2.9.0
+    subdir: app
+    gradle:
+      - stableFdroid
+    prebuild: sed -i -e '/fabric/d' -e 's/21.0.6113669/21.3.6528147/' -e '/com.google.gms/d'
+        ../build.gradle build.gradle
+    ndk: r21d
+
+  - versionName: 2.9.1
+    versionCode: 70
+    commit: v2.9.1
+    subdir: app
+    gradle:
+      - stableFdroid
+    prebuild: sed -i -e '/fabric/d' -e 's/21.0.6113669/21.3.6528147/' -e '/com.google.gms/d'
+        ../build.gradle build.gradle
+    ndk: r22
+
+  - versionName: 2.9.2
+    versionCode: 71
+    commit: v2.9.2
+    subdir: app
+    gradle:
+      - stableFdroid
+    prebuild: sed -i -e '/fabric/d' -e 's/21.0.6113669/21.3.6528147/' -e '/com.google.gms/d'
+        ../build.gradle build.gradle
+    ndk: r22
+
+  - versionName: 2.9.3
+    versionCode: 72
+    commit: v2.9.3
+    subdir: app
+    gradle:
+      - stableFdroid
+    prebuild: sed -i -e '/fabric/d' -e 's/21.0.6113669/21.3.6528147/' -e '/com.google.gms/d'
+        ../build.gradle build.gradle
+    ndk: r22
+
+  - versionName: 2.10.0
+    versionCode: 73
+    commit: v2.10.0
+    subdir: app
+    gradle:
+      - stableFdroid
+    prebuild: sed -i -e '/fabric/d' -e 's/21.0.6113669/21.3.6528147/' -e '/com.google.gms/d'
+        ../build.gradle build.gradle
+    ndk: r22
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.7.0
-CurrentVersionCode: 65
+CurrentVersion: 2.10.0
+CurrentVersionCode: 73

@@ -10,7 +10,7 @@ Donate: https://www.patreon.com/ShatteredPixel
 AutoName: Shattered Pixel Dungeon
 Description: |-
     Traditional roguelike game with pixel-art graphics and simple interface. Based
-    on [[com.watabou.pixeldungeon]].
+    on https://f-droid.org/packages/com.watabou.pixeldungeon.
 
     Every game is unique, with four different playable characters, randomized levels
     and enemies, and over 150 items to collect and use. The game is simple to get
@@ -780,9 +780,72 @@ Builds:
     scandelete:
       - android/libs/*
 
+  - versionName: 0.9.1
+    versionCode: 498
+    commit: v0.9.1
+    subdir: android
+    gradle:
+      - yes
+    scandelete:
+      - android/libs/*
+
+  - versionName: 0.9.1a
+    versionCode: 500
+    commit: v0.9.1a
+    subdir: android
+    gradle:
+      - yes
+    scandelete:
+      - android/libs/*
+
+  - versionName: 0.9.1b
+    versionCode: 504
+    commit: v0.9.1b
+    subdir: android
+    gradle:
+      - yes
+    scandelete:
+      - android/libs/*
+
+  - versionName: 0.9.1d
+    versionCode: 512
+    commit: v0.9.1d
+    subdir: android
+    gradle:
+      - yes
+    scandelete:
+      - android/libs/*
+
+  - versionName: 0.9.2
+    versionCode: 520
+    commit: v0.9.2
+    subdir: android
+    gradle:
+      - yes
+    scandelete:
+      - android/libs/*
+
+  - versionName: 0.9.2a
+    versionCode: 524
+    commit: v0.9.2a
+    subdir: android
+    gradle:
+      - yes
+    scandelete:
+      - android/libs/*
+
+  - versionName: 0.9.2b
+    versionCode: 532
+    commit: v0.9.2b
+    subdir: android
+    gradle:
+      - yes
+    scandelete:
+      - android/libs/*
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/00-Evan/shattered-pixel-dungeon/master/build.gradle|appVersionCode
     = (.*)|.|appVersionName = ['"](.*)['"]
-CurrentVersion: 0.9.0b
-CurrentVersionCode: 490
+CurrentVersion: 0.9.2b
+CurrentVersionCode: 532

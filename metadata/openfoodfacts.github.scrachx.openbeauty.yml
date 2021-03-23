@@ -35,7 +35,7 @@ Description: |-
     specificities of cosmetics.
 
     Open Beauty Facts is also available on the web at
-    [https://world.openbeautyfacts.org world.openbeautyfacts.org].  Questions,
+    <a href="https://world.openbeautyfacts.org">world.openbeautyfacts.org</a>.  Questions,
     feedback: [mailto:contact@openfoodfacts.org contact@openfoodfacts.org].
 
 RepoType: git
@@ -255,10 +255,10 @@ Builds:
       - sed -i 's/\r$//' ../gradle/wrapper/gradle-wrapper.properties
       - sed -i '/javaMaxHeapSize/d' build.gradle
 
-  - versionName: 3.4.3
-    versionCode: 343
+  - versionName: 3.6.3
+    versionCode: 431
     disable: fails to build
-    commit: 3.4.3
+    commit: 3.6.3
     subdir: app
     gradle:
       - obf
@@ -266,7 +266,7 @@ Builds:
       - sed -i 's/\r$//' ../gradle/wrapper/gradle-wrapper.properties
       - sed -i '/javaMaxHeapSize/d' build.gradle.kts
 
-AutoUpdateMode: Version %v
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 3.4.3
-CurrentVersionCode: 343
+CurrentVersion: 3.6.8
+CurrentVersionCode: 433

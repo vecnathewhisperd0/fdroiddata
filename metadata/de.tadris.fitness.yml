@@ -139,7 +139,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '9.0'
+    versionCode: 900
+    commit: v9.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '10.0'
+    versionCode: 1000
+    commit: v10.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '10.1'
+    versionCode: 1010
+    commit: v10.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '10.2'
+    versionCode: 1020
+    commit: v10.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '8.3'
-CurrentVersionCode: 830
+CurrentVersion: '10.2'
+CurrentVersionCode: 1020

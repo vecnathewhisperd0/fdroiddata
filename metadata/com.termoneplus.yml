@@ -13,7 +13,7 @@ Description: |-
     (unix visual editor), "emacs", "mc" (Midnight Commander file manager), nano
     (Nano's ANOther editor) and other work smoothly.
 
-    This application is a clone of Jack Palevich's [[jackpal.androidterm]].
+    This application is a clone of Jack Palevich's https://f-droid.org/packages/jackpal.androidterm.
 
 RepoType: git
 Repo: https://gitlab.com/termapps/termoneplus.git
@@ -131,7 +131,23 @@ Builds:
       - yes
     ndk: r17c
 
+  - versionName: 3.5.2
+    versionCode: 352
+    commit: v3.5.2
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.5.3
+    versionCode: 353
+    commit: v3.5.3
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.5.1
-CurrentVersionCode: 351
+CurrentVersion: 3.5.3
+CurrentVersionCode: 353

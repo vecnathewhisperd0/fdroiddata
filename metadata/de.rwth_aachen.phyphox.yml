@@ -102,7 +102,17 @@ Builds:
       - regular
     ndk: r16b
 
+  - versionName: 1.1.8
+    versionCode: 1010803
+    disable: unknown maven
+    commit: v1.1.8
+    subdir: app
+    submodules: true
+    gradle:
+      - regular
+    ndk: r16b
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.6
-CurrentVersionCode: 1010603
+CurrentVersion: 1.1.8
+CurrentVersionCode: 1010803

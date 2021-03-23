@@ -8,9 +8,9 @@ SourceCode: https://github.com/Alcidauk/CineLog
 IssueTracker: https://github.com/Alcidauk/CineLog/issues
 
 AutoName: CineLog
-Description: Search for films with [https://www.themoviedb.org/ tmdb.org] API. Save
-    them to your local database. Add review and rating to watched films. Rate and
-    review films that does not exist in tmdb too.
+Description: Search for films with <a href="https://www.themoviedb.org/">tmdb.org</a>
+    API. Save them to your local database. Add review and rating to watched films.
+    Rate and review films that does not exist in tmdb too.
 
 RepoType: git
 Repo: https://github.com/Alcidauk/CineLog.git
@@ -121,7 +121,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.3.3
+    versionCode: 29
+    commit: v1.3.3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.3.2
-CurrentVersionCode: 28
+CurrentVersion: 1.3.3
+CurrentVersionCode: 29

@@ -3,6 +3,7 @@ Categories:
 License: GPL-3.0-only
 SourceCode: https://github.com/babydots/babydots
 IssueTracker: https://github.com/babydots/babydots/issues
+Translation: https://hosted.weblate.org/projects/babydots
 
 AutoName: Baby Dots
 
@@ -45,7 +46,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.4.2
+    versionCode: 10402
+    commit: v1.4.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.3
+    versionCode: 10403
+    commit: v1.4.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.4
+    versionCode: 10404
+    commit: v1.4.4
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.0
-CurrentVersionCode: 10400
+CurrentVersion: 1.4.4
+CurrentVersionCode: 10404

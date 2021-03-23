@@ -42,7 +42,7 @@ Description: |-
     * Unlimited quiz sessions that allow you to take a quiz at any time, for however long you want, useful to efficiently spend commuting time
     * Show similar-looking kanji in answers to teach you the differences
     * Kanji and vocabulary sorted by JLPT level
-    * Clicking on kanji opens [https://play.google.com/store/apps/details?id=sk.baka.aedict3 aedict3] (a non-free Japanese dictionary) or [https://jisho.org jisho.org]
+    * Clicking on kanji opens <a href="https://play.google.com/store/apps/details?id=sk.baka.aedict3">aedict3</a> (a non-free Japanese dictionary) or <a href="https://jisho.org">jisho.org</a>
     * Optimized tablet support
     * Open source
     * No ads
@@ -52,10 +52,10 @@ Description: |-
 
     '''Credits'''
 
-    * The kanji quizzes are based on [http://www.edrdg.org/kanjidic/kanjidic.html kanjidic].
-    * The vocabulary quizzes are based on [http://www.edrdg.org/jmdict/j_jmdict.html JMdict].
+    * The kanji quizzes are based on <a href="http://www.edrdg.org/kanjidic/kanjidic.html">kanjidic</a>.
+    * The vocabulary quizzes are based on <a href="http://www.edrdg.org/jmdict/j_jmdict.html">JMdict</a>.
     * The kanji similarity database comes from https://minerva-access.unimelb.edu.au/handle/11343/35336 and http://lars.yencken.org/datasets/phd/
-    * The kanji composition and drawing database comes from [https://kanjivg.tagaini.net/ KanjiVG].
+    * The kanji composition and drawing database comes from <a href="https://kanjivg.tagaini.net/">KanjiVG</a>.
 
 RepoType: git
 Repo: https://github.com/blastrock/kaqui
@@ -341,11 +341,20 @@ Builds:
     scanignore:
       - app/src/main/res/raw/dict
 
+  - versionName: 1.35.0
+    versionCode: 74
+    commit: 1.35.0
+    subdir: app
+    gradle:
+      - yes
+    scanignore:
+      - app/src/main/res/raw/dict
+
 MaintainerNotes: |-
     The scanignore'd file contains the dictionaries to be imported when the app
     first runs. It is a gzipped sqlite3 database.
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.34.2
-CurrentVersionCode: 72
+CurrentVersion: 1.35.0
+CurrentVersionCode: 74

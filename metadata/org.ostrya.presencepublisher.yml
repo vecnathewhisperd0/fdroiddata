@@ -155,7 +155,23 @@ Builds:
       - yes
     prebuild: sed -i -e '/signingConfig/d' build.gradle.kts
 
+  - versionName: 2.2.7
+    versionCode: 37
+    commit: v2.2.7
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/signingConfig/d' build.gradle.kts
+
+  - versionName: 2.2.8
+    versionCode: 38
+    commit: v2.2.8
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/signingConfig/d' build.gradle.kts
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.6
-CurrentVersionCode: 36
+CurrentVersion: 2.2.8
+CurrentVersionCode: 38
