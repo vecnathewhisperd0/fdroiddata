@@ -14,8 +14,6 @@ Builds:
   - versionName: 0.2.0
     versionCode: 721200
     commit: v0.2.0
-    srclibs:
-      - cpython@v3.7.7
     sudo:
       - apt-get update
       - apt-get install -y build-essential libffi-dev libltdl-dev
@@ -24,6 +22,8 @@ Builds:
       - make -j`nproc`
       - make altinstall
     output: bin/wormhole-$$VERSION$$-armeabi-v7a-release-unsigned.apk
+    srclibs:
+      - cpython@v3.7.7
     prebuild:
       - echo PREBUILD
       - sed -r "s:#?android.sdk_path =.*:android.sdk_path = $$SDK$$:" -i buildozer.spec
