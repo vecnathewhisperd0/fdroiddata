@@ -12,7 +12,7 @@ Repo: https://github.com/pavelsof/mobile-wormhole
 
 Builds:
   - versionName: 0.2.0
-    versionCode: 200
+    versionCode: 721200
     commit: v0.2.0
     srclibs:
       - cpython@v3.7.7
@@ -42,4 +42,4 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: 0.2.0
-CurrentVersionCode: 200
+CurrentVersionCode: 721200
