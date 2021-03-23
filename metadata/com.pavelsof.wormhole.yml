@@ -28,7 +28,8 @@ Builds:
       - echo PREBUILD
       - sed -r "s:#?android.sdk_path =.*:android.sdk_path = $$SDK$$:" -i buildozer.spec
       - sed -r "s:#?android.ndk_path =.*:android.ndk_path = $$NDK$$:" -i buildozer.spec
-      - sed -r "s:#?warn_on_root =.*:warn_on_root = 0:" -i buildozer.spec
+      - sed -r "s:log_level =.*:log_level = 0:" -i buildozer.spec
+      - sed -r "s:warn_on_root =.*:warn_on_root = 0:" -i buildozer.spec
       - python3.7 -m venv ../../venv
       - source ../../venv/bin/activate
       - pip install -r requirements.txt
