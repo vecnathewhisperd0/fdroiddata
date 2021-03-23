@@ -25,13 +25,15 @@ Builds:
       - make altinstall
     output: bin/wormhole-$$VERSION$$-armeabi-v7a-release-unsigned.apk
     prebuild:
+      - echo PREBUILD
       - sed -r "s:#?android.sdk_path =.*:android.sdk_path = $$SDK$$:" -i buildozer.spec
       - sed -r "s:#?android.ndk_path =.*:android.ndk_path = $$NDK$$:" -i buildozer.spec
-      - python3.7 -m venv venv
-      - source venv/bin/activate
+      - python3.7 -m venv ../venv
+      - source ../venv/bin/activate
       - pip install -r requirements.txt
     build:
-      - source venv/bin/activate
+      - echo BUILD
+      - source ../venv/bin/activate
       - buildozer android release
     ndk: r19c
 
