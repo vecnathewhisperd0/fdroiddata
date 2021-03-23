@@ -27,7 +27,6 @@ Builds:
     scanignore:
       - app/src/full/assets/APKEditor
 
-
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: v0.8
