@@ -1,0 +1,23 @@
+License: GPL-3.0-or-later
+SourceCode: https://github.com/stingle/stingle-photos-android
+IssueTracker: https://github.com/stingle/stingle-photos-android/issues
+
+RepoType: git
+Repo: https://github.com/stingle/stingle-photos-android
+WebSite: https://stingle.org
+
+Builds:
+  - versionName: 2.6.5
+    versionCode: 42
+    commit: 64bf0035551d8532c564bb80453cef95b15c1b2b
+    subdir: StinglePhotos
+    gradle:
+      - yes
+
+Categories: # Use those which apply
+  - Internet
+  - Multimedia
+  - Security
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
