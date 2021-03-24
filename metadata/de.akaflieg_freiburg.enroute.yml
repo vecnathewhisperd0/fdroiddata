@@ -75,28 +75,28 @@ Builds:
       - cd ../../srclib/OpenSSL
       - export PATH=$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin:$ANDROID_NDK_ROOT/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin:$PATH
       - ./Configure shared android-arm64 -D__ANDROID_API__=21
-      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs &>>/dev/null
       - llvm-strip --strip-all libcrypto_1_1.so
       - llvm-strip --strip-all libssl_1_1.so
       - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm64/.
       - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm64/.
-      - git clean -dffx
+      - git clean -dffx &>>/dev/null
       - ./Configure shared android-arm -D__ANDROID_API__=16
-      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs &>>/dev/null
       - llvm-strip --strip-all libcrypto_1_1.so
       - llvm-strip --strip-all libssl_1_1.so
       - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm/.
       - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm/.
-      - git clean -dffx
+      - git clean -dffx &>>/dev/null
       - ./Configure shared android-x86 -D__ANDROID_API__=16
-      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs &>>/dev/null
       - llvm-strip --strip-all libcrypto_1_1.so
       - llvm-strip --strip-all libssl_1_1.so
       - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86/.
       - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86/.
-      - git clean -dffx
+      - git clean -dffx &>>/dev/null
       - ./Configure shared android-x86_64 -D__ANDROID_API__=21
-      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs &>>/dev/null
       - llvm-strip --strip-all libcrypto_1_1.so
       - llvm-strip --strip-all libssl_1_1.so
       - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86_64/.
@@ -210,28 +210,28 @@ Builds:
       - cd ../../srclib/OpenSSL
       - export PATH=$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin:$ANDROID_NDK_ROOT/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin:$PATH
       - ./Configure shared android-arm64 -D__ANDROID_API__=21
-      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs &>>/dev/null
       - llvm-strip --strip-all libcrypto_1_1.so
       - llvm-strip --strip-all libssl_1_1.so
       - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm64/.
       - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm64/.
-      - git clean -dffx
+      - git clean -dffx &>>/dev/null
       - ./Configure shared android-arm -D__ANDROID_API__=16
-      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs &>>/dev/null
       - llvm-strip --strip-all libcrypto_1_1.so
       - llvm-strip --strip-all libssl_1_1.so
       - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm/.
       - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm/.
-      - git clean -dffx
+      - git clean -dffx &>>/dev/null
       - ./Configure shared android-x86 -D__ANDROID_API__=16
-      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs &>>/dev/null
       - llvm-strip --strip-all libcrypto_1_1.so
       - llvm-strip --strip-all libssl_1_1.so
       - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86/.
       - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86/.
-      - git clean -dffx
+      - git clean -dffx &>>/dev/null
       - ./Configure shared android-x86_64 -D__ANDROID_API__=21
-      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs &>>/dev/null
       - llvm-strip --strip-all libcrypto_1_1.so
       - llvm-strip --strip-all libssl_1_1.so
       - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86_64/.
@@ -345,28 +345,28 @@ Builds:
       - cd ../../srclib/OpenSSL
       - export PATH=$ANDROID_NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin:$ANDROID_NDK_ROOT/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin:$PATH
       - ./Configure shared android-arm64 -D__ANDROID_API__=21
-      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs &>>/dev/null
       - llvm-strip --strip-all libcrypto_1_1.so
       - llvm-strip --strip-all libssl_1_1.so
       - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm64/.
       - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm64/.
-      - git clean -dffx
+      - git clean -dffx &>>/dev/null
       - ./Configure shared android-arm -D__ANDROID_API__=16
-      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs &>>/dev/null
       - llvm-strip --strip-all libcrypto_1_1.so
       - llvm-strip --strip-all libssl_1_1.so
       - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm/.
       - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/arm/.
-      - git clean -dffx
+      - git clean -dffx &>>/dev/null
       - ./Configure shared android-x86 -D__ANDROID_API__=16
-      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs &>>/dev/null
       - llvm-strip --strip-all libcrypto_1_1.so
       - llvm-strip --strip-all libssl_1_1.so
       - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86/.
       - cp libssl_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86/.
-      - git clean -dffx
+      - git clean -dffx &>>/dev/null
       - ./Configure shared android-x86_64 -D__ANDROID_API__=21
-      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+      - make -j`nproc` SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs &>>/dev/null
       - llvm-strip --strip-all libcrypto_1_1.so
       - llvm-strip --strip-all libssl_1_1.so
       - cp libcrypto_1_1.so ../../de.akaflieg_freiburg.enroute/libs/x86_64/.
