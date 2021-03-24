@@ -222,7 +222,7 @@ Builds:
       - export ANDROID_NDK=$$NDK$$
       - export ANDROID_NDK_ROOT=$$NDK$$
       - export ANDROID_SDK_ROOT=$$SDK$$
-      - export QT_VERSION=5.12.10
+      - export QT_VERSION=5.12.9
       - export PREFIX=$(pwd)/qt/install/
       - export OPENSSL_LIBS=-L$PREFIX'/lib -lssl -lcrypto'
       - git clone --depth 1 https://github.com/openssl/openssl.git --branch OpenSSL_1_1_1j
