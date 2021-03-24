@@ -5,12 +5,11 @@ WebSite: https://doliscan.org
 SourceCode: https://framagit.org/doliscan/client-cordova
 IssueTracker: https://framagit.org/doliscan/client-cordova/-/issues
 Changelog: https://framagit.org/doliscan/client-cordova/-/blob/master/ChangeLog.md
-Donate: https://liberapay.com/erics/
-LiberapayID: "4913"
+LiberapayID: '4913'
 
 AutoName: DoliSCAN
 RepoType: git
-Repo: https://framagit.org/doliscan/client-cordova/;tags=v1.7.0;branches=nosqlite
+Repo: https://framagit.org/doliscan/client-cordova/
 
 Builds:
   - versionName: 1.7.0
