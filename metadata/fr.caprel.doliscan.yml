@@ -9,14 +9,6 @@ Donate: https://liberapay.com/erics/
 LiberapayID: "4913"
 
 AutoName: DoliSCAN
-Summary: Take a picture of your reciepts to make expense reports at the end of the month
-Description: |
-  You have to take a picture of your reciept day by day and DoliSCAN make the report at the end of the month (in a beautifull PDF file with all pictures as one big zip file for your accounting manager)
-
-  For the moment source code without sqlite depends is in special "nosqlite" branch, please clone this branch to build f-droid version.
-
-  This is an french-only app for the moment (contribs are welcome).
-
 RepoType: git
 Repo: https://framagit.org/doliscan/client-cordova/;tags=v1.7.0;branches=nosqlite
 
