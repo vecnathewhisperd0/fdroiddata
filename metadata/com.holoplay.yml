@@ -14,9 +14,9 @@ RepoType: git
 Repo: https://github.com/stephane-r/HoloPlay
 
 Builds:
-  - versionName: 1.9.6
-    versionCode: 26
-    commit: 1.9.6
+  - versionName: 1.9.7
+    versionCode: 27
+    commit: 1.9.7
     subdir: android/app
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
