@@ -9,10 +9,10 @@ WebSite: https://stingle.org
 Builds:
   - versionName: 2.6.5
     versionCode: 42
-    commit: 64bf0035551d8532c564bb80453cef95b15c1b2b
+    commit: 2de7029ccfd5e306ac61bfa81178b5b6abcde6ad
     subdir: StinglePhotos
     gradle:
-      - yes
+      - fdroid
 
 Categories: # Use those which apply
   - Internet
