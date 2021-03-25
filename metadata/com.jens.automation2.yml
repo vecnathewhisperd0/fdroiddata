@@ -23,9 +23,19 @@ Builds:
       - sed -i -e '/firebase/d' build.gradle
       - sed -i -e '/play-services-location/d' build.gradle
 
-  - versionName: 1.6.22-apk
+  - versionName: 1.6.22
     versionCode: 98
-    commit: v1.6.22-apk
+    commit: v1.6.23
+    subdir: app
+    gradle:
+      - fdroidFlavor
+    prebuild:
+      - sed -i -e '/firebase/d' build.gradle
+      - sed -i -e '/play-services-location/d' build.gradle
+
+  - versionName: 1.6.24-apk
+    versionCode: 100
+    commit: v1.6.24-apk
     subdir: app
     gradle:
       - fdroidFlavor
@@ -35,5 +45,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.6.22-apk
-CurrentVersionCode: 98
+CurrentVersion: 1.6.24-apk
+CurrentVersionCode: 100
