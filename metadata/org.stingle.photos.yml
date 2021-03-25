@@ -1,10 +1,13 @@
+Categories: # Use those which apply
+  - Internet
+  - Multimedia
+  - Security
 License: GPL-3.0-or-later
+WebSite: https://stingle.org
 SourceCode: https://github.com/stingle/stingle-photos-android
 IssueTracker: https://github.com/stingle/stingle-photos-android/issues
-
 RepoType: git
 Repo: https://github.com/stingle/stingle-photos-android
-WebSite: https://stingle.org
 
 Builds:
   - versionName: 2.6.5
@@ -13,11 +16,6 @@ Builds:
     subdir: StinglePhotos
     gradle:
       - fdroid
-
-Categories: # Use those which apply
-  - Internet
-  - Multimedia
-  - Security
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
