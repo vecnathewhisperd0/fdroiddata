@@ -34,20 +34,18 @@ Builds:
     prebuild: truncate -s 0 node_modules/@react-native-community/cli/build/commands/server/external/xsel
     scanignore:
       - android/build.gradle
+      - node_modules/jsc-android
+      - node_modules/react-native/android
       - node_modules/react-native-bootsplash/android/build.gradle
-      - node_modules/react-native-config/android/build.gradle
-      - node_modules/react-native-fs/android/build.gradle
-      - node_modules/react-native-gesture-handler/android/build.gradle
-      - node_modules/react-native-get-random-values/android/build.gradle
-      - node_modules/react-native-linear-gradient/android/build.gradle
       - node_modules/react-native-music-control/android/build.gradle
-      - node_modules/react-native-quick-actions/android/build.gradle
       - node_modules/react-native-reanimated/android/build.gradle
       - node_modules/react-native-safe-area-context/android/build.gradle
       - node_modules/react-native-screens/android/build.gradle
       - node_modules/react-native-svg/android/build.gradle
+      - node_modules/react-native/template/android/build.gradle
       - node_modules/react-native-vector-icons/android/build.gradle
-      - node_modules/react-native-video/android/build.gradle
+      - node_modules/@react-native-community/async-storage/android/build.gradle
+      - node_modules/@react-native-community/masked-view/android/build.gradle
     scandelete:
       - node_modules/
 
