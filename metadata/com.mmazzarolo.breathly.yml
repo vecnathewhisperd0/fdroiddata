@@ -82,10 +82,6 @@ Builds:
     init: yarn install
     gradle:
       - yes
-    rm:
-      - node_modules/@react-native-community/async-storage/packages/storage-legacy/android/build/
-      - node_modules/react-native/template/
-      - node_modules/jetifier/lib/
     prebuild:
       - truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
       - sed -i -e 's/enableSeparateBuildPerCPUArchitecture = true/enableSeparateBuildPerCPUArchitecture
