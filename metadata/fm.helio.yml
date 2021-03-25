@@ -1,3 +1,5 @@
+AntiFeatures:
+  - NonFreeNet
 Categories:
   - Multimedia
   - Writing
@@ -30,18 +32,19 @@ Repo: https://github.com/helio-fm/helio-workstation
 
 Builds:
   - versionName: '3.4'
-    versionCode: 33
+    versionCode: 34
     commit: '3.4'
     subdir: Projects/Android/app
     submodules: true
     gradle:
       - yes
     output: build/outputs/apk/release_/release/app-release_-release-unsigned.apk
+    prebuild: sed -i 's/21\.3\.6528147/22.0.7026061/g' build.gradle
     scandelete:
       - .
-    ndk: r21d
+    ndk: r22
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: '3.4'
-CurrentVersionCode: 33
+CurrentVersionCode: 34
