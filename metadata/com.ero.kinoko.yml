@@ -13,9 +13,9 @@ RepoType: git
 Repo: https://github.com/gsioteam/kinoko.git
 
 Builds:
-  - versionName: 1.2.9
-    versionCode: 32
-    commit: v1.2.9
+  - versionName: 1.2.11
+    versionCode: 34
+    commit: v1.2.11
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@1.27.0-8.0.pre
@@ -28,5 +28,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
-CurrentVersion: 1.2.9
-CurrentVersionCode: 32
+CurrentVersion: 1.2.11
+CurrentVersionCode: 34
