@@ -106,6 +106,8 @@ Builds:
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get
+      - perl -pi -e 's{^\s+./scripts/buildAndroidStrings}{\tdart ./scripts/buildAndroidStrings}'
+        Makefile
       - PATH=$$flutter$$/bin:$$flutter$$/bin/cache/dart-sdk/bin/:$PATH make fdroid
         BUILD_NO=$$VERCODE$$
 
