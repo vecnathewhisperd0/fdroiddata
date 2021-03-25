@@ -69,12 +69,15 @@ Builds:
 
   - versionName: '1.9'
     versionCode: 10
-    disable: fails to build
     commit: android-1.9
     subdir: android/app
     sudo:
-      - apt-get update || apt-get update
-      - apt-get install -y -t stretch-backports npm
+      - sysctl fs.inotify.max_user_watches=524288
+      - curl -Lo node.tar.xz https://nodejs.org/dist/v10.18.1/node-v10.18.1-linux-x64.tar.xz
+      - echo "8cc40f45c2c62529b15e83a6bbe0ac1febf57af3c5720df68067c96c0fddbbdf node.tar.xz"
+        | sha256sum -c -
+      - tar xJf node.tar.xz
+      - cp -a node-v10.18.1-linux-x64/. /usr/local/
       - npm -g install yarn
     init: yarn install
     gradle:
