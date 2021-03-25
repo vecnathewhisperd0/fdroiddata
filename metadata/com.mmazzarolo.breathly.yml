@@ -83,6 +83,12 @@ Builds:
     gradle:
       - yes
     prebuild: sed -i -e 's/CPUArchitecture = true/CPUArchitecture = false/' build.gradle
+    scanignore:
+      - android/build.gradle
+      - node_modules/jsc-android
+      - node_modules/react-native/android/com/facebook/react/react-native
+      - node_modules/react-native/template/android/build.gradle
+      - node_modules/@react-native-community/async-storage/android/build.gradle
     scandelete:
       - node_modules/
 
