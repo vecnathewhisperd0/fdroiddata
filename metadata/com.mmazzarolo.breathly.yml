@@ -82,12 +82,7 @@ Builds:
     init: yarn install
     gradle:
       - yes
-    prebuild:
-      - truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
-      - sed -i -e 's/enableSeparateBuildPerCPUArchitecture = true/enableSeparateBuildPerCPUArchitecture
-        = false/' build.gradle
-    scanignore:
-      - android/build.gradle
+    prebuild: sed -i -e 's/CPUArchitecture = true/CPUArchitecture = false/' build.gradle
     scandelete:
       - node_modules/
 
