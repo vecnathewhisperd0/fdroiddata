@@ -1,4 +1,4 @@
-Categories: # Use those which apply
+Categories:
   - Internet
   - Multimedia
   - Security
@@ -6,6 +6,7 @@ License: GPL-3.0-or-later
 WebSite: https://stingle.org
 SourceCode: https://github.com/stingle/stingle-photos-android
 IssueTracker: https://github.com/stingle/stingle-photos-android/issues
+
 RepoType: git
 Repo: https://github.com/stingle/stingle-photos-android
 
