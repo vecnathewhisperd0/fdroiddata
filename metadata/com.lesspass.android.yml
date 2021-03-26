@@ -186,12 +186,14 @@ Builds:
 
   - versionName: 9.1.9
     versionCode: 90109
-    disable: fails to build
     commit: 9.1.9
     subdir: mobile/android/app/
     sudo:
-      - apt-get update || apt-get update
-      - apt-get install -y -t stretch-backports npm
+      - curl -Lo node.tar.xz https://nodejs.org/dist/v14.16.0/node-v14.16.0-linux-x64.tar.xz
+      - echo "7212031d7468718d7c8f5e1766380daaabe09d54611675338e7a88a97c3e31b6  node.tar.gz"
+        | sha256sum -c -
+      - tar xJf node.tar.xz
+      - cp -a node-v14.16.0-linux-x64/. /usr/local/
       - npm -g install yarn
     init: yarn install
     gradle:
