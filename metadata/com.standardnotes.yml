@@ -6,10 +6,8 @@ WebSite: https://standardnotes.org
 SourceCode: https://github.com/standardnotes/mobile
 IssueTracker: https://github.com/standardnotes/mobile/issues
 
-AutoName: S. Notes
+AutoName: Standard Notes
 Description: |-
-    [Note: Archived at upstream's request, see upstream issue 292]
-
     Standard Notes is a private place for your notes, thoughts, and life's work.
 
     — It's simple. Standard Notes is the easiest notes app you'll ever use. That
@@ -172,8 +170,108 @@ Builds:
       - node_modules/
       - vendor/
 
-ArchivePolicy: 0 versions
-AutoUpdateMode: None
-UpdateCheckMode: None
-CurrentVersion: 3.0.22
-CurrentVersionCode: 3000221
+  - versionName: 3.0.22
+    versionCode: 3000221
+    disable: fails to build
+    commit: 3.0.22
+    subdir: android/app/
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends -t stretch-backports npm
+    init: npm install
+    gradle:
+      - yes
+    rm:
+      - vendor/react-native-aes/android/build/
+    prebuild:
+      - truncate -s 0 ../../node_modules/@react-native-community/cli/build/commands/server/external/xsel
+      - sed -i -e 's/gradle-4.1/gradle-5.4.1/' gradle/wrapper/gradle-wrapper.properties
+    scanignore:
+      - android/build.gradle
+      - node_modules/react-native-screens/android/build.gradle
+      - node_modules/react-native-webview/android/build.gradle
+    scandelete:
+      - node_modules/
+      - vendor/
+
+  - versionName: 3.6.3
+    versionCode: 683632702
+    commit: 3.6.3
+    subdir: android/app/
+    sudo:
+      - sysctl fs.inotify.max_user_watches=524288
+      - apt-get update || apt-get update
+      - apt-get install -y build-essential
+      - curl -Lo node.tar.gz https://nodejs.org/dist/v14.16.0/node-v14.16.0-linux-x64.tar.gz
+      - echo "7212031d7468718d7c8f5e1766380daaabe09d54611675338e7a88a97c3e31b6 node.tar.gz"
+        | sha256sum -c -
+      - tar xf node.tar.gz
+      - cp -a node-v14.16.0-linux-x64/. /usr/local/
+      - npm -g install yarn
+    init:
+      - cd ../..
+      - yarn run init
+    gradle:
+      - prod
+    srclibs:
+      - libsodium@1.0.18
+    rm:
+      - .gitmodules
+    prebuild:
+      - $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.10.2.4988404'
+      - sed -i -e '/splits\ {/,+7d' -e '/detox/d' -e '/DETOX_CI/d' build.gradle
+    scanignore:
+      - android/build.gradle
+      - node_modules/hermes-engine
+      - node_modules/jsc-android
+      - node_modules/react-native/android
+      - node_modules/react-native-aes-crypto/android/build.gradle
+      - node_modules/react-native-keychain/android/build.gradle
+      - node_modules/react-native-reanimated/android/build.gradle
+      - node_modules/react-native-safe-area-context/android/build.gradle
+      - node_modules/react-native-screens/android/build.gradle
+      - node_modules/react-native-vector-icons/android/build.gradle
+      - node_modules/react-native-webview/android/build.gradle
+      - node_modules/sn-textview/android/build.gradle
+      - node_modules/standard-notes-rn/android/build.gradle
+      - node_modules/@bugsnag/react-native/android
+      - node_modules/@bugsnag/react-native/bugsnag-react-native.gradle
+      - node_modules/@react-native-community/async-storage/android/build.gradle
+      - node_modules/@react-native-community/masked-view/android/build.gradle
+    scandelete:
+      - node_modules/
+    build:
+      - lib="$PWD/../../node_modules/react-native-sodium/libsodium"
+      - target_sdk_version=29
+      - pushd $$libsodium$$
+      - CC="$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi${target_sdk_version}-clang"
+        CFLAGS="-Os -fPIC -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -marm -march=armv7-a"
+        ./configure --prefix=${lib}/libsodium-android-armv7-a/ --host=arm-linux-androideabi
+      - make
+      - make install
+      - make distclean
+      - CC="$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android${target_sdk_version}-clang"
+        CFLAGS="-fPIC -O2" ./configure --prefix=${lib}/libsodium-android-armv8-a/
+        --host=aarch64-linux-android
+      - make
+      - make install
+      - make distclean
+      - CC="$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/i686-linux-android${target_sdk_version}-clang"
+        CFLAGS="-fPIC -O2" ./configure --prefix=${lib}/libsodium-android-i686/ --host=i686-linux-android
+      - make
+      - make install
+      - make distclean
+      - CC="$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android${target_sdk_version}-clang"
+        CFLAGS="-fPIC -O2" ./configure --prefix=${lib}/libsodium-android-westmere/
+        --host=x86_64-linux-android
+      - make
+      - make install
+      - popd
+    ndk: r21d
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://api.github.com/repos/standardnotes/mobile/actions/workflows/build-prod.yml/runs|"workflow_runs":\[\{"id":(\d+),|https://github.com/standardnotes/mobile/releases/latest|/tag/([\d.]+)"
+CurrentVersion: 3.6.3
+CurrentVersionCode: 683632702
