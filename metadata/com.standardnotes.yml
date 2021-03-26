@@ -172,7 +172,6 @@ Builds:
 
   - versionName: 3.0.22
     versionCode: 3000221
-    disable: fails to build
     commit: 3.0.22
     subdir: android/app/
     submodules: true
@@ -243,7 +242,7 @@ Builds:
       - node_modules/
     build:
       - lib="$PWD/../../node_modules/react-native-sodium/libsodium"
-      - target_sdk_version=29
+      - target_sdk_version=`sed -n 's/.*targetSdkVersion = \([0-9]\{1,2\}\).*/\1/p' ../build.gradle`
       - pushd $$libsodium$$
       - CC="$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi${target_sdk_version}-clang"
         CFLAGS="-Os -fPIC -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -marm -march=armv7-a"
@@ -268,7 +267,7 @@ Builds:
       - make
       - make install
       - popd
-    ndk: r21d
+    ndk: r21e
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
