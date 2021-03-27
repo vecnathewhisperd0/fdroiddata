@@ -11,14 +11,14 @@ RepoType: git
 Repo: https://github.com/stingle/stingle-photos-android
 
 Builds:
-  - versionName: 2.6.6
-    versionCode: 43
-    commit: v43-2.6.6
+  - versionName: 2.6.7
+    versionCode: 44
+    commit: v44-2.6.7
     subdir: StinglePhotos
     gradle:
       - fdroid
 
 AutoUpdateMode: Version v%c-%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.6.6
-CurrentVersionCode: 43
+CurrentVersion: 2.6.7
+CurrentVersionCode: 44
