@@ -97,12 +97,12 @@ Builds:
       - node_modules/react-native
       - node_modules/detox
       - node_modules/@react-native-community
-      - node_modules/jetifier
       - node_modules/realm
       - node_modules/nodejs-mobile-react-native
     scandelete:
       - node_modules/node-notifier/vendor
       - node_modules/git-tags/node_modules/semver
+      - node_modules/jetifier
     ndk: r18b
 
 MaintainerNotes: |-
