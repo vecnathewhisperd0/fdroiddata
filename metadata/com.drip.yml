@@ -69,7 +69,7 @@ Builds:
 
   - versionName: 1.2102.28
     versionCode: 8
-    commit: 7829d42883cdf5e3db863e0b7ac98599e699d4a8
+    commit: 164a6af2e7a4f4660e827615a05eb908f491c6ac
     subdir: android/app
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
