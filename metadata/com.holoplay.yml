@@ -3,7 +3,6 @@ Categories:
 License: MIT
 AuthorName: Stéphane Richin
 AuthorEmail: contact@stephane-richin.fr
-MaintainerNotes: contains Sentry.io, disabled by default
 WebSite: https://holoplay.io
 SourceCode: https://github.com/stephane-r/HoloPlay
 IssueTracker: https://github.com/stephane-r/HoloPlay/issues
@@ -48,6 +47,7 @@ Builds:
     scandelete:
       - node_modules/
 
+MaintainerNotes: contains Sentry.io, disabled by default
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 1.9.7
