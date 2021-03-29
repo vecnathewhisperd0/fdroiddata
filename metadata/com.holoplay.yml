@@ -48,6 +48,7 @@ Builds:
       - node_modules/
 
 MaintainerNotes: contains Sentry.io, disabled by default
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 1.9.7
