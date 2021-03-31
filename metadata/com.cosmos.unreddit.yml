@@ -8,10 +8,6 @@ SourceCode: https://gitlab.com/cosmosapps/stealth
 IssueTracker: https://gitlab.com/cosmosapps/stealth/-/issues
 
 AutoName: Stealth
-Summary: Stealth is an account-free, privacy-oriented, and feature-rich Reddit client
-Description: |-
-    Stealth provides features from Reddit, without the need for an account.
-    In fact, the app doesn't even let you log in with a Reddit account.
 
 RepoType: git
 Repo: https://gitlab.com/cosmosapps/stealth
