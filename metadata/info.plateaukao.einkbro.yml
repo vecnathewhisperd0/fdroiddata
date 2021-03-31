@@ -1,6 +1,8 @@
 Categories:
   - Internet
 License: GPL-3.0-or-later
+AuthorName: Daniel Kao
+AuthorEmail: daniel.kao@gmail.com
 SourceCode: https://github.com/plateaukao/browser
 IssueTracker: https://github.com/plateaukao/browser/issues
 
@@ -18,3 +20,4 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: 8.5.3
+CurrentVersionCode: 853
