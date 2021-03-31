@@ -143,7 +143,20 @@ Builds:
     subdir: Corona-Warn-App
     gradle:
       - device
-    prebuild: sed -i -e 's/21.2.6472646/21.3.6528147/' build.gradle
+    prebuild: sed -i -e 's/21.2.6472646/21.4.7075529/' build.gradle
+    scanignore:
+      - Corona-Warn-App/src/main/assets/default_app_config_android.bin
+    scandelete:
+      - protobuf/build
+    ndk: r21e
+
+  - versionName: 1.15.1.0
+    versionCode: 1150100
+    commit: v1.15.1.0
+    subdir: Corona-Warn-App
+    gradle:
+      - device
+    prebuild: sed -i -e 's/21.2.6472646/21.4.7075529/' build.gradle
     scanignore:
       - Corona-Warn-App/src/main/assets/default_app_config_android.bin
     scandelete:
@@ -158,5 +171,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags v\d+\.\d+\.\d+\.\d+$
-CurrentVersion: 1.14.3.0
-CurrentVersionCode: 1140300
+CurrentVersion: 1.15.1.0
+CurrentVersionCode: 1150100

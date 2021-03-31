@@ -286,7 +286,50 @@ Builds:
 
   - versionName: 6.8.18
     versionCode: 120
+    disable: no such tag
     commit: v6.8.18
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y g++ vorbis-tools librsvg2-bin imagemagick
+    output: output/ANDROID7NEON/opt/build/unsigned.apk
+    rm:
+      - android/ioio/release/*.zip
+      - android/ioio/release/apps/*.zip
+      - android/ioio/release/software/*.zip
+      - android/ioio/release/firmware/device-bootloader/*.zip
+      - android/ioio/release/firmware/bootloader/*.zip
+      - android/ioio/software/IOIODude/lib
+      - android/ioio/software/IOIOLib/target/pc/lib
+      - android/ioio/software/applications/IOIOConnectionTester/lib
+      - android/ioio/software/applications/pc/jar-in-jar-loader.zip
+    build: make TARGET=ANDROID7NEON DEBUG=n TESTING=n -j`nproc`
+    ndk: r15c
+
+  - versionName: '7.0'
+    versionCode: 121
+    commit: v7.0
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y g++ vorbis-tools librsvg2-bin imagemagick
+    output: output/ANDROID7NEON/opt/build/unsigned.apk
+    rm:
+      - android/ioio/release/*.zip
+      - android/ioio/release/apps/*.zip
+      - android/ioio/release/software/*.zip
+      - android/ioio/release/firmware/device-bootloader/*.zip
+      - android/ioio/release/firmware/bootloader/*.zip
+      - android/ioio/software/IOIODude/lib
+      - android/ioio/software/IOIOLib/target/pc/lib
+      - android/ioio/software/applications/IOIOConnectionTester/lib
+      - android/ioio/software/applications/pc/jar-in-jar-loader.zip
+    build: make TARGET=ANDROID7NEON DEBUG=n TESTING=n -j`nproc`
+    ndk: r15c
+
+  - versionName: '7.1'
+    versionCode: 122
+    commit: v7.1
     submodules: true
     sudo:
       - apt-get update || apt-get update
@@ -307,5 +350,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 6.8.18
-CurrentVersionCode: 120
+CurrentVersion: '7.1'
+CurrentVersionCode: 122

@@ -523,36 +523,31 @@ Builds:
     output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
     ndk: r21d
 
-  - versionName: '6073'
-    versionCode: 6073
-    commit: fdroid-6073
-    gradle:
-      - yes
-    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
-    ndk: r21d
-
-  - versionName: '6074'
-    versionCode: 6074
-    commit: fdroid-6074
-    gradle:
-      - yes
-    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
-    ndk: r21d
-
-  - versionName: '6075'
-    versionCode: 6075
-    commit: fdroid-6075
-    gradle:
-      - yes
-    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
-    ndk: r21d
-
   - versionName: '6076'
     versionCode: 6076
     commit: fdroid-6076
     gradle:
       - yes
     output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    prebuild: sed -i -e 's/21.3.6528147/21.4.7075529/' app/build.gradle
+    ndk: r21e
+
+  - versionName: '6077'
+    versionCode: 6077
+    commit: fdroid-6077
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    prebuild: sed -i -e 's/21.3.6528147/21.4.7075529/' app/build.gradle
+    ndk: r21e
+
+  - versionName: '6080'
+    versionCode: 6080
+    commit: fdroid-6080
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/remote-$$VERSION$$.apk
+    prebuild: sed -i -e 's/21.3.6528147/21.4.7075529/' app/build.gradle
     ndk: r21e
 
 MaintainerNotes: The root build.gradle contains custom code that uses relative paths.
@@ -560,5 +555,5 @@ MaintainerNotes: The root build.gradle contains custom code that uses relative p
 
 AutoUpdateMode: Version fdroid-%v
 UpdateCheckMode: Tags fdroid-[0-9]+
-CurrentVersion: '6076'
-CurrentVersionCode: 6076
+CurrentVersion: '6080'
+CurrentVersionCode: 6080
