@@ -4,19 +4,6 @@ License: GPL-3.0-or-later
 SourceCode: https://github.com/plateaukao/browser
 IssueTracker: https://github.com/plateaukao/browser/issues
 
-Summary: A fast, light, but powerful browser for Eink devices
-Description: |-
-    A light weight but powerful browser designed for Eink devices
-
-    '''Some nice extra features:'''
-
-    * physical volume to pageUp/pageDown content
-    * touch screen to pageUp/pageDown content
-    * reader mode
-    * vertical reading mode
-    * bold font support
-    * quick font size change setting
-
 RepoType: git
 Repo: https://github.com/plateaukao/browser
 
