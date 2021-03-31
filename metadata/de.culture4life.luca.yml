@@ -1,0 +1,86 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Sports & Health
+  - Connectivity
+License: GPL-3.0-only
+AuthorName: culture4life
+AuthorEmail: hello@luca-app.de
+AuthorWebSite: https://www.luca-app.de/uber-uns
+WebSite: https://www.luca-app.de
+SourceCode: https://gitlab.com/lucaapp/android
+IssueTracker: https://gitlab.com/lucaapp/android/issues
+Changelog: https://gitlab.com/lucaapp/android/-/blob/master/CHANGELOG.md
+
+AutoName: luca App
+Summary: Safe and encrypted contact data exchange
+Description: |-
+    luca ensures a data protection-compliant, decentralized encryption of your data, undertakes the obligation to record contact data for events and gastronomy, relieves the health authorities through digital, lean, and integrated processes to enable efficient and complete tracing.
+
+    <u>App functions</u>
+
+    Generation of secure QR codes
+    luca takes over the secure transmission of contact data to event organizers and operators of bars, restaurants, or cultural sites. All you share at check-in are QR codes that venue operators can’t associate with you.
+
+    Contactless and secure data transfer
+    When guests enter an event or restaurant, they have their secure QR code scanned and are thus checked in. The data about your stay is additionally encrypted. The host can’t read this data at any time, which means that you always retain your data sovereignty.
+
+    Data release to the health authorities
+    Only the responsible health authority can read out the relevant encrypted data with a security key – but only if you release your data for the readout.
+
+    Check in log view
+    You can view the history of your check-ins at any time. If the public health department wants to read your data, they need your permission first.
+
+    Event-specific functions
+    For individual events, the app can fulfill additional functions. It can, for example, also become your digital admission ticket.
+
+    Automatic deletion of data
+    Your encrypted data will be automatically deleted at the latest 4 weeks after visiting the event or venue.
+
+    Participating health departments
+    luca is currently available in these regions:
+
+    Baden-Württemberg
+    * Breisgau-Hochschwarzwald
+    * Mannheim
+    * Ortenaukreis
+
+    Lower Saxony
+    * Wilhelmshaven
+
+    Mecklenburg-West Pomerania
+    * all
+
+    North Rhine-Westphalia
+    * Minden-Lübbecke
+    * Warendorf
+
+    Saxony
+    * Chemnitz
+
+    Saxony-Anhalt
+    * Salzlandkreis
+
+    Schleswig-Holstein
+    * Herzogtum-Lauenburg
+    * Kiel
+    * Lübeck
+    * Nordfriesland
+
+    Thuringia
+    * Jena
+    * Suhl
+
+RepoType: git
+Repo: https://gitlab.com/lucaapp/android.git
+
+Builds:
+  - versionName: 1.6.1
+    versionCode: 52
+    commit: 488a48fe0c23bff5f91d8c74fe1104bf21fbac73
+    subdir: Luca/app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
