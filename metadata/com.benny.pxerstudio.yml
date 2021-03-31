@@ -1,0 +1,25 @@
+Categories:
+ - Graphics
+License: Apache-2.0
+AuthorName: BennyKok
+AuthorEmail: itechbenny@gmail.com
+SourceCode: https://github.com/BennyKok/PxerStudio
+IssueTracker: https://github.com/BennyKok/PxerStudio/issues
+
+AutoName: PxerStudio
+
+RepoType: git
+Repo: https://github.com/BennyKok/PxerStudio
+
+Builds:
+  - versionName: 1.1.0
+    versionCode: 6
+    commit: 1.1.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.1.0
+CurrentVersionCode: 6
