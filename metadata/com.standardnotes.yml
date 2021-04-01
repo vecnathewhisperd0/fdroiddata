@@ -186,7 +186,8 @@ Builds:
       - npm -g install yarn
     init:
       - cd ../..
-      - npm_config_build_from_source=true yarn run init
+      - yarn cache clean snjs
+      - npm_config_build_from_source=true yarn --force
     gradle:
       - prod
     srclibs:
@@ -201,9 +202,6 @@ Builds:
       - sed -i -e "/appVersionName/d" -e "/appVersionCode/d" build.gradle
     scanignore:
       - android/build.gradle
-      - node_modules/hermes-engine
-      - node_modules/jsc-android
-      - node_modules/react-native/android
       - node_modules/react-native-aes-crypto/android/build.gradle
       - node_modules/react-native-keychain/android/build.gradle
       - node_modules/react-native-reanimated/android/build.gradle
