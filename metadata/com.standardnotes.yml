@@ -170,9 +170,9 @@ Builds:
       - node_modules/
       - vendor/
 
-  - versionName: 3.6.3
-    versionCode: 683632702
-    commit: 3.6.3
+  - versionName: 3.6.4
+    versionCode: 702366435
+    commit: 3.6.4
     subdir: android/app/
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
@@ -252,5 +252,5 @@ Builds:
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://api.github.com/repos/standardnotes/mobile/actions/workflows/build-prod.yml/runs|"workflow_runs":\[\{"id":(\d+),|https://github.com/standardnotes/mobile/releases/latest|/tag/([\d.]+)"
-CurrentVersion: 3.6.3
-CurrentVersionCode: 683632702
+CurrentVersion: 3.6.4
+CurrentVersionCode: 702366435
