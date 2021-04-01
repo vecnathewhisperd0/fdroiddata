@@ -188,6 +188,8 @@ Builds:
       - cd ../..
       - yarn cache clean snjs
       - npm_config_build_from_source=true yarn --force
+    patch:
+      - bugsnag.patch
     gradle:
       - prod
     srclibs:
@@ -202,6 +204,8 @@ Builds:
       - sed -i -e "/appVersionName/d" -e "/appVersionCode/d" build.gradle
     scanignore:
       - android/build.gradle
+      - node_modules/hermes-engine
+      - node_modules/jsc-android
       - node_modules/react-native-aes-crypto/android/build.gradle
       - node_modules/react-native-keychain/android/build.gradle
       - node_modules/react-native-reanimated/android/build.gradle
@@ -209,10 +213,12 @@ Builds:
       - node_modules/react-native-screens/android/build.gradle
       - node_modules/react-native-vector-icons/android/build.gradle
       - node_modules/react-native-webview/android/build.gradle
+      - node_modules/react-native-vector-icons/android/build.gradle
+      - node_modules/react-native/android
       - node_modules/sn-textview/android/build.gradle
+      - node_modules/detox/android/build.gradle
+      - node_modules/detox/android/detox/detox-publishing.gradle
       - node_modules/standard-notes-rn/android/build.gradle
-      - node_modules/@bugsnag/react-native/android
-      - node_modules/@bugsnag/react-native/bugsnag-react-native.gradle
       - node_modules/@react-native-community/async-storage/android/build.gradle
       - node_modules/@react-native-community/masked-view/android/build.gradle
     scandelete:
