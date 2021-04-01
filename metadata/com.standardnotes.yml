@@ -190,7 +190,7 @@ Builds:
     gradle:
       - prod
     srclibs:
-      - libsodium@stable
+      - libsodium@1.0.18
     rm:
       - .gitmodules
     prebuild:
