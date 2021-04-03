@@ -30,7 +30,7 @@ Builds:
       - popd
     ndk: r21e
 
-AutoUpdateMode: Version %v
+AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: 4.0.0
 CurrentVersionCode: 400
