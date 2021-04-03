@@ -21,6 +21,6 @@ Builds:
       - fdroid
 
 AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
+UpdateCheckMode: Tags .*-fdroid$
 CurrentVersion: 2.0.0-fdroid
 CurrentVersionCode: 43
