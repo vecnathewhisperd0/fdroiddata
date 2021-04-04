@@ -105,7 +105,7 @@ Builds:
     gradle:
       - fdroid
 
-AutoUpdateMode: Version v%v
+AutoUpdateMode: Version +-fdroid v%v
 UpdateCheckMode: Tags ^v
 CurrentVersion: 19.2.0
 CurrentVersionCode: 61
