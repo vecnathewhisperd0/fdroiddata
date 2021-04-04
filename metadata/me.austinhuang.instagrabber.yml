@@ -103,7 +103,7 @@ Builds:
     commit: v19.2.0
     subdir: app
     gradle:
-      - yes
+      - fdroid
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v
