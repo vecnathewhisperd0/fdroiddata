@@ -98,7 +98,7 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 19.2.0
+  - versionName: 19.2.0-fdroid
     versionCode: 61
     commit: v19.2.0
     subdir: app
