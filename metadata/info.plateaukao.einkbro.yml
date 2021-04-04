@@ -11,14 +11,14 @@ RepoType: git
 Repo: https://github.com/plateaukao/browser
 
 Builds:
-  - versionName: 8.6.0
-    versionCode: 860
-    commit: v8.6.0
+  - versionName: 8.6.1
+    versionCode: 861
+    commit: v8.6.1
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 8.6.0
-CurrentVersionCode: 860
+CurrentVersion: 8.6.1
+CurrentVersionCode: 861
