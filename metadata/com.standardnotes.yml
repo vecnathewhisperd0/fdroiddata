@@ -208,9 +208,9 @@ Builds:
       - node_modules/hermes-engine
       - node_modules/jsc-android
       - node_modules/react-native
-      - node_modules/sn-textview/android/build.gradle
       - node_modules/detox/android/build.gradle
       - node_modules/detox/android/detox/detox-publishing.gradle
+      - node_modules/sn-textview/android/build.gradle
       - node_modules/standard-notes-rn/android/build.gradle
       - node_modules/@react-native-community/async-storage/android/build.gradle
       - node_modules/@react-native-community/masked-view/android/build.gradle
@@ -218,7 +218,7 @@ Builds:
       - node_modules/
     build:
       - lib="$PWD/../../node_modules/react-native-sodium/libsodium"
-      - target_sdk_version=`sed -n 's/.*targetSdkVersion = \([0-9]\{1,2\}\).*/\1/p'
+      - target_sdk_version=`sed -n -E 's/.*targetSdkVersion = ([0-9]{1,2}).*/\1/p'
         ../build.gradle`
       - pushd $$libsodium$$
       - CC="$$NDK$$/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi${target_sdk_version}-clang"
