@@ -12,15 +12,16 @@ index 8310498..17fe350 100644
 +apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
 \ No newline at end of file
 diff --git a/android/app/src/main/java/com/standardnotes/MainActivity.java b/android/app/src/main/java/com/standardnotes/MainActivity.java
-index 79c701c..df60c65 100644
+index 79c701c..67fe038 100644
 --- a/android/app/src/main/java/com/standardnotes/MainActivity.java
 +++ b/android/app/src/main/java/com/standardnotes/MainActivity.java
-@@ -28,8 +28,6 @@ public class MainActivity extends ReactActivity {
+@@ -28,8 +28,7 @@ public class MainActivity extends ReactActivity {
              String packageName = this.getContext().getPackageName();
              Bundle props = new Bundle();
              SharedPreferences settings = this.getContext().getSharedPreferences("react-native", Context.MODE_PRIVATE);
 -            String bugsnagOptOut = settings.getString("bugsnagoptout", "false");
 -            props.putBoolean("bugsnagOptOut", bugsnagOptOut.equals("true"));
++            props.putBoolean("bugsnagOptOut", true);
              if (packageName.equals("com.standardnotes.dev")) {
                  props.putString("env", "dev");
              } else {
@@ -70,7 +71,7 @@ index fe96c13..f06b13e 100644
      SoLoader.init(this, /* native exopackage */ false);
  
 diff --git a/index.js b/index.js
-index bc0dece..a3b7b23 100644
+index bc0dece..73806b5 100644
 --- a/index.js
 +++ b/index.js
 @@ -1,5 +1,4 @@
@@ -79,12 +80,14 @@ index bc0dece..a3b7b23 100644
  import { enableScreens } from 'react-native-screens';
  import { SNLog } from '@standardnotes/snjs';
  
-@@ -14,8 +13,6 @@ if (__DEV__ === false) {
+@@ -14,8 +13,8 @@ if (__DEV__ === false) {
    console.log = () => {};
    console.warn = () => {};
    console.error = () => {};
 -  SNLog.onError = Bugsnag.notify;
 -  SNLog.onLog = Bugsnag.leaveBreadcrumb;
++  SNLog.onLog = console.log;
++  SNLog.onError = console.error;
  } else {
    SNLog.onLog = console.log;
    SNLog.onError = console.error;
