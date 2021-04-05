@@ -77,7 +77,6 @@ Builds:
       - $$flutter$$/bin/flutter build apk
 
 AutoUpdateMode: Version v%v+%c
-UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/amake/orgro/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+UpdateCheckMode: Tags
 CurrentVersion: 1.16.0
 CurrentVersionCode: 41
