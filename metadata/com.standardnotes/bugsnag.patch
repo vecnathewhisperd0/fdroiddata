@@ -114,3 +114,16 @@ index 8a7492f..f4ae6e4 100644
    useEffect(() => {
      const removeAppChangeObserver = applicationGroupRef.current.addApplicationChangeObserver(
        () => {
+diff --git a/src/lib/interface.ts b/src/lib/interface.ts
+index bd37717..55d0637 100644
+--- a/src/lib/interface.ts
++++ b/src/lib/interface.ts
+@@ -289,7 +289,7 @@ export class MobileDeviceInterface extends DeviceInterface {
+ 
+   async getBugsnagOptedOut() {
+     try {
+-      return (await DefaultPreference.get(BUGSNAG_OPT_OUT_KEY)) === 'true';
++      return true;
+     } catch {
+       return false;
+     }
