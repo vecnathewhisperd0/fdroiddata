@@ -248,7 +248,7 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
-VercodeOperation: %c + 3000220
+VercodeOperation: '%c + 3000220'
 UpdateCheckData: https://api.github.com/repos/standardnotes/mobile/actions/workflows/build-prod.yml/runs|run_number":\s"(\d+)|https://github.com/standardnotes/mobile/releases/latest|/tag/([\d.]+)"
 CurrentVersion: 3.6.5
 CurrentVersionCode: 710651450
