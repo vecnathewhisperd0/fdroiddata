@@ -72,10 +72,12 @@ Builds:
   - versionName: 2.0.0
     versionCode: 10
     commit: v2.0.1
+    subdir: app
     sudo:
-      - apt-get update
+      - apt-get update || apt-get update
       - apt-get install -y -t testing golang-go
-    output: app/build/outputs/apk/release/app-release-unsigned.apk
+    gradle:
+      - yes
     prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;29.0.3'
         > /dev/null
     build:
@@ -84,13 +86,11 @@ Builds:
       - go get golang.org/x/mobile/cmd/gomobile
       - export ANDROID_SDK_HOME=$$SDK$$
       - export ANDROID_NDK_HOME=$$NDK$$
-      - mkdir app/libs
-      - cd age-encryption
+      - mkdir libs
+      - cd ../age-encryption
       - gomobile init
       - gomobile bind -o ../app/libs/encrypted_writer.aar tnibler.com/cryptocam-age-encryption
-      - cd ..
-      - gradle assembleRelease
-    ndk: r22b
+    ndk: r21e
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
