@@ -1,0 +1,31 @@
+Categories:
+  - Multimedia
+License: MIT
+SourceCode: https://github.com/apognu/otter
+IssueTracker: https://github.com/apognu/otter/issues
+
+AutoName: Otter
+Summary: Music payer for Funkwhale
+Description: |-
+    Otter is a simple music player that allows you to stream the audio content of your self-hosted Funkwhale pod.
+
+    This app requires an account on a Funkwhale instance to work.
+
+    Source code : https://github.com/apognu/otter
+    Funkwhale : https://funkwhale.audio
+
+RepoType: git
+Repo: https://github.com/apognu/otter.git
+
+Builds:
+  - versionName: 1.0.12
+    versionCode: 1000012
+    commit: 1.0.12
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.12
+CurrentVersionCode: 1000012
