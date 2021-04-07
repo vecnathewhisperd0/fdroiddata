@@ -76,7 +76,7 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 'v16.3'
+  - versionName: v16.3
     versionCode: 163
     commit: v16.3
     subdir: app
