@@ -3,6 +3,7 @@ Categories:
 License: Apache-2.0
 SourceCode: https://github.com/ubipo/osmfocus
 IssueTracker: https://github.com/ubipo/osmfocus/issues
+Donate: https://pfiers.net/donate
 
 AutoName: OSMfocus Reborn
 
@@ -17,7 +18,14 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
+  - versionName: 1.0.1-fdroid
+    versionCode: 101
+    commit: v1.0.1
+    subdir: app
+    gradle:
+      - fdroid
+
+AutoUpdateMode: Version +-fdroid v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.0
-CurrentVersionCode: 100
+CurrentVersion: 1.0.1
+CurrentVersionCode: 101
