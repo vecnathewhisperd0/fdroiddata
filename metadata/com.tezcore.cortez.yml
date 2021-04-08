@@ -1,0 +1,23 @@
+Categories:
+  - Money
+  - Science & Education
+  - Security
+License: MIT
+WebSite: https://gitlab.com/nomadic-labs/cortez-android
+SourceCode: https://gitlab.com/nomadic-labs/cortez-android/tree/HEAD
+IssueTracker: https://gitlab.com/nomadic-labs/cortez-android/issues
+
+RepoType: git
+Repo: https://gitlab.com/nomadic-labs/cortez-android.git
+
+Builds:
+  - versionName: 1.5.0
+    versionCode: 21
+    commit: 1.5.0
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: 1.5.0
+CurrentVersionCode: 21
