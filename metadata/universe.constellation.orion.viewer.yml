@@ -19,7 +19,8 @@ Builds:
     commit: 0.81.2_fdroid
     subdir: orion-viewer
     gradle:
-      - yes
+      - arm7
+    output: build/outputs/apk/arm7/release/orion-viewer-$$VERSION$$-arm7-release-unsigned.apk
     prebuild:
       - cd ..
       - gradle -b thirdparty_build.gradle downloadAndPatchDjvu downloadAndMakeMupdf
