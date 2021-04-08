@@ -1592,7 +1592,7 @@ Builds:
 
   - versionName: '7.34'
     versionCode: 434
-    disable: never gets published for some reason
+    disable: fails to verify
     commit: v7.34
     subdir: wallet
     init:

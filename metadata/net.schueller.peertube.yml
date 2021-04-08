@@ -220,7 +220,52 @@ Builds:
     prebuild: sed -i -e "s/versionCode Integer.valueOf.*/versionCode $$VERCODE$$/g"
         -e "s/versionName System.getenv.*/versionName \"$$VERSION$$\"/g" build.gradle
 
+  - versionName: 1.1.0-12d85f58
+    versionCode: 1056
+    commit: v1.1.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "s/versionCode Integer.valueOf.*/versionCode $$VERCODE$$/g"
+        -e "s/versionName System.getenv.*/versionName \"$$VERSION$$\"/g" build.gradle
+
+  - versionName: 1.1.1
+    versionCode: 1057
+    commit: v1.1.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "s/versionCode Integer.valueOf.*/versionCode $$VERCODE$$/g"
+        -e "s/versionName System.getenv.*/versionName \"$$VERSION$$\"/g" build.gradle
+
+  - versionName: 1.2.0
+    versionCode: 1058
+    commit: v1.2.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "s/versionCode Integer.valueOf.*/versionCode $$VERCODE$$/g"
+        -e "s/versionName System.getenv.*/versionName \"$$VERSION$$\"/g" build.gradle
+
+  - versionName: 1.3.0
+    versionCode: 1059
+    commit: v1.3.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "s/versionCode Integer.valueOf.*/versionCode $$VERCODE$$/g"
+        -e "s/versionName System.getenv.*/versionName \"$$VERSION$$\"/g" build.gradle
+
+  - versionName: 1.4.0
+    versionCode: 1060
+    commit: v1.4.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "s/versionCode Integer.valueOf.*/versionCode $$VERCODE$$/g"
+        -e "s/versionName System.getenv.*/versionName \"$$VERSION$$\"/g" build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.47
-CurrentVersionCode: 1047
+CurrentVersion: 1.4.0
+CurrentVersionCode: 1060

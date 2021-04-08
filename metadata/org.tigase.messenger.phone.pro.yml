@@ -8,7 +8,7 @@ WebSite: https://stork.im/
 SourceCode: https://github.com/tigase/stork
 IssueTracker: https://github.com/tigase/stork/issues
 
-AutoName: Tigase Messenger
+AutoName: Stork IM
 Description: |-
     Tigase Messenger is a mobile chat client to use with Jabber.org, Google Talk,
     Live Journal Talk, Nimbuzz, Ovi, and thousands of other services run by
@@ -31,6 +31,9 @@ Description: |-
     (sure.im, jabber.me, tigase.im), on other servers, some functions may be
     unavailable.
 
+RepoType: git
+Repo: https://github.com/tigase/stork
+
 Builds:
   - versionName: 1.5.1
     versionCode: 11
@@ -42,6 +45,7 @@ Builds:
 
   - versionName: '1.6'
     versionCode: 15
+    disable: contains GMS
     commit: '1.6'
     subdir: mobile-phone-pro
     maven: 'yes'
@@ -49,6 +53,6 @@ Builds:
       - mobile-core/res/raw/trust_store_bks
 
 AutoUpdateMode: None
-UpdateCheckMode: None
-CurrentVersion: 3.0.11
-CurrentVersionCode: 74
+UpdateCheckMode: Tags
+CurrentVersion: 3.0.27
+CurrentVersionCode: 90

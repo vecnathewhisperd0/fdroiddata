@@ -1,17 +1,17 @@
 Categories:
   - Science & Education
 License: GPL-3.0-or-later
-AuthorName: Felix Hollederer
+AuthorName: Asdoi
 AuthorEmail: asdoi@t-online.de
 WebSite: https://asdoi.gitlab.io/timetable.html
-SourceCode: https://github.com/asdoi/TimeTable
-IssueTracker: https://github.com/asdoi/TimeTable/issues
-Changelog: https://github.com/asdoi/TimeTable/releases
+SourceCode: https://gitlab.com/asdoi/TimeTable
+IssueTracker: https://gitlab.com/asdoi/TimeTable/-/issues
+Changelog: https://gitlab.com/asdoi/TimeTable/-/releases
 
 AutoName: TimeTable
 
 RepoType: git
-Repo: https://github.com/asdoi/TimeTable.git
+Repo: https://gitlab.com/asdoi/TimeTable.git
 
 Builds:
   - versionName: '1.0'
@@ -49,7 +49,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.5'
+    versionCode: 15
+    commit: v1.5
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.4'
-CurrentVersionCode: 14
+CurrentVersion: '1.5'
+CurrentVersionCode: 15

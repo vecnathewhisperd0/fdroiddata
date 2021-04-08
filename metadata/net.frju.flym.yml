@@ -10,6 +10,8 @@ Bitcoin: 3DprwFMg5bXGz8QimyiaoEE7mmCkj2DGf5
 
 AutoName: Flym
 Description: |-
+    '''Note:''' This app has been discontinued.
+
     Flym News Reader is a simple, modern, totally free (no ads) and opensource
     project which keeps you inform by fetching your websites/blogs and displaying
     them in a mobile-optimized way.
@@ -226,7 +228,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.5.6
+    versionCode: 40
+    commit: v2.5.6
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.4
-CurrentVersionCode: 38
+CurrentVersion: 2.5.6
+CurrentVersionCode: 40

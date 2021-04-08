@@ -22,7 +22,7 @@ Description: |-
 
     FreeOTP implements open standards. This means that no proprietary server-side
     component is necessary: use any server-side component that implements these
-    standards — for example [http://www.freeipa.org FreeIPA], which uses TOTP. Any
+    standards — for example <a href="http://www.freeipa.org">FreeIPA</a>, which uses TOTP. Any
     standards-compliant implementation will work. Currently, FreeOTP provides
     implementations of HOTP (RFC 4226) and TOTP (RFC 6238).
 
@@ -138,7 +138,16 @@ Builds:
     scandelete:
       - arts/ic_launcher.zip
 
+  - versionName: '2.3'
+    versionCode: 14
+    commit: RELEASE-2.3
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - arts/ic_launcher.zip
+
 AutoUpdateMode: Version RELEASE-%v
 UpdateCheckMode: Tags RELEASE-[0-9.]+$
-CurrentVersion: '2.2'
-CurrentVersionCode: 13
+CurrentVersion: '2.3'
+CurrentVersionCode: 14

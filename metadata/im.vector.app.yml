@@ -3,11 +3,11 @@ Categories:
   - Phone & SMS
 License: Apache-2.0
 AuthorName: New Vector Ltd.
-AuthorEmail: android@riot.im
+AuthorEmail: press@element.io
 WebSite: https://element.io/
 SourceCode: https://github.com/vector-im/element-android
 IssueTracker: https://github.com/vector-im/element-android/issues
-Translation: https://translate.riot.im/projects/riot-android/
+Translation: https://translate.element.io/projects/element-android/element-app/
 Changelog: https://github.com/vector-im/element-android/blob/HEAD/CHANGES.md
 LiberapayID: '10794'
 Bitcoin: 1LxowEgsquZ3UPZ68wHf8v2MDZw82dVmAEa
@@ -254,6 +254,105 @@ Builds:
     scanignore:
       - build.gradle
     ndk: r21d
+
+  - versionName: 1.0.12
+    versionCode: 40100120
+    commit: v1.0.12
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.0.14
+    versionCode: 40100140
+    commit: v1.0.14
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.0.17
+    versionCode: 40100170
+    commit: v1.0.17
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.1.0
+    versionCode: 40101000
+    disable: contains gms through jitsi sdk
+    commit: v1.1.0
+    subdir: vector
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.6.2
+    prebuild:
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/com.google.firebase/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21d
+
+  - versionName: 1.1.3
+    versionCode: 40101030
+    commit: v1.1.3
+    subdir: vector
+    patch:
+      - 62038e8a898d351064623bc7677bf275d05f66c1.patch
+    gradle:
+      - fdroid
+    srclibs:
+      - piasy@v1.7.1
+    prebuild:
+      - tac ../build.gradle | awk '/dl.bintray.com\/piasy\/maven/{getline;$0="mavenLocal
+        {"}{print $0}' | tac > ../build.gradle.new
+      - mv ../build.gradle.new ../build.gradle
+      - sed -i -e '/firebase-messaging/,+5d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e 's/21.3.6528147/21.4.7075529/g' build.gradle
+      - sed -i -e 's/enable true/enable false/g' build.gradle
+    scanignore:
+      - build.gradle
+    ndk: r21e
 
 MaintainerNotes: |-
     Uses piasy/BigImageViewer which gets build and installed to a local maven repo in srclib prepare step.

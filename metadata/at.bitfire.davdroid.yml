@@ -8,9 +8,8 @@ IssueTracker: https://www.davx5.com/forums
 Translation: https://www.transifex.com/bitfireAT/davx5/
 Changelog: https://forums.bitfire.at/category/4/davx?tag=announcement
 Donate: https://www.davx5.com/donate
-FlattrID: '2100160'
 LiberapayID: '14101'
-Bitcoin: 1KSCy7RHztKuhW9fLLaUYqdwdC2iwbejZU
+Bitcoin: bc1q0hvy0mknt9vce2f9hh829h72n3sht9llaltumk
 
 AutoName: DAVx⁵
 
@@ -1436,7 +1435,23 @@ Builds:
     gradle:
       - standard
 
+  - versionName: 3.3.8-ose
+    versionCode: 303080002
+    commit: v3.3.8-ose
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 3.3.9-ose
+    versionCode: 303090004
+    commit: v3.3.9-ose
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9.]+-ose[0-9]*$
-CurrentVersion: 3.3.7-ose
-CurrentVersionCode: 303070006
+CurrentVersion: 3.3.9-ose
+CurrentVersionCode: 303090004

@@ -28,7 +28,7 @@ Builds:
 
   - versionName: iteration-6
     versionCode: 6
-    commit: iteration-6
+    commit: Iteration-6
     subdir: 8vim
     gradle:
       - yes

@@ -70,7 +70,42 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 19.0.2
-CurrentVersionCode: 54
+  - versionName: 19.0.3
+    versionCode: 55
+    commit: v19.0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 19.0.4
+    versionCode: 56
+    commit: v19.0.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 19.0.5
+    versionCode: 57
+    commit: v19.0.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 19.1.0
+    versionCode: 60
+    commit: v19.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 19.2.0-fdroid
+    versionCode: 61
+    commit: v19.2.0
+    subdir: app
+    gradle:
+      - fdroid
+
+AutoUpdateMode: Version +-fdroid v%v
+UpdateCheckMode: Tags ^v
+CurrentVersion: 19.2.0
+CurrentVersionCode: 61

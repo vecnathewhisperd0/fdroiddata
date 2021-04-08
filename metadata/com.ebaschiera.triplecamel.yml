@@ -10,8 +10,7 @@ Changelog: https://github.com/ebaschiera/TripleCamel/releases
 
 AutoName: TripleCamel
 Description: |-
-    Checks for product price history using the [http://camelcamelcamel.com/
-    CamelCamelCamel] website. You can also set a notification for when the price
+    Checks for product price history using the <a href="http://camelcamelcamel.com/">CamelCamelCamel</a> website. You can also set a notification for when the price
     gets lower. You just have to share a product from the Amazon app, and choose
     Triple Camel as the sharing app from the list.
 
@@ -90,7 +89,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.0.13
+    versionCode: 14
+    commit: v1.0.13
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.11
-CurrentVersionCode: 12
+CurrentVersion: 1.0.13
+CurrentVersionCode: 14
