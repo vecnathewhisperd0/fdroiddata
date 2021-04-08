@@ -23,6 +23,13 @@ Builds:
     subdir: app
     gradle:
       - nextcloud
+  
+  - versionName: 10.9.1
+    versionCode: 10009001
+    commit: 10.9.1
+    subdir: app
+    gradle:
+      - nextcloud
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
