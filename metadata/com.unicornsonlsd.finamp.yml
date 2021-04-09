@@ -18,7 +18,7 @@ Builds:
     commit: 0.2.0
     output: build/app/outputs/apk/release/app-release.apk
     srclibs:
-      - flutter@v2.0.4
+      - flutter@2.0.4
     prebuild: echo 'android.applicationVariants.all { variant -> variant.outputs.all
         { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
     build:
@@ -28,3 +28,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
+CurrentVersion: '0.2.0'
+CurrentVersionCode: 1
