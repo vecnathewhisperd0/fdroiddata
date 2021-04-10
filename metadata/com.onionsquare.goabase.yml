@@ -1,0 +1,31 @@
+
+Name: Goabase - Psytrance Party Finder
+
+Categories: 
+  - Internet
+
+License: GPL-3.0-or-later
+
+SourceCode: https://github.com/agonist/goabase-android
+
+Summary: Find Psytrance events worldwide. Hundreds of new parties per month.
+Description: |-
+    With Goabase, find Psytrance party around the world easily.
+    Browse by country and find party details from the party list.
+
+RepoType: git
+Repo: https://github.com/agonist/goabase-android
+
+Builds:
+  - versionName: '1.0.2'
+    versionCode: 10002
+    commit: v1.0.2
+    subdir: app
+    gradle:
+      - yes
+
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 1.0.2
+CurrentVersionCode: 10002
