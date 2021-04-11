@@ -1,0 +1,25 @@
+Categories:
+  - Writing
+License: GPL-3.0-or-later
+SourceCode: https://github.com/appml/neutrinote
+IssueTracker: https://github.com/appml/neutrinote/issues
+Donate: https://ko-fi.com/X8X6AWNQ
+
+AutoName: neutriNote
+Description: |
+    All-in-one preservation of written thoughts, be those text, math (LaTeX), rich markdown, drawings, etc.,  in fully s
+    earchable plain text (universal UTF-8).
+
+RepoType: git
+Repo: https://github.com/appml/neutrinote.git
+
+Builds:
+  - versionName: 3.6.9
+    versionCode: 1190
+    commit: 236c432f7ab0de2db07146132c73a917b3a76674
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
