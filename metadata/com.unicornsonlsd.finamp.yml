@@ -42,3 +42,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://github.com/UnicornsOnLSD/finamp/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 0.3.0
+CurrentVersionCode: 5
