@@ -6,16 +6,14 @@ IssueTracker: https://github.com/UnicornsOnLSD/finamp/issues
 Changelog: https://github.com/UnicornsOnLSD/finamp/releases
 
 AutoName: Finamp
-Description: Finamp is a Jellyfin music client with the ability to download songs
-    for offline listening.
 
 RepoType: git
 Repo: https://github.com/UnicornsOnLSD/finamp
 
 Builds:
-  - versionName: 0.3.0
-    versionCode: 5
-    commit: 0.3.0
+  - versionName: 0.3.1
+    versionCode: 6
+    commit: 0.3.1
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@2.0.4
