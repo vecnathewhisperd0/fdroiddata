@@ -3,7 +3,7 @@ Categories:
 License: GPL-3.0-only
 AuthorName: cohenchris
 SourceCode: https://github.com/cohenchris/WeeklyBudget/
-IssueTracker: https://github.com/cohenchris/WeeklyBudget//issues
+IssueTracker: https://github.com/cohenchris/WeeklyBudget/issues
 
 Summary: A minimalistic weekly budgeting app
 Description: |-
@@ -21,7 +21,7 @@ Repo: https://github.com/cohenchris/WeeklyBudget/
 Builds:
   - versionName: '1.2'
     versionCode: 2
-    commit: f3c5e990dfd903b9cb055f2108f91730a45adfa9
+    commit: 20006204585dedbccc45e374854858f0da3fc1f0
     subdir: app
     gradle:
       - yes
