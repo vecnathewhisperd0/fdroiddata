@@ -14,9 +14,9 @@ RepoType: git
 Repo: https://github.com/stephane-r/HoloPlay
 
 Builds:
-  - versionName: 1.9.8
-    versionCode: 28
-    commit: 1.9.8
+  - versionName: 1.9.10
+    versionCode: 30
+    commit: 1.9.10
     subdir: android/app
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
@@ -51,5 +51,5 @@ MaintainerNotes: contains Sentry.io, disabled by default
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.8
-CurrentVersionCode: 28
+CurrentVersion: 1.9.10
+CurrentVersionCode: 30
