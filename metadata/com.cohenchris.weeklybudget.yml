@@ -6,15 +6,6 @@ SourceCode: https://github.com/cohenchris/WeeklyBudget/
 IssueTracker: https://github.com/cohenchris/WeeklyBudget/issues
 
 AutoName: WeeklyBudget
-Summary: A minimalistic weekly budgeting app
-Description: |-
-    This is a budgeting app designed for people who have a set weekly budget.
-
-    If you set your weekly spending budget to $100, $100 would be added to your
-    available funds. Every time that you make a purchase, you subtract that
-    amount from your available funds. Every Sunday, another $100 would be added into
-    your available funds. I designed this for my purposes specifically, but I
-    hope that somebody else will find it useful!
 
 RepoType: git
 Repo: https://github.com/cohenchris/WeeklyBudget/
