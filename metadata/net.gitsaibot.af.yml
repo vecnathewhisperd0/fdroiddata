@@ -1,0 +1,29 @@
+AntiFeatures:
+  - NonFreeNet
+Categories:
+  - Internet
+License: CC0-1.0
+AuthorName: Gitsaibot
+SourceCode: https://github.com/Gitsaibot/AF-Weather-Widget
+IssueTracker: https://github.com/Gitsaibot/AF-Weather-Widget/issues
+Changelog: https://github.com/Gitsaibot/AF-Weather-Widget/releases
+
+AutoName: AF Weather
+
+RepoType: git
+Repo: https://github.com/Gitsaibot/AF-Weather-Widget
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+MaintainerNotes: uses Google GeoCoding API (NonFreeNet)
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
