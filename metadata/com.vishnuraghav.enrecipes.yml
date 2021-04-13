@@ -17,9 +17,9 @@ RepoType: git
 Repo: https://github.com/vishnuraghavb/EnRecipes.git
 
 Builds:
-  - versionName: 1.3.0
-    versionCode: 6
-    commit: v1.3.0
+  - versionName: 1.3.2
+    versionCode: 7
+    commit: 80dd4c20182ca52caac3d821f67f61420d050362
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y lib32z1
@@ -34,36 +34,38 @@ Builds:
         /dev/null
       - npm install --unsafe-perm
     output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
-    rm:
-      - node_modules/proxy-lib/bin/win32/ia32/CredentialsManager.exe
-      - node_modules/proxy-lib/bin/win32/x64/CredentialsManager.exe
-      - node_modules/@nativescript/core/platforms/ios/TNSWidgets.framework/TNSWidgets
-      - node_modules/@nativescript/core/platforms/ios/TNSWidgets.framework.dSYM.zip
-      - node_modules/nativescript-couchbase-plugin/platforms/android/fancycouchbase-release.aar
-      - node_modules/nativescript-plugin-filepicker/platforms/android/nativescript_plugin_filepicker.aar
-      - node_modules/nativescript-imagecropper/platforms/android/nativescript_imagecropper.aar
-      - node_modules/@nativescript-community/ui-material-button/platforms/android/ui_material_button.aar
-      - node_modules/@nativescript-community/ui-material-core/platforms/android/ui_material_core.aar
-      - node_modules/@nativescript-community/text/platforms/android/text.aar
-      - node_modules/nativescript-feedback/platforms/android/nativescript_feedback.aar
-      - node_modules/@nativescript/android/framework/build-tools/dts-generator.jar
-      - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-regular.aar
-      - node_modules/nativescript-couchbase-plugin/platforms/android/include.gradle
-      - node_modules/nativescript-vibrate/platforms/android/nativescript_vibrate.aar
-      - node_modules/@nativescript-community/ui-material-snackbar/platforms/android/ui_material_snackbar.aar
-    scanignore:
-      - node_modules/@nativescript/core/platforms/android/widgets-release.aar
-      - node_modules/@nativescript/android/framework/build-tools/static-binding-generator.jar
-      - node_modules/@nativescript/android/framework/build-tools/android-metadata-generator.jar
-      - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-optimized.aar
-      - node_modules/@nativescript/android/framework/app/libs/runtime-libs/nativescript-optimized-with-inspector.aar
+    srclibs:
+      - NativeScript_android-runtime@v7.0.1
+      - NativeScript_NativeScript@8.0.0-alpha.0-core
+      - triniwiz_nativescript-plugins@92a9d5ab196fc64fb0841123c8fa235648bbb829
+    scandelete:
+      - node_modules
     build:
+      - cd $$triniwiz_nativescript-plugins$$/packages/nativescript-couchbase/src-native/TNSCouchbase/couchbase
+      - gradle assembleRelease
+      - cp build/outputs/aar/couchbase-release.aar ../../../../../../../com.vishnuraghav.enrecipes/node_modules/@triniwiz/nativescript-couchbase/platforms/android/couchbase-release.aar
+      - cd $$NativeScript_NativeScript$$/packages/ui-mobile-base/android/widgets
+      - rm -rf $$triniwiz_nativescript-plugins$$
+      - gradle assembleRelease
+      - mkdir -p ../../../../../../com.vishnuraghav.enrecipes/node_modules/@nativescript/core/platforms/android
+      - cp build/outputs/aar/widgets-release.aar ../../../../../../com.vishnuraghav.enrecipes/node_modules/@nativescript/core/platforms/android/widgets-release.aar
+      - cd $$NativeScript_android-runtime$$
+      - rm -rf $$NativeScript_NativeScript$$
+      - export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+      - cp $$SDK$$/build-tools/30.0.3/lib/dx.jar test-app/build-tools/android-metadata-generator/src/libs/dx.jar
+      - gradle
+      - mkdir -p ../../com.vishnuraghav.enrecipes/node_modules/@nativescript/android
+      - rm -rf ../../com.vishnuraghav.enrecipes/node_modules/@nativescript/android/framework
+      - cp -r dist/framework ../../com.vishnuraghav.enrecipes/node_modules/@nativescript/android
+      - cd ../../com.vishnuraghav.enrecipes
+      - rm -rf $$NativeScript_android-runtime$$
       - ns prepare android
       - cd platforms/android/app
       - gradle "assembleRelease" "-PappPath=app" "-PappResourcesPath=app/resources"
+    ndk: r20b
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/vishnuraghavb/EnRecipes/main/app/resources/Android/app.gradle|versionCode\s(\d+)|.|versionName\s'(.+)'
-CurrentVersion: 1.3.0
-CurrentVersionCode: 6
+CurrentVersion: 1.3.2
+CurrentVersionCode: 7
