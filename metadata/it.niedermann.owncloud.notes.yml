@@ -735,7 +735,24 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 3.3.0
+    versionCode: 3003000
+    disable: https://github.com/stefan-niedermann/nextcloud-notes/issues/1128
+    commit: v3.3.0
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 3.3.1
+    versionCode: 3003001
+    commit: v3.3.1
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.2.5
-CurrentVersionCode: 3002005
+CurrentVersion: 3.3.1
+CurrentVersionCode: 3003001

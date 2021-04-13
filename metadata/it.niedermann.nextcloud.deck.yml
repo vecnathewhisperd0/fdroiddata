@@ -523,7 +523,36 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 1.16.2
+    versionCode: 1016002
+    disable: https://github.com/stefan-niedermann/nextcloud-deck/issues/930
+    commit: 1.16.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.16.3
+    versionCode: 1016003
+    commit: 1.16.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.17.0
+    versionCode: 1017000
+    commit: 1.17.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.17.2
+    versionCode: 1017002
+    commit: 1.17.2
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.16.1
-CurrentVersionCode: 1016001
+CurrentVersion: 1.17.2
+CurrentVersionCode: 1017002
