@@ -16,9 +16,10 @@ Builds:
     commit: '1.0'
     subdir: android/app
     sudo:
-      - apt-get update || apt-get update
-      - apt-get install -t stretch-backports npm yarn
-      - npm install -g react-native-cli
+      - apt-get update
+      - apt-get remove cmdtest
+      - apt-get install -t stretch-backports npm
+      - npm install -g yarn react-native-cli
     init: yarn install
     gradle:
       - yes
