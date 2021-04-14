@@ -44,13 +44,15 @@ Builds:
       - pushd $$triniwiz_nativescript-plugins$$/packages/nativescript-couchbase/src-native/TNSCouchbase/couchbase
       - gradle assembleRelease
       - popd
-      - cp $$triniwiz_nativescript-plugins$$/packages/nativescript-couchbase/src-native/TNSCouchbase/couchbase/build/outputs/aar/couchbase-release.aar node_modules/@triniwiz/nativescript-couchbase/platforms/android/couchbase-release.aar
+      - cp $$triniwiz_nativescript-plugins$$/packages/nativescript-couchbase/src-native/TNSCouchbase/couchbase/build/outputs/aar/couchbase-release.aar
+        node_modules/@triniwiz/nativescript-couchbase/platforms/android/couchbase-release.aar
       - rm -rf $$triniwiz_nativescript-plugins$$
       - pushd $$NativeScript_NativeScript$$/packages/ui-mobile-base/android/widgets
       - gradle assembleRelease
       - popd
       - mkdir -p node_modules/@nativescript/core/platforms/android
-      - cp $$NativeScript_NativeScript$$/packages/ui-mobile-base/android/widgets/build/outputs/aar/widgets-release.aar node_modules/@nativescript/core/platforms/android/widgets-release.aar
+      - cp $$NativeScript_NativeScript$$/packages/ui-mobile-base/android/widgets/build/outputs/aar/widgets-release.aar
+        node_modules/@nativescript/core/platforms/android/widgets-release.aar
       - rm -rf $$NativeScript_NativeScript$$
       - pushd $$NativeScript_android-runtime$$
       - export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
