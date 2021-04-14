@@ -28,8 +28,7 @@ Builds:
       - $$flutter$$/bin/flutter doctor --suppress-analytics
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter packages pub run build_runner build
-    build:
-      - $$flutter$$/bin/flutter build apk --no-obfuscate --release
+    build: $$flutter$$/bin/flutter build apk --no-obfuscate --release
 
 AutoUpdateMode: Version %v+%c
 UpdateCheckMode: Tags
