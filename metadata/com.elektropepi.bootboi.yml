@@ -19,7 +19,7 @@ Builds:
     sudo:
       - curl -Lo node.tar.xz https://nodejs.org/dist/v15.14.0/node-v15.14.0-linux-x64.tar.xz
       - echo "f40a52c77a5a98203d24d6e5213c1a189bfc9736d0d9f667cb61151e9431b2a8 node.tar.xz"
-          | sha256sum -c -
+        | sha256sum -c -
       - tar xJf node.tar.xz
       - cp -a node-v15.14.0-linux-x64/. /usr/local/
       - npm -g install yarn
