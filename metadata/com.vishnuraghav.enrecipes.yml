@@ -41,23 +41,25 @@ Builds:
     scandelete:
       - node_modules
     build:
-      - cd $$triniwiz_nativescript-plugins$$/packages/nativescript-couchbase/src-native/TNSCouchbase/couchbase
+      - pushd $$triniwiz_nativescript-plugins$$/packages/nativescript-couchbase/src-native/TNSCouchbase/couchbase
       - gradle assembleRelease
-      - cp build/outputs/aar/couchbase-release.aar ../../../../../../../com.vishnuraghav.enrecipes/node_modules/@triniwiz/nativescript-couchbase/platforms/android/couchbase-release.aar
-      - cd $$NativeScript_NativeScript$$/packages/ui-mobile-base/android/widgets
+      - popd
+      - cp $$triniwiz_nativescript-plugins$$/packages/nativescript-couchbase/src-native/TNSCouchbase/couchbase/build/outputs/aar/couchbase-release.aar node_modules/@triniwiz/nativescript-couchbase/platforms/android/couchbase-release.aar
       - rm -rf $$triniwiz_nativescript-plugins$$
+      - pushd $$NativeScript_NativeScript$$/packages/ui-mobile-base/android/widgets
       - gradle assembleRelease
-      - mkdir -p ../../../../../../com.vishnuraghav.enrecipes/node_modules/@nativescript/core/platforms/android
-      - cp build/outputs/aar/widgets-release.aar ../../../../../../com.vishnuraghav.enrecipes/node_modules/@nativescript/core/platforms/android/widgets-release.aar
-      - cd $$NativeScript_android-runtime$$
+      - popd
+      - mkdir -p node_modules/@nativescript/core/platforms/android
+      - cp $$NativeScript_NativeScript$$/packages/ui-mobile-base/android/widgets/build/outputs/aar/widgets-release.aar node_modules/@nativescript/core/platforms/android/widgets-release.aar
       - rm -rf $$NativeScript_NativeScript$$
-      - export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+      - pushd $$NativeScript_android-runtime$$
+      - export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
       - cp $$SDK$$/build-tools/30.0.3/lib/dx.jar test-app/build-tools/android-metadata-generator/src/libs/dx.jar
       - gradle
-      - mkdir -p ../../com.vishnuraghav.enrecipes/node_modules/@nativescript/android
-      - rm -rf ../../com.vishnuraghav.enrecipes/node_modules/@nativescript/android/framework
-      - cp -r dist/framework ../../com.vishnuraghav.enrecipes/node_modules/@nativescript/android
-      - cd ../../com.vishnuraghav.enrecipes
+      - popd
+      - mkdir -p node_modules/@nativescript/android
+      - rm -rf node_modules/@nativescript/android/framework
+      - cp -r $$NativeScript_android-runtime$$/dist/framework node_modules/@nativescript/android
       - rm -rf $$NativeScript_android-runtime$$
       - ns prepare android
       - cd platforms/android/app
