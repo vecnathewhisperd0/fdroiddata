@@ -19,7 +19,7 @@ Builds:
       - apt-get update || apt-get update
       - apt-get install -t stretch-backports npm yarn
       - npm install -g react-native-cli
-    init: yarn
+    init: yarn install
     gradle:
       - yes
     scanignore:
