@@ -12,14 +12,14 @@ RepoType: git
 Repo: https://github.com/appml/neutrinote.git
 
 Builds:
-  - versionName: 3.6.7
-    versionCode: 1192
-    commit: v3.6.7
+  - versionName: 3.7.0
+    versionCode: 1193
+    commit: v3.7.0
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.6.7
-CurrentVersionCode: 1192
+CurrentVersion: 3.7.0
+CurrentVersionCode: 1193
