@@ -19,8 +19,6 @@ Builds:
     gradle:
       - yes
 
-MaintainerNotes: uses Google GeoCoding API (NonFreeNet)
-
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: '1.1'
