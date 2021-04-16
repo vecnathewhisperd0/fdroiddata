@@ -617,9 +617,9 @@ Builds:
         app/libs/
     ndk: r16b
 
-  - versionName: 4.4.0
-    versionCode: 4400
-    commit: 4.4.0
+  - versionName: 4.4.2
+    versionCode: 4402
+    commit: 4.4.2
     timeout: 20000
     sudo:
       - apt-get update || apt-get update
@@ -630,7 +630,7 @@ Builds:
       - yes
     output: app/build/outputs/apk/release/linphone-android-release-*.apk
     srclibs:
-      - linphone-sdk@4.5.0
+      - linphone-sdk@4.5.2
     rm:
       - app/src/main/java/org/linphone/firebase/Firebase*.java
       - app/google-services.json
@@ -667,5 +667,5 @@ MaintainerNotes: Main repo for linphone-sdk is upstreams private Gitlab instance
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 4.4.0
-CurrentVersionCode: 4400
+CurrentVersion: 4.4.2
+CurrentVersionCode: 4402
