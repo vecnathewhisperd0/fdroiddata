@@ -1,0 +1,41 @@
+Categories:
+  - Reading
+License: GPL-3.0-or-later
+AuthorName: Sergei Solodovnikov
+AuthorEmail: zellius@seeneva.app
+WebSite: https://seeneva.app
+SourceCode: https://github.com/Seeneva/seeneva-reader-android
+IssueTracker: https://github.com/Seeneva/seeneva-reader-android/issues
+Donate: https://seeneva.app/#donate
+Liberapay: Seeneva
+Bitcoin: bc1qka05pst7ls9g8fgdx4wvqr8fsjkwjkmj9jtcp0
+
+AutoName: Seeneva
+
+RepoType: git
+Repo: https://github.com/Seeneva/seeneva-reader-android.git
+
+Builds:
+  - versionName: 0.1.0
+    versionCode: 1
+    commit: 93b8b904e48a5b748ba52ca44c753ffc7b95ee07
+    timeout: 10800
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    srclibs:
+      - rustup@1.23.1
+    prebuild:
+      - $$rustup$$/rustup-init.sh -y
+      - source $HOME/.cargo/env
+    ndk: r21d
+    gradleprops:
+      - seeneva.disableSplitApk
+
+MaintainerNotes: Rust toolchain version comes from the rust-toolchain TOML file
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 0.1.0
+CurrentVersionCode: 1
