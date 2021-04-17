@@ -4,19 +4,6 @@ License: MIT
 
 SourceCode: https://github.com/krlvm/PowerTunnel-Android
 IssueTracker: https://github.com/krlvm/PowerTunnel-Android/issues
-
-Summary: Anti-censorship solution
-Description: |-
-    Simple, scalable, cross-platform and effective
-    solution against government censorship for Android
-
-    Supported features:
-    * VPN or Proxy mode
-    * HTTP block bypass
-    * HTTPS fragmentation
-    * SNI Modification
-    * Custom DNS servers with DoH support
-
     [https://github.com/krlvm/PowerTunnel Version for PC]
 
 RepoType: git
