@@ -12,8 +12,9 @@ Description: |-
 
     Supported features:
     * VPN or Proxy mode
-    * HTTP lock bypass
+    * HTTP block bypass
     * HTTPS fragmentation
+    * SNI Modification
     * Custom DNS servers with DoH support
 
     [https://github.com/krlvm/PowerTunnel Version for PC]
@@ -22,9 +23,9 @@ RepoType: git
 Repo: https://github.com/krlvm/PowerTunnel-Android
 
 Builds:
-  - versionName: 1.7.1
-    versionCode: 15
-    commit: v1.7.1
+  - versionName: 1.9.1
+    versionCode: 21
+    commit: v1.9.1
     subdir: app
     gradle:
       - yes
