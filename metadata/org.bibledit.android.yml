@@ -25,3 +25,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
+CurrentVersion: 5.0.942
+CurrentVersionCode: 141
