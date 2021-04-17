@@ -17,6 +17,8 @@ Builds:
     subdir: app
     gradle:
       - yes
+    scandelete:
+      - app/libs
     ndk: r22b
 
 AutoUpdateMode: Version v%v
