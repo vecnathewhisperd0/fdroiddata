@@ -12,9 +12,9 @@ RepoType: git
 Repo: https://github.com/brahimlippe/Lyrics
 
 Builds:
-  - versionName: Dhil
-    versionCode: 1
-    commit: v1
+  - versionName: '3'
+    versionCode: 3
+    commit: v3
     subdir: app
     gradle:
       - yes
