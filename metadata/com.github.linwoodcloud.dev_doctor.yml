@@ -42,6 +42,7 @@ Builds:
       - $$flutter$$/bin/flutter build apk
 
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/LinwoodCloud/dev_doctor/release/app/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.4.0
 CurrentVersionCode: 11
