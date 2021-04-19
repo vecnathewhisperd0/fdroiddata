@@ -15,9 +15,9 @@ RepoType: git
 Repo: https://github.com/bibledit/android.git
 
 Builds:
-  - versionName: 5.0.943
-    versionCode: 142
-    commit: 5.0.943
+  - versionName: 5.0.944
+    versionCode: 143
+    commit: 5.0.944
     subdir: gradle/app
     gradle:
       - yes
