@@ -1,0 +1,33 @@
+Categories:
+  - Sports & Health
+License:  AGPL-3.0-or-later
+AuthorName: HannTech GmbH
+SourceCode: https://gitlab.com/free2pass/free2pass-app
+Translation: https://gitlab.com/free2pass/free2pass-app/-/tree/main/lib/l10n
+
+AutoName: free2pass
+
+RepoType: git
+Repo: https://gitlab.com/free2pass/free2pass-app.git
+
+Builds:
+  - versionName: 1.1.0
+    versionCode: 8
+    commit: Release-1.1.0+8
+    subdir: android/app
+    output: ../../build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@2.0.5
+    rm:
+      - ios
+    prebuild: echo "flutter.sdk=$$flutter$$" >> ../local.properties
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://gitlab.com/free2pass/free2pass-app/-/raw/main/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 1.1.0
+CurrentVersionCode: 8
