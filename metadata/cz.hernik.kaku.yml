@@ -1,0 +1,25 @@
+Categories:
+  - Science & Education
+License: Apache-2.0
+SourceCode: https://github.com/hernikplays/kaku
+IssueTracker: https://github.com/hernikplays/kaku/issues
+LiberapayID: '1655376'
+Bitcoin: 1L5ETErX8fVfRxLP8KEU4hv4VaAwGqKLCC
+
+AutoName: Kaku
+
+RepoType: git
+Repo: https://github.com/hernikplays/kaku
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: 87d4730c97f2aba51b819501f6985d9aaf725719
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
