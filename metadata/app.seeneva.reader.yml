@@ -16,9 +16,9 @@ RepoType: git
 Repo: https://github.com/Seeneva/seeneva-reader-android.git
 
 Builds:
-  - versionName: 0.1.0
+  - versionName: 0.1.0-fdroid
     versionCode: 1
-    commit: 93b8b904e48a5b748ba52ca44c753ffc7b95ee07
+    commit: 0.1.0-fdroid
     timeout: 10800
     subdir: app
     submodules: true
@@ -29,13 +29,14 @@ Builds:
     prebuild:
       - $$rustup$$/rustup-init.sh -y
       - source $HOME/.cargo/env
-    ndk: r21d
+    ndk: r21e
     gradleprops:
       - seeneva.disableSplitApk
+      - seeneva.noDebSymbols
 
 MaintainerNotes: Rust toolchain version comes from the rust-toolchain TOML file
 
-AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 0.1.0
+AutoUpdateMode: Version +-fdroid v%v
+UpdateCheckMode: Tags ^v[0-9.]*$
+CurrentVersion: 0.1.0-fdroid
 CurrentVersionCode: 1
