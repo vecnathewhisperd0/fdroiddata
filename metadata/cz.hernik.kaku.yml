@@ -14,7 +14,7 @@ Repo: https://github.com/hernikplays/kaku
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: 87d4730c97f2aba51b819501f6985d9aaf725719
+    commit: '1.0'
     subdir: app
     gradle:
       - yes
