@@ -1,9 +1,14 @@
+AntiFeatures:
+  - NonFreeNet
 Categories:
   - Science & Education
 License: Apache-2.0
+AuthorName: Matyáš Caras
+AuthorEmail: contact@hernikplays.cz
+AuthorWebSite: https://hernikplays.cz/
 SourceCode: https://github.com/hernikplays/kaku
 IssueTracker: https://github.com/hernikplays/kaku/issues
-LiberapayID: '1655376'
+Liberapay: hernikplays
 Bitcoin: 1L5ETErX8fVfRxLP8KEU4hv4VaAwGqKLCC
 
 AutoName: Kaku
