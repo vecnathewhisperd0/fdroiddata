@@ -20,8 +20,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-    scanignore:
-      - app/src/main/assets/db/exercise_database
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
