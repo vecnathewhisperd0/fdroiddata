@@ -22,9 +22,9 @@ Builds:
       - lavabitProductionFat
     prebuild:
       - sed -i -e "/^task updateSdkLicences/,/^}/d; /commandLine 'git'/d" build.gradle
-      - yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses
-      - $ANDROID_HOME/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;30.0.3'
-      - $ANDROID_HOME/tools/bin/sdkmanager 'ndk;21.4.7075529' 'cmake;3.10.2.4988404'
+      - yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses > /dev/null
+      - $ANDROID_HOME/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;30.0.3' > /dev/null
+      - $ANDROID_HOME/tools/bin/sdkmanager 'ndk;21.4.7075529' 'cmake;3.10.2.4988404' > /dev/null
     build:
       - cd ../
       - export ANDROID_NDK_ROOT="$ANDROID_NDK"
