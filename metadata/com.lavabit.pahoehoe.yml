@@ -7,9 +7,12 @@ WebSite: https://lavabit.com
 SourceCode: https://github.com/lavabit/pahoehoe
 IssueTracker: https://github.com/lavabit/pahoehoe/issues
 Changelog: https://github.com/lavabit/pahoehoe/releases/tag/1.0.0
+
 AutoName: Lavabit Encrypted Proxy
+
 RepoType: git
 Repo: https://github.com/lavabit/pahoehoe.git
+
 Builds:
   - versionName: 1.0.0
     versionCode: 200
@@ -41,6 +44,7 @@ Builds:
       - export ANDROID_NDK_ROOT="$ANDROID_NDK"
       - ./scripts/build_deps.sh
     ndk: r21e
+    
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9]+\.[0-9]+\.[0-9]+$
 CurrentVersion: 1.0.0
