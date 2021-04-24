@@ -18,6 +18,7 @@ Builds:
     versionCode: 200
     commit: 1.0.0
     subdir: android/app
+    gradle:
       - lavabitProductionFat
     rm:
       - android/bitmask-core/*.?ar
