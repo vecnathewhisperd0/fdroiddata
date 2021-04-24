@@ -20,6 +20,12 @@ Builds:
     subdir: android/app
     gradle:
       - lavabitProductionFat
+    scandelete:
+      - daemon/
+      - vpnweb/
+      - android/go/
+      - android/gradle/
+      - android/ics-openvpn/
     prebuild:
       - sed -i -e "/^task updateSdkLicences/,/^}/d; /commandLine 'git'/d" build.gradle
       - yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses > /dev/null
