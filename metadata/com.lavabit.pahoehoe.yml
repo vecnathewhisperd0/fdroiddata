@@ -20,19 +20,21 @@ Builds:
     subdir: android/app
     gradle:
       - lavabitProductionFat
+    rm:
+      - vpnweb/
+      - daemon/
+      - desktop/
+      - android/gradle/wrapper/gradle-wrapper.jar
+      - android/ics-openvpn/gradle/wrapper/gradle-wrapper.jar
     prebuild:
       - sed -i -e "/^task updateSdkLicences/,/^}/d; /commandLine 'git'/d" build.gradle
-      - yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses > /dev/null
+      - yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses
       - $ANDROID_HOME/tools/bin/sdkmanager 'platforms;android-30' > /dev/null
       - $ANDROID_HOME/tools/bin/sdkmanager 'build-tools;30.0.3' > /dev/null
       - $ANDROID_HOME/tools/bin/sdkmanager 'ndk;21.4.7075529' > /dev/null
       - $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.10.2.4988404' > /dev/null
     scandelete:
-      - vpnweb/
-      - daemon/
-      - desktop/
       - android/go/
-      - android/gradle/
       - android/ics-openvpn/
     build:
       - cd ../
