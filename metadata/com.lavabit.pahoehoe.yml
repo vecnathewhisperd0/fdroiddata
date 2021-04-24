@@ -18,9 +18,10 @@ Builds:
     versionCode: 200
     commit: 1.0.0
     subdir: android/app
-    gradle:
       - lavabitProductionFat
     rm:
+      - android/bitmask-core/*.?ar
+      - android/bitmask-web-core/*.?ar
       - android/go/src/github.com/agl/ed25519/testdata/sign.input.gz
       - android/go/src/github.com/shadowsocks/shadowsocks-go/script/shadowsocks.exe
       - android/go/src/golang.org/x/crypto/ed25519/testdata/sign.input.gz
@@ -33,9 +34,7 @@ Builds:
       - android/go/src/golang.org/x/tools/go/packages/testdata/TestName_ModulesDedup/pkg/mod/cache/download/github.com/heschik/tools-testrepo/v2/@v/*.zip
       - android/ics-openvpn/main/src/main/cpp/mbedtls/programs/fuzz/corpuses/*
       - android/ics-openvpn/main/src/main/cpp/mbedtls/tests
-      - android/go/lib/*.?ar
-      - android/bitmask-core/*.?ar
-      - android/bitmask-web-core/*.?ar
+      - android/ics-openvpn/main/src/main/cpp/openvpn3/test/unittests/comp-testdata
     prebuild:
       - sed -i -e "/^task updateSdkLicences/,/^}/d; /commandLine 'git'/d" build.gradle
       - yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses
