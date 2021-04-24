@@ -19,7 +19,7 @@ Builds:
     commit: 1.0.0
     subdir: android/app
     gradle:
-      - lavabitProductionFatRelease
+      - lavabitProductionFat
     rm:
       - vpnweb/
       - daemon/
