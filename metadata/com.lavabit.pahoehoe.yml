@@ -21,8 +21,9 @@ Builds:
     gradle:
       - lavabitProductionFat
     scandelete:
-      - daemon/
       - vpnweb/
+      - daemon/
+      - desktop/
       - android/go/
       - android/gradle/
       - android/ics-openvpn/
