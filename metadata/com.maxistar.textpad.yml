@@ -24,7 +24,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.11.0
+    versionCode: 19
+    commit: v1.11.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.15.1
+    versionCode: 24
+    commit: v1.15.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 1.11.0
-CurrentVersionCode: 19
+CurrentVersion: 1.15.1
+CurrentVersionCode: 24
