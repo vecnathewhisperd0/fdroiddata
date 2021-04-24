@@ -37,9 +37,23 @@ Builds:
       - android/go/
       - android/ics-openvpn/
     build:
-      - cd ../
       - export ANDROID_NDK_ROOT="$ANDROID_NDK"
-      - scripts/build_deps.sh
+      - cd ../go
+      - curl -o go.tar.gz https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz
+      - echo '6272d6e940ecb71ea5636ddb5fab3933e087c1356173c61f4a803895e947ebb3  go.tar.gz'
+        | shasum -c
+      - mkdir -p golang
+      - tar -C golang -xzf go.tar.gz
+      - export GOPATH="$PWD"
+      - export GO_LANG="$PWD/golang/go/bin"
+      - export GO_COMPILED="$PWD/bin"
+      - export PATH="$GO_LANG:$GO_COMPILED:$PATH"
+      - ./golang/go/bin/go get golang.org/x/mobile/cmd/gomobile
+      - ./bin/gomobile init
+      - ./android_build_web_core.sh
+      - ./android_build_core.sh
+      - cd ../ics-openvpn
+      - gradle main:externalNativeBuildCleanSkeletonRelease main:externalNativeBuildSkeletonRelease
     ndk: r21e
 
 AutoUpdateMode: Version %v
