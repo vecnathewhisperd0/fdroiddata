@@ -40,6 +40,6 @@ Builds:
       - rclone:buildNative
 
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
+UpdateCheckMode: Tags ^v?[.0-9]*$
 CurrentVersion: 1.11.4
 CurrentVersionCode: 170

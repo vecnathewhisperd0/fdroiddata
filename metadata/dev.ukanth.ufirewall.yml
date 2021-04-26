@@ -797,18 +797,36 @@ Builds:
 
   - versionName: 3.5.0
     versionCode: 20210401
-    disable: does not build https://github.com/ukanth/afwall/pull/1190
-    commit: v3.5.0
-    subdir: aFWall
+    commit: 4269bc761a55a06df8abac932d72a19928834189
+    subdir: app
     gradle:
       - yes
-    prebuild: sed -i -e '/drummer-aidan/d' ../build.gradle build.gradle
+    prebuild:
+      - sed -i -e '/drummer-aidan/d' ../build.gradle
+      - cp ../.github/ci-gradle.properties ../gradle.properties
+      - sed -i -e '/android.ndkPath/d' -e '/ndk.dir/d' ../local.properties
     scandelete:
-      - aFWall/src/main/res/raw/
+      - app/src/main/res/raw/
+    build: make -C ../external -j`nproc` NDK="$$NDK$$" NDK_PROJECT_PATH="$PWD/.."
+    ndk: r10e
+
+  - versionName: 3.5.1
+    versionCode: 20210419
+    disable: fails to build https://github.com/ukanth/afwall/issues/1204
+    commit: v3.5.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/drummer-aidan/d' ../build.gradle
+      - cp ../.github/ci-gradle.properties ../gradle.properties
+      - sed -i -e '/android.ndkPath/d' -e '/ndk.dir/d' ../local.properties
+    scandelete:
+      - app/src/main/res/raw/
     build: make -C ../external -j`nproc` NDK="$$NDK$$" NDK_PROJECT_PATH="$PWD/.."
     ndk: r10e
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9.]+$
-CurrentVersion: 3.5.0
-CurrentVersionCode: 20210401
+CurrentVersion: 3.5.1
+CurrentVersionCode: 20210419

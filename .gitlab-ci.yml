@@ -57,6 +57,7 @@ lint:
     - ./tools/check-localized-metadata.py || export EXITVALUE=1
     - ./tools/check-keyalias-collision.py || export EXITVALUE=1
     - ./tools/check-metadata-summary-whitespace.py || export EXITVALUE=1
+    - ./tools/check-for-unattached-signatures.py || export EXITVALUE=1
     - exit $EXITVALUE
 
 trigger-issuebot:
@@ -151,7 +152,9 @@ fdroid build:
   artifacts:
     name: "${CI_PROJECT_PATH}_${CI_JOB_STAGE}_${CI_COMMIT_REF_NAME}_${CI_COMMIT_SHA}"
     paths:
+      - repo/
       - unsigned/
+      - tmp/
     when: always
     expire_in: 1 month
   except:
@@ -166,12 +169,15 @@ fdroid build:
   script:
     - git fetch https://gitlab.com/fdroid/fdroiddata.git;
     - test -d build || mkdir build
-    - for f in `git diff --name-only --diff-filter=d FETCH_HEAD...HEAD -- metadata/*.yml`; do
+    - for f in
+          `git diff --name-only --diff-filter=d FETCH_HEAD...HEAD -- metadata/*.yml`
+          `git diff --name-only --diff-filter=d FETCH_HEAD...HEAD -- metadata/*/signatures`;
+      do
           diff=$(git diff FETCH_HEAD...HEAD -- $f);
           echo "$diff";
           test $(echo "$diff" | grep '^[+-] ' | grep -v '^+  *disable:' | wc -l) = 0 && continue;
           echo "$diff" | grep -E '^\+ *(NoSourceSince|Disabled):' && continue;
-          appid=`echo $f | sed -n -e 's,^metadata/\([^/][^/]*\)\.yml,\1,p'`;
+          appid=`echo $f | sed -E -n 's,^metadata/([^/][^/]*)(\.yml|/signatures/.*),\1,p'`;
           export CHANGED="$CHANGED $appid";
       done;
     - test -n "$(printf "$CHANGED" | tr -d '[:space:]')"
@@ -220,12 +226,26 @@ fdroid build:
           env TERM=$TERM
           env HOME=$VAGRANT_HOME
           fdroid"
+
+    # use fdroidserver test keystore as placeholder since `fdroid publish` requires it
+    - printf 'repo_keyalias\x3a sova\n' >> config.yml
+    - printf 'keystorepass\x3a r9aquRHYoI8+dYz6jKrLntQ5/NJNASFBacJh7Jv2BlI=\n' >> config.yml
+    - printf 'keypass\x3a r9aquRHYoI8+dYz6jKrLntQ5/NJNASFBacJh7Jv2BlI=\n' >> config.yml
+    - printf 'keydname\x3a "CN=Birdman, OU=Cell, O=Alcatraz, L=Alcatraz, S=California, C=US"\n' >> config.yml
+    - keystore=$CI_PROJECT_DIR/fdroidserver/tests/keystore.jks
+    - printf "keystore\x3a $keystore\n" >> config.yml
+    - chown vagrant $keystore
+
     - for build in `./tools/find-changed-builds.py`; do
           set -x;
           apt-get install sudo;
           ./tools/setup-ndk-per-build.py $build $VAGRANT_HOME/android-ndk;
+          chown -R vagrant $VAGRANT_HOME;
           $fdroid fetchsrclibs $build --verbose;
-          $fdroid build --verbose --scan-binary --on-server --no-tarball $build;
+          $fdroid build --verbose --test --scan-binary --on-server --no-tarball $build;
+          ./tools/build-contains-signatures.py $build || continue;
+          apt-get install sudo;
+          $fdroid publish --verbose $build;
       done
 
 
