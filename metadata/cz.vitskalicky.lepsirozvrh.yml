@@ -88,7 +88,7 @@ Builds:
     gradle:
       - fdroid
 
-  - versionName: 1.8
+  - versionName: '1.8'
     versionCode: 25
     commit: v1.8
     subdir: app
@@ -98,5 +98,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckIgnore: beta preview
-CurrentVersion: 1.8
+CurrentVersion: '1.8'
 CurrentVersionCode: 25
