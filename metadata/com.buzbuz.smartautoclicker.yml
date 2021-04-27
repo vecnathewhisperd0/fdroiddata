@@ -1,6 +1,6 @@
 Categories:
   - System
-License: GPL-3.0-or-later
+License: GPL-2.0-or-later
 AuthorName: Kevin Buzeau
 SourceCode: https://github.com/Nain57/Smart-AutoClicker
 IssueTracker: https://github.com/Nain57/Smart-AutoClicker/issues
@@ -19,7 +19,8 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
+UpdateCheckIgnore: alpha
 CurrentVersion: 1.0-RC1
 CurrentVersionCode: 2
