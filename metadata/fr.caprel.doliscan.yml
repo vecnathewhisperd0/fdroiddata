@@ -21,7 +21,7 @@ Builds:
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y -t stretch-backports npm
-      - npm install -g cordova
+      - npm install -g cordova@8.0
     output: build/cordova/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
     prebuild:
       - ./prebuild-android.sh
