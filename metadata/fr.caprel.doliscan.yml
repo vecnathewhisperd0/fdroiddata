@@ -1,6 +1,9 @@
 Categories:
   - Money
 License: GPL-3.0-or-later
+AuthorName: Eric Seigne (Projet A^ulEdu / Cap-REL / VideoSub)
+AuthorEmail: eric.seigne@cap-rel.fr
+AuthorWebSite: https://cap-rel.fr/
 WebSite: https://doliscan.org
 SourceCode: https://framagit.org/doliscan/client-cordova
 IssueTracker: https://framagit.org/doliscan/client-cordova/-/issues
@@ -12,27 +15,32 @@ RepoType: git
 Repo: https://framagit.org/doliscan/client-cordova/
 
 Builds:
-  - versionName: 1.7.0
-    versionCode: 10700
-    commit: v1.7.0
+  - versionName: 1.7.1
+    versionCode: 10701
+    commit: v1.7.1
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y -t stretch-backports npm
+      - apt-get install -y -t stretch-backports npm minify
       - npm install -g cordova
     output: build/cordova/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
     prebuild:
       - ./prebuild-android.sh
+      - cordova plugin add cordova-plugin-androidx-adapter
+      - cordova plugin add phonegap-plugin-barcodescanner
+      - cordova plugin add cordova-plugin-aes256-encryption
+      - cordova plugin add https://github.com/Riyaz0001/cordova-plugin-image-cropper.git
+      - cordova plugin add https://github.com/silkimen/cordova-plugin-advanced-http
     scandelete:
-      - node_modules/cordova-android/spec/fixtures/org.test.plugins.dummyplugin/src/android/jniLibs/x86/libnative.so
       - node_modules/jquery-ajax-native/test/native.bin
-    build:
-      - cordova build android --release
+      - node_modules/phonegap-plugin-barcodescanner/src/android/barcodescanner-release-2.1.5.aar
+      - node_modules/term-size/vendor/windows/term-size.exe
+      - node_modules/term-size/vendor/macos/term-size
+      - platforms/android/app/libs/barcodescanner-release-2.1.5.aar
+      - plugins/phonegap-plugin-barcodescanner/src/android/barcodescanner-release-2.1.5.aar
+    build: cordova build android --release
+
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.7.0
-CurrentVersionCode: 10700
-
-AuthorName: Eric Seigne (Projet AbulEdu / Cap-REL / VideoSub)
-AuthorEmail: eric.seigne@cap-rel.fr
-AuthorWebSite: https://cap-rel.fr/
+CurrentVersion: 1.7.1
+CurrentVersionCode: 10701
