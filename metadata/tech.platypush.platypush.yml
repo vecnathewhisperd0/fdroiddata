@@ -43,6 +43,7 @@ Builds:
   - versionName: 1.0.1
     versionCode: 1000100
     commit: v1.0.1
+    subdir: app
     gradle:
       - yes
 
