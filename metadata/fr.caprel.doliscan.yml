@@ -38,16 +38,7 @@ Builds:
       - platforms/android/app/libs/barcodescanner-release-2.1.5.aar
       - plugins/phonegap-plugin-barcodescanner/src/android/barcodescanner-release-2.1.5.aar
       - node_modules/cordova-android/spec/fixtures/org.test.plugins.dummyplugin/src/android/TestLib.jar
-      - node_modules/phonegap-plugin-barcodescanner/src/windows/lib/ZXing.winmd
-      - node_modules/phonegap-plugin-barcodescanner/src/ios/CDVBarcodeScanner.bundle/beep.caf
       - platforms/android/cordova/node_modules/properties-parser/test/ReadProperties.class
-      - plugins/phonegap-plugin-barcodescanner/src/ios/CDVBarcodeScanner.bundle/beep.caf
-      - plugins/phonegap-plugin-barcodescanner/src/windows/lib/ZXing.winmd
-      - node_modules/cordova/node_modules/bplist-parser/test/utf16_chinese.plist
-      - node_modules/cordova-common/node_modules/bplist-parser/test/utf16_chinese.plist
-      - node_modules/bplist-parser/test/utf16_chinese.plist
-      - node_modules/cordova-create/node_modules/bplist-parser/test/utf16_chinese.plist
-      - node_modules/cordova-fetch/node_modules/bplist-parser/test/utf16_chinese.plist
     build: cordova build android --release
 
 
