@@ -26,6 +26,7 @@ Builds:
     output: build-android-release/android-build/build/outputs/apk/release/android-build-release-unsigned.apk
     srclibs:
       - OpenSSL@OpenSSL_1_1_1g
+    prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-29' > /dev/null
     scandelete:
       - 3rdParty/android_openssl
     build:
@@ -133,6 +134,7 @@ Builds:
     output: build-android-release/android-build/build/outputs/apk/release/android-build-release-unsigned.apk
     srclibs:
       - OpenSSL@OpenSSL_1_1_1g
+    prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-29' > /dev/null
     scandelete:
       - 3rdParty/android_openssl
     build:
@@ -268,6 +270,7 @@ Builds:
     output: build-android-release/android-build/build/outputs/apk/release/android-build-release-unsigned.apk
     srclibs:
       - OpenSSL@OpenSSL_1_1_1g
+    prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-29' > /dev/null
     scandelete:
       - 3rdParty/android_openssl
     build:
