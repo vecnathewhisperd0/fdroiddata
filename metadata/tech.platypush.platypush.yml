@@ -43,9 +43,8 @@ Builds:
   - versionName: 1.0.1
     versionCode: 1000100
     commit: v1.0.1
-    output: app/build/outputs/apk/release/app-release-unsigned.apk
     gradle:
-        - yes
+      - yes
 
 MaintainerNotes: |-
     v1.0.0 is an Android JS based app, while the standard Gradle build applies to v1.0.1 and higher.
