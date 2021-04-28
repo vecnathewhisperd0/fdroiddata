@@ -13,7 +13,7 @@ Builds:
     commit: nogaen-1
     gradle:
       - prod
-    output: app/build/outputs/apk/prod/release/app-prod-*.apk
+    subdir: app
     srclibs:
       - dp3t-sdk@nogaen-1
     rm:
@@ -22,9 +22,9 @@ Builds:
       - pushd $$dp3t-sdk$$/dp3t-sdk
       - ./gradlew assembleProdRelease -PversionNoGaen=+nogaen-1
       - popd
-      - mkdir -p ./app/libs
+      - mkdir -p ./libs
       - cp $$dp3t-sdk$$/dp3t-sdk/sdk/build/outputs/aar/sdk-production-release.aar
-        ./app/libs/
+        ./libs/
     gradleprops:
       - versionNoGaen=+nogaen-1
 
