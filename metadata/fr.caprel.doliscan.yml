@@ -39,7 +39,19 @@ Builds:
       - plugins/phonegap-plugin-barcodescanner/src/android/barcodescanner-release-2.1.5.aar
       - node_modules/cordova-android/spec/fixtures/org.test.plugins.dummyplugin/src/android/TestLib.jar
       - platforms/android/cordova/node_modules/properties-parser/test/ReadProperties.class
-    build: cordova build android --release
+    build:
+      - "echo 'apply from: \"phonegap-plugin-barcodescanner/piholedroid-barcodescanner.gradle\"\
+        ' >> build.gradle"
+      - pushd $$BarcodeScanner$$
+      - rm local.properties
+      - gradle clean assembleRelease
+      - popd
+      - cp $$BarcodeScanner$$/barcodescanner/build/outputs/aar/barcodescanner-release.aar libs/barcodescanner.aar
+      - cordova build android --release
+    gradle:
+      - yes
+    srclibs:
+      - BarcodeScanner@2.1.5
 
 
 AutoUpdateMode: Version v%v
