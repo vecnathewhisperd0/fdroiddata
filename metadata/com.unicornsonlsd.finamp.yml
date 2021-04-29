@@ -11,12 +11,12 @@ RepoType: git
 Repo: https://github.com/UnicornsOnLSD/finamp
 
 Builds:
-  - versionName: 0.3.1
-    versionCode: 6
-    commit: 0.3.1
+  - versionName: 0.4.0
+    versionCode: 7
+    commit: c7ce73d
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
-      - flutter@2.0.4
+      - flutter@stable
     rm:
       - ios
     build:
@@ -27,5 +27,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://github.com/UnicornsOnLSD/finamp/raw/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 0.3.1
-CurrentVersionCode: 6
+CurrentVersion: 0.4.0
+CurrentVersionCode: 7
