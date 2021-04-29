@@ -1,0 +1,26 @@
+Categories:
+  - Development
+License: MIT
+AuthorName: FredHappyface
+SourceCode: https://github.com/fredhappyface/android.brainf
+IssueTracker: https://github.com/fredhappyface/android.brainf/issues
+
+Name: Brainf
+AutoName: Brainf
+Summary: Interpreter for the 'Brainf' programming language
+Description: The aim of is to parse a file and to produce an interpreter for the 'Brainf'
+    programming language
+
+RepoType: git
+Repo: https://github.com/fredhappyface/android.brainf
+
+Builds:
+  - versionName: 2019.12.0
+    versionCode: 7
+    commit: de3ab5dddbdbe262e314a5d094310ef2a03a5d32
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
