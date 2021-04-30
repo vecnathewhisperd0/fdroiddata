@@ -31,8 +31,8 @@ Builds:
       - android/ics-openvpn/gradle/wrapper/gradle-wrapper.jar
     prebuild:
       - sed -i -e "/^task updateSdkLicences/,/^}/d; /commandLine 'git'/d" build.gradle
-      - $$SDK$$/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;30.0.3' >
-        /dev/null
+      - $$SDK$$/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;30.0.3' |
+        grep -v '=' || true
     scandelete:
       - android/go/
       - android/ics-openvpn/
