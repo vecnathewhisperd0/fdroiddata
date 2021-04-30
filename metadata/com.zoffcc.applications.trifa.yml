@@ -18,8 +18,6 @@ Builds:
     subdir: android-refimpl-app/app
     gradle:
       - yes
-    antifeatures:
-      - NonFreeAssets
 
   - versionName: 1.0.3
     versionCode: 10003
@@ -762,8 +760,6 @@ Builds:
     gradle:
       - yes
     prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
-    antifeatures:
-      - NonFreeAssets
     ndk: r13b
 
   - versionName: 1.0.97
@@ -773,8 +769,6 @@ Builds:
     gradle:
       - yes
     prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.6.4111459'
-    antifeatures:
-      - NonFreeAssets
     ndk: r13b
 
   - versionName: 1.0.98
