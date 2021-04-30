@@ -52,6 +52,7 @@ Builds:
       - cd ../ics-openvpn
       - gradle main:externalNativeBuildCleanSkeletonRelease main:externalNativeBuildSkeletonRelease
     ndk: r21e
+
   - versionName: 1.0.1
     versionCode: 201
     commit: 1.0.1
