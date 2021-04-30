@@ -27,10 +27,14 @@ Builds:
       - vpnweb/
       - daemon/
       - desktop/
+      - android/gradle/wrapper/gradle-wrapper.jar
+      - android/ics-openvpn/gradle/wrapper/gradle-wrapper.jar
     prebuild:
       - sed -i -e "/^task updateSdkLicences/,/^}/d; /commandLine 'git'/d" build.gradle
       - $$SDK$$/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;30.0.3' >
         /dev/null
+      - ./gradlew wrapper --gradle-version 6.5 
+        --gradle-distribution-sha256-sum c9910513d0eed63cd8f5c7fec4cb4a05731144770104a0871234a4edc3ba3cef
     scandelete:
       - android/go/
       - android/ics-openvpn/
