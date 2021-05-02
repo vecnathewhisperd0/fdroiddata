@@ -26,14 +26,14 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 1.16.0
+  - versionName: 1.16.1
     versionCode: 25
-    commit: v1.16.0
+    commit: v1.16.1
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.16.0
+CurrentVersion: 1.16.1
 CurrentVersionCode: 25
