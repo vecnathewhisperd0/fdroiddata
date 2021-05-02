@@ -3,6 +3,8 @@ Categories:
   - Writing
 License: GPL-3.0-or-later
 SourceCode: https://github.com/maxistar/TextPad
+AuthorName: Maxim Starikov
+AuthorWebSite: https://maxistar.ru/
 IssueTracker: https://github.com/maxistar/TextPad/issues
 
 Name: SimpleTextEditor
@@ -24,21 +26,14 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 1.11.0
-    versionCode: 19
-    commit: v1.11.0
+  - versionName: 1.16.0
+    versionCode: 25
+    commit: v1.16.0
     subdir: app
     gradle:
       - yes
 
-  - versionName: 1.15.1
-    versionCode: 24
-    commit: v1.15.1
-    subdir: app
-    gradle:
-      - yes
-
-AutoUpdateMode: None
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.15.1
-CurrentVersionCode: 24
+CurrentVersion: 1.16.0
+CurrentVersionCode: 25
