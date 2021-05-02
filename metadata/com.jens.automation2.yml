@@ -33,10 +33,9 @@ Builds:
       - sed -i -e '/firebase/d' build.gradle
       - sed -i -e '/play-services-location/d' build.gradle
 
-  - versionName: 1.6.25
-    versionCode: 101
-    disable: old version code
-    commit: v1.6.25
+  - versionName: 1.6.32
+    versionCode: 103
+    commit: v1.6.32
     subdir: app
     gradle:
       - fdroidFlavor
@@ -45,6 +44,7 @@ Builds:
       - sed -i -e '/play-services-location/d' build.gradle
 
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 1.6.24-apk
-CurrentVersionCode: 100
+UpdateCheckMode: HTTP
+UpdateCheckData: https://git.server47.de/jens/Automation/raw/branch/master/app/build.gradle|versionCode\s(\d+)|.|versionName\s"([\d.]+)"
+CurrentVersion: 1.6.32
+CurrentVersionCode: 103

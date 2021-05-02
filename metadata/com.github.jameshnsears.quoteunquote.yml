@@ -44,7 +44,16 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 2.2.0-fdroid
+    versionCode: 50
+    commit: 2.2.0-fdroid
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/firebase/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags .*-fdroid$
-CurrentVersion: 2.1.1-fdroid
-CurrentVersionCode: 49
+CurrentVersion: 2.2.0-fdroid
+CurrentVersionCode: 50
