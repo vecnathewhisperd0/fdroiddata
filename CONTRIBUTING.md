@@ -18,11 +18,11 @@ file and make sure that updating the app is actually possible.
 
 ### Setting up fdroiddata for merge requests
 
-- [Register on GitLab](http://gitlab.com).
+- [Register on GitLab](https://gitlab.com/).
 - Visit and fork the [fdroiddata repository](https://gitlab.com/fdroid/fdroiddata).
 
-App metadata for a merge request can be created with or without the use of `fdroidserver`.
-The former is only recommended for really advanced users.
+App metadata for a merge request can be created without or with the use of `fdroidserver`.
+The latter is only recommended for really advanced users.
 
 ### Metadata preparation without fdroidserver
 
@@ -35,7 +35,7 @@ You can either write the metadata file locally, on your machine, or directly on 
    Naming it like the app name or, much better, the app id makes it easier to keep track of your contributions.
 1. Visit the `metadata` directory of your fork.
 1. Add a new file by clicking on the plus sign and choosing _"New file"_.
-1. Set the file name in the following schema: `<application_id>.yml`. So an example would be _"com.app.example"_.
+1. Set the file name in the following schema: `<application_id>.yml`. So an example would be _"com.app.example.yml"_.
 1. Write down the metadata. The [Build Metadata Reference](https://f-droid.org/en/docs/Build_Metadata_Reference)
    as well as the [templates from the wiki](https://gitlab.com/fdroid/wiki/-/wikis/Metadata/YAML-Metadata)
    will help you.
