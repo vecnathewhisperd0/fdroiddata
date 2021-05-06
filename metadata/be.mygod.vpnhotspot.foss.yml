@@ -13,14 +13,14 @@ RepoType: git
 Repo: https://github.com/nekohasekai/VPNHotspot
 
 Builds:
-  - versionName: 2.11.4
-    versionCode: 257
-    commit: v2.11.4
+  - versionName: 2.11.6
+    versionCode: 259
+    commit: v2.11.6
     subdir: mobile
     gradle:
       - freedom
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.11.4
-CurrentVersionCode: 257
+CurrentVersion: 2.11.6
+CurrentVersionCode: 259
