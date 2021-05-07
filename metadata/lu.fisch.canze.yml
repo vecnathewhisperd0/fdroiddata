@@ -19,6 +19,7 @@ Builds:
     subdir: app
     gradle:
       - fdroid
+    prebuild: sed -i -e '/com\.google\.gms\.google-services/d' build.gradle
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
