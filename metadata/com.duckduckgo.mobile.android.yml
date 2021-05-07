@@ -874,7 +874,6 @@ Builds:
     prebuild: sed -i -e 's/21.0.6113669/21.4.7075529/' app/build.gradle
     ndk: r21e
 
-
   - versionName: 5.85.3
     versionCode: 58503
     commit: 5.85.3
