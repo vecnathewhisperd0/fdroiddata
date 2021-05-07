@@ -15,7 +15,7 @@ Repo: https://github.com/fesch/CanZE
 Builds:
   - versionName: '1.61'
     versionCode: 93
-    commit: '1.60'
+    commit: '1.61'
     subdir: app
     gradle:
       - fdroid
