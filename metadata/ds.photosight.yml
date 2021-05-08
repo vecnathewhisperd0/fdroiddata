@@ -1,0 +1,26 @@
+Categories:
+  - Multimedia
+  - Internet
+License: AGPL-3.0-only
+SourceCode: https://github.com/deviant-studio/PhotosightGallery
+IssueTracker: https://github.com/deviant-studio/PhotosightGallery/issues
+
+Summary: Photosight Mobile Client
+Description: Photosight.ru is a photographic community of talented photographers mostly
+    from Europe. You can find there daily updated archive of creative artistic photos
+    or share your own. Photosight Gallery is an easy way to browse photos from www.photosight.ru
+    on your Android device.
+
+RepoType: git
+Repo: https://github.com/deviant-studio/PhotosightGallery
+
+Builds:
+  - versionName: 1.0.2
+    versionCode: 28
+    commit: 9debef23b059bf696ff1e73c85797379e4dfef68
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
