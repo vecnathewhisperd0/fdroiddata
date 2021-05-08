@@ -1,0 +1,39 @@
+Categories:
+  - Science & Education
+License: GPL-3.0-or-later
+AuthorName: Thies Hecker
+WebSite: https://simple-plotter.readthedocs.io/en/latest/user_guide.html
+SourceCode: https://gitlab.com/thecker/simple-plotter4a
+
+AutoName: simple-plotter4a
+
+RepoType: git
+Repo: https://gitlab.com/thecker/simple-plotter4a
+
+Builds:
+  - versionName: 0.1.0
+    versionCode: 721100
+    commit: 0.1.0
+    sudo:
+      - apt-get install -y virtualenv build-essential lib32stdc++6 lib32z1 lib32ncurses5
+        libltdl-dev lld-4.0 openjdk-8-jdk
+      - ln -s /usr/bin/lld-4.0 /usr/bin/lld
+      - ln -s /usr/bin/ld.lld-4.0 /usr/bin/ld.lld
+      - ln -s /usr/bin/lld-link-4.0 /usr/bin/lld-link
+      - pip3 install -U cython
+    output: bin/simple_plotter4a_release-unsigned.apk
+    prebuild:
+      - pip3 install wheel
+      - pip3 install --user --upgrade buildozer
+      - export PATH=$PATH:~/.local/bin/:/usr/bin/llvm-4.0/bin/
+      - python3 create_version_files.py
+      - python3 update_sdk_ndk_path.py $$SDK$$ $$NDK$$
+    build:
+      - ~/.local/bin/buildozer android release
+      - mv bin/simple_plotter* bin/simple_plotter4a_release-unsigned.apk
+    ndk: r19c
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 0.1.0
+CurrentVersionCode: 721100
