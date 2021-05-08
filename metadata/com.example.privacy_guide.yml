@@ -1,0 +1,35 @@
+Categories:
+  - Security
+  - Science & Education
+  - Internet
+  - Development
+License: MIT
+AuthorName: Mohit Soni
+SourceCode: https://github.com/mohitsoni-dev/privacy_guide
+IssueTracker: https://github.com/mohitsoni-dev/privacy_guide/issues
+
+Name: Privacy Guide
+AutoName: privacy_guide
+Summary: A complete guide to online privacy tips and tricks
+Description: A complete guide to online privacy tips and tricks and become a privacy
+    pro.
+
+RepoType: git
+Repo: https://github.com/mohitsoni-dev/privacy_guide
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@stable
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
