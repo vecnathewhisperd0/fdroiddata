@@ -1,0 +1,44 @@
+Categories:
+  - Money
+License: GPL-2.0-or-later
+AuthorName: Handydev
+AuthorEmail: financier@handydev.com
+WebSite: https://handydev.com/financier
+SourceCode: https://github.com/handydevcom/financier
+IssueTracker: https://github.com/handydevcom/financier/issues
+
+AutoName: Financier
+Summary: Open source personal finance tracker
+Description: |-
+    Financier is based on the great Financisto app.
+
+    Features include:
+    * Multiple accounts, multiple currencies.
+    * Home currency and exchange rates.
+    * Transfers with downloadable rates.
+    * Scheduled & recurring transactions.
+    * Split transactions.
+    * Hierarchical categories with custom attributes.
+    * Recurring budgets.
+    * Projects and payees.
+    * Filtering and reporting.
+    * Dropbox and local backups.
+    * Automatic daily backups.
+    * QIF/CSV import/export.
+
+RepoType: git
+Repo: https://github.com/handydevcom/financier
+
+Builds:
+  - versionName: 2.0.6
+    versionCode: 206
+    commit: 2.0.6_FDroid
+    subdir: app
+    output: app/fdroid/release/Financier*.apk
+    gradle:
+      - fdroid
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 2.0.6
+CurrentVersionCode: 206
