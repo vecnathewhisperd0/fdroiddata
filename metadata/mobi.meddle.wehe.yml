@@ -14,7 +14,7 @@ RepoType: git
 Repo: https://github.com/NEU-SNS/wehe-android
 
 Builds:
-  - versionName: '3.7.1'
+  - versionName: 3.7.1
     versionCode: 46
     commit: v3.7.1
     subdir: wehe
@@ -23,5 +23,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '3.7.1'
+CurrentVersion: 3.7.1
 CurrentVersionCode: 46
