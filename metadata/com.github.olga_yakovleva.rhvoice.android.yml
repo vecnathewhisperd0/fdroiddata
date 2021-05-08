@@ -27,6 +27,8 @@ Builds:
     submodules: true
     gradle:
       - yes
+    rm:
+      - src/third-party/cldr
     ndk: r21e
 
 AutoUpdateMode: None
