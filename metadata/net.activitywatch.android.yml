@@ -1,0 +1,29 @@
+Categories:
+  - Time
+License: MPL-2.0
+AuthorName: ActivityWatch
+AuthorWebSite: https://activitywatch.net/
+SourceCode: https://github.com/ActivityWatch/aw-android
+IssueTracker: https://github.com/ActivityWatch/aw-android/issues
+Donate: https://activitywatch.net/donate/
+LiberapayID: '1586504'
+Bitcoin: 1NSxJs1wYUrRv53ZVH2DX9fquXdSPAdyYh
+
+RepoType: git
+Repo: https://github.com/ActivityWatch/aw-android
+Binaries: https://github.com/ActivityWatch/aw-android/releases/download/v%v/aw-android.apk
+
+Builds:
+  - versionName: 0.4.13
+    versionCode: 21
+    commit: v0.4.13
+    submodules: true
+    gradle:
+      - yes
+    output: aw-android.apk
+    build:
+      - env RELEASE=true make aw-server-rust
+      - make aw-webui
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
