@@ -498,14 +498,15 @@ Builds:
     commit: 1.10-r4
     subdir: ime/app
     sudo:
-      - apt-get remove openjdk-8-jdk-headless openjdk-8-jre-headless libplexus-containers-java
-      - apt-get install openjdk-11-jdk-headless openjdk-11-jre-headless
+      - apt-get update || apt-get update
+      - apt-get install -t stretch-backports openjdk-11-jdk-headless openjdk-11-jre-headless
+      - update-alternatives --auto java
     gradle:
       - yes
     prebuild:
       - sed -i -e "/EnvKey/ a //gradleVersion = '6.8.3'" ../build.gradle
-      - sed -i -e '/versionCode/ c versionCode $$VERCODE$$' ../../gradle/versioning_apk.gradle
-      - sed -i -e '/versionName/ c versionName "$$VERSION$$"' ../../gradle/versioning_apk.gradle
+      - sed -i -e '/Data\.versionCode/ c versionCode $$VERCODE$$' -e '/Data\.versionName/
+        c versionName "$$VERSION$$"' ../../gradle/versioning_apk.gradle
     scanignore:
       - addons/languages/*/pack/dictionary/*.gz
     ndk: r14b
