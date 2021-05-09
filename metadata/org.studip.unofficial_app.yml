@@ -11,14 +11,14 @@ RepoType: git
 Repo: https://github.com/tareksander/Stud.IP-App
 
 Builds:
-  - versionName: 0.2.3
-    versionCode: 5
-    commit: v0.2.3
+  - versionName: 0.3.0
+    versionCode: 6
+    commit: v0.3.0
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.2.3
-CurrentVersionCode: 5
+CurrentVersion: 0.3.0
+CurrentVersionCode: 6
