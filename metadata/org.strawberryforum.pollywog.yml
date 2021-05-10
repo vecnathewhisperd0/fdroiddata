@@ -25,6 +25,16 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '0.2'
+    versionCode: 2
+    commit: v0.2.1a
+    subdir: app
+    gradle:
+      - yes
+    prebuild: 
+      - sed -i -e 's/jcenter/google/' ../build.gradle
+      - sed -i -e 's/gradle:3.1.0/gradle:4.10.3/' ../build.gradle
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: '0.2'
