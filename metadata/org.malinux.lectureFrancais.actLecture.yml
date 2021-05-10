@@ -21,5 +21,7 @@ Builds:
       - yes
     output: build/outputs/apk/release/release/lectureFrancais.apk
 
-AutoUpdateMode: None
+AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
+CurrentVersion: '2.0'
+CurrentVersionCode: 2
