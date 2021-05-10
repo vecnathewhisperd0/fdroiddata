@@ -14,11 +14,12 @@ Repo: https://gitlab.com/Afrikalan/lecture_francais_android.git
 
 Builds:
   - versionName: '2.0'
-    output: release/lectureFrancais.apk
     versionCode: 2
+    output: build/outputs/apk/release/release/lectureFrancais.apk
     commit: 'v2.0'
     subdir: app
     gradle: yes
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
+
