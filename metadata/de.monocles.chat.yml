@@ -13,7 +13,6 @@ AutoName: monocles chat
 
 RepoType: git
 Repo: https://codeberg.org/Arne/monocles_chat
-Binaries: https://monocles.de/howto/assets/monocles%20chat-1.0-git-release.apk
 
 Builds:
   - versionName: '1.0'
