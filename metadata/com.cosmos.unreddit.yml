@@ -6,6 +6,7 @@ AuthorName: CosmosApps
 AuthorEmail: cosmos.dev@protonmail.com
 SourceCode: https://gitlab.com/cosmosapps/stealth
 IssueTracker: https://gitlab.com/cosmosapps/stealth/-/issues
+Changelog: https://gitlab.com/cosmosapps/stealth/-/blob/master/CHANGELOG.md
 
 AutoName: Stealth
 
@@ -21,7 +22,23 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystorePropertiesFile/d' build.gradle
 
+  - versionName: 1.0.0
+    versionCode: 3
+    commit: 1.0.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystorePropertiesFile/d' build.gradle
+
+  - versionName: 1.0.1
+    versionCode: 4
+    commit: 1.0.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystorePropertiesFile/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.1.1
-CurrentVersionCode: 2
+CurrentVersion: 1.0.1
+CurrentVersionCode: 4
