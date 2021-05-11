@@ -1,0 +1,23 @@
+Categories:
+  - Navigation
+License: Apache-2.0
+WebSite: https://ninelima.org/efis/
+SourceCode: https://gitlab.com/ninelima/kwikEFIS
+IssueTracker: https://gitlab.com/ninelima/kwikEFIS/issues
+Changelog: https://gitlab.com/ninelima/kwikEFIS/blob/HEAD/CHANGELOG.md
+AutoName: Kwik EFIS
+RepoType: git
+Repo: https://gitlab.com/ninelima/kwikEFIS.git
+
+Builds:
+  - versionName: 6.7
+    versionCode: 46
+    commit: EFIS_6.7
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version EFIS_%v
+UpdateCheckMode: Tags ^EFIS
+CurrentVersion: 6.7
+CurrentVersionCode: 46 
