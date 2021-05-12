@@ -35,7 +35,6 @@ Builds:
 
   - versionName: 1.2.1
     versionCode: 5
-    disable: no git tag
     commit: v1.2.1
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
