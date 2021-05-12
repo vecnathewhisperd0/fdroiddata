@@ -1,0 +1,25 @@
+Categories:
+  - Security
+License: CC0 1.0 Universal
+AuthorName: nekohasekai
+AuthorEmail: sekai@neko.services
+SourceCode: https://github.com/nekohasekai/lockup
+IssueTracker: https://github.com/mbkore/lockup/issues
+
+AutoName: LockUp
+
+RepoType: git
+Repo: https://github.com/nekohasekai/lockup
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
