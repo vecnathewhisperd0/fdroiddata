@@ -17,7 +17,7 @@ Builds:
     versionCode: 23
     commit: Release-1.4.1+23-fdroid
     subdir: android/app
-    output: ../../build/app/outputs/flutter-apk/app-release.apk
+    output: ../../build/app/outputs/flutter-apk/app-fdroid-release.apk
     srclibs:
       - flutter@2.2.0-10.2.pre
     rm:
