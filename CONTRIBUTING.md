@@ -5,13 +5,19 @@ For information about all aspects of F-Droid, check out the [documentation](http
 
 ## Issue Tracker
 
-You may use the
-[issue tracker](https://gitlab.com/fdroid/fdroiddata/issues) to report
-issues on app metadata and issues with the packages distributed
-through our repository.
+### Inclusion of new apps
 
-Before opening an issue about an outdated app, have a look at its metadata
-file and make sure that updating the app is actually possible.
+If you are a "first time" contributor, consider opening an issue at
+[RFP (Request for Packaging)](https://gitlab.com/fdroid/rfp/-/issues).
+Don't forget to fill in the issue template.
+
+### Updating apps already in F-Droid
+
+You may use the [issue tracker](https://gitlab.com/fdroid/fdroiddata/issues) to report
+issues on app metadata or issues with the packages distributed through our repository.
+For instance:
+- an app is outdated
+- an app has Antifeatures, but they are not listed in the app or on the website.
 
 
 ## Merge Requests
@@ -27,6 +33,7 @@ The latter is only recommended for really advanced users.
 ### Metadata preparation without fdroidserver
 
 You can either write the metadata file locally, on your machine, or directly on the GitLab website.
+Please read the [General Recommendations](#general-recommendations-without-fdroidserver) before you start.
 
 #### On the GitLab website
 
@@ -40,12 +47,8 @@ You can either write the metadata file locally, on your machine, or directly on 
    as well as the [templates from the wiki](https://gitlab.com/fdroid/wiki/-/wikis/Metadata/YAML-Metadata)
    will help you.
 1. Choose a smart commit message and commit your changes.
-1. Check if the pipeline for your commit succeed.
-   If not, take a look into the logs and try to fix the error by editing the metadata file again.
-1. Now you can create a new merge request at the `fdroiddata` repository.
-1. You can now wait for the packagers to pick up your MR. Please keep track if they asked any questions
-   and reply to them as soon as possible.
-   
+1. Continue with the [Common steps for both methods](#common-steps-for-both-methods)
+
 #### On your local machine
 
 1. Clone your fork.
@@ -57,26 +60,35 @@ You can either write the metadata file locally, on your machine, or directly on 
    as well as the [templates from the wiki](https://gitlab.com/fdroid/wiki/-/wikis/Metadata/YAML-Metadata)
    will help you.
 1. Commit and push to your upstream fork.
+1. Continue with the [Common steps for both methods](#common-steps-for-both-methods)
+
+#### Common steps for both methods
+
+1. Go to the `CI/CD` menu in the GitLab project of your fork.
 1. Check if the pipeline for your commit(s) succeed.
    If not, take a look into the logs and try to fix the error by editing the metadata file again.
-1. Now you can create a new merge request at the `fdroiddata` repository.
-1. You can now wait for the packagers to pick up your MR. Please keep track if they asked any questions
+1. If everything went fine, you can create a
+   [new merge request](https://gitlab.com/fdroid/fdroiddata/-/merge_requests/new) at the `fdroiddata` repository.
+1. Now wait for the packagers to pick up your Merge Request. Please keep track if they asked any questions
    and reply to them as soon as possible.
 
-#### General recommendations
+#### General recommendations (without fdroidserver)
 
 - Keep a separate branch for every app you want to submit.
 - Keep your forks `master` branch up-to-date. For more information see here:
   https://about.gitlab.com/blog/2016/12/01/how-to-keep-your-fork-up-to-date-with-its-origin
 - As a result of the two tips above, you should not commit to your `master` branch.
-  This will also trigger new pipelines at the right time. 
+  This will also trigger new pipelines at the right time.
+- Do not open a Merge Request from a protected branch.
+  The `master` branch is protected by default, but other branches can also be protected.
+- Please fill the template when opening a new Merge Request.
 
 ### Metadata preparation with fdroidserver
 
 #### Setting up fdroidserver
 
-> Note that to use the master branch of fdroiddata you will need the
-master branch of fdroidserver. Using the latest stable release of
+> Note that to use the `master` branch of _fdroiddata_ you will need the
+master branch of _fdroidserver_. Using the latest stable release of
 fdroidserver would probably work, but it is not guaranteed.
 
 Install [fdroidserver](https://gitlab.com/fdroid/fdroidserver), or just
@@ -120,7 +132,7 @@ cp templates/app-full metadata/app.id.yml
 Or by download:
 ```shell
 wget -O metadata/app.id.yml https://gitlab.com/fdroid/fdroiddata/raw/master/templates/app-full
-``` 
+```
 
 Now that the file is created, you need to fill up all the app information and
 add a working build recipe.
@@ -151,9 +163,9 @@ Congratulations! You can now open a merge request to add your app.
 Our buildserver runs builds once a day, so it may take up to 24h for your app
 to appear in our repository.
 
-#### General recommendations
+#### General recommendations (with fdroidserver)
 
-- [Squash](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html) your commits.
+- [Squash](https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html) your commits.
 
 - Make sure you've ran `fdroid lint` and `fdroid rewritemeta` before opening a
   merge request.
