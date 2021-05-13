@@ -1,0 +1,22 @@
+Categories:
+  - Games
+License: GPL-3.0-only
+WebSite: https://codeberg.org/jannis/Flang
+SourceCode: https://codeberg.org/jannis/FlangAndroid
+IssueTracker: https://codeberg.org/jannis/FlangAndroid/issues
+Changelog: https://codeberg.org/jannis/FlangAndroid/releases
+Bitcoin: 3KDMLFrcDjeuXBM1CFpkHYBZLr23jF4JCw
+AuthorName: Jannis
+AuthorEmail: flang@tadris.de
+Liberapay: jannis
+
+
+AutoName: Flang
+
+RepoType: git
+Repo: https://codeberg.org/jannis/FlangAndroid.git
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0
+CurrentVersionCode: 1
