@@ -15,7 +15,7 @@ Repo: https://gitlab.com/free2pass/free2pass-app.git
 Builds:
   - versionName: 1.4.3
     versionCode: 26
-    commit: Release-1.4.3+26
+    commit: Release-1.4.3+26-26-fdroid
     subdir: android/app
     output: ../../build/app/outputs/flutter-apk/app-fdroid-release.apk
     srclibs:
