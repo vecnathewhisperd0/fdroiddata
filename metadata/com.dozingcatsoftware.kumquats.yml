@@ -17,6 +17,11 @@ Builds:
     output: build/app/outputs/apk/fdroid/release/app-fdroid-release.apk
     srclibs:
       - flutter@2.0.6
+    rm:
+      - ios
+      - linux
+      - macos
+      - web
     build:
       - export PATH=$$flutter$$/bin:$PATH
       - flutter build apk --flavor fdroid
