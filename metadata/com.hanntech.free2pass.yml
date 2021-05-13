@@ -13,13 +13,13 @@ RepoType: git
 Repo: https://gitlab.com/free2pass/free2pass-app.git
 
 Builds:
-  - versionName: 1.4.2
-    versionCode: 25
-    commit: Release-1.4.2+25-fdroid
+  - versionName: 1.4.3
+    versionCode: 26
+    commit: Release-1.4.3+26
     subdir: android/app
     output: ../../build/app/outputs/flutter-apk/app-fdroid-release.apk
     srclibs:
-      - flutter@2.2.0-10.2.pre
+      - flutter@2.2.0-10.3.pre
     rm:
       - ios
     prebuild: echo "flutter.sdk=$$flutter$$" >> ../local.properties
@@ -31,5 +31,5 @@ Builds:
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://gitlab.com/free2pass/free2pass-app/-/raw/main/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 1.4.2
-CurrentVersionCode: 25
+CurrentVersion: 1.4.3
+CurrentVersionCode: 26
