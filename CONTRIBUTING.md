@@ -19,6 +19,14 @@ For instance:
 - an app is outdated
 - an app has Antifeatures, but they are not listed in the app or on the website.
 
+Before opening an issue about an outdated app, have a look at its metadata
+file and make sure that updating the app is actually possible. For example,
+`MaintainerNotes` might contain a hint on why it's impossible to further update
+an app (e.g. proprietary dependencies were added, essential parts of the code
+are no longer available).
+
+Also make sure having checked with already existing issues (including closed ones)
+which might give similar explanations.
 
 ## Merge Requests
 
@@ -82,6 +90,13 @@ Please read the [General Recommendations](#general-recommendations-without-fdroi
 - Do not open a Merge Request from a protected branch.
   The `master` branch is protected by default, but other branches can also be protected.
 - Please fill the template when opening a new Merge Request.
+
+#### Final thoughts
+
+_"How long does it take for my app to show up in the F-Droid repository?"_ is a very frequently asked question.
+Please take a look at
+[the wiki](https://gitlab.com/fdroid/wiki/-/wikis/FAQ#how-long-does-it-take-for-my-app-to-show-up-on-website-and-client)
+for the answer.
 
 ### Metadata preparation with fdroidserver
 
@@ -160,8 +175,10 @@ are built for working examples.
 
 Congratulations! You can now open a merge request to add your app.
 
-Our buildserver runs builds once a day, so it may take up to 24h for your app
-to appear in our repository.
+_"How long does it take for my app to show up in the F-Droid repository?"_ is a very frequently asked question.
+Please take a look at
+[the wiki](https://gitlab.com/fdroid/wiki/-/wikis/FAQ#how-long-does-it-take-for-my-app-to-show-up-on-website-and-client)
+for the answer.
 
 #### General recommendations (with fdroidserver)
 
