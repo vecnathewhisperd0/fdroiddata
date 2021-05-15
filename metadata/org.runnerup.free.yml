@@ -258,6 +258,17 @@ Builds:
       - ANT-Android-SDKs
     prebuild: sed -i -e '/play-services/d' build.gradle
 
+    - versionName: 2.3.6
+    versionCode: 304
+    commit: v2.3.6.0
+    subdir: app
+    gradle:
+      - latest
+    rm:
+      - wear
+      - ANT-Android-SDKs
+    prebuild: sed -i -e '/play-services/d' build.gradle
+
 MaintainerNotes: This replaces RunnerUp 1.x https://f-droid.org/packages/org.runnerup
 
 AutoUpdateMode: Version v%v
