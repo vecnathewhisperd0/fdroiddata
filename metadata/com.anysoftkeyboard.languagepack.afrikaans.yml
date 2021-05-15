@@ -5,9 +5,11 @@ SourceCode: https://github.com/AnySoftKeyboard/LanguagePack/tree/Afrikaans
 IssueTracker: https://github.com/AnySoftKeyboard/LanguagePack/issues
 Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KDYBGNUNMMN94&lc=US&item_name=AnySoftKeyboard
 
-Name: 'AnySoftKeyboard: Afrikaans'
+Name: 'AnySoftKeyboard: Afrikaans (deprecated)'
 AutoName: AnySoftKeyboard - Afrikaans Language Pack
 Description: |-
+    <b>This app has been deprecated in favor of https://f-droid.org/en/packages/com.anysoftkeyboard.languagepack.afrikaans_oss/</b>
+
     Afrikaans language pack with dictionary.
 
     The source code is in another branch to the default.
@@ -32,7 +34,10 @@ Builds:
     preassemble:
       - :makeDictionary
 
+MaintainerNotes: Package ID is now com.anysoftkeyboard.languagepack.afrikaans_oss
+
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest/Afrikaans
+UpdateCheckName: com.anysoftkeyboard.languagepack.afrikaans_oss
 CurrentVersion: 2.0.0
 CurrentVersionCode: 100
