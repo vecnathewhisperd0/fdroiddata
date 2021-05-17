@@ -165,7 +165,7 @@ Builds:
     rm:
       - art/launcher/sam/concepts/Kore_App_Icons.zip
 
-AutoUpdateMode: None
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: v2.5.3
 CurrentVersionCode: 29
