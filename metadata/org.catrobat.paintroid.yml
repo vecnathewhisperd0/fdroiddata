@@ -52,7 +52,7 @@ Builds:
 
   - versionName: 2.7.1
     versionCode: 38
-    commit: 2.7.1
+    commit: v2.7.1
     subdir: app
     gradle:
       - yes
