@@ -1,0 +1,32 @@
+License: GPL-3.0-only
+SourceCode: https://github.com/Shabinder/SpotiFlyer
+IssueTracker: https://github.com/Shabinder/SpotiFlyer/issues
+
+AuthorName: Shabinder Singh
+AuthorEmail: dev.shabinder@gmail.com
+AuthorWebSite: https://shabinder.github.io/
+OpenCollective: spotiflyer
+
+WebSite: https://shabinder.github.io/SpotiFlyer/
+
+Changelog: https://github.com/Shabinder/SpotiFlyer/releases
+RepoType: git
+Repo: https://github.com/Shabinder/SpotiFlyer
+
+AutoName: SpotiFlyer
+
+Categories:
+  - Multimedia
+
+Builds:
+  - versionName: 3.0.1
+    versionCode: 19
+    commit: 3.0.1
+    subdir: android
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 3.0.1
+CurrentVersionCode: 19
