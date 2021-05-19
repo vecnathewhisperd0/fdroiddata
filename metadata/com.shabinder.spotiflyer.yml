@@ -22,6 +22,9 @@ Builds:
     subdir: android
     gradle:
       - yes
+    rm:
+      - desktop
+      - web-app
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
