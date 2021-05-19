@@ -30,6 +30,7 @@ Builds:
       - art
 
 AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/Shabinder/SpotiFlyer/main/buildSrc/buildSrc/src/main/kotlin/Versions.kt|versionCode\s=\s(\d+)|.|versionName\s=\s"([\d.]+)"
 CurrentVersion: 3.0.1
 CurrentVersionCode: 19
