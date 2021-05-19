@@ -25,6 +25,9 @@ Builds:
     rm:
       - desktop
       - web-app
+      - maintenance-tasks
+      - infra
+      - art
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
