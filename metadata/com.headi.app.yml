@@ -55,7 +55,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.10.4
+    versionCode: 1104
+    commit: 1.10.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.10.5
+    versionCode: 1105
+    commit: 1.10.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.10.6
+    versionCode: 1106
+    commit: 1.10.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.10.7
+    versionCode: 1107
+    commit: 1.10.7
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.10.3
-CurrentVersionCode: 1103
+CurrentVersion: 1.10.7
+CurrentVersionCode: 1107

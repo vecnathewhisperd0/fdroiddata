@@ -62,7 +62,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v0.1.7-beta
+    versionCode: 8
+    commit: v0.1.7-beta
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v0.1.8-beta
+    versionCode: 9
+    commit: v0.1.8-beta
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v0.1.6-beta
-CurrentVersionCode: 7
+CurrentVersion: v0.1.8-beta
+CurrentVersionCode: 9

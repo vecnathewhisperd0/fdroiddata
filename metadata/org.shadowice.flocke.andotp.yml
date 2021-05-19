@@ -1,3 +1,5 @@
+AntiFeatures:
+  - NonFreeAssets
 Categories:
   - Security
 License: MIT
@@ -222,6 +224,13 @@ Builds:
   - versionName: 0.9.0-beta1
     versionCode: 36
     commit: v0.9.0-beta1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 0.9.0-beta2
+    versionCode: 37
+    commit: v0.9.0-beta2
     subdir: app
     gradle:
       - fdroid

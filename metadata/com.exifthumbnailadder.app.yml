@@ -34,7 +34,29 @@ Builds:
       - library
     ndk: r22b
 
+  - versionName: 0.9.3
+    versionCode: 118
+    commit: 0.9.3
+    subdir: app
+    gradle:
+      - standard
+    scandelete:
+      - library
+      - libs.prebuilt
+    ndk: r22b
+
+  - versionName: 0.9.4
+    versionCode: 136
+    commit: 0.9.4
+    subdir: app
+    gradle:
+      - standard
+    scandelete:
+      - library
+      - libs.prebuilt
+    ndk: r22b
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.9.2
-CurrentVersionCode: 42
+CurrentVersion: 0.9.4
+CurrentVersionCode: 136

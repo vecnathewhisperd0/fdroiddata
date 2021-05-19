@@ -94,10 +94,9 @@ Builds:
   - versionName: 1.5.0
     versionCode: 15000
     commit: v1.5.0
+    subdir: app
     gradle:
       - yes
-    scandelete:
-      - cordova/node_modules/properties-parser/test/ReadProperties.class
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags

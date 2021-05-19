@@ -1,6 +1,6 @@
 Categories:
   - Science & Education
-License: GPL-2.0-only
+License: GPL-3.0-or-later
 AuthorName: Arty Bishop
 AuthorEmail: bishop.arty@gmail.com
 SourceCode: https://github.com/rt-bishop/Look4Sat
@@ -90,7 +90,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.5.0
+    versionCode: 250
+    commit: v2.5.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.5.1
+    versionCode: 251
+    commit: v2.5.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.0
-CurrentVersionCode: 240
+CurrentVersion: 2.5.1
+CurrentVersionCode: 251

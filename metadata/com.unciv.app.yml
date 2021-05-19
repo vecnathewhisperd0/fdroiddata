@@ -809,16 +809,6 @@ Builds:
       - desktop
     prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
 
-  - versionName: 3.11.3
-    versionCode: 484
-    commit: 3.11.3
-    subdir: android
-    gradle:
-      - yes
-    rm:
-      - desktop
-    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
-
   - versionName: 3.11.3-patch1
     versionCode: 484
     commit: 3.11.3-patch1
@@ -1501,7 +1491,7 @@ Builds:
 
   - versionName: 3.14.3-patch1
     versionCode: 559
-    commit: 3.14.3-patch1
+    commit: 86fafd59db691057b5e177958f200aaa670bfca6
     subdir: android
     gradle:
       - yes
@@ -1509,9 +1499,71 @@ Builds:
       - desktop
     prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
 
-AutoUpdateMode: Version %v
+  - versionName: 3.14.4
+    versionCode: 560
+    commit: 3.14.4
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.5
+    versionCode: 561
+    commit: 3.14.5
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.6-patch1
+    versionCode: 563
+    commit: 3.14.6-patch1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.6-patch2
+    versionCode: 564
+    commit: 3.14.6-patch2
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.7
+    versionCode: 565
+    disable: https://github.com/yairm210/Unciv/issues/3946
+    commit: 3.14.7
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.8
+    versionCode: 566
+    disable: https://github.com/yairm210/Unciv/issues/3946
+    commit: 3.14.8
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+AutoUpdateMode: None
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/yairm210/Unciv/master/buildSrc/src/main/kotlin/BuildConfig.kt|appCodeNumber
     = (.*)|.|appVersion = "(.*)"
-CurrentVersion: 3.14.3-patch1
-CurrentVersionCode: 559
+CurrentVersion: 3.14.9
+CurrentVersionCode: 567

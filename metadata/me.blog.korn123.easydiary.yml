@@ -1,6 +1,6 @@
 Categories:
   - Writing
-License: Apache-2.0
+License: GPL-3.0-only
 AuthorName: Awesome Application Factory
 AuthorEmail: hanjoongcho@gmail.com
 AuthorWebSite: https://aafactory.github.io/
@@ -321,7 +321,28 @@ Builds:
     gradle:
       - foss
 
+  - versionName: 1.4.165
+    versionCode: 231
+    commit: v1.4.164
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.166
+    versionCode: 232
+    commit: v1.4.166
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.167
+    versionCode: 233
+    commit: v1.4.167
+    subdir: app
+    gradle:
+      - foss
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.164
-CurrentVersionCode: 230
+CurrentVersion: 1.4.167
+CurrentVersionCode: 233

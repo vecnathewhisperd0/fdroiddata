@@ -10,7 +10,7 @@ SourceCode: https://github.com/amake/orgro
 IssueTracker: https://github.com/amake/orgro/issues
 Donate: https://github.com/sponsors/amake
 
-AutoName: ${displayName}
+AutoName: Orgro
 
 RepoType: git
 Repo: https://github.com/amake/orgro
@@ -88,8 +88,56 @@ Builds:
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter build apk
 
+  - versionName: 1.18.1
+    versionCode: 44
+    commit: v1.18.1+44
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@2.2.0-10.1.pre
+    prebuild: touch android/key.properties
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.18.2
+    versionCode: 45
+    commit: v1.18.2+45
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@2.2.0-10.2.pre
+    prebuild: touch android/key.properties
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.18.3
+    versionCode: 46
+    commit: v1.18.3+46
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@2.2.0-10.2.pre
+    prebuild: touch android/key.properties
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.19.0
+    versionCode: 47
+    commit: v1.19.0+47
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@2.2.0-10.3.pre
+    prebuild: touch android/key.properties
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk
+
 AutoUpdateMode: Version v%v+%c
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/amake/orgro/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 1.17.0
-CurrentVersionCode: 42
+CurrentVersion: 1.19.0
+CurrentVersionCode: 47

@@ -8,7 +8,7 @@ AuthorEmail: felix.schmid@flxrs.com
 SourceCode: https://github.com/flex3r/DankChat
 IssueTracker: https://github.com/flex3r/DankChat/issues
 
-AutoName: ${applicationLabel}
+AutoName: DankChat
 Description: Chat in multiple channels at once, regardless if the streamers are live
     or offline, with FrankerFaceZ and BTTV emote support built-in!
 
@@ -408,7 +408,31 @@ Builds:
       - yes
     ndk: r21e
 
+  - versionName: 2.7.2
+    versionCode: 185
+    commit: 65ec9a85a5c1e9f7484f4593c3c4751f076aa29e
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.7.4
+    versionCode: 187
+    commit: v2.7.4
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
-CurrentVersion: 2.6.2
-CurrentVersionCode: 182
+UpdateCheckMode: Tags ^v
+CurrentVersion: 2.7.4
+CurrentVersionCode: 187
