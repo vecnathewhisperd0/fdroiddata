@@ -31,6 +31,8 @@ Builds:
       - infra
       - art
 
+MaintainerNotes: Contained Matomo is configured opt-in
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/Shabinder/SpotiFlyer/main/buildSrc/buildSrc/src/main/kotlin/Versions.kt|versionCode\s=\s(\d+)|.|versionName\s=\s"([\d.]+)"
