@@ -1,23 +1,27 @@
 Categories:
   - Internet
 License: GPL-3.0-or-later
+AuthorName: Aimeric Adjutor
+AuthorEmail: aimeric@adjutor.xyz
 SourceCode: https://git.adjutor.xyz/Aniki.git/about
 
 AutoName: Aniki
 Summary: A minimalist MyAnimeList client
 Description: |
-    A minimalist MyAnimeList client. You can browse the top manga and top anime section. There's also the possiblity to search them directly.
+    A minimalist MyAnimeList client. You can browse the top manga and top anime section. There's also the possiblity to look for them directly.
 
 RepoType: git
 Repo: https://git.adjutor.xyz/Aniki.git
 
 Builds:
-  - versionName: '1.0'
-    versionCode: 1
-    commit: 68cda46c46b5050efbe8846307af7ff90c1856fc
+  - versionName: 3.2.3
+    versionCode: 323
+    commit: 4dc69d1be8e86748eb176ad221e36f2f48a3625b
     subdir: app
     gradle:
       - yes
 
-AutoUpdateMode: None
-UpdateCheckMode: None
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 3.2.3
+CurrentVersionCode: 323
