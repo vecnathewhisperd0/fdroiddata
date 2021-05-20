@@ -16,7 +16,7 @@ Repo: https://git.adjutor.xyz/Aniki.git
 Builds:
   - versionName: 3.2.3
     versionCode: 323
-    commit: 4dc69d1be8e86748eb176ad221e36f2f48a3625b
+    commit: v3.2.3
     subdir: app
     gradle:
       - yes
