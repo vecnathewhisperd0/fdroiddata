@@ -348,7 +348,25 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.53'
+    versionCode: 153
+    commit: v1.53
+    gradle:
+      - yes
+
+  - versionName: '1.54'
+    versionCode: 154
+    commit: v1.54
+    gradle:
+      - yes
+
+  - versionName: '1.55'
+    versionCode: 155
+    commit: v1.55
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.52'
-CurrentVersionCode: 152
+CurrentVersion: '1.55'
+CurrentVersionCode: 155

@@ -297,7 +297,43 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v3.17.0
+    versionCode: 3981
+    commit: v3.17.0
+    gradle:
+      - yes
+
+  - versionName: v3.17.1
+    versionCode: 3986
+    commit: v3.17.1
+    gradle:
+      - yes
+
+  - versionName: v3.17.2
+    versionCode: 3990
+    commit: v3.17.2
+    gradle:
+      - yes
+
+  - versionName: v3.17.3
+    versionCode: 4009
+    commit: v3.17.3
+    gradle:
+      - yes
+
+  - versionName: v3.18.0
+    versionCode: 4046
+    commit: v3.18.0
+    gradle:
+      - yes
+
+  - versionName: v3.18.1
+    versionCode: 4092
+    commit: v3.18.1
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.16.0
-CurrentVersionCode: 3941
+CurrentVersion: v3.18.1
+CurrentVersionCode: 4092

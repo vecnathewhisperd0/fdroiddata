@@ -5,13 +5,13 @@ AuthorName: Invoice Ninja
 AuthorEmail: contact@invoiceninja.com
 AuthorWebSite: https://www.invoiceninja.com/
 WebSite: https://www.invoiceninja.org/
-SourceCode: https://github.com/invoiceninja/flutter-client
-IssueTracker: https://github.com/invoiceninja/flutter-client/issues
+SourceCode: https://github.com/invoiceninja/admin-portal
+IssueTracker: https://github.com/invoiceninja/admin-portal/issues
 
 AutoName: Invoice Ninja
 
 RepoType: git
-Repo: https://github.com/invoiceninja/flutter-client
+Repo: https://github.com/invoiceninja/admin-portal
 
 Builds:
   - versionName: 5.0.44
@@ -39,8 +39,110 @@ Builds:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter build apk
 
+  - versionName: 5.0.45
+    versionCode: 45
+    disable: no git tag
+    commit: v5.0.45
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@1.27.0-1.0.pre
+    rm:
+      - ios
+      - linux
+      - macos
+      - web
+      - windows
+    prebuild:
+      - cp lib/.env.dart.example lib/.env.dart
+      - cp android/app/build.gradle.dev android/app/build.gradle
+      - cp android/build.gradle.foss android/build.gradle
+      - cp lib/utils/oauth.dart.foss lib/utils/oauth.dart
+      - cp lib/ui/app/upgrade_dialog.dart.foss lib/ui/app/upgrade_dialog.dart
+      - cp android/app/src/main/AndroidManifest.foss.xml android/app/src/main/AndroidManifest.xml
+      - cp pubspec.foss.yaml pubspec.yaml
+      - rm pubspec.lock
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 5.0.46
+    versionCode: 46
+    commit: v5.0.46
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@2.0.5
+    rm:
+      - ios
+      - linux
+      - macos
+      - web
+      - windows
+    prebuild:
+      - cp lib/.env.dart.example lib/.env.dart
+      - cp android/app/build.gradle.dev android/app/build.gradle
+      - cp android/build.gradle.foss android/build.gradle
+      - cp lib/utils/oauth.dart.foss lib/utils/oauth.dart
+      - cp lib/ui/app/upgrade_dialog.dart.foss lib/ui/app/upgrade_dialog.dart
+      - cp android/app/src/main/AndroidManifest.foss.xml android/app/src/main/AndroidManifest.xml
+      - cp pubspec.foss.yaml pubspec.yaml
+      - rm pubspec.lock
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 5.0.47
+    versionCode: 47
+    commit: v5.0.47
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@2.0.5
+    rm:
+      - ios
+      - linux
+      - macos
+      - web
+      - windows
+    prebuild:
+      - cp lib/.env.dart.example lib/.env.dart
+      - cp android/app/build.gradle.dev android/app/build.gradle
+      - cp android/build.gradle.foss android/build.gradle
+      - cp lib/utils/oauth.dart.foss lib/utils/oauth.dart
+      - cp lib/ui/app/upgrade_dialog.dart.foss lib/ui/app/upgrade_dialog.dart
+      - cp android/app/src/main/AndroidManifest.foss.xml android/app/src/main/AndroidManifest.xml
+      - cp pubspec.foss.yaml pubspec.yaml
+      - rm pubspec.lock
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 5.0.48
+    versionCode: 48
+    disable: no tag
+    commit: v5.0.48
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@2.0.5
+    rm:
+      - ios
+      - linux
+      - macos
+      - web
+      - windows
+    prebuild:
+      - cp lib/.env.dart.example lib/.env.dart
+      - cp android/app/build.gradle.dev android/app/build.gradle
+      - cp android/build.gradle.foss android/build.gradle
+      - cp lib/utils/oauth.dart.foss lib/utils/oauth.dart
+      - cp lib/ui/app/upgrade_dialog.dart.foss lib/ui/app/upgrade_dialog.dart
+      - cp android/app/src/main/AndroidManifest.foss.xml android/app/src/main/AndroidManifest.xml
+      - cp pubspec.foss.yaml pubspec.yaml
+      - rm pubspec.lock
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter build apk
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/invoiceninja/flutter-client/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 5.0.44
-CurrentVersionCode: 44
+UpdateCheckData: https://raw.githubusercontent.com/invoiceninja/admin-portal/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 5.0.48
+CurrentVersionCode: 48

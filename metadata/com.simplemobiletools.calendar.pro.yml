@@ -1,6 +1,6 @@
 Categories:
   - Multimedia
-License: Apache-2.0
+License: GPL-3.0-only
 AuthorName: Tibor Kaputa
 AuthorEmail: hello@simplemobiletools.com
 WebSite: https://simplemobiletools.com
@@ -459,7 +459,47 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
 
+  - versionName: 6.13.4
+    versionCode: 197
+    commit: 6.13.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 6.13.5
+    versionCode: 198
+    commit: 6.13.5
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 6.13.6
+    versionCode: 199
+    commit: 6.13.6
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 6.13.7
+    versionCode: 200
+    commit: 6.13.7
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 6.14.0
+    versionCode: 201
+    commit: 6.14.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 6.13.3
-CurrentVersionCode: 196
+CurrentVersion: 6.14.0
+CurrentVersionCode: 201

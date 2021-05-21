@@ -323,7 +323,42 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '4.8'
+    versionCode: 83
+    commit: '83'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '4.9'
+    versionCode: 84
+    commit: '84'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5.0'
+    versionCode: 85
+    commit: '85'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5.1'
+    versionCode: 86
+    commit: '86'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '5.2'
+    versionCode: 87
+    commit: '87'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %c
 UpdateCheckMode: Tags
-CurrentVersion: '4.7'
-CurrentVersionCode: 82
+CurrentVersion: '5.2'
+CurrentVersionCode: 87

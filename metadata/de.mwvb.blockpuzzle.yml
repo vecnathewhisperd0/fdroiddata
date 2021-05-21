@@ -61,12 +61,20 @@ Builds:
 
   - versionName: '6.0'
     versionCode: 60
+    disable: broken checkupdates
     commit: '6.0'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '7.0'
+    versionCode: 70
+    commit: '7.0'
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '6.0'
-CurrentVersionCode: 60
+CurrentVersion: '7.0'
+CurrentVersionCode: 70
