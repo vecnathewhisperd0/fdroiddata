@@ -190,10 +190,12 @@ Builds:
     output: build/outputs/apk/release/Minetest-release-unsigned.apk
     srclibs:
       - MinetestGame@5.4.1
-    prebuild: cp -R $$MinetestGame$$ ../../games/minetest_game
+    prebuild:
+      - sed -i -e 's#archive/master.zip#archive/662b1d1dd263b60d807052093a2d41a27589c191.zip#' native/build.gradle
+      - cp -R $$MinetestGame$$ ../../games/minetest_game
     build:
       - printf "%s\n%s" "ndk.dir = $$NDK$$" "sdk.dir = $$SDK$$" > local.properties
-      - gradle assemblerelease --scan
+      - gradle assemblerelease --info
     ndk: r22
 
 AutoUpdateMode: None
