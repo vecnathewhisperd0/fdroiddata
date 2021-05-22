@@ -187,7 +187,9 @@ Builds:
     versionCode: 34
     commit: 5.4.1
     subdir: build/android
-    output: build/outputs/apk/release/Minetest-release-unsigned.apk
+    output:
+      - build/android/app/build/outputs/apk/release/app-armeabi-v7a-release-unsigned.apk
+      - build/android/app/build/outputs/apk/release/app-arm64-v8a-release-unsigned.apk
     srclibs:
       - MinetestGame@5.4.1
     prebuild:
