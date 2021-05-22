@@ -11,14 +11,14 @@ RepoType: git
 Repo: https://git.adjutor.xyz/Aniki.git
 
 Builds:
-  - versionName: 3.2.3
-    versionCode: 323
-    commit: v3.2.3
+  - versionName: 3.2.4
+    versionCode: 324
+    commit: v3.2.4
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.2.3
-CurrentVersionCode: 323
+CurrentVersion: 3.2.4
+CurrentVersionCode: 324
