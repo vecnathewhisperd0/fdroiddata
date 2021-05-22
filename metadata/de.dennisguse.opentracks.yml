@@ -321,7 +321,19 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v3.18.0
+    versionCode: 4046
+    commit: v3.18.0
+    gradle:
+      - yes
+
+  - versionName: v3.18.1
+    versionCode: 4092
+    commit: v3.18.1
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.17.3
-CurrentVersionCode: 4009
+CurrentVersion: v3.18.1
+CurrentVersionCode: 4092

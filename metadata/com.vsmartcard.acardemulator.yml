@@ -95,6 +95,6 @@ Builds:
       - ACardEmulator/app/src/main/external/PivApplet/ext/ant/sdks/
 
 AutoUpdateMode: Version ACardEmulator-%v
-UpdateCheckMode: Tags
-CurrentVersion: '3.4'
-CurrentVersionCode: 7
+UpdateCheckMode: Tags ^ACardEmulator-\d\.\d$
+CurrentVersion: '3.3'
+CurrentVersionCode: 6

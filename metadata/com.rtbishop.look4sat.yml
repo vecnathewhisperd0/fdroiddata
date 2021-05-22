@@ -90,7 +90,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.5.0
+    versionCode: 250
+    commit: v2.5.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.5.1
+    versionCode: 251
+    commit: v2.5.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.5.2
+    versionCode: 252
+    commit: v2.5.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.0
-CurrentVersionCode: 240
+CurrentVersion: 2.5.2
+CurrentVersionCode: 252

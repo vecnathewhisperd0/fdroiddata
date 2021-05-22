@@ -768,7 +768,23 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 3.4.2
+    versionCode: 3004002
+    commit: v3.4.2
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 3.4.3
+    versionCode: 3004003
+    commit: v3.4.3
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.4.1
-CurrentVersionCode: 3004001
+CurrentVersion: 3.4.3
+CurrentVersionCode: 3004003

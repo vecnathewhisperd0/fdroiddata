@@ -181,12 +181,13 @@ Builds:
     rm:
       - libraries/humla/tools
       - libraries/humla/libs/humla-spongycastle/core/src/test/data
+    prebuild: cp -r ../libraries/humla/gradle ../libraries/humla/libs/humla-spongycastle
     build:
       - cd ../libraries/humla/libs/humla-spongycastle
       - gradle jar
     buildjni:
       - ../libraries/humla/src/main/jni
-    ndk: r21d
+    ndk: r21e
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[^-]*$

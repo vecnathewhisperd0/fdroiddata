@@ -88,7 +88,23 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
+  - versionName: '3.0'
+    versionCode: 12
+    commit: '3.0'
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 3.0.1
+    versionCode: 13
+    commit: v3.0.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.2
-CurrentVersionCode: 11
+CurrentVersion: 3.0.1
+CurrentVersionCode: 13
