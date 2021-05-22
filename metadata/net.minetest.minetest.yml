@@ -194,7 +194,7 @@ Builds:
     build:
       - printf "%s\n%s" "ndk.dir = $$NDK$$" "sdk.dir = $$SDK$$" > local.properties
       - gradle assemblerelease
-    ndk: r22b
+    ndk: r22
 
 AutoUpdateMode: None
 UpdateCheckMode: None
