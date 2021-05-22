@@ -191,11 +191,10 @@ Builds:
     srclibs:
       - MinetestGame@5.4.1
     prebuild:
-      - sed -i -e 's/\.\/gradlew/gradle/g' Makefile
       - cp -R $$MinetestGame$$ ../../games/minetest_game
     build:
       - printf "%s\n%s" "ndk.dir = $$NDK$$" "sdk.dir = $$SDK$$" > local.properties
-      - make release
+      - ./gradlew assemblerelease
     ndk: r16b
 
 AutoUpdateMode: None
