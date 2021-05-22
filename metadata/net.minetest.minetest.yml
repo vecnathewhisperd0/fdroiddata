@@ -193,7 +193,7 @@ Builds:
     prebuild: cp -R $$MinetestGame$$ ../../games/minetest_game
     build:
       - printf "%s\n%s" "ndk.dir = $$NDK$$" "sdk.dir = $$SDK$$" > local.properties
-      - gradle assemblerelease --debug
+      - gradle assemblerelease --info
     ndk: r22
 
 AutoUpdateMode: None
