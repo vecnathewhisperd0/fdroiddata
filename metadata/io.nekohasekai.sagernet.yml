@@ -1,0 +1,82 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: nekohasekai
+AuthorEmail: sekai@neko.services
+SourceCode: https://github.com/SagerNet/SagerNet
+IssueTracker: https://github.com/SagerNet/SagerNet/issues
+
+AutoName: SagerNet
+
+RepoType: git
+Repo: https://github.com/SagerNet/SagerNet
+
+Builds:
+  - versionName: 0.1-rc14-x86
+    versionCode: 42
+    commit: v0.1-rc14
+    subdir: app
+    gradle:
+      - fdroidX86
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - library
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 0.1-rc14-x64
+    versionCode: 43
+    commit: v0.1-rc14
+    subdir: app
+    gradle:
+      - fdroidX64
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - library
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 0.1-rc14-arm
+    versionCode: 44
+    commit: v0.1-rc14
+    subdir: app
+    gradle:
+      - fdroidArm
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - library
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 0.1-rc14-arm64
+    versionCode: 45
+    commit: v0.1-rc14
+    subdir: app
+    gradle:
+      - fdroidArm64
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - library
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 0.1-rc14-arm64
+CurrentVersionCode: 45
