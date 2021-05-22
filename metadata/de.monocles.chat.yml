@@ -10,7 +10,6 @@ Translation: https://crowdin.com/project/pix-art-messenger
 Donate: https://monocles.de/more/#donation-section
 
 AutoName: monocles chat
-<<<<<<< HEAD
 Summary: monocles xmpp chat client
 Description: |-
     Finally the first release of the monocles chat an ecofriendly and ethical chat client
@@ -28,22 +27,15 @@ Description: |-
     device and decrypted only by the receiving device intended for reception.
 
     You need help? Please join our support group chat support@conference.monocles.de .
-=======
->>>>>>> de.monocles.chat
+
 
 RepoType: git
 Repo: https://codeberg.org/Arne/monocles_chat
 
 Builds:
-<<<<<<< HEAD
   - versionName: '1.1'
     versionCode: 101
     commit: v1.1
-=======
-  - versionName: '1.0'
-    versionCode: 100
-    commit: v1.0
->>>>>>> de.monocles.chat
     gradle:
       - git
     prebuild:
@@ -53,10 +45,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
-<<<<<<< HEAD
 CurrentVersion: '1.1'
 CurrentVersionCode: 101
-=======
-CurrentVersion: '1.0'
-CurrentVersionCode: 100
->>>>>>> de.monocles.chat
