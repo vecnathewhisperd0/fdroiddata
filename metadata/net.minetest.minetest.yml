@@ -194,7 +194,7 @@ Builds:
       - cp -R $$MinetestGame$$ ../../games/minetest_game
     build:
       - printf "%s\n%s" "ndk.dir = $$NDK$$" "sdk.dir = $$SDK$$" > local.properties
-      - ./gradlew assemblerelease
+      - gradle assemblerelease
     ndk: r16b
 
 AutoUpdateMode: None
