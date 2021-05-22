@@ -191,7 +191,6 @@ Builds:
     srclibs:
       - MinetestGame@5.4.1
     prebuild:
-      # download specific build-deps instead of latest master
       - sed -i -e 's#master#662b1d1dd263b60d807052093a2d41a27589c191#' native/build.gradle
       - cp -R $$MinetestGame$$ ../../games/minetest_game
     build:
