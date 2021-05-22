@@ -182,7 +182,7 @@ Builds:
       - printf "%s\n%s" "ndk.dir = $$NDK$$" "sdk.dir = $$SDK$$" > local.properties
       - make release
     ndk: r16b
-    
+
   - versionName: 5.4.1.34
     versionCode: 34
     commit: 5.4.1
@@ -190,8 +190,7 @@ Builds:
     output: build/outputs/apk/release/Minetest-release-unsigned.apk
     srclibs:
       - MinetestGame@5.4.1
-    prebuild:
-      - cp -R $$MinetestGame$$ ../../games/minetest_game
+    prebuild: cp -R $$MinetestGame$$ ../../games/minetest_game
     build:
       - printf "%s\n%s" "ndk.dir = $$NDK$$" "sdk.dir = $$SDK$$" > local.properties
       - gradle assemblerelease
