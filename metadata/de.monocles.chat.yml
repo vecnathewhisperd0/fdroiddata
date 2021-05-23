@@ -10,6 +10,10 @@ Translation: https://crowdin.com/project/pix-art-messenger
 Donate: https://monocles.de/more/#donation-section
 
 AutoName: monocles chat
+<<<<<<< HEAD
+=======
+Summary: monocles xmpp chat client
+>>>>>>> Update de.monocles.chat.yml
 
 RepoType: git
 Repo: https://codeberg.org/Arne/monocles_chat
