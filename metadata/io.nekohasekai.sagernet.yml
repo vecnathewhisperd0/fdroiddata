@@ -76,6 +76,7 @@ Builds:
       - ./run fdroid build
     ndk: r21e
 
+ArchivePolicy: 12 versions
 AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: 0.1-rc14-arm64
