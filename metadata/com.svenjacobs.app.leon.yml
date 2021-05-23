@@ -1,0 +1,19 @@
+Categories:
+  - System
+License: GPL-3.0-or-later
+SourceCode: https://github.com/svenjacobs/leon
+IssueTracker: https://github.com/svenjacobs/leon/issues
+
+RepoType: git
+Repo: https://github.com/svenjacobs/leon
+
+Builds:
+  - versionName: 0.2.0.221
+    versionCode: 221
+    commit: 0.2.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
