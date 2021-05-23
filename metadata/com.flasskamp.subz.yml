@@ -51,6 +51,8 @@ Builds:
     init:
       - npm install
       - ionic build --prod
+    prebuild:
+      - pwd
       - npx cap sync
     scandelete:
       - node_modules/
