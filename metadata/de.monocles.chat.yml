@@ -19,6 +19,16 @@ RepoType: git
 Repo: https://codeberg.org/Arne/monocles_chat
 
 Builds:
+  - versionName: '1.0'
+    versionCode: 100
+    commit: v1.0
+    gradle:
+      - git
+    prebuild:
+      - sed -i -e '/signingConfigs./d' build.gradle
+      - sed -i -e '/libwebrtc/d' -e "/AppIntro:/aimplementation 'org.webrtc:google-webrtc:1.0.30039'"
+        build.gradle
+
   - versionName: '1.1'
     versionCode: 101
     commit: v1.1
