@@ -68,6 +68,7 @@ Builds:
       - plugin
     ndk: r21e
 
+ArchivePolicy: 12 versions
 AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: 90.0.4430.85-10-arm64
