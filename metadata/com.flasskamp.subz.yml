@@ -47,7 +47,7 @@ Builds:
         | sha256sum -c -
       - tar xJf node.tar.xz
       - cp -a node-v16.2.0-linux-x64/. /usr/local/
-    init: npm install
+    init: npm install && ionic build --prod && npx cap sync
     scandelete:
       - node_modules/
 
