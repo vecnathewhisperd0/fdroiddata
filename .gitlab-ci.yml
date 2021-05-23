@@ -60,7 +60,7 @@ lint:
     - ./tools/check-for-unattached-signatures.py || export EXITVALUE=1
     - exit $EXITVALUE
 
-trigger-issuebot:
+.trigger-issuebot:
   image: alpine
   except:
     - master@fdroid/fdroiddata
@@ -81,7 +81,7 @@ trigger-issuebot:
     - apk add --no-cache bash curl
     - ./tools/trigger-issuebot
 
-schedule-issuebot:
+.schedule-issuebot:
   image: alpine
   only:
     variables:
