@@ -187,11 +187,12 @@ Builds:
     versionCode: 34
     commit: 5.4.1
     subdir: build/android
-    output: build/android/app/build/outputs/apk/release/app-arm64-v8a-release-unsigned.apk
+    output: build/android/app/build/outputs/apk/release/app-release-unsigned.apk
     srclibs:
       - MinetestGame@5.4.1
     prebuild:
       - sed -i -e 's#master#662b1d1dd263b60d807052093a2d41a27589c191#' native/build.gradle
+      - sed -i -e 's#enable true#// enable true#' app/build.gradle
       - cp -R $$MinetestGame$$ ../../games/minetest_game
     build:
       - printf "%s\n%s" "ndk.dir = $$NDK$$" "sdk.dir = $$SDK$$" > local.properties
