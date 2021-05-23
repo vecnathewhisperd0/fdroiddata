@@ -52,10 +52,10 @@ Builds:
       - yes
     prebuild:
       - npx cap sync
-    build:
-      - cd android/app
     scandelete:
       - node_modules/
+    build:
+      - ./android/app/gradlew build
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
