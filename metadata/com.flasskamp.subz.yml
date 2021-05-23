@@ -37,9 +37,6 @@ Builds:
   - versionName: '1.3'
     versionCode: 4
     commit: v1.3
-    subdir: android/app
-    gradle:
-      - yes
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
       - curl -Lo node.tar.xz https://nodejs.org/dist/v16.2.0/node-v16.2.0-linux-x64.tar.xz
@@ -52,8 +49,10 @@ Builds:
       - npm install
       - ionic build --prod
     prebuild:
-      - pwd
       - npx cap sync
+      - cd android/app
+    gradle:
+      - yes
     scandelete:
       - node_modules/
 
