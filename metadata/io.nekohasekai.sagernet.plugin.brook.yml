@@ -56,6 +56,7 @@ Builds:
       - ./run fdroid prebuild_plugin_golang brook
     ndk: r21e
 
+ArchivePolicy: 12 versions
 AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: 20210401-arm64
