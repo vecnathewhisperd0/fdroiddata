@@ -120,9 +120,9 @@ Builds:
         --output android-build --release --apk de.akaflieg_freiburg.enroute_211.apk
     ndk: r21e
 
-  - versionName: 2.6.6
-    versionCode: 206060
-    commit: 2.6.6
+  - versionName: 2.7.0
+    versionCode: 207000
+    commit: 2.7.0
     submodules: true
     sudo:
       - apt-get update || apt-get update
@@ -130,7 +130,7 @@ Builds:
       - apt-get -t stretch-backports-sloppy install libarchive13
       - apt-get -t stretch-backports install cmake
     patch:
-      - enroute_206060.patch
+      - enroute_207000.patch
     output: build-android-release/android-build/build/outputs/apk/release/android-build-release-unsigned.apk
     srclibs:
       - OpenSSL@OpenSSL_1_1_1g
@@ -138,34 +138,6 @@ Builds:
     scandelete:
       - 3rdParty/android_openssl
     build:
-      - mkdir fastlane
-      - cd fastlane
-      - mkdir metadata
-      - cd metadata
-      - mkdir android
-      - cd android
-      - mkdir en-US
-      - cd en-US
-      - mkdir images
-      - cd images
-      - mkdir phoneScreenshots
-      - cd phoneScreenshots
-      - cp ../../../../../../propaganda/GooglePlay/phone-00-Flight.png 1.png
-      - cp ../../../../../../propaganda/GooglePlay/phone-01-Map.png 2.png
-      - cp ../../../../../../propaganda/GooglePlay/phone-02-Map.png 3.png
-      - cp ../../../../../../propaganda/GooglePlay/phone-03-Info.png 4.png
-      - cp ../../../../../../propaganda/GooglePlay/phone-04-Route.png 5.png
-      - cp ../../../../../../propaganda/GooglePlay/phone-05-Nearby.png 6.png
-      - cd ..
-      - mkdir tenInchScreenshots
-      - cd tenInchScreenshots
-      - cp ../../../../../../propaganda/GooglePlay/tab-10-Map.png 1.png
-      - cp ../../../../../../propaganda/GooglePlay/tab-11-Map-Flight.png 2.png
-      - cp ../../../../../../propaganda/GooglePlay/tab-12-CTR.png 3.png
-      - cp ../../../../../../propaganda/GooglePlay/tab-13-Info.png 4.png
-      - cp ../../../../../../propaganda/GooglePlay/tab-14-Route.png 5.png
-      - cp ../../../../../../propaganda/GooglePlay/tab-15-NearAD.png 6.png
-      - cd ../../../../../..
       - cd ..
       - rm -rf Qt
       - mkdir -p Qt
@@ -253,10 +225,10 @@ Builds:
       - cmake ..
       - make -j`nproc`
       - $Qt5_DIR_ANDROID/bin/androiddeployqt --input android_deployment_settings.json
-        --output android-build --release --apk de.akaflieg_freiburg.enroute_266.apk
+        --output android-build --release --apk de.akaflieg_freiburg.enroute_270.apk
     ndk: r21e
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 2.6.6
-CurrentVersionCode: 206060
+CurrentVersion: 2.7.0
+CurrentVersionCode: 207000
