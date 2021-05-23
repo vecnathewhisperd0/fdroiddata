@@ -48,11 +48,12 @@ Builds:
     init:
       - npm install
       - ionic build --prod
-    prebuild:
-      - npx cap sync
-      - cd android/app
     gradle:
       - yes
+    prebuild:
+      - npx cap sync
+    build:
+      - cd android/app
     scandelete:
       - node_modules/
 
