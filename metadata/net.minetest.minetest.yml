@@ -193,7 +193,8 @@ Builds:
     prebuild:
       - sed -i -e 's#master#662b1d1dd263b60d807052093a2d41a27589c191#' native/build.gradle
       - sed -i -e 's#enable true#// enable true#' app/build.gradle
-      - sed -i -e "s/ndkVersion '22.0.7026061'/ndkVersion '22.1.7171670'/" app/build.gradle native/build.gradle
+      - sed -i -e "s/ndkVersion '22.0.7026061'/ndkVersion '22.1.7171670'/" app/build.gradle
+        native/build.gradle
       - cp -R $$MinetestGame$$ ../../games/minetest_game
     build:
       - printf "%s\n%s" "ndk.dir = $$NDK$$" "sdk.dir = $$SDK$$" > local.properties
