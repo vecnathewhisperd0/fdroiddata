@@ -56,6 +56,7 @@ Builds:
       - ./run fdroid prebuild_plugin_golang trojan-go
     ndk: r21e
 
+ArchivePolicy: 12 versions
 AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: 0.10.0-arm64
