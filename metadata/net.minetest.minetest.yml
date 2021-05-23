@@ -187,8 +187,6 @@ Builds:
     versionCode: 34
     commit: 5.4.1
     subdir: build/android
-    gradle:
-      - yes
     output: build/android/app/build/outputs/apk/release/app-release-unsigned.apk
     srclibs:
       - MinetestGame@5.4.1
@@ -197,6 +195,9 @@ Builds:
       - sed -i -e 's#enable true#// enable true#' app/build.gradle
       - sed -i -e "s/ndkVersion '22.0.7026061'/ndkVersion '22.1.7171670'/" app/build.gradle native/build.gradle
       - cp -R $$MinetestGame$$ ../../games/minetest_game
+    build:
+      - printf "%s\n%s" "ndk.dir = $$NDK$$" "sdk.dir = $$SDK$$" > local.properties
+      - gradle assemblerelease --info
     ndk: r22b
 
 AutoUpdateMode: None
