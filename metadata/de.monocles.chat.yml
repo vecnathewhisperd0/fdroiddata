@@ -10,23 +10,6 @@ Translation: https://crowdin.com/project/pix-art-messenger
 Donate: https://monocles.de/more/#donation-section
 
 AutoName: monocles chat
-Summary: monocles xmpp chat client
-Description: |-
-    Finally the first release of the monocles chat an ecofriendly and ethical chat client
-
-    The chat is running through an encrypted and self sufficient server powered by our own solar system
-
-    monocles chat is a fork of blabber.im and Conversations with some changes,
-    to improve usability.
-
-    Connection security and the protection of personal data are very important for
-    us, so we enforce encrypted connections between messenger and server, making it
-    almost impossible to intercept and read your messages by strangers.
-    If that's not enough for you, end-to-end message encryption such as OMEMO
-    or OpenPGP can be used. This allows messages to be encrypted on the sending
-    device and decrypted only by the receiving device intended for reception.
-
-    You need help? Please join our support group chat support@conference.monocles.de .
 
 RepoType: git
 Repo: https://codeberg.org/Arne/monocles_chat
@@ -44,5 +27,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
-CurrentVersion: '1.1'
-CurrentVersionCode: 101
+CurrentVersion: '1.0'
+CurrentVersionCode: 100
