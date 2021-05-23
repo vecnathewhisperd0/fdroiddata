@@ -48,14 +48,10 @@ Builds:
     init:
       - npm install
       - ionic build --prod
-    gradle:
-      - yes
-    prebuild:
-      - npx cap sync
+    prebuild: npx cap sync
     scandelete:
       - node_modules/
-    build:
-      - ./android/app/gradlew build
+    build: ./android/gradlew -p android/app
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
