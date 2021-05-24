@@ -49,11 +49,10 @@ Builds:
     init:
       - npm install
       - ionic build --prod
-    gradle:
-      - yes
-    prebuild:
       - cd ../..
       - npx cap sync
+    gradle:
+      - yes
     scandelete:
       - node_modules/
 
