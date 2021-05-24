@@ -218,9 +218,9 @@ Builds:
     prebuild: sed -i -e 's/applicationIdSuffix "monochrome"/applicationId "org.xphnx.ameixamonochrome"/'
         build.gradle
 
-  - versionName: 4.8.0
-    versionCode: 480
-    commit: v4.8.0
+  - versionName: 4.8.1
+    versionCode: 481
+    commit: v4.8.1
     subdir: app
     gradle:
       - monochromatic
@@ -229,5 +229,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 4.8.0
-CurrentVersionCode: 480
+CurrentVersion: 4.8.1
+CurrentVersionCode: 481
