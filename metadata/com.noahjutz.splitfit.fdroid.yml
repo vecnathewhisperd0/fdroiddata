@@ -58,7 +58,77 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 0.1.0-alpha11
+    versionCode: 22
+    commit: v0.1.0-alpha11
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - fdroid
+
+  - versionName: 0.1.0-alpha12
+    versionCode: 23
+    commit: v0.1.0-alpha12
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - fdroid
+
+  - versionName: 0.1.0-alpha13
+    versionCode: 24
+    commit: v0.1.0-alpha13
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/gradle-7.0-rc-1/gradle-7.0/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 0.1.0-alpha14
+    versionCode: 25
+    commit: v0.1.0-alpha14
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/gradle-7.0-rc-1/gradle-7.0/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 0.1.0-alpha15
+    versionCode: 26
+    commit: v0.1.0-alpha15
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/gradle-7.0-rc-1/gradle-7.0/' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 0.1.0-alpha16
+    versionCode: 27
+    commit: v0.1.0-alpha16
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/gradle-7.0-rc-1/gradle-7.0/' ../gradle/wrapper/gradle-wrapper.properties
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.1.0-alpha10
-CurrentVersionCode: 21
+CurrentVersion: 0.1.0-alpha16
+CurrentVersionCode: 27

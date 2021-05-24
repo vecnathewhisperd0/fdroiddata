@@ -1313,7 +1313,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.56.1
+    versionCode: 192
+    commit: 0.56.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.56.2
+    versionCode: 193
+    commit: 0.56.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.57.0
+    versionCode: 194
+    commit: 0.57.0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 0.56.0
-CurrentVersionCode: 191
+CurrentVersion: 0.57.0
+CurrentVersionCode: 194

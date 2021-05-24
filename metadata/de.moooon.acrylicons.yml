@@ -57,9 +57,9 @@ Builds:
     gradle:
       - yes
 
-  - versionName: '7.0'
-    versionCode: 7
-    commit: v7.0
+  - versionName: '8.0'
+    versionCode: 8
+    commit: v8.0
     subdir: app
     gradle:
       - yes
@@ -68,5 +68,5 @@ MaintainerNotes: Actual icons are under CC-BY-NC-ND 4.0, see https://codeberg.or
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '7.0'
-CurrentVersionCode: 7
+CurrentVersion: '8.0'
+CurrentVersionCode: 8

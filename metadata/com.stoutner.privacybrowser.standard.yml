@@ -411,6 +411,13 @@ Builds:
       - standard
     prebuild: sed -i -e '/firebase/d' build.gradle
 
+  - versionName: '3.7'
+    versionCode: 54
+    commit: v3.7
+    subdir: app
+    gradle:
+      - standard
+
 MaintainerNotes: |-
     Summary and Description are maintained by upstream using fastlane in
     the source repo:
@@ -418,5 +425,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.6.1
-CurrentVersionCode: 53
+CurrentVersion: '3.7'
+CurrentVersionCode: 54

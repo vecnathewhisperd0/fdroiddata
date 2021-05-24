@@ -10,7 +10,6 @@ AuthorEmail: Renard.Wellnitz@googlemail.com
 SourceCode: https://github.com/renard314/textfairy
 IssueTracker: https://github.com/renard314/textfairy/issues
 
-Summary: An OCR App
 Description: |4-
 
     Note: newer versions of this app are not distributed
@@ -56,11 +55,12 @@ Builds:
       - sed -i 's/http:\/\/oss\.sonatype\.org\/content\/repositories\/snapshots/https:\/\/oss.sonatype.org\/content\/repositories\/snapshots\//'
         ../build.gradle
       - rm -rf ../test-images
+      - sed -i 's/21.3.6528147/21.4.7075529/' build.gradle
     scanignore:
       - tessdata
     scandelete:
       - .
-    ndk: r21d
+    ndk: r21e
 
 MaintainerNotes: |-
     F-Droid scanner complains about sonatype repo because it misses a / at the end.

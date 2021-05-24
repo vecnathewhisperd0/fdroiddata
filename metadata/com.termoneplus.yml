@@ -141,8 +141,23 @@ Builds:
 
   - versionName: 3.5.3
     versionCode: 353
-    disable: temporary to force a rebuild
     commit: v3.5.3
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.5.4
+    versionCode: 354
+    commit: v3.5.4
+    subdir: term
+    gradle:
+      - yes
+    ndk: r17c
+
+  - versionName: 3.6.0
+    versionCode: 360
+    commit: v3.6.0
     subdir: term
     gradle:
       - yes
@@ -150,5 +165,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.5.3
-CurrentVersionCode: 353
+CurrentVersion: 3.6.0
+CurrentVersionCode: 360

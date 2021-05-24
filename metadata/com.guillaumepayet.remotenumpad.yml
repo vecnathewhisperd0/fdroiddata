@@ -26,7 +26,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.6.4
+    versionCode: 27
+    commit: 1.6.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.0
+    versionCode: 28
+    commit: 1.7.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.1
+    versionCode: 29
+    commit: 1.7.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.6.3
-CurrentVersionCode: 26
+CurrentVersion: 1.7.1
+CurrentVersionCode: 29

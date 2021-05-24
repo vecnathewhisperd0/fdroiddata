@@ -221,7 +221,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.19.2
+    versionCode: 91
+    commit: 2.19.2
+    subdir: ultrasonic
+    gradle:
+      - yes
+
+  - versionName: 2.20.0
+    versionCode: 92
+    commit: 2.20.0
+    subdir: ultrasonic
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.19.1
-CurrentVersionCode: 90
+CurrentVersion: 2.20.0
+CurrentVersionCode: 92

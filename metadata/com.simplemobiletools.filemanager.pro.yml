@@ -1,6 +1,6 @@
 Categories:
   - System
-License: Apache-2.0
+License: GPL-3.0-only
 AuthorName: Tibor Kaputa
 AuthorEmail: hello@simplemobiletools.com
 WebSite: https://simplemobiletools.com
@@ -325,7 +325,43 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 6.8.8
+    versionCode: 103
+    commit: 6.8.8
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - yes
+
+  - versionName: 6.9.0
+    versionCode: 104
+    commit: 6.9.0
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - yes
+
+  - versionName: 6.9.1
+    versionCode: 105
+    commit: 6.9.1
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - yes
+
+  - versionName: 6.9.2
+    versionCode: 106
+    commit: 6.9.2
+    subdir: app
+    patch:
+      - build.patch
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 6.8.7
-CurrentVersionCode: 102
+CurrentVersion: 6.9.2
+CurrentVersionCode: 106

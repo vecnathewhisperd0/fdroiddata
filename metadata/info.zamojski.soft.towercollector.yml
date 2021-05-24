@@ -291,7 +291,35 @@ Builds:
     gradle:
       - productionFdroid
 
+  - versionName: 2.8.0
+    versionCode: 2080081
+    commit: 2.8.0
+    subdir: app
+    gradle:
+      - productionFdroid
+
+  - versionName: 2.8.1
+    versionCode: 2080182
+    commit: 2.8.1
+    subdir: app
+    gradle:
+      - productionFdroid
+
+  - versionName: 2.8.2
+    versionCode: 2080284
+    commit: 2.8.2
+    subdir: app
+    gradle:
+      - productionFdroid
+
+  - versionName: 2.8.3
+    versionCode: 2080385
+    commit: 2.8.3
+    subdir: app
+    gradle:
+      - productionFdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.7.4
-CurrentVersionCode: 2070476
+CurrentVersion: 2.8.3
+CurrentVersionCode: 2080385

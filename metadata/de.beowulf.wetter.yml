@@ -3,10 +3,12 @@ AntiFeatures:
 Categories:
   - Internet
 License: EUPL-1.2
+AuthorName: Beowulf
 AuthorEmail: incoming+beowuif-weather-20598585-issue-@incoming.gitlab.com
 WebSite: https://gitlab.com/BeowuIf/weather/-/wikis/home
 SourceCode: https://gitlab.com/BeowuIf/weather
 IssueTracker: https://gitlab.com/BeowuIf/weather/issues
+Translation: https://gitlab.com/BeowuIf/weather/-/wikis/Translation
 Changelog: https://gitlab.com/BeowuIf/weather/-/blob/HEAD/CHANGELOG
 
 AutoName: Weather
@@ -71,7 +73,49 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '2.21'
+    versionCode: 30
+    commit: '2.21'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.21.1
+    versionCode: 31
+    commit: 2.21.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.21.2
+    versionCode: 33
+    commit: 2.21.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '2.22'
+    versionCode: 35
+    commit: '2.22'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.00'
+    versionCode: 36
+    commit: '3.00'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.01'
+    versionCode: 37
+    commit: '3.01'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '2.20'
-CurrentVersionCode: 29
+CurrentVersion: '3.01'
+CurrentVersionCode: 37

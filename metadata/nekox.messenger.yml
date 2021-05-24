@@ -15,46 +15,6 @@ RepoType: git
 Repo: https://github.com/NekoX-Dev/NekoX
 
 Builds:
-  - versionName: 7.5.0-rc05
-    versionCode: 211
-    commit: v7.5.0-rc05
-    timeout: 10800
-    subdir: TMessagesProj
-    submodules: true
-    sudo: apt-get install -y ninja-build
-    gradle:
-      - fullFdroidArm
-    output: build/outputs/apk/full/*/*.apk
-    prebuild:
-      - pushd ..
-      - ./run fdroid prebuild
-    scandelete:
-      - TMessagesProj
-    build:
-      - pushd ..
-      - ./run fdroid build
-    ndk: r21d
-
-  - versionName: 7.5.0-rc05
-    versionCode: 212
-    commit: v7.5.0-rc05
-    timeout: 10800
-    subdir: TMessagesProj
-    submodules: true
-    sudo: apt-get install -y ninja-build
-    gradle:
-      - fullFdroidArm64
-    output: build/outputs/apk/full/*/*.apk
-    prebuild:
-      - pushd ..
-      - ./run fdroid prebuild
-    scandelete:
-      - TMessagesProj
-    build:
-      - pushd ..
-      - ./run fdroid build
-    ndk: r21d
-
   - versionName: 7.5.0-rc10
     versionCode: 226
     commit: v7.5.0-rc10
@@ -73,7 +33,7 @@ Builds:
     build:
       - pushd ..
       - ./run fdroid build
-    ndk: r21d
+    ndk: r21e
 
   - versionName: 7.5.0-rc10
     versionCode: 227
@@ -93,10 +53,250 @@ Builds:
     build:
       - pushd ..
       - ./run fdroid build
-    ndk: r21d
+    ndk: r21e
+
+  - versionName: 7.6.0-rc02
+    versionCode: 241
+    commit: v7.6.0-rc02
+    timeout: 10800
+    subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm
+    output: build/outputs/apk/full/*/*.apk
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - TMessagesProj
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 7.6.0-rc02
+    versionCode: 242
+    commit: v7.6.0-rc02
+    timeout: 10800
+    subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm64
+    output: build/outputs/apk/full/*/*.apk
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - TMessagesProj
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 7.6.0
+    versionCode: 256
+    commit: v7.6.0
+    timeout: 10800
+    subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm
+    output: build/outputs/apk/full/*/*.apk
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - TMessagesProj
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 7.6.0
+    versionCode: 257
+    commit: v7.6.0
+    timeout: 10800
+    subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm64
+    output: build/outputs/apk/full/*/*.apk
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - TMessagesProj
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 7.6.0-2
+    versionCode: 262
+    commit: v7.6.0-2
+    timeout: 10800
+    subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm
+    output: build/outputs/apk/full/*/*.apk
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - TMessagesProj
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 7.6.0-2
+    versionCode: 263
+    commit: v7.6.0-2
+    timeout: 10800
+    subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm64
+    output: build/outputs/apk/full/*/*.apk
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - TMessagesProj
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 7.7.2-armeabi-v7a
+    versionCode: 298
+    commit: v7.7.2
+    timeout: 10800
+    subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm
+    output: build/outputs/apk/full/*/*.apk
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - TMessagesProj
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 7.7.2-arm64-v8a
+    versionCode: 299
+    commit: v7.7.2
+    timeout: 10800
+    subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm64
+    output: build/outputs/apk/full/*/*.apk
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - TMessagesProj
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 7.7.2-1-armeabi-v7a
+    versionCode: 301
+    commit: v7.7.2-1
+    timeout: 10800
+    subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm
+    output: build/outputs/apk/full/*/*.apk
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - TMessagesProj
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 7.7.2-1-arm64-v8a
+    versionCode: 302
+    commit: v7.7.2-1
+    timeout: 10800
+    subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm64
+    output: build/outputs/apk/full/*/*.apk
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - TMessagesProj
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 7.7.2-2-armeabi-v7a
+    versionCode: 304
+    commit: v7.7.2-2
+    timeout: 10800
+    subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm
+    output: build/outputs/apk/full/*/*.apk
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - TMessagesProj
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
+
+  - versionName: 7.7.2-2-arm64-v8a
+    versionCode: 305
+    commit: v7.7.2-2
+    timeout: 10800
+    subdir: TMessagesProj
+    submodules: true
+    sudo: apt-get install -y ninja-build
+    gradle:
+      - fullFdroidArm64
+    output: build/outputs/apk/full/*/*.apk
+    prebuild:
+      - pushd ..
+      - ./run fdroid prebuild
+    scandelete:
+      - TMessagesProj
+    build:
+      - pushd ..
+      - ./run fdroid build
+    ndk: r21e
 
 ArchivePolicy: 6 versions
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 7.5.0-rc10
-CurrentVersionCode: 227
+CurrentVersion: 7.7.2-2-arm64-v8a
+CurrentVersionCode: 305

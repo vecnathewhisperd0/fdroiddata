@@ -51,7 +51,35 @@ Builds:
     gradle:
       - store
 
+  - versionName: 3.7.1
+    versionCode: 48
+    commit: version/3.7.1
+    subdir: app
+    gradle:
+      - store
+
+  - versionName: 3.8.1
+    versionCode: 50
+    commit: version/3.8.1
+    subdir: app
+    gradle:
+      - store
+
+  - versionName: 3.8.2
+    versionCode: 51
+    commit: version/3.8.2
+    subdir: app
+    gradle:
+      - store
+
+  - versionName: 3.8.3
+    versionCode: 52
+    commit: version/3.8.3
+    subdir: app
+    gradle:
+      - store
+
 AutoUpdateMode: Version version/%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.7.0
-CurrentVersionCode: 47
+CurrentVersion: 3.8.3
+CurrentVersionCode: 52

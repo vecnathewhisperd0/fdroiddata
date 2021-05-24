@@ -32,12 +32,12 @@ Builds:
 
   - versionName: 0.12.2
     versionCode: 23
-    disable: temporary to force a rebuild
     commit: 0.12.2
     subdir: app
     gradle:
       - yes
-    ndk: r21d
+    prebuild: sed -i 's/21.3.6528147/21.4.7075529/' build.gradle
+    ndk: r21e
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags

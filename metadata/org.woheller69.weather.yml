@@ -91,7 +91,56 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '2.1'
+    versionCode: 21
+    commit: V2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.0'
+    versionCode: 30
+    commit: V3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.1'
+    versionCode: 31
+    commit: V3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.2'
+    versionCode: 32
+    commit: V3.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.3'
+    versionCode: 33
+    commit: V3.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.4'
+    versionCode: 34
+    commit: V3.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '3.5'
+    versionCode: 35
+    commit: V3.5
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version V%v
 UpdateCheckMode: Tags
-CurrentVersion: '2.0'
-CurrentVersionCode: 20
+CurrentVersion: '3.5'
+CurrentVersionCode: 35

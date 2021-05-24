@@ -1,0 +1,89 @@
+Categories:
+  - Internet
+License: GPL-3.0-or-later
+AuthorName: Daniel Kao
+AuthorEmail: daniel.kao@gmail.com
+SourceCode: https://github.com/plateaukao/browser
+IssueTracker: https://github.com/plateaukao/browser/issues
+Changelog: https://github.com/plateaukao/browser/blob/main/CHANGELOG.md
+
+AutoName: EinkBro
+
+RepoType: git
+Repo: https://github.com/plateaukao/browser
+
+Builds:
+  - versionName: 8.6.3
+    versionCode: 863
+    commit: v8.6.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 8.6.4
+    versionCode: 864
+    commit: v8.6.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 8.6.5
+    versionCode: 865
+    commit: v8.6.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 8.6.6
+    versionCode: 866
+    commit: v8.6.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 8.6.7
+    versionCode: 867
+    commit: v8.6.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 8.7.1
+    versionCode: 871
+    commit: v8.7.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 8.7.2
+    versionCode: 872
+    commit: v8.7.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 8.7.3
+    versionCode: 873
+    commit: v8.7.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 8.7.4
+    versionCode: 874
+    commit: v8.7.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 8.7.5
+    versionCode: 875
+    commit: v8.7.5
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 8.7.5
+CurrentVersionCode: 875

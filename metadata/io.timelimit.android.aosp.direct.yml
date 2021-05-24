@@ -146,8 +146,35 @@ Builds:
       - directVersion
       - productionServer
 
+  - versionName: 4.8.1
+    versionCode: 151
+    commit: release-4.8.1
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.9.0
+    versionCode: 155
+    commit: release-4.9.0
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
+  - versionName: 4.9.2
+    versionCode: 157
+    commit: release-4.9.2
+    subdir: app
+    gradle:
+      - noGoogleApi
+      - directVersion
+      - productionServer
+
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: Tags
 UpdateCheckName: io.timelimit.android
-CurrentVersion: 4.8.0
-CurrentVersionCode: 150
+CurrentVersion: 4.9.2
+CurrentVersionCode: 157
