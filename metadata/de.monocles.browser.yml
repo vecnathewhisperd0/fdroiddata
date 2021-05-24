@@ -28,6 +28,6 @@ MaintainerNotes: |-
     https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
 
 AutoUpdateMode: Version v%v
-UpdateCheckMode: Tags
+UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
 CurrentVersion: '1.0'
 CurrentVersionCode: 100
