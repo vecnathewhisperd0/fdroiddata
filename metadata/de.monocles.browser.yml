@@ -1,0 +1,33 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: Arne-Brün Vogelsang
+AuthorEmail: arne@monocles.de
+WebSite: https://monocles.de/more/
+SourceCode: https://codeberg.org/Arne/monocles_browser
+IssueTracker: https://codeberg.org/Arne/monocles_browser/issues
+Changelog: https://crowdin.com/project/pix-art-messenger
+Donate: https://monocles.de/more/#donation-section
+
+AutoName: monocles browser
+
+RepoType: git
+Repo: https://codeberg.org/Arne/monocles_browser.git
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 100
+    commit: v1.0
+    subdir: app
+    gradle:
+      - standard
+
+MaintainerNotes: |-
+    Summary and Description are maintained by upstream using fastlane in
+    the source repo:
+    https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 100
