@@ -20,7 +20,7 @@ Builds:
     commit: v1.0
     subdir: app
     gradle:
-      - main
+      - standard
 
 MaintainerNotes: |-
     Summary and Description are maintained by upstream using fastlane in
