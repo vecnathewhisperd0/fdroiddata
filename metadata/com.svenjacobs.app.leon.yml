@@ -8,12 +8,19 @@ RepoType: git
 Repo: https://github.com/svenjacobs/leon
 
 Builds:
-  - versionName: 0.2.0.221
-    versionCode: 221
-    commit: 0.2.0
+  - versionName: 0.3.0
+    versionCode: 223
+    commit: 0.3.0
     subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
     gradle:
       - yes
 
-AutoUpdateMode: None
+AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
+CurrentVersion: 0.3.0
+CurrentVersionCode: 223
+
