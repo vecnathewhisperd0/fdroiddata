@@ -1,0 +1,42 @@
+Categories:
+  - Multimedia
+  - Science & Education
+License: GPL-3.0-only
+AuthorName: Tom Knuf
+SourceCode: https://gitlab.com/mx.tom/easy-ear
+IssueTracker: https://gitlab.com/mx.tom/easy-ear/issues
+Changelog: https://gitlab.com/mx.tom/easy-ear/-/blob/master/CHANGELOG.md
+
+AutoName: Easy Ear
+
+RepoType: git
+Repo: https://gitlab.com/mx.tom/easy-ear.git
+
+Builds:
+  - versionName: '0.1'
+    versionCode: 1
+    commit: ab322ed5229fd82bf095eb3b1e5130505a32d65e
+    subdir: android/app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y --no-install-recommends -t stretch-backports npm
+      - curl -Lo node.tar.xz https://nodejs.org/dist/v14.17.0/node-v14.17.0.tar.xz
+      - echo "56e05bff9331039317db417f772e635e0cd1c55f733f7b1b079d71ab5842c9ed node.tar.xz"
+        | sha256sum -c -
+      - tar xJf node.tar.xz
+      - cp -a node-v14.17.0/. /usr/local/
+    init: npm install
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/CPUArchitecture = true/CPUArchitecture = false/' build.gradle
+    scanignore:
+      - android/build.gradle
+      - node_modules/jsc-android
+      - node_modules/react-native/android/com/facebook/react/react-native/*/
+      - node_modules/react-native-vector-icons/android/build.gradle
+      - node_modules/react-native-soundfont/android/build.gradle
+    scandelete:
+      - node_modules/
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
