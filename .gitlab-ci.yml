@@ -62,11 +62,8 @@ lint:
 
 trigger-issuebot:
   image: alpine
-  except:
-    - master@fdroid/fdroiddata
-    - pipelines
-    - schedules
-    - triggers
+  only:
+    - merge_requests
   variables:
     GIT_DEPTH: "1"
   artifacts:

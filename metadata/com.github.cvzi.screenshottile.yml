@@ -295,7 +295,9 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: echo "android.useAndroidX=true" > ../gradle.properties
+    prebuild:
+      - echo "android.useAndroidX=true" > ../gradle.properties
+      - echo 1
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
