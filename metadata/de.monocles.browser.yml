@@ -16,7 +16,7 @@ Repo: https://codeberg.org/Arne/monocles_browser.git
 
 Builds:
   - versionName: '1.0'
-    versionCode: 100
+    versionCode: 1
     commit: v1.0
     subdir: app
     gradle:
@@ -25,4 +25,4 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
 CurrentVersion: '1.0'
-CurrentVersionCode: 100
+CurrentVersionCode: 1
