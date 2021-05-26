@@ -186,6 +186,7 @@ Builds:
     subdir: app
     gradle:
       - yes
+    build: echo 1
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags

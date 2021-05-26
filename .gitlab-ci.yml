@@ -62,11 +62,8 @@ lint:
 
 trigger-issuebot:
   image: alpine
-  except:
-    - master@fdroid/fdroiddata
-    - pipelines
-    - schedules
-    - triggers
+  only:
+    - merge_requests
   variables:
     GIT_DEPTH: "1"
   artifacts:
@@ -305,8 +302,8 @@ pages:
     - curl --silent https://gitlab.com/fdroid/gradle-plugins/-/archive/master/gradle-plugins-master.tar.gz
         | tar -xz --directory=$GRADLE_USER_HOME/fdroid --strip-components=1
 
-    - git ls-remote https://gitlab.com/fdroid/issuebot.git master
-    - curl --silent https://gitlab.com/fdroid/issuebot/-/archive/master/issuebot-master.tar.gz
+    - git ls-remote https://gitlab.com/linsui/issuebot.git update_comment
+    - curl --silent https://gitlab.com/linsui/issuebot/-/archive/update_comment/issuebot-update_comment.tar.gz
         | tar -xz --strip-components=1
     - pyvenv --system-site-packages --clear issuebot-env
     - . issuebot-env/bin/activate
