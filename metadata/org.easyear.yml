@@ -15,7 +15,7 @@ Repo: https://gitlab.com/mx.tom/easy-ear.git
 Builds:
   - versionName: 0.1.2
     versionCode: 1
-    commit: c86254af9cf6b253562831fdcf42e834d6bd1718
+    commit: 19dd068e20af72c7a0165725dd52cdca3c37c966
     subdir: android/app
     sudo:
       - apt-get update || apt-get update
