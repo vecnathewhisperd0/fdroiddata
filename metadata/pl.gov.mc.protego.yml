@@ -1,0 +1,31 @@
+Categories:
+  - Sports & Health
+License: GPL-3.0-only
+SourceCode: https://github.com/ProteGO-app/android
+IssueTracker: https://github.com/ProteGO-app/android/issues
+
+AutoName: ProteGO
+Description: |-
+    The purpose of the application is to help move from a nationwide to only
+    a selective quarantine of people who may have been exposed to the risk of
+    SARS-CoV-2 infection (in Poland).
+
+RepoType: git
+Repo: https://github.com/ProteGO-app/android
+
+Builds:
+  - versionName: 4.9.0
+    versionCode: 1
+    commit: 4.9.0
+    subdir: app
+    gradle:
+      - prod
+    prebuild:
+      - sed -i -e s/maven.fabric.io/maven.google.com/ -e /com.google.gms/d -e /io.fabric/d
+        ../build.gradle
+      - sed -i -e '/signingConfigs {/,+7d' -e /signingConfig/d -e /com.crashlytics/d
+        -e /io.fabric/d -e /com.google.gms/d -e 's/System\.env\.CI_COMMIT_TAG.*/\"$$VERSION$$\"/'
+        build.gradle
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
