@@ -62,11 +62,8 @@ lint:
 
 trigger-issuebot:
   image: alpine
-  except:
-    - master@fdroid/fdroiddata
-    - pipelines
-    - schedules
-    - triggers
+  only:
+    - merge_requests
   variables:
     GIT_DEPTH: "1"
   artifacts:
@@ -79,6 +76,10 @@ trigger-issuebot:
     - mkdir logs
     - export | grep -F CI_ | grep -vFi -e password -e token > logs/export.txt
     - apk add --no-cache bash curl
+    - curl --request POST
+        --header "Private-Token:${PERSONAL_ACCESS_TOKEN}"
+        --data "body=Thanks for your contribution!"
+        ${CI_API_V4_URL}/projects/36528/merge_requests/${CI_MERGE_REQUEST_IID}/notes
     - ./tools/trigger-issuebot
 
 schedule-issuebot:
