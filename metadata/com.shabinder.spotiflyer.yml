@@ -18,9 +18,9 @@ RepoType: git
 Repo: https://github.com/Shabinder/SpotiFlyer
 
 Builds:
-  - versionName: 3.0.1
-    versionCode: 19
-    commit: 3.0.1
+  - versionName: 3.1.0
+    versionCode: 20
+    commit: 3.1.0
     subdir: android
     sudo:
       - apt-get update || apt-get update
@@ -41,5 +41,5 @@ MaintainerNotes: Contained Matomo & ACRA are configured opt-in
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/Shabinder/SpotiFlyer/main/buildSrc/buildSrc/src/main/kotlin/Versions.kt|versionCode\s=\s(\d+)|.|versionName\s=\s"([\d.]+)"
-CurrentVersion: 3.0.1
-CurrentVersionCode: 19
+CurrentVersion: 3.1.0
+CurrentVersionCode: 20
