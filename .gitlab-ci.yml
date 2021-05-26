@@ -76,6 +76,7 @@ trigger-issuebot:
     - mkdir logs
     - export | grep -F CI_ | grep -vFi -e password -e token > logs/export.txt
     - apk add --no-cache bash curl
+    - test -z ${PERSONAL_ACCESS_TOKEN} && echo 'No PERSONAL_ACCESS_TOKEN'
     - curl --request POST
         --header "Private-Token:${PERSONAL_ACCESS_TOKEN}"
         --data "body=Thanks for your contribution!"
