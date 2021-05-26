@@ -36,7 +36,7 @@ Builds:
       - art
       - spotiflyer-ios
 
-MaintainerNotes: Contained Matomo is configured opt-in
+MaintainerNotes: Contained Matomo & ACRA are configured opt-in
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
