@@ -63,7 +63,7 @@ Please read the [General Recommendations](#general-recommendations-without-fdroi
 1. Create and checkout a new branch.
    Naming it like the app name or, much better, the app id makes it easier to keep track of your contributions.
 1. Create a new file in the the `metadata` directory named after the following schema: `<application_id>.yml`.
-   So an example would be _"com.app.example"_.
+   So an example would be _"com.app.example.yml"_.
 1. Write down the metadata in that file. The [Build Metadata Reference](https://f-droid.org/en/docs/Build_Metadata_Reference)
    as well as the [templates from the wiki](https://gitlab.com/fdroid/wiki/-/wikis/Metadata/YAML-Metadata)
    will help you.
@@ -85,7 +85,7 @@ Please read the [General Recommendations](#general-recommendations-without-fdroi
 - Keep a separate branch for every app you want to submit.
 - Keep your forks `master` branch up-to-date. For more information see here:
   https://about.gitlab.com/blog/2016/12/01/how-to-keep-your-fork-up-to-date-with-its-origin
-- As a result of the two tips above, you should not commit to your `master` branch.
+- As a result of the two tips above, you should **not** commit to your `master` branch.
   This will also trigger new pipelines at the right time.
 - Do not open a Merge Request from a protected branch.
   The `master` branch is protected by default, but other branches can also be protected.
