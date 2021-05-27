@@ -41,7 +41,7 @@ The latter is only recommended for really advanced users.
 ### Metadata preparation without fdroidserver
 
 You can either write the metadata file locally, on your machine, or directly on the GitLab website.
-Please read the [General Recommendations](#general-recommendations-without-fdroidserver) before you start.
+Please read the [General Recommendations](#general-recommendations) before you start.
 
 #### On the GitLab website
 
@@ -80,25 +80,9 @@ Please read the [General Recommendations](#general-recommendations-without-fdroi
 1. Now wait for the packagers to pick up your Merge Request. Please keep track if they asked any questions
    and reply to them as soon as possible.
 
-#### General recommendations (without fdroidserver)
-
-- Keep a separate branch for every app you want to submit.
-- Keep your forks `master` branch up-to-date. For more information see here:
-  https://about.gitlab.com/blog/2016/12/01/how-to-keep-your-fork-up-to-date-with-its-origin
-- As a result of the two tips above, you should **not** commit to your `master` branch.
-  This will also trigger new pipelines at the right time.
-- Do not open a Merge Request from a protected branch.
-  The `master` branch is protected by default, but other branches can also be protected.
-- Please fill the template when opening a new Merge Request.
-
-#### Final thoughts
-
-_"How long does it take for my app to show up in the F-Droid repository?"_ is a very frequently asked question.
-Please take a look at
-[the wiki](https://gitlab.com/fdroid/wiki/-/wikis/FAQ#how-long-does-it-take-for-my-app-to-show-up-on-website-and-client)
-for the answer.
-
 ### Metadata preparation with fdroidserver
+
+Please read the [General Recommendations](#general-recommendations) before you start.
 
 #### Setting up fdroidserver
 
@@ -175,24 +159,18 @@ are built for working examples.
 
 Congratulations! You can now open a merge request to add your app.
 
-_"How long does it take for my app to show up in the F-Droid repository?"_ is a very frequently asked question.
-Please take a look at
-[the wiki](https://gitlab.com/fdroid/wiki/-/wikis/FAQ#how-long-does-it-take-for-my-app-to-show-up-on-website-and-client)
-for the answer.
+### General recommendations
 
-#### General recommendations (with fdroidserver)
-
-- [Squash](https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html) your commits.
-
-- Make sure you've ran `fdroid lint` and `fdroid rewritemeta` before opening a
-  merge request.
-
-- If you haven't tested your build, say so in the merge request.
-
-- Check for CI errors once you have opened your Merge Request.
-
-- Please don't commit directly onto your `master` branch. Use a new branch instead. This makes merging much more easy, and the correct jobs in CI will run.
-
+- Keep a separate branch for every app you want to submit.
+- Keep your forks `master` branch up-to-date. For more information see here:
+  https://about.gitlab.com/blog/2016/12/01/how-to-keep-your-fork-up-to-date-with-its-origin
+- As a result of the two tips above, you should **not** commit to your `master` branch.
+  This will also trigger new pipelines at the right time.
+- Do not open a Merge Request from a protected branch.
+  The `master` branch is protected by default, but other branches can also be protected.
+- Fill the template when opening a new Merge Request.
+- [Squash](https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html)
+  your commits. (enabled by default)
 
 ### After You Added Your App
 
