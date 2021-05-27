@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://f-droid.org/app.yml",
+  "$id": "https://f-droid.org/metadata.yml",
   "title": "F-Droid metadata for Android apps",
   "description": "For every app on F-Droid a metadata file in the format of <application-id>.yml have to be provided, in order to build an app or check or if it has been updated. See https://f-droid.org/docs/Build_Metadata_Reference for a complete reference of a metadata file.",
   "type": "object",
