@@ -12,11 +12,7 @@ Description: |-
     device running the Cyanogenmod 12 ROM or any other rom compatible with the CM12
     theme engine is needed to use the theme.
 
-    [https://github.com/scoute-dich/Blue-Minimal/blob/HEAD/screenshots.md
-    Screenshots]
-
-RepoType: git
-Repo: https://github.com/scoute-dich/Blue-Minimal
+    <a href="https://github.com/scoute-dich/Blue-Minimal/blob/HEAD/screenshots.md">Screenshots</a>
 
 Builds:
   - versionName: '3.1'
@@ -184,3 +180,5 @@ AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: '5.0'
 CurrentVersionCode: 43
+
+NoSourceSince: '5.0'

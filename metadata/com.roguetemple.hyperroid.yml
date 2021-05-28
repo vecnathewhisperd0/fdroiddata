@@ -27,6 +27,7 @@ Builds:
     commit: '2'
     buildjni:
       - yes
+    ndk: r12b
 
   - versionName: '4.4'
     versionCode: 440
@@ -34,6 +35,7 @@ Builds:
     target: android-7
     buildjni:
       - yes
+    ndk: r12b
 
   - versionName: 4.4a
     versionCode: 441
@@ -43,6 +45,7 @@ Builds:
     target: android-7
     buildjni:
       - yes
+    ndk: r12b
 
   - versionName: 5.5a
     versionCode: 551
@@ -100,8 +103,8 @@ Builds:
     commit: v10.5e
     subdir: hyperroid/app
     sudo:
-      - apt update || apt update
-      - apt install -y g++
+      - apt-get update || apt-get update
+      - apt-get install -y g++
     gradle:
       - yes
     prebuild: sed -i -e "s/abiFilters .*/abiFilters 'x86', 'x86_64', 'armeabi-v7a',
@@ -112,7 +115,25 @@ Builds:
       - popd
     ndk: r17b
 
+  - versionName: 11.3i
+    versionCode: 11309
+    disable: missing R.raw.palace, R.raw.caribbean, R.raw.ocean, R.raw.ivory
+    commit: v11.3l
+    subdir: hyperroid/app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y g++
+    gradle:
+      - yes
+    prebuild: sed -i -e "s/abiFilters .*/abiFilters 'x86', 'x86_64', 'armeabi-v7a',
+        'arm64-v8a'/" build.gradle
+    build:
+      - pushd ..
+      - bash copy.sh
+      - popd
+    ndk: r17c
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 10.5e
-CurrentVersionCode: 10505
+CurrentVersion: 11.3i
+CurrentVersionCode: 11309

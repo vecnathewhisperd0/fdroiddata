@@ -7,10 +7,9 @@ IssueTracker: https://github.com/MarmaladeSky/aRevelation/issues
 AutoName: aRevelation
 Description: |-
     '''Note: This app is no longer maintained. Instead, use its newer fork
-    [[de.igloffstein.maik.aRevelation]].'''
+    https://f-droid.org/packages/de.igloffstein.maik.aRevelation.'''
 
-    Password manager using the same format as [http://revelation.olasagasti.info
-    Revelation]
+    Password manager using the same format as <a href="http://revelation.olasagasti.info">Revelation</a>
 
 Builds:
   - versionName: 0.01b

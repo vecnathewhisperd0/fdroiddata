@@ -456,7 +456,25 @@ Builds:
     scandelete:
       - buildSrc
 
+  - versionName: v1.3.2
+    versionCode: 1275
+    commit: v1.3.2
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
+  - versionName: 1.4.3
+    versionCode: 1290
+    commit: 1.4.3
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: v1.3.0
-CurrentVersionCode: 1273
+CurrentVersion: v1.4.3
+CurrentVersionCode: 1290

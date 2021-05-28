@@ -6,12 +6,12 @@ Categories:
 License: GPL-3.0-or-later
 AuthorName: Team NewPipe
 AuthorEmail: tnp@schabi.org
-WebSite: https://newpipe.schabi.org
+WebSite: https://newpipe.net
 SourceCode: https://github.com/TeamNewPipe/NewPipe
 IssueTracker: https://github.com/TeamNewPipe/NewPipe/issues
 Translation: https://hosted.weblate.org/projects/newpipe/
 Changelog: https://github.com/TeamNewPipe/NewPipe/releases
-Donate: https://newpipe.schabi.org/donate
+Donate: https://newpipe.net/donate
 LiberapayID: '34969'
 Bitcoin: 16A9J59ahMRqkLSZjhYj33n9j3fMztFxnh
 
@@ -577,7 +577,123 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.19.1
+    versionCode: 910
+    commit: v0.19.1
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 0.19.2
+    versionCode: 920
+    commit: v0.19.2
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: echo -e '\n' 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 0.19.3
+    versionCode: 930
+    commit: v0.19.3
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: echo -e '\n' 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 0.19.4
+    versionCode: 940
+    commit: v0.19.4
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: echo -e '\n' 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 0.19.5
+    versionCode: 950
+    commit: v0.19.5
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    prebuild: echo -e '\n' 'org.gradle.jvmargs=-Xmx1g' >> ../gradle.properties
+
+  - versionName: 0.19.6
+    versionCode: 951
+    commit: v0.19.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.19.8
+    versionCode: 953
+    commit: v0.19.8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.20.0
+    versionCode: 954
+    commit: v0.20.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.20.1
+    versionCode: 955
+    commit: v0.20.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.20.5
+    versionCode: 959
+    disable: verification is broken, see fdroid/fdroidserver#797
+    commit: v0.20.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.20.6
+    versionCode: 960
+    disable: signing of reproducible builds is broken
+    commit: v0.20.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.20.11
+    versionCode: 965
+    commit: v0.20.11
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.21.0
+    versionCode: 966
+    commit: v0.21.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.21.1
+    versionCode: 967
+    commit: v0.21.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.21.2
+    versionCode: 968
+    commit: v0.21.2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.18.7
-CurrentVersionCode: 870
+CurrentVersion: 0.21.2
+CurrentVersionCode: 968

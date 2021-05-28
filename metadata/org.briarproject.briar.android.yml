@@ -141,8 +141,78 @@ Builds:
       - bramble-java
       - briar-headless
 
+  - versionName: 1.2.9
+    versionCode: 10209
+    disable: verification fails
+    commit: release-1.2.9
+    subdir: briar-android
+    gradle:
+      - official
+    rm:
+      - bramble-java
+      - briar-headless
+      - libs/gradle-witness.jar
+    prebuild: sed -i -e '/witness/d' ../*/build.gradle
+
+  - versionName: 1.2.10
+    versionCode: 10210
+    commit: release-1.2.10
+    subdir: briar-android
+    gradle:
+      - official
+    rm:
+      - bramble-java
+      - briar-headless
+      - libs/gradle-witness.jar
+    prebuild: sed -i -e '/witness/d' ../*/build.gradle
+
+  - versionName: 1.2.16
+    versionCode: 10216
+    commit: release-1.2.16
+    subdir: briar-android
+    gradle:
+      - official
+    rm:
+      - bramble-java
+      - briar-headless
+      - libs/gradle-witness.jar
+    prebuild:
+      - sed -i -e '/witness/d' ../*/build.gradle
+      - sed -i -e "/buildToolsVersion/apackagingOptions { doNotStrip '**/*.so' }"
+        build.gradle ../bramble-android/build.gradle
+
+  - versionName: 1.2.18
+    versionCode: 10218
+    commit: release-1.2.18
+    subdir: briar-android
+    gradle:
+      - official
+    rm:
+      - bramble-java
+      - briar-headless
+      - libs/gradle-witness.jar
+    prebuild:
+      - sed -i -e '/witness/d' ../*/build.gradle
+      - sed -i -e "/buildToolsVersion/apackagingOptions { doNotStrip '**/*.so' }"
+        build.gradle ../bramble-android/build.gradle
+
+  - versionName: 1.2.20
+    versionCode: 10220
+    commit: release-1.2.20
+    subdir: briar-android
+    gradle:
+      - official
+    rm:
+      - bramble-java
+      - briar-headless
+      - libs/gradle-witness.jar
+    prebuild:
+      - sed -i -e '/witness/d' ../*/build.gradle
+      - sed -i -e "/buildToolsVersion/apackagingOptions { doNotStrip '**/*.so' }"
+        build.gradle ../bramble-android/build.gradle
+
 ArchivePolicy: 3 versions
 AutoUpdateMode: Version release-%v
 UpdateCheckMode: Tags ^release-
-CurrentVersion: 1.2.7
-CurrentVersionCode: 10207
+CurrentVersion: 1.2.20
+CurrentVersionCode: 10220

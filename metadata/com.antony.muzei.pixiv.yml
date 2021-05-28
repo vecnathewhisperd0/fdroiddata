@@ -37,7 +37,107 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.9.3
+    versionCode: 278
+    commit: 2.9.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.9.4
+    versionCode: 279
+    commit: 2.9.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.0.1
+    versionCode: 282
+    commit: 3.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.0.3
+    versionCode: 284
+    commit: 3.0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.1.0
+    versionCode: 286
+    commit: 3.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.1.2
+    versionCode: 288
+    commit: 3.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.1.5
+    versionCode: 293
+    commit: 3.1.5
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 3.2.1
+    versionCode: 295
+    commit: 3.2.1
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 3.4.1
+    versionCode: 298
+    commit: 3.4.1
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 3.4.2
+    versionCode: 299
+    disable: old version code
+    commit: 3.4.2
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 3.4.2.1
+    versionCode: 300
+    commit: 3.4.2.1
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 3.4.3
+    versionCode: 301
+    commit: 3.4.3
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 3.4.3.1
+    versionCode: 302
+    commit: 3.4.3.1
+    subdir: app
+    gradle:
+      - prod
+
+  - versionName: 3.4.3.8
+    versionCode: 307
+    commit: 3.4.3.8
+    subdir: app
+    gradle:
+      - prod
+
 AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
-CurrentVersion: 2.9.1
-CurrentVersionCode: 276
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/yellowbluesky/PixivforMuzei3/master/gradle.properties|app\.version\.code=(\d+)|.|app\.version\.name=([\d.]+)
+CurrentVersion: 3.4.3.8
+CurrentVersionCode: 307

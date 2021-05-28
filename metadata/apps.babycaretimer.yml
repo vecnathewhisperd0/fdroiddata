@@ -27,3 +27,5 @@ MaintainerNotes: Set UCM to None because svn fetch hangs.
 
 AutoUpdateMode: None
 UpdateCheckMode: None
+
+NoSourceSince: '1.5'

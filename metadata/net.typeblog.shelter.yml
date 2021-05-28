@@ -10,7 +10,7 @@ Donate: https://www.patreon.com/PeterCxy
 
 AutoName: Shelter
 Description: |
-    PLEASE READ [https://git.angry.im/PeterCxy/Shelter/src/branch/master/README.md README.md] BEFORE YOU START USING THIS APP!
+    PLEASE READ <a href="https://git.angry.im/PeterCxy/Shelter/src/branch/master/README.md">README.md</a> BEFORE YOU START USING THIS APP!
 
     Shelter is a Free and Open-Source (FOSS) app that leverages the “Work Profile” feature of Android to provide an isolated space that you can install or clone apps into.
 
@@ -102,7 +102,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.5.1
+    versionCode: 15
+    commit: 1.5.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.6'
+    versionCode: 17
+    commit: '1.6'
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.5'
-CurrentVersionCode: 13
+CurrentVersion: '1.6'
+CurrentVersionCode: 17

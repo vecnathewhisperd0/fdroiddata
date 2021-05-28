@@ -31,7 +31,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.5.fdroid
+    versionCode: 15
+    commit: v1.5.fdroid
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.fdroid
+    versionCode: 16
+    commit: v1.6.fdroid
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.4'
-CurrentVersionCode: 14
+CurrentVersion: 1.6.fdroid
+CurrentVersionCode: 16

@@ -5,12 +5,12 @@ WebSite: https://f-droid.org
 SourceCode: https://gitlab.com/fdroid/privileged-extension
 IssueTracker: https://gitlab.com/fdroid/privileged-extension/issues
 Translation: https://hosted.weblate.org/projects/f-droid/privileged-extension/
-Donate: https://f-droid.org/about
+Donate: https://f-droid.org/donate
 FlattrID: '343053'
 LiberapayID: '27859'
 Bitcoin: 15u8aAPK4jJ5N8wpWJ5gutAyyeHtKX5i18
 
-AutoName: F-Droid Privileged Extension OTA
+Name: F-Droid Privileged Extension OTA
 
 RequiresRoot: 'yes'
 
@@ -78,6 +78,12 @@ Builds:
   - versionName: 0.2.11
     versionCode: 2110
     commit: 0.2.11
+    output: app/build/distributions/F-DroidPrivilegedExtensionFromBinaries-$$VERSION$$.zip
+    build: ./create_ota.sh release binaries
+
+  - versionName: 0.2.12
+    versionCode: 2120
+    commit: 0.2.12
     output: app/build/distributions/F-DroidPrivilegedExtensionFromBinaries-$$VERSION$$.zip
     build: ./create_ota.sh release binaries
 

@@ -8,7 +8,7 @@ Changelog: https://github.com/OldSparkyMI/aRevelation/releases
 AutoName: aRevelation
 Description: |-
     ''aRevelation'' is an Android password manager based on
-    [https://revelation.olasagasti.info/ Revelation] Password Manager file
+    <a href="https://revelation.olasagasti.info/">Revelation</a> Password Manager file
     format. It stores all your accounts and passwords in a single, secure
     place, and gives you access to it through a user-friendly graphical
     interface on your smartphone.
@@ -21,7 +21,7 @@ Description: |-
     * fast, secure and powerful
 
     This is a fork of the no longer maintained
-    [[com.github.marmalade.aRevelation]].
+    https://f-droid.org/packages/com.github.marmalade.aRevelation.
 
 RepoType: git
 Repo: https://github.com/OldSparkyMI/aRevelation

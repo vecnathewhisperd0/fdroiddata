@@ -91,10 +91,38 @@ Builds:
     submodules: true
     gradle:
       - regular
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+    ndk: r16b
+
+  - versionName: 1.1.6
+    versionCode: 1010603
+    commit: v1.1.6
+    subdir: app
+    submodules: true
+    gradle:
+      - regular
+    ndk: r16b
+
+  - versionName: 1.1.8
+    versionCode: 1010803
+    disable: unknown maven
+    commit: v1.1.8
+    subdir: app
+    submodules: true
+    gradle:
+      - regular
+    ndk: r16b
+
+  - versionName: 1.1.9
+    versionCode: 1010901
+    disable: contains binaries https://github.com/Staacks/phyphox-android/issues/18
+    commit: v1.1.9
+    subdir: app
+    submodules: true
+    gradle:
+      - regular
     ndk: r16b
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.5
-CurrentVersionCode: 1010502
+CurrentVersion: 1.1.9
+CurrentVersionCode: 1010901

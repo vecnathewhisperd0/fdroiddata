@@ -118,9 +118,22 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+
+  - versionName: '0.18'
+    versionCode: 18
+    commit: '0.18'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.19'
+    versionCode: 19
+    commit: v0.19
+    subdir: app
+    gradle:
+      - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '0.16'
-CurrentVersionCode: 16
+CurrentVersion: '0.19'
+CurrentVersionCode: 19

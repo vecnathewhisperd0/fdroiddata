@@ -246,7 +246,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 1.7.8
     versionCode: 64
@@ -254,7 +253,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
 
   - versionName: 1.7.10
     versionCode: 66
@@ -262,9 +260,29 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild: sed -i '/systemProp\.http\.proxy/d' ~/.gradle/gradle.properties
+
+  - versionName: 1.7.11
+    versionCode: 67
+    commit: 1.7.11
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.12
+    versionCode: 68
+    commit: 1.7.12
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.8.0
+    versionCode: 69
+    commit: 1.8.0
+    subdir: app
+    gradle:
+      - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^[0-9.]+$
-CurrentVersion: 1.7.10
-CurrentVersionCode: 66
+CurrentVersion: 1.8.0
+CurrentVersionCode: 69

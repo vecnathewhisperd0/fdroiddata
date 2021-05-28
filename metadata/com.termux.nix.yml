@@ -1,6 +1,6 @@
 Categories:
   - Development
-License: GPL-3.0-only
+License: MIT
 WebSite: https://nix-on-droid.unboiled.info
 SourceCode: https://github.com/t184256/nix-on-droid
 IssueTracker: https://github.com/t184256/nix-on-droid/issues
@@ -40,8 +40,22 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.66_v0.2.4_nix
+    versionCode: 66024
+    commit: v0.66_v0.2.4_nix
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.66_v0.2.5_nix
+    versionCode: 66025
+    commit: v0.66_v0.2.5_nix
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckName: com.termux
-CurrentVersion: 0.66_v0.2.2_nix
-CurrentVersionCode: 66022
+CurrentVersion: 0.66_v0.2.5_nix
+CurrentVersionCode: 66025

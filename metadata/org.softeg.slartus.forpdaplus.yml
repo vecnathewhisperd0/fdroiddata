@@ -286,7 +286,53 @@ Builds:
       - rel
     prebuild: sed -i -e '/applicationVariants.all/,/^    }/d; /signingConfigs/d' build.gradle
 
-AutoUpdateMode: None
-UpdateCheckMode: None
-CurrentVersion: 3.5.5.7
-CurrentVersionCode: 637
+  - versionName: 3.5.7
+    versionCode: 638
+    commit: 3.5.7
+    subdir: app
+    gradle:
+      - rel
+    rm:
+      - app/keystore.key
+    prebuild: sed -i -e '/applicationVariants.all/,/^    }/d; /signingConfigs/d' build.gradle
+    scanignore:
+      - app/src/main/assets/databases/*.zip
+
+  - versionName: 3.5.7.6
+    versionCode: 646
+    commit: 3.5.7.6
+    subdir: app
+    gradle:
+      - rel
+    prebuild: sed -i -e '/applicationVariants.all/,/^    }/d' -e '/signingConfig/d'
+        build.gradle
+    scanignore:
+      - app/src/main/assets/databases/*.zip
+
+  - versionName: 3.5.8
+    versionCode: 648
+    commit: 3.5.8
+    subdir: app
+    gradle:
+      - rel
+    prebuild: sed -i -e '/applicationVariants.all/,/^    }/d' -e '/signingConfig/d'
+        build.gradle
+    scanignore:
+      - app/src/main/assets/databases/*.zip
+
+  - versionName: 3.5.8.2
+    versionCode: 650
+    commit: 3.5.8.2
+    subdir: app
+    gradle:
+      - rel
+    prebuild: sed -i -e '/applicationVariants.all/,/^    }/d' -e '/signingConfig/d'
+        build.gradle
+    scanignore:
+      - app/src/main/assets/databases/*.zip
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/slartus/4pdaClient-plus/master/updateinfo.json|"versionCode":\s*(\d+)|.|"ver":\s*"([\d.]+)
+CurrentVersion: 3.5.8.2
+CurrentVersionCode: 650
