@@ -10,6 +10,9 @@ Changelog: https://github.com/fm-sys/snapdrop-android/releases
 
 AutoName: Snapdrop
 
+RepoType: git
+Repo: https://github.com/fm-sys/snapdrop-android
+
 Builds:
   - versionName: 1.7.0
     versionCode: 12
