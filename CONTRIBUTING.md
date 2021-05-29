@@ -113,7 +113,19 @@ fdroid readmeta
 If you want to add a new app you will have to add a new metadata file to the
 repository, like `metadata/app.id.yml`. Here is how to write that file.
 
-If the app is on GitHub, GitLab or Bitbucket, use `fdroid import`:
+If the app is on GitHub or any GitLab or Gitea/Gogs instance, you can use `fdroid import`.
+However, the metadata fields `IssueTracker` and `SourceCode` will only be generated, if the source code
+is hosted on one of the following platforms:
+
+- GitHub 
+- GitLab
+- FramaGit
+- NotABug
+- Bitbucket
+- Codeberg
+
+If the source code is **not** on one of those you **must** add `.git` to the end of the URL.
+
 ```shell
 fdroid import --url https://github.com/foo/bar --subdir app
 ```
