@@ -289,7 +289,7 @@ Builds:
     commit: v1.0.15
     output: src/ui/flutter_app/build/app/outputs/flutter-apk/app-fdroid-release.apk
     srclibs:
-      - flutter@2.0.6
+      - flutter@2.2.1
     rm:
       - ci
       - src/perfect
@@ -305,11 +305,9 @@ Builds:
       - mv src/ui/flutter_app/android/app/build.gradle_fdroid src/ui/flutter_app/android/app/build.gradle
     build:
       - export PATH=$$flutter$$/bin:$PATH
-      - flutter config --no-analytics
+      - ./flutter-init.sh
       - cd src/ui/flutter_app
-      - flutter pub get
-      - flutter pub global activate intl_utils
-      - flutter --no-color pub global run intl_utils:generate
+      - flutter config --no-analytics
       - flutter build apk -v --flavor fdroid
 
 MaintainerNotes: |-
