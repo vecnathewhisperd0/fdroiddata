@@ -103,11 +103,6 @@ git clone https://gitlab.com/YOUR_USERNAME/fdroiddata.git
 cd fdroiddata
 ```
 
-Optionally create a base config.py and signing keys with:
-```shell
-fdroid init
-```
-
 Make sure fdroid works and reads the metadata files properly:
 ```shell
 fdroid readmeta
