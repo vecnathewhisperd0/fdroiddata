@@ -27,6 +27,9 @@ Builds:
     init: npm install
     gradle:
       - yes
+    rm:
+      - __tests__
+      - ios
     prebuild: sed -i -e 's/CPUArchitecture = true/CPUArchitecture = false/' build.gradle
     scanignore:
       - android/build.gradle
