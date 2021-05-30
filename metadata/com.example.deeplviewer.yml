@@ -17,7 +17,7 @@ Repo: https://github.com/sakusaku3939/DeepLAndroid
 
 Builds:
   - versionName: '3.3'
-    versionCode: 8
+    versionCode: 9
     commit: v3.3.1
     subdir: app
     gradle:
@@ -26,4 +26,4 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: '3.3'
-CurrentVersionCode: 8
+CurrentVersionCode: 9
