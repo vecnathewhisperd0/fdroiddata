@@ -1,0 +1,37 @@
+Categories:
+  - Navigation
+  - Sports & Health
+License: GPL-3.0-or-later
+WebSite: https://t.me/misproyectos/
+SourceCode: https://gitlab.com/javipc/rutera
+IssueTracker: https://gitlab.com/javipc/rutera/issues
+Donate: https://gitlab.com/javipc/mas/
+
+Summary: Speedometer for athletes
+Description: |-
+    Check speed, location and more.
+
+    * Maximum speed.
+    * Average speed.
+    * Map speed.
+    * Elapsed time.
+    * Information on each line in the map
+
+    It's just a project, so it can only be used for experimental purposes and not
+    for professionals purposes.
+
+RepoType: git
+Repo: https://gitlab.com/javipc/rutera.git
+
+Builds:
+  - versionName: '0.6'
+    versionCode: 6
+    commit: '0.6'
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '0.6'
+CurrentVersionCode: 6
