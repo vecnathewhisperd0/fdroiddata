@@ -12,9 +12,9 @@ RepoType: git
 Repo: https://github.com/SagerNet/SagerNet
 
 Builds:
-  - versionName: 0.1-rc15-x86
-    versionCode: 47
-    commit: 0.1-rc15
+  - versionName: 0.1-rc16-x86
+    versionCode: 52
+    commit: 0.1-rc16
     subdir: app
     gradle:
       - fdroidX86
@@ -28,9 +28,9 @@ Builds:
       - ./run fdroid build
     ndk: r21e
 
-  - versionName: 0.1-rc15-x64
-    versionCode: 48
-    commit: 0.1-rc15
+  - versionName: 0.1-rc16-x64
+    versionCode: 53
+    commit: 0.1-rc16
     subdir: app
     gradle:
       - fdroidX64
@@ -44,9 +44,9 @@ Builds:
       - ./run fdroid build
     ndk: r21e
 
-  - versionName: 0.1-rc15-arm
-    versionCode: 49
-    commit: 0.1-rc15
+  - versionName: 0.1-rc16-arm
+    versionCode: 54
+    commit: 0.1-rc16
     subdir: app
     gradle:
       - fdroidArm
@@ -60,9 +60,9 @@ Builds:
       - ./run fdroid build
     ndk: r21e
 
-  - versionName: 0.1-rc15-arm64
-    versionCode: 50
-    commit: 0.1-rc15
+  - versionName: 0.1-rc16-arm64
+    versionCode: 55
+    commit: 0.1-rc16
     subdir: app
     gradle:
       - fdroidArm64
@@ -79,5 +79,5 @@ Builds:
 ArchivePolicy: 12 versions
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 0.1-rc15-arm64
-CurrentVersionCode: 50
+CurrentVersion: 0.1-rc16-arm64
+CurrentVersionCode: 55
