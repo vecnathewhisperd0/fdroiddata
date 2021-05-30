@@ -17,8 +17,9 @@ Builds:
     commit: naive-plugin-91.0.4472.77-1
     subdir: plugin/naive
     sudo:
-      - apt install ninja-build pkg-config
-      - apt remove libc6-i386 --autoremove
+      - apt-get update || apt-get update
+      - apt-get install -y ninja-build pkg-config
+      - apt-get remove -y libc6-i386 --autoremove
     gradle:
       - fdroidX86
     prebuild: git submodule update --init './*'
@@ -31,8 +32,9 @@ Builds:
     commit: naive-plugin-91.0.4472.77-1
     subdir: plugin/naive
     sudo:
-      - apt install ninja-build pkg-config
-      - apt remove libc6-i386 --autoremove
+      - apt-get update || apt-get update
+      - apt-get install -y ninja-build pkg-config
+      - apt-get remove -y libc6-i386 --autoremove
     gradle:
       - fdroidX64
     prebuild: git submodule update --init './*'
@@ -45,8 +47,9 @@ Builds:
     commit: naive-plugin-91.0.4472.77-1
     subdir: plugin/naive
     sudo:
-      - apt install ninja-build pkg-config
-      - apt remove libc6-i386 --autoremove
+      - apt-get update || apt-get update
+      - apt-get install -y ninja-build pkg-config
+      - apt-get remove -y libc6-i386 --autoremove
     gradle:
       - fdroidArm
     prebuild: git submodule update --init './*'
@@ -59,8 +62,9 @@ Builds:
     commit: naive-plugin-91.0.4472.77-1
     subdir: plugin/naive
     sudo:
-      - apt install ninja-build pkg-config
-      - apt remove libc6-i386 --autoremove
+      - apt-get update || apt-get update
+      - apt-get install -y ninja-build pkg-config
+      - apt-get remove -y libc6-i386 --autoremove
     gradle:
       - fdroidArm64
     prebuild: git submodule update --init './*'
