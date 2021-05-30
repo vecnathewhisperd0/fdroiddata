@@ -18,11 +18,13 @@ Builds:
     subdir: plugin/naive
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y ninja-build pkg-config
+      - apt-get install -y tcl gettext libcurl4-openssl-dev ninja-build pkg-config
       - apt-get remove -y libc6-i386 --autoremove
     gradle:
       - fdroidX86
-    prebuild: git submodule update --init './*'
+    prebuild:
+      - pushd ../..
+      - ./run fdroid prebuild_plugin_naive
     scandelete:
       - plugin
     ndk: r21e
@@ -33,11 +35,13 @@ Builds:
     subdir: plugin/naive
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y ninja-build pkg-config
+      - apt-get install -y tcl gettext libcurl4-openssl-dev ninja-build pkg-config
       - apt-get remove -y libc6-i386 --autoremove
     gradle:
       - fdroidX64
-    prebuild: git submodule update --init './*'
+    prebuild:
+      - pushd ../..
+      - ./run fdroid prebuild_plugin_naive
     scandelete:
       - plugin
     ndk: r21e
@@ -48,11 +52,13 @@ Builds:
     subdir: plugin/naive
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y ninja-build pkg-config
+      - apt-get install -y tcl gettext libcurl4-openssl-dev ninja-build pkg-config
       - apt-get remove -y libc6-i386 --autoremove
     gradle:
       - fdroidArm
-    prebuild: git submodule update --init './*'
+    prebuild:
+      - pushd ../..
+      - ./run fdroid prebuild_plugin_naive
     scandelete:
       - plugin
     ndk: r21e
@@ -63,11 +69,13 @@ Builds:
     subdir: plugin/naive
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y ninja-build pkg-config
+      - apt-get install -y tcl gettext libcurl4-openssl-dev ninja-build pkg-config
       - apt-get remove -y libc6-i386 --autoremove
     gradle:
       - fdroidArm64
-    prebuild: git submodule update --init './*'
+    prebuild:
+      - pushd ../..
+      - ./run fdroid prebuild_plugin_naive
     scandelete:
       - plugin
     ndk: r21e
