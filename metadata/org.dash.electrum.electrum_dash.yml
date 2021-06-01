@@ -1121,6 +1121,8 @@ Builds:
     rm:
       - electrum_dash/tests/
     prebuild:
+      - $$SDK$$/tools/bin/sdkmanager 'platforms;android-29' 'build-tools;29.0.3' >
+        /dev/null
       - pushd $$python-for-android$$
       - if [[ -z `git remote | grep sombernight` ]]; then git remote add -f sombernight
         https://github.com/SomberNight/python-for-android; fi
@@ -1195,6 +1197,8 @@ Builds:
     rm:
       - electrum_dash/tests/
     prebuild:
+      - $$SDK$$/tools/bin/sdkmanager 'platforms;android-29' 'build-tools;29.0.3' >
+        /dev/null
       - pushd $$python-for-android$$
       - if [[ -z `git remote | grep sombernight` ]]; then git remote add -f sombernight
         https://github.com/SomberNight/python-for-android; fi
