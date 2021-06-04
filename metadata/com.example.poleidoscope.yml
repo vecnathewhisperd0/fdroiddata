@@ -17,7 +17,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-    output: app/build/outputs/apk/release/app-universal-release-unsigned.apk
+    output: build/outputs/apk/release/app-universal-release-unsigned.apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
