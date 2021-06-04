@@ -17,8 +17,8 @@ RepoType: git
 Repo: https://github.com/horizontalsystems/unstoppable-wallet-android
 
 Builds:
-  - versionName: 0.21.1
-    versionCode: 46
+  - versionName: 0.21.3
+    versionCode: 48
     commit: 0.21.1
     subdir: app
     gradle:
@@ -26,5 +26,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 0.21.1
-CurrentVersionCode: 46
+CurrentVersion: 0.21.3
+CurrentVersionCode: 48
