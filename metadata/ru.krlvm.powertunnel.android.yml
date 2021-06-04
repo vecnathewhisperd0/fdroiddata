@@ -1,0 +1,27 @@
+Categories:
+  - Internet
+License: MIT
+AuthorName: krlvm
+AuthorEmail: krlvm@protonmail.com
+AuthorWebSite: https://github.com/krlvm
+SourceCode: https://github.com/krlvm/PowerTunnel-Android
+IssueTracker: https://github.com/krlvm/PowerTunnel-Android/issues
+
+RepoType: git
+Repo: https://github.com/krlvm/PowerTunnel-Android
+
+Builds:
+  - versionName: 1.9.1
+    versionCode: 21
+    commit: v1.9.1
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - app/libs
+    ndk: r22b
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.9.1
+CurrentVersionCode: 21
