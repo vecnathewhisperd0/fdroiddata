@@ -15,14 +15,14 @@ RepoType: git
 Repo: https://github.com/UnifiedPush/gotify-android.git
 
 Builds:
-  - versionName: 2.1.2-UP2
-    versionCode: 7
-    commit: v2.1.2-UP2
+  - versionName: 2.1.2-UP3
+    versionCode: 8
+    commit: v2.1.2-UP3
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?-UP\d+
-CurrentVersion: 2.1.2-UP2
-CurrentVersionCode: 7
+CurrentVersion: 2.1.2-UP3
+CurrentVersionCode: 8
