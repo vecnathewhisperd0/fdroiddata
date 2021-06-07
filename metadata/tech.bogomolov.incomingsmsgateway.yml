@@ -25,7 +25,7 @@ Repo: https://github.com/bogkonstantin/android_income_sms_gateway_webhook
 Builds:
   - versionName: '2.0'
     versionCode: 6
-    commit: f3efd9e74f208d9da242733220d6930f905bc8e2
+    commit: 2.0
     subdir: app
     gradle:
       - yes
