@@ -1,0 +1,27 @@
+Categories:
+  - Connectivity
+  - Internet
+  - Security
+License: Apache-2.0
+SourceCode: https://github.com/git-elliot/vernet
+IssueTracker: https://github.com/git-elliot/vernet/issues
+
+AutoName: Vernet
+
+RepoType: git
+Repo: https://github.com/git-elliot/vernet
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: ac1d91edcd5f05cfddeac1a71a0dd23aef4c5df9
+    output: build/app/outputs/flutter-apk/app-fdroid-release.apk
+    srclibs:
+      - flutter@stable
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk --flavor fdroid
+
+AutoUpdateMode: Version v%v+%c
+UpdateCheckMode: Tags
