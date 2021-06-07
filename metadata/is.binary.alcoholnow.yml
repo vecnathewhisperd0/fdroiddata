@@ -1,0 +1,50 @@
+Categories:
+  - Internet
+License: MIT
+AuthorName: Helgi Hrafn Gunnarsson
+WebSite: https://github.com/binary-is/alcoholnow
+SourceCode: https://github.com/binary-is/alcoholnow
+IssueTracker: https://github.com/binary-is/alcoholnow/issues
+Changelog: https://github.com/binary-is/alcoholnow/blob/HEAD/CHANGELOG.md
+
+Name: Er ríkið opið?
+AutoName: Er ríkið opið?
+Summary: Opening hours and locations for alcohol stores in Iceland
+Description: A panic button for immediately knowing the distances and opening hours
+    to alcohol stores in Iceland.
+
+RepoType: git
+Repo: https://github.com/binary-is/alcoholnow
+
+Builds:
+  - versionName: 1.1.2
+    versionCode: 1
+    commit: v1.1.2
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@2.2.1
+    rm:
+      - ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk
+
+  - versionName: 1.1.3
+    versionCode: 2
+    commit: v1.1.3
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@2.2.1
+    rm:
+      - ios
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/binary-is/alcoholnow/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 1.1.3
+CurrentVersionCode: 2
