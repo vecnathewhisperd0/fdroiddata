@@ -40,6 +40,8 @@ Builds:
     output: build/outputs/apk/freeTaz/unminifiedRelease/app-free-taz-unminifiedRelease-unsigned.apk
     prebuild:
       - git submodule update --init --recursive
+      - sed -i -e '/maven.ghostscript.com/d' ../mupdf-lib/build.gradle
+      - sed -i -e '/MAVEN_REPO/,+2d' ../mupdf-lib/build.gradle
       - sed -i -e 's/enable true/enable false/' ../mupdf-lib/build.gradle
       - sed -i -e "s/'-j4'/'-j`nproc`'/" ../mupdf-lib/jni/build.gradle
     scandelete:
