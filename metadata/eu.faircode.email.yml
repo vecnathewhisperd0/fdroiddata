@@ -4208,10 +4208,39 @@ Builds:
     prebuild: sed -i -e '/keystoreProperties/d' build.gradle
     ndk: r21e
 
-  - versionName: '1.1600'
-    versionCode: 1600
-    disable: build failed
-    commit: '1.1600'
+  - versionName: '1.1605'
+    versionCode: 1605
+    commit: '1.1605'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21e
+
+  - versionName: '1.1607'
+    versionCode: 1607
+    commit: '1.1607'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21e
+
+  - versionName: '1.1608'
+    versionCode: 1608
+    commit: '1.1608'
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/keystoreProperties/d' build.gradle
+    ndk: r21e
+
+  - versionName: '1.1608'
+    versionCode: 1609
+    commit: '1.1608'
     subdir: app
     submodules: true
     gradle:
@@ -4223,5 +4252,5 @@ AutoUpdateMode: Version %v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://raw.githubusercontent.com/M66B/FairEmail/master/app/build.gradle|return
     (\d+)|https://github.com/M66B/FairEmail/releases/latest|tree/([\d.]+)
-CurrentVersion: '1.1600'
-CurrentVersionCode: 1600
+CurrentVersion: '1.1608'
+CurrentVersionCode: 1609
