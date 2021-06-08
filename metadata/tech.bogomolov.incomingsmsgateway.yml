@@ -8,16 +8,6 @@ IssueTracker: https://github.com/bogkonstantin/android_income_sms_gateway_webhoo
 
 Name: SMS to URL Forwarder
 Summary: Forward any incoming SMS to the webhook URL.
-Description: |-
-    Forward any incoming SMS to the webhook URL.
-
-    Set sender phone number or name and URL. It should match the number or name you see in the SMS messenger app.
-    If you want to send any SMS to URL, use * (asterisk symbol) as a name.
-
-    Every incoming SMS will be sent immediately to the provided URL.
-    If the response code is not 2XX or the request ended with a connection error, the app will try to send again up to 10 times.
-    Minimum first retry will be after 10 seconds, later wait time will increase exponentially.
-    If the phone is not connected to the internet, the app will wait for the connection before the next attempt.
 
 RepoType: git
 Repo: https://github.com/bogkonstantin/android_income_sms_gateway_webhook
@@ -25,7 +15,7 @@ Repo: https://github.com/bogkonstantin/android_income_sms_gateway_webhook
 Builds:
   - versionName: '2.0'
     versionCode: 6
-    commit: f3efd9e74f208d9da242733220d6930f905bc8e2
+    commit: '2.0'
     subdir: app
     gradle:
       - yes
