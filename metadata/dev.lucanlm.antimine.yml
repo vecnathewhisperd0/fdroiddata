@@ -533,7 +533,47 @@ Builds:
       - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
       - sed -i -e "/':proprietary'/d" build.gradle
 
+  - versionName: 10.3.0
+    versionCode: 1003001
+    commit: 10.3.0
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 11.1.0
+    versionCode: 1101001
+    commit: 11.1.0
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+
+  - versionName: 12.0.0
+    versionCode: 1200001
+    commit: 12.0.0
+    subdir: app
+    gradle:
+      - foss
+    rm:
+      - proprietary
+      - wear
+    prebuild:
+      - sed -i -e "s/':proprietary', //; s/':wear', //" ../settings.gradle
+      - sed -i -e "/':proprietary'/d" build.gradle
+    ndk: r21
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 10.1.6
-CurrentVersionCode: 1001061
+CurrentVersion: 12.0.0
+CurrentVersionCode: 1200001

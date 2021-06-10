@@ -124,6 +124,7 @@ MaintainerNotes: |-
     Both SDK and NDK path are set to use fdroid ones.
     The auto accept license is disabled since fdroid sdkmanager doesn't support
     the --licenses argument.
+    UpdateCheckMode stays as HTTP as the app has an older tag with a higher version number.
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
