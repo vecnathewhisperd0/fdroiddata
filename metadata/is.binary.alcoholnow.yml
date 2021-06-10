@@ -14,20 +14,6 @@ RepoType: git
 Repo: https://github.com/binary-is/alcoholnow
 
 Builds:
-  - versionName: 1.1.5
-    versionCode: 4
-    commit: v1.1.5
-    output: build/app/outputs/flutter-apk/app-release.apk
-    srclibs:
-      - flutter@2.2.1
-    rm:
-      - ios
-    build:
-      - $$flutter$$/bin/flutter clean
-      - $$flutter$$/bin/flutter config --no-analytics
-      - $$flutter$$/bin/flutter packages pub get
-      - $$flutter$$/bin/flutter build apk
-
   - versionName: 1.1.6
     versionCode: 5
     commit: v1.1.6
