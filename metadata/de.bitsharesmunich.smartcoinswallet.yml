@@ -66,17 +66,8 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 1.5.14
-    versionCode: 203
-    disable: crashlytics, see https://github.com/kenCode-de/smartcoins-wallet/issues/68
-    commit: v1.5.14
-    subdir: app
-    gradle:
-      - yes
-
 AutoUpdateMode: None
-UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/kenCode-de/smartcoins-wallet/HEAD/build.gradle|versionCode
-    (.*)|.|versionName "(.*)"
-CurrentVersion: 1.5.16
-CurrentVersionCode: 205
+UpdateCheckMode: Tags
+UpdateCheckData: build.gradle|versionCode (.*)|.|versionName "(.*)"
+CurrentVersion: 1.5.15
+CurrentVersionCode: 204
