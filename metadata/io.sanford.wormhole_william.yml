@@ -1,0 +1,42 @@
+Categories:
+  - Security
+License: MIT
+WebSite: https://wormholewilliam.com
+SourceCode: https://github.com/psanford/wormhole-william-mobile
+IssueTracker: https://github.com/psanford/wormhole-william-mobile/issues
+
+AutoName: Wormhole William
+Summary: Magic Wormhole end to end encrypted file transfer tool
+Description: |-
+    Wormhole William is an end to end encrypted file transfer tool that
+    implements the Magic Wormhole protocol.
+
+    With Wormhole William you can send and receive files between your
+    phone and a computer or another phone by simply sharing a short, one
+    time passcode.
+
+RepoType: git
+Repo: https://github.com/psanford/wormhole-william-mobile
+
+Builds:
+  - versionName: 1.0.3
+    versionCode: 3
+    commit: v1.0.3
+    subdir: android
+    gradle:
+      - yes
+    prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-29' > /dev/null
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.16.2.linux-amd64.tar.gz
+      - echo "542e936b19542e62679766194364f45141fde55169db2d8d01046555ca9eb4b8  go.tar.gz"
+        | sha256sum -c -
+      - tar zxvf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. android/libs/wormhole-william.aar
+    ndk: r21d
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: v1.0.3
+CurrentVersionCode: 3
