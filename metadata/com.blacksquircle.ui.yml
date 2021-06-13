@@ -34,7 +34,7 @@ MaintainerNotes: |-
     editor library, as well gradle recipes
     to publish it. F-Droid scanner complains
     about maven repos used in aar publishing
-    so it's set to be ignored.
+    so the gradle/publish.gradle is removed.
 
     Both app and library gets tagged, so
     we're only looking for 0000.00.00
