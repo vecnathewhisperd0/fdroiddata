@@ -23,8 +23,6 @@ Builds:
       - ics-openvpn/main/src/main/cpp/mbedtls/programs/fuzz
       - ics-openvpn/main/src/main/cpp/mbedtls/tests
       - ics-openvpn/main/src/main/cpp/openvpn3/test/unittests
-    prebuild: sed -i -e "s/21.0.6113669/21.4.7075529/" app/build.gradle
-    ndk: r21e
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
