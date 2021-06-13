@@ -16,8 +16,8 @@ Repo: https://github.com/git-elliot/vernet
 
 Builds:
   - versionName: 1.0.0
-    versionCode: 4
-    commit: v1.0.0+4
+    versionCode: 5
+    commit: v1.0.0+5
     output: build/app/outputs/flutter-apk/app-fdroid-release.apk
     srclibs:
       - flutter@2.2.1
@@ -35,4 +35,4 @@ AutoUpdateMode: Version v%v+%c
 UpdateCheckMode: Tags
 UpdateCheckData: pubspec.yaml|version:\s.*\+(\d+)|.|version:\s.*\+
 CurrentVersion: 1.0.0
-CurrentVersionCode: 4
+CurrentVersionCode: 5
