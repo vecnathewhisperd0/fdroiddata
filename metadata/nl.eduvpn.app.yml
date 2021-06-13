@@ -27,7 +27,7 @@ Builds:
       - ics-openvpn/main/src/main/cpp/mbedtls/programs/fuzz
       - ics-openvpn/main/src/main/cpp/mbedtls/tests
       - ics-openvpn/main/src/main/cpp/openvpn3/test/unittests
-
+    ndk: r21
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
 CurrentVersion: 2.0.5
