@@ -49,7 +49,6 @@ Builds:
 
   - versionName: 1.10.2
     versionCode: 34
-    disable: https://github.com/stephane-r/HoloPlay/issues/144
     commit: 1.10.2
     subdir: android/app
     sudo:
