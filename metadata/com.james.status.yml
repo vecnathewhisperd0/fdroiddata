@@ -39,7 +39,7 @@ Builds:
     subdir: app
     gradle:
       - oss
-    prebuild: sed -i -e '/isRunningOnTravis/,/^    }/d' build.gradle
+    prebuild: sed -i -e '/signingConfigs.release/d' build.gradle
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
