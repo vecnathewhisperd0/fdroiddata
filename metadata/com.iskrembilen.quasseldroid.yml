@@ -472,7 +472,16 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.5.0
+    versionCode: 1297
+    commit: 1.5.0
+    subdir: app
+    gradle:
+      - yes
+    scandelete:
+      - buildSrc
+
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: v1.4.3
-CurrentVersionCode: 1290
+CurrentVersion: 1.5.0
+CurrentVersionCode: 1297
