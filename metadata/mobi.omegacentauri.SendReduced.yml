@@ -124,8 +124,7 @@ Builds:
     subdir: SendReduced
     gradle:
       - free
-    prebuild:
-      - sed -i -e 's/return context.getPackageName().toLowerCase().endsWith("pro")/return
+    prebuild: sed -i -e 's/return context.getPackageName().toLowerCase().endsWith("pro")/return
         true/g' SendReduced/src/main/java/mobi/omegacentauri/SendReduced/SendReduced.java
 
 MaintainerNotes: |-
