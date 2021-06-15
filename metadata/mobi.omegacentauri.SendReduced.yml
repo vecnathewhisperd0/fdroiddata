@@ -122,14 +122,14 @@ Builds:
     versionCode: 2600
     commit: 422ad61942bb947a751c9e5aad9aaa2618c44a60
     subdir: SendReduced
+    gradle:
+      - free
     prebuild:
       - sed -i -e 's/\r$//' *.sh
       - chmod +x *.sh
       - sed -i -e '/1/i#!/bin/sh\n' *.sh
       - sed -i -e 's/return context.getPackageName().toLowerCase().endsWith("pro")/return
         true/g' SendReduced/src/main/java/mobi/omegacentauri/SendReduced/SendReduced.java
-    gradle:
-      - free
 
 MaintainerNotes: |-
     * OldRepo for 0.03 - 0.05: http://code.google.com/p/sendreduced/
