@@ -125,7 +125,7 @@ Builds:
     gradle:
       - free
     prebuild: sed -i -e 's/return context.getPackageName().toLowerCase().endsWith("pro")/return
-        true/g' SendReduced/src/main/java/mobi/omegacentauri/SendReduced/SendReduced.java
+        true/g' src/main/java/mobi/omegacentauri/SendReduced/SendReduced.java
 
 MaintainerNotes: |-
     * OldRepo for 0.03 - 0.05: http://code.google.com/p/sendreduced/
