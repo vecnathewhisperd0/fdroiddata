@@ -7,7 +7,6 @@ SourceCode: https://github.com/binary-is/alcoholnow
 IssueTracker: https://github.com/binary-is/alcoholnow/issues
 Changelog: https://github.com/binary-is/alcoholnow/blob/HEAD/CHANGELOG.md
 
-Name: Er ríkið opið?
 AutoName: Er ríkið opið?
 
 RepoType: git
@@ -22,6 +21,9 @@ Builds:
       - flutter@2.2.1
     rm:
       - ios
+      - example-data
+      - scripts
+      - test
     build:
       - $$flutter$$/bin/flutter clean
       - $$flutter$$/bin/flutter config --no-analytics
