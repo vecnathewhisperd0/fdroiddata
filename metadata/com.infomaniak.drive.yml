@@ -15,9 +15,9 @@ RepoType: git
 Repo: https://github.com/Infomaniak/android-kDrive.git
 
 Builds:
-  - versionName: 4.0.10
-    versionCode: 40001001
-    commit: 4.0.10
+  - versionName: 4.0.11
+    versionCode: 40001101
+    commit: 4.0.11
     subdir: app
     submodules: true
     gradle:
@@ -25,5 +25,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 4.0.10
-CurrentVersionCode: 40001001
+CurrentVersion: 4.0.11
+CurrentVersionCode: 40001101
