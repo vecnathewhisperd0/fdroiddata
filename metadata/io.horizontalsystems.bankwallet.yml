@@ -15,7 +15,6 @@ AutoName: Unstoppable Wallet
 
 RepoType: git
 Repo: https://github.com/horizontalsystems/unstoppable-wallet-android
-Binaries: https://github.com/horizontalsystems/unstoppable-wallet-android/releases/download/%v/unstoppable-wallet-%v.apk
 
 Builds:
   - versionName: 0.21.3
