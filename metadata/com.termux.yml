@@ -26,9 +26,9 @@ Description: |-
     distributions. Access the built-in help by long-pressing anywhere on the
     terminal and selecting the Help menu option to learn more.
 
-    Read help online: [https://wiki.termux.com/]
+    Read help online: <a href="https://wiki.termux.com/">https://wiki.termux.com/</a>
 
-    Reddit Community: [https://termux.com/community]
+    Reddit Community: <a href="https://termux.com/community">https://termux.com/community</a>
 
 RepoType: git
 Repo: https://github.com/termux/termux-app
@@ -713,7 +713,20 @@ Builds:
       - sed -i -e 's/22.0.7026061/22.1.7171670/' ../gradle.properties
     ndk: r22b
 
+  - versionName: '0.114'
+    versionCode: 114
+    commit: v0.114
+    subdir: app
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/splits\ {/,+8d' build.gradle
+      - sed -i -e '/publishing {/,/^}/d' ../terminal-{emulator,view}/build.gradle
+      - sed -i -e '/publishing {/,/^}/d' ../termux-shared/build.gradle
+      - sed -i -e 's/22.0.7026061/22.1.7171670/' ../gradle.properties
+    ndk: r22b
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '0.113'
-CurrentVersionCode: 113
+CurrentVersion: '0.114'
+CurrentVersionCode: 114

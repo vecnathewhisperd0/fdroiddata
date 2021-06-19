@@ -1539,31 +1539,45 @@ Builds:
       - desktop
     prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
 
-  - versionName: 3.14.7
-    versionCode: 565
-    disable: https://github.com/yairm210/Unciv/issues/3946
-    commit: 3.14.7
+  - versionName: 3.14.15
+    versionCode: 576
+    commit: 3.14.15-forFdroid
     subdir: android
     gradle:
       - yes
     rm:
       - desktop
-    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
 
-  - versionName: 3.14.8
-    versionCode: 566
-    disable: https://github.com/yairm210/Unciv/issues/3946
-    commit: 3.14.8
+  - versionName: 3.14.16
+    versionCode: 577
+    commit: 3.14.16
     subdir: android
     gradle:
       - yes
     rm:
       - desktop
-    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
 
-AutoUpdateMode: None
-UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/yairm210/Unciv/master/buildSrc/src/main/kotlin/BuildConfig.kt|appCodeNumber
-    = (.*)|.|appVersion = "(.*)"
-CurrentVersion: 3.14.13-patch1
-CurrentVersionCode: 573
+  - versionName: 3.15.0
+    versionCode: 578
+    commit: 3.15.0
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.1
+    versionCode: 580
+    commit: 3.15.1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+UpdateCheckData: buildSrc/src/main/kotlin/BuildConfig.kt|appCodeNumber = (.*)|.|appVersion
+    = "(.*)"
+CurrentVersion: 3.15.1
+CurrentVersionCode: 580

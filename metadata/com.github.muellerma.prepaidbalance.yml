@@ -1,0 +1,38 @@
+Categories:
+  - System
+License: Apache-2.0
+SourceCode: https://github.com/mueller-ma/PrepaidBalance
+IssueTracker: https://github.com/mueller-ma/PrepaidBalance/issues
+Changelog: https://github.com/mueller-ma/PrepaidBalance/releases
+
+AutoName: Prepaid Balance
+
+RepoType: git
+Repo: https://github.com/mueller-ma/PrepaidBalance.git
+
+Builds:
+  - versionName: '0.2'
+    versionCode: 3
+    commit: '0.2'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.4'
+    versionCode: 5
+    commit: '0.4'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '0.5'
+    versionCode: 6
+    commit: '0.5'
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: '0.5'
+CurrentVersionCode: 6

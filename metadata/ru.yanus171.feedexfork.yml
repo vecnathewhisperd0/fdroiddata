@@ -9,7 +9,7 @@ Changelog: https://github.com/yanus171/Handy-News-Reader/releases
 
 AutoName: Handy News Reader
 Description: |
-    '''Main functions:'''
+    <b>Main functions:</b>
 
     * RSS feeds of articles
     * search for a feed by keyword when adding
@@ -18,7 +18,7 @@ Description: |
     * filter articles by keywords or regular expressions
     * full screen reading mode
 
-    '''Additional features:'''
+    <b>Additional features:</b>
 
     * collapsing (folding) the groups of feeds
     * hide read articles mode
@@ -340,7 +340,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.15.22
+    versionCode: 231
+    commit: v0.15.22
+    subdir: FlymFork
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.15.15
-CurrentVersionCode: 225
+CurrentVersion: 0.15.22
+CurrentVersionCode: 231

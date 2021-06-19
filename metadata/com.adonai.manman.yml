@@ -8,6 +8,7 @@ AuthorWebSite: https://plus.google.com/102332121455682860724
 SourceCode: https://github.com/Adonai/Man-Man
 IssueTracker: https://github.com/Adonai/Man-Man/issues
 Donate: https://www.patreon.com/kanedias
+Liberapay: Kanedias
 
 AutoName: Man Man
 Description: |-
@@ -167,7 +168,15 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 2.1.0
+    versionCode: 174
+    commit: 2.1.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e 's/= URI.create//' ../build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.1
-CurrentVersionCode: 173
+CurrentVersion: 2.1.0
+CurrentVersionCode: 174

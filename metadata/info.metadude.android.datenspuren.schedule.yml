@@ -9,9 +9,9 @@ AutoName: Datenspuren 2020 Fahrplan
 Description: |
     Programm zur Datenspuren Konferenz
 
-    [https://www.datenspuren.de]
+    <a href="https://www.datenspuren.de">https://www.datenspuren.de</a>
 
-    '''Funktionen'''
+    <b>Funktionen</b>
     * Tagesüberblick über alle Programmpunkte
     * Beschreibung von Veranstaltungen lesen
     * Veranstaltungen in persönlicher Favoritenliste verwalten
@@ -21,10 +21,10 @@ Description: |
     * Link zu Veranstaltungen mit anderen teilen
     * Programmänderungen einsehen
     * Veranstaltungen bewerten
-    * Integration mit dem Engelsystem-Projekt [https://engelsystem.de] - Online-Tool für Helfer- und Schichtplanung auf großen Events
-    * Integration mit Chaosflix [https://github.com/NiciDieNase/chaosflix] - Android App für [https://media.ccc.de], teile Fahrplan-Favoriten mit Chaosflix und importiere sie als Bookmarks
+    * Integration mit dem Engelsystem-Projekt <a href="https://engelsystem.de">https://engelsystem.de</a> - Online-Tool für Helfer- und Schichtplanung auf großen Events
+    * Integration mit Chaosflix <a href="https://github.com/NiciDieNase/chaosflix">https://github.com/NiciDieNase/chaosflix</a> - Android App für <a href="https://media.ccc.de">https://media.ccc.de</a>, teile Fahrplan-Favoriten mit Chaosflix und importiere sie als Bookmarks
 
-    🔤 '''Unterstützte Sprachen'''
+    🔤 <b>Unterstützte Sprachen</b>
     (Programmtexte ausgenommen)
     * Deutsch
     * Englisch
@@ -41,12 +41,12 @@ Description: |
     💣 Fehlerberichte sind herzlich willkommen, aber achte darauf, dass
     du erklärst, wie man den Fehler reproduzieren kann. Der Issue-Tracker
     findet sich hier:
-    [https://github.com/EventFahrplan/EventFahrplan/issues]
+    <a href="https://github.com/EventFahrplan/EventFahrplan/issues">https://github.com/EventFahrplan/EventFahrplan/issues</a>
 
     🏆 Die App basiert auf der <b>EventFahrplan-App</b>
-    [https://play.google.com/store/apps/details?id=info.metadude.android.congress.schedule]
+    <a href="https://f-droid.org/packages/info.metadude.android.congress.schedule/">https://f-droid.org/packages/info.metadude.android.congress.schedule/</a>
     für den Kongress des Chaos Computer Clubs. Der Quellcode der Anwendung ist auf GitHub
-    [https://github.com/johnjohndoe/CampFahrplan/tree/datenspuren-2020] zu finden.
+    <a href="https://github.com/johnjohndoe/CampFahrplan/tree/datenspuren-2020">https://github.com/johnjohndoe/CampFahrplan/tree/datenspuren-2020</a> zu finden.
 
     🎨 Datenspuren-Design von nek0
 

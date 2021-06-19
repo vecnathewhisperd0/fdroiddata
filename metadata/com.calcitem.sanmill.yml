@@ -389,13 +389,197 @@ Builds:
       - flutter config --no-analytics
       - flutter build apk -v --flavor fdroid
 
+  - versionName: 1.0.19
+    versionCode: 1889
+    commit: v1.0.19
+    output: src/ui/flutter_app/build/app/outputs/flutter-apk/app-fdroid-release.apk
+    srclibs:
+      - flutter@2.2.1
+    rm:
+      - ci
+      - src/perfect
+      - src/test
+      - src/ui/flutter_app/ios
+      - src/ui/flutter_app/windows
+      - src/ui/flutter_app/test
+      - src/ui/qt
+      - resources
+      - tests
+    prebuild:
+      - rm src/ui/flutter_app/android/app/build.gradle
+      - mv src/ui/flutter_app/android/app/build.gradle_fdroid src/ui/flutter_app/android/app/build.gradle
+    build:
+      - export PATH=$$flutter$$/bin:$PATH
+      - ./flutter-init.sh
+      - cd src/ui/flutter_app
+      - flutter config --no-analytics
+      - flutter build apk -v --flavor fdroid
+
+  - versionName: 1.0.20
+    versionCode: 1894
+    commit: v1.0.20
+    output: src/ui/flutter_app/build/app/outputs/flutter-apk/app-fdroid-release.apk
+    srclibs:
+      - flutter@2.2.1
+    rm:
+      - ci
+      - src/perfect
+      - src/test
+      - src/ui/flutter_app/ios
+      - src/ui/flutter_app/windows
+      - src/ui/flutter_app/test
+      - src/ui/qt
+      - resources
+      - tests
+    prebuild:
+      - rm src/ui/flutter_app/android/app/build.gradle
+      - mv src/ui/flutter_app/android/app/build.gradle_fdroid src/ui/flutter_app/android/app/build.gradle
+    build:
+      - export PATH=$$flutter$$/bin:$PATH
+      - ./flutter-init.sh
+      - cd src/ui/flutter_app
+      - flutter config --no-analytics
+      - flutter build apk -v --flavor fdroid
+
+  - versionName: 1.0.21
+    versionCode: 1901
+    commit: v1.0.21
+    output: src/ui/flutter_app/build/app/outputs/flutter-apk/app-fdroid-release.apk
+    srclibs:
+      - flutter@2.2.1
+    rm:
+      - ci
+      - src/perfect
+      - src/test
+      - src/ui/flutter_app/ios
+      - src/ui/flutter_app/windows
+      - src/ui/flutter_app/test
+      - src/ui/qt
+      - resources
+      - tests
+    prebuild:
+      - rm src/ui/flutter_app/android/app/build.gradle
+      - mv src/ui/flutter_app/android/app/build.gradle_fdroid src/ui/flutter_app/android/app/build.gradle
+    build:
+      - export PATH=$$flutter$$/bin:$PATH
+      - ./flutter-init.sh
+      - cd src/ui/flutter_app
+      - flutter config --no-analytics
+      - flutter build apk -v --flavor fdroid
+
+  - versionName: 1.0.22
+    versionCode: 1908
+    disable: AI vs AI mode does not work properly.
+    commit: v1.0.22
+    output: src/ui/flutter_app/build/app/outputs/flutter-apk/app-fdroid-release.apk
+    srclibs:
+      - flutter@2.2.1
+    rm:
+      - ci
+      - src/perfect
+      - src/test
+      - src/ui/flutter_app/ios
+      - src/ui/flutter_app/windows
+      - src/ui/flutter_app/test
+      - src/ui/qt
+      - resources
+      - tests
+    prebuild:
+      - rm src/ui/flutter_app/android/app/build.gradle
+      - mv src/ui/flutter_app/android/app/build.gradle_fdroid src/ui/flutter_app/android/app/build.gradle
+    build:
+      - export PATH=$$flutter$$/bin:$PATH
+      - ./flutter-init.sh
+      - cd src/ui/flutter_app
+      - flutter config --no-analytics
+      - flutter build apk -v --flavor fdroid
+
+  - versionName: 1.0.23
+    versionCode: 1919
+    disable: AI vs AI mode does not work properly.
+    commit: v1.0.23
+    output: src/ui/flutter_app/build/app/outputs/flutter-apk/app-fdroid-release.apk
+    srclibs:
+      - flutter@2.2.1
+    rm:
+      - ci
+      - src/perfect
+      - src/test
+      - src/ui/flutter_app/ios
+      - src/ui/flutter_app/windows
+      - src/ui/flutter_app/test
+      - src/ui/qt
+      - resources
+      - tests
+    prebuild:
+      - rm src/ui/flutter_app/android/app/build.gradle
+      - mv src/ui/flutter_app/android/app/build.gradle_fdroid src/ui/flutter_app/android/app/build.gradle
+    build:
+      - export PATH=$$flutter$$/bin:$PATH
+      - ./flutter-init.sh
+      - cd src/ui/flutter_app
+      - flutter config --no-analytics
+      - flutter build apk -v --flavor fdroid
+
+  - versionName: 1.0.24
+    versionCode: 1933
+    commit: v1.0.24
+    output: src/ui/flutter_app/build/app/outputs/flutter-apk/app-fdroid-release.apk
+    srclibs:
+      - flutter@2.2.1
+    rm:
+      - ci
+      - src/perfect
+      - src/test
+      - src/ui/flutter_app/ios
+      - src/ui/flutter_app/windows
+      - src/ui/flutter_app/test
+      - src/ui/qt
+      - resources
+      - tests
+    prebuild:
+      - rm src/ui/flutter_app/android/app/build.gradle
+      - mv src/ui/flutter_app/android/app/build.gradle_fdroid src/ui/flutter_app/android/app/build.gradle
+    build:
+      - export PATH=$$flutter$$/bin:$PATH
+      - ./flutter-init.sh
+      - cd src/ui/flutter_app
+      - flutter config --no-analytics
+      - flutter build apk -v --flavor fdroid
+
+  - versionName: 1.0.25
+    versionCode: 1936
+    commit: v1.0.25
+    output: src/ui/flutter_app/build/app/outputs/flutter-apk/app-fdroid-release.apk
+    srclibs:
+      - flutter@2.2.2
+    rm:
+      - ci
+      - src/perfect
+      - src/test
+      - src/ui/flutter_app/ios
+      - src/ui/flutter_app/windows
+      - src/ui/flutter_app/test
+      - src/ui/qt
+      - resources
+      - tests
+    prebuild:
+      - rm src/ui/flutter_app/android/app/build.gradle
+      - mv src/ui/flutter_app/android/app/build.gradle_fdroid src/ui/flutter_app/android/app/build.gradle
+    build:
+      - export PATH=$$flutter$$/bin:$PATH
+      - ./flutter-init.sh
+      - cd src/ui/flutter_app
+      - flutter config --no-analytics
+      - flutter build apk -v --flavor fdroid
+
 MaintainerNotes: |-
     Builds will fail when the srclib ref of flutter and the version with which
     upstream has been built with differ.
     In that case we need to manually give the correct ref to srclib.
 
-AutoUpdateMode: Version v%v
-UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/calcitem/Sanmill/master/src/ui/flutter_app/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 1.0.18
-CurrentVersionCode: 1876
+AutoUpdateMode: Version
+UpdateCheckMode: Tags ^v.*$
+UpdateCheckData: src/ui/flutter_app/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 1.0.25
+CurrentVersionCode: 1936
