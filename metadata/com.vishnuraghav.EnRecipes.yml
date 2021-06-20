@@ -19,7 +19,7 @@ Repo: https://github.com/vishnuraghavb/EnRecipes.git
 Builds:
   - versionName: 2.0.0
     versionCode: 1
-    commit: b26a38d4ec882d66ed5f3bca97c3cfcb9d2e5d79
+    commit: v2.0.0
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y lib32z1
@@ -36,7 +36,7 @@ Builds:
     output: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
     srclibs:
       - NativeScript_android-runtime@v7.0.1
-      - NativeScript_NativeScript@8.0.7-core
+      - NativeScript_NativeScript@8.0.8-core
     scandelete:
       - node_modules
     build:
