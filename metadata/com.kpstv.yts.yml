@@ -10,23 +10,21 @@ IssueTracker: https://github.com/KaustubhPatange/Moviesy/issues
 
 AutoName: Moviesy
 Description: |
-    A <b><i>beautiful</i></b> client for <a href="https://www.google.com/search?q=yts">YTS</a> website which also provides 
+    A <b><i>beautiful</i></b> client for <a href="https://www.google.com/search?q=yts">YTS</a> website which also provides
     built-in torrent subtitles downloader.
 
     <b>Disclaimer</b>
     The app let's you download and stream HD/4K movies on the go, if this is
-    something you don't approve then you should stop using it. This is 
+    something you don't approve then you should stop using it. This is
     indeed a hobby project.
 
     <b>Features</b>
-    <ul>
-        <li>Clean & beautiful UI.</li>
-        <li>Built-in movie & subtitle downloader.</li>
-        <li>Supports torrent streaming.</li>
-        <li>Watch movie using in-built player.</li>
-        <li>Cast to chromecast devices.</li>
-        <li>Lot more...</li>
-    </ul>
+    * Clean & beautiful UI.
+    * Built-in movie & subtitle downloader.
+    * Supports torrent streaming.
+    * Watch movie using in-built player.
+    * Cast to chromecast devices.
+    * Lot more...
 
 RepoType: git
 Repo: https://github.com/KaustubhPatange/Moviesy
@@ -35,11 +33,11 @@ Builds:
   - versionName: '1.7'
     versionCode: 8
     commit: v1.7
+    subdir: app
     gradle:
       - yes
     prebuild:
       - ls
-      - cd app
       - curl -Lo google-services.json https://www.dropbox.com/s/d1p8fcjbj7un9zr/google-services.json?dl=1
       - curl -Lo purchase.tar.gz https://www.dropbox.com/s/pcpm6kyuhv93zsp/purchase.tar.gz?dl=1
       - tar -xvzf purchase.tar.gz
@@ -50,6 +48,7 @@ Builds:
       - echo google_client_id_web=435629223453-334va4o5jqkpqpqe6uuooqbgmaoo7c59.apps.googleusercontent.com
         >> local.properties
       - ls
+      - cd app
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v.*$
