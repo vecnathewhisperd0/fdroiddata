@@ -41,6 +41,7 @@ Builds:
       - curl -Lo google-services.json https://www.dropbox.com/s/d1p8fcjbj7un9zr/google-services.json?dl=1
       - curl -Lo purchase.tar.gz https://www.dropbox.com/s/pcpm6kyuhv93zsp/purchase.tar.gz?dl=1
       - tar -xvzf purchase.tar.gz
+      - rm -r purchase.tar.gz
       - ls
       - cd ..
       - sed -i 's/\":app:after\"/\":after\"/g' buildSrc/src/main/java/ModuleDependency.kt
@@ -52,6 +53,8 @@ Builds:
       - echo google_client_id_web=435629223453-334va4o5jqkpqpqe6uuooqbgmaoo7c59.apps.googleusercontent.com
         >> local.properties
       - ls
+      - rm -r art/module.tar.gz
+      - rm -r art/tools.tar.gz
       - cd app
 
 AutoUpdateMode: Version v%v
