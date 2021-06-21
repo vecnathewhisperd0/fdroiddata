@@ -40,15 +40,15 @@ Builds:
     gradle:
       - yes
     prebuild:
-        ls
-        curl -Lo google-services.json https://www.dropbox.com/s/d1p8fcjbj7un9zr/google-services.json?dl=1
-        curl -Lo purchase.tar.gz https://www.dropbox.com/s/pcpm6kyuhv93zsp/purchase.tar.gz?dl=1
-        tar -xvzf purchase.tar.gz
-        ls
-        cd ..
-        echo interstitial_ad_id=ca-app-pub-1164424526503510/1732829085 >> local.properties
-        echo tmdb_api_key=dbaba3594e59e4ff47c003b2ddb82c2a >> local.properties
-        echo google_client_id_web=435629223453-334va4o5jqkpqpqe6uuooqbgmaoo7c59.apps.googleusercontent.com >> local.properties
+      - ls
+      - curl -Lo google-services.json https://www.dropbox.com/s/d1p8fcjbj7un9zr/google-services.json?dl=1
+      - curl -Lo purchase.tar.gz https://www.dropbox.com/s/pcpm6kyuhv93zsp/purchase.tar.gz?dl=1
+      - tar -xvzf purchase.tar.gz
+      - ls
+      - cd ..
+      - echo interstitial_ad_id=ca-app-pub-1164424526503510/1732829085 >> local.properties
+      - echo tmdb_api_key=dbaba3594e59e4ff47c003b2ddb82c2a >> local.properties
+      - echo google_client_id_web=435629223453-334va4o5jqkpqpqe6uuooqbgmaoo7c59.apps.googleusercontent.com >> local.properties
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v.*$
