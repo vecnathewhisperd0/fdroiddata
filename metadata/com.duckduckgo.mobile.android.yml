@@ -885,7 +885,6 @@ Builds:
       - app/src/play/res/raw/https_mobile_v2_bloom.bin
     prebuild: sed -i -e 's/21.0.6113669/21.4.7075529/' app/build.gradle
     ndk: r21e
- 
   - versionName: 5.86.2
     versionCode: 58602
     commit: 5.86.2
@@ -921,7 +920,6 @@ Builds:
       - app/src/play/res/raw/https_mobile_v2_bloom.bin
     prebuild: sed -i -e 's/21.0.6113669/21.4.7075529/' app/build.gradle
     ndk: r21e
-
 
 MaintainerNotes: Cannot use AUM/UCM because version code and version name are dynamic.
 
