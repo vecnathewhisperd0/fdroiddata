@@ -48,7 +48,8 @@ Builds:
       - cd ..
       - echo interstitial_ad_id=ca-app-pub-1164424526503510/1732829085 >> local.properties
       - echo tmdb_api_key=dbaba3594e59e4ff47c003b2ddb82c2a >> local.properties
-      - echo google_client_id_web=435629223453-334va4o5jqkpqpqe6uuooqbgmaoo7c59.apps.googleusercontent.com >> local.properties
+      - echo google_client_id_web=435629223453-334va4o5jqkpqpqe6uuooqbgmaoo7c59.apps.googleusercontent.com
+        >> local.properties
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v.*$
