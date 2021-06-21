@@ -35,11 +35,11 @@ Builds:
   - versionName: '1.7'
     versionCode: 8
     commit: v1.7
-#    subdir: app
     gradle:
       - yes
     prebuild:
       - ls
+      - cd app
       - curl -Lo google-services.json https://www.dropbox.com/s/d1p8fcjbj7un9zr/google-services.json?dl=1
       - curl -Lo purchase.tar.gz https://www.dropbox.com/s/pcpm6kyuhv93zsp/purchase.tar.gz?dl=1
       - tar -xvzf purchase.tar.gz
