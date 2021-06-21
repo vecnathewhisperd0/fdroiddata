@@ -27,7 +27,7 @@ Description: |
     * Lot more...
 
 RepoType: git
-Repo: https://github.com/KaustubhPatange/Moviesy
+Repo: https://gitlab.com/KaustubhPatange/moviesy-fdroid.git
 
 Builds:
   - versionName: '1.7'
@@ -36,30 +36,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-    prebuild:
-      - ls
-      - curl -Lo google-services.json https://www.dropbox.com/s/d1p8fcjbj7un9zr/google-services.json?dl=1
-      - curl -Lo purchase.tar.gz https://www.dropbox.com/s/pcpm6kyuhv93zsp/purchase.tar.gz?dl=1
-      - tar -xvzf purchase.tar.gz
-      - rm -r purchase.tar.gz
-      - ls
-      - cd ..
-      - sed -i 's/\":app:after\"/\":after\"/g' buildSrc/src/main/java/ModuleDependency.kt
-      - sed -i 's/\":app:purchase\"/\":purchase\"/g' buildSrc/src/main/java/ModuleDependency.kt
-      - sed -i 's/\":app:common\"/\":common\"/g' buildSrc/src/main/java/ModuleDependency.kt
-      - sed -i 's/\":app:sheets\"/\":sheets\"/g' buildSrc/src/main/java/ModuleDependency.kt
-      - cp -R app/after after
-      - cp -R app/purchase purchase
-      - cp -R app/common common
-      - cp -R app/sheets sheets
-      - echo interstitial_ad_id=ca-app-pub-1164424526503510/1732829085 >> local.properties
-      - echo tmdb_api_key=dbaba3594e59e4ff47c003b2ddb82c2a >> local.properties
-      - echo google_client_id_web=435629223453-334va4o5jqkpqpqe6uuooqbgmaoo7c59.apps.googleusercontent.com
-        >> local.properties
-      - ls
-      - rm -r art/module.tar.gz
-      - rm -r art/tools.tar.gz
-      - cd app
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v.*$
