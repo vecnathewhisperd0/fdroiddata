@@ -432,7 +432,7 @@ Builds:
       - fdroid
     prebuild:
       - sed -i -e '/firebase-messaging/,+5d' build.gradle
-      - sed -i -e '/com.google.gms.google-services/d' build.gradle
+      - sed -i -e '/com.google.gms.google-services/d' **/*build.gradle*
       - sed -i -e 's/21.3.6528147/21.4.7075529/g' build.gradle
       - sed -i -e 's/enable true/enable false/g' build.gradle
     scanignore:
