@@ -87,6 +87,7 @@ Builds:
       - ./run fdroid prebuild
     scandelete:
       - library
+      - external
     build:
       - pushd ..
       - ./run fdroid build
@@ -103,6 +104,7 @@ Builds:
       - ./run fdroid prebuild
     scandelete:
       - library
+      - external
     build:
       - pushd ..
       - ./run fdroid build
@@ -119,6 +121,7 @@ Builds:
       - ./run fdroid prebuild
     scandelete:
       - library
+      - external
     build:
       - pushd ..
       - ./run fdroid build
@@ -135,6 +138,7 @@ Builds:
       - ./run fdroid prebuild
     scandelete:
       - library
+      - external
     build:
       - pushd ..
       - ./run fdroid build
