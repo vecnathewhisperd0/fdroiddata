@@ -1,0 +1,22 @@
+Categories:
+  - Games
+  - Science & Education
+License: MIT
+SourceCode: https://github.com/vivekthazhathattil/dekadico
+IssueTracker: https://github.com/vivekthazhathattil/dekadico/issues
+
+Summary: Memory training app for spoken numbers
+
+RepoType: git
+Repo: https://github.com/vivekthazhathattil/dekadico
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: 117df09c159f7f6e74aee85f25e58b83a5eca0b5
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
