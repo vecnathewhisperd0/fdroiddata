@@ -13,7 +13,7 @@ Repo: https://github.com/vivekthazhathattil/dekadico
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: 117df09c159f7f6e74aee85f25e58b83a5eca0b5
+    commit: befc0641051cdc48a4a848fe7c0c10d29d2575ca
     subdir: app
     gradle:
       - yes
