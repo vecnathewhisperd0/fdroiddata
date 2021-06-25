@@ -44,7 +44,21 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: v4.8
+    versionCode: 39
+    commit: v4.8
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: v4.9
+    versionCode: 40
+    commit: v4.9
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v4.7
-CurrentVersionCode: 38
+CurrentVersion: v4.9
+CurrentVersionCode: 40

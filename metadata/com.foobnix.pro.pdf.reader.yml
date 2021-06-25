@@ -474,10 +474,9 @@ Builds:
       - ./link_to_mupdf_1.16.1.sh
     ndk: r21d
 
-  - versionName: 8.3.109-fdroid
-    versionCode: 4030
-    disable: unexpected version name and version code
-    commit: 8.3.109
+  - versionName: 8.3.130-fdroid
+    versionCode: 4075
+    commit: 7e5fe1d119d3672bd71f522519a5fe19b0bc62a3
     subdir: app/
     sudo:
       - apt-get update || apt-get update
@@ -510,8 +509,8 @@ MaintainerNotes: |-
     * scanner will detect GMS (/com/google/android/gms) in these APKs; those are only stubs here, see https://gitlab.com/fdroid/fdroiddata/-/issues/2272#note_493741256
 
 AutoUpdateMode: Version +-fdroid %v
-UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/foobnix/LibreraReader/master/app/build.gradle|\s+FDroidCodeNumber
-    = (\d+)|.|\s+FDroidVersionNumber = "([^\"]+)"
-CurrentVersion: 8.3.109
-CurrentVersionCode: 4030
+UpdateCheckMode: Tags
+UpdateCheckData: app/build.gradle|\s+FDroidCodeNumber = (\d+)|.|\s+FDroidVersionNumber
+    = "([^\"]+)"
+CurrentVersion: 8.3.130
+CurrentVersionCode: 4075

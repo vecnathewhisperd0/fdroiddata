@@ -2,8 +2,8 @@ Categories:
   - Writing
 License: 0BSD
 AuthorName: Adam T. Ryder
-AuthorEmail: tryder@protonmail.com
-WebSite: https://1337atr.weebly.com/tedit.html
+AuthorEmail: tryder@inventati.org
+WebSite: https://www.inventati.org/1337gallery/apps/tedit/tedit.html
 SourceCode: https://github.com/ATryder/TEdit
 IssueTracker: https://github.com/ATryder/TEdit/issues
 Changelog: https://github.com/ATryder/TEdit/releases
@@ -104,7 +104,16 @@ Builds:
     prebuild: sed -i -e 's/constraint-layout:1.0.0-beta3/constraint-layout:1.0.2/'
         build.gradle
 
+  - versionName: 2.4.4
+    versionCode: 19
+    commit: v2.4.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/constraint-layout:1.0.0-beta3/constraint-layout:1.0.2/'
+        build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.3
-CurrentVersionCode: 18
+CurrentVersion: 2.4.4
+CurrentVersionCode: 19

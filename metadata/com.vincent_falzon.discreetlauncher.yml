@@ -6,6 +6,7 @@ WebSite: https://vincent-falzon.com
 SourceCode: https://github.com/falzonv/discreet-launcher
 IssueTracker: https://github.com/falzonv/discreet-launcher/issues
 Changelog: https://github.com/falzonv/discreet-launcher/releases
+Donate: https://www.paypal.com/donate?hosted_button_id=352PNG2TMV76C
 
 AutoName: Discreet Launcher
 
@@ -160,7 +161,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v4.0.0
+    versionCode: 25
+    commit: v4.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v4.0.1
+    versionCode: 26
+    commit: v4.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v4.1.1
+    versionCode: 28
+    commit: cd0c76901591f780bf02c5b314eb85386d1e2e72
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.6.0
-CurrentVersionCode: 24
+CurrentVersion: v4.1.1
+CurrentVersionCode: 28

@@ -19,8 +19,21 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
-UpdateCheckIgnore: alpha
-CurrentVersion: 1.0-RC1
-CurrentVersionCode: 2
+  - versionName: 1.0-RC2
+    versionCode: 3
+    commit: 1.0-RC2
+    subdir: smartautoclicker
+    gradle:
+      - yes
+
+  - versionName: 1.0-RC3
+    versionCode: 4
+    commit: 1.0-RC3
+    subdir: smartautoclicker
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags ^[0-9.]*(|-RC[0-9])$
+CurrentVersion: 1.0-RC3
+CurrentVersionCode: 4

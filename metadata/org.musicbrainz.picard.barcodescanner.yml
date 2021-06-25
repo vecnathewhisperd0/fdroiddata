@@ -39,7 +39,11 @@ Builds:
       - sed -i 's@\(reference.1=\).*@\1$$ActionBar$$@;/musicbrainz/d' project.properties
       - echo 'source.dir=src;$$MusicBrainz-API$$/src' > ant.properties
 
+MaintainerNotes: Use PayPal_MPL-1.5.5.45.jar
+
 AutoUpdateMode: None
-UpdateCheckMode: Tags
-CurrentVersion: '1.2'
-CurrentVersionCode: 3
+UpdateCheckMode: None
+CurrentVersion: '1.1'
+CurrentVersionCode: 2
+
+NoSourceSince: '1.1'
