@@ -1,0 +1,24 @@
+Categories:
+  - Games
+License: GPL-3.0-only
+SourceCode: https://github.com/KaeruCT/RaumBaller
+IssueTracker: https://github.com/KaeruCT/RaumBaller/issues
+Liberapay: KaeruCT
+
+AutoName: RaumBaller
+
+RepoType: git
+Repo: https://github.com/KaeruCT/RaumBaller.git
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
