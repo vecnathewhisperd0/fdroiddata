@@ -254,7 +254,6 @@ Builds:
 
   - versionName: 1.6.6
     versionCode: 166
-    disable: https://gitlab.com/dboddie/weather-forecast/-/issues/9
     commit: 1.6.6
     sudo:
       - apt-get update || apt-get update
