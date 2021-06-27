@@ -258,8 +258,8 @@ Builds:
     commit: 1.6.6
     sudo:
       - apt-get update || apt-get update
-      - apt-get install -y python3-crypto python3-pygments python3-markdown
-        imagemagick pngquant openssl
+      - apt-get install -y python3-crypto python3-pygments python3-markdown imagemagick
+        pngquant openssl
     output: output.apk
     srclibs:
       - duck-git@1.0.7
