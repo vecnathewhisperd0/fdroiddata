@@ -73,8 +73,9 @@ Builds:
       - node_modules/realm/react-native/android/src/main/jniLibs/armeabi-v7a/librealm.so
       - node_modules/realm/react-native/android/src/main/jniLibs/x86/librealm.so
     prebuild:
+      - sed -i -e '/channel_name/,+30d' src/main/AndroidManifest.xml
       - sed -i -e '/splits/,+7d' -e '/google-services/d' -e '/detox/,+2d' -e 's/versionCode
-        1/versionCode $$VERCODE$$/' build.gradle
+        1/versionCode $$VERCODE$$/' -e '/firebase/d' build.gradle
       - sed -i -e 's/http:/https:/' ../../node_modules/react-native-gesture-handler/android/lib/build.gradle
       - sed -i -e "/swiperefreshlayout/a implementation(project(':react-native-device-info'))
         { exclude group\x3a 'com.google.firebase'\\ exclude group\x3a 'com.google.android.gms'\\
