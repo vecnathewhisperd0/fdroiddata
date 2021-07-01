@@ -447,21 +447,7 @@
           },
           "ndk": {
             "description": "Version of the NDK to use in this build.",
-            "type": "string",
-            "enum": [
-              "r10e",
-              "r11c",
-              "r12b",
-              "r13b",
-              "r14b",
-              "r15c",
-              "r16b",
-              "r17c",
-              "r18b",
-              "r19c",
-              "r20b",
-              "r21d"
-            ]
+            "type": "string"
           },
           "gradle": {
             "description": "Build with Gradle instead of Ant, specifying what flavours to use. Flavours are case sensitive since the path to the output APK is as well.",
@@ -535,8 +521,8 @@
     },
     "RequiresRoot": {
       "description": "Set this optional field to “Yes” if the application requires root privileges to be usable.",
-      "type": "boolean",
-      "enum": [true]
+      "type": "string",
+      "enum": ["yes"]
     },
     "ArchivePolicy": {
       "description": "This determines the policy for moving old versions of an app to the archive repo, if one is configured. Currently the only supported format is “n versions”, where n is the number of versions to keep. Defaults to “3 versions”.",
@@ -558,13 +544,20 @@
     "UpdateCheckMode": {
       "description": "This determines the method using for determining when new releases are available - in other words, the updating of the CurrentVersion and CurrentVersionCode fields in the metadata by the fdroid checkupdates process.",
       "type": "string",
-      "enum": [
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "enum": [
         "None",
         "Static",
         "RepoManifest",
         "RepoTrunk",
         "Tags",
         "HTTP"
+      ]
+        }
       ]
     },
     "VercodeOperation": {
