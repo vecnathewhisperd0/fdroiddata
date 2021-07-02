@@ -13,12 +13,6 @@ RepoType: git
 Repo: https://github.com/deftkHD/OpenWebWeaver-Android.git
 
 Builds:
-  - versionName: 0.1.0
-    versionCode: 1
-    commit: 0.1.0
-    subdir: app
-    gradle:
-      - yes
   - versionName: 0.2.0
     versionCode: 2
     commit: 0.2.0
