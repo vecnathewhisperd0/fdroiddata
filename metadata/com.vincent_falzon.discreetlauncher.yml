@@ -182,7 +182,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v4.2.0
+    versionCode: 29
+    commit: 5357d4658045c5073af41df5c333352ffe598ff9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v4.3.0
+    versionCode: 30
+    commit: 55b3a4d0699b06e462b5357d57d85c8b3ff7e46b
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v4.1.1
-CurrentVersionCode: 28
+CurrentVersion: v4.3.0
+CurrentVersionCode: 30

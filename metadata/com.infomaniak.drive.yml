@@ -23,7 +23,23 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 4.0.12
+    versionCode: 40001201
+    commit: f409f3bcac905cf9f71cfb9ff8c39895b86d3fca
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 4.0.13
+    versionCode: 40001301
+    commit: 846e69efd84b2a672cd2da1c1887d8d3e1267365
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 4.0.11
-CurrentVersionCode: 40001101
+CurrentVersion: 4.0.13
+CurrentVersionCode: 40001301
