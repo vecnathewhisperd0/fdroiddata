@@ -1,8 +1,8 @@
 AntiFeatures:
   - NonFreeNet
 Categories:
- - Money
- - Security
+  - Money
+  - Security
 License: GPL-3.0-or-later
 AuthorName: Varengold Bank AG
 SourceCode: https://github.com/varengold/activeTAN-Android
@@ -12,7 +12,7 @@ RepoType: git
 Repo: https://github.com/varengold/activeTAN-Android.git
 
 Builds:
-  - versionName: 2021-06-30
+  - versionName: '2021-06-30'
     versionCode: 34
     commit: v2021-06-30
     subdir: app
@@ -22,5 +22,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2021-06-30
+CurrentVersion: '2021-06-30'
 CurrentVersionCode: 34
