@@ -15,7 +15,6 @@ Builds:
   - versionName: '2021-06-30'
     versionCode: 34
     commit: v2021-06-30
-    subdir: app
     gradle:
       - VAR
       - Prod
