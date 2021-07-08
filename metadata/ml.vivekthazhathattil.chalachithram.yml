@@ -1,0 +1,27 @@
+Categories:
+  - Games
+License: MIT
+AuthorName: Vivek Thazhathattil
+AuthorEmail: vivek.thazhathattil@gmail.com
+AuthorWebSite: https://vivekthazhathattil.github.io
+SourceCode: https://github.com/VivekThazhathattil/Chalachithram/
+IssueTracker: https://github.com/VivekThazhathattil/Chalachithram//issues
+Changelog: https://github.com/VivekThazhathattil/dekadico/releases
+
+AutoName: Chalachithram
+
+RepoType: git
+Repo: https://github.com/VivekThazhathattil/Chalachithram/
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: 387a39e9e178a8319fc91bf05596da012955cd8d
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
