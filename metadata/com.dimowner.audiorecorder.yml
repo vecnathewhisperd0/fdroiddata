@@ -1,8 +1,11 @@
 Categories:
   - Multimedia
 License: Apache-2.0
+AuthorName: Dmytro Ponomarenko
+AuthorEmail: Dimmony@gmail.com
 SourceCode: https://github.com/Dimowner/AudioRecorder
 IssueTracker: https://github.com/Dimowner/AudioRecorder/issues
+Changelog: https://github.com/Dimowner/AudioRecorder/releases
 
 AutoName: Audio Recorder
 Summary: gives easy audio recording experience
