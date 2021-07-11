@@ -20,7 +20,7 @@ Builds:
     srclibs:
       - flutter@2.0.5
     rm:
-      - ios    
+      - ios
       - plugins/glib/ios
       - plugins/glib/example/ios
     build:
