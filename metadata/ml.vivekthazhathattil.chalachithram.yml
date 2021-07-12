@@ -14,14 +14,14 @@ RepoType: git
 Repo: https://github.com/VivekThazhathattil/Chalachithram/
 
 Builds:
-  - versionName: '1.0'
-    versionCode: 1
-    commit: 387a39e9e178a8319fc91bf05596da012955cd8d
+  - versionName: '1.2'
+    versionCode: 2 
+    commit: 8bb34bf7ead6ccf5aef20f8cb5a0c1422525d1e0
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.0'
-CurrentVersionCode: 1
+CurrentVersion: '1.2'
+CurrentVersionCode: 2 
