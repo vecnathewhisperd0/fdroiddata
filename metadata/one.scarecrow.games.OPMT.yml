@@ -12,7 +12,7 @@ Bitcoin: bc1qlvz9ela7y3nvv6tl30u3j99lmny527tr0fhxsc
 AutoName: OPTM
 
 RepoType: git
-Repo: https://github.com:20Nick/OPMT.git
+Repo: https://github.com/20Nick/OPMT
 
 Builds:
   - versionName: 0.1.2
