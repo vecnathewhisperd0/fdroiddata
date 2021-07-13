@@ -19,7 +19,7 @@ Builds:
     gradle:
       - VAR
       - Prod
-    output: app/build/outputs/apk/VARProd/release/app-VAR-prod-release-unsigned.apk
+    output: build/outputs/apk/VARProd/release/app-VAR-prod-release-unsigned.apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
