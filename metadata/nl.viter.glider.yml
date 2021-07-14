@@ -60,7 +60,7 @@ Builds:
     commit: dcd44e045462fe019e48d56f6c812d0167845cc0
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
-      - flutter@2.2.0-10.1.pre
+      - flutter@2.3.0-24.1.pre
     rm:
       - .github
       - .vscode
