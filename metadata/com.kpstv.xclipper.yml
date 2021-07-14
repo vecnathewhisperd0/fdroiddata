@@ -14,14 +14,14 @@ RepoType: git
 Repo: https://gitlab.com/KaustubhPatange/xclipper-fdroid.git
 
 Builds:
-  - versionName: '1.0'
+  - versionName: '1.0.8'
     versionCode: 11
-    commit: v1.0
+    commit: v1.0.8
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v.*$
-CurrentVersion: '1.0'
+CurrentVersion: '1.0.8'
 CurrentVersionCode: 11
