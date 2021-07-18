@@ -29,6 +29,7 @@ Builds:
       - tar xzf node.tar.gz
       - cp -a node-v10.23.1-linux-x64/. /usr/local/
       - npm -g install nativescript
+      - 'sed -i ''s/: ".\/gradlew"\;/: "\/home\/vagrant\/fdroidserver\/gradlew-fdroid"\;/'' /usr/local/lib/node_modules/nativescript/lib/services/android/gradle-command-service.js'
     init:
       - $$SDK$$/tools/bin/sdkmanager "platforms;android-30" "build-tools;30.0.3" >
         /dev/null
@@ -57,8 +58,12 @@ Builds:
       - cp -r $$NativeScript_android-runtime$$/dist/framework node_modules/@nativescript/android
       - rm -rf $$NativeScript_android-runtime$$
       - ns prepare android
-      - cd platforms/android/app
-      - gradle "assembleRelease" "-PappPath=app" "-PappResourcesPath=app/resources"
+      - sed -i 's/\(signingConfig[[:space:]]\)signingConfigs\.release/\1null/' platforms/android/app/build.gradle
+      - ns build android --release --env.uglify --key-store-path /dev/null
+        --key-store-alias NULL --key-store-password NULL --key-store-alias-password
+        NULL || (cd platforms/android/app/build/outputs/apk/release
+      - echo "The following files were found:"
+      - find -maxdepth 1 -type f -name "*.apk")
     ndk: r20b
 
 AutoUpdateMode: Version
