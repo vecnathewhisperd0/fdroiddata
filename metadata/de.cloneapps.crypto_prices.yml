@@ -24,7 +24,6 @@ Builds:
       - flutter@2.0.6
     rm:
       - ios
-      - .vs
     prebuild: echo "flutter.sdk=$$flutter$$" >> ../local.properties
     build:
       - $$flutter$$/bin/flutter config --no-analytics
