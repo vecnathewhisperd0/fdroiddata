@@ -77,7 +77,14 @@ Builds:
     gradle:
       - withoutKey
 
+  - versionName: 0.52.0
+    versionCode: 5200
+    commit: v0.52.0
+    subdir: app
+    gradle:
+      - withoutKey
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
-CurrentVersion: 0.51.0
-CurrentVersionCode: 5100
+CurrentVersion: 0.52.0
+CurrentVersionCode: 5200
