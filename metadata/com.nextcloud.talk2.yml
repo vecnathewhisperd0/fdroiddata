@@ -12,7 +12,7 @@ Donate: https://nextcloud.com/include/
 AutoName: Talk
 
 RepoType: git
-Repo: https://github.com/nextcloud/talk-android.git
+Repo: https://github.com/nextcloud/talk-android
 
 Builds:
   - versionName: 1.1.0
@@ -514,16 +514,6 @@ Builds:
   - versionName: 11.1.2
     versionCode: 120000005
     commit: v11.1.2
-    subdir: app
-    gradle:
-      - generic
-    rm:
-      - app/gplay.gradle
-    prebuild: sed -i -e '/work-firebase/d' build.gradle
-
-  - versionName: 12.1.1
-    versionCode: 120010190
-    commit: c7e48cb01c4626d3f3939d3d04e4edaa5fc27643
     subdir: app
     gradle:
       - generic
