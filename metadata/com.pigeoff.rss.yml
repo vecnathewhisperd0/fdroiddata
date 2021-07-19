@@ -1,0 +1,24 @@
+Categories:
+  - Internet
+  - Reading
+License: GPL-3.0-only
+SourceCode: https://github.com/16arpi/Fox-RSS
+IssueTracker: https://github.com/16arpi/Fox-RSS/issues
+
+AutoName: Fox RSS Reader
+
+RepoType: git
+Repo: https://github.com/16arpi/Fox-RSS
+
+Builds:
+  - versionName: 'v1.1'
+    versionCode: 2
+    commit: d5967e586e0e5d451650f43640a7c8fdfd3adbad
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: None
+UpdateCheckMode: Tags
+CurrentVersion: '1.1'
+CurrentVersionCode: 2

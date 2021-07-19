@@ -21,7 +21,9 @@
 !/build/extlib/
 /build/.fdroidvcs-*
 /stats/publishsigkeys.jar
-
+*/.DS_Store
+.DS_Store
 # used in fdroidserver's ./jenkins-test
 keystore.jks
 keystore.p12
+.DS_Store
