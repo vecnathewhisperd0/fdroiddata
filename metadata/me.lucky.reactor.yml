@@ -16,7 +16,7 @@ Builds:
   - versionName: 1.2.2
     versionCode: 5
     commit: v1.2.2
-    output: build/app/outputs/flutter-apk/app-fdroid-release.apk
+    output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@2.2.3
     rm:
