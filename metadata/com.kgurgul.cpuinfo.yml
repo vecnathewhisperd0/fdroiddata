@@ -106,6 +106,8 @@ Builds:
     subdir: app
     gradle:
       - yes
+    scandelete:
+      - external
     ndk: r22b
 
 MaintainerNotes: We can't use auto update because version code and name are dynamic.
