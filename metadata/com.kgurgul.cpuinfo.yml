@@ -106,10 +106,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-    scandelete:
-      - external
-    build: for arch in x86 x86_64 armeabi-v7a arm64-v8a; do cp $$cpuinfo$$/obj/local/$arch/libcpuinfo.a
-        ../external/cpuinfo/lib/$arch; done
     ndk: r22b
 
 MaintainerNotes: We can't use auto update because version code and name are dynamic.
