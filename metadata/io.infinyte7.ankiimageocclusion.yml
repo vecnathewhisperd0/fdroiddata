@@ -4,7 +4,6 @@ License: GPL-3.0-or-later
 AuthorName: Mani
 SourceCode: https://github.com/infinyte7/Anki-Occlusion
 IssueTracker: https://github.com/infinyte7/Anki-Occlusion/issues
-Donate: https://www.patreon.com/kr_mani
 
 AutoName: Anki Image Occlusion
 
@@ -12,14 +11,14 @@ RepoType: git
 Repo: https://github.com/infinyte7/Anki-Occlusion
 
 Builds:
-  - versionName: 1.4.2
-    versionCode: 14200
-    commit: v1.4.2
+  - versionName: 1.4.5
+    versionCode: 14500
+    commit: v1.4.5
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.2
-CurrentVersionCode: 14200
+CurrentVersion: 1.4.5
+CurrentVersionCode: 14500
