@@ -695,6 +695,195 @@ Builds:
     forceversion: true
     prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
 
+  - versionName: r/2.7.50340-r-2021-01-29
+    versionCode: 50340
+    commit: r/2.7.50340-r-2021-01-29
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50341-r-2021-02-02
+    versionCode: 50341
+    commit: r/2.7.50341-r-2021-02-02
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50342-r-2021-02-12
+    versionCode: 50342
+    commit: r/2.7.50342-r-2021-02-12
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50343-r-2021-02-17
+    versionCode: 50343
+    commit: r/2.7.50343-r-2021-02-17
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50344-r-2021-03-02
+    versionCode: 50344
+    commit: r/2.7.50344-r-2021-03-02
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50345-r-2021-03-04
+    versionCode: 50345
+    commit: r/2.7.50345-r-2021-03-04
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50348-r-2021-03-19
+    versionCode: 50348
+    commit: r/2.7.50348-r-2021-03-19
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50349-r-2021-03-31
+    versionCode: 50349
+    commit: r/2.7.50349-r-2021-03-31
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50350-r-2021-04-02
+    versionCode: 50350
+    commit: r/2.7.50350-r-2021-04-02
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50351-r-2021-04-13
+    versionCode: 50351
+    commit: r/2.7.50351-r-2021-04-13
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50353-r-2021-04-21
+    versionCode: 50353
+    commit: r/2.7.50353-r-2021-04-21
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50355-r-2021-04-29
+    versionCode: 50355
+    commit: r/2.7.50355-r-2021-04-29
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50357-r-2021-05-10
+    versionCode: 50357
+    commit: r/2.7.50357-r-2021-05-10
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50358-r-2021-05-11
+    versionCode: 50358
+    commit: r/2.7.50358-r-2021-05-11
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50359-r-2021-05-13
+    versionCode: 50359
+    commit: r/2.7.50359-r-2021-05-13
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50360-r-2021-06-01
+    versionCode: 50360
+    commit: r/2.7.50360-r-2021-06-01
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50361-r-2021-06-02
+    versionCode: 50361
+    commit: r/2.7.50361-r-2021-06-02
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50362-r-2021-06-04
+    versionCode: 50362
+    commit: r/2.7.50362-r-2021-06-04
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50363-r-2021-06-21
+    versionCode: 50363
+    commit: 580650371015ac446e50b58480a9bab07c6fbb00
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50364-r-2021-07-12
+    versionCode: 50364
+    commit: 63989cb2936502b57c84df59df1e444737d84a7e
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
+  - versionName: r/2.7.50365-r-2021-07-13
+    versionCode: 50365
+    commit: dfd425f040a662fe627bd9b9c17ef399fe968170
+    subdir: app
+    gradle:
+      - fdroid
+    forceversion: true
+    prebuild: echo 'android { lintOptions { abortOnError false } }' >> build.gradle
+
 MaintainerNotes: |-
     * whitelist app/build.gradle for microsoft appcenter SDK. It's actually open source but might
       pull in google dependencies. In this case it doesn't
@@ -705,5 +894,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags ^r
-CurrentVersion: r/2.7.50337-r-2020-12-04
-CurrentVersionCode: 50337
+CurrentVersion: r/2.7.50365-r-2021-07-13
+CurrentVersionCode: 50365

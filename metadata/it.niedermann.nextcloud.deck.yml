@@ -397,7 +397,208 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 1.13.6
+    versionCode: 1013006
+    commit: 1.13.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.14.0
+    versionCode: 1014000
+    commit: 1.14.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.14.1
+    versionCode: 1014001
+    commit: 1.14.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.14.3
+    versionCode: 1014003
+    commit: 1.14.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.14.4
+    versionCode: 1014004
+    commit: 1.14.4
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.14.5
+    versionCode: 1014005
+    commit: 1.14.5
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.14.6
+    versionCode: 1014006
+    commit: 1.14.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.15.0
+    versionCode: 1015000
+    commit: 1.15.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.15.1
+    versionCode: 1015001
+    commit: 1.15.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.15.2
+    versionCode: 1015002
+    commit: 1.15.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.15.3
+    versionCode: 1015003
+    commit: 1.15.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.15.4
+    versionCode: 1015004
+    commit: 1.15.4
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.15.5
+    versionCode: 1015005
+    commit: 1.15.5
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.15.6
+    versionCode: 1015006
+    commit: 1.15.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.15.7
+    versionCode: 1015007
+    commit: 1.15.7
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.15.9
+    versionCode: 1015009
+    commit: 1.15.9
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.16.0
+    versionCode: 1016000
+    commit: 1.16.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.16.1
+    versionCode: 1016001
+    commit: 1.16.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.16.2
+    versionCode: 1016002
+    disable: https://github.com/stefan-niedermann/nextcloud-deck/issues/930
+    commit: 1.16.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.16.3
+    versionCode: 1016003
+    commit: 1.16.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.17.0
+    versionCode: 1017000
+    disable: https://github.com/stefan-niedermann/nextcloud-deck/issues/936
+    commit: 1.17.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.17.2
+    versionCode: 1017002
+    disable: https://github.com/stefan-niedermann/nextcloud-deck/issues/936
+    commit: 1.17.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.17.4
+    versionCode: 1017004
+    disable: https://github.com/stefan-niedermann/nextcloud-deck/issues/935
+    commit: 1.17.4
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.17.6
+    versionCode: 1017006
+    disable: https://github.com/stefan-niedermann/nextcloud-deck/issues/935
+    commit: 1.17.6
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.17.7
+    versionCode: 1017007
+    commit: 1.17.7
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.18.2
+    versionCode: 1018002
+    commit: 1.18.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.18.3
+    versionCode: 1018003
+    commit: 1.18.3
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 1.19.0
+    versionCode: 1019000
+    commit: 7ce1e79e577150cd7354f91e4edc21f78cb65f1b
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.13.5
-CurrentVersionCode: 1013005
+CurrentVersion: 1.19.0
+CurrentVersionCode: 1019000

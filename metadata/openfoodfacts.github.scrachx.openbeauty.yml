@@ -255,10 +255,10 @@ Builds:
       - sed -i 's/\r$//' ../gradle/wrapper/gradle-wrapper.properties
       - sed -i '/javaMaxHeapSize/d' build.gradle
 
-  - versionName: 3.6.1
-    versionCode: 361
+  - versionName: 3.6.3
+    versionCode: 431
     disable: fails to build
-    commit: 3.6.1
+    commit: 3.6.3
     subdir: app
     gradle:
       - obf
@@ -266,7 +266,7 @@ Builds:
       - sed -i 's/\r$//' ../gradle/wrapper/gradle-wrapper.properties
       - sed -i '/javaMaxHeapSize/d' build.gradle.kts
 
-AutoUpdateMode: Version %v
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 3.6.1
-CurrentVersionCode: 361
+CurrentVersion: 3.6.8
+CurrentVersionCode: 433

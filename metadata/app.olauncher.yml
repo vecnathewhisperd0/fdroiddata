@@ -21,7 +21,7 @@ Description: |-
     * Swipe up to see all the apps and quick search
     * Swipe down for notification drawer
     * Long press home apps to change them
-    * '''Important''': Long press on empty space to open settings
+    * <b>Important</b>: Long press on empty space to open settings
     Once you open the settings, you'll see all the available options.
     So basically, swipe and long press anywhere and you'll be fine.
 
@@ -95,7 +95,56 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v2.6
+    versionCode: 26
+    commit: v2.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v2.7
+    versionCode: 27
+    commit: v2.7
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v2.9
+    versionCode: 29
+    commit: v2.9
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v3.0
+    versionCode: 30
+    commit: v3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v3.1
+    versionCode: 31
+    commit: v3.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v3.2
+    versionCode: 32
+    commit: v3.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v3.3
+    versionCode: 33
+    commit: v3.3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v2.4
-CurrentVersionCode: 24
+CurrentVersion: v3.3
+CurrentVersionCode: 33

@@ -8,6 +8,7 @@ SourceCode: https://github.com/shlusiak/Freebloks-Android
 IssueTracker: https://github.com/shlusiak/Freebloks-Android/issues
 Donate: https://paypal.me/saschahlusiak/3eur
 Bitcoin: bc1qdgm2zvlc6qzqh8qs44wv8l622tfrhvkjqn0fkl
+Litecoin: Lh3YTC7Tv4edEe48kHMbyhgE6BNH22bqBt
 
 AutoName: Freebloks
 Description: |-
@@ -102,7 +103,38 @@ Builds:
       - sed -i -e '/google-services/d' build.gradle
     ndk: r21d
 
+  - versionName: 1.3.1
+    versionCode: 111
+    commit: 1.3.1
+    subdir: app
+    submodules: true
+    gradle:
+      - standardFdroid
+    rm:
+      - google-services/
+      - stuff/
+    prebuild:
+      - sed -i -e '/crashlytics/d' build.gradle
+      - sed -i -e '/google-services/d' build.gradle
+    ndk: r21d
+
+  - versionName: 1.3.4
+    versionCode: 114
+    commit: 1.3.4
+    subdir: app
+    submodules: true
+    gradle:
+      - standardFdroid
+    rm:
+      - google-services/
+      - stuff/
+    prebuild:
+      - sed -i -e '/crashlytics/d' build.gradle
+      - sed -i -e '/google-services/d' build.gradle
+      - sed -i -e 's/21.3.6528147/21.4.7075529/' build.gradle
+    ndk: r21e
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.3.0
-CurrentVersionCode: 110
+CurrentVersion: 1.3.4
+CurrentVersionCode: 114

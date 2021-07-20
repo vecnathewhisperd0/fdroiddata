@@ -12,7 +12,7 @@ Description: |-
     and offline vector maps using Mapsforge library, alternatively Locus can be used
     to display maps.
 
-    '''Functions:'''
+    <b>Functions:</b>
 
     * Wherigo client
     * Download cartridges (user needs to fill login credentials in Settings, browse to desired wherigo via Web Browser and select open in WhereYouGo)
@@ -42,7 +42,22 @@ Builds:
       - sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
     ndk: r21d
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags ^[0-9\.]+$
-CurrentVersion: 2020.04.07
-CurrentVersionCode: 20200407
+  - versionName: 2020.08.21
+    versionCode: 20200821
+    commit: 2020.08.21
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e 's/versionName .*/versionName = "$$VERSION$$"/g' build.gradle
+      - export APP_VERSION="$$VERSION$$"
+      - export APP_CODE=${APP_VERSION//./}
+      - sed -i -e 's/versionCode .*/versionCode = '"$APP_CODE"'/g' build.gradle
+      - sed -i -e 's/21.0.6113669/21.3.6528147/' build.gradle
+    ndk: r21d
+
+MaintainerNotes: Cannot use AUM/UCM because version code and version name are dynamic.
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 2020.08.21
+CurrentVersionCode: 20200821

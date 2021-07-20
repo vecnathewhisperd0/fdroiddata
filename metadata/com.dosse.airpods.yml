@@ -114,7 +114,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.5.1
+    versionCode: 16
+    commit: 1.5.1
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
+  - versionName: '1.6'
+    versionCode: 17
+    commit: '1.6'
+    subdir: OpenPods/app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.5'
-CurrentVersionCode: 15
+CurrentVersion: '1.6'
+CurrentVersionCode: 17

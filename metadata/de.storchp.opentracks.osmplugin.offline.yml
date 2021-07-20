@@ -6,6 +6,7 @@ AuthorName: OpenTracks Team
 WebSite: https://OpenTracksApp.com
 SourceCode: https://github.com/OpenTracksApp/OSMDashboard
 IssueTracker: https://github.com/OpenTracksApp/OSMDashboard/issues
+Translation: https://weblate.bubu1.eu/projects/open-tracks-osm-dashboard/
 
 AutoName: OSM Dashboard for OpenTracks
 
@@ -31,7 +32,19 @@ Builds:
     gradle:
       - offline
 
+  - versionName: 2.9.0
+    versionCode: 21
+    commit: v2.9.0
+    gradle:
+      - offline
+
+  - versionName: 2.10.0
+    versionCode: 22
+    commit: v2.10.0
+    gradle:
+      - offline
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.8.0
-CurrentVersionCode: 20
+CurrentVersion: 2.10.0
+CurrentVersionCode: 22

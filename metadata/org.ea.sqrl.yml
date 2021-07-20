@@ -209,7 +209,17 @@ Builds:
       - yes
     output: gen_build/outputs/apk/release/app-release-unsigned.apk
     prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.10.2.4988404'
-    ndk: r21
+    ndk: r22
+
+  - versionName: 1.7.2
+    versionCode: 54
+    commit: v1.7.2
+    subdir: app
+    gradle:
+      - yes
+    output: gen_build/outputs/apk/release/app-release-unsigned.apk
+    prebuild: $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.10.2.4988404'
+    ndk: r22
 
 MaintainerNotes: |-
     Build instructions:
@@ -217,5 +227,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.7.1
-CurrentVersionCode: 53
+CurrentVersion: 1.7.2
+CurrentVersionCode: 54

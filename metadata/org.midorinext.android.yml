@@ -1,24 +1,23 @@
+AntiFeatures:
+  - Tracking
 Categories:
   - Internet
 License: LGPL-3.0-only
 WebSite: https://www.midori-browser.org/
 SourceCode: https://gitlab.com/midori-web/midori-android
-IssueTracker: https://github.com/midori-web/midori-android/issues
+IssueTracker: https://gitlab.com/midori-web/midori-android/-/issues
 Changelog: https://gitlab.com/midori-web/midori-android/-/tags
 
-AutoName: Midori
+AutoName: Midori Lite
 Description: |-
-    Midori is a lightweight yet powerful web browser which runs just as well on little embedded
-    computers named for delicious pastries as it does on beefy machines with a core
-    temperature exceeding that of planet earth. And it looks good doing that, too.
-    Oh, and of course it's free software. And for Android.
+    Midori is a lightweight yet powerful web browser which runs just as well on little embedded computers named for delicious pastries as it does on beefy machines with a core temperature exceeding that of planet earth. And it looks good doing that, too. Oh, and of course it´s free software. And for Android.
 
-    '''Privacy out of the box'''
+    <b>Privacy out of the box</b>
     * Adblock filter list support
     * Private browsing
     * Manage cookies and scripts
 
-    '''Productivity features'''
+    <b>Productivity features</b>
     * Opens many Tabs
     * History Manage
     * Download Manage
@@ -26,6 +25,8 @@ Description: |-
     * Dark Theme
     * Share Content
     * and much more
+
+    <b>Note:</b> <i>Midori</i> does send crash reports without asking you first.
 
 RepoType: git
 Repo: https://gitlab.com/midori-web/midori-android.git
@@ -47,7 +48,26 @@ Builds:
       - scMain
     prebuild: sed -i -e '/minifyEnabled/d' -e '/debuggable/d' build.gradle
 
+  - versionName: 1.1.6.1
+    versionCode: 31
+    commit: v1.1.6.1
+    subdir: app
+    gradle:
+      - scMain
+    prebuild: sed -i -e '/minifyEnabled/d' -e '/debuggable/d' build.gradle
+
+  - versionName: 1.1.6.1
+    versionCode: 32
+    commit: 1.1.6.2
+    subdir: app
+    gradle:
+      - scMain
+    prebuild: sed -i -e '/minifyEnabled/d' -e '/debuggable/d' build.gradle
+
+MaintainerNotes: Tracking AntiFeature as the app sends bug reports without consent
+    (d#2317)
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.5.1
-CurrentVersionCode: 28
+CurrentVersion: 1.1.6.1
+CurrentVersionCode: 32

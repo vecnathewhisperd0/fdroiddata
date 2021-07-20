@@ -189,7 +189,49 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 3.2.0
+    versionCode: 320
+    commit: v3.2.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 3.2.1
+    versionCode: 321
+    commit: v3.2.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 3.2.2
+    versionCode: 322
+    commit: v3.2.2
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 3.3.0
+    versionCode: 330
+    commit: v3.3.0
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 3.3.1
+    versionCode: 331
+    commit: v3.3.1
+    subdir: app
+    gradle:
+      - fdroid
+
+  - versionName: 3.3.2
+    versionCode: 332
+    commit: eaf736e1ec16a61e4183bcd0304a4371ed5c5c16
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.1.3
-CurrentVersionCode: 313
+CurrentVersion: 3.3.2
+CurrentVersionCode: 332

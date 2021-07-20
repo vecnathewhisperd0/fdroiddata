@@ -1,3 +1,5 @@
+AntiFeatures:
+  - Tracking
 Categories:
   - Multimedia
 License: Apache-2.0
@@ -14,6 +16,8 @@ Description: |-
     If you organize your conference with pretix, you can use this application to scan the tickets at the entrance.
 
     This app is free software licensed under the Apache license. The source code can be found at: https://github.com/pretix/pretixscan-android
+
+    Tracking due to Sentry which cannot be disabled by the user.
 
 RepoType: git
 Repo: https://github.com/pretix/pretixscan-android
@@ -136,7 +140,17 @@ Builds:
       - yes
     output: build/outputs/apk/pretix/release/app-pretix-release-unsigned.apk
 
-AutoUpdateMode: Version v%v
+  - versionName: 1.9.2
+    versionCode: 35
+    disable: JARs in pretixscan/libpretixui-repo
+    commit: 1.9.2
+    subdir: pretixscan/app
+    submodules: true
+    gradle:
+      - yes
+    output: build/outputs/apk/pretix/release/app-pretix-release-unsigned.apk
+
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 1.8.0
-CurrentVersionCode: 31
+CurrentVersion: 1.11.1
+CurrentVersionCode: 48

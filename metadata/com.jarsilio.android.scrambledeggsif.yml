@@ -383,7 +383,56 @@ Builds:
     gradle:
       - standard
 
+  - versionName: 1.6.22
+    versionCode: 61
+    commit: v1.6.22
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: '1.7'
+    versionCode: 62
+    commit: v1.7
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.7.1
+    versionCode: 63
+    commit: v1.7.1
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.7.2
+    versionCode: 64
+    disable: fails to build https://gitlab.com/juanitobananas/scrambled-exif/-/issues/57
+    commit: v1.7.2
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.7.3
+    versionCode: 66
+    commit: v1.7.3
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
+  - versionName: 1.7.4
+    versionCode: 67
+    commit: 2491040a256f5962f0d009ed22e996866de5861e
+    subdir: app
+    submodules: true
+    gradle:
+      - standard
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v[0-9.]+$
-CurrentVersion: 1.6.21
-CurrentVersionCode: 60
+CurrentVersion: 1.7.4
+CurrentVersionCode: 67

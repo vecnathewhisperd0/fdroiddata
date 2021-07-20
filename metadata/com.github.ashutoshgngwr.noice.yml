@@ -1,12 +1,14 @@
 Categories:
   - Sports & Health
   - Multimedia
-License: MIT
+License: GPL-3.0-only
+AuthorName: Ashutosh Gangwar
 AuthorEmail: ashutoshgngwr@gmail.com
+AuthorWebSite: https://ashutoshgngwr.github.io
 WebSite: https://ashutoshgngwr.github.io/noice
 SourceCode: https://github.com/ashutoshgngwr/noice
 IssueTracker: https://github.com/ashutoshgngwr/noice/issues
-Translation: https://github.com/ashutoshgngwr/noice/issues/200
+Translation: https://hosted.weblate.org/engage/noice/
 Changelog: https://ashutoshgngwr.github.io/noice/CHANGELOG
 OpenCollective: noice
 
@@ -201,7 +203,55 @@ Builds:
       - fdroid
     prebuild: sed -i -e '/signingConfig/d' build.gradle
 
+  - versionName: 0.15.0
+    versionCode: 37
+    commit: 0.15.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.16.0
+    versionCode: 38
+    commit: 0.16.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.16.1
+    versionCode: 39
+    commit: 0.16.1
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 0.17.0
+    versionCode: 40
+    commit: 0.17.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
+
+  - versionName: 1.0.0
+    versionCode: 41
+    commit: 1.0.0
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/sed:fdroid-build:remove/d' build.gradle ../build.gradle
+
+  - versionName: 1.0.1
+    versionCode: 42
+    commit: e3431c840f467e7cf2070f0286f49afec3186f48
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/sed:fdroid-build:remove/d' build.gradle ../build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.14.0
-CurrentVersionCode: 36
+CurrentVersion: 1.0.1
+CurrentVersionCode: 42

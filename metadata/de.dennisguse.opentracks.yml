@@ -249,7 +249,121 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v3.14.1
+    versionCode: 3799
+    commit: v3.14.1
+    gradle:
+      - yes
+
+  - versionName: v3.14.3
+    versionCode: 3823
+    commit: v3.14.3
+    gradle:
+      - yes
+
+  - versionName: v3.15.0
+    versionCode: 3855
+    commit: v3.15.0
+    gradle:
+      - yes
+
+  - versionName: v3.15.1
+    versionCode: 3862
+    commit: v3.15.1
+    gradle:
+      - yes
+
+  - versionName: v3.15.2
+    versionCode: 3875
+    commit: v3.15.2
+    gradle:
+      - yes
+
+  - versionName: v3.15.3
+    versionCode: 3890
+    commit: v3.15.3
+    gradle:
+      - yes
+
+  - versionName: v3.15.4
+    versionCode: 3892
+    commit: v3.15.4
+    gradle:
+      - yes
+
+  - versionName: v3.16.0
+    versionCode: 3941
+    commit: v3.16.0
+    gradle:
+      - yes
+
+  - versionName: v3.17.0
+    versionCode: 3981
+    commit: v3.17.0
+    gradle:
+      - yes
+
+  - versionName: v3.17.1
+    versionCode: 3986
+    commit: v3.17.1
+    gradle:
+      - yes
+
+  - versionName: v3.17.2
+    versionCode: 3990
+    commit: v3.17.2
+    gradle:
+      - yes
+
+  - versionName: v3.17.3
+    versionCode: 4009
+    commit: v3.17.3
+    gradle:
+      - yes
+
+  - versionName: v3.18.0
+    versionCode: 4046
+    commit: v3.18.0
+    gradle:
+      - yes
+
+  - versionName: v3.18.1
+    versionCode: 4092
+    commit: v3.18.1
+    gradle:
+      - yes
+
+  - versionName: v3.18.2
+    versionCode: 4098
+    commit: v3.18.2
+    gradle:
+      - yes
+
+  - versionName: v3.18.3
+    versionCode: 4143
+    commit: v3.18.3
+    gradle:
+      - yes
+
+  - versionName: v3.18.4
+    versionCode: 4151
+    commit: v3.18.4
+    gradle:
+      - yes
+
+  - versionName: v3.18.5
+    versionCode: 4176
+    commit: 823dc1c12b38a4fb6995a9b108837fb848f0fb82
+    gradle:
+      - yes
+
+  - versionName: v3.18.6
+    versionCode: 4253
+    commit: bfbe868487a9925503bf150703a5e0b1e4d92a5b
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: v3.14.0
-CurrentVersionCode: 3761
+CurrentVersion: v3.18.6
+CurrentVersionCode: 4253

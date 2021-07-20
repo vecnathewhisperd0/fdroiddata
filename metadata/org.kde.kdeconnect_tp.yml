@@ -1,7 +1,7 @@
 Categories:
   - System
 License: GPL-2.0-only
-WebSite: https://community.kde.org/KDE_Connect
+WebSite: https://kdeconnect.kde.org/
 SourceCode: https://invent.kde.org/network/kdeconnect-android
 IssueTracker: https://bugs.kde.org
 
@@ -497,7 +497,21 @@ Builds:
       - yes
     prebuild: sed -i -e '/javaMaxHeapSize/s/4g/2g/g' build.gradle
 
+  - versionName: 1.16.0
+    versionCode: 11600
+    commit: v1.16
+    gradle:
+      - yes
+    prebuild: sed -i -e '/javaMaxHeapSize/s/4g/2g/g' build.gradle
+
+  - versionName: 1.17.0
+    versionCode: 11700
+    commit: v1.17.0
+    gradle:
+      - yes
+    prebuild: sed -i -e '/javaMaxHeapSize/s/4g/2g/g' build.gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.15.1
-CurrentVersionCode: 11510
+CurrentVersion: 1.17.0
+CurrentVersionCode: 11700

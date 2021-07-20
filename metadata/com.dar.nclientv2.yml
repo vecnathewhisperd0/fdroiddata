@@ -172,7 +172,78 @@ Builds:
       - yes
     prebuild: sed -i -e 's/6.4-rc-4-all/6.4-all/' -e '/Sha256Sum/d' ../gradle/wrapper/gradle-wrapper.properties
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: Tags
-CurrentVersion: 2.6.6
-CurrentVersionCode: 266
+  - versionName: 2.6.8
+    versionCode: 268
+    commit: 2.6.8
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.4-rc-4-all/6.4-all/' -e '/Sha256Sum/d' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 2.6.9
+    versionCode: 269
+    commit: 2.6.9
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.4-rc-4-all/6.4-all/' -e '/Sha256Sum/d' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 2.7.1
+    versionCode: 271
+    commit: 2.7.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.4-rc-4-all/6.4-all/' -e '/Sha256Sum/d' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 2.7.2
+    versionCode: 272
+    commit: 2.7.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/6.4-rc-4-all/6.4-all/' -e '/Sha256Sum/d' ../gradle/wrapper/gradle-wrapper.properties
+
+  - versionName: 2.7.6-stable-release
+    versionCode: 276
+    commit: 2.7.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.8.0-stable-release
+    versionCode: 280
+    commit: 2.8.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.8.1-stable-release
+    versionCode: 281
+    commit: 2.8.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.8.2-stable-release
+    versionCode: 282
+    commit: 2.8.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.8.3-stable-release
+    versionCode: 283
+    commit: 2.8.3
+    subdir: app
+    gradle:
+      - yes
+
+MaintainerNotes: UpdateCheckMode stays as HTTP as beta version are not reflected in
+    git tags.
+
+AutoUpdateMode: Version +-stable-release %v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/Dar9586/NClientV2/master/app/build.gradle|versionCode\s+(\d+)|.|versionName\s"([\d.]+)-stable"
+CurrentVersion: 2.8.3
+CurrentVersionCode: 283

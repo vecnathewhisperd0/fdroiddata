@@ -9,11 +9,6 @@ Changelog: https://github.com/enricocid/Music-Player-GO/releases
 Donate: https://paypal.me/enricocid
 
 AutoName: Music Player GO
-Description: |-
-    ''Music Player GO'' is a very slim music player (small app size). It offers a
-    colorful and simple "Unified UI" (no need to navigate between activities). The
-    app also features an Equalizer, Themes (Light, dark, night) andmore. It even
-    deals with Pause/resume when the headsets are (dis)connected.
 
 RepoType: git
 Repo: https://github.com/enricocid/Music-Player-GO.git
@@ -490,7 +485,25 @@ Builds:
     rm:
       - project/gradle
 
+  - versionName: 4.4.1
+    versionCode: 163
+    commit: v4.4.1
+    subdir: project/app
+    gradle:
+      - yes
+    rm:
+      - project/gradle
+
+  - versionName: 4.4.2
+    versionCode: 164
+    commit: v4.4.2
+    subdir: project/app
+    gradle:
+      - yes
+    rm:
+      - project/gradle
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 4.4.0
-CurrentVersionCode: 162
+CurrentVersion: 4.4.2
+CurrentVersionCode: 164

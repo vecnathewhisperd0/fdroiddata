@@ -61,7 +61,295 @@ Builds:
       - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
     ndk: r21d
 
+  - versionName: 1.2.2-t76c2982d8-gb981aa576
+    versionCode: 29
+    commit: v1.2.2-t76c2982d8-gb981aa576
+    subdir: android
+    gradle:
+      - fdroid
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.15.4.linux-amd64.tar.gz
+      - echo "eb61005f0b932c93b424a3a4eaa67d72196c79129d9a3ea8578047683e2c80d5 go.tar.gz"
+        | sha256sum -c -
+      - tar xzvf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21d
+
+  - versionName: 1.2.2-t76c2982d8-gc26c3b0a3
+    versionCode: 30
+    commit: v1.2.2-t76c2982d8-gc26c3b0a3
+    subdir: android
+    gradle:
+      - fdroid
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.15.4.linux-amd64.tar.gz
+      - echo "eb61005f0b932c93b424a3a4eaa67d72196c79129d9a3ea8578047683e2c80d5 go.tar.gz"
+        | sha256sum -c -
+      - tar xzvf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21d
+
+  - versionName: 1.3.267-t9936cffc1-g96e2661764c
+    versionCode: 31
+    commit: v1.3.267-t9936cffc1-g96e2661764c
+    subdir: android
+    gradle:
+      - fdroid
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.15.4.linux-amd64.tar.gz
+      - echo "eb61005f0b932c93b424a3a4eaa67d72196c79129d9a3ea8578047683e2c80d5 go.tar.gz"
+        | sha256sum -c -
+      - tar xzvf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21d
+
+  - versionName: 1.4.0-t3d7cff91b-gc4f626c5a79
+    versionCode: 32
+    commit: v1.4.0-t3d7cff91b-gc4f626c5a79
+    subdir: android
+    gradle:
+      - fdroid
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.15.4.linux-amd64.tar.gz
+      - echo "eb61005f0b932c93b424a3a4eaa67d72196c79129d9a3ea8578047683e2c80d5 go.tar.gz"
+        | sha256sum -c -
+      - tar xzvf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21d
+
+  - versionName: 1.4.0-t3d7cff91b-g33cf7c0aa19
+    versionCode: 33
+    commit: v1.4.0-t3d7cff91b-g33cf7c0aa19
+    subdir: android
+    gradle:
+      - fdroid
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.15.4.linux-amd64.tar.gz
+      - echo "eb61005f0b932c93b424a3a4eaa67d72196c79129d9a3ea8578047683e2c80d5 go.tar.gz"
+        | sha256sum -c -
+      - tar xzvf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21d
+
+  - versionName: 1.4.4-t64a9656c0-g3e758d0fe21
+    versionCode: 34
+    commit: v1.4.4-t64a9656c0-g3e758d0fe21
+    subdir: android
+    gradle:
+      - fdroid
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.15.4.linux-amd64.tar.gz
+      - echo "eb61005f0b932c93b424a3a4eaa67d72196c79129d9a3ea8578047683e2c80d5 go.tar.gz"
+        | sha256sum -c -
+      - tar xzvf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21d
+
+  - versionName: 1.4.5-tb89c65304-gd3e0b420939
+    versionCode: 35
+    commit: v1.4.5-tb89c65304-gd3e0b420939
+    subdir: android
+    gradle:
+      - fdroid
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.15.4.linux-amd64.tar.gz
+      - echo "eb61005f0b932c93b424a3a4eaa67d72196c79129d9a3ea8578047683e2c80d5 go.tar.gz"
+        | sha256sum -c -
+      - tar xzvf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21d
+
+  - versionName: 1.6.0-tddc975fcb-g05ddfd5d90e
+    versionCode: 36
+    commit: v1.6.0-tddc975fcb-g05ddfd5d90e
+    subdir: android
+    gradle:
+      - fdroid
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.15.4.linux-amd64.tar.gz
+      - echo "eb61005f0b932c93b424a3a4eaa67d72196c79129d9a3ea8578047683e2c80d5 go.tar.gz"
+        | sha256sum -c -
+      - tar xzvf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21e
+
+  - versionName: 1.6.0-tddc975fcb-g05212e770b0
+    versionCode: 38
+    commit: v1.6.0-tddc975fcb-g05212e770b0
+    subdir: android
+    gradle:
+      - fdroid
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.15.4.linux-amd64.tar.gz
+      - echo "eb61005f0b932c93b424a3a4eaa67d72196c79129d9a3ea8578047683e2c80d5 go.tar.gz"
+        | sha256sum -c -
+      - tar xzvf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21e
+
+  - versionName: 1.8.3-td0e86b08c-g8ea1d4ced73
+    versionCode: 40
+    commit: v1.8.3-td0e86b08c-g8ea1d4ced73
+    subdir: android
+    gradle:
+      - fdroid
+    prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;30.0.3'
+        > /dev/null
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
+      - echo "7154e88f5a8047aad4b80ebace58a059e36e7e2e4eb3b383127a28c711b4ff59 go.tar.gz"
+        | sha256sum -c -
+      - tar xzf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21e
+
+  - versionName: 1.8.6-t28a8f9c90-gff16a75a65c
+    versionCode: 41
+    commit: v1.8.6-t28a8f9c90-gff16a75a65c
+    subdir: android
+    gradle:
+      - fdroid
+    prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;30.0.3'
+        > /dev/null
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
+      - echo "7154e88f5a8047aad4b80ebace58a059e36e7e2e4eb3b383127a28c711b4ff59 go.tar.gz"
+        | sha256sum -c -
+      - tar xzf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21e
+
+  - versionName: 1.8.6-t28a8f9c90-g04890797712
+    versionCode: 42
+    commit: v1.8.6-t28a8f9c90-g04890797712
+    subdir: android
+    gradle:
+      - fdroid
+    prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;30.0.3'
+        > /dev/null
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
+      - echo "7154e88f5a8047aad4b80ebace58a059e36e7e2e4eb3b383127a28c711b4ff59 go.tar.gz"
+        | sha256sum -c -
+      - tar xzf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21e
+
+  - versionName: v1.10.0-405ea978f8b-g47b732aaab1
+    versionCode: 43
+    commit: e8f2409cb3d1a643c1043445810d63e06ce1778c
+    subdir: android
+    gradle:
+      - fdroid
+    prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;30.0.3'
+        > /dev/null
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
+      - echo "7154e88f5a8047aad4b80ebace58a059e36e7e2e4eb3b383127a28c711b4ff59 go.tar.gz"
+        | sha256sum -c -
+      - tar xzf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21e
+
+  - versionName: v1.10.0-405ea978f8b-g242c936b2cd
+    versionCode: 46
+    commit: 14cdec17f18115f3e36c01a8adbf6ddf2039b51a
+    subdir: android
+    gradle:
+      - fdroid
+    prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;30.0.3'
+        > /dev/null
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
+      - echo "7154e88f5a8047aad4b80ebace58a059e36e7e2e4eb3b383127a28c711b4ff59 go.tar.gz"
+        | sha256sum -c -
+      - tar xzf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21e
+
+  - versionName: v1.10.1-cd3fd076cc7-gadfcedb0972
+    versionCode: 47
+    commit: 2a6cd09d7cba4e78dee21cb907367022c927a0f2
+    subdir: android
+    gradle:
+      - fdroid
+    prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;30.0.3'
+        > /dev/null
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
+      - echo "7154e88f5a8047aad4b80ebace58a059e36e7e2e4eb3b383127a28c711b4ff59 go.tar.gz"
+        | sha256sum -c -
+      - tar xzf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21e
+
+  - versionName: v1.10.2-36fe8addc39-g74a18b3359b
+    versionCode: 48
+    commit: 90909797a0823ef8a7e314b9dd30cc683e4da714
+    subdir: android
+    gradle:
+      - fdroid
+    prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;30.0.3'
+        > /dev/null
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
+      - echo "7154e88f5a8047aad4b80ebace58a059e36e7e2e4eb3b383127a28c711b4ff59 go.tar.gz"
+        | sha256sum -c -
+      - tar xzf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21e
+
+  - versionName: 1.11.106-1bb6abc604c-g2c1f35d5607
+    versionCode: 50
+    commit: 6513f280b7893edbcfd73b11b967621d2947e898
+    subdir: android
+    gradle:
+      - fdroid
+    prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-30' 'build-tools;30.0.3'
+        > /dev/null
+    build:
+      - curl -Lso go.tar.gz https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
+      - echo "7154e88f5a8047aad4b80ebace58a059e36e7e2e4eb3b383127a28c711b4ff59 go.tar.gz"
+        | sha256sum -c -
+      - tar xzf go.tar.gz
+      - export ANDROID_SDK_ROOT=$$SDK$$
+      - export ANDROID_NDK_ROOT=$$NDK$$
+      - PATH=$(pwd)/go/bin:$PATH make -C .. release_aar
+    ndk: r21e
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.2.2-t76c2982d8-g8daee9c43
-CurrentVersionCode: 28
+CurrentVersion: 1.11.106-1bb6abc604c-g2c1f35d5607
+CurrentVersionCode: 50

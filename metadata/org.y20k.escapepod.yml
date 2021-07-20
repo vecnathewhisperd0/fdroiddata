@@ -153,7 +153,43 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.0.0
+    versionCode: 31
+    disable: uses proprietary com.idescout.sql:sqlscout-server
+    commit: v1.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.1
+    versionCode: 32
+    commit: v1.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.2
+    versionCode: 33
+    commit: v1.0.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.3
+    versionCode: 34
+    commit: v1.0.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.4
+    versionCode: 35
+    commit: v1.0.4
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 0.9.5
-CurrentVersionCode: 30
+CurrentVersion: 1.0.4
+CurrentVersionCode: 35

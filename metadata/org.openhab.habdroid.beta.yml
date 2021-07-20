@@ -1934,10 +1934,320 @@ Builds:
     prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
         -e '/google-services/d' build.gradle
 
+  - versionName: 2.15.19-beta
+    versionCode: 345
+    commit: 2.15.19-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.15.21-beta
+    versionCode: 347
+    commit: 2.15.21-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.15.22-beta
+    versionCode: 348
+    commit: 2.15.22-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.15.24-beta
+    versionCode: 349
+    commit: 2.15.24-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.15.25-beta
+    versionCode: 350
+    commit: 2.15.25-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.15.26-beta
+    versionCode: 351
+    commit: 2.15.26-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.15.27-beta
+    versionCode: 352
+    commit: 2.15.27-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.15.29-beta
+    versionCode: 354
+    commit: 2.15.29-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.15.30-beta
+    versionCode: 355
+    commit: 2.15.30-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.2-beta
+    versionCode: 358
+    commit: 2.16.2-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.6-beta
+    versionCode: 362
+    commit: 2.16.6-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.7-beta
+    versionCode: 363
+    commit: 2.16.7-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.8-beta
+    versionCode: 364
+    commit: 2.16.8-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.9-beta
+    versionCode: 365
+    commit: 2.16.9-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.10-beta
+    versionCode: 366
+    commit: 2.16.10-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.11-beta
+    versionCode: 367
+    commit: 2.16.11-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.14-beta
+    versionCode: 370
+    commit: 2.16.14-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.15-beta
+    versionCode: 371
+    commit: 2.16.15-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.16-beta
+    versionCode: 372
+    commit: 2.16.16-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.17-beta
+    versionCode: 373
+    commit: 2.16.17-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.18-beta
+    versionCode: 374
+    commit: 2.16.18-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.19-beta
+    versionCode: 375
+    commit: 2.16.19-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.16.20-beta
+    versionCode: 376
+    commit: 2.16.20-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /fabric/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.17.2-beta
+    versionCode: 380
+    commit: 2.17.2-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /firebase/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.17.3-beta
+    versionCode: 391
+    commit: 2.17.3-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /firebase/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.17.5-beta
+    versionCode: 393
+    commit: 2.17.5-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /firebase/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.17.6-beta
+    versionCode: 394
+    commit: 2.17.6-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /firebase/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.17.7-beta
+    versionCode: 395
+    commit: 2.17.7-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /firebase/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.17.8-beta
+    versionCode: 396
+    commit: 2.17.8-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /firebase/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.17.9-beta
+    versionCode: 397
+    commit: 2.17.9-beta-fdroid
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /firebase/d
+        -e '/google-services/d' build.gradle
+
+  - versionName: 2.18.1-beta
+    versionCode: 399
+    commit: 7649670f574c08fb1719e64405344b104d0f6d3e
+    subdir: mobile
+    gradle:
+      - foss
+      - beta
+    prebuild: sed -i -e 's|maven.fabric.io/public|repo1.maven.org/maven2|' -e /firebase/d
+        -e '/google-services/d' build.gradle
+
 MaintainerNotes: Replace the fabric.io maven with mavencentral instead of deleting
     it to not trigger fdroid/fdroidserver#463.
 
 AutoUpdateMode: Version %v-fdroid
 UpdateCheckMode: Tags ^[0-9.]+-beta-fdroid$
-CurrentVersion: 2.15.18-beta
-CurrentVersionCode: 344
+CurrentVersion: 2.18.1-beta
+CurrentVersionCode: 399

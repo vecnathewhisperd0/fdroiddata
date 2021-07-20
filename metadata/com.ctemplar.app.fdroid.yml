@@ -118,7 +118,56 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.4.4
+    versionCode: 17
+    commit: v1.4.4-fdroid
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.5
+    versionCode: 18
+    commit: v1.4.5-fdroid
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.6
+    versionCode: 19
+    commit: v1.4.6-fdroid
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.7
+    versionCode: 20
+    commit: v1.4.7-fdroid
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.8
+    versionCode: 21
+    commit: v1.4.8-fdroid
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.9
+    versionCode: 22
+    commit: v1.4.9-fdroid
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.0
+    versionCode: 23
+    commit: d064dde93116268c4430c72035fc2d6e9022c0cc
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v-fdroid
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.2
-CurrentVersionCode: 16
+CurrentVersion: 1.5.0
+CurrentVersionCode: 23

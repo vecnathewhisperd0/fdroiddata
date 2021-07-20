@@ -709,7 +709,56 @@ Builds:
 
   - versionName: 3.4.24
     versionCode: 439
+    disable: fails to build
     commit: hourlyreminder-3.4.24
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+  - versionName: 3.4.26
+    versionCode: 441
+    commit: hourlyreminder-3.4.26
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+  - versionName: 3.4.29
+    versionCode: 444
+    commit: hourlyreminder-3.4.29
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+  - versionName: 3.4.30
+    versionCode: 445
+    commit: hourlyreminder-3.4.30
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+  - versionName: 3.4.31
+    versionCode: 446
+    commit: hourlyreminder-3.4.31
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+  - versionName: 3.4.32
+    versionCode: 447
+    commit: hourlyreminder-3.4.32
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "s/gradleVersion = '4.2.1'/gradleVersion = '4.6'/" ../build.gradle
+
+  - versionName: 3.4.33
+    versionCode: 448
+    commit: hourlyreminder-3.4.33
     subdir: app
     gradle:
       - yes
@@ -717,5 +766,5 @@ Builds:
 
 AutoUpdateMode: Version hourlyreminder-%v
 UpdateCheckMode: Tags
-CurrentVersion: 3.4.24
-CurrentVersionCode: 439
+CurrentVersion: 3.4.33
+CurrentVersionCode: 448

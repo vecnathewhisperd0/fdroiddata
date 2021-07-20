@@ -1,10 +1,13 @@
 Categories:
   - Theming
 License: GPL-3.0-only
+AuthorName: Donno
+AuthorEmail: info@onnno.nl
 SourceCode: https://github.com/Donnnno/Arcticons
 IssueTracker: https://github.com/Donnnno/Arcticons/issues
 Changelog: https://github.com/Donnnno/Arcticons/blob/main/CHANGELOG.md
 Donate: https://paypal.me/onnovdd
+Liberapay: Donno
 
 AutoName: Arcticons
 
@@ -19,7 +22,126 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.1.1
+    versionCode: 42
+    commit: 1.1.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.0
+    versionCode: 43
+    commit: 1.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.2.5
+    versionCode: 44
+    commit: 1.2.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.0
+    versionCode: 45
+    commit: 1.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.3.5
+    versionCode: 46
+    commit: 1.3.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.6
+    versionCode: 49
+    commit: 1.4.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.0
+    versionCode: 50
+    commit: 1.5.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.2
+    versionCode: 51
+    commit: 1.5.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.5
+    versionCode: 52
+    commit: 1.5.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.0
+    versionCode: 53
+    commit: 1.6.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.1
+    versionCode: 54
+    commit: 1.6.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.2
+    versionCode: 55
+    commit: 1.6.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.3
+    versionCode: 56
+    commit: 1.6.3
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.4
+    versionCode: 57
+    commit: 1.6.4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.5
+    versionCode: 58
+    commit: 1.6.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.6.6
+    versionCode: 59
+    commit: 137b90e723a008c8f6b91764ce7a7185b1024e6f
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.7.0
+    versionCode: 60
+    commit: a8a17242abad7f0e0f7ac9bb440bde15927a5ff3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.0
-CurrentVersionCode: 40
+CurrentVersion: 1.7.0
+CurrentVersionCode: 60

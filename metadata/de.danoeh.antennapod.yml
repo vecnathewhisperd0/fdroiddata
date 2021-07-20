@@ -6,7 +6,7 @@ WebSite: https://antennapod.org
 SourceCode: https://github.com/AntennaPod/AntennaPod
 IssueTracker: https://github.com/AntennaPod/AntennaPod/issues
 Translation: https://www.transifex.com/antennapod/antennapod/
-Changelog: https://github.com/AntennaPod/AntennaPod/blob/develop/CHANGELOG.md
+Changelog: https://github.com/AntennaPod/AntennaPod/releases
 
 AutoName: AntennaPod
 
@@ -695,11 +695,45 @@ Builds:
     gradleprops:
       - freeBuild
 
+  - versionName: 2.1.2
+    versionCode: 2010295
+    commit: 2.1.2
+    subdir: app
+    init: sed -i '/playCompile/d' ../core/build.gradle
+    gradle:
+      - free
+    gradleprops:
+      - freeBuild
+
+  - versionName: 2.1.4
+    versionCode: 2010495
+    commit: 2.1.4
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -r -e '/play(Api|Implementation)/d' build.gradle ../core/build.gradle
+
+  - versionName: 2.2.0
+    versionCode: 2020095
+    commit: 2.2.0
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -r -e '/play(Api|Implementation)/d' build.gradle ../core/build.gradle
+
+  - versionName: 2.2.1
+    versionCode: 2020195
+    commit: 2.2.1
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -r -e '/play(Api|Implementation)/d' build.gradle ../core/build.gradle
+
 MaintainerNotes: |-
     Summary and Description have been moved to the new localizable text files:
     https://f-droid.org/docs/All_About_Descriptions_Graphics_and_Screenshots
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 2.1.1
-CurrentVersionCode: 2010195
+CurrentVersion: 2.2.1
+CurrentVersionCode: 2020195

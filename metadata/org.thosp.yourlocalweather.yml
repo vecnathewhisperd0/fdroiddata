@@ -709,7 +709,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 5.7.0
+    versionCode: 139
+    commit: v5.7.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 5.7.1
+    versionCode: 140
+    commit: v5.7.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 5.7.2
+    versionCode: 141
+    commit: v5.7.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 5.7.3
+    versionCode: 142
+    commit: v5.7.3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 5.6.4
-CurrentVersionCode: 138
+CurrentVersion: 5.7.3
+CurrentVersionCode: 142

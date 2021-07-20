@@ -1573,8 +1573,44 @@ Builds:
 
   - versionName: '7.34'
     versionCode: 434
-    disable: never gets published for some reason
+    disable: fails to verify
     commit: v7.34
+    subdir: wallet
+    init:
+      - cd ../..
+      - mv de.schildbach.wallet de.schildbach.wallet_underlying
+      - mkdir de.schildbach.wallet
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.wallet_underlying
+        de.schildbach.wallet
+      - cd de.schildbach.wallet/wallet
+    gradle:
+      - prod
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"4.4.1\" }' >>\
+        \ ../build.gradle"
+    scandelete:
+      - wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+  - versionName: '7.69'
+    versionCode: 469
+    commit: v7.69
+    subdir: wallet
+    init:
+      - cd ../..
+      - mv de.schildbach.wallet de.schildbach.wallet_underlying
+      - mkdir de.schildbach.wallet
+      - disorderfs --sort-dirents=yes --reverse-dirents=no de.schildbach.wallet_underlying
+        de.schildbach.wallet
+      - cd de.schildbach.wallet/wallet
+    gradle:
+      - prod
+    prebuild: "echo 'task wrapper(type: Wrapper) { gradleVersion = \"4.4.1\" }' >>\
+        \ ../build.gradle"
+    scandelete:
+      - wallet/test/de/schildbach/wallet/util/backup-protobuf-testnet
+
+  - versionName: '8.15'
+    versionCode: 815
+    commit: v8.15
     subdir: wallet
     init:
       - cd ../..
@@ -1592,3 +1628,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: None
+CurrentVersion: '8.15'
+CurrentVersionCode: 815

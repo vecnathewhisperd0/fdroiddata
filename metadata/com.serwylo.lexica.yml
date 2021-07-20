@@ -4,18 +4,9 @@ License: GPL-3.0-only
 SourceCode: https://github.com/lexica/lexica
 IssueTracker: https://github.com/lexica/lexica/issues
 Translation: https://hosted.weblate.org/projects/lexica
-Changelog: https://github.com/lexica/lexica/blob/HEAD/CHANGELOG.md
+Changelog: https://github.com/lexica/lexica/releases
 
 AutoName: Lexica
-Description: |-
-    A word game where you have 3 minutes to find as many words as possible on a grid
-    of random letters.
-
-    This is a fork of the unmaintained https://f-droid.org/packages/net.healeys.lexic which:
-
-    * Adds minor improvements to the UI
-    * Has better support for high resolution screens
-    * Removes the unsupported multiplayer options
 
 RepoType: git
 Repo: https://github.com/lexica/lexica
@@ -175,7 +166,91 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.0.0-alpha4
+    versionCode: 20003
+    commit: v2.0.0-alpha4
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0-alpha5
+    versionCode: 20004
+    commit: v2.0.0-alpha5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0-alpha6
+    versionCode: 20005
+    commit: v2.0.0-alpha6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.0.0
+    versionCode: 20006
+    commit: v2.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0
+    versionCode: 20007
+    commit: v2.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.0
+    versionCode: 20008
+    commit: v2.2.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.2.1
+    versionCode: 20009
+    commit: v2.2.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.3.0
+    versionCode: 20010
+    commit: v2.3.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.4.0
+    versionCode: 20011
+    commit: v2.4.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.4.1
+    versionCode: 20012
+    commit: 30e289b666fe9f2eea55337ff93b1fa49b62aebe
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.5.0
+    versionCode: 20013
+    commit: 5f8b8cb515d8482304753761dfe2a07975cbd205
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.5.1
+    versionCode: 20014
+    commit: 6855affd545ce905e888ce3d193badf2c534a5c4
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.0-alpha3
-CurrentVersionCode: 20002
+CurrentVersion: 2.5.1
+CurrentVersionCode: 20014

@@ -60,7 +60,7 @@ Builds:
     target: android-19
     build: make generate-libs BUILD_GPLV3_ZRTP=1
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: 2.4.0-fdroid
     versionCode: 2400
@@ -95,7 +95,7 @@ Builds:
       - submodules/mswebrtc/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java
     build: make generate-libs BUILD_GPLV3_ZRTP=1
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: 2.4.1-fdroid
     versionCode: 2411
@@ -130,7 +130,7 @@ Builds:
       - submodules/mswebrtc/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java
     build: make generate-libs BUILD_GPLV3_ZRTP=1
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: 2.5.0-fdroid
     versionCode: 2500
@@ -165,7 +165,7 @@ Builds:
       - submodules/mswebrtc/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java
     build: make generate-libs BUILD_GPLV3_ZRTP=1
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: 2.5.1-fdroid
     versionCode: 2510
@@ -200,7 +200,7 @@ Builds:
       - submodules/mswebrtc/webrtc/modules/video_capture/main/source/android/java/org/webrtc/videoengine/VideoCaptureDeviceInfoAndroid.java
     build: make generate-libs BUILD_GPLV3_ZRTP=1
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: 3.1.0-fdroid
     versionCode: 3100
@@ -239,7 +239,7 @@ Builds:
       - submodules/externals/mbedtls/tests/
     build: make generate-libs BUILD_GPLV3_ZRTP=1
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: 3.3.0
     versionCode: 3303
@@ -268,7 +268,7 @@ Builds:
       - make `pwd`/res/raw/rootca.pem
     ndk: r15c
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: 3.3.1
     versionCode: 3311
@@ -299,7 +299,7 @@ Builds:
       - make `pwd`/res/raw/rootca.pem
     ndk: r15c
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: 3.3.2
     versionCode: 3320
@@ -330,7 +330,7 @@ Builds:
       - make `pwd`/res/raw/rootca.pem
     ndk: r15c
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: 4.0.1
     versionCode: 4002
@@ -365,7 +365,7 @@ Builds:
       - make copy-libs
     ndk: r16b
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: '4.1'
     versionCode: 4124
@@ -404,7 +404,7 @@ Builds:
         linphone-sdk-android/
     ndk: r16b
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: 4.1.1
     versionCode: 4125
@@ -443,7 +443,7 @@ Builds:
         linphone-sdk-android/
     ndk: r16b
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: 4.2.1
     versionCode: 4215
@@ -485,7 +485,7 @@ Builds:
         linphone-sdk-android/
     ndk: r16b
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: 4.2.3
     versionCode: 4230
@@ -527,7 +527,7 @@ Builds:
         linphone-sdk-android/
     ndk: r16b
     antifeatures:
-      - nonfreedep
+      - NonFreeAdd
 
   - versionName: 4.3.0
     versionCode: 4300
@@ -617,10 +617,100 @@ Builds:
         app/libs/
     ndk: r16b
 
+  - versionName: 4.4.3
+    versionCode: 4403
+    commit: 4.4.3
+    timeout: 20000
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y doxygen pkgconf python3-pystache python3-six yasm
+      - apt-get install -y -t stretch-backports-sloppy libarchive13
+      - apt-get install -y -t stretch-backports cmake
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/linphone-android-release-*.apk
+    srclibs:
+      - linphone-sdk@4.5.15
+    rm:
+      - app/src/main/java/org/linphone/firebase/Firebase*.java
+      - app/google-services.json
+      - sample
+    prebuild:
+      - sed -i -e '/google-services/d' build.gradle
+      - sed -i -e '/keystore/d' -e '/repositories/,+9d' -e 's/${project.version}/$$VERSION$$/g'
+        -e '/com.google.gms.google-services/d' -e '/org.linphone\:linphone-sdk-android/d'
+        -e "/bumptech/aimplementation\ fileTree(include\:\ ['linphone-sdk-android-release.aar'],\
+        dir\:\ 'libs')" app/build.gradle
+      - sed -i -e 's|"kill_service_with_task_manager">true<|"kill_service_with_task_manager">false<|'
+        -e 's|"check_for_update_when_app_starts">true<|"check_for_update_when_app_starts">false<|'
+        app/src/main/res/values/non_localizable_custom.xml
+      - sed -i -e 's!https://www.linphone.org/releases!!' app/src/main/res/raw/linphonerc_default
+    scanignore:
+      - app/build.gradle
+    build:
+      - pushd $$linphone-sdk$$
+      - git submodule update --init --recursive
+      - mkdir build-sdk
+      - cd build-sdk
+      - cmake .. -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS="arm64,
+        armv7, x86, x86_64" -DCMAKE_BUILD_TYPE=Release
+      - cmake --build . --parallel $(nproc)
+      - popd
+      - mkdir app/libs
+      - cp $$linphone-sdk$$/build-sdk/linphone-sdk/bin/outputs/aar/linphone-sdk-android-release.aar
+        app/libs/
+      - rm -rf $$linphone-sdk$$/build-sdk/
+    ndk: r21e
+
+  - versionName: 4.4.4
+    versionCode: 4404
+    commit: 4.4.4
+    timeout: 20000
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y doxygen pkgconf python3-pystache python3-six yasm
+      - apt-get install -y -t stretch-backports-sloppy libarchive13
+      - apt-get install -y -t stretch-backports cmake
+    gradle:
+      - yes
+    output: app/build/outputs/apk/release/linphone-android-release-*.apk
+    srclibs:
+      - linphone-sdk@4.5.24
+    rm:
+      - app/src/main/java/org/linphone/firebase/Firebase*.java
+      - app/google-services.json
+      - sample
+    prebuild:
+      - sed -i -e '/google-services/d' build.gradle
+      - sed -i -e '/keystore/d' -e '/repositories/,+9d' -e 's/${project.version}/$$VERSION$$/g'
+        -e '/com.google.gms.google-services/d' -e '/org.linphone\:linphone-sdk-android/d'
+        -e "/bumptech/aimplementation\ fileTree(include\:\ ['linphone-sdk-android-release.aar'],\
+        dir\:\ 'libs')" app/build.gradle
+      - sed -i -e 's|"kill_service_with_task_manager">true<|"kill_service_with_task_manager">false<|'
+        -e 's|"check_for_update_when_app_starts">true<|"check_for_update_when_app_starts">false<|'
+        app/src/main/res/values/non_localizable_custom.xml
+      - sed -i -e 's!https://www.linphone.org/releases!!' app/src/main/res/raw/linphonerc_default
+    scanignore:
+      - app/build.gradle
+    build:
+      - pushd $$linphone-sdk$$
+      - git submodule update --init --recursive
+      - mkdir build-sdk
+      - cd build-sdk
+      - cmake .. -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS="arm64,
+        armv7, x86" -DCMAKE_BUILD_TYPE=Release
+      - cmake --build . --parallel $(nproc)
+      - popd
+      - mkdir app/libs
+      - cp $$linphone-sdk$$/build-sdk/linphone-sdk/bin/outputs/aar/linphone-sdk-android-release.aar
+        app/libs/
+      - rm -rf $$linphone-sdk$$/build-sdk/
+    ndk: r21e
+
 MaintainerNotes: Main repo for linphone-sdk is upstreams private Gitlab instance with
     submodules, should we switch the main Repo link too?
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 4.3.1
-CurrentVersionCode: 4310
+CurrentVersion: 4.4.4
+CurrentVersionCode: 4404

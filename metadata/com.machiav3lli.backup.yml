@@ -80,7 +80,49 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 5.0.0
+    versionCode: 5000
+    commit: 5.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 5.0.1
+    versionCode: 5001
+    commit: 5.0.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 5.0.2
+    versionCode: 5002
+    commit: 5.0.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 5.1.0
+    versionCode: 5100
+    commit: 5.1.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 6.0.0
+    versionCode: 6000
+    commit: 6.0.0
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 6.0.1
+    versionCode: 6001
+    commit: 6.0.1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 4.0.0
-CurrentVersionCode: 4000
+CurrentVersion: 6.0.1
+CurrentVersionCode: 6001

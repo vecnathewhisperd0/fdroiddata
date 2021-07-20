@@ -342,7 +342,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.64'
+    versionCode: 88
+    commit: '1.64'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.65'
+    versionCode: 89
+    commit: '1.65'
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.66'
+    versionCode: 90
+    commit: 1dd91af93781005a2ddc7de9b5a10abe8aee14c1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '1.63'
-CurrentVersionCode: 87
+CurrentVersion: '1.66'
+CurrentVersionCode: 90

@@ -6,6 +6,7 @@ Categories:
 License: GPL-3.0-only
 SourceCode: https://github.com/twireapp/Twire
 IssueTracker: https://github.com/twireapp/Twire/issues
+Translation: https://hosted.weblate.org/engage/twire
 Changelog: https://github.com/twireapp/Twire/releases
 
 AutoName: Twire
@@ -146,7 +147,14 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.9.3
+    versionCode: 523
+    commit: v2.9.3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.9.2
-CurrentVersionCode: 522
+CurrentVersion: 2.9.3
+CurrentVersionCode: 523

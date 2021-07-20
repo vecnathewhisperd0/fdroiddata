@@ -18,7 +18,7 @@ Description: |-
     Includes basic functionality for browsing the old entries. Available in English,
     Catalan and Spanish.
 
-    Forked from [https://git.savannah.gnu.org/cgit/diary.git] Updated for android 4
+    Forked from <a href="https://git.savannah.gnu.org/cgit/diary.git">https://git.savannah.gnu.org/cgit/diary.git</a> Updated for android 4
     and later.
 
 RepoType: git
@@ -457,7 +457,49 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.73'
+    versionCode: 173
+    commit: v1.73
+    gradle:
+      - yes
+
+  - versionName: '1.74'
+    versionCode: 174
+    commit: v1.74
+    gradle:
+      - yes
+
+  - versionName: '1.75'
+    versionCode: 175
+    commit: v1.75
+    gradle:
+      - yes
+
+  - versionName: '1.76'
+    versionCode: 176
+    commit: v1.76
+    gradle:
+      - yes
+
+  - versionName: '1.77'
+    versionCode: 177
+    commit: v1.77
+    gradle:
+      - yes
+
+  - versionName: '1.78'
+    versionCode: 178
+    commit: v1.78
+    gradle:
+      - yes
+
+  - versionName: '1.79'
+    versionCode: 179
+    commit: 8177ddf336a6ad80e3452eb01aff38b3144c7d9a
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.72'
-CurrentVersionCode: 172
+CurrentVersion: '1.79'
+CurrentVersionCode: 179

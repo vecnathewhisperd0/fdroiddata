@@ -102,10 +102,20 @@ Builds:
       - regular
     ndk: r16b
 
-  - versionName: 1.1.7
-    versionCode: 1010704
-    disable: fails to build
-    commit: v1.1.7
+  - versionName: 1.1.8
+    versionCode: 1010803
+    disable: unknown maven
+    commit: v1.1.8
+    subdir: app
+    submodules: true
+    gradle:
+      - regular
+    ndk: r16b
+
+  - versionName: 1.1.9
+    versionCode: 1010901
+    disable: contains binaries https://github.com/Staacks/phyphox-android/issues/18
+    commit: v1.1.9
     subdir: app
     submodules: true
     gradle:
@@ -114,5 +124,5 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.7
-CurrentVersionCode: 1010704
+CurrentVersion: 1.1.9
+CurrentVersionCode: 1010901

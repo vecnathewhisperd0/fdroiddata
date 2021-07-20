@@ -166,7 +166,21 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
+  - versionName: 1.0.25
+    versionCode: 27
+    commit: v1.0.25
+    submodules: true
+    gradle:
+      - yes
+
+  - versionName: 1.0.26
+    versionCode: 28
+    commit: f9fef2a21cb09dd84d5132f79964cbb3a0985d95
+    submodules: true
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.24
-CurrentVersionCode: 26
+CurrentVersion: 1.0.26
+CurrentVersionCode: 28

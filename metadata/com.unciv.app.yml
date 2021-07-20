@@ -809,16 +809,6 @@ Builds:
       - desktop
     prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
 
-  - versionName: 3.11.3
-    versionCode: 484
-    commit: 3.11.3
-    subdir: android
-    gradle:
-      - yes
-    rm:
-      - desktop
-    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
-
   - versionName: 3.11.3-patch1
     versionCode: 484
     commit: 3.11.3-patch1
@@ -1109,9 +1099,593 @@ Builds:
       - desktop
     prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/yairm210/Unciv/master/buildSrc/src/main/kotlin/BuildConfig.kt|appCodeNumber
-    = (.*)|.|appVersion = "(.*)"
-CurrentVersion: 3.12.5
-CurrentVersionCode: 516
+  - versionName: 3.12.6
+    versionCode: 517
+    commit: 3.12.6
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.7
+    versionCode: 518
+    commit: 3.12.7
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.7-patch1
+    versionCode: 519
+    commit: 3.12.7-patch1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.8
+    versionCode: 520
+    commit: 3.12.8
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.9
+    versionCode: 521
+    commit: 3.12.9
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.9-patch1
+    versionCode: 522
+    commit: 3.12.9-patch1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.9-patch2
+    versionCode: 523
+    commit: 3.12.9-patch2
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.10
+    versionCode: 524
+    commit: 3.12.10
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.11
+    versionCode: 525
+    commit: 3.12.11
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.11-patch1
+    versionCode: 526
+    commit: 3.12.11-patch1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.12
+    versionCode: 527
+    commit: 3.12.12
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.13
+    versionCode: 528
+    commit: 3.12.13
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.12.13-patch1
+    versionCode: 529
+    commit: 3.12.13-patch1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.0
+    versionCode: 531
+    commit: 3.13.0
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.1
+    versionCode: 532
+    commit: 3.13.1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.2
+    versionCode: 533
+    commit: 3.13.2
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.3
+    versionCode: 534
+    commit: 3.13.3
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.3-patch2
+    versionCode: 536
+    commit: 3.13.3-patch2
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.4
+    versionCode: 537
+    commit: 3.13.4
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.5
+    versionCode: 538
+    commit: 3.13.5
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.5-patch1
+    versionCode: 539
+    commit: 3.13.5-patch1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.5-patch2
+    versionCode: 540
+    commit: 3.13.5-patch2
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.6
+    versionCode: 541
+    commit: 3.13.6
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.6-patch1
+    versionCode: 542
+    commit: 3.13.6-patch1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.7
+    versionCode: 543
+    commit: 3.13.7
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.7-patch2
+    versionCode: 545
+    commit: 3.13.7-patch2
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.8
+    versionCode: 546
+    commit: 3.13.8
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.9
+    versionCode: 547
+    commit: 3.13.9
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.10
+    versionCode: 548
+    commit: 3.13.10
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.11
+    versionCode: 549
+    commit: 3.13.11
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.11-patch1
+    versionCode: 550
+    commit: 3.13.11-patch1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.11-patch2
+    versionCode: 551
+    commit: 3.13.11-patch2
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.12
+    versionCode: 552
+    commit: 3.13.12
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.12-patch1
+    versionCode: 553
+    commit: 3.13.12-patch1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.13.13
+    versionCode: 554
+    commit: 3.13.13
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.0
+    versionCode: 555
+    commit: 3.14.0
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.1
+    versionCode: 556
+    commit: 3.14.1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.2
+    versionCode: 557
+    commit: 3.14.2
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.3
+    versionCode: 558
+    commit: 3.14.3
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.3-patch1
+    versionCode: 559
+    commit: 86fafd59db691057b5e177958f200aaa670bfca6
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.4
+    versionCode: 560
+    commit: 3.14.4
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.5
+    versionCode: 561
+    commit: 3.14.5
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.6-patch1
+    versionCode: 563
+    commit: 3.14.6-patch1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.6-patch2
+    versionCode: 564
+    commit: 3.14.6-patch2
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sed -i -e '/maven.aliyun.com/d' ../build.gradle.kts
+
+  - versionName: 3.14.15
+    versionCode: 576
+    commit: 3.14.15-forFdroid
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.14.16
+    versionCode: 577
+    commit: 3.14.16
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.0
+    versionCode: 578
+    commit: 3.15.0
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.1
+    versionCode: 580
+    commit: 3.15.1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.2-patch1
+    versionCode: 582
+    commit: 8f19c27e036f1064efca38eb1618631d511b720c
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.3
+    versionCode: 583
+    commit: 837d78db21f23b679738b37b4653d39dfce71487
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.4
+    versionCode: 584
+    commit: 74e3b67afe8d40fb555d919674d49553eafdf833
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.5
+    versionCode: 585
+    commit: 7b7101b0b708b29c3b7b91d872e2e7c9732ec695
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.6
+    versionCode: 587
+    commit: 0b6510a39cc89393e713e9c81c3da5b48c45a270
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.7
+    versionCode: 588
+    commit: 95ae1cea3052e11f6efa4e4e69d3505340a8c788
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.8
+    versionCode: 589
+    commit: b748f92bb5cac27d5c86075b8498b13c7a273a63
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.9
+    versionCode: 590
+    commit: ecd5ae5128630bfc27f3fb35af24042836ae2843
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.10
+    versionCode: 591
+    commit: 5a0eb11bd0d1f0e10160c86116642c524b9b59ba
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.11
+    versionCode: 592
+    commit: 573eacb8c9135de207ce9c75a5fad447cf3522b1
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.12
+    versionCode: 593
+    commit: 6b73a3e9d7fb8819f1761688db9d7500118c1967
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 3.15.12-patch1
+    versionCode: 594
+    commit: 60bcc8f1cf29f4bd8a53b9506d746bb4468adc01
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+UpdateCheckData: buildSrc/src/main/kotlin/BuildConfig.kt|appCodeNumber = (.*)|.|appVersion
+    = "(.*)"
+CurrentVersion: 3.15.12-patch1
+CurrentVersionCode: 594

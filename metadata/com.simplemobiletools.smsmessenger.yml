@@ -1,6 +1,6 @@
 Categories:
   - System
-License: Apache-2.0
+License: GPL-3.0-only
 AuthorName: Tibor Kaputa
 AuthorEmail: hello@simplemobiletools.com
 WebSite: https://simplemobiletools.com
@@ -153,7 +153,79 @@ Builds:
       - yes
     prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
 
+  - versionName: 5.8.0
+    versionCode: 25
+    commit: 5.8.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.8.1
+    versionCode: 26
+    commit: 5.8.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.8.2
+    versionCode: 27
+    commit: 5.8.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.8.3
+    versionCode: 28
+    commit: 5.8.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.9.0
+    versionCode: 29
+    commit: 5.9.0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.9.1
+    versionCode: 30
+    commit: 5.9.1
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.9.2
+    versionCode: 31
+    commit: 5.9.2
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.9.3
+    versionCode: 33
+    commit: 5.9.3
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
+  - versionName: 5.9.4
+    versionCode: 34
+    commit: 5.9.4
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/keystore.*{/,/}/d; /keystore/d' build.gradle
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 5.7.0
-CurrentVersionCode: 23
+CurrentVersion: 5.9.4
+CurrentVersionCode: 34

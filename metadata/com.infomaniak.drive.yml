@@ -1,0 +1,77 @@
+AntiFeatures:
+  - NonFreeNet
+  - Tracking
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: Infomaniak
+WebSite: https://www.infomaniak.com
+SourceCode: https://github.com/Infomaniak/android-kDrive
+IssueTracker: https://contact.infomaniak.com
+
+AutoName: kDrive
+
+RepoType: git
+Repo: https://github.com/Infomaniak/android-kDrive.git
+
+Builds:
+  - versionName: 4.0.11
+    versionCode: 40001101
+    commit: 4.0.11
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 4.0.12
+    versionCode: 40001201
+    commit: f409f3bcac905cf9f71cfb9ff8c39895b86d3fca
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 4.0.13
+    versionCode: 40001301
+    commit: 846e69efd84b2a672cd2da1c1887d8d3e1267365
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 4.0.14
+    versionCode: 40001401
+    commit: 70066353e2a34f194d7252a4ea506ce40e45fcaf
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 4.0.15
+    versionCode: 40001501
+    commit: 7b69192485ee31b2b97037b27614a4e4e3d73eb1
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 4.0.16
+    versionCode: 40001601
+    commit: b65d0bdc10edc8531671eb166d2a8c68eadff3dd
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+  - versionName: 4.0.17
+    versionCode: 40001701
+    commit: 2ac4147849066ee4d8dccf2fbf6701c47f243c40
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 4.0.17
+CurrentVersionCode: 40001701

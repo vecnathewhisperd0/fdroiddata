@@ -68,7 +68,16 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '3.2'
+    versionCode: 32
+    commit: '3.2'
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/src/main/java/foehnix/widget/DSPTask.java.gz
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: '3.0'
-CurrentVersionCode: 30
+CurrentVersion: '3.2'
+CurrentVersionCode: 32

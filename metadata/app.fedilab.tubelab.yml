@@ -127,7 +127,37 @@ Builds:
     gradle:
       - fdroid_full
 
-AutoUpdateMode: Version %v
+  - versionName: 1.12.1
+    versionCode: 37
+    disable: download of prebuild JARs
+    commit: 1.12.1
+    subdir: app
+    gradle:
+      - fdroid_full
+    rm:
+      - torrentStream/libs/jlibtorrent-*.jar
+
+  - versionName: 1.13.0
+    versionCode: 38
+    disable: download of prebuild JARs
+    commit: 1.13.0
+    subdir: app
+    gradle:
+      - fdroid_full
+    rm:
+      - torrentStream/libs/jlibtorrent-*.jar
+
+  - versionName: 1.13.1
+    versionCode: 39
+    disable: download of prebuild JARs
+    commit: 1.13.1
+    subdir: app
+    gradle:
+      - fdroid_full
+    rm:
+      - torrentStream/libs/jlibtorrent-*.jar
+
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 1.10.2
-CurrentVersionCode: 33
+CurrentVersion: 1.13.1
+CurrentVersionCode: 39
