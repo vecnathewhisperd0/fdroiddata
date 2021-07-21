@@ -723,7 +723,6 @@ Builds:
       - linphone-sdk@5.0.1
     rm:
       - app/google-services.json
-      - sample
     prebuild:
       - sed -i -e '/google-services/d' build.gradle
       - sed -i -e '/keystore/d' -e '/repositories/,+9d' -e 's/${project.version}/$$VERSION$$/g'
