@@ -722,7 +722,6 @@ Builds:
     srclibs:
       - linphone-sdk@5.0.1
     rm:
-      - app/src/main/java/org/linphone/firebase/Firebase*.java
       - app/google-services.json
       - sample
     prebuild:
@@ -740,6 +739,7 @@ Builds:
     build:
       - pushd $$linphone-sdk$$
       - git submodule update --init --recursive
+      - rm liblinphone/wrappers/java/classes/org/linphone/core/tools/firebase/Firebase*.java
       - mkdir build-sdk
       - cd build-sdk
       - cmake .. -DLINPHONESDK_PLATFORM=Android -DLINPHONESDK_ANDROID_ARCHS="arm64,
