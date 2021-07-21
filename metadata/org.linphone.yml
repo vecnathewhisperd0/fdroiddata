@@ -707,9 +707,9 @@ Builds:
       - rm -rf $$linphone-sdk$$/build-sdk/
     ndk: r21e
 
-  - versionName: 4.5.0
-    versionCode: 4500
-    commit: 4.5.0
+  - versionName: 4.5.1
+    versionCode: 4510
+    commit: 4.5.1
     timeout: 20000
     sudo:
       - apt-get update || apt-get update
@@ -720,7 +720,7 @@ Builds:
       - yes
     output: app/build/outputs/apk/release/linphone-android-release-*.apk
     srclibs:
-      - linphone-sdk@5.0.0
+      - linphone-sdk@5.0.1
     rm:
       - app/src/main/java/org/linphone/firebase/Firebase*.java
       - app/google-services.json
@@ -757,5 +757,5 @@ MaintainerNotes: Main repo for linphone-sdk is upstreams private Gitlab instance
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 4.5.0
-CurrentVersionCode: 4500
+CurrentVersion: 4.5.1
+CurrentVersionCode: 4510
