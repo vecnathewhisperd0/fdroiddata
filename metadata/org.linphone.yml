@@ -725,10 +725,10 @@ Builds:
       - app/google-services.json
     prebuild:
       - sed -i -e '/google-services/d' build.gradle
-      - sed -i -e '/keystore/d' -e '/repositories/,+9d' -e 's/${project.version}/$$VERSION$$/g'
+      - sed -i -e '/keystore/d' -e '/repositories/,+17d' -e 's/${project.version}/$$VERSION$$/g'
         -e '/com.google.gms.google-services/d' -e '/org.linphone\:linphone-sdk-android/d'
-        -e "/bumptech/aimplementation\ fileTree(include\:\ ['linphone-sdk-android-release.aar'],\
-        dir\:\ 'libs')" app/build.gradle
+        -e "/implementation\ 'com\.github\.bumptech/aimplementation\ fileTree(include\:\ ['linphone-sdk-android-release.aar'],\ dir\:\ 'libs')"
+        app/build.gradle
       - sed -i -e 's|"kill_service_with_task_manager">true<|"kill_service_with_task_manager">false<|'
         -e 's|"check_for_update_when_app_starts">true<|"check_for_update_when_app_starts">false<|'
         app/src/main/res/values/non_localizable_custom.xml
