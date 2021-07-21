@@ -1,0 +1,27 @@
+Categories:
+  - Connectivity
+License: GPL-2.0-only
+AuthorName: Christian Beier
+AuthorEmail: contact@christianbeier.net
+AuthorWebSite: https://christianbeier.net
+SourceCode: https://github.com/bk138/droidVNC-NG
+IssueTracker: https://github.com/bk138/droidVNC-NG/issues
+Changelog: https://github.com/bk138/droidVNC-NG/releases
+
+RepoType: git
+Repo: https://github.com/bk138/droidVNC-NG.git
+
+Builds:
+  - versionName: 1.1.0
+    versionCode: 4
+    commit: v1.1.0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    ndk: r21e
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.1.0
+CurrentVersionCode: 4
