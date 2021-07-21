@@ -727,9 +727,10 @@ Builds:
       - sed -i -e '/google-services/d' build.gradle
       - sed -i -e '/keystore/d' -e '/repositories/,+17d' -e 's/${project.version}/$$VERSION$$/g'
         -e '/com.google.gms.google-services/d' -e '/org.linphone\:linphone-sdk-android/d'
-        -e "/implementation\ 'com\.github\.bumptech/aimplementation\ fileTree(include\:\ ['linphone-sdk-android-release.aar'],\ dir\:\ 'libs')"
-        app/build.gradle
-      - sed -i -e 's!https://www.linphone.org/releases!!' -e 's|push_notification=.*|push_notification=0|' app/src/main/assets/linphonerc_default
+        -e "/implementation\ 'com\.github\.bumptech/aimplementation\ fileTree(include\:\
+        ['linphone-sdk-android-release.aar'],\ dir\:\ 'libs')" app/build.gradle
+      - sed -i -e 's!https://www.linphone.org/releases!!' -e 's|push_notification=.*|push_notification=0|'
+        app/src/main/assets/linphonerc_default
     scanignore:
       - app/build.gradle
     build:
