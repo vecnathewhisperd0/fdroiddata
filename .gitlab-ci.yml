@@ -23,16 +23,16 @@ checkupdates:
   script:
     # if this is a merge request fork, then only check relevant apps
     - export EXITVALUE=0
-    - function set_error() { export EXITVALUE=1; printf "\x1b[31mERROR `history|tail -2|head -1|cut -b 6-500`\x1b[0m\n"; }
+    - function set_error() { export EXITVALUE=1; printf "\x1b[31mERROR %s\x1b[0m\n" "$(history|tail -2|head -1|cut -b 6-500)"; }
     - if [ "$CI_PROJECT_NAMESPACE" != "fdroid" ]; then
         git fetch https://gitlab.com/fdroid/fdroiddata.git;
-        files=`git diff --name-only --diff-filter=d FETCH_HEAD...HEAD`;
+        files=$(git diff --name-only --diff-filter=d FETCH_HEAD...HEAD);
         for f in $files; do
-          appid=`echo $f | sed -n -e 's,^metadata/\([^/][^/]*\)\.yml,\1,p'`;
+          appid=$(echo "$f" | sed -n -e 's,^metadata/\([^/][^/]*\)\.yml,\1,p');
           if [ -n "$appid" ]; then
-            fdroid checkupdates --auto -v $appid || set_error;
+            fdroid checkupdates --auto -v "$appid" || set_error;
             git --no-pager diff --color=always;
-            diff=`git --no-pager diff`;
+            diff=$(git --no-pager diff);
             [[ $diff == '' ]] || set_error;
             git checkout .;
           fi;
