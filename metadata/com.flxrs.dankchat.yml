@@ -444,7 +444,127 @@ Builds:
       - yes
     ndk: r21e
 
+  - versionName: 2.7.6
+    versionCode: 189
+    commit: v2.7.6
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.7.9
+    versionCode: 192
+    commit: v2.7.9
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.7.10
+    versionCode: 193
+    commit: v2.7.10
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.7.12
+    versionCode: 195
+    commit: 4122f5c3e7eaf175d65e16a94637771abd304501
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.7.14
+    versionCode: 197
+    commit: 02c0d86b73e80dd548ec95ebeb00bfb6f9667e9a
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.7.15
+    versionCode: 198
+    commit: c7d83334147f7b07ac9ba13c93e2316b2434028f
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.7.16
+    versionCode: 199
+    commit: 11c01f1f991c29a52bf9bde461f1b81333a0f5ba
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.8.0
+    versionCode: 200
+    commit: 2664ec8da6a7bbe30fc130fb291dbffd3a44db19
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.8.1
+    versionCode: 201
+    commit: 6ff653d8489693837b642692511f7f4501086dfc
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.8.2
+    versionCode: 202
+    commit: 32dded0317802fbc5064e40ccb4da5339f1a0741
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v
-CurrentVersion: 2.7.5
-CurrentVersionCode: 188
+CurrentVersion: 2.8.2
+CurrentVersionCode: 202

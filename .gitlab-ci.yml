@@ -29,19 +29,18 @@ lint:
            appid=`echo $f | sed -n -e 's,^metadata/\([^/][^/]*\)\.yml,\1,p'`;
            if [ -n "$appid" ]; then
              export CHANGED="$CHANGED $appid";
-             testcmd="git -C build clone `sed -En 's,^Repo\W +(https?://),\1u:p@,p' $f`";
            fi;
         done;
         set -x;
         apt-get install python3-colorama yamllint;
         for f in $files; do [[ $f == *'.yml' ]] && yamllint "$f"; done;
         ./tools/check-git-repo-availability.py $files;
-        ./tools/audit-gradle.py $CHANGED;
         set +x;
       fi
     - export EXITVALUE=0
+    - function set_error() { export EXITVALUE=1; printf "\x1b[31mERROR `history|tail -2|head -1|cut -b 6-500`\x1b[0m\n"; }
     - fdroid lint -f $CHANGED || {
-          export EXITVALUE=1;
+          set_error;
           printf "\nThese files have lint issues:\n";
           fdroid rewritemeta -l $CHANGED;
           printf "\nThese are the formatting issues:\n";
@@ -53,11 +52,11 @@ lint:
     - find metadata/ -name '*.jp*g' -o -name '*.png' | xargs exiftool -all=
     - echo "these images have EXIF that must be stripped:"
     - git --no-pager diff --stat
-    - git --no-pager diff --name-only --exit-code || export EXITVALUE=1
-    - ./tools/check-localized-metadata.py || export EXITVALUE=1
-    - ./tools/check-keyalias-collision.py || export EXITVALUE=1
-    - ./tools/check-metadata-summary-whitespace.py || export EXITVALUE=1
-    - ./tools/check-for-unattached-signatures.py || export EXITVALUE=1
+    - git --no-pager diff --name-only --exit-code || set_error
+    - ./tools/check-localized-metadata.py || set_error
+    - ./tools/check-keyalias-collision.py || set_error
+    - ./tools/check-metadata-summary-whitespace.py || set_error
+    - ./tools/check-for-unattached-signatures.py || set_error
     - exit $EXITVALUE
 
 trigger-issuebot:
@@ -199,8 +198,8 @@ fdroid build:
           test -d $d || mkdir $d;
           chown -R vagrant $d;
       done
-    - ln -s $ANDROID_HOME $VAGRANT_HOME/android-sdk
-    - export ANDROID_HOME=$VAGRANT_HOME/android-sdk
+    - mv $CI_PROJECT_DIR/build $VAGRANT_HOME/
+    - ln -s $VAGRANT_HOME/build $CI_PROJECT_DIR/build
 
     - bash fdroidserver/buildserver/setup-env-vars $ANDROID_HOME
     - bash fdroidserver/buildserver/provision-gradle
@@ -246,6 +245,8 @@ fdroid build:
           apt-get install sudo;
           $fdroid publish --verbose $build;
       done
+
+    - ./tools/audit-gradle.py $CHANGED;
 
 
 # issuebot needs secrets to run, so it has to run under the 'fdroid'

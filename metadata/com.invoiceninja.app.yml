@@ -140,9 +140,9 @@ Builds:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter build apk
 
-  - versionName: 5.0.51
-    versionCode: 51
-    commit: v5.0.51
+  - versionName: 5.0.52
+    versionCode: 52
+    commit: fd4343c79d4cf7bc98813a1ac58084380dcc8d5c
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@2.0.5
@@ -164,9 +164,10 @@ Builds:
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter build apk
+    ndk: r20
 
-AutoUpdateMode: Version v%v
-UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/invoiceninja/admin-portal/master/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 5.0.51
-CurrentVersionCode: 51
+AutoUpdateMode: Version
+UpdateCheckMode: Tags ^v.*$
+UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 5.0.52
+CurrentVersionCode: 52
