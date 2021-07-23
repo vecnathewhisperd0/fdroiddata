@@ -12,14 +12,14 @@ RepoType: git
 Repo: https://github.com/fredhappyface/android.EweSticker
 
 Builds:
-  - versionName: 2021.07.14
-    versionCode: 20210714
-    commit: '20210714'
+  - versionName: 2021.07.23
+    versionCode: 20210723
+    commit: '20210723'
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version %c
 UpdateCheckMode: Tags
-CurrentVersion: 2021.07.14
-CurrentVersionCode: 20210714
+CurrentVersion: 2021.07.23
+CurrentVersionCode: 20210723
