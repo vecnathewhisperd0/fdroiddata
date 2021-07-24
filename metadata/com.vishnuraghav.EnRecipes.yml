@@ -21,7 +21,7 @@ Builds:
     versionCode: 1
     commit: v2.0.0
     sudo:
-      - rm -rf "$(find /opt/android-sdk/ndk -maxdepth 1 -type d \( ! -name ndk \)
+      - rm -rf "$(find "$(echo $$NDK$$ | rev | cut -d'/' -f 2- | rev)" -maxdepth 1 -type d \( ! -name ndk \)
         \( ! -name 20.1.5948944 \) -print)"
       - apt-get update || apt-get update
       - apt-get install -y lib32z1
