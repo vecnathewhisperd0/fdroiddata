@@ -542,6 +542,25 @@ Builds:
       - cd ../android
       - ./ab.sh
 
+  - versionName: 1.11.3
+    versionCode: 110030000
+    commit: v1.11.3
+    subdir: android
+    submodules: true
+    gradle:
+      - yes
+    output: build/outputs/apk/normal/release/android-normal-release-unsigned.apk
+    rm:
+      - dx9sdk
+      - gradle
+    scanignore:
+      - android/libs/com.bda.controller.jar
+      - ext/armips/Tests
+      - ext/vulkan/libvulkan.so
+      - ffmpeg
+      - pspautotests
+    build: gradle assembleRelease -Pf_droid
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags
 VercodeOperation: '%c*10'
