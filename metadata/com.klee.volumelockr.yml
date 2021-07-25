@@ -1,0 +1,27 @@
+Categories:
+  - System
+  - Multimedia
+License: GPL-3.0-or-later
+AuthorName: Jonathan Klee
+AuthorEmail: klee.jonathan@protonmail.com
+WebSite: https://github.com/jonathanklee/VolumeLockr
+SourceCode: https://github.com/jonathanklee/VolumeLockr
+IssueTracker: https://github.com/jonathanklee/VolumeLockr/issues
+
+AutoName: VolumeLockr
+
+RepoType: git
+Repo: https://github.com/jonathanklee/VolumeLockr
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: main
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
