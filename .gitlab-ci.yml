@@ -23,8 +23,7 @@ checkupdates:
   script:
     # if this is a merge request fork, then only check relevant apps
     - export EXITVALUE=0
-    - set_error() { export EXITVALUE=1; printf "\x1b[31mERROR %s\x1b[0m
-" "$(history|tail -2|head -1|cut -b 6-500)"; }
+    - set_error() { export EXITVALUE=1; printf "\x1b[31mERROR %s\x1b[0m" "$(history|tail -2|head -1|cut -b 6-500)"; }
     - if [ "$CI_PROJECT_NAMESPACE" != "fdroid" ]; then
         git fetch https://gitlab.com/fdroid/fdroiddata.git;
         files=$(git diff --name-only --diff-filter=d FETCH_HEAD...HEAD);
