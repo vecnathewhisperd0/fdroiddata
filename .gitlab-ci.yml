@@ -27,7 +27,7 @@ checkupdates:
     for f in $(git diff --name-only --diff-filter=d FETCH_HEAD...HEAD); do
       appid=$(echo "$f" | sed -n -e 's,^metadata/\([^/][^/]*\)\.yml,\1,p')
       if [ -n "$appid" ]; then
-        fdroid checkupdates --auto -v "$appid" || exit 1
+        fdroid checkupdates --auto -v "$appid"
         git --no-pager diff --color=always --exit-code
         git checkout .
       fi
