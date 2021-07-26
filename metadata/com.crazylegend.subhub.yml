@@ -1,8 +1,10 @@
+AntiFeatures:
+  - NonFreeNet
 Categories:
   - Multimedia
 License: GPL-3.0-only
 AuthorName: FunkyMuse
-AuthorWebSite: https://funkymuse.dev/
+AuthorWebSite: https://funkymuse.dev
 SourceCode: https://github.com/FunkyMuse/SubHub
 IssueTracker: https://github.com/FunkyMuse/SubHub/issues
 Changelog: https://github.com/FunkyMuse/SubHub/releases
@@ -21,7 +23,7 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version %v
+AutoUpdateMode: Version
 UpdateCheckMode: Tags
 CurrentVersion: 1.0.0
 CurrentVersionCode: 1
