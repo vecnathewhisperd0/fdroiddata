@@ -27,7 +27,6 @@ Builds:
       - core/src/main/cpp/mbedtls/tests
       - core/src/main/cpp/mbedtls/crypto/tests
       - core/src/main/cpp/openvpn3/test
-    prebuild: sed -i -e '/gms/d' ../build.gradle
     ndk: r21e
 
 AutoUpdateMode: Version
