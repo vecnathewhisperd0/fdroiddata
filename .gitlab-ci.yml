@@ -25,7 +25,7 @@ checkupdates:
     set -xe
     if [ "$CI_PROJECT_NAMESPACE" = "fdroid" ]; then echo "not testing in fdroid"; exit 0; fi
     git fetch https://gitlab.com/fdroid/fdroiddata.git
-    appids=$(git diff --name-only origin/master metadata/*.yml | sed -n -e 's,^metadata/\([^/][^/]*\)\.yml,\1,p')
+    appids=$(git diff --name-only --diff-filter=d FETCH_HEAD...HEAD metadata/*.yml | sed -n -e 's,^metadata/\([^/][^/]*\)\.yml,\1,p')
     if [ -n "$appids" ]; then
       fdroid checkupdates --auto -v $appids
       git --no-pager diff --color=always --exit-code
