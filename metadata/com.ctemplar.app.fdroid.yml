@@ -153,7 +153,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.4.9
+    versionCode: 22
+    commit: v1.4.9-fdroid
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.5.0
+    versionCode: 23
+    commit: d064dde93116268c4430c72035fc2d6e9022c0cc
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v-fdroid
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.8
-CurrentVersionCode: 21
+CurrentVersion: 1.5.0
+CurrentVersionCode: 23

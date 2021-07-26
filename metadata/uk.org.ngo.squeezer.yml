@@ -57,7 +57,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.2.5
+    versionCode: 100
+    commit: 2.2.5
+    subdir: Squeezer
+    gradle:
+      - yes
+
+  - versionName: 2.2.6
+    versionCode: 101
+    commit: 2.2.6
+    subdir: Squeezer
+    gradle:
+      - yes
+
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.4
-CurrentVersionCode: 97
+CurrentVersion: 2.2.6
+CurrentVersionCode: 101

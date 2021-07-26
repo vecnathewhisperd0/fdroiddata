@@ -118,7 +118,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.6.1
+    versionCode: 261
+    commit: v2.6.1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.6.2
+    versionCode: 262
+    commit: f82caa76cda8d05478c1981af3d228e2aba5c956
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.8
-CurrentVersionCode: 258
+CurrentVersion: 2.6.2
+CurrentVersionCode: 262

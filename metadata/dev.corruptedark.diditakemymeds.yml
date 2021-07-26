@@ -1,0 +1,35 @@
+Categories:
+  - Sports & Health
+  - Time
+License: GPL-3.0-or-later
+AuthorName: CorruptedArk
+AuthorEmail: noahstandingford@gmail.com
+SourceCode: https://github.com/CorruptedArk/did-i-take-my-meds
+IssueTracker: https://github.com/CorruptedArk/did-i-take-my-meds/issues
+Changelog: https://github.com/CorruptedArk/did-i-take-my-meds/releases
+Liberapay: CorruptedArk
+
+AutoName: Did I Take My Meds?
+
+RepoType: git
+Repo: https://github.com/CorruptedArk/did-i-take-my-meds.git
+
+Builds:
+  - versionName: 1.0.2
+    versionCode: 3
+    commit: v1.0.2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.5
+    versionCode: 6
+    commit: 8133dbc74df2a39806a42e00e438a68371171ac8
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags ^v
+CurrentVersion: 1.0.5
+CurrentVersionCode: 6

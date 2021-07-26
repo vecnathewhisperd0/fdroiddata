@@ -320,9 +320,9 @@ Builds:
     scanignore:
       - app/src/main/assets/databases/*.zip
 
-  - versionName: 3.5.8.1
-    versionCode: 649
-    commit: 3.5.8.1
+  - versionName: 3.5.8.3
+    versionCode: 651
+    commit: 3.5.8.4
     subdir: app
     gradle:
       - rel
@@ -331,8 +331,8 @@ Builds:
     scanignore:
       - app/src/main/assets/databases/*.zip
 
-AutoUpdateMode: Version %v
-UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/slartus/4pdaClient-plus/master/updateinfo.json|"versionCode":\s*(\d+)|.|"ver":\s*"([\d.]+)
-CurrentVersion: 3.5.8.1
-CurrentVersionCode: 649
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+UpdateCheckData: updateinfo.json|"versionCode":\s*(\d+)|.|"ver":\s*"([\d.]+)
+CurrentVersion: 3.5.8.3
+CurrentVersionCode: 651
