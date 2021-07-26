@@ -84,6 +84,7 @@ Builds:
     gradle:
       - withoutKey
 
+
 AutoUpdateMode: None
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
 CurrentVersion: 0.53.0
