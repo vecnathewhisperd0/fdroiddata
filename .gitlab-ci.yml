@@ -9,7 +9,8 @@ checkupdates:
     - pipelines
     - schedules
     - triggers
-  before_script:
+  before_script: |
+    set -xe
     - apt-get update
     - apt-get -qy dist-upgrade
     - cd ..
@@ -29,7 +30,6 @@ checkupdates:
       if [ -n "$appid" ]; then
         fdroid checkupdates --auto -v "$appid"
         git --no-pager diff --color=always --exit-code
-        git checkout .
       fi
     done
 
