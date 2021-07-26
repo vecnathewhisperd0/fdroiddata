@@ -32,7 +32,7 @@ checkupdates:
           fdroid checkupdates --auto -v "$appid" || exit 1;
           git --no-pager diff --color=always;
           git diff --quiet || exit 1;
-          git checkout .
+          git checkout .;
         fi;
       done;
 
