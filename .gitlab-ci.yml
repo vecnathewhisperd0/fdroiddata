@@ -29,8 +29,7 @@ checkupdates:
       appid=$(echo "$f" | sed -n -e 's,^metadata/\([^/][^/]*\)\.yml,\1,p')
       if [ -n "$appid" ]; then
         fdroid checkupdates --auto -v "$appid" || exit 1
-        git --no-pager diff --color=always
-        git diff --quiet || exit 1
+        git --no-pager diff --color=always --exit-code
         git checkout .
       fi
     done
