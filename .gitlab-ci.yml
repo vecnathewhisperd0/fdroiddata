@@ -20,21 +20,20 @@ checkupdates:
         | tar -xz --directory=fdroidserver --strip-components=1
     - export PATH="$PWD/fdroidserver:$PATH"
     - cd -
-  script:
-    # if this is a merge request fork, then only check relevant apps
-    - set -xe
-    - if [ "$CI_PROJECT_NAMESPACE" = "fdroid" ]; then echo "not testing in fdroid"; exit 0; fi
-    - git fetch https://gitlab.com/fdroid/fdroiddata.git
-    - files=$(git diff --name-only --diff-filter=d FETCH_HEAD...HEAD)
-    - for f in $files; do
-        appid=$(echo "$f" | sed -n -e 's,^metadata/\([^/][^/]*\)\.yml,\1,p');
-        if [ -n "$appid" ]; then
-          fdroid checkupdates --auto -v "$appid" || exit 1;
-          git --no-pager diff --color=always;
-          git diff --quiet || exit 1;
-          git checkout .;
-        fi;
-      done;
+  script: |
+    set -xe
+    if [ "$CI_PROJECT_NAMESPACE" = "fdroid" ]; then echo "not testing in fdroid"; exit 0; fi
+    git fetch https://gitlab.com/fdroid/fdroiddata.git
+    files=$(git diff --name-only --diff-filter=d FETCH_HEAD...HEAD)
+    for f in $files; do
+      appid=$(echo "$f" | sed -n -e 's,^metadata/\([^/][^/]*\)\.yml,\1,p')
+      if [ -n "$appid" ]; then
+        fdroid checkupdates --auto -v "$appid" || exit 1
+        git --no-pager diff --color=always
+        git diff --quiet || exit 1
+        git checkout .
+      fi
+    done
 
 lint:
   image: registry.gitlab.com/fdroid/ci-images-base
