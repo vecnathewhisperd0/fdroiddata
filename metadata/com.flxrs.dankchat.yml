@@ -480,7 +480,43 @@ Builds:
       - yes
     ndk: r21e
 
+  - versionName: 2.7.12
+    versionCode: 195
+    commit: 4122f5c3e7eaf175d65e16a94637771abd304501
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.7.14
+    versionCode: 197
+    commit: 02c0d86b73e80dd548ec95ebeb00bfb6f9667e9a
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.7.15
+    versionCode: 198
+    commit: c7d83334147f7b07ac9ba13c93e2316b2434028f
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v
-CurrentVersion: 2.7.10
-CurrentVersionCode: 193
+CurrentVersion: 2.7.15
+CurrentVersionCode: 198

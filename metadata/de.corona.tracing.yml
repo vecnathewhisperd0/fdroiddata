@@ -245,6 +245,18 @@ Builds:
     scandelete:
       - protobuf/build
 
+  - versionName: 2.4.3.0
+    versionCode: 2040301
+    commit: v2.4.3.0
+    subdir: Corona-Warn-App
+    gradle:
+      - device
+    scanignore:
+      - Corona-Warn-App/src/main/assets/default_app_config_android.bin
+      - Corona-Warn-App/src/main/assets/default_qr_code_poster_template_android.bin
+    scandelete:
+      - protobuf/build
+
 MaintainerNotes: |-
     scanignored are some protobuf encoded config files, view them with:
     protoc --decode de.rki.coronawarnapp.server.protocols.internal.v2.ApplicationConfigurationAndroid \
@@ -258,5 +270,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags v\d+\.\d+\.\d+\.\d+$
-CurrentVersion: 2.3.4.1
-CurrentVersionCode: 2030401
+CurrentVersion: 2.4.3.0
+CurrentVersionCode: 2040301

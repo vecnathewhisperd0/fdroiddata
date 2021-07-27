@@ -61,7 +61,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.13'
+    versionCode: 15
+    commit: 6e036bddb2793bee13a3c4d1f1172ac14cb5be77
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.14'
+    versionCode: 16
+    commit: 5791dba4596240a6ab3edd6ee0768233aee27858
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.15'
+    versionCode: 17
+    commit: 59ac985d3b73dc419a0232f29733604b400c22a2
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: '1.12'
-CurrentVersionCode: 14
+CurrentVersion: '1.15'
+CurrentVersionCode: 17

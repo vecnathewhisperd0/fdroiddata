@@ -35,16 +35,25 @@ Builds:
     scanignore:
       - src/main/assets/smiles/animate.bin
 
-  - versionName: 0.9.1418
-    versionCode: 1418
-    commit: 0.9.1418
-    submodules: true
+  - versionName: 0.9.1419
+    versionCode: 1419
+    commit: 8710087ad7122639462f05a08f95d6d56133969c
+    subdir: android
     gradle:
       - yes
     scanignore:
-      - src/main/assets/smiles/animate.bin
+      - android/src/main/assets/smiles/animate.bin
+
+  - versionName: 0.9.1420
+    versionCode: 1420
+    commit: a676cdd6206c29e5dd480a10f6c161dbc9fd3656
+    subdir: android
+    gradle:
+      - yes
+    scanignore:
+      - android/src/main/assets/smiles/animate.bin
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 0.9.1418
-CurrentVersionCode: 1418
+CurrentVersion: 0.9.1420
+CurrentVersionCode: 1420
