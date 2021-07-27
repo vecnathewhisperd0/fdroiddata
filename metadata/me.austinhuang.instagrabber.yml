@@ -133,6 +133,7 @@ Builds:
     gradle:
       - fdroid
 
+ArchivePolicy: 0 versions
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v
 CurrentVersion: 19.2.4-fdroid
