@@ -84,7 +84,6 @@ Builds:
     gradle:
       - withoutKey
 
-
 MaintainerNotes: version code is computed so AUM is disabled.
 
 AutoUpdateMode: None
