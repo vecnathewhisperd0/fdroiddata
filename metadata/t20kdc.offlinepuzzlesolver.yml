@@ -10,7 +10,7 @@ RepoType: git
 Repo: https://gitlab.com/20kdc/offline-puzzle-solver.git
 
 Builds:
-  - versionName: '1'
+  - versionName: '1.0'
     versionCode: 1
     commit: v1
     subdir: app
@@ -19,5 +19,5 @@ Builds:
 
 AutoUpdateMode: Version v%c
 UpdateCheckMode: Tags
-CurrentVersion: '1'
+CurrentVersion: '1.0'
 CurrentVersionCode: 1
