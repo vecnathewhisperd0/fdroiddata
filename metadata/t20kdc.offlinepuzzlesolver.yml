@@ -13,6 +13,9 @@ Builds:
   - versionName: '1'
     versionCode: 1
     commit: v1
+    subdir: app
+    gradle:
+      - yes
 
 AutoUpdateMode: Version v%c
 UpdateCheckMode: Tags
