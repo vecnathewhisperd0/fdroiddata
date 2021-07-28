@@ -14,7 +14,7 @@ Builds:
     versionCode: 1
     commit: v1
 
-AutoUpdateMode: Version v-%v-%c
+AutoUpdateMode: Version v%c
 UpdateCheckMode: Tags
 CurrentVersion: '1'
 CurrentVersionCode: 1
