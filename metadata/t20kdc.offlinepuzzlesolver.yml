@@ -1,0 +1,20 @@
+Categories:
+  - Games
+License: GPL-3.0-or-later
+AuthorName: 20kdc
+SourceCode: https://gitlab.com/20kdc/offline-puzzle-solver/
+
+AutoName: Offline Puzzle Solver
+
+RepoType: git
+Repo: https://gitlab.com/20kdc/offline-puzzle-solver.git
+
+Builds:
+  - versionName: '1'
+    versionCode: 1
+    commit: v1
+
+AutoUpdateMode: Version v-%v-%c
+UpdateCheckMode: Tags
+CurrentVersion: '1'
+CurrentVersionCode: 1
