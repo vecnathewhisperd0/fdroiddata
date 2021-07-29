@@ -28,7 +28,21 @@ Builds:
 
   - versionName: 1.4.5
     versionCode: 14500
-    commit: 5ade8f81bd278b8247f848430bd6f17c7367799f
+    commit: v1.4.5
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.6
+    versionCode: 14600
+    commit: v1.4.6
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.4.7
+    versionCode: 14700
+    commit: v1.4.7
     subdir: app
     gradle:
       - yes
