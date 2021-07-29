@@ -11362,6 +11362,50 @@ Builds:
     build: $$MozBuild$$/build.sh
     ndk: r21e
 
+  - versionName: 90.1.3
+    versionCode: 901300
+    commit: v90.1.3
+    timeout: 14400
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y g++ python-setuptools tcl gyp ninja-build libffi-dev libsqlite3-dev
+    output: app/build/outputs/apk/release/app-*-release-unsigned.apk
+    srclibs:
+      - MozAndroidComponents@v90.0.15
+      - MozAndroidComponentsAS@v75.0.0
+      - MozAppServices@v77.0.2
+      - MozBuild@0ff9b69ef093057905a0e45b6f102c4e3f04906a
+      - MozFennec@FIREFOX_90_0_2_RELEASE
+      - MozGlean@v38.0.0
+      - MozGleanAS@v35.0.0
+      - pyenv@v2.0.4
+      - rustup@1.24.3
+    prebuild: $$MozBuild$$/prebuild.sh $$VERSION$$ $$VERCODE$$
+    build: $$MozBuild$$/build.sh
+    ndk: r21e
+
+  - versionName: 90.1.3
+    versionCode: 901320
+    commit: v90.1.3
+    timeout: 14400
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y g++ python-setuptools tcl gyp ninja-build libffi-dev libsqlite3-dev
+    output: app/build/outputs/apk/release/app-*-release-unsigned.apk
+    srclibs:
+      - MozAndroidComponents@v90.0.15
+      - MozAndroidComponentsAS@v75.0.0
+      - MozAppServices@v77.0.2
+      - MozBuild@0ff9b69ef093057905a0e45b6f102c4e3f04906a
+      - MozFennec@FIREFOX_90_0_2_RELEASE
+      - MozGlean@v38.0.0
+      - MozGleanAS@v35.0.0
+      - pyenv@v2.0.4
+      - rustup@1.24.3
+    prebuild: $$MozBuild$$/prebuild.sh $$VERSION$$ $$VERCODE$$
+    build: $$MozBuild$$/build.sh
+    ndk: r21e
+
 MaintainerNotes: |4-
 
     Version code scheme:
@@ -11394,5 +11438,5 @@ MaintainerNotes: |4-
 ArchivePolicy: 4 versions
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 90.1.1
-CurrentVersionCode: 901120
+CurrentVersion: 90.1.3
+CurrentVersionCode: 901320
