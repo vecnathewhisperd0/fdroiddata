@@ -48,5 +48,6 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://repo.jellyfin.org/releases/client/android/version.txt|^v.*?=(\d+)|.|^v(.*?)=\d+
+UpdateCheckIgnore: (beta|rc)
 CurrentVersion: 2.3.0-beta.6
 CurrentVersionCode: 2030006
