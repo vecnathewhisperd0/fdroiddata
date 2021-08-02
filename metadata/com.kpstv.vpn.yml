@@ -1,0 +1,27 @@
+Categories:
+  - Development
+License: Apache-2.0
+AuthorName: Kaustubh Patange
+AuthorEmail: developerkp16@gmail.com
+AuthorWebSite: http://kaustubhpatange.github.io/
+SourceCode: https://gitlab.com/KaustubhPatange/gear-vpn
+IssueTracker: https://gitlab.com/KaustubhPatange/gear-vpn/issues
+
+AutoName: Gear VPN
+
+RepoType: git
+Repo: https://gitlab.com/KaustubhPatange/gear-vpn.git
+
+Builds:
+  - versionName: 1.0 (11)
+    versionCode: 11
+    commit: v1.0.11
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags ^v.*$
+UpdateCheckData: build.gradle|\"versionCode\"\s?:\s(\d+)
+CurrentVersion: 1.0 (11)
+CurrentVersionCode: 11
