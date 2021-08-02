@@ -34,7 +34,7 @@ Builds:
       - $$flutter$$/bin/flutter pub run flutter_launcher_icons:main -f fdroid_flutter_launcher_icons.yaml
       - $$flutter$$/bin/flutter pub run flutter_native_splash:create
       - $$flutter$$/bin/flutter packages pub run build_runner build --delete-conflicting-outputs
-      - $$flutter$$/bin/flutter build apk --flavor fdroid
+      - $$flutter$$/bin/flutter build apk
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
