@@ -19,9 +19,9 @@ RepoType: git
 Repo: https://github.com/peercoin/peercoin_flutter
 
 Builds:
-  - versionName: 0.5.8
-    versionCode: 51
-    commit: v0.5.8
+  - versionName: 0.5.9
+    versionCode: 52
+    commit: v0.5.9
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@2.2.3
@@ -34,10 +34,10 @@ Builds:
       - $$flutter$$/bin/flutter pub run flutter_launcher_icons:main -f fdroid_flutter_launcher_icons.yaml
       - $$flutter$$/bin/flutter pub run flutter_native_splash:create
       - $$flutter$$/bin/flutter packages pub run build_runner build --delete-conflicting-outputs
-      - $$flutter$$/bin/flutter build apk
+      - $$flutter$$/bin/flutter build apk --flavor fdroid
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 0.5.8
-CurrentVersionCode: 51
+CurrentVersion: 0.5.9
+CurrentVersionCode: 52
