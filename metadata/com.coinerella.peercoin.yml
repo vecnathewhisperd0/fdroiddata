@@ -10,8 +10,10 @@ IssueTracker: https://github.com/peercoin/peercoin_flutter/issues
 Translation: https://weblate.ppc.lol/
 Changelog: https://github.com/peercoin/peercoin_flutter/releases
 Donate: https://www.peercoin.net/foundation
-Bitcoin: 376NhxVL1LFBFndHNx9k7hvwvUzq6RZiPT
 OpenCollective: peercoin
+Bitcoin: 376NhxVL1LFBFndHNx9k7hvwvUzq6RZiPT
+
+AutoName: Peercoin
 
 RepoType: git
 Repo: https://github.com/peercoin/peercoin_flutter
@@ -29,8 +31,6 @@ Builds:
     prebuild: echo "flutter.sdk=$$flutter$$" >> ../local.properties
     build:
       - $$flutter$$/bin/flutter config --no-analytics
-      - $$flutter$$/bin/flutter create .
-      - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter pub run flutter_launcher_icons:main
       - $$flutter$$/bin/flutter pub run flutter_native_splash:create
       - $$flutter$$/bin/flutter packages pub run build_runner build --delete-conflicting-outputs
