@@ -17,6 +17,8 @@ Builds:
     versionCode: 11
     commit: v1.0.11
     subdir: app
+    scandelete:
+      - libs.prebuilt
     sudo:
       - apt-get update || apt-get update
       - apt-get install -t stretch-backports openjdk-11-jdk-headless openjdk-11-jre-headless
