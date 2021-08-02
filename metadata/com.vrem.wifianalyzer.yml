@@ -296,9 +296,16 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 3.0.5
+    versionCode: 57
+    commit: V3.0.5-F-DROID
+    subdir: app
+    gradle:
+      - yes
+
 MaintainerNotes: Upstream generates the version information at compile time.
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 3.0.4
-CurrentVersionCode: 56
+CurrentVersion: 3.0.5
+CurrentVersionCode: 57
