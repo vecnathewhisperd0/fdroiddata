@@ -21,7 +21,7 @@ Description: |-
 
     Data is retrieved from the <a href="http://api.citybik.es/v2/">CityBikes</a> API.
 
-    BikeSharingHub is the continuation of this app.
+    BikeSharingHub (https://f-droid.org/packages/fr.fdesousa.bikesharinghub/) is the continuation of this app.
 
 RepoType: git
 Repo: https://github.com/bparmentier/OpenBikeSharing
