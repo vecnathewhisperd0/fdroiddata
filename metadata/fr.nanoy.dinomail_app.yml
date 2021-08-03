@@ -9,16 +9,6 @@ IssueTracker: https://github.com/nanoy42/dinomail_app/issues
 
 Name: Dinomail
 AutoName: dinomail_app
-Description: |-
-    App to interact with DinoMail.
-
-    DinoMail is an open source mail manager that you
-    can get at https://github.com/nanoy42/dinomail. This
-    is the android app that interact with the server.
-    Features:
-    * Create, modify and delete domains. Verify DKIM DMARC and SPF
-    * Create, modify and delete users. Change password of users.
-    * Create, modify and delete aliases.
 
 RepoType: git
 Repo: https://github.com/nanoy42/dinomail_app
@@ -29,10 +19,12 @@ Builds:
     commit: 9329bc26cae9029727033638a6411f9a85e11a12
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
-      - flutter@stable
+      - flutter@2.2.3
     build:
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter build apk
 
-AutoUpdateMode: None
-UpdateCheckMode: None
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.1
+CurrentVersionCode: 3
