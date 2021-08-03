@@ -16,7 +16,7 @@ Repo: https://github.com/nanoy42/dinomail_app
 Builds:
   - versionName: 1.0.1
     versionCode: 3
-    commit: 9329bc26cae9029727033638a6411f9a85e11a12
+    commit: v1.0.1-meta+2
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@2.2.3
