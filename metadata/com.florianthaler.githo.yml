@@ -1,0 +1,29 @@
+Categories:
+  - Sports & Health
+License: GPL-3.0-or-later
+SourceCode: https://github.com/Glitchy-Tozier/githo
+IssueTracker: https://github.com/Glitchy-Tozier/githo/issues
+
+RepoType: git
+Repo: https://github.com/Glitchy-Tozier/githo
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: v1.0.0
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@3.24.0
+    rm:
+      - ios
+      - .vs
+    prebuild: echo "flutter.sdk=$$flutter$$" >> ../local.properties
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://raw.githubusercontent.com/Glitchy-Tozier/githo/main/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
