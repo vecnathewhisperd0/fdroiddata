@@ -5,12 +5,12 @@ SourceCode: https://github.com/Glitchy-Tozier/githo
 IssueTracker: https://github.com/Glitchy-Tozier/githo/issues
 
 RepoType: git
-Repo: https://github.com/Glitchy-Tozier/githo
+Repo: https://github.com/Glitchy-Tozier/githo.git
 
 Builds:
   - versionName: 1.0.0
     versionCode: 1
-    commit: 1.0.0
+    commit: v1.0.0
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@2.2.3
