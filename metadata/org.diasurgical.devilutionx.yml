@@ -22,6 +22,7 @@ Repo: https://github.com/diasurgical/devilutionX.git
 Builds:
   - versionName: 1.2.1
     versionCode: 18
+    disable: until tagged per upstream request
     commit: f8dc7bd3e356544707cb1aace36c9dfcd5f9d47b
     subdir: android-project/app
     sudo:
