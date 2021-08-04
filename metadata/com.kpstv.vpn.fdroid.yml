@@ -23,6 +23,9 @@ Builds:
       - update-alternatives --auto java
     gradle:
       - yes
+    scandelete:
+      - vpn/src/main/cpp/mbedtls
+      - vpn/src/main/cpp/openvpn3/test/unittests/comp-testdata
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v.*$
