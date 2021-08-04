@@ -23,8 +23,6 @@ Builds:
       - update-alternatives --auto java
     gradle:
       - yes
-    scandelete:
-      - vpn
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v.*$
