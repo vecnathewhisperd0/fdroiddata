@@ -53,6 +53,7 @@ Builds:
     srclibs:
       - 1:TintAddon@1.8
 
+ArchivePolicy: 0 versions
 AutoUpdateMode: None
 UpdateCheckMode: Tags
 CurrentVersion: '1.8'
