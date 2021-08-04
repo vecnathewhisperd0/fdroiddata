@@ -70,7 +70,7 @@ Builds:
     prebuild:
       - sed -i -e 's/versionCode buildVersionCode.*/versionCode $$VERCODE$$/' build.gradle
       - sed -i -e 's/versionName buildVersionName.*/versionName "$$VERSION$$"/' build.gradle
-      - sed -i -e '/xiaomi_.* {/,/}/d' build.gradle      
+      - sed -i -e '/xiaomi_.* {/,/}/d' build.gradle
     build:
       - cd ../../..
       - android/ci_build_client.sh
