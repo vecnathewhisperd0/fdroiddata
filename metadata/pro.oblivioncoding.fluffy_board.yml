@@ -21,7 +21,7 @@ Repo: https://github.com/Y0ngg4n/fluffy_board.git
 
 Builds:
   - versionName: 0.0.4
-    versionCode: 29406284
+    versionCode: 29544997
     commit: 0.0.4
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
@@ -36,4 +36,4 @@ AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 0.0.4
-CurrentVersionCode: 29406284
+CurrentVersionCode: 29544997
