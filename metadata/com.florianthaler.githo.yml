@@ -4,6 +4,8 @@ License: GPL-3.0-or-later
 SourceCode: https://github.com/Glitchy-Tozier/githo
 IssueTracker: https://github.com/Glitchy-Tozier/githo/issues
 
+AutoName: Githo
+
 RepoType: git
 Repo: https://github.com/Glitchy-Tozier/githo.git
 
@@ -25,8 +27,8 @@ Builds:
       - $$flutter$$/bin/flutter packages pub get
       - $$flutter$$/bin/flutter build apk
 
-AutoUpdateMode: Version v%v
-UpdateCheckMode: HTTP
-UpdateCheckData: https://raw.githubusercontent.com/Glitchy-Tozier/githo/main/pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.0.0
 CurrentVersionCode: 1
