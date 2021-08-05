@@ -15,27 +15,6 @@ Donate: https://www.buymeacoffee.com/Yonggan
 Bitcoin: 39xJy4DpsJ3MCaBMMuJVnv7aYof4pzzKtu
 
 AutoName: Fluffyboard
-Description: |-
-    Fluffyboard is a open source, free and self-hostable Whiteboard Application.
-
-    Features:
-    * Online Whiteboards
-    * Offline Whiteboards
-    * Downloading and Uploading Whiteboards
-    * Import and export Whiteboardss
-    * Organizing Whiteboards in Folders
-    * Sharing online Whiteboards with readonly and write Permissions
-    * Drawing lines
-    * Highlighting
-    * Drawing Straight Lines and Arrows
-    * Drawing Rects, Triangles and Circles
-    * Adding Text
-    * Uploading Images
-    * Importing PDF
-    * Changing Background
-    * Settings sync
-    * Adding bookmarks
-    * Changing Toolbar location
 
 RepoType: git
 Repo: https://github.com/Y0ngg4n/fluffy_board.git
