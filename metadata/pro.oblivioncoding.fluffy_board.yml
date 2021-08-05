@@ -36,5 +36,6 @@ Builds:
 
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
+UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: '0.0.3'
 CurrentVersionCode: 28978108
