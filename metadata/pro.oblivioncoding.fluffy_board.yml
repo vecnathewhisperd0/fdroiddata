@@ -1,0 +1,42 @@
+AntiFeatures:
+  - 
+Categories:
+  - Connectivity
+  - Graphics
+  - Internet
+  - Science & Education
+License: GPL-3.0-or-later
+AuthorName: Yonggan
+AuthorEmail: yonggan@obco.pro
+AuthorWebSite: https://oblivioncoding.pro
+WebSite: https://fluffyboard.obco.pro
+SourceCode: https://github.com/Y0ngg4n/fluffy_board
+IssueTracker: https://github.com/Y0ngg4n/fluffy_board/issues
+Translation:
+Changelog: https://github.com/Y0ngg4n/fluffy_board/commits/master
+Donate: https://www.buymeacoffee.com/Yonggan
+Bitcoin: 39xJy4DpsJ3MCaBMMuJVnv7aYof4pzzKtu
+
+AutoName: Fluffyboard
+
+RepoType: git
+Repo: 
+Builds:
+  - versionName: 0.0.3
+    versionCode: 28978108
+    commit: 0.0.3
+    output: build/app/outputs/apk/release/app-release.apk
+    srclibs:
+      - flutter@v1.3.2
+    prebuild: echo 'android.applicationVariants.all { variant -> variant.outputs.all
+        { output -> outputFileName = "app-${output.baseName}.apk" } }' >> android/app/build.gradle
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter packages pub run flutter_launcher_icons:main
+      - $$flutter$$/bin/flutter build apk
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '0.0.3'
+CurrentVersionCode: 28978108
