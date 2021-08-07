@@ -1,0 +1,28 @@
+Categories:
+  - Money
+License: Apache License 2.0
+AuthorName: Nighthawk Apps
+AuthorEmail: nighthawkwallet@protonmail.com
+WebSite: https://nighthawkwallet.com/
+SourceCode: https://github.com/nighthawk-apps/nighthawk-wallet-android
+IssueTracker: https://github.com/nighthawk-apps/nighthawk-wallet-android/issues
+Translation: https://crowdin.com/project/nighthawk-wallet-android
+Changelog: https://github.com/nighthawk-apps/nighthawk-wallet-android/releases
+
+AutoName: Nighthawk Wallet
+
+RepoType: git
+Repo: https://github.com/nighthawk-apps/nighthawk-wallet-android
+
+Builds:
+  - versionName: 1.0.24
+    versionCode: 1_00_24_800
+    commit: v1.0.24
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: v%v%v
+UpdateCheckMode: None
+CurrentVersion: 1.0.24
+CurrentVersionCode: 1_00_24_800
