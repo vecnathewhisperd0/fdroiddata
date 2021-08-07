@@ -6,7 +6,7 @@ AuthorEmail: nighthawkwallet@protonmail.com
 WebSite: https://nighthawkwallet.com/
 SourceCode: https://github.com/nighthawk-apps/nighthawk-wallet-android
 IssueTracker: https://github.com/nighthawk-apps/nighthawk-wallet-android/issues
-Translation: https://crowdin.com/project/nighthawk-wallet-android
+Translation: https://crowdin.com/project/nighthawk-wallet
 Changelog: https://github.com/nighthawk-apps/nighthawk-wallet-android/releases
 
 AutoName: Nighthawk Wallet
@@ -22,7 +22,7 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: v%v%v
+AutoUpdateMode: Version v%v
 UpdateCheckMode: None
 CurrentVersion: 1.0.24
 CurrentVersionCode: 1_00_24_800
