@@ -54,7 +54,7 @@ Builds:
 
   - versionName: 8.14.1
     versionCode: 81401
-    commit: 648e473d9e60e6d3a4db789f4e1ce4454a285009
+    commit: v8.14.1
     subdir: wallet
     gradle:
       - dev
