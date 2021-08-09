@@ -8,18 +8,7 @@ SourceCode: https://github.com/kuesji/link_eye
 IssueTracker: https://github.com/kuesji/link_eye/issues
 Liberapay: kuesji
 
-Name: link eye
 AutoName: link eye
-Summary: an app to view urls before open
-Description: |-
-    an android app to browse urls before open
-    try to open a link, select link eye and choose always to start using.
-    you get a dialog when any app tries to open link in external browser.
-    you will close dialog, copy link or open link specific app on
-    you preferred app ( if you have multiple browser you can select to
-    which browser will open this url ).
-    also link eye adds an entry to share menu. you will get your share link
-    copied to clipboard if you select link eye in here
 
 RepoType: git
 Repo: https://github.com/kuesji/link_eye
@@ -28,7 +17,6 @@ Builds:
   - versionName: '1.0'
     versionCode: 1
     commit: 'v1.0'
-    subdir: app
     gradle:
       - yes
 
