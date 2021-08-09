@@ -28,12 +28,11 @@ Builds:
   - versionName: '1.0'
     versionCode: 1
     commit: 53c863cd39e61865a8e0b9b0ec4f92b19eba44be
+    subdir: app
     gradle:
       - yes
-    output: app/build/outputs/apk/release/app-release-unsigned.apk
 
-ArchivePolicy: 0 versions
-AutoUpdateMode: None
-UpdateCheckMode: None
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
 CurrentVersion: '1.0'
 CurrentVersionCode: 1
