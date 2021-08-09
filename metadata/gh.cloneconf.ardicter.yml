@@ -1,3 +1,5 @@
+AntiFeatures:
+  - NonFreeNet
 Categories:
   - Internet
   - Science & Education
@@ -8,7 +10,10 @@ WebSite: https://github.com/cloneconf/
 SourceCode: https://github.com/cloneconf/Ardicter
 IssueTracker: https://github.com/cloneconf/Ardicter/issues
 
+AuthorName: Clone Conflict
 Name: Ardicter
+
+Description: Unofficial client for arabdict.com dictionary.
 
 RepoType: git
 Repo: https://github.com/cloneconf/Ardicter
@@ -22,5 +27,5 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: None
+AutoUpdateMode: Version
 UpdateCheckMode: Tags
