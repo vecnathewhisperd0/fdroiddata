@@ -16,8 +16,8 @@ Repo: https://github.com/kuesji/link_eye
 Builds:
   - versionName: '1.0'
     versionCode: 1
+    commit: e3701bb6eb9bda2f843b8f94002ce7184e039a5a
     subdir: app
-    commit: 'v1.0'
     gradle:
       - yes
 
