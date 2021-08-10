@@ -17,7 +17,7 @@ RepoType: git
 Repo: https://github.com/cloneconf/Ardicter
 
 Builds:
-  - versionName: '1'
+  - versionName: '1.0'
     versionCode: 1
     commit: v1.0
     subdir: app
@@ -30,5 +30,5 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '1'
+CurrentVersion: '1.0'
 CurrentVersionCode: 1
