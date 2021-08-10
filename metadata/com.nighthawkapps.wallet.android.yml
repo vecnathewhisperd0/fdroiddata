@@ -15,9 +15,9 @@ RepoType: git
 Repo: https://github.com/nighthawk-apps/nighthawk-wallet-android
 
 Builds:
-  - versionName: 1.0.24
-    versionCode: 10024800
-    commit: v1.0.24
+  - versionName: 1.0.25
+    versionCode: 10025800
+    commit: v1.0.25
     subdir: app
     gradle:
       - zcashmainnet
@@ -26,5 +26,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckData: buildSrc/src/main/java/com/nighthawkapps/wallet/android/Dependencies.kt|versionCode\s=\s([\d_]+)|.|versionName\s=\s"([\d.]+)"
-CurrentVersion: 1.0.24
-CurrentVersionCode: 10024800
+CurrentVersion: 1.0.25
+CurrentVersionCode: 10025800
