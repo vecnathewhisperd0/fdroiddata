@@ -1185,10 +1185,9 @@ Builds:
     scandelete:
       - node_modules/**
 
-  - versionName: 3.85.3
-    versionCode: 385030
-    disable: https://github.com/tutao/tutanota/issues/3154
-    commit: 6e244133786874af29a8b58158faccab18873ab5
+  - versionName: 3.85.7
+    versionCode: 385070
+    commit: tutanota-android-release-3.85.7
     subdir: app-android/app
     sudo:
       - curl -Lo node.tar.xz https://nodejs.org/download/release/v14.17.2/node-v14.17.2-linux-x64.tar.xz
@@ -1209,7 +1208,7 @@ Builds:
     scandelete:
       - node_modules/**
 
-AutoUpdateMode: None
+AutoUpdateMode: Version
 UpdateCheckMode: Tags tutanota-android-release-*
-CurrentVersion: 3.85.4
-CurrentVersionCode: 385040
+CurrentVersion: 3.85.7
+CurrentVersionCode: 385070

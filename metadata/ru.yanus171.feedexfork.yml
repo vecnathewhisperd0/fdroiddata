@@ -354,7 +354,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.16.1
+    versionCode: 235
+    commit: 7c387f521aec96744577b6c2e4e47c48a120c5a2
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.16.3
+    versionCode: 237
+    commit: 1794b9b3b208765218cb1ddc77f704e1040b7dbc
+    subdir: FlymFork
+    gradle:
+      - yes
+
+  - versionName: 0.16.4
+    versionCode: 238
+    commit: 679745b3b7143b94c278daded4ef237425378b6f
+    subdir: FlymFork
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags .*[0-9]$
-CurrentVersion: 0.15.24
-CurrentVersionCode: 233
+CurrentVersion: 0.16.4
+CurrentVersionCode: 238

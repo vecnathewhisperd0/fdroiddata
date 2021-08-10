@@ -564,7 +564,67 @@ Builds:
       - yes
     ndk: r21e
 
+  - versionName: 2.8.3
+    versionCode: 203
+    commit: 7265551533c53991eade5ea95bb7abb39354930e
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.8.4
+    versionCode: 204
+    commit: dc7eacb22088d3d538db933bee2ee76d4da6117e
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.8.5
+    versionCode: 205
+    commit: 3678f444c293289fa3818a5caf9333b676f32f89
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.8.6
+    versionCode: 206
+    commit: 4c3eaf2b785817f9f59f0a55ebfee8801a7f3ca6
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
+  - versionName: 2.8.8
+    versionCode: 208
+    commit: 75215660fd681470edb97e557bbc0244b02b87bc
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    ndk: r21e
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags ^v
-CurrentVersion: 2.8.2
-CurrentVersionCode: 202
+CurrentVersion: 2.8.8
+CurrentVersionCode: 208

@@ -151,7 +151,18 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.10.0
+    versionCode: 50
+    commit: 2bd5c73694fa81fc38d0d6bf3574d2ed68814d21
+    subdir: app
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y openjdk-11-jdk
+      - update-alternatives --auto java
+    gradle:
+      - yes
+
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.2
-CurrentVersionCode: 49
+CurrentVersion: 1.10.0
+CurrentVersionCode: 50

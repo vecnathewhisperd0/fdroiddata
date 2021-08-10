@@ -5,17 +5,6 @@ WebSite: https://organicmaps.app/
 SourceCode: https://github.com/organicmaps/organicmaps/tree/HEAD
 IssueTracker: https://github.com/organicmaps/organicmaps/issues
 
-Description: |-
-    Organic Maps offers fast offline maps app for travelers, tourists, hikers and cyclists based on top of crowd-sourced OpenStreetMap data and curated with love by MAPS.ME founders.
-
-    * Detailed offline maps with places that don't exist on other maps
-    * Cycling routes, hiking trails and walking paths
-    * Contour lines, elevation profiles, peaks and slopes
-    * Turn-by-turn walking, cycling and car navigation with voice guidance
-    * Fast offline search on the map and bookmarks
-    * Dark mode to protect your eyes
-    * No ads, no trackers, no data collection, no crapware, no pesticides
-
 RepoType: git
 Repo: https://github.com/organicmaps/organicmaps.git
 
@@ -242,14 +231,72 @@ Builds:
       - ./b2 headers
     ndk: r21e
 
-MaintainerNotes: |-
-    Version name and version code are generated dynamically from the head
-    commit date:
+  - versionName: 2021.08.05-15-g31e5587abd-FDroid
+    versionCode: 21080515
+    commit: 2021.08.05-2-android
+    subdir: android
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y g++
+    gradle:
+      - fdroid
+    rm:
+      - iphone
+      - qt
+      - tools/shaders_compiler
+      - xcode
+    prebuild:
+      - sed -i -e '/com.google.firebase/d; /com.google.gms/d; /com.google.android.gms/d'
+        build.gradle
+      - touch secure.properties
+      - echo '<?xml version="1.0" encoding="utf-8"?><network-security-config/>' >
+        res/xml/network_security_config.xml
+      - cp ../private_default.h ../private.h
+    scanignore:
+      - data/*.bin
+    scandelete:
+      - 3party
+    build:
+      - cd ../3party/boost
+      - ./bootstrap.sh
+      - ./b2 headers
+    ndk: r21e
 
-        TZ=UTC date --date="@$(git log -1 --format=%ct)" +%Y.%m.%d-%-H-g$(git rev-parse --short HEAD)-FDroid
-        TZ=UTC date --date="@$(git log -1 --format=%ct)" +%y%m%d%H
+  - versionName: 2021.08.08-7-FDroid
+    versionCode: 21080807
+    commit: d91b81f886b6313dd4e9e5a4c500e02513933164
+    subdir: android
+    submodules: true
+    sudo:
+      - apt-get update || apt-get update
+      - apt-get install -y g++
+    gradle:
+      - fdroid
+    rm:
+      - iphone
+      - qt
+      - tools/shaders_compiler
+      - xcode
+    prebuild:
+      - sed -i -e '/com.google.firebase/d; /com.google.gms/d; /com.google.android.gms/d'
+        build.gradle
+      - touch secure.properties
+      - echo '<?xml version="1.0" encoding="utf-8"?><network-security-config/>' >
+        res/xml/network_security_config.xml
+      - cp ../private_default.h ../private.h
+    scanignore:
+      - data/*.bin
+    scandelete:
+      - 3party
+    build:
+      - cd ../3party/boost
+      - ./bootstrap.sh
+      - ./b2 headers
+    ndk: r21e
 
-AutoUpdateMode: None
-UpdateCheckMode: None
-CurrentVersion: 2021.07.08-6-g73931f7918-FDroid
-CurrentVersionCode: 21070806
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+UpdateCheckData: android/src/fdroid/play/version.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 2021.08.08-7-FDroid
+CurrentVersionCode: 21080807
