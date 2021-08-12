@@ -20,9 +20,10 @@ Builds:
     commit: 2.0.0
     subdir: app
     gradle:
-      - yes
+      - light
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
+UpdateCheckName: com.donnnno.arcticons
 CurrentVersion: 2.0.0
 CurrentVersionCode: 64
