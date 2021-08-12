@@ -164,6 +164,5 @@ Builds:
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
-UpdateCheckName: com.donnnno.arcticons
 CurrentVersion: 2.0.0
 CurrentVersionCode: 64
