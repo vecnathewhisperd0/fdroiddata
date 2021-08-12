@@ -15,6 +15,12 @@ RepoType: git
 Repo: https://github.com/Donnnno/Arcticons
 
 Builds:
+  - versionName: 2.0.0
+    versionCode: 64
+    commit: 2.0.0
+    subdir: app
+    gradle:
+      - yes
 
 AutoUpdateMode: Version %v
 UpdateCheckMode: Tags
