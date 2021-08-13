@@ -1,6 +1,6 @@
 Categories:
   - Navigation
-License: Apache-2.0
+License: Apache-1.0
 WebSite: https://organicmaps.app/
 SourceCode: https://github.com/organicmaps/organicmaps
 IssueTracker: https://github.com/organicmaps/organicmaps/issues
@@ -11,29 +11,29 @@ Repo: https://github.com/organicmaps/organicmaps.git
 
 Builds:
   - versionName: 2021.05.21-6-g6cfa29a770-FDroid
-    versionCode: 21052106
+    versionCode: 
     commit: '2021-05-21'
     subdir: android
-    submodules: true
+    submodules: false 
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y g++
     gradle:
       - fdroid
     rm:
-      - iphone
+      - 
       - qt
       - tools/shaders_compiler
       - xcode
     prebuild:
-      - sed -i -e '/com.google.firebase/d; /com.google.gms/d; /com.google.android.gms/d'
+      - sed '/com.google.firebase/d; /com.google.gms/d; /com.google.android.gms/d'
         build.gradle
       - touch secure.properties
-      - cp ../private_default.h ../private.h
+      - cp ../private
     scanignore:
-      - data/*.bin
+      - data
     scandelete:
-      - 3party
+      - 
     build:
       - cd ../3party/boost
       - ./bootstrap.sh
@@ -44,7 +44,7 @@ Builds:
     versionCode: 21060705
     commit: '2021-06-07'
     subdir: android
-    submodules: true
+    submodules: false 
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y g++
@@ -76,7 +76,7 @@ Builds:
     versionCode: 21061207
     commit: '2021-06-12'
     subdir: android
-    submodules: true
+    submodules: false
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y g++
@@ -108,7 +108,7 @@ Builds:
     versionCode: 21062006
     commit: '2021-06-20'
     subdir: android
-    submodules: true
+    submodules: false 
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y g++
@@ -140,7 +140,7 @@ Builds:
     versionCode: 21062309
     commit: '2021-06-23'
     subdir: android
-    submodules: true
+    submodules: false
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y g++
@@ -172,7 +172,7 @@ Builds:
     versionCode: 21070416
     commit: 2021.07.04-2
     subdir: android
-    submodules: true
+    submodules: false
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y g++
@@ -204,7 +204,7 @@ Builds:
     versionCode: 21070806
     commit: 2021.07.08-3
     subdir: android
-    submodules: true
+    submodules: false
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y g++
@@ -236,7 +236,7 @@ Builds:
     versionCode: 21080515
     commit: 2021.08.05-2-android
     subdir: android
-    submodules: true
+    submodules: false
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y g++
@@ -268,7 +268,7 @@ Builds:
     versionCode: 21080807
     commit: d91b81f886b6313dd4e9e5a4c500e02513933164
     subdir: android
-    submodules: true
+    submodules: false
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y g++
