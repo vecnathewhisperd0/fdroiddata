@@ -192,13 +192,12 @@ Builds:
       - $$flutter$$/bin/flutter build apk
     ndk: r20
 
-  - versionName: 5.0.57
-    versionCode: 57
-    disable: https://github.com/invoiceninja/admin-portal/issues/314
-    commit: a42f699a6278d79018ad3eec7b4a549850e2c5d3
+  - versionName: 5.0.58
+    versionCode: 58
+    commit: v5.0.58
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
-      - flutter@2.0.5
+      - flutter@2.2.3
     rm:
       - ios
       - linux
