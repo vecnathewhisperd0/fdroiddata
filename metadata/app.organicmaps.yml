@@ -2,8 +2,9 @@ Categories:
   - Navigation
 License: Apache-2.0
 WebSite: https://organicmaps.app/
-SourceCode: https://github.com/organicmaps/organicmaps/tree/HEAD
+SourceCode: https://github.com/organicmaps/organicmaps
 IssueTracker: https://github.com/organicmaps/organicmaps/issues
+Changelog: https://github.com/organicmaps/organicmaps/releases
 
 RepoType: git
 Repo: https://github.com/organicmaps/organicmaps.git
@@ -263,9 +264,9 @@ Builds:
       - ./b2 headers
     ndk: r21e
 
-  - versionName: 2021.08.08-7-FDroid
-    versionCode: 21080807
-    commit: d91b81f886b6313dd4e9e5a4c500e02513933164
+  - versionName: 2021.08.14-4-FDroid
+    versionCode: 21081404
+    commit: 0cd28c65c02342421a4cbc9eb5c270851dd06b1f
     subdir: android
     submodules: true
     sudo:
@@ -296,7 +297,7 @@ Builds:
     ndk: r21e
 
 AutoUpdateMode: Version
-UpdateCheckMode: Tags
+UpdateCheckMode: Tags .*android$
 UpdateCheckData: android/src/fdroid/play/version.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 2021.08.08-7-FDroid
-CurrentVersionCode: 21080807
+CurrentVersion: 2021.08.14-4-FDroid
+CurrentVersionCode: 21081404
