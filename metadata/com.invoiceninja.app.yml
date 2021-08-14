@@ -194,6 +194,7 @@ Builds:
 
   - versionName: 5.0.58
     versionCode: 58
+    disable: https://github.com/invoiceninja/admin-portal/issues/314
     commit: v5.0.58
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
@@ -218,7 +219,7 @@ Builds:
       - $$flutter$$/bin/flutter build apk
     ndk: r20
 
-AutoUpdateMode: Version
+AutoUpdateMode: None
 UpdateCheckMode: Tags ^v.*$
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 5.0.58
