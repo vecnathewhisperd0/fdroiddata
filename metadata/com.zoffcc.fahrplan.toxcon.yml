@@ -28,6 +28,6 @@ Builds:
 
 ArchivePolicy: 0 versions
 AutoUpdateMode: None
-UpdateCheckMode: Tags ^[0-9].*
+UpdateCheckMode: None
 CurrentVersion: 1.0.3
 CurrentVersionCode: 10003
