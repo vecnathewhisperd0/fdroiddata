@@ -1373,7 +1373,7 @@ Builds:
 
   - versionName: 0.59.1
     versionCode: 200
-    commit: e668b09644993d06aedd9505bc9017ccf45e2efe
+    commit: df28652a0fb881e12efb2af37873f45c1c256a97
     subdir: app
     submodules: true
     sudo:
