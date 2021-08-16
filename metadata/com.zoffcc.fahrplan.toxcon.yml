@@ -27,7 +27,7 @@ Builds:
       - buildSrc
 
 ArchivePolicy: 0 versions
-AutoUpdateMode: Version %v
+AutoUpdateMode: None
 UpdateCheckMode: Tags ^[0-9].*
 CurrentVersion: 1.0.3
 CurrentVersionCode: 10003
