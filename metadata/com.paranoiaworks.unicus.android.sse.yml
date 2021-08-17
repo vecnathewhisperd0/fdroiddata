@@ -1,0 +1,28 @@
+Categories:
+  - Security
+  - System
+License: GPL-3.0-only
+AuthorName: Paranoia Works
+AuthorEmail: paranoiaworks.mobile@gmail.com
+AuthorWebSite: https://www.paranoiaworks.mobi/
+SourceCode: https://gitlab.com/paranoia-works/secret-space-encryptor-for-android
+IssueTracker: https://gitlab.com/paranoia-works/secret-space-encryptor-for-android/issues
+Changelog: https://paranoiaworks.mobi/sse/ssechangelog.htm
+
+RepoType: git
+Repo: https://gitlab.com/paranoia-works/secret-space-encryptor-for-android.git
+Binaries: https://paranoiaworks.mobi/sse/misc/SecretSpaceEncryptorF_%v.apk
+
+Builds:
+  - versionName: 2.3.3
+    versionCode: 102
+    commit: 2.3.3
+    subdir: MainApp
+    gradle:
+      - yes
+    ndk: r10e
+
+AutoUpdateMode: Version %v
+UpdateCheckMode: Tags
+CurrentVersion: 2.3.3
+CurrentVersionCode: 102
