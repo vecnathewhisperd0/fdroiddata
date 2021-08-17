@@ -1,0 +1,25 @@
+Categories:
+  - Multimedia
+License: GPL-3.0-only
+AuthorName: Brahim
+AuthorEmail: brahim.pro@protonmail.com
+SourceCode: https://github.com/brahimlippe/Lyrics
+IssueTracker: https://github.com/brahimlippe/Lyrics/issues
+
+AutoName: Kelimet
+
+RepoType: git
+Repo: https://github.com/brahimlippe/Lyrics
+
+Builds:
+  - versionName: '3'
+    versionCode: 3
+    commit: v3
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: '3'
+CurrentVersionCode: 3
