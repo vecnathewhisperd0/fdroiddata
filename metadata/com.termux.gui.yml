@@ -22,8 +22,8 @@ Builds:
       - update-alternatives --auto java
     gradle:
       - yes
-    ndk: r23b
     prebuild: sed -i -e '/signingConfig/d' build.gradle
+    ndk: r23b
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
