@@ -23,6 +23,7 @@ Builds:
     gradle:
       - yes
     ndk: r23b
+    prebuild: sed -i -e '/signingConfig/d' build.gradle
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
