@@ -1,12 +1,15 @@
+AntiFeatures:
+  - NonFreeNet
 Categories:
+  - System
   - Connectivity
   - Internet
 License: GPL-3.0-only
 AuthorName: Techlore
 AuthorEmail: contact@techlore.tech
 AuthorWebSite: https://www.techlore.tech
-SourceCode: https://github.com/techlore/Plexus-app
 WebSite: https://plexus.techlore.tech
+SourceCode: https://github.com/techlore/Plexus-app
 IssueTracker: https://github.com/techlore/Plexus-app/issues
 Changelog: https://github.com/techlore/Plexus-app/blob/HEAD/CHANGELOG.md
 
@@ -23,7 +26,7 @@ Builds:
     sudo:
       - apt-get update || apt-get update
       - apt-get install -y openjdk-11-jdk-headless
-      - update-alternatives --auto-java
+      - update-alternatives --auto java
     gradle:
       - yes
 
