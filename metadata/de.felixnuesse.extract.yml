@@ -15,18 +15,17 @@ Repo: https://github.com/newhinton/extract
 Builds:
   - versionName: 2.0.6-dev
     versionCode: 200
-    commit: 2554dbe896df372896a08ca2edf210734201e7fb
+    commit: 6f4f333fdb741ac088d928ca0de8de05bcbfc201
     sudo:
       - apt-get update
-      - apt-get install -y -t testing golang-go
+      - apt-get install -y -t bullseye-backports golang-go
     gradle:
       - oss
     output: app/build/outputs/apk/oss/release/app-oss-universal-release-unsigned.apk
     build:
       - export GOPATH="$PWD"
-      - sed -i -e 's|System.getenv('\''ANDROID_HOME'\''), '\''ndk'\'', '\''25.0.8775105'\'',|'\'''"$$NDK$$"''\'',g' rclone/build.gradle
-      - sed -i -e 's|21.3.6528147|21.4.7075529|g' app/build.gradle
-    ndk: r21e
+      - sed -i -e "s|androidHome =.*|androidHome ="$$SDK$$"' rclone/build.gradle
+    ndk: r25
     preassemble:
       - rclone:buildNative
 
