@@ -22,7 +22,7 @@ Builds:
     gradle:
       - oss
     output: app/build/outputs/apk/oss/release/app-oss-universal-release-unsigned.apk
-    prebuild: sed -i -e 's|androidHome =.*|androidHome ="$$SDK$$"' rclone/build.gradle
+    prebuild: sed -i -e 's|androidHome =.*|androidHome ="$$SDK$$"|' rclone/build.gradle
     ndk: r25
     preassemble:
       - rclone:buildNative
