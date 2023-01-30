@@ -19,6 +19,7 @@ Builds:
     sudo:
       - apt-get update
       - apt-get install -y -t bullseye-backports golang-go
+      - apt-get install -y gcc
     gradle:
       - oss
     output: app/build/outputs/apk/oss/release/app-oss-universal-release-unsigned.apk
