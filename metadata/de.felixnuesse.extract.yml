@@ -25,7 +25,7 @@ Builds:
     prebuild: sed -i -e 's|androidHome =.*|androidHome ="$$SDK$$"|' rclone/build.gradle
     ndk: r25
     preassemble:
-      - rclone:buildNative
+      - rclone:buildAll
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v?[.0-9]*$
