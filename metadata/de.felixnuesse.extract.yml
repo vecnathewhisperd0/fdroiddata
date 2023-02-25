@@ -13,9 +13,9 @@ RepoType: git
 Repo: https://github.com/newhinton/extract
 
 Builds:
-  - versionName: 2.0.6-dev
+  - versionName: 2.1.0
     versionCode: 200
-    commit: 6f4f333fdb741ac088d928ca0de8de05bcbfc201
+    commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
     sudo:
       - apt-get update
       - apt-get install -y -t bullseye-backports golang-go
@@ -30,5 +30,5 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v?[.0-9]*$
-CurrentVersion: 2.0.6-dev
+CurrentVersion: 2.1.0
 CurrentVersionCode: 200
