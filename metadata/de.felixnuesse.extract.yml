@@ -22,7 +22,7 @@ Builds:
       - apt-get install -y gcc libc-dev
     gradle:
       - oss
-    output: app/build/outputs/apk/oss/release/app-oss-universal-release-unsigned.apk
+    output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-universal-release-unsigned.apk
     prebuild: sed -i -e 's|androidHome =.*|androidHome ="$$SDK$$"|' rclone/build.gradle
     ndk: r25
     preassemble:
