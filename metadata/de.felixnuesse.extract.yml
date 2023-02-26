@@ -14,20 +14,6 @@ Repo: https://github.com/newhinton/extract
 
 Builds:
   - versionName: 2.1.0
-    versionCode: 200
-    commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
-    sudo:
-      - apt-get update
-      - apt-get install -y -t bullseye-backports golang-go
-      - apt-get install -y gcc libc-dev
-    gradle:
-      - oss
-    output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-universal-release-unsigned.apk
-    prebuild: sed -i -e 's|androidHome =.*|androidHome ="$$SDK$$"|' rclone/build.gradle
-    ndk: r25
-    preassemble:
-      - rclone:buildAll
-  - versionName: 2.1.0
     versionCode: 206
     commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
     sudo:
