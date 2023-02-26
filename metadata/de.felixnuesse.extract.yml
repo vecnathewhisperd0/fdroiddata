@@ -84,8 +84,6 @@ Builds:
     preassemble:
       - rclone:buildx64
 
-
-
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v?[.0-9]*$
 CurrentVersion: 2.1.0
