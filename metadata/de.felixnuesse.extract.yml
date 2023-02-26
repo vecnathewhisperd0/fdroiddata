@@ -27,6 +27,63 @@ Builds:
     ndk: r25
     preassemble:
       - rclone:buildAll
+  - versionName: 2.1.0
+    versionCode: 206
+    commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
+    sudo:
+      - apt-get update
+      - apt-get install -y -t bullseye-backports golang-go
+      - apt-get install -y gcc libc-dev
+    gradle:
+      - oss
+    output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-armeabi-v7a-release-unsigned.apk
+    prebuild: sed -i -e 's|androidHome =.*|androidHome ="$$SDK$$"|' rclone/build.gradle
+    ndk: r25
+    preassemble:
+      - rclone:buildArm
+        - versionName: 2.1.0
+  - versionCode: 207
+    commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
+    sudo:
+      - apt-get update
+      - apt-get install -y -t bullseye-backports golang-go
+      - apt-get install -y gcc libc-dev
+    gradle:
+      - oss
+    output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-arm64-v8a-release-unsigned.apk
+    prebuild: sed -i -e 's|androidHome =.*|androidHome ="$$SDK$$"|' rclone/build.gradle
+    ndk: r25
+    preassemble:
+      - rclone:buildArm64
+        - versionName: 2.1.0
+  - versionCode: 208
+    commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
+    sudo:
+      - apt-get update
+      - apt-get install -y -t bullseye-backports golang-go
+      - apt-get install -y gcc libc-dev
+    gradle:
+      - oss
+    output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-x86-release-unsigned.apk
+    prebuild: sed -i -e 's|androidHome =.*|androidHome ="$$SDK$$"|' rclone/build.gradle
+    ndk: r25
+    preassemble:
+      - rclone:buildx86
+  - versionCode: 209
+    commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
+    sudo:
+      - apt-get update
+      - apt-get install -y -t bullseye-backports golang-go
+      - apt-get install -y gcc libc-dev
+    gradle:
+      - oss
+    output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-x86_64-release-unsigned.apk
+    prebuild: sed -i -e 's|androidHome =.*|androidHome ="$$SDK$$"|' rclone/build.gradle
+    ndk: r25
+    preassemble:
+      - rclone:buildx64
+
+
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v?[.0-9]*$
