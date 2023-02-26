@@ -41,8 +41,8 @@ Builds:
     ndk: r25
     preassemble:
       - rclone:buildArm
-        - versionName: 2.1.0
-  - versionCode: 207
+  - versionName: 2.1.0
+    versionCode: 207
     commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
     sudo:
       - apt-get update
@@ -55,8 +55,8 @@ Builds:
     ndk: r25
     preassemble:
       - rclone:buildArm64
-        - versionName: 2.1.0
-  - versionCode: 208
+  - versionName: 2.1.0
+    versionCode: 208
     commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
     sudo:
       - apt-get update
@@ -69,7 +69,8 @@ Builds:
     ndk: r25
     preassemble:
       - rclone:buildx86
-  - versionCode: 209
+  - versionName: 2.1.0
+    versionCode: 209
     commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
     sudo:
       - apt-get update
