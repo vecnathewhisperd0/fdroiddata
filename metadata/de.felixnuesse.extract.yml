@@ -27,6 +27,7 @@ Builds:
     ndk: r25
     preassemble:
       - rclone:buildArm
+
   - versionName: 2.1.0
     versionCode: 207
     commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
@@ -41,6 +42,7 @@ Builds:
     ndk: r25
     preassemble:
       - rclone:buildArm64
+
   - versionName: 2.1.0
     versionCode: 208
     commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
@@ -55,6 +57,7 @@ Builds:
     ndk: r25
     preassemble:
       - rclone:buildx86
+
   - versionName: 2.1.0
     versionCode: 209
     commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
@@ -71,6 +74,11 @@ Builds:
       - rclone:buildx64
 
 AutoUpdateMode: Version
-UpdateCheckMode: Tags ^v?[.0-9]*$
+UpdateCheckMode: Tags ^v?[\d.]+$
+VercodeOperation:
+  - '%c + 6'
+  - '%c + 7'
+  - '%c + 8'
+  - '%c + 9'
 CurrentVersion: 2.1.0
-CurrentVersionCode: 200
+CurrentVersionCode: 209
