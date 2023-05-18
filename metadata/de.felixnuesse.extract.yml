@@ -23,9 +23,7 @@ Builds:
     gradle:
       - oss
     output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-armeabi-v7a-release-unsigned.apk
-    ndk: r25
-    preassemble:
-      - rclone:buildArm
+    ndk: 25.2.9519653
 
   - versionName: 2.1.1
     versionCode: 217
@@ -37,7 +35,7 @@ Builds:
     gradle:
       - oss
     output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-arm64-v8a-release-unsigned.apk
-    ndk: r25
+    ndk: 25.2.9519653
 
   - versionName: 2.1.1
     versionCode: 218
@@ -49,7 +47,7 @@ Builds:
     gradle:
       - oss
     output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-x86-release-unsigned.apk
-    ndk: r25
+    ndk: 25.2.9519653
 
   - versionName: 2.1.1
     versionCode: 219
@@ -61,7 +59,7 @@ Builds:
     gradle:
       - oss
     output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-x86_64-release-unsigned.apk
-    ndk: r25
+    ndk: 25.2.9519653
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v?[\d.]+$
