@@ -28,7 +28,7 @@ Builds:
       - rclone:buildArm
 
   - versionName: 2.1.1
-    versionCode: 216
+    versionCode: 217
     commit: 1e541459669500418363489dd34cf6ee1ce89667
     sudo:
       - apt-get update
@@ -40,7 +40,7 @@ Builds:
     ndk: r25
 
   - versionName: 2.1.1
-    versionCode: 216
+    versionCode: 218
     commit: 1e541459669500418363489dd34cf6ee1ce89667
     sudo:
       - apt-get update
@@ -52,7 +52,7 @@ Builds:
     ndk: r25
 
   - versionName: 2.1.1
-    versionCode: 216
+    versionCode: 219
     commit: 1e541459669500418363489dd34cf6ee1ce89667
     sudo:
       - apt-get update
