@@ -13,9 +13,9 @@ RepoType: git
 Repo: https://github.com/newhinton/extract
 
 Builds:
-  - versionName: 2.1.0
-    versionCode: 206
-    commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
+  - versionName: 2.1.1
+    versionCode: 216
+    commit: 1e541459669500418363489dd34cf6ee1ce89667
     sudo:
       - apt-get update
       - apt-get install -y -t bullseye-backports golang-go
@@ -27,9 +27,9 @@ Builds:
     preassemble:
       - rclone:buildArm
 
-  - versionName: 2.1.0
-    versionCode: 207
-    commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
+  - versionName: 2.1.1
+    versionCode: 216
+    commit: 1e541459669500418363489dd34cf6ee1ce89667
     sudo:
       - apt-get update
       - apt-get install -y -t bullseye-backports golang-go
@@ -39,9 +39,9 @@ Builds:
     output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-arm64-v8a-release-unsigned.apk
     ndk: r25
 
-  - versionName: 2.1.0
-    versionCode: 208
-    commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
+  - versionName: 2.1.1
+    versionCode: 216
+    commit: 1e541459669500418363489dd34cf6ee1ce89667
     sudo:
       - apt-get update
       - apt-get install -y -t bullseye-backports golang-go
@@ -51,9 +51,9 @@ Builds:
     output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-x86-release-unsigned.apk
     ndk: r25
 
-  - versionName: 2.1.0
-    versionCode: 209
-    commit: 60cd258c268b1f6b3fcb5d711ca49edfc5523883
+  - versionName: 2.1.1
+    versionCode: 216
+    commit: 1e541459669500418363489dd34cf6ee1ce89667
     sudo:
       - apt-get update
       - apt-get install -y -t bullseye-backports golang-go
@@ -70,5 +70,5 @@ VercodeOperation:
   - '%c + 7'
   - '%c + 8'
   - '%c + 9'
-CurrentVersion: 2.1.0
-CurrentVersionCode: 209
+CurrentVersion: 2.1.1
+CurrentVersionCode: 219
