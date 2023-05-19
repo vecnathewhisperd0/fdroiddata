@@ -62,7 +62,7 @@ Builds:
     ndk: 25.2.9519653
 
   - versionName: 2.1.2
-    versionCode: 216
+    versionCode: 226
     commit: 9504c133cbcc2c32f131af0d4f56ef1bf9727949
     sudo:
       - apt-get update
@@ -74,7 +74,7 @@ Builds:
     ndk: 25.2.9519653
 
   - versionName: 2.1.2
-    versionCode: 217
+    versionCode: 227
     commit: 9504c133cbcc2c32f131af0d4f56ef1bf9727949
     sudo:
       - apt-get update
@@ -86,7 +86,7 @@ Builds:
     ndk: 25.2.9519653
 
   - versionName: 2.1.2
-    versionCode: 218
+    versionCode: 228
     commit: 9504c133cbcc2c32f131af0d4f56ef1bf9727949
     sudo:
       - apt-get update
@@ -98,7 +98,7 @@ Builds:
     ndk: 25.2.9519653
 
   - versionName: 2.1.2
-    versionCode: 219
+    versionCode: 229
     commit: 9504c133cbcc2c32f131af0d4f56ef1bf9727949
     sudo:
       - apt-get update
