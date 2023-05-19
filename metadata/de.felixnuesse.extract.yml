@@ -7,7 +7,7 @@ SourceCode: https://github.com/newhinton/extract
 IssueTracker: https://github.com/newhinton/extract/issues
 Changelog: https://github.com/newhinton/extract/releases
 
-AutoName: extRact - Rclone for Android
+AutoName: RoundSync - Rclone for Android
 
 RepoType: git
 Repo: https://github.com/newhinton/extract
@@ -15,7 +15,7 @@ Repo: https://github.com/newhinton/extract
 Builds:
   - versionName: 2.1.1
     versionCode: 216
-    commit: master
+    commit: 7ab80ab6e1e3a9a5064d235efb89388684add3d9
     sudo:
       - apt-get update
       - apt-get install -y -t bullseye-backports golang-go
@@ -23,6 +23,42 @@ Builds:
     gradle:
       - oss
     output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-armeabi-v7a-release-unsigned.apk
+    ndk: 25.2.9519653
+
+  - versionName: 2.1.1
+    versionCode: 217
+    commit: 7ab80ab6e1e3a9a5064d235efb89388684add3d9
+    sudo:
+      - apt-get update
+      - apt-get install -y -t bullseye-backports golang-go
+      - apt-get install -y gcc libc-dev
+    gradle:
+      - oss
+    output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-arm64-v8a-release-unsigned.apk
+    ndk: 25.2.9519653
+
+  - versionName: 2.1.1
+    versionCode: 218
+    commit: 7ab80ab6e1e3a9a5064d235efb89388684add3d9
+    sudo:
+      - apt-get update
+      - apt-get install -y -t bullseye-backports golang-go
+      - apt-get install -y gcc libc-dev
+    gradle:
+      - oss
+    output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-x86-release-unsigned.apk
+    ndk: 25.2.9519653
+
+  - versionName: 2.1.1
+    versionCode: 219
+    commit: 7ab80ab6e1e3a9a5064d235efb89388684add3d9
+    sudo:
+      - apt-get update
+      - apt-get install -y -t bullseye-backports golang-go
+      - apt-get install -y gcc libc-dev
+    gradle:
+      - oss
+    output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-x86_64-release-unsigned.apk
     ndk: 25.2.9519653
 
 AutoUpdateMode: Version
