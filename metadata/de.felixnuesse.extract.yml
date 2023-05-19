@@ -66,4 +66,4 @@ UpdateCheckMode: Tags ^v?[\d.]+$
 VercodeOperation:
   - '%c + 6'
 CurrentVersion: 2.1.2
-CurrentVersionCode: 226
+CurrentVersionCode: 210
