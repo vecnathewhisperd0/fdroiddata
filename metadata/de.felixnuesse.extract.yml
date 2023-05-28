@@ -3,14 +3,14 @@ Categories:
 License: GPL-3.0-only
 AuthorName: Felix Nüsse
 WebSite: https://felixnuesse.de
-SourceCode: https://github.com/newhinton/extract
-IssueTracker: https://github.com/newhinton/extract/issues
-Changelog: https://github.com/newhinton/extract/releases
+SourceCode: https://github.com/newhinton/Round-Sync
+IssueTracker: https://github.com/newhinton/Round-Sync/issues
+Changelog: https://github.com/newhinton/Round-Sync/releases
 
-AutoName: RoundSync - Rclone for Android
+AutoName: Round Sync - Rclone for Android
 
 RepoType: git
-Repo: https://github.com/newhinton/extract
+Repo: https://github.com/newhinton/Round-Sync
 
 Builds:
   - versionName: 2.1.2
@@ -22,7 +22,7 @@ Builds:
       - apt-get install -y gcc libc-dev
     gradle:
       - oss
-    output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-armeabi-v7a-release-unsigned.apk
+    output: app/build/outputs/apk/oss/release/roundsync_v*_*-oss-armeabi-v7a-release-unsigned.apk
     ndk: 25.2.9519653
 
   - versionName: 2.1.2
@@ -34,7 +34,7 @@ Builds:
       - apt-get install -y gcc libc-dev
     gradle:
       - oss
-    output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-arm64-v8a-release-unsigned.apk
+    output: app/build/outputs/apk/oss/release/roundsync_v*_*-oss-arm64-v8a-release-unsigned.apk
     ndk: 25.2.9519653
 
   - versionName: 2.1.2
@@ -46,7 +46,7 @@ Builds:
       - apt-get install -y gcc libc-dev
     gradle:
       - oss
-    output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-x86-release-unsigned.apk
+    output: app/build/outputs/apk/oss/release/roundsync_v*_*-oss-x86-release-unsigned.apk
     ndk: 25.2.9519653
 
   - versionName: 2.1.2
@@ -58,7 +58,7 @@ Builds:
       - apt-get install -y gcc libc-dev
     gradle:
       - oss
-    output: app/build/outputs/apk/oss/release/extRact_v*_*-oss-x86_64-release-unsigned.apk
+    output: app/build/outputs/apk/oss/release/roundsync_v*_*-oss-x86_64-release-unsigned.apk
     ndk: 25.2.9519653
 
 AutoUpdateMode: Version
