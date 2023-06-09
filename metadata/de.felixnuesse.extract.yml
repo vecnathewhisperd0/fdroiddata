@@ -14,20 +14,8 @@ Repo: https://github.com/newhinton/Round-Sync
 
 Builds:
   - versionName: 2.1.3
-    versionCode: 236
-    commit: 8a4aef9a97d76f8a02f15540eac4da46e5c05706
-    sudo:
-      - apt-get update
-      - apt-get install -y -t bullseye-backports golang-go
-      - apt-get install -y gcc libc-dev
-    gradle:
-      - oss
-    output: app/build/outputs/apk/oss/release/roundsync_v*_*-oss-armeabi-v7a-release-unsigned.apk
-    ndk: 25.2.9519653
-
-  - versionName: 2.1.3
     versionCode: 237
-    commit: 8a4aef9a97d76f8a02f15540eac4da46e5c05706
+    commit: 01bc77b14dc7428dcfa643cdeb8d39ebd3fad677
     sudo:
       - apt-get update
       - apt-get install -y -t bullseye-backports golang-go
@@ -35,30 +23,6 @@ Builds:
     gradle:
       - oss
     output: app/build/outputs/apk/oss/release/roundsync_v*_*-oss-arm64-v8a-release-unsigned.apk
-    ndk: 25.2.9519653
-
-  - versionName: 2.1.3
-    versionCode: 238
-    commit: 8a4aef9a97d76f8a02f15540eac4da46e5c05706
-    sudo:
-      - apt-get update
-      - apt-get install -y -t bullseye-backports golang-go
-      - apt-get install -y gcc libc-dev
-    gradle:
-      - oss
-    output: app/build/outputs/apk/oss/release/roundsync_v*_*-oss-x86-release-unsigned.apk
-    ndk: 25.2.9519653
-
-  - versionName: 2.1.3
-    versionCode: 239
-    commit: 8a4aef9a97d76f8a02f15540eac4da46e5c05706
-    sudo:
-      - apt-get update
-      - apt-get install -y -t bullseye-backports golang-go
-      - apt-get install -y gcc libc-dev
-    gradle:
-      - oss
-    output: app/build/outputs/apk/oss/release/roundsync_v*_*-oss-x86_64-release-unsigned.apk
     ndk: 25.2.9519653
 
 AutoUpdateMode: Version
