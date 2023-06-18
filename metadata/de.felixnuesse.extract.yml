@@ -14,7 +14,7 @@ Repo: https://github.com/newhinton/Round-Sync
 
 Builds:
   - versionName: 2.1.4
-    versionCode: 237
+    versionCode: 247
     commit: 977b442ee6c224e6e86940afd92e67a818b0acd9
     sudo:
       - apt-get update
