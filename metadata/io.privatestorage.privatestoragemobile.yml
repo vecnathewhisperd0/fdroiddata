@@ -11,15 +11,10 @@ RepoType: git
 Repo: https://whetstone.private.storage/privatestorage/privatestoragemobile.git
 
 Builds:
-  - versionName: '1.0.9'
+  - versionName: 1.0.9
     versionCode: 9
     commit: v1.0.9
-    # Not sure if NonFreeNet actually applies - our backend is FOSS too
-    antifeatures: NonFreeNet
     subdir: obelisk
-    # Specifying an output but no build method enables the "manual" build
-    # (no ant, no gradle, no maven) we require for Nix:
-    output: result-android-release/android-app-release-unsigned.apk
     sudo:
       - apt-get update
       - apt install -y xz-utils
@@ -28,18 +23,16 @@ Builds:
     init:
       - curl -sSf https://nixos.org/releases/nix/nix-2.13.4/install -o /tmp/nix-install
       - bash /tmp/nix-install --no-daemon
+    output: result-android-release/android-app-release-unsigned.apk
     build:
       - USER=vagrant source /home/vagrant/.nix-profile/etc/profile.d/nix.sh
-      - nix-build --option substituters "http://saxtons.private.storage"
-                  --option trusted-public-keys "saxtons.private.storage:MplOcEH8G/6mRlhlKkbA8GdeFR3dhCFsSszrspE/ZwY="
-                  -A android.frontend.release -o result-android-release
-
+      - nix-build --option substituters "http://saxtons.private.storage" --option
+        trusted-public-keys "saxtons.private.storage:MplOcEH8G/6mRlhlKkbA8GdeFR3dhCFsSszrspE/ZwY="
+        -A android.frontend.release -o result-android-release
+    antifeatures:
+      - NonFreeNet
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-# Our app's version information looks like:
-#   android.version.code = "8";
-#   android.version.name = "1.0.8";
-# UpdateCheckData: obelisk/default.nix|android.version.code = "(\d+)"|.|android.version.name = "(.*)"
-CurrentVersion: '1.0.9'
+CurrentVersion: 1.0.9
 CurrentVersionCode: 9
