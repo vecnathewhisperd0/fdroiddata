@@ -14,8 +14,8 @@ Builds:
   - versionName: 1.0.9
     versionCode: 9
     commit: v1.0.9
-    subdir: obelisk
     timeout: 43200
+    subdir: obelisk
     sudo:
       - apt-get update
       - apt install -y xz-utils
