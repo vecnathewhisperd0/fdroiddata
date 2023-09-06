@@ -26,8 +26,8 @@ Builds:
     output: result-android-release/android-app-release-unsigned.apk
     build:
       - USER=vagrant source /home/vagrant/.nix-profile/etc/profile.d/nix.sh
-      - nix-build --option substituters "http://saxtons.private.storage" --option
-        trusted-public-keys "saxtons.private.storage:MplOcEH8G/6mRlhlKkbA8GdeFR3dhCFsSszrspE/ZwY="
+      - nix-build --option substituters "https://cache.nixos.org" --option
+        trusted-public-keys "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
         -A android.frontend.release -o result-android-release
     antifeatures:
       - NonFreeNet
