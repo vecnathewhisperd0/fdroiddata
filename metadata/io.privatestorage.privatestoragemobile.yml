@@ -14,7 +14,7 @@ Builds:
   - versionName: 1.0.9
     versionCode: 9
     commit: v1.0.9
-    timeout: 43200
+    timeout: 259200
     subdir: obelisk
     sudo:
       - apt-get update
