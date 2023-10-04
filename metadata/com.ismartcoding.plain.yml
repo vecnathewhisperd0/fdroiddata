@@ -12,7 +12,7 @@ Changelog: https://github.com/ismartcoding/plain-app/releases
 AutoName: PlainApp
 
 RepoType: git
-Repo: https://github.com/ismartcoding/plain-app
+Repo: https://github.com/ismartcoding/plain-app.git
 
 Builds:
   - versionName: 1.0.15
@@ -996,6 +996,186 @@ Builds:
       - noSplits
       - abiFilters=x86_64
 
+  - versionName: 1.1.22
+    versionCode: 126
+    commit: c65438afc6936f747a6f9f6bf0ce74330d4fc74c
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/com.google.gms/d' -e '/firebase/d' {..,.}/build.gradle.kts
+    gradleprops:
+      - noSplits
+      - abiFilters=armeabi-v7a
+
+  - versionName: 1.1.22
+    versionCode: 127
+    commit: c65438afc6936f747a6f9f6bf0ce74330d4fc74c
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/com.google.gms/d' -e '/firebase/d' {..,.}/build.gradle.kts
+    gradleprops:
+      - noSplits
+      - abiFilters=arm64-v8a
+
+  - versionName: 1.1.22
+    versionCode: 128
+    commit: c65438afc6936f747a6f9f6bf0ce74330d4fc74c
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/com.google.gms/d' -e '/firebase/d' {..,.}/build.gradle.kts
+    gradleprops:
+      - noSplits
+      - abiFilters=x86_64
+
+  - versionName: 1.2.3
+    versionCode: 138
+    commit: 50342f3676516abbf31b496620394a1f1d886443
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/com.google.gms/d' -e '/firebase/d' {..,.}/build.gradle.kts
+    gradleprops:
+      - noSplits
+      - abiFilters=armeabi-v7a
+
+  - versionName: 1.2.3
+    versionCode: 139
+    commit: 50342f3676516abbf31b496620394a1f1d886443
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/com.google.gms/d' -e '/firebase/d' {..,.}/build.gradle.kts
+    gradleprops:
+      - noSplits
+      - abiFilters=arm64-v8a
+
+  - versionName: 1.2.3
+    versionCode: 140
+    commit: 50342f3676516abbf31b496620394a1f1d886443
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/com.google.gms/d' -e '/firebase/d' {..,.}/build.gradle.kts
+    gradleprops:
+      - noSplits
+      - abiFilters=x86_64
+
+  - versionName: 1.2.8
+    versionCode: 152
+    commit: 07f2c246eaf8d6f664b062217d2d76e3321e8062
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/com.google.gms/d' -e '/firebase/d' {..,.}/build.gradle.kts
+    gradleprops:
+      - noSplits
+      - abiFilters=armeabi-v7a
+
+  - versionName: 1.2.8
+    versionCode: 153
+    commit: 07f2c246eaf8d6f664b062217d2d76e3321e8062
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/com.google.gms/d' -e '/firebase/d' {..,.}/build.gradle.kts
+    gradleprops:
+      - noSplits
+      - abiFilters=arm64-v8a
+
+  - versionName: 1.2.8
+    versionCode: 154
+    commit: 07f2c246eaf8d6f664b062217d2d76e3321e8062
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/com.google.gms/d' -e '/firebase/d' {..,.}/build.gradle.kts
+    gradleprops:
+      - noSplits
+      - abiFilters=x86_64
+
+  - versionName: 1.2.9
+    versionCode: 158
+    commit: b0004a6d7e7998d437a4b6b3ecaa781b12f1c38d
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/com.google.gms/d' -e '/firebase/d' {..,.}/build.gradle.kts
+    gradleprops:
+      - noSplits
+      - abiFilters=armeabi-v7a
+
+  - versionName: 1.2.9
+    versionCode: 159
+    commit: b0004a6d7e7998d437a4b6b3ecaa781b12f1c38d
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/com.google.gms/d' -e '/firebase/d' {..,.}/build.gradle.kts
+    gradleprops:
+      - noSplits
+      - abiFilters=arm64-v8a
+
+  - versionName: 1.2.9
+    versionCode: 160
+    commit: b0004a6d7e7998d437a4b6b3ecaa781b12f1c38d
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/com.google.gms/d' -e '/firebase/d' {..,.}/build.gradle.kts
+    gradleprops:
+      - noSplits
+      - abiFilters=x86_64
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags v\d+\.\d+(\.\d+)?
 VercodeOperation:
@@ -1003,5 +1183,5 @@ VercodeOperation:
   - '%c - 1'
   - '%c - 0'
 UpdateCheckData: app/build.gradle.kts|val vCode = (\d+)|.|versionName = "([\d.]+)"
-CurrentVersion: 1.1.19
-CurrentVersionCode: 119
+CurrentVersion: 1.2.9
+CurrentVersionCode: 160

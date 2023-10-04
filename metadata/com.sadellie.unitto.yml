@@ -10,6 +10,7 @@ WebSite: https://sadellie.github.io/unitto/
 SourceCode: https://github.com/sadellie/unitto
 IssueTracker: https://github.com/sadellie/unitto/issues
 Translation: https://poeditor.com/join/project/T4zjmoq8dx
+Changelog: https://github.com/sadellie/unitto/releases
 
 AutoName: Unitto
 
@@ -134,8 +135,40 @@ Builds:
       - build-logic/convention
 
   - versionName: Mikado Yellow
-    versionCode: 23
-    commit: 368ab8c16267676b0cc00ce4a45cb99e8e3dd019
+    versionCode: 24
+    commit: 7e6b158414e5e1caa6d4955d400062a15d791b0c
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/google-services/d' -e '/firebase/d' build.gradle.kts ../build.gradle.kts
+      - echo -e "\norg.gradle.unsafe.configuration-cache=false" >> ../gradle.properties
+    scandelete:
+      - build-logic/convention
+
+  - versionName: Nadeshiko Pink
+    versionCode: 25
+    commit: 0d26fb78a1a4eb6c4b87df627afcc3d18e1ffe67
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/google-services/d' -e '/firebase/d' build.gradle.kts ../build.gradle.kts
+      - echo -e "\norg.gradle.unsafe.configuration-cache=false" >> ../gradle.properties
+    scandelete:
+      - build-logic/convention
+
+  - versionName: Nadeshiko Pink
+    versionCode: 26
+    commit: 9207906919ddef254720f156d222c54d72412a10
     subdir: app
     sudo:
       - apt-get update
@@ -150,6 +183,6 @@ Builds:
       - build-logic/convention
 
 AutoUpdateMode: Version
-UpdateCheckMode: Tags
-CurrentVersion: Mikado Yellow
-CurrentVersionCode: 23
+UpdateCheckMode: Tags ^(?!.*preview).*$
+CurrentVersion: Nadeshiko Pink
+CurrentVersionCode: 26

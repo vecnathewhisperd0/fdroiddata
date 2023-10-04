@@ -10,7 +10,7 @@ Bitcoin: 1TRifA7eNLHZEcCTj43eYVWHBbLqTuXkS
 AutoName: TRIfA
 
 RepoType: git
-Repo: https://github.com/zoff99/ToxAndroidRefImpl
+Repo: https://github.com/zoff99/ToxAndroidRefImpl.git
 
 Builds:
   - versionName: 1.0.2
@@ -1526,11 +1526,47 @@ Builds:
     prebuild: sdkmanager 'cmake;3.10.2.4988404'
     ndk: r23c
 
+  - versionName: 1.0.209
+    versionCode: 10209
+    commit: 1da94f3878a0b08205b62e64fe1ec48d2e693579
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: sdkmanager 'cmake;3.10.2.4988404'
+    ndk: r23c
+
+  - versionName: 1.0.211
+    versionCode: 10211
+    commit: f701a2985e8d1c99b3cb385fc2d9ce5060049978
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: sdkmanager 'cmake;3.10.2.4988404'
+    ndk: r23c
+
+  - versionName: 1.0.212
+    versionCode: 10212
+    commit: 169868c2799e4567c741cb087b7eb573d42308bf
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: sdkmanager 'cmake;3.10.2.4988404'
+    ndk: r23c
+
+  - versionName: 1.0.218
+    versionCode: 10218
+    commit: 41ff86c1cd69458929fc7b03ca4a7bc3cc42057d
+    subdir: android-refimpl-app/app
+    gradle:
+      - yes
+    prebuild: sdkmanager 'cmake;3.10.2.4988404'
+    ndk: r23c
+
 MaintainerNotes: |-
-    There was an issue with proprietary emoji, see https://github.com/zoff99/ToxAndroidRefImpl/issues/139
-    This was fixed starting from version 1.0.96 and the NonFreeAssets tag was removed.
+  There was an issue with proprietary emoji, see https://github.com/zoff99/ToxAndroidRefImpl/issues/139
+  This was fixed starting from version 1.0.96 and the NonFreeAssets tag was removed.
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^[0-9].*
-CurrentVersion: 1.0.207
-CurrentVersionCode: 10207
+CurrentVersion: 1.0.218
+CurrentVersionCode: 10218

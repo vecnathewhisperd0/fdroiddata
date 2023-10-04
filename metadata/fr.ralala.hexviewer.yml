@@ -1,15 +1,16 @@
 Categories:
   - Development
   - Writing
-License: GPL-3.0-only
+License: GPL-3.0-or-later
 SourceCode: https://github.com/Keidan/HexViewer/
 IssueTracker: https://github.com/Keidan/HexViewer/issues/
+Translation: https://hosted.weblate.org/projects/hexviewer
 Changelog: https://github.com/Keidan/HexViewer/releases/
 
 AutoName: HexViewer
 
 RepoType: git
-Repo: https://github.com/Keidan/HexViewer
+Repo: https://github.com/Keidan/HexViewer.git
 
 Builds:
   - versionName: '1.5'
@@ -311,7 +312,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.44'
+    versionCode: 144
+    commit: 86c7dc479db6f37b5be7f36e90777c2c847a7425
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '1.45'
+    versionCode: 145
+    commit: 1646ad0d3b11c8a668292256fbd4e765fb6d97ee
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '1.43'
-CurrentVersionCode: 143
+CurrentVersion: '1.45'
+CurrentVersionCode: 145

@@ -34,7 +34,7 @@ Builds:
     scandelete:
       - .flutter/dev/integration_tests
     build: ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
-        --target-platform="android-arm"
+      --target-platform="android-arm"
 
   - versionName: 1.7.7
     versionCode: 8702
@@ -53,7 +53,7 @@ Builds:
     scandelete:
       - .flutter/dev/integration_tests
     build: ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
-        --target-platform="android-arm64"
+      --target-platform="android-arm64"
 
   - versionName: 1.7.7
     versionCode: 8704
@@ -72,7 +72,7 @@ Builds:
     scandelete:
       - .flutter/dev/integration_tests
     build: ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
-        --target-platform="android-x64"
+      --target-platform="android-x64"
 
   - versionName: 1.7.8
     versionCode: 8801
@@ -91,7 +91,7 @@ Builds:
     scandelete:
       - .flutter/dev/integration_tests
     build: ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
-        --target-platform="android-arm"
+      --target-platform="android-arm"
 
   - versionName: 1.7.8
     versionCode: 8802
@@ -110,7 +110,7 @@ Builds:
     scandelete:
       - .flutter/dev/integration_tests
     build: ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
-        --target-platform="android-arm64"
+      --target-platform="android-arm64"
 
   - versionName: 1.7.8
     versionCode: 8804
@@ -129,7 +129,7 @@ Builds:
     scandelete:
       - .flutter/dev/integration_tests
     build: ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
-        --target-platform="android-x64"
+      --target-platform="android-x64"
 
   - versionName: 1.7.9
     versionCode: 8901
@@ -148,7 +148,7 @@ Builds:
     scandelete:
       - .flutter/dev/integration_tests
     build: ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
-        --target-platform="android-arm"
+      --target-platform="android-arm"
 
   - versionName: 1.7.9
     versionCode: 8902
@@ -167,7 +167,7 @@ Builds:
     scandelete:
       - .flutter/dev/integration_tests
     build: ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
-        --target-platform="android-arm64"
+      --target-platform="android-arm64"
 
   - versionName: 1.7.9
     versionCode: 8904
@@ -186,7 +186,7 @@ Builds:
     scandelete:
       - .flutter/dev/integration_tests
     build: ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
-        --target-platform="android-x64"
+      --target-platform="android-x64"
 
   - versionName: 1.7.10
     versionCode: 9001
@@ -205,7 +205,7 @@ Builds:
     scandelete:
       - .flutter/dev/integration_tests
     build: ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
-        --target-platform="android-arm"
+      --target-platform="android-arm"
 
   - versionName: 1.7.10
     versionCode: 9002
@@ -224,7 +224,7 @@ Builds:
     scandelete:
       - .flutter/dev/integration_tests
     build: ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
-        --target-platform="android-arm64"
+      --target-platform="android-arm64"
 
   - versionName: 1.7.10
     versionCode: 9004
@@ -243,7 +243,7 @@ Builds:
     scandelete:
       - .flutter/dev/integration_tests
     build: ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
-        --target-platform="android-x64"
+      --target-platform="android-x64"
 
   - versionName: 1.8.1
     versionCode: 9201
@@ -983,8 +983,170 @@ Builds:
       - ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
         --target-platform="android-x64"
 
+  - versionName: 1.9.5
+    versionCode: 10601
+    commit: 1b87fb896de3d2617b21c2b5ea0fe402a55292de
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    output: build/app/outputs/flutter-apk/app-*-libre-release.apk
+    prebuild:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - ./flutterw config --no-analytics
+      - scripts/update_flutter_version.sh
+      - scripts/apply_flavor_libre.sh
+    scanignore:
+      - .flutter/bin/cache/artifacts
+      - .flutter/bin/cache/dart-sdk
+      - .flutter/packages/flutter_tools/gradle
+      - android/build.gradle
+    scandelete:
+      - .flutter/dev/integration_tests
+      - .pub-cache
+    build:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
+        --target-platform="android-arm"
+
+  - versionName: 1.9.5
+    versionCode: 10602
+    commit: 1b87fb896de3d2617b21c2b5ea0fe402a55292de
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    output: build/app/outputs/flutter-apk/app-*-libre-release.apk
+    prebuild:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - ./flutterw config --no-analytics
+      - scripts/update_flutter_version.sh
+      - scripts/apply_flavor_libre.sh
+    scanignore:
+      - .flutter/bin/cache/artifacts
+      - .flutter/bin/cache/dart-sdk
+      - .flutter/packages/flutter_tools/gradle
+      - android/build.gradle
+    scandelete:
+      - .flutter/dev/integration_tests
+      - .pub-cache
+    build:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
+        --target-platform="android-arm64"
+
+  - versionName: 1.9.5
+    versionCode: 10604
+    commit: 1b87fb896de3d2617b21c2b5ea0fe402a55292de
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    output: build/app/outputs/flutter-apk/app-*-libre-release.apk
+    prebuild:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - ./flutterw config --no-analytics
+      - scripts/update_flutter_version.sh
+      - scripts/apply_flavor_libre.sh
+    scanignore:
+      - .flutter/bin/cache/artifacts
+      - .flutter/bin/cache/dart-sdk
+      - .flutter/packages/flutter_tools/gradle
+      - android/build.gradle
+    scandelete:
+      - .flutter/dev/integration_tests
+      - .pub-cache
+    build:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
+        --target-platform="android-x64"
+
+  - versionName: 1.9.6
+    versionCode: 10701
+    commit: bf322c0aa92a44c348ed74329f8899f7c18a16b0
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    output: build/app/outputs/flutter-apk/app-*-libre-release.apk
+    prebuild:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - ./flutterw config --no-analytics
+      - scripts/update_flutter_version.sh
+      - scripts/apply_flavor_libre.sh
+    scanignore:
+      - .flutter/bin/cache/artifacts
+      - .flutter/bin/cache/dart-sdk
+      - .flutter/packages/flutter_tools/gradle
+      - android/build.gradle
+    scandelete:
+      - .flutter/dev/integration_tests
+      - .pub-cache
+    build:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
+        --target-platform="android-arm"
+
+  - versionName: 1.9.6
+    versionCode: 10702
+    commit: bf322c0aa92a44c348ed74329f8899f7c18a16b0
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    output: build/app/outputs/flutter-apk/app-*-libre-release.apk
+    prebuild:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - ./flutterw config --no-analytics
+      - scripts/update_flutter_version.sh
+      - scripts/apply_flavor_libre.sh
+    scanignore:
+      - .flutter/bin/cache/artifacts
+      - .flutter/bin/cache/dart-sdk
+      - .flutter/packages/flutter_tools/gradle
+      - android/build.gradle
+    scandelete:
+      - .flutter/dev/integration_tests
+      - .pub-cache
+    build:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
+        --target-platform="android-arm64"
+
+  - versionName: 1.9.6
+    versionCode: 10704
+    commit: bf322c0aa92a44c348ed74329f8899f7c18a16b0
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    output: build/app/outputs/flutter-apk/app-*-libre-release.apk
+    prebuild:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - ./flutterw config --no-analytics
+      - scripts/update_flutter_version.sh
+      - scripts/apply_flavor_libre.sh
+    scanignore:
+      - .flutter/bin/cache/artifacts
+      - .flutter/bin/cache/dart-sdk
+      - .flutter/packages/flutter_tools/gradle
+      - android/build.gradle
+    scandelete:
+      - .flutter/dev/integration_tests
+      - .pub-cache
+    build:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - ./flutterw build apk -t lib/main_libre.dart --flavor libre --split-per-abi
+        --target-platform="android-x64"
+
 MaintainerNotes: scanignore is used to skip lint false positives triggered by Google/Huawei
-    repos and dependencies used by other flavors.
+  repos and dependencies used by other flavors.
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags v[\d.]+
@@ -993,5 +1155,5 @@ VercodeOperation:
   - '%c * 100 + 2'
   - '%c * 100 + 4'
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 1.9.3
-CurrentVersionCode: 10404
+CurrentVersion: 1.9.6
+CurrentVersionCode: 10704

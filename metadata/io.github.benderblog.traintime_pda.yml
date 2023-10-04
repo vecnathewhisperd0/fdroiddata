@@ -10,7 +10,7 @@ AuthorWebSite: https://space.bilibili.com/284290692
 WebSite: https://legacy.superbart.xyz/xdyou.html
 SourceCode: https://github.com/BenderBlog/traintime_pda
 IssueTracker: https://github.com/BenderBlog/traintime_pda/issues
-Donate: http://afdian.net/a/benderblog
+Donate: https://afdian.net/a/benderblog
 
 AutoName: Traintime PDA
 
@@ -288,9 +288,10 @@ Builds:
       - popd
       - mv $repo/traintime_pda io.github.benderblog.traintime_pda
 
-  - versionName: 0.2.2
-    versionCode: 71
-    commit: de910a178f53866ebe5f9805aa3c19a048c088ef
+  - versionName: 0.3.1
+    versionCode: 101
+    disable: https://github.com/BenderBlog/traintime_pda/issues/11
+    commit: 19bdbcf3991a05fa66735315a9ece7d80d931465
     submodules: true
     sudo:
       - apt-get update
@@ -318,7 +319,6 @@ Builds:
       - popd
       - mv $repo/traintime_pda io.github.benderblog.traintime_pda
     scanignore:
-      - .flutter/packages/flutter_tools/gradle/flutter.gradle
       - .flutter/bin/cache
     scandelete:
       - .flutter
@@ -333,9 +333,10 @@ Builds:
       - popd
       - mv $repo/traintime_pda io.github.benderblog.traintime_pda
 
-  - versionName: 0.2.2
-    versionCode: 72
-    commit: de910a178f53866ebe5f9805aa3c19a048c088ef
+  - versionName: 0.3.1
+    versionCode: 102
+    disable: https://github.com/BenderBlog/traintime_pda/issues/11
+    commit: 19bdbcf3991a05fa66735315a9ece7d80d931465
     submodules: true
     sudo:
       - apt-get update
@@ -363,7 +364,6 @@ Builds:
       - popd
       - mv $repo/traintime_pda io.github.benderblog.traintime_pda
     scanignore:
-      - .flutter/packages/flutter_tools/gradle/flutter.gradle
       - .flutter/bin/cache
     scandelete:
       - .flutter
@@ -378,9 +378,10 @@ Builds:
       - popd
       - mv $repo/traintime_pda io.github.benderblog.traintime_pda
 
-  - versionName: 0.2.2
-    versionCode: 73
-    commit: de910a178f53866ebe5f9805aa3c19a048c088ef
+  - versionName: 0.3.1
+    versionCode: 103
+    disable: https://github.com/BenderBlog/traintime_pda/issues/11
+    commit: 19bdbcf3991a05fa66735315a9ece7d80d931465
     submodules: true
     sudo:
       - apt-get update
@@ -431,5 +432,5 @@ VercodeOperation:
   - 10 * %c + 2
   - 10 * %c + 3
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 0.2.2
-CurrentVersionCode: 73
+CurrentVersion: 0.3.1
+CurrentVersionCode: 103

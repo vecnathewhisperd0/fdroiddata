@@ -3,17 +3,17 @@ Categories:
   - Reading
 License: GPL-3.0-only
 AuthorName: Space Cowboy
-AuthorWebSite: https://cowboyprogrammer.org
-SourceCode: https://gitlab.com/spacecowboy/Feeder
+WebSite: https://news.nononsenseapps.com/
+SourceCode: https://github.com/spacecowboy/Feeder
 Translation: https://hosted.weblate.org/projects/feeder/
-Changelog: https://gitlab.com/spacecowboy/Feeder/blob/HEAD/CHANGELOG.md
+Changelog: https://github.com/spacecowboy/Feeder/blob/HEAD/CHANGELOG.md
 Donate: https://ko-fi.com/spacecowboy
 Bitcoin: 1PdmeeGxB2iktvmtkGqwUNmYq7L9tnxjwE
 
 AutoName: Feeder
 
 RepoType: git
-Repo: https://gitlab.com/spacecowboy/Feeder.git
+Repo: https://github.com/spacecowboy/Feeder.git
 
 Builds:
   - versionName: 1.2.2
@@ -1811,7 +1811,63 @@ Builds:
       - graphics
     prebuild: echo 'org.gradle.jvmargs=-Xmx2g' >> ../gradle.properties
 
+  - versionName: 2.6.2
+    versionCode: 286
+    commit: c8757deb9b1964e842ac0091747ca38d4208a27b
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    rm:
+      - graphics
+
+  - versionName: 2.6.3
+    versionCode: 287
+    commit: 3f7e1134e2a0d72a51c7eb2adf738bfdda6f0cae
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    rm:
+      - graphics
+
+  - versionName: 2.6.4
+    versionCode: 288
+    commit: 9c0a13049085d83480a6a88559c1315e223617b4
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    rm:
+      - graphics
+
+  - versionName: 2.6.5
+    versionCode: 289
+    commit: 22da092988a084f542641e82d1866a00365ce85f
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    rm:
+      - graphics
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 2.6.0
-CurrentVersionCode: 284
+CurrentVersion: 2.6.5
+CurrentVersionCode: 289

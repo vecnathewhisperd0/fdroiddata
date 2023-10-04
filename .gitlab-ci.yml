@@ -52,8 +52,8 @@ variables:
         export SOURCE_REF="${CI_COMMIT_SHA}"
     else
         git remote add upstream https://gitlab.com/fdroid/fdroiddata.git || true
-        git fetch upstream ${CI_DEFAULT_BRANCH}
-        export TARGET_REF=$(git merge-base HEAD upstream/${CI_DEFAULT_BRANCH})
+        git fetch upstream ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master}
+        export TARGET_REF=$(git merge-base HEAD upstream/${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master})
         export SOURCE_REF="${CI_COMMIT_SHA}"
     fi;
 
@@ -379,10 +379,12 @@ fdroid build:
     - for build in $APPS; do
           set -x;
           apt-get install sudo;
-          chown -R vagrant $home_vagrant;
+          chown -R vagrant $home_vagrant "$PWD";
           $fdroid fetchsrclibs $build --verbose;
           $fdroid build --verbose --test --scan-binary --on-server --no-tarball $build;
           rm -rf "build/${build%:*}" || true;
+          apt-get install -y openjdk-11-jdk-headless;
+          update-alternatives --set java /usr/lib/jvm/java-11-openjdk-amd64/bin/java;
           ./tools/build-contains-signatures.py $build || continue;
           apt-get install sudo;
           $fdroid publish --verbose $build;

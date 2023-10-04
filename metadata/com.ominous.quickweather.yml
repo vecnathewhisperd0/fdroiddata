@@ -1,6 +1,6 @@
 AntiFeatures:
-    NonFreeNet:
-        en-US: App depends on OpenWeatherMap.
+  NonFreeNet:
+    en-US: App depends on OpenWeatherMap.
 Categories:
   - Internet
 License: GPL-3.0-or-later
@@ -298,7 +298,41 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.5.0
+    versionCode: 69
+    commit: 30f1b3329bc01f326d26d7fe4d3bc10c05b1daaf
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 2.5.2
+    versionCode: 71
+    commit: 0d67167a8a3d1b5722b0f6bf68a2f69f2d59e91a
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 2.5.3
+    versionCode: 72
+    commit: a85a47e3b287acaff3b2681948ab95caf1bf50c5
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/1536m/2048m/' ../gradle.properties
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 2.4.2
-CurrentVersionCode: 66
+CurrentVersion: 2.5.3
+CurrentVersionCode: 72

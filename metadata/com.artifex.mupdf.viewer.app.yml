@@ -8,9 +8,9 @@ Changelog: https://git.ghostscript.com/?p=mupdf.git;a=blob_plain;f=CHANGES;hb=HE
 
 AutoName: MuPDF viewer
 Description: |-
-    MuPDF supports PDF 1.7 with transparency, encryption, hyperlinks, annotations,
-    searching, form editing and more. It also reads OpenXPS and CBZ (comic book)
-    documents.
+  MuPDF supports PDF 1.7 with transparency, encryption, hyperlinks, annotations,
+  searching, form editing and more. It also reads OpenXPS and CBZ (comic book)
+  documents.
 
 RepoType: git
 Repo: git://git.ghostscript.com/mupdf-android-viewer.git
@@ -302,17 +302,38 @@ Builds:
     build: make -C ../jni/libmupdf generate
     ndk: r23c
 
-MaintainerNotes: |-
-    Upstream builds separate APKs for all target architectures supported by NDK
-    (5 as of r18). We build a universal APK with armeabi-v7a, arm64-v8a and x86
-    support only.
+  - versionName: 1.23.3a
+    versionCode: 141
+    commit: f6b858719bbc1d6bbc69660eb9eb1407a2063fd0
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y make
+    gradle:
+      - yes
+    prebuild:
+      - sed -i -e '/maven.ghostscript.com/d' -e '/user.home/d' -e '/url.*MAVEN_REPO/d'
+        ../build.gradle ../*/build.gradle
+      - sed -i -e 's/enable true/enable false/' build.gradle
+      - sed -i -e "s/'-j4'/'-j`nproc`'/" ../jni/build.gradle
+      - echo 'ABI_FILTERS=armeabi-v7a,arm64-v8a,x86' >> ../gradle.properties
+    scandelete:
+      - jni/libmupdf/thirdparty
+    build: make -C ../jni/libmupdf generate
+    ndk: r23c
 
-    Documents:
-    * https://www.mupdf.com/docs/how-to-build-mupdf-for-android
-    * https://mupdf.com/downloads/
-    * https://twiki.ghostscript.com/do/view/MuPDF/AndroidReleases
+MaintainerNotes: |-
+  Upstream builds separate APKs for all target architectures supported by NDK
+  (5 as of r18). We build a universal APK with armeabi-v7a, arm64-v8a and x86
+  support only.
+
+  Documents:
+  * https://www.mupdf.com/docs/how-to-build-mupdf-for-android
+  * https://mupdf.com/downloads/
+  * https://twiki.ghostscript.com/do/view/MuPDF/AndroidReleases
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.23.0a
-CurrentVersionCode: 140
+CurrentVersion: 1.23.3a
+CurrentVersionCode: 141

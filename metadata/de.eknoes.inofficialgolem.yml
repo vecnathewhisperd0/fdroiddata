@@ -1,6 +1,6 @@
 AntiFeatures:
-    NonFreeNet:
-        en-US: Depends on Golem.de website.
+  NonFreeNet:
+    en-US: Depends on Golem.de website.
 Categories:
   - Reading
 License: GPL-3.0-only
@@ -12,7 +12,7 @@ IssueTracker: https://github.com/eknoes/golem-android-reader/issues
 AutoName: Golem.de
 
 RepoType: git
-Repo: https://github.com/eknoes/golem-android-reader
+Repo: https://github.com/eknoes/golem-android-reader.git
 
 Builds:
   - versionName: 1.2.1
@@ -43,9 +43,9 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 1.2.4
-    versionCode: 142
-    commit: 659171a9079581053856e30dd070b162dcb75f17
+  - versionName: 1.2.5
+    versionCode: 143
+    commit: d3dd4c7522cc9d4ccd8424f52d248a627291f90f
     subdir: app
     sudo:
       - apt-get update
@@ -56,5 +56,5 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.2.4
-CurrentVersionCode: 142
+CurrentVersion: 1.2.5
+CurrentVersionCode: 143

@@ -6,7 +6,7 @@ AuthorWebSite: https://tienisto.com
 WebSite: https://localsend.org
 SourceCode: https://github.com/localsend/localsend
 IssueTracker: https://github.com/localsend/localsend/issues
-Changelog: https://github.com/localsend/localsend/blob/main/assets/CHANGELOG.md
+Changelog: https://github.com/localsend/localsend/blob/HEAD/assets/CHANGELOG.md
 
 AutoName: LocalSend
 
@@ -267,10 +267,9 @@ Builds:
       - popd
       - mv /tmp/build org.localsend.localsend_app
 
-  - versionName: 1.11.0
-    versionCode: 34
-    disable: lib/armeabi-v7a/libapp.so not reproducible
-    commit: ea1047451acc58de6edb7942c98a1c743570838a
+  - versionName: 1.11.1
+    versionCode: 35
+    commit: a5c2f52ce6c8f1c6f07c9d70bcd9332fa2c28736
     submodules: true
     output: build/app/outputs/flutter-apk/app-release.apk
     rm:
@@ -308,5 +307,5 @@ AllowedAPKSigningKeys: 3220c353a73cfbd0c2f3052471c445324cf452bcba26de1c473a52fe5
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 1.11.0
-CurrentVersionCode: 34
+CurrentVersion: 1.11.1
+CurrentVersionCode: 35

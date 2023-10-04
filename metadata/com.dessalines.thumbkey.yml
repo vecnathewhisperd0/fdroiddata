@@ -145,18 +145,6 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 1.11.0
-    versionCode: 28
-    disable: fail RB
-    commit: a7c5d342186f758473b3464b53f73758c85080ba
-    subdir: app
-    sudo:
-      - apt-get update
-      - apt-get install -y openjdk-17-jdk-headless
-      - update-alternatives --auto java
-    gradle:
-      - yes
-
   - versionName: 1.12.0
     versionCode: 29
     commit: 7ad97b668e4955f06db88cad6f9a379b07dac983
@@ -179,9 +167,32 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.1.0
+    versionCode: 34
+    disable: https://github.com/dessalines/thumb-key/issues/400
+    commit: cf37fc01b0dbc14468a68b45fe527f33454c8acf
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+
+  - versionName: 2.1.1
+    versionCode: 35
+    commit: 4ec0ab2f36471e3453a7964c83e1c95a2c4b507d
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+
 AllowedAPKSigningKeys: ea7195cfce638ae6b1a8002ddc0d4863366095ea5b8d95c1cd5e25db0fe2e7c3
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.13.0
-CurrentVersionCode: 30
+CurrentVersion: 2.1.1
+CurrentVersionCode: 35

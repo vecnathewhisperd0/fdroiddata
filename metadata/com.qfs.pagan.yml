@@ -68,7 +68,52 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.1.2
+    versionCode: 12
+    commit: 9e09ea5ea1b9ea80894f8c1f611495501263c344
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 1.1.4
+    versionCode: 14
+    disable: gms bits
+    commit: 96d1d3c298d305e6fab22126b9414596866d116c
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 1.1.7
+    versionCode: 17
+    commit: ad30c8cf82591a6b683bd0230a93e9e810ac7fd2
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 1.1.9
+    versionCode: 19
+    commit: 96741e83793f336dee1ca3c1fbe15b44d56be43b
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.1.1
-CurrentVersionCode: 10
+CurrentVersion: 1.1.9
+CurrentVersionCode: 19

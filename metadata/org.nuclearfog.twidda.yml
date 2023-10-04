@@ -1,7 +1,7 @@
 AntiFeatures:
-    NonFreeNet:
-        en-US: This app connects to Twitter.
-        de: Diese App nutzt Verbindungen zu Twitter.
+  NonFreeNet:
+    en-US: This app connects to Twitter.
+    de: Diese App nutzt Verbindungen zu Twitter.
 Categories:
   - Internet
 License: Apache-2.0
@@ -103,7 +103,29 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 3.4.1
+    versionCode: 97
+    commit: c78df7a9c191394fbe3bc821fc46e859707c2a4d
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+
+  - versionName: 3.4.2
+    versionCode: 98
+    commit: 5b22305713465e3b728c4339b5169131f303e2e6
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '3.4'
-CurrentVersionCode: 96
+CurrentVersion: 3.4.2
+CurrentVersionCode: 98

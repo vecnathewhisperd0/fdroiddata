@@ -1,7 +1,6 @@
 AntiFeatures:
-    NonFreeNet:
-        en-US: Depends on joinmastodon.org which is not libre (neither were its ToS
-            found)
+  NonFreeNet:
+    en-US: Depends on joinmastodon.org which is not libre (neither were its ToS found)
 Categories:
   - Connectivity
   - Internet
@@ -133,7 +132,51 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.0.4
+    versionCode: 64
+    commit: 645af12c3fb1643ac5c8c39aba5af34ddca88ccc
+    subdir: mastodon
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+
+  - versionName: 2.1.2
+    versionCode: 68
+    commit: ca60003c39276e4706c7ef525a63e37205050d04
+    subdir: mastodon
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+
+  - versionName: 2.1.4
+    versionCode: 70
+    commit: a00afd5d7fc8ff864908ee50afd531200227b2d5
+    subdir: mastodon
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+
+  - versionName: 2.1.5
+    versionCode: 71
+    commit: b91840fb95fb9e0911232f6230a8580b38bf6b9b
+    subdir: mastodon
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 2.0.3
-CurrentVersionCode: 63
+CurrentVersion: 2.1.5
+CurrentVersionCode: 71

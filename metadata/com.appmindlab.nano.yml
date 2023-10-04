@@ -684,7 +684,29 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 4.4.5a
+    versionCode: 1302
+    commit: 09a84e1185be5f7c1eb3c9550a2d299eb7cff610
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.4.5c
+    versionCode: 1304
+    commit: 0e26443034290a793e4eaec1ceee25e096af2ca8
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 4.4.6a
+    versionCode: 1306
+    commit: 526269475d451afd64b26bb457e19a1c9645448b
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/jvmargs/s/# //' ../gradle.properties
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 4.4.4a
-CurrentVersionCode: 1300
+CurrentVersion: 4.4.6a
+CurrentVersionCode: 1306

@@ -3023,9 +3023,9 @@ Builds:
       - .yarn
     ndk: r21d
 
-  - versionName: '1.155'
-    versionCode: 36181
-    commit: c480d3e382e570dab6e28b0ce3327e1bc6bcfb30
+  - versionName: '1.157'
+    versionCode: 36183
+    commit: adbc87f4620116c9cc72a18f06a2156d61a1ad6b
     subdir: android/app
     sudo:
       - curl -Lo node.tar.gz https://nodejs.org/dist/v16.17.1/node-v16.17.1-linux-x64.tar.gz
@@ -3057,5 +3057,5 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '1.155'
-CurrentVersionCode: 36181
+CurrentVersion: '1.157'
+CurrentVersionCode: 36183

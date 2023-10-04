@@ -8,7 +8,7 @@ IssueTracker: https://github.com/elastic-rock/KeepScreenOn/issues
 AutoName: Keep Screen On
 
 RepoType: git
-Repo: https://github.com/elastic-rock/KeepScreenOn
+Repo: https://github.com/elastic-rock/KeepScreenOn.git
 Binaries: https://github.com/elastic-rock/KeepScreenOn/releases/download/v%v/com.elasticrock.keepscreenon_v%v.apk
 
 Builds:
@@ -78,9 +78,42 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.7.0
+    versionCode: 8
+    commit: 237daaf5b27ab65ea80ac85e644e5e39fa84fa69
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 1.9.2
+    versionCode: 12
+    commit: 249539ea3748b0bfc124f0e5eb87dbbad6587e5f
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 1.10.0
+    versionCode: 13
+    commit: e547d87e7de17ae3c5ea3b4da28f31961ac3622b
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
 AllowedAPKSigningKeys: bb9503be1486028133b33eabce9732100e9a331065e32fa2a033a93498bae6d6
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.6.0
-CurrentVersionCode: 7
+CurrentVersion: 1.10.0
+CurrentVersionCode: 13

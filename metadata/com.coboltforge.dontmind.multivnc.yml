@@ -527,6 +527,7 @@ Builds:
     gradle:
       - yes
     prebuild:
+      - git submodule sync
       - git submodule update --init --recursive
       - sdkmanager 'cmake;3.10.2.4988404'
       - ../../prepareLibreSSL.sh

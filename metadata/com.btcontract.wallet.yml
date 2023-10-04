@@ -343,7 +343,35 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.5.1
+    versionCode: 98
+    commit: 901a382a154e8d15c6190f5b3aeb7e9872a9fc1d
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.5.2
+    versionCode: 99
+    commit: 275a88d61dfd5e646efc015ebac2ad32d0a3d941
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.5.3
+    versionCode: 100
+    commit: 0f9cda899608e2b07bb2c4c468348f7e864ec380
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.5.4
+    versionCode: 105
+    commit: 408d3bfbf60e469ba424d4bfa5eb0af7b203dabc
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '2.5'
-CurrentVersionCode: 97
+CurrentVersion: 2.5.4
+CurrentVersionCode: 105

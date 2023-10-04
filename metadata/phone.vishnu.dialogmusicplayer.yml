@@ -75,7 +75,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v2.1.0
+    versionCode: 9
+    commit: 191f7c3200039527ede45382a38979a96cdeb9ea
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: v2.1.1
+    versionCode: 10
+    commit: 48aa65c14bdd5d745360550f740140aec3072a1f
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: v2.0.0
-CurrentVersionCode: 8
+CurrentVersion: v2.1.1
+CurrentVersionCode: 10

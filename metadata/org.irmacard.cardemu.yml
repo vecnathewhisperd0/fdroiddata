@@ -34,7 +34,7 @@ Builds:
       - irmagobridge/mock_export
       - irmagobridge/structodart
     prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-28' 'build-tools;28.0.3'
-        > /dev/null
+      > /dev/null
     build:
       - export GOPATH="$PWD/gopath"
       - export PATH=$PATH:$GOPATH/bin
@@ -65,7 +65,7 @@ Builds:
       - irmagobridge/mock_export
       - irmagobridge/structodart
     prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-28' 'build-tools;28.0.3'
-        > /dev/null
+      > /dev/null
     build:
       - export GOPATH="$PWD/gopath"
       - export PATH=$PATH:$GOPATH/bin
@@ -96,7 +96,7 @@ Builds:
       - irmagobridge/mock_export
       - irmagobridge/structodart
     prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-28' 'build-tools;28.0.3'
-        > /dev/null
+      > /dev/null
     build:
       - export GOPATH="$PWD/gopath"
       - export PATH=$PATH:$GOPATH/bin
@@ -124,7 +124,7 @@ Builds:
       - irmagobridge/mock_export
       - irmagobridge/structodart
     prebuild: $$SDK$$/tools/bin/sdkmanager 'platforms;android-28' 'build-tools;28.0.3'
-        > /dev/null
+      > /dev/null
     build:
       - curl -Lso go.tar.gz https://golang.org/dl/go1.17.1.linux-amd64.tar.gz
       - echo "dab7d9c34361dc21ec237d584590d72500652e7c909bf082758fb63064fca0ef  go.tar.gz"
@@ -161,7 +161,7 @@ Builds:
       - irmagobridge/mock_export
       - irmagobridge/structodart
     prebuild: JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 $$SDK$$/tools/bin/sdkmanager
-        'platforms;android-28' 'build-tools;28.0.3' > /dev/null
+      'platforms;android-28' 'build-tools;28.0.3' > /dev/null
     build:
       - curl -Lso go.tar.gz https://golang.org/dl/go1.17.1.linux-amd64.tar.gz
       - echo "dab7d9c34361dc21ec237d584590d72500652e7c909bf082758fb63064fca0ef  go.tar.gz"
@@ -198,7 +198,7 @@ Builds:
       - irmagobridge/mock_export
       - irmagobridge/structodart
     prebuild: JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 $$SDK$$/tools/bin/sdkmanager
-        'platforms;android-28' 'build-tools;28.0.3' > /dev/null
+      'platforms;android-28' 'build-tools;28.0.3' > /dev/null
     build:
       - curl -Lso go.tar.gz https://golang.org/dl/go1.17.1.linux-amd64.tar.gz
       - echo "dab7d9c34361dc21ec237d584590d72500652e7c909bf082758fb63064fca0ef  go.tar.gz"
@@ -235,7 +235,7 @@ Builds:
       - irmagobridge/mock_export
       - irmagobridge/structodart
     prebuild: JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 $$SDK$$/tools/bin/sdkmanager
-        'platforms;android-32' 'build-tools;32.0.0' > /dev/null
+      'platforms;android-32' 'build-tools;32.0.0' > /dev/null
     build:
       - curl -Lso go.tar.gz https://go.dev/dl/go1.18.3.linux-amd64.tar.gz
       - echo "956f8507b302ab0bb747613695cdae10af99bbd39a90cae522b7c0302cc27245 go.tar.gz"
@@ -271,7 +271,7 @@ Builds:
       - irmagobridge/mock_export
       - irmagobridge/structodart
     prebuild: JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 $$SDK$$/tools/bin/sdkmanager
-        'platforms;android-32' 'build-tools;32.0.0' > /dev/null
+      'platforms;android-32' 'build-tools;32.0.0' > /dev/null
     build:
       - curl -Lso go.tar.gz https://go.dev/dl/go1.18.3.linux-amd64.tar.gz
       - echo "956f8507b302ab0bb747613695cdae10af99bbd39a90cae522b7c0302cc27245 go.tar.gz"
@@ -577,10 +577,48 @@ Builds:
       - $$flutter$$/bin/flutter build apk --flavor beta
     ndk: r21e
 
+  - versionName: 7.5.0
+    versionCode: 4194464
+    commit: 07082132d59748bbe56f46e097275312a4cd1caf
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y -t bullseye-backports golang-go
+    output: build/app/outputs/flutter-apk/app-beta-release.apk
+    srclibs:
+      - flutter@stable
+    rm:
+      - ios
+      - test
+      - .idea
+      - .reuse
+      - .vscode
+    prebuild:
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - export version=$(grep "^FLUTTER_VERSION" ci_scripts/install_flutter.sh | cut
+        -d "\"" -f2)
+      - pushd $$flutter$$
+      - git checkout -f $version
+      - popd
+      - sdkmanager 'platforms;android-32' 'build-tools;32.0.0'
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter pub get
+    scandelete:
+      - .pub-cache
+    build:
+      - export GOPATH="$PWD/golang"
+      - export PATH="$GOPATH/bin:$PATH"
+      - go install golang.org/x/mobile/cmd/gomobile@latest
+      - gomobile init
+      - gomobile bind -target android -o android/irmagobridge/irmagobridge.aar github.com/privacybydesign/irmamobile/irmagobridge
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - $$flutter$$/bin/flutter build apk --flavor beta
+    ndk: r21e
+
 MaintainerNotes: uses Sentry.io configured as opt-in
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v.*$
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 7.4.2
-CurrentVersionCode: 4194462
+CurrentVersion: 7.5.0
+CurrentVersionCode: 4194464

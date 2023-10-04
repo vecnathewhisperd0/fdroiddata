@@ -9,23 +9,23 @@ Donate: https://www.buymeacoffee.com/tanujnotes
 
 AutoName: Olauncher
 Description: |-
-    FEATURES
-    * No ads
-    * FOSS forever
-    * Daily new wallpaper
-    * Double tap to lock screen
-    * Clean, fast and lightweight
+  FEATURES
+  * No ads
+  * FOSS forever
+  * Daily new wallpaper
+  * Double tap to lock screen
+  * Clean, fast and lightweight
 
-    HOW TO USE
-    * Swipe up to see all the apps and quick search
-    * Swipe down for notification drawer
-    * Long press home apps to change them
-    * <b>Important</b>: Long press on empty space to open settings
-    Once you open the settings, you'll see all the available options.
-    So basically, swipe and long press anywhere and you'll be fine.
+  HOW TO USE
+  * Swipe up to see all the apps and quick search
+  * Swipe down for notification drawer
+  * Long press home apps to change them
+  * <b>Important</b>: Long press on empty space to open settings
+  Once you open the settings, you'll see all the available options.
+  So basically, swipe and long press anywhere and you'll be fine.
 
-    I'm available at Twitter if you need for anything. Thank you.
-    https://twitter.com/tanujnotes/
+  I'm available at Twitter if you need for anything. Thank you.
+  https://twitter.com/tanujnotes/
 
 RepoType: git
 Repo: https://github.com/tanujnotes/Olauncher.git
@@ -327,7 +327,29 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v4.1.2
+    versionCode: 70
+    commit: 5352087437be84da5ea9a8e2731cb755854f256f
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: v4.1.3
+    versionCode: 71
+    commit: 6eee34d265f5b6ea10483883792e7c5b1219f904
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: v4.1.1
-CurrentVersionCode: 69
+CurrentVersion: v4.1.3
+CurrentVersionCode: 71

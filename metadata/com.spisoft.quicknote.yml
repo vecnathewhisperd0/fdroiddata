@@ -1,13 +1,11 @@
 AntiFeatures:
-    Tracking:
-        en-US: Pings donation.carnet.live and qn.phie.ovh without consent.
+  Tracking:
+    en-US: Pings donation.carnet.live and qn.phie.ovh without consent.
 Categories:
   - Writing
 License: GPL-3.0-only
-WebSite: https://github.com/CarnetApp/CarnetFdroid/blob/HEAD/README.md
 SourceCode: https://github.com/CarnetApp/CarnetFdroid
 IssueTracker: https://github.com/CarnetApp/CarnetFdroid/issues
-Changelog: https://github.com/CarnetApp/CarnetFdroid/blob/HEAD/app/src/main/assets/CHANGELOG.md
 Liberapay: Phie
 
 RepoType: git
@@ -446,8 +444,7 @@ Builds:
 
   - versionName: 0.25.1
     versionCode: 251
-    disable: https://github.com/CarnetApp/CarnetFdroid/issues/20
-    commit: b27f6a0b05e6c9a660815944d39b7a322b992157
+    commit: 67e7250aaceb31bfd2ff450b73b7323503514075
     subdir: app/CarnetAndroid/app
     submodules: true
     gradle:

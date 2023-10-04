@@ -227,7 +227,43 @@ Builds:
       - fdroid
     prebuild: sed -i -e '/sonatype/d' build.gradle.kts
 
+  - versionName: 3.12.2
+    versionCode: 31202
+    commit: cdf96d2990777d257c5d807c737ad19939971660
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/sonatype/d' build.gradle.kts
+
+  - versionName: 3.14.1
+    versionCode: 31401
+    commit: 49a5d04081f825dab0b1afcc083e2f4b931e6f96
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/sonatype/d' build.gradle.kts
+
+  - versionName: 3.15.0
+    versionCode: 315010
+    commit: fe58c761989ce7df6853539c10f492ca8d432d83
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sed -i -e '/sonatype/d' build.gradle.kts
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 3.12.0
-CurrentVersionCode: 31200
+CurrentVersion: 3.15.0
+CurrentVersionCode: 315010

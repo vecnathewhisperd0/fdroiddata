@@ -240,9 +240,9 @@ Builds:
     scandelete:
       - app/src/main/jniLibs
 
-  - versionName: 1.9.9
-    versionCode: 209
-    commit: ca62e02ac1e2093a52875ffb859f6c6b9134ace7
+  - versionName: 1.9.11
+    versionCode: 211
+    commit: 417fc52c1a71ecab19c9c1522d015206618ec7b3
     subdir: app
     sudo:
       - apt-get update
@@ -256,9 +256,25 @@ Builds:
     scandelete:
       - app/src/main/jniLibs
 
-  - versionName: 1.9.10
-    versionCode: 210
-    commit: fee61dd4ea43574d4e00ecc8a63a757d4b938804
+  - versionName: 1.9.12
+    versionCode: 212
+    commit: 62fd276c790ff4e9f19a6e4b27fff0a31c54f2fa
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - slions
+      - full
+      - fdroid
+    prebuild: sed -i -e '/firebase/d' ../build.gradle
+    scandelete:
+      - app/src/main/jniLibs
+
+  - versionName: 1.9.13
+    versionCode: 213
+    commit: 75a992d78b6191bf82471df743ade1ba39273c63
     subdir: app
     sudo:
       - apt-get update
@@ -274,5 +290,5 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.10
-CurrentVersionCode: 210
+CurrentVersion: 1.9.13
+CurrentVersionCode: 213

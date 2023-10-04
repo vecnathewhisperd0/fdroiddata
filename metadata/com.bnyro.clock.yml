@@ -1,9 +1,8 @@
 Categories:
   - System
 License: GPL-3.0-only
-AuthorName: Bnyro
-AuthorEmail: bnyro@tutanota.com
-AuthorWebSite: https://bnyro.is-a.dev/
+AuthorName: You Apps
+WebSite: https://you-apps.github.io/
 SourceCode: https://github.com/you-apps/ClockYou
 IssueTracker: https://github.com/you-apps/ClockYou/issues
 Translation: https://hosted.weblate.org/projects/you-apps/clock-you/
@@ -39,9 +38,20 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '6.2'
+    versionCode: 11
+    commit: c0c7c916c17c46aad0b1ce583a425692844838dd
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
 AllowedAPKSigningKeys: b3bc73b117df5dfe38130c6c2b946852ae7088557fe8e433f0d9983a6b55cc95
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '6.0'
-CurrentVersionCode: 9
+CurrentVersion: '6.2'
+CurrentVersionCode: 11

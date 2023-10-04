@@ -1,6 +1,6 @@
 AntiFeatures:
-    NonFreeNet:
-        en-US: Uses non-libre APIs to retrieve stock prices.
+  NonFreeNet:
+    en-US: Uses non-libre APIs to retrieve stock prices.
 Categories:
   - Internet
   - Money
@@ -9,7 +9,7 @@ AuthorName: CosmosApps
 AuthorEmail: cosmos.dev@protonmail.com
 SourceCode: https://gitlab.com/cosmosapps/candle
 IssueTracker: https://gitlab.com/cosmosapps/candle/issues
-Changelog: https://gitlab.com/cosmosapps/candle/-/blob/master/CHANGELOG.md
+Changelog: https://gitlab.com/cosmosapps/candle/-/blob/HEAD/CHANGELOG.md
 
 AutoName: Candle
 

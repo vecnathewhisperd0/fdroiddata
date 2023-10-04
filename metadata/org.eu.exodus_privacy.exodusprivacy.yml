@@ -102,7 +102,7 @@ Builds:
     gradle:
       - yes
     prebuild: sed -i -e 's/$System.env.EXODUS_API_KEY/a7b296cf7959cd10cc04a3a4321ca38bdadc4c9d/'
-        build.gradle
+      build.gradle
 
   - versionName: 3.0.1
     versionCode: 14
@@ -111,7 +111,7 @@ Builds:
     gradle:
       - yes
     prebuild: sed -i -e 's/$System.env.EXODUS_API_KEY/a7b296cf7959cd10cc04a3a4321ca38bdadc4c9d/'
-        build.gradle
+      build.gradle
 
   - versionName: 3.1.0
     versionCode: 15
@@ -124,9 +124,21 @@ Builds:
     gradle:
       - yes
     prebuild: sed -i -e 's/$System.env.EXODUS_API_KEY/a7b296cf7959cd10cc04a3a4321ca38bdadc4c9d/'
-        build.gradle
+      build.gradle
+
+  - versionName: 3.1.1
+    versionCode: 16
+    commit: cdeaf533e9fae5fba2619058f9b1526cfc2d0720
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/$API_KEY/a7b296cf7959cd10cc04a3a4321ca38bdadc4c9d/' build.gradle.kts
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 3.1.0
-CurrentVersionCode: 15
+CurrentVersion: 3.1.1
+CurrentVersionCode: 16
