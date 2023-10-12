@@ -10,16 +10,18 @@ Changelog: https://github.com/newhinton/Round-Sync/releases
 AutoName: Round Sync - Rclone for Android
 
 RepoType: git
-Repo: https://github.com/newhinton/Round-Sync
+Repo: https://github.com/newhinton/Round-Sync.git
 
 Builds:
-  - versionName: 2.1.4
-    versionCode: 247
-    commit: master
+  - versionName: 2.2.2
+    versionCode: 287
+    commit: 2673e8ab576629b6ce2a5e90bdde2e7ef4ece2ec
     sudo:
       - apt-get update
       - apt-get install -y -t bullseye-backports golang-go
       - apt-get install -y gcc libc-dev
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
     gradle:
       - oss
     output: app/build/outputs/apk/oss/release/roundsync_v*-oss-arm64-v8a-release-unsigned.apk
@@ -29,5 +31,5 @@ AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v?[\d.]+$
 VercodeOperation:
   - '%c + 6'
-CurrentVersion: 2.1.4
-CurrentVersionCode: 246
+CurrentVersion: 2.2.2
+CurrentVersionCode: 287
