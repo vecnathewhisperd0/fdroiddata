@@ -13,9 +13,9 @@ RepoType: git
 Repo: https://github.com/newhinton/Round-Sync.git
 
 Builds:
-  - versionName: 2.4.1
-    versionCode: 317
-    commit: 20b7c76877662c8d4ddbbfb619d3d9461da53f1c
+  - versionName: 2.4.2
+    versionCode: 327
+    commit: f3c68ab4f711317e88081ae112cd7bb4b144acda
     sudo:
       - apt-get update
       - apt-get install -y -t bullseye-backports golang-go
@@ -31,5 +31,5 @@ AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v?[\d.]+$
 VercodeOperation:
   - '%c + 6'
-CurrentVersion: 2.4.1
+CurrentVersion: 2.4.2
 CurrentVersionCode: 317
