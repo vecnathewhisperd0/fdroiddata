@@ -15,7 +15,7 @@ Repo: https://github.com/newhinton/Round-Sync.git
 Builds:
   - versionName: 2.4.0
     versionCode: 307
-    commit: 2673e8ab576629b6ce2a5e90bdde2e7ef4ece2ec
+    commit: e22b6cb32de82d7e52fd77f7bdd510770b435fcf
     sudo:
       - apt-get update
       - apt-get install -y -t bullseye-backports golang-go
