@@ -23,10 +23,10 @@ Builds:
     init:
       - curl -sSf https://nixos.org/releases/nix/nix-2.13.4/install -o /tmp/nix-install
       - bash /tmp/nix-install --no-daemon
-    output: result-android-release/android-app-release-unsigned.apk
+    output: result/android-app-release-unsigned.apk
     build:
       - USER=vagrant source /home/vagrant/.nix-profile/etc/profile.d/nix.sh
-      - nix-build -A android.frontend.release --option max-jobs auto -o result-android-release
+      - nix-build -A android.frontend.release --option max-jobs auto
     antifeatures:
       - NonFreeNet
 
