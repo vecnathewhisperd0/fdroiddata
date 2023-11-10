@@ -13,8 +13,8 @@ RepoType: git
 Repo: https://github.com/newhinton/Round-Sync.git
 
 Builds:
-  - versionName: 2.4.2
-    versionCode: 327
+  - versionName: 2.4.4-beta
+    versionCode: 347
     commit: 99e78d1448317272813073be0e2257a957b5b8be
     sudo:
       - apt-get update
@@ -31,5 +31,5 @@ AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v?[\d.]+$
 VercodeOperation:
   - '%c + 6'
-CurrentVersion: 2.4.2
-CurrentVersionCode: 327
+CurrentVersion: 2.4.4-beta
+CurrentVersionCode: 347
