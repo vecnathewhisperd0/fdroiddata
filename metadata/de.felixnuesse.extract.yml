@@ -15,17 +15,16 @@ Repo: https://github.com/newhinton/Round-Sync.git
 Builds:
   - versionName: 2.4.4-beta
     versionCode: 347
-    commit: 67c7c8305cdfa60153fec4b16a7774bf76c7f2be
+    commit: 7bf37ea92e5516e3f4a2fdf7f18f61805df0bdc2
     sudo:
       - apt-get update
-      - apt-get install -y -t bullseye-backports golang-go
       - apt-get install -y gcc libc-dev
       - apt-get install -y openjdk-17-jdk-headless
       - update-java-alternatives -a
     gradle:
       - oss
     srclibs:
-      - go@go1.20.11
+      - go@go1.21.4
     build:
       - pushd $$go$$/src
       - ./make.bash
