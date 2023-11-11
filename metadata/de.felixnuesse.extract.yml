@@ -25,7 +25,7 @@ Builds:
     gradle:
       - oss
     srclibs:
-      - go@go1.20.0
+      - go@go1.20.11
     build:
       - export PATH=$$go$$/bin:$PATH
       - gradle :syncthing:buildNative
