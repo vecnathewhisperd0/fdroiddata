@@ -30,6 +30,7 @@ Builds:
       - ./make.bash
       - popd
       - export PATH=$$go$$/bin:$PATH
+      - gradle :app:assembleOssRelease
     output: app/build/outputs/apk/oss/release/roundsync_v*-oss-arm64-v8a-release-unsigned.apk
     ndk: 25.2.9519653
 
