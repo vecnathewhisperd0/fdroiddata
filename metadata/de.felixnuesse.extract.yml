@@ -25,7 +25,7 @@ Builds:
     gradle:
       - oss
     srclibs:
-      - go@go1.21.4
+      - go@go1.21.1
     build:
       - pushd $$go$$/src
       - ./make.bash
