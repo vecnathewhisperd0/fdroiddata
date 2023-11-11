@@ -18,6 +18,7 @@ Builds:
     commit: cb16d042510ee0e68d0c2be3bd9d87f9950dd70e
     sudo:
       - apt-get update
+      - apt-get install -y -t bullseye-backports golang-go
       - apt-get install -y gcc libc-dev
       - apt-get install -y openjdk-17-jdk-headless
       - update-java-alternatives -a
@@ -30,7 +31,7 @@ Builds:
       - ./make.bash
       - popd
       - export PATH=$$go$$/bin:$PATH
-      - gradle :app:assembleOssRelease
+      - gradle :app:assembleRelease
     output: app/build/outputs/apk/oss/release/roundsync_v*-oss-arm64-v8a-release-unsigned.apk
     ndk: 25.2.9519653
 
