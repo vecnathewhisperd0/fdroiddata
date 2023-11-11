@@ -24,6 +24,11 @@ Builds:
       - update-java-alternatives -a
     gradle:
       - oss
+    srclibs:
+      - go@go1.20.0
+    build:
+      - export PATH=$$go$$/bin:$PATH
+      - gradle :syncthing:buildNative
     output: app/build/outputs/apk/oss/release/roundsync_v*-oss-arm64-v8a-release-unsigned.apk
     ndk: 25.2.9519653
 
