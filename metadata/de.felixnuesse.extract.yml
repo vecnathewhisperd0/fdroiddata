@@ -15,7 +15,7 @@ Repo: https://github.com/newhinton/Round-Sync.git
 Builds:
   - versionName: 2.4.4-beta
     versionCode: 347
-    commit: 9ac58109098dbb5856b77e8d9084189448c70e1c
+    commit: 70c90fdf0d7049ddcdbe9d52cacd396bfdd6ddd2
     sudo:
       - apt-get update
       - apt-get install -y gcc libc-dev
@@ -30,7 +30,7 @@ Builds:
       - ./make.bash
       - popd
       - export PATH=$$go$$/bin:$PATH
-      - gradle :app:assembleRelease
+      - gradle :app:assembleOssRelease
     output: app/build/outputs/apk/oss/release/roundsync_v*-oss-arm64-v8a-release-unsigned.apk
     ndk: 25.2.9519653
 
