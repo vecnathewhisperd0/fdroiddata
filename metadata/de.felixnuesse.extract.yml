@@ -15,7 +15,7 @@ Repo: https://github.com/newhinton/Round-Sync.git
 Builds:
   - versionName: 2.4.4-beta
     versionCode: 347
-    commit: 70c90fdf0d7049ddcdbe9d52cacd396bfdd6ddd2
+    commit: cb16d042510ee0e68d0c2be3bd9d87f9950dd70e
     sudo:
       - apt-get update
       - apt-get install -y gcc libc-dev
