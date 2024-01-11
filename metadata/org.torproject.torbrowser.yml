@@ -1,0 +1,72 @@
+Categories:
+  - Internet
+  - Multimedia
+  - Reading
+  - Science & Education
+  - Security
+License: MPL-2.0
+WebSite: https://www.torproject.org/torbrowser
+SourceCode: https://gitlab.torproject.org/tpo/applications/tor-browser-build
+IssueTracker: https://gitlab.torproject.org/tpo/applications/tor-browser-build/-/issues
+Changelog: https://gitlab.torproject.org/tpo/applications/tor-browser-build/-/blob/main/projects/browser/Bundle-Data/Docs-TBB/ChangeLog.txt
+Donate: https://donate.torproject.org/
+
+Summary: Freely access sites your local internet service provider may have blocked
+Description: |-
+  Tor Browser for Android is the only official mobile browser supported by
+  the Tor Project, developers of the world's strongest tool for privacy
+  and freedom online.
+
+  BLOCK TRACKERS
+  Tor Browser isolates each website you visit so third-party trackers and
+  ads can't follow you. Any cookies automatically clear when you're done
+  browsing.
+
+  DEFEND AGAINST SURVEILLANCE
+  Tor Browser prevents someone watching your connection from knowing what
+  websites you visit. All anyone monitoring your browsing habits can see is
+  that you're using Tor.
+
+  RESIST FINGERPRINTING
+  Tor aims to make all users look the same, making it difficult for you to
+  be fingerprinted based on your browser and device information.
+
+  MULTI-LAYERED ENCRYPTION
+  When you use Tor Browser for Android, your traffic is relayed and
+  encrypted three times as it passes over the Tor network. The network is
+  comprised of thousands of volunteer-run servers known as Tor relays.
+
+  BROWSE FREELY
+  With Tor Browser for Android, you are free to access sites your local
+  internet service provider may have blocked.
+
+RepoType: git
+Repo: https://gitlab.torproject.org/tpo/applications/tor-browser-build.git
+Binaries: https://dist.torproject.org/torbrowser/%v/tor-browser-android-aarch64-%v.apk
+
+Builds:
+  - versionName: 115.2.1-release (13.0.7)
+    versionCode: 2015991603
+    commit: tbb-13.0.7-build1
+    timeout: 18000
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y libdata-dump-perl libdata-uuid-perl libdatetime-perl libdigest-sha-perl
+        libfile-copy-recursive-perl libfile-slurp-perl libio-all-perl libio-captureoutput-perl
+        libio-handle-util-perl libjson-perl libparallel-forkmanager-perl libpath-tiny-perl
+        libsort-versions-perl libstring-shellquote-perl libtemplate-perl libxml-libxml-perl
+        libxml-writer-perl libyaml-libyaml-perl git mercurial zstd build-essential
+        python automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
+        automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
+        libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
+      - apt-get remove gradle
+    output: torbrowser/release/unsigned/*/tor-browser-qa-android-aarch64-*.apk
+    build: env -u ANDROID_HOME -u ANDROID_SDK_ROOT -u ANDROID_SDK -u ANDROID_NDK -u
+      ANDROID_NDK_HOME -u NDK USER=rbm RBM_NO_DEBUG=1 ./rbm/rbm build release --target
+      no_containers --target release --target browser-android-aarch64 --target torbrowser
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 115.2.1-release (13.0.7)
+CurrentVersionCode: 2015991603
