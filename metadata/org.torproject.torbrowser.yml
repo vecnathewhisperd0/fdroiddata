@@ -42,13 +42,12 @@ Description: |-
 
 RepoType: git
 Repo: https://gitlab.torproject.org/tpo/applications/tor-browser-build.git
-Binaries: https://dist.torproject.org/torbrowser/%v/tor-browser-android-aarch64-%v.apk
 
 Builds:
-  - versionName: 115.2.1-release (13.0.7)
-    versionCode: 2015991603
-    commit: tbb-13.0.7-build1
-    timeout: 18000
+  - versionName: 115.2.1-release (13.0.9)
+    versionCode: 2015997939
+    commit: tbb-13.0.9-build2
+    timeout: 21600
     submodules: true
     sudo:
       - apt-get update
@@ -59,8 +58,8 @@ Builds:
         libxml-writer-perl libyaml-libyaml-perl git mercurial zstd build-essential
         python automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
         automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
-        libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
-    output: torbrowser/release/unsigned/*/tor-browser-qa-android-aarch64-*.apk
+        libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv 7zip
+    output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
     prebuild: 'echo "tmp_dir: /tmp" > rbm.local.conf'
     build: env -u ANDROID_HOME -u ANDROID_SDK_ROOT -u ANDROID_SDK -u ANDROID_NDK -u
       ANDROID_NDK_HOME -u NDK USER=rbm RBM_NO_DEBUG=1 ./rbm/rbm build release --target
@@ -68,5 +67,5 @@ Builds:
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 115.2.1-release (13.0.7)
-CurrentVersionCode: 2015991603
+CurrentVersion: 115.2.1-release (13.0.9)
+CurrentVersionCode: 2015997939
