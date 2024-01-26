@@ -60,8 +60,8 @@ Builds:
         python automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
         automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
-      - apt-get remove gradle
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-aarch64-*.apk
+    prebuild: 'echo "tmp_dir: /tmp" > rbm.local.conf'
     build: env -u ANDROID_HOME -u ANDROID_SDK_ROOT -u ANDROID_SDK -u ANDROID_NDK -u
       ANDROID_NDK_HOME -u NDK USER=rbm RBM_NO_DEBUG=1 ./rbm/rbm build release --target
       no_containers --target release --target browser-android-aarch64 --target torbrowser
