@@ -58,9 +58,54 @@ Builds:
         libxml-writer-perl libyaml-libyaml-perl git mercurial zstd build-essential
         python automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
         automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
-        libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv 7zip
+        libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
+        7zip
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
-    prebuild: 'echo "tmp_dir: /tmp" > rbm.local.conf'
+    srclibs:
+      - MozAppServices@HEAD
+      - cbindgen@HEAD
+      - CMake@HEAD
+      - conjure@HEAD
+      - TorBrowserAndroid@HEAD
+      - TorBrowser@HEAD
+      - libevent@HEAD
+      - llvm-project@HEAD
+      - lyrebird@HEAD
+      - ninja@HEAD
+      - snowflake@HEAD
+      - tor@HEAD
+      - TorAndroidService@HEAD
+      - TorOnionProxyLibrary@HEAD
+      - TorTranslation@HEAD
+      - wasi-config@HEAD
+      - wasi-libc@HEAD
+      - wasi-sdk@HEAD
+      - webtunnel@HEAD
+      - zlib@HEAD
+      - zstd@HEAD
+    prebuild:
+      - 'echo "tmp_dir: /tmp" > rbm.local.conf'
+      - ln -s $$MozAppServices$$ git_clones/application-services
+      - ln -s $$cbindgen$$ git_clones/cbindgen
+      - ln -s $$CMake$$ git_clones/cmake
+      - ln -s $$conjure$$ git_clones/conjure
+      - ln -s $$TorBrowserAndroid$$ git_clones/firefox-android
+      - ln -s $$TorBrowser$$ git_clones/geckoview
+      - ln -s $$libevent$$ git_clones/libevent
+      - ln -s $$llvm-project$$ git_clones/llvm-project
+      - ln -s $$lyrebird$$ git_clones/lyrebird
+      - ln -s $$ninja$$ git_clones/ninja
+      - ln -s $$snowflake$$ git_clones/snowflake
+      - ln -s $$tor$$ git_clones/tor
+      - ln -s $$TorAndroidService$$ git_clones/tor-android-service
+      - ln -s $$TorOnionProxyLibrary$$ git_clones/tor-onion-proxy-library
+      - ln -s $$TorTranslation$$ git_clones/translation
+      - ln -s $$wasi-config$$ git_clones/wasi-config
+      - ln -s $$wasi-libc$$ git_clones/wasi-libc
+      - ln -s $$wasi-sdk$$ git_clones/wasi-sysroot
+      - ln -s $$webtunnel$$ git_clones/webtunnel
+      - ln -s $$zlib$$ git_clones/zlib
+      - ln -s $$zstd$$ git_clones/zstd
     build: env -u ANDROID_HOME -u ANDROID_SDK_ROOT -u ANDROID_SDK -u ANDROID_NDK -u
       ANDROID_NDK_HOME -u NDK USER=rbm RBM_NO_DEBUG=1 ./rbm/rbm build release --target
       no_containers --target release --target browser-android-aarch64 --target torbrowser
