@@ -45,6 +45,72 @@ Repo: https://gitlab.torproject.org/tpo/applications/tor-browser-build.git
 
 Builds:
   - versionName: 115.2.1-release (13.0.9)
+    versionCode: 2015997937
+    commit: tbb-13.0.9-build2
+    timeout: 21600
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y libdata-dump-perl libdata-uuid-perl libdatetime-perl libdigest-sha-perl
+        libfile-copy-recursive-perl libfile-slurp-perl libio-all-perl libio-captureoutput-perl
+        libio-handle-util-perl libjson-perl libparallel-forkmanager-perl libpath-tiny-perl
+        libsort-versions-perl libstring-shellquote-perl libtemplate-perl libxml-libxml-perl
+        libxml-writer-perl libyaml-libyaml-perl git mercurial zstd build-essential
+        python automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
+        automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
+        libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
+        7zip
+    output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
+    srclibs:
+      - MozAppServices@c02af304af3e297932cd0c3015155833f4e6931f
+      - cbindgen@215d3a987b223d4a1a878e2385c8677d5ae3a80b
+      - CMake@d6bdba1096f36268e414f32829e22159e983031a
+      - conjure@bc3fec9dc94407b720f90d187ddc416378bccc7d
+      - TorBrowserAndroid@3e6cd76a4c68cb66ea157f8be03085e56d1373ff
+      - TorBrowser@620e9f84932b9e11779a043355d5a6a2549b8bfc
+      - libevent@aa6567fe6475d3230c7c745a7ca208735af0c331
+      - llvm-project@97724f18c79c7cc81ced24239eb5e883bf1398ef
+      - lyrebird@ef38b844f9989dff25f553b583aeafc411dd100e
+      - ninja@a626ee8bd3c77b05a38e2ebb2f82f49738e404e2
+      - snowflake@41c7613db85f6c1e8d13ea3639fb35d71f6ad942
+      - tor@766a465a6043ac4e643c398feb14f708fd0d863f
+      - TorAndroidService@565ee256ac0f890bfd33cc61654d529c1f1c9fea
+      - TorOnionProxyLibrary@a0636e0940baadb009d3c945bd3302ce99b02127
+      - TorTranslation@748528a0572fe248b1f223551324345e88389216
+      - wasi-config@0caf17e5d91a23b7c9c59edea95b0bf3106fb9d2
+      - wasi-libc@d9982c379b3cf082d3ada90bd3422b86028201b2
+      - wasi-sdk@c80964d8d7cf8ca2480d8332cd8022cb0600d421
+      - webtunnel@8be4e1fab513ac45d3a0e53c3d1ff79db63e2bbb
+      - zlib@bcf78a20978d76f64b7cd46d1a4d7a79a578c77b
+      - zstd@4856a00164c1d7b947bd384b7e9348b3a177d841
+    prebuild:
+      - 'echo "tmp_dir: /tmp" > rbm.local.conf'
+      - ln -s $$MozAppServices$$ git_clones/application-services
+      - ln -s $$cbindgen$$ git_clones/cbindgen
+      - ln -s $$CMake$$ git_clones/cmake
+      - ln -s $$conjure$$ git_clones/conjure
+      - ln -s $$TorBrowserAndroid$$ git_clones/firefox-android
+      - ln -s $$TorBrowser$$ git_clones/geckoview
+      - ln -s $$libevent$$ git_clones/libevent
+      - ln -s $$llvm-project$$ git_clones/llvm-project
+      - ln -s $$lyrebird$$ git_clones/lyrebird
+      - ln -s $$ninja$$ git_clones/ninja
+      - ln -s $$snowflake$$ git_clones/snowflake
+      - ln -s $$tor$$ git_clones/tor
+      - ln -s $$TorAndroidService$$ git_clones/tor-android-service
+      - ln -s $$TorOnionProxyLibrary$$ git_clones/tor-onion-proxy-library
+      - ln -s $$TorTranslation$$ git_clones/translation
+      - ln -s $$wasi-config$$ git_clones/wasi-config
+      - ln -s $$wasi-libc$$ git_clones/wasi-libc
+      - ln -s $$wasi-sdk$$ git_clones/wasi-sysroot
+      - ln -s $$webtunnel$$ git_clones/webtunnel
+      - ln -s $$zlib$$ git_clones/zlib
+      - ln -s $$zstd$$ git_clones/zstd
+    build: env -u ANDROID_HOME -u ANDROID_SDK_ROOT -u ANDROID_SDK -u ANDROID_NDK -u
+      ANDROID_NDK_HOME -u NDK USER=rbm RBM_NO_DEBUG=1 ./rbm/rbm build release --target
+      no_containers --target release --target browser-android-armv7 --target torbrowser
+
+  - versionName: 115.2.1-release (13.0.9)
     versionCode: 2015997939
     commit: tbb-13.0.9-build2
     timeout: 21600
@@ -109,6 +175,138 @@ Builds:
     build: env -u ANDROID_HOME -u ANDROID_SDK_ROOT -u ANDROID_SDK -u ANDROID_NDK -u
       ANDROID_NDK_HOME -u NDK USER=rbm RBM_NO_DEBUG=1 ./rbm/rbm build release --target
       no_containers --target release --target browser-android-aarch64 --target torbrowser
+
+  - versionName: 115.2.1-release (13.0.9)
+    versionCode: 2015997941
+    commit: tbb-13.0.9-build2
+    timeout: 21600
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y libdata-dump-perl libdata-uuid-perl libdatetime-perl libdigest-sha-perl
+        libfile-copy-recursive-perl libfile-slurp-perl libio-all-perl libio-captureoutput-perl
+        libio-handle-util-perl libjson-perl libparallel-forkmanager-perl libpath-tiny-perl
+        libsort-versions-perl libstring-shellquote-perl libtemplate-perl libxml-libxml-perl
+        libxml-writer-perl libyaml-libyaml-perl git mercurial zstd build-essential
+        python automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
+        automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
+        libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
+        7zip
+    output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
+    srclibs:
+      - MozAppServices@c02af304af3e297932cd0c3015155833f4e6931f
+      - cbindgen@215d3a987b223d4a1a878e2385c8677d5ae3a80b
+      - CMake@d6bdba1096f36268e414f32829e22159e983031a
+      - conjure@bc3fec9dc94407b720f90d187ddc416378bccc7d
+      - TorBrowserAndroid@3e6cd76a4c68cb66ea157f8be03085e56d1373ff
+      - TorBrowser@620e9f84932b9e11779a043355d5a6a2549b8bfc
+      - libevent@aa6567fe6475d3230c7c745a7ca208735af0c331
+      - llvm-project@97724f18c79c7cc81ced24239eb5e883bf1398ef
+      - lyrebird@ef38b844f9989dff25f553b583aeafc411dd100e
+      - ninja@a626ee8bd3c77b05a38e2ebb2f82f49738e404e2
+      - snowflake@41c7613db85f6c1e8d13ea3639fb35d71f6ad942
+      - tor@766a465a6043ac4e643c398feb14f708fd0d863f
+      - TorAndroidService@565ee256ac0f890bfd33cc61654d529c1f1c9fea
+      - TorOnionProxyLibrary@a0636e0940baadb009d3c945bd3302ce99b02127
+      - TorTranslation@748528a0572fe248b1f223551324345e88389216
+      - wasi-config@0caf17e5d91a23b7c9c59edea95b0bf3106fb9d2
+      - wasi-libc@d9982c379b3cf082d3ada90bd3422b86028201b2
+      - wasi-sdk@c80964d8d7cf8ca2480d8332cd8022cb0600d421
+      - webtunnel@8be4e1fab513ac45d3a0e53c3d1ff79db63e2bbb
+      - zlib@bcf78a20978d76f64b7cd46d1a4d7a79a578c77b
+      - zstd@4856a00164c1d7b947bd384b7e9348b3a177d841
+    prebuild:
+      - 'echo "tmp_dir: /tmp" > rbm.local.conf'
+      - ln -s $$MozAppServices$$ git_clones/application-services
+      - ln -s $$cbindgen$$ git_clones/cbindgen
+      - ln -s $$CMake$$ git_clones/cmake
+      - ln -s $$conjure$$ git_clones/conjure
+      - ln -s $$TorBrowserAndroid$$ git_clones/firefox-android
+      - ln -s $$TorBrowser$$ git_clones/geckoview
+      - ln -s $$libevent$$ git_clones/libevent
+      - ln -s $$llvm-project$$ git_clones/llvm-project
+      - ln -s $$lyrebird$$ git_clones/lyrebird
+      - ln -s $$ninja$$ git_clones/ninja
+      - ln -s $$snowflake$$ git_clones/snowflake
+      - ln -s $$tor$$ git_clones/tor
+      - ln -s $$TorAndroidService$$ git_clones/tor-android-service
+      - ln -s $$TorOnionProxyLibrary$$ git_clones/tor-onion-proxy-library
+      - ln -s $$TorTranslation$$ git_clones/translation
+      - ln -s $$wasi-config$$ git_clones/wasi-config
+      - ln -s $$wasi-libc$$ git_clones/wasi-libc
+      - ln -s $$wasi-sdk$$ git_clones/wasi-sysroot
+      - ln -s $$webtunnel$$ git_clones/webtunnel
+      - ln -s $$zlib$$ git_clones/zlib
+      - ln -s $$zstd$$ git_clones/zstd
+    build: env -u ANDROID_HOME -u ANDROID_SDK_ROOT -u ANDROID_SDK -u ANDROID_NDK -u
+      ANDROID_NDK_HOME -u NDK USER=rbm RBM_NO_DEBUG=1 ./rbm/rbm build release --target
+      no_containers --target release --target browser-android-x86 --target torbrowser
+
+  - versionName: 115.2.1-release (13.0.9)
+    versionCode: 2015997943
+    commit: tbb-13.0.9-build2
+    timeout: 21600
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y libdata-dump-perl libdata-uuid-perl libdatetime-perl libdigest-sha-perl
+        libfile-copy-recursive-perl libfile-slurp-perl libio-all-perl libio-captureoutput-perl
+        libio-handle-util-perl libjson-perl libparallel-forkmanager-perl libpath-tiny-perl
+        libsort-versions-perl libstring-shellquote-perl libtemplate-perl libxml-libxml-perl
+        libxml-writer-perl libyaml-libyaml-perl git mercurial zstd build-essential
+        python automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
+        automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
+        libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
+        7zip
+    output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
+    srclibs:
+      - MozAppServices@c02af304af3e297932cd0c3015155833f4e6931f
+      - cbindgen@215d3a987b223d4a1a878e2385c8677d5ae3a80b
+      - CMake@d6bdba1096f36268e414f32829e22159e983031a
+      - conjure@bc3fec9dc94407b720f90d187ddc416378bccc7d
+      - TorBrowserAndroid@3e6cd76a4c68cb66ea157f8be03085e56d1373ff
+      - TorBrowser@620e9f84932b9e11779a043355d5a6a2549b8bfc
+      - libevent@aa6567fe6475d3230c7c745a7ca208735af0c331
+      - llvm-project@97724f18c79c7cc81ced24239eb5e883bf1398ef
+      - lyrebird@ef38b844f9989dff25f553b583aeafc411dd100e
+      - ninja@a626ee8bd3c77b05a38e2ebb2f82f49738e404e2
+      - snowflake@41c7613db85f6c1e8d13ea3639fb35d71f6ad942
+      - tor@766a465a6043ac4e643c398feb14f708fd0d863f
+      - TorAndroidService@565ee256ac0f890bfd33cc61654d529c1f1c9fea
+      - TorOnionProxyLibrary@a0636e0940baadb009d3c945bd3302ce99b02127
+      - TorTranslation@748528a0572fe248b1f223551324345e88389216
+      - wasi-config@0caf17e5d91a23b7c9c59edea95b0bf3106fb9d2
+      - wasi-libc@d9982c379b3cf082d3ada90bd3422b86028201b2
+      - wasi-sdk@c80964d8d7cf8ca2480d8332cd8022cb0600d421
+      - webtunnel@8be4e1fab513ac45d3a0e53c3d1ff79db63e2bbb
+      - zlib@bcf78a20978d76f64b7cd46d1a4d7a79a578c77b
+      - zstd@4856a00164c1d7b947bd384b7e9348b3a177d841
+    prebuild:
+      - 'echo "tmp_dir: /tmp" > rbm.local.conf'
+      - ln -s $$MozAppServices$$ git_clones/application-services
+      - ln -s $$cbindgen$$ git_clones/cbindgen
+      - ln -s $$CMake$$ git_clones/cmake
+      - ln -s $$conjure$$ git_clones/conjure
+      - ln -s $$TorBrowserAndroid$$ git_clones/firefox-android
+      - ln -s $$TorBrowser$$ git_clones/geckoview
+      - ln -s $$libevent$$ git_clones/libevent
+      - ln -s $$llvm-project$$ git_clones/llvm-project
+      - ln -s $$lyrebird$$ git_clones/lyrebird
+      - ln -s $$ninja$$ git_clones/ninja
+      - ln -s $$snowflake$$ git_clones/snowflake
+      - ln -s $$tor$$ git_clones/tor
+      - ln -s $$TorAndroidService$$ git_clones/tor-android-service
+      - ln -s $$TorOnionProxyLibrary$$ git_clones/tor-onion-proxy-library
+      - ln -s $$TorTranslation$$ git_clones/translation
+      - ln -s $$wasi-config$$ git_clones/wasi-config
+      - ln -s $$wasi-libc$$ git_clones/wasi-libc
+      - ln -s $$wasi-sdk$$ git_clones/wasi-sysroot
+      - ln -s $$webtunnel$$ git_clones/webtunnel
+      - ln -s $$zlib$$ git_clones/zlib
+      - ln -s $$zstd$$ git_clones/zstd
+    build: env -u ANDROID_HOME -u ANDROID_SDK_ROOT -u ANDROID_SDK -u ANDROID_NDK -u
+      ANDROID_NDK_HOME -u NDK USER=rbm RBM_NO_DEBUG=1 ./rbm/rbm build release --target
+      no_containers --target release --target browser-android-x86_64 --target torbrowser
 
 MaintainerNotes: |
   The version code schema is identical to Firefox/Fennec.
