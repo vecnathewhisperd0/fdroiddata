@@ -62,27 +62,27 @@ Builds:
         7zip
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
     srclibs:
-      - MozAppServices@c02af304af3e297932cd0c3015155833f4e6931f
-      - cbindgen@215d3a987b223d4a1a878e2385c8677d5ae3a80b
-      - CMake@d6bdba1096f36268e414f32829e22159e983031a
-      - conjure@bc3fec9dc94407b720f90d187ddc416378bccc7d
-      - TorBrowserAndroid@3e6cd76a4c68cb66ea157f8be03085e56d1373ff
-      - TorBrowser@620e9f84932b9e11779a043355d5a6a2549b8bfc
-      - libevent@aa6567fe6475d3230c7c745a7ca208735af0c331
-      - llvm-project@97724f18c79c7cc81ced24239eb5e883bf1398ef
-      - lyrebird@ef38b844f9989dff25f553b583aeafc411dd100e
-      - ninja@a626ee8bd3c77b05a38e2ebb2f82f49738e404e2
-      - snowflake@41c7613db85f6c1e8d13ea3639fb35d71f6ad942
-      - tor@766a465a6043ac4e643c398feb14f708fd0d863f
-      - TorAndroidService@565ee256ac0f890bfd33cc61654d529c1f1c9fea
-      - TorOnionProxyLibrary@a0636e0940baadb009d3c945bd3302ce99b02127
-      - TorTranslation@748528a0572fe248b1f223551324345e88389216
-      - wasi-config@0caf17e5d91a23b7c9c59edea95b0bf3106fb9d2
-      - wasi-libc@d9982c379b3cf082d3ada90bd3422b86028201b2
-      - wasi-sdk@c80964d8d7cf8ca2480d8332cd8022cb0600d421
-      - webtunnel@8be4e1fab513ac45d3a0e53c3d1ff79db63e2bbb
-      - zlib@bcf78a20978d76f64b7cd46d1a4d7a79a578c77b
-      - zstd@4856a00164c1d7b947bd384b7e9348b3a177d841
+      - MozAppServices@v115.0
+      - cbindgen@v0.26.0
+      - CMake@v3.28.1
+      - conjure@14d6a80f5bd5f8b88dca488b1126b9a498536368
+      - TorBrowserAndroid@firefox-android-115.2.1-13.0-1-build11
+      - TorBrowser@tor-browser-115.7.0esr-13.0-1-build1
+      - libevent@release-2.1.12-stable
+      - llvm-project@llvmorg-17.0.6
+      - lyrebird@lyrebird-0.1.0
+      - ninja@v1.11.1
+      - snowflake@v2.8.1
+      - tor@tor-0.4.8.10
+      - TorAndroidService@0438a9a4ce1548be08dd2df891a38987bb313d22
+      - TorOnionProxyLibrary@71dc2a13f674260e34d31d723fcb21a5e7649731
+      - TorTranslation@b3e21d83f2d6d1fcbd1330af182befcbb4b9b99e
+      - wasi-config@948ae97ca5703224bd3eada06b7a69f40dd15a02
+      - wasi-libc@wasi-sdk-21
+      - wasi-sdk@wasi-sdk-21
+      - webtunnel@ae511e2d67297b8b32fdb173549cac7b9f64f45b
+      - zlib@v1.3.1
+      - zstd@v1.5.5
     prebuild:
       - 'echo "tmp_dir: /tmp" > rbm.local.conf'
       - git clone $$MozAppServices$$ git_clones/application-services
@@ -128,27 +128,27 @@ Builds:
         7zip
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
     srclibs:
-      - MozAppServices@c02af304af3e297932cd0c3015155833f4e6931f
-      - cbindgen@215d3a987b223d4a1a878e2385c8677d5ae3a80b
-      - CMake@d6bdba1096f36268e414f32829e22159e983031a
-      - conjure@bc3fec9dc94407b720f90d187ddc416378bccc7d
-      - TorBrowserAndroid@3e6cd76a4c68cb66ea157f8be03085e56d1373ff
-      - TorBrowser@620e9f84932b9e11779a043355d5a6a2549b8bfc
-      - libevent@aa6567fe6475d3230c7c745a7ca208735af0c331
-      - llvm-project@97724f18c79c7cc81ced24239eb5e883bf1398ef
-      - lyrebird@ef38b844f9989dff25f553b583aeafc411dd100e
-      - ninja@a626ee8bd3c77b05a38e2ebb2f82f49738e404e2
-      - snowflake@41c7613db85f6c1e8d13ea3639fb35d71f6ad942
-      - tor@766a465a6043ac4e643c398feb14f708fd0d863f
-      - TorAndroidService@565ee256ac0f890bfd33cc61654d529c1f1c9fea
-      - TorOnionProxyLibrary@a0636e0940baadb009d3c945bd3302ce99b02127
-      - TorTranslation@748528a0572fe248b1f223551324345e88389216
-      - wasi-config@0caf17e5d91a23b7c9c59edea95b0bf3106fb9d2
-      - wasi-libc@d9982c379b3cf082d3ada90bd3422b86028201b2
-      - wasi-sdk@c80964d8d7cf8ca2480d8332cd8022cb0600d421
-      - webtunnel@8be4e1fab513ac45d3a0e53c3d1ff79db63e2bbb
-      - zlib@bcf78a20978d76f64b7cd46d1a4d7a79a578c77b
-      - zstd@4856a00164c1d7b947bd384b7e9348b3a177d841
+      - MozAppServices@v115.0
+      - cbindgen@v0.26.0
+      - CMake@v3.28.1
+      - conjure@14d6a80f5bd5f8b88dca488b1126b9a498536368
+      - TorBrowserAndroid@firefox-android-115.2.1-13.0-1-build11
+      - TorBrowser@tor-browser-115.7.0esr-13.0-1-build1
+      - libevent@release-2.1.12-stable
+      - llvm-project@llvmorg-17.0.6
+      - lyrebird@lyrebird-0.1.0
+      - ninja@v1.11.1
+      - snowflake@v2.8.1
+      - tor@tor-0.4.8.10
+      - TorAndroidService@0438a9a4ce1548be08dd2df891a38987bb313d22
+      - TorOnionProxyLibrary@71dc2a13f674260e34d31d723fcb21a5e7649731
+      - TorTranslation@b3e21d83f2d6d1fcbd1330af182befcbb4b9b99e
+      - wasi-config@948ae97ca5703224bd3eada06b7a69f40dd15a02
+      - wasi-libc@wasi-sdk-21
+      - wasi-sdk@wasi-sdk-21
+      - webtunnel@ae511e2d67297b8b32fdb173549cac7b9f64f45b
+      - zlib@v1.3.1
+      - zstd@v1.5.5
     prebuild:
       - 'echo "tmp_dir: /tmp" > rbm.local.conf'
       - git clone $$MozAppServices$$ git_clones/application-services
@@ -194,27 +194,27 @@ Builds:
         7zip
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
     srclibs:
-      - MozAppServices@c02af304af3e297932cd0c3015155833f4e6931f
-      - cbindgen@215d3a987b223d4a1a878e2385c8677d5ae3a80b
-      - CMake@d6bdba1096f36268e414f32829e22159e983031a
-      - conjure@bc3fec9dc94407b720f90d187ddc416378bccc7d
-      - TorBrowserAndroid@3e6cd76a4c68cb66ea157f8be03085e56d1373ff
-      - TorBrowser@620e9f84932b9e11779a043355d5a6a2549b8bfc
-      - libevent@aa6567fe6475d3230c7c745a7ca208735af0c331
-      - llvm-project@97724f18c79c7cc81ced24239eb5e883bf1398ef
-      - lyrebird@ef38b844f9989dff25f553b583aeafc411dd100e
-      - ninja@a626ee8bd3c77b05a38e2ebb2f82f49738e404e2
-      - snowflake@41c7613db85f6c1e8d13ea3639fb35d71f6ad942
-      - tor@766a465a6043ac4e643c398feb14f708fd0d863f
-      - TorAndroidService@565ee256ac0f890bfd33cc61654d529c1f1c9fea
-      - TorOnionProxyLibrary@a0636e0940baadb009d3c945bd3302ce99b02127
-      - TorTranslation@748528a0572fe248b1f223551324345e88389216
-      - wasi-config@0caf17e5d91a23b7c9c59edea95b0bf3106fb9d2
-      - wasi-libc@d9982c379b3cf082d3ada90bd3422b86028201b2
-      - wasi-sdk@c80964d8d7cf8ca2480d8332cd8022cb0600d421
-      - webtunnel@8be4e1fab513ac45d3a0e53c3d1ff79db63e2bbb
-      - zlib@bcf78a20978d76f64b7cd46d1a4d7a79a578c77b
-      - zstd@4856a00164c1d7b947bd384b7e9348b3a177d841
+      - MozAppServices@v115.0
+      - cbindgen@v0.26.0
+      - CMake@v3.28.1
+      - conjure@14d6a80f5bd5f8b88dca488b1126b9a498536368
+      - TorBrowserAndroid@firefox-android-115.2.1-13.0-1-build11
+      - TorBrowser@tor-browser-115.7.0esr-13.0-1-build1
+      - libevent@release-2.1.12-stable
+      - llvm-project@llvmorg-17.0.6
+      - lyrebird@lyrebird-0.1.0
+      - ninja@v1.11.1
+      - snowflake@v2.8.1
+      - tor@tor-0.4.8.10
+      - TorAndroidService@0438a9a4ce1548be08dd2df891a38987bb313d22
+      - TorOnionProxyLibrary@71dc2a13f674260e34d31d723fcb21a5e7649731
+      - TorTranslation@b3e21d83f2d6d1fcbd1330af182befcbb4b9b99e
+      - wasi-config@948ae97ca5703224bd3eada06b7a69f40dd15a02
+      - wasi-libc@wasi-sdk-21
+      - wasi-sdk@wasi-sdk-21
+      - webtunnel@ae511e2d67297b8b32fdb173549cac7b9f64f45b
+      - zlib@v1.3.1
+      - zstd@v1.5.5
     prebuild:
       - 'echo "tmp_dir: /tmp" > rbm.local.conf'
       - git clone $$MozAppServices$$ git_clones/application-services
@@ -260,27 +260,27 @@ Builds:
         7zip
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
     srclibs:
-      - MozAppServices@c02af304af3e297932cd0c3015155833f4e6931f
-      - cbindgen@215d3a987b223d4a1a878e2385c8677d5ae3a80b
-      - CMake@d6bdba1096f36268e414f32829e22159e983031a
-      - conjure@bc3fec9dc94407b720f90d187ddc416378bccc7d
-      - TorBrowserAndroid@3e6cd76a4c68cb66ea157f8be03085e56d1373ff
-      - TorBrowser@620e9f84932b9e11779a043355d5a6a2549b8bfc
-      - libevent@aa6567fe6475d3230c7c745a7ca208735af0c331
-      - llvm-project@97724f18c79c7cc81ced24239eb5e883bf1398ef
-      - lyrebird@ef38b844f9989dff25f553b583aeafc411dd100e
-      - ninja@a626ee8bd3c77b05a38e2ebb2f82f49738e404e2
-      - snowflake@41c7613db85f6c1e8d13ea3639fb35d71f6ad942
-      - tor@766a465a6043ac4e643c398feb14f708fd0d863f
-      - TorAndroidService@565ee256ac0f890bfd33cc61654d529c1f1c9fea
-      - TorOnionProxyLibrary@a0636e0940baadb009d3c945bd3302ce99b02127
-      - TorTranslation@748528a0572fe248b1f223551324345e88389216
-      - wasi-config@0caf17e5d91a23b7c9c59edea95b0bf3106fb9d2
-      - wasi-libc@d9982c379b3cf082d3ada90bd3422b86028201b2
-      - wasi-sdk@c80964d8d7cf8ca2480d8332cd8022cb0600d421
-      - webtunnel@8be4e1fab513ac45d3a0e53c3d1ff79db63e2bbb
-      - zlib@bcf78a20978d76f64b7cd46d1a4d7a79a578c77b
-      - zstd@4856a00164c1d7b947bd384b7e9348b3a177d841
+      - MozAppServices@v115.0
+      - cbindgen@v0.26.0
+      - CMake@v3.28.1
+      - conjure@14d6a80f5bd5f8b88dca488b1126b9a498536368
+      - TorBrowserAndroid@firefox-android-115.2.1-13.0-1-build11
+      - TorBrowser@tor-browser-115.7.0esr-13.0-1-build1
+      - libevent@release-2.1.12-stable
+      - llvm-project@llvmorg-17.0.6
+      - lyrebird@lyrebird-0.1.0
+      - ninja@v1.11.1
+      - snowflake@v2.8.1
+      - tor@tor-0.4.8.10
+      - TorAndroidService@0438a9a4ce1548be08dd2df891a38987bb313d22
+      - TorOnionProxyLibrary@71dc2a13f674260e34d31d723fcb21a5e7649731
+      - TorTranslation@b3e21d83f2d6d1fcbd1330af182befcbb4b9b99e
+      - wasi-config@948ae97ca5703224bd3eada06b7a69f40dd15a02
+      - wasi-libc@wasi-sdk-21
+      - wasi-sdk@wasi-sdk-21
+      - webtunnel@ae511e2d67297b8b32fdb173549cac7b9f64f45b
+      - zlib@v1.3.1
+      - zstd@v1.5.5
     prebuild:
       - 'echo "tmp_dir: /tmp" > rbm.local.conf'
       - git clone $$MozAppServices$$ git_clones/application-services
