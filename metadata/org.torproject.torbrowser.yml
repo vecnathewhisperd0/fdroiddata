@@ -61,6 +61,7 @@ Builds:
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
         7zip jq
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
+    binary: https://dist.torproject.org/torbrowser/13.0.9/tor-browser-android-armv7-13.0.9.apk
     srclibs:
       - MozAppServices@v115.0
       - cbindgen@v0.26.0
@@ -127,6 +128,7 @@ Builds:
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
         7zip jq
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
+    binary: https://dist.torproject.org/torbrowser/13.0.9/tor-browser-android-aarch64-13.0.9.apk
     srclibs:
       - MozAppServices@v115.0
       - cbindgen@v0.26.0
@@ -193,6 +195,7 @@ Builds:
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
         7zip jq
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
+    binary: https://dist.torproject.org/torbrowser/13.0.9/tor-browser-android-x86-13.0.9.apk
     srclibs:
       - MozAppServices@v115.0
       - cbindgen@v0.26.0
@@ -259,6 +262,7 @@ Builds:
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
         7zip jq
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
+    binary: https://dist.torproject.org/torbrowser/13.0.9/tor-browser-android-x86_64-13.0.9.apk
     srclibs:
       - MozAppServices@v115.0
       - cbindgen@v0.26.0
@@ -307,6 +311,8 @@ Builds:
     build: env -u ANDROID_HOME -u ANDROID_SDK_ROOT -u ANDROID_SDK -u ANDROID_NDK -u
       ANDROID_NDK_HOME -u NDK USER=rbm RBM_NO_DEBUG=1 ./rbm/rbm build release --target
       no_containers --target release --target browser-android-x86_64 --target torbrowser
+
+AllowedAPKSigningKeys: 20061f045e737c67375c17794cfedb436a03cec6bacb7cb9f96642205ca2cec8
 
 MaintainerNotes: |
   The version code schema is identical to Firefox/Fennec.
