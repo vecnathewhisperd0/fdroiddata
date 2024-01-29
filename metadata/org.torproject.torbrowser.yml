@@ -56,10 +56,10 @@ Builds:
         libio-handle-util-perl libjson-perl libparallel-forkmanager-perl libpath-tiny-perl
         libsort-versions-perl libstring-shellquote-perl libtemplate-perl libxml-libxml-perl
         libxml-writer-perl libyaml-libyaml-perl git mercurial zstd build-essential
-        python automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
+        python3 automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
         automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
-        7zip
+        7zip jq
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
     srclibs:
       - MozAppServices@v115.0
@@ -122,10 +122,10 @@ Builds:
         libio-handle-util-perl libjson-perl libparallel-forkmanager-perl libpath-tiny-perl
         libsort-versions-perl libstring-shellquote-perl libtemplate-perl libxml-libxml-perl
         libxml-writer-perl libyaml-libyaml-perl git mercurial zstd build-essential
-        python automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
+        python3 automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
         automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
-        7zip
+        7zip jq
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
     srclibs:
       - MozAppServices@v115.0
@@ -188,10 +188,10 @@ Builds:
         libio-handle-util-perl libjson-perl libparallel-forkmanager-perl libpath-tiny-perl
         libsort-versions-perl libstring-shellquote-perl libtemplate-perl libxml-libxml-perl
         libxml-writer-perl libyaml-libyaml-perl git mercurial zstd build-essential
-        python automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
+        python3 automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
         automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
-        7zip
+        7zip jq
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
     srclibs:
       - MozAppServices@v115.0
@@ -254,10 +254,10 @@ Builds:
         libio-handle-util-perl libjson-perl libparallel-forkmanager-perl libpath-tiny-perl
         libsort-versions-perl libstring-shellquote-perl libtemplate-perl libxml-libxml-perl
         libxml-writer-perl libyaml-libyaml-perl git mercurial zstd build-essential
-        python automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
+        python3 automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
         automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
-        7zip
+        7zip jq
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
     srclibs:
       - MozAppServices@v115.0
