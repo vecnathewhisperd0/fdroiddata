@@ -86,6 +86,7 @@ Builds:
       - zstd@v1.5.5
     prebuild:
       - 'echo "tmp_dir: /tmp" > rbm.local.conf'
+      - sed -i 's/^apksigner\ sign.*/mv \$aligned_apk \$qa_apk/' projects/browser/build.android
       - git clone $$MozAppServices$$ git_clones/application-services
       - git clone $$cbindgen$$ git_clones/cbindgen
       - git clone $$CMake$$ git_clones/cmake
@@ -153,6 +154,7 @@ Builds:
       - zstd@v1.5.5
     prebuild:
       - 'echo "tmp_dir: /tmp" > rbm.local.conf'
+      - sed -i 's/^apksigner\ sign.*/mv \$aligned_apk \$qa_apk/' projects/browser/build.android
       - git clone $$MozAppServices$$ git_clones/application-services
       - git clone $$cbindgen$$ git_clones/cbindgen
       - git clone $$CMake$$ git_clones/cmake
@@ -220,6 +222,7 @@ Builds:
       - zstd@v1.5.5
     prebuild:
       - 'echo "tmp_dir: /tmp" > rbm.local.conf'
+      - sed -i 's/^apksigner\ sign.*/mv \$aligned_apk \$qa_apk/' projects/browser/build.android
       - git clone $$MozAppServices$$ git_clones/application-services
       - git clone $$cbindgen$$ git_clones/cbindgen
       - git clone $$CMake$$ git_clones/cmake
@@ -287,6 +290,7 @@ Builds:
       - zstd@v1.5.5
     prebuild:
       - 'echo "tmp_dir: /tmp" > rbm.local.conf'
+      - sed -i 's/^apksigner\ sign.*/mv \$aligned_apk \$qa_apk/' projects/browser/build.android
       - git clone $$MozAppServices$$ git_clones/application-services
       - git clone $$cbindgen$$ git_clones/cbindgen
       - git clone $$CMake$$ git_clones/cmake
