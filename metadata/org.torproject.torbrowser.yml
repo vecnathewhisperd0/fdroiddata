@@ -44,9 +44,9 @@ RepoType: git
 Repo: https://gitlab.torproject.org/tpo/applications/tor-browser-build.git
 
 Builds:
-  - versionName: 115.2.1-release (13.0.11)
-    versionCode: 2016007361
-    commit: tbb-13.0.11-build1
+  - versionName: 115.2.1-release (13.0.12)
+    versionCode: 2016008913
+    commit: tbb-13.0.12-build2
     timeout: 21600
     submodules: true
     sudo:
@@ -61,7 +61,7 @@ Builds:
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
         7zip jq
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
-    binary: https://dist.torproject.org/torbrowser/13.0.11/tor-browser-android-armv7-13.0.11.apk
+    binary: https://dist.torproject.org/torbrowser/13.0.12/tor-browser-android-armv7-13.0.12.apk
     srclibs:
       - MozAppServices@v115.0
       - cbindgen@v0.26.0
@@ -112,9 +112,9 @@ Builds:
       ANDROID_NDK_HOME -u NDK USER=rbm RBM_NO_DEBUG=1 ./rbm/rbm build release --target
       no_containers --target release --target browser-android-armv7 --target torbrowser
 
-  - versionName: 115.2.1-release (13.0.11)
-    versionCode: 2016007363
-    commit: tbb-13.0.11-build1
+  - versionName: 115.2.1-release (13.0.12)
+    versionCode: 2016008915
+    commit: tbb-13.0.12-build2
     timeout: 21600
     submodules: true
     sudo:
@@ -129,7 +129,7 @@ Builds:
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
         7zip jq
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
-    binary: https://dist.torproject.org/torbrowser/13.0.11/tor-browser-android-aarch64-13.0.11.apk
+    binary: https://dist.torproject.org/torbrowser/13.0.12/tor-browser-android-aarch64-13.0.12.apk
     srclibs:
       - MozAppServices@v115.0
       - cbindgen@v0.26.0
@@ -180,9 +180,9 @@ Builds:
       ANDROID_NDK_HOME -u NDK USER=rbm RBM_NO_DEBUG=1 ./rbm/rbm build release --target
       no_containers --target release --target browser-android-aarch64 --target torbrowser
 
-  - versionName: 115.2.1-release (13.0.11)
-    versionCode: 2016007365
-    commit: tbb-13.0.11-build1
+  - versionName: 115.2.1-release (13.0.12)
+    versionCode: 2016008917
+    commit: tbb-13.0.12-build2
     timeout: 21600
     submodules: true
     sudo:
@@ -197,7 +197,7 @@ Builds:
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
         7zip jq
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
-    binary: https://dist.torproject.org/torbrowser/13.0.11/tor-browser-android-x86-13.0.11.apk
+    binary: https://dist.torproject.org/torbrowser/13.0.12/tor-browser-android-x86-13.0.12.apk
     srclibs:
       - MozAppServices@v115.0
       - cbindgen@v0.26.0
@@ -248,9 +248,9 @@ Builds:
       ANDROID_NDK_HOME -u NDK USER=rbm RBM_NO_DEBUG=1 ./rbm/rbm build release --target
       no_containers --target release --target browser-android-x86 --target torbrowser
 
-  - versionName: 115.2.1-release (13.0.11)
-    versionCode: 2016007367
-    commit: tbb-13.0.11-build1
+  - versionName: 115.2.1-release (13.0.12)
+    versionCode: 2016008919
+    commit: tbb-13.0.12-build2
     timeout: 21600
     submodules: true
     sudo:
@@ -265,7 +265,7 @@ Builds:
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
         7zip jq
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
-    binary: https://dist.torproject.org/torbrowser/13.0.11/tor-browser-android-x86_64-13.0.11.apk
+    binary: https://dist.torproject.org/torbrowser/13.0.12/tor-browser-android-x86_64-13.0.12.apk
     srclibs:
       - MozAppServices@v115.0
       - cbindgen@v0.26.0
@@ -325,5 +325,5 @@ MaintainerNotes: |
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 115.2.1-release (13.0.11)
-CurrentVersionCode: 2016007367
+CurrentVersion: 115.2.1-release (13.0.12)
+CurrentVersionCode: 2016008919
