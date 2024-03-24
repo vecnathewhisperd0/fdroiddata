@@ -11,7 +11,6 @@ IssueTracker: https://gitlab.torproject.org/tpo/applications/tor-browser-build/-
 Changelog: https://gitlab.torproject.org/tpo/applications/tor-browser-build/-/blob/main/projects/browser/Bundle-Data/Docs-TBB/ChangeLog.txt
 Donate: https://donate.torproject.org/
 
-Summary: Freely access sites your local internet service provider may have blocked
 Description: |-
   Tor Browser for Android is the only official mobile browser supported by
   the Tor Project, developers of the world's strongest tool for privacy
@@ -86,7 +85,7 @@ Builds:
       - zstd@v1.5.5
     prebuild:
       - 'echo "tmp_dir: /tmp" > rbm.local.conf'
-        #- sed -i 's/^apksigner\ sign.*/mv \$aligned_apk \$qa_apk/' projects/browser/build.android
+      - sed -i 's/^apksigner\ sign.*/mv \$aligned_apk \$qa_apk/' projects/browser/build.android
       - git clone $$MozAppServices$$ git_clones/application-services
       - git clone $$cbindgen$$ git_clones/cbindgen
       - git clone $$CMake$$ git_clones/cmake
