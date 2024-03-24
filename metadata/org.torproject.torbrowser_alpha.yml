@@ -59,7 +59,7 @@ Builds:
         python3 automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
         automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
-        7zip jq bsdiff
+        7zip jq bsdiff openjdk-11-jdk
     output: torbrowser/alpha/unsigned/*/tor-browser-qa-android-*.apk
     binary: https://dist.torproject.org/torbrowser/13.5a5/tor-browser-android-armv7-13.5a5.apk
     srclibs:

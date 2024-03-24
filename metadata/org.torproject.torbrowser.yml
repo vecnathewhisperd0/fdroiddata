@@ -59,7 +59,7 @@ Builds:
         python3 automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
         automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
-        7zip jq
+        7zip jq openjdk-11-jdk
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
     binary: https://dist.torproject.org/torbrowser/13.0.12/tor-browser-android-armv7-13.0.12.apk
     srclibs:
@@ -127,7 +127,7 @@ Builds:
         python3 automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
         automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
-        7zip jq
+        7zip jq openjdk-11-jdk
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
     binary: https://dist.torproject.org/torbrowser/13.0.12/tor-browser-android-aarch64-13.0.12.apk
     srclibs:
@@ -195,7 +195,7 @@ Builds:
         python3 automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
         automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
-        7zip jq
+        7zip jq openjdk-11-jdk
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
     binary: https://dist.torproject.org/torbrowser/13.0.12/tor-browser-android-x86-13.0.12.apk
     srclibs:
@@ -263,7 +263,7 @@ Builds:
         python3 automake libtool zip unzip autoconf2.13 gettext-base autotools-dev
         automake autoconf libtool autopoint libssl-dev pkg-config zlib1g-dev libparallel-forkmanager-perl
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
-        7zip jq
+        7zip jq openjdk-11-jdk
     output: torbrowser/release/unsigned/*/tor-browser-qa-android-*.apk
     binary: https://dist.torproject.org/torbrowser/13.0.12/tor-browser-android-x86_64-13.0.12.apk
     srclibs:
