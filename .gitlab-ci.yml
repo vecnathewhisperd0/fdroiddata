@@ -169,8 +169,9 @@ git redirect:
   rules: *app_verification_rules
   variables:
     GIT_STRATEGY: none
-  script:
+  before_script:
     - *git_clone_treeless
+  script:
     - apt-get -qqy update
     - apt-get -qqy dist-upgrade
     - apt-get -qqy install --no-install-recommends ca-certificates git python3 python3-yaml
@@ -261,8 +262,9 @@ lint:
   rules: *app_verification_rules
   variables:
     GIT_STRATEGY: none
-  script:
+  before_script:
     - *git_clone_treeless
+  script:
     - apt-get -qqy update
     - apt-get -qqy dist-upgrade
     - apt-get -qqy install --no-install-recommends exiftool git python3 python3-yaml
