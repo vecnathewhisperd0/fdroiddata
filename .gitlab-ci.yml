@@ -572,6 +572,10 @@ pages:
       - tmp/apkcache.json
       - unsigned/
     when: always
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - *git_clone_treeless
   script:
     - apt-get update
     - apt-get dist-upgrade
