@@ -41,9 +41,9 @@ variables:
 
 .install_fdroid_server_deb: &install_fdroid_server_deb
   - apt-get --allow-releaseinfo-change update
-  - apt-get -qy dist-upgrade
+  - apt-get -qqy dist-upgrade
   - echo "locales locales/locales_to_be_generated multiselect en_US.UTF-8 UTF-8" | debconf-set-selections
-  - apt-get install -qy --no-install-recommends fdroidserver apksigner mercurial git git-svn brz python3-launchpadlib locales curl
+  - apt-get -qqy install --no-install-recommends fdroidserver apksigner mercurial git git-svn brz python3-launchpadlib locales curl
 
 .get_target_source_refs: &get_target_source_refs
   - echo "running .get_target_source_refs"
@@ -171,9 +171,9 @@ git redirect:
     GIT_STRATEGY: none
   script:
     - *git_clone_treeless
-    - apt-get -qy update
-    - apt-get -qy dist-upgrade
-    - apt-get -qy install --no-install-recommends ca-certificates git python3 python3-yaml
+    - apt-get -qqy update
+    - apt-get -qqy dist-upgrade
+    - apt-get -qqy install --no-install-recommends ca-certificates git python3 python3-yaml
     - *get_changed_apps
     - test -n "$CHANGED" || exit 0
     - tools/rewrite-git-redirects.py $CHANGED
@@ -222,9 +222,9 @@ fdroid lint config:
     GIT_STRATEGY: none
   before_script:
     - *git_clone_treeless
-    - apt-get -qy update
-    - apt-get -qy dist-upgrade
-    - apt-get -qy install --no-install-recommends
+    - apt-get -qqy update
+    - apt-get -qqy dist-upgrade
+    - apt-get -qqy install --no-install-recommends
         ca-certificates
         curl
         git
@@ -263,9 +263,9 @@ lint:
     GIT_STRATEGY: none
   script:
     - *git_clone_treeless
-    - apt-get -qy update
-    - apt-get -qy dist-upgrade
-    - apt-get -qy install --no-install-recommends exiftool git python3 python3-yaml
+    - apt-get -qqy update
+    - apt-get -qqy dist-upgrade
+    - apt-get -qqy install --no-install-recommends exiftool git python3 python3-yaml
     - export EXITVALUE=0
     - function set_error() { export EXITVALUE=1; printf "\x1b[31mERROR `history|tail -2|head -1|cut -b 6-500`\x1b[0m\n"; }
 
@@ -623,7 +623,7 @@ check_git_repos:
     - *git_clone_treeless
   script:
     - apt-get update
-    - apt-get -qy install --no-install-recommends ca-certificates git python3-colorama python3-yaml
+    - apt-get -qqy install --no-install-recommends ca-certificates git python3-colorama python3-yaml
     - tools/check-git-repo-availability.py || export EXITVALUE=1
     - test -d public || mkdir public
     - cp `git status | grep -Eo 'metadata/.*\.yml'` public/ || true
