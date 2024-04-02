@@ -143,7 +143,10 @@ checkupdates:
   tags:
     - saas-linux-medium-amd64
   rules: *app_verification_rules
+  variables:
+    GIT_STRATEGY: none
   before_script:
+    - *git_clone_treeless
     - *install_fdroid_server_deb
     - export fdroidserver=../fdroidserver
     - *install_fdroid_server
@@ -164,7 +167,10 @@ git redirect:
   tags:
     - saas-linux-medium-amd64
   rules: *app_verification_rules
+  variables:
+    GIT_STRATEGY: none
   script:
+    - *git_clone_treeless
     - apt-get -qy update
     - apt-get -qy dist-upgrade
     - apt-get -qy install --no-install-recommends ca-certificates git python3 python3-yaml
@@ -183,7 +189,10 @@ fdroid lint:
   tags:
     - saas-linux-medium-amd64
   rules: *app_verification_rules
+  variables:
+    GIT_STRATEGY: none
   before_script:
+    - *git_clone_treeless
     - *install_fdroid_server_deb
     - export fdroidserver=$PWD/fdroidserver
     - *install_fdroid_server
@@ -209,7 +218,10 @@ fdroid lint config:
   stage: test
   needs: []
   image: debian:bookworm-slim
+  variables:
+    GIT_STRATEGY: none
   before_script:
+    - *git_clone_treeless
     - apt-get -qy update
     - apt-get -qy dist-upgrade
     - apt-get -qy install --no-install-recommends
@@ -247,7 +259,10 @@ lint:
   tags:
     - saas-linux-medium-amd64
   rules: *app_verification_rules
+  variables:
+    GIT_STRATEGY: none
   script:
+    - *git_clone_treeless
     - apt-get -qy update
     - apt-get -qy dist-upgrade
     - apt-get -qy install --no-install-recommends exiftool git python3 python3-yaml
@@ -271,7 +286,10 @@ schema validation:
   needs: []
   image: python
   rules: *app_verification_rules
+  variables:
+    GIT_STRATEGY: none
   before_script:
+    - *git_clone_treeless
     - pip install check-jsonschema
   script:
     - check-jsonschema --check-metaschema schemas/metadata.json || exit 1
@@ -289,7 +307,10 @@ trigger-issuebot:
   when: manual
   image: alpine
   variables:
-    GIT_DEPTH: "1"
+    GIT_STRATEGY: none
+    # GIT_DEPTH: "1"
+  before_script:
+    - *git_clone_treeless
   artifacts:
     name: "${CI_PROJECT_PATH}_${CI_JOB_STAGE}_${CI_COMMIT_REF_NAME}_${CI_COMMIT_SHA}"
     paths:
@@ -310,7 +331,10 @@ schedule-issuebot:
     variables:
       - $SCHEDULE_ISSUEBOT
   variables:
-    GIT_DEPTH: "1"
+    GIT_STRATEGY: none
+    # GIT_DEPTH: "1"
+  before_script:
+    - *git_clone_treeless
   artifacts:
     name: "${CI_PROJECT_PATH}_${CI_JOB_STAGE}_${CI_COMMIT_REF_NAME}_${CI_COMMIT_SHA}"
     paths:
@@ -329,7 +353,8 @@ checkupdates_runner:
   stage: prepare
   image: debian:bookworm-slim
   variables:
-    GIT_DEPTH: "1"
+    GIT_STRATEGY: none
+    # GIT_DEPTH: "1"
   parallel: 10
   tags:
     - fdroid
@@ -337,6 +362,7 @@ checkupdates_runner:
   rules:
     - if: $CI_PIPELINE_SOURCE == 'schedule' && $CHECKUPDATES == 'true'
   before_script:
+    - *git_clone_treeless
     - *install_fdroid_server_deb
     - export fdroidserver=../fdroidserver
     - *install_fdroid_server
@@ -426,9 +452,12 @@ fdroid build:
   variables:
     ANDROID_HOME: /opt/android-sdk
     ANDROID_SDK_ROOT: ${ANDROID_HOME}
+    GIT_STRATEGY: none
     # enable fastzip to speed up cache de/compression
     FF_USE_FASTZIP: "true"
     CACHE_COMPRESSION_LEVEL: "fastest"
+  before_script:
+    - *git_clone_treeless
   script:
     - test -d build || mkdir build
     - date
@@ -588,6 +617,10 @@ check_git_repos:
     expire_in: 1 month
     paths:
       - public
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - *git_clone_treeless
   script:
     - apt-get update
     - apt-get -qy install --no-install-recommends ca-certificates git python3-colorama python3-yaml
@@ -605,7 +638,8 @@ sast:
   dependencies:
     - fdroid build
   variables:
-    GIT_DEPTH: "1"
+    # GIT_DEPTH: "1"
+    GIT_STRATEGY: none
 
     MOBSF_API_KEY: key
     SAST_EXPERIMENTAL_FEATURES: "true"
@@ -616,6 +650,8 @@ sast:
 
     # Make sure the apk is searched before the manifest, so only apks are scanned
     ANALYZER_TARGET_DIR: $CI_PROJECT_DIR/tmp/
+  before_script:
+    - *git_clone_treeless
   allow_failure: true
   after_script:
     # GitLab can only display reports at this exact path
