@@ -93,6 +93,40 @@ variables:
         - srclibs/**/*
     - if: $CI_COMMIT_BRANCH && $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
 
+.install_git: &install_git
+  - command -v git || apt-get -qqy update
+  - command -v git || apt-get -qqy install --no-install-recommends git ca-certificates
+
+.git_clone_treeless: &git_clone_treeless
+  - (test -d .git/ && echo ".git/ exists, please check GIT_STRATEGY" && exit 1) || true
+  - *install_git
+  - date; echo ".git_clone_treeless start"
+  # create ramdisk for metadata/
+  - test -d metadata/ || mkdir metadata/
+  - mount -t tmpfs -o size=2G tmpfs metadata/
+  - echo "tmpfs metadata/ created"
+  # create ramdisk for .git/
+  - test -d .git/ || mkdir .git/
+  - mount -t tmpfs -o size=2G tmpfs .git/
+  - echo "tmpfs .git/ created"
+
+  # If f-droid-data gets bigger in the future, we can add some swap
+  # (note: swap can't be created on overlay)
+
+  # Init empty Git repository
+  - git init --quiet
+  # Adding remote origin
+  - git remote add origin "$CI_REPOSITORY_URL"
+  # Fetching changes with --filter=tree:0 (treeless clone)
+  - date; git fetch --filter=tree:0 origin $CI_COMMIT_SHA
+  # Checking out commit as detached HEAD
+  - date; git checkout -f $CI_COMMIT_SHA # dont worry about tree-out commits, we runs `git gc` from time to time 
+
+  # Show ram&disk usage :)
+  # free command is not available in debian:*-slim images
+  - (free -h; df -hT; swapon --show) || true
+  - date; echo ".git_clone_treeless done"
+
 checkupdates:
   stage: test
   needs: []
