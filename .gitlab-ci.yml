@@ -46,20 +46,26 @@ variables:
   - apt-get install -qy --no-install-recommends fdroidserver apksigner mercurial git git-svn brz python3-launchpadlib locales curl
 
 .get_target_source_refs: &get_target_source_refs
+  - echo "running .get_target_source_refs"
   - |
     if [ "$CI_PROJECT_PATH" = "fdroid/fdroiddata" ] && [ "$CI_COMMIT_BRANCH" = "$CI_DEFAULT_BRANCH" ]; then
+        echo "same repo, same branch"
         export TARGET_REF="${CI_COMMIT_BEFORE_SHA}"
         export SOURCE_REF="${CI_COMMIT_SHA}"
     else
+        echo "different repo or branch"
         git remote add upstream https://gitlab.com/fdroid/fdroiddata.git || true
         date && echo "fetching upstream ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master}"
         git fetch --filter=tree:0 upstream ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master}
         date && echo "done fetching upstream"
+
         export TARGET_REF=$(git merge-base HEAD upstream/${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master})
         export SOURCE_REF="${CI_COMMIT_SHA}"
     fi;
+  - date && echo "done setting refs, TARGET_REF=$TARGET_REF, SOURCE_REF=$SOURCE_REF"
 
 .get_changed_builds: &get_changed_builds
+  - echo "running .get_changed_builds"
   - *get_target_source_refs
   - echo $TARGET_REF
   - |
@@ -73,6 +79,7 @@ variables:
     done
 
 .get_changed_apps: &get_changed_apps
+  - echo "running .get_changed_apps"
   - *get_target_source_refs
   - echo $TARGET_REF
   - |
@@ -424,9 +431,14 @@ fdroid build:
     CACHE_COMPRESSION_LEVEL: "fastest"
   script:
     - test -d build || mkdir build
+    - date
     - *get_changed_builds
+    - date
+
     - test -n "$(printf "$CHANGED" | tr -d '[:space:]')"
           || { echo "no packages need processing, exiting"; exit 0; }
+
+    - date
 
     - apt-get update
     - apt-get dist-upgrade
