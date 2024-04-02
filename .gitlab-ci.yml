@@ -52,7 +52,9 @@ variables:
         export SOURCE_REF="${CI_COMMIT_SHA}"
     else
         git remote add upstream https://gitlab.com/fdroid/fdroiddata.git || true
-        git fetch upstream ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master}
+        date && echo "fetching upstream ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master}"
+        git fetch --filter=tree:0 upstream ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master}
+        date && echo "done fetching upstream"
         export TARGET_REF=$(git merge-base HEAD upstream/${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master})
         export SOURCE_REF="${CI_COMMIT_SHA}"
     fi;
