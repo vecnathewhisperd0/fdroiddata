@@ -43,9 +43,9 @@ RepoType: git
 Repo: https://gitlab.torproject.org/tpo/applications/tor-browser-build.git
 
 Builds:
-  - versionName: 115.2.1-beta (13.5a5)
-    versionCode: 2016005097
-    commit: tbb-13.5a5-build2
+  - versionName: 115.2.1-beta (13.5a6)
+    versionCode: 2016011617
+    commit: tbb-13.5a6-build1
     timeout: 21600
     submodules: true
     sudo:
@@ -61,7 +61,7 @@ Builds:
         libfile-slurp-perl bzip2 xz-utils apksigner yasm wget bison gyp tcl python3-venv
         7zip jq bsdiff openjdk-11-jdk
     output: torbrowser/alpha/unsigned/*/tor-browser-qa-android-*.apk
-    binary: https://dist.torproject.org/torbrowser/13.5a5/tor-browser-android-armv7-13.5a5.apk
+    binary: https://dist.torproject.org/torbrowser/13.5a6/tor-browser-android-armv7-13.5a6.apk
     srclibs:
       - MozAppServices@v115.0
       - cbindgen@v0.26.0
@@ -119,5 +119,5 @@ MaintainerNotes: |
 
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 115.2.1-beta (13.5a5)
-CurrentVersionCode: 2016005097
+CurrentVersion: 115.2.1-beta (13.5a6)
+CurrentVersionCode: 2016011617
