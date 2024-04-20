@@ -49,6 +49,7 @@ Builds:
     timeout: 21600
     submodules: true
     sudo:
+      - echo "deb https://deb.debian.org/debian bullseye main" > /etc/apt/sources.list.d/bullseye.list
       - apt-get update
       - apt-get install -y libdata-dump-perl libdata-uuid-perl libdatetime-perl libdigest-sha-perl
         libfile-copy-recursive-perl libfile-slurp-perl libio-all-perl libio-captureoutput-perl
