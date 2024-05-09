@@ -41,23 +41,31 @@ variables:
 
 .install_fdroid_server_deb: &install_fdroid_server_deb
   - apt-get --allow-releaseinfo-change update
-  - apt-get -qy dist-upgrade
+  - apt-get -qqy dist-upgrade
   - echo "locales locales/locales_to_be_generated multiselect en_US.UTF-8 UTF-8" | debconf-set-selections
-  - apt-get install -qy --no-install-recommends fdroidserver apksigner mercurial git git-svn brz python3-launchpadlib locales curl
+  - apt-get -qqy install --no-install-recommends fdroidserver apksigner mercurial git git-svn brz python3-launchpadlib locales curl
 
 .get_target_source_refs: &get_target_source_refs
+  - echo "running .get_target_source_refs"
   - |
     if [ "$CI_PROJECT_PATH" = "fdroid/fdroiddata" ] && [ "$CI_COMMIT_BRANCH" = "$CI_DEFAULT_BRANCH" ]; then
+        echo "same repo, same branch"
         export TARGET_REF="${CI_COMMIT_BEFORE_SHA}"
         export SOURCE_REF="${CI_COMMIT_SHA}"
     else
+        echo "different repo or branch"
         git remote add upstream https://gitlab.com/fdroid/fdroiddata.git || true
-        git fetch upstream ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master}
+        date && echo "fetching upstream ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master}"
+        git fetch --filter=tree:0 upstream ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master}
+        date && echo "done fetching upstream"
+
         export TARGET_REF=$(git merge-base HEAD upstream/${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-master})
         export SOURCE_REF="${CI_COMMIT_SHA}"
     fi;
+  - date && echo "done setting refs, TARGET_REF=$TARGET_REF, SOURCE_REF=$SOURCE_REF"
 
 .get_changed_builds: &get_changed_builds
+  - echo "running .get_changed_builds"
   - *get_target_source_refs
   - echo $TARGET_REF
   - |
@@ -71,6 +79,7 @@ variables:
     done
 
 .get_changed_apps: &get_changed_apps
+  - echo "running .get_changed_apps"
   - *get_target_source_refs
   - echo $TARGET_REF
   - |
@@ -93,6 +102,40 @@ variables:
         - srclibs/**/*
     - if: $CI_COMMIT_BRANCH && $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
 
+.install_git: &install_git
+  - command -v git || apt-get -qqy update
+  - command -v git || apt-get -qqy install --no-install-recommends git ca-certificates
+
+.git_clone_treeless: &git_clone_treeless
+  - (test -d .git/ && echo ".git/ exists, please check GIT_STRATEGY" && exit 1) || true
+  - *install_git
+  - date; echo ".git_clone_treeless start"
+  # create ramdisk for metadata/
+  - test -d metadata/ || mkdir metadata/
+  - mount -t tmpfs -o size=2G tmpfs metadata/
+  - echo "tmpfs metadata/ created"
+  # create ramdisk for .git/
+  - test -d .git/ || mkdir .git/
+  - mount -t tmpfs -o size=2G tmpfs .git/
+  - echo "tmpfs .git/ created"
+
+  # If f-droid-data gets bigger in the future, we can add some swap
+  # (note: swap can't be created on overlay)
+
+  # Init empty Git repository
+  - git init --quiet
+  # Adding remote origin
+  - git remote add origin "$CI_REPOSITORY_URL"
+  # Fetching changes with --filter=tree:0 (treeless clone)
+  - date; git fetch --filter=tree:0 origin $CI_COMMIT_SHA
+  # Checking out commit as detached HEAD
+  - date; git checkout -f $CI_COMMIT_SHA # dont worry about tree-out commits, we runs `git gc` from time to time 
+
+  # Show ram&disk usage :)
+  # free command is not available in debian:*-slim images
+  - (free -h; df -hT; swapon --show) || true
+  - date; echo ".git_clone_treeless done"
+
 checkupdates:
   stage: test
   needs: []
@@ -100,7 +143,10 @@ checkupdates:
   tags:
     - saas-linux-medium-amd64
   rules: *app_verification_rules
+  variables:
+    GIT_STRATEGY: none
   before_script:
+    - *git_clone_treeless
     - *install_fdroid_server_deb
     - export fdroidserver=../fdroidserver
     - *install_fdroid_server
@@ -121,10 +167,14 @@ git redirect:
   tags:
     - saas-linux-medium-amd64
   rules: *app_verification_rules
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - *git_clone_treeless
   script:
-    - apt-get -qy update
-    - apt-get -qy dist-upgrade
-    - apt-get -qy install --no-install-recommends ca-certificates git python3 python3-yaml
+    - apt-get -qqy update
+    - apt-get -qqy dist-upgrade
+    - apt-get -qqy install --no-install-recommends ca-certificates git python3 python3-yaml
     - *get_changed_apps
     - test -n "$CHANGED" || exit 0
     - tools/rewrite-git-redirects.py $CHANGED
@@ -140,7 +190,10 @@ fdroid lint:
   tags:
     - saas-linux-medium-amd64
   rules: *app_verification_rules
+  variables:
+    GIT_STRATEGY: none
   before_script:
+    - *git_clone_treeless
     - *install_fdroid_server_deb
     - export fdroidserver=$PWD/fdroidserver
     - *install_fdroid_server
@@ -167,10 +220,13 @@ fdroid lint config:
   stage: test
   needs: []
   image: debian:bookworm-slim
+  variables:
+    GIT_STRATEGY: none
   before_script:
-    - apt-get -qy update
-    - apt-get -qy dist-upgrade
-    - apt-get -qy install --no-install-recommends
+    - *git_clone_treeless
+    - apt-get -qqy update
+    - apt-get -qqy dist-upgrade
+    - apt-get -qqy install --no-install-recommends
         ca-certificates
         curl
         git
@@ -205,10 +261,14 @@ lint:
   tags:
     - saas-linux-medium-amd64
   rules: *app_verification_rules
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - *git_clone_treeless
   script:
-    - apt-get -qy update
-    - apt-get -qy dist-upgrade
-    - apt-get -qy install --no-install-recommends exiftool git python3 python3-yaml
+    - apt-get -qqy update
+    - apt-get -qqy dist-upgrade
+    - apt-get -qqy install --no-install-recommends exiftool git python3 python3-yaml
     - export EXITVALUE=0
     - function set_error() { export EXITVALUE=1; printf "\x1b[31mERROR `history|tail -2|head -1|cut -b 6-500`\x1b[0m\n"; }
 
@@ -229,7 +289,10 @@ schema validation:
   needs: []
   image: python
   rules: *app_verification_rules
+  variables:
+    GIT_STRATEGY: none
   before_script:
+    - *git_clone_treeless
     - pip install check-jsonschema
   script:
     - check-jsonschema --check-metaschema schemas/metadata.json || exit 1
@@ -247,7 +310,10 @@ trigger-issuebot:
   when: manual
   image: alpine
   variables:
-    GIT_DEPTH: "1"
+    GIT_STRATEGY: none
+    # GIT_DEPTH: "1"
+  before_script:
+    - *git_clone_treeless
   artifacts:
     name: "${CI_PROJECT_PATH}_${CI_JOB_STAGE}_${CI_COMMIT_REF_NAME}_${CI_COMMIT_SHA}"
     paths:
@@ -268,7 +334,10 @@ schedule-issuebot:
     variables:
       - $SCHEDULE_ISSUEBOT
   variables:
-    GIT_DEPTH: "1"
+    GIT_STRATEGY: none
+    # GIT_DEPTH: "1"
+  before_script:
+    - *git_clone_treeless
   artifacts:
     name: "${CI_PROJECT_PATH}_${CI_JOB_STAGE}_${CI_COMMIT_REF_NAME}_${CI_COMMIT_SHA}"
     paths:
@@ -286,7 +355,8 @@ checkupdates_runner:
   stage: prepare
   image: debian:bookworm-slim
   variables:
-    GIT_DEPTH: "1"
+    GIT_STRATEGY: none
+    # GIT_DEPTH: "1"
   parallel: 10
   tags:
     - fdroid
@@ -294,6 +364,7 @@ checkupdates_runner:
   rules:
     - if: $CI_PIPELINE_SOURCE == 'schedule' && $CHECKUPDATES == 'true'
   before_script:
+    - *git_clone_treeless
     - *install_fdroid_server_deb
     - export fdroidserver=../fdroidserver
     - *install_fdroid_server
@@ -383,11 +454,22 @@ fdroid build:
   variables:
     ANDROID_HOME: /opt/android-sdk
     ANDROID_SDK_ROOT: ${ANDROID_HOME}
+    GIT_STRATEGY: none
+    # enable fastzip to speed up cache de/compression
+    FF_USE_FASTZIP: "true"
+    CACHE_COMPRESSION_LEVEL: "fastest"
+  before_script:
+    - *git_clone_treeless
   script:
     - test -d build || mkdir build
+    - date
     - *get_changed_builds
+    - date
+
     - test -n "$(printf "$CHANGED" | tr -d '[:space:]')"
           || { echo "no packages need processing, exiting"; exit 0; }
+
+    - date
 
     - apt-get update
     - apt-get dist-upgrade
@@ -490,6 +572,10 @@ pages:
       - tmp/apkcache.json
       - unsigned/
     when: always
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - *git_clone_treeless
   script:
     - apt-get update
     - apt-get dist-upgrade
@@ -538,9 +624,13 @@ check_git_repos:
     expire_in: 1 month
     paths:
       - public
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - *git_clone_treeless
   script:
     - apt-get update
-    - apt-get -qy install --no-install-recommends ca-certificates git python3-colorama python3-yaml
+    - apt-get -qqy install --no-install-recommends ca-certificates git python3-colorama python3-yaml
     - tools/check-git-repo-availability.py || export EXITVALUE=1
     - test -d public || mkdir public
     - cp `git status | grep -Eo 'metadata/.*\.yml'` public/ || true
@@ -555,7 +645,8 @@ sast:
   dependencies:
     - fdroid build
   variables:
-    GIT_DEPTH: "1"
+    # GIT_DEPTH: "1"
+    GIT_STRATEGY: none
 
     MOBSF_API_KEY: key
     SAST_EXPERIMENTAL_FEATURES: "true"
@@ -566,6 +657,8 @@ sast:
 
     # Make sure the apk is searched before the manifest, so only apks are scanned
     ANALYZER_TARGET_DIR: $CI_PROJECT_DIR/tmp/
+  before_script:
+    - *git_clone_treeless
   allow_failure: true
   after_script:
     # GitLab can only display reports at this exact path
