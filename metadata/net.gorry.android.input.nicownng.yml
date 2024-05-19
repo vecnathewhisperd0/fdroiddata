@@ -60,9 +60,15 @@ Builds:
       - yes
     ndk: r9b
 
+  - versionName: 2023.0807.1.1305
+    versionCode: 202308071
+    commit: '53eb497aeaf99ede848c2653b03b7b311840bf4c'
+    target: android-33
+    buildjni:
+      - yes
+    ndk: r17c
+
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 2014.1204.1.1305
-CurrentVersionCode: 201412041
-
-NoSourceSince: 2014.1204.1.1305
+CurrentVersion: 2023.0807.1.1305
+CurrentVersionCode: 202308071
