@@ -69,6 +69,6 @@ Builds:
     ndk: r17c
 
 AutoUpdateMode: None
-UpdateCheckMode: None
+UpdateCheckMode: RepoManifest
 CurrentVersion: 2023.0807.1.1305
 CurrentVersionCode: 202308071
