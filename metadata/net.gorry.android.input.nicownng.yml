@@ -4,6 +4,9 @@ License: Apache-2.0
 WebSite: https://gorry.haun.org/android/nicownng
 SourceCode: https://github.com/gorry/nicoWnnG
 
+RepoType: git
+Repo: https://github.com/gorry/nicoWnnG.git
+
 AutoName: nicoWnnG
 Description: |-
   IME based on OpenWnn with full qwerty and a variety of Japanese layouts.
@@ -62,7 +65,7 @@ Builds:
 
   - versionName: 2023.0807.1.1305
     versionCode: 202308071
-    commit: '53eb497aeaf99ede848c2653b03b7b311840bf4c'
+    commit: 53eb497aeaf99ede848c2653b03b7b311840bf4c
     target: android-33
     buildjni:
       - yes
