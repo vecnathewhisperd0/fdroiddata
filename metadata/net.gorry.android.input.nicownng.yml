@@ -4,14 +4,14 @@ License: Apache-2.0
 WebSite: https://gorry.haun.org/android/nicownng
 SourceCode: https://github.com/gorry/nicoWnnG
 
-RepoType: git
-Repo: https://github.com/gorry/nicoWnnG.git
-
 AutoName: nicoWnnG
 Description: |-
   IME based on OpenWnn with full qwerty and a variety of Japanese layouts.
 
   Website is in Japanese. Original source is in a zip under dist/old.
+
+RepoType: git
+Repo: https://github.com/gorry/nicoWnnG.git
 
 Builds:
   - versionName: 2012.1125.1.1305
