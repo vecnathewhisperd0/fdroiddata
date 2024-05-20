@@ -1,7 +1,7 @@
 Categories:
-  - Writing
-  - System
   - Science & Education
+  - System
+  - Writing
 License: Apache-2.0
 WebSite: https://gorry.haun.org/android/nicownng
 SourceCode: https://github.com/gorry/nicoWnnG
@@ -99,13 +99,16 @@ Builds:
   - versionName: 2023.0807.1.1305
     versionCode: 202308071
     commit: 53eb497aeaf99ede848c2653b03b7b311840bf4c
+    prebuild:
+      # there's no signing config in the repo, avoid load errors
+      - touch app/signingConfigs.gradle
+    subdir: app
+    gradle:
+      - yes
     target: android-33
     buildjni:
       - yes
     ndk: r17c
-    subdir: app
-    gradle:
-      - master
 
 MaintainerNotes: |-
   Previous versions were built from david8black's fork that was hosted
