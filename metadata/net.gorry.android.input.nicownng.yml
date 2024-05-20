@@ -102,7 +102,7 @@ Builds:
     subdir: app
     sudo:
       - apt-get update
-      - apt-get install -y file make
+      - apt-get install -y file make libtinfo5
     gradle:
       - yes
     prebuild: sed -i -e '/signingConfigs.gradle/d' build.gradle
