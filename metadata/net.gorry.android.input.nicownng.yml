@@ -105,7 +105,9 @@ Builds:
       - apt-get install -y file
     gradle:
       - yes
-    prebuild: touch signingConfigs.gradle
+    prebuild:
+      - apt-get install -y make file
+      - touch signingConfigs.gradle
     target: android-33
     buildjni:
       - yes
@@ -117,11 +119,6 @@ MaintainerNotes: |-
 
   The upstream developer has resumed development in 2023 and
   moved their repository to GitHub. Current versions are pulled from there.
-
-  build.gradle references a signing config that is not in the repo.
-  This must be stripped, or the build will fail:
-    - touch app/signingConfigs.gradle
-    - sed -i 's/apply from: \'signingConfigs.gradle\'//' app/build.gradle
 
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
