@@ -100,6 +100,9 @@ Builds:
     versionCode: 202308071
     commit: 53eb497aeaf99ede848c2653b03b7b311840bf4c
     subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y file
     gradle:
       - yes
     prebuild: touch signingConfigs.gradle
