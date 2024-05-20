@@ -14,31 +14,31 @@ Description: |-
 
   Changelog since version 2014.1204.1 (original Japanese, English translation below):
 
-  - Ver.2023.0807.1
+  Ver.2023.0807.1
   - 「割り当てのないキー」が存在するキーボード（JISかなのシフト状態など）を表示するときに正常動作しないことがあったのを修正しました。
-  - Ver.2023.0805.1
+  Ver.2023.0805.1
   - 各種設定ファイルの読み書きが正常に動作していないのを修正しました。  これに伴い、設定ファイルの保存フォルダが変化します。  旧: /mnt/sdcard/nicoWnnG
   新: /storage/emulated/0/Android/data/net.gorry.android.input.nicownng/files/nicoWnnG
-  - Ver.2023.0803.1
+  Ver.2023.0803.1
   - Android13で正常動作しないのを修正しました。・32bit非対応環境（Pixel7以降など）で正常動作しないのを修正しました。
-  - Ver.2016.0710.1
+  Ver.2016.0710.1
   - 「Enterキーで余計なアクションが発生する」現象を改善しました。
-  - 2016.0605.1
+  2016.0605.1
   - OSの設定言語が日本語以外のとき、「入力開始時の入力モード」が無効になっていて常にアルファベットになっていたのを修正しました。
   - 一部アプリケーションの「Enterキーで検索などを開始する」動作が行われない現象を改善しました。
   - 変換候補表示を高速化しました。
 
   Changelog since version 2014.1204.1 (translated to English):
 
-  - Ver.2023.0807.1
+  Ver.2023.0807.1
   - Fixed correct behavior when displaying a keyboard with "unassigned keys" (e.g. in JIS kana shift mode)
-  - Ver.2023.0805.1
+  Ver.2023.0805.1
   - Fixed read/write issues with various settings files. The location of the settings files has also changed from /mnt/sdcard/nicoWnnG to /storage/emulated/0/Android/data/net.gorry.android.input.nicownng/files/nicoWnnG
-  - Ver.2023.0803.1
+  Ver.2023.0803.1
   - Improved compatibility with Android 13 and platforms that don't support 32bit binaries (Pixel 7 and later)
-  - Ver.2016.0710.1
+  Ver.2016.0710.1
   - Fixed "Extra action triggered on Enter key" issue
-  - 2016.0605.1
+  2016.0605.1
   - When the OS is set to a different language than Japanese, the "Initial text entry mode" will now fall back to alphabet mode in case of error
   - Fixed an an issue with the "start search with enter key" function
   - Improved speed of conversion candidate display
