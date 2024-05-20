@@ -89,7 +89,7 @@ Builds:
       - apt-get update
       - apt-get install -y file make libtinfo5
     gradle:
-      - yes
+      - master
     prebuild: sed -i -e '/signingConfigs.gradle/d' build.gradle
     ndk: r17c
 
