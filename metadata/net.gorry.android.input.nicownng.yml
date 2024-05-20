@@ -108,7 +108,7 @@ Builds:
     prebuild: touch signingConfigs.gradle
     target: android-33
     buildjni:
-      - yes
+      - app
     ndk: r17c
 
 MaintainerNotes: |-
