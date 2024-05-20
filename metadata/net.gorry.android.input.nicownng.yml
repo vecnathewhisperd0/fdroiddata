@@ -105,10 +105,7 @@ Builds:
       - apt-get install -y file make
     gradle:
       - yes
-    prebuild: touch signingConfigs.gradle
-    target: android-33
-    buildjni:
-      - app
+    prebuild: sed -i -e '/signingConfigs.gradle/d' build.gradle
     ndk: r17c
 
 MaintainerNotes: |-
