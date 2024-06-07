@@ -34,6 +34,7 @@ Builds:
       - cd ..
       - npm i
       - npm run build
+      - npm run copy
     scanignore:
       - cordova/node_modules/cordova-android/framework/cordova-publish.gradle
     build: npm run build
