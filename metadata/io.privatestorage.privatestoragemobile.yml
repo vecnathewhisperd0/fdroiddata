@@ -12,7 +12,7 @@ Repo: https://whetstone.private.storage/privatestorage/privatestoragemobile.git
 Builds:
   - versionName: 1.0.9
     versionCode: 9
-    commit: v1.0.9
+    commit: e521004dbfaabf7d67c9206c4103111bfa4288a6
     timeout: 259200
     subdir: obelisk
     sudo:
