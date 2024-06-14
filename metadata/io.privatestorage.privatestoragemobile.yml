@@ -26,7 +26,7 @@ Builds:
     output: result/android-app-release-unsigned.apk
     build:
       - USER=vagrant source /home/vagrant/.nix-profile/etc/profile.d/nix.sh
-      - nix-build -A android.frontend.release --option max-jobs auto
+      - nix-build -A android.frontend.release
     antifeatures:
       - NonFreeNet
 
