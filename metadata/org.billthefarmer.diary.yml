@@ -674,7 +674,25 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.103'
+    versionCode: 1103
+    commit: 68522e0e0ee763e97c8e23a4481e17813f599def
+    gradle:
+      - yes
+
+  - versionName: '1.104'
+    versionCode: 1104
+    commit: c94a8810aa77985a6a780e9372d318966b88e1a4
+    gradle:
+      - yes
+
+  - versionName: '1.105'
+    versionCode: 1105
+    commit: 07bb05c3b7a8ea90db5efdc8f574b9f334402a71
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '1.102'
-CurrentVersionCode: 1102
+CurrentVersion: '1.105'
+CurrentVersionCode: 1105

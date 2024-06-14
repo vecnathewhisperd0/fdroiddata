@@ -36,7 +36,20 @@ Builds:
       - yes
     ndk: r21e
 
+  - versionName: 0.1.6
+    versionCode: 16
+    commit: a9d08f64f4c4a68c8d3931b6b82f01dedea448e2
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y golang-go -t bullseye-backports
+      - apt-get install -y gcc openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    ndk: 26.0.10792818
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 0.1.5
-CurrentVersionCode: 15
+CurrentVersion: 0.1.6
+CurrentVersionCode: 16

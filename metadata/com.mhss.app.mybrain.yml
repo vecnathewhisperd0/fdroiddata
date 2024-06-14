@@ -71,7 +71,25 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.0.6
+    versionCode: 7
+    commit: 3d9f531f3997cb759774ba2c4ecb19ddca5f68a7
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 1.0.7
+    versionCode: 8
+    commit: 6ee25aea94474c49fa533e2585b9c6646cba79e6
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.5
-CurrentVersionCode: 6
+CurrentVersion: 1.0.7
+CurrentVersionCode: 8

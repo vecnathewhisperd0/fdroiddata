@@ -316,7 +316,65 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '35'
+    versionCode: 256
+    commit: b4506de6dfca55d35d4e7c094f56a119e89e7750
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: '36'
+    versionCode: 257
+    commit: aee855912ed46e11f105f6ac2adda88275737789
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: '37'
+    versionCode: 258
+    commit: b9a9e5cbfc51266eb2c1c999044baa0b3e10618b
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: '38'
+    versionCode: 259
+    commit: 1c5479b487145f1f33bf332a6067613782e0397d
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: '39'
+    versionCode: 260
+    commit: 891a4b04e5b2e3b7e59f27fffe2e6271ab4c8c7a
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: '41'
+    versionCode: 262
+    commit: 4637acdb07af4ded2c2d1f6ee6235f93d0990ee0
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '34'
-CurrentVersionCode: 255
+CurrentVersion: '41'
+CurrentVersionCode: 262

@@ -6483,8 +6483,1007 @@ Builds:
       - app/lib
     ndk: r25c
 
+  - versionName: '1.2107'
+    versionCode: 2107
+    commit: 54c810803e9bc6490d4e05215af83dc26a69f81d
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' -e '/annotation-experimental/afdroidImplementation
+        "com.google.code.findbugs:jsr305:3.0.2"' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2108'
+    versionCode: 2108
+    commit: 7449edd3b2c1d657052f64ffc8b8db4227f1d2a6
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' -e '/annotation-experimental/afdroidImplementation
+        "com.google.code.findbugs:jsr305:3.0.2"' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2109'
+    versionCode: 2109
+    commit: 35ff1fd41b256efcf694c521be45251098279cff
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' -e '/annotation-experimental/afdroidImplementation
+        "com.google.code.findbugs:jsr305:3.0.2"' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2110'
+    versionCode: 2110
+    commit: c29b82763d654773435bc9e2165c5180c6501bad
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' -e '/annotation-experimental/afdroidImplementation
+        "com.google.code.findbugs:jsr305:3.0.2"' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2112'
+    versionCode: 2112
+    commit: 35c435f683aee3e4f90fcdb82196b9d2e50b985e
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' -e '/annotation-experimental/afdroidImplementation
+        "com.google.code.findbugs:jsr305:3.0.2"' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2113'
+    versionCode: 2113
+    commit: 8facda903fe8586dccc1ee2507307e5ca515676a
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' -e '/annotation-experimental/afdroidImplementation
+        "com.google.code.findbugs:jsr305:3.0.2"' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2114'
+    versionCode: 2114
+    commit: 49ab2ea16ad0d687529019b7399a28f5674730d7
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2115'
+    versionCode: 2115
+    commit: cfd7c087bfef079d4098c571e75f9d3720f97c1e
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2116'
+    versionCode: 2116
+    commit: 64dc4cbd1d6f7a503bcce88239ca67f6cd88fb2e
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2117'
+    versionCode: 2117
+    commit: 846b693180eb0d7c323827ad725646f4cd46794c
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2118'
+    versionCode: 2118
+    commit: 0865ddbdee480d6170aab4f3fbc279f250e6f7be
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2119'
+    versionCode: 2119
+    commit: 198f6c2be60ed10cc077330457d6ac63ee1f7d4c
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2121'
+    versionCode: 2121
+    commit: bf7a87c6f66d1e8ce1ae24e8e9a25a5c06154f96
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2123'
+    versionCode: 2123
+    commit: 9ec44e36794bdb7a9df54114eb9c67243636ae7b
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2125'
+    versionCode: 2125
+    commit: 289e95a8183a119b1daf34fd1199268f799e36a4
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2126'
+    versionCode: 2126
+    commit: 0eda53b991055c9b6e9d5b09ccb8a2249e7fc821
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2127'
+    versionCode: 2127
+    commit: 3e9030c4a73bac5ffdf3e4df9cf8b987162d9de5
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild:
+      - sed -i -e '/keystoreProperties/d' build.gradle
+      - sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2128'
+    versionCode: 2128
+    commit: 4a4d5e31e44cfb0ca01e2459750619cc3db27673
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2130'
+    versionCode: 2130
+    commit: c9c02c8b52c6877566d2136e2f5f64e96203e2fb
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2131'
+    versionCode: 2131
+    commit: 26341e1d9c5fa25707d10dd425eccb3f939b7271
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2132'
+    versionCode: 2132
+    commit: a383bdae03384dc32f7daa46ca59097990697bc7
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2134'
+    versionCode: 2134
+    commit: af9fb287cfc97ec2c7406efc64898de737092385
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2135'
+    versionCode: 2135
+    commit: 73599a30d7d51b74d47ca4169fbdfecdee1fd180
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2136'
+    versionCode: 2136
+    commit: 1ea9ad18127d56f9b6cdf3aafdee4f1030fae31f
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2138'
+    versionCode: 2138
+    commit: 2430f9acc20504776b184fb3bf0c2d898ab49a03
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2139'
+    versionCode: 2139
+    commit: 3e3f5aee0f1929a25de40974f8abb80a45e6e009
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2140'
+    versionCode: 2140
+    commit: 38f37068bf577e4816b902a54e23470bc54bff48
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2141'
+    versionCode: 2141
+    commit: 88bec8d13b611ad4b4979e0c7ff87a796b2c3d37
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2143'
+    versionCode: 2143
+    commit: 8f82bdbe36447eeecc3f2c601abb05d3329aa47d
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2144'
+    versionCode: 2144
+    commit: 37e2bbbc9930f97abfc03dc254104a7e16b43258
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2145'
+    versionCode: 2145
+    commit: 510580225d4c6c41f2800c08a53c458200749a51
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2146'
+    versionCode: 2146
+    commit: ef88839a966fba4924e8ef3463ca4d4e546767b1
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2147'
+    versionCode: 2147
+    commit: 4feca5bc655136d51394556110585f75d68214b0
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2149'
+    versionCode: 2149
+    commit: 1d15393f7449d12e227d062de4710673459b0d8f
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2151'
+    versionCode: 2151
+    commit: cd8bd3eae64f3db953d6016ab5c06678e39e659f
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2152'
+    versionCode: 2152
+    commit: a7e2411a32314861906ae4b228ca478f8b085e1a
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2153'
+    versionCode: 2153
+    commit: cd13d372c81f207efcded58a179bc1bcdb2fffa1
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2154'
+    versionCode: 2154
+    commit: 77749a9a9668dbeee91e7adb26eeb6f9f8fcd30f
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2156'
+    versionCode: 2156
+    commit: 309fe57be91d8056cc2fdf0f90908d851d3add11
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2157'
+    versionCode: 2157
+    commit: 1c362dbbc6822f0c3b4c1fbde25b1db157987df8
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2158'
+    versionCode: 2158
+    commit: 8f9154af7038240daabc4f4c13440a6e13d01343
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2159'
+    versionCode: 2159
+    commit: b983878ad81798d4061092b882b195afca14e049
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2161'
+    versionCode: 2161
+    commit: 7afad7cd5d55a66365bca62b39b3dfc956474dad
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2162'
+    versionCode: 2162
+    commit: 774c4b67a5b9953e1c9d4686db2c0f1bd2924cb7
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2166'
+    versionCode: 2166
+    commit: d0b3c6875b87851e04bf1026d633bf5b57f6cb55
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2167'
+    versionCode: 2167
+    commit: 37f42ff17ea4c94019c73193534285eab0acb588
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2169'
+    versionCode: 2169
+    commit: a3dca55bbdb861a40b32d41d0d9a471dcf6af5bb
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2170'
+    versionCode: 2170
+    commit: b385a52cbfa784cf36207ab24bf998ef8f3226ca
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2171'
+    versionCode: 2171
+    commit: c8083ca5fa0e7ec0634bf5701261fe69f0bb43ec
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+    ndk: r25c
+
+  - versionName: '1.2172'
+    versionCode: 2172
+    commit: d34f5035ee711aafb832efb6c5b12c1189293856
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2173'
+    versionCode: 2173
+    commit: 5d64c94dcedc7d32ceceaaf71e517c7ce0152535
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2174'
+    versionCode: 2174
+    commit: ee690add25c231bc01f1fd43dc784c95867ee939
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2175'
+    versionCode: 2175
+    commit: d1935ae5a9706e3daf8a1d1c7cd1181513eccbc4
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2176'
+    versionCode: 2176
+    commit: 58199e930ff3c874e3603823e4c23cbc1bf28c6f
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2178'
+    versionCode: 2178
+    commit: e48326ba44abe98970d0a28c9fd632b35bd9e316
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2179'
+    versionCode: 2179
+    commit: dfc871007fef6aa64639fa3163b80abec99112fa
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2181'
+    versionCode: 2181
+    commit: 94b514d58f15cf81cf17d0cfdd1b8a14372e15a5
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2182'
+    versionCode: 2182
+    commit: 7bdac5b902e439fb4bf8def5ae67243be8856329
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2185'
+    versionCode: 2185
+    commit: 9fd71ef2d8dee5a22be52b3e6453e1e90163954a
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2186'
+    versionCode: 2186
+    commit: ae8c64cf3d08fed47f622b55e40456eefe7dbcd9
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2187'
+    versionCode: 2187
+    commit: e2ce855648f85294645e02be4f80e4c8381c8cee
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2193'
+    versionCode: 2193
+    commit: 9f9718e2c88d56db2d8446f5f217f4fbcb49bf79
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2197'
+    versionCode: 2197
+    commit: 091fa7e4328316bfdcaccf19e5a5243449e6012c
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2198'
+    versionCode: 2198
+    commit: 081d1b97b97417ba44cccb1c4690aba46e6649e4
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2200'
+    versionCode: 2200
+    commit: 9ae8e8892fd616bb4358c4269f2a70a88bbcc8d5
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
+  - versionName: '1.2201'
+    versionCode: 2201
+    commit: a95cb19169305b0171dacaef0ff355777d1edefa
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+    prebuild: sdkmanager 'cmake;3.22.1'
+    scandelete:
+      - app/lib
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
 UpdateCheckData: app/build.gradle|getVersionCode.*return (\d+)||([\d.]+)
-CurrentVersion: '1.2106'
-CurrentVersionCode: 2106
+CurrentVersion: '1.2201'
+CurrentVersionCode: 2201

@@ -22,9 +22,9 @@ RepoType: git
 Repo: https://github.com/flareteam/flare-engine.git
 
 Builds:
-  - versionName: '1.12'
-    versionCode: 112
-    commit: v1.14
+  - versionName: '1.14'
+    versionCode: 114
+    commit: v1.14-android
     timeout: 15000
     subdir: flare-android-project/app
     sudo:
@@ -61,5 +61,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '1.12'
-CurrentVersionCode: 112
+CurrentVersion: '1.14'
+CurrentVersionCode: 114

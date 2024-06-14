@@ -279,14 +279,6 @@ Builds:
     gradle:
       - foss
 
-  - versionName: 1.4.159
-    versionCode: 225
-    disable: fails to build
-    commit: v1.4.159
-    subdir: app
-    gradle:
-      - foss
-
   - versionName: 1.4.162-foss
     versionCode: 228
     commit: v1.4.162-foss
@@ -813,14 +805,6 @@ Builds:
     gradle:
       - foss
 
-  - versionName: 1.4.295.202304180
-    versionCode: 295
-    disable: https://github.com/hanjoongcho/aaf-easydiary/issues/212
-    commit: 62fa824f4a4e80d1fa2528bcf9001de6ce911e78
-    subdir: app
-    gradle:
-      - foss
-
   - versionName: 1.4.296.202304210
     versionCode: 296
     commit: 360198768f0b2ee2b11df0d9db96b200d72786dd
@@ -870,7 +854,44 @@ Builds:
     gradle:
       - foss
 
+  - versionName: 1.4.303.202310160
+    versionCode: 303
+    commit: 8440d1b6459e3089205b6625e53b371aa13d763c
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.304.202312270
+    versionCode: 304
+    commit: b16c44c2f2a01f1dc197a9de3caf632643cbf7bd
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.306.202402250
+    versionCode: 306
+    commit: 666bfa6abf8ee4c9ac10346786b8d0d9dc9fd7eb
+    subdir: app
+    gradle:
+      - foss
+
+  - versionName: 1.4.308.202406030
+    versionCode: 308
+    commit: b0aed0a9df0e4577f77902be73d043e3d2e1bfcf
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e 's/-XX:MaxPermSize=1024m//' ../gradle.properties
+
+  - versionName: 1.4.309.202406100
+    versionCode: 309
+    commit: f8322f1eeb878c4fcf2a2c51af56b20ea939a780
+    subdir: app
+    gradle:
+      - foss
+    prebuild: sed -i -e 's/-XX:MaxPermSize=1024m//' ../gradle.properties
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.302.202309180
-CurrentVersionCode: 302
+CurrentVersion: 1.4.309.202406100
+CurrentVersionCode: 309

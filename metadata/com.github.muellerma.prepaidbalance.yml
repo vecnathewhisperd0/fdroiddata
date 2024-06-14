@@ -264,7 +264,36 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '2.4'
+    versionCode: 33
+    commit: 3267b9e6df5a3c1fabf071dfe409c35564a43320
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: '2.5'
+    versionCode: 34
+    commit: 158096b6e4caa66f4f314e21bdc7984779311269
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: '2.6'
+    versionCode: 35
+    commit: d2d5940ec783d4ee96102da0c879f2821f105881
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '2.3'
-CurrentVersionCode: 32
+CurrentVersion: '2.6'
+CurrentVersionCode: 35

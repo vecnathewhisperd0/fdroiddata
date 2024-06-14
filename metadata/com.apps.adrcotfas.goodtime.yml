@@ -43,7 +43,7 @@ Description: |-
   * Insistent notifications
 
 RepoType: git
-Repo: https://github.com/goodtime-productivity/Goodtime
+Repo: https://github.com/goodtime-productivity/Goodtime.git
 
 Builds:
   - versionName: 2.0.3
@@ -282,7 +282,25 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 2.6.1
+    versionCode: 155
+    commit: 4f95e44407b89dcb5b0296b111343833721cba7e
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - fdroid
+
+  - versionName: 2.6.2
+    versionCode: 156
+    commit: 95845d126d914e68b46b8abab83e378978c2127c
+    subdir: app
+    gradle:
+      - fdroid
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 2.5.8
-CurrentVersionCode: 151
+CurrentVersion: 2.6.2
+CurrentVersionCode: 156

@@ -13,7 +13,7 @@ Bitcoin: 18ijfsv5fcDKQ6CTe4wycKxZMmti4oUXjW
 AutoName: My Location
 
 RepoType: git
-Repo: https://github.com/mirfatif/MyLocation
+Repo: https://github.com/mirfatif/MyLocation.git
 
 Builds:
   - versionName: v1.04
@@ -27,7 +27,15 @@ Builds:
     gradle:
       - yes
 
+  - versionName: v1.05-fd
+    versionCode: 105
+    commit: 14c8e24ad32af47745985ef43c933d417fab91a3
+    subdir: app
+    gradle:
+      - fdroid
+      - foss
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: v1.04
-CurrentVersionCode: 104
+CurrentVersion: v1.05-fd
+CurrentVersionCode: 105

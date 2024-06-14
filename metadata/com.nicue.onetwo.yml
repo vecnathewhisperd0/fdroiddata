@@ -23,7 +23,7 @@ Description: |-
   All of this packed in a lightweght, material designed app.
 
 RepoType: git
-Repo: https://github.com/ndleyton/OneTwo
+Repo: https://github.com/ndleyton/OneTwo.git
 
 Builds:
   - versionName: '1.0'
@@ -79,7 +79,18 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.2.0
+    versionCode: 17
+    commit: 60554fba0b2a4a9eb1a4e35c731cd5c48694a981
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+
 AutoUpdateMode: None
 UpdateCheckMode: RepoManifest
-CurrentVersion: 1.1.9
-CurrentVersionCode: 16
+CurrentVersion: 1.2.0
+CurrentVersionCode: 17

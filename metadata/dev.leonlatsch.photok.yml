@@ -2,7 +2,7 @@ Categories:
   - Security
 License: Apache-2.0
 AuthorName: Leon Latsch
-AuthorEmail: dev.leonlatsch@gmail.com
+AuthorEmail: photok@leonlatsch.dev
 AuthorWebSite: https://leonlatsch.dev
 SourceCode: https://github.com/leonlatsch/Photok
 IssueTracker: https://github.com/leonlatsch/Photok/issues
@@ -10,8 +10,6 @@ Changelog: https://github.com/leonlatsch/Photok/releases
 
 AutoName: Photok
 Description: |-
-  <b>NOTE:</b> This app is no longer developed, only maintanance.
-
   <b> Encrypt your photos on your device and keep them safe from others.</b>
 
   Photok is a free Photo-Safe. It stores your photos & videos encrypted on your device and hides them from others.
@@ -37,7 +35,7 @@ Description: |-
   Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a>, <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 
 RepoType: git
-Repo: https://github.com/leonlatsch/Photok
+Repo: https://github.com/leonlatsch/Photok.git
 
 Builds:
   - versionName: 1.1.2
@@ -176,8 +174,26 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.6.0
+    versionCode: 27
+    commit: 755d4c097d5e05d2f9b20081cab011c4f04f7185
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 1.7.0
+    versionCode: 28
+    commit: 1809490175e75a1e34b931a4d6edd9891aa07cb1
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
-UpdateCheckMode: Tags
+UpdateCheckMode: Tags .*[0-9]$
 UpdateCheckData: gradle.properties|appVersionCode=(\d+)|.|appVersionName=([\d.]+)
-CurrentVersion: 1.5.0
-CurrentVersionCode: 26
+CurrentVersion: 1.7.0
+CurrentVersionCode: 28

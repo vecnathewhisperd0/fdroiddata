@@ -3,8 +3,8 @@ Categories:
 License: GPL-3.0-or-later
 AuthorName: SECUSO - Security Usability Society
 AuthorEmail: contact@secuso.org
-AuthorWebSite: https://secuso.aifb.kit.edu/english/
-WebSite: https://www.secuso.org/pfa
+AuthorWebSite: https://secuso.aifb.kit.edu/english/105.php
+WebSite: https://secuso.aifb.kit.edu/english/Solitaire.php
 SourceCode: https://github.com/SecUSo/privacy-friendly-solitaire
 IssueTracker: https://github.com/SecUSo/privacy-friendly-solitaire/issues
 Changelog: https://github.com/SecUSo/privacy-friendly-solitaire/blob/HEAD/CHANGELOG.md
@@ -15,15 +15,6 @@ RepoType: git
 Repo: https://github.com/SecUSo/privacy-friendly-solitaire.git
 
 Builds:
-  - versionName: 1.0.2
-    versionCode: 3
-    commit: v1.0.2
-    subdir: android
-    gradle:
-      - yes
-    scandelete:
-      - android/libs/
-
   - versionName: '1.1'
     versionCode: 4
     commit: a97df0c65cf6d1148a2cd921e77ebde464d46c9a
@@ -31,6 +22,8 @@ Builds:
     submodules: true
     gradle:
       - yes
+    preassemble:
+      - copyAndroidNatives
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags

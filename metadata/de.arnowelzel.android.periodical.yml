@@ -1,10 +1,11 @@
 Categories:
-  - Science & Education
+  - Sports & Health
 License: GPL-3.0-or-later
 WebSite: https://arnowelzel.de/wiki/android/app/periodical
 SourceCode: https://github.com/arnowelzel/periodical
 IssueTracker: https://github.com/arnowelzel/periodical/issues
 Changelog: http://arnowelzel.de/wiki/en/android/app/periodical
+Translation: https://crowdin.com/project/periodical
 
 AutoName: Periodical
 Description: |-
@@ -13,9 +14,6 @@ Description: |-
 
   WARNING: It is not recommended to use this calendar to avoid pregnancy! There
   are more accurate methods, like measuring the basal body temperature.
-
-  If you have any further questions or want to help translating the app, please
-  <a href="http://arnowelzel.de/wiki/en/arno">contact upstream</a>.
 
 RepoType: git
 Repo: https://github.com/arnowelzel/periodical.git
@@ -403,7 +401,29 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.74'
+    versionCode: 96
+    commit: 786746f9d81bf8767369183875580eae90b42812
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: '1.75'
+    versionCode: 99
+    commit: 2184e71e0ee1319f96087cd6b1d16e5160300007
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '1.73'
-CurrentVersionCode: 95
+CurrentVersion: '1.75'
+CurrentVersionCode: 99

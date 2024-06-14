@@ -326,7 +326,31 @@ Builds:
     gradle:
       - yes
 
+  - versionName: '1.53'
+    versionCode: 153
+    commit: f2025f10d3204812d22a92d35c0d54b9ff67b6a0
+    gradle:
+      - yes
+
+  - versionName: '1.54'
+    versionCode: 154
+    commit: a0d403e07451e1b30f484a152789b05fa5859db8
+    gradle:
+      - yes
+
+  - versionName: '1.55'
+    versionCode: 155
+    commit: bf05ec63cf99175f4a884ec3fa58fdf1599e0b43
+    gradle:
+      - yes
+
+  - versionName: '1.56'
+    versionCode: 156
+    commit: fb871a1050a7091c8262d07c8f2cf6756c816e11
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '1.52'
-CurrentVersionCode: 152
+CurrentVersion: '1.56'
+CurrentVersionCode: 156

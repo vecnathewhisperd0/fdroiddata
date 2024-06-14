@@ -3,7 +3,7 @@ Categories:
 License: Apache-2.0
 AuthorName: Sergey Solovyev
 AuthorEmail: se.solovyev@gmail.com
-SourceCode: https://github.com/Bubu/android-calculatorpp
+SourceCode: https://git.bubu1.eu/Bubu/android-calculatorpp
 IssueTracker: https://github.com/serso/android-calculatorpp/issues
 
 AutoName: Calculator++
@@ -40,7 +40,7 @@ Description: |-
   * Do calculations with complex numbers
 
 RepoType: git
-Repo: https://github.com/Bubu/android-calculatorpp
+Repo: https://git.bubu1.eu/Bubu/android-calculatorpp.git
 
 Builds:
   - versionName: 2.2.7
@@ -53,8 +53,6 @@ Builds:
       - serso-plotter@3683ea6b242a02164379d628c265ff849abe6e31
       - serso-otto@7d9c4ad443ccf75a4908941f2d555d1fb52f28a9
     prebuild: cp $$serso-plotter$$/lib/build/outputs/aar/lib-release.aar ./misc/libs/plotter.aar
-    antifeatures:
-      - Tracking
 
   - versionName: 2.2.7
     versionCode: 158
@@ -66,13 +64,20 @@ Builds:
       - serso-plotter@3683ea6b242a02164379d628c265ff849abe6e31
       - serso-otto@7d9c4ad443ccf75a4908941f2d555d1fb52f28a9
     prebuild: cp $$serso-plotter$$/lib/build/outputs/aar/lib-release.aar ./misc/libs/plotter.aar
-    antifeatures:
-      - Tracking
 
-MaintainerNotes: otto is installed to the local maven repo (~/.m2) and used during
-  the build from there.
+  - versionName: 2.3.3
+    versionCode: 161
+    commit: release-2.3.3b
+    subdir: app
+    submodules: true
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 2.2.7
-CurrentVersionCode: 158
+CurrentVersion: 2.3.3
+CurrentVersionCode: 161

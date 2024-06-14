@@ -35,9 +35,41 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 0.7.5
+    versionCode: 56
+    commit: 0a7ccfe5c614f8ae4d4ba1dced0b27ff37e3ab72
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+
+  - versionName: 0.8.1
+    versionCode: 58
+    commit: 014245f4c86ad33472d235ca996bfa16d420f7eb
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.2
+    versionCode: 59
+    commit: 03109023002b6c47d82ca4ba45770385eaa2851d
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.8.3
+    versionCode: 60
+    commit: 51649b94099c938c9c79d3e534e5a49380877901
+    subdir: app
+    gradle:
+      - yes
+
 AllowedAPKSigningKeys: 59034f46ae31a6989793d91cadc334425342c2724153126ed5f7e212cad6ba1f
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 0.6.7
-CurrentVersionCode: 49
+CurrentVersion: 0.8.3
+CurrentVersionCode: 60

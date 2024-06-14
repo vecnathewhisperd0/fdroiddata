@@ -193,7 +193,51 @@ Builds:
       - yes
     prebuild: sed -i -e '/INTERNET/d' src/main/AndroidManifest.xml
 
+  - versionName: 1.6.0
+    versionCode: 29
+    commit: d6c6a463f381c48f0ea97fbed1fff39c6cb007a4
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/INTERNET/d' src/main/AndroidManifest.xml
+
+  - versionName: 1.7.0
+    versionCode: 30
+    commit: 900a1c8ea9b8ff6635755edffdc01c38492a6b90
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/INTERNET/d' src/main/AndroidManifest.xml
+
+  - versionName: 1.8.0
+    versionCode: 31
+    commit: 665f54d99d6397269c0038898ee534330c79632a
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    prebuild: sed -i -e '/INTERNET/d' src/main/AndroidManifest.xml
+
+  - versionName: 1.8.1
+    versionCode: 32
+    commit: 98689ffe04a459bd592da7e9d2ca276ae6f6894a
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e '/INTERNET/d' src/main/AndroidManifest.xml
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.5.0
-CurrentVersionCode: 28
+CurrentVersion: 1.8.1
+CurrentVersionCode: 32

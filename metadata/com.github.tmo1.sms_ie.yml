@@ -166,7 +166,58 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.2.0
+    versionCode: 102
+    commit: 068ab6861e0ed5ad1b308bfffbd1a0febe7948d1
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 2.3.0
+    versionCode: 103
+    commit: 91fc272e411d3615418230eff6d00d18583ffa0f
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 2.3.1
+    versionCode: 104
+    commit: a3c31f491b2058ac3fea9c1d39bac0c4fbd855ca
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 2.3.2
+    versionCode: 105
+    commit: 98c5fa1719d98cf256d69a1b2d3eda8790dacbc9
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 2.4.0
+    versionCode: 106
+    commit: 92da6e66a879e3b9b1307629aac305b72da7bf49
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 2.1.0
-CurrentVersionCode: 101
+CurrentVersion: 2.4.0
+CurrentVersionCode: 106

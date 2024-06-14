@@ -27,18 +27,6 @@ Builds:
     gradle:
       - full
 
-  - versionName: 0.12.0
-    versionCode: 26
-    disable: https://github.com/lneugebauer/nextcloud-cookbook/issues/39
-    commit: 7cdd17ccd8c727f12f703af2b4256c3d52ec6468
-    subdir: app
-    sudo:
-      - apt-get update
-      - apt-get install -y openjdk-17-jdk-headless
-      - update-alternatives --auto java
-    gradle:
-      - full
-
   - versionName: 0.12.1
     versionCode: 27
     commit: 7c09e778495184e604f27b52c978899df484dc23
@@ -61,7 +49,94 @@ Builds:
     gradle:
       - full
 
+  - versionName: 0.14.1
+    versionCode: 30
+    commit: a396f00382d20d2ad31d95da21f33f01a9289b48
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - full
+
+  - versionName: 0.14.2
+    versionCode: 31
+    commit: 1472453e67de90f2c84129e12f8b932f37608c15
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - full
+
+  - versionName: 0.14.3
+    versionCode: 32
+    commit: 7f2e2e75c212b914c26861ec7b4f44633ceec406
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - full
+
+  - versionName: 0.14.4
+    versionCode: 33
+    commit: 559938d367745b0a35b8257a0ec9c12731f4f036
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - full
+
+  - versionName: 0.14.5
+    versionCode: 34
+    commit: ceb68510e25d1368cbbc0bd4d7108d785c94ca8a
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - full
+
+  - versionName: 0.14.6
+    versionCode: 36
+    commit: 847572621364c667c1ef286fe63e10a4c561ece8
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - full
+
+  - versionName: 0.15.0
+    versionCode: 37
+    commit: 83a593366850d9386a35469a55dfa585edb42611
+    subdir: app
+    gradle:
+      - full
+
+  - versionName: 0.16.0
+    versionCode: 38
+    commit: 2617403aebecac674576de14c243815f4fcd3479
+    subdir: app
+    gradle:
+      - full
+
+  - versionName: 0.17.0
+    versionCode: 39
+    commit: 07228dad49dc88df5e7175ef5058458112e1d8c2
+    subdir: app
+    gradle:
+      - full
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 0.13.0
-CurrentVersionCode: 28
+CurrentVersion: 0.17.0
+CurrentVersionCode: 39

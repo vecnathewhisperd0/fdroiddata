@@ -428,7 +428,47 @@ Builds:
     rm:
       - app/publish.gradle
 
+  - versionName: 1.6.4
+    versionCode: 52
+    commit: ed222a7557fb6e774ebe5aa78a3c5ac65876e612
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+    rm:
+      - app/publish.gradle
+
+  - versionName: 1.6.5
+    versionCode: 53
+    commit: 946dc8197939be403eb274e1bfb4e56e405bbdb6
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/publish.gradle
+
+  - versionName: 1.6.7
+    versionCode: 55
+    commit: 524e7fd71e0f7fb6d68d33bf60bfa910d38856bc
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/publish.gradle
+
+  - versionName: 1.6.8
+    versionCode: 56
+    commit: e6c0c7521f693cf5955fe3a2c43e1379e1ce684b
+    subdir: app
+    gradle:
+      - yes
+    rm:
+      - app/publish.gradle
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.6.3
-CurrentVersionCode: 51
+CurrentVersion: 1.6.8
+CurrentVersionCode: 56

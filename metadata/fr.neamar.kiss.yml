@@ -827,7 +827,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 3.21.0
+    versionCode: 208
+    commit: bc7c8fdefc65f3257528394faa85ccf311086836
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 3.21.1
+    versionCode: 209
+    commit: 27110f8b321575ad446e66f2ce48eb9e8aca13b3
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v[0-9\.]+$
-CurrentVersion: 3.20.1
-CurrentVersionCode: 207
+CurrentVersion: 3.21.1
+CurrentVersionCode: 209

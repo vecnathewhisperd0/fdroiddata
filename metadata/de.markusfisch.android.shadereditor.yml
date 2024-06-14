@@ -5,6 +5,9 @@ WebSite: http://markusfisch.de
 SourceCode: https://github.com/markusfisch/ShaderEditor
 IssueTracker: https://github.com/markusfisch/ShaderEditor/issues
 Changelog: https://github.com/markusfisch/ShaderEditor/blob/HEAD/CHANGELOG.md
+Donate: https://www.buymeacoffee.com/markusfisch
+Liberapay: markusfisch
+Bitcoin: bc1q2guk2rpll587aymrfadkdtpq32448x5khk5j8z
 
 AutoName: Shader Editor
 Description: |-
@@ -455,11 +458,53 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.31.1
+    versionCode: 77
+    commit: f616c91eed5b34570dfe7929589ca33bf9f72304
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.32.0
+    versionCode: 78
+    commit: 7aceaae88330c205bd19e0d3eec06df2cc9139be
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.33.0
+    versionCode: 79
+    commit: 60332bf04554e7e061be681490ad2799cb7ddd74
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.33.2
+    versionCode: 81
+    commit: 78a578bee8b7aaa56f82bc20be4c08fbc1679b8d
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.33.3
+    versionCode: 82
+    commit: 6c5ddf9e446e0e9fb56d459fcc3bbf169422f3cd
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.34.1
+    versionCode: 84
+    commit: 584b287a7fa682e883efe6d603ae45d831e23b18
+    subdir: app
+    gradle:
+      - yes
+
 MaintainerNotes: |-
   TouchThruDrawerlayout.java can be removed since its identical to the correctly
   named TouchThruDrawerLayout.java.
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 2.31.0
-CurrentVersionCode: 76
+CurrentVersion: 2.34.1
+CurrentVersionCode: 84

@@ -32,14 +32,21 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 0.0.20
-    versionCode: 20
-    commit: a7bf86e67accbb64f0eec555b95a4f67a11db6d0
+  - versionName: 0.0.22
+    versionCode: 22
+    commit: ad584f15c316caa890f19324fc268552468b64a1
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 0.0.23
+    versionCode: 23
+    commit: d8ac11d193b48c8ef5949436572c4d26fb056302
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 0.0.20
-CurrentVersionCode: 20
+CurrentVersion: 0.0.23
+CurrentVersionCode: 23

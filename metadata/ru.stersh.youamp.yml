@@ -1,0 +1,44 @@
+Categories:
+  - Multimedia
+License: MIT
+AuthorName: Kirill Zhukov
+AuthorWebSite: https://github.com/siper
+SourceCode: https://github.com/siper/YouAMP
+IssueTracker: https://github.com/siper/YouAMP/issues
+Translation: https://crowdin.com/project/youamp
+Changelog: https://github.com/siper/YouAMP/releases
+
+AutoName: Youamp
+
+RepoType: git
+Repo: https://github.com/siper/YouAMP.git
+Binaries: https://github.com/siper/YouAMP/releases/download/v%v/app-release.apk
+
+Builds:
+  - versionName: 1.0.0-alpha03
+    versionCode: 3
+    commit: v1.0.0-alpha03
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.0-alpha06
+    versionCode: 6
+    commit: a53adad03547f07c6c6bfe9cc61b181dd800b4bf
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 1.0.0-alpha07
+    versionCode: 7
+    commit: a6220b4e0bfecbd5f8d4e71aff1aa03ea1a73f19
+    subdir: app
+    gradle:
+      - yes
+
+AllowedAPKSigningKeys: aa6cb05a347362db4ef2a5e7b770845039a758d0f0c991ad8a1b9a0aa0414c42
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0-alpha07
+CurrentVersionCode: 7

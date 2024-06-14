@@ -1937,14 +1937,166 @@ Builds:
       - libs/sharedTest/src/main/assets
       - libs/index/src/commonTest/resources
 
+  - versionName: 1.18.0
+    versionCode: 1018050
+    commit: 73ee59550fe86db59598240d2fc0a698a4017ba3
+    subdir: app
+    gradle:
+      - full
+    prebuild: printf '\nstrict.release\n' >> gradle.properties
+    scandelete:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+      - libs/sharedTest/src/main/assets
+      - libs/index/src/commonTest/resources
+
+  - versionName: 1.19.0-alpha0
+    versionCode: 1019000
+    commit: 1.19.0-alpha0
+    subdir: app
+    gradle:
+      - full
+    prebuild: printf '\nstrict.release\n' >> gradle.properties
+    scandelete:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+      - libs/sharedTest/src/main/assets
+      - libs/index/src/commonTest/resources
+
+  - versionName: 1.19.0-alpha1
+    versionCode: 1019001
+    commit: 1.19.0-alpha1
+    subdir: app
+    gradle:
+      - full
+    prebuild: printf '\nstrict.release\n' >> gradle.properties
+    scandelete:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+      - libs/sharedTest/src/main/assets
+      - libs/index/src/commonTest/resources
+
+  - versionName: 1.19.0-alpha2
+    versionCode: 1019002
+    commit: 517a3dae5da127554dd64496ce3167c0c25b7f25
+    subdir: app
+    gradle:
+      - full
+    prebuild: printf '\nstrict.release\n' >> gradle.properties
+    scandelete:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+      - libs/sharedTest/src/main/assets
+      - libs/index/src/commonTest/resources
+
+  - versionName: 1.19.0-alpha3
+    versionCode: 1019003
+    commit: ddd2b3632ea801ef5906df5bcc33d3ce15558618
+    subdir: app
+    gradle:
+      - full
+    prebuild: printf '\nstrict.release\n' >> gradle.properties
+    scandelete:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+      - libs/sharedTest/src/main/assets
+      - libs/index/src/commonTest/resources
+
+  - versionName: 1.19.0
+    versionCode: 1019050
+    commit: 11acb3d177d258ebfbc44c43fb7c4ec90b09478f
+    subdir: app
+    gradle:
+      - full
+    prebuild: printf '\nstrict.release\n' >> gradle.properties
+    scandelete:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+      - libs/sharedTest/src/main/assets
+      - libs/index/src/commonTest/resources
+
+  - versionName: 1.19.1
+    versionCode: 1019051
+    commit: 86ffab45bd4005e8c1a7c79a07ecb5afe5c4b3fe
+    subdir: app
+    gradle:
+      - full
+    scandelete:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+      - libs/sharedTest/src/main/assets
+      - libs/index/src/commonTest/resources
+    gradleprops:
+      - strict.release
+
+  - versionName: 1.19.2
+    versionCode: 1019052
+    commit: 24b5dd36de9dbf3190ca871575f4904ee6ce13e1
+    subdir: app
+    gradle:
+      - full
+    scandelete:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+      - libs/sharedTest/src/main/assets
+      - libs/index/src/commonTest/resources
+    gradleprops:
+      - strict.release
+
+  - versionName: 1.20.0-alpha0
+    versionCode: 1020000
+    commit: 6cba480d733ba247b51a2dda62e768dd582e1d2f
+    subdir: app
+    gradle:
+      - full
+    scandelete:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+      - libs/sharedTest/src/main/assets
+      - libs/index/src/commonTest/resources
+    gradleprops:
+      - strict.release
+
+  - versionName: 1.20.0-alpha1
+    versionCode: 1020001
+    commit: 17ce3d4d447fae70d6f5f67df071fdc632a587fc
+    subdir: app
+    gradle:
+      - full
+    scandelete:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+      - libs/sharedTest/src/main/assets
+      - libs/index/src/commonTest/resources
+    gradleprops:
+      - strict.release
+
+  - versionName: 1.20.0
+    versionCode: 1020050
+    commit: d8d0b7c349c477bca77947cb9182dbc90434975f
+    subdir: app
+    gradle:
+      - full
+    scandelete:
+      - app/src/androidTest/assets
+      - app/src/test/resources
+      - libs/sharedTest/src/main/assets
+      - libs/index/src/commonTest/resources
+    gradleprops:
+      - strict.release
+
 MaintainerNotes: |
   This is maintained in tight conjunction with fdroidclient releases.
   Please check with the fdroidclient maintainers before making
   changes. Don't forget to open a MR to fdroid-website/.htaccess
   when bumping CurrentVersionCode.
 
-ArchivePolicy: 4
+  If the download link version gets moved to the archive, or vice
+  versa, then edit the alias like:
+  https://gitlab.com/fdroid/fdroid-website/-/commit/a7186bbfbd4227083691b252372371e5b9a3cb9a
+
+ArchivePolicy: 5
 AutoUpdateMode: None
 UpdateCheckMode: Static
-CurrentVersion: 1.17.0
-CurrentVersionCode: 1017050
+CurrentVersion: 1.20.0
+CurrentVersionCode: 1020050

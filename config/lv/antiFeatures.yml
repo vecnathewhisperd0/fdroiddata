@@ -13,12 +13,12 @@ KnownVuln:
 NSFW:
   icon: ic_antifeature_nsfw.png
   description: Šajā lietotnē ir saturs, ko nevajadzētu visur publiskot vai rādīt
-  name: Nav droša darbā
+  name: Nepiedienīgs saturs
 NoSourceSince:
   icon: ic_antifeature_nosourcesince.png
   name: Pirmkods vairs nav pieejams, atjauninājumi nav iespējami.
 NonFreeAdd:
-  description: Šī lietotne atbalsta nebrīvus papildinājumus
+  description: Šī lietotne veicina nebrīvus papildinājumus
   icon: ic_antifeature_nonfreeadd.png
   name: Nebrīvi papildinājumi
 NonFreeAssets:
@@ -30,9 +30,9 @@ NonFreeDep:
   icon: ic_antifeature_nonfreedep.png
   name: Nebrīvas atkarības
 NonFreeNet:
-  description: Šī lietotne reklamē vai ir pilnīgi atkarīga no maksas tīkla pakalpojumiem
+  description: Šī lietotne veicina vai ir pilnīgi atkarīga no tīkla pakalpojuma, kas izmanto nebrīvo programmatūru
   icon: ic_antifeature_nonfreenet.png
-  name: Maksas tīkla pakalpojumi
+  name: Nebrīvi tīkla pakalpojumi
 Tracking:
   description: Šī lietotne izseko darbības un ziņo par tām
   icon: ic_antifeature_tracking.png
@@ -42,5 +42,5 @@ UpstreamNonFree:
   icon: ic_antifeature_upstreamnonfree.png
   name: Nebrīvs pirmavots
 TetheredNet:
-  name: TetheredNet
+  name: Piesaiste tīkla pakalpojumiem
   description: Šī lietotne veicina vai ir pilnībā atkarīga no noteikta veida tīkla pakalpojuma.

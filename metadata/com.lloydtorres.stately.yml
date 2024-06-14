@@ -36,9 +36,31 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 1.11.1
+    versionCode: 50
+    commit: 3acdfefd3dd2e8440431c978f50f972b4220c1b6
+    subdir: Stately/app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
+  - versionName: 1.11.2
+    versionCode: 51
+    commit: 3816f980af0e04e278e76bbffcc2b5509ce158d7
+    subdir: Stately/app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - yes
+
 MaintainerNotes: account creation requires website using Google Analytics (Tracking)
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.11.0
-CurrentVersionCode: 49
+CurrentVersion: 1.11.2
+CurrentVersionCode: 51

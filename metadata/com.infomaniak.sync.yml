@@ -192,7 +192,36 @@ Builds:
     gradle:
       - ose
 
+  - versionName: 4.3.8
+    versionCode: 403080000
+    commit: 4d7db2f25f36b1471a429dd6dfa26490abc9db48
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - ose
+
+  - versionName: 4.3.9
+    versionCode: 403090002
+    commit: d5885a33d5106c74e83d247dd11181f4c2cc4819
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-java-alternatives -a
+    gradle:
+      - ose
+
+  - versionName: 4.3.14
+    versionCode: 403140003
+    commit: c8a5d0657e7c541c4c28e39007b9bb4dfa1e2f90
+    subdir: app
+    gradle:
+      - ose
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 4.3.7
-CurrentVersionCode: 403070001
+CurrentVersion: 4.3.14
+CurrentVersionCode: 403140003
