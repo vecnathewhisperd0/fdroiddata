@@ -9,8 +9,8 @@ Changelog: https://github.com/Vinetos/Tranquille/releases
 AutoName: Tranquille
 
 RepoType: git
-Repo: https://github.com/Vinetos/Tranquille
-Binaries: https://github.com/Vinetos/Tranquille/releases/download/%v/app-debug.apk
+Repo: https://github.com/Vinetos/Tranquille.git
+Binaries: https://github.com/Vinetos/Tranquille/releases/download/%v/app-release.apk
 
 Builds:
   - versionName: 0.0.1
