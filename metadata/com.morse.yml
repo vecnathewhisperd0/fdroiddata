@@ -1,0 +1,36 @@
+License: Gpl v3.0
+AuthorName: Jothiram
+AuthorEmail: jothiramn1641@gmail.com
+AuthorWebSite: -
+SourceCode: https://gitlab.com/jothiramn1641/app.git
+IssueTracker: https://gitlab.com/jothiramn1641/app.git
+Translation: -
+Changelog: -
+Donate: -
+Bitcoin: -
+
+AutoName: Morse Code Translator
+
+RepoType: git
+Repo: https://gitlab.com/jothiramn1641/app.git
+
+Builds:
+  - versionName: 0.0.3
+    versionCode: 3
+    commit: v0.0.3
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@2.2.3
+    rm:
+      - ios
+      - .vs
+    build:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk --flavor fdroid
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
+CurrentVersion: 0.0.3
+CurrentVersionCode: 3
