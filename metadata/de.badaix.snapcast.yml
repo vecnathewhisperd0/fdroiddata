@@ -107,7 +107,7 @@ Builds:
     gradle:
       - yes
     srclibs:
-      - snapcast-deps@v0.27.0
+      - snapcast-deps@v0.29.0
     rm:
       - Snapcast/Ressources
       - Snapcast/src/main/cpp/snapcast/doc/Audiowide.zip
