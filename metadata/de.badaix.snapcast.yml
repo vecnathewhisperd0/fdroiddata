@@ -113,15 +113,16 @@ Builds:
       - Snapcast/src/main/cpp/snapcast/doc/Audiowide.zip
     prebuild: sed -i -e '/maven {/,/^    }/d' build.gradle
     build:
+      - sdkmanager 'ndk;r25b'
       - pushd $$snapcast-deps$$
       - curl -LOs https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2
       - echo '71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa  boost_1_81_0.tar.bz2'
         | shasum -c
       - tar xjf boost_1_81_0.tar.bz2
-      - NDK_DIR=$$NDK$$ ./build_android.sh
+      - NDK_DIR=$$NDK$$/../25.1.8937393 ./build_android.sh
       - popd
       - mv $$snapcast-deps$$/build/aar/*.aar libs
-    ndk: r25b
+    ndk: r26c
 
 AutoUpdateMode: None
 UpdateCheckMode: None
