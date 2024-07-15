@@ -1,0 +1,35 @@
+Categories:
+  - Internet
+License: Apache-2.0
+SourceCode: https://github.com/anfreire/updateMe-Mobile
+
+AutoName: Update Me
+
+RepoType: git
+Repo: https://github.com/anfreire/updateMe-Mobile
+
+Builds:
+  - versionName: 2.2.1
+    versionCode: 6
+    commit: v2.2.1
+    subdir: android/app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless nodejs npm android-sdk android-sdk-common
+        android-sdk-build-tools android-sdk-build-tools-common gradle adb fastboot
+        javascript-common build-essential nodejs-doc node-tap
+      - update-alternatives --auto java
+      - export ANDROID_HOME=/usr/lib/android-sdk
+    gradle:
+      - yes
+    prebuild:
+      - (cd ../.. && npm install)
+      - (export ANDROID_HOME=/usr/lib/android-sdk && cd ../.. && npm run build-rn)
+    scanignore:
+      - android/build.gradle
+      - node_modules/*
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: v2.2.1
+CurrentVersionCode: 6
