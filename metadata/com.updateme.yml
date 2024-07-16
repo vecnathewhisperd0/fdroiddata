@@ -15,12 +15,15 @@ Builds:
     subdir: android/app
     sudo:
       - apt-get update
-      - apt-get install -y npm
+      - apt-get install -y openjdk-17-jdk-headless nodejs npm android-sdk
+      - update-alternatives --auto java
     gradle:
       - yes
     prebuild:
+      - export ANDROID_HOME=/usr/lib/android-sdk
       - cd ../..
       - npm install
+      - npm run build-rn
     scanignore:
       - node_modules/@react-native/gradle-plugin
       - android/build.gradle
