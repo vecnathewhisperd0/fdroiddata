@@ -32,6 +32,7 @@ Builds:
       - $$flutter$$/bin/dart --disable-analytics
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get
+      - sed -i -e '/gms/d' .pub-cache/hosted/pub.dev/cronet_http-*/android/build.gradle
       - popd
       - mv $repo/waterfly-iii com.dreautall.waterflyiii
       - cd com.dreautall.waterflyiii
@@ -69,6 +70,7 @@ Builds:
       - $$flutter$$/bin/dart --disable-analytics
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get
+      - sed -i -e '/gms/d' .pub-cache/hosted/pub.dev/cronet_http-*/android/build.gradle
       - popd
       - mv $repo/waterfly-iii com.dreautall.waterflyiii
       - cd com.dreautall.waterflyiii
@@ -106,6 +108,7 @@ Builds:
       - $$flutter$$/bin/dart --disable-analytics
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter pub get
+      - sed -i -e '/gms/d' .pub-cache/hosted/pub.dev/cronet_http-*/android/build.gradle
       - popd
       - mv $repo/waterfly-iii com.dreautall.waterflyiii
       - cd com.dreautall.waterflyiii
