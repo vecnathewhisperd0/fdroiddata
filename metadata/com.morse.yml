@@ -1,13 +1,10 @@
-License: Gpl v3.0
+Categories:
+  - Science & Education
+License: GPL-3.0-only
 AuthorName: Jothiram
 AuthorEmail: jothiramn1641@gmail.com
-AuthorWebSite: -
-SourceCode: https://gitlab.com/jothiramn1641/app.git
-IssueTracker: https://gitlab.com/jothiramn1641/app.git
-Translation: -
-Changelog: -
-Donate: -
-Bitcoin: -
+SourceCode: https://gitlab.com/jothiramn1641/app
+IssueTracker: https://gitlab.com/jothiramn1641/app/issues
 
 AutoName: Morse Code Translator
 
@@ -15,9 +12,9 @@ RepoType: git
 Repo: https://gitlab.com/jothiramn1641/app.git
 
 Builds:
-  - versionName: 0.0.3
-    versionCode: 3
-    commit: v0.0.3
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: 9c2bb24efc02bfd479cc56a3c3132651057638bc
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@2.2.3
@@ -32,5 +29,5 @@ Builds:
 AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 0.0.3
-CurrentVersionCode: 3
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
