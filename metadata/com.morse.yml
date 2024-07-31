@@ -17,16 +17,20 @@ Builds:
     commit: 9c2bb24efc02bfd479cc56a3c3132651057638bc
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
-      - flutter@2.2.3
+      - flutter@3.16.9
     rm:
-      - ios
-      - .vs
-    build:
+      - test
+    prebuild:
+      - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter config --no-analytics
       - $$flutter$$/bin/flutter packages pub get
+    scandelete:
+      - .pub-cache
+    build:
+      - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --flavor fdroid
 
-AutoUpdateMode: Version v%v
+AutoUpdateMode: Version
 UpdateCheckMode: Tags
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.0.0
