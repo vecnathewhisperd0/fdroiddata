@@ -1,0 +1,48 @@
+Categories:Productivity
+License:Apache-2.0
+Author Name:Hugging Face, Inc.
+Author Email:kevin@huggingface.co
+Web Site:https://huggingface.co/chat
+Source Code:https://github.com/huggingface/chat-ui-android
+Issue Tracker:https://github.com/huggingface/chat-ui-android/issues
+
+Auto Name:HuggingChat
+Summary:A client for HuggingChat
+Description:Unleash a world of AI wonders right from your phone with Hugging Chat - the coolest, most colorful AI companion you'll ever meet!
+
+🧠 Intelligent Companion
+Access instant knowledge and analytical support. Our AI is equipped to assist with inquiries, calculations, and in-depth explorations across various subjects.
+
+🎨 Creative Tools
+Transform concepts into visual content effortlessly. Generate custom images with precision, from simple requests to complex designs.
+
+🌈 Premium Model Selection
+Leverage the power of industry-leading open-source AI models, including Llama-3. Seamlessly switch between models to suit your specific needs.
+
+📚 Document Analysis
+Streamline your workflow with AI-powered document parsing. Quickly extract key information and summaries from complex texts.
+
+🛠️ Custom AI Assistants
+Tailor your AI experience with specialized assistants. From coding support to creative writing aids, configure AI tools to enhance your productivity.
+
+🚀 Limitless Possibilities
+
+- Conjure up fantastic art
+- Code like a pro (or at least look like one)
+- Craft love sonnets that would make Shakespeare jealous
+- Turn emails into literary masterpieces
+- Summarize War and Peace in a tweet
+
+Created with ❤️ and a sprinkle of magic in Paris
+.
+
+Repo Type:git
+Repo:git@github.com:huggingface/chat-ui-android.git
+
+Build:1.4,5
+    commit=fb3ac37
+    subdir=app
+    gradle=yes
+
+Auto Update Mode:Version v%v
+Update Check Mode:Tags
