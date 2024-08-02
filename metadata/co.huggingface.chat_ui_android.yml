@@ -1,48 +1,29 @@
-Categories:Productivity
-License:Apache-2.0
-Author Name:Hugging Face, Inc.
-Author Email:kevin@huggingface.co
-Web Site:https://huggingface.co/chat
-Source Code:https://github.com/huggingface/chat-ui-android
-Issue Tracker:https://github.com/huggingface/chat-ui-android/issues
+AntiFeatures:
+  NonFreeNet:
+    en-US: Depends on huggingface.co server
+Categories:
+  - Internet
+License: Apache-2.0
+AuthorName: Hugging Face, Inc.
+AuthorEmail: kevin@huggingface.co
+WebSite: https://huggingface.co/chat
+SourceCode: https://github.com/huggingface/chat-ui-android
+IssueTracker: https://github.com/huggingface/chat-ui-android/issues
 
-Auto Name:HuggingChat
-Summary:A client for HuggingChat
-Description:Unleash a world of AI wonders right from your phone with Hugging Chat - the coolest, most colorful AI companion you'll ever meet!
+AutoName: HuggingChat
 
-🧠 Intelligent Companion
-Access instant knowledge and analytical support. Our AI is equipped to assist with inquiries, calculations, and in-depth explorations across various subjects.
+RepoType: git
+Repo: https://github.com/huggingface/chat-ui-android.git
 
-🎨 Creative Tools
-Transform concepts into visual content effortlessly. Generate custom images with precision, from simple requests to complex designs.
+Builds:
+  - versionName: '1.4'
+    versionCode: 5
+    commit: fb3ac37ff7271e4855d65c4c5cb3897fac13aa04
+    subdir: app
+    gradle:
+      - yes
 
-🌈 Premium Model Selection
-Leverage the power of industry-leading open-source AI models, including Llama-3. Seamlessly switch between models to suit your specific needs.
-
-📚 Document Analysis
-Streamline your workflow with AI-powered document parsing. Quickly extract key information and summaries from complex texts.
-
-🛠️ Custom AI Assistants
-Tailor your AI experience with specialized assistants. From coding support to creative writing aids, configure AI tools to enhance your productivity.
-
-🚀 Limitless Possibilities
-
-- Conjure up fantastic art
-- Code like a pro (or at least look like one)
-- Craft love sonnets that would make Shakespeare jealous
-- Turn emails into literary masterpieces
-- Summarize War and Peace in a tweet
-
-Created with ❤️ and a sprinkle of magic in Paris
-.
-
-Repo Type:git
-Repo:https://github.com/huggingface/chat-ui-android.git
-
-Build:1.4,5
-    commit=fb3ac37
-    subdir=app
-    gradle=yes
-
-Auto Update Mode:Version v%v
-Update Check Mode:Tags
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.4'
+CurrentVersionCode: 5
