@@ -12,6 +12,7 @@ AutoName: Another Sleep Tracker
 
 RepoType: git
 Repo: https://github.com/CheckerThesis/another_sleep_tracker.git
+Binaries: https://github.com/CheckerThesis/another_sleep_tracker/releases/download/v%v/AnotherSleepTracker-%v.apk
 
 Builds:
   - versionName: '1.0'
