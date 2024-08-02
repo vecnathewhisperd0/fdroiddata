@@ -6,7 +6,7 @@ AuthorEmail: jothiramn1641@gmail.com
 SourceCode: https://gitlab.com/jothiramn1641/app
 IssueTracker: https://gitlab.com/jothiramn1641/app/issues
 
-AutoName: Morse Code Translator
+AutoName: Morse code
 
 RepoType: git
 Repo: https://gitlab.com/jothiramn1641/app.git
@@ -19,6 +19,7 @@ Builds:
     srclibs:
       - flutter@3.16.9
     rm:
+      - build
       - test
     prebuild:
       - export PUB_CACHE=$(pwd)/.pub-cache
