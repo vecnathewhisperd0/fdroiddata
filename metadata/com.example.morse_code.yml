@@ -14,7 +14,7 @@ Repo: https://gitlab.com/jothiramn1641/app.git
 Builds:
   - versionName: 1.0.0
     versionCode: 1
-    commit: 9c2bb24efc02bfd479cc56a3c3132651057638bc
+    commit: 2305cf4d5d0cde90a86ae49ddf08dd72145ad681
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@3.16.9
