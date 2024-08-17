@@ -21,10 +21,6 @@ Builds:
     versionCode: 50489
     commit: 0ac6cad73ad657cba443ecbe7983e9680a5a5df1
     subdir: app
-    sudo:
-      - apt-get update
-      - apt-get install -y openjdk-17-jdk-headless
-      - update-java-alternatives -a
     gradle:
       - fdroid
     forceversion: true
