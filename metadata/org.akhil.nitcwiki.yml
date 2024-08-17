@@ -1,6 +1,6 @@
 AntiFeatures:
   TetheredNet:
-    en-US: Depends on wikipedia.org which is free and open source, but is not changeable
+    en-US: Depends on wiki.fosscell.org which is free and open source, but is not changeable
       by a user.
 Categories:
   - Reading
@@ -19,13 +19,13 @@ Repo: https://gitlab.com/wiki-nitc/nitc-wiki-android-app.git
 Builds:
   - versionName: r/2.7.50489-r-2024-08-14
     versionCode: 50489
-    commit: 0ac6cad73ad657cba443ecbe7983e9680a5a5df1
+    commit: 16dcb5a1845f57ec0ba67653a9498b8d30721c0e
     subdir: app
     gradle:
       - fdroid
     forceversion: true
 
-AllowedAPKSigningKeys: 3daac6fab8a5de692c066a80d66ccde552a07408880d0ad1d369514015b4348e
+AllowedAPKSigningKeys: 3365ab571fad4f4ef87f1c4748d2c3faed966b3fc0389d7b332c87481290eeb8
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^r
