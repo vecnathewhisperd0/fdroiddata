@@ -1,7 +1,7 @@
 AntiFeatures:
   TetheredNet:
-    en-US: Depends on wiki.fosscell.org which is free and open source, but is not changeable
-      by a user.
+    en-US: Depends on wiki.fosscell.org which is free and open source, but is not
+      changeable by a user.
 Categories:
   - Reading
 License: Apache-2.0
