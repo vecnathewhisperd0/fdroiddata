@@ -405,10 +405,10 @@ Builds:
       - popd
       - mv $repo/maid com.danemadsen.maid
 
-  - versionName: 1.3.0
-    versionCode: 17531
+  - versionName: 1.3.1
+    versionCode: 17891
     disable: https://github.com/Mobile-Artificial-Intelligence/maid/issues/582#issuecomment-2265182231
-    commit: 0add9a1612d62c3e33d2ecc4106c74533edf6ce9
+    commit: ec577799b3316bd06c4589e993ac676b95acdbdf
     submodules: true
     sudo:
       - mkdir -p /builds/mobile-artificial-intelligence
@@ -445,10 +445,10 @@ Builds:
       - popd
       - mv $repo/maid com.danemadsen.maid
 
-  - versionName: 1.3.0
-    versionCode: 17532
+  - versionName: 1.3.1
+    versionCode: 17892
     disable: https://github.com/Mobile-Artificial-Intelligence/maid/issues/582#issuecomment-2265182231
-    commit: 0add9a1612d62c3e33d2ecc4106c74533edf6ce9
+    commit: ec577799b3316bd06c4589e993ac676b95acdbdf
     submodules: true
     sudo:
       - mkdir -p /builds/mobile-artificial-intelligence
@@ -487,11 +487,11 @@ Builds:
 
 AllowedAPKSigningKeys: 835ed22ed895c4c272d698aa6e4e48db0b4e36dccf7010d5de15034ac9e1b96f
 
-AutoUpdateMode: Version
+AutoUpdateMode: None
 UpdateCheckMode: Tags
 VercodeOperation:
   - '%c * 10 + 1'
   - '%c * 10 + 2'
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.3.0
-CurrentVersionCode: 17532
+CurrentVersionCode: 18402

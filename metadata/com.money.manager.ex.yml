@@ -229,7 +229,17 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2024.08.13
+    versionCode: 1037
+    commit: 5733fd0db61e941214fb18d8589abce7a863c803
+    subdir: app
+    gradle:
+      - yes
+    prebuild: for class in tree code comp file main model parser processing util jvm;
+      do sed -i -e "/jvmargs/s|$| --add-opens=jdk.compiler/com.sun.tools.javac.${class}=ALL-UNNAMED|"
+      ../gradle.properties; done
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^[0-9.]*$
-CurrentVersion: 2024.08.01
-CurrentVersionCode: 1036
+CurrentVersion: 2024.08.13
+CurrentVersionCode: 1037

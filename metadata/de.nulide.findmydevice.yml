@@ -222,7 +222,23 @@ Builds:
       - prod
     prebuild: sed -i -e "/android {/alintOptions { disable 'ExtraTranslation' }" build.gradle
 
+  - versionName: 0.6.0
+    versionCode: 26
+    commit: 5530821c678f9db389839b0b88b941759a37eebf
+    subdir: app
+    gradle:
+      - prod
+    prebuild: sed -i -e "/android {/alintOptions { disable 'ExtraTranslation' }" build.gradle
+
+  - versionName: 0.6.1
+    versionCode: 27
+    commit: 94dc3f7c530ad0b87c4eb3e1cc71c33555c91520
+    subdir: app
+    gradle:
+      - prod
+    prebuild: sed -i -e "/android {/alintOptions { disable 'ExtraTranslation' }" build.gradle
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 0.5.0
-CurrentVersionCode: 25
+CurrentVersion: 0.6.1
+CurrentVersionCode: 27

@@ -74,9 +74,36 @@ Builds:
     prebuild: sed -i -e '/wearable/d' build.gradle
     ndk: r26d
 
-  - versionName: 6.3.0
-    versionCode: 3020224
-    commit: fd9040ff1a112413aa4ce1578731df1355d14557
+  - versionName: 6.3.3
+    versionCode: 3020227
+    commit: e5188bc9980b31c37cc52b5e25d8bb02a0f878a7
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/wearable/d' build.gradle
+    ndk: r26d
+
+  - versionName: 6.3.4
+    versionCode: 3020228
+    commit: 5fe3f049d208f18c3a680b632f6b292194dda46c
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/wearable/d' build.gradle
+    ndk: r26d
+
+  - versionName: 6.3.6
+    versionCode: 3020230
+    commit: 4ccf66d5a17acced3615a94bd9432a6dca05aeaf
+    subdir: app
+    gradle:
+      - free
+    prebuild: sed -i -e '/wearable/d' build.gradle
+    ndk: r26d
+
+  - versionName: 6.3.7
+    versionCode: 3020231
+    commit: 7a49a11f5468731b353d49d8932638c0bee729db
     subdir: app
     gradle:
       - free
@@ -87,5 +114,5 @@ AllowedAPKSigningKeys: cd1328fb5c2ccf50cb99e3ff076eb5fe88298fe28366989dcf9d9899d
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 6.3.0
-CurrentVersionCode: 3020224
+CurrentVersion: 6.3.7
+CurrentVersionCode: 3020231

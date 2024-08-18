@@ -618,10 +618,9 @@ Builds:
       - fdroid
     forceversion: true
 
-  - versionName: r/2.7.50494-r-2024-07-16
-    versionCode: 50494
-    disable: installreferrer
-    commit: f207b2afbc8ee194e52654329657e90217430f85
+  - versionName: r/2.7.50495-r-2024-07-23
+    versionCode: 50495
+    commit: f34eb5f9bf95baacdc7c005128e4a69ae5e734bd
     subdir: app
     gradle:
       - fdroid
@@ -639,5 +638,5 @@ MaintainerNotes: |-
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^r
-CurrentVersion: r/2.7.50494-r-2024-07-16
-CurrentVersionCode: 50494
+CurrentVersion: r/2.7.50495-r-2024-07-23
+CurrentVersionCode: 50495

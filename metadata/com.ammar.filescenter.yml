@@ -22,7 +22,8 @@ Builds:
 
 AllowedAPKSigningKeys: 82322a1b5caac500e9547cca4579b234ef872572cd5fad82cd75edeb589e8f8d
 
-AutoUpdateMode: Version
-UpdateCheckMode: Tags ^((?!alpha|beta).)*$
+ArchivePolicy: 0
+AutoUpdateMode: None
+UpdateCheckMode: None
 CurrentVersion: '1.0'
 CurrentVersionCode: 1
