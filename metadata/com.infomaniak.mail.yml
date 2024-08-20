@@ -657,9 +657,17 @@ Builds:
     gradle:
       - fdroid
 
+  - versionName: 1.4.5
+    versionCode: 10400501
+    commit: da410bd69ff7a079e3c778bacdf4d1f342ae603b
+    subdir: app
+    submodules: true
+    gradle:
+      - fdroid
+
 MaintainerNotes: on tracking see https://gitlab.com/fdroid/fdroiddata/-/merge_requests/12696#note_1303894823
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.4.4
-CurrentVersionCode: 10400401
+CurrentVersion: 1.4.5
+CurrentVersionCode: 10400501
