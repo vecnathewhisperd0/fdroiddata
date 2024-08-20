@@ -15,12 +15,12 @@ AutoName: NITC Wiki
 
 RepoType: git
 Repo: https://gitlab.com/wiki-nitc/nitc-wiki-android-app.git
-Binaries: https://gitlab.com/wiki-nitc/nitc-wiki-android-app/-/releases/%v/downloads/app-release.apk
+Binaries: https://gitlab.com/wiki-nitc/nitc-wiki-android-app/-/releases/%v/downloads/app-fdroid-release.apk
 
 Builds:
   - versionName: r/2.7.50489-r-2024-08-14
     versionCode: 50489
-    commit: 16dcb5a1845f57ec0ba67653a9498b8d30721c0e
+    commit: 86fca7898a33de7bedc30999ff058418869e5455
     subdir: app
     gradle:
       - fdroid
