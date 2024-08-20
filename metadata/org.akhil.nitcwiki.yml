@@ -15,6 +15,7 @@ AutoName: NITC Wiki
 
 RepoType: git
 Repo: https://gitlab.com/wiki-nitc/nitc-wiki-android-app.git
+Binaries: https://gitlab.com/wiki-nitc/nitc-wiki-android-app/-/releases/%v/downloads/app-release.apk
 
 Builds:
   - versionName: r/2.7.50489-r-2024-08-14
