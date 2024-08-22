@@ -17,7 +17,7 @@ Binaries: https://github.com/CheckerThesis/another_sleep_tracker/releases/downlo
 Builds:
   - versionName: '1.0'
     versionCode: 1
-    commit: c5940341d2b595ee66ba45e479002a59af846b85
+    commit: be845ddabd833f109aebfba40c3b2c080d723170
     subdir: app
     gradle:
       - yes
