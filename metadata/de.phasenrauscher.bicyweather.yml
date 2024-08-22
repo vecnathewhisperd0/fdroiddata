@@ -6,25 +6,20 @@ AuthorEmail: phasenrauscher@gmail.com
 SourceCode: https://github.com/phasenrauscher/Bicyweather
 
 AutoName: bicyweather
-Description: Bicyweather is a simple weather forecast app with clearly arranged weather
-  icons and temperatures for german and some european cities
+Description: Bicyweather is a simple weather forecast app for german and european cities
 
 RepoType: git
 Repo: https://github.com/phasenrauscher/Bicyweather.git
 
 Builds:
-  - versionName: 1.0.8
+  - versionName: 1.0.9
     versionCode: 1
-    commit: c07efe0
+    commit: db0abb66
     subdir: app
-    sudo:
-      - apt-get update
-      - apt-get install -y librsvg2-bin openjdk-17-jdk-headless
-      - update-alternatives --auto java
     gradle:
       - yes
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.8
+CurrentVersion: 1.0.9
 CurrentVersionCode: 1
