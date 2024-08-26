@@ -12,8 +12,8 @@ Repo: https://codeberg.org/lxa64/setfinder
 
 Builds:
   - versionName: "1.0"
-    versionCode: 1
-    commit: 8ca6236fb9f44dbf36f91f1e2315315e0f67387a
+    versionCode: 2
+    commit: v1.0.1
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
