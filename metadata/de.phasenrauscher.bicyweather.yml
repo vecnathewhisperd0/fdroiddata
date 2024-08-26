@@ -11,14 +11,14 @@ RepoType: git
 Repo: https://github.com/phasenrauscher/Bicyweather.git
 
 Builds:
-  - versionName: 1.0.8
+  - versionName: 1.0.10
     versionCode: 1
-    commit: db0abb66e7c429b4b97e3104804b8cb4e6701dae
+    commit: 8c94b16b0f513fbad2ab05707a2af78a5d136bce
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.8
+CurrentVersion: 1.0.10
 CurrentVersionCode: 1
