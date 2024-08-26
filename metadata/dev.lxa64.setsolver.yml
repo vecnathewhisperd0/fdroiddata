@@ -1,0 +1,19 @@
+Categories:
+  - Games
+License: GPL-3.0-or-later
+AuthorName: lxa4096
+AuthorEmail: lxa4096@tutamail.com
+AuthorWebSite: https://lxa64.dev
+SourceCode: https://codeberg.org/lxa64/setfinder
+IssueTracker: https://codeberg.org/lxa64/setfinder/issues
+
+RepoType: git
+Repo: https://codeberg.org/lxa64/setfinder
+
+Builds:
+  - versionName: "1.0"
+    versionCode: 1
+    commit: 8ca6236fb9f44dbf36f91f1e2315315e0f67387a
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
