@@ -1,3 +1,6 @@
+AntiFeatures:
+  NonFreeNet:
+    en-US: Rely on Google Maps.
 Categories:
   - Navigation
 License: Apache-2.0
