@@ -13,7 +13,7 @@ Builds:
     subdir: app
     gradle:
       - yes
-
+AutoName: GMaps 2 Osm
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
 CurrentVersion: '1.0'
