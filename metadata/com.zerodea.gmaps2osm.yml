@@ -6,15 +6,15 @@ Categories:
   - Navigation
 
 License: Apache-2.0
-SourceCode: https://github.com/santiwanti/GMaps2Osm
 
 AuthorName: swanti
+SourceCode: https://github.com/santiwanti/GMaps2Osm
+IssueTracker: https://github.com/santiwanti/GMaps2Osm/issues
 
 AutoName: GMaps 2 Osm
 
 RepoType: git
 Repo: https://github.com/santiwanti/GMaps2Osm
-IssueTracker: https://github.com/santiwanti/GMaps2Osm/issues
 
 Builds:
   - versionName: '1.0'
