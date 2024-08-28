@@ -1,12 +1,9 @@
 AntiFeatures:
   NonFreeNet:
     en-US: Rely on Google Maps.
-
 Categories:
   - Navigation
-
 License: Apache-2.0
-
 AuthorName: swanti
 SourceCode: https://github.com/santiwanti/GMaps2Osm
 IssueTracker: https://github.com/santiwanti/GMaps2Osm/issues
