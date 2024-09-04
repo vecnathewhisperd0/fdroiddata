@@ -18,7 +18,7 @@ Builds:
     commit: 3e0eddc7c7e7512a7511345c4397bdbbfb90cfd8
     gradle:
       - yes
-    binary: https://timur.mobi/prose-dev/doc/android/ProseReader-%v.apk
+    binary: https://timur.mobi/prose-v0.7.0/doc/android/ProseReader-%v.apk
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
