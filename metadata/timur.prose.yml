@@ -1,0 +1,27 @@
+Categories:
+  - Reading
+License: GPL-3.0-only
+AuthorName: Timur
+AuthorEmail: timur@timur.mobi
+AuthorWebSite: https://timur.mobi
+SourceCode: https://codeberg.org/timurmobi/prosereader-android.git
+IssueTracker: https://codeberg.org/timurmobi/prosereader-android/issues
+
+AutoName: ProseReader
+
+RepoType: git
+Repo: https://codeberg.org/timurmobi/prosereader-android.git
+
+Builds:
+  - versionName: 0.7.0
+    versionCode: 70
+    commit: 3e0eddc7c7e7512a7511345c4397bdbbfb90cfd8
+    gradle:
+      - yes
+    binary: https://timur.mobi/prose-dev/doc/android/ProseReader-%v.apk
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 0.7.0
+CurrentVersionCode: 70
+
