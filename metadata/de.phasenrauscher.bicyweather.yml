@@ -1,3 +1,6 @@
+AntiFeature:
+  TetheredNet:
+    en-US: Rely on weather data from opendata.dwd.de.
 Categories:
   - Internet
 License: GPL-3.0-or-later
