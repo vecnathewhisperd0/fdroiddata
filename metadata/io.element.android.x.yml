@@ -225,10 +225,10 @@ Builds:
     postbuild: $$reproducible-apk-tools$$/inplace-fix.py --page-size 16 fix-pg-map-id
       $$OUT$$ 'a0086df'
 
-  - versionName: 0.5.0
-    versionCode: 40005001
-    disable: reproducible build failed
-    commit: v0.5.0
+  - versionName: 0.6.0
+    versionCode: 40006001
+    disable: https://github.com/element-hq/element-x-android/issues/3420
+    commit: v0.6.0
     subdir: app
     gradle:
       - fdroid
@@ -246,16 +246,16 @@ Builds:
         >> ../local.properties
       - echo -e "\nservices.maptiler.lightMapId=9bc819c8-e627-474a-a348-ec144fe3d810"
         >> ../local.properties
-      - sed -i -e 's/gitBranchName() = .*/gitBranchName() = "main"/' ../plugins/src/main/kotlin/extension/Utils.kt
+      - sed -i -e 's/"git rev-parse --abbrev-ref HEAD"/"echo main"/' ../plugins/src/main/kotlin/extension/Utils.kt
     scandelete:
       - plugins
     postbuild: $$reproducible-apk-tools$$/inplace-fix.py --page-size 16 fix-pg-map-id
       $$OUT$$ '0000000'
 
-  - versionName: 0.5.0
-    versionCode: 40005002
-    disable: reproducible build failed
-    commit: v0.5.0
+  - versionName: 0.6.0
+    versionCode: 40006002
+    disable: https://github.com/element-hq/element-x-android/issues/3420
+    commit: v0.6.0
     subdir: app
     gradle:
       - fdroid
@@ -273,16 +273,16 @@ Builds:
         >> ../local.properties
       - echo -e "\nservices.maptiler.lightMapId=9bc819c8-e627-474a-a348-ec144fe3d810"
         >> ../local.properties
-      - sed -i -e 's/gitBranchName() = .*/gitBranchName() = "main"/' ../plugins/src/main/kotlin/extension/Utils.kt
+      - sed -i -e 's/"git rev-parse --abbrev-ref HEAD"/"echo main"/' ../plugins/src/main/kotlin/extension/Utils.kt
     scandelete:
       - plugins
     postbuild: $$reproducible-apk-tools$$/inplace-fix.py --page-size 16 fix-pg-map-id
       $$OUT$$ '0000000'
 
-  - versionName: 0.5.0
-    versionCode: 40005003
-    disable: reproducible build failed
-    commit: v0.5.0
+  - versionName: 0.6.0
+    versionCode: 40006003
+    disable: https://github.com/element-hq/element-x-android/issues/3420
+    commit: v0.6.0
     subdir: app
     gradle:
       - fdroid
@@ -300,16 +300,16 @@ Builds:
         >> ../local.properties
       - echo -e "\nservices.maptiler.lightMapId=9bc819c8-e627-474a-a348-ec144fe3d810"
         >> ../local.properties
-      - sed -i -e 's/gitBranchName() = .*/gitBranchName() = "main"/' ../plugins/src/main/kotlin/extension/Utils.kt
+      - sed -i -e 's/"git rev-parse --abbrev-ref HEAD"/"echo main"/' ../plugins/src/main/kotlin/extension/Utils.kt
     scandelete:
       - plugins
     postbuild: $$reproducible-apk-tools$$/inplace-fix.py --page-size 16 fix-pg-map-id
       $$OUT$$ '0000000'
 
-  - versionName: 0.5.0
-    versionCode: 40005004
-    disable: reproducible build failed
-    commit: v0.5.0
+  - versionName: 0.6.0
+    versionCode: 40006004
+    disable: https://github.com/element-hq/element-x-android/issues/3420
+    commit: v0.6.0
     subdir: app
     gradle:
       - fdroid
@@ -327,7 +327,7 @@ Builds:
         >> ../local.properties
       - echo -e "\nservices.maptiler.lightMapId=9bc819c8-e627-474a-a348-ec144fe3d810"
         >> ../local.properties
-      - sed -i -e 's/gitBranchName() = .*/gitBranchName() = "main"/' ../plugins/src/main/kotlin/extension/Utils.kt
+      - sed -i -e 's/"git rev-parse --abbrev-ref HEAD"/"echo main"/' ../plugins/src/main/kotlin/extension/Utils.kt
     scandelete:
       - plugins
     postbuild: $$reproducible-apk-tools$$/inplace-fix.py --page-size 16 fix-pg-map-id
@@ -347,5 +347,5 @@ VercodeOperation:
   - 4 + %c
 UpdateCheckData: https://api.github.com/repos/element-hq/element-x-android/releases/latest|"name"\
   *:\ *"(\d+)|.|"tag_name":"v(\d+\.\d+\.\d+)"
-CurrentVersion: 0.5.0
-CurrentVersionCode: 40005004
+CurrentVersion: 0.6.0
+CurrentVersionCode: 40006004

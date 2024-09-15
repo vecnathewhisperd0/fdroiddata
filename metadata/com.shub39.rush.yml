@@ -65,17 +65,23 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 1.7.0
-    versionCode: 12
-    disable: https://github.com/shub39/Rush/issues/6#issuecomment-2288963364
-    commit: c7730b30616f545317c388c20f7b9d3758c39c0d
+  - versionName: 1.9.0
+    versionCode: 14
+    commit: b693245e23d5b74bfefc330399d68560530e6e13
     subdir: app
     gradle:
       - yes
 
-  - versionName: 1.9.0
-    versionCode: 14
-    commit: b693245e23d5b74bfefc330399d68560530e6e13
+  - versionName: 2.0.0
+    versionCode: 15
+    commit: fdc96350f0453717538f46a67cb7b9785ed64212
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 2.1.0
+    versionCode: 16
+    commit: 91442a9f292b022975cafb4ebb534afbaa200256
     subdir: app
     gradle:
       - yes
@@ -84,5 +90,5 @@ AllowedAPKSigningKeys: 0fe1b9f44a4db97ec50948f5189f6b4300716cc6d4843f5698d614a21
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.9.0
-CurrentVersionCode: 14
+CurrentVersion: 2.1.0
+CurrentVersionCode: 16

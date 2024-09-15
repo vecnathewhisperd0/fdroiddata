@@ -523,7 +523,39 @@ Builds:
       - yes
     prebuild: sed -i -e "/android {/alintOptions { disable 'ExtraTranslation' }" build.gradle
 
+  - versionName: 3.0.0
+    versionCode: 5453
+    commit: 7e33ebf164a7ad9089d183af5d5eea77c4f4ef57
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "/android {/alintOptions { disable 'ExtraTranslation' }" build.gradle
+
+  - versionName: 3.0.1
+    versionCode: 5454
+    commit: 31caae350fef39c0b24ce3e2b6326d19060c3014
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "/android {/alintOptions { disable 'ExtraTranslation' }" build.gradle
+
+  - versionName: 3.0.3
+    versionCode: 5456
+    commit: ede575ce724c41b3abcd4e06acef72f97cfd6b72
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "/android {/alintOptions { disable 'ExtraTranslation' }" build.gradle
+
+  - versionName: 2.7.4
+    versionCode: 5457
+    commit: 06e22b3729865690244b15a07b7c07ea84a1451c
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e "/android {/alintOptions { disable 'ExtraTranslation' }" build.gradle
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 2.7.3
-CurrentVersionCode: 5447
+CurrentVersion: 3.0.3
+CurrentVersionCode: 5456

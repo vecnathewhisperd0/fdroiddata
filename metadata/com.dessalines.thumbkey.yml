@@ -398,9 +398,49 @@ Builds:
       - yes
     prebuild: sed -i -e 's/1024/2048/' ../gradle.properties
 
+  - versionName: 3.4.2
+    versionCode: 103
+    commit: 88c340784ee70c6bf0e603f3dff487ea76589da0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/1024/2048/' ../gradle.properties
+
+  - versionName: 3.4.4
+    versionCode: 105
+    commit: 6f03303edaa4ddc299a996c0d004d8a121256d6f
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/1024/2048/' ../gradle.properties
+
+  - versionName: 3.4.5
+    versionCode: 106
+    commit: cbb592f263dc29f871e3394ca466d5763a53078c
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/1024/2048/' ../gradle.properties
+
+  - versionName: 3.4.7
+    versionCode: 108
+    commit: 5c16da29181c71977c3bea2ade76acaa132465c0
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/1024/2048/' ../gradle.properties
+
+  - versionName: 3.4.8
+    versionCode: 109
+    commit: 4dc712f294f15f1e2dfa264c7bf7689124b6c019
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/1024/2048/' ../gradle.properties
+
 AllowedAPKSigningKeys: ea7195cfce638ae6b1a8002ddc0d4863366095ea5b8d95c1cd5e25db0fe2e7c3
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 3.4.1
-CurrentVersionCode: 102
+CurrentVersion: 3.4.8
+CurrentVersionCode: 109

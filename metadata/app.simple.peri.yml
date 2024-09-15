@@ -330,9 +330,54 @@ Builds:
     postbuild: $$reproducible-apk-tools$$/inplace-fix.py --zipalign fix-newlines $$OUT$$
       'META-INF/services/*'
 
+  - versionName: 1.52_beta
+    versionCode: 152
+    commit: d2f3e6a131fe50b10642eaaefa690ff6bf802c42
+    subdir: app
+    gradle:
+      - prod
+    srclibs:
+      - reproducible-apk-tools@v0.2.4
+    postbuild: $$reproducible-apk-tools$$/inplace-fix.py --zipalign fix-newlines $$OUT$$
+      'META-INF/services/*'
+
+  - versionName: 1.53_beta
+    versionCode: 153
+    commit: 54d29d8e4b0d3456b6dfbf3ba6952b8633b22509
+    subdir: app
+    gradle:
+      - prod
+    srclibs:
+      - reproducible-apk-tools@v0.2.4
+    postbuild: $$reproducible-apk-tools$$/inplace-fix.py --zipalign fix-newlines $$OUT$$
+      'META-INF/services/*'
+
+  - versionName: 2.00_alpha
+    versionCode: 200
+    commit: 53eff5be5ba9d377a6ab4b302475521cd6763fc6
+    subdir: app
+    gradle:
+      - prod
+    srclibs:
+      - reproducible-apk-tools@v0.2.8
+    postbuild: $$reproducible-apk-tools$$/inplace-fix.py --page-size 16 fix-newlines
+      $$OUT$$ 'META-INF/services/*'
+
+  - versionName: 2.01_alpha
+    versionCode: 201
+    commit: ebe2053649b96a01ba6cdd47d7ff5e30db31255e
+    subdir: app
+    gradle:
+      - prod
+    binary: https://github.com/Hamza417/Peristyle/releases/download/v%v01/app-prod-release.apk
+    srclibs:
+      - reproducible-apk-tools@v0.2.8
+    postbuild: $$reproducible-apk-tools$$/inplace-fix.py --page-size 16 fix-newlines
+      $$OUT$$ 'META-INF/services/*'
+
 AllowedAPKSigningKeys: 4a3f711142250805c7bb5c0a5a3287631bdb948816e6f4afc9524d0eb46b6b1b
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.51_beta
-CurrentVersionCode: 151
+CurrentVersion: 2.01_alpha
+CurrentVersionCode: 201

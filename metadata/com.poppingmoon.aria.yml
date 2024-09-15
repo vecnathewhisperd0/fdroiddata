@@ -2004,9 +2004,9 @@ Builds:
       - mv /tmp/.cargo $HOME/.cargo
     ndk: 23.1.7779620
 
-  - versionName: 0.14.3
-    versionCode: 411
-    commit: 08ee46607e3ff2d42b93e9056836227f6366a0ba
+  - versionName: 0.14.4
+    versionCode: 421
+    commit: 7b20220f00cafb6fc0e89d276166e506f8fb1324
     output: build/app/outputs/flutter-apk/app-x86_64-release.apk
     binary: https://github.com/poppingmoon/aria/releases/download/v%v/aria-v%v-x86_64.apk
     srclibs:
@@ -2049,9 +2049,9 @@ Builds:
       - mv /tmp/.cargo $HOME/.cargo
     ndk: 23.1.7779620
 
-  - versionName: 0.14.3
-    versionCode: 412
-    commit: 08ee46607e3ff2d42b93e9056836227f6366a0ba
+  - versionName: 0.14.4
+    versionCode: 422
+    commit: 7b20220f00cafb6fc0e89d276166e506f8fb1324
     output: build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk
     binary: https://github.com/poppingmoon/aria/releases/download/v%v/aria-v%v-armeabi-v7a.apk
     srclibs:
@@ -2094,9 +2094,9 @@ Builds:
       - mv /tmp/.cargo $HOME/.cargo
     ndk: 23.1.7779620
 
-  - versionName: 0.14.3
-    versionCode: 413
-    commit: 08ee46607e3ff2d42b93e9056836227f6366a0ba
+  - versionName: 0.14.4
+    versionCode: 423
+    commit: 7b20220f00cafb6fc0e89d276166e506f8fb1324
     output: build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
     binary: https://github.com/poppingmoon/aria/releases/download/v%v/aria-v%v-arm64-v8a.apk
     srclibs:
@@ -2148,5 +2148,5 @@ VercodeOperation:
   - '%c * 10 + 2'
   - '%c * 10 + 3'
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 0.14.3
-CurrentVersionCode: 413
+CurrentVersion: 0.14.4
+CurrentVersionCode: 423

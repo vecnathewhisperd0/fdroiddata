@@ -7865,10 +7865,9 @@ Builds:
         --target-platform="android-x64"
     ndk: 26.1.10909125
 
-  - versionName: 0.24.5
-    versionCode: 240501
-    disable: https://github.com/saber-notes/saber/issues/1334
-    commit: 7e6a607bf27cf35c2d3a1b022d2ed3fcdf38ad80
+  - versionName: 0.24.6
+    versionCode: 240601
+    commit: 52d9ed3f6f74fcc18b2340d5564fa8872114c4b3
     submodules: true
     sudo:
       - apt-get update
@@ -7908,10 +7907,9 @@ Builds:
         --target-platform="android-arm"
     ndk: 26.1.10909125
 
-  - versionName: 0.24.5
-    versionCode: 240502
-    disable: https://github.com/saber-notes/saber/issues/1334
-    commit: 7e6a607bf27cf35c2d3a1b022d2ed3fcdf38ad80
+  - versionName: 0.24.6
+    versionCode: 240602
+    commit: 52d9ed3f6f74fcc18b2340d5564fa8872114c4b3
     submodules: true
     sudo:
       - apt-get update
@@ -7951,10 +7949,9 @@ Builds:
         --target-platform="android-arm64"
     ndk: 26.1.10909125
 
-  - versionName: 0.24.5
-    versionCode: 240503
-    disable: https://github.com/saber-notes/saber/issues/1334
-    commit: 7e6a607bf27cf35c2d3a1b022d2ed3fcdf38ad80
+  - versionName: 0.24.6
+    versionCode: 240603
+    commit: 52d9ed3f6f74fcc18b2340d5564fa8872114c4b3
     submodules: true
     sudo:
       - apt-get update
@@ -8001,5 +7998,5 @@ VercodeOperation:
   - '%c * 10 + 2'
   - '%c * 10 + 3'
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 0.24.5
-CurrentVersionCode: 240503
+CurrentVersion: 0.24.6
+CurrentVersionCode: 240603

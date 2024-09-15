@@ -1298,8 +1298,20 @@ Builds:
       - ios
     prebuild: sdkmanager 'platforms;android-31' 'build-tools;30.0.2'
 
+  - versionName: 2.5.0
+    versionCode: 794
+    commit: 16784d0194a8151559846fea140e03237e0157de
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+      - ios
+    prebuild: sed -i -e 's|storage.googleapis.com/r8-releases/raw|maven.google.com|'
+      -e '/r8/d' -e '/appAndroidMinSDK/s/14/19/' ../build.gradle
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v.*$
 UpdateCheckData: build.gradle|appVersionCode = (\d+)|.|appVersionName = ['"](.*)['"]
-CurrentVersion: 2.4.2
-CurrentVersionCode: 782
+CurrentVersion: 2.5.0
+CurrentVersionCode: 794

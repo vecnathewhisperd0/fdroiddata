@@ -13862,22 +13862,6 @@ Builds:
     scandelete:
       - app/src/androidTest/assets
 
-  - versionName: '20240622'
-    versionCode: 20240622
-    disable: https://github.com/nextcloud/android/issues/13170
-    commit: fcb00aa03cfaaefc280a8fcd3615e95a6b834cd1
-    subdir: app
-    gradle:
-      - versionDev
-    rm:
-      - user_manual
-    prebuild:
-      - mkdir -p $HOME/.gradle
-      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
-        > $HOME/.gradle/gradle.properties
-    scandelete:
-      - app/src/androidTest/assets
-
   - versionName: '20240626'
     versionCode: 20240626
     commit: c054c255c35c1b5e816bfca92fd09217ded71102
@@ -14208,9 +14192,9 @@ Builds:
     scandelete:
       - app/src/androidTest/assets
 
-  - versionName: '20240823'
-    versionCode: 20240823
-    commit: 6cdcea6ff9fc4b29858c8b427a83447b1f51fb31
+  - versionName: '20240827'
+    versionCode: 20240827
+    commit: fa4dd3af399e4da477b49d9aac770f9eb6b988d8
     subdir: app
     gradle:
       - versionDev
@@ -14223,9 +14207,54 @@ Builds:
     scandelete:
       - app/src/androidTest/assets
 
-  - versionName: '20240824'
-    versionCode: 20240824
-    commit: cda8e52cd59ba7bd93d062118adbd999e5e51785
+  - versionName: '20240831'
+    versionCode: 20240831
+    commit: cbf14860baf6e9685c918974bea7276616c10861
+    subdir: app
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - app/src/androidTest/assets
+
+  - versionName: '20240906'
+    versionCode: 20240906
+    commit: 79dbfa5b6f81916a22244f374c889cfa988804dd
+    subdir: app
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - app/src/androidTest/assets
+
+  - versionName: '20240913'
+    versionCode: 20240913
+    commit: eda3a1aa3f214f9de1abadf50c91923c3a7bc009
+    subdir: app
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - app/src/androidTest/assets
+
+  - versionName: '20240914'
+    versionCode: 20240914
+    commit: fcfd083542bdb0985b14f06e6a266c1effa74d6b
     subdir: app
     gradle:
       - versionDev
@@ -14242,5 +14271,5 @@ MaintainerNotes: Tags get removed. See https://github.com/nextcloud/android/issu
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^dev
-CurrentVersion: '20240824'
-CurrentVersionCode: 20240824
+CurrentVersion: '20240914'
+CurrentVersionCode: 20240914

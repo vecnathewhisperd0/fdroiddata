@@ -5989,9 +5989,9 @@ Builds:
       - desktop
     prebuild: sdkmanager 'platforms;android-33' 'build-tools;33.0.2'
 
-  - versionName: 4.13.1
-    versionCode: 1040
-    commit: 3798dadad429af0a137f243303e77ff9fa24421a
+  - versionName: 4.13.3
+    versionCode: 1042
+    commit: 5db502277f337cea3e0d2fae42fc87eae7580978
     subdir: android
     gradle:
       - yes
@@ -5999,9 +5999,37 @@ Builds:
       - desktop
     prebuild: sdkmanager 'platforms;android-33' 'build-tools;33.0.2'
 
+  - versionName: 4.13.5
+    versionCode: 1044
+    commit: 16bca8d562cda13c9405e135c127e56a7d49b856
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+    prebuild: sdkmanager 'platforms;android-33' 'build-tools;33.0.2'
+
+  - versionName: 4.13.6
+    versionCode: 1045
+    commit: 7c46b3533b7e9b3c40b556c5ea66ecffbfc6888c
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 4.13.7-patch1
+    versionCode: 1047
+    commit: 29e6b4a7202315b6a4606cd26eba2de74d6b2b90
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
 UpdateCheckData: buildSrc/src/main/kotlin/BuildConfig.kt|appCodeNumber = (\d+)|.|appVersion
   = "(.*)"
-CurrentVersion: 4.13.1
-CurrentVersionCode: 1040
+CurrentVersion: 4.13.7-patch1
+CurrentVersionCode: 1047

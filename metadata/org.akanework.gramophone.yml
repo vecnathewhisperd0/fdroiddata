@@ -43,9 +43,35 @@ Builds:
       - yes
     prebuild: echo 'releaseType=Release' > ../package.properties
 
+  - versionName: 1.0.9
+    versionCode: 11
+    commit: 951ed87bb5bb3928b9298141becaec76ef7b65c0
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    srclibs:
+      - reproducible-apk-tools@v0.2.8
+    prebuild: echo 'releaseType=Release' > ../package.properties
+    postbuild: $$reproducible-apk-tools$$/inplace-fix.py --zipalign fix-newlines $$OUT$$
+      'META-INF/services/*'
+
+  - versionName: 1.0.11
+    versionCode: 13
+    commit: 0fc89695d120cc257433d2af55a7e7db6d9ccbbc
+    subdir: app
+    submodules: true
+    gradle:
+      - yes
+    srclibs:
+      - reproducible-apk-tools@v0.2.8
+    prebuild: echo 'releaseType=Release' > ../package.properties
+    postbuild: $$reproducible-apk-tools$$/inplace-fix.py --zipalign fix-newlines $$OUT$$
+      'res/M7.json'
+
 AllowedAPKSigningKeys: f451197ad7b80bd1bc981ba38a2c49d471856fb38bcc333676d6e8f8f3ce5d6e
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.8
-CurrentVersionCode: 10
+CurrentVersion: 1.0.11
+CurrentVersionCode: 13
