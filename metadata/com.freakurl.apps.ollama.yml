@@ -46,8 +46,9 @@ Builds:
       - $$flutter$$/bin/flutter pub get
       - popd
       - mv $repo/ollama-app com.freakurl.apps.ollama
-    scanignore:
+    scandelete:
       - .pub-cache
+      - assets
     build:
       - export repo=/home/runner/work/ollama-app
       - cd ..
