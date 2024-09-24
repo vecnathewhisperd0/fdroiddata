@@ -11,7 +11,6 @@ AutoName: ProseReader
 
 RepoType: git
 Repo: https://codeberg.org/timurmobi/prosereader-android.git
-Binaries: https://timur.mobi/prose-%v/doc/android/ProseReader-%v.apk
 
 Builds:
   - versionName: 0.8.0
@@ -19,7 +18,7 @@ Builds:
     commit: dad216d06c9847e75ae89c576f650ab820efb83d
     gradle:
       - yes
-    prevbuild:
+    prebuild:
       - ./proppatch.sh gradle.properties appVersionName "0.8.0"
       - ./proppatch.sh gradle.properties appVersionCode 80
       - ./proppatch.sh gradle.properties baseUrlRel "https://timur.mobi/prose/"
