@@ -23,9 +23,11 @@ Builds:
       - ./proppatch.sh gradle.properties appVersionCode 80
       - ./proppatch.sh gradle.properties baseUrlRel "https://timur.mobi/prose/"
       - ./proppatch.sh gradle.properties android.useAndroidX true
-      - ./proppatch.sh gradle.properties android.defaults.buildfeatures.buildconfig true
+      - ./proppatch.sh gradle.properties android.defaults.buildfeatures.buildconfig
+        true
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
+UpdateCheckData: gradle-build.sh|appVersionCode\s(\d+)|.|appVersionName\s"(.*)"
 CurrentVersion: 0.8.0
 CurrentVersionCode: 80
