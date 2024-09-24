@@ -11,6 +11,7 @@ AutoName: ProseReader
 
 RepoType: git
 Repo: https://codeberg.org/timurmobi/prosereader-android.git
+Binaries: https://timur.mobi/prose-v%v/doc/android/ProseReader-v%v.apk
 
 Builds:
   - versionName: 0.8.0
@@ -25,6 +26,8 @@ Builds:
       - ./proppatch.sh gradle.properties android.useAndroidX true
       - ./proppatch.sh gradle.properties android.defaults.buildfeatures.buildconfig
         true
+
+AllowedAPKSigningKeys: 0b2c8663fafe65f73c5a0ec60d38392c64384d9b91cc9712db3b748874fe5c75
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
