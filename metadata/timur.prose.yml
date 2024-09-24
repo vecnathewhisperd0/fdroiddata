@@ -15,8 +15,8 @@ Binaries: https://timur.mobi/prose-%v/doc/android/ProseReader-%v.apk
 
 Builds:
   - versionName: 0.8.0
-  	versionCode: 80
-  	commit: dad216d06c9847e75ae89c576f650ab820efb83d
+    versionCode: 80
+    commit: dad216d06c9847e75ae89c576f650ab820efb83d
     gradle:
       - yes
 
