@@ -24,5 +24,7 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: None
+AutoUpdateMode: Version
 UpdateCheckMode: Tags
+CurrentVersion: "2.4.6"
+CurrentVersionCode: 59
