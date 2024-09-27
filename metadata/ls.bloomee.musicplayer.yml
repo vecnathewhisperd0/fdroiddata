@@ -28,16 +28,13 @@ Builds:
       - '[[ $flutterVersion ]] || exit 1'
       - git -C $$flutter$$ checkout -f $flutterVersion
       - export PUB_CACHE=$(pwd)/.pub-cache
-      - .flutter/bin/flutter config --no-analytics
-      - .flutter/bin/flutter pub get
-    scanignore:
-      - .flutter/bin/cache
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter pub get
     scandelete:
-      - .flutter
       - .pub-cache
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
-      - .flutter/bin/flutter build apk --release --split-per-abi --target-platform="android-arm64" --build-number $versionCode
+      - $$flutter$$/bin/flutter build apk --release --split-per-abi --target-platform="android-arm64" --build-number $versionCode
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
