@@ -14,7 +14,6 @@ Builds:
   - versionName: '2.9.13+142'
     versionCode: 142
     commit: v2.9.13+142
-    submodules: true
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@stable
