@@ -38,7 +38,7 @@ Builds:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - $$flutter$$/bin/flutter build apk --release --split-per-abi --target-platform="android-arm64" --build-number $$VERCODE$$
 
-AutoUpdateMode: Version
+AutoUpdateMode: Version v%v
 UpdateCheckMode: HTTP
 UpdateCheckData: https://github.com/HemantKArya/BloomeeTunes/releases/latest/|>v.+\+(\d+)<\/h1|.|>v(.+)<\/h1
 CurrentVersion: 2.9.13+142
