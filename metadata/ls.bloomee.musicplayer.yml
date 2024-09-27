@@ -6,12 +6,14 @@ AuthorEmail: iamhemantindia@protonmail.com
 SourceCode: https://github.com/HemantKArya/BloomeeTunes
 IssueTracker: https://github.com/HemantKArya/BloomeeTunes/issues
 Changelog: https://github.com/HemantKArya/BloomeeTunes/releases
+
 AutoName: Bloomee
+
 RepoType: git
 Repo: https://github.com/HemantKArya/BloomeeTunes.git
 
 Builds:
-  - versionName: '2.9.13+142'
+  - versionName: 2.9.13+142
     versionCode: 142
     commit: v2.9.13+142
     output: build/app/outputs/flutter-apk/app-release.apk
@@ -34,10 +36,10 @@ Builds:
       - .pub-cache
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
-      - $$flutter$$/bin/flutter build apk --release --split-per-abi --target-platform="android-arm64" --build-number $versionCode
+      - $$flutter$$/bin/flutter build apk --release --split-per-abi --target-platform="android-arm64" --build-number $$VERCODE$$
 
 AutoUpdateMode: Version
-UpdateCheckMode: Tags
-UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: '2.9.13'
+UpdateCheckMode: HTTP
+UpdateCheckData: https://github.com/HemantKArya/BloomeeTunes/releases/latest/|>v.+\+(\d+)<\/h1|.|>v(.+)<\/h1
+CurrentVersion: 2.9.13+142
 CurrentVersionCode: 142
