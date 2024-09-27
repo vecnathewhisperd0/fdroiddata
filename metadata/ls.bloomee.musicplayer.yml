@@ -8,9 +8,7 @@ AuthorEmail: iamhemantindia@protonmail.com
 SourceCode: https://github.com/HemantKArya/BloomeeTunes
 IssueTracker: https://github.com/HemantKArya/BloomeeTunes/issues
 Changelog: https://github.com/HemantKArya/BloomeeTunes/releases
-
 AutoName: Bloomee
-
 RepoType: git
 Repo: https://github.com/HemantKArya/BloomeeTunes.git
 
@@ -46,7 +44,6 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-VercodeOperation: '%v'
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: '2.9.13'
 CurrentVersionCode: 142
