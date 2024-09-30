@@ -460,14 +460,13 @@ Builds:
 
   - versionName: 5.2.1
     versionCode: 95
-    disable: wip recipe upgrade
-    commit: f74f99139c3059d48699d6de326e7ad6fff34587
+    commit: f851e4a46e2aa5cfce8bed4adca8e91a3ad09704
     sudo:
       - apt-get update
       - apt-get install -y clang gettext pkg-config scons
     output: game/PocketBroomball.apk
     srclibs:
-      - Godot@6c814135b69d4e703956bacc2073b4b179ff5a00
+      - Godot@3.6-stable
     prebuild:
       - mv fdroid/export_presets.cfg game/export_presets.cfg
       - sed -i 's/FDROID = false/FDROID = true/g' game/src/global/Global.gd
@@ -497,9 +496,9 @@ Builds:
       - gradle generateGodotTemplates
       - popd
       - cd ..
-      - mkdir -p ./.local/share/godot/templates/3.5.3.stable/
-      - echo "3.5.3.stable" >> ./.local/share/godot/templates/3.5.3.stable/version.txt
-      - cp godot/bin/android_release.apk ./.local/share/godot/templates/3.5.3.stable/
+      - mkdir -p ./.local/share/godot/templates/3.6.stable/
+      - echo "3.5.3.stable" >> ./.local/share/godot/templates/3.6.stable/version.txt
+      - cp godot/bin/android_release.apk ./.local/share/godot/templates/3.6.stable/
       - ./godot/bin/godot_server.* -v --path game --export Android PocketBroomball.apk
     ndk: 23.2.8568313
 
