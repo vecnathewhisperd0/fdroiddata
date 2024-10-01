@@ -3,7 +3,8 @@ SourceCode: https://github.com/AliAkrem/oopquiz
 IssueTracker: https://github.com/AliAkrem/oopquiz/issues
 
 AutoName: Java OOP Quiz
-Description:  Java OOP Quiz is an interactive quiz app designed to help users test their knowledge of Object-Oriented Programming (OOP) principles in Java. The app features a variety of questions covering core OOP concepts like inheritance, encapsulation, polymorphism, and abstraction, making it a great tool for learners and enthusiasts looking to improve their Java skills.
+Description: |
+  Java OOP Quiz is an interactive quiz app designed to help users test their knowledge of Object-Oriented Programming (OOP) principles in Java. The app features a variety of questions covering core OOP concepts like inheritance, encapsulation, polymorphism, and abstraction, making it a great tool for learners and enthusiasts looking to improve their Java skills.
 
 Categories:
   - Development
@@ -35,7 +36,3 @@ AutoUpdateMode: Version
 UpdateCheckMode: Tags
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.0.0
-
-
-
-
