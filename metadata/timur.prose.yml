@@ -4,7 +4,7 @@ License: GPL-3.0-only
 AuthorName: Timur
 AuthorEmail: timur@timur.mobi
 AuthorWebSite: https://timur.mobi
-SourceCode: https://codeberg.org/timurmobi/prosereader-android.git
+SourceCode: https://codeberg.org/timurmobi/prosereader-android
 IssueTracker: https://codeberg.org/timurmobi/prosereader-android/issues
 
 AutoName: ProseReader
@@ -23,6 +23,7 @@ Builds:
       - apt-get install -t trixie -y golang-go
     gradle:
       - yes
+    binary: https://timurmobi.codeberg.page/bin/ProseReader-v%v.apk
     prebuild:
       - ./proppatch.sh gradle.properties appVersionName "$$VERSION$$"
       - ./proppatch.sh gradle.properties appVersionCode $$VERCODE$$
@@ -32,7 +33,6 @@ Builds:
         true
     build:
       - cd src/main/go
-      - go get main
       - ./gobuild
 
 AllowedAPKSigningKeys: 0b2c8663fafe65f73c5a0ec60d38392c64384d9b91cc9712db3b748874fe5c75
