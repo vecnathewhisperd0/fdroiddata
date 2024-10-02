@@ -460,7 +460,7 @@ Builds:
 
   - versionName: 5.2.1
     versionCode: 95
-    commit: f851e4a46e2aa5cfce8bed4adca8e91a3ad09704
+    commit: f74f99139c3059d48699d6de326e7ad6fff34587
     sudo:
       - apt-get update
       - apt-get install -y clang gettext pkg-config scons
@@ -469,7 +469,6 @@ Builds:
       - Godot@3.6-stable
     prebuild:
       - mv fdroid/export_presets.cfg game/export_presets.cfg
-      - sed -i 's/FDROID = false/FDROID = true/g' game/src/global/Global.gd
     build:
       - export HOME=$PWD
       - cp -R $$Godot$$ godot
@@ -497,13 +496,15 @@ Builds:
       - popd
       - cd ..
       - mkdir -p ./.local/share/godot/templates/3.6.stable/
-      - echo "3.5.3.stable" >> ./.local/share/godot/templates/3.6.stable/version.txt
+      - echo "3.6.stable" >> ./.local/share/godot/templates/3.6.stable/version.txt
       - cp godot/bin/android_release.apk ./.local/share/godot/templates/3.6.stable/
       - ./godot/bin/godot_server.* -v --path game --export Android PocketBroomball.apk
     ndk: 23.2.8568313
 
-AutoUpdateMode: Version
+AllowedAPKSigningKeys:
+  - 9f12a0fb48197fa98ef4e3e4980e6314b137dfd7cc1c7d73553e5520192a128f
+
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-UpdateCheckData: fdroid/export_presets.cfg|version/code=(\d+)|.|version/name="([\d.]+)"
 CurrentVersion: 5.2.1
 CurrentVersionCode: 95
