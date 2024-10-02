@@ -10,9 +10,9 @@ RepoType: git
 Repo: https://github.com/elementdavv/chaka
 
 Builds:
-  - versionName: 1.24.9a.8
-    versionCode: 154
-    commit: 463519cf82912a6c0e113ce3ec2c318456c4d74a
+  - versionName: 1.24.9a.9
+    versionCode: 155
+    commit: 54978ecf7cfc4b0806402e6e3ee6cab6b689bcad
     subdir: app
     submodules: true
     gradle:
@@ -20,5 +20,5 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.24.9a.8
-CurrentVersionCode: 154
+CurrentVersion: 1.24.9a.9
+CurrentVersionCode: 155
