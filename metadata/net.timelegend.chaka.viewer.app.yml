@@ -7,7 +7,8 @@ IssueTracker: https://github.com/elementdavv/chaka/issues
 AutoName: Chaka
 
 RepoType: git
-Repo: https://github.com/elementdavv/chaka
+Repo: https://github.com/elementdavv/chaka.git
+Binaries: https://timelegend.net/net.timelegend.chaka.viewer.app_155.apk
 
 Builds:
   - versionName: 1.24.9a.9
@@ -17,6 +18,8 @@ Builds:
     submodules: true
     gradle:
       - yes
+
+AllowedAPKSigningKeys: 796e8ad532d0bbc9c7ca0de390fae02b86c373107d07a86906ff7f3de6f08091
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
