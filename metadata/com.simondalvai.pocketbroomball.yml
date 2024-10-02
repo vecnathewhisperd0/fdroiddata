@@ -467,8 +467,7 @@ Builds:
     output: game/PocketBroomball.apk
     srclibs:
       - Godot@3.6-stable
-    prebuild:
-      - mv fdroid/export_presets.cfg game/export_presets.cfg
+    prebuild: mv fdroid/export_presets.cfg game/export_presets.cfg
     build:
       - export HOME=$PWD
       - cp -R $$Godot$$ godot
@@ -501,10 +500,10 @@ Builds:
       - ./godot/bin/godot_server.* -v --path game --export Android PocketBroomball.apk
     ndk: 23.2.8568313
 
-AllowedAPKSigningKeys:
-  - 9f12a0fb48197fa98ef4e3e4980e6314b137dfd7cc1c7d73553e5520192a128f
+AllowedAPKSigningKeys: 9f12a0fb48197fa98ef4e3e4980e6314b137dfd7cc1c7d73553e5520192a128f
 
 AutoUpdateMode: None
 UpdateCheckMode: Tags
+UpdateCheckData: fdroid/export_presets.cfg|version/code=(\d+)|.|version/name="([\d.]+)"
 CurrentVersion: 5.2.1
 CurrentVersionCode: 95
