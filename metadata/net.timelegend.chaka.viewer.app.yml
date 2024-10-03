@@ -18,6 +18,7 @@ Builds:
     submodules: true
     gradle:
       - yes
+    ndk: 25.1.8937393
 
 AllowedAPKSigningKeys: 796e8ad532d0bbc9c7ca0de390fae02b86c373107d07a86906ff7f3de6f08091
 
