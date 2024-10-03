@@ -470,6 +470,7 @@ Builds:
     prebuild: mv fdroid/export_presets.cfg game/export_presets.cfg
     build:
       - export HOME=$PWD
+      - export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))
       - cp -R $$Godot$$ godot
       - keytool -keyalg RSA -genkey -v -keystore debug.keystore -storepass android
         -alias androiddebugkey -keypass android -dname "CN=Android Debug,O=Android,C=US"
@@ -482,6 +483,7 @@ Builds:
       - echo $DEBUG_KEYSTORE_PATH >> ./.config/godot/editor_settings-3.tres
       - echo 'export/android/debug_keystore_user = "androiddebugkey"' >> ./.config/godot/editor_settings-3.tres
       - echo 'export/android/debug_keystore_pass = "android"' >> ./.config/godot/editor_settings-3.tres
+      - echo "export/android/java_sdk_path = "${JAVA_HOME}"" >> ./.config/godot/editor_settings-3.tres
       - cd godot
       - scons -j `nproc` platform=server use_llvm=yes unix_global_settings_path=".."
         profile=fdroid/godot-build-options.py
