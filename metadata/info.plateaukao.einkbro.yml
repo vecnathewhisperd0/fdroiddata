@@ -897,7 +897,28 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 11.17.0
+    versionCode: 111700
+    commit: bbfc6b680d3fe87f0bcff4860f2e037c7041500d
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 12.0.0
+    versionCode: 120000
+    commit: 8b6612cc7005f382ca3e7ce3e00d3ebd266299b2
+    subdir: app
+    gradle:
+      - yes
+
+  - versionName: 12.1.0
+    versionCode: 120100
+    commit: db2772d37ac84bd83a4493e71a1ec6d9a08a8f9a
+    subdir: app
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 11.16.0
-CurrentVersionCode: 111600
+CurrentVersion: 12.1.0
+CurrentVersionCode: 120100

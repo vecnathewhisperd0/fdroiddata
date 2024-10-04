@@ -6018,9 +6018,54 @@ Builds:
     rm:
       - desktop
 
-  - versionName: 4.13.7-patch1
-    versionCode: 1047
-    commit: 29e6b4a7202315b6a4606cd26eba2de74d6b2b90
+  - versionName: 4.13.8-patch1
+    versionCode: 1049
+    commit: 16c4e2fed8279f405daa44eae4647955fcf983ab
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 4.13.9-patch1
+    versionCode: 1051
+    commit: 51bbe4f961f887488f71bc21488b5e3bd2a7bbfd
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 4.13.10
+    versionCode: 1052
+    commit: db5e45c15738804b5c7775325143c29396ba0887
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 4.13.11
+    versionCode: 1053
+    commit: 1a7e396339e3fc11c436f2155c231956ecebbe11
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 4.13.12
+    versionCode: 1054
+    commit: 2a8f0be2575c0310f6e1be861794828135bcc8de
+    subdir: android
+    gradle:
+      - yes
+    rm:
+      - desktop
+
+  - versionName: 4.13.13
+    versionCode: 1055
+    commit: b56eebed525d13bfec69922a052cb11de6e36fe1
     subdir: android
     gradle:
       - yes
@@ -6031,5 +6076,5 @@ AutoUpdateMode: Version
 UpdateCheckMode: Tags
 UpdateCheckData: buildSrc/src/main/kotlin/BuildConfig.kt|appCodeNumber = (\d+)|.|appVersion
   = "(.*)"
-CurrentVersion: 4.13.7-patch1
-CurrentVersionCode: 1047
+CurrentVersion: 4.13.13
+CurrentVersionCode: 1055

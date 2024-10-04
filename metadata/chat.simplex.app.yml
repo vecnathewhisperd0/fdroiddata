@@ -1664,7 +1664,7 @@ Builds:
 
   - versionName: 6.0.4
     versionCode: 237
-    commit: 6adf8f29b087d16d2537393dbc656949f80ade11
+    commit: fc3ae4921445ecbf66e8ecd8c1f78d86f6360ea2
     timeout: 30000
     sudo:
       - apt-get update
@@ -1693,7 +1693,7 @@ Builds:
 
   - versionName: 6.0.4
     versionCode: 238
-    commit: 6adf8f29b087d16d2537393dbc656949f80ade11
+    commit: fc3ae4921445ecbf66e8ecd8c1f78d86f6360ea2
     timeout: 60000
     sudo:
       - apt-get update

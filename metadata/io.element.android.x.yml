@@ -225,17 +225,17 @@ Builds:
     postbuild: $$reproducible-apk-tools$$/inplace-fix.py --page-size 16 fix-pg-map-id
       $$OUT$$ 'a0086df'
 
-  - versionName: 0.6.0
-    versionCode: 40006001
+  - versionName: 0.6.4
+    versionCode: 40006041
     disable: https://github.com/element-hq/element-x-android/issues/3420
-    commit: v0.6.0
+    commit: v0.6.4
     subdir: app
     gradle:
       - fdroid
     output: build/outputs/apk/fdroid/release/app-fdroid-armeabi-v7a-release-unsigned.apk
     binary: https://github.com/element-hq/element-x-android/releases/download/v%v/app-fdroid-armeabi-v7a-release-signed.apk
     srclibs:
-      - reproducible-apk-tools@v0.2.7
+      - reproducible-apk-tools@v0.2.8
     rm:
       - libraries/pushproviders/firebase
     prebuild:
@@ -252,17 +252,17 @@ Builds:
     postbuild: $$reproducible-apk-tools$$/inplace-fix.py --page-size 16 fix-pg-map-id
       $$OUT$$ '0000000'
 
-  - versionName: 0.6.0
-    versionCode: 40006002
+  - versionName: 0.6.4
+    versionCode: 40006042
     disable: https://github.com/element-hq/element-x-android/issues/3420
-    commit: v0.6.0
+    commit: v0.6.4
     subdir: app
     gradle:
       - fdroid
     output: build/outputs/apk/fdroid/release/app-fdroid-arm64-v8a-release-unsigned.apk
     binary: https://github.com/element-hq/element-x-android/releases/download/v%v/app-fdroid-arm64-v8a-release-signed.apk
     srclibs:
-      - reproducible-apk-tools@v0.2.7
+      - reproducible-apk-tools@v0.2.8
     rm:
       - libraries/pushproviders/firebase
     prebuild:
@@ -279,17 +279,17 @@ Builds:
     postbuild: $$reproducible-apk-tools$$/inplace-fix.py --page-size 16 fix-pg-map-id
       $$OUT$$ '0000000'
 
-  - versionName: 0.6.0
-    versionCode: 40006003
+  - versionName: 0.6.4
+    versionCode: 40006043
     disable: https://github.com/element-hq/element-x-android/issues/3420
-    commit: v0.6.0
+    commit: v0.6.4
     subdir: app
     gradle:
       - fdroid
     output: build/outputs/apk/fdroid/release/app-fdroid-x86-release-unsigned.apk
     binary: https://github.com/element-hq/element-x-android/releases/download/v%v/app-fdroid-x86-release-signed.apk
     srclibs:
-      - reproducible-apk-tools@v0.2.7
+      - reproducible-apk-tools@v0.2.8
     rm:
       - libraries/pushproviders/firebase
     prebuild:
@@ -306,17 +306,17 @@ Builds:
     postbuild: $$reproducible-apk-tools$$/inplace-fix.py --page-size 16 fix-pg-map-id
       $$OUT$$ '0000000'
 
-  - versionName: 0.6.0
-    versionCode: 40006004
+  - versionName: 0.6.4
+    versionCode: 40006044
     disable: https://github.com/element-hq/element-x-android/issues/3420
-    commit: v0.6.0
+    commit: v0.6.4
     subdir: app
     gradle:
       - fdroid
     output: build/outputs/apk/fdroid/release/app-fdroid-x86_64-release-unsigned.apk
     binary: https://github.com/element-hq/element-x-android/releases/download/v%v/app-fdroid-x86_64-release-signed.apk
     srclibs:
-      - reproducible-apk-tools@v0.2.7
+      - reproducible-apk-tools@v0.2.8
     rm:
       - libraries/pushproviders/firebase
     prebuild:
@@ -338,7 +338,7 @@ AllowedAPKSigningKeys: 6a2fdc3148049ce0d5c6e85010723b83fb207d20c7477f5c22ac53c87
 MaintainerNotes: We have to build all abi apks. If we patch it to build only one abi
   the AndroidManifest.xml will be different.
 
-AutoUpdateMode: Version v%v
+AutoUpdateMode: None
 UpdateCheckMode: HTTP
 VercodeOperation:
   - 1 + %c
@@ -347,5 +347,5 @@ VercodeOperation:
   - 4 + %c
 UpdateCheckData: https://api.github.com/repos/element-hq/element-x-android/releases/latest|"name"\
   *:\ *"(\d+)|.|"tag_name":"v(\d+\.\d+\.\d+)"
-CurrentVersion: 0.6.0
-CurrentVersionCode: 40006004
+CurrentVersion: 0.6.4
+CurrentVersionCode: 40006044
