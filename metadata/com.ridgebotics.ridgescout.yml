@@ -16,9 +16,9 @@ Repo: https://github.com/team4388/scoutingapp2025.git
 Binaries: https://github.com/Team4388/ScoutingApp2025/releases/download/v%v/app-release.apk
 
 Builds:
-  - versionName: '0.3'
-    versionCode: 3
-    commit: v0.3
+  - versionName: '0.4'
+    versionCode: 4
+    commit: d957a1db5e91301040ccedeb0613487cc8a4abe1
     subdir: app
     gradle:
       - yes
@@ -27,5 +27,5 @@ AllowedAPKSigningKeys: ff62c8705bdcf0a0d16bba52444a3b0f329e593a70a83f1499ed8a529
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '0.3'
-CurrentVersionCode: 3
+CurrentVersion: '0.4'
+CurrentVersionCode: 4

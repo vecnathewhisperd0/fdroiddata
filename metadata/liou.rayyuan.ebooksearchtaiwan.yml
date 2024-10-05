@@ -118,12 +118,14 @@ Builds:
 
   - versionName: 2.2.0
     versionCode: 1922210109
+    disable: https://github.com/YuanLiou/TaiwanEbookSearch/issues/116
     commit: 2d1e27f7efc3cae76f5e78170dd83b38c3034798
     subdir: app
     gradle:
       - api
     prebuild:
-      - sed -i -e '/firebase/d' -e '/gms/d' ../build.gradle.kts build.gradle.kts
+      - sed -i -e '/firebase/d' -e '/gms/d' -e '/libs.barcode.scanning/d' ../build.gradle.kts
+        build.gradle.kts
       - sed -i -e '/CrashlyticsExtension/,+2d' -e '/ADMOB/d' -e '/admob/d' -e '/play.review/d'
         -e '/localProperties.getProperty/d' build.gradle.kts
       - sed -i -e '/firebase/d' -e '/gms/d' -e '/play-review/d'  ../gradle/libs.versions.toml

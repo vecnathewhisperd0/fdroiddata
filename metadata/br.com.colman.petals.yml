@@ -528,6 +528,6 @@ Builds:
     prebuild: sed -i -e '/sonatype/d' build.gradle.kts
 
 AutoUpdateMode: Version
-UpdateCheckMode: Tags
+UpdateCheckMode: Tags ^v[\d.]+$
 CurrentVersion: 3.29.0
 CurrentVersionCode: 329000
