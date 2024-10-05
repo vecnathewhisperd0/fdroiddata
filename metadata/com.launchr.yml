@@ -26,13 +26,8 @@ Builds:
     gradle:
       - yes
     scanignore:
-      - android/build.gradle
       - node_modules/jsc-android
       - node_modules/react-native/ReactAndroid/
-      - node_modules/react-native/ReactAndroid/src/main/java/com/facebook/react
-      - node_modules/react-native-android-open-settings/android/build.gradle
-      - node_modules/react-native-gesture-handler/android/build.gradle
-      - node_modules/react-native-launcher-kit/android/build.gradle
       - node_modules/react-native-reanimated/android/build.gradle
       - node_modules/react-native-safe-area-context/android/build.gradle
       - node_modules/react-native-screens/android/build.gradle
