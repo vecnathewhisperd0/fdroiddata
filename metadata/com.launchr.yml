@@ -36,7 +36,6 @@ Builds:
       - node_modules/react-native-vector-icons/android/build.gradle
     scandelete:
       - node_modules/
-    ndk: r21d
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
