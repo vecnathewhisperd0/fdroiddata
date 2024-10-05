@@ -26,7 +26,6 @@ Builds:
     gradle:
       - yes
     scanignore:
-      - android/build.gradle
       - node_modules/jsc-android
       - node_modules/@react-native-async-storage/async-storage/android/build.gradle
       - node_modules/@react-native-community/blur/android/build.gradle
