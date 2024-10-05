@@ -15,7 +15,7 @@ Builds:
     subdir: android/app
     sudo:
       - curl -Lo node.tar.xz https://nodejs.org/dist/v20.18.0/node-v20.18.0-linux-x64.tar.xz
-      - echo "8cc40f45c2c62529b15e83a6bbe0ac1febf57af3c5720df68067c96c0fddbbdf node.tar.xz"
+      - echo "4543670b589593f8fa5f106111fd5139081da42bb165a9239f05195e405f240a node.tar.xz"
         | sha256sum -c -
       - tar xJf node.tar.xz
       - cp -a node-v20.18.0-linux-x64/. /usr/local/
