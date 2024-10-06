@@ -1651,9 +1651,9 @@ Builds:
     scandelete:
       - node_modules/
 
-  - versionName: 2.18.0
-    versionCode: 262
-    commit: 49cc9b3b1eeddf5edae2e86a293bdc475013c8a2
+  - versionName: 2.18.1
+    versionCode: 263
+    commit: f6d39d1ee89adeacd2b9394505c706badabcb6df
     subdir: android/app
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
@@ -1673,9 +1673,9 @@ Builds:
     scandelete:
       - node_modules/
 
-  - versionName: 2.18.1
-    versionCode: 263
-    commit: f6d39d1ee89adeacd2b9394505c706badabcb6df
+  - versionName: 2.18.2
+    versionCode: 264
+    commit: 88d6a28731f79d9e55f4070ab67aca439bb26a6e
     subdir: android/app
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
@@ -1699,5 +1699,5 @@ AllowedAPKSigningKeys: 8b4d5cf69eaf147cd9a868c740d37d5fe1471a2f62c67d536038bcdbd
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 2.18.1
-CurrentVersionCode: 263
+CurrentVersion: 2.18.2
+CurrentVersionCode: 264
