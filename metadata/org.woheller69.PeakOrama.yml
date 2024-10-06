@@ -1,0 +1,24 @@
+Categories:
+  - Navigation
+License: GPL-3.0-only
+AuthorName: woheller69
+SourceCode: https://github.com/woheller69/PeakOrama
+IssueTracker: https://github.com/woheller69/PeakOrama/issues
+
+AutoName: PeakOrama
+
+RepoType: git
+Repo: https://github.com/woheller69/PeakOrama.git
+
+Builds:
+  - versionName: '3.0'
+    versionCode: 30
+    commit: 80a6bc92b57eeb7375dfb706cab19b4204dab26f
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '3.0'
+CurrentVersionCode: 30
