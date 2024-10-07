@@ -14,7 +14,7 @@ Repo: https://github.com/AliAkrem/oopquiz.git
 Builds:
   - versionName: 1.0.0
     versionCode: 1
-    commit: 99c2dd9d49bbd308225b6ff49db27eede8c721e6
+    commit: 5beecb23993ff34f7f32a1255b91b5faff4f814d
     output: build/app/outputs/flutter-apk/app-release.apk
     srclibs:
       - flutter@stable
