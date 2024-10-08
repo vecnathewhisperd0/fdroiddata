@@ -20,7 +20,6 @@ Builds:
     gradle:
       - yes
 
-
 AllowedAPKSigningKeys: cec73bbafd52ff454f9be372367a02b57a151284fafeedbf4613b912c78a8142
 
 AutoUpdateMode: Version
