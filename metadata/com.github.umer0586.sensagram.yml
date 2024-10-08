@@ -1,0 +1,25 @@
+Categories:
+  - Connectivity
+License: GPL-3.0-only
+AuthorName: Umer Farooq
+SourceCode: https://github.com/umer0586/SensaGram
+IssueTracker: https://github.com/umer0586/SensaGram/issues
+Changelog: https://github.com/umer0586/SensaGram/releases
+
+AutoName: sensagram
+
+RepoType: git
+Repo: https://github.com/umer0586/SensaGram
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: 93eeca2685766de831938af625e84960e1cf39bc
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
