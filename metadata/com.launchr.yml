@@ -1,6 +1,7 @@
 Categories:
   - Theming
 License: GPL-3.0-or-later
+AuthorName: Ratan
 SourceCode: https://github.com/SudhaRatan/launchr
 
 AutoName: launchr
@@ -16,12 +17,7 @@ Builds:
     sudo:
       - sysctl fs.inotify.max_user_watches=524288
       - apt-get update
-      - apt-get install -y xz-utils
-      - curl -Lo node.tar.xz https://nodejs.org/dist/v20.18.0/node-v20.18.0-linux-x64.tar.xz
-      - echo "4543670b589593f8fa5f106111fd5139081da42bb165a9239f05195e405f240a node.tar.xz"
-        | sha256sum -c -
-      - tar xJf node.tar.xz
-      - cp -a node-v20.18.0-linux-x64/. /usr/local/
+      - apt-get install -y npm
     init: npm install
     gradle:
       - yes
