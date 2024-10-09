@@ -13,19 +13,13 @@ Repo: https://github.com/Ghost-Applications/gizz-tapes.git
 Builds:
   - versionName: Antarctica
     versionCode: 1
-    commit: Antarctica
+    commit: 452d7504a430f0067163658ff313435bb25808b0
     subdir: mobile
-    forcevercode: true
-    gradleprops: org.gradle.jvmargs=""
-    sudo:
-      - apt-get update
-      - apt-get install -y openjdk-17-jdk-headless
-      - update-java-alternatives -a
-    prebuild:
-      - sed -i -e 's/-XX:MaxPermSize\S*//' ../gradle.properties
+    prebuild: sed -i -e 's/-XX:MaxPermSize\S*//' ../gradle.properties
     gradle:
       - yes
 
-AutoUpdateMode: Version %v
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
 CurrentVersion: Antarctica
 CurrentVersionCode: 1
