@@ -18,6 +18,8 @@ Builds:
       - apt-get install -y npm
     gradle:
       - yes
+    srclibs:
+      - transistor-background-fetch@6feb11c93f4e5debf7792e7e7c444f3d62ac733c
     prebuild:
       - export ANDROID_HOME=/usr/lib/android-sdk
       - cd ../..
@@ -44,6 +46,14 @@ Builds:
       - node_modules/react-native-screens/android/build.gradle
       - node_modules/react-native-vector-icons/android/build.gradle
       - node_modules/@pchmn/expo-material3-theme/android/build.gradle
+    scandelete:
+      - node_modules
+    build:
+      - pushd $$transistor-background-fetch$$/android/tsbackgroundfetch/
+      - gradle assembleRelease
+      - popd
+      - mv $$transistor-background-fetch$$/android/tsbackgroundfetch/build/outputs/aar/tsbackgroundfetch-release.aar
+        ../../node_modules/react-native-background-fetch/android/libs/com/transistorsoft/tsbackgroundfetch/1.0.2/tsbackgroundfetch-1.0.2.aar
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
