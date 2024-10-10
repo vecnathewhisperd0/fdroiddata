@@ -10,22 +10,21 @@ AutoName: Chaka
 RepoType: git
 Repo: https://github.com/elementdavv/chaka.git
 Binaries: https://timelegend.net/net.timelegend.chaka.viewer.app_%c.apk
-# Binaries: https://github.com/elementdavv/chaka/releases/download/v%v/app-universal-release.apk
 
 Builds:
   - versionName: 1.24.9a.9
     versionCode: 155
-    commit: a4b0c55d77f7b13490069c45d9d36a0ab38d78bc
+    commit: v1.24.9a.9
     subdir: app
     submodules: true
     gradle:
       - yes
+    prebuild:
+      - find ../ -name build.gradle -exec sed -i -E '/^\s{12}maven\s*\{\s*$/,/^\s{12}\}\s*$/d'
+        {} \;
+      - find ../ -name build.gradle -exec sed -i -E '/maven\s*\{/d' {} \;
     gradleprops:
       - noSplits
-      # - ABI_FILTERS=
-    prebuild:
-      - find ../ -name build.gradle -exec sed -i -E '/^	{3}maven\s*\{\s*$/,/^	{3}\}\s*$/d' {} \;
-      - find ../ -name build.gradle -exec sed -i -E '/maven\s*\{/d' {} \;
 
 AllowedAPKSigningKeys: 796e8ad532d0bbc9c7ca0de390fae02b86c373107d07a86906ff7f3de6f08091
 
