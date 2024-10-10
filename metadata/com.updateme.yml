@@ -21,7 +21,6 @@ Builds:
     srclibs:
       - transistor-background-fetch@6feb11c93f4e5debf7792e7e7c444f3d62ac733c
     prebuild:
-      - export ANDROID_HOME=/usr/lib/android-sdk
       - cd ../..
       - npm install
     scanignore:
