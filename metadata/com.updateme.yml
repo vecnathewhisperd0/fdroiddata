@@ -25,6 +25,7 @@ Builds:
       - npm install
     scanignore:
       - node_modules/jsc-android
+      - node_modules/react-native/sdks/hermesc/linux64-bin/hermesc
       - android/build.gradle
       - node_modules/expo/android/build.gradle
       - node_modules/expo-modules-core/android/ExpoModulesCorePlugin.gradle
