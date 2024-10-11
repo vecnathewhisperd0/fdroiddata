@@ -16,7 +16,7 @@ Repo: https://github.com/woheller69/PeakOrama.git
 Builds:
   - versionName: '3.0'
     versionCode: 30
-    commit: 80a6bc92b57eeb7375dfb706cab19b4204dab26f
+    commit: c716b3a2af5d76fa063d2eaeaa8f0cedfe3b1c5a
     subdir: app
     gradle:
       - yes
