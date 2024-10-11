@@ -9,7 +9,6 @@ AutoName: Swift Notes
 
 RepoType: git
 Repo: https://github.com/tuhin733/SwiftNotes.git
-Binaries: https://github.com/tuhin733/SwiftNotes/releases/download/v%v/SwiftNotes.apk
 
 Builds:
   - versionName: 1.0.0
@@ -18,12 +17,6 @@ Builds:
     subdir: app
     gradle:
       - yes
-    srclibs:
-      - reproducible-apk-tools@v0.2.8
-    postbuild: $$reproducible-apk-tools$$/inplace-fix.py --zipalign fix-newlines '$$OUT$$'
-      'META-INF/services/*'
-
-AllowedAPKSigningKeys: 5333a2605dfa2cc5e1f62398f9bc118222ff4f73e8368424cd1c95969217db78
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
