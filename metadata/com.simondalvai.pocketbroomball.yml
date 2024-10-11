@@ -503,9 +503,7 @@ Builds:
       - ./godot/bin/godot_server.* -v --path game --export Android PocketBroomball.apk
     ndk: 23.2.8568313
 
-AllowedAPKSigningKeys: 9f12a0fb48197fa98ef4e3e4980e6314b137dfd7cc1c7d73553e5520192a128f
-
-AutoUpdateMode: None
+AutoUpdateMode: Version
 UpdateCheckMode: Tags
 UpdateCheckData: fdroid/export_presets.cfg|version/code=(\d+)|.|version/name="([\d.]+)"
 CurrentVersion: 5.2.1
