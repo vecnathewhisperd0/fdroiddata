@@ -34,3 +34,5 @@ AllowedAPKSigningKeys: d658af335edd7fbfd6f7cdd104444d96d6f4a1ca50183a48a68d6fad3
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
+CurrentVersion: '2.8'
+CurrentVersionCode: 18
