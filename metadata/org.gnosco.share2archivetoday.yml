@@ -16,9 +16,7 @@ Repo: https://github.com/gabefair/Share-2-Archive-Today.git
 Binaries: https://github.com/gabefair/Share-2-Archive-Today/releases/download/latest/org-gnosco-share2archivetoday.apk
 
 Builds:
-  - versionName: '2.7'
-    versionCode: 17
-    commit: latest
+  - commit: latest
     subdir: Share2ArchiveToday/app
     gradle:
       - yes
@@ -27,5 +25,3 @@ AllowedAPKSigningKeys: d658af335edd7fbfd6f7cdd104444d96d6f4a1ca50183a48a68d6fad3
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '2.7'
-CurrentVersionCode: 17
