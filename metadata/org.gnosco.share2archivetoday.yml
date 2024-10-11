@@ -13,10 +13,19 @@ AutoName: Share 2 Archive Today
 
 RepoType: git
 Repo: https://github.com/gabefair/Share-2-Archive-Today.git
-Binaries: https://github.com/gabefair/Share-2-Archive-Today/releases/download/latest/org-gnosco-share2archivetoday.apk
+Binaries: https://github.com/gabefair/Share-2-Archive-Today/releases/download/%v/org-gnosco-share2archivetoday.apk
 
 Builds:
-  - commit: latest
+  - versionName: '2.5'
+    versionCode: 15
+    commit: beeed8949291fed1296257aeb3b56551da771a16
+    subdir: Share2ArchiveToday/app
+    gradle:
+      - yes
+
+  - versionName: '2.8'
+    versionCode: 18
+    commit: 8a76afb5fe997b56facd0bb82f841ec6bfb4cbe1
     subdir: Share2ArchiveToday/app
     gradle:
       - yes
