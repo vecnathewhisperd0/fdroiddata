@@ -62,9 +62,9 @@ Builds:
       - popd
       - mv $$esbuild$$/esbuild ../../node_modules/@esbuild/linux-x64/bin/esbuild
 
-  - versionName: 1.6.6
-    versionCode: 57
-    commit: dcf8ef0a421544eed36e74d014e6edf9c7132545
+  - versionName: 1.6.7
+    versionCode: 58
+    commit: e95ec416b7fdba1d65974cf134b3d5ad278230ec
     timeout: 20000
     subdir: materialious/android/app
     sudo:
@@ -104,5 +104,5 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.6.6
-CurrentVersionCode: 57
+CurrentVersion: 1.6.7
+CurrentVersionCode: 58
