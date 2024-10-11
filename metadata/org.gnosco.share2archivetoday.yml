@@ -25,7 +25,7 @@ Builds:
 
   - versionName: '2.8'
     versionCode: 18
-    commit: 7c345e3841847c487250200e2c81fec087a963b2
+    commit: 6192f7cf06ef4e82a8a7c6fee9e6ae9b92ddd661
     subdir: Share2ArchiveToday/app
     gradle:
       - yes
