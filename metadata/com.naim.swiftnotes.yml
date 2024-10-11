@@ -1,27 +1,22 @@
 Categories:
-  - Writing
+  - writing
   - reading
-License: GPL-3.0
-WebSite: https://github.com/tuhin733/SwiftNotes
+License: GPL-3.0-or-later
 SourceCode: https://github.com/tuhin733/SwiftNotes.git
-IssueTracker: https://github.com/tuhin733/SwiftNotes/issues
-Changelog: https://github.com/tuhin733/SwiftNotes/blob/main/CHANGELOG.md
-
-AutoName: Swift Notes
-Summary: Lightweight Android notes app with Material You
-Description: |-
-  Swift Notes is a lightweight and simple notes app with a clean interface and support for markdown, featuring Material You design.
 
 RepoType: git
 Repo: https://github.com/tuhin733/SwiftNotes.git
 
-Build:
-  - versionName: "1.0.0"
+Builds:
+  - versionName: '1.0.0'
     versionCode: 1
-    commit: 1a43955eb5b1c0b0ea74c38cbb654fbbe1a56772
+    commit: v1.0.0
+    # Where build.gradle is:
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
+CurrentVersion: '1.0.0'
+CurrentVersionCode: 1
