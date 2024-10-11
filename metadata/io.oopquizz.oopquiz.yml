@@ -20,7 +20,7 @@ Builds:
     srclibs:
       - flutter@stable
     prebuild:
-      - flutterVersion=$(sed -n -E "s/.*flutter:\ "(.*)"/\1/p" .github/workflows/release.yml)
+      - flutterVersion=$(sed -n -E 's/.*flutter:\ "(.*)"/\1/p' .github/workflows/release.yml)
       - '[[ $flutterVersion ]] || exit 1'
       - git -C $$flutter$$ checkout -f $flutterVersion
       - export PUB_CACHE=$(pwd)/.pub-cache
