@@ -17,7 +17,7 @@ Builds:
     commit: 92af066de7182643fe5809122f5da7bb4f82fb8e
     subdir: app
     gradle:
-      - yes      
+      - yes
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
