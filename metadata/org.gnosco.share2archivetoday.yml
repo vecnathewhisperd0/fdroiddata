@@ -18,7 +18,7 @@ Binaries: https://github.com/gabefair/Share-2-Archive-Today/releases/download/%v
 Builds:
   - versionName: '2.5'
     versionCode: 15
-    commit: beeed8949291fed1296257aeb3b56551da771a16
+    commit: 13c0bd8cb5136cbedb6f68cbe3106d4418c13677
     subdir: Share2ArchiveToday/app
     gradle:
       - yes
