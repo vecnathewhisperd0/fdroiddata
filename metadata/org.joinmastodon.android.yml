@@ -272,7 +272,21 @@ Builds:
     gradle:
       - yes
 
+  - versionName: 2.7.2
+    versionCode: 121
+    commit: 71f92cb66cf02b9506294df5dc57d5eed88004e9
+    subdir: mastodon
+    gradle:
+      - yes
+
+  - versionName: 2.7.3
+    versionCode: 123
+    commit: 1ad2d08e2722dc812320708ddd43738209c12d5f
+    subdir: mastodon
+    gradle:
+      - yes
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 2.7.1
-CurrentVersionCode: 120
+CurrentVersion: 2.7.3
+CurrentVersionCode: 123

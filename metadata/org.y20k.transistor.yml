@@ -639,14 +639,15 @@ Builds:
     gradle:
       - yes
 
-  - versionName: 4.2.0
-    versionCode: 100
-    commit: 9cc5490bf425b04e2a4757f827f0d7f82e1b50e2
+  - versionName: 4.2.1
+    versionCode: 101
+    commit: 02f1ff847cd2095f51dac94d944fd1d53a3014f0
     subdir: app
     gradle:
       - yes
+    prebuild: sed -i -e '/media3-cast/d' build.gradle
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 4.2.0
-CurrentVersionCode: 100
+CurrentVersion: 4.2.1
+CurrentVersionCode: 101
