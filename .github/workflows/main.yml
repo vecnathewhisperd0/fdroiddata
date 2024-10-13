@@ -10,7 +10,7 @@ jobs:
             - uses: actions/checkout@v4
             - name: Setup
               continue-on-error: true
-              uses: SvanBoxel/gitlab-mirror-and-ci-action@v0.5
+              uses: SvanBoxel/gitlab-mirror-and-ci-action@0.5
               with:
                 args: "https://gitlab.com/MH0386/fdroiddata"
               env:
