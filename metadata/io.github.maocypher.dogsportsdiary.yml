@@ -15,7 +15,7 @@ Repo: https://github.com/maocypher/dogsportsdiary.git
 Builds:
   - versionName: 1.0.8
     versionCode: 8
-    commit: 15a895b3a1bb2b628df94c28bc0691a9920211a2
+    commit: 0cfb68c93cec693d106d1d9728a68dfec6bb306a
     submodules: true
     output: build/app/outputs/flutter-apk/app-release.apk
     rm:
@@ -45,8 +45,7 @@ Builds:
       - mv /tmp/build io.github.maocypher.dogsportsdiary
     ndk: 26.3.11579264
 
-AutoUpdateMode: Version
-UpdateCheckMode: Tags
-UpdateCheckData: pubspec.yaml|version:\s.*\+(\d+)|.|version:\s(.*)\+
+AutoUpdateMode: None
+UpdateCheckMode: None
 CurrentVersion: 1.0.8
 CurrentVersionCode: 8
