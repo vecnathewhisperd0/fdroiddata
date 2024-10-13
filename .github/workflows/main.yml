@@ -27,7 +27,7 @@ jobs:
               continue-on-error: true
               run: |
                 git switch com.mh0386.anynotedotai
-                git add metadata/com.MH0386.AnyNoteDotAI.yml
+                git add .
                 git commit -m "Update com.MH0386.AnyNoteDotAI.yml"
                 git pull
                 git push
