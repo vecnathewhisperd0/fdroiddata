@@ -5,7 +5,10 @@ on:
     push:
 jobs:
     Sync:
+        name: Mirror from GitHub to GitLab
         runs-on: ubuntu-latest
+        env:
+            GITLAB_TOKEN: ${{ secrets.GITLAB_PASSWORD }}
         steps:
             - uses: actions/checkout@v4
             - name: Setup
@@ -13,8 +16,8 @@ jobs:
               run: |
                 git config --global user.email "mohamed.hisham.abdelzaher@gmail.com"
                 git config --global user.name "Mohamed Hisham Abdelzaher"
-                git remote set-url origin https://MH0386:${{ secrets.GITLAB_PASSWORD }}@gitlab.com/MH0386/fdroiddata.git
-                git config pull.rebase false
+                git clone --bare "https://github.com/$GITHUB_REPOSITORY" .
+                # git config pull.rebase false
             - name: Verify
               continue-on-error: true
               run: |
@@ -26,8 +29,8 @@ jobs:
             - name: Update
               continue-on-error: true
               run: |
-                git switch com.mh0386.anynotedotai
+                # git switch com.mh0386.anynotedotai
                 git add .
                 git commit -m "Update com.MH0386.AnyNoteDotAI.yml"
-                git pull --allow-unrelated-histories
-                git push --mirror
+                # git pull --allow-unrelated-histories
+                git push --mirror "https://MH0386:$GITLAB_TOKEN@gitlab.com/MH0386/fdroiddata.git"
