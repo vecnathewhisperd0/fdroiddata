@@ -14,12 +14,12 @@ jobs:
                 git config --global user.email "mohamed.hisham.abdelzaher@gmail.com"
                 git config --global user.name "Mohamed Hisham Abdelzaher"
                 git remote set-url origin https://gitlab.com/MH0386/fdroiddata.git
+                git config pull.rebase false
             - name: Verify
               continue-on-error: true
               run: |
                 rm renovate.json
                 rm -rd .github
-                
                 git remote -v
                 git fetch origin
                 git branch -a
