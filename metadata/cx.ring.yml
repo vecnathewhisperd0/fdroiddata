@@ -3333,9 +3333,9 @@ Builds:
       - cd ../../daemon/bin/jni
       - PACKAGEDIR=../../../jami-android/libjamiclient/src/main/java ./make-swig.sh
 
-  - versionName: 20240926-01
-    versionCode: 431
-    commit: d428763b26f3e1bf9bf2001a0ec2de26299398ee
+  - versionName: 20241011-01
+    versionCode: 432
+    commit: 5f52a526d80332f28355a75f09325f9d35c04658
     timeout: 10800
     subdir: jami-android/app
     submodules: true
@@ -3360,5 +3360,5 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 20240926-01
-CurrentVersionCode: 431
+CurrentVersion: 20241011-01
+CurrentVersionCode: 432
