@@ -21,6 +21,7 @@ jobs:
             - name: Verify
               continue-on-error: true
               run: |
+                ls -a
                 rm renovate.json
                 rm -rd .github
                 git remote -v
