@@ -1,0 +1,20 @@
+name: info
+on:
+    schedule:
+        - cron: "0 0 * * *"
+    push:
+jobs:
+    info:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Commit and push
+              continue-on-error: true
+              run: |
+                git config --global user.email "mohamed.hisham.abdelzaher@gmail.com"
+                git config --global user.name "Mohamed Hisham Abdelzaher"
+                git remote add origin https://gitlab.com/MH0386/fdroiddata.git
+                git add metadata/com.MH0386.AnyNoteDotAI.yml
+                git commit -m "Update com.MH0386.AnyNoteDotAI.ymlinfo.json"
+                git pull
+                git push origin com.mh0386.anynotedotai
