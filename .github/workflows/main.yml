@@ -1,20 +1,33 @@
-name: info
+name: Sync with GitLab
 on:
     schedule:
         - cron: "0 0 * * *"
     push:
 jobs:
-    info:
+    Sync:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - name: Commit and push
+            - name: Setup
               continue-on-error: true
               run: |
                 git config --global user.email "mohamed.hisham.abdelzaher@gmail.com"
                 git config --global user.name "Mohamed Hisham Abdelzaher"
-                git remote add origin https://gitlab.com/MH0386/fdroiddata.git
+                git remote set-url origin https://gitlab.com/MH0386/fdroiddata.git
+            - name: Verify
+              continue-on-error: true
+              run: |
+                rm renovate.json
+                rm -rd .github
+                
+                git remote -v
+                git fetch origin
+                git branch -a
+            - name: Update
+              continue-on-error: true
+              run: |
+                git switch com.mh0386.anynotedotai
                 git add metadata/com.MH0386.AnyNoteDotAI.yml
-                git commit -m "Update com.MH0386.AnyNoteDotAI.ymlinfo.json"
+                git commit -m "Update com.MH0386.AnyNoteDotAI.yml"
                 git pull
-                git push origin com.mh0386.anynotedotai
+                git push
