@@ -10,7 +10,7 @@ jobs:
         env:
             GITLAB_TOKEN: ${{ secrets.GITLAB_PASSWORD }}
         steps:
-            - uses: actions/checkout@v4
+            # - uses: actions/checkout@v4
             - name: Setup
               continue-on-error: true
               run: |
