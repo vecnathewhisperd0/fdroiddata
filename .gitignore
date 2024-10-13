@@ -25,3 +25,6 @@
 # used in fdroidserver's ./jenkins-test
 keystore.jks
 keystore.p12
+
+renovate.json
+.github/
