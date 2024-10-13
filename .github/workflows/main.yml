@@ -13,7 +13,7 @@ jobs:
               run: |
                 git config --global user.email "mohamed.hisham.abdelzaher@gmail.com"
                 git config --global user.name "Mohamed Hisham Abdelzaher"
-                git remote set-url origin https://gitlab.com/MH0386/fdroiddata.git
+                git remote set-url origin https://${{ secrets.GITLAB_PASSWORD }}@gitlab.com/MH0386/fdroiddata.git
                 git config pull.rebase false
             - name: Verify
               continue-on-error: true
