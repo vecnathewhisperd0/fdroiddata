@@ -29,5 +29,5 @@ jobs:
                 git switch com.mh0386.anynotedotai
                 git add .
                 git commit -m "Update com.MH0386.AnyNoteDotAI.yml"
-                git pull
+                git pull origin com.mh0386.anynotedotai --allow-unrelated-histories
                 git push
