@@ -22,8 +22,8 @@ jobs:
               continue-on-error: true
               run: |
                 ls -a
-                rm renovate.json
-                rm -rd .github
+                # rm renovate.json
+                # rm -rd .github
                 git remote -v
                 git fetch -p origin
                 git branch -a
