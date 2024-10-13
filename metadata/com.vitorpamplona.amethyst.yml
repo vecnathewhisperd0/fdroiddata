@@ -982,10 +982,10 @@ Builds:
       - fdroid
     prebuild: sed -i -e '/enable true/d' build.gradle
 
-  - versionName: 0.92.1
-    versionCode: 406
+  - versionName: 0.92.2
+    versionCode: 407
     disable: https://github.com/vitorpamplona/amethyst/issues/1113
-    commit: 6d4ba6d5076945fc070a50aefca3e99e8e428587
+    commit: b4eba2da026823a3ed3a9454e9b345668e917053
     subdir: amethyst
     sudo:
       - apt-get update
@@ -1011,7 +1011,7 @@ AllowedAPKSigningKeys: c2d0aa86bcb6b62090561a41bbe336e98b78c2d0210a498dc885f28e1
 MaintainerNotes: see https://gitlab.com/fdroid/fdroiddata/-/issues/2973#note_1428295385
   on NonFreeNet
 
-AutoUpdateMode: Version
+AutoUpdateMode: None
 UpdateCheckMode: Tags
-CurrentVersion: 0.92.1
-CurrentVersionCode: 406
+CurrentVersion: 0.92.2
+CurrentVersionCode: 407
