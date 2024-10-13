@@ -21,7 +21,7 @@ jobs:
                 rm renovate.json
                 rm -rd .github
                 git remote -v
-                git fetch origin
+                git fetch -p origin
                 git branch -a
             - name: Update
               continue-on-error: true
@@ -29,5 +29,5 @@ jobs:
                 git switch com.mh0386.anynotedotai
                 git add .
                 git commit -m "Update com.MH0386.AnyNoteDotAI.yml"
-                # git pull origin com.mh0386.anynotedotai
-                git push
+                git pull
+                git push --mirror
