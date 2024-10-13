@@ -150,7 +150,7 @@ fdroid lint:
               printf "\nThese files have lint issues:\n";
               git diff --name-only;
               printf "\nThese are the formatting issues:\n";
-              printf "$(git --no-pager diff --color=always --ws-error-highlight=all | sed 's/\r/^M/')";
+              printf "$(git --no-pager diff --color=always --ws-error-highlight=all | sed -e 's/\r/^M/' -e 's/%/%%/g')";
           }
       fi
     - exit $EXITVALUE
@@ -178,8 +178,17 @@ fdroid lint config:
     - export fdroidserver=$CI_PROJECT_DIR/fdroidserver
     - *install_fdroid_server
   rules:
-    - if: $CI_PIPELINE_SOURCE == "merge_request_event" || $CI_PIPELINE_SOURCE == "push"
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
       changes:
+        paths:
+          - .gitlab-ci.yml
+          - config.yml
+          - config/*.yml
+          - config/*/*.yml
+    # only check pushes to fdroids own repo
+    - if: $CI_PIPELINE_SOURCE == "push" && $CI_PROJECT_PATH == "fdroid/fdroiddata"
+      changes:
+        compare_to: 'refs/heads/master'
         paths:
           - .gitlab-ci.yml
           - config.yml
