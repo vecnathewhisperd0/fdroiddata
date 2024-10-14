@@ -1345,10 +1345,9 @@ Builds:
       - sed -i -e '/analytics/Id' -e '/crashlytics/Id' main/MainActivity.java
       - sed -i -e '/FirebaseAnalytics/d' */*.java *.java
 
-  - versionName: 3.0.3
-    versionCode: 153
-    disable: https://github.com/haiwen/seadroid/issues/1002#issuecomment-2337495370
-    commit: 5d8216a599a605aa5041ce846b16776fdc5b0296
+  - versionName: 3.0.4
+    versionCode: 154
+    commit: 10018aa5b1b58073ef22f83387bb9d48dee55254
     subdir: app
     gradle:
       - yes
@@ -1360,5 +1359,5 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 3.0.3
-CurrentVersionCode: 153
+CurrentVersion: 3.0.4
+CurrentVersionCode: 154
