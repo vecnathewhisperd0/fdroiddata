@@ -348,7 +348,6 @@ Builds:
     gradle:
       - yes
 
-
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^EFIS
 CurrentVersion: '6.18'
