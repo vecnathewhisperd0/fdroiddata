@@ -28,7 +28,6 @@ Builds:
       - gradle jar
       - popd
       - mv $$duckchat-api$$/build/libs/duckchat-1.0-SNAPSHOT.jar libs/duckchat.jar
-    binary: https://gitlab.com/-/project/2167965/uploads/2d8521ad9ecb441030fb1918134202ec/app-release.apk
 
 AllowedAPKSigningKeys: 240a09f6061438af5ac754bdf5ca12150e68c4b0f22c223a1e6e3a46ca60b5f5
 
