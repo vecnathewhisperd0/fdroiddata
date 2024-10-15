@@ -5330,9 +5330,9 @@ Builds:
       - RESET=0 ./buildsystem/compile.sh -a x86_64 -ml -b --release
     ndk: r21e
 
-  - versionName: 3.6.0 Beta 1
-    versionCode: 13050610
-    commit: 36ad2cea325e026f9f80b73ee4b05043ff3d2d6a
+  - versionName: 3.6.0 Beta 2
+    versionCode: 13050720
+    commit: 704df40ad64972cd0c48bd1d3c1a9780f7788913
     subdir: application/app
     sudo:
       - apt-get update
