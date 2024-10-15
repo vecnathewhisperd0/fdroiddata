@@ -5511,49 +5511,72 @@ Builds:
     ndk: r21e
 
   - versionName: 3.6.0 Beta 2
-    versionCode: 13050720
+    versionCode: 13050725
     commit: 704df40ad64972cd0c48bd1d3c1a9780f7788913
     subdir: application/app
-    sudo:
-      - apt-get update
-      - apt-get install -y ant automake autopoint bison bzip2 cmake flex g++ gettext
-        help2man libltdl-dev libtool-bin make nasm ninja-build pkg-config ragel wget
-      - apt-get install -y -t bookworm-backports meson
     gradle:
       - yes
-    srclibs:
-      - VLC@f1ed769f555d083c876b5338ed41b64f57e0d48a
-      - VLCjni@24c0047f5697cc96e89ac86e2557ce319fc43c86
-      - VLCmedialibrary@8c56e26c625d757994cffeea84d2a0a2e6033dee
     prebuild:
+      - GRADLE_VERSION=$(sed -n -E 's/.*GRADLE_VERSION=(.*)/\1/p' ../../buildsystem/compile.sh)
       - mkdir -p ./gradle/wrapper
-      - echo 'distributionUrl=https\://services.gradle.org/distributions/gradle-8.6-bin.zip'
+      - echo "distributionUrl=https\://services.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.zip"
+        > ./gradle/wrapper/gradle-wrapper.properties
+      - cp -r gradle ../..
+      - sed -i -e 's/include .*/include "armeabi-v7a"/' build.gradle
+      - sed -i -e '/println/d' ../vlc-android/build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+    ndk: r25c
+
+  - versionName: 3.6.0 Beta 2
+    versionCode: 13050726
+    commit: 704df40ad64972cd0c48bd1d3c1a9780f7788913
+    subdir: application/app
+    gradle:
+      - yes
+    prebuild:
+      - GRADLE_VERSION=$(sed -n -E 's/.*GRADLE_VERSION=(.*)/\1/p' ../../buildsystem/compile.sh)
+      - mkdir -p ./gradle/wrapper
+      - echo "distributionUrl=https\://services.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.zip"
         > ./gradle/wrapper/gradle-wrapper.properties
       - cp -r gradle ../..
       - sed -i -e 's/include .*/include "arm64-v8a"/' build.gradle
       - sed -i -e '/println/d' ../vlc-android/build.gradle
-      - cd ../..
-      - cp -a $$VLC$$ vlc
-      - cp -a $$VLCjni$$ libvlcjni
-      - ln -s $(pwd)/vlc libvlcjni/
-      - mkdir -p ./libvlcjni/gradle/wrapper
-      - echo 'distributionUrl=https\://services.gradle.org/distributions/gradle-7.5.1-bin.zip'
-        > ./libvlcjni/gradle/wrapper/gradle-wrapper.properties
-      - cp -a $$VLCmedialibrary$$ medialibrary/medialibrary
-      - sed -i -e '/signingConfig/d' application/app/build.gradle
-      - cd vlc
-      - cp share/vlc.appdata.xml.in.in share/vlc.appdata.xml
-      - git apply ../libvlcjni/libvlc/patches/*.patch
-      - sed -i -e '/check meson/d' extras/tools/bootstrap
-      - find -name *.mak -type f -exec sed -i -e 's/tar xv/tar x/' {} +
-      - cd ../medialibrary/medialibrary/libvlcpp
-      - git apply ../../../buildsystem/patches/libvlcpp/*.patch
-    build:
-      - cd ../..
-      - ln -s $(which gradle) ./gradlew
-      - export GRADLE_VLC_SRC_DIRS="$PWD/vlc/build-android-arm-linux-androideabi/ndk/libs"
-      - RESET=0 ./buildsystem/compile.sh -a arm64-v8a -ml -b --release
-    ndk: r21e
+      - sed -i -e '/signingConfig/d' build.gradle
+    ndk: r25c
+
+  - versionName: 3.6.0 Beta 2
+    versionCode: 13050727
+    commit: 704df40ad64972cd0c48bd1d3c1a9780f7788913
+    subdir: application/app
+    gradle:
+      - yes
+    prebuild:
+      - GRADLE_VERSION=$(sed -n -E 's/.*GRADLE_VERSION=(.*)/\1/p' ../../buildsystem/compile.sh)
+      - mkdir -p ./gradle/wrapper
+      - echo "distributionUrl=https\://services.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.zip"
+        > ./gradle/wrapper/gradle-wrapper.properties
+      - cp -r gradle ../..
+      - sed -i -e 's/include .*/include "x86"/' build.gradle
+      - sed -i -e '/println/d' ../vlc-android/build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+    ndk: r25c
+
+  - versionName: 3.6.0 Beta 2
+    versionCode: 13050728
+    commit: 704df40ad64972cd0c48bd1d3c1a9780f7788913
+    subdir: application/app
+    gradle:
+      - yes
+    prebuild:
+      - GRADLE_VERSION=$(sed -n -E 's/.*GRADLE_VERSION=(.*)/\1/p' ../../buildsystem/compile.sh)
+      - mkdir -p ./gradle/wrapper
+      - echo "distributionUrl=https\://services.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.zip"
+        > ./gradle/wrapper/gradle-wrapper.properties
+      - cp -r gradle ../..
+      - sed -i -e 's/include .*/include "x86_64"/' build.gradle
+      - sed -i -e '/println/d' ../vlc-android/build.gradle
+      - sed -i -e '/signingConfig/d' build.gradle
+    ndk: r25c
 
 MaintainerNotes: |-
   Instructions and dependencies: https://wiki.videolan.org/AndroidCompile
