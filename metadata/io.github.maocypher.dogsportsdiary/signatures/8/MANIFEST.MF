@@ -1,6 +1,4 @@
 Manifest-Version: 1.0
-Built-By: Signflinger
-Created-By: Android Gradle 8.5.0
 
 Name: AndroidManifest.xml
 SHA-256-Digest: JBqN2l/MsMytLl0CViVSguyKloMdFSBGnrkFd6MGgPs=
@@ -195,22 +193,22 @@ Name: kotlin/reflect/reflect.kotlin_builtins
 SHA-256-Digest: aoYFzmOjiXSsWVU2x1s4Xk5iyi9h11X+y1P8zYOEevc=
 
 Name: lib/arm64-v8a/libapp.so
-SHA-256-Digest: tOTK/w1jtutpOKCsBx+MEseYBY7tQtX+viqhVk/48X0=
+SHA-256-Digest: tO7cTtGADwtU3XuaUqoHXwPMvqRX5DMU8RysSCyuH58=
 
 Name: lib/arm64-v8a/libflutter.so
-SHA-256-Digest: vild1PiLs2PRKgEWhK/Jh0ru2uXoYY/GW5NTc4VKwNg=
+SHA-256-Digest: s0byNSCSEJczMyrELeH8Ma7jEVqj2qaLF2Qg/U5/xeM=
 
 Name: lib/armeabi-v7a/libapp.so
-SHA-256-Digest: z6C1Zmb0fOAulr+FwByHxBQAT6jkH97vMSgO9QK4r9c=
+SHA-256-Digest: 60emQSKDTZgA0gsKe1jH5Z5tkE6JzfhbmKM6y1xkY+4=
 
 Name: lib/armeabi-v7a/libflutter.so
-SHA-256-Digest: Aea2JEuWOht2DA7jMaEpMDdp9pbUMczYBwPPJq0QqvU=
+SHA-256-Digest: Lk2WrHwWIKOEaYSFPD2EMHUzSU7kpHe8tVj1y9dgphA=
 
 Name: lib/x86_64/libapp.so
-SHA-256-Digest: mGva4us/J4T/VtSFkmVqUEa815qBA3LQzF++oWmDrmA=
+SHA-256-Digest: 8iUklEO01WNxu9phfHdUDu244BtUSsop0UqJe28tgRY=
 
 Name: lib/x86_64/libflutter.so
-SHA-256-Digest: Tt324bOnVZhMXjP4lLhctrHekmhAzaGPCkTW3sLdUx4=
+SHA-256-Digest: 6VLTsWY1XN4gvkdcYWSGkcwQr9ffCsYQGPEK4Czhw6c=
 
 Name: okhttp3/internal/publicsuffix/publicsuffixes.gz
 SHA-256-Digest: vo2mhtIIs05LPwv5CqLgt2OClWQRMsPwyqgbA0mQMv8=
