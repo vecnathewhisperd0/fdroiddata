@@ -43,10 +43,10 @@ Builds:
     postbuild: $$reproducible-apk-tools$$/inplace-fix.py --zipalign fix-newlines $$OUT$$
       'META-INF/services/*'
 
-  - versionName: '1.6'
-    versionCode: 11
+  - versionName: '1.7'
+    versionCode: 12
     disable: https://github.com/Ma7moud3ly/micro-repl/issues/23
-    commit: 09fce7dbf43b588eb1f83a31eaefb4ecb2ea2e44
+    commit: 938daf0d6bf9a95f0c159bda9348c9422ec6c907
     subdir: app
     gradle:
       - default
@@ -60,5 +60,5 @@ AllowedAPKSigningKeys: c2fa0efdd38037fd5051fe63cabe5048868be7d11f52047a119495691
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '1.6'
-CurrentVersionCode: 11
+CurrentVersion: '1.7'
+CurrentVersionCode: 12
