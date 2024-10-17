@@ -16,7 +16,7 @@ AutoName: Easter Eggs
 
 RepoType: git
 Repo: https://github.com/hushenghao/AndroidEasterEggs.git
-Binaries: https://github.com/hushenghao/AndroidEasterEggs/releases/download/v%v/easter_eggs_%v_%c-foss-release.apk
+Binaries: https://github.com/hushenghao/AndroidEasterEggs/releases/download/v%v/easter_eggs_%v_%c-foss-product-release.apk
 
 Builds:
   - versionName: 1.9.4
@@ -202,7 +202,6 @@ Builds:
     gradle:
       - foss
       - product
-    binary: https://github.com/hushenghao/AndroidEasterEggs/releases/download/v%v/easter_eggs_%v_%c-foss-product-release.apk
     scandelete:
       - build-logic/convention/build
 
