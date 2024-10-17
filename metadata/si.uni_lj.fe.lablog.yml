@@ -1,0 +1,28 @@
+Categories:
+  - Science & Education
+  - Connectivity
+  - Writing
+License: GPL-3.0-or-later
+SourceCode: https://github.com/jakobkreft/LabLog
+
+AutoName: LabLog
+
+RepoType: git
+Repo: https://github.com/jakobkreft/LabLog
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-17-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
