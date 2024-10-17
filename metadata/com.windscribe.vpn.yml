@@ -599,7 +599,7 @@ Builds:
 
   - versionName: '3.80'
     versionCode: 1569
-    commit: e3a3c25245675e6895c3d4388c1b67504be6769a
+    commit: e82c991479e32f61363e281a302c939b10810e38
     subdir: mobile
     submodules: true
     sudo:
@@ -670,7 +670,7 @@ Builds:
 
   - versionName: '3.80'
     versionCode: 1570
-    commit: e3a3c25245675e6895c3d4388c1b67504be6769a
+    commit: e82c991479e32f61363e281a302c939b10810e38
     subdir: tv
     submodules: true
     sudo:
