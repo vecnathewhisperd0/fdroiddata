@@ -24,7 +24,7 @@ Builds:
     rm:
       - feature/funding/googleplay
     prebuild:
-      - sed -i -e '/maven.mozilla.org\\/maven2/d' -e '/glean/d' -e '/app-k9mail/d'
+      - sed -i -e '/maven.mozilla.org\/maven2/d' -e '/glean/d' -e '/app-k9mail/d'
         -e '/googleplay/d' settings.gradle.kts
       - sed -i -e 's/feature.funding.googleplay/feature.funding.link/' app-thunderbird/build.gradle.kts
     build: gradle clean :app-thunderbird:assembleFossBeta
