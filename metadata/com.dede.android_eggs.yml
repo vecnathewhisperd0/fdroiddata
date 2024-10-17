@@ -200,8 +200,8 @@ Builds:
     commit: v3.1.0
     subdir: app
     gradle:
-      - fossProduct
-    binary: https://github.com/hushenghao/AndroidEasterEggs/releases/download/v%v/easter_eggs_%v_%c-foss-product-release.apk
+      - foss
+      - product
     scandelete:
       - build-logic/convention/build
 
