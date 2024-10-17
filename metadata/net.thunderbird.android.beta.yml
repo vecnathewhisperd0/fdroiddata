@@ -27,7 +27,10 @@ Builds:
       - sed -i -e '/maven.mozilla.org\/maven2/d' -e '/glean/d' -e '/app-k9mail/d'
         -e '/googleplay/d' settings.gradle.kts
       - sed -i -e 's/feature.funding.googleplay/feature.funding.link/' app-thunderbird/build.gradle.kts
-    build: gradle clean :app-thunderbird:assembleFossBeta
+      - gradle clean
+    scandelete:
+      - build-plugin
+    build: gradle assembleFossBeta
 
 AllowedAPKSigningKeys: 056bfafb450249502fd9226228704c2529e1b822da06760d47a85c9557741fbd
 
