@@ -1,7 +1,9 @@
 Categories:
   - Writing
 License: GPL-3.0-or-later
+AuthorName: jakobkreft
 SourceCode: https://github.com/jakobkreft/LabLog
+IssueTracker: https://github.com/jakobkreft/LabLog/issues
 
 AutoName: LabLog
 
@@ -13,10 +15,6 @@ Builds:
     versionCode: 1
     commit: v1.0
     subdir: app
-    sudo:
-      - apt-get update
-      - apt-get install -y openjdk-17-jdk-headless
-      - update-alternatives --auto java
     gradle:
       - yes
 
