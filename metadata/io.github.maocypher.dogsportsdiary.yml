@@ -11,6 +11,8 @@ AutoName: Dog Sports Diary
 
 RepoType: git
 Repo: https://github.com/maocypher/dogsportsdiary.git
+Binaries: https://github.com/XilinJia/Podcini/releases/download/%v/Podcini.R_release_free_%v.apk
+Binaries: https://github.com/maocypher/dogsportsdiary/releases/download/%v/io.github.maocypher.dogsportsdiary_%v.apk
 
 Builds:
   - versionName: 1.0.8
@@ -45,7 +47,10 @@ Builds:
       - mv /tmp/build io.github.maocypher.dogsportsdiary
     ndk: 26.3.11579264
 
-AutoUpdateMode: None
-UpdateCheckMode: None
+AllowedAPKSigningKeys: d53d07b1e8f7d8fc67f1bd51b24162bbbdbe22c37becec6902472dca999b57a4
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+UpdateCheckData: pubspec.yaml|version:\s.*\+(\d+)|.|version:\s(.*)\+
 CurrentVersion: 1.0.8
 CurrentVersionCode: 8
