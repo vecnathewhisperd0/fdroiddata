@@ -11,7 +11,6 @@ AutoName: Dog Sports Diary
 
 RepoType: git
 Repo: https://github.com/maocypher/dogsportsdiary.git
-Binaries: https://github.com/XilinJia/Podcini/releases/download/%v/Podcini.R_release_free_%v.apk
 Binaries: https://github.com/maocypher/dogsportsdiary/releases/download/%v/io.github.maocypher.dogsportsdiary_%v.apk
 
 Builds:
