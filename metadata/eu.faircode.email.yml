@@ -7746,9 +7746,9 @@ Builds:
     scandelete:
       - app/lib
 
-  - versionName: '1.2237'
-    versionCode: 2237
-    commit: 7d5b874ecfb51de84e86ef259063584810eb8c0f
+  - versionName: '1.2238'
+    versionCode: 2238
+    commit: 8fd722323d846ba82441a45fda060aa20d7852a6
     subdir: app
     submodules: true
     gradle:
@@ -7760,5 +7760,5 @@ Builds:
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
 UpdateCheckData: app/build.gradle|getVersionCode.*return (\d+)||([\d.]+)
-CurrentVersion: '1.2237'
-CurrentVersionCode: 2237
+CurrentVersion: '1.2238'
+CurrentVersionCode: 2238
