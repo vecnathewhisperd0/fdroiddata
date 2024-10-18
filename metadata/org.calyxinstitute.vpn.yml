@@ -205,7 +205,6 @@ Builds:
     build: ../scripts/build_deps.sh
     ndk: r21e
 
-
 MaintainerNotes: The "build" commands are extracted from build_deps.sh.
 
 AutoUpdateMode: None
