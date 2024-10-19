@@ -19,8 +19,7 @@ Builds:
     submodules: true
     gradle:
       - yes
-    prebuild:
-      - ./prebuild.sh
+    prebuild: ./prebuild.sh
     gradleprops:
       - noSplits
 
