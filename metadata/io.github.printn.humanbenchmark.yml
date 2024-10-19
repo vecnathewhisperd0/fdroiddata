@@ -1,6 +1,6 @@
 Categories:
   - Games
-License: GLP-3.0-only
+License: GPL-3.0-only
 AuthorName: PrintN
 SourceCode: https://github.com/printn/human-benchmark
 IssueTracker: https://github.com/printn/human-benchmark/issues
@@ -11,8 +11,8 @@ RepoType: git
 Repo: https://github.com/printn/human-benchmark.git
 
 Builds:
-  - versionName: 1.0.1
-    versionCode: 11
+  - versionName: 1.0.0
+    versionCode: 13
     commit: 13cae9ef5ff8dc197d4687119af61fc6ac9a77d3
     submodules: true
     output: build/app/outputs/flutter-apk/app-release.apk
