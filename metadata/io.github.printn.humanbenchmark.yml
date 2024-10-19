@@ -31,6 +31,6 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-UpdateCheckData: pubspec.yaml|version:\s+(\d+\.\d+\.\d+)(?:\+(\d+))?|.|version:\s(.+)\+
+UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
 CurrentVersion: 1.0.1
 CurrentVersionCode: 11
