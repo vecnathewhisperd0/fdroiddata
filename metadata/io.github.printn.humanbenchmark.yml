@@ -1,6 +1,6 @@
 Categories:
   - Games
-License: GNU GLP-3.0
+License: GLP-3.0-only
 AuthorName: PrintN
 SourceCode: https://github.com/printn/human-benchmark
 IssueTracker: https://github.com/printn/human-benchmark/issues
@@ -36,5 +36,5 @@ VercodeOperation:
   - '%c * 10 + 2'
   - '%c * 10 + 3'
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
-CurrentVersion: 1.0.1
-CurrentVersionCode: 11
+CurrentVersion: 1.0.0
+CurrentVersionCode: 13
