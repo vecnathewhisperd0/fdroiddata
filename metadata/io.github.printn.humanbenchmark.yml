@@ -31,6 +31,6 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-UpdateCheckData: ^(\d+\.\d+\.\d+)$
+UpdateCheckData: 11|1.0.1|^(\d+\.\d+\.\d+)$|someOtherInfo
 CurrentVersion: 1.0.1
 CurrentVersionCode: 11
