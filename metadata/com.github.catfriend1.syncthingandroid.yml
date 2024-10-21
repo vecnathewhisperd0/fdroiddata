@@ -2247,12 +2247,13 @@ Builds:
     rm:
       - syncthing/src/github.com/syncthing/syncthing/lib/model/testdata
     prebuild:
-      - sed -i -e '/signingConfig/d' build.gradle
+      - sed -i -e '/signingConfig/,+2d' build.gradle.kts
+      - sed -i -e 's/java.net.URI/uri/' ../settings.gradle.kts
       - sed -i -e '/executable/s/python/python3/' {../syncthing,.}/build.gradle
       - echo -e "\norg.gradle.jvmargs=-Xmx4096m" >> ../gradle.properties
     build:
-      - export ndkversion=$(grep "ndkVersionShared = " ../build.gradle | cut -d "'"
-        -f 2)
+      - export ndkversion=$(grep "ndkVersionShared" ../build.gradle.kts | cut -d '"' 
+        -f 4)
       - sdkmanager "ndk;$ndkversion"
       - export ANDROID_NDK_HOME=$$SDK$$/ndk/$ndkversion
       - gradle :syncthing:buildNative
