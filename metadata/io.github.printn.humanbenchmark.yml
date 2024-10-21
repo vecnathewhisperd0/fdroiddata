@@ -13,7 +13,7 @@ Repo: https://github.com/printn/human-benchmark.git
 Builds:
   - versionName: 1.0.1
     versionCode: 11
-    commit: 4ec143bfdd4788ac2d934a6ef45ac312235991e5
+    commit: 1cee2b7279ee484b7240ef4ad0c86f90c3f487e4
     submodules: true
     output: build/app/outputs/flutter-apk/app-release.apk
     prebuild:
