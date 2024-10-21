@@ -1,0 +1,26 @@
+Categories:
+  - Reading
+License: GPL-3.0-only
+AuthorName: Nishant Mishra
+WebSite: https://github.com/nsh07/WikiReader
+SourceCode: https://github.com/nsh07/WikiReader
+IssueTracker: https://github.com/nsh07/WikiReader/issues
+Changelog: https://github.com/nsh07/WikiReader/releases
+
+AutoName: WikiReader
+
+RepoType: git
+Repo: https://github.com/nsh07/WikiReader.git
+
+Builds:
+  - versionName: 1.3.1
+    versionCode: 6
+    commit: v1.3.1
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags .*[0-9]$
+CurrentVersion: '1.3.1'
+CurrentVersionCode: 6
