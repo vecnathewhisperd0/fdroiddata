@@ -1,6 +1,9 @@
 Categories:
   - Writing
 License: GPL-3.0-only
+AuthorName: Phil
+AuthorEmail: philk97@web.de
+AuthorWebSite: https://www.instructables.com/member/PhilKey/
 SourceCode: https://github.com/PhilKes/NotallyX
 IssueTracker: https://github.com/PhilKes/NotallyX/issues
 
@@ -8,19 +11,18 @@ AutoName: NotallyX
 
 RepoType: git
 Repo: https://github.com/PhilKes/NotallyX
+Binaries: https://github.com/PhilKes/NotallyX/releases/download/v%v/NotallyX-%v.apk
 
 Builds:
   - versionName: '6.0'
     versionCode: 60
     commit: v6.0
     subdir: app
-    sudo:
-      - apt-get update
-      - apt-get install -y openjdk-17-jdk-headless
-      - update-alternatives --auto java
     gradle:
       - yes
     prebuild: sed -i -e "/android {/alintOptions { disable 'ExtraTranslation' }" build.gradle
+
+AllowedAPKSigningKeys: d214b6057b79f82509ddcd1e351965b3c6ecc4b2a3896e5cdf885a70a0b61dfd
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
