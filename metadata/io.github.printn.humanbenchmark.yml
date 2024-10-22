@@ -17,19 +17,37 @@ Builds:
     versionCode: 11
     commit: fe2ca5c86dbe026d8beeb49b4416df1956d07c5f
     submodules: true
+    sudo:
+      - mkdir -p /home/reverse
+      - chown vagrant /home/reverse
     output: build/app/outputs/flutter-apk/app-release.apk
+    rm:
+      - ios
     prebuild:
+      - sed -i -e '/keystoreProperties/d' app/build.gradle
+      - export repo=/home/reverse
+      - cd ..
+      - mv io.github.printn.humanbenchmark $repo/Human-Benchmark
+      - pushd $repo/Human-Benchmark
       - export PUB_CACHE=$(pwd)/.pub-cache
       - submodules/.flutter/bin/flutter config --no-analytics
       - submodules/.flutter/bin/flutter packages pub get
+      - popd
+      - mv $repo/Human-Benchmark io.github.printn.humanbenchmark
     scanignore:
       - submodules/.flutter/bin/cache
     scandelete:
       - submodules/.flutter
       - .pub-cache
     build:
+      - export repo=/home/reverse
+      - cd ..
+      - mv io.github.printn.humanbenchmark $repo/Human-Benchmark
+      - pushd $repo/Human-Benchmark
       - export PUB_CACHE=$(pwd)/.pub-cache
       - submodules/.flutter/bin/flutter build apk
+      - popd
+      - mv $repo/Human-Benchmark io.github.printn.humanbenchmark
 
 AllowedAPKSigningKeys: 3c79bfa4b783899314fb20d954739beb8a93a2ecf005d8d5a1644847c64fdf6d
 
