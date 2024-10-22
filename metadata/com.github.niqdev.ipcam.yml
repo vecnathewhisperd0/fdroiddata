@@ -52,7 +52,17 @@ Builds:
     scandelete:
       - mjpeg-view/src/main/jniLibs
 
+  - versionName: 2.4.1
+    versionCode: 242
+    commit: 2.4.1
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y make file
+    gradle:
+      - yes
+
 AutoUpdateMode: None
 UpdateCheckMode: None
-CurrentVersion: 2.1.0-DIRTY
-CurrentVersionCode: 241
+CurrentVersion: 2.4.1
+CurrentVersionCode: 242
