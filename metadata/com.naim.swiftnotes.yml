@@ -1,7 +1,8 @@
 Categories:
-  - Reading
   - Writing
 License: GPL-3.0-only
+AuthorName: Naim
+WebSite: https://github.com/tuhin733/SwiftNotes
 SourceCode: https://github.com/tuhin733/SwiftNotes
 IssueTracker: https://github.com/tuhin733/SwiftNotes/issues
 
@@ -9,14 +10,17 @@ AutoName: Swift Notes
 
 RepoType: git
 Repo: https://github.com/tuhin733/SwiftNotes.git
+Binaries: https://github.com/tuhin733/SwiftNotes/releases/download/v%v/SwiftNotes.apk
 
 Builds:
   - versionName: 1.0.0
     versionCode: 1
-    commit: v1.0.0
+    commit: b5af5610c4a1cfc9f0d22919734157f5d39e23ec
     subdir: app
     gradle:
       - yes
+
+AllowedAPKSigningKeys: 5333a2605dfa2cc5e1f62398f9bc118222ff4f73e8368424cd1c95969217db78
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
