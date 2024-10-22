@@ -12,7 +12,7 @@ IssueTracker: https://github.com/hardalgorithm/ParanoidsPal-PrivacyLock/issues
 AutoName: Paranoid's Pal - Privacy Lock
 AntiFeatures:
   - NonFreeDep
-  
+
 RepoType: git
 Repo: https://github.com/hardalgorithm/ParanoidsPal-PrivacyLock.git
 Binaries: https://github.com/hardalgorithm/ParanoidsPal-PrivacyLock/releases/download/latest/app-release.apk
