@@ -180,11 +180,11 @@ Builds:
       - .pub-cache
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
-      - export sodiumLibsVersion=$(sed -n -E 's/.*sodium_libs:\s([0-9.]+)/\1/p' pubspec.yaml)
+      - export SODIUM_LIBS=$(sed -n -E 's/.*sodium_libs:\s([0-9.]+)/\1/p' pubspec.yaml)
       - ./autogen.sh -s
       - ./dist-build/android-armv7-a.sh
       - popd
-      - cp $$libsodium$$/libsodium-android-westmere/lib/libsodium.so $PUB_CACHE/hosted/pub.dev/sodium_libs-$sodiumLibsVersion/android/src/main/jniLibs/armeabi-v7a/
+      - cp $$libsodium$$/libsodium-android-westmere/lib/libsodium.so $PUB_CACHE/hosted/pub.dev/sodium_libs-$SODIUM_LIBS/android/src/main/jniLibs/armeabi-v7a/
       - $$flutter$$/bin/flutter build apk --flavor fdroid --target-platform="android-arm"
     ndk: r25b
 
@@ -214,12 +214,12 @@ Builds:
       - .pub-cache
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
-      - export sodiumLibsVersion=$(sed -n -E 's/.*sodium_libs:\s([0-9.]+)/\1/p' pubspec.yaml)
+      - export SODIUM_LIBS=$(sed -n -E 's/.*sodium_libs:\s([0-9.]+)/\1/p' pubspec.yaml)
       - pushd $$libsodium$$
       - ./autogen.sh -s
       - ./dist-build/android-armv8-a.sh
       - popd
-      - cp $$libsodium$$/libsodium-android-westmere/lib/libsodium.so $PUB_CACHE/hosted/pub.dev/sodium_libs-$sodiumLibsVersion/android/src/main/jniLibs/arm64-v8a/
+      - cp $$libsodium$$/libsodium-android-westmere/lib/libsodium.so $PUB_CACHE/hosted/pub.dev/sodium_libs-$SODIUM_LIBS/android/src/main/jniLibs/arm64-v8a/
       - $$flutter$$/bin/flutter build apk --flavor fdroid --target-platform="android-arm64"
     ndk: r25b
 
@@ -249,12 +249,12 @@ Builds:
       - .pub-cache
     build:
       - export PUB_CACHE=$(pwd)/.pub-cache
-      - export sodiumLibsVersion=$(sed -n -E 's/.*sodium_libs:\s([0-9.]+)/\1/p' pubspec.yaml)
+      - export SODIUM_LIBS=$(sed -n -E 's/.*sodium_libs:\s([0-9.]+)/\1/p' pubspec.yaml)
       - pushd $$libsodium$$
       - ./autogen.sh -s
       - ./dist-build/android-x86_64.sh
       - popd
-      - cp $$libsodium$$/libsodium-android-westmere/lib/libsodium.so $PUB_CACHE/hosted/pub.dev/sodium_libs-$sodiumLibsVersion/android/src/main/jniLibs/x86_64/
+      - cp $$libsodium$$/libsodium-android-westmere/lib/libsodium.so $PUB_CACHE/hosted/pub.dev/sodium_libs-$SODIUM_LIBS/android/src/main/jniLibs/x86_64/
       - $$flutter$$/bin/flutter build apk --flavor fdroid --target-platform="android-x64"
     ndk: r25b
 
