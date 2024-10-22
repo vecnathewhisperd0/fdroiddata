@@ -18,7 +18,7 @@ Binaries: https://github.com/hardalgorithm/ParanoidsPal-PrivacyLock/releases/dow
 Builds:
   - versionName: v.1.1.3
     versionCode: 5
-    Commit: v1.1.3
+    commit: d82659458175d269d36a197e51c58b74c2a7de03
     subdir: app
     gradle:
       - yes
