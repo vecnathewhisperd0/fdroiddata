@@ -23,10 +23,9 @@ Builds:
     gradle:
       - yes
 
+AllowedAPKSigningKeys: 9b1c77a2063e23e1b37fceffdf6e2e19628ba6c680e04dbf22088884109bf321
 
-MaintainerNotes: versionCode is computed by number of commits, so AUM disabled
-
-AutoUpdateMode: None
-UpdateCheckMode: None
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
 CurrentVersion: v.1.1.3
 CurrentVersionCode: 5
