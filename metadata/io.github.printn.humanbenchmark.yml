@@ -2,6 +2,7 @@ Categories:
   - Games
 License: GPL-3.0-only
 AuthorName: PrintN
+AuthorWebsite: https://printn.github.io
 SourceCode: https://github.com/printn/human-benchmark
 IssueTracker: https://github.com/printn/human-benchmark/issues
 
@@ -9,11 +10,12 @@ AutoName: Human Benchmark
 
 RepoType: git
 Repo: https://github.com/printn/human-benchmark.git
+Binaries: https://github.com/printn/human-benchmark/releases/download/v%v/Human-Benchmark.apk
 
 Builds:
   - versionName: 1.0.1
     versionCode: 11
-    commit: 1cee2b7279ee484b7240ef4ad0c86f90c3f487e4
+    commit: fe2ca5c86dbe026d8beeb49b4416df1956d07c5f
     submodules: true
     output: build/app/outputs/flutter-apk/app-release.apk
     prebuild:
@@ -29,6 +31,7 @@ Builds:
       - export PUB_CACHE=$(pwd)/.pub-cache
       - submodules/.flutter/bin/flutter build apk
 
+AllowedAPKSigningKeys: 3c79bfa4b783899314fb20d954739beb8a93a2ecf005d8d5a1644847c64fdf6d
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
