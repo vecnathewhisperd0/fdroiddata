@@ -32,6 +32,7 @@ Builds:
       - submodules/.flutter/bin/flutter build apk
 
 AllowedAPKSigningKeys: 3c79bfa4b783899314fb20d954739beb8a93a2ecf005d8d5a1644847c64fdf6d
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
 UpdateCheckData: pubspec.yaml|version:\s.+\+(\d+)|.|version:\s(.+)\+
