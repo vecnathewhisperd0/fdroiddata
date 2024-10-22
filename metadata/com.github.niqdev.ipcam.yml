@@ -53,8 +53,8 @@ Builds:
       - mjpeg-view/src/main/jniLibs
 
   - versionName: 2.4.1
-    versionCode: 242
-    commit: 2.4.1
+    versionCode: 322
+    commit: bd406f8693ae1b2832dce7932b821ee6e59f640e
     subdir: app
     sudo:
       - echo "deb https://deb.debian.org/debian bullseye main" > /etc/apt/sources.list.d/bullseye.list
@@ -64,8 +64,9 @@ Builds:
       - apt-get install -y make file
     gradle:
       - yes
+    prebuild: sed -i -e 's/-DIRTY//' ../build.gradle
 
 AutoUpdateMode: None
 UpdateCheckMode: None
 CurrentVersion: 2.4.1
-CurrentVersionCode: 242
+CurrentVersionCode: 322
