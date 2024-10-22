@@ -2248,7 +2248,7 @@ Builds:
     prebuild:
       - sed -i -e '/signingConfig/,+2d' build.gradle.kts
       - sed -i -e 's/java.net.URI/uri/' ../settings.gradle.kts
-      - sed -i -e '/executable/s/python/python3/' {../syncthing,.}/build.gradle
+      - sed -i -e '/executable/s/python/python3/' build.gradle.kts
       - echo -e "\norg.gradle.jvmargs=-Xmx4096m" >> ../gradle.properties
     build:
       - export ndkversion=$(grep "ndkVersionShared" ../build.gradle.kts | cut -d '"'
