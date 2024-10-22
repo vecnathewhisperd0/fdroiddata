@@ -24,7 +24,7 @@ Builds:
     rm:
       - ios
     prebuild:
-      - sed -i -e '/keystoreProperties/d' app/build.gradle
+      - sed -i -e '/keystoreProperties/d' android/app/build.gradle
       - export repo=/home/reverse
       - cd ..
       - mv io.github.printn.humanbenchmark $repo/Human-Benchmark
