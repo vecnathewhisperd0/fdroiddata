@@ -166,8 +166,8 @@ Builds:
     gradle:
       - yes
     prebuild:
-      - sdkmanager 'platforms;android-34'
-      - sed -i -e 's/-target android/-target android -androidapi 34/g' ../libs/yggdrasil-go/contrib/mobile/build
+      - sdkmanager 'platforms;android-21'
+      - sed -i -e 's/-target android/-target android -androidapi 21/g' ../libs/yggdrasil-go/contrib/mobile/build
     build:
       - mkdir libs
       - cd ..
@@ -178,7 +178,7 @@ Builds:
       - gomobile init
       - ./contrib/mobile/build -a
       - cp yggdrasil.aar ../../app/libs
-    ndk: r27b
+    ndk: r21e
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
