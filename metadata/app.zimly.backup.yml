@@ -1,0 +1,31 @@
+Categories:
+  - Multimedia
+  - Internet
+  - System
+License: GPL-3.0-only
+AuthorName: Espen Jervidalo
+SourceCode: https://github.com/zimly/zimly-backup
+IssueTracker: https://github.com/zimly/zimly-backup/issues
+Changelog: https://github.com/zimly/zimly-backup/releases
+
+AutoName: Zimly S3 Backup
+Description: |-
+  <i>Zimly</i> is a straightforward, open-source Android application designed for synchronizing your local media, such as
+  photos and videos, with any S3-compatible storage solution, whether it's self-hosted using platforms like Minio, or Cloud 
+  Storage options like AWS S3.
+
+  <b>Key Features:</b>
+  <ul>
+    <li>Open-Source and Free: Explore the codebase and influence the roadmap: https://www.zimly.app</li>
+    <li>Safety First: Zimly prioritizes data integrity by avoiding any destructive actions during synchronization.</li>
+    <li>Metadata Preservation: Your media's essential metadata, including Exif and location data, remains intact and securely transferred.</li>
+    <li>Intuitive User Experience: Enjoy a user-friendly experience with Zimly's emphasis on simplicity and a clean, straightforward interface.</li>
+    <li>Ad-Free & Privacy-Focused</li>
+  </ul>
+
+RepoType: git
+Repo: https://github.com/zimly/zimly-backup
+
+ArchivePolicy: 0
+AutoUpdateMode: None
+UpdateCheckMode: None
