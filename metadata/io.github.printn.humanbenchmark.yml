@@ -15,7 +15,7 @@ Binaries: https://github.com/printn/human-benchmark/releases/download/%v/Human-B
 Builds:
   - versionName: 1.0.1
     versionCode: 11
-    commit: fe2ca5c86dbe026d8beeb49b4416df1956d07c5f
+    commit: ce878730e4170d4019e98d7889fb32e4c3bb9e97
     submodules: true
     sudo:
       - mkdir -p /home/reverse
