@@ -178,7 +178,7 @@ Builds:
       - gomobile init
       - ./contrib/mobile/build -a
       - cp yggdrasil.aar ../../app/libs
-    ndk: r21e
+    ndk: r27b
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
