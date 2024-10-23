@@ -67,5 +67,5 @@ AllowedAPKSigningKeys: 6042462dcefe2df10564b8d48b5d575dc4cc154a512013f541fa64bc1
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^((?!alpha|beta).)*$
-CurrentVersion: 'v1.5.3'
+CurrentVersion: v1.5.3
 CurrentVersionCode: 21
