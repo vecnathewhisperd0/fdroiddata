@@ -14,7 +14,7 @@ Bitcoin: 1EUrRpjDAGgpS8J46tmsVWKbgNqAv7rWC7
 AutoName: MediLog
 
 RepoType: git
-Repo: https://gitlab.com/freed-by-fdroid/mirrored-by-f-droid/medilog
+Repo: https://gitlab.com/freed-by-fdroid/mirrored-by-f-droid/medilog.git
 
 Builds:
   - versionName: 1.7.3
