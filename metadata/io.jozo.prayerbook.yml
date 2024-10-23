@@ -125,10 +125,10 @@ Builds:
     scandelete:
       - node_modules
 
+AllowedAPKSigningKeys: f5f597716444fd6672f0a011ebe96b1356e37b28866489c664139c6027a8cc14
+
 MaintainerNotes: Temporary use https://gitlab.com/freed-by-fdroid/mirrored-by-f-droid
   mirror until Codeberg stops blocking main server
-
-AllowedAPKSigningKeys: f5f597716444fd6672f0a011ebe96b1356e37b28866489c664139c6027a8cc14
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
