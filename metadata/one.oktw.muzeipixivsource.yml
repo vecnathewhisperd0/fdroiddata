@@ -18,13 +18,12 @@ Repo: https://github.com/james58899/MuzeiPixivSource
 Builds:
   - versionName: 2.11.5
     versionCode: 74
-    commit: v2.11.5
+    commit: 6c8249c6fda9aa1f88321dcc613a24c3590a21d3
     subdir: app
     gradle:
       - yes
     prebuild:
-      - sed -i -e '/gms/d' -e '/firebase/d' ../build.gradle
-      - sed -i -e '/gms/d' -e '/firebase/d' build.gradle
+      - sed -i -e '/gms/d' -e '/firebase/d' {..,.}/build.gradle
       - sed -i -e '/analytics/d' -e '/crashlytics/d' src/main/java/one/oktw/muzeipixivsource/provider/MuzeiProvider.kt
 
 AutoUpdateMode: Version
