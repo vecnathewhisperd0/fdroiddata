@@ -1,0 +1,26 @@
+Categories:
+  - Connectivity
+  - Internet
+License: GPL-3.0-only
+SourceCode: https://github.com/2dust/v2rayNG
+IssueTracker: https://github.com/2dust/v2rayNG/issues
+
+AutoName: v2rayNG
+
+RepoType: git
+Repo: https://github.com/2dust/v2rayNG
+
+Builds:
+  - versionName: 1.9.8
+    versionCode: 602
+    commit: 5b4f51981e27f053334d26bea6c720f474ffe18a
+    subdir: V2rayNG/app
+    gradle:
+      - yes
+    scandelete:
+      - V2rayNG/app/libs
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.9.8
+CurrentVersionCode: 602
