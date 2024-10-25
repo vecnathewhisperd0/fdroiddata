@@ -1,0 +1,32 @@
+Categories:
+  - Writing
+License: GPL-3.0-only
+AuthorName: Naim
+WebSite: https://github.com/tuhin733/SwiftNotes
+SourceCode: https://github.com/tuhin733/SwiftNotes
+IssueTracker: https://github.com/tuhin733/SwiftNotes/issues
+
+AutoName: Swift Notes
+
+RepoType: git
+Repo: https://github.com/tuhin733/SwiftNotes.git
+Binaries: https://github.com/tuhin733/SwiftNotes/releases/download/v%v/SwiftNotes.apk
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: 171f9c9f9831490043e26944e1a7eda105c129e6
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - reproducible-apk-tools@v0.2.8
+    postbuild: $$reproducible-apk-tools$$/inplace-fix.py --zipalign --page-size 16
+      fix-newlines $$OUT$$ 'META-INF/services/*'
+
+AllowedAPKSigningKeys: 5333a2605dfa2cc5e1f62398f9bc118222ff4f73e8368424cd1c95969217db78
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
