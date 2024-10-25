@@ -14477,9 +14477,24 @@ Builds:
     scandelete:
       - app/src/androidTest/assets
 
+  - versionName: '20241025'
+    versionCode: 20241025
+    commit: 2edcaa12c5b358b1b4aaa967fa42a9bc726a1828
+    subdir: app
+    gradle:
+      - versionDev
+    rm:
+      - user_manual
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx9g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
+        > $HOME/.gradle/gradle.properties
+    scandelete:
+      - app/src/androidTest/assets
+
 MaintainerNotes: Tags get removed. See https://github.com/nextcloud/android/issues/969.
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^dev
-CurrentVersion: '20241024'
-CurrentVersionCode: 20241024
+CurrentVersion: '20241025'
+CurrentVersionCode: 20241025
