@@ -1,0 +1,44 @@
+Categories:
+  - Reading
+License: GPL-3.0-only
+AuthorName: Timur
+AuthorEmail: timur@timur.mobi
+AuthorWebSite: https://timur.mobi
+SourceCode: https://codeberg.org/timurmobi/prosereader-android
+IssueTracker: https://codeberg.org/timurmobi/prosereader-android/issues
+
+AutoName: ProseReader
+
+RepoType: git
+Repo: https://codeberg.org/timurmobi/prosereader-android.git
+Binaries: https://timur.mobi/prose-v%v/doc/android/ProseReader-v%v.apk
+
+Builds:
+  - versionName: 0.8.6
+    versionCode: 86
+    commit: bd7a6bba81c62fca765b5c9ab6e263593ef39cc1
+    sudo:
+      - echo "deb https://deb.debian.org/debian trixie main" > /etc/apt/sources.list.d/trixie.list
+      - apt-get update
+      - apt-get install -t trixie -y golang-go
+    gradle:
+      - yes
+    binary: https://timurmobi.codeberg.page/bin/ProseReader-v%v.apk
+    prebuild:
+      - ./proppatch.sh gradle.properties appVersionName "$$VERSION$$"
+      - ./proppatch.sh gradle.properties appVersionCode $$VERCODE$$
+      - ./proppatch.sh gradle.properties baseUrlRel "https://timur.mobi/prose/"
+      - ./proppatch.sh gradle.properties android.useAndroidX true
+      - ./proppatch.sh gradle.properties android.defaults.buildfeatures.buildconfig
+        true
+    build:
+      - cd src/main/go
+      - ./gobuild
+
+AllowedAPKSigningKeys: 0b2c8663fafe65f73c5a0ec60d38392c64384d9b91cc9712db3b748874fe5c75
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+UpdateCheckData: gradle-build.sh|appVersionCode\s(\d+)|.|appVersionName\s"(.*)"
+CurrentVersion: 0.8.6
+CurrentVersionCode: 86
