@@ -493,3 +493,71 @@ checkupdates_filter:
     - git fetch https://gitlab.com/fdroid/fdroiddata.git
     - echo "Checking for modifications to restricted paths:"
     - ! (git diff --merge-base FETCH_HEAD HEAD --name-only | grep -v '^metadata/\S*\.yml$')
+
+
+strip exif:
+  stage: test
+  needs: []
+  image: debian:bookworm-slim
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      changes:
+        paths:
+          - .gitlab-ci.yml
+
+          - "**.JPEG"
+          - "**.JPEg"
+          - "**.JPeG"
+          - "**.JPeg"
+          - "**.JpEG"
+          - "**.JpEg"
+          - "**.JpeG"
+          - "**.Jpeg"
+          - "**.jPEG"
+          - "**.jPEg"
+          - "**.jPeG"
+          - "**.jPeg"
+          - "**.jpEG"
+          - "**.jpEg"
+          - "**.jpeG"
+          - "**.jpeg"
+
+          - "**.JPG"
+          - "**.JPg"
+          - "**.JpG"
+          - "**.Jpg"
+          - "**.jPG"
+          - "**.jPg"
+          - "**.jpG"
+          - "**.jpg"
+
+          - "**.PNG"
+          - "**.PNg"
+          - "**.PnG"
+          - "**.Png"
+          - "**.pNG"
+          - "**.pNg"
+          - "**.pnG"
+          - "**.png"
+
+  script:
+    - apt-get -qy update
+    - apt-get -qy dist-upgrade
+    - apt-get -qy install --no-install-recommends exiftool git
+
+    # JPEG
+    - find . -type f -iname "*.jp*g" -print0 | xargs -0 -n1 -P 16 chmod a-x;
+    - find . -type f -iname "*.jp*g" -print0 | xargs -0 -n1 -P 16 exiftool -all=;
+
+    # PNG
+    - find . -type f -iname "*.png" -print0 | xargs -0 -n1 -P 16 chmod a-x;
+    - find . -type f -iname "*.png" -print0 | xargs -0 -n1 -P 16 exiftool -all=;
+
+    - git diff --exit-code --color || {
+        printf "\x1b[31mERROR Image files (JPEG, PNG) should be stripped and not be set executable:\x1b[0m\n";
+        echo "Try using exiftool, jpegoptim, optipng.";
+        echo "For more info, see:";
+        echo "https://umbrella.cisco.com/blog/picture-perfect-how-jpg-exif-data-hides-malware";
+        echo "https://beinset.medium.com/exif-metadata-a-hidden-door-to-cyber-vulnerabilities-52b0dd2ff4de";
+        exit 1;
+      }
