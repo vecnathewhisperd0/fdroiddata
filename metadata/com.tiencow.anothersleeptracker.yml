@@ -1,0 +1,31 @@
+Categories:
+  - Sports & Health
+  - Time
+License: MPL-2.0
+AuthorName: TienCow
+AuthorEmail: tiencao@fastmail.com
+WebSite: https://github.com/CheckerThesis/another_sleep_tracker
+SourceCode: https://github.com/CheckerThesis/another_sleep_tracker
+IssueTracker: https://github.com/CheckerThesis/another_sleep_tracker/issues
+
+AutoName: Another Sleep Tracker
+
+RepoType: git
+Repo: https://github.com/CheckerThesis/another_sleep_tracker.git
+Binaries: https://github.com/CheckerThesis/another_sleep_tracker/releases/download/v%v/AnotherSleepTracker_v%v.apk
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: be845ddabd833f109aebfba40c3b2c080d723170
+    subdir: app
+    gradle:
+      - yes
+
+AllowedAPKSigningKeys: e4b5b5d11dccf8c98eb7d74e1b4288d655690edd68c59339e6dc094ed0f7ba68
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+UpdateCheckData: app/build.gradle.kts|versionCode\s*=\s*(\d+)|versionName\s*=\s*"([\d.]+)"|v(.+)
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
